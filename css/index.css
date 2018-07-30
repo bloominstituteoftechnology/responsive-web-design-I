@@ -149,6 +149,7 @@ header nav {
   
   .main-content .middle-img {
 	margin-top: 45px;
+	width: 100%;
   }
   
   .main-content .bottom-content {
@@ -219,13 +220,19 @@ header nav {
 
 header nav {
 	margin-top: 150px;
+	margin-left: 50px;
 }
 
 header .logo {
 	position: relative;
 	bottom: 125px;
 	left: 200px;
-  }
+	}
+
+	.main-content .bottom-content .text-content {
+		width: 250px;
+	}
+	
 }
 /*-------------------------------------Mobile----------------------------------*/
 @media (max-width: 500px) {
@@ -238,8 +245,8 @@ header .logo {
     bottom: 450px; 
 	}
 
-	header nav{
-flex-flow: column wrap;
+	header nav{	
+    flex-flow: column wrap;
 	}
 
 	header nav a {
@@ -262,6 +269,10 @@ flex-flow: column wrap;
 	}
 
 	.main-content {
+		width: 100%;
+	}
+
+	.main-content .bottom-content .text-content {
 		width: 100%;
 	}
 }
