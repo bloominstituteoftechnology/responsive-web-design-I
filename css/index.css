@@ -91,10 +91,9 @@ header {
   background-color: dodgerblue;
 }
 
-nav {
-	display: flex;
+header nav {
+  display: flex;
 	justify-content: space-between;
-	flex-wrap: wrap;
 	padding-left: 13px;
 	width: 70%;
 }
@@ -323,12 +322,11 @@ nav a:active {
 
 
 /* Media queries */
+/* Tablet version */
 @media (max-width: 800px) {
   html, body {
     width: 720px;
   }
-
-
 
   /* Header */
   header {
@@ -339,9 +337,6 @@ nav a:active {
     padding: 20px 0;
     justify-content: space-around;
   }
-
-
-
 
   /*  Innovation section */
   .innovation {
@@ -367,6 +362,53 @@ nav a:active {
   }
 }
 
+/* Mobile version */
 @media (max-width: 500px) {
+  html, body {
+    max-width: 472px;
+  }
+
+  header {
+    height: 401px;
+    position: static;
+    align-items: center;
+    border-bottom: 1px solid black;
+    overflow: hidden;
+  }
+
+  header nav{
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  header .logo {
+    padding: 17px 0;
+  }
+
+  header nav a {
+    border-top: 1px solid black;
+    padding: 17px 400px;
+  }
+
+  /* innovation section */
+  .innovation {
+    margin-top: 10px; 
+  }
+
+  /* Information */
+  .information, .box{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .top, .bottom, .middle-img {
+    width: 100%;
+  }
+
+  footer .contact {
+    padding: 20px 15px;
+  }
 
 }
