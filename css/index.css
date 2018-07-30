@@ -69,7 +69,7 @@ h1, h2, h3, h4, h5 {
 
  .container {
 	 max-width: 1024px;
-	 margin: 0 auto;
+     margin: 0 auto;
  }
 
 .navigation {
@@ -81,7 +81,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .navigation a{
-	color: lightgrey;
+	color: #a2a5a6;
 	text-decoration: none;
 }
 
@@ -108,44 +108,46 @@ header {
 .get-started { 
 	font-size: 20px;
 	width: 200px;
-	height: 30px;
+    height: 40px;
 	border: 1px solid black;
 	background-color: white;
     position: relative;
 } 
 
 .first-section {
-	display: flex;
+    display: flex;
+    justify-content: space-between;
 	border-top: 2px solid black;
 	padding-top: 30px;
 	margin-left: 60px;
 
 }
 .features-about {
-	width: 400px;
-	height: 140px;
-	margin-left: 50px;
-
+	width: 500px;
+    height: 140px;
+    padding-right: 20px;
 }
 
 .middle-img {
 	display: flex;
-	margin: 0 auto;
+    margin: 0 auto;
+    width: 975px;
+    margin-left: 60px;
 }
 
 .second-section {
-	display: flex;
+    display: flex;
+    justify-content: space-between;
 	border-bottom: 2px solid black;
 	padding-top: 40px;
 	margin-left: 60px;
 }
 
 .spv {
-	width: 250px;
+	width: 300px;
 	height: 150px;
-	margin-left: 50px;
 	margin-bottom: 30px;
-
+    padding-right: 20px;
 }
 
 .contact {
@@ -226,18 +228,17 @@ ul li {
 }
 
 @media (max-width: 800px) {
+
+    .container {
+        width: 800px;
+    }
+
     .header-image{
         display: none;
     }
     .navigation {
         flex-wrap: wrap;
         align-items: center;
-    }
-
-    .navagation a {
-        margin: 50px;
-        display: flex;
-        flex-wrap: wrap;
     }
 
     .navigation .logo{
@@ -261,17 +262,80 @@ ul li {
 
     .middle-img {
         width: 750px;
-        margin-left: 60px;
+        margin-left: 50px;
     }
 
     .second-section {
         padding-top: 30px;
         padding-bottom: 30px;
-}
+    }
 
 }
 
 @media (max-width: 500px) {
 
+     .container {
+	 width: 500px;
+ }
+
+    .navigation {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .navigation a {
+        border-bottom: 1px solid gray;
+        padding: 20px 250px;
+        margin: 0 200px;
+        font-size: 20px;
+        /* background-color: red; */
+    }
+
+    .navigation .logo{
+        order: -1;
+        border-bottom: 1px solid gray;
+        margin: 0 200px;
+        padding: 0px 200px 20px 200px;
+    }
+
+        .main-heading {
+        justify-content: center;
+        margin: 20px 70px 0 120px;
+    }
+
+       .header {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+     .first-section {
+        display: flex;
+        flex-direction: column;
+        padding-top: 30px;
+    }
+
+    .features-about {
+        width: 450px;
+        height: 120px;
+    }
+
+    .middle-img {
+        width: 430px;
+        margin-left: 60px;
+    }
+
+     .second-section {
+        display: flex;
+        flex-direction: column;
+        padding-top: 30px;
+        padding-bottom: 10px;
+    }
+
+    .spv {
+	width: 450px;
+	height: 100px;
+	margin-bottom: 20px;
+    padding-right: 20px;
+}
 }
 
