@@ -265,15 +265,34 @@ header .header-img {
 
 
 
-@media (max-width: 500px){
+@media (max-width: 520px){
+
+  body {
+  	margin: 0;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+  }
+
+  header {
+    padding: 0;
+  }
+
+  header .header-img {
+    padding: 4% 0;
+    margin: 0;
+  }
 
   header .header-nav {
     flex-direction: column;
+
   }
 
   header .header-nav a{
-    padding: 6% 0;
-    font-size: 1.4rem;
+    color: lightgray;
+    padding: 4.05% 0;
+    font-size: 1.25rem;
+    font-weight: bold;
     border-bottom: 1px solid gray;
   }
 
@@ -281,20 +300,51 @@ header .header-img {
     border-top: 1px solid gray;
   }
 
-  .main .main-title {
-  	font-size: 4.5rem;
-  	width: 100%;
-  	padding: 10% 0;
+  header .header-nav a:last-child {
+    margin-right: 0;
   }
 
+  .main {
+    width: 91%;
+    margin: auto;
+  }
+  .main .main-title {
+  	font-size: 4.5rem;
+  	/* width: 100%; */
+  	padding: 5% 0 13%;
+  }
+
+.articles {
+  margin: auto;
+  width: 90%;
+  padding: 0 0;
+}
 
   .articles .top-row,
   .articles .bottom-row{
+    padding: 6.7% 0;
     flex-direction: column;
   }
 
-  .articles .article {
-    padding: 0 0 7% 0;
+    .articles .top-row,
+
+  .articles .top-row .article {
+    padding: 6% 0 4% 0;
+    /* background-color: orange; */
+  }
+
+    .articles .bottom-row .article{
+    padding: 0 0 2% 0;
+    }
+
+    .articles .bottom-row .article.product{
+      padding: 12.5% 0 14%;
+    }
+
+
+
+  .articles .middle-img{
+    padding: 1% 0;
   }
 
 
