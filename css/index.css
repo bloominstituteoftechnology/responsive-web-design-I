@@ -70,7 +70,7 @@ h1, h2, h3, h4, h5 {
 
 body {
   height: auto;
-	margin: 0 5%;
+	margin: 0 6.25%;
   /* width: 1024px; */
   /* border: 1px black solid; */
   /* max-width: 90vw; */
@@ -82,7 +82,7 @@ header {
   align-items: center;
 	width: 100%;
 	background-color: white;
-  padding: 20px 0;
+  padding: 30px 0;
 }
 
 header .header-nav {
@@ -92,7 +92,7 @@ header .header-nav {
 }
 
 header .header-img {
-  margin-left: 10%;
+  margin-left: 11%;
 }
 .header-nav a {
 	color: gray;
@@ -106,31 +106,28 @@ header .header-img {
 
 .main {
   display: flex;
-	padding: 10% 0;
-	border-bottom: 1px black solid;
-	text-align: center;
+	padding: 5% 0 8% 12%;
+	border-bottom: 2px black solid;
+	justify-content: space-around;
 
 }
 
 .main div {
 	vertical-align:  middle;
-
-
 }
 
 .main .main-title {
-	font-size: 6rem;
-	width: 55%;
+  padding-top: 6%;
+  margin-left: 3%;
+	font-size: 4.5rem;
+	/* width: 60%; */
 	text-align: center;
 	display: inline-block;
 
 }
 
 .main-img{
-	/* border: 1px solid black; */
-	text-align: center;
-	display: inline-block;
-	width: 44.5%;
+	margin-left: 7%;
 }
 
 .img-1{
@@ -138,12 +135,15 @@ header .header-img {
 	width: 100%;
 }
 .main-button {
+  margin: 25px auto;
+  display: block;
 	background-color: white;
-	width: 35%;
-	height: 40px;
-	font-size: 1.2rem;;
+	width: 160px;
+	height: 32px;
+	font-size: 1rem;
+  font-weight: bold;
 	border: 1px solid black;
-	margin-top: -100px;
+  margin-bottom: -100px;
 }
 
 
@@ -155,7 +155,7 @@ header .header-img {
 
 .articles{ /*the section*/
 
-	padding: 7.5% 0;
+	padding: 35px 0;
 	border-bottom: 1px black solid;
 }
 
@@ -170,12 +170,13 @@ header .header-img {
 }
 
 .article h3, .article p {
-	font-size: 1.2rem;
+	font-size: 1rem;
+  line-height: 1.15rem;
 }
 
 .middle-img{
 	width: 100%;
-	padding: 5% 0;
+	padding: 27px 0 27px 0;
 }
 
 
@@ -183,12 +184,11 @@ header .header-img {
 
 
 .footer {
-	font-size: 1.2rem;
-	line-height: 1.5rem;
+	line-height: 1rem;
 }
 
 .footer address {
-  padding: 5% 0;
+  padding: 37px 0;
 }
 
 .footer .copyright {
@@ -213,6 +213,10 @@ header .header-img {
 
   .main{
     justify-content: center;
+  }
+
+  .main .main-title{
+    font-size: 4.5rem;
   }
   .main .main-img{
     display: none;
@@ -250,4 +254,5 @@ header .header-img {
   .articles .article {
     padding: 0 0 7% 0;
   }
+
 }
