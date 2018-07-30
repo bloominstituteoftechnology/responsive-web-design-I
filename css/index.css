@@ -75,15 +75,27 @@ nav a {
   margin-left: 20px; 
 }
 
+.service-banner {
+	width: 300px;
+}
+
+.header-container {
+	width: 880px;
+  margin: 0 auto;
+}
 .container {
   width: 880px;
   margin: 0 auto;
 }
+.product-container{
+	width: 880px;
+  margin: 0 auto;
+}
 
 .big-title {
-    font-size: 60px;
-    text-align: center;
-    margin-top: 70px;
+  font-size: 60px;
+  text-align: center;
+  margin-top: 70px;
 }
 
 .title-button {
@@ -93,15 +105,15 @@ nav a {
 }
 
 .button {
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 40px;
-    padding-right: 40px;
-    font-size: 13px;
-    background-color: #fffdfd;
-    border: solid black 1px;
-    margin-left: 45px;
-    margin-top: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-size: 13px;
+  background-color: #fffdfd;
+  border: solid black 1px;
+  margin-left: 45px;
+  margin-top: 5px;
 }
 
 .space-evenly {
@@ -127,7 +139,8 @@ nav a {
 	display: flex;
 	flex-direction: column;
 	border: solid black 1px;
-	background-color: #ececec
+	background-color: #ececec;
+	margin-right: 10px;
 }
 
 .title-spacing {
@@ -234,8 +247,12 @@ nav a {
   font-size: 16px
 }
 
-.tablet-mobile {
+.tablet {
 	display: none;
+}
+
+.services-info-img {
+	padding-bottom: 10px;
 }
 /*media queries below*/ 
 /*----------------------------------------*/
@@ -245,16 +262,25 @@ nav a {
 	.div-img {
 		display: none;
 	}
+	.header-container {
+		margin: 0 auto;
+		width: 680px;
+	}
 	.container {
 		margin: 0 auto;
 		width: 680px;
 	}
+	.product-container{
+		margin: 0 auto;
+		width: 680px;
+	}
+	
 	.add-margin {
 		margin-top: 20px;
 		margin-bottom: 20px;
 		width: 680px;
 	}
-	.tablet-mobile {
+	.tablet {
 		display: flex;
 		justify-content: center;
 		margin-top: 10px;
@@ -273,6 +299,22 @@ nav a {
     text-align: center;
     margin-top: 20px;
 	}
+	.web-award {
+		height: 26%;
+    width: 32%;
+	}
+	.cloud-award{
+		width: 26%;
+	}
+	.service-award {
+		width: 21%;
+	}
+	.hide {
+		display: none;
+	}
+	.extra-padding {
+		display: none
+	}
 }
 
 /*moble*/
@@ -286,12 +328,12 @@ nav a {
 	}
 	.container {
 		margin: 0 auto;
-		width: 380px;
+		width: 400px;
 	}
 	.add-margin {
-		margin-top: 20px;
-		margin-bottom: 20px;
-		width: 380px;
+		margin-top: 0px;
+    margin-bottom: 10px;
+    width: 395px
 	}
 	nav a {
 		border: solid grey 1px;
@@ -305,7 +347,7 @@ nav a {
 		display: flex;
 		justify-content: space-around;
 		flex-direction: column;
-		padding-top: 10px;
+		padding-top: 0px;
 	}
 	h2 {
 		padding-top: 10px
@@ -322,7 +364,7 @@ nav a {
     margin-top: 5px;
 	}
 
-	.tablet-mobile {
+	.tablet {
 		display: none;
 		padding: 0px;
 		border: solid grey 1px;
@@ -333,6 +375,35 @@ nav a {
 	}
 	.switch {
 		order: -1;
+	}
+	.header-container {
+		width: 100%;
+	}
+	.product-spacing  {
+		border: solid black 1px;
+	  border-radius: 0%;
+	  padding: 10px;
+	  margin-right: 0px;
+	}
+	.main-pic-products {
+		display: none;
+	}
+	.product-container{
+		margin: 0 auto;
+		width: 100%;
+	}
+	.hide {
+		display: block;
+	}
+	.col-service {
+		margin-right: 0px;
+		margin-bottom: 10px;
+	}
+	.product-margin {
+		margin: 0px;
+	}
+	.services-info-img {
+		padding-top: 10px;
 	}
 }
 
