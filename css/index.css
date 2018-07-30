@@ -346,5 +346,37 @@ footer {
     margin-left: 5%;
   }
 
-  /* todo: mobile styles */
+  /* mobile */
+
+  @media (max-width: 400px) {
+
+    /* container mobile */
+
+    .container {
+      width: 90%;
+    }
+
+    /* logo mobile */
+
+    .container .logo {
+      margin-top: 20px;
+    }
+
+    /* nav mobile */
+    
+    .container header nav {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+      border-bottom: 1px solid #000;
+    }
+
+    .container header nav a {
+      border-top: 1px solid #000;
+      padding: 18px 0px;
+      font-size: 1.5rem;
+      width: 100%;
+      text-align: center;
+    }
+  }
 }
