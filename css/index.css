@@ -371,6 +371,7 @@ footer {
 
     .top-content {
         margin-top: 45px;
+        padding-top: 10px;
     }
 
 .top-info {
@@ -411,3 +412,114 @@ img.img-middle {
 
 
 /* mobile */
+@media only screen and (max-width: 500px) {
+
+    .box {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    header {
+        margin: 15px auto;
+       
+    }
+        header .logo {
+            margin: 0 auto;
+            width: 40%;
+            margin-bottom: 15px;
+        }
+
+        header img {
+            width: 100%;
+            margin: 0 20px auto;
+        }
+
+        header nav {
+            display: flex;
+            flex-direction: column;
+        }
+            header nav a {
+                width: 100%;
+                border-top: 1px solid gray;
+                border-bottom: 1px solid gray;
+                font-size: 13px;
+                padding: 10px;
+            }
+
+    .innovation {
+        display: flex;
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .slogan {
+        margin-top: 10px;
+        width: 80%;
+    }
+
+    h1 {
+        font-size: 48px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+    .slogan button {
+        width: 38%;
+    }
+
+    .top-content {
+        width: 100%;
+        margin: 30px 0 0 40px;
+        flex-direction: column;   
+    }
+
+    .top-info {
+        width: 100%;
+        margin: 0 0 0 10px auto;
+        align-items: center;
+    }
+
+        .top-info h2 {
+            margin-top: 30px;
+            align-self: flex-start;
+        }
+
+    img.img-middle {
+        margin: 30px 0 0 40px;
+    }
+
+    .bottom-content {
+        width: 100%;
+        margin: 0 0 0 40px;
+        flex-direction: column;
+    }
+
+    .bottom-info {
+        width: 100%;
+        margin: 0 0 0 10px auto;
+        align-items: center;
+    }
+
+    .bottom-info h2 {
+        margin-top: 10px;
+        align-self: flex-start;
+    }
+
+    .address {
+        margin-bottom: 10px;
+    }
+
+    .contact {
+        align-self: flex-start;
+        margin-left: 20px;
+    }
+
+    footer {
+        text-align: center;
+        margin: 15px;
+        font-size: 16px;
+    }
+}
