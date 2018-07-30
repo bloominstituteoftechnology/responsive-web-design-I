@@ -324,9 +324,49 @@ nav a:active {
 
 /* Media queries */
 @media (max-width: 800px) {
+  html, body {
+    width: 720px;
+  }
 
+
+
+  /* Header */
+  header {
+    flex-direction: column-reverse;
+    height: 150px;
+    width: 100%;
+    border-radius: 0;
+    padding: 20px 0;
+    justify-content: space-around;
+  }
+
+
+
+
+  /*  Innovation section */
+  .innovation {
+    justify-content: center;
+    margin-top: 120px;
+  }
+
+  .innovation .jumbo-img {
+    display: none;
+  }
+  
+  /* Information */
+  .top {
+    padding: 20px 10px;
+  }
+
+  .bottom {
+    padding: 20px 10px;
+  }
+
+  footer .contact {
+    padding: 20px 10px;
+  }
 }
 
 @media (max-width: 500px) {
-  
+
 }
