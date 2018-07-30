@@ -325,7 +325,7 @@ nav a:active {
 /* Tablet version */
 @media (max-width: 800px) {
   html, body {
-    max-width: 720px;
+    max-width: 781px;
   }
 
   /* Header */
@@ -335,30 +335,66 @@ nav a:active {
     width: 100%;
     border-radius: 0;
     padding: 20px 0;
+    justify-content: space-evenly;
+    overflow: hidden;
+  }
+
+  header nav {
     justify-content: space-around;
+    padding-left: 0px;
+    margin-top: 22px;
+    width: 100%;
+  }
+
+  .logo {
+    width: 201px;
+    padding-right: 0; 
+    padding-top: 7px;
   }
 
   /*  Innovation section */
   .innovation {
     justify-content: center;
-    margin-top: 120px;
+    margin-top: 134px;
+    padding: 61px 0 73px 0;
   }
 
   .innovation .jumbo-img {
     display: none;
   }
+
+  .innovation h1 {
+    font-size: 70px;
+    letter-spacing: 4px;
+  }
+
+  .title a {
+    font-size: 16px;
+    margin-top: 32px;
+    padding: 6px 42px;
+}
   
   /* Information */
+  .information {
+    padding-bottom: 37px;
+  }
+
   .top {
-    padding: 20px 10px;
+    padding: 36px 19px;
   }
 
   .bottom {
-    padding: 20px 10px;
+    padding: 33px 16px;
   }
 
+  /* Footer */
   footer .contact {
-    padding: 20px 10px;
+    padding: 24px 27px;
+    line-height: 35px;
+  }
+
+  footer .contact h4 {
+    margin-bottom: 3px;
   }
 
 
@@ -392,7 +428,7 @@ nav a:active {
 /* Mobile version */
 @media (max-width: 500px) {
   html, body {
-    max-width: 472px;
+    max-width: 469px;
   }
 
   header {
