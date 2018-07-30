@@ -1,3 +1,435 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.container {
+	width: 880px;
+	/* TB LR */
+	margin: 0 auto;
+  }
+
+/* HEADER */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav a {
+    margin-right: 65px;
+    font-size: 14px;
+    color: gray;
+    text-decoration: none;
+ }
+
+header .logo {
+	/* display: inline-block; */
+	/* margin-top: 25px; */
+  }
+
+  /* cta */
+
+  .cta {
+      display: flex;
+      justify-content: space-evenly;
+  }
+
+  .cta-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      font-size: 77px;
+      text-align: center;
+    padding: 0px 90px;
+  }
+
+
+  .cta .cta-text button {
+	background: white;
+	margin-top: 6px;
+	padding: 8px 44px;
+	font-size: 17px;
+	border: 1px solid black;
+	cursor: pointer;
+  }
+
+  .cta .cta-text button:hover {
+	background: black;
+	color: white;
+  }
+
+  .cta img {
+	margin-top: 69px;
+  }
+
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-top: 1px solid black;
+	margin-top: 76px;
+	padding-top: 39px;
+  }
+
+  .main-content .top-content {
+      display: flex;
+      justify-content: space-evenly;
+      padding: 10px;
+  }
+
+  .main-content .top-content .text-content {
+	margin-right: 34px;
+  }
+
+
+  .main-content .middle-img {
+    margin: 45px 0 45px 0;
+  }
+
+  .main-content .bottom-content {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.main-content .bottom-content .text-content {
+	width: 275px;
+	display: inline-block;
+	margin-right: 12px;
+  }
+
+  .contact {
+	margin-top: 57px;
+	border-top: 1px solid black;
+	padding: 39px 10px 0;
+  }
+  
+  .contact p {
+	margin: 20px 0;
+  }
+  
+  footer {
+	margin: 40px 0 20px;
+	text-align: center;
+	font-size: 14px;
+  }
+
+
+  /* Tablet */
+
+  @media (max-width: 800px) {
+    .container {
+        width: 100%;
+      }
+
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
+        /* height: 120px;
+        margin-top: 15px; */
+    }
+
+    header .logo {
+        order: -1;
+        display: block;
+        margin: 50px auto 0;
+    }
+
+    header nav {
+        width: 800px;
+        padding: 0 30px;             
+    }
+
+    header nav a {
+        margin-right: 65px;
+        font-size: 15px;
+        color: gray;
+        text-decoration: none;
+     }
+    
+   .cta {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+   }
+  
+    .cta-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 75px;
+        text-align: center;
+      padding: 20px;
+    }
+
+    .cta .snippet {
+        display: none;
+    }
+
+   .cta .ctatext button {
+        background: white;
+        margin-top: 0px;
+        padding: 100px;
+        font-size: 20px;
+        border: 1px solid black;
+        cursor: pointer;
+      }
+    
+    
+   
+    
+  
+      .cta .cta-text button:hover {
+        background: black;
+        color: white;
+      }
+        
+      .main-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        border-top: 1px solid black;
+        margin: 30px 20px 30px 20px;
+        
+      }
+    
+      .main-content .top-content {
+          display: flex;
+          justify-content: space-around;
+          
+          
+      }
+    
+     
+    
+    
+      .main-content .middle-img {
+        margin: 30px 0 25px 0;
+        height: 150px;
+      }
+    
+      .main-content .bottom-content {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 20px;
+    }
+  
+    
+      .contact {
+ 
+        margin: 50px 0 0 30px;
+        border-top: 1px solid black;
+        padding: 40px 10px 0 0;
+      }
+      
+      .contact p {
+        margin-top: 10px;
+      }
+      
+      footer {
+        margin: 40px 0 30px 0;
+        text-align: center;
+        font-size: 15px;
+      }
+
+
+  }
+
+  /* Mobile */
+
+  @media (max-width: 400px) {
+
+
+    .container {
+        width: 100%;
+       margin: 0 auto;
+   
+      }
+
+    header {
+        width: 400px;
+        display: flex;
+        flex-wrap: wrap-reverse;
+        margin-top: 15px;
+    }
+
+    header nav {
+        width: 400px;
+        display: flex;
+        flex-wrap: wrap-reverse;
+       
+    }
+
+    header nav a {
+        width: 100%;
+        border-top: 2px solid black;
+        padding: 20px 50px 20px 50px;
+        text-align: center;
+    }
+    
+   /* .cta {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+   }
+  
+    .cta-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 75px;
+        text-align: center;
+      padding: 20px;
+    }
+
+    .cta .snippet {
+        display: none;
+    }
+
+   .cta .ctatext button {
+        background: white;
+        margin-top: 0px;
+        padding: 100px;
+        font-size: 20px;
+        border: 1px solid black;
+        cursor: pointer;
+      }
+    
+    
+    header nav a {
+        margin-right: 65px;
+        font-size: 15px;
+        color: gray;
+        text-decoration: none;
+     }
+    
+  
+      .cta .cta-text button:hover {
+        background: black;
+        color: white;
+      }
+        
+      .main-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        border-top: 1px solid black;
+        margin: 30px 20px 30px 20px;
+        
+      }
+    
+      .main-content .top-content {
+          display: flex;
+          justify-content: space-around;
+          
+          
+      }
+    
+     
+    
+    
+      .main-content .middle-img {
+        margin: 30px 0 25px 0;
+        height: 100px;
+        width: 300px;
+      }
+    
+      .main-content .bottom-content {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 20px;
+    }
+  
+    
+      .contact {
+ 
+        margin: 50px 0 0 30px;
+        border-top: 1px solid black;
+        padding: 40px 10px 0 0;
+      }
+      
+      .contact p {
+        margin-top: 10px;
+      }
+      
+      footer {
+        margin: 40px 0 30px 0;
+        text-align: center;
+        font-size: 15px;
+      }
+  } */
