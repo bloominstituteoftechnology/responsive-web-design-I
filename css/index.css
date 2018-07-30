@@ -261,6 +261,9 @@ footer {
 
 /* Mobile view */
 @media (max-width: 500px) {
+	header .logo {
+		margin: 20px;
+	}
   header nav {
 		display: flex;
 		flex-direction: column;
@@ -271,13 +274,23 @@ footer {
 	}
 	header nav a {
 		display: flex;
-		font-size: 18pt;
+		font-size: 20pt;
 		border-top: 1px solid black;
     margin: 20px;
     width: 100%;
 		padding-top: 30px;
 		justify-content: center;
 	}
+	header nav a:last-child {
+		border-bottom: 1px solid black;
+		padding-bottom: 30px;
+	}
+	.cta h1 {
+		font-size: 80pt;
+	}
+	.cta button {
+		padding: 10px;
+		}
 	.main-content {
 		display: flex;
 		font-size: 22pt;
