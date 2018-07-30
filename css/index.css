@@ -308,6 +308,7 @@ article.services h2 {
   }
   /* relocates logo to top of page centered */
   header .logo {
+    display: flex;
     padding-top: 0;
     width: 183px;
     margin: auto;
@@ -324,8 +325,15 @@ article.services h2 {
   .main-content .middle-img {
     width: 100%;
   }
+
+  .service-box {
+    width: 360px;
+  }
+  .services-header-img {
+    width: 100%;
+  }
 }
-/* !!! Phone View !!! */
+/* !!! Mobile View !!! */
 @media (max-width:500px) {
   .container {
     display: flex;
@@ -417,9 +425,11 @@ article.services h2 {
   .contact {
     margin-top: 20px;
   }
-
+  .services-info-img {
+    display: none;
+  }
   .services-header-img, .services, .services .footer {
-    width: 90%;
+    width: 100%;
   }
 
 }
