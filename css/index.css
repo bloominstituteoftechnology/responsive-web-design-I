@@ -133,8 +133,6 @@ header .logo {
 /* Main Content Styles */
 
 .main-content {
-   border-top: 2px solid black; 
-   border-bottom: 2px solid black;
    margin: 75px 0 35px 0;
    padding: 35px 0;
    font-size: 16px;
@@ -190,14 +188,12 @@ footer {
 }
 
 .services-content .services-text {
- border-bottom: 1px solid black;
  padding-bottom: 40px;
  margin-bottom: 20px
 }
 
 .services-content .card {
     padding: 20px;
-    border: 1px solid black;
     width: 420px;
     background: whitesmoke;
     margin: 20px 0;
@@ -209,7 +205,6 @@ footer {
     cursor: pointer;
     background: white;
     border-radius: 5px;
-    border: 1px solid black;
 }
 
 .services-content .card button:hover {
@@ -229,7 +224,6 @@ footer {
 .services-content .services-info {
     display: flex;
     flex-wrap: wrap;
-    border-top: 2px solid black; 
     margin: 20px 0 35px 0;
     padding-top: 40px; 
 }
@@ -246,4 +240,38 @@ footer {
 .services-content .services-info .services-info-img {
   width: 420px;
   height: 300px;
+}
+
+@media (max-width: 800px) {
+  .container {
+    width: 90%;
+  }
+  header {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  header nav {
+    order: 1;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  header .logo {
+    margin: 0 auto;
+  }
+
+  .cta {
+    justify-content: center;
+  }
+
+  .cta img {
+    display: none;
+  }
+
+  .main-content .middle-img {
+    width: 100%;
+  }
+
 }
