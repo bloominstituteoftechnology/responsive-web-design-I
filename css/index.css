@@ -1,5 +1,3 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
-
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -65,60 +63,55 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
-
 .container {
   width: 880px;
+  /* TB LR */
   margin: 0 auto;
 }
 
-
-
-/*header*/
-
-header{
-display:flex;
-}
+/* header */
 
 header nav {
-  display: flex;
+  display: inline-block;
   width: 691px;
   vertical-align: top;
   margin-top: 35px;
 }
 
 header nav a {
-  display: flex;
+  display: inline-block;
+  margin-right: 65px;
   font-size: 14px;
   color: gray;
-  text-decoration: none; 
-  padding:20px;
-  margin-left: 20px;
+  text-decoration: none;
 }
 
-header nav a:hover{
-  color: black;
-  font-weight: bold;
+header nav a:hover {
+  text-decoration: underline;
+}
+
+header nav a:first-child {
+  margin-left: 0;
+}
+
+header nav a:last-child {
+  margin-right: 0;
 }
 
 header .logo {
-  display: flex;
+  display: inline-block;
   margin-top: 25px;
-  margin-right: 30px;
 }
 
-
-
-/*cta*/
-.cta{
-  display:flex;
-}
+/* cta */
 
 .cta .cta-text {
+  display: inline-block;
+  vertical-align: top;
   font-size: 77px;
-  text-align: center;
   margin-top: 120px;
-  padding: 0px 70px;
+  text-align: center;
+  padding: 0px 75px;
 }
 
 .cta .cta-text button {
@@ -127,42 +120,42 @@ header .logo {
   margin-top: 6px;
   padding: 8px 44px;
   font-size: 17px;
-  border: 1px solid grey;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.cta .cta-text button:hover {
+  background: black;
+  color: white;
 }
 
 .cta img {
-  display: flex;
-  margin: 69px 90px 0 0;
+  display: inline-block;
+  margin-top: 69px;
 }
 
-
-
-/*Top Content*/
-
 .main-content {
+  border-top: 1px solid black;
   margin-top: 76px;
   padding-top: 39px;
 }
 
 .main-content .top-content {
   padding: 0 10px;
-  display:flex;
 }
 
 .main-content .top-content .text-content {
   width: 410px;
+  display: inline-block;
+  margin-right: 34px;
 }
 
-/*Middle Image*/
+.main-content .top-content .text-content:last-child {
+  margin-right: 0;
+}
+
 .main-content .middle-img {
-  display:block;
-  margin: 30px auto ;
-}
-
-
-/*Bottom Content*/
-.bottom-content{
-  display:flex;
+  margin-top: 45px;
 }
 
 .main-content .bottom-content {
@@ -171,29 +164,39 @@ header .logo {
 }
 
 .main-content .bottom-content .text-content {
-  margin-right: 20px;
+  width: 275px;
+  display: inline-block;
+  margin-right: 12px;
 }
 
-
-
-/*Contact*/
+.main-content .bottom-content .text-content:last-child {
+  margin-right: 0;
+}
 
 .contact {
   margin-top: 57px;
   border-top: 1px solid black;
-  padding: 20px 10px 0;
+  padding: 39px 10px 0;
 }
 
 .contact p {
   margin: 20px 0;
 }
 
-
-/*Footer*/
 footer {
   margin: 32px 0;
   text-align: center;
   font-size: 14px;
 }
 
+
+
+/*Tablet mode*/
+@media (max-width:800px) {
+	footer {
+		color:red;
+		font-size:100px;
+	}
+	
+}
 
