@@ -71,9 +71,6 @@ h1, h2, h3, h4, h5 {
 body {
   height: auto;
 	margin: 0 6.25%;
-  /* width: 1024px; */
-  /* border: 1px black solid; */
-  /* max-width: 90vw; */
 }
 
 header {
@@ -156,7 +153,7 @@ header .header-img {
 .articles{ /*the section*/
 
 	padding: 35px 0;
-	border-bottom: 1px black solid;
+	border-bottom: 2px black solid;
 }
 
 .articles .top-row,
@@ -198,30 +195,75 @@ header .header-img {
 
 @media (max-width: 800px){
 
+  body {
+  	margin: 0 1.5%;
+  }
+
   header {
     flex-direction: column-reverse;
     justify-content: center;
   }
 
   header .header-nav {
-    width: 100%;
+    width: 98%;
+
+  }
+
+  header .heaver-nav a{
+    display: inline-block;
+    margin: auto;
+  }
+
+  header .header-nav a:last-child {
+    margin-right: 4.5%;
   }
 
   header .header-img {
   margin: 0 0 5% 0;
   }
 
+
+
   .main{
     justify-content: center;
+    padding: 5.7% 0 23% 2%;
   }
 
   .main .main-title{
     font-size: 4.5rem;
+    padding: 0;
+    margin: 0;
   }
   .main .main-img{
     display: none;
   }
+
+
+  .articles .top-row,
+  .articles .bottom-row{
+    justify-content: space-around;
+    font-weight: bold;
+  }
+
+  .articles .bottom-row .article{
+    padding: 0 2.5%;
+  }
+
+  .articles .article {
+    padding: 0 1.5%;
+  }
 }
+
+  .articles .middle-img {
+    padding: 30px 0;
+  }
+
+  .footer address {
+    padding-left: 1.5%;
+    line-height: .95rem;
+  }
+
+
 
 @media (max-width: 500px){
 
@@ -254,5 +296,6 @@ header .header-img {
   .articles .article {
     padding: 0 0 7% 0;
   }
+
 
 }
