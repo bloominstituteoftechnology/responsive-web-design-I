@@ -94,6 +94,29 @@ h1, h2, h3, h4, h5 {
         }
     }
 
+    @media (max-width: 500px) {
+        header {
+            width: 500px;
+            margin-left: 140px;
+        }
+        header nav {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            width: 500px;
+        }
+        header nav a {
+            border-top: 1px solid lightgray;
+            border-bottom: 1px solid lightgray;
+            width: 500px;
+            height: 50px;
+            padding-top: 20px;
+            padding-left: 240px;
+            padding-right: 200px;
+            text-align: center;
+        }
+    }
+
   header nav {
 	width: 691px;
 	vertical-align: top;
@@ -128,7 +151,21 @@ h1, h2, h3, h4, h5 {
           width: 200px;
       }
   }
-  
+
+  @media (max-width: 500px) {
+      header .logo {         
+        margin-right: 110px;
+      }
+  }
+
+  @media (max-width: 500px) {
+      header nav a:first-child {
+          border-top: 2px solid lightgray;
+      }
+      header nav a:last-child {
+          border-bottom: 2px solid lightgray;
+      }
+  }  
   /* cta */
   
   .cta .cta-text {
@@ -175,6 +212,13 @@ h1, h2, h3, h4, h5 {
       }
   }
   
+  @media (max-width: 500px) {
+      .cta {
+          justify-content: center;
+          width: 500px;
+          margin-left: 100px;
+      }
+  }
   .main-content {
 	border-top: 1px solid black;
 	margin-top: 76px;
@@ -190,10 +234,28 @@ h1, h2, h3, h4, h5 {
           margin-left: 80px;
       }
   }
+
+  @media (max-width: 500px) {
+      .main-content {
+          width: 500px;
+          justify-content: center;
+          padding-right: 40px;
+          padding-left: 40px;
+      }
+  }
   
   .main-content .top-content {
     padding: 0 10px;
     display: flex;
+  }
+
+  @media (max-width: 500px) {
+      .main-content .top-content {
+          flex-direction: column;
+      }
+      .main-content .top-content .text-content {
+          margin-bottom: 20px;
+      }
   }
   
   .main-content .top-content .text-content {
@@ -213,6 +275,15 @@ h1, h2, h3, h4, h5 {
 	margin-top: 37px;
     padding: 0 10px;
     display: flex;
+  }
+
+  @media (max-width: 500px) {
+      .main-content .bottom-content {
+          flex-direction: column;
+      }
+      .main-content .bottom-content .text-content {
+          margin-bottom: 20px;
+      }
   }
   
   .main-content .bottom-content .text-content {
@@ -236,6 +307,13 @@ h1, h2, h3, h4, h5 {
         margin-left: 80px;
     }
   }
+
+  @media (max-width: 500px) {
+      .contact {
+          width: 500px;
+          padding-left: 40px;
+      }
+  }
    
   .contact p {
 	margin: 20px 0;
@@ -245,6 +323,14 @@ h1, h2, h3, h4, h5 {
 	margin: 32px 0;
 	text-align: center;
 	font-size: 14px;
+  }
+
+  @media (max-width: 500px) {
+      footer {
+          width: 500px;
+          padding-left: 80px;
+          margin-left: 40px;
+      }
   }
 
 
