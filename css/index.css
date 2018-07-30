@@ -1,3 +1,337 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+/*box model (content, padding, margin, border) and `display:inline-block`*/
+
+nav {
+	display: flex;
+	justify-content: space-around;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: gray;
+  margin-right: 20px;
+  margin-left: 20px; 
+}
+
+.container {
+  width: 880px;
+  margin: 0 auto;
+}
+
+.big-title {
+    font-size: 60px;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.title-button {
+	display: flex;
+	flex-direction: column;
+	display: inline-block;
+}
+
+.button {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 13px;
+    background-color: #fffdfd;
+    border: solid black 1px;
+    margin-left: 45px;
+    margin-top: 5px;
+}
+
+.space-evenly {
+	display: flex;
+	justify-content: space-around;
+}
+
+.col {
+	display: flex;
+	flex-direction: column;
+}
+
+.middle-img {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.add-margin {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.center-me {
+	display: flex;
+	justify-content: center;
+}
+
+.col-service {
+	display: flex;
+	flex-direction: column;
+	border: solid black 1px;
+	background-color: #ececec
+}
+
+.title-spacing {
+	margin: 10px;
+}
+
+.p-spacing {
+	margin: 16px;
+}
+
+.services-buttons {
+	margin-left: 16px;
+    align-self: flex-start;
+    margin-bottom: 14px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: solid black 1px;
+    border-radius: 4spx;
+}
+
+.extra-padding {
+	padding: 20px;
+}
+
+
+#line-margin {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border: solid black 1.5px;
+}
+
+.services-ul {
+    list-style-type: square;
+    margin-left: 19px;
+}
+
+.services-header-img {
+	margin-top: 5px;
+	margin-bottom: 20px
+}
+.small-margin {
+	margin: 2px;
+}
+
+.move-pick {
+	margin-top: 16px;
+}
+
+.stack {
+	display: flex;
+}
+
+.product-padding {
+	margin-top: 30px;
+}
+
+.web-award {
+	height: 32%;
+  width: 25%;
+}
+
+.cloud-award {
+	width: 18%;
+  height: 28%;
+}
+
+.service-award {
+	  width: 14%;
+    height: 28%;
+}
+
+.product-spacing {
+	border: solid black 1px;
+  border-radius: 5%;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.main-pic-products {
+	width: 50%;
+  height: 50%;
+  border-radius: 7%;
+  border: solid #ff5730 5px;
+}
+
+.h1-product-col {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-size: 70px;
+  text-align: center;
+}
+
+.product-margin {
+	padding-top: 21px;
+  padding-bottom: 20px;
+}
+
+.product-button {
+  margin: 0px 50px 0px 50px;
+  height: 35px;
+  font-size: 16px
+}
+
+.tablet-mobile {
+	display: none;
+}
+/*media queries below*/ 
+/*----------------------------------------*/
+
+/*tablet*/
+@media (max-width:800px) {
+	.div-img {
+		display: none;
+	}
+	.container {
+		margin: 0 auto;
+		width: 680px;
+	}
+	.add-margin {
+		margin-top: 20px;
+		margin-bottom: 20px;
+		width: 680px;
+	}
+	.tablet-mobile {
+		display: flex;
+		justify-content: center;
+		margin-top: 10px;
+	}
+	.logo {
+		display: none;
+	}
+	nav a {
+	  text-decoration: none;
+	  color: gray;
+	  margin-right: -19px;
+    margin-left: 29px
+	}
+	.big-title {
+    font-size: 60px;
+    text-align: center;
+    margin-top: 20px;
+	}
+}
+
+/*moble*/
+@media (max-width:500px) {
+	nav {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		margin-bottom: 20px;
+		margin-top: 0px;
+	}
+	.container {
+		margin: 0 auto;
+		width: 380px;
+	}
+	.add-margin {
+		margin-top: 20px;
+		margin-bottom: 20px;
+		width: 380px;
+	}
+	nav a {
+		border: solid grey 1px;
+		margin: 0px;
+		font-size: 38px;
+		display: flex;
+		justify-content: center;
+	}
+	.logo {
+	}
+	.space-evenly {
+		display: flex;
+		justify-content: space-around;
+		flex-direction: column;
+		padding-top: 10px;
+	}
+	h2 {
+		padding-top: 10px
+	}
+	.button {
+		padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 13px;
+    background-color: #fffdfd;
+    border: solid black 1px;
+    margin-left: 110px;
+    margin-top: 5px;
+	}
+	.tablet-mobile {
+		display: flex;
+		padding: 0px;
+		border: solid grey 1px;
+		margin-top: 0px;
+	}
+}
 
