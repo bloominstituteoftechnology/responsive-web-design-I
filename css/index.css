@@ -1,3 +1,8 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -58,51 +63,55 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-.container {
-    width: 880px;
-    margin: 0 auto;
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+
+/* Container */
+
+.container, .container-2 {
+	width: 880px;
+	margin: 0 auto;
 }
 
-.header {
+/* Header */
+
+header {
+    width: 100%;
     display: flex;
-    justify-content: space-around;
-    margin: 20px 0;
 }
 
-.header nav {
+header nav {
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
 }
 
-.header nav a {
-    text-decoration: none;
-    color: lightgrey;
+header nav a {
+	text-decoration: none;
+	color: grey;
 }
 
 
+/* CTA */
 
 .cta {
-    display: flex;
-    justify-content: space-around;
-    padding: 40px 0;
-    margin: 40px 0;
-    border-bottom: 1px solid black;
+	display: flex;
+	justify-content: space-around;
+	margin: 0 10px;
+
 }
 
 .cta .cta-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    font-size: 75px;
-
+	text-align: center;
+	font-size: 65px;
+	padding: 0 90px;
+	margin-top: 65px;
 }
 
 .cta .cta-text button {
-	padding: 6px 0;
-	font-size: 14px;
+	padding: 8px 40px;
+	font-size: 16px;
 	background: white;
 	border: 1px solid black;
 	cursor: pointer;
@@ -113,11 +122,210 @@ h1, h2, h3, h4, h5 {
 	color: white;
 }
 
+.cta img {
+	margin-top: 20px;
+	padding: 0 50px;
+}
 
-@media (max-width: 500px) {
+/* Main Content */
+
+/* Top Content */
+
+ .top-content {
+	display: flex;
+	margin: 20px 0;
+}
+
+.top-content .text-content {
+	padding: 0 10px;
+}
+
+/* Middle img */
+
+.middle-img {
+	margin: 20px 0;
+}
+
+/* Bottom Content */
+.bottom-content {
+	display: flex;
+	margin: 20px 0;
+}
+
+.bottom-content .text-content {
+	width: 300px;
+	padding: 0 10px;
+}
+
+/* Contact */
+.contact {
+	display: flex;
+	flex-direction: column;
+	margin: 20px 10px;
+}
+/* Footer */
+
+footer {
+	text-align: center;
+	margin: 20px 0;
+}
+
+
+
+/* Services CSS */
+
+.container-2 h1, .container-2 h2, .container-2 h3, .container-2 h4, .container-2 h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.container-2 .top-content {
+	display: flex;
+	flex-direction: column;
+}
+
+.container-2 .middle-content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
 
 }
 
+.container-2 .middle-content .text-content {
+	width: 400px;
+	border: 1px solid black;
+	background: lightgrey;
+	padding: 12px;
+	margin: 20px auto;
+}
+
+.container-2 .middle-content .text-content button{
+
+	border: 1px solid black;
+	background: white;
+	margin-top: 10px
+}
+
+.container-2 .bottom-content {
+	display: flex;
+
+}
+
+footer {
+	margin-top: 50px;
+}
+
+
+
 @media (max-width: 800px) {
 
+    .container {
+        width: 100%;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    header img {
+        order: -1;
+        width: 183px;
+    }
+    header nav {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .cta {
+        margin-bottom: 50px;
+    }
+
+    .cta img {
+        display: none;
+    }
+
+    .main-content img{
+        width: 100%;
+        margin: 10px 2px;
+    }
+    .top-content {
+        display: flex;
+        width: 100%;
+        padding: 20px;
+        border-top: 2px solid black;
+    }
+
+    .bottom-content {
+        display: flex;
+        width: 100%;
+        padding-bottom: 30px;
+        border-bottom: 2px solid black;
+    }
+
+    .contact {
+        padding: 10px 0;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .container {
+        width: 500px;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 40px;
+        border-top: 1px solid black;
+    }
+
+    header nav a {
+        width: 100%;
+        padding: 20px;
+        border-bottom: 1px solid black;
+        text-align: center;
+    }
+
+    .cta {
+        width: 100%;
+    }
+
+    .top-content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .top-content .text-content {
+        width: 100%;
+        padding: 8px;
+    }
+
+    .middle-img {
+        width: 100%;
+    }
+
+    .bottom-content {
+        display: flex;
+        flex-direction: column;
+
+        margin: 10px 0;
+    }
+
+    .bottom-content .text-content {
+        width: 100%;
+        padding: 8px;
+    }
 }
