@@ -109,11 +109,6 @@ nav a {
 	justify-content: space-around;
 }
 
-.col {
-	display: flex;
-	flex-direction: column;
-}
-
 .middle-img {
 	margin-top: 20px;
 	margin-bottom: 20px;
@@ -145,14 +140,14 @@ nav a {
 
 .services-buttons {
 	margin-left: 16px;
-    align-self: flex-start;
-    margin-bottom: 14px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border: solid black 1px;
-    border-radius: 4spx;
+  align-self: flex-start;
+  margin-bottom: 14px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: solid black 1px;
+  border-radius: 4spx;
 }
 
 .extra-padding {
@@ -305,8 +300,7 @@ nav a {
 		display: flex;
 		justify-content: center;
 	}
-	.logo {
-	}
+
 	.space-evenly {
 		display: flex;
 		justify-content: space-around;
@@ -327,11 +321,18 @@ nav a {
     margin-left: 110px;
     margin-top: 5px;
 	}
+
 	.tablet-mobile {
-		display: flex;
+		display: none;
 		padding: 0px;
 		border: solid grey 1px;
 		margin-top: 0px;
+	}
+	.logo {
+		display: flex;
+	}
+	.switch {
+		order: -1;
 	}
 }
 
