@@ -300,6 +300,11 @@ footer {
 }
 
 @media (max-width: 800px) {
+    
+    .container {
+        max-width: 800px;
+    }
+
     header {
         display: flex;
         flex-direction: column-reverse;
@@ -307,4 +312,17 @@ footer {
         flex-wrap: wrap;
         align-items: center;
     }
+
+    .cta img {
+        display: none;
+    }
+
+    .cta {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
 }
