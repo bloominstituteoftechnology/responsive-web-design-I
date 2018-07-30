@@ -1,3 +1,385 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+.container{
+	width:1000px;
+	margin: auto;
+	padding: 50px;
+}
+
+.nav-div{
+	
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+
+	}
+
+nav a{
+	
+	font-size: 24px;
+	color: #c7c8c9;
+	text-decoration: none;
+	
+	margin: 40px 60px 40px 60px;
+
+}
+
+nav .logo{
+	
+	}
+
+.jumbo{
+	
+	display: flex;
+	margin: 60px 60px 60px 60px;
+}
+
+.in-button{
+	width: 1000px;
+	height: 300px;
+	margin-top: 30px;
+}
+
+.jumbo h1{
+
+	font-size: 80px;
+	text-align: center;
+	margin: 0px 0px 0px 120px;
+	height: 100px;
+	
+	
+	
+}
+
+.button{
+	
+	font-family: sans-serif;
+	text-decoration: none;
+	border: 2px solid black;
+	color: black;
+	font-size: 26px;
+	height: 30px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+
+}
+
+hr{
+	border: 1px black solid;
+}
+
+.round{
+	float: right;
+	margin: 0px 200px 0px 200px;
+	
+}
+.two-box{
+	
+}
+
+.features{
+	display: flex;
+	justify-content: space-around;
+	
+
+	
+}
+
+.features-h4{
+	
+}
+
+p{
+	width: 350px;
+	padding-left: 60px;
+	
+}
 
 
+.about{
+	
+}
+
+
+
+.img2{
+	display: flex;
+	justify-content: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.three-box{
+	display: flex;
+	justify-content: center;
+	align-content: space-between;
+}
+
+
+.contact{
+	line-height: 1.5;
+}
+
+.copyright{
+	display: flex;
+	justify-content: center;
+}
+
+.main-pic{
+	display: flex;
+	justify-content: center;
+	margin: 50px 0px 50px 0px;
+}
+
+section p{
+	width: 1000px;
+	
+}
+
+.Body{
+	
+	margin: 30px 300px 30px 200px;
+	
+}
+
+
+
+/*Tablet mode */
+@media (max-width: 800px)
+{
+	.container{
+		width: 100%;
+	}
+	nav a{
+	
+		font-size: 24px;
+		color: #c7c8c9;
+		text-decoration: none;
+		
+		margin: 40px 10px 40px 10px;
+	
+	}
+	.nav-div{
+		
+	}
+	.jumbo h1{
+		margin: 0px 0px 0px 0px;
+	}
+	nav{
+		display: flex;
+		flex-wrap: wrap-reverse;
+		justify-content: space-evenly;
+		align-items: center;
+		
+		
+		
+		
+	}
+	.logo{
+		margin: auto;
+		width: 40%;
+		
+	}
+	.round{
+		display:none;
+	}
+	.in-button{
+		width: 100%;
+		height: 530px;
+		margin-top: -60px;
+	}
+	.in-button h1{
+		font-size: 120px;
+	}
+	.img2{
+		margin: auto;
+	}
+	.middle-img{
+		width:100%;
+	}
+	hr{
+		border: 1px black solid;
+		margin: 50px 0px 60px;
+	}
+	.contact{
+		line-height: 1.5;
+		margin-bottom: 20px;
+	}
+	.copyright{
+		display: flex;
+		justify-content: center;
+		
+	}
+}
+
+@media (max-width: 500px)
+{
+	.container{
+		width: 100%;
+	}
+
+	.nav-div{
+		
+	}
+	.jumbo h1{
+		margin: 0px 0px 0px 0px;
+	}
+	nav{
+		display: flex;
+		flex-flow: column;
+		margin: 30px;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+	nav a{
+		font-size: 43px;
+		font-weight: bold;
+		color: #c7c8c9;
+		text-decoration: none;
+		width: 1500px;
+		text-align: center;
+		padding-bottom: 20px;
+		margin: 40px 60px 40px 60px;
+		border-bottom: 1px black solid;
+	}
+
+	.in-button{
+		height: 400px;;
+		margin-top: 0px;
+	}
+	
+	.jumbo{
+		margin: 20px;
+	}
+	.jumbo h1{
+
+		font-size: 80px;
+		margin: 0px 0px 0px 0px;
+		
+	}
+	body{
+		padding: 10px;
+	}
+	.logo{
+		margin-top: 0px;
+		order: -1;
+		width: 20%;
+		
+		
+	}
+	.services{
+		border-top: 1px solid black;
+		padding-top: 50px;
+	}
+	.round{
+		display:none;
+	}
+	.features{
+		display: block;
+	
+		
+	}
+	.features h4{
+		margin-left: 20px;
+		margin-top: 20px;
+		font-size: 36px;
+	}
+	section p{
+		width:350px;
+		padding-left:20px;
+		font-size: 30px;
+		padding-bottom: 40px;
+		padding-top: 40px;
+	}
+	.middle-img{
+		width:440px;
+	}
+	.three-box{
+		display: block;
+	}
+	.three-box h4{
+		margin-left: 20px;
+		margin-top: 20px;
+		font-size: 36px;
+	}
+	.contact{
+		line-height: 1.5;
+		margin-bottom: 30px;
+		font-size: 20px;
+	}
+	.copyright{
+		display: flex;
+		justify-content: center;
+		font-size: 20px;
+		
+	}
+}
