@@ -77,6 +77,11 @@ header {
     display: flex;
 }
 
+header .main-nav {
+    height: 0;
+    text-indent: -10000PX;
+}
+
 header nav {
     margin-top: 40px; 
     width: 68.86%;
@@ -193,7 +198,7 @@ footer {
 @media (max-width: 770px ) {
 
     /* header tablet */
-    
+
     .container {
         width: 100%;
     }
@@ -211,4 +216,22 @@ footer {
     header nav {
         width: 100%;
     }
+
+    /* cta tablet */
+
+    .cta {
+        /* change to column */
+        flex-direction: column;
+    }
+
+    .cta .cta-text {
+        /* center text and button */
+        margin: auto;
+    }
+
+    .cta img {
+        /* hide image */
+        display: none;
+    }
+
 }
