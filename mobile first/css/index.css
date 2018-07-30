@@ -173,3 +173,26 @@ footer {
 footer p {
   color: black;
 }
+
+@media (min-width: 800px) {
+  header nav {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  header nav a {
+    border: none;
+  }
+
+  .main-content .top-content {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .main-content .bottom-content {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
