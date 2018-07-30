@@ -76,6 +76,8 @@ h1, h2, h3, h4, h5 {
 
 }
 
+
+
 /* header */
 header {
   display: flex;
@@ -210,4 +212,39 @@ footer {
   margin: 32px 0;
   text-align: center;
   font-size: 14px;
+}
+
+/* Tablet view */
+@media (max-width: 800px) {
+
+	header {
+    display: flex;
+    flex-direction: column-reverse;
+		justify-content: center;
+		width: 100%;
+	}
+	header .logo {
+		display: flex;
+    width: 40%;
+		justify-content: center;
+	}
+	header nav {
+		align-items: flex-end;
+		width: 100%;
+		justify-content: space-around;
+	}
+	section .cta {
+   display: flex;
+	 justify-content: center;
+	 }
+	}
+}
+
+/* Mobile view */
+@media (max-width: 500px) {
+  header nav {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
 }
