@@ -151,7 +151,7 @@ nav a:active {
 .innovation {
 	justify-content: space-between;
 	align-items: center;
-	padding: 60px 0;
+	padding: 60px 3px;
 	margin-top: 42px;
 }
 
@@ -325,7 +325,7 @@ nav a:active {
 /* Tablet version */
 @media (max-width: 800px) {
   html, body {
-    width: 720px;
+    max-width: 720px;
   }
 
   /* Header */
@@ -360,6 +360,33 @@ nav a:active {
   footer .contact {
     padding: 20px 10px;
   }
+
+
+  /* Services page */
+  .serv {
+    width: 750px;
+    margin-top: 148px;
+  }
+
+  .serv div {
+    width: 100%;
+    padding-right: 4%;
+  }
+
+  /* Pins */
+  .pins {
+    justify-content: space-between;
+  }
+
+  .facts img {
+    width: 50%;
+    height: auto;
+  }
+
+  .facts p {
+    padding-right: 37px;
+  }
+
 }
 
 /* Mobile version */
@@ -434,6 +461,44 @@ nav a:active {
   footer .contact {
     padding: 13px 15px;
     font-size: 17px;
+  }
+
+  /* Services page */
+  .serv {
+    width: 463px;
+    margin-top: 0;
+  }
+
+  .serv div {
+    width: 100%;
+    padding: 0 4%;
+  }
+
+  /* Pins */
+  .pins {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pins .pin {
+    width: 88%;
+  }
+
+  /* Facts */
+  .facts {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
+
+  .facts img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 29px;
+  }
+
+  .facts {
+    padding: 0 37px;
   }
 
 }
