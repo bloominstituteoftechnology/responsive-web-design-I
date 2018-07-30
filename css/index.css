@@ -474,7 +474,8 @@ body {
 body nav {
     width: 100%;
     flex-wrap: wrap-reverse;
-    height:100px;
+    flex-direction: row;
+    height:auto;
     justify-content: space-around;
 }
 
@@ -512,16 +513,17 @@ header .left-header a {
         margin: 30px 0 0 0 ;
     }
    
-    .services-nav a{
-        width: 15%;
-        align-items: flex-end;
-        justify-content: space-between;
-        text-align: center;
+    body nav .services-img {
+        order: 5;
     }
     
-    .services-nav img {
+    nav a{
+        width: 15%;
+        align-items: flex-end;
+    }
+    
+    nav img {
         margin: 10px 0;
-    order: 5;
     }
 
     body .company-info {
@@ -534,6 +536,8 @@ header .left-header a {
 footer {
 
     text-align: center;
+}
+
 }
 @media (max-width: 500px){
   body {
@@ -568,6 +572,11 @@ body nav img{
     margin: 0 0 0 0;
     border-bottom: 1px solid black;
 }
+
+body nav .services-img {
+    order: -5;
+}
+
 
 
 
