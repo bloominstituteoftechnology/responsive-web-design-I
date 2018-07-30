@@ -1,3 +1,218 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
 
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+body {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.index .cta, .index .top-content, .index .bottom-content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.index header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.index .main-nav {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+}
+
+.index .main-nav a {
+    color: gray;
+    text-decoration: none;
+}
+
+.index .logo {
+    margin-top: 12px;
+}
+
+.index .cta {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.index .cta-text {
+    font-size: 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.index .cta-text button {
+    width: 100px;
+    align-self: center;
+}
+
+.index .top-content {
+    border-top: 1px solid black;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.index .middle-img {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.index .bottom-content {
+    border-bottom: 1px solid black;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.index .contact {
+    padding-top: 40px;
+}
+
+footer {
+    margin-top: 65px;
+    text-align: center;
+}
+
+/* CSS for Different Media */
+
+/* Tablet */
+@media (max-width: 800px) {
+    .index header {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+    }
+
+    .index .logo {
+        width: 200px;
+        margin: 0 auto;
+    }
+
+    .index .cta img {
+        display: none;
+    }
+
+    .index .main-nav {
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .index {
+        margin: 0px 20px 0px 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .index {
+        margin: 0px 0px 0px 0px;
+    }
+
+    .main-content, .contact, footer  {
+        margin: 0px 20px 0px 20px;
+    }
+
+    .index header{
+        margin-top: 20px;
+    }
+
+    .index .main-nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .index .main-nav a {
+        border-top: 1px solid black;
+        width: 100%;
+        padding: 15px 0px 15px 0px;
+        font-size: 25px;
+    }
+
+    .middle-img {
+        width: 100%;
+    }
+
+    .index .main-nav a:nth-child(6){
+        border-bottom: 1px solid black;
+    }
+
+    .index .cta, .index .top-content, .index .bottom-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .index .text-content {
+        margin-top: 20px;
+    }
+
+    footer {
+        margin-top: 20px;
+    }
+    
+
+}
