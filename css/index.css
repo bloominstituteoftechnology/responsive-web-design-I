@@ -155,9 +155,10 @@ header .logo {
    line-height: 18px;
 }
 
-.main-content .top-content {
+.main-content .top-2-col {
     display: flex;
     justify-content: space-around;
+    margin-left: 4%;
 }
 
 .main-content .middle-img {
@@ -165,12 +166,13 @@ header .logo {
     margin: 30px auto;
 }
 
-.main-content .bottom-content {
+.main-content .bottom-3-col {
     display: flex;
     justify-content: space-around;
+    margin-left: 4%;
 }
 
-.main-content .bottom-content p {
+.main-content .bottom-3-col p {
     padding-right: 20px;
 }
 
@@ -233,5 +235,23 @@ footer {
         /* hide image */
         display: none;
     }
+
+    /* main content tablet */
+
+    .main-content .top-2-col .text-content {
+        padding: 0 4%;
+
+    }
+
+    .main-content .top-2-col .text-content p {
+        padding-right: 2%;
+    }
+
+    .main-content img {
+        width: 100%;
+    }
+
+
+
 
 }
