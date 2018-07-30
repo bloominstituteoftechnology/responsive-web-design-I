@@ -60,7 +60,10 @@ h1, h2, h3, h4, h5 {
 
 .container {
     width: 880px;
-    margin: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 /* Header Styles */
@@ -166,80 +169,128 @@ footer {
     margin: 40px 0 20px;
 }
 
-/* Services Styles */
-
-.services-content {
+@media (max-width: 800px) {
+  .container {
+    width: 740px;
     display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  header {
+    flex-direction: column-reverse;
     flex-wrap: wrap;
-    justify-content: space-between;
-    line-height: 1.3;
+  }
+
+  header nav a {
+    margin-right: 70px;
+    margin-left: 10px;
+  }
+
+  header .logo {
+    align-self: center;
+    margin: 30px 0 0 11px;
+  }
+
+  .cta img {
+    display: none;
+  }
+
+  .cta {
+    justify-content: center;
+    margin-left: 100px;
+  }
+
+  .main-content .top-content {
+    justify-content: space-around;
+  }
+
+.main-content .top-content .text-content {
+  margin: 0px 15px;
 }
 
-.services-content .services-header-img {
-    margin: 20px 0;
+  .main-content img {
+    width: 740px;
+  }
+
+  .bottom-content .text-content {
+    margin: 0px 15px;
+  }
+
+  .contact {
+    margin-left: 15px;
+  }
 }
 
-.services-content h1 {
-    font-size: 26px;
-    margin: 10px 0;
-}
-
-.services-content .services-text {
- border-bottom: 1px solid black;
- padding-bottom: 40px;
- margin-bottom: 20px
-}
-
-.services-content .card {
-    padding: 20px;
-    border: 1px solid black;
-    width: 420px;
-    background: whitesmoke;
-    margin: 20px 0;
-}
-
-.services-content .card button {
-    padding: 10px 40px;
-    margin-top: 20px;
-    cursor: pointer;
-    background: white;
-    border-radius: 5px;
-    border: 1px solid black;
-}
-
-.services-content .card button:hover {
-    background: black;
-    color: white;
-} 
-
-.services-content .services-info ul {
-    margin: 20px;
-}
-
-.services-content .services-info ul li{
-    list-style: square;
-    padding: 5px;
-}
-
-.services-content .services-info {
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    border-top: 2px solid black; 
-    margin: 20px 0 35px 0;
-    padding-top: 40px; 
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  header {
+    flex-direction: column-reverse;
+    align-content: space-between;
+  }
+
+  header nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap
+  }
+
+  header nav a{
+    width: 100%;
+    font-size: 20px;
+    padding: 20px 0px;
+    border-top: 1px solid #b0b0b0;
+    text-align: center;
+  }
+
+  header nav a:last-child {
+    border-bottom: 1px solid #b0b0b0;
+  }
+
+  header .logo {
+    margin: 20px 0px -18px 11px;
 }
 
-.services-content .services-info .facts {
-  width: 400px;
-  margin: 0 60px 20px 0;
+  .cta img {
+    display: none;
+  }
+
+  .cta {
+    justify-content: center;
+  }
+
+  .main-content {
+    margin: 70px 20px;
+  }
+
+  .main-content .top-content {
+    flex-direction: column
+  }
+
+.main-content .top-content .text-content {
+  margin: 15px 0px;
 }
 
-.services-content .services-info .facts p {
-  margin-bottom: 20px;
-}
+  .main-content img {
+    width: 440px;
+  }
 
-.services-content .services-info .services-info-img {
-  width: 420px;
-  height: 300px;
-}
+  .bottom-content {
+    flex-direction: column;
+  }
 
+  .bottom-content .text-content {
+    margin: 15px 0px;
+  }
+
+  .contact {
+    margin-left: 20px;
+  }
+}
