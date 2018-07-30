@@ -23,7 +23,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
     vertical-align: baseline;
-    border: 1px solid red; 
+    /* border: 1px solid red;  */
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -253,10 +253,14 @@ li {
 
     .facts .facts-content {
         width: 80%; 
-        margin-left: 0; 
+        margin: 0; 
         display: flex; 
         flex-direction: column; 
         align-items: center; 
+    }
+
+    .facts .facts-content p {
+        margin: 0;
     }
 
 }
@@ -305,6 +309,7 @@ li {
 
     .facts .facts-content p {
         width: 100%; 
+        margin: 0; 
     }
 
     .facts .services-info-img {
