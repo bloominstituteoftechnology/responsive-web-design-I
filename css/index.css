@@ -1,3 +1,397 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+
+.main-container {
+
+	margin:0 10%;
+}
+
+
+
+header {
+
+	width: 100%;
+	height: auto;
+	display: flex;
+}
+
+.nav {
+	width: 690px;
+	/* display: flex; */
+	/* justify-content: flex-start; */
+	flex-wrap: wrap;
+  	margin-top: 40px;
+  	margin-left: 20px;
+}
+.nav .nav-bar-item {
+	/* make look like button */
+	text-decoration: none;
+	padding: 15px;
+	width: 120px;
+	height: 50px;
+	text-align: center;
+	color: gray;
+}
+
+.nav-bar-item:hover {
+	background: gray;
+	color: white;
+}
+.logo {
+	width: 250px;
+	height: 50px;
+	/* position: relative;
+	left: 50px;
+	top: 0px; */
+	margin: 50px;
+	border: 5px solid red;
+}
+
+
+
+.cta {
+	margin-top: 10%;
+	width: 100%;
+	display: flex;
+	flex-direction: center;
+}
+
+
+.call-to-action {
+
+	display: inline-block;
+	width: 100%;
+}
+
+.cta-text {
+
+	font-size: 100px;
+	width: 370px;
+	text-align: center;
+	vertical-align: middle; /*//why does this not work?*/
+	margin-left: 25px;
+	display: block;
+
+}
+
+
+.cta-left {
+
+	width: 60%;
+	padding-left:15%;
+	display:inline-block;
+
+}
+
+.cta-button {
+	color: black;
+	border: 1px solid black;
+	text-decoration: none;
+	display: inline-block;
+
+	/* make look like button */
+	padding: 10px;
+	width: 150px;
+	height: 40px;
+	text-align: center;
+	position: relative;
+	left: 115px;
+	margin-left: 10px;
+
+
+}
+
+.cta-button:hover {
+	background: black;
+	color: white;
+}
+
+.first-image {
+	display: inline-block;
+
+	float: right;
+	width: 40%;
+	position: relative;
+	bottom: 40px;
+}
+
+.first-image img {
+	height: 400px;
+	width: auto;
+}
+
+.description-container {
+
+	display: flex;
+	margin-bottom: 20px;
+	justify-content: center;
+}
+
+.description{
+	width: 45%;
+	margin: 40px 10px;
+
+
+}
+
+.middle-img {
+	width: 90%;
+	height: 150px;
+	margin: 0 25px;
+	display: flex;
+	justify-content: center;
+}
+
+
+.divider {
+	border: 1px solid black;
+	margin: 10px;
+}
+
+footer {
+	margin-top: 50px;
+}
+
+.copyright {
+	text-align: center;
+	margin-bottom:50px;
+}
+
+
+
+.services-header-img {
+	height: 200px;
+	width: 85%;
+	margin: 0;
+}
+
+.services-description {
+	display: block;
+	width: 85%
+	padding: 25px;
+	margin: 40px 0px;
+}
+
+.services-title {
+	font-size: 36px;
+}
+
+.content {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+
+}
+
+.services-block {
+	display: flex;
+	flex-direction: column;
+	height:270px;
+	width:350px;
+	background: #D3D3D3;
+	border: 2px solid black;
+	padding: 15px;
+	margin: 20px;
+
+}
+
+.block-button {
+
+	text-decoration: none;
+	padding: 5px;
+	text-align: center;
+	width: 150px;
+	height: 30px;
+	text-align: center;
+	border: 1px solid black;
+	color: black;
+	background: white;
+	margin: 20px 0px;
+
+
+}
+
+.extra-facts {
+	display: flex;
+	flex-flow: row wrap;
+
+	margin-top: 40px;
+}
+
+.extra-facts h2 {
+	font-size: 24px;
+display: flex;
+margin-top: 10px;
+margin-bottom: 20px;
+}
+
+.extra-facts-text {
+	width: 40%;
+}
+
+.extra-facts-text ul {
+	margin-top: 20px;
+	margin-left: 30px;
+    list-style-type: circle;
+
+}
+
+.services-info-img {
+	height: 350px;
+	width: 400px;
+	margin-left: 200px;
+	align-self: flex-end;
+}
+
+
+
+.footer-services {
+	padding: 50px;
+	height: 100px;
+	display: flex;
+	margin: 0 auto;
+}
+
+.footer-services p {
+	margin-top: 200px;
+	margin: 0 auto;
+}
+
+
+@media only screen and (max-width: 800px) {
+
+
+	.main-container {
+		margin: 0px;
+	}
+	header {
+		background-color: lightblue;
+
+	}
+	.logo {
+		order: -1;
+		width: 500px;
+		border: 5px solid yellow;
+	}
+	
+	.call-to-action {
+		width: 800px;
+	}
+
+	.cta-text {
+		justify-content: center;
+	}
+	.first-image {
+		display:none;
+	}
+
+	footer {
+		margin-left: 15px
+	}
+}
+
+
+
+
+
+
+@media only screen and (max-width: 500px) {
+
+
+	.main-container {
+		width: 400px;
+		margin: 0px;
+	}
+	header {
+		background-color: lightcoral;
+	}
+
+	.nav {
+		display: flex;
+		flex-direction: column;
+}
+
+	.call-to-action {
+		width: 400px;
+	}
+.description-container {
+	margin-left: 25px;
+	flex-direction: column;
+}
+
+.description {
+	margin: 10px;
+	width: 80%;
+}
+
+footer {
+	margin-left: 25px
+}
+}
 
 
