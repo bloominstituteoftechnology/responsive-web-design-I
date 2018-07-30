@@ -82,13 +82,13 @@ header {
 header nav {
   display: flex;
   width: 80%;
-  /* vertical-align: top; */
+  justify-content: space-evenly;   
   margin-top: 35px;
 }
 
 header nav a {
   /* display: inline-block; */
-  margin-right: 65px;
+  /* margin-right: 65px; */
   font-size: 14px;
   color: gray;
   text-decoration: none;
@@ -192,9 +192,10 @@ header .logo {
 }
 
 .main-content .bottom-content .text-content {
-  width: 275px;
+  width: 100%;
   display: inline-block;
-  margin-right: 12px;
+  margin-bottom: 30px;
+  /* margin-right: 12px; */
 }
 
 .main-content .bottom-content .text-content:last-child {
@@ -295,14 +296,93 @@ footer {
 
 /*Media Queries*/
 
+/*Mobile*/
 @media (max-width:500px) {
 
+    body {
+        border: 1px solid gray;
+    }
+    .container {
+        max-width: 90%;
+    }
+
+    header {
+        width:100%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-shrink: 1;
+        width: 100%;
+        margin-top: 35px;
+    }
+
+    header .logo {
+        width:60%;
+    }
+
+    header nav a {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        border-bottom: 1px solid gray;
+        border-bottom-width: 100%;
+
+    }
+
+    .cta img {
+        display: none;
+    }
+
+    .cta {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .main-content .top-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-content: center;
+        padding: 0 10px;
+    }
+
+    .main-content .top-content .text-content {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .main-content .middle-img {
+        height: 100px;
+        margin-top: 45px;
+      }
+      
+    .main-content .bottom-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-top: 37px;
+        padding: 0 10px;
+    }
 }
 
-@media (max-width: 800px) {
+/*Tablet*/
+@media (min-width: 501px) and (max-width: 800px) {
     
     .container {
-        max-width: 600px;
+        max-width: 90%;
     }
 
     header {
@@ -315,8 +395,14 @@ footer {
 
     header nav {
         display: flex;
+        justify-content: space-evenly;
+        flex-shrink: 1;
         width: 100%;
         margin-top: 35px;
+    }
+
+    header nav a {
+
     }
 
     .cta img {
