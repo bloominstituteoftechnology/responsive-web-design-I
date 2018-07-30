@@ -266,5 +266,47 @@ footer {
 
 /* CSS for mobile below */
 @media (max-width:500px) {
+  .container  {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 
+  header  {
+    display: flex;
+  }
+
+  header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+  }
+
+  header .logo  {
+    margin: 20px 0px;
+  }
+  header nav a {
+    margin: 0px;
+    padding: 20px 0px;
+    border-top: 1px solid lightgray;
+    width: 400px;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .cta  {
+    border-top: 1px solid lightgray;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .cta .cta-text {
+    margin-top: 25px;
+    padding-top: 20px;
+  }
+
+  
 }
