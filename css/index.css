@@ -1,3 +1,656 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+
+/* Your code starts here! */
+
+
+* {
+	font-family: 'Titillium Web', sans-serif;
+}
+
+
+
+/* Nav bar Styling */
+
+.container {
+	margin: 0 auto;
+	width: 960px;
+}
+
+/* header {
+	display: flex;
+	height: 10vh;
+	position: fixed;
+	z-index: 2;
+	top: 0;
+	width: 960px;
+	background-color: lightgrey;
+	opacity: 50%;
+	animation: yourAnimationTwo 1s forwards 0s ease-out;
+	justify-content: space-evenly;
+}
+
+@keyframes yourAnimationTwo {
+    0%{
+        transform: rotate(0) translateX(20%) translateY(0);
+        opacity: 0;
+        }
+    100%{
+        transform: rotate(0) translateX(0) translateY(0);
+        opacity: 1;
+        }
+}
+
+header .navbar nav {
+	margin: 22px;
+	
+}
+
+header .navbar nav a {
+	font-family: 'Titillium Web', sans-serif;
+	color: Grey;
+	font-size: 14px;
+	text-decoration: none;
+	padding: 0 20px;
+	justify-content: flex-end;
+} */
+
+/* header .navbar nav a:hover {
+	color: white;
+	background-color: black;
+	font-size: 16px;
+} */
+
+/* header img {
+	margin: 15px;
+	align-self: center;
+} */
+
+
+/* End of Navbar Styling */
+
+
+
+
+
+
+/* Banner w/ image styling */
+
+
+
+.banner-content {
+	margin-top: 10%;
+	height: 60vh;
+	width: 100%;
+	margin-bottom: 10%;
+	animation: yourAnimation 2s forwards 0s ease;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+}
+
+@keyframes yourAnimation{
+    0%{
+        transform: rotate(0) translateY(-15%);
+        opacity: 0;
+        }
+    100%{
+        transform: rotate(0) translateY(0);
+        opacity: 1;
+        }
+}
+
+.column {
+	justify-content: space-evenly;
+	width: 50%;	
+}
+
+.left-column {
+	text-align: center;
+	align-self: center;
+	padding-top: 6%;
+}
+
+.right-column {
+	display: flex;
+	align-content: center;
+}
+
+.right-column img {
+	justify-content: flex-end;
+}
+
+
+
+.banner-content h1 {
+	text-align: center;
+	font-size: 400%;
+	align-self: center;
+	justify-content: center;
+}
+
+.banner-content .column a {
+	color: black;
+	text-decoration: none;
+	border: 1px solid black;
+	padding: 0px 50px;
+	font-size: 14px;
+	align-self: center;
+}
+
+.banner-content .column a:hover {
+	font-size: 16px;
+	background-color: lightgrey;
+}
+
+
+/* End of banner w/ image styling */
+
+
+
+
+
+/*TODO: Fix Image Placement ---> DONE */
+
+
+
+
+
+
+
+
+/* Two Column of Text Styling */
+
+
+.two-column {
+	border-top: 3px solid black;
+	padding-bottom: 10%;
+	animation: yourAnimation 2s forwards 0s ease;
+	display: flex;
+	padding-top: 6%;
+}
+
+@keyframes yourAnimation{
+    0%{
+        transform: rotate(0) translateY(-15%);
+        opacity: 0;
+        }
+    100%{
+        transform: rotate(0) translateY(0);
+        opacity: 1;
+        }
+}
+
+.column-one {
+	padding-right: 8%;
+}
+
+.left-text {
+	padding-right: 22%;
+}
+
+.right-text {
+	padding-right: 10%;
+}
+
+.hero-image img {
+	padding-bottom: 8%;
+}
+
+
+
+/* End of Two Column Text */
+
+
+
+.hero-image {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+
+/* Start of Three Column Styling */
+
+.three-part-column {
+	padding-bottom: 20%;
+	border-bottom: 1px solid black;
+}
+
+.three-column {
+	float: left;
+	width: 33.3%;
+	padding-right: 20px;
+}
+
+/* End of Three Column */
+
+
+address {
+	padding: 50px 0px;
+}
+
+footer {
+	text-align: center;
+	padding-bottom: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*First section styling*/
+
+.services {
+	padding-top: 10%;
+	margin: 0 auto;
+}
+
+.banner-image {
+	display: flex;
+	justify-content: flex-start;
+	padding-bottom: 3%
+}
+
+.banner-image img {
+	width: 100%;
+	background-position: center;
+}
+
+.services-text {
+	padding-bottom: 5%;
+	border-bottom: 5px solid black;
+}
+
+
+/*End of First Section Styling*/
+
+
+
+/* Boxes Section */
+.boxes-container {
+	border-bottom: 5px solid black;
+	padding-bottom: 6%;
+}
+
+.flex-doubles {
+	display: flex;
+	justify-content: space-between;
+}
+
+.flex-doubles .rows {
+	width: 50%;
+	padding-top: 50px;
+	padding-right: 50px;
+	padding-left: 0px;
+}
+
+.rows-right {
+	width: 50%;
+	padding-top: 50px;
+	padding-left: 50px;
+}
+
+.boxes {
+	padding: 20px 50px 50px 20px;
+	border: 1px solid black;
+	background-color: #F4F3F4;
+	
+}
+
+
+
+.boxes a {
+	border: 1px solid black;
+	border-radius: 5%;
+	padding: 5px 40px;
+	background-color: white;
+	color: black;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+.boxes a:hover {
+	font-size: 16px;
+	color: white;
+	background-color: black;
+}
+
+/* Boxes Section END */
+
+.facts-section {
+	display: flex;
+	padding-top : 5%;
+	padding-bottom: 10%;	
+}
+
+.facts {
+	padding-right: 5%;
+	width: 50%;
+	flex: 0.5;
+}
+
+.facts-section img {
+	flex: 0.5;
+}
+
+.facts-section ul {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	list-style: disc;
+	padding-left: 16px;
+}
+
+.facts-section ul li {
+	padding-bottom: 4%;
+}
+
+
+
+@media (max-width: 800px) {
+    .container {
+        background-color: white;
+        overflow-x: hidden;
+        width: 100%;
+        padding: 0px 20px;
+    }
+    header {
+        background-color: white;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
+    .banner-content .column .left-column {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         padding-left: 370px;
+    }
+
+    .column .right-column {
+        display: none;
+    }
+
+    header img{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    header .navbar {
+        display: flex;
+        justify-content: space-evenly;        
+    }
+
+    header .navbar a {
+        padding-right: 30px;
+        padding-left: 30px;
+        color: grey;
+        text-decoration: none;
+    }
+
+    .two-column {
+        padding-left: 20px;
+    }
+
+    .hero-image {
+        padding-bottom: 50px;
+    }
+
+    .three-part-column {
+        padding-left: 20px;
+        border-bottom: 3px solid black;
+        padding-bottom: 35%;        
+    }
+
+    .three-column p {
+        padding-right: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 500px) {
+    .container {
+        width: 100%;
+        overflow-x: hidden; 
+        background-color: white;
+        padding: 0px;
+    }
+
+    header {
+        display: block;
+        background-color: white;
+        height: 10vh;
+        padding-bottom: 70vh;
+    }
+
+    header .navbar {
+        display: block;
+    }
+    
+    header .navbar nav {
+
+    }
+    
+    header .navbar nav a {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        color: grey;
+        margin: 20px 0px;
+        font-size: 20px;
+        border-bottom: 1px solid grey;
+        padding-bottom: 20px;
+    }
+    
+    header img {
+        padding-right: 50%;
+        padding-left: 28%;
+        border-bottom: 1px solid grey;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+
+    .banner-content .column .left-column {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        padding-left: 175px;        
+    }
+
+    .banner-content .left-column h1 {
+        text-align: center;
+        margin-left: 5%;
+        padding-left: 70px;
+    }
+
+    .banner-content .left-column a {
+        text-align: center;
+        align-self: flex-start; 
+    }
+
+    .banner-content .right-column img {
+        display: none;
+        padding-left: 50px;
+    }
+
+    .two-column {
+        flex-direction: column;
+        padding-top: 6%;
+        flex-wrap: wrap;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .column-one {
+        padding-right: 0%;
+        padding-bottom: 20px;
+    }
+
+    .hero-image img {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .three-part-column {
+        display: flex;
+        flex-direction: column;
+        border-bottom: 3px solid black;
+        margin: 0 5%;
+    }
+
+    .three-column {
+        width: 100%;
+        padding-left: 0px;
+        padding-top: 20px;
+    }
+
+    address {
+        padding-left: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
