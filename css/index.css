@@ -67,11 +67,15 @@ h1, h2, h3, h4, h5 {
 /* Your code starts here! */
 
 section, img.middle-img, address, header {
-	margin-bottom: 40px;
+	margin-bottom: 34px;
+}
+
+p {
+	font-size: 17px;
 }
 
 h1 {
-	font-size: 80px;
+	font-size: 73px;
 	margin-bottom: 30px;
 }
 
@@ -81,6 +85,10 @@ h2 {
 
 div {
 	display: inline-block;
+}
+
+hr {
+	display: none;
 }
 
 .container {
@@ -94,28 +102,31 @@ header {
     width: 100%;
 	top: 0;
 	left: 0;
-	background-color:dodgerblue;
-	margin:none;
+	background-color:whitesmoke;
 	z-index: 5;
 }
 
 /* Navigation */
-.navcontainer {
-	display: block;
-	width: 100%;
-	margin: auto;
-	max-width: 876px;
+header .navcontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: row-reverse;
+    width: 100%;
+    margin: auto;
+    max-width: 876px;
+    padding-top: 26px;
 }
 
 header nav{
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
-	padding: 40px 0;
+	padding-bottom: 6px;
+	width: 68.5%;
 }
 
 header nav a {
-	color: whitesmoke;
+	color: silver;
 	cursor: pointer;
 	text-decoration: none;
 	text-shadow:#FFF 0 0 0px;
@@ -129,32 +140,32 @@ header nav a:hover {
 
 
 header img {
-	margin-left:20px;
-	align-self: center;
+    vertical-align: bottom;
 }
 
 
 /* Index Page */
 /* Top Banner */
 
-.banner {
+.container .banner {
 	border-bottom: 1px solid #000;
 	padding-top: 40px;
-	padding-bottom: 80px;
-	margin-top: 119px;
+	padding-bottom: 74px;
+	margin-top: 97px;
 	display: flex;
 	justify-content: space-between;
 	align-content: center;
 }
 
-.banner div{
+.container .banner div{
 	display:inline-block;
 	text-align: center;
 	padding-top: 50px;
+	padding-left: 60px;
     width: 56%;
 }
 
-.banner a{
+.container .banner a{
     text-decoration: none;
     padding: 5px 45px;
     color: #000;
@@ -166,7 +177,7 @@ header img {
 	box-shadow .2s, text-shadow .2s;
 }
 
-.banner a:hover, .main-content section a:hover{
+.container .banner a:hover, .main-content section a:hover{
 	background-color: #000;
 	color: #FFF;
 	text-shadow:lightgreen 0 0 10px;
@@ -182,7 +193,7 @@ header img {
 }
 
 .content-1 div {
-	width: 49%;
+	width: 50%;
 }
 
 img.middle-img {
@@ -199,7 +210,7 @@ img.middle-img {
 }
 
 .content-2 div {
-    width: 31%;
+    width: 33%;
     padding-bottom: 40px;
 }
 
@@ -224,7 +235,7 @@ address p a:hover{
 footer {
 	display: flex;
 	justify-content: center;
-	margin: 50px;
+	margin: 30px;
 	font-size: 13px;
 }
 
@@ -232,7 +243,7 @@ footer {
 
 .services-header-img{
 	display: block;
-	margin-top: 119px;
+	margin-top: 97px;
 	margin-bottom: 40px;
 	max-width: 876px;
 }
@@ -325,3 +336,172 @@ footer {
 	.vision section h1{
 		text-align: center;
 	}
+
+/* Tablet */
+
+@media (max-width: 768px){
+
+	.container {
+		padding: 0 5px;
+	}
+
+	section, address, header {
+	margin-bottom: 37px;
+	}	
+
+	header .navcontainer{
+		align-items: center;
+		flex-direction: column;
+		padding-top: 30px;
+	}
+
+	header .navcontainer a.logo {
+		margin-bottom: 37px;
+	}
+
+	header .navcontainer nav {
+		width: 96%;
+		padding-bottom:20px;
+	}
+
+	.container .banner {
+		justify-content: space-around;
+		margin-top: 152px;
+		padding-bottom: 85px;
+	}
+
+	.container .banner div {
+		padding: 0;
+		padding-right: 40px;
+	}
+
+	.container .banner div a {
+		padding: 6px 50px;
+	}
+
+	.container .banner img {
+		display: none;
+	}
+
+	.content-1 div {
+		width: 47%;
+	}
+
+	img.middle-img {
+		width: 100%;
+	}
+
+	.content-2 {
+		justify-content: space-around;
+	}
+
+	.content-2 div {
+		width: 31%;
+		padding-right: 20px;
+	}
+
+	section.contact {
+		padding-left: 10px;
+	}
+}
+
+/* Mobile */
+
+@media (max-width: 500px) {
+
+	hr {
+		display: block;
+		color: #000;
+		background-color: #000;
+		height: 2px;
+		width: 100%;
+		border: none;
+	}
+
+	header {
+		position: relative;
+	}
+	
+	.container{
+		padding: 0;
+	}
+
+	section, address, header {
+		margin-bottom: 30px;
+	}
+
+	header .navcontainer {
+		padding-top: 20px;
+	}
+
+	header .navcontainer a.logo {
+		margin-bottom: 20px;
+	}
+
+	header .navcontainer nav {
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+	}
+
+	header .navcontainer nav a {
+		width: 100%;
+		height: 61px;
+		padding: 21px 0;
+		border-bottom: 1px solid black;
+		text-align: center;
+		font-size: 23px;
+	}
+
+	header .navcontainer nav a:first-child {
+		border-top: 1px solid black;
+	}
+
+	.container .banner {
+		margin-top: 0;
+		padding: 0;
+		border: none;
+	}
+
+	.container .banner div {
+		width: 100%;
+		padding: 0;
+	}
+
+	.mainercontent{
+		width: 90%;
+		margin: auto;
+	}
+
+	.content-1, .content-2{
+		flex-wrap: wrap;
+	}
+
+	.content-1 {
+		margin-top: 85px;
+		margin-bottom: 10px;
+	}
+
+	.content-1 div {
+		width: 100%;
+		margin-bottom: 35px;
+		padding-bottom: 0;
+	}
+
+	.content-1 div:first-child{
+		border-top: 2px solid black;
+		padding-top: 50px;
+	}
+
+	.content-2 div{
+		width: 100%;
+		margin-bottom: 42px;
+		padding-bottom: 0;
+
+	}
+
+	section.contact {
+		padding-left: 0;
+	}
+
+}
