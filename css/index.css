@@ -152,10 +152,6 @@ body {
 /* mobile first */
 
 @media (max-width: 500px){
-  .container {
-    max-width: 500px;
-    margin: 1rem 0;
-  }
 
   header .nav{
     display: flex;
@@ -220,23 +216,6 @@ body {
     margin: 20px;
     border-top: 2px solid black;
   }
-
-  .upper-middle div, .lower-middle div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* margin: 0 20px; */
-  }
-
-  .upper-middle div h2, .lower-middle div h2 {
-    font-size: 20px;
-    font-weight: bold;
-    margin: 10px 0 20px 0;
-  }
-
-  .upper-middle div p, .lower-middle div p {
-    margin: 0 0 20px 0;
-  }
   
   .middle-img {
     background: url("../img/mid-page-accent.jpg") no-repeat center;
@@ -245,18 +224,6 @@ body {
     margin: 20px;
   }
 
-  .lower-middle {
-    border-bottom: 2px solid black;
-  }
-
-  .contact address h2 {
-    font-size: 20px;
-    font-weight: bold;
-    margin: 20px 0;
-  }
-  .contact address p {
-    margin: 5px 0;
-  }
 }
 
 /* tablet view */
@@ -316,9 +283,6 @@ body {
 body {
   display: flex;
   justify-content: center;
-}
-
-.container{
   margin: 20px;
 }
 
@@ -366,6 +330,9 @@ header {
   border-top: 1px solid black;
   margin: 20px 10px;
 }
+.upper-middle div {
+  margin: 0 20px;
+}
 .upper-middle h2 {
   font-weight: bold;
   font-size: 20px;
@@ -375,25 +342,25 @@ header {
   background: url("../img/mid-page-accent.jpg") no-repeat center;
   background-size: cover; 
   height: 100px;
-  margin: 20px 10px;
+  margin: 0px 20px;
 }
 .lower-middle {
   display: flex;
   border-bottom: 2px solid black;
-  margin: 20px 10px;
+  margin: 20px 0px;
+  padding-bottom: 20px;
 }
 .lower-middle div {
-  margin: 20px 10px;
+  margin: 0 20px;
 }
 .lower-middle h2 {
   font-weight: bold;
   font-size: 20px;
   margin: 20px 0;
 }
-.contact {
-  margin: 20px;
+.contact{
+  margin: 0 20px;
 }
-
 .contact address h2 {
   font-size: 20px;
   font-weight: bold;
