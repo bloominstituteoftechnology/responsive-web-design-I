@@ -326,6 +326,17 @@ li {
     .main-content .bottom-content .text-content {
         width: 30%;
     }
+    .sections-content1{
+        justify-content: space-around;
+    }
+    .topicBox {
+        width: 45%;
+        padding: 20px;
+        height: auto;
+    }
+    .services-cta .services-header-img{
+        width: 100%;
+    }
 }
 
 @media (max-width: 500px){
@@ -384,4 +395,28 @@ li {
     .contact{
         margin-top: 25px;
     }
+    .services-cta {
+        margin-top: 5px;
+        border-bottom: 2px solid black;
+        border-top: 1px solid black;
+        padding: 20px;
+    }
+    .sections-content1{
+        justify-content: space-around;
+        flex-flow: column nowrap;
+    }
+    .topicBox {
+        width: 100%;
+    }
+    .bottomContent{
+        padding: 15px;
+    }
+    .bottomContent .ourServices{
+        width: 50%;
+    }
+    .bottomContent .services-info-img{
+        width: 50%;
+        height: fit-content;
+    }
 }
+
