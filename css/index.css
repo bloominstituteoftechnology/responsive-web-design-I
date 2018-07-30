@@ -194,43 +194,41 @@ header .logo {
       }
 
     header {
+        background: red;
         flex-wrap: wrap;
-        justify-content: center;
-        /* height: 120px;
-        margin-top: 15px; */
+    
     }
 
     header .logo {
         order: -1;
         display: block;
-        margin: 50px auto 0;
+        margin: 30px auto 0;
     }
 
     header nav {
+        background: blue;
         width: 800px;
-        padding: 0 30px;             
+        display: flex;
+        flex: wrap;      
+        margin: 15px;  
     }
 
     header nav a {
-        margin-right: 65px;
+        margin: 20px;
         font-size: 15px;
         color: gray;
         text-decoration: none;
      }
     
    .cta {
-    display: flex;
-    justify-content: center;
-    margin-top: 35px;
+    background: green;
+     margin-top: 35px;
+     padding: 10px;
    }
   
     .cta-text {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        font-size: 75px;
-        text-align: center;
-      padding: 20px;
     }
 
     .cta .snippet {
@@ -238,45 +236,32 @@ header .logo {
     }
 
    .cta .ctatext button {
-        background: white;
-        margin-top: 0px;
-        padding: 100px;
-        font-size: 20px;
-        border: 1px solid black;
-        cursor: pointer;
+      margin: 50px;
       }
     
-    
-   
-    
-  
-      .cta .cta-text button:hover {
-        background: black;
-        color: white;
-      }
         
       .main-content {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        border-top: 1px solid black;
-        margin: 30px 20px 30px 20px;
-        
+      margin: 45px 10px 40px 10px;
+      padding: 25px 0 auto;
+        background: red;
       }
     
       .main-content .top-content {
-          display: flex;
-          justify-content: space-around;
-          
-          
+     background: blue;
+      padding: 0;
+      margin: 0;               
       }
     
-     
+     .main-content .top-content .text-content {
+        width: 100%;
+        margin: 5px;
+         background: green;
+         padding: 0px;
+     }
     
     
       .main-content .middle-img {
-        margin: 30px 0 25px 0;
+        margin: 35px 0 21px 0;
         height: 150px;
       }
     
@@ -284,9 +269,14 @@ header .logo {
         display: flex;
         justify-content: center;
         align-items: flex-start;
-        padding: 20px;
+        margin-top: 10px;
+        padding: 25px;
     }
   
+    .main-content .bottom-content .text-content {
+        margin: 5px;
+        padding: 0px;
+    }
     
       .contact {
  
@@ -339,6 +329,8 @@ header .logo {
         padding: 20px 50px 20px 50px;
         text-align: center;
     }
+
+
     
    /* .cta {
     display: flex;
