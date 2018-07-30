@@ -1,3 +1,327 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+	font-family: 'Share Tech', sans-serif;
+	background-color:whitesmoke;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+section, img.middle-img, address, header {
+	margin-bottom: 40px;
+}
+
+h1 {
+	font-size: 80px;
+	margin-bottom: 30px;
+}
+
+h2 {
+	font-size: 30px;
+}
+
+div {
+	display: inline-block;
+}
+
+.container {
+	margin: auto;
+	max-width: 876px;
+}
+
+/* Header */
+header {
+	position: fixed;
+    width: 100%;
+	top: 0;
+	left: 0;
+	background-color:dodgerblue;
+	margin:none;
+	z-index: 5;
+}
+
+/* Navigation */
+.navcontainer {
+	display: block;
+	width: 100%;
+	margin: auto;
+	max-width: 876px;
+}
+
+header nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 40px 0;
+}
+
+header nav a {
+	color: whitesmoke;
+	cursor: pointer;
+	text-decoration: none;
+	text-shadow:#FFF 0 0 0px;
+	transition: color .2s, text-shadow .2s;
+}
+
+header nav a:hover {
+	color: lawngreen;
+	text-shadow:lightgreen 0 0 2px;
+}
 
 
+header img {
+	margin-left:20px;
+	align-self: center;
+}
+
+
+/* Index Page */
+/* Top Banner */
+
+.banner {
+	border-bottom: 1px solid #000;
+	padding-top: 40px;
+	padding-bottom: 80px;
+	margin-top: 119px;
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+}
+
+.banner div{
+	display:inline-block;
+	text-align: center;
+	padding-top: 50px;
+    width: 56%;
+}
+
+.banner a{
+    text-decoration: none;
+    padding: 5px 45px;
+    color: #000;
+	border: 1px solid #000;
+	background-color: #FFF;
+	text-shadow:lightgreen 0 0 0px;
+	box-shadow:lightgreen 0 0 0px;
+	transition: background-color .2s, color .2s, 
+	box-shadow .2s, text-shadow .2s;
+}
+
+.banner a:hover, .main-content section a:hover{
+	background-color: #000;
+	color: #FFF;
+	text-shadow:lightgreen 0 0 10px;
+	box-shadow:lightgreen 0 0 10px;
+}
+
+
+/* Top Content */
+
+.content-1 {
+	display: flex;
+	justify-content: space-around;
+}
+
+.content-1 div {
+	width: 49%;
+}
+
+img.middle-img {
+	display: block;
+}
+
+
+/* Bottom Content */
+
+.content-2 {
+	border-bottom: 1px solid #000;
+	display: flex;
+	justify-content: space-between;
+}
+
+.content-2 div {
+    width: 31%;
+    padding-bottom: 40px;
+}
+
+
+/* Address */
+
+address p {
+	margin-bottom: 20px;
+}
+
+address p a{
+	text-decoration: none;
+	color: #000;
+}
+
+address p a:hover{
+	color: grey;
+}
+
+/* Footer */
+
+footer {
+	display: flex;
+	justify-content: center;
+	margin: 50px;
+	font-size: 13px;
+}
+
+/* Services Page Specific */
+
+.services-header-img{
+	display: block;
+	margin-top: 119px;
+	margin-bottom: 40px;
+	max-width: 876px;
+}
+
+.intro {
+	padding-bottom: 40px;
+	border-bottom: 1px solid #000;
+}
+
+.main-content {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	border-bottom: 2px solid #000;
+}
+
+.main-content section{
+	background-color: silver;
+	border: 1px solid #000;
+	padding: 20px;
+	width: 420px;
+	margin-bottom: 35px;
+}
+
+.main-content section a {
+	width: 160px;
+	border: 1px solid #000;
+	border-radius: 5px;
+	padding: 10px 0;
+	display: block;
+	text-align: center;
+	background: whitesmoke;
+	color: #000;
+	text-decoration: none;
+	margin-top: 20px;
+	transition: background-color .2s, color .2s, 
+	box-shadow .2s, text-shadow .2s;
+}
+
+.facts-about{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap-reverse;
+}
+
+.facts-about div{
+	 width: 420px; 
+}
+
+.facts-about ul {
+	list-style-type: square;
+	margin: 20px 0 0 17px;
+}
+
+.facts-about ul li {
+	margin-top: 10px;
+}
+
+/* Vision Page Specific */
+
+.vision-header-img {
+	clip-path: ellipse(59% 0% at 50% 50%);
+	width: 100%;
+	animation-name: blink;
+	animation-duration: 3s;
+	animation-timing-function: ease;
+	animation-iteration-count:infinite;
+	z-index: 0;
+	outline: solid 20px dodgerblue;
+    border: solid 10px #1e90ffb0;
+}
+
+@keyframes blink{
+	/* 0%  {clip-path: ellipse(59% 0% at 50% 50%);	}
+	10% {clip-path: ellipse(59% 0% at 50% 50%);	}
+	25% {clip-path: ellipse(59% 30% at 50% 50%);}
+	35% {clip-path: ellipse(59% 5% at 50% 50%); }
+	55% {clip-path: ellipse(59% 30% at 50% 50%);}
+	90%	{clip-path: ellipse(59% 30% at 50% 50%); }
+	100%{clip-path: ellipse(59% 0% at 50% 50%); } */
+
+	0%  {clip-path: ellipse(59% 5% at 50% 53%);}
+	5% {clip-path: ellipse(59% 30% at 50% 53%);}
+	8% {clip-path: ellipse(59% 0% at 50% 53%); }
+	13% {clip-path: ellipse(59% 30% at 50% 53%);}
+	98%	{clip-path: ellipse(59% 30% at 50% 53%); }
+	100%{clip-path: ellipse(59% 5% at 50% 53%); }
+	}
+
+	.vision section h1{
+		text-align: center;
+	}
