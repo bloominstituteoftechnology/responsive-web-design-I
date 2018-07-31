@@ -69,6 +69,7 @@ body {
 	display: flex;
 	justify-content: center;
 }
+
 .container {
 	width: 880px;
 }
@@ -142,8 +143,8 @@ header .logo {
 	border-bottom: 1px solid black;
 	padding: 39px 0px;
 	display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .top-content {
@@ -158,6 +159,7 @@ header .logo {
 }
 
 .middle-img {
+  display: flex;
   margin: 45px 0px;
 }
 
@@ -171,7 +173,6 @@ header .logo {
     flex-wrap: wrap;
     width: 32%;
 }
-
 
 .contact {
   padding: 39px 10px 0;
@@ -188,15 +189,40 @@ footer {
 }
 
 /* Media queries */
-/* Desktop first */
+/* Tablet */
 @media (max-width:800px) {
+    .container {
+      width: 100;
+      margin: auto;
+    }
+  
     header {
-        flex-direction: column-reverse;
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      text-align: center;
+      margin-top: 0px;
+      width: 100%;
+    }
+
+    header nav {
+      width: 100%;
+      justify-content: space-evenly;
+    }
+
+    header nav a:last-child {
+      margin-right: 0px;
     }
 
     header .logo {
         padding: 20px;
-        margin-bottom: 20px;
+        align-self: center;
+    }
+
+    .cta {
+      display: flex;
+      justify-content: center;
+      width: 100%;
     }
 
     .cta img {
@@ -204,7 +230,74 @@ footer {
     }
 }
 
-/* Tablet second */
+/* Phone */
 @media (max-width:500px) {
+  .container {
+    width: 100%;
+    margin: auto;
+  }
 
+  header {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  header nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  header nav a {
+    padding: 20px 0px;
+    border-top: 1px solid #1d1d1d;
+    font-size: 24px;
+  }
+
+  header nav a:last-child {
+    border-bottom: 1px solid #1d1d1d;
+    margin-right: 0px;
+  }
+
+	.main-content {
+    display: flex;
+    line-height: 20px;
+    padding:20px 20px;
+    width:100%;
+  }
+
+  .main-content .top-content {
+    display: flex;
+    flex-direction: column;
+    align-content:center;
+    flex-wrap: nowrap;
+    width: 100%
+  }
+
+  .main-content .top-content .text-content{ 
+    margin-top: 20px; 
+    width: 100%;
+  }
+
+  .main-content .bottom-content{
+    display: flex;
+    flex-direction: column;
+    align-content:center;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+
+  .main-content .bottom-content .text-content{ 
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .main-content .middle-img {
+    display: block;
+    margin: 30px auto;
+    width: 100%;
+}
 }
