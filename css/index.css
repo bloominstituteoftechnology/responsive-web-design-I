@@ -365,6 +365,8 @@ footer {
 
 /* Services Page  CSS */
 
+/* Services Header */
+
 .services-header {
   display: flex;
   flex-wrap: wrap;
@@ -424,7 +426,7 @@ footer {
 .services-header .services-information {
   display: flex;
   flex-wrap: wrap;
-  border-top: 2px solid black;
+  border-top: 5px solid black;
   margin: 20px 0 35px 0;
   padding-top: 40px;
 }
@@ -446,4 +448,52 @@ footer {
 .services-header .services-information .services-information-img {
   width: 420px;
   height: 475px;
+}
+
+/* Mobile */
+
+@media (min-width: 500px) {
+  .container {
+    width: 500px;
+    margin: auto;
+  }
+
+  .services-header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .services-header .services-header-img {
+    width: 95%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .services-header .services-paragraph {
+    border-bottom: 5px solid black;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .services-header .services-information {
+    width: 95%;
+    justify-content: center;
+  }
+
+  .services-header .services-information .services-facts {
+    width: 500px;
+    margin: 0;
+  }
+
+  .services-facts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .services-facts p {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
 }
