@@ -69,9 +69,7 @@ h1, h2, h3, h4, h5 {
 
 /********************** Index.html ***************************/
 
-* {
-	box-sizing: border-box;
-}
+
 
 body {
 	display: flex;
@@ -89,7 +87,7 @@ header {
 	justify-content: space-around;
 	align-items: center;
 	margin-top: 25px;
-	position: fixed;
+	/* position: fixed; */
 }
 
 
@@ -127,40 +125,43 @@ header .nav7 {
 
 .titleParent {
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	align-items: center;
 	/* border: 2px solid green; */
-	margin: 100px 0 0 0;
+    margin: 50px 0 0 0;
+    height: 450px;
 }
 
 
 .titleParent .titleChild1 {
 	/* border: 2px solid lime; */
 	width: 400px;
-	height: 330px;
+    height: 400px;
+    width: 440px;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
+	justify-content: center;
 }
 
 
 
 .titleChild1 h1 {
-	font-size: 50px;
+	font-size: 70px;
 	text-align: center;
-	padding: 20px 0 0 0;
+	padding: 0 0 10px 70px;
 	/* border: 1px solid black; */
-	height: 200px;
+    height: 200px;
+    margin: 50px 0 50px 0;
 }
 
 .titleChild1 button {
 	text-align: center;
-	font-size: 17px;
+	font-size: 14px;
 	border: 1px solid black;
-	width: 200px;
+    width: 170px;
+    height: 30px;
 	/* align-items: center; */
-	margin: 0 0 0 100px;
-	border-radius: 5px;
+	margin: 0 0 60px 175px;
 }
 
 .titleChild1 button:active {
@@ -173,34 +174,36 @@ header .nav7 {
 	border-radius: 5px;
 }
 
-
+.titleParent .titleChild2 {
+    /* border: 1px solid black; */
+}
 
 /* Main Body */
 
 .mainBody {
-	/* border: 2px solid orange; */
+    border: 2px solid orange;
 	display: flex;
 	flex-direction: column;
-	border-top: 1px solid black;
-	border-bottom: 1px solid black;
-	margin: 50px 0 0 0;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	margin: 30px 0 0 0;
 }
 
 .top {
 	display: flex;
 	justify-content: space-around;
 	align-content: center;
-	margin: 50px 0 30px 0;
-	/* border: 2px solid purple; */
+	margin: 30px 0 30px 0;
+	border: 2px solid purple;
 }
 
 .top .text {
-	/* border: 2px solid gold; */
-	width: 400px;
+	border: 2px solid gold;
+	width: 440px;
 }
 
 .top .text h3 {
-	font-size: 25px;
+	font-size: 16px;
 }
 
 
@@ -208,18 +211,18 @@ header .nav7 {
 	display: flex;
 	justify-content: space-around;
 	align-content: center;
-	margin: 50px 0 30px 0;
-	/* border: 2px solid purple; */
+	margin: 30px 0 45px 0;
+	border: 2px solid purple;
 }
 
 
 .bottom .text {
-	/* border: 2px solid gold; */
-	width: 250px;
+	border: 2px solid gold;
+	width: 293px;
 }
 
 .bottom .text h3 {
-	font-size: 25px;
+	font-size: 16px;
 }
 
 
@@ -239,7 +242,7 @@ header .nav7 {
 }
 
 .footer .contact h3 {
-	font-size: 25px;
+	font-size: 16px;
 }
 
 .copyright1 {
