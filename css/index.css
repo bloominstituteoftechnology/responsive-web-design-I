@@ -1,3 +1,221 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+body {
+	width: 880px;
+	margin: auto;
+}
+
+h1 {
+	font-size: 75px;
+}
+
+h2 {
+	font-size: 27px;
+}
+
+h3 {
+	font-size: 20px;
+}
+
+h4 {
+	font-size: 18px;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 75px;
+}
+
+nav {
+	display: flex;
+	flex-grow: 2;
+	justify-content: space-around;
+}
+
+a {
+	font-family: 'Titillium Web', sans-serif;
+	color: rgb(90, 90, 90);
+	text-decoration-line: none;
+}
+
+#logo {
+	flex-grow: 1;
+}
+
+#headingSection {
+	display: flex;
+	justify-content: space-around;
+	align-content: center;
+}
+
+#headingDiv {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#startButton {
+	border: 1px solid rgb(58, 58, 58);
+	border-radius: 2px;
+	padding: 5px 15px;
+	width: 110px;
+}
+
+.divisionLine {
+	width: 880px;
+	margin: 20px;
+	border: 1px solid black;
+}
+
+.articleSection {
+	display: flex;
+	margin: 15px 0px;
+	justify-content: space-between;
+}
+
+.articleSection div {
+	margin: 0px 15px;
+}
+
+#midPicDiv {
+	width: 880px;
+	margin: 25px 0px;
+}
+
+address {
+	display: flex;
+	height: 150px;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	height: 50px;
+}
+
+/* here begins the unique CSS code for the Services page */
+
+.services-header-img {
+	margin: 0px 0px 25px 0px;
+}
+
+#centerSection {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+#centerSection div {
+	width: 420px;
+	display: flex;
+	height: 200px;
+	flex-direction: column;
+	background-color: rgb(211, 211, 211);
+	border: 1px solid black;
+	padding: 15px;
+	margin: 15px 0px;
+	align-content: space-between;
+}
+
+.learnMore {
+	font-size: 12px;
+	text-justify: center;
+	border: 1px solid black;
+	border-radius: 4px;
+	background-color: rgb(231, 231, 231);
+	padding: 5px 15px;
+	width: 110px;
+	margin-top: 10px;
+}
+
+#bottomSection {
+	display: flex;
+	justify-content: space-between;
+}
+
+#bottomSection div {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-around;
+	height: 250px;
+	width: 400px;
+}
+
+ul {
+	list-style: square inside;
+	display: flex;
+	flex-direction: column;
+	height: 100px;
+	justify-content: space-around;
+}
