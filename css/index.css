@@ -248,76 +248,18 @@ footer {
   height: 300px;
 }
 
-
-@media (max-width:500px) {
-    .main-nav nav a{
-        width: 100%;
-        display:block;
-        text-align: center;
-        padding: 20px;
-        font-size: 25px;
-        
-    }
-    .main-nav nav{
-      flex-direction: column;
-      margin: 40px;
-      align-items: center; 
-    }
-    .main-nav img{
-        width: 35%;
-        flex-direction: column;
-      margin: 40px;
-      align-items: center;
-    }
-    .cta img {
-        display:none;
-    }
-    .cta{
-       display:flex; 
-      margin: 40px;
-      margin-right: -10px;
-      justify-content: center;
-      align-items: center;
-    }
-    .top-content {
-        flex-direction: column;
-        margin: 40px;
-        align-items: center; 
-    }
-    .top-content .text-content{
-        margin-bottom: 20px;
-    }
-
-    .middle-img{
-         
-        width: 95%
-    }
-    .bottom-content{
-        flex-direction: column;
-        margin: 40px;
-        align-items: center; 
-    }
-    .bottom-content .text-content{
-        margin-bottom: 20px;
-    }
-    .contact{
-        margin-left: 40px;
-    }
-
-}
-
     @media (max-width:800px) {
         
         .main-nav nav{
             width:100%;
-            flex-direction: column;
+            flex-direction: row;
             margin: 40px;
             align-items: center; 
            
           }
           .main-nav img{
-            width:100%;
-            flex-direction: column;
+            
+            display: block;
             margin: 40px;
             align-items: center; 
            
@@ -332,7 +274,7 @@ footer {
             align-items: center;
           }
           .top-content {
-              flex-direction: column;
+              flex-direction: row;
               margin: 40px;
               align-items: center; 
           }
@@ -345,7 +287,7 @@ footer {
               width: 95%
           }
           .bottom-content{
-              flex-direction: column;
+              flex-direction: row;
               margin: 40px;
               align-items: center; 
           }
@@ -364,18 +306,25 @@ footer {
             display:block;
             text-align: center;
             padding: 20px;
+            border-bottom: 1px solid grey;
             
+        }
+
+        .main-nav nav a:last-child{
+            border-top: 1px solid grey;
         }
         .main-nav nav{
           flex-direction: column;
           margin: 40px;
           align-items: center; 
+          
         }
         .main-nav img{
             width: 35%;
             flex-direction: column;
           margin: 40px;
           align-items: center;
+          
         }
         .cta img {
             display:none;
@@ -395,7 +344,7 @@ footer {
         .top-content .text-content{
             margin-bottom: 20px;
         }
-
+    
         .middle-img{
              
             width: 95%
@@ -411,5 +360,5 @@ footer {
         .contact{
             margin-left: 40px;
         }
-
+    
     }
