@@ -1,3 +1,391 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+* {
+  box-sizing: border-box;
+}
+.container {
+  max-width: 880px;
+  width: 100%;
+  margin: 0 auto;
+
+}
+.main {
+display: flex;
+justify-content: center;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 25px;
+}
+header nav {
+	display: flex;
+	justify-content: space-between;
+     width: 680px;
+}
+
+header nav a {
+  display: inline-block;
+  font-size: 16px;
+  color: gray;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+
+header nav a:last-child {
+  margin-right: 65px;
+}
+
+header .logo {
+  display: inline-block;
+}
+
+
+.top-main {
+width: 880px;
+	height: 555px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border-bottom: 2px solid black;
+ 
+}
+
+
+
+.top-text {
+ display: flex;
+	flex-direction: column;
+   justify-content: space-evenly;
+  font-size: 77px;
+  margin: 75px;
+  text-align: center;
+}
+
+
+.btn {
+  background: white;
+  vertical-align: top;
+  padding: 5px 40px 5px 40px;
+
+  font-size: 16px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+/* Gray */
+
+.default:hover {
+  background: #ddd;
+  cursor: pointer;
+}
+.fk {
+  display: flex;
+  justify-content: space-between;
+
+padding-bottom: 15px;
+}
+.features,
+.about {
+  margin-top: 10px;
+ 
+
+}
+.middle-img {
+  margin: 45px 0px;
+}
+
+.mains {
+display: flex;
+	justify-content: space-between;
+}
+.services,
+.products,
+.vision {
+  width: 275px;
+  padding-bottom: 25px;
+}
+
+.contact {
+      border-top: 2px solid black;
+    padding: 25px;
+}
+
+.contact a {
+  text-decoration: none;
+  color: black;
+}
+
+.contact a:hover {
+  color: orangered;
+}
+
+.contact a[href^="tel:"]:before {
+  content: "\260E ";
+  display: inline-block;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+}
+
+footer p {
+  align-self: center;
+  font-size: 14px;
+  line-height: 1.2px;
+}
+
+footer h3::before {
+  content: "\00A9 ";
+}
+
+footer h3 {
+  align-self: center;
+}
+
+@media(max-width: 800px) {
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 25px;
+}
+
+}
+
+@media(max-width: 500px) {
+.container {
+  max-width: 500px;
+
+
+}
+header {
+    display: flex;
+    flex-direction: column-reverse;
+ width: 500px;
+    justify-content: center;
+ margin: 0;
+  
+}
+
+header nav {
+	display: flex;
+	justify-content: space-between;
+     width: 480px;
+    align-items: flex-end;
+    height: 30px;
+
+   
+}
+
+header nav a {
+
+  font-size: 16px;
+  color: gray;
+  text-decoration: none;
+}
+header nav a:last-child {
+  margin-right: 40px;
+}
+
+header .logo {
+display: flex;
+align-content: flex-start;
+padding-bottom: 20px;
+
+}
+
+.top-img {
+    display: none;
+}
+
+
+.top-text {
+display: flex;
+align-items: center;
+
+}
+
+.top-main {
+width: 100%;
+height: 100%;
+  
+}
+.fk .main{
+  display: flex;
+  justify-content: space-evenly;
+  width: 500px;
+  line-height: 20px;
+}
+.middle-img {
+    width:460px;
+}
+}
