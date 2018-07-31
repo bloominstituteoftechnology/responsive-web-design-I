@@ -85,7 +85,6 @@ header nav {
 
 
 
-/* min-width 500px */
 header nav a {
     text-decoration: none;
     color: #b0b0b0;
@@ -212,7 +211,7 @@ header .logo {
   .main-content .top-content {
     padding: 0 3px;
   }
-  .main-conten .middle-img {
+  .main-content .middle-img {
     margin-top: 37px;
   }
 
@@ -226,3 +225,51 @@ header .logo {
   }
 
 }
+
+/* Media query 500px */
+
+  /* max-width 500px */
+  @media (max-width: 500px) {
+    .container {
+        margin-left: 75px;
+  
+    }
+  
+    .cta .cta-text {
+      margin-top: 120px;
+      padding: 0px 92px;
+  
+    }
+    .cta .cta-text button {
+      margin-top: 0px;
+      padding: 3px 44px;
+      margin-left: 27px;
+    }
+  
+    header .logo {
+      margin: 31px 0 0 91px;
+    }
+    .main-content {
+      margin-top: 73px;
+      padding-top: 38px;
+      margin-left: -10px;
+  
+    }
+  
+    .main-content .top-content {
+      padding: 0 3px;
+    }
+    .main-content .middle-img {
+      margin-top: 37px;
+      margin-left: 10px;
+    }
+  
+    .main-content .bottom-content {
+      margin-top: 20px;
+    }
+  
+    .contact {
+      margin-top: 57px;
+    }
+  
+  }
