@@ -222,8 +222,13 @@ footer {
     header nav a {
        flex-direction: row;
        justify-content: flex-end;
-       font-size: 15px;
-    }
+	   font-size: 15px;
+	}
+	
+	header nav a:hover {
+		text-decoration: none;
+		color: black;
+	}
 
     header .logo {
 		justify-content: center;
@@ -242,7 +247,7 @@ footer {
         flex-flow: column;
         justify-content: center;
         align-items: center; */
-        margin: 0 auto;
+        margin: 60px auto;
         margin-bottom: 0px;
     }
 
@@ -282,7 +287,9 @@ footer {
 		width: 100%;
 		flex-direction: column;
 		align-items: center;
-		border: 1px solid black;
+		margin: 0;
+		margin-top: 25px;
+		border-top: 1px solid black;
 	}
 
 	header nav a {
@@ -290,13 +297,65 @@ footer {
 		height: 60px;
 		text-align: center;
 		padding: 30px;
-		/* border: 1px solid black; */
-
+		display: block;
+		border-bottom: 1px solid black; 
 	}
 
 	.cta {
-		width: 100%;
 		display: flex;
+		flex-flow: column;
+		align-items: center;
+	}
+
+	.cta .cta-text {
+		width: 100%;
+		margin: 80px auto;
+		margin-bottom: 0px;
+	}
+	
+	/* .main-content {
+		display: flex;
+		flex-wrap: wrap;
+	} */
+
+	.main-content .top-content {
+		width: 100%;
+		/* display: flex; */
+		flex-direction: column;
+		justify-content: space-around;
+        padding: 0 20px;
+    }
+
+    .main-content .top-content .text-content {
+		width: 100%;
+		margin-right: 44px;
+		margin-top: 20px;
+		margin-bottom: 15px;
+	}
+	
+	.main-content .middle-img {
+		width: 100%;
+		margin-top: 35px;
+		margin-bottom: 0px;
+		padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .main-content .bottom-content {
+		width: 100%;
+		/* display: flex; */
+		flex-direction: column;
+		justify-content: space-around;
+        padding: 0 20px;
+		/* border: 1px solid black; */
+	}
+
+	.main-content .bottom-content .text-content {
+		width: 100%;
+		margin-right: 50px;
+		margin-top: 20px;
+		margin-bottom: 15px;
+		/* border: 1px solid black; */
 	}
 
 }
