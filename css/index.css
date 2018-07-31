@@ -418,7 +418,24 @@ footer {
   list-style-type: disc;
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 800px) {
+  .page-div {
+    overflow-x: hidden;
+  }
+
+  .first-services-div {
+    margin: 20px;
+  }
+
+  .second-services-div {
+    width: 100%;
+  }
+
+  .second-services-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   .third-services-div {
     width: 100%;
   }
@@ -427,8 +444,15 @@ footer {
     width: 100%;
   }
 
-  .third-services-container {
-    display: none;
+  .second-services-container .third-services-container {
+    order: -1;
+    width: 70%;
+  }
+
+  .third-services-container img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
   }
 }
 
