@@ -230,6 +230,11 @@ header .logo {
   cursor: pointer;
 }
 
+.cta img {
+  width: 45%;
+  height: 45%;
+}
+
 .cta .cta-text button:hover {
   background: #000;
   color: #fff;
@@ -239,7 +244,7 @@ header .logo {
 
 .main-content {
   border-top: 2px solid #000;
-  border-bottom: 2px solid;
+  border-bottom: 2px solid #000;
   margin: 75px 0 35px 0;
   padding: 35px 0;
   font-size: 1rem;
@@ -292,6 +297,7 @@ footer {
   /* header tablet */
 
   .container {
+    max-width: 800px;
     width: 100%;
   }
 
@@ -303,6 +309,7 @@ footer {
 
   header {
     flex-wrap: wrap;
+    width: 100%;
   }
 
   header nav {
@@ -314,11 +321,13 @@ footer {
   .cta {
     /* change to column */
     flex-direction: column;
+    width: 100%;
   }
 
   .cta .cta-text {
     /* center text and button */
     margin: auto;
+
   }
 
   .cta img {
@@ -404,7 +413,7 @@ footer {
     /* add some margins for room to breathe */
     
     .text-content {
-        margin-top: 5;
+        margin-top: 5px;
         margin-bottom: 20px;
     }
 
