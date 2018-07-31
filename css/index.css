@@ -69,7 +69,7 @@ p {
 /* desktop */
 
 body {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Rubik', sans-serif;
   display: flex;
   -webkit-font-smoothing: antialiased;
   justify-content: center;
@@ -295,4 +295,79 @@ header {
     margin: 20px;
   }
 
+}
+
+/* services */
+
+@media(min-width: 0px){
+  .serv-body{
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    -webkit-font-smoothing: antialiased;
+    width: 100%;
+  }
+  .header {
+    width: 100%;
+  }
+  .header .services-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .services-nav a {
+    margin: 1rem;
+    color: #333;
+    text-decoration: none;
+  }
+  .serv-img{
+    background: url("http://hurekaresources.com/wp-content/uploads/2014/06/Our-Services-OL.png") no-repeat center;
+    background-size: cover;
+  }
+  .cards{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 600px;
+    margin: 1rem;
+  }
+  .card{
+    margin: 1rem;
+  }
+  .card img {
+    height: 200px;
+  }
+  .card h2 {
+    font-weight: bolder;
+    font-size: 24px;
+  }
+  .card p {
+    font-weight: 300;
+    letter-spacing: 2px;
+  }
+}
+
+@media(min-width: 800px){
+  .header .services-nav{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .serv-img{
+    background: url("http://hurekaresources.com/wp-content/uploads/2014/06/Our-Services-OL.png") no-repeat center;
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    padding: 3rem;
+  }
+  .card div {
+    text-align: center;
+    width: 100%;
+  }
 }
