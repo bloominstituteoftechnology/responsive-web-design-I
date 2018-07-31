@@ -82,7 +82,7 @@ a {
 
 /* nav */
 .navbar {
-	padding: 10px 0px;
+	padding: 8px 0px;
 	display: flex;
 }
 
@@ -91,16 +91,16 @@ a {
 	order: 1;
 	flex-grow: 2;
 	justify-content: flex-start;
-	align-items: center;
+    align-items: center;
 }
 
 .navbar nav a {
-	color: lightgray;
-	margin-right: 60px;
+	color: darkgray;
+	margin-right: 61px;
 	font-weight: bold;
 }
 
-.navbar a.home-link {
+.navbar .home-link {
 	width: 183px;
 	order: 2;
 	justify-content: flex-end;
@@ -108,34 +108,35 @@ a {
 }
 
 /* header */
-header.display-horizontal {
-	padding: 60px 0px;
-	border-bottom: 1px solid black;
+header.header-horizontal {
+	padding: 62px 0px 73px 0px;
+	border-bottom: 2px solid black;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-header section.main-header {
-	text-align: center;
+header .main-header {
+    text-align: center;
+    margin-left: 10px;
 	order: 1;
 	flex-grow: 2;
-	justify-content: flex-start;
 	display: flex;
+	justify-content: flex-start;
 	flex-direction: column;
 	align-items: center;
 }
 
-header section.main-header h1 {
+header .main-header h1 {
 	font-size: 72px;
 	text-align: center;
 }
 
-header section.main-header a {
+header .main-header a {
 	text-align: center;
 	color: darkslategrey;
 	border: 1px solid darkslategrey;
-	padding: 7px 35px;
+	padding: 7px 46px;
 	font-weight: bold;
 }
 
@@ -152,36 +153,36 @@ main {
 	flex-direction: column;
 }
 
-main section.content-row {
-	display: flex;
+main .content-row {
+    display: flex;
 }
 
-main section.contact-row {
+main .contact-row {
 	display: flex;
 	flex-direction: column;
-	border-top: 1px solid black;
-	margin-top: 40px;
-	padding-top: 30px;
+	border-top: 2px solid black;
+	margin-top: 44px;
+	padding-top: 36px;
 }
 
-main section.left {
+main .left {
 	justify-content: flex-start;
 	padding-right: 2px;
 }
 
-main section.center {
+main .center {
 	justify-content: center;
 	padding-left: 2px;
 	padding-right: 2px;
 }
 
-main section.right {
+main .right {
 	justify-content: flex-end;
 	padding-left: 2px;
 }
 
-main img.middle-img {
-	margin: 30px 0px;
+main .middle-img {
+    margin: 35px 1px;
 }
 
 /* footer */
