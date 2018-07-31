@@ -74,7 +74,6 @@ h1, h2, h3, h4, h5 {
 }
 
 header {
-	background:#DCDCDC;
 	display: flex;
 	justify-content: space-between;
 }
@@ -210,5 +209,48 @@ a:hover {
 .copyright-bottom {
 	text-align: center;
 	margin-bottom:100px;
+}
+
+@media (max-width:800px) {
+    .container {
+        width:95%;
+    }
+
+    .container header {
+        flex-direction: column-reverse;
+        align-items: center;
+        width:100%;
+    }
+
+    .container .navbar {
+        width: 100%;
+    }
+
+    .container .logo {
+        width:25%;
+        display: block;
+    }
+
+    .navbar .topNav {
+        margin-right:15px;
+        margin-left:10px;
+    }
+
+    .top-img {
+        display:none;
+    }
+
+    .top-content {
+        height: auto;
+        width:100%;
+        justify-content: center;
+        margin: 45px 0px;
+    }
+
+    .top-content .button {
+        margin-bottom:5px;
+        padding: 7px 40px;
+        font-size:17px;
+    }
 }
 
