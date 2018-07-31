@@ -1,3 +1,373 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-family: 'Rubik', sans-serif;
+}
+
+p {
+    line-height: 1.5;
+}
+
+/* desktop */
+
+body {
+  font-family: 'Rubik', sans-serif;
+  display: flex;
+  -webkit-font-smoothing: antialiased;
+  justify-content: center;
+  margin: 20px;
+  transition: all 300ms ease-in-out;
+}
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+header {
+  flex-direction: row;
+  justify-content: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.nav a {
+  color: #A7A6A7;
+  text-decoration: none;
+}
+
+.top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  text-align: center;
+}
+.left{
+  width: 50%;
+  margin: 20px;
+}
+.left h1 {
+  font-size: 72px;
+  font-weight: bolder;
+}
+
+.left button {
+  font-size: 16px;
+  padding: 5px 15px;
+  margin: 20px;
+  border: 1px solid black;
+  background: white;
+}
+.upper-middle{
+  display: flex;
+  border-top: 1px solid black;
+  margin: 20px 10px;
+}
+.upper-middle div {
+  margin: 0 20px;
+}
+.upper-middle h2 {
+  font-weight: bold;
+  font-size: 20px;
+  margin: 20px 0;
+}
+.middle-img {
+  background: url("../img/mid-page-accent.jpg") no-repeat center;
+  background-size: cover; 
+  height: 100px;
+  margin: 0px 20px;
+}
+.lower-middle {
+  display: flex;
+  border-bottom: 2px solid black;
+  margin: 20px 0px;
+  padding-bottom: 20px;
+}
+.lower-middle div {
+  margin: 0 20px;
+}
+.lower-middle h2 {
+  font-weight: bold;
+  font-size: 20px;
+  margin: 20px 0;
+}
+.contact{
+  margin: 0 20px;
+}
+.contact address h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+.contact address p {
+  margin: 5px 0;
+}
+.copyright {
+  text-align: center;
+  margin: 15px 0;
+}
+
+/* tablet view */
+
+@media(max-width: 800px){
+  .container header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .nav {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .nav a {
+    color: #A7A6A7;
+    margin: 20px;
+  }
+  .nav a:nth-child(7){
+    order: -1;
+    margin: 20px 50%;
+  }
+
+  .top {
+    display: flex;
+  }
+  .left {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .left h1 {
+    font-size: 72px;
+    text-align: center;  
+    font-weight: bolder;
+    margin: 20px 0;
+  }
+  .left button {
+    padding: 5px 40px;
+    background: #fff;
+    border: 1px solid black;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  .right {
+    display: none;
+  }
+}
+
+/* mobile view */
+
+@media (max-width: 500px){
+  header .nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  header .nav a:nth-child(7) {
+    order: -1;
+  }
+
+  header .nav a {
+    border-bottom: 1px solid black;
+    width: 100%;
+    color: #A7A6A7;
+    font-size: 18px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .top  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .top .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }
+
+  .left h1 {
+    font-size: 72px;
+    text-align: center;
+    font-weight: bolder;
+    margin: 20px;
+  }
+  
+  .left button {
+    font-size: 16px;
+    padding: 5px 40px;
+    border: 1px solid black;
+    margin: 20px;
+  }
+
+  .top .right {
+    display: none;
+  }
+
+  .upper-middle, .lower-middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    border-top: 2px solid black;
+  }
+  
+  .middle-img {
+    background: url("../img/mid-page-accent.jpg") no-repeat center;
+    background-size: cover; 
+    height: 100px;
+    margin: 20px;
+  }
+
+}
+
+/* services */
+
+@media(min-width: 0px){
+  .serv-body{
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    -webkit-font-smoothing: antialiased;
+    width: 100%;
+  }
+  .header {
+    width: 100%;
+  }
+  .header .services-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .services-nav a {
+    margin: 1rem;
+    color: #333;
+    text-decoration: none;
+  }
+  .serv-img{
+    background: url("http://hurekaresources.com/wp-content/uploads/2014/06/Our-Services-OL.png") no-repeat center;
+    background-size: cover;
+  }
+  .cards{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 600px;
+    margin: 1rem;
+  }
+  .card{
+    margin: 1rem;
+  }
+  .card img {
+    height: 200px;
+  }
+  .card h2 {
+    font-weight: bolder;
+    font-size: 24px;
+  }
+  .card p {
+    font-weight: 300;
+    letter-spacing: 2px;
+  }
+}
+
+@media(min-width: 800px){
+  .header .services-nav{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .serv-img{
+    background: url("http://hurekaresources.com/wp-content/uploads/2014/06/Our-Services-OL.png") no-repeat center;
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    padding: 3rem;
+  }
+  .card div {
+    text-align: center;
+    width: 100%;
+  }
+}
