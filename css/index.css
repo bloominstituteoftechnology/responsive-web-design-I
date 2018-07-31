@@ -173,19 +173,114 @@ footer {
 }
 
 
-/*Tablet mode*/
+/*Tablet Version-----------------------------------------------------------------------------------------------------------------------*/
 @media (max-width: 800px) {
+	.container{
+		width:100%;
+	}
+	/*Header*/
 	header {
-		border:2px solid red;
-		flex-wrap:wrap;
-		flex-direction: column-reverse;
+		flex-wrap: wrap-reverse;	
+	}
+	
+	header .logo{
+        display: block;
+        margin: 30px 308px 0;
 	}
 	
 	header nav a{
-		border: 2px dotted blue;
-		align-items:center;
-		}
+        padding: 0 39px;
+	}
 	
 	
-}  
-  
+	/*CTA*/
+	.cta{
+		justify-content: center;
+	}
+	
+	.cta img{
+		display:none;
+	}
+	
+	.cta .cta-text{
+		margin:0;
+	}
+	
+	
+	/*Main Content*/
+	.main-content {
+		margin: 73px 15px 38px;
+	}
+	
+	.text-content{
+		margin:0 19px;
+	}
+	
+	.main-content .middle-img{
+		width:100%;
+		margin: 30px 16px;
+	}
+	
+	
+	/*Contact*/
+	.contact {
+		margin: 0 30px;
+	}
+}
+
+
+
+/*Phone Version ---------------------------------------------------------------------------------------------------------------------------------------*/  
+@media (max-width: 500px) {
+	/*Header*/
+	header {
+		justify-content:center;
+}
+	header .logo{
+		margin: 20px 0;
+	}
+	
+	header nav {
+        flex-direction: column;
+		margin: 0;  
+	}
+	
+		/*how do i get the grey line for just the top without using border top*/
+	header nav a{
+		display: block;
+		text-align: center;
+		padding: 20px;
+		font-size: 20px;
+		border-bottom: 1px solid grey;  
+		border-top: 1px solid grey;
+	}
+	
+	/*CTA*/
+	.cta {
+		margin: 45px 0 0 14px;
+	}
+	
+	/*Main Content*/
+	
+	.main-content .top-content {
+		justify-content: space-around;
+		height: 304px;
+		flex-direction: column;
+	}
+	
+	.main-content .bottom-content {
+		flex-wrap: wrap;
+		justify-content: space-around;
+		height: 440px;
+	}
+	
+	  .text-content {
+        margin: 0;
+    }
+	
+	.contact {
+		margin:20px;
+	}
+	
+}
+	
