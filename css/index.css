@@ -172,16 +172,17 @@ h1 {
     width: 50%;
     flex-direction: column;
     display: flex;
+    margin-bottom: 35px;
 }
 
 .toptitle {
     margin-right: 1%
 }
 
-img.img-middle {
+.middle-img {
     display: flex;
-    justify-content: center;
-    margin-top: 35px;
+    width: 90%;
+  
 }
 
 .bottom-content {
@@ -415,7 +416,7 @@ img.img-middle {
 @media only screen and (max-width: 500px) {
 
     .box {
-        width: 100%;
+        width: 85%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -423,7 +424,7 @@ img.img-middle {
     }
 
     header {
-        margin: 15px auto;
+        margin: 15px 0 0 0 auto;
        
     }
         header .logo {
@@ -440,8 +441,10 @@ img.img-middle {
         header nav {
             display: flex;
             flex-direction: column;
+            margin: 0 auto;
         }
             header nav a {
+                margin: 0 auto;
                 width: 100%;
                 border-top: 1px solid gray;
                 border-bottom: 1px solid gray;
@@ -452,12 +455,13 @@ img.img-middle {
     .innovation {
         display: flex;
         width: 100%;
-        margin-top: 15px;
+        margin: 15px 0 0 0 auto;
     }
 
     .slogan {
         margin-top: 10px;
         width: 80%;
+        margin: 0 auto;
     }
 
     h1 {
@@ -468,11 +472,12 @@ img.img-middle {
 
     .slogan button {
         width: 38%;
+        margin: 0 auto;
     }
 
     .top-content {
         width: 100%;
-        margin: 30px 0 0 40px;
+        margin: 30px 0 0 0;
         flex-direction: column;   
     }
 
@@ -487,13 +492,18 @@ img.img-middle {
             align-self: flex-start;
         }
 
+    .middle-img {
+        width: 100%;
+    }
+
     img.img-middle {
-        margin: 30px 0 0 40px;
+        width: 90%;
+        margin: 0 auto;
     }
 
     .bottom-content {
         width: 100%;
-        margin: 0 0 0 40px;
+        margin: 0 auto;
         flex-direction: column;
     }
 
