@@ -1,57 +1,183 @@
-.services-header-img {
-	margin: 35px 0px;
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
-.services-header {
-	padding-bottom: 45px;
-	border-bottom: 1px solid black;
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
 }
 
-.services-header h2 {
-	font-size: 28px;
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
 }
 
-.service-container {
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+body {
 	display: flex;
-	flex-wrap: wrap;
+	justify-content: center;
+}
+.container {
+	width: 880px;
+}
+
+/* header */
+header {
+	display: flex;
 	justify-content: space-between;
-	padding: 35px 0px;
+	align-items: center;
+	margin-top: 25px;
+}
+header nav {
+	display: flex;
+	justify-content: space-between;
+  width: 690px;
+}
+
+header nav a {
+  display: inline-block;
+  font-size: 14px;
+  color: gray;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+header nav a:last-child {
+  margin-right: 65px;
+}
+
+header .logo {
+  display: inline-block;
+}
+
+/* cta */
+.cta {
+	width: 880px;
+	height: 524px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.cta-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+  font-size: 77px;
+  text-align: center;
+}
+
+.cta-text button {
+  background: white;
+  vertical-align: top;
+  padding: 8px 44px;
+  font-size: 17px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.cta .cta-text button:hover {
+  background: black;
+  color: white;
+}
+
+/* Main content */
+.main-content {
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
-}
-
-.service-block {
-	width: 420px;
-	border: 1px solid black;
-	margin-bottom: 40px;
-	background-color: whitesmoke;
-	padding: 15px;
-}
-
-.service-block button {
-	margin-top: 15px;
-	background-color: white;
-	padding: 8px 35px;
-	border: 1px solid black;
-	border-radius: 5px;
-}
-
-
-.service-facts {
+	padding: 39px 0px;
 	display: flex;
-	padding-top: 40px;
+	flex-direction: column;
 }
 
-.facts-container {
-	padding-right: 40px;
+.top-content {
+	display: flex;
+	justify-content: space-between;
 }
 
-.facts-container ul {
-	margin-top: 15px;
+.top-content .text-content {
+  width: 410px;
 }
 
-.facts-container ul li {
-	margin: 10px;
-	list-style-type: square;
-	margin-left: 17px;
+.middle-img {
+  margin: 45px 0px;
+}
+
+.bottom-content {
+	display: flex;
+	justify-content: space-between;
+}
+
+.bottom-content .text-content {
+	width: 275px;
+}
+
+
+.contact {
+  padding: 39px 10px 0;
+}
+
+.contact p {
+  margin: 20px 0;
+}
+
+footer {
+  margin: 32px 0;
+  text-align: center;
+  font-size: 14px;
 }
