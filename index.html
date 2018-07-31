@@ -15,9 +15,14 @@
 <![endif]-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
+<!-- this will place the logo at the top of the page for tablet view only
+and will otherwise be display: none; -->
 <div class="tablet">
   <a href="index.html"><img  src="img/logo.png"  alt="Great Idea! Company logo."></a>
 </div>
+
+
 <header class="header-container">
   <nav>
     <a href="services.html">Services</a>
@@ -25,13 +30,16 @@
     <a href="#">Vision</a>
     <a href="#">Features</a>
     <a href="#">About</a>
-    <a href="#" class="test">Contact</a>
+    <a href="#"></a>
     <a href="index.html" class="switch"><img  src="img/logo.png"  class="logo" alt="Great Idea! Company logo."></a>
   </nav>
-</header>
+</header><!--  end of header  -->
+
+
 <div class="container">
   <body>
-    <div class="space-evenly">
+
+    <div class="flex-box">
       <div class="title-button">
         <h1 class="big-title">
           Innovation<br> On
@@ -40,10 +48,11 @@
         <button class="button">Get Started</button>
       </div>
       <img src="img/header-img.png" alt="Image of a code snippet." class="div-img">
-    </div>
-    <br>
-    <hr class="add-margin">
-    <div class=space-evenly>
+    </div><!-- end of flex box -->
+
+    <hr>
+
+    <div class=flex-box>
       <div>
         <h2>Features</h2>
         <p>Aliquam elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.</p>
@@ -52,38 +61,43 @@
         <h2>About</h2>
         <p>Aliquam elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.</p>
       </div>
-    </div>
-    <img class="add-margin" src="img/mid-page-accent.jpg" alt="Image of code snippets across the screen">
-    <div class="space-evenly">
+    </div><!--  end of flex box -->
+
+    <img class="banner" src="img/mid-page-accent.jpg" alt="Image of code snippets across the screen">
+
+    <div class="flex-box">
       <div>
         <h2>Services</h2>
         <p>Aliquam elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.
         </p>
       </div>
-      <div class='small-margin'></div>
       <div>
         <h2>Product</h2>
         <p>Aliquam elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.</p>
       </div>
-      <div class='small-margin'></div>
       <div>
         <h2>Vision</h2>
         <p>Aliquam elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.</p>
       </div>
-      <div class='small-margin'></div>
-    </div>
-    <hr class="add-margin">
+    </div><!--  end of flex box -->
+
+    <hr>
+
     <h3>Contact</h3>
+
     <address>
       123 Way 456 Street<br>
       Somewhere, USA<br><br>
       1 (888) 888-8888<br><br>
       sales@greatidea.io
     </address>
-  </body>
+
+  </body><!--  end of body -->
+
   <footer>
-    <p class="center-me add-margin">Copyright Great Idea 2018</p>
-  </footer>
-</div>
+    <p class="center-me">Copyright Great Idea 2018</p>
+  </footer><!--  end of footer -->
+
+</div> <!-- end of container -->
 
 </html>
