@@ -213,8 +213,6 @@ div section {
     }
 
     .navigation a {
-        /* width: 750px;
-        padding: 10px; */
         padding: 35px 35px 0 35px;
     }
 
@@ -224,17 +222,11 @@ div section {
     }
 
     .intro div {
-        /* padding: 50px; */
         padding: 0;
     }
 
     .intro img {
         display: none;
-    }
-
-    .intro h6 {
-        width: 175px;
-        padding: 8px;
     }
 
     .blurb-one {
@@ -262,5 +254,73 @@ div section {
 
 /* mobile */
 @media (max-width: 500px) {
-    
+    .head-nav {
+        width: 465px;
+
+        flex-direction: column-reverse;
+    }
+
+    .head-nav img {
+        padding: 25px;
+    }
+
+    .navigation {
+        width: 100%;
+    }
+
+    .navigation a {
+        font-size: 120%;
+        border: 1px solid lightgrey;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro {
+        width: 450px;
+        padding-bottom: 75px;
+    }
+
+    .intro div {
+        padding: 0;
+    }
+
+    .intro img {
+        display: none;
+    }
+
+    .blurb-one {
+        width: 450px;
+        flex-direction: column
+    }
+
+    .blurb-one div {
+        width: 100%;
+        padding-bottom: 35px;
+    }
+
+    .middle-img {
+        width: 465px;
+    }
+
+    .blurb-two {
+        width: 450px;
+        padding-bottom: 50px;
+        flex-direction: column;
+    }
+
+    .blurb-two div {
+        width: 100%;
+        padding-bottom: 35px;
+    }
+
+    .contact {
+        padding-bottom: 50px;
+        width: 450px;
+    }
+
+    hr {
+        width: 450px;
+    }
 }
