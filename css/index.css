@@ -1,3 +1,234 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+@keyframes example {
+    from {background-color: lightsteelblue;}
+    to {background-color: steelblue;}
+}
+
+.content {
+    max-width: 880px;
+	margin: auto;
+	justify-content: center;
+
+}
+
+#navbar {
+	display: flex;
+	height: 65px;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.navLink {
+	color: lightslategrey;
+	font-size: 14px;
+	text-decoration: none;
+}
+
+#bannerSection {
+	height: 480px;
+	border-bottom: 1px solid black;
+	margin: 0px 0px 30px 0px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#taglineBox {
+	display: flex;
+	flex-flow: column wrap;
+	text-align: center;
+	justify-content: center;
+	align-items: center;	
+	width: 500px;
+	height: 480px;
+}
+
+#tagline {
+	font-size: 60px;
+}
+
+#getStarted {
+	height: 20px;
+	width: 150px;
+	color: white;
+	font-size: 14px;
+	border: 1px solid black;
+	padding: 2px;
+	text-decoration: none;
+	background-color: lightsteelblue;
+    animation-name: example;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+#upperSection {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	margin: 0px 0px 30px 0px;
+}
+
+#features {
+	width: 440px;
+}
+
+#about {
+	width: 440px;
+}
+
+#lowerSection {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	margin: 30px 0px 30px 0px;
+}
+
+#services {
+	width: 290px;
+}
+
+#product {
+	width: 290px;
+}
+
+#vision {
+	width: 290px;
+}
+
+#address {
+	border-top: 1px solid black;
+	width: 880px;
+	padding: 40px 0px 0px 0px;
+}
+
+#footer {
+	text-align: center;
+	margin: 28px 0px;
+	font-size: 14px;
+}
+
+/* services css */
+
+#aboutServices {
+	padding: 46px 0px;
+	margin-bottom: 46px;
+	border-bottom: 1px solid black;
+}
+
+#servicesHeading {
+	font-size: 32px;
+}
+
+.rowParent {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 46px;
+}
+
+.rowChild {
+	background-color: gainsboro;
+	padding: 20px;
+	width: 416px;
+	border: 1px solid black;
+	display: flex;
+	flex-flow: column nowrap;
+}
+
+.learnMore {
+	background-color: white;
+	font-family: Arial;
+	color: black;
+	font-size: 10px;
+	text-align: center;
+	text-decoration: none;
+	border: 1px solid black;
+	border-radius: 4px;
+	padding: 10px;
+	margin-top: 15px;
+	width: 150px;
+}
+
+#bottomSection {
+	border-top: 2px solid black;
+	display: flex;
+	width: 880px;
+	justify-content: space-between;
+	padding: 46px 0px;
+}
+
+#facts {
+	width: 410px;
+}
+
+#things {
+	list-style-type: square;
+	list-style-position: inside;
+	margin-top: 15px;
+	line-height: 35px;
+}
