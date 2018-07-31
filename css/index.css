@@ -258,6 +258,11 @@ header .nav7 {
 /****** Tablet 800px ******/
 
 @media(max-width: 800px){
+    .container {
+        width: 800px;
+        border: 1px solid limegreen;
+    }
+
     header {
         /* border: 3px solid goldenrod; */
         display: flex;
@@ -301,13 +306,13 @@ header .nav7 {
         justify-content: flex-start;
         flex-direction: column;
         align-items: center;
-        border: 2px solid green;
+        /* border: 2px solid green; */
         margin: 50px 0 0 0;
         height: 350px;
     }
 
     .titleParent .titleChild1 {
-        border: 2px solid lime;
+        /* border: 2px solid lime; */
         height: 320px;
         width: 440px;
         display: flex;
@@ -319,7 +324,7 @@ header .nav7 {
         font-size: 70px;
         text-align: center;
         padding: 0 0 10px 70px;
-        border: 1px solid black;
+        /* border: 1px solid black; */
         height: 200px;
         margin: 20px 70px 30px 0;
     }
@@ -329,17 +334,50 @@ header .nav7 {
         font-size: 14px;
         border: 1px solid black;
         width: 170px;
-        height: 60px;
+        height: 50px;
         /* align-items: center; */
-        margin: 0 0 20px 130px;
+        margin: 0 0 30px 130px;
     }
 
     .titleParent .titleChild2 {
-        /* display: none; */
+        display: none;
         border: 1px solid black;
-        height: 5px;
-        width: 5px;
+        height: 1px;
+        width: 1px;
     }
+
+    .mainBody {
+        /* border: 2px solid orange; */
+        display: flex;
+        flex-direction: column;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        margin: 20px 0 0 0;
+    }
+    
+    .top {
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+        margin: 30px 20px 30px 10px;
+        /* border: 2px solid purple; */
+    }
+    
+    .top .text {
+        /* border: 2px solid gold; */
+        width: 400px;
+        height: 120px;
+        padding: 0 0 0 20px;
+    }
+
+    .middle-img {
+        width: 770px;
+        height: 150px;
+        padding: 10px 0 0 20px;
+    }
+
+
+
 }
 
 
