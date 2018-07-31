@@ -140,7 +140,8 @@ header .logo {
 /* Main content */
 .main-content {
 	border-top: 1px solid black;
-	border-bottom: 1px solid black;
+  border-bottom: 1px solid black;
+  line-height: 20px;
 	padding: 39px 0px;
 	display: flex;
   flex-direction: column;
@@ -148,7 +149,8 @@ header .logo {
 }
 
 .top-content {
-	display: flex;
+  display: flex;
+  align-content: center;
 	justify-content: space-between;
 }
 
@@ -164,7 +166,8 @@ header .logo {
 }
 
 .bottom-content {
-	display: flex;
+  display: flex;
+  align-content: center;
 	justify-content: space-between;
 }
 
@@ -228,6 +231,46 @@ footer {
     .cta img {
         display: none;
     }
+
+    .main-content {
+      display: flex;
+      flex-direction: column;
+      line-height: 20px;
+      padding:20px 20px;
+      width:100%;
+    }
+  
+    .main-content .top-content {
+      display: flex;
+      justify-content: space-between;
+      align-content:center;
+      width: 100%
+    }
+  
+    .main-content .top-content .text-content{ 
+      display: flex;
+      flex-wrap: wrap;
+      width: 48%;
+    }
+  
+    .main-content .bottom-content{
+      display: flex;
+      justify-content: space-between;
+      align-content:center;
+      width: 100%;
+    }
+  
+    .main-content .bottom-content .text-content{ 
+      display: flex;
+      flex-wrap: wrap;
+      width: 32%;
+    }
+  
+    .main-content .middle-img {
+      display: block;
+      margin: 30px auto;
+      width: 100%;
+  }
 }
 
 /* Phone */
