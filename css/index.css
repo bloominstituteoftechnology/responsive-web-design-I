@@ -1,3 +1,127 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+body {
+  margin: 0;
+}
+/* header and main navbar */
+header {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  padding: 2% 0 0 0;
+}
+header div {
+  display: flex;
+  flex: 2;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+header div #main-nav {
+  width: 100%;
+}
+header div #main-nav ul {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+header div #main-nav ul li {
+  list-style-type: none;
+  font-size: 1.3rem;
+}
+header div #main-nav ul li .main-nav-button {
+  text-decoration: none;
+  color: #40b299;
+}
+header .logo-area {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  margin-right: 2%;
+}
+/* end header and navbar area */
 
+/* start title area */
+#index-title-area {
+  display: flex;
+  justify-content: space-around;
+  margin: 40px auto;
+}
+#index-title-area div {
+  width: 48%;
+}
+#index-title-area #index-title {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+#index-title-area #index-title h1 {
+  font-size: 5rem;
+}
+#index-title-area #index-title #start {
+  margin: 1% auto;
+  padding: 2% 8%;
+}
+#index-title-area #index-image {
+  margin: 0 auto;
+}
+#index-title-area #index-image img {
+  width: 80%;
+  margin: 0 auto;
+}
+/* end title area */
+/* banner image */
+.imageBanner {
+  display: flex;
+  margin: 2% auto;
+  width: 100%;
+}
+.imageBanner .middle-img {
+  margin: 0 auto;
+  width: 100%;
+}
+/* start footer */
+footer {
+  margin: 0 auto;
+  width: 100%;
+}
+footer #contact {
+  font-size: 1.5rem;
+  padding: 2%;
+}
+footer #contact h3 {
+  font-size: 3.5rem;
+}
+footer #contact address {
+  font-weight: bold;
+}
+footer #contact #copyright {
+  margin: 5%;
+  text-align: center;
+}
+/* end footer */
 
+/* start two column set up */
+.twoCol {
+  display: flex;
+  justify-content: space-between;
+}
+.twoCol div {
+  background-color: #b1e1dd;
+  font-size: 1.5rem;
+  padding: 3%;
+  margin: 5% 2%;
+}
+/* end two column set up */
+/*  start three column set up */
+.threeCol {
+  display: flex;
+  justify-content: space-between;
+}
+.threeCol div {
+  background-color: #b1e1dd;
+  font-size: 1.5rem;
+  margin: 5% 2%;
+  padding: 2%;
+}
+/* end three column set up */
