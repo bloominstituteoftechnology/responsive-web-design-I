@@ -78,7 +78,8 @@ h4{
 /* header */
 
 header{
-	display: flex;
+  display: flex;
+  border: 1px solid red;
 }
 
 
@@ -114,6 +115,8 @@ header nav a:last-child {
 
 header .logo {
   margin-top: 25px;
+  border: 1px solid red;
+
 }
 
 /* cta */
@@ -162,7 +165,7 @@ header .logo {
 }
 
 .main-content .top-content .text-content {
-  width: 410px;
+  width: 100%;
   margin-right: 34px;
 }
 
@@ -280,16 +283,21 @@ footer {
 
   header{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column-reverse;
     justify-content: center;
   }
 
-  header img{
-   display: flex;
-   align-self: center;
-   margin-left: 255px;
-
+  header .logo{
+    display: block;
+    margin: 30px auto 0;
   }
+
+  /* header img{
+   display: flex;
+   justify-content: center;
+
+  } */
 
  header nav {
    display: flex;
@@ -313,9 +321,6 @@ footer {
 
  /* Services */
 
- .services-header-img{
-   width: 100%;
- }
 
  .services-top{
    padding: 20px;
@@ -367,11 +372,6 @@ footer {
     justify-content: space-around;
   }
 
-  header img {
-    align-self: center;
-    margin-left: 75px;
-  }
-
   .main-nav nav{
     border-top: 1px solid gray;
   }
@@ -409,7 +409,7 @@ footer {
   }
 
   .main-content .top-content p{
-   width: 300px;
+   width: 100%;
   }
 
   .main-content .top-content h4{
