@@ -64,7 +64,7 @@ h1, h2, h3, h4, h5 {
 }
 
 h4{
-  font-size: 1.5em;
+  font-size: 16px;
 }
 
 .container {
@@ -93,8 +93,10 @@ header nav {
 header nav a {
   justify-content: space-around;
   /* margin-right: 65px; */
-  font-size: 14px;
+  font-size: 18px;
+  font-weight: bold;
   color: gray;
+  opacity: 0.8;
   text-decoration: none;
 }
 
@@ -273,6 +275,7 @@ footer {
   
   .container{
     width: 100%;
+    overflow: hidden;
   }
 
   header{
@@ -282,8 +285,10 @@ footer {
   }
 
   header img{
-    justify-content: center;
-    margin-left: 250px;
+   display: flex;
+   align-self: center;
+   margin-left: 255px;
+
   }
 
  header nav {
@@ -294,9 +299,7 @@ footer {
  }
 
 
-
-
- .cta{
+.cta{
    /* margin-left: 90px; */
    display: flex;
    align-items: center;
@@ -318,6 +321,10 @@ footer {
    padding: 20px;
 
  }
+
+ .main-content .middle-img{
+  width: 100%;
+}
 
  .services-info{
    padding: 20px;
@@ -348,8 +355,10 @@ footer {
 @media ( max-width: 500px ){
 
   .container{
+    overflow: hidden;
     width: 100%;
   }
+  
   
  .main-nav nav {
    width: 100%;
@@ -359,7 +368,8 @@ footer {
   }
 
   header img {
-   margin-left: 75px;
+    align-self: center;
+    margin-left: 75px;
   }
 
   .main-nav nav{
@@ -376,6 +386,9 @@ footer {
     padding: 20px;
   }
   
+  .main-content .middle-img{
+    width: 100%;
+  }
 
   .cta .cta-text{
     width: 100%;
@@ -383,30 +396,24 @@ footer {
     justify-content: center;
     flex-wrap: wrap;
     margin-left: 0;
-    font-size: 4rem;
   }
 
-
-
-.main-content .top-content{
+  .main-content .top-content{
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     /* border: 1px solid red; */
-    width: 200px;
     padding: 20px;
   
 
   }
 
   .main-content .top-content p{
-    width: 325px;
+   width: 300px;
   }
 
   .main-content .top-content h4{
     margin-top: 20px;
-  
-
   }
 
   .main-content .bottom-content{
@@ -431,7 +438,10 @@ footer {
     width: 100%;
     padding: 20px;
   }
-
+  
+  .facts p{
+    padding: 20px;
+  }
   .facts img {
     display: none;
   }
