@@ -1,3 +1,281 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+span, p, li, button {
+    font-family: 'Roboto', sans-serif;
+}
 
 
+body {
+    line-height: 1;
+}
+nav {
+    margin: 30px;
+    width: 84%;
+    background-color: #616161;
+    padding: 20px;
+}
+nav a {
+    color: white;
+    margin-right: 10%;
+}
+
+nav a:hover {
+    color: #55FCA0;
+}
+a {
+    text-decoration: none;
+
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+section {
+    margin: 20px 100px;
+}
+
+button {
+    width: 218px;
+    border: thin solid black;
+    background: none;
+    padding: 10px;
+    cursor: pointer;
+    -webkit-transition: all .25s;
+    -moz-transition: all .25s;
+    -ms-transition: all .25s;
+    -o-transition: all .25s;
+    transition: all .25s;
+}
+
+button:hover{
+    background: #55FCA0;
+}
+
+
+article {
+    border-top: thin solid black;
+    border-bottom: thin solid black;
+    padding: 50px 20px;
+    margin: 50px;
+}
+
+footer {
+    padding: 20px;
+    margin: 50px;
+}
+
+footer div {
+    width: 100%;
+    text-align: center;
+}
+
+.logo {
+    background-image: url("../img/logo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 200px;
+    height: 100px;
+    margin-right: 10px;
+}
+
+.title {
+    font-size: 5em;
+    width: 422px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.title-sm {
+    font-size: 2em;
+}
+
+.promo {
+    width: 600px
+}
+
+.promo2 {
+    width: 500px
+}
+
+.service {
+    width: 400px;
+    height: 240px;
+    padding: 20px;
+    margin: 0 40px 40px 0;
+    background: #F4F3F4;
+    border: thin solid gray;
+}
+
+.service button {
+    margin-top: 20px;
+}
+
+.middle-img {
+    background-image: url("../img/mid-page-accent.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 180px;
+    margin: 50px 0;
+    align-self: center;
+}
+
+.services-header-img {
+    background-image: url("../img/services-header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+}
+
+.services-info-img {
+    background-image: url("../img/services-info.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 450px;
+    height: 320px;
+}
+
+
+
+/* Your code starts here! */
+
+/**************UTILS****************/
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-start {
+    justify-content: flex-start;
+}
+
+.justify-space-between {
+    justify-content: space-between;
+}
+
+.justify-space-around {
+    justify-content: space-around;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.align-end {
+    align-items: flex-end;
+}
+
+.align-start {
+    align-items: flex-start;
+}
+
+.flex-grow {
+    flex-grow: 1
+}
+
+.full-height {
+    height: 100%;
+}
+
+.full-width {
+    width: 100%
+}
+
+.third-width {
+    width: 33.333%
+}
+
+.grow-1 {
+    flex-grow: 1;
+}
+
+.grow-2 {
+    flex-grow: 2;
+}
+
+.grow-3 {
+    flex-grow: 3;
+}
+
+.grow-4 {
+    flex-grow: 4;
+}
+
+.grow-5 {
+    flex-grow: 5;
+}
+
+.grow-6 {
+    flex-grow: 6;
+}
