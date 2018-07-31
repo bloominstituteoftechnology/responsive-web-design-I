@@ -1,3 +1,298 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/*elements-------------------------------------------------------------*/
+
+body {
+    position: absolute; 
+    margin: 0 auto; 
+    width: 100%; 
+    display: flex; 
+    justify-content: center;
+    flex-wrap: wrap; 
+  }
+	
+a {
+	text-decoration: none; 
+	}
+	
+h1 {
+	font-size: 80px; 
+	}
+		
+h3 {
+  
+  text-align: center; 
+   }
+		
+h4 {
+  font-weight: bold; 
+   }
+		
+h6 {
+  text-align: center;
+  font-weight: bold;  
+  padding-bottom: 30px; 
+   }
+		
+p {
+  font-family: 'Roboto', sans-serif;
+  }
+
+hr {
+  width: 80%; 
+  text-align: center;  
+   }
+
+	
+/*Nav Bar------------------------------------------------------------------------*/
+
+.fixed {
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: space-around; 
+  width: 100%; 
+ }
+
+nav {
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: center; 
+  width: 73%; 
+  text-align: center; 
+  padding-top: 35px;   
+ }
+  
+nav a {  
+  color: grey; 
+  text-decoration: none; 
+  margin-left: 9%;  
+  font-size: 14px; 
+ }
+  
+nav a:hover {
+  color: black; 
+  font-weight: bold; 
+  font-size: 16px; 
+  transition: 0.7s; 
+ }
+	
+ 
+.navLogo {
+  display: flex; 
+  margin-left: 10px; 
+  flex-wrap: wrap; 
+  width: 24%; 
+  padding: 25px 0px 30px 0px;
+ }
+  
+.button1{
+  width: 180px; 
+  border: 1px solid green; 
+  margin-top: 20px; 
+  padding: 9px;
+  }
+  
+.button1:hover{
+  background-color:rgba(6, 143, 177, 0.2); 
+  color: black; 
+  font-weight: bold; 
+  font-size: 1.2em; 
+  transition: 0.2s; 
+  }
+	
+/* Header and Banner------------------------------------------------------------------*/
+	
+.banner {
+  display: flex; 
+  flex-wrap: wrap; 
+  flex-direction: column; 
+  width: 50%; 
+  text-align: center; 
+  padding-top: 50px; 
+  padding-left: 7%; 
+  align-items: center;
+  justify-content: center; 
+  }
+
+.bannerImage{
+    width: 50%; 
+    display: flex; 
+    justify-content: center;
+    padding-right: 7%;   
+}
+  
+header{
+  width: 100%; 
+  padding-bottom: 70px; 
+  padding-top: 50px; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;  
+ }
+
+ 
+  
+/* first row of section --------------------------------------------------*/
+
+.container {
+  width: 82%; 
+  margin: 15px auto 15px auto;  
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center; 
+ }
+	
+.features{
+  display: flex; 
+  flex-wrap: wrap;   
+  width: 50%; 
+  padding: 20px; 
+ }
+  
+.about{
+  display: flex; 
+  flex-wrap: wrap; 
+  padding: 20px; 
+  width: 50%; 
+  }
+  
+/*Middle Image In Container----------------------------------------------*/
+  
+.middle-img{
+  display: flex; 
+  justify-content: center;  
+  width: 80%; 
+  margin: 20px auto 25px auto;  
+ }
+  
+/*Second Row Of Section (Three Columns)---------------------------------------*/
+	
+.services {
+  width: 33%; 
+  padding: 12px;
+ }
+  
+.product {
+  width: 33%; 
+  padding: 12px;
+ }
+  
+.vision {
+  width: 33%; 
+  padding: 12px; 
+  margin-bottom: 20px; 
+ }
+	
+/*Address-----------------------------------------------------*/
+	
+.address {
+  width: 80%;  
+  padding-bottom: 50px; 
+  padding-top: 20px; 
+ }
+	
+address {
+  padding: 10px; 
+  display: flex; 
+  flex-direction: column; 
+  margin: auto;  
+  width: 76%; 
+  flex-wrap: wrap;
+ }
+  
+
+ @media (max-width: 800px){
+     .fixed{
+         flex-direction: column-reverse;  
+         align-items: center; 
+         width: 100%; 
+     }
+     .navLogo{
+         width: 100%; 
+         justify-content: center; 
+         padding: 20px 0px;  
+     }
+     nav{
+         width: 100%;  
+         text-align: center; 
+         justify-content: space-around; 
+     }
+     nav a{
+         
+         margin-left: 0%; 
+        
+    }
+     .bannerImage{
+         display: none; 
+     }
+     .banner{
+         padding: 0px; 
+         width: 100%; 
+         display: flex; 
+         align-items: center; 
+     }
+     header{
+         padding-bottom: 0px; 
+     }
+}
