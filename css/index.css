@@ -260,7 +260,7 @@ header .nav7 {
 @media(max-width: 800px){
     .container {
         width: 800px;
-        border: 1px solid limegreen;
+        /* border: 1px solid limegreen; */
     }
 
     header {
@@ -348,11 +348,13 @@ header .nav7 {
 
     .mainBody {
         /* border: 2px solid orange; */
+        width: 770px;
         display: flex;
         flex-direction: column;
         border-top: 2px solid black;
         border-bottom: 2px solid black;
         margin: 20px 0 0 0;
+
     }
     
     .top {
@@ -376,6 +378,21 @@ header .nav7 {
         padding: 10px 0 0 20px;
     }
 
+    .bottom {
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+        margin: 30px 0 80px 0;
+        /* border: 2px solid purple; */
+        height: 150px;
+    }
+    
+    
+    .bottom .text {
+        /* border: 2px solid gold; */
+        width: 260px;
+        padding: 10px 10px 0 20px;
+    }
 
 
 }
