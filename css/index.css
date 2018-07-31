@@ -142,7 +142,8 @@ header .logo {
 	border-bottom: 1px solid black;
 	padding: 39px 0px;
 	display: flex;
-	flex-direction: column;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .top-content {
@@ -151,7 +152,9 @@ header .logo {
 }
 
 .top-content .text-content {
-  width: 410px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 48%;
 }
 
 .middle-img {
@@ -164,7 +167,9 @@ header .logo {
 }
 
 .bottom-content .text-content {
-	width: 275px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 32%;
 }
 
 
@@ -185,10 +190,21 @@ footer {
 /* Media queries */
 /* Desktop first */
 @media (max-width:800px) {
+    header {
+        flex-direction: column-reverse;
+    }
 
+    header .logo {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .cta img {
+        display: none;
+    }
 }
 
-/* Mobile second */
+/* Tablet second */
 @media (max-width:500px) {
-    
+
 }
