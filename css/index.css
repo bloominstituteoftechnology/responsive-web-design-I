@@ -450,9 +450,57 @@ footer {
   height: 475px;
 }
 
+/* Ipad */
+
+@media (max-width: 800px) {
+  .container {
+    width: 800px;
+    margin: auto;
+  }
+
+  .services-header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .services-header .services-header-img {
+    width: 95%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .services-header .services-paragraph {
+    border-bottom: 5px solid black;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .services-header .services-information {
+    width: 95%;
+    justify-content: center;
+  }
+
+  .services-header .services-information .services-facts {
+    width: 800px;
+    margin: 0;
+  }
+
+  .services-facts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .services-facts p {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
+
 /* Mobile */
 
-@media (min-width: 500px) {
+@media (max-width: 500px) {
   .container {
     width: 500px;
     margin: auto;
