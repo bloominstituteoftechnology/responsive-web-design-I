@@ -1,3 +1,382 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */	
 
 
+ .container {
+	 max-width: 1024px;
+     margin: 0 auto;
+     padding: 20px;
+ }
+
+.navigation {
+	margin: 30px 20px;
+	display: flex;
+	justify-content: space-around;
+	align-items: baseline;
+	width: 100%;
+}
+
+.navigation a{
+	color: #a2a5a6;
+	text-decoration: none;
+}
+
+header {
+	display: flex;
+	padding-bottom: 100px;
+	justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.main-heading {
+	font-size: 70px;
+	color: black;
+	text-align: center;
+	margin-left: 150px;
+}
+
+.header-image {
+	padding-right: 60px;
+	padding-top: 30px;
+}
+
+.get-started { 
+	font-size: 20px;
+	width: 200px;
+    height: 40px;
+	border: 1px solid black;
+	background-color: white;
+    position: relative;
+} 
+
+.first-section {
+    display: flex;
+    justify-content: space-between;
+	border-top: 2px solid black;
+	padding-top: 30px;
+	margin-left: 60px;
+
+}
+.features-about {
+	width: 500px;
+    height: 140px;
+    padding-right: 20px;
+}
+
+.middle-img {
+	display: flex;
+    margin: 0 auto;
+    width: 975px;
+    padding-left: 55px;
+}
+
+.second-section {
+    display: flex;
+    justify-content: space-between;
+	border-bottom: 2px solid black;
+	padding-top: 40px;
+	margin-left: 60px;
+}
+
+.spv {
+	width: 300px;
+	height: 150px;
+	margin-bottom: 30px;
+    padding-right: 20px;
+}
+
+.contact {
+	margin: 20px 60px 60px; 
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 40px;
+}
+
+.services-header-img {
+	width: 100%;
+}
+
+.services-h1 {
+	font-size: 30px;
+}
+
+.serv {
+	display: flex;
+	height: 720px;
+	padding-top: 15px;
+	padding-bottom: 30px;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.service-box {
+	width: 490px;
+	height: 200px;
+	border: 1px solid grey;
+	background-color :#F0F0F0;
+	padding: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.services-top {
+	padding-top: 30px;
+	padding-bottom: 40px;
+	border-bottom: 1px solid black;
+}
+
+
+.learn-more {
+ border: 1px solid black;
+ border-radius: 3px;
+ width: 140px;
+ padding: 10px;
+ margin-top: 15px;
+ background-color: white;
+}
+
+.some-facts {
+	display: flex;
+	flex-wrap: nowrap;
+	border-top: 1px solid black;
+	margin-top: 40px;
+}
+
+.fact-text {
+	align-self: flex-start;
+	padding:40px 30px 30px 30px;
+}
+
+ul li {
+	list-style-type: square;
+	line-height: 1;
+	margin: 20px;
+}
+
+.services-info-img {
+	padding: 40px 0px 60px 60px;
+	display: flex;
+	align-self: flex-end;
+}
+
+@media (max-width: 800px) {
+
+    .container {
+        width: 800px;
+    }
+
+    .header-image{
+        display: none;
+    }
+    .navigation {
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .navigation .logo{
+        order: -1;
+        margin: 10px 300px 40px 300px;
+    }
+
+    .header {
+        flex-wrap: wrap;
+    }
+
+    .main-heading {
+        justify-content: center;
+        margin: 40px 250px 0px 250px;
+    }
+
+    .first-section {
+        display: flex;
+        padding-top: 30px;
+    }
+
+    .middle-img {
+        width: 740px;
+        padding-right: 40px;
+    }
+
+    .second-section {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+/* Services media queries styles */
+    .services-top {
+        padding: 30px 0px 40px 20px;
+        border-bottom: 1px solid black;
+    }
+
+    .service-box {
+	width: 375px;
+	height: 240px;
+}
+
+    .serv {
+        height: 850px;
+    }
+
+
+}
+
+@media (max-width: 500px) {
+
+     .container {
+	 width: 500px;
+ }
+
+    .navigation {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .navigation a {
+        border-bottom: 1px solid gray;
+        padding: 20px 250px;
+        margin: 0 200px;
+        font-size: 20px;
+    }
+
+    .navigation .logo{
+        order: -1;
+        border-bottom: 1px solid gray;
+        margin: 0 200px;
+        padding: 0px 200px 20px 200px;
+    }
+
+        .main-heading {
+        justify-content: center;
+        margin: 20px 70px 0 120px;
+    }
+
+       .header {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+     .first-section {
+        display: flex;
+        flex-direction: column;
+        padding-top: 30px;
+    }
+
+    .features-about {
+        width: 450px;
+        height: 120px;
+    }
+
+    .middle-img {
+        width: 520px;
+        padding-left: 60px;
+    }
+
+     .second-section {
+        display: flex;
+        flex-direction: column;
+        padding-top: 30px;
+        padding-bottom: 10px;
+    }
+
+    .spv {
+	width: 450px;
+	height: 100px;
+	margin-bottom: 20px;
+    padding-right: 20px;
+    }
+
+    /* Services media query styling at 500px */
+    .services-top {
+    padding: 30px 0px 40px 20px;
+    border-bottom: 1px solid black;
+    }
+
+    .service-box {
+	width: 450px;
+	height: 200px;
+}
+
+    .serv {
+        height: 1450px;
+    }
+
+    .some-facts {
+        display: flex;
+        flex-wrap: wrap;
+        border-top: 1px solid black;
+        margin-top: 40px;
+    }
+
+    .services-info-img {
+        padding: 0 0 30px 20px;
+    }
+}
