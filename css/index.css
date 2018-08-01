@@ -188,7 +188,7 @@ footer p {
 @media (max-width: 800px){
 
     body {
-        padding: 20px;
+        padding: 0 20px;
     }
 
     .top-img {
@@ -207,16 +207,99 @@ footer p {
         margin: 0 auto;
         margin-top: 30px;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
         /* border: 1px solid red; */
+    }
+
+    .features, .about {
+        width: 380px;
+        padding: 10px;
+       
+    }
+
+    .f-a {
+        margin: 0 auto;
     }
 }
 
 @media (max-width: 500px){
 
     body {
-        background-color: blue;
+        /* background-color: blue; */
+        padding: 0px;
     }
 
+    header {
+        margin-bottom: 20px;
+    }
+
+    header nav {
+        /* display: flex; */
+        flex-direction: column;
+        margin-top: 20px;
+
+        
+    }
+
+    header nav a {
+        /* border-top: 1px solid black; */
+        border-bottom: 1px solid black;
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+        font-size: 20px;
+        transition: .8s;
+    }
+
+    header nav a:nth-of-type(1) {
+        border-top: 1px solid black;
+    }
+
+    .logo {
+        padding: 0px;
+    }
+
+    .top {
+        /* padding: 20px; */
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        padding-bottom: 80px;
+        border-bottom: 2px solid black;
+    }
+
+    .f-a {
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .middle-img {
+        display: flex;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .spv {
+        flex-direction: column;
+        
+    }
+
+    .services, .products, .vision {
+        width: 90%;
+        margin: 20px:
+    }
+
+    .contact {
+        border-top: 2px solid black;
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 35px; 
+        margin-bottom: 35px;
+    }
+
+    footer p {
+        font-size: 15px;
+    }
 }
 
