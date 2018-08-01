@@ -1,3 +1,132 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+.container{
+  width: 800px;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.links{
+  display: flex;
+
+}
+nav a{
+  color: dodgerblue;
+  text-decoration: none;
+  justify-content: space-between;
+}
+
+hr{
+  width:100%;
+  margin: solid bold 1px;
+}
+.top-content{
+  align-items: center;
+  display: flex;
+}
+.bottom-content{
+  display: flex;
+  align-items: center;
+}
+
+.cta{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 880px;
+	height: 524px;
+}
 
 
+
+
+/* Mobile */
+@media (max-width: 320px) {
+
+    header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+
+    .links{
+      display: flex;
+
+    }
+    nav a{
+      color: dodgerblue;
+      text-decoration: none;
+      justify-content: space-between;
+    }
+
+    hr{
+      width:100%;
+      margin: solid bold 1px;
+    }
+    .top-content{
+      align-items: center;
+      display: flex;
+    }
+    .bottom-content{
+      display: flex;
+      align-items: center;
+    }
+
+    .cta{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 880px;
+    	height: 524px;
+    }
+    background-color: #F5CF8E; /* Yellow */
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+
+  #code-circle{
+    display:none;
+  }
+
+    header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+
+    .links{
+      display: flex;
+
+    }
+    nav a{
+      color: dodgerblue;
+      text-decoration: none;
+      justify-content: space-between;
+    }
+
+    hr{
+      width:100%;
+      margin: solid bold 1px;
+    }
+    .top-content{
+      align-items: center;
+      display: flex;
+    }
+    .bottom-content{
+      display: flex;
+      align-items: center;
+    }
+
+    .cta{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 880px;
+    	height: 524px;
+    }
+    background-color: #B2D6FF; /* Blue */
+  }
+}
