@@ -1,3 +1,371 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+a {
+	list-style-type: none;
+	text-decoration: none;
+}
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+.container {
+	width: 100%;
+	max-width: 880px;
+	margin: 0 auto;
+}
+
+header {
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	padding: 25px 0px;
+}
+
+header nav{
+	width: 69.32%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header nav a {
+	color: gray;
+	font-size: 14px;
+}
+
+header .logo {
+	align-self: flex-end;
+	margin-left: 87px;
+}
+
+.cta {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 35px;
+	padding-bottom: 75px;
+}
+
+.cta-text {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	text-align: center;
+	margin-left: 87px;
+	font-size: 76px;
+}
+
+.cta-text button {
+	margin: 0px 78px;
+	padding: 6px 0px;
+	background: white;
+	border: 1px solid black;
+	font-size: 17px;
+}
+
+.main-content {
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	display: flex;
+	flex-flow: column nowrap;
+	padding-top: 34px;
+	padding-bottom: 40px;
+}
+
+.main-content .top-content {
+	display: flex;
+	flex-flow: row nowrap;
+	padding-bottom: 30px;
+}
+
+.main-content .bottom-content {
+	display: flex;
+	flex-flow: row nowrap;
+	padding-top: 30px;
+}
+
+.main-content .bottom-content .text-content {
+	padding-right: 10px;
+}
+
+.contact {
+	padding-top: 41px;
+}
+
+.contact p {
+	padding: 6px 0px;
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 50px;
+    padding-bottom: 90px;
+}
+
+ /* At 800px And below do the following: */
+@media (max-width: 800px) {
+    header {
+        display: flex;
+        flex-flow: column-reverse nowrap;
+        align-items: center;
+        padding: 30px 0px;
+    }
+
+    header nav {
+        width: 96%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 42px;
+    }
+
+    header nav a {
+        color: gray;
+        font-size: 14px;
+        padding-right: 33px;
+    }
+
+    header .logo {
+        display: flex;
+        align-self: center;
+        margin-left: 0px;
+    }
+
+    .cta {
+        display: flex;
+        justify-content: center;
+        padding-top: 35px;
+        padding-bottom: 75px;
+    }
+
+    .cta-text {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        text-align: center;
+        margin-left: 0px;
+        font-size: 76px;
+    }
+
+    .cta div img {
+        display: none;
+    }
+
+    .main-content {
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        padding-top: 41px;
+        padding-bottom: 71px;
+    }
+
+    .main-content .top-content {
+        display: flex;
+        flex-flow: row nowrap;
+        padding-bottom: 30px;
+        width: 96%;
+    }
+    
+    .main-content .bottom-content {
+        display: flex;
+        flex-flow: row nowrap;
+        padding-top: 30px;
+        width: 96%;
+    }
+    
+    .main-content .bottom-content .text-content {
+        padding-right: 10px;
+    }
+
+    .contact {
+        padding-top: 37px;
+        padding-left: 13px;
+    }
+    
+    .contact p {
+        padding: 6px 0px;
+    }
+    
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 35px;
+        padding-bottom: 30px;
+    }
+}
+
+ /* At 500px And below do the following: */
+@media (max-width: 500px) {
+    .container {
+        width: 100%;
+        max-width: 880px;
+        margin: 0 auto;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    } 
+
+    header {
+        display: flex;
+        flex-flow: column-reverse nowrap;
+        align-items: center;
+        padding: 21px 0px;
+    }
+
+    header nav {
+        width: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        padding-top: 23px;
+    }
+
+    header nav a {
+        color: gray;
+        font-size: 19px;
+        padding: 20px 0px;
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid black;
+    }
+
+    header nav a:first-child {
+        border-top: 1px solid black;
+    }
+
+    header .logo {
+        display: flex;
+        align-self: center;
+        margin-left: 0px;
+    }
+
+    .cta {
+        display: flex;
+        justify-content: center;
+        padding-top: 35px;
+        padding-bottom: 67px;
+    }
+
+    .main-content {
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        padding-top: 41px;
+        padding-bottom: 71px;
+        width: 95%;
+    }
+
+    .main-content .top-content {
+        display: flex;
+        flex-flow: column nowrap;
+        padding-bottom: 0px;
+        padding-top: 17px;
+        width: 100%;
+    }
+
+    .main-content .top-content .text-content {
+        padding-bottom: 59px;
+        padding-right: 0px;
+    }
+
+    .main-content .middle-img {
+        width: 100%
+    }
+    
+    .main-content .bottom-content {
+        display: flex;
+        flex-flow: column nowrap;
+        padding-top: 30px;
+        width: 100%;
+    }
+
+    .main-content .bottom-content .text-content {
+        padding-bottom: 59px;
+        padding-right: 0px;
+    }
+
+    .contact {
+        align-self: flex-start;
+        padding-top: 37px;
+        padding-left: 13px;
+        width: 100%;
+    }
+    
+    .contact p {
+        padding: 6px 0px;
+    }
+    
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 35px;
+        padding-bottom: 30px;
+    }
+}
