@@ -108,17 +108,17 @@ a {
 }
 
 /* header */
-header.header-horizontal {
+header {
 	padding: 62px 0px 73px 0px;
 	border-bottom: 2px solid black;
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
 }
 
 header .main-header {
     text-align: center;
-    margin-left: 10px;
+    margin-left: 48px;
 	order: 1;
 	flex-grow: 2;
 	display: flex;
@@ -129,7 +129,8 @@ header .main-header {
 
 header .main-header h1 {
 	font-size: 72px;
-	text-align: center;
+    text-align: center;
+    margin-bottom: 25px;
 }
 
 header .main-header a {
@@ -143,7 +144,6 @@ header .main-header a {
 header .main-header-img {
 	width: 379px;
 	order: 2;
-	justify-content: flex-end;
 }
 
 /* main */
@@ -155,6 +155,7 @@ main {
 
 main .content-row {
     display: flex;
+    justify-content: space-between;
 }
 
 main .content-row p {
@@ -162,32 +163,24 @@ main .content-row p {
     line-height: 18px;
 }
 
+.content-row .content-medium {
+    width: 50%;
+}
+
+.content-row .content-small {
+    width: 33%;
+}
+
+main .middle-img {
+    margin: 30px 1px;
+}
+
 main .contact-row {
 	display: flex;
 	flex-direction: column;
 	border-top: 2px solid black;
-	margin-top: 44px;
+	margin-top: 36px;
 	padding-top: 36px;
-}
-
-main .left {
-	justify-content: flex-start;
-	padding-right: 2px;
-}
-
-main .center {
-	justify-content: center;
-	padding-left: 2px;
-	padding-right: 2px;
-}
-
-main .right {
-	justify-content: flex-end;
-	padding-left: 2px;
-}
-
-main .middle-img {
-    margin: 35px 1px;
 }
 
 /* footer */
