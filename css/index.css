@@ -70,18 +70,28 @@ body {
     max-width: 880px;
     margin: auto;
 }
+.menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
 
 nav{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 a {
 	color: inherit;
     text-decoration: none;
-    padding-top: 10px;
+    padding: 10px 20px;
 	color: gray;	
 }
+.logo {
+    display: flex;
+    justify-content: flex-end;
+}
+
 
 .hero{
 	display: flex;
@@ -89,7 +99,7 @@ a {
 
 }
 .head {
-	font-size: 60px;
+	font-size: 70px;
 	float: left;
 	display: flex;
 	text-align: center;
@@ -119,7 +129,7 @@ a {
 
 .column {
 	display: flex;
-	padding: 30px;
+	padding: 8px 0px;
 	justify-content: space-around;
 }
 
@@ -131,6 +141,9 @@ a {
 .column1-3 {
 	width: 33%;
 
+}
+.middle-img{
+    padding: 25px 0px;
 }
 
 .contact {
@@ -228,30 +241,27 @@ hr {
         flex-direction: column-reverse; 
         
     }
-    .menu .logo {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        width: 200px;
-
+    .logo {
+        display: block;
+        width: 186px;
+        height: 36px;
+        margin: 30px auto;
+      
     }
+
     body {
-        padding: 20px;
+        padding:20px;
     }
     
+    .menu {
+        padding: 0px;
+    }
+    .head {
+        margin: 75px 0px;
+    }
   }
 
-  /* nav{
-    display: flex;
-    justify-content: space-around;
-}
 
-a {
-	color: inherit;
-    text-decoration: none;
-    padding-top: 10px;
-	color: gray;	
-} */
 
   @media (max-width: 500px) {
     .headimg {
@@ -260,6 +270,13 @@ a {
     .menu {
         display: flex;
         flex-direction: column-reverse; 
+        text-align: center;
+    }
+    
+
+    .menu a {
+        padding: 20px 0px;
+        font-size: 20px;
     }
     .column {
         flex-wrap: wrap;
@@ -267,11 +284,24 @@ a {
     }
     .column1-2 {
         width: 90%;
-        padding-bottom: 20px;
+        padding: 25px 0px;
     }
     .column1-3 {
         width: 90%;
-        padding-bottom: 20px;
+        padding: 40px 0px;
+    }
+    body{ 
+        padding: 0px;
+    }
+    nav {
+        flex-direction: column;
+        
+    }
+    a:first-child{
+        border-top: 1px solid gray;
+    }
+    a {
+        border-bottom: 1px solid gray;
     }
   }
 
