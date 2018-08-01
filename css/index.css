@@ -70,7 +70,7 @@ nav {
   background: white;
   justify-content: space-between;
   align-items: center;
-  width: 880px;
+  /*width: 880px;*/
   margin: 28px 0px;
 }
 
@@ -87,22 +87,6 @@ nav a:hover {
 .logo {
   height: 36px;
   width: 183px;
-}
-
-.logo:hover + .light {
-  display: block;
-  box-shadow: 1px 0px 16px 15px yellow, 1px 1px 3px 1px lemonchiffon inset;
-  z-index: -1;
-}
-
-.light {
-  display: none;
-  height: 12px;
-  width: 12px;
-  border-radius: 50%;
-  position: absolute;
-  right: 6px;
-  top: 8px;
 }
 
 .headMain {
@@ -200,4 +184,64 @@ address {
 .copyright {
   margin-top: 50px;
   text-align: center;
+}
+
+@media (max-width: 800px) {
+  .main {
+    width: 95%;
+  }
+  .headerImg {
+    display: none;
+  }
+  nav {
+    flex-wrap: wrap-reverse;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .logo {
+    margin: 0px 43% 42px 43%;
+    height: 36px;
+    width: 183px;
+  }
+  .button {
+    margin-top: 8px;
+  }
+  .headMain {
+    margin: 39px auto 75px; 
+  }
+
+  .content {
+    width: 98%;
+  }
+  section {
+    padding: 0px 20px;
+    border: 1px solid red;
+  }
+  .middle-img {
+    width: 99%;
+    height: 90%;
+  }
+}
+
+@media (max-width: 500px) {
+  nav {
+    flex-direction: column;
+    justify-content: space;
+
+    flex-wrap: nowrap;
+    margin: 28px auto;
+  }
+  a {
+    padding-top: 20px;
+    border-bottom: 1px solid black;
+    font-size: 18px;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+
+  }
+  .logo {
+    order: -1;
+    margin-bottom: 10px;
+  }
 }
