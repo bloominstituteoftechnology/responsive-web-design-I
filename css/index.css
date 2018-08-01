@@ -24,7 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+/*article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -69,14 +69,15 @@ body {
 	
 	display: flex;
 	flex-direction: column;
-	width: 880px;
+    width: 80%;
+    max-width: 800px;
 	height: auto;
 	margin: 0 auto;
 }
 
 header {
-	display: flex;
-	width: 880px;
+    display: flex;
+	width: 80%;
 	justify-content: space-between;
 	
 }
@@ -87,7 +88,7 @@ header {
 
 	display: flex;
 	justify-content: center;
-	width: 880px; 
+	width: 80%; 
 	
 
 }
@@ -101,12 +102,6 @@ header {
 	flex-direction: column;
 }
 
-nav { 
-	display: flex;
-	justify-content: flex-start;
-	justify-content: space-between;
-}
-
 a {
 	display: flex;
 	margin: 5px;
@@ -116,6 +111,10 @@ a {
 
 p {
     margin: 10px 30px 10px 30px;
+}
+
+section {
+    display: flex;
 }
 
 .logo1 {
@@ -130,7 +129,7 @@ p {
 
 .top-matter {
 	display: flex;
-	width: 880px; 
+	width: 80%; 
 }
 
 
@@ -150,13 +149,13 @@ h1 {
 
 .topArt {
     display: flex;
-	align-items: center;
-	justify-content: center;
+    align-items: center;
+	justify-content: space-between;
 	margin-bottom: 20px;
 }
 
 .middle-img {
-	width: 880px;
+	width: 80%;
 	height: auto;
 	margin-bottom: 20px;
 }
@@ -164,7 +163,7 @@ h1 {
 .botArt {
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-between;
 	margin-right: 10px;
 	margin-bottom: 20px;
 }
@@ -211,10 +210,24 @@ button {
 	border-radius: 5px;
 }
 
+.features, .about, .services, .product, .vision {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+
 @media (max-width: 800px){
     body {
         width: 80%;
     }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
     .top-img {
         display: none;
     }
@@ -232,12 +245,30 @@ button {
         margin: 0 auto;
     }
 
+    
 
 }
 
 @media (max-width: 500px){
+    
+
+    .logo2 {
+        display: none;
+    }
+
+    .logo1 {
+        display: block;
+        margin: 0 auto;
+    }
+
     .nav {
+        display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    .anchors {
+        display: flex;
+        flex-direction: column;
     }
 }
