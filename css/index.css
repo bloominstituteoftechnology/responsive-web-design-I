@@ -1,3 +1,361 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+.main{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	width: 880px;
+	margin: 0px auto;
+}
+
+#anchors{
+    display: flex;
+    justify-content: space-between;
+    width: 606px;
+}
+
+#upper-nav{
+	display: flex;
+	justify-content: space-between;
+    align-items: center;
+	height: 52px;
+}
+
+a{
+	text-decoration: none;
+	font-size: 15px;
+    color: lightgrey;
+    font-weight: 600;
+    letter-spacing: .03em;
+}
+
+.logo{
+	padding: 4px 0px 6px 5px;
+}
+
+#header{
+	display: flex;
+    align-items: center;
+    height: 518px;
+    border-bottom: 2px solid black;
+}
+
+.header-text-div{
+	display: flex;
+	flex-direction: column;
+	width: 500px;
+	height: 420px;
+	padding-top: 65px;
+}
+
+#header img{
+    padding: 0px 0px 13px 0px;
+}
+
+.header-text{
+	font-family: 'Bangers', cursive;
+    font-size: 72px;
+    letter-spacing: .015em;
+    text-align: center;
+    padding: 1px 0px 0px 45px;
+}
+
+.get-started{
+	text-align: center;
+	width: 170px;
+	padding: 7px 0px;
+	margin: 24px 0px 0px 188px;
+	color: black;
+	border: 1px solid black;
+    font-size: 16px;
+    letter-spacing: .035em;
+}
+
+#upper-para{
+	display: flex;
+	justify-content: space-between;
+	margin: 36px 0px 0px 0px;
+}
+
+#upper-para div{
+    width: 430px;
+    margin-right: 10px;
+}
+
+#upper-para div p{
+    line-height: 1.17em;
+}
+
+.middle-img{
+    width: 877px;
+    margin-left: 2px;
+    margin-top: 31px;
+}
+
+#lower-para{
+	display: flex;
+    justify-content: space-between;
+	margin: 31px 0px 0px 0px 0px;
+	border-bottom: 2px solid black;
+}
+
+#lower-para div{
+	width: 290px;
+	margin: 35px 10px 35px 0px;
+}
+
+#lower-para div p{
+    line-height: 1.2em;
+}
+
+.contact h2{
+	margin-top: 40px;
+	margin-bottom: 2px;
+}
+
+.contact p{
+	padding: 10px 0px;
+}
+
+#copyright{
+	text-align: center;
+	margin-top: 40px;
+	margin-bottom: 50px;
+}
+
+#services-about{
+	margin: 20px 0px;
+}
+
+.services-content-container{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.services-content{
+	width: 48%;
+	border: 1px solid black;
+	padding: 25px;
+	margin: 20px 0px;
+	background-color: #f4f3f4;
+}
+
+.services-content p{
+	margin-bottom: 30px;
+}
+
+.services-content a{
+	padding: 8px 40px;
+	border: 1px solid black;
+	border-radius: 5px;
+	background-color: white;
+	color: black;
+}
+
+#services-facts{
+	display: flex;
+	justify-content: space-between;
+	margin: 40px 0px;
+}
+
+#services-facts p{
+	padding-right: 50px;
+	margin-bottom: 25px;
+	line-height: 1.2;
+}
+
+#services-facts li{
+	list-style-type: square;
+	list-style-position: inside;
+	margin-bottom: 10px;
+}
+
+#copyright{
+	display: flex;
+	justify-content: center;
+}
 
 
+@media(max-width: 800px){
+	.main{
+		width: 760px;
+		margin: 0px auto;
+	}
+
+	#upper-nav{
+		flex-direction: column-reverse;
+		align-items: center;
+		height: 100px;
+	}
+
+	.logo{
+		margin: 20px 0px 30px 0px;
+	}
+
+	#anchors{
+		width: 700px;
+	}
+
+	#header img{
+		display: none;
+	}
+
+	#header{
+		height: 400px;
+		border-bottom: 2px solid black;
+	}
+	
+	.header-text-div{
+		width: 760px;
+		height: 300px;
+		padding-top: 30px;
+	}
+
+	.header-text{
+		padding: 0px;
+	}
+
+	.get-started{
+		text-align: center;
+		width: 170px;
+		padding: 7px 0px;
+		margin: 20px auto;
+	}
+
+	#upper-para{
+		margin-bottom: 30px;
+	}
+
+	.middle-img{
+		width: 760px;
+		margin: 0px auto;
+	}
+}
+
+@media(max-width: 500px){
+	.main{
+		width: 480px;
+	}
+
+	#upper-nav{
+		justify-content: flex-end;
+		height: 480px;
+	}
+
+	#anchors{
+		display: flex;
+		flex-direction: column;
+		width: 480px;
+		border-bottom: 1px solid black;
+	}
+
+	a{
+		font-size: 20px;
+		color: lightgrey;
+		font-weight: 600;
+		letter-spacing: .03em;
+		width: 480px;
+		text-align: center;
+		padding: 20px 0px 20px 0px;
+		border-top: 1px solid black;
+	}
+
+	.header-text-div{
+		display: flex;
+		flex-direction: column;
+		width: 480px;
+		height: 420px;
+		padding-top: 45px;
+	}
+
+	#upper-para{
+		display: flex;
+		flex-direction: column;
+		margin: 45px 0px 0px 20px;
+	}
+
+	#upper-para div{
+		margin-bottom: 50px;
+	}
+
+	.middle-img{
+		width: 460px;
+		margin: 0px auto;
+	}
+
+	#lower-para{
+		flex-direction: column;
+		justify-content: space-between;
+		margin: 20px 0px 40px 0px;
+		border-bottom: 2px solid black;
+	}
+
+	#lower-para div{
+		width: 460px;
+		margin: 10px;
+		padding-bottom: 20px;
+	}
+
+	.contact h2{
+		margin-top: 0px;
+	}
+}
