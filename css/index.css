@@ -63,10 +63,15 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
+/* Main code */
+
 .container {
   width: 880px;
-  /* TB LR */
-  margin: 0 auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 /* header */
@@ -187,4 +192,89 @@ footer {
   margin: 32px 0;
   text-align: center;
   font-size: 14px;
+}
+
+
+/* Media Query for max 800px */
+
+@media (max-width:800px) {
+
+    .container {
+        width: 80%;
+        position: absolute;
+        margin-right: auto;
+        margin-left: auto;
+        left: 0;
+        right: 0;
+
+    }
+
+    header {
+        display: inline-flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    header .logo {
+        max-width: 200px;
+        align-self: center;
+    }
+
+    header nav {
+    margin-right: 0px;
+    width: 100%;
+    }
+
+    .cta img {
+        visibility: hidden;
+        display: none;
+    }
+
+    .cta {
+        display: flex;
+        justify-content: center;
+    }
+
+    .cta .cta-text {
+        margin-top: 60px;
+    }
+
+    .main-content {
+        margin-top: 40px;
+        border-top: 2px solid black;
+    }
+
+    .main-content .top-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .text-content {
+        line-height: 1.25;
+        font-size: 14px;
+    }
+
+    .main-content .middle-img {
+        width: 100%;
+    }
+
+    .main-content .bottom-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .main-content .bottom-content .text-content {
+        margin-right: 20px;
+    }
+
+    .main-content .bottom-content .text-content:last-child {
+        margin-right: 0;
+    }
+
+    .contact {
+        margin-top: 30px;
+    }
+
 }
