@@ -75,7 +75,8 @@ header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin-top: 25px;
+  margin-top: 25px;
+  margin-bottom: 35px;
 }
 header nav {
   align-content: center;
@@ -141,7 +142,8 @@ header .logo2 {
 	border-bottom: 1px solid black;
 	padding: 39px 0px;
 	display: flex;
-	flex-direction: column;
+  flex-direction: column;
+  margin-top: 20px;
 }
 
 .top-content {
@@ -188,6 +190,7 @@ footer {
         width: 90%;
     }
     header {
+      flex-direction: column;
         justify-content: center;
         text-align: center;
     }
@@ -199,17 +202,25 @@ footer {
       display: none;
     }
     header .logo2 {
+      margin-bottom: 20px;
       display: inline-block;
     }
     .cta {
+      margin-top: 20px;
         justify-content: center;
         width: 100%;
+    }
+    .cta img {
+      display: none;
     }
     .cta .cta-text {
         margin: 0;
     }
     .main-content .middle-img {
         width: 100%;
+    }
+    .main-content {
+      margin-top: 20px;
     }
 }
 
@@ -253,9 +264,7 @@ header nav a:last-child {
     display: none;
     max-width: 80%;
 }
-.main-content {
-  margin-top: 20px;
-}
+
   .main-content .top-content {
   height: 300px;
   justify-content: space-around;
