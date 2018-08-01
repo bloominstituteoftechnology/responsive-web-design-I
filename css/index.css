@@ -1,7 +1,5 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
-body {
-  margin: 0;
-}
+
 /* header and main navbar */
 header {
   align-items: center;
@@ -125,3 +123,41 @@ footer #contact #copyright {
   padding: 2%;
 }
 /* end three column set up */
+
+@media (max-width: 800px) {
+  body {
+    margin: 0 auto;
+    width: 90%;
+  }
+  header {
+    flex-direction: column-reverse;
+  }
+  header .navbar {
+    width: 100%;
+  }
+  header .navbar #nav {
+    justify-content: space-around;
+  }
+  header .logo-area {
+    justify-content: center;
+    margin-bottom: 5%;
+    width: 100%;
+  }
+  main #index-title-area {
+    margin: 10%;
+  }
+  main #index-title-area #index-title h1 {
+    font-size: 6rem;
+  }
+  main #index-title-area #index-title #start {
+    font-size: 2rem;
+    padding: 1% 10%;
+  }
+  main #index-image {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+
+}
