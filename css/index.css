@@ -416,5 +416,56 @@ header .nav7 {
 /****** Phone 500px ******/
 
 @media(max-width: 500px){
+    .container {
+        width: 500px;
+        /* border: 1px solid limegreen; */
+    }
+
+    header {
+        /* border: 3px solid goldenrod; */
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 25px;
+        height: 430px;
+        /* position: fixed; */
+    }
+
+    header nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        /* border: 1px solid pink; */
+        width: 450px;
+        height: 400px;	
+    }
+
+    header .nav7 {
+        /* border: 2px solid blue; */
+        /* display: inline-block; */
+        height: 40px;
+        padding: 2px 2px 2px 2px;
+        margin: 0 0 12px 0;
+        
+    }
+
+    header nav a {
+        /* display: inline-flex; */
+        justify-content: space-around; 
+        align-items: center;
+        text-decoration: none; 
+        font-size: 20px;
+        color: gray;
+        border: 1px solid black;
+        height: 66px;
+        width: 500px;
+    }
+
+    header nav a.nav3 {
+        margin: 0 0 0 0px;
+    }
+
 
 }
