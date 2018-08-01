@@ -211,6 +211,66 @@ a:hover {
 	margin-bottom:100px;
 }
 
+/* below css is service page specific */
+
+.services-header-img {
+	margin: 30px 0px;
+}
+
+.service-top h2 {
+	font-size:25px;
+}
+.service-top {
+	padding-bottom:25px;
+	border-bottom: 1px solid black;
+}
+
+.middle-container {
+	display:flex;
+	flex-wrap:wrap;
+	justify-content: space-between;
+	padding-top:30px;
+	border-bottom: 1px solid black;
+}
+
+.middle-blocks {
+	border: 1px solid black;
+	margin-bottom:35px;
+	width:425px;
+	background-color:whitesmoke;
+	padding:20px;
+}
+
+.middle-blocks button {
+	border:1px solid black;
+	padding: 6px 40px;
+	margin-top:20px;
+	background-color:white;
+	border-radius:10%;
+}
+
+.footer-container {
+	padding: 30px 0px;
+	display: flex;
+
+}
+
+.service-info-img {
+	margin-bottom:25px;
+}
+.bottom-fact-block {
+	padding-right:30px;
+}
+.bottom-fact-block ul {
+	margin-top:25px;
+}
+
+.bottom-fact-block ul li {
+	margin-top:15px;
+	list-style-type: square;
+	margin-left:20px;
+}
+
 @media (max-width:800px) {
     .container {
         width:95%;
@@ -228,7 +288,6 @@ a:hover {
     }
 
     .container .logo {
-        width:25%;
         display: block;
     }
 
@@ -255,7 +314,11 @@ a:hover {
 
     .middleContent .middle-img {
         width:100%;
-    }
+	}
+	
+	.middle-blocks {
+		width:30%;
+	}
 }
 
 @media(max-width:500px) {
@@ -284,6 +347,25 @@ a:hover {
         flex-direction: column;
     }
 
+	.middle-blocks {
+		width:auto;
+	}
+
+	.footer-container img {
+		display:none;
+	}
+
+	.footer-container {
+		width:100%;
+	}
+
+	.bottom-fact-block h3 {
+		text-align: center;
+	}
+
+	.bottom-fact-block p {
+		text-align:center;
+	}
     footer .copyright-bottom {
         margin: 35px 0px;
     }
