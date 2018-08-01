@@ -96,9 +96,6 @@ header nav a:last-child {
 	margin-right: 86px;
   }
 
-header .logo {
-  /* display: inline-block; */
-}
 
 .top-top {
 	width: 880px;
@@ -196,5 +193,39 @@ footer {
     header {
         display: flex;
         flex-wrap: wrap-reverse;
+    }
+}
+
+@media (max-width:500px) {
+    header nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    header nav a {
+        border-bottom: 1px solid black;
+        width:100%;
+        margin-top: 10px;
+        padding: 20px 0px;
+        text-align: center;
+    }
+    header nav a:first-child {
+        padding-top: 20px;
+        border-top: 1px solid black;
+    }
+    .top-top {
+        height: 350px;
+    }
+    .top-content {
+        flex-direction: column;
+    }
+    .bottom-content {
+        flex-direction: column;
+    }
+    .text {
+        margin-bottom: 15px;
+    }
+    .middle-img {
+        height: 65px;
+        margin-top: 20px;
     }
 }
