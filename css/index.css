@@ -358,3 +358,61 @@ hr{
         align-self: center;
     }
 }
+
+@media (max-width:500px){
+    .nav{
+        flex-direction: column;
+/*        background: blue;*/
+    }
+    
+    .nav li{
+        border-bottom: 1px solid dashed;
+        margin-bottom: 5px;
+/*        width: 100%;*/
+/*        display: inline-flex;*/
+        align-self: center;
+/*        background: black;*/
+    }
+    
+    .nav li a{
+/*        background: red;*/
+    }
+    
+    .twolayout{
+        flex-direction: column;
+        margin: auto;
+        height: auto;
+    }
+    
+    .feature{
+        margin-bottom: 20px;
+    }
+    
+    .threelayout{
+        flex-direction: column;
+    }
+    
+     .service{
+        margin-bottom: 20px;
+    }
+    
+    .contact{
+        padding-top: 200px;;
+        align-items: center;
+        width: 100%;
+/*        height: auto;*/
+        
+    }
+    
+    .contact *{
+        margin-top: 10px;
+    }
+    
+    .address{
+        margin: auto;
+    }
+    
+    .copy{
+        margin-top: 20px;
+    }
+}
