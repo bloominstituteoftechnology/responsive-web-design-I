@@ -1,3 +1,264 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Quicksand', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Do Hyeon', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+body {
+	display: flex;
+	justify-content: center;
+}
+.container {
+	width: 880px;
+}
+
+/* header */
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 25px;
+}
+header nav {
+	display: flex;
+	justify-content: space-between;
+  width: 690px;
+}
+
+header nav a {
+  display: inline-block;
+  font-size: 14px;
+  color: gray;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+header nav a:last-child {
+  margin-right: 65px;
+}
+
+header .logo {
+  display: inline-block;
+}
+
+/* cta */
+.cta {
+	width: 880px;
+	height: 524px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.cta-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+  font-size: 77px;
+  text-align: center;
+}
+
+.cta-text button {
+  background: white;
+  vertical-align: top;
+  padding: 8px 44px;
+  font-size: 17px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.cta .cta-text button:hover {
+  background: black;
+  color: white;
+}
+
+/* Main content */
+.main-content {
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	padding: 39px 0px;
+	display: flex;
+	flex-direction: column;
+}
+
+.top-content {
+	display: flex;
+	justify-content: space-between;
+}
+
+.top-content .text-content {
+  width: 410px;
+}
+
+.middle-img {
+  margin: 45px 0px;
+}
+
+.bottom-content {
+	display: flex;
+	justify-content: space-between;
+}
+
+.bottom-content .text-content {
+	width: 275px;
+}
 
 
+.contact {
+  padding: 39px 10px 0;
+}
+
+.contact p {
+  margin: 20px 0;
+}
+
+footer {
+  margin: 32px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Media Quary Desktop */
+
+@media (max-width: 800px) {
+    .container {
+        width: 90%;
+    }
+    header {
+        justify-content: center;
+        text-align: center;
+    }
+    header nav {
+        justify-content: space-around;
+        width: 100%;
+    }
+    header .logo {
+      position: relative;
+        margin: 20px 0 auto;
+    }
+    .cta {
+        justify-content: center;
+        width: 672px;
+    }
+    .cta .cta-text {
+        margin: 0;
+    }
+    .main-content .middle-img {
+        width: 100%;
+    }
+}
+
+/*  Mobile Media Query  500px */
+
+@media (max-width: 500px) { 
+  header {
+  justify-content: center;
+}
+  header nav {
+  width: 100%;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+  header nav a {
+  width: 100%;
+  display: block;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 20px;
+  border-bottom: 1px solid gray;
+}
+  header .logo {
+  bottom: 202px;
+  right: 209px;
+  position: relative;
+  margin: 20px 0 auto;
+}
+  .cta {
+  margin-top: 50px;
+  flex-flow: column;
+  align-items: center;
+}
+  .cta img {
+    display: none;
+    max-width: 80%;
+}
+  .main-content .top-content {
+  height: 300px;
+  justify-content: space-around;
+  flex-direction: column;
+}
+  .main-content .bottom-content {
+  flex-wrap: wrap;
+  height: 400px;
+  align-content: space-between;
+}
+  .text-content {
+  margin: 0;
+}
+  .contact {
+  margin: 20px;
+}
+}
