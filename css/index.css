@@ -1,6 +1,6 @@
 .container {
     /*background-color: antiquewhite;*/
-    width: 880px;
+    width: 60vw;
     margin: 0 auto;
     font-family: "Titillium Web"
 }
@@ -15,7 +15,7 @@ header {
 nav {
     display: flex;
     justify-content: space-between;
-    width: 607px;
+    width: 70%;
     padding-top: 5px;
 }
 
@@ -34,7 +34,7 @@ a {
 .hero-text {
     display: flex;
     flex-direction: column;
-    width: 500px;
+    width: 60%;
     justify-content: center;
     align-items: center;
 }
@@ -70,6 +70,10 @@ h2 {
     padding: 20px 0;
 }
 
+#mid-accent {
+    width: 100%;
+}
+
 .low-info {
     display: flex;
     justify-content: space-between;
@@ -95,6 +99,10 @@ footer {
 }
 
 @media (max-width: 800px) {
+    .container {
+        width: 100vw;
+    }
+
     header {
         flex-direction: column-reverse;
         align-items: center;
@@ -107,6 +115,18 @@ footer {
     .hero-area {
         justify-content: center;
     }
+
+    .hero-text {
+        padding: 0;
+    }
+
+    .mid-info {
+        padding: 20px 10px;
+    }
+
+    .low-info {
+        padding: 20px 10px;
+    }
 }
 
 @media (max-width: 500px) {
@@ -118,12 +138,29 @@ footer {
 
     nav {
         flex-direction: column;
+        width: 100vw;
     }
 
     .nav-item {
         border-bottom: 1px solid grey;
         text-align: center;
         padding: 10px 0;
+    }
+
+    .mid-info {
+        flex-direction: column;
+    }
+
+    .low-info {
+        flex-direction: column;
+    }
+
+    .half-width {
+        width: 100%;
+    }
+
+    .third-width {
+        width: 100%;
     }
 
 }
