@@ -1,3 +1,269 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+/*
+body {
+	width: 880px;
+	margin: 0 auto;
+
+}
+
+
+.top {
+	width: 880px;
+	display:flex;
+	flex-direction: row;
+	justify-content: space-around;
+	position: fixed;
+	z-index: 1;
+	align-items: center;
+	background-color: white;
+	height: 40px;
+	
+}
+
+.navigation {
+
+	display:flex;
+	justify-content: space-evenly;
+	width:70%;
+}
+
+.block1 {
+	position: relative;
+	top: 40px;
+	display: flex;
+
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.header-text {
+	font-size: 52px;
+	width: 450px;
+	height: 200px;
+	text-align: center;
+
+}
+button {
+	display: flex;
+	width:100px;
+	height: 40px;
+	border: 1px solid black;
+	font-size: 15px;
+	align-items: center;
+	justify-content: center;
+}
+
+.block2 {
+	margin-top: 50px;
+	display: flex;
+	justify-content: space-between;
+	border-top: 1px solid black;
+	padding: 15px;
+}
+
+.features, .about {
+	width: 48%;
+}
+
+.block3 {
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid black;
+	padding: 15px;
+
+}
+
+.contact{
+	padding: 10px;
+}
+
+footer {
+	display:flex;
+	justify-content: center;
+}
+
+*/
+/*services*/
+
+.t-b{
+	padding: 18px 8px;
+	border-bottom: 1px solid black;
+
+}
+
+.m-b{
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	border-bottom: 1px solid black;
+}
+
+.caja {
+	border: 1px solid black;
+	background-color: aliceblue;
+	width: 420px;
+	padding: 10px;
+	margin: 5px;
+}
+
+.caja button {
+	
+	margin: 8px 0;
+	background-color: white;
+	
+}
+
+
+.b-b{
+	display:flex;
+	padding: 18px 8px;
+}
+
+.b-services ul {
+
+	margin-top: top 18px;
+	display: flex;
+	flex-direction: column;
+}
+
+
+/*Mobile Friendly*/
+@media only screen and (max-width: 500px){
+    .top{
+       display: flex;
+       align-items: center;       
+       width: 100%;
+       flex-direction: column;
+       margin:10px 0;
+    }
+
+    .navigation{
+       display: flex;
+       flex-direction: column;
+       order:1;
+       font-size: 18px;
+       width: 100%;
+       align-items: center;
+    }
+
+    .navigation a {
+        margin: 10px 0 ;
+    
+    }
+
+    .menu-item{
+        border-bottom: 1px black solid;
+    }
+    
+    .logo{
+        order:0;
+    
+    }
+    .block1{
+        margin:15px 0;
+    }
+    .block1 header{
+        
+        display: flex;
+        flex-direction: column;
+        width:100%;
+        align-items: center;
+        
+    }
+    .block1 button{
+        width: 35%;
+    }
+    .header-text{
+        text-align: center;
+        font-size: 48px;
+    }
+
+    .header-img {
+        display:none;
+    }
+
+    .features, .about{
+        margin: 10px 20px;
+
+    }
+
+    .middle-img{
+        max-width:100%;
+        padding: 5px 10px;
+    }
+}
+
