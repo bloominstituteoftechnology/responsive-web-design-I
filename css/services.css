@@ -1,0 +1,251 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body, button {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5, span {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+body {
+	width: 880px;
+	margin: 0 auto;
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+}
+
+
+/*div, nav {
+	border: solid 3px aqua;	
+}*/
+
+hr {
+	width: 100%;
+}
+
+/*NAVBAR below this line*/
+
+
+#navbar {
+	overflow: hidden;
+	background-color: white;
+	position: fixed;
+	width: 880px;
+	top: 0;
+	z-index: 1;
+	/*padding-bottom: 10px;*/
+
+
+}
+
+nav {
+	display: flex;	
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	text-decoration: none;
+	color: lightgrey;
+	font-size: 14px;
+	
+	
+}
+
+.logo {
+	display: flex;
+	justify-content: flex-end;
+	top: 10px;
+	margin-left: 50px;
+	transform: scale(0.70, 0.70);
+}
+
+/*SERVICES SECTION below this line */
+
+#services-header-img {
+	display: flex;
+	margin-top: 40px;
+	align-items: stretch;
+
+}
+
+#services {
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+
+
+/*INFO BOXES below this line */
+
+#design, #ux, #marketing, #web, #ios, #android {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	border: solid 1px gray;
+	background-color: WhiteSmoke;
+	padding: 20px;
+	/*margin-right: 20px;
+	margin-left: 20px;*/
+
+}
+
+#design, #marketing, #ios {
+	margin-right: 30px;
+}
+
+#ux, #web, #android {
+	margin-left: 30px;
+}
+
+#block1 {
+	margin-top: 30px;
+	margin-bottom: 15px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+#block3 {
+	margin-bottom: 30px;
+	margin-top: 15px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+
+#block2 {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+h3 {
+	font-size: 16px;
+}
+
+button {
+	margin-top: 15px;
+	padding: 6px 35px;
+	border-radius: 5px;
+	border-color: grey;
+}
+
+/*FUN FACTS below this line */
+
+#fun {
+	display: flex;
+}
+
+#facts-and-list {
+	display: flex;
+	flex-direction: column;
+	padding-top: 15px;
+}
+
+#fun ul {
+	margin-left: 20px;
+	list-style-type: square;
+}
+
+#fun ul li {
+	margin-top: 10px;
+}
+
+.services-info-img {
+	padding: 15px;
+}
+
+/*COPYRIGHT*/
+
+#copyright {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 40px;
+	font-size: 14px;	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
