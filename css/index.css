@@ -78,9 +78,10 @@ header {
 	margin-top: 25px;
 }
 header nav {
+  align-content: center;
 	display: flex;
 	justify-content: space-between;
-  width: 690px;
+  width: 100%;
 }
 
 header nav a {
@@ -101,11 +102,12 @@ header nav a:last-child {
 header .logo {
   display: inline-block;
 }
-
+header .logo2 {
+  display: none;
+}
 /* cta */
 .cta {
 	width: 880px;
-	height: 524px;
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
@@ -148,7 +150,7 @@ header .logo {
 }
 
 .top-content .text-content {
-  width: 410px;
+  width: 100%;
 }
 
 .middle-img {
@@ -194,12 +196,14 @@ footer {
         width: 100%;
     }
     header .logo {
-      position: relative;
-        margin: 20px 0 auto;
+      display: none;
+    }
+    header .logo2 {
+      display: inline-block;
     }
     .cta {
         justify-content: center;
-        width: 672px;
+        width: 100%;
     }
     .cta .cta-text {
         margin: 0;
@@ -213,6 +217,7 @@ footer {
 
 @media (max-width: 500px) { 
   header {
+    flex-direction: column;
   justify-content: center;
 }
   header nav {
@@ -230,6 +235,9 @@ footer {
   font-size: 20px;
   border-bottom: 1px solid gray;
 }
+header nav a:last-child {
+  margin-right: 0px;
+}
   header .logo {
   bottom: 202px;
   right: 209px;
@@ -244,6 +252,9 @@ footer {
   .cta img {
     display: none;
     max-width: 80%;
+}
+.main-content {
+  margin-top: 20px;
 }
   .main-content .top-content {
   height: 300px;
@@ -260,5 +271,12 @@ footer {
 }
   .contact {
   margin: 20px;
+  margin-left: 0;
+  padding-left: 0;
 }
+
+.bottom-content .text-content {
+	width: 100%;
+}
+
 }
