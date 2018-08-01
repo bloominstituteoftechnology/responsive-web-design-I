@@ -93,3 +93,37 @@ footer {
     display: flex;
     justify-content: center;
 }
+
+@media (max-width: 800px) {
+    header {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .hero-img {
+        display: none;
+    }
+
+    .hero-area {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 500px) {
+    header {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    .nav-item {
+        border-bottom: 1px solid grey;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+}
