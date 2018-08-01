@@ -239,43 +239,82 @@ ul {
 }
 
 @media (max-width: 800px) {
-	html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	border: 1px solid black;
+	/* #headingSection {
+		border: 1px solid black;
 	}
+	#headingSection div {
+		border: 1px solid black;
+	}
+	#headingSection h1 {
+		border: 1px solid black;
+	}
+	#headingSection p {
+		border: 1px solid black;
+	}
+	#headingSection img {
+		border: 1px solid black;
+	} */
 	body {
-		width: 100%;
+		width: 800px;
 		margin: 0px auto;
 	}
 	header {
 		flex-direction: column-reverse;
 		align-items: center;
+		margin-top: 3px;
+		height: 145px;
 	}
-	header a .logo {
-		margin-top: 25px;
-		margin-left: 15px;
-		padding: 0px;
+	nav {
+		width: 800px;
+		justify-content: space-around;
+		margin-right: 41px;
+		padding-left: 10px;
 	}
-	header nav {
-		width: 100%;
-		padding: 0px 10px 0px 30px;
-		justify-content: space-between;
+	#headingSection {
+		align-items: flex-start;
+		justify-content: center;
+		margin-bottom: 0px;
+	}
+	#headingDiv {
+		padding-top: 5px;
+		padding-left: 0px;
+		height: 319px;
+		justify-content: flex-start;		
 	}
 	#headingPic {
 		display: none;
 	}
-	/* #headingSection {
-		margin: 50px 0px; 
-	} */
+	.divisionLine {
+		margin: 35px auto 0px;
+		width: 800px;
+	}
+	.articleSection {
+		margin-top: 35px;
+		margin-right: 6px;
+		justify-content: space-evenly;
+	}
+	#articleSection1 div {
+		width: 354px;
+	}
+	#midPicDiv {
+		width: 800px;
+		margin: -8px auto -5px;
+		display: flex;
+		justify-content: center;
+	}
+	.middle-img {
+		width: 760px;
+		height: 158px;
+	}
+	#articleSection2 {
+		margin-right: 10px;
+	}
+	#articleSection2 div {
+		width: 224px;
+		padding-right: 9px;
+	}
+	address {
+		margin: 34px 30px 38px;
+		height:125px;
+	}
 }
