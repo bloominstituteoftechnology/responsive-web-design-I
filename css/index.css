@@ -1,3 +1,424 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.container {
+  max-width: 880px;
+  margin: auto;
+}
+
+body {
+  font-size: 62.5%;
+}
+
+/* Header */
+
+header {
+  width: 100%;
+  display: flex;
+}
+
+header .main-nav {
+  height: 0;
+  text-indent: -10000px;
+}
+
+header .mainheader {
+  height: 0;
+  text-indent: -10000px;
+}
+
+header nav {
+  margin-top: 40px;
+  width: 68.86%;
+  justify-content: space-between;
+  display: flex;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #b0b0b0;
+  font-size: 1rem;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+  color: #000;
+}
+
+header .logo {
+  align-self: flex-end;
+  margin: 28px 0 0 91px;
+}
+
+/* cta */
+
+.cta {
+  display: flex;
+  margin-top: 72px;
+  justify-content: flex-end;
+}
+
+.cta .cta-text {
+  font-size: 4.5rem;
+  text-align: center;
+  letter-spacing: 5px;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  align-items: center;
+  margin: 0 82px 0 0;
+}
+
+.cta .cta-text h1 {
+  width: 275px;
+  margin-right: 12px;
+}
+
+.cta .cta-text button {
+  border: 1px solid #000;
+  font-size: 1rem;
+  background: #fff;
+  width: 170px;
+  height: 32px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.cta img {
+  width: 45%;
+  height: 45%;
+}
+
+.cta .cta-text button:hover {
+  background: #000;
+  color: #fff;
+}
+
+/* main content */
+
+.main-content {
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  margin: 75px 0 35px 0;
+  padding: 35px 0;
+  font-size: 1rem;
+  line-height: 18px;
+}
+
+.main-content .top-2-col {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 4%;
+}
+
+.main-content .middle-img {
+  display: block;
+  margin: 30px auto;
+}
+
+.main-content .bottom-3-col {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 4%;
+}
+
+.main-content .bottom-3-col p {
+  padding-right: 20px;
+}
+
+/* contact */
+
+.contact p {
+  margin: 15px 0;
+  font-size: 1rem;
+}
+
+.contact h4 {
+  font-size: 1rem;
+}
+
+/* footer */
+
+footer {
+  text-align: center;
+  margin: 40px 0 20px;
+  font-size: 1rem;
+}
+
+/* tablet */
+
+@media (max-width: 800px) {
+  /* header tablet */
+
+  .container {
+    max-width: 800px;
+    width: 100%;
+  }
+
+  .container .logo {
+    order: -1; /* swap order of the logo to put it first */
+    margin: auto;
+    margin-top: 28px;
+  }
+
+  header {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  header nav {
+    width: 90%;
+  }
+
+  /* cta tablet */
+
+  .cta {
+    /* change to column */
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .cta .cta-text {
+    /* center text and button */
+    margin: auto;
+
+  }
+
+  .cta img {
+    /* hide image */
+    display: none;
+  }
+
+  /* main content tablet */
+
+  .main-content .top-2-col .text-content {
+    padding: 0 4%;
+  }
+
+  .main-content .top-2-col .text-content p {
+    padding-right: 2%;
+  }
+
+  .main-content img {
+    width: 100%;
+  }
+
+  /* contact tablet */
+
+  .contact {
+    margin-left: 5%;
+  }
+
+  /* mobile */
+
+  @media (max-width: 500px) {
+
+    /* container mobile */
+
+    .container {
+      width: 100%;
+    }
+
+    /* logo mobile */
+
+    .container .logo {
+      margin-top: 20px;
+    }
+
+    /* nav mobile */
+    
+    .container header nav {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+      width: 100%;
+      border-bottom: 1px solid #000;
+    }
+
+    .container header nav a {
+      border-top: 1px solid #000;
+      padding: 18px 0px;
+      font-size: 1.5rem;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* cta mobile */
+
+    .container .cta {
+        margin-top: 49px;
+    }
+
+    .container .cta button {
+        margin-top: 10px;
+    }
+
+    /* main content mobile */
+
+    .container .main-content {
+        padding: 12px 0px;
+    }
+
+    .main-content .top-2-col, .main-content .bottom-3-col {
+        /* using flex change of direction */
+        flex-direction: column;
+    }
+
+    /* add some margins for room to breathe */
+    
+    .text-content {
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+
+    .text-content h4 {
+        margin-top: 20px;
+    }
+  }
+}
