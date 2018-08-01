@@ -1,3 +1,410 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
 
+span, p, li, button {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    line-height: 1;
+}
+
+.nav-container {
+    margin: 30px;
+    width: 100%;
+}
+
+nav {
+    width: 1000px;
+    margin-right: 10%;
+}
+
+nav a {
+    color: #B2B6B7;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #55FCA0;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+section {
+    margin: 20px 100px;
+}
+
+button {
+    margin-top: 5px;
+    width: 170px;
+    border: thin solid black;
+    background: none;
+    padding: 10px;
+    cursor: pointer;
+    -webkit-transition: all .25s;
+    -moz-transition: all .25s;
+    -ms-transition: all .25s;
+    -o-transition: all .25s;
+    transition: all .25s;
+}
+
+button:hover {
+    background: #55FCA0;
+}
+
+article {
+    border-top: thin solid black;
+    border-bottom: thin solid black;
+    padding: 50px 20px;
+    margin: 50px;
+}
+
+footer {
+    padding: 20px;
+    margin: 50px;
+}
+
+footer div {
+    width: 100%;
+    text-align: center;
+}
+
+.logo {
+    background-image: url("../img/logo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 200px;
+    height: 100px;
+    margin-right: 10px;
+}
+
+.title {
+    font-size: 5em;
+    width: 422px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.title-sm {
+    font-size: 2em;
+}
+
+.promo {
+    width: 40%;
+}
+
+.promo2 {
+    width: 30%;
+}
+
+.service {
+    width: 400px;
+    height: 240px;
+    padding: 20px;
+    margin: 0 40px 40px 0;
+    background: #F4F3F4;
+    border: thin solid gray;
+}
+
+.service button {
+    margin-top: 20px;
+}
+
+.middle-img {
+    background-image: url("../img/mid-page-accent.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 180px;
+    margin: 50px 0;
+    align-self: center;
+}
+
+.services-header-img {
+    background-image: url("../img/services-header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+}
+
+.services-info-img {
+    background-image: url("../img/services-info.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 450px;
+    height: 320px;
+}
+
+/* Your code starts here! */
+
+/**************UTILS****************/
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-start {
+    justify-content: flex-start;
+}
+
+.justify-space-between {
+    justify-content: space-between;
+}
+
+.justify-space-around {
+    justify-content: space-around;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.align-end {
+    align-items: flex-end;
+}
+
+.align-start {
+    align-items: flex-start;
+}
+
+.flex-grow {
+    flex-grow: 1
+}
+
+.full-height {
+    height: 100%;
+}
+
+.full-width {
+    width: 100%
+}
+
+.third-width {
+    width: 33.333%
+}
+
+.grow-1 {
+    flex-grow: 1;
+}
+
+.grow-2 {
+    flex-grow: 2;
+}
+
+.grow-3 {
+    flex-grow: 3;
+}
+
+.grow-4 {
+    flex-grow: 4;
+}
+
+.grow-5 {
+    flex-grow: 5;
+}
+
+.grow-6 {
+    flex-grow: 6;
+}
+
+@media (max-width: 1300px) {
+    .logo-container {
+        margin-right: 4%;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .nav-container {
+        margin: 5px 0;
+        flex-wrap: wrap-reverse;
+
+    }
+
+    nav {
+        margin: 0;
+        width: 85%
+    }
+
+    section {
+        font-size: 15px;
+        margin: 1px 100px;
+        justify-content: center;
+    }
+
+    .logo-container {
+        margin-right: 0
+    }
+
+    .cta-img-container {
+        display: none;
+    }
+
+    .cta-container {
+        justify-content: center;
+    }
+
+    article {
+        margin: 72px 0px 0 0;
+        padding: 19px 11px 43px 11px;
+    }
+
+    .promo {
+        margin: 20px;
+        width: 485px;
+    }
+
+    .promo2 {
+        margin: 10px 20px;
+        width: 219px;
+    }
+
+    .middle-img {
+        margin: 21px 0px;
+        height: 156px;
+        width: 98%;
+    }
+
+    footer {
+        padding: 36px 34px;
+        margin: 0;
+    }
+
+    .copy-right {
+        margin-top: 38px;
+    }
+}
+
+@media (max-width: 600px) {
+    .logo-container {
+        height: 63px;
+    }
+
+    nav {
+        flex-direction: column !important;
+        width: 100%;
+    }
+
+    nav a {
+        width: 100%;
+        padding: 20px;
+        font-size: 20px;
+        border-bottom: thin solid lightgray;
+        text-align: center;
+
+    }
+
+    nav a:first-child {
+        border-top: thin solid lightgray;
+    }
+
+    .promo-container {
+        flex-direction: column!important;
+    }
+
+    .promo, .promo2 {
+        width: 100%;
+        margin-bottom: 60px;
+    }
+
+    .promo2:last-child {
+        margin-bottom: 20px
+    }
+
+    article {
+        margin: 58px 0 0 0;
+        padding: 50px 30px 22px 30px;
+    }
+
+    .middle-img {
+        height: 96px;
+        margin: 0 0 60px 0;
+    }
+
+    footer {
+        padding: 36px 30px;
+        margin: 0;
+    }
+
+    .copy-right {
+        margin-top: 38px;
+    }
+}
