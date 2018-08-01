@@ -336,23 +336,20 @@ footer p{
        align-content: space-around;
    }
    header nav{
-       max-width: 800px;
+       width: 800px;
    }
-    header nav a{
-       
-    }
-
+   
     header .brand {
         align-self: center;
         margin-bottom:20px;
     }
 
    .hero{
-       max-width: 800px;
+       width: 800px;
    }
 
    .hero .first{
-       max-width:400px;
+       width:400px;
        margin: 0 auto;
        position: none;
        top:0;
@@ -365,23 +362,85 @@ footer p{
    }
 
    .main{
-       max-width:800px;
+       width:800px;
    }
 
    .mid-hero img{
-       max-width: 100%
+       width: 100%
    }
 
    .box-top{
-       max-width:380px;
+       width:380px;
    }
 
    .box-bottom{
-       max-width:240px;
+       width:240px;
    }
 
    footer{
        width: 800px;
    }
+
+}
+
+@media(max-width: 500px){
+   .container{
+       margin:0;
+       padding:0;
+   }
+   header{
+       width: 500px;
+       flex-direction: column-reverse;
+       justify-content: center;
+   }
+
+   header nav{
+    width: 500px;
+    flex-flow: column wrap;
+    padding:0;
+   }
+   
+   header nav a{
+    text-align: center; 
+    padding: 20px;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    font-size:18px; 
+   }
+
+   header .brand {
+    align-self: center;
+    margin-bottom:0px;
+   }
+   
+   .hero{
+       width: 500px;
+   }
+   .main{
+        width:500px;
+        padding:25px;
+    }
+
+    .mid-hero img{
+        width: 100%;
+        margin-bottom:40px;
+    }
+
+    .box-top{
+      width:500px;
+      margin-bottom:40px; 
+    }
+
+    .box-bottom{
+      width: 500px;
+      margin-bottom:40px;  
+    }
+
+    footer{
+        width: 500px;
+        padding:25px
+    }
+
+
 
 }
