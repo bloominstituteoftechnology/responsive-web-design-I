@@ -92,7 +92,8 @@ header nav a {
 }
 
 header nav a:hover {
-	text-decoration: underline;
+	text-decoration: none;
+	color: black;
 }
 
 header nav a:first-child {
@@ -196,6 +197,78 @@ header .logo {
 	margin: 20px 0;
 }
 
+.services-content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.services-content h2 {
+	font-size: 30px;
+	margin: 20px 0;
+}
+
+.services-content .text-muted {
+	border-bottom: 1px solid black;
+	padding-bottom: 30px;
+	margin-bottom: 25px;
+}
+
+.services-content .box {
+	border: 1px solid black;
+	margin: 20px 0;
+	padding: 15px;
+	width: 400px;
+}
+
+.services-content .box p {
+	line-height: 1.2;
+}
+
+.services-content .box button {
+	border: 1px solid black;
+	margin-top: 15px;
+	padding: 10px;
+	width: 100px;
+	cursor: pointer;
+	font-size: 12px;
+}
+
+.services-content .box button:hover {
+	color: gray;
+}
+
+.services-content .services-info {
+	border-top: 1px solid black;
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 30px;
+}
+
+.services-content .services-info .facts {
+	/* border: 1px solid black; */
+	width: 400px;
+	margin-top: 40px;
+}
+
+.services-content .services-info p {
+	line-height: 1.2;
+}
+
+.services-content .services-info ul {
+	margin: 18px;
+}
+
+.services-content .services-info ul li {
+	list-style: circle;
+	line-height: 1.5;
+}
+
+.services-content .services-info-img {
+	margin: 45px 0 0 30px;
+	width: 420px;
+}
+
 footer {
 	margin: 32px 0;
 	text-align: center;
@@ -210,7 +283,8 @@ footer {
     
     header {
         display: flex;
-        flex-wrap: wrap;
+		flex-wrap: wrap-reverse;
+		justify-content: space-around;
     }
 
     header nav {
@@ -246,7 +320,8 @@ footer {
         /* display: flex;
         flex-flow: column;
         justify-content: center;
-        align-items: center; */
+		align-items: center; */
+		padding: 0;
         margin: 60px auto;
         margin-bottom: 0px;
     }
@@ -270,7 +345,39 @@ footer {
 		margin-top: 45px;
 		padding-left: 20px;
         padding-right: 20px;
-    }
+	}
+
+	.services-content .services-header-img {
+		width: 100%;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.services-content h2 {
+		margin-left: 15px;
+	}
+
+	.services-content .text-muted {
+		margin-left: 15px;
+		margin-right: 25px;
+	}
+
+	.services-content .box {
+		margin-left: 15px;
+		margin-right: 15px;
+		width: 350px;
+	}
+
+	.services-content .services-info .facts {
+		width: 300px;
+		margin-top: 40px;
+		margin-left: 15px;
+	}
+	
+	.services-content .services-info-img {
+		margin: 45px 0 0 30px;
+		width: 400px;
+	} 
 }
 
 @media (max-width: 400px) {
@@ -357,5 +464,4 @@ footer {
 		margin-bottom: 15px;
 		/* border: 1px solid black; */
 	}
-
 }
