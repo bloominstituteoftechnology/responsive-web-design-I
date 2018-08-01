@@ -266,6 +266,7 @@ footer p {
 
 /* mobile view */
 @media (max-width: 500px) {
+    /* default */
     .container {
         width: 100%;
         display: flex;
@@ -273,6 +274,7 @@ footer p {
         align-items: center;
     }
 
+    /* nav */
     .navbar {
         width: 100%;
         padding: 0px;
@@ -311,61 +313,57 @@ footer p {
         order: 1;
     }
     
-    header.header-horizontal {
-        width: 98%;
+    /* header */
+    header {
+        width: 97%;
         padding: 50px 0px 75px 0px;
     }
 
     header .main-header a {
         letter-spacing: 1px;
-        margin-top: 10px;
-        padding: 7px 42px;
+        padding: 7px 40px;
         font-weight: bold;
     }
 
+    /* main */
     main {
-        width: 98%;
+        width: 97%;
         margin-top: 60px;
     }
     
     main .content-row {
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: spaced-evenly;
         align-items: flex-start;
-    }
-    
-    main .contact-row {
-        display: flex;
-        flex-direction: column;
-        border-top: 2px solid black;
-        margin-top: 44px;
-        padding-top: 36px;
-        padding-left: 0px;
-    }
-    
-    main .left {
-        justify-content: flex-start;
-        padding-right: 0px;
         padding: 0px 0px;
     }
-    
-    main .center {
-        justify-content: flex-start;
-        margin-top: 50px;
-        padding-left: 0px;
-        padding-right: 0px;
-        padding: 0px 0px;
+
+    main .content-row p {
+        width: 100%;
     }
-    
-    main .right {
-        justify-content: flex-start;
-        margin-top: 45px;
-        padding-left: 0px;
-        padding: 0px 0px;
+
+    main .content-row .content-medium {
+        width: 100%;
+        margin-bottom: 45px;
+    }
+
+    main .content-row .content-small {
+        width: 100%;
+        margin-bottom: 65px;
+    }
+
+    main .content-row .content-small:last-child {
+        margin-bottom: 0px;
     }
     
     main .middle-img {
-        margin: 50px 0px 35px 0px;
+        width: 100%;
+        height: 100%;
+        margin: 10px 0px 30px 0px;
+    }
+    
+    main .contact-row {
+        padding-left: 0px;
     }
 }
