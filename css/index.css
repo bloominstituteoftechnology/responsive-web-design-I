@@ -1,3 +1,369 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+/* desktop view - default */
+body {
+	padding-top: 20px;
+}
+
+a {
+	text-decoration: none;
+}
+
+.container {
+	width: 880px;
+	margin: 0px auto;
+}
+
+/* nav */
+.navbar {
+	padding: 8px 0px;
+	display: flex;
+}
+
+.navbar nav {
+	display: flex;
+	order: 1;
+	flex-grow: 2;
+	justify-content: flex-start;
+    align-items: center;
+}
+
+.navbar nav a {
+	color: darkgray;
+	margin-right: 61px;
+	font-weight: bold;
+}
+
+.navbar .home-link {
+	width: 183px;
+	order: 2;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+/* header */
+header {
+	padding: 62px 0px 75px 0px;
+	border-bottom: 2px solid black;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .main-header {
+    text-align: center;
+    margin-left: 48px;
+	order: 1;
+	flex-grow: 2;
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+	align-items: center;
+}
+
+header .main-header h1 {
+	font-size: 72px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+header .main-header a {
+	text-align: center;
+	color: black;
+	border: 1px solid black;
+	padding: 7px 46px;
+	font-weight: bold;
+}
+
+header .main-header-img {
+	width: 379px;
+	order: 2;
+}
+
+/* main */
+main {
+	margin-top: 36px;
+	display: flex;
+	flex-direction: column;
+}
+
+main .content-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+main .content-row p {
+    display: block;
+    line-height: 18px;
+}
+
+main .content-row .content-medium {
+    width: 50%;
+}
+
+main .content-row .content-small {
+    width: 33%;
+}
+
+main .middle-img {
+    margin: 30px 1px;
+}
+
+main .contact-row {
+	display: flex;
+	flex-direction: column;
+	border-top: 2px solid black;
+	margin-top: 38px;
+	padding-top: 36px;
+}
+
+/* footer */
+footer {
+	padding: 40px 0;
+}
+
+footer p {
+	text-align: center;
+}
+
+/* tablet view */
+@media (max-width: 800px) {
+
+    /* default */
+    .container {
+        width: 760px;
+    }
+
+    /* nav */
+    .navbar {
+        padding: 10px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar nav {
+        width: 96%;
+        margin-top: 39px;
+        order: 2;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navbar nav a {
+        color: darkgray;
+        font-weight: bold;
+        margin-right: 0px;
+    }
+
+    .navbar .home-link {
+        width: 173px;
+        order: 1;
+    }
+
+    /* header */
+    header .main-header {
+        padding-right: 43px;
+    }
+
+    header .main-header-img {
+        display: none;
+    }
+
+    /* main */
+    main .content-row {
+        padding: 0px 10px;
+    }
+
+    main .content-row .content-medium {
+        width: 48.5%;
+    }
+
+    main .content-row .content-small {
+        width: 31%;
+    }
+
+    main .content-row p {
+        width: 93%;
+    }
+
+    main .middle-img {
+        width: 100%;
+        height: 80%;
+        margin: 30px 1px;
+    }
+
+    main .contact-row {
+        padding-left: 10px;
+    }
+}
+
+/* mobile view */
+@media (max-width: 500px) {
+    /* default */
+    .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* nav */
+    .navbar {
+        width: 100%;
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar nav {
+        width: 100%;
+        margin-top: 0px;
+        order: 2;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar nav a {
+        width: 100%;
+        color: darkgray;
+        margin-right: 0px;
+        padding: 20px;
+        border-bottom: 1px solid gray;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .navbar nav a:first-child {
+        border-top: 1px solid gray;
+    }
+
+    .navbar .home-link {
+        display: block;
+        width: 173px;
+        padding-bottom: 18px;
+        order: 1;
+    }
+    
+    /* header */
+    header {
+        width: 97%;
+        padding: 50px 0px 75px 0px;
+    }
+
+    header .main-header a {
+        letter-spacing: 1px;
+        padding: 7px 40px;
+        font-weight: bold;
+    }
+
+    /* main */
+    main {
+        width: 97%;
+        margin-top: 60px;
+    }
+    
+    main .content-row {
+        display: flex;
+        flex-direction: column;
+        justify-content: spaced-evenly;
+        align-items: flex-start;
+        padding: 0px 0px;
+    }
+
+    main .content-row p {
+        width: 100%;
+    }
+
+    main .content-row .content-medium {
+        width: 100%;
+        margin-bottom: 45px;
+    }
+
+    main .content-row .content-small {
+        width: 100%;
+        margin-bottom: 65px;
+    }
+
+    main .content-row .content-small:last-child {
+        margin-bottom: 0px;
+    }
+    
+    main .middle-img {
+        width: 100%;
+        height: 100%;
+        margin: 10px 0px 30px 0px;
+    }
+    
+    main .contact-row {
+        padding-left: 0px;
+    }
+}
