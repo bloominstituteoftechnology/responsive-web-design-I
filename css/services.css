@@ -31,9 +31,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-ol, ul {
-	list-style: none;
-}
+
 blockquote, q {
 	quotes: none;
 }
@@ -72,6 +70,7 @@ body {
 
 .main {
 	display: flex;
+	flex-direction: column;
 }
 
 
@@ -95,7 +94,7 @@ hr {
 	z-index: 1;
 	display: flex;
 	justify-content: space-between;
-	padding-top: 25px;
+	padding-bottom: 15px;
 
 }
 
@@ -111,8 +110,7 @@ hr {
 	text-decoration: none;
 	color: lightgrey;
 	font-size: 16px;
-	font-weight: bold;
-	
+	font-weight: bold;	
 }
 
 .logo {
@@ -120,108 +118,122 @@ hr {
 	align-items: flex-end;
 }
 
+/*SERVICES SECTION below this line */
 
-/*HEADING SECTION below this line*/
+#services-header-img {
+	display: block;
+	margin-top: 60px;
+	width: 100%;
 
-h1 {
-	font-size: 75px;
-	display: flex;
-	justify-content: center;
-	line-height: 60px;
 }
 
-#title {
-	margin-top: 80px;
+#services {
+	margin-top: 25px;
+	margin-bottom: 25px;
+	border-bottom: 1px solid black;
+	padding-bottom: 20px;
+}
+
+
+
+/*INFO BOXES below this line */
+
+#design, #ux, #marketing, #web, #ios, #android {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	border: solid 1px gray;
+	background-color: WhiteSmoke;
+	padding: 20px;
+	/*margin-right: 20px;
+	margin-left: 20px;*/
+
+}
+
+#design, #marketing, #ios {
+	margin-right: 30px;
+}
+
+#ux, #web, #android {
+	margin-left: 30px;
+}
+
+#block1 {
+	margin-top: 30px;
+	margin-bottom: 15px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+#block3 {
 	margin-bottom: 30px;
+	margin-top: 15px;
 	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	flex-wrap: wrap;
-	border-bottom: 2px solid black;
-	padding: 100px 50px;
+	justify-content: flex-start;
+	align-items: flex-start;
 }
 
-#circle {
-	/*transform: scale(0.90, 0.90);*/
+
+#block2 {
 	display: flex;
-	/*margin-left: 120px;	*/
+	justify-content: flex-start;
+	align-items: flex-start;
+	margin-top: 15px;
+	margin-bottom: 15px;
 }
 
-#button {
-	display: flex;
-	justify-content: center;
+h3 {
+	font-size: 16px;
 }
 
 button {
-	border: solid 1px black;
-	border-radius: 0px;
-	color: black;
-	padding: 1px 39px;	
-	font-size: 19px;
-
+	margin-top: 15px;
+	padding: 6px 35px;
+	border-radius: 5px;
+	border-color: grey;
 }
 
-/*FEATURES and ABOUT SECTIONS below this line*/
+/*FUN FACTS below this line */
 
-
-#first-section {
+#fun {
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	margin-bottom: 40px;
-	margin-top: 40px;
+	border-top: 1px solid black;
+	padding-top: 20px;
 }
 
-
-span {
-	font-weight: bold;
-}
-
-/*MIDDLE BLOCK IMAGE*/
-
-.middle-image {
-	display: block;
-	width: 100%;
-}
-
-/*SERVICES PRODUCT VISION below this line*/
-
-#second-section {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	margin-top: 40px;
-	padding-bottom: 40px;
-	border-bottom: 2px solid black;
-}
-.services, .product {
-	margin-right: 2.5px;
-}
-
-.product, .vision {
-	margin-left: 2.5px;
-}
-
-/*CONTACT and COPYRIGHT below this line */
-
-#address {
+#facts-and-list {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	padding-top: 15px;
+	
 }
-h3 {
-	margin-top: 30px;
-	margin-bottom: 20px;
+
+#fun ul {
+	margin-left: 20px;
+	list-style-type: square;
 }
+
+#fun ul li {
+	margin-top: 10px;
+}
+
+.services-info-img {
+	padding: 15px;
+}
+
+/*COPYRIGHT*/
 
 #copyright {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-top: 80px;
-	margin-bottom: 80px;
+	margin-top: 40px;
 	font-size: 14px;	
 }
+
+
 
 /*TABLET VIEW*/
 
@@ -229,10 +241,6 @@ h3 {
 	body {
 		width: 600px;
 	}
-	#circle {
-		display: none;
-	}
-
 	#navbar {
 		display: flex;
 		flex-direction: column-reverse;
@@ -249,38 +257,12 @@ h3 {
 		margin-bottom: 20px;
 		width: 600px;
 	}
-
-	#title {
-		padding: 40px;
-		margin-top: 40px;
-	}
-
-	#title #title-button {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		width: 100%;
-	}
-
-	.middle-image{
+	#services-header-img {
 		width: 600px;
+		margin-top: 20px;
 	}
-
-	#first-section {
-		width: 600px;
-
-	}
-	.text-blocks {
-		
-		padding: 5px;
-	}
-
-	button {
-		margin-top: 10px;
-	}
-
 }
+
 
 /*PHONE VIEW*/
 
@@ -296,7 +278,7 @@ h3 {
 	#navbar nav {
 		flex-direction: column;
 		margin-top: 20px;
-		margin-bottom: 40px;
+		margin-bottom: 20px;
 		border-bottom: 1px solid lightgrey;
 		width: 400px;
 	}
@@ -304,37 +286,51 @@ h3 {
 	#navbar nav a {
 		padding-top: 10px;
 		padding-bottom: 10px;
-		text-align: center;
+		text-align:center;
 		border-top: 1px solid lightgrey;
 		width: 400px;
 	}
-
-	#title {
-		margin: 10px 15px 30px 15px;
+	#block1, #block2, #block3 {
+		flex-direction: column;
+		align-items: center;
+		justify-content:center;
+	}
+	#design, #ux, #marketing, #web, #ios, #android {
+		margin: 20px 15px;
 	}
 
-	#first-section {
+	#fun {
+		flex-direction: column;
+		margin-right: 15px;
+		margin-left: 15px;
+	}
+	.services-info-img {
+		margin-top: 15px;
+		padding: 0px;
+		align-self: center;
+		margin-right: 15px;
+		margin-left: 15px;
 		width: 400px;
-		flex-direction: column;
+	}
+	#services-header-img {
+		width: 400px;
+		
+	}
+	#services {
 		margin-right: 15px;
-		margin-left: 15px;
-		margin-bottom: 5px;
-	}
-
-	.text-blocks {
-		margin-bottom: 25px;
-	}
-
-	#second-section {
-		flex-direction: column;
-		padding-bottom: 15px;
-		margin-right: 15px;
-		margin-left: 15px;
-	}
-
-	address {
 		margin-left: 15px;
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
