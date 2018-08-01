@@ -78,15 +78,21 @@ h1, h2, h3, h4, h5 {
 #navbar {
 	display: flex;
 	height: 65px;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 	justify-content: space-between;
 	align-items: center;
+}
+
+.navLinks {
+    display: flex;
+    flex-flow: row nowrap;
 }
 
 .navLink {
 	color: lightslategrey;
 	font-size: 14px;
-	text-decoration: none;
+    text-decoration: none;
+    margin-right: 60px;
 }
 
 #bannerSection {
@@ -102,8 +108,8 @@ h1, h2, h3, h4, h5 {
 	display: flex;
 	flex-flow: column wrap;
 	text-align: center;
-	justify-content: center;
-	align-items: center;	
+    justify-content: center;
+    align-items: center;
 	width: 500px;
 	height: 480px;
 }
@@ -129,7 +135,7 @@ h1, h2, h3, h4, h5 {
 
 #upperSection {
 	display: flex;
-	flex-flow: row wrap;
+	flex-flow: row nowrap;
 	align-items: center;
 	margin: 0px 0px 30px 0px;
 }
@@ -144,7 +150,7 @@ h1, h2, h3, h4, h5 {
 
 #lowerSection {
 	display: flex;
-	flex-flow: row wrap;
+	flex-flow: row nowrap;
 	align-items: center;
 	margin: 30px 0px 30px 0px;
 }
@@ -177,7 +183,103 @@ h1, h2, h3, h4, h5 {
 
 @media (max-width: 800px) {
 
+
+    #navbar {
+        flex-flow: column-reverse nowrap;
     }
+    
+    .logo {
+        margin-top: 50px;
+    }
+
+    .navLinks {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navLink {
+        margin: 45px 42px;
+        font-size: 16px;
+    }
+
+    #headerImage {
+        display: none;
+    }
+
+    #bannerSection {
+        justify-content: center;
+        padding-top: 75px;
+        border-bottom: 0px;
+        height: 450px;
+    }
+
+    #tagline {
+        font-size: 72px;
+    }
+
+    #getStarted {
+        height: 35px;
+        width: 170px;
+        color: white;
+        font-size: 16px;
+        border: 1px solid black;
+        padding-top: 7px;
+        text-decoration: none;
+    }
+
+    #upperSection {
+    	justify-content: space-between;
+        width: 755px;
+        border-top: 2px solid black;
+        margin: 0px 0px 40px 20px;
+        padding: 30px 0px 0px 10px;
+    }
+
+    #features {
+        width: 360px;
+    }
+    
+    #about {
+        width: 360px;
+    }
+
+    .middle-img {
+        width: 755px;
+        margin-left: 20px;
+    }
+
+    #lowerSection {
+        justify-content: space-between;
+        width: 755px;
+        margin: 0px 0px 60px 20px;
+        padding: 30px 0px 0px 10px;
+    }
+
+    #services {
+        width: 210px;
+    }
+    
+    #product {
+        width: 210px;
+    }
+    
+    #vision {
+        width: 210px;
+    }
+
+    #address {
+        border-top: 2px solid black;
+        margin-left: 20px;
+        width: 755px;
+        padding: 30px 0px 0px 5px;
+    }
+    
+    #footer {
+        text-align: center;
+        margin-top: 70px;
+        font-size: 16px;
+    }
+
 }
 
 @media (max-width: 500px) {
