@@ -104,7 +104,7 @@ nav{
 .logo {
 	display: flex;
     padding: 10px;
-    padding-left: 690px;
+    margin-left: 690px;
 }
 
 .headerdiv{
@@ -165,7 +165,7 @@ h2 {
         width: 100%;
     }
     .logo{
-        padding: 10px;
+        margin: 0px;
         justify-content: center;
         align-items: center;
     }
@@ -193,11 +193,13 @@ h2 {
 
 @media (max-width: 500px){
     nav{
-        flex-direction: column;
+        display:block;
         position: static;
         margin: 5px;
+        padding: 0px;
+        border-bottom: 2px solid grey;
     }
-    header a {
+    nav a {
         border-top: 2px solid grey;
     }
     .navi {
@@ -205,6 +207,6 @@ h2 {
         padding: 10px;
     }
     .headerdiv{
-        margin-top: 0px;
+        margin-top: 20px;
     }
 }
