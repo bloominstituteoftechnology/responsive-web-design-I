@@ -1,5 +1,3 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
-
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -161,6 +159,7 @@ h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
+
 * {
   box-sizing: border-box;
 }
@@ -175,7 +174,9 @@ h5 {
   display: flex;
   justify-content: center;
 }
-
+p {
+  line-height: 1.2;
+}
 header {
   display: flex;
   justify-content: space-between;
@@ -207,71 +208,90 @@ header nav a:last-child {
 header .logo {
   display: inline-block;
 }
+.header-img {
+display: flex;
+align-items: center;
+width: 100%;
+padding:30px 0 30px;
+border-bottom: 1px solid gray;
+}
+.section-header {
+  padding: 12px;
+}
+h1 {
+  font-size: 40px;
+}
+/*Boxes Color and Text*/
+.box {
+  color: black;
+  font-size: 15px;
+  padding: 10px;
+  width: 100%;
+}
+.box1 {background: #e4e7e9;}
+.box2 {background: #e4e7e9;}
+.box3 {background: #e4e7e9;}
+.box4 {background: #e4e7e9;}
+.box5 {background: #e4e7e9;}
+.box6 {background: #e4e7e9;}
+.box7 {background: #e4e7e9;}
 
-.top-main {
-  width: 880px;
-  height: 555px;
+/*learn more button color*/
+.more1 {background: white;}
+.more2 {background: white;}
+.more3 {background: white;}
+.more4 {background: white;}
+.more5 {background: white;}
+.more6 {background: white;}
+
+/* Box Container and Learn More Flexedboxed */
+.container {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  border-bottom: 2px solid black;
 }
-
-.top-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  font-size: 77px;
-  margin: 75px;
+.more {
+  justify-content: center;
   text-align: center;
-}
-
-.btn {
-  background: white;
-  vertical-align: top;
-  padding: 5px 40px 5px 40px;
-  font-size: 16px;
+  width: 42%;
+  border-radius: 2px;
+  padding: 10px;
+  margin: 30px 0 10px 0;
   border: 1px solid black;
+  box-shadow: 0px 0px 1px 0px;
   cursor: pointer;
 }
-
-/* Gray */
-
-.default:hover {
-  background: #ddd;
-  cursor: pointer;
+.box {
+  width: 44.2%;
+  margin: 23.33px;
+  box-shadow: 0px 0px 1px 0px;
 }
 
-.first-main {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 15px;
-}
+.box1 {justify-content: space-between;}
+.box2 {justify-content: space-between;}
+.box3 {justify-content: space-between;}
+.box4 {justify-content: space-between;}
+.box5 {justify-content: space-between;}
+.box6 {justify-content: space-between;}
 
-.features,
-.about {
-  margin-top: 10px;
-}
-
-.middle-img {
-  margin: 45px 0px;
-}
-
-.second-main {
-  display: flex;
+.fact1 {
   justify-content: space-between;
 }
-
-.services,
-.products,
-.vision {
-  width: 275px;
-  padding-bottom: 25px;
+ul li {
+  margin: 20px;
+  list-style-type: disc;
+}
+.fact3 img {
+  align-content: center;
 }
 
-.contact {
-  border-top: 2px solid black;
-  padding: 25px;
+.bottom {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+}
+.fact {
+  width: 46.333%;
+  margin: 6px;
 }
 
 .contact a {
@@ -291,10 +311,10 @@ header .logo {
 footer {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 footer p {
-  align-self: center;
   font-size: 14px;
   line-height: 1.2px;
 }
@@ -302,18 +322,9 @@ footer p {
 footer h3::before {
   content: "\00A9 ";
 }
-
-footer h3 {
-  align-self: center;
-}
-
-/* Desktop First 800px */
-
-/* Tablet  Width 800px */
-
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
   .containter {
-    max-width: 500px;
+    max-width: 768px;
     width: 100%;
     margin: 0 auto;
   }
@@ -346,114 +357,29 @@ footer h3 {
     align-content: flex-start;
     padding-bottom: 20px;
   }
-  .top-img {
-    display: none;
-  }
-  .top-main {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    border-bottom: 2px solid black;
-  }
-  .top-text {
-    align-items: center;
-  }
-  .first-main {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 15px;
-  }
-  .features,
-  .about {
-    margin: 10px;
-  }
-  .second-main {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-  }
-  .middle-img {
-    width: 100%;
-    height: 2;
-  }
+ .header-img {
+display: flex;
+align-items: center;
+width: 100%;
+padding:30px 0 30px;
+border-bottom: 1px solid gray;
 }
-
-/* Phone Width 500px */
-
-@media (max-width: 500px) {
-  .containter {
-    max-width: 500px;
-    width: 100%;
-  }
-  .container-main {
-    display: flex;
-    width: 100%;
-  }
-  header {
-    width: 100%
-  }
-  header nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  header nav a {
-    display: flex;
-    padding: 30px 0 40px;
-    width: 100%;
-    justify-content: center;
-    font-size: 20px;
-    color: gray;
-    border: 1px solid lightgray;
-  }
-  header .logo {
-    display: flex;
-    padding-bottom: 10px;
-  }
-  header nav a:last-child {
-    margin-right: 1px;
-  }
-  .top-img {
-    display: none;
-  }
-  .top-text {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    margin-top: 430px;
-    margin-right: 30px;
-  }
-  .top-main {
-    width: 100%;
-    height: 5%;
-    display: flex;
-    align-items: center;
-    border-bottom: 2px solid black;
-  }
-  .first-main {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-  .features,
-  .about {
-    margin: 10px;
-    width: 100%;
-  }
-  .second-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 100%;
-  }
-  .middle-img {
-    width: 100%;
-    height: 100%;
-  }
-  .services,
-  .products,
-  .vision {
-    width: 100%;
-    margin: 10px;
-  }
+.box {
+  width: 100%;
+  margin: 23.33px;
+  box-shadow: 0px 0px 1px 0px;
+}
+.bottom {
+ border-top: 2px solid gray;
+ width: 100%;
+}
+.fact3 img {
+  width:100%;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width:100%;
+}
 }
