@@ -1,3 +1,279 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* CSS Reset Above */
+
+body {
+    width: 85%;
+    background: white;
+    margin: 0 auto;
+    @include transition: 0.4s;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+/*   width: 20%; */
+/*   float: right; */
+  height: 40px;
+  @include transition: 0.4s;
+}
+
+.nav {
+  width: 80%;
+/*   float: left; */
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  @include transition: 0.4s;
+}
+
+.nav li {
+  display: inline-block;
+  color: gray;
+  padding: 0 35px;
+  margin: 5px;
+}
+
+.two-column {
+  width: 50%;
+  float: left;
+}
+
+.three-column {
+  float: left;
+  width: 33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.jumbo {
+  height: 425px;
+  border-bottom: 2px solid black;
+  margin-bottom: 50px;
+}
+
+.big {
+  font-size: 55px;
+  text-align: center;
+  margin-top: 65px;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 25px 0 50px 0;
+}
+
+.header-img {
+  height: 415px;
+  width: auto;
+  vertical-align: middle;
+  margin-left: 70px;
+  padding: 25px 0 50px 0;
+}
+
+span {
+  width: 125px;
+  height: 30px;
+  border: 1px solid black;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding-top: 5px;
+
+}
+
+.middle-img {
+  width: 100%;
+  margin: 40px 0;
+}
+
+hr {
+  margin: 125px 0 25px 0;
+  border: 1px solid black;
+}
+
+footer {
+  text-align: center;
+  margin: 15px 0;
+}
+
+
+/* media queries */
+
+@media (max-width: 1024px) {
+  body {
+    width: 95%;
+    flex-wrap: wrap;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+   .nav {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    -webkit-order: 2;
+    -moz-order: 2;
+    -ms-order: 2;
+    -o-order: 2;
+    order: 2;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .nav > li {
+    flex: 1;
+    flex-basis: 50%
+    padding: 15px;
+    display: flex;
+  }
+
+  .header-img {
+    display: none;
+  }
+
+  .big {
+    font-size: 75px;
+    text-align: center;
+    margin-top: 35px;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px 0 0 0;
+  }
+
+  .tablet-left {
+    width: 98%;
+    margin: 0 auto;
+  }
+
+  .tablet-right {
+    width: 2%;
+  }
+
+  .jumbo {
+    height: 350px;
+    border-bottom: 2px solid black;
+
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 600px) {
+  .two-column, .three-column {
+    width: 100%;
+    float: left;
+    margin-bottom: 25px;
+  }
+
+  .header-img {
+    display: none;
+  }
+
+  .big {
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 55px;
+    padding: 0;
+  }
+
+  .jumbo {
+    height: 260px;
+  }
+
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .nav li {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+
+
+
+
+
 
 
