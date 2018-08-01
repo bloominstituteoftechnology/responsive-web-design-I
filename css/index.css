@@ -1,3 +1,174 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+.container {
+    /*background-color: antiquewhite;*/
+    width: 60vw;
+    margin: 0 auto;
+    font-family: "Titillium Web"
+}
 
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 27px;
+}
 
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    padding-top: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.hero-area {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 525px;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: "Bangers";
+    text-align: center;
+    font-size: 72px;
+    font-stretch: ultra-expanded;
+    letter-spacing: 1px;
+    line-height: 72px;
+    padding-left: 51px;
+}
+
+.hero-area p {
+    border: 1px solid black;
+    padding: 5px 45px;
+    margin-left: 42px;
+    position: relative;
+    bottom: 37px;
+    font-size: 16px;
+}
+
+h2 {
+    font-family: "Bangers";
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.mid-info {
+    display: flex;
+    border-top: 1px solid black;
+    padding: 20px 0;
+}
+
+#mid-accent {
+    width: 100%;
+}
+
+.low-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    border-bottom: 1px solid black;
+}
+
+.third-width {
+    width: 30%;
+}
+
+.contact {
+    padding: 20px 0;
+}
+
+address {
+    font-style: normal;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 800px) {
+    .container {
+        width: 100%;
+    }
+
+    header {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .hero-img {
+        display: none;
+    }
+
+    .hero-area {
+        justify-content: center;
+    }
+
+    h1 {
+        padding-left: 0px;
+    }
+
+    .hero-text {
+        padding: 0;
+    }
+
+    .hero-area p {
+        margin-left: 0px;
+    }
+
+    .mid-info {
+        padding: 20px 10px;
+    }
+
+    .low-info {
+        padding: 20px 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    header {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav {
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .nav-item {
+        border-bottom: 1px solid grey;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .mid-info {
+        flex-direction: column;
+    }
+
+    .low-info {
+        flex-direction: column;
+    }
+
+    .half-width {
+        width: 100%;
+    }
+
+    .third-width {
+        width: 100%;
+    }
+
+}
