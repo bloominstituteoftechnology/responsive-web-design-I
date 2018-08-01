@@ -88,17 +88,15 @@ header {
     width: 100%;
     max-width: 880px;
 	height: 55px;
-	/* position: fixed; */
-	left: 128px;
+
 
 }
 
 header nav {
-	padding-left: 30px;
-	display: flex;
+    display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 36px 0 0 7px;
+	padding: 36px 0;
 	width: 880px;
 }
 
@@ -233,7 +231,7 @@ hr {
     }
 
     .innovation-text {
-        padding: 10px 40px 70px;
+        padding: 10px 0 70px;
     }
 
     .article-top{
@@ -261,8 +259,55 @@ hr {
 
 /*MEDIA QUERY - MOBILE*/
 @media (max-width: 500px){
+    #container {
+        width: 100%;
+        padding: 0;
+    }
+
+    header {
+        width: 100%;
+    }
+
     header nav {
         flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+        padding-top: 20px;
+        width: 100%;
+    }
+
+    header nav div {
+        margin-bottom: 0;
+        border-bottom: 1px solid black;
+        width: 100%;
+        padding-bottom: 15px;
+    }
+
+    header nav a {
+        border-bottom: 1px solid black;
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+        font-size: 20px;
+    }
+
+    header nav a:hover {
+        font-weight: bold;
+        transform: none;
+    }
+
+    .innovation {
+        margin-top: 325px;
+    }
+
+    .innovation, .article-top, .article-bottom,
+        .middle-img, address, footer {
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+
+    footer {
+        height: 100px;
     }
 }
 
