@@ -289,3 +289,28 @@ footer {
     height: 150px;
   }
 }
+
+@media (max-width: 500px) {
+  .container {
+    width: 400px;
+  }
+  header nav {
+    width: 400px;
+    flex-direction: column;
+  }
+  header nav a {
+    border: 2px solid grey;
+    padding: 12px;
+    width: 400px;
+    font-size: 30px;
+    text-align: center;
+  }
+  header nav a:last-child {
+    margin-right: 0px;
+  }
+  .cta {
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+  }
+}
