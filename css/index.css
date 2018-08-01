@@ -66,6 +66,8 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
+/* Desktop First */
+
 * {
     font-family: 'Titillium Web', sans-serif;
 }
@@ -79,15 +81,11 @@ h1 {
     font-size: 70px;
 }
 
-.none {
-    margin: 0;
-    padding: 0;
-}
-
 /* Nav Bar */
 
 nav {
     display: flex;
+    flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
 }
@@ -130,10 +128,7 @@ button {
 .box {
     display: flex;
     margin: 40px 0 40px 0;
-}
-
-.little-box {
-    margin: 20px 0 20px 0;
+    justify-content: space-between;
 }
 
 /* Footer */
@@ -150,4 +145,45 @@ address {
 #copyright {
     text-align: center;
 }
+
+
+/* Tablet */
+@media (max-width:800px){
+
+    main {
+        width: 90%;
+    }
+
+    /* Nav Bar */
+    nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    nav section {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #wrapper img {
+        display: none;
+    }
+
+    #wrapper {
+        justify-content: center;
+    }
+
+    #container img {
+        margin: 0 20px 0 0;
+    }
+
+}
+
+/* Mobile */
+@media (max-width:500px){
+
+
+}
+
 
