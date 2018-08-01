@@ -159,15 +159,15 @@ main .content-row {
 }
 
 main .content-row p {
-    display: inline;
+    display: block;
     line-height: 18px;
 }
 
-.content-row .content-medium {
+main .content-row .content-medium {
     width: 50%;
 }
 
-.content-row .content-small {
+main .content-row .content-small {
     width: 33%;
 }
 
@@ -228,8 +228,8 @@ footer p {
     }
 
     /* header */
-    header.header-horizontal {
-        padding: 62px 0px 83px 0px;
+    header .main-header {
+        padding-right: 43px;
     }
 
     header .main-header-img {
@@ -237,19 +237,20 @@ footer p {
     }
 
     /* main */
-    main .left {
-        justify-content: flex-start;
+    main .content-row {
         padding: 0px 10px;
     }
-    
-    main .center {
-        justify-content: center;
-        padding: 0px 10px;
+
+    main .content-row .content-medium {
+        width: 48.5%;
     }
-    
-    main .right {
-        justify-content: flex-end;
-        padding: 0px 10px;
+
+    main .content-row .content-small {
+        width: 31%;
+    }
+
+    main .content-row p {
+        width: 93%;
     }
 
     main .middle-img {
@@ -259,11 +260,6 @@ footer p {
     }
 
     main .contact-row {
-        display: flex;
-        flex-direction: column;
-        border-top: 2px solid black;
-        margin-top: 55px;
-        padding-top: 36px;
         padding-left: 10px;
     }
 }
