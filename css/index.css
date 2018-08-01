@@ -239,21 +239,6 @@ ul {
 }
 
 @media (max-width: 800px) {
-	/* #headingSection {
-		border: 1px solid black;
-	}
-	#headingSection div {
-		border: 1px solid black;
-	}
-	#headingSection h1 {
-		border: 1px solid black;
-	}
-	#headingSection p {
-		border: 1px solid black;
-	}
-	#headingSection img {
-		border: 1px solid black;
-	} */
 	body {
 		width: 800px;
 		margin: 0px auto;
@@ -316,5 +301,19 @@ ul {
 	address {
 		margin: 34px 30px 38px;
 		height:125px;
+	}
+}
+
+@media (max-width: 500px) {
+	body {
+		width: 500px;
+	}
+	header {
+		margin-top: -5px;
+		height: initial;
+	}
+	nav {
+		flex-direction: column;
+		height: 419px;
 	}
 }
