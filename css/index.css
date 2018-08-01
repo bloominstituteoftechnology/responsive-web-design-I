@@ -94,8 +94,6 @@ nav {
 	font-size: 1.2rem;
 }
 
-
-
 a {
     text-decoration: none;
     color: gray;
@@ -266,4 +264,103 @@ li {
 
 .services-info-img {
 	width: 350px;
+}
+
+@media (max-width: 800px) {
+    body {
+        width: 80%;
+    }
+    
+    nav {
+        flex-direction: column-reverse;
+        align-items: center;
+        height: 10rem;
+    }
+
+    .navText {
+        width: 100%;
+	}
+	
+	#getStarted {
+		font-size: 1.2rem;
+	}
+
+    #logo {
+        width: 20%;
+    }
+
+    #codeImage {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+	body {
+		width: 100%;
+	}
+
+	.navText {
+		display: flex;
+		flex-direction: column;
+	}
+
+	nav {
+		height: auto;
+	}
+
+	#logo {
+		width: 30%;
+		margin: 2rem;
+	}
+
+	nav a {
+		border-bottom: 1px solid gray;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		font-size: 2rem;
+		padding: 2rem;
+	}
+
+	.p1 {
+		height: 32rem;
+	}
+
+	.p2 {
+		flex-direction: column;
+	}
+
+	.c2 {
+		width: 100%;
+		padding: 1rem; 
+	}
+
+	#service {
+		border-top: 1px solid gray;
+	}
+
+	#getStarted {
+		font-size: 1.5rem;
+	}
+
+	.middle-img {
+		padding: 1rem;
+	}
+
+	.p3 {
+		flex-direction: column;
+	}
+
+	.c3 {
+		width: 100%;
+		padding: 1rem; 
+	}
+
+	footer {
+		padding: 1rem;
+	}
+
+	hr {
+		width:96%;
+	}
 }
