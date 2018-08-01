@@ -242,7 +242,7 @@ header .logo {
   cursor: pointer;
 }
 
-.frist-main {
+.first-main {
   display: flex;
   justify-content: space-between;
   padding-bottom: 15px;
@@ -257,7 +257,7 @@ header .logo {
   margin: 45px 0px;
 }
 
-.mains {
+.second-main {
   display: flex;
   justify-content: space-between;
 }
@@ -358,7 +358,7 @@ footer h3 {
   .top-text {
     align-items: center;
   }
-  .frist-main {
+  .first-main {
     display: flex;
     justify-content: space-between;
     padding-bottom: 15px;
@@ -367,7 +367,7 @@ footer h3 {
   .about {
     margin: 10px;
   }
-  .mains .main {
+  .second-main {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -431,20 +431,28 @@ footer h3 {
     align-items: center;
     border-bottom: 2px solid black;
   }
-  .frist-main {
+  .first-main {
+    display: flex;
+    flex-direction: column;
     width: 100%;
   }
   .features,
   .about {
     margin: 10px;
   }
-  .mains .main {
+  .second-main {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    width: 50%;
+    width: 100%;
   }
   .middle-img {
     width: 100%;
-    height: 100%
+    height: 100%;
+  }
+  .services,
+  .products,
+  .vision {
+    width: 100%;
   }
 }
