@@ -303,49 +303,32 @@ footer h3 {
   align-self: center;
 }
 /* Desktop First 800px */
+
+ /* Tablet  Width 800px */
 @media (max-width: 800px) {
-  .container-main {
-    width : 800px;
+  .containter {
+    max-width : 500px;
     width: 100%;
     margin: 0 auto;
   }
-
-  .top-main {
-  width: 800px;
-  height: 500px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  border-bottom: 2px solid black;}
-
-  .fk .main {
-     width: 95%
-  }
-  .middle-img {
-    width: 100%;
-    height: 100%;
-  }
-}
-/*Tablet Width 500px */
-@media (max-width: 500px) {
+  
   .container-main {
-    width : 500px;
-    width: 100%;
-    margin: 0 auto;
-  }
+     display: flex;
+      width: 100%;
+      
+    }
 
   header {
     display: flex;
     flex-direction: column-reverse;
-    width: 500px;
+    width: 800px;
     justify-content: center;
     margin: 0;
   }
 
   header nav {
   
-    width: 480px;
+    width: 680px;
     align-items: flex-end;
     height: 30px;
   }
@@ -374,7 +357,7 @@ footer h3 {
     align-items: center;
   }
 .top-main {
-  width: 500px;
+  width: 800px;
   height: 480px;
   display: flex;
   flex-wrap: wrap;
@@ -387,20 +370,19 @@ footer h3 {
 .mains .main {
   display: flex;
   justify-content: space-between;
-  width: 50%;
+  width: 100%;
 }
 .middle-img{
-  width: 100%;
-  height: 100%
+  width: 800px;
+  height: 2;
 }
 }
-/* Mobile work in progress */
-/* @media (max-width: 400px) {
+/* Phone Width 500px */
+@media (max-width: 500px) {
 .containter {
-  max-width : 400px;
+  max-width : 500px;
   width: 100%;
   margin: 0 auto;
-  border: 1px solid goldenrod;
 }
 
 .container-main {
@@ -408,20 +390,24 @@ footer h3 {
     width: 100%;
     
   }
+  header {
+    width: 500px;
+  }
 header nav {
   display: flex;
   flex-direction: column;
   align-items: center;
   
+  
 }
   header nav a {
-  display: flex;
-   padding: 10px 0 49px;
-    width: 400px;
+    display: flex;
+    padding: 10px 0 49px;
+    width: 100%;
     justify-content: center;
     font-size: 20px;
     color: gray;
-    border: 2px solid lightgray;
+    border: 1px solid lightgray;
   }
 
   header .logo {
@@ -465,4 +451,4 @@ header nav a:last-child {
   width: 100%;
   height: 100%
 }
-} */
+}
