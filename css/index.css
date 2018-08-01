@@ -1,3 +1,269 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Titillium Web', sans-serif;
+    font-size:62.5%;
+}
+
+p, li {
+	line-height: 1.2;
+	font-size: 1.5rem;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+body {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: auto;
+}
+
+nav {
+	width: 100%;
+	height: 6rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.navText {
+    width: 72%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+	font-size: 1.2rem;
+}
 
 
+
+a {
+    text-decoration: none;
+    color: gray;
+}
+
+
+a:hover {
+	color: black;
+}
+
+#logo {
+	width: 15%;
+}
+
+.p1 {
+	width:100%;
+	height: 40rem;
+	margin: auto;
+	display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+    align-items: center;
+    width: 40%;
+}
+
+h1 {
+	font-size: 5rem;
+	width: 38rem;
+    text-align: center;
+}
+
+#getStarted {
+	border: 1px solid black;
+	color: black;
+    padding: 8px;
+	width: 150px;
+	transition-duration: 0.4s;
+}
+
+#getStarted:hover {
+	background: black;
+	color: aliceblue;
+}
+
+#codeImage {
+    width: 32rem;
+}
+
+hr {
+	width: 100%;
+}
+
+.p2	{
+	width: 100%;
+	margin: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.c2 {
+    width: 48%;
+}
+
+.middle-img {
+    width: 100%;
+    margin: 2rem;
+}
+
+.p3 {
+	width: 100%;
+	position: static;
+	margin: 2rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.c3 {
+    width: 32%;
+}
+
+footer {
+	width: 100%;
+	margin: 2rem;
+}
+
+.Copyright {
+    margin: 1rem;
+    font-size: 1.2rem;
+}
+
+.services-header-img {
+	width: 760px;
+}
+
+.p4 {
+	width: 760px;
+	margin: 30px;
+}
+
+
+h2 {
+	font-size: 20px;
+}
+
+
+.p5 {
+	width: 760px;
+	height: 760px;
+	margin: 30px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-content: space-between;
+}
+
+.c5 {
+	width: 350px;
+	border: 1px solid black;
+	background-color: rgb(238, 238, 238);
+	padding: 20px;
+}
+
+.learnMore {
+	border: 1px solid black;
+	color: black;
+	width: 100px;
+	background-color: white;
+	height: 30px;	
+	font-size: 10px;    
+	display: flex;
+    align-items: center;
+	justify-content: center;
+	margin-top: 15px;
+	transition-duration: 0.4s;
+}
+
+.learnMore:hover {
+	background: black;
+	color: aliceblue;
+}
+
+.p6 {
+	width: 760px;
+	margin: 30px;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+li {
+	list-style-type: circle;
+	list-style-position: inside;
+}
+
+.c6 {
+	width: 350px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between
+}
+
+.services-info-img {
+	width: 350px;
+}
