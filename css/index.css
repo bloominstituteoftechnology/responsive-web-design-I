@@ -148,159 +148,144 @@ h5 {
   letter-spacing: 1px;
   margin-bottom: 15px;
 }
-
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
 body {
-  width: 1000px;
-  margin: 0px auto;
-}
-
-.navigation {
   display: flex;
-  width: 1000px;
-  height: 60px;
-  margin-top: 30px;
-  margin-bottom: 20px;
-  background-color: lightgray;
-  border: 1px solid black;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
+}
+.container {
+  width: 880px;
 }
 
-.navigation a {
-  font-size: 20px;
-  display: flex;
-  text-decoration: none;
-  color: grey;
-}
-
-.navigation a:hover {
-  text-shadow: 1px 1px 1px #000, 3px 3px 5px black;
-}
-
-.navigation img {
-  display: flex;
-  justify-content: flex-end;
-}
-
+/* header */
 header {
-  height: 380px;
-  margin-bottom: 60px;
-  border: 1px solid black;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  width: 690px;
+}
+
+header nav a {
+  display: inline-block;
+  font-size: 14px;
+  color: gray;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+header nav a:last-child {
+  margin-right: 65px;
+}
+
+header .logo {
+  display: inline-block;
+}
+
+/* cta */
+.cta {
+  width: 880px;
+  height: 524px;
+  display: flex;
+  justify-content: space-evenly;
   align-items: center;
 }
-header .left-content {
-  border: 1px solid black;
+.cta-text {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  align-content: center;
-}
-
-header h1 {
-  font-size: 70px;
-  width: 400px;
+  font-size: 77px;
   text-align: center;
+}
+
+.cta-text button {
+  background: white;
+  vertical-align: top;
+  padding: 8px 44px;
+  font-size: 17px;
   border: 1px solid black;
+  cursor: pointer;
 }
 
-header img {
-  border: 1px solid black;
-  display: flex;
-}
-
-header .button {
-  border: 2px solid grey;
-  display: flex;
-  font-size: 20px;
-  padding: 10px 60px 10px 60px;
-}
-
-.button:hover {
-  background-color: gray;
+.cta .cta-text button:hover {
+  background: black;
   color: white;
 }
 
-header .button a {
-  text-decoration: none;
-  color: black;
-}
-
-.divider {
-  border: 1px solid black;
-  height: 2px;
-  border-radius: 2px;
-  margin-bottom: 30px;
-}
-
-.middle {
-  padding-bottom: 30px;
+/* Main content */
+.main-content {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 39px 0px;
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
 }
 
-.middle .middle-left {
-  width: 480px;
-  /* margin-right: 20px; */
+.top-content {
+  display: flex;
+  justify-content: space-between;
 }
 
-.middle .middle-right {
-  width: 490px;
-}
-
-h1 {
-  font-size: 25px;
-}
-p {
-  font-family: "Noto Serif", serif;
-  font-size: 25px;
-  /* width: 450px; */
-  margin-left: 20px;
+.top-content .text-content {
+  width: 410px;
 }
 
 .middle-img {
-  width: 1000px;
-  height: 200px;
-  padding-bottom: 30px;
+  margin: 45px 0px;
 }
 
-.bottom {
-  margin-bottom: 30px;
+.bottom-content {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
-.bottom .bottom-left {
-  width: 310px;
-  /* margin-right: 31px; */
-}
-
-.bottom .bottom-middle {
-  width: 310px;
-}
-
-.bottom .bottom-right {
-  /* margin-left: 30px; */
-  width: 310px;
+.bottom-content .text-content {
+  width: 275px;
 }
 
 .contact {
-  margin-bottom: 80px;
+  padding: 39px 10px 0;
 }
 
-.contact h2 {
-  font-size: 30px;
-}
-
-address {
-  font-size: 20px;
+.contact p {
+  margin: 20px 0;
 }
 
 footer {
+  margin: 32px 0;
   text-align: center;
-  font-size: 15px;
-  margin-bottom: 80px;
-  font-weight: bold;
+  font-size: 14px;
+}
+
+@media (max-width: 800px) {
+  .container {
+    width: 600px;
+  }
+  header {
+    flex-direction: column-reverse;
+  }
+  header img {
+    margin-bottom: 20px;
+  }
+
+  .cta img {
+    display: none;
+  }
+
+  .cta {
+    width: 600px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .middle-img {
+    height: 100px;
+  }
 }
