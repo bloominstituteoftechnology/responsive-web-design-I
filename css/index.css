@@ -68,7 +68,7 @@ body {
 	justify-content: center;
 }
 .main-container{
-	width: 800px;
+	width: 880px;
 }
 
 @media (max-width: 800px) {
@@ -213,24 +213,43 @@ header .logo {
     height: 561px;
 }
 
-@media (max-width: 800) {
+@media (max-width: 800px) {
     .main {
         width: 760px;
-        padding: 34px 0px;
-        margin-left: 28px;
+        border-bottom: 2px solid black;
+        padding: 35px 0px 0px 0px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 5px;
+        margin-left: 29px;
+        height: 592px;
+        align-items: flex-start;
     }
 }
 
 .topcontent {
 	display: flex;
-	justify-content: space-between;
+    justify-content: space-between;
+    height: 118px;
 }
 @media (max-width: 800px) {
-    height: 156px;
+    .topcontent {
+        padding-left: 9px;
+        height: 136px;
+        width: 760px;
+        padding-right: 10px;
+    }
 }
 .topcontent .text {
   width: 439px;
   line-height: 18px;
+}
+
+@media (max-width: 800px) {
+    .topcontent .text {
+        width: 360px;
+        line-height: 18px;
+    }
 }
 
 .main .topcontent .text h2 {
@@ -238,7 +257,14 @@ header .logo {
 }
 
 .middle-img {
-  margin: 30px 0px;
+    margin: 17px 3px 30px 3px;
+}
+
+@media (max-width: 800px) {
+    .middle-img {
+        margin: 17px 0px 30px 0px;
+        width: 760px;
+    }
 }
 
 .bottomcontent {
@@ -247,18 +273,47 @@ header .logo {
     padding-right: 19px;
 }
 
+@media (max-width: 800px) {
+    .bottomcontent {
+        display: flex;
+        justify-content: space-between;
+        padding-right: 30px;
+        height: 184px;
+        width: 760px;
+    }
+}
+
 .bottomcontent .text {
-    width: 274px;
+    width: 276px;
     line-height: 18px;
-    font-size: 18px;
+    font-size: 17px;
+}
+
+@media (max-width: 800px) {
+    .bottomcontent .text {
+        width: 223px;
+        line-height: 18px;
+        padding-left: 9px;
+        font-size: 16px;
+        padding-right: 2px;
+    }
 }
 
 
 .contact {
-    padding-top: 30px;
-    margin-bottom: 9px;
+    padding-top: 35px;
+    margin-bottom: 24px;
 }
 
+@media (max-width: 800px) {
+    .contact {
+        padding-top: 0px;
+        margin-bottom: 24px;
+        margin-top: 35px;
+        width: 760px;
+        padding-left: 38px;
+    }
+}
 .contact p {
   margin: 15px 0;
 }
@@ -270,6 +325,18 @@ footer {
     text-align: center;
     font-size: 16px;
     height: 32px;
+}
+
+@media (max-width: 800px) {
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        text-align: center;
+        font-size: 16px;
+        height: 32px;
+        padding-left: 16px;
+    }
 }
 
 
