@@ -92,47 +92,46 @@ hr {
 	width: 880px;
 	top: 0;
 	z-index: 1;
-	/*padding-bottom: 10px;*/
-
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 15px;
 
 }
 
-nav {
+#navbar nav {
 	display: flex;	
 	justify-content: space-between;
-	align-items: center;
+	align-items: flex-end;
+	width: 70%;
 }
 
 .nav {
-	display: flex;
-	justify-content: space-between;
+	
 	text-decoration: none;
 	color: lightgrey;
-	font-size: 14px;
-	
-	
+	font-size: 16px;
+	font-weight: bold;	
 }
 
 .logo {
 	display: flex;
-	justify-content: flex-end;
-	top: 10px;
-	margin-left: 50px;
-	transform: scale(0.70, 0.70);
+	align-items: flex-end;
 }
 
 /*SERVICES SECTION below this line */
 
 #services-header-img {
-	display: flex;
-	margin-top: 40px;
-	align-items: stretch;
+	display: block;
+	margin-top: 60px;
+	width: 100%;
 
 }
 
 #services {
 	margin-top: 25px;
 	margin-bottom: 25px;
+	border-bottom: 1px solid black;
+	padding-bottom: 20px;
 }
 
 
@@ -200,12 +199,15 @@ button {
 
 #fun {
 	display: flex;
+	border-top: 1px solid black;
+	padding-top: 20px;
 }
 
 #facts-and-list {
 	display: flex;
 	flex-direction: column;
 	padding-top: 15px;
+	
 }
 
 #fun ul {
@@ -233,9 +235,92 @@ button {
 
 
 
+/*TABLET VIEW*/
+
+@media (max-width: 800px) {
+	body {
+		width: 600px;
+	}
+	#navbar {
+		display: flex;
+		flex-direction: column-reverse;
+		width: 600px;
+		align-items: center;
+		justify-content: space-between;
+		position: relative;
+	}
+	#navbar nav {
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		margin-top: 40px;
+		margin-bottom: 20px;
+		width: 600px;
+	}
+	#services-header-img {
+		width: 600px;
+		margin-top: 20px;
+	}
+}
 
 
+/*PHONE VIEW*/
 
+@media(max-width: 400px) {
+	body {
+		width: 400px;
+	}
+
+	#navbar {
+		width: 400px;
+	}
+
+	#navbar nav {
+		flex-direction: column;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		border-bottom: 1px solid lightgrey;
+		width: 400px;
+	}
+
+	#navbar nav a {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		text-align:center;
+		border-top: 1px solid lightgrey;
+		width: 400px;
+	}
+	#block1, #block2, #block3 {
+		flex-direction: column;
+		align-items: center;
+		justify-content:center;
+	}
+	#design, #ux, #marketing, #web, #ios, #android {
+		margin: 20px 15px;
+	}
+
+	#fun {
+		flex-direction: column;
+		margin-right: 15px;
+		margin-left: 15px;
+	}
+	.services-info-img {
+		margin-top: 15px;
+		padding: 0px;
+		align-self: center;
+		margin-right: 15px;
+		margin-left: 15px;
+		width: 400px;
+	}
+	#services-header-img {
+		width: 400px;
+		
+	}
+	#services {
+		margin-right: 15px;
+		margin-left: 15px;
+	}
+}
 
 
 
