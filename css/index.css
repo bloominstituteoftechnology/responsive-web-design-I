@@ -158,9 +158,8 @@ a{
 }
 
 #lower-para div{
-    /* start here for pixel perfect */
 	width: 290px;
-    margin-right: 10px;
+	margin: 35px 10px 35px 0px;
 }
 
 #lower-para div p{
@@ -281,6 +280,15 @@ a{
 		padding: 7px 0px;
 		margin: 20px auto;
 	}
+
+	#upper-para{
+		margin-bottom: 30px;
+	}
+
+	.middle-img{
+		width: 760px;
+		margin: 0px auto;
+	}
 }
 
 @media(max-width: 500px){
@@ -296,8 +304,7 @@ a{
 	#anchors{
 		display: flex;
 		flex-direction: column;
-		align-items: center;
-		width: 500px;
+		width: 480px;
 		border-bottom: 1px solid black;
 	}
 
@@ -306,7 +313,9 @@ a{
 		color: lightgrey;
 		font-weight: 600;
 		letter-spacing: .03em;
-		padding: 20px 300px 20px 300px;
+		width: 480px;
+		text-align: center;
+		padding: 20px 0px 20px 0px;
 		border-top: 1px solid black;
 	}
 
@@ -336,11 +345,17 @@ a{
 	#lower-para{
 		flex-direction: column;
 		justify-content: space-between;
+		margin: 20px 0px 40px 0px;
 		border-bottom: 2px solid black;
 	}
 
 	#lower-para div{
 		width: 460px;
 		margin: 10px;
+		padding-bottom: 20px;
+	}
+
+	.contact h2{
+		margin-top: 0px;
 	}
 }
