@@ -548,7 +548,7 @@ header .nav7 {
 
 
 
-/************************ Service Page ***********************/
+/************************ Service Desktop view ***********************/
 
 
 .servicesTitle {
@@ -645,8 +645,73 @@ ul.b {
 
 
 
-@media only screen and (max-width: 600px) {
-	body {
-		background-color: lightblue;
-	}
+
+
+
+/******Service: Tablet 800px ******/
+
+@media(max-width: 800px){
+    .servicesTitle {
+        /* border: 2px solid red; */
+        display: flex;
+        flex-direction: column-reverse;
+        align-content: center;
+        align-items: center;
+        margin: 70px 0 0 0;
+    }
+    
+    
+    .servicesTitle .services-header-img {
+        /* border: 2px solid blue; */
+        width: 770px;
+        margin: 0 30px 20 30px;
+    }
+    
+    
+    .servicesTitle .serviceschild {
+        /* border: 2px solid lime; */
+        width: 750px;
+        height: 150px;
+        margin: 0 10px 20px 10px;
+        /* border: 2px solid orange; */
+        padding: 0 10px 0 10px;
+    }
+    
+    .serviceschild h1{
+        font-size: 60px;
+        text-align: center;
+    }
+
+    .maincontainer {
+        /* border: 5px solid red; */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        flex-direction: row;
+        padding: 40px 0 40px 0;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+
+    .maincontainer .childcontainer {
+        border: 2px solid black;
+        width: 365px;
+        height: 280px;
+        padding: 20px 20px 0 20px;
+        background-color: ghostwhite;
+        margin: 10px 10px 10px 10px;
+    }
+
+    .childcontainer h2 {
+        font-size: 20px;
+    }
+    
+}
+
+
+
+/******Service: Phone 500px ******/
+
+@media(max-width: 500px){
+
 }
