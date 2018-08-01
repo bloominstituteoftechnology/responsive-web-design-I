@@ -148,7 +148,7 @@ img.logo {
 }
 
 .header-content h1 {
-    display: flex;
+    
 	justify-content: center;
 	justify-items: center;
 	font-size: 80px;
@@ -156,7 +156,8 @@ img.logo {
 	margin-top: 140px;
 	margin-left: 280px;
 	padding: 0px 0 0px 0px;
-	
+    text-align: center;
+    
 }
 
 
@@ -192,18 +193,6 @@ img.logo {
 	padding: 5px;
 	border: 1px solid black;
 	box-shadow: 1px 1px 8px 0px black;
-    
-}
-
-.top-border {
-    display: flex;
-    justify-content: flex-start;
-    justify-items: flex-start;
-    width: 880px;
-}
-
-.top-border hr {
-    border-bottom: 1px solid gray;
     
 }
 
@@ -456,26 +445,88 @@ div.vision p {
  /* Desktop first: largest screen size down to first breakpoint */
 
 @media (max-width: 800px) {
-  .navigation {
+  
+    body {
+        width: 799px;
+    }
+  
+    .navigation {
       width: 100%;
-      height: 100px;
+      height: 20px;
       margin-top: 100px;
+      padding-right: 80px;
       display: flex;
       flex-direction: column-reverse;
   }
 
   img.logo {
-
-    border: 1px solid red;
+    margin-bottom: 20px;
+    padding: 5px;
+    height: 45px;
+    
 }
 
     nav#navbar {
     margin: 0 auto;
-    padding: 0 30px 0 0;
-    border: 1px solid black;
-  }
+    padding: 0 60px 0 0;
+}
 
+a.active {
+    background-color: white;
+    
+}
 
+/* TOP CONTENT AREA */
 
+    
+    .header-content {
+        display: flex;
+        justify-content: flex-start;
+        justify-items: flex-start;
+        width: 100%;
+        height: 350px;
+        
+        
+    }
+    .img1 img {
+        display: none;
+    }
+
+    .header-content h1 {
+        display: flex;
+        justify-content: flex-start;
+        justify-items: flex-start;
+        width: 350px;
+        font-size: 60px;
+        margin-top: 50px;
+        padding: 20px;
+    }
+    /*
+    .get-started {
+        display: flex;
+        justify-content: flex-start;
+        justify-items: flex-start;
+        
+    }
+    */
+
+    .header-content p {
+        display: flex;
+        justify-content: flex-start;
+        justify-items: flex-start;
+        font-size: 15px;
+        width: 160px;
+        height: 30px;
+        margin-left: 346px;
+        padding: 8px 0px 5px 40px;
+        border: 1px solid black;
+}
+    
+    
+    .get-started p:hover {
+        background-color: gray;
+        box-shadow: 1px 1px 8px 1px black;
+        transform: translateY(2px);
+    }
 
 }
