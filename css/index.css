@@ -127,7 +127,7 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
 }
 
 .innovation button {
@@ -135,7 +135,8 @@ h1 {
 	background-color: white;
 	padding: 6px 40px;
 	font-size: 17px;
-	vertical-align: top;
+    vertical-align: top;
+    margin-top: 10px;
 }
 
 /* End of Top */
@@ -226,7 +227,7 @@ a:hover {
     }
 
     .innovation {
-        margin-left: 0px;
+        margin-left: 50px;
     }
 
     .topIMG {
@@ -240,20 +241,63 @@ a:hover {
 
     nav {
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: space-between;
         width: 100%;
+    }
+
+    header nav a:first-child {
+        margin-left: 30px;
+    }
+
+    header nav a:nth-child(6) {
+        margin-right: 30px;
     }
 
     header nav a:last-child {
         order: -1;
         width: 100%;
         text-align: center;
-        margin: 30px 0;
+        margin: 30px 0px 38px 0px;
         padding-left: 34px;
       }
 
     header {
         margin-top: 0;
+    }
+
+    .MainContainer {
+        width: 100%;
+        margin: 0 auto;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .topMid .TextBox {
+        width: 48%;
+        padding-left: 10px;
+    }
+
+    .middle-img {
+        width: 100%;
+    }
+
+    .bottomMid {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .bottomMid .TextBox {
+        width: 34%;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    address {
+        margin-left: 30px;
+    }
+    
+    footer {
+        margin-left: 30px;
     }
 }
 
@@ -266,6 +310,7 @@ a:hover {
         flex-direction: column;
         flex-wrap: wrap;
         width: 100%;
+        align-items: flex-start;
         /* order: 10; */
     }
 
