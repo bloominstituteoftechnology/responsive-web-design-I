@@ -160,15 +160,17 @@ h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
 * {
   box-sizing: border-box;
 }
+
 .container {
   max-width: 880px;
   width: 100%;
   margin: 0 auto;
-
 }
+
 .container-main {
   display: flex;
   justify-content: center;
@@ -180,6 +182,7 @@ header {
   align-items: center;
   margin-top: 25px;
 }
+
 header nav {
   display: flex;
   justify-content: space-between;
@@ -227,7 +230,6 @@ header .logo {
   background: white;
   vertical-align: top;
   padding: 5px 40px 5px 40px;
-
   font-size: 16px;
   border: 1px solid black;
   cursor: pointer;
@@ -239,16 +241,18 @@ header .logo {
   background: #ddd;
   cursor: pointer;
 }
-.fk {
+
+.frist-main {
   display: flex;
   justify-content: space-between;
-
   padding-bottom: 15px;
 }
+
 .features,
 .about {
   margin-top: 10px;
 }
+
 .middle-img {
   margin: 45px 0px;
 }
@@ -256,8 +260,8 @@ header .logo {
 .mains {
   display: flex;
   justify-content: space-between;
- 
 }
+
 .services,
 .products,
 .vision {
@@ -302,22 +306,21 @@ footer h3::before {
 footer h3 {
   align-self: center;
 }
+
 /* Desktop First 800px */
 
- /* Tablet  Width 800px */
+/* Tablet  Width 800px */
+
 @media (max-width: 800px) {
   .containter {
-    max-width : 500px;
+    max-width: 500px;
     width: 100%;
     margin: 0 auto;
   }
-  
   .container-main {
-     display: flex;
-      width: 100%;
-      
-    }
-
+    display: flex;
+    width: 100%;
+  }
   header {
     display: flex;
     flex-direction: column-reverse;
@@ -325,14 +328,11 @@ footer h3 {
     justify-content: center;
     margin: 0;
   }
-
   header nav {
-  
     width: 680px;
     align-items: flex-end;
     height: 30px;
   }
-
   header nav a {
     font-size: 16px;
     color: gray;
@@ -341,65 +341,63 @@ footer h3 {
   header nav a:last-child {
     margin-right: 40px;
   }
-
   header .logo {
     display: flex;
     align-content: flex-start;
     padding-bottom: 20px;
   }
-
   .top-img {
     display: none;
   }
-
-  .top-text {
+  .top-main {
     display: flex;
+    justify-content: center;
+    width: 100%;
+    border-bottom: 2px solid black;
+  }
+  .top-text {
     align-items: center;
   }
-.top-main {
-  width: 800px;
-  height: 480px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  border-bottom: 2px solid black;
-}
-.fk .main {
- width: 100%;
-}
-.mains .main {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-.middle-img{
-  width: 800px;
-  height: 2;
-}
-}
-/* Phone Width 500px */
-@media (max-width: 500px) {
-.containter {
-  max-width : 500px;
-  width: 100%;
-  margin: 0 auto;
+  .frist-main {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+  }
+  .features,
+  .about {
+    margin: 10px;
+  }
+  .mains .main {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .middle-img {
+    width: 100%;
+    height: 2;
+  }
 }
 
-.container-main {
-   display: flex;
+/* Phone Width 500px */
+
+@media (max-width: 500px) {
+  .containter {
+    max-width: 500px;
     width: 100%;
-    
+    margin: 0 auto;
+  }
+  .container-main {
+    display: flex;
+    width: 100%;
   }
   header {
     width: 500px;
   }
-header nav {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  
-  
-}
+  header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   header nav a {
     display: flex;
     padding: 10px 0 49px;
@@ -409,46 +407,44 @@ header nav {
     color: gray;
     border: 1px solid lightgray;
   }
-
   header .logo {
     display: flex;
     align-content: flex-start;
     justify-content: center;
     padding-bottom: 10px;
   }
-  
-header nav a:last-child {
-  margin-right: 1px;
-}
-
+  header nav a:last-child {
+    margin-right: 1px;
+  }
   .top-img {
     display: none;
   }
-
   .top-text {
     display: flex;
-   align-items:center;
-   margin-top: 430px;
-   margin-right: 30px;
-   
+    align-items: center;
+    margin-top: 430px;
+    margin-right: 30px;
   }
-.top-main {
-
-  height: 20%;
-  display: flex;
-  align-items: center;
-  border-bottom: 2px solid black;
-}
-.fk .main {
- width: 100%;
-}
-.mains .main {
-  display: flex;
-  justify-content: space-between;
-  width: 50%;
-}
-.middle-img{
-  width: 100%;
-  height: 100%
-}
+  .top-main {
+    height: 20%;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid black;
+  }
+  .frist-main {
+    width: 100%;
+  }
+  .features,
+  .about {
+    margin: 10px;
+  }
+  .mains .main {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+  }
+  .middle-img {
+    width: 100%;
+    height: 100%
+  }
 }
