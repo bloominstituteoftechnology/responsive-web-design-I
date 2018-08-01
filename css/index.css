@@ -86,20 +86,28 @@ h1, h2, h3, h4, h5 {
 
 #start{
 	border: 1px solid black;
-	width: 106px;
+	width: 150px;
 	font-size: 16px;
 	text-align: center;
-	margin-left: 100px;
+    margin-left: 74px;
+    padding: 4px;
 }
 
 nav {
-	display: flex;
-	flex-direction: row;
-	width: 880px;	
+    color: grey;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
+
 ul {
 	display: flex;
 	justify-content: space-around;
+}
+
+.logo {
+    height: 36px;
+    margin-top: 13px;
 }
 
 .pagenav {
@@ -113,15 +121,13 @@ ul {
 
 .topcontent {
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	border-top: 1px solid black; 
-	margin: 10px 5px;
-	width: 880px;
+	margin: 10px 0px;
 }
 
 .features {
-	padding: 0px 60px;
-	margin: 60px 25px;
+	margin: 60px 0px;
 	width: 380px;
 }
 
@@ -131,16 +137,16 @@ ul {
 
 .bottomcontent {
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	border-bottom: 1px solid black; 
-	margin: 10px 5px;
-	width: 880px;
+	margin: 10px 0px;
 }
 
 .bottomsection {
-	margin: 30px 15px;
+	margin: 30px 0px;
 	width: 255px;
 }
+
 header {
 	display: flex;
 	justify-content: space-between;
@@ -149,7 +155,7 @@ header {
 }
 
 address {
-	margin: 25px;
+	margin: 25px 0px;
 }
 
 footer {
@@ -228,4 +234,37 @@ h3 {
 	font-size: 12px;
 }
 
+@media (max-width: 800px){
+    .body {
+        width: 100%;
+    }
 
+    nav {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        margin: 0px auto;
+    }
+
+    .logo {
+        margin: 20px auto;
+        width: 183px;
+        height: 36px;
+    }
+
+    .rightblockstart{
+        display: none;
+    }
+    
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 10px auto;
+        height: 379px;
+    }
+}
+
+@media (max-width: 500px){
+
+}
