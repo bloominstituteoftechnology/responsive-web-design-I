@@ -49,11 +49,11 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html, body {
-	height: 100%;
+    height: 100%;
     font-family: 'Titillium Web', sans-serif;
 }
 
@@ -62,191 +62,236 @@ h1, h2, h3, h4, h5 {
     letter-spacing: 1px;
     margin-bottom: 15px;
 }
- p {
-	 line-height: 1.4;
- }
-
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+body {
+	display: flex;
+	justify-content: center;
+}
 .container {
-    width: 880px;
-	margin: 0 auto;
+	width: 880px;
 }
 
-/*HEADER*/
+/* header */
 header {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	margin-top: 25px;
 }
-
-
 header nav {
 	display: flex;
 	justify-content: space-between;
-	width: 800px;
-	padding: 30px 40px 0px 0px;
+  width: 690px;
 }
 
 header nav a {
-	margin-left: 5px;
-	font-size: 14px;
-	text-decoration: none;
-	color: #808080;
+  display: inline-block;
+  font-size: 14px;
+  color: gray;
+  text-decoration: none;
 }
 
-header nav a:hover { /*psuedo-selector*/
-	color: aqua;
+header nav a:hover {
+  text-decoration: underline;
 }
 
-header nav a:last-child { /*psuedo-selector*/
-	margin-right: 65px;
+header nav a:last-child {
+  margin-right: 65px;
 }
 
+header .logo {
+  display: inline-block;
+}
 
-/*INNOVATE*/
-.innovate {
+/* cta */
+.cta {
 	width: 880px;
 	height: 524px;
 	display: flex;
-	justify-content: space-around;
-	align-items: center;
-}
-
-.innovate .innovate-text { 
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
-	font-size: 77px;
-	text-align: center;
-}
-
-.innovate .innovate-text btn {
-	background: white;
-	vertical-align: top;
-	padding: 8px 44px;
-	font-size: 17px;
-	border: 1px solid black;
-	cursor: pointer;
-}
-
-.innovate .innovate-text btn:hover {
-	background: black;
-	color: white;
-}
-
-.innovate .innovate-image { 
-	width: 380px;
-    height: 380px;
-}
-
-
-
-
-/*MAIN CONTENT*/
-.main {
-	display: flex;
-	flex-direction: column;
-	border-top:1px solid black;
-	border-bottom:1px solid black;
-	padding: 39px 0px;
-}
-
-.main .top-content { 
-	display: flex;
-	width:880px;
-	height: 150px;
-	justify-content: space-between;
-}
-
-.top-content .top { 
-	width: 410px;
-}
-
-.main .middle-image {
-	margin-top:45px 0px;
-}
-
-.bottom-content { 
-	display: flex;
 	justify-content: space-evenly;
-	width: 880px;
-	margin-top: 45px;
+	align-items: center;
+}
+.cta-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+    font-size: 77px;
+    text-align: center;
 }
 
-.bottom-content .bottom {
-	width:275px;
-
+.cta-text button {
+  background: white;
+  vertical-align: top;
+  padding: 8px 44px;
+  font-size: 17px;
+  border: 1px solid black;
+  cursor: pointer;
 }
 
-/*SERVICES*/
-.services-header-img {
-	margin: 35px 0px;
+.cta .cta-text button:hover {
+  background: black;
+  color: white;
 }
 
-.services-header {
-	padding-bottom: 30px;
+@media (max-width: 800px) {
+    .container {
+        max-width: 90%;
+       
+    }
+
+    header {
+        flex-direction: column-reverse;
+    }
+
+    nav {
+        margin-top: 50px;
+        margin-left: 50px;
+        width: 100%;
+    }
+    .cta img {
+        display: none;
+    }
+    
+    .cta-text {
+       margin-right: 175px;
+    }
+
+    .text-content {
+        margin-left: 15px;
+    }
+}
+
+@media (max-width:500px) {
+    .container {
+        max-width: 90%
+    }
+
+    header {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 90%;
+    }
+
+
+
+
+    .main-content {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .top-content {
+        flex-direction: column;
+    }
+
+    .text-content {
+        margin-top: 20px;
+    }
+
+    .bottom-content {
+        flex-direction: column;
+    }
+}
+
+/* Main content */
+.main-content {
+	border-top: 1px solid black;
 	border-bottom: 1px solid black;
-}
-
-.services-header h2 {
-	font-size: 30px;
-}
-
-/*BOXES*/
-
-.box-container {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-evenly;
-	margin-top: 30px;
-	border: 1px solid red;
-}
-
-.box-container .box {
+	padding: 39px 0px;
 	display: flex;
 	flex-direction: column;
-	width: 375px;
-	border: 1px solid black;
-	background: whitesmoke;
-
 }
 
-.box btn {
+.top-content {
 	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 175px;
-	height: 35px;
-	background: white;
-	border: 1px solid black;
-	border-radius: 5px;
-	/* padding: 8px 35px; */
+	justify-content: space-between;
 }
 
-.services2 {
+.top-content .text-content {
+  width: 410px;
+}
+
+.middle-img {
+  margin: 45px 0px;
+}
+
+.bottom-content {
 	display: flex;
-	padding-top: 40px;
+	justify-content: space-between;
 }
 
-.services2 ul{
-	margin-top: 15px;
+.bottom-content .text-content {
+	width: 275px;
 }
 
-.services2 ul li {
-	margin-top: 15px;
-	list-style-type: square inside;
-}
+.services-header-img {
+    margin: 35px 0px; 
+  }
+  
+  .services-header {
+    padding-bottom: 45px; 
+  }
+  
+  .services-header h2 {
+    font-size: 28px;
+  }
+  
+  .service-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 40px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+  
+  .service-block {
+    width: 420px;
+    border: 1px solid black;
+    margin-bottom: 40px;
+    background-color: whitesmoke;
+    padding: 15px;
+  }
+  
+  .service-block button {
+    margin-top: 15px;
+    background: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 8px 35px;
+  }
+  
+  .service-facts {
+    display: flex;
+    padding-top: 40px;
+  }
+  
+  .facts-container {
+    padding-right: 40px;
+  }
+  .facts-container ul{
+    margin-top: 15px;
+  }
+  
+  .facts-container ul li {
+    margin: 10px 0;
+    list-style: square inside;
+  }
 
 .contact {
-	padding: 39px 10px 0;
+  padding: 39px 10px 0;
 }
 
 .contact p {
-	margin: 20px 0;
+  margin: 20px 0;
 }
 
 footer {
-	text-align: center;
-	font-size: 14px;
+  margin: 32px 0;
+  text-align: center;
+  font-size: 14px;
 }
