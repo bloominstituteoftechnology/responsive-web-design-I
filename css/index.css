@@ -144,6 +144,53 @@ address{
 footer{
     text-align: center;
 }
+/* Services specific css below */
+.services-header-img{
+    width: 100%;
+    margin: 10px auto;
+}
+
+.servIntro{
+    margin: 20px auto;
+    width: 95%;
+    padding: 10px;
+}
+.mainSec{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-top: 2px solid black;
+}
+
+.mainSec div{
+    width: 45%;
+    margin: 20px;
+    padding: 10px;
+    background-color: whitesmoke;
+    border: 1px solid black;
+}
+
+.mainSec button{
+    border: 1px solid black;
+    background-color: white;
+    margin-top: 10px;
+    padding: 5px 30px;
+}
+
+.underMain {
+    border-top: 2px solid black;
+    display: flex;
+    padding: 30px 0px; 
+    width: 95%;
+    margin: 10px auto;
+}
+
+.insideUnderMain li {
+    list-style: disc inside;
+    margin-top: 15px;
+}
+
+/* responsive css below */
 @media (max-width: 800px) {
     body{
         width:780px;
@@ -167,6 +214,16 @@ footer{
     .bellowimg div{
         width: 30%;
     }
+    /* services responsive css below */
+
+    .mainSec div{
+        width: 95%;
+    }
+
+    .services-info-img{
+        display: none;
+    }
+
 
 }   
 
@@ -205,5 +262,10 @@ footer{
     .bellowimg div{
         width: 95%;
         margin-bottom: 20px;
+    }
+    /* services responsive css below */
+
+    .services-header-img{
+        display: none;
     }
 }
