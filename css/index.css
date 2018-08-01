@@ -1,3 +1,268 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+
+/* begin desktop layout */
+
+body {
+	width: 880px;
+	margin: 0 auto;
+}
+
+/* Top navigation bar */
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 60px;
+	width: 880px;
+
+}
+
+header nav {
+	display: flex;
+	justify-content: flex-start;
+	width: 600px;
+	height: 60px;
+}
+
+header nav a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100px;
+	height: 60px;
+	text-decoration: none;
+	color: rgb(100,100,100);
+	font-size: 13.5px;
+	font-weight: bold;
+}
+
+header nav a:hover {
+	background-color: rgb(150,150,150);
+	color: white;
+}
+
+header .logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 60px;
+	width: 200px;
+}
+
+.header-space {
+	display: inline-block;
+	height: 57px;
+}
+
+/* Splash display */
+
+.splash {
+	display: flex;
+	width: 880px;
+	height: 500px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.splash-left {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	width: 450px;
+	height: 300px;
+}
+
+.splash-left h1 {
+	display: inline;
+	text-align: center;
+	font-size: 78px;
+}
+
+.splash-left .start-button {
+	display: flex;
+	border: 1.5px solid rgb(120,120,120);
+}
+
+.start-button a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 32px;
+	width: 165px;
+	text-decoration: none;
+	color: rgb(100,100,100);
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.start-button a:hover {
+	background-color: rgb(150,150,150);
+	color: white;
+}
+
+.splash .splash-right {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 400px;
+	height: 400px;
+}
+
+
+hr {
+	height: 3px;
+	background-color: rgb(100,100,100);
+	margin: 20px 0px 40px 0px;
+}
+
+
+/* Top content section */
+
+.top-section {
+	display: flex;
+	justify-content: flex-start;
+	width: 880px;
+}
+
+.two-column {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+}
+
+h2 {
+	font-weight: bold;
+}
+
+p {
+	font-weight: bold;
+	font-size: 16px;
+	color: rgb(100,100,100);
+}
+
+
+/* image divider */
+
+.middle-img {
+	display: flex;
+	width: 880px;
+	padding: 30px 2px;
+}
+
+
+/* bottom content section */
+
+.bottom-section {
+	display: flex;
+	justify-content: flex-start;
+	width: 880px;
+}
+
+.three-column {
+	display: flex;
+	flex-direction: column;
+	width: 33%;
+	margin-bottom: 20px;
+}
+
+/* contact section */
+
+address p {
+	margin: 20px 0px;
+}
+
+/* footer */
+
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: rgb(100,100,100);
+	font-size: 14px;
+	font-weight: bold;
+	margin: 40px 0px;
+}
+
+
+/* tablet layout */
+
+@media (max-width: 800px) {
+
+
+}
+
+
+/* mobile layout */
+
+@media (max-width: 500px) {
+
+
+}
