@@ -1,3 +1,240 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+body {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	
+}
+header {
+	display: flex;
+	align-content: flex-start;
+	align-items: center;
+	justify-content: flex-start;
+
+}
+header nav {
+	display: flex;
+}
+header nav a {
+	padding: 30px;
+	text-decoration: none;
+	color: silver;
+}
+.top {
+	display: flex;
+}
+.top section {
+	display: flex;
+	align-self: center;
+	flex-direction: column;
+	align-items: center;
+	padding: 0 100px;
+}
+.top h1 {
+	display: flex;
+	font-size: 64px;
+	text-align: center;
+}
+.top aside {
+	display: flex;
+	align-self: center;
+	margin: 25px 0;
+}
+hr {
+	height: 1px;
+	width: 880px;
+	border-bottom: solid black 1px;
+	display: inline-block;
+	margin: auto;
+}
+.middle {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+.features {
+	display: flex;
+	flex-direction: column;
+	height: 150px;
+	width: 440px;
+	align-self: flex-start;
+	margin: 20px 0 auto;
+	padding: 0 auto;
+
+}
+.about {
+	display: flex;
+	flex-direction: column;
+	height: 150px;
+	width: 440px;
+	align-self: flex-end;
+	margin: 20px 0 auto;
+	padding: 0 auto;
+}
+.bottom {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+.services {
+	display: flex;
+	flex-direction: column;
+	height: 150px;
+	width: 293px;
+	align-self: flex-end;
+	margin: 30px 0 auto;
+	padding: 0 auto;
+}
+.product {
+	display: flex;
+	flex-direction: column;
+	height: 150px;
+	width: 293px;
+	align-self: flex-end;
+	margin: 30px 0 auto;
+	padding: 0 auto;
+}
+.vision {
+	display: flex;
+	flex-direction: column;
+	height: 150px;
+	width: 293px;
+	align-self: flex-end;
+	margin: 30px 0 auto;
+	padding: 0 auto;
+}
+.contact {
+	display: flex;
+	flex-direction: column;
+	width: 880px;
+	height: 200px;
+}
+.contact h4 {
+	display: flex;
+	margin: 30px 0 0 0;
+}
+.contact address {
+	display: flex;
+	margin: 15px 0;
+}
+.contact p {
+	display: flex;
+	margin-bottom: 10px; 
+}
+footer {
+	padding-bottom: 100px;
+}
+
+@media (max-width: 800px) {
+    .top aside img {
+        display: none;
+    }
+  }
 
 
+@media (max-width: 500px) {
+    
+    header {
+        width: 50%;
+        flex-direction: column-reverse;
+        margin: auto; 
+    }
+    header nav {
+        width: 420px;
+        flex-direction: column;
+    }
+    header nav a {
+        width: 400px;
+        border-bottom: solid 1px black;
+        text-align: center;
+    }
+    hr {
+        max-width: 100%;
+    }
+    .middle {
+    
+        flex-direction: column; 
+    }
+    .middle-img {
+        max-width: 100%;
+        height: auto;
+        width: auto;
+    }
+    .bottom {
+        flex-direction: column; 
+    }
+    .contact, footer, .bottom {
+        width: 50%;
+    }
+    footer {
+        width: 50%;
+    }
+  }  
