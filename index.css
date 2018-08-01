@@ -29,7 +29,6 @@ code,
 del,
 dfn,
 em,
-img,
 ins,
 kbd,
 q,
@@ -136,7 +135,7 @@ table {
 }
 
 * {
-	border: 1px solid black !important;
+	/* border: 1px solid black !important; */
 	box-sizing: border-box;
 }
 
@@ -146,6 +145,7 @@ table {
 header nav {
 	display: flex ;
 	justify-content: center ;
+	margin-top: 15px ;
 }
 .nav-flex {
 	display: flex;
@@ -161,18 +161,138 @@ header nav {
 	color: black;
 }
 
+.visual-content {
+	display: flex ;
+	justify-content: space-evenly ;
+	align-items: center ;
+}
 
+.visual-content .cta-text {
+	display: flex ;
+	flex-direction: column ;
+	justify-content: space-evenly ;
+	align-items: center ;
 
+}
 
+.cta-text h1 {
+	font-size: 70px ;
+	text-align: center ;
+	font-family: Bangers ;
+}
+
+.visual-content button {
+	background: transparent ;
+	border: 1px solid black ;
+	padding: 3px 6px ;
+}
+
+.main-content {
+	display: flex ;
+	flex-direction: column ;
+}
+
+.top-content {
+	display: flex ;
+	flex-direction: row ;
+	justify-content: space-around ;
+}
+
+.top-content section {
+	border: 1px solid black ;
+	margin-top: 2% ;
+}
+
+.top-content {
+	border-top: 2px solid black ;
+}
+
+.top-content .text-sections p {
+	margin-top: 5px ;
+}
+
+.top-content .text-sections h3 {
+	font-family: Bangers ;
+}
+.middle-img-div {
+	margin: 10px 0 ;
+	display: flex ;
+	justify-content: center;
+
+}
+
+.middle-img {
+	width: 100% ;
+}
+
+.bottom-content {
+	display: flex ;
+	flex-direction: row ;
+	justify-content: space-evenly ;
+}
+
+.bottom-content  {
+	border-bottom: 2px solid black ;
+	padding: 2% ;
+}
+
+.bottom-content .text-sections  {
+	border: 1px solid black ;
+}
+
+.bottom-content section p {
+	width: 50% ;
+}
+
+.bottom-content .text-sections h3 {
+	font-family: Bangers ;
+	padding-bottom: 2% ;
+}
+
+.footer-section {
+	display: flex ;
+	flex-direction: column ;
+	justify-content: space-around ;
+}
+
+footer {
+	display: flex;
+	justify-content: center ;	
+}
 /* Styling for tablet devices starting at 800px */
 
 @media (max-width: 800px) {
 	.nav-flex {
-		background-color: green;
+		
 	}
 
-	.nav-flex .logo img {
+	.snippet-img {
 		display: none ;
-		visibility: hidden ;
+	}
+
+}
+
+@media (max-width: 500px) {
+
+	.nav-flex {
+		flex-direction: column ;
+	}
+	
+	header nav  {
+		border: 2px solid darkslategrey ;
+		padding: 20px 20px ;
+	}
+
+	.top-content {
+		flex-direction: column ;
+	}
+
+
+
+	.bottom-content {
+		flex-direction: column ;
+		flex-wrap: wrap ;
+		justify-content: center ;
+		align-content: space-between ;
 	}
 }
