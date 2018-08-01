@@ -1,3 +1,307 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+body {
+	display: flex;
+	flex-direction: column;
+	width: 880px;
+	margin: 0 auto;
+	font-family: 'Gaegu', cursive;
+}
+ul {
+	display: flex;
+}
+a {	
+	color: lightgray;
+	text-decoration: none;
+	margin: 0px 65px 60px 0px;
+	font-size: 16px;
+}
+.homelink {
+	margin: 0px;
+}
+.logo {
+	width: 148px;
+	height: 35px;
+	display: flex;
+}
+p {
+	text-align: start;
+}
+h1 {
+	font-size: 95px;
+}
+h3 {
+	font-size: 16px;
+}
+#foot {
+	text-align: center;
+}
+#iod {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	height: 400px;
+	padding-left: 60px;
+	justify-content: center;
+	align-items: center;
+}
+.button {
+	width: 100px;
+	height: 40px;
+	border: 1px solid black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: whitesmoke;
+	color: black;
+}
+.snippet {
+	padding-left: 20px;
+}
+
+.p12 {
+	display: flex;
+	margin: 0px 5px 130px 0px;
+}
+.p345 {
+	display: flex;
+	margin: 35px 0px 125px 0px;
+}
+.snippet img {
+	width: 390px;
+}
+
+.logopic {
+	display: flex;
+}
+.line {
+	margin: 30px 0px;
+}
+.space {
+	margin: 20px 0px;
+}
+/*Div inside of the header containning nav and Di logopic*/
+.bgc {
+	display: flex;
+	background-color: darkcyan;
+	/*position: fixed;
+	z-index: 1;*/
+	align-items: center;	
+	height: 65px;
+}
+.topimage {
+	margin-top: 75px;
+}
+.services {
+	margin-top: 20px;
+}
+.test {
+	display: flex;
+	padding: 100px 0px;
+	margin-bottom: 310px;
+}
+.spacing {
+	margin-top: 90px;
+}
+img:hover {
+    -webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+}
+nav ul li a:hover {
+	color: black;
+	font-size: 18px;
+}
+.button:hover {
+	background-color: darkcyan;
+	color: antiquewhite;
+	border: 1px solid white;
+}
+.digital-ux {
+	display: flex;
+	margin-bottom: 160px;
+	justify-content: space-between;
+	height: 100%;
+}
+.middle-divs {
+	width: 420px;
+	border: 1px solid black;
+	background-color: whitesmoke;
+}
+.botton {
+	width: 420px;
+}
+
+@media (max-width: 800px) {
+.bgc {
+    flex-direction: column-reverse;
+    height: 90px;
+}
+body {
+    width: 600px;
+}
+.snippet {
+    display: none;
+}
+navdiv {
+    width: 600px;
+}.logopic {
+    height: 50px;
+    align-self: center;
+    display: block;
+}
+a {
+    margin: 20px;
+}
+.middle-img {
+    width: 600px;
+}
+}
+
+@media (max-width: 500px) {
+
+body {
+    width: 280px;
+}
+.bgc {
+    width: 280px;
+    height: 250px;
+}
+ul {
+   flex-direction: column; 
+}
+.navdiv {
+    height: 210px;
+    width: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+li {
+    display: block;
+    border: 1px solid darkgray;
+    width: 280px;
+    height: 35px;
+}
+a {
+    display: block;
+    margin: 0px;
+    font-size: 12px;
+    height: 34px;
+    text-align: center;
+    margin-top: 9px;
+    }
+.logopic {
+    height: 35px;
+}
+header {
+    height: 120px;
+}
+#iod {
+    padding: 0px;
+    width: 280px;
+}
+h1 {
+    font-size: 70px;
+}
+.image {
+    width: 280px;
+    margin-bottom: 235px;
+    margin-top: 60px;
+}
+.p12 {
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.p345 {
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.next {
+    margin-top: 0px;
+    margin-bottom: 200px;
+}
+.next1 {
+    margin-top: 140px;
+}
+.parag1 {
+    margin-bottom: 30px;
+}
+.parag4 {
+    margin: 40px 0px;
+}
+.logo {
+    width: 120px;
+    height: 30px;
+}
+.middle-img {
+    width: 280px;
+    height: 75px;
+}
+}
