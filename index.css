@@ -228,26 +228,28 @@ header nav {
 .bottom-content {
 	display: flex ;
 	flex-direction: row ;
-	justify-content: space-evenly ;
-}
-
-.bottom-content  {
+	border: 5px solid blue ;
+	justify-content: space-between;
 	border-bottom: 2px solid black ;
 	padding: 2% ;
 }
 
+
 .bottom-content .text-sections  {
 	border: 1px solid black ;
-}
-
-.bottom-content section p {
-	width: 50% ;
+	
 }
 
 .bottom-content .text-sections h3 {
 	font-family: Bangers ;
 	padding-bottom: 2% ;
 }
+
+.bottom-content .text-sections section {
+	display: flex ;
+	justify-content: space-between;
+}
+
 
 .footer-section {
 	display: flex ;
@@ -270,6 +272,9 @@ footer {
 		display: none ;
 	}
 
+	.cta-text button {
+		margin-bottom: 2% ;
+	}
 }
 
 @media (max-width: 500px) {
