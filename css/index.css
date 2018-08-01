@@ -90,9 +90,9 @@ header nav a {
 	text-decoration: none;
 }
 
-
 header nav a:hover {
-	color: black;;
+	color: black;
+	;
 }
 
 header nav a:last-child {
@@ -184,7 +184,12 @@ footer {
 
 /* END -- "Great Idea" CSS */
 
+/* BEGIN - TABLET DISPLAY DESIGN */
+
 @media (max-width:800px) {
+	.nav {
+		width: 100%;
+	}
 	.image-header {
 		display: none;
 	}
@@ -194,6 +199,7 @@ footer {
 	}
 	.header {
 		flex-direction: column-reverse;
+		width: auto;
 	}
 	.logo {
 		padding-bottom: 40px;
@@ -205,10 +211,50 @@ footer {
 	}
 }
 
-
+/* BEGIN - MOBILE DISPLAY DESIGN */
 
 @media (max-width:500px) {
-	.container {
-		background-color: green;
+	.logo {
+		padding-bottom: 10px;
+	}
+	.nav {
+		flex-direction: column;
+		align-items: center;
+		margin: 0;
+		padding-bottom: 0px;
+	}
+	.cta {
+		margin-top: 10%;
+		margin-bottom: 15%;
+		padding: auto;
+		height: auto;
+	}
+	.nav a {
+		padding: 10px;
+		border-top: 1px solid lightgrey;
+		border-bottom: 1px solid lightgrey;
+		font-size: 20px;
+		width: 100%;
+		text-align: center;
+
+	}
+	header nav a:last-child {
+		margin-right: auto;
+	}
+	.header {
+
+		margin-bottom: auto;
+	}
+	.top-content {
+		flex-direction: column;
+	}
+	.bottom-content {
+		flex-direction: column;
+	}
+	h4 {
+		padding-top: 10px;
+	}
+	p {
+		padding: 10px
 	}
 }
