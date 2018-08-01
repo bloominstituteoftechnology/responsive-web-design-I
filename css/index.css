@@ -70,7 +70,7 @@ h1, h2, h3, h4, h5 {
 
 body {
 	width: 880px;
-	margin: 0 auto;
+    margin: 0 auto;
 }
 
 /* Top navigation bar */
@@ -116,10 +116,6 @@ header .logo {
 	width: 200px;
 }
 
-.header-space {
-	display: inline-block;
-	height: 57px;
-}
 
 /* Splash display */
 
@@ -256,13 +252,205 @@ footer {
 
 @media (max-width: 800px) {
 
+    body {
+        width: 100%;
+    }
+    
 
+    header {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 150px;
+    }
+    
+    header nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        width: 100%;
+        height: 50px;
+
+    }
+    
+    header nav a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 50px;
+        margin: 10px 30px 10px 10px;
+        text-decoration: none;
+        color: rgb(160,160,160);
+        font-size: 15px;
+        font-weight: bold;
+    }
+        
+    header .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+   
+    /* Splash display */
+    
+    .splash {
+        display: flex;
+        width: 100%;
+        height: 320px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+    
+    .splash-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 270px;
+    }
+    
+    .splash-left h1 {
+        display: inline;
+        text-align: center;
+        font-size: 72px;
+    }
+    
+    .splash-left .start-button {
+        display: flex;
+        border: 1.5px solid rgb(120,120,120);
+    }
+    
+    .start-button a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+        width: 165px;
+        text-decoration: none;
+        color: rgb(100,100,100);
+        font-size: 17px;
+        font-weight: bold;
+    }
+    
+    .start-button a:hover {
+        background-color: rgb(150,150,150);
+        color: white;
+    }
+    
+    .splash .splash-right {
+        display: none;
+    }
+    
+    
+    hr {
+        height: 3px;
+        background-color: rgb(100,100,100);
+        margin: 20px 10px 20px 10px;
+    }
+    
+    
+    /* Top content section */
+    
+    .top-section {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        padding-left: 15px;
+    }
+    
+    .two-column {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        padding: 15px;
+    }
+    
+    .two-column h2 {
+        font-weight: bold;
+    }
+    
+    .two-column p {
+        font-weight: bold;
+        font-size: 16px;
+        color: rgb(100,100,100);
+    }
+    
+    
+    /* image divider */
+    
+    .middle-img {
+        display: flex;
+        width: 100%;
+        padding: 20px;
+    }
+    
+    
+    /* bottom content section */
+
+    .bottom-section {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        padding-left: 15px;
+    }
+    
+    .three-column {
+        display: flex;
+        flex-direction: column;
+        width: 33%;
+        padding: 20px;
+    }
+    
+    .three-column h2 {
+        font-weight: bold;
+    }
+    
+    .three-column p {
+        font-weight: bold;
+        font-size: 16px;
+        color: rgb(100,100,100);
+    }
+    
+      
+    /* contact section */
+    
+    .contact {
+        margin-left: 30px;
+    }
+
+    address p {
+        margin: 20px 0px;
+    }
+    
+    /* footer */
+    
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(100,100,100);
+        font-size: 14px;
+        font-weight: bold;
+        margin: 40px 0px;
+    }
+    
 }
 
 
 /* mobile layout */
 
 @media (max-width: 500px) {
+
+    body {
+        width: 100%;
+    }
 
 
 }
