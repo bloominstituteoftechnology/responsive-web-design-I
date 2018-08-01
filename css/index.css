@@ -100,7 +100,7 @@ body {
 }
 
 .nav-text {
-	color: rgb(186,186,186);
+    color: rgb(186,186,186);
 }
 
 #logo-holder {
@@ -415,12 +415,13 @@ body {
         position: relative;
         width: 500px;
         height: 62px;
-        border: 1px solid black;
-        top: 0px;
+        top: -3px;
+        left: 10px;
         text-decoration: none;
         display: flex;
         justify-content: center;
         align-items: center;
+        border-top: 1px solid black;
     }
     
     .nav-text {
@@ -431,7 +432,6 @@ body {
     #logo-holder {
         height: 76px;
         width: 500px;
-        border: 1px solid red;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -439,18 +439,19 @@ body {
     
     .logo {
         position: relative;
-        top: 0px;
-        left: 3px;
+        top: -2px;
+        left: 10px;
     }
     
     #under-header{
         height: 397px;
-        width: 460px;
+        width: 500px;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: row;
-        flex-wrap: wrap
+        flex-wrap: wrap;
+        border-top: 1px solid black; 
     }
     
     #innovation-on-demand {
@@ -511,18 +512,28 @@ body {
         right: 0px;
         bottom: 0px;
     }
+
+    #features{
+        padding-top: 23px;
+    }
+
+    #about{
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+    }
     
     .main-section2 {
-        height: 220px;
+        height: 500px;
         width: 460px;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
+        justify-content: space-around;
+        align-items: flex-start;
         top: 0px;
         left: 0px;
         right: 0px;
         bottom: 0px;
+        margin-bottom: 5px;
     }
     
     .title-text {
@@ -553,10 +564,10 @@ body {
     
     .services-product-vision {
         width: 425px; 
-        height: 107px;
+        height: 110px;
         line-height: auto;
-        top: 0px;
-        left: 0px;
+        top: 5px;
+        left: 15px;
         right: 0px;
         bottom: 0px;
     }
@@ -566,7 +577,7 @@ body {
         height: auto;
         top: 0px;
         bottom: 0px;
-        left: 0px;
+        left: 18px;
         right: 0px;
     }
     
@@ -578,6 +589,10 @@ body {
         left: 0px;
         right: 0px;
         bottom: 0px;
+    }
+
+    #contact-section{
+        height: 200px;
     }
 }
 
