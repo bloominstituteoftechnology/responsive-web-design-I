@@ -66,7 +66,7 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
-/* default */
+/* default - desktop view */
 body {
 	padding-top: 20px;
 }
@@ -192,5 +192,75 @@ footer {
 
 footer p {
 	text-align: center;
+}
+
+/* tablet view */
+@media (max-width: 800px) {
+    .container {
+        width: 760px;
+    }
+
+    .navbar {
+        padding:10px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar nav {
+        width: 98%;
+        margin-top: 39px;
+        order: 2;
+        display: flex;
+    }
+
+    .navbar nav a {
+        color: darkgray;
+        font-weight: bold;
+        margin-right: 83px;
+    }
+
+    .navbar .home-link {
+        width: 173px;
+        order: 1;
+    }
+    
+    header.header-horizontal {
+        padding: 62px 0px 83px 0px;
+    }
+
+    header .main-header-img {
+        display: none;
+    }
+
+    main .left {
+        justify-content: flex-start;
+        padding: 0px 10px;
+    }
+    
+    main .center {
+        justify-content: center;
+        padding: 0px 10px;
+    }
+    
+    main .right {
+        justify-content: flex-end;
+        padding: 0px 10px;
+    }
+
+    main .middle-img {
+        width: 100%;
+        height: 80%;
+        margin: 35px 1px;
+    }
+
+    main .contact-row {
+        display: flex;
+        flex-direction: column;
+        border-top: 2px solid black;
+        margin-top: 66px;
+        padding-top: 36px;
+        padding-left: 10px;
+    }
 }
 
