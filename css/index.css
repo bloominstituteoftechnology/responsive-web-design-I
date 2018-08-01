@@ -88,7 +88,7 @@ footer #contact {
   padding: 2%;
 }
 footer #contact h3 {
-  font-size: 3.5rem;
+  font-size: 1.5rem;
 }
 footer #contact address {
   font-weight: bold;
@@ -105,7 +105,6 @@ footer #contact #copyright {
   justify-content: space-between;
 }
 .twoCol div {
-  background-color: #b1e1dd;
   font-size: 1.5rem;
   padding: 3%;
   margin: 5% 2%;
@@ -117,7 +116,6 @@ footer #contact #copyright {
   justify-content: space-between;
 }
 .threeCol div {
-  background-color: #b1e1dd;
   font-size: 1.5rem;
   margin: 5% 2%;
   padding: 2%;
@@ -159,5 +157,50 @@ footer #contact #copyright {
 }
 
 @media (max-width: 500px) {
-
+  body {
+    width: 100%;
+  }
+  main {
+    margin: 0 auto;
+    width: 90%;
+  }
+  footer {
+    margin: 0 auto;
+    width: 90%;
+  }
+  .navbar #main-nav #nav {
+    flex-direction: column;
+  }
+  #nav li {
+    border-bottom: 1px solid gray;
+    display: flex;
+    justify-content:center;
+    padding: 4% 0;
+    width: 100%;
+  }
+  #nav li:nth-of-type(1) {
+    border-top: 1px solid gray;
+  }
+  #nav li:hover {
+    background-color: lightgray;
+    transition: 0.3s ease;
+  }
+  main #index-title-area #index-title {
+    width: 100%;
+  }
+  main #index-title-area #index-title h1 {
+    font-size: 5rem;
+  }
+  main #index-title-area #index-title #start {
+    font-size: 1.1rem;
+    width: 50%;
+  }
+  .twoCol, .threeCol {
+    flex-direction: column;
+  }
+  .twoCol div, .threeCol div {
+    font-size: 1rem;
+    margin: 2% 0;
+    padding: 3% 0;
+  }
 }
