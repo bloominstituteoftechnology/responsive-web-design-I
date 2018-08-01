@@ -130,7 +130,8 @@ header nav a:last-child {
 .innovation {
 	display: flex;
 	justify-content: space-between;
-	margin: 50px 0 93px;
+    margin: 50px 0 93px;
+    border-bottom: 2px solid #000;
 }
 
 .innovation-text {
@@ -175,7 +176,8 @@ header nav a:last-child {
 .article-bottom {
 	display: flex;
 	justify-content: space-between;
-	margin: 40px 0;
+    margin: 40px 0;
+    border-bottom: 2px solid #000;
 }
 
 .services, .product, .vision {
@@ -207,8 +209,50 @@ hr {
 
 /*MEDIA QUERY - TABLET*/
 @media (max-width: 800px){
-    header nav .logo {
+    header nav div {
         order: -1;
+        flex-basis: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    header nav {
+        flex-wrap: wrap;
+
+    }
+
+    .snippet-img {
+        display: none;
+    }
+
+    .innovation{
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    .innovation-text {
+        padding: 10px 40px 70px;
+    }
+
+    .article-top{
+        margin: 3px 0 50px;
+    }
+
+    .middle-img {
+        height: 158px;
+    }
+
+    .article-bottom {
+        margin: 23px 0 5px;
+        padding-bottom: 40px;
+    }
+
+    address {
+        padding-left: 0;
+    }
+
+    footer {
+        padding: 0;
     }
 }
 
