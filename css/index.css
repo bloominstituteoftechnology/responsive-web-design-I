@@ -1,3 +1,629 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
 
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: 'Bangers', cursive;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+body {
+	width: 880px;
+	margin-left: auto;
+	margin-right: auto;
+	height: auto;
+	background-image: url ('../img/header-omg.png')
+}
+
+header {
+	
+	width: 100%;
+	z-index: +1;
+	margin-bottom: 20px;
+}
+
+.parent {
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+	
+	z-index: +1;
+	margin-bottom: 10px;
+}
+
+.logo {
+    display:flex;
+	z-index: +1;
+    margin-left: 10px;
+}
+
+header nav a {
+	text-decoration: none;
+	color: lightgray;
+	height: 25px;
+	width: 100%;
+    align-items: space-between;
+}
+
+a:hover {
+	color: black;
+}
+
+nav {
+	height: 25px;
+	background-color: steelblue;
+	display: flex;
+	justify-content: space-between;
+    border: 2px solid black;
+    width:100%;
+}
+
+.facecon {
+	display: flex;
+	width: 880px;
+	padding-top: 1px;
+	height: 400px;
+	top: 30px;
+	justify-content: space-around;
+    margin-top: 60px;
+}
+
+button {
+	font-size: 18px;
+	display: inline-block;
+	border: black solid 1px;
+	font-family: 'Titillium Web', sans-serif;
+	height: 33px;
+	/* position: relative; */
+	/* border-top-width: 1px; */
+	/* top: 52px; */
+	/* right: 12px; */
+	width: 171px;
+}
+
+button:hover {
+	background-color: steelblue;
+}
+
+button:active {
+	color: lightgrey;
+}
+
+.facecon h1 {
+    display: flex;
+    font-size: 76px;
+    text-align: center;
+}
+
+.headline {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	justify-content: space-evenly;
+	align-items: center;
+	bottom: 15px;
+}
+
+.facecon img {
+	align-self: center;
+	 right: 14px;
+	/* position: relative; */
+	/* left: 220px; */
+	/* width: 391px; */
+	/* height: 381px; */
+	/* bottom: 280px; */
+}
+
+.topCon {
+	display: flex;
+	justify-content: space-around;
+	/* font-size: 18px; */
+	border-top: 2px solid black;
+	margin-top: 85px;
+}
+
+#features,
+#about {
+	display: flex;
+	flex-direction: column;
+	width: 45%;
+	/* height: 150px; */
+	margin-bottom: 25px;
+}
+
+#features h3,
+#about h3 {
+	margin-top: 25px;
+}
+
+#features {
+	/* margin-left: 20px; */
+}
+
+#about {
+	/* margin-left: 40px; */
+}
+
+.lowercon {
+	display: flex;
+	/* font-size: 18px; */
+	align-content: flex-start;
+	justify-content: space-around;
+	position: relative;
+	border-bottom: 2px solid black;
+    margin-top: 8%;
+}
+
+#services,
+#product,
+#vision {
+	width: 30%;
+	/* height: 100px; */
+    justify-content: flex-start;
+    padding-bottom: 8%;
+}
+
+#services {
+	right: 23px;
+}
+
+#vision {
+	left: 15px;
+}
+
+footer {
+	display: flex;
+	flex-direction: column;
+	top: 25px;
+}
+
+address h2 {
+	margin-top: 15px;
+}
+
+.addy {
+	align-self: flex-start;
+	font-weight: 100;
+}
+
+footer h5 {
+	align-self: center;
+}
+
+.img {
+	margin-bottom: 15px;
+}
+
+.servicehead {
+	display: flex;
+	flex-direction: column;
+	align-items: space-around;
+	justify-content: center;
+	height: 120px;
+	width: 880px;
+	border-bottom: 2px solid black;
+	margin-top: 20px;
+	line-height: 18px;
+}
+
+.servicehead h1 {
+	font-size: 25px;
+}
+
+.servicehead p {
+	margin-bottom: 20px;
+}
+
+.mainboxes {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-content: center;
+	border-bottom: 2px solid black;
+}
+
+.digides,
+.uxui,
+.digimark,
+.webdev,
+.iosdev,
+.andev {
+	display: flex;
+	flex-direction: column;
+	/* justify-content: space-around; */
+	/* align-items: center; */
+	height: 250px;
+	width: 400px;
+	border: 1px solid black;
+	background-color: #edeff2;
+	margin: 25px auto;
+	;
+}
+
+.digides h3,
+.uxui h3,
+.digimark h3,
+.webdev h3,
+.iosdev h3,
+.andev h3 {
+	align-self: flex-start;
+	padding: 26px 20px 0px 17px;
+	font-size: 18px;
+}
+
+.digides p,
+.uxui p,
+.digimark p,
+.webdev p,
+.iosdev p,
+.andev p {
+	align-self: flex-start;
+	padding: 10px 15px;
+}
+
+.sbutton button {
+	/* display: flex; */
+	/* align-content: flex-start; */
+	border-radius: 4px;
+	border-radius: 4px;
+	margin: 10px 10px;
+	height: 25px;
+	font-size: 12px;
+	width: 150px;
+}
+
+.footer {
+	display: flex;
+	margin-top: 30px;
+	/* justify-content: space-around; */
+	align-content: center;
+}
+
+.footfacts {
+	
+	display: flex;
+	flex-direction: column;
+	padding-left: 30px;
+	justify-content: space-between;
+	margin-left: 10px;
+}
+
+.footfacts ul {
+	list-style-type: disc;
+	list-style-position: inside;
+}
+
+.footfacts li {
+	margin: 8px;
+}
+
+.liststuff {
+	border: 2px solid green;
+}
+
+.footimg {
+	display: flex;
+	flex-direction: column;
+	border: 2px solid powderblue;
+}
+
+.footimg img {
+	width: 400px;
+}
+
+.footfacts p {
+	margin-bottom: 30px;
+	margin-right: 80px;
+	height: 100px;
+}
+
+h6 {
+	text-align: center;
+	font-size: 18px;
+	margin-top: 15px;
+}
+
+.marketimg {
+	width: 880;
+	display: flex;
+}
+
+.marketimg img {
+	width: 880px;
+}
+
+.headline {
+	display: flex;
+    justify-content: space-around;
+    /* 4align-items: center: */
+	width: 100%;
+	padding: 10px 30px;
+	margin-top: 25px;
+	/* border-bottom: 2px solid black; */
+}
+
+/* .headline h1 { */
+	/* font: 25px; */
+	/* text-align: left; */
+	/* border-top: 2px solid black; */
+	/* margin-top: 15px; */
+	/*  */
+/* } */
+
+.mainboxes2,
+.markcontent {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-content: center;
+	border-bottom: 2px solid black;
+}
+
+.imgidea,
+.coolmark,
+.alsofun,
+.supercool {
+	display: flex;
+	flex-direction: column;
+	/* justify-content: space-around; */
+	/* align-items: center; */
+	height: 250px;
+	width: 400px;
+	border: 1px solid black;
+	background-color: #edeff2;
+	margin: 25px auto;
+	;
+}
+
+.coolmark p,
+.alsofun p,
+.supercool p {
+	align-self: flex-start;
+	padding: 10px 15px;
+}
+
+.coolmark h3,
+.alsofun h3,
+.supercool h3 {
+	align-self: flex-start;
+	padding: 26px 20px 0px 17px;
+	font-size: 18px;
+}
+
+.imgidea img {
+	height: 250px;
+	width: 400px;
+}
+body h5{
+	text-align: center;
+}/* Use your own code or past solution for Great Idea Web Page CSS here! */
+
+/* tablet view */
+@media ( max-width: 800px){
+    body{
+        width:90%;
+    }
+header .parent{
+    display:flex;
+    flex-direction: column-reverse;
+    width:100%;
+    margin:10px auto;
+
+}
+.parent .logo{
+   align-content: center;
+   padding-bottom: 7%;
+}
+.parent nav{
+    display:flex;
+    width:100%; 
+
+}
+header{
+    margin-top: 30px;
+}
+
+.parent nav a {
+    /* flex-direction: column; */
+    height:15%;
+    width:10%;
+    justify-content: space-around;
+}
+.facecon{
+    width : 80%;
+    margin:0 auto;
+    align-items: baseline;
+}
+.facecon img{
+    display:none;
+
+}
+.topCon{
+    width:100%;
+    margin:0 auto;
+}
+.topcon div{
+    margin:0 auto;
+}
+.topCon img{
+    width:100%;
+    margin:0 auto;
+}
+.middle-img{
+    width:100%;
+}
+footer{
+    margin:0 auto;
+}
+}
+/* mobile */
+@media (max-width: 500px){
+
+    .parent{
+    height:100%;
+}
+    .parent nav{
+    display:flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+}
+.parent nav a{
+    height: 100%;
+    width: 100%;
+    border: 1px solid black;
+    align-items: center;
+}
+}
