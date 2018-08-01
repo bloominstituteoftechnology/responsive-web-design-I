@@ -321,3 +321,40 @@ hr{
     align-items: center;
     height: 35px;
 }
+
+@media (max-width:800px){
+    .header{
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+    
+    .nav{
+        width: 100%;
+        order: 2;
+    }
+    
+    .logo{
+        justify-content: center;
+        width: auto;
+        margin-bottom: 15px;
+    }
+    
+    .right{
+        display: none;
+    }
+    
+    .hero{
+        margin-top: 40px;
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .left{
+        flex-grow: 0;
+    }
+    
+    .button{
+        align-self: center;
+    }
+}
