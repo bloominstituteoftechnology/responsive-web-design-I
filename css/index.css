@@ -129,7 +129,7 @@ header .logo {
 .cta .cta-text h1 {
     border: 1px solid green;
     box-sizing: border-box;
-    width: 65%;
+    width: 55%;
     text-align: center;
 }
 
@@ -199,17 +199,118 @@ header .logo {
 }
 
 .contact {
-    padding: 5% 0 10% 0;
+    padding: 5% 0 2% 0;
 }
 
 .contact p {
-    margin: 3% 0;
+    margin: 2% 0;
 }
 
 footer {
-    margin: 32px 0;
     text-align: center;
     font-size: 14px;
 }
 
+@media (min-width: 801px) {
+    .container {
+        background-color: tan;
+        margin: 0 auto;
+    }
+    .top-header {
+        display: flex;
+        justify-content: center;
+    }
+    .cta {
+        border: 1px solid purple;
+        display: flex;
+        justify-content: center;
+    }
+}
 
+
+
+@media (min-width: 501px) and (max-width: 800px) {
+    .container {
+        background-color: pink;
+        margin: 0 auto;
+        max-width: 800px;
+    }
+
+    .top-header {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .headerIMG {
+        display: none;
+    }
+
+    nav {
+        order:2
+    }
+
+    .cta {
+        display: flex;
+    }
+
+    .cta-text {
+        display: flex;
+    }
+
+    .tablet-size::after {
+        content: 'tablet';
+        font-size: 40px;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .container {
+        background: lightblue;
+        margin: 0 auto;
+    }
+    .top-header {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        width: 500px;
+    }
+    .cta{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        width: 500px;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    .headerIMG {
+        display: none;
+    }
+    .top-content, .bottom-content {
+        border: 2px solid blue;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-left: 5%;
+    }
+
+    .main-content .bottom-content .text-content {
+        border: 1px solid darkblue;
+        width: 50%;
+        margin-left: 5%;
+    }
+
+    .text-content {
+        width: 70%;
+    }
+
+    .main-content .top-content .text-content:first-child {
+        margin-left: 5%;
+    }
+
+}
