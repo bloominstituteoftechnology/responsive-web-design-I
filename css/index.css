@@ -104,9 +104,6 @@ header nav a:last-child {
     margin-right: 0;
 }
 
-header .logo {
-
-}
 
 /* cta */
 
@@ -178,14 +175,13 @@ header .logo {
 }
 
 .main-content .middle-img {
-    width: 100%;
+    width: 800px;
     padding: 2% 0;
 }
 
 .main-content .bottom-content {
     border: 6px solid firebrick;
     display: flex;
-
 }
 
 .main-content .bottom-content .text-content {
@@ -295,22 +291,30 @@ footer {
         border: 2px solid blue;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
-        margin-left: 5%;
+
+    }
+
+    .main-content .top-content, .bottom-content {
+        border: 6px solid firebrick;
+        display: flex;
+        width: 450px;
     }
 
     .main-content .bottom-content .text-content {
         border: 1px solid darkblue;
-        width: 50%;
-        margin-left: 5%;
+        width: 440px;
+        padding: 0;
+    }
+
+    .main-content .top-content .text-content {
+        border: 1px solid darkblue;
+        width: 440px;
+        padding: 0;
     }
 
     .text-content {
-        width: 70%;
+
     }
 
-    .main-content .top-content .text-content:first-child {
-        margin-left: 5%;
-    }
 
 }
