@@ -163,15 +163,21 @@ nav {
 
 @media (max-width: 800px) { /* Repositions company logo to top and displays a centered nav */
     
-    nav {
-        width: auto;
-        display: flex;
-        flex-wrap: wrap-reverse;
-        justify-content: space-between;
-        
+    body {
+        width: 800px;
     }
 
+    nav {
+        flex-direction: column-reverse;
+        align-items: center;
+    
+    }
 
+    a {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 
     .header-img {
         display: none;
@@ -183,7 +189,6 @@ nav {
         display: flex;
         flex-direction: row;    
         justify-content: center;
-        
     }
 
     .mid {
