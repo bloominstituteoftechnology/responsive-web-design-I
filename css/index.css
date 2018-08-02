@@ -192,9 +192,14 @@ footer {
     align-items: center;
     width: 100%;
   }
+  header{
+    display: flex;
+    flex-direction: column-reverse;
+  }
 
   .logo{
   display: inline;
+  padding-bottom: 20px;
   }
 
   header nav a {
@@ -261,14 +266,22 @@ max-width:  200px;
 
   nav {
     display: flex;
-    align-items: center;
     flex-direction: column;
-    justify-content: space-around;
+
+  }
+  header{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
   }
 
-  header nav a {
+nav a {
     text-decoration: none;
+  padding-bottom: 10px;
+
+
   }
+
 
   .cta img {
     display: none;
@@ -319,6 +332,11 @@ body {
   justify-content: space-evenly;
   align-items: center;
 }
+
+.cta-text{
+font-size: 50px;
+}
+
 
 .bottom-content .text-content {
 
