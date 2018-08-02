@@ -1,3 +1,822 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family:  'Titillium Web', sans-serif; /*'Titillium Web', sans-serif; */
+}
+
+h1, h2, h3, h4, h5 {
+    font-family:  'Bangers', cursive; /*'Titillium Web', sans-serif;*/    
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to REFACTOR into flexbox */
+
+/********************** Index.html ***************************/
+
+
+
+body {
+	display: flex;
+	justify-content: center;
+}
+
+.container {
+	width: 880px;
+	/* border: 1px solid limegreen; */
+}
+
+header {
+	/* border: 3px solid goldenrod; */
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 25px;
+	/* position: fixed; */
+}
+
+
+header nav {
+	display: flex;
+	justify-content: space-between;
+	/* border: 1px solid pink; */
+	width: 690px;	
+}
+
+header nav a {
+    display: flex;
+    justify-content: space-around;
+	text-decoration: none; 
+	font-size: 14px;
+	color: gray;
+}
+
+header nav a:hover {
+	background-color: mediumspringgreen; 
+}
+
+
+header nav a:last-child {
+	margin-right: 65px;
+}
+
+
+header .nav7 {
+	/* border: 2px solid blue; */
+	display: inline-block;
+	
+}
+
+/* Title Section and Main Picture  */
+
+.titleParent {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	/* border: 2px solid green; */
+    margin: 50px 0 0 0;
+    height: 450px;
+}
+
+
+.titleParent .titleChild1 {
+	/* border: 2px solid lime; */
+	width: 400px;
+    height: 400px;
+    width: 440px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+
+
+.titleChild1 h1 {
+	font-size: 70px;
+	text-align: center;
+	padding: 0 0 10px 70px;
+	/* border: 1px solid black; */
+    height: 200px;
+    margin: 50px 0 50px 0;
+}
+
+.titleChild1 button {
+	text-align: center;
+	font-size: 14px;
+	border: 1px solid black;
+    width: 170px;
+    height: 60px;
+	/* align-items: center; */
+	margin: 0 0 75px 175px;
+}
+
+.titleChild1 button:active {
+	text-align: center;
+	font-size: 17px;
+	/* border: 5px solid springgreen; */
+	width: 200px;
+	/* align-items: center; */
+	margin: 0 0 0 100px;
+	border-radius: 5px;
+}
+
+.titleParent .titleChild2 {
+    /* border: 1px solid black; */
+}
+
+/* Main Body */
+
+.mainBody {
+    /* border: 2px solid orange; */
+	display: flex;
+	flex-direction: column;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	margin: 30px 0 0 0;
+}
+
+.top {
+	display: flex;
+	justify-content: space-around;
+	align-content: center;
+	margin: 30px 0 30px 0;
+	/* border: 2px solid purple; */
+}
+
+.top .text {
+	/* border: 2px solid gold; */
+	width: 440px;
+}
+
+.top .text h3 {
+	font-size: 16px;
+}
+
+
+.bottom {
+	display: flex;
+	justify-content: space-around;
+	align-content: center;
+	margin: 30px 0 45px 0;
+    /* border: 2px solid purple; */
+    height: 150px;
+}
+
+
+.bottom .text {
+	/* border: 2px solid gold; */
+    width: 293px;
+    padding: 10px 10px 0 0;
+}
+
+.bottom .text h3 {
+	font-size: 16px;
+}
+
+
+.footer {
+	display: flex;
+	justify-content: flex-start;
+	/* border: 2px solid lime; */
+	margin: 20px 0 0 0;
+}
+
+
+
+.footer .contact {
+	/* border: 2px solid orange; */
+	width: 400px;
+	margin: 20px 0 0 20px;
+}
+
+.footer .contact h3 {
+	font-size: 16px;
+}
+
+.copyright1 {
+	/* border: 5px solid red; */
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	padding: 30px 0 0 0;
+}
+
+/****** Tablet 800px ******/
+
+@media(max-width: 800px){
+    .container {
+        width: 800px;
+        /* border: 1px solid limegreen; */
+    }
+
+    header {
+        /* border: 3px solid goldenrod; */
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 25px;
+        height: 95px;
+        /* position: fixed; */
+    }
+
+    header nav {
+        display: flex;
+        justify-content: space-between;
+        /* border: 1px solid pink; */
+        width: 800px;	
+    }
+
+    header .nav7 {
+        /* border: 2px solid blue; */
+        /* display: inline-block; */
+        
+    }
+
+    header nav a {
+        /* display: center; */
+        /* border: 1px solid black; */
+        text-decoration: none; 
+        font-size: 14px;
+        color: gray;
+        width: 150px;
+        text-align: right;
+    }
+
+    hader nav a.nav0 {
+        text-align: center;
+    }
+
+    .titleParent {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 50px 0 0 0;
+        height: 350px;
+    }
+
+    .titleParent .titleChild1 {
+        /* border: 2px solid lime; */
+        height: 320px;
+        width: 440px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .titleChild1 h1 {
+        font-size: 70px;
+        text-align: center;
+        padding: 0 0 10px 70px;
+        /* border: 1px solid black; */
+        height: 200px;
+        margin: 20px 70px 30px 0;
+    }
+    
+    .titleChild1 button {
+        text-align: center;
+        font-size: 14px;
+        border: 1px solid black;
+        width: 170px;
+        height: 50px;
+        /* align-items: center; */
+        margin: 0 0 30px 130px;
+    }
+
+    .titleParent .titleChild2 {
+        display: none;
+        border: 1px solid black;
+        height: 1px;
+        width: 1px;
+    }
+
+    .mainBody {
+        /* border: 2px solid orange; */
+        width: 770px;
+        display: flex;
+        flex-direction: column;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        margin: 20px 0 0 20px;
+
+    }
+    
+    .top {
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+        margin: 30px 20px 30px 10px;
+        /* border: 2px solid purple; */
+    }
+    
+    .top .text {
+        /* border: 2px solid gold; */
+        width: 400px;
+        height: 120px;
+        padding: 0 0 0 5px;
+    }
+
+    .middle-img {
+        width: 760px;
+        height: 165px;
+        padding: 10px 0 0 0;
+    }
+
+    .bottom {
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+        margin: 15px 10px 70px 0;
+        /* border: 2px solid purple; */
+        height: 150px;
+    }
+    
+    
+    .bottom .text {
+        /* border: 2px solid gold; */
+        width: 260px;
+        padding: 10px 31px 0 11px;
+    }
+
+    .footer .contact {
+        /* border: 2px solid orange; */
+        width: 400px;
+        margin: 20px 0 0 26px;
+    }
+
+    .copyright1 {
+        /* border: 5px solid red; */
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        padding: 20px 0 0 0;
+    }
+
+}
+
+
+
+/****** Phone 500px ******/
+
+@media(max-width: 500px){
+    .container {
+        width: 500px;
+        /* border: 1px solid limegreen; */
+    }
+
+    header {
+        /* border: 3px solid goldenrod; */
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 25px;
+        height: 430px;
+        /* position: fixed; */
+    }
+
+    header nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        /* border: 1px solid pink; */
+        width: 450px;
+        height: 400px;	
+    }
+
+    header .nav7 {
+        /* border: 2px solid blue; */
+        /* display: inline-block; */
+        height: 40px;
+        padding: 2px 2px 2px 2px;
+        margin: 0 0 12px 0;
+        
+    }
+
+    header nav a {
+        /* display: inline-flex; */
+        justify-content: space-around; 
+        align-items: center;
+        text-decoration: none; 
+        font-size: 20px;
+        color: gray;
+        border: 1px solid black;
+        height: 66px;
+        width: 500px;
+    }
+
+    header nav a.nav3 {
+        margin: 0 0 0 0px;
+    }
+
+    .titleParent {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: center;
+        /* border: 2px solid green; */
+        margin: 30px 0 0 0;
+        height: 350px;
+    }
+
+
+    .titleChild1 button {
+        text-align: center;
+        font-size: 16px;
+        border: 1px solid black;
+        width: 170px;
+        height: 40px;
+        /* align-items: center; */
+        margin: 10px 2px 30px 134px;
+    }
+
+    .mainBody {
+        /* border: 2px solid orange; */
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        margin: 20px 0 0 20px;
+
+    }
+
+    .top {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-content: center;
+        margin: 30px 10px 25px 0;
+        /* border: 2px solid purple; */
+    }
+
+
+    .top .text {
+        /* border: 2px solid gold; */
+        width: 400px;
+        height: 150px;
+        padding: 25px 0 0 5px;
+    }
+
+    .middle-img {
+        width: 490px;
+        height: 100px;
+        padding: 10px 0 0 0;
+    }
+
+    .bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: center;
+        margin: 30px 10px 40px 0;
+        /* border: 2px solid purple; */
+        height: 440px;
+    }
+    
+    .bottom .text {
+        /* border: 2px solid gold; */
+        width: 500px;
+        padding: 0 31px 0 0;
+    }
+
+    .footer .contact {
+        /* border: 2px solid orange; */
+        width: 400px;
+        margin: 15px 0 0 18px;
+    }
+
+}
+
+
+
+/************************ Service Desktop view ***********************/
+
+
+.servicesTitle {
+	/* border: 2px solid red; */
+	display: flex;
+	flex-direction: column;
+	margin: 100px 0 0 0;
+}
+
+
+.servicesTitle .services-header-img {
+	/* border: 2px solid blue; */
+}
+
+
+.servicesTitle .serviceschild {
+	/* border: 2px solid lime; */
+	width: 880px;
+	height: 150px;
+	margin: 20px 0 0 0;
+	/* border: 2px solid orange; */
+}
+
+.serviceschild h1{
+	font-size: 28px;
+}
+
+
+.maincontainer {
+	/* border: 5px solid red; */
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	flex-direction: row;
+	padding: 40px 0 40px 0;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+.maincontainer .childcontainer {
+	border: 2px solid black;
+	width: 400px;
+	height: 280px;
+	padding: 20px 20px 0 20px;
+	background-color: ghostwhite;
+	margin: 10px 10px 10px 10px;
+}
+
+.childcontainer h2 {
+	font-size: 25px;
+}
+
+.childcontainer .button {
+	border: 2px solid black;
+	margin: 20px 0 0 0;
+	font-size: 14px;
+	width: 120px;
+	height: 30px;
+	text-align: center;
+	padding: 5px 0 0 0;
+	border-radius: 25px;
+	background-color: white;
+}
+
+
+
+.footer1 {
+	/* border: 5px solid red; */
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	margin: 50px 0 0 0;
+}
+
+.footer1 .facts {
+	/* border: 2px solid black; */
+	width: 400px;
+	height: 350px;
+	padding: 20px 20px 0 20px;
+}
+
+.facts h2 {
+	font-size: 20px;
+}
+
+ul.b {
+	list-style-type: square;
+	padding: 0 0 0 15px;
+}
+
+.footer1 .picture2 {
+	/* border: 2px solid lime; */
+}
+
+
+
+
+
+
+/******Service: Tablet 800px ******/
+
+@media(max-width: 800px){
+    .servicesTitle {
+        /* border: 2px solid red; */
+        display: flex;
+        flex-direction: column-reverse;
+        align-content: center;
+        align-items: center;
+        margin: 70px 0 0 0;
+    }
+    
+    
+    .servicesTitle .services-header-img {
+        /* border: 2px solid blue; */
+        width: 770px;
+        margin: 0 30px 20 30px;
+    }
+    
+    
+    .servicesTitle .serviceschild {
+        /* border: 2px solid lime; */
+        width: 750px;
+        height: 150px;
+        margin: 0 10px 20px 10px;
+        /* border: 2px solid orange; */
+        padding: 0 10px 0 10px;
+    }
+    
+    .serviceschild h1{
+        font-size: 60px;
+        /* text-align: center; */
+    }
+
+    .maincontainer {
+        /* border: 5px solid red; */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        flex-direction: row;
+        padding: 40px 0 40px 0;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+
+    .maincontainer .childcontainer {
+        border: 2px solid black;
+        width: 365px;
+        height: 280px;
+        padding: 20px 20px 0 20px;
+        background-color: ghostwhite;
+        margin: 10px 10px 10px 10px;
+    }
+
+    .childcontainer h2 {
+        font-size: 20px;
+    }
+    
+    .footer1 {
+        /* border: 5px solid red; */
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        margin: 50px 0 0 20px;
+        width: 770px;
+    }
+
+    .footer1 .facts {
+        /* border: 2px solid black; */
+        width: 365px;
+        height: 350px;
+        padding: 20px 30px 0 20px;
+    }
+
+    .footer1 .picture2 {
+        /* border: 2px solid lime; */
+        width: 365px;
+        margin: 0 0 0 0;
+    }
+
+    .picture2 .services-info-img {
+        width: 365px;
+    }
+
+}
+
+
+
+/******Service: Phone 500px ******/
+
+@media(max-width: 500px){
+
+    .container {
+    width: 490px;
+    height: 1500px;
+	/* border: 1px solid black; */
+    }
+
+    header nav a {
+        /* display: inline-flex; */
+        justify-content: space-around; 
+        align-items: center;
+        text-decoration: none; 
+        font-size: 20px;
+        color: gray;
+        border: 1px solid black;
+        height: 66px;
+        width: 490px;
+    }
+
+    .servicesTitle {
+        /* border: 2px solid red; */
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+        margin: 70px 0 0 0;
+        height: 300px;
+    }
+
+
+    .servicesTitle .services-header-img {
+        /* border: 2px solid blue; */
+        width: 1px;
+        height: 1px;
+        margin: 0 30px 20 30px;
+        display: none;
+    }
+    
+    
+    .servicesTitle .serviceschild {
+        /* border: 2px solid lime; */
+        width: 490px;
+        height: 300px;
+        margin: 0 10px 20px 10px;
+        /* border: 2px solid orange; */
+        padding: 0 10px 0 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .serviceschild h1{
+        font-size: 80px;
+        text-align: center;
+    }
+
+    .footer1 {
+        /* border: 5px solid red; */
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        margin: 50px 0 0 20px;
+        width: 490px;
+    }
+
+    .footer1 .facts {
+        /* border: 2px solid black; */
+        width: 365px;
+        height: 350px;
+        padding: 20px 20px 0 20px;
+        margin: 0 30px 0 0;
+    }
+
+
+    .picture2 .services-info-img {
+        width: 1px;
+        display: none;
+    }
+
+}
