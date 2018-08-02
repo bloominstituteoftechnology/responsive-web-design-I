@@ -1,3 +1,271 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
 
+
+
+
+* {
+    box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;
+}
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+	margin-bottom: 15px;
+	font-size: 1.6rem;
+}
+body {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	max-width: 880px;
+	width: 100%;
+	margin: auto;
+}
+header {
+	display: flex;
+	width: 100%;
+	align-content: flex-start;
+	align-items: center;
+	justify-content: flex-start;
+	font-size: 1.6rem;
+}
+header nav {
+	display: flex;
+	width: 100%;
+}
+header nav a {
+	padding: 30px;
+	text-decoration: none;
+	color: silver;
+}
+.top {
+	display: flex;
+}
+.top section {
+	display: flex;
+	align-self: center;
+	flex-direction: column;
+	align-items: center;
+	padding: 0 100px;
+	width: 100%;
+	max-width: 800px;
+}
+.top h1 {
+	display: flex;
+	font-size: 64px;
+	text-align: center;
+}
+.top aside {
+	display: flex;
+	align-self: center;
+	margin: 25px 0;
+}
+hr {
+	height: 1px;
+	width: 100%;
+	max-width: 800px;
+	border-bottom: solid black 1px;
+	display: inline-block;
+	margin: auto;
+}
+.middle {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: flex-end;
+}
+.features {
+	display: flex;
+	flex-direction: column;
+	height: 150px;
+	width: 40%;
+	max-width: 360px;
+	align-self: flex-start;
+	margin: 20px 2% auto;
+}
+.about {
+	display: flex;
+	flex-direction: column;
+	height: 150px;
+	width: 40%;
+	max-width: 360px;
+	align-self: flex-end;
+	margin: 20px 2% auto;
+}
+.bottom {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: flex-end;
+}
+.services {
+	display: flex;
+	flex-direction: column;
+	height: 150px;
+	width: 30%;
+	max-width: 293px;
+	align-self: flex-end;
+	margin: 30px 0 auto;
+	padding: 0 auto;
+}
+.product {
+	display: flex;
+	flex-direction: column;
+	height: 150px;
+	width: 30%;
+	max-width: 293px;
+	align-self: flex-end;
+	margin: 30px 0 auto;
+	padding: 0 auto;
+}
+.vision {
+	display: flex;
+	flex-direction: column;
+	height: 150px;
+	width: 30%;
+	max-width: 293px;
+	align-self: flex-end;
+	margin: 30px 0 auto;
+	padding: 0 auto;
+}
+.contact {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 200px;
+	max-width: 800px;
+}
+.contact h4 {
+	display: flex;
+	margin: 30px 0 0 0;
+}
+.contact address {
+	display: flex;
+	margin: 15px 0;
+}
+.contact p {
+	display: flex;
+	margin-bottom: 10px; 
+}
+footer {
+	padding-bottom: 100px;
+}
+
+@media (max-width: 800px) {
+    .top aside img {
+        display: none;
+    }
+  }
+
+
+@media (max-width: 500px) {
+    
+    header {
+        flex-direction: column-reverse;
+        margin: auto; 
+    }
+    header nav {
+		flex-direction: column;
+		margin: auto;
+		justify-content: center;
+		align-items: center;
+    }
+    header nav a {
+        border-bottom: solid 1px black;
+		text-align: center;
+		width: 80%;
+		max-width: 400px;
+    }
+    hr {
+		max-width: 400px;
+		width: 100%;
+		margin: auto;
+	}
+	.top section {
+		padding: 20px 0 auto;
+		width: 100%;
+		max-width: 400px;
+	}
+    .middle, .bottom {
+		flex-direction: column;
+		max-width: 400px;
+		width: 100%;
+		padding: 10px;
+	}
+
+	.middle-img {
+		width: 100%;
+		max-width: 400px;
+	}
+	.features, .about, .product, .services, .vision {
+		padding: 0;
+		margin: 0;
+		justify-content: center; 
+		height: auto;
+		width: 100%;
+		margin: auto;
+		max-width: 400px;
+    }
+    .contact {
+		margin: auto;
+	}
+	
+    footer {
+        margin: auto;
+    }
+  }  
