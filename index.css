@@ -1,0 +1,376 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+	/* border: 1px solid black !important; */
+	box-sizing: border-box;
+}
+
+/* Below lies desktop specific styling. */
+
+
+
+body {
+	display: flex ;
+	justify-content: center ;
+}
+
+.site-margin {
+	width: 880px ;
+}
+header nav {
+	display: flex;
+	justify-content: center;
+	margin-top: 10px;
+
+}
+
+.nav-flex {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav-flex a:link {
+	color: slategray ;
+	text-decoration: none ;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+	
+}
+
+
+.snippet-img {
+	margin-bottom: 20px ;
+}
+
+.nav-flex a:visited {
+	color: slategray ;
+}
+
+.visual-content {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.visual-content .cta-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.cta-text h1 {
+	font-size: 70px;
+	text-align: center;
+	font-family: Bangers;
+}
+
+.visual-content button {
+	background: transparent;
+	border: 1px solid black;
+	padding: 3px 6px;
+}
+
+
+
+.main-content {
+	display: flex;
+	flex-direction: column;
+}
+
+.top-content {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.top-content section {
+	margin-top: 2%;
+}
+
+.top-content {
+	border-top: 2px solid black;
+}
+
+.top-content .text-sections p {
+	margin: 5px 0;
+}
+
+.top-content .text-sections h3 {
+	font-family: Bangers;
+}
+
+.middle-img-div {
+	margin: 10px 0;
+	display: flex;
+	justify-content: center;
+}
+
+.middle-img {
+	width: 100%;
+}
+
+.bottom-content {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	border-bottom: 2px solid black;
+	margin: 2% 0;
+	padding-bottom: 2%;
+}
+
+.bottom-content .text-sections {
+	padding: 5px 0;
+}
+
+.bottom-content .text-sections h3 {
+	font-family: Bangers;
+	padding-bottom: 2%;
+}
+
+.bottom-content .text-sections section {
+	display: flex;
+	justify-content: space-between;
+	margin: 5px 0;
+}
+
+.footer-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.footer-section h3 {
+	font-family: Bangers;
+	margin-bottom: 10px ;
+}
+
+.contact-flex {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+}
+
+/* Styling for tablet devices starting at 800px */
+
+@media (max-width: 800px) {
+	.nav-flex {
+		flex-direction: column-reverse ;
+		justify-content: space-evenly ;
+		align-content: center ;
+		align-items: center ;
+	}
+	header nav {
+		padding: 20px 20px;
+	}
+
+	header nav a {
+		border: 2px solid darkslategray;
+		width: 100% ;
+		text-align: center ;
+		border-top: none ;
+		padding: 20px 20px ;
+	}
+
+	header nav a:nth-child(6) {
+		border-top: 2px solid darkslategray  ;
+	}
+
+	.cta-text {
+		margin-top: 20px ;
+	}
+	.snippet-img {
+		display: none;
+	}
+	.cta-text button {
+		margin-bottom: 2%;
+		padding: 3px 15px ;
+	}
+
+	.logo {
+		margin-bottom: 15px ;
+	}
+}
+
+@media (max-width: 500px) {
+	
+	header nav {
+		padding: 20px 20px;
+	}
+
+	header nav a {
+		border: 2px solid darkslategray;
+		width: 100% ;
+		text-align: center ;
+		border-top: none ;
+		padding: 20px 20px ;
+	}
+
+	header nav a:nth-child(6) {
+		border-top: 2px solid darkslategray  ;
+	}
+
+	.middle-img {
+		max-width: 100% ;
+		max-height: 100%
+	}
+
+	.cta-text {
+		margin: 20px 0;
+	}
+	.cta-text button {
+		margin-top: 10px ;
+	}
+	.top-content {
+		flex-direction: column;
+	}
+	.bottom-content {
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-content: space-between;
+	}
+	.bottom-content section {
+		margin: 10px 0;
+	}
+}
