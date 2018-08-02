@@ -66,79 +66,75 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
-.container {
+body {
 	max-width: 880px;
+	margin: 0 auto;   
+}
+
+/*** Navigation Section***/
+
+nav .nav-logo {
 	display: flex;
-	flex-direction: column;
-	margin: 0 auto;
     
 }
 
-/* Navigation */
-
-.top-navbar {
-	display: flex;
-    margin-top: 20px;
-   
-}
-.nav-logo {
-    padding-right: 35px;
-    display: flex;
-}
-
-.nav {
-	display: flex;
-}
-
-.nav ul {
-	display: flex;
-	list-style-type: none;
-	margin-top: 10px;
-}
-
-.nav ul li {
-	padding: 0 60px 0 0;	
-}
-
-.nav ul li a {
-	text-decoration: none;
-	font-size: 18px;
-	color: grey;
-}
-
-.nav ul li a:hover {
-	color: lightgrey;
-    transition: .5s;
-}
-
-.nav-logo:hover {
+nav .nav-logo:hover {
     opacity: .5;
     transition: .5s; 
 }
 
-/* Header */
+nav {
+	display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: auto;    
+}
+
+nav a {
+    flex-grow: 1;
+	text-decoration: none;
+	font-size: 20px;
+	color: grey;
+    background: white;
+    padding: 15px;   
+}
+
+nav a:hover {
+	color: lightgrey;
+    transition: .5s;
+}
+
+/*** Call To Action ***/
 
 header {
-    display: flex;
-    justify-content: space-between;
-	border-bottom: 1px solid black;
-	padding-bottom: 60px;
-	margin-bottom: 35px;
-    margin-top: 80px;
-	position: relative;
-	align-items: center;
+    margin-top: 25px;
 }
 
-.header-text {
+.cta {
     display:flex;
-    flex-direction: column;
-    flex: 1;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-around;
 }
 
-/* Headings */
+.header-img {
+    display: flex
+    flex-direction: row;
+    justify-content: center;
+    height: 350px;
+    width: 350px
+    margin: 25px 0 25px 200px;
+}
+
+div {
+    margin-top: 50px;
+    font-size: 50px;
+}
+
+/*** Headings & Paragraphs ***/
 
 h1 {
-   font-size: 80px;
+    font-size: 80px;
     text-align: center;
 }
 
@@ -146,72 +142,69 @@ h2 {
     font-size: 18px;
 }
 
-
 p {
-  line-height: 1.2;
+	line-height: 1.2;
+    font-size: 18px;
 }
 
-/* Buttons */
+hr {
+    border: 1px solid black;
+    width: auto;
+}
+
+/*** Buttons ***/
 
 button {
-    justify-content: center;
-    margin: 10px 150px;
-    padding: 10px;
-    border: 2px solid black;
+	margin-bottom: 20px;
+    padding: 10px 60px;
+    border: 2px solid #212121;
+    border-radius: 2px;
     background-color: white;
-    font-size: 14px;
+    font-size: 20px;
 }
 
 button:hover {
-    background-color: black;
+	background-color: #212121;
     color:whitesmoke;
     transition: .5s;
 }
-
+		
 .learnmorebtn {
     margin: 20px 0 0 1px;
-    width: 100px
+    width: 100px	
 }
 
-/* Home Page Content Section */
+/*** Home Page Mid Section ***/
 
-.top-section {
+.mid-section {
     display: flex;  
-    margin-bottom: 35px;
+    flex-direction: row;
+    width: 880px;
+    margin-bottom: 40px;
 }
 
-.top-right {
-    padding: 0px 0px;
+.mid-box {
+    padding-right: 10px;
+}
+.mid-img {
+    width: 880px;
 }
 
-.bottom-section {
-    display: flex;
-    margin-top: 35px;
-    padding: 0 0 35px 0;  
-}
-
-.bottom-middle {
-    padding: 0px 0px;
-}
-
-.bottom-right {
-    padding: 0px 0px;
-}
-
-.bottom-left, .bottom-middle, .bottom-right {
-   margin: 0  20px 0 0 
-}
-
-/* Home Page Contact Section */
+/*** Home Page Contact Section ***/
 
 .contact {
-    margin-top: 30px
+    margin-top: 30px;
+    width: 200px;    
 }
 
+/*** Footer ***/
+
 footer {
-   margin: 0 auto;
+    text-align: center;
     margin-top: 50px;
 }
+
+
 /* Services Page Header */
 
 .services-header-img {
@@ -236,8 +229,7 @@ footer {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin-top: 3px;
-      
+    margin-top: 3px;     
 }
 
 .service-box {
@@ -247,7 +239,6 @@ footer {
     padding: 15px 15px 15px 15px;
     margin-top: 35px;
     margin-left: 0 20px 0;
-
 }
 
 /* Services Page Fact Section */
@@ -270,84 +261,80 @@ footer {
     margin-right: 50px;
 }
 
+/***** MEDIA QUERIES *****/
 
-/* 800px - Tablet Width*/
+/*** Tablet Version - 800px Width ***/
 
-@media (max-width: 799px){
+@media (max-width: 800px){
 
-    .container {
-    max-width: 799px;
-	margin: 0 auto;
+	body {
+    	max-width: 800px;
+		margin: 0 auto;
     }
 
-    .header-logo {
-        display: none;
+    .header-img {
+    	display: none;
     }
+    
+    nav {
+        width: auto;
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: space-between;   
+    }
+    
+    .cta {
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .mid-section {
+       width: auto;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .mid-box {
+        padding-right: 20px;
+    }
+    
+    .mid-img {
+        width: auto;
+    }
+ 
+   /***  Mobile Version - 500px Width ***/
 
-    .nav-logo {
+    @media (max-width: 500px){
+    body {
+        max-width: 500px;
         margin: 0 auto;
-    }
-    .top-navbar{
-        flex-direction: column-reverse;
-        max-width: 799px;
-        margin-left: 8%;
-      
-    }
-    .nav ul li {
-        padding: 0 60px 0 0;
+        }
         
+    nav {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;            
     }
-
-    button {
-        margin: 10px 300px 10px 300px; 
-    }
-
-   /* 500px - Mobile Width*/
-
-    @media (max-width: 499px){
-
-
-    .container {
+   
+    nav a  {
+        font-size: 32px;
+        padding-top: 10px;
         width: 100%;
+        text-align: center; 
+        border-bottom: 1px solid black;
         }
+        
+    nav a:hover {
+	    background: #212121;
+        color: white;
+}
 
-        .nav ul {
-            display: inline-block;
-            margin: 0 auto;
-            border-top: 1px solid grey;
-        }
-
-        .nav ul li {
-            padding-top: 20px;
-            
-        }
-
-        .header-text h1 {
-            margin: 0 400px 0 0;
-        }
-
-        .top-section {
-            flex-direction: column;
-            margin-left: 20px;
-        }
-
-        .top-right {
-            padding: 40px 0;
-        }
-
-        .bottom-section {
-            flex-direction: column;
-            margin-left: 20px;
-        }
-
-        .bottom-middle {
-            padding: 40px 0;
-        }
-
-        .bottom-right {
-            padding: 3px 0;
-        }
-        .contact {
-            margin-left: 20px;
-        }
+    .mid-section {
+        width: auto;
+        display: flex;
+        flex-direction: column;    
     }
+    
+        
