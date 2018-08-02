@@ -63,6 +63,10 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 /* Main code */
 
 .container {
@@ -80,7 +84,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 80%;
+    width: 100%;
 }
 
 header nav {
@@ -105,7 +109,7 @@ header nav a:first-child {
 }
 
 header nav a:last-child {
-  margin-right: 0;
+  margin-right: 0%;
 }
 
 header .logo {
@@ -120,14 +124,14 @@ header .logo {
   font-size: 77px;
   margin-top: 120px;
   text-align: center;
-  padding: 0px 75px;
+  padding: 0px 8.5%;
 }
 
 .cta .cta-text button {
   background: white;
   vertical-align: top;
   margin-top: 6px;
-  padding: 8px 44px;
+  padding: 8px 9.5%;
   font-size: 17px;
   border: 1px solid black;
   cursor: pointer;
@@ -150,13 +154,13 @@ header .logo {
 }
 
 .main-content .top-content {
-  padding: 0 10px;
+  padding: 0 1.1%;
 }
 
 .main-content .top-content .text-content {
-  width: 410px;
+  width: 46.6%;
   display: inline-block;
-  margin-right: 34px;
+  margin-right: 3.9%;
 }
 
 .main-content .top-content .text-content:last-child {
@@ -169,17 +173,17 @@ header .logo {
 
 .main-content .bottom-content {
   margin-top: 37px;
-  padding: 0 10px;
+  padding: 0 1.1%;
 }
 
 .main-content .bottom-content .text-content {
-  width: 275px;
+  width: 31.25%;
   display: inline-block;
-  margin-right: 12px;
+  margin-right: 1.4%;
 }
 
 .main-content .bottom-content .text-content:last-child {
-  margin-right: 0;
+  margin-right: 0%;
 }
 
 .contact {
@@ -189,11 +193,11 @@ header .logo {
 }
 
 .contact p {
-  margin: 20px 0;
+  margin: 20px 0%;
 }
 
 footer {
-  margin: 32px 0;
+  margin: 32px 0%;
   text-align: center;
   font-size: 14px;
 }
@@ -220,7 +224,7 @@ footer {
         }
 
     header .logo {
-        max-width: 200px;
+        max-width: 25%;
     }
 
     .cta img {
@@ -264,11 +268,11 @@ footer {
     }
 
     .main-content .bottom-content .text-content {
-        margin-right: 20px;
+        margin-right: 2.5%;
     }
 
     .main-content .bottom-content .text-content:last-child {
-        margin-right: 0;
+        margin-right: 0%;
     }
 
     .contact {
@@ -278,23 +282,26 @@ footer {
 
 @media (max-width: 500px) {
 
+    .container {
+        width: 100%;
+    }
+
     header nav {
         width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin: 0px;
-        border: 1px solid orange;
-    }
+        margin: 15px 0%;
+        }
+
+
 
     nav a {
-        width: 80%;
-        border: 1px solid purple;
+        width: 100%;
         border-top: 1px solid gray;
         color: gray;
-        padding: 10px 0px;
+        padding: 15px 0%;
         text-align: center;
-        margin: 0px;
     }
 
     nav a:last-child {
@@ -314,6 +321,8 @@ footer {
     h4 {
         margin-top: 40px;
     }
+
+
 
 
 }
