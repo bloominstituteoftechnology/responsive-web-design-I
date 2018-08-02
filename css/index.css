@@ -64,6 +64,10 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
+a {
+    text-decoration: none;
+}
+
 body {
     max-width: 880px;
     margin: auto;
@@ -201,16 +205,35 @@ nav {
     nav { 
         display: flex;
         flex-direction: column-reverse;
-        
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+    }
+
+    img {
+        margin-bottom: 25px;
+    }
+
+    a {
+        width: 550px;
+        border-bottom: 1px darkgrey solid;
+        border-top: 1px darkgrey solid;
+        text-align: center;
+        padding: 5px 5px;
+        color: darkgrey;        
     }
 
     .IOD {
-        width: auto;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
         
+    }
+
+    button {
+        margin-bottom: 25px;
+        width: 200px;
     }
 
     .mid {
@@ -219,9 +242,25 @@ nav {
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+        margin-top: 15px;
     }
 
     .midaccent {
         width: auto;
+        margin-top: 15px;
+    }
+
+    h2 {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    p {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    .contact {
+        margin-top: 25px;
     }
 }
