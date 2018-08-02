@@ -1,3 +1,6 @@
+*{
+
+}
 .container{
   width: 800px;
 }
@@ -38,11 +41,14 @@ hr{
 	height: 524px;
 }
 
+.code-circle{
+
+}
 
 
 
 /* Mobile */
-@media (max-width: 320px) {
+/*@media (max-width: 320px) {
 
     header {
       display: flex;
@@ -83,13 +89,14 @@ hr{
     background-color: #F5CF8E; /* Yellow */
   }
 }
+*/
 
 /* Tablet */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
 
-  #code-circle{
-    display:none;
-  }
+body{
+  background-color: dodgerblue;
+}
 
     header {
       display: flex;
@@ -126,7 +133,76 @@ hr{
       align-items: center;
       width: 880px;
     	height: 524px;
-    }
-    background-color: #B2D6FF; /* Blue */
   }
+
+    .code-circle{
+      display:none;
+    }
+
+
+  }
+
+
+
+  /*Responsive Design
+
+  This makes sites viewable in a tasteworthy fashion.
+  This include PCs, and mobile devices such as tablets
+  and mobile phones.
+
+  Set-Up
+
+  To set up responsive design first your must include this
+  tag: <meta name='viewport'
+        content='width=device-width,
+        initial-scale=1.0, maximum-scale=1.0' /> within the
+        head of the HTML page.
+
+    Second step will be setting breakpoints within the CSS
+    page. The syntax for a breakpoint for now is
+    similar to a function:
+
+
+    @media (max/min width) query {
+.class{
+css : properties
 }
+
+
+    }
+
+  Min and Max widths
+
+  Min and Max width are the barriers set to switch up the styling
+  of the page based on the width displayed. When ordering these
+  max goes highest to lowest, min goes vice versa. Min width is usually
+  used for mobile.
+
+
+
+
+
+  Fluidity in Responsive Design
+
+Room in-between 2 breakpoints by using
+percentage based widths. Using procise
+percentages will make site fluid as it
+stretches out it's width.
+
+It maintains the ration of the content.
+
+(child width/ parent width) * 100
+
+will calculate the exact width or margin needed.
+
+
+  Using height for images
+
+  .img{
+  height:auto;
+}
+
+
+
+
+  */
