@@ -70,7 +70,7 @@ body {
 }
 
 #container {
-	padding: 0 40px 100px;
+	padding: 8px 40px;
     max-width: 960px;
     width: 100%;
 	margin: 0 auto;
@@ -88,7 +88,7 @@ header {
     width: 100%;
     max-width: 880px;
 	height: 55px;
-
+    padding-top: 10px;
 
 }
 
@@ -97,7 +97,7 @@ header nav {
 	justify-content: space-between;
 	align-items: center;
 	padding: 36px 0;
-	width: 880px;
+	width: 100%;
 }
 
 
@@ -121,8 +121,9 @@ header nav a:last-child {
 	padding-right: 75px;
 }
 
-.logo {
-	padding-left: 23px;
+header .logo {
+    padding-left: 23px;
+    padding-top: 10px;
 }
 
 .innovation {
@@ -198,7 +199,7 @@ footer {
 	justify-content: center;
 	align-items: center;
     height: 60px;
-    padding: 30px 0 0 10px;
+    padding: 30px 0 40px 10px;
 }
 
 hr {
@@ -209,17 +210,32 @@ hr {
 
 /*MEDIA QUERY - TABLET*/
 @media (max-width: 800px){
-    header nav div {
-        order: -1;
-        flex-basis: 100%;
-        text-align: center;
-        margin-bottom: 30px;
+
+
+    header {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 30px;
     }
 
-    header nav {
-        flex-wrap: wrap;
-
+    header .logo {
+        width: 183px;
     }
+
+    header nav a {
+        /* padding-right: 10px; */
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: lighter;
+        color: #000;
+        /* display: inline-block; */
+        transition: transform 0.2s linear;
+    }
+
+    header nav a:last-child {
+	    padding-right: 0;
+    }
+
 
     .snippet-img {
         display: none;
@@ -227,11 +243,12 @@ hr {
 
     .innovation{
         justify-content: center;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
+        margin-top: 10px;
     }
 
     .innovation-text {
-        padding: 10px 0 70px;
+        padding: 10px 0;
     }
 
     .innovation-text h1 {
@@ -239,7 +256,7 @@ hr {
     }
 
     .article-top{
-        margin: 3px 0 50px;
+        margin: 3px 0 30px;
     }
 
     .middle-img {
@@ -247,7 +264,7 @@ hr {
     }
 
     .article-bottom {
-        margin: 23px 0 5px;
+        margin: 30px 0 5px;
         padding-bottom: 40px;
     }
 
@@ -305,8 +322,8 @@ hr {
     }
 
     .innovation {
-        margin-top: 348px;
-        padding-bottom: 9px;
+        margin-top: 320px;
+        padding-bottom: 30px;
     }
 
     .innovation, .article-top, .article-bottom,
@@ -316,12 +333,12 @@ hr {
         }
 
     .innovation-text h1 {
-        font-size: 60px;
-        padding: 80px 0;
+        font-size: 55px;
+        padding: 80px 0 0;
     }
 
     .innovation-text button {
-        padding: 0;
+        padding-bottom: 0   ;
         margin-left: 0;
     }
 
