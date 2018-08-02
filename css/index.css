@@ -104,7 +104,7 @@ h1, h2, h3, h4, h5 {
 #topText {
 	font-family: bangers;
 	font-size: 60px;
-	flex: 0 0 240px;
+	/* flex: 0 0 240px; */
 	top: 100px;
 	text-align: center;
     height: 240px;
@@ -163,138 +163,8 @@ h1, h2, h3, h4, h5 {
 	display: inline-block;
 }
 
-@media screen and (max-width: 800px){
-    #divPage {
-        padding-left: 0px;
-    }
-    
-   #navFlex {
-            width: 80%;
-   }
-    .navItemFlex {
-        font-size: 12px;
-
-    }
-    .logo2 {
-        background-image: url(../img/header-img.png);
-        width: 30%; 
-    }
-    .logo2 {
-        display: none;
-    }
-
-    #sectionContainer {
-        width: 60%;
-        display: block;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
-    #topText {
-        flex: 0 0 240px;
-        top: 100px;
-        text-align: center;
-        height: 240px;
-    }
-
-    .logo1 {
-        display: none;
-    }
-    #textFlexContainer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 50%;
-        padding-top: 50px;
-        margin-left: auto;
-        margin-right: auto;
-    } 
-    .logo3 {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 100px;
-    }
-    .middle-img {
-	    width: 60%;
-        padding-right: 0px;
-        margin-left: 0;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    #divPage {
-        padding-left: 0px;
-    }
-    .logo3 {
-        display: flex;
-        width: 200px;
-        margin-left: 140px;
-        /* margin-right: auto; */
-        }
-    
-    .logo1 {
-        display: none;
-    }
-
-    .logo2 {
-        display: none;
-    }
-
-    .navItemFlex {
-        font-size: 20px;
-        height: 30px;
-        width: 100%;
-        padding-top: 2px;
-        border: 2px solid gray;
-    }
-    #navFlex {
-        display: flex;
-        flex-direction: column;
-        flex-flow: wrap; 
-        width: 50%;
-        justify-content: flex-start;
-    }
-    #topText {
-        flex: 0 0 240px;
-        top: 100px;
-        text-align: center;
-        height: 240px;
-    }
-
-    #sectionContainer {
-        width: 40%;
-        display: block;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-    .header {
-       width: 50%;
-        display: flex;
-        flex-direction: row;
-        padding-top: 60px;
-    }
-    .middle-img {
-        width: 60%;
-        padding-right: 0px;
-        margin-left: 0;
-    }
-
-    #topText {
-        font-size: 40px;   
-    }
-    #sectionContainer2 {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        flex-flow: column;
-        padding-left: 10px;
-    }
-    .section3 {
-        width: 400px;
-        display: inline-block;
-        padding-top: 10px;
-    }
+#contact {
+	padding-left: 40px;
 }
 a:link {
 	text-decoration: none;
@@ -329,19 +199,9 @@ hr {
 	margin-right: 40px;
 }
 
-
-
-
-
-
-
 .h3 {
 	text-align: center;
 	font-size: 14px;
-}
-
-#contact {
-	padding-left: 40px;
 }
 
 address {
@@ -352,4 +212,180 @@ footer {
 	padding-left: 40px;
 	font-family: 'Abel', sans-serif;
 }
+@media screen and (max-width: 800px){
+    #divPage {
+        padding-left: 0px;
+    }
+    
+   #navFlex {
+        width: 80%;
+   }
+    .navItemFlex {
+        font-size: 12px;
+
+    }
+    .logo2 {
+        background-image: url(../img/header-img.png);
+        width: 30%; 
+    }
+    .logo2 {
+        display: none;
+    }
+
+    #sectionContainer {
+        width: 60%;
+        display: block;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #topText {
+        top: 100px;
+        text-align: center;
+        height: 240px;
+    }
+
+    .logo1 {
+        display: none;
+    }
+    #textFlexContainer {
+        width: 50%;
+        padding-top: 20px;        
+    } 
+    .logo3 {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100px;
+    }
+    .middle-img {
+	    width: 60%;
+        padding-right: 0px;
+        margin-left: 0;
+    }
+    .header {
+        padding-top: 20px;
+    }
+    #contact {
+        padding-left: 10px;
+    }
+    address {
+        padding-left: 10px;
+    }
+    hr {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    footer {
+        padding-left: 10px;
+        font-family: 'Abel', sans-serif;
+    }
+    .section2 {
+        padding-top: 10px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #divPage {
+        padding-left: 0px;
+    }
+    .logo3 {
+        display: flex;
+        width: 200px;
+        margin-left: 140px;
+    }
+    
+    .logo1 {
+        display: none;
+    }
+
+    hr {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .logo2 {
+        display: none;
+    }
+
+    .navItemFlex {
+        font-size: 20px;
+        height: 30px;
+        width: 100%;
+        padding-top: 2px;
+        border: 2px solid gray;
+    }
+    #navFlex {
+        display: flex;
+        flex-direction: column;
+        flex-flow: wrap; 
+        width: 50%;
+        justify-content: flex-start;
+    }
+    #topText {
+        top: 100px;
+        text-align: center;
+        height: 160px;
+    }
+
+    .header {
+        padding-top: 20px;
+    }
+
+    #textFlexContainer {
+        width: 50%;
+        padding-top: 10px;        
+    } 
+
+    #sectionContainer {
+        width: 40%;
+        display: block;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .section2 {
+        padding-top: 10px;
+    }
+
+    .header {
+       width: 50%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .middle-img {
+        width: 60%;
+        padding-right: 0px;
+        margin-left: 0;
+    }
+
+    #topText {
+        font-size: 40px;   
+    }
+    #sectionContainer2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-flow: column;
+        padding-left: 10px;
+    }
+    .section3 {
+        width: 400px;
+        display: inline-block;
+        padding-top: 10px;
+    }
+    #contact {
+        padding-left: 0px;
+    }
+    address {
+        padding-left: 0px;
+    }
+    
+    footer {
+        padding-left: 0px;
+        font-family: 'Abel', sans-serif;
+    }
+}
+
 
