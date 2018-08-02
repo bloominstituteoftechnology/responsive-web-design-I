@@ -445,7 +445,6 @@ div.vision p {
   
     body {
         width: 800px;
-    
     }
   
     .navigation {
@@ -784,5 +783,55 @@ address {
  }
 
  /* END OF CONTACT AND COPYRIGHT SECTION */
+
+}
+
+@media (max-width: 500px) {
+
+body {
+    width: 500px;
+}
+      
+.navigation {
+    width: 500px;
+    height: 120px;
+    display: flex;
+    justify-content: flex-end;
+    justify-items: flex-start;
+    margin-top: 290px;
+    border-bottom: 1px solid gray;
+}
+
+
+div  {
+    width: 500px;
+    margin-right: 50px;
+    
+}
+    
+img.logo {
+    margin-right: 325px;
+    
+    height: 45px;
+        
+}
+    
+      
+    nav#navbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        justify-items: center;
+        border-top: 1px solid gray;
+        font-size: 25px;
+        line-height: 3rem;
+        margin-right: 154px;
+    
+    }        
+    
+    nav a {
+        width: 500px;
+        border: 1px solid gray;
+    }
 
 }
