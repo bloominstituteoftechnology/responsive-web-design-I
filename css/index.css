@@ -144,6 +144,25 @@ h1, h2, h3, h4, h5 {
     display: none;
 }
 
+.middle-img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 92%;
+	padding-right: 10px;
+}
+
+#sectionContainer2 {
+	width: 100%;
+	display: block;
+	padding-left: 40px;
+}
+
+.section3 {
+	width: 270px;
+	display: inline-block;
+}
+
 @media screen and (max-width: 800px){
     #divPage {
         padding-left: 0px;
@@ -196,7 +215,11 @@ h1, h2, h3, h4, h5 {
         margin-right: auto;
         width: 100px;
     }
-
+    .middle-img {
+	    width: 60%;
+        padding-right: 0px;
+        margin-left: 0;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -206,8 +229,8 @@ h1, h2, h3, h4, h5 {
     .logo3 {
         display: flex;
         width: 200px;
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 140px;
+        /* margin-right: auto; */
         }
     
     .logo1 {
@@ -223,7 +246,7 @@ h1, h2, h3, h4, h5 {
         height: 30px;
         width: 100%;
         padding-top: 2px;
-        border: 2px solid black;
+        border: 2px solid gray;
     }
     #navFlex {
         display: flex;
@@ -250,6 +273,27 @@ h1, h2, h3, h4, h5 {
         display: flex;
         flex-direction: row;
         padding-top: 60px;
+    }
+    .middle-img {
+        width: 60%;
+        padding-right: 0px;
+        margin-left: 0;
+    }
+
+    #topText {
+        font-size: 40px;   
+    }
+    #sectionContainer2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-flow: column;
+        padding-left: 10px;
+    }
+    .section3 {
+        width: 400px;
+        display: inline-block;
+        padding-top: 10px;
     }
 }
 a:link {
@@ -285,24 +329,11 @@ hr {
 	margin-right: 40px;
 }
 
-.middle-img {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 92%;
-	padding-right: 10px;
-}
 
-#sectionContainer2 {
-	width: 100%;
-	display: block;
-	padding-left: 40px;
-}
 
-.section3 {
-	width: 270px;
-	display: inline-block;
-}
+
+
+
 
 .h3 {
 	text-align: center;
