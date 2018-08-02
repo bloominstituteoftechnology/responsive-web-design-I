@@ -295,13 +295,26 @@ a:hover {
     address {
         margin-left: 30px;
     }
-    
+
     footer {
         margin-left: 30px;
     }
 }
 
 @media (max-width: 500px) {
+    .logo {
+        margin-right: 34px;
+    }
+
+    .top {
+        margin-top: 50px;
+        margin-bottom: 70px;
+    }
+
+    .innovation {
+        margin-left: 40px;
+    }
+
     .topIMG {
         display: none;
     }
@@ -310,7 +323,8 @@ a:hover {
         flex-direction: column;
         flex-wrap: wrap;
         width: 100%;
-        align-items: flex-start;
+        align-items: center;
+        padding-left: 20px;
         /* order: 10; */
     }
 
@@ -328,11 +342,63 @@ a:hover {
         width: 100%;
         display: flex;
         justify-content: center;
-        padding: 18px 0px;
+        padding: 20px 0px;
+    }
+
+    header nav a:first-child {
+        margin-left: 0px;
+    }
+
+    header nav a:nth-child(6) {
+        margin-right: 0px;
     }
 
     header nav a:last-child {
         order: -1;
         margin: 0px;
-        text-align: center;      }
+        text-align: center; 
+        padding-left: 34px;
+    }
+
+    .MainContainer {
+        width: 100%;
+        margin: 0 auto;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .topMid {
+        display: flex;
+        flex-direction: column;
+        /* margin: 20px 0px; */
+    }
+
+    .topMid .TextBox {
+        width: 95%;
+        padding: 0px;
+        margin: 23px 0px;
+    }
+
+    .middle-img {
+        margin-top: 32px;
+        margin-bottom: 0px;
+        height: 95px;
+    }
+
+    .bottomMid {
+        flex-direction: column;
+    }
+
+    .bottomMid .TextBox {
+        width: 95%;
+        padding: 0px;
+        margin: 31px 0px 33px 0px;
+    }
+
+    #bottomTextBox {
+        margin-bottom: 0px;
+    }
+
+    address {
+        margin-left: 20px;
+    }
 }
