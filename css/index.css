@@ -253,6 +253,7 @@ ul {
         display: none;
     }
 
+
     .head-img    {
         display: none;
     }
@@ -281,18 +282,111 @@ ul {
     .head    {
         border-bottom: solid black 2px;
         width: 95%;
-        padding-bottom: -200px;
+
     }
     .head-text    {
         margin-left: -13%;
-        padding-bottom: -5%;
+
     }
     .section-by-2    {
         width: 95%;
         max-width: 800px;
-        /* margin-top: -5%; */
+    }
+    .middle-img    {
+        width: 95%;
+        max-width: 800px;
+        padding: 0;
+    }
+    .section-by-3    {
+        width: 95%;
+        max-width: 800px;
+        border-bottom: 2px solid black;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footer    {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: 800px;
+        width: 800px;
+    }
+    .center-the-copyright-with-a-long-class-name-for-giggles	{
+    	align-self: center;
+        margin: 0;
+        margin-bottom: 25%;
+
     }
 }
 @media only screen and (max-width: 500px) {
+    *    {
+        padding: 0;
+        margin: 0;
+        max-width: 500px;
+    }
+    body {
+        display: flex;
+        flex-wrap: wrap;
 
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-div    {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .logo    {
+        margin-bottom: 4%;
+    }
+    .nav-div a {
+        width: 500px;
+        display: flex;
+        justify-content: center;
+        max-width: 500px;
+        margin: 0% 0;
+        padding: 7% 5% 7% 5%;
+        border-top: 1px black solid;
+        font-size: 20px;
+    }
+    .head    {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 320px;
+        margin-left: -30px;
+    }
+    .section-by-2    {
+        max-width: 500px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .section-by-2 .half    {
+        width: 100%;
+        padding: 5%;
+    }
+    .middle-img    {
+        height: 100px;
+    }
+    .section-by-3    {
+        max-width: 500px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .section-by-3 .third    {
+        max-width: 500px;
+        width: 100%;
+        padding: 5%;
+    }
+    footer {
+        padding-top: 20px;
+    }
 }
