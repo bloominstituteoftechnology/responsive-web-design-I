@@ -72,10 +72,14 @@ h1, h2, h3, h4, h5 {
 }
   
 /*****header*****/
-	
-.nav-main {
+header {
 	display: flex;
-	width: 800px;
+	align-items: center;
+	justify-content: space-between;
+
+}
+.nav-main {
+	display: flex;;
 	justify-content: space-evenly;
 }
 
@@ -328,21 +332,31 @@ font-size: 14px;
 
 	header {
 		display: flex;
+		flex-wrap: wrap;
+		justify-content: center
 	}
 
 	header nav {
-		display: flex;
-		justify-content: space-around;
+		width: 800px;
+		padding: 0 30px;
+
 
 	}
-
+	header .logo {
+		order: -1;
+		padding: 20px 0 20px 0;
+		/* align-content: flex-start; */
+	}
+	nav ul {
+		justify-content: space-around;
+	}
 	header nav a {
 		font-size: 12px;
 	}
-	.nav-main-page .logo-img {
+	/* .nav-main-page .logo-img {
 		order: -1;
 		align-content: center;
-	}
+	} */
 	.cta {
 		display: flex;
 		justify-content: center;
@@ -364,13 +378,109 @@ font-size: 14px;
 	.cta .cta-text {
 
 	}
+
+	.main-content {
+		margin-left: 20px;
+	}
+
+	.main-content .middle-img {
+		width: 780px;
+		margin-right: 20px;
+	}
+
+	.contact {
+		padding: 39px 20px 0;
+	}
 }
 
 
 
 /***************     MOBILE   *******************/
 
-@media (max-width: 500) {
+@media (max-width: 500px) {
+	.container {
+		max-width: 100%;
+	}
+	header {
+		justify-content: center;
+		
+	}
+
+	header nav {
+		width: 100%;
+		flex-direction: column;
+		margin: 0;
+		padding: 0;
+	}
+
+	.nav-main-page li {
+		text-align: center;
+		width: 100%;
+		border-bottom: 1.5px solid gray;
+	}
+
+	.nav-main-page li:first-child {
+        border-top: 1.5px solid gray;
+	}
+	
+	.nav-main-page li a {
+		font-size: 35px;
+		margin: 0;
+	}
+
+	.nav-main-page {
+		flex-direction: column;
+
+	}
+	.cta {
+		display: flex;
+		justify-content: center;
+	}
+
+	.cta .cta-text {
+		font-size: 65px;
+	}
+
+	.cta .cta-text button {
+		padding: 8px 30px;
+		font-size: 15px;
+	}
+
+	.cta img {
+		display: none;
+	}
+
+	.main-content {
+		flex-direction: column;
+		 margin-left: 20px;
+	}
+
+	.top-content {
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	.text-content {
+		display: flex;
+		flex-wrap: wrap;
+		padding-top: 15px;
+	}
+	.main-content .middle-img {
+		width: 460px;
+		margin-top: 30px;
+		margin-right: 20px;
+	}
+
+	.main-content .bottom-content {
+		display: initial;
+		margin-top: 25px;
+	}
+	.contact {
+		padding: 39px 20px 0;
+	}
+}
+
+
 
 
 
