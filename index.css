@@ -135,7 +135,7 @@ table {
 }
 
 * {
-	/* border: 1px solid black !important; */
+	border: 1px solid black !important;
 	box-sizing: border-box;
 }
 
@@ -144,7 +144,8 @@ table {
 header nav {
 	display: flex;
 	justify-content: center;
-	margin-top: 15px;
+	margin-top: 10px;
+
 }
 
 .nav-flex {
@@ -154,11 +155,19 @@ header nav {
 }
 
 .nav-flex a:link {
-	color: black;
+	color: slategray ;
+	text-decoration: none ;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+	
+}
+
+
+.snippet-img {
+	margin-bottom: 20px ;
 }
 
 .nav-flex a:visited {
-	color: black;
+	color: slategray ;
 }
 
 .visual-content {
@@ -185,6 +194,8 @@ header nav {
 	border: 1px solid black;
 	padding: 3px 6px;
 }
+
+
 
 .main-content {
 	display: flex;
@@ -273,23 +284,63 @@ footer {
 /* Styling for tablet devices starting at 800px */
 
 @media (max-width: 800px) {
-	.nav-flex {}
+	.nav-flex {
+		flex-direction: column-reverse ;
+		justify-content: space-evenly ;
+		align-content: center ;
+		align-items: center ;
+	}
+	header nav {
+		padding: 20px 20px;
+	}
+
+	header nav a {
+		border: 2px solid darkslategray;
+		width: 100% ;
+		text-align: center ;
+		border-top: none ;
+		padding: 20px 20px ;
+	}
+
+	header nav a:nth-child(6) {
+		border-top: 2px solid darkslategray  ;
+	}
+
+	.cta-text {
+		margin-top: 20px ;
+	}
 	.snippet-img {
 		display: none;
 	}
 	.cta-text button {
 		margin-bottom: 2%;
+		padding: 3px 15px ;
+	}
+
+	.logo {
+		margin-bottom: 15px ;
 	}
 }
 
 @media (max-width: 500px) {
-	.nav-flex {
-		flex-direction: column;
-	}
+	
 	header nav {
-		border: 2px solid darkslategrey;
 		padding: 20px 20px;
 	}
+
+	header nav a {
+		border: 2px solid darkslategray;
+		width: 100% ;
+		text-align: center ;
+		border-top: none ;
+		padding: 20px 20px ;
+	}
+
+	header nav a:nth-child(6) {
+		border-top: 2px solid darkslategray  ;
+	}
+
+	
 
 	.cta-text {
 		margin: 20px 0;
