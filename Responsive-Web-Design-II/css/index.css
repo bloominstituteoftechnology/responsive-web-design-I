@@ -1,3 +1,4 @@
+/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -53,7 +54,9 @@ table {
 * {
     box-sizing: border-box;
 }
-
+html{
+    font-size:62.5%;
+}
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
@@ -67,7 +70,7 @@ h1, h2, h3, h4, h5 {
 
 
 .container {
-  width: 880px;
+  max-width: 880;
   /* TB LR */
   margin: 0 auto;
 }
@@ -245,8 +248,8 @@ footer {
         width:100%;
         text-align:center;
     }
-    header nav a:last-child:{
-        border-bottom: 1px solid grey:
+    header nav a:last-child{
+        border-bottom: 1px solid grey;
     }
     .cta{
         width: 500px;
