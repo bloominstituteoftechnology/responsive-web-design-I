@@ -236,20 +236,18 @@ h3 {
 
 @media (max-width: 800px){
     .body {
-        width: 100%;
+		width: 100%;
+		padding: 25px;
     }
 
     nav {
-        display: flex;
         flex-direction: column-reverse;
         width: 100%;
-        margin: 0px auto;
     }
 
     .logo {
         margin: 20px auto;
         width: 183px;
-        height: 36px;
     }
 
     .rightblockstart{
@@ -257,48 +255,57 @@ h3 {
     }
     
     header {
-        display: flex;
         flex-direction: column;
-        justify-content: center;
         margin: 10px auto;
         height: 379px;
     }
 }
 
 @media (max-width: 500px){
-    ul {
+	
+	.body {
+		padding: 0px;
+	}
+	
+	ul {
         border-top: 1px solid lightgrey;
         width: 100%;
-        display: flex;
         flex-direction: column;
         align-items: center; 
     }
 
     .pagenav {
         border-bottom: 1px solid lightgrey;
-        /* border-top: 1px solid lightgrey; */
         width: 100%;
     }
 
     .topcontent {
-        display: flex;
         flex-direction: column;
-        width: 100%;
+		width: 100%;
+		padding: 20px;
     }
 
     .features {
         width: 100%;
         margin: 30px auto;
-    }
+	}
+	
+	.middle-img {
+		width: 100%;
+	}
 
     .bottomcontent {
-        display: flex;
+        padding: 20px;
         flex-direction: column;
         width: 100%;
     }
 
     .bottomsection {
         width:100%;
-    }
+	}
+	
+	address {
+		padding: 20px;
+	}
 
 }
