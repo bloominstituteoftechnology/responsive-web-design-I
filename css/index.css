@@ -65,105 +65,200 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Your code starts here! */
-
 body {
-	width: 880px;
-	margin-left: 72px;
-}
-
-nav	{
-	width: 667.09px;
-	padding-top: 40px;
-	display: inline-flex;
-}
-
-ul {
-	display: inline-flex;
-}
-
-li {
-	display: inline-flex;
-	padding-right: 61px;
-}
-
-.logo {
-	display: inline-flex;
-	padding-left: 30px;
-	margin-top: -12px;
-}
-
-header	{
 	display: flex;
-	border-bottom: 2px solid black;
-	padding-bottom: 75px;
-	padding-top: 70px;
+	justify-content: center;
 }
 
-h1 {
-	display: inline-block;
+.container {
+	width: 880px;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 28px;
+}
+
+header nav {
+	display: flex;
+	justify-content: space-between;
+  	width: 690px;
+  	margin-left: 72px;
+}
+
+header nav a {
+  display: inline-block;
+  font-size: 16px;
+  color: gray;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+header nav a:last-child {
+  margin-right: 65px;
+}
+
+header .logo {
+  display: inline-block;
+  width: 190px;
+  margin-right: -85px;
+
+}
+
+.billboard {
+	width: 880px;
+	height: 524px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.billboard-text{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
 	font-size: 72px;
-	width: 420px;
-	text-align: center;
-	margin-left: 70px;
-	vertical-align: top;
-	padding-top: 53px;
-	
+ 	text-align: center;
+ 	margin-left: 135px;
+ 	margin-bottom: 10px;
+ 	width: 400px;
+}
+
+.billboard-text button{
+  background: white;
+  vertical-align: top;
+  padding: 8px 40px;
+  font-size: 17px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.billboard .billboard-text button:hover{
+  background: black;
+  color: white;
 }
 
 .header {
-	display: inline-flex;
-	padding-left: 10px;
+	margin-right: -112px;
+	margin-bottom: 10px;
 }
 
-.started {
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 15px;
-    border: 1px solid black;
- 	padding: 5px 42px;
- 	margin-left: -14px;
+.column-content {
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	padding: 39px 0px;
+	display: flex;
+	flex-direction: column;
 }
-
-p {
-	text-align: left;
-	display: inline-block;
-}
-
 
 .two-columns {
-	/*column-count: 2;*/
-	margin-top: 35px;
-	margin-bottom: 35px;
-	width: 440px;
+	display: flex;
+	justify-content: space-between;
 }
 
-.para {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
+.two-columns .content {
+	width: 410px;
+}
 
+.middle-img {
+	margin: 45px 0px;
 }
 
 .three-columns {
-	column-count: 3;
-	margin-top: 15px;
-	margin-bottom: 15px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.three-columns .content {
+	width: 275px;
 }
 
 .contact {
-	border-top: 2px solid black;
-	margin-top: 15px;
+	padding: 39px 10px 0px;
+
+}
+
+.contact p {
+	margin: 20px 0px;
 }
 
 footer {
-	margin-top: 50px;
-	margin-bottom: 50px;
+	margin: 32px 0px;
 	text-align: center;
+	font-size: 14px;
 }
+
+
+/*Services CSS*/
+.serv-header-img {
+  margin: 35px 0px; 
+}
+
+.serv-header {
+  padding-bottom: 45px; 
+}
+
+.serv-header h2 {
+  font-size: 28px;
+}
+
+.serv-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 40px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.serv-block {
+  width: 420px;
+  border: 1px solid black;
+  margin-bottom: 40px;
+  background-color: whitesmoke;
+  padding: 15px;
+}
+
+.serv-block button {
+  margin-top: 15px;
+  background: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 8px 35px;
+}
+
+.serv-facts {
+  display: flex;
+  padding-top: 40px;
+}
+
+.facts-container {
+  padding-right: 40px;
+}
+.facts-container ul{
+  margin-top: 15px;
+}
+
+.facts-container ul li {
+  margin: 10px 0;
+  list-style: square inside;
+}
+
 
 /* Desktop First */
 
 @media (max-width: 800px){
+	.container {
+		width: 800px;
+		margin: 20px;
 
+	}
 }
 
 @media (max-width: 500px){
