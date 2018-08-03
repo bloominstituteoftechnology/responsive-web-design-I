@@ -1,3 +1,346 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+body {
+	display: flex;
+	justify-content: center;
+}
+
+.container {
+	width: 880px;
+}
+
+/* header */
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 25px;
+}
+header nav {
+	display: flex;
+	justify-content: space-between;
+  width: 690px;
+}
+
+header nav a {
+  display: inline-block;
+  font-size: 14px;
+  color: gray;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+header nav a:last-child {
+  margin-right: 65px;
+}
+
+header .logo {
+  display: inline-block;
+}
+
+/* cta */
+.cta {
+	width: 880px;
+	height: 524px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.cta-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+  font-size: 77px;
+  text-align: center;
+}
+
+.cta-text button {
+  background: white;
+  vertical-align: top;
+  padding: 8px 44px;
+  font-size: 17px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.cta .cta-text button:hover {
+  background: black;
+  color: white;
+}
+
+/* Main content */
+.main-content {
+	border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  line-height: 20px;
+	padding: 39px 0px;
+	display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.top-content {
+  display: flex;
+  align-content: center;
+	justify-content: space-between;
+}
+
+.top-content .text-content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 48%;
+}
+
+.middle-img {
+  display: flex;
+  margin: 45px 0px;
+}
+
+.bottom-content {
+  display: flex;
+  align-content: center;
+	justify-content: space-between;
+}
+
+.bottom-content .text-content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 32%;
+}
+
+.contact {
+  padding: 39px 10px 0;
+}
+
+.contact p {
+  margin: 20px 0;
+}
+
+footer {
+  margin: 32px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Media queries */
+/* Tablet */
+@media (max-width:800px) {
+    .container {
+      width: 100;
+      margin: auto;
+    }
+  
+    header {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      text-align: center;
+      margin-top: 0px;
+      width: 100%;
+    }
+
+    header nav {
+      width: 100%;
+      justify-content: space-evenly;
+    }
+
+    header nav a:last-child {
+      margin-right: 0px;
+    }
+
+    header .logo {
+        padding: 20px;
+        align-self: center;
+    }
+
+    .cta {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .cta img {
+        display: none;
+    }
+
+    .main-content {
+      display: flex;
+      flex-direction: column;
+      line-height: 20px;
+      padding:20px 20px;
+      width:100%;
+    }
+  
+    .main-content .top-content {
+      display: flex;
+      justify-content: space-between;
+      align-content:center;
+      width: 100%
+    }
+  
+    .main-content .top-content .text-content{ 
+      display: flex;
+      flex-wrap: wrap;
+      width: 48%;
+    }
+  
+    .main-content .bottom-content{
+      display: flex;
+      justify-content: space-between;
+      align-content:center;
+      width: 100%;
+    }
+  
+    .main-content .bottom-content .text-content{ 
+      display: flex;
+      flex-wrap: wrap;
+      width: 32%;
+    }
+  
+    .main-content .middle-img {
+      display: block;
+      margin: 30px auto;
+      width: 100%;
+  }
+}
+
+/* Phone */
+@media (max-width:500px) {
+  .container {
+    width: 100%;
+    margin: auto;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  header nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  header nav a {
+    padding: 20px 0px;
+    border-top: 1px solid #1d1d1d;
+    font-size: 24px;
+  }
+
+  header nav a:last-child {
+    border-bottom: 1px solid #1d1d1d;
+    margin-right: 0px;
+  }
+
+	.main-content {
+    display: flex;
+    line-height: 20px;
+    padding:20px 20px;
+    width:100%;
+  }
+
+  .main-content .top-content {
+    display: flex;
+    flex-direction: column;
+    align-content:center;
+    flex-wrap: nowrap;
+    width: 100%
+  }
+
+  .main-content .top-content .text-content{ 
+    margin-top: 20px; 
+    width: 100%;
+  }
+
+  .main-content .bottom-content{
+    display: flex;
+    flex-direction: column;
+    align-content:center;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+
+  .main-content .bottom-content .text-content{ 
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .main-content .middle-img {
+    display: block;
+    margin: 30px auto;
+    width: 100%;
+}
+}

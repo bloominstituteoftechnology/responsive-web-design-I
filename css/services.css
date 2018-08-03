@@ -1,0 +1,159 @@
+.services-header-img {
+	margin: 35px 0px;
+}
+
+.services-header {
+	padding-bottom: 45px;
+  border-bottom: 1px solid black;
+  line-height: 20px;
+}
+
+.services-header h2 {
+	font-size: 28px;
+}
+
+.service-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+  padding: 35px 0px;
+  line-height: 20px;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+.service-block {
+	width: 420px;
+	border: 1px solid black;
+	margin-bottom: 40px;
+	background-color: whitesmoke;
+	padding: 15px;
+}
+
+.service-block button {
+	margin-top: 15px;
+	background-color: white;
+	padding: 8px 35px;
+	border: 1px solid black;
+	border-radius: 5px;
+}
+
+
+.service-facts {
+	display: flex;
+  padding-top: 40px;
+}
+
+.facts-container {
+	padding-right: 40px;
+}
+
+.facts-container ul {
+	margin-top: 15px;
+}
+
+.facts-container ul li {
+	margin: 10px;
+	list-style-type: square;
+	margin-left: 17px;
+}
+
+/* Media queries */
+/* Tablet */
+@media (max-width:800px) {
+    .container {
+      width: 100%;
+      margin: auto;
+    }
+  
+    header {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      text-align: center;
+      margin-top: 0px;
+      width: 100%;
+    }
+
+    header nav {
+      width: 100%;
+      justify-content: space-evenly;
+    }
+
+    header nav a:last-child {
+      margin-right: 0px;
+    }
+
+    header .logo {
+        padding: 20px;
+        align-self: center;
+    }
+
+    .services-header {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-content: center;
+      padding: 10px 20px 45px 20px;
+    }
+
+    .service-block {
+      width: 100%;
+      margin: 20px 20px;
+    }
+
+    .service-facts {
+      margin: 10px 20px;
+    }
+}
+
+/* Phone */
+@media (max-width:500px) {
+  .container {
+    width: 100%;
+    margin: auto;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  header nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  header nav a {
+    padding: 20px 0px;
+    border-top: 1px solid #1d1d1d;
+    font-size: 24px;
+  }
+
+  header nav a:last-child {
+    border-bottom: 1px solid #1d1d1d;
+    margin-right: 0px;
+  }
+
+  .services-header {
+    padding-bottom: 45px;
+  }
+  .service-block {
+    width: 100%;
+    margin: 20px 20px;
+  }
+
+  .service-facts {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 20px;
+  }
+  .service-facts img {
+    padding-top: 10px;
+  }
+}
