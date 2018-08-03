@@ -217,24 +217,31 @@ footer {
        order:1;
        font-size: 18px;
        width: 100%;
-       align-items: center;
+	   text-align: center;
+	   color:grey;
     }
 
     .navigation a {
-        margin: 10px 0 ;
+		padding: 10px 0;
     
-    }
+	}
+	
+	.navigation a:last-child{
+		border-bottom: 1px grey solid;
+		padding-bottom: 10px;
+	}
 
     .menu-item{
-        border-bottom: 1px black solid;
+        border-top: 1px grey solid;
     }
     
     .logo{
-        order:0;
+		order:0;
+		margin-bottom: 25px;
     
     }
     .block1{
-        margin:15px 0;
+        margin:55px 0;
     }
     .block1 header{
         
@@ -245,7 +252,10 @@ footer {
         
     }
     .block1 button{
-        width: 35%;
+		width: 125px;
+		background-color: white;
+		border: 1px black solid;
+		font-size: 15px;
     }
     .header-text{
         text-align: center;
@@ -256,14 +266,40 @@ footer {
         display:none;
     }
 
-    .features, .about{
-        margin: 10px 20px;
+    .features, .about, .service, .product,.vision{
+        margin: 10px 0px;
 
     }
 
     .middle-img{
         max-width:100%;
         padding: 5px 10px;
-    }
+	}
+	.block2 {
+		margin-left:auto;
+		margin-right: auto;
+		width:90%;
+		border-top: 2px solid black;
+		padding-top: 35px;
+	}
+	
+	.block3 {
+		margin-left: auto;
+		margin-right: auto;
+		width:90%;
+		border-bottom: 2px solid black;
+		padding-bottom: 35px;
+	}
+	.contact{
+		margin-top:20px;
+		margin-left:auto;
+		margin-right: auto;
+		width:90%;
+	}
+
+	footer{
+		margin-top:20px;
+		text-align: center;
+	}
 }
 
