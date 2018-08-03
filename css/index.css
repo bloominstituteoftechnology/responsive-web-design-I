@@ -238,7 +238,7 @@ li {
 }
 
 ul {
-	padding-left: 20px;
+    	padding-left: 20px;
 }
 @media only screen and (max-width: 800px) {
 
@@ -330,7 +330,7 @@ ul {
     }
 }
 @media only screen and (max-width: 500px) {
-    *    {
+    *  {
         padding: 0;
         margin: 0;
     }
@@ -346,6 +346,7 @@ ul {
     nav {
         display: flex;
         flex-direction: column;
+        padding: 20px 0 0 0;
     }
     .nav-div    {
         display: flex;
@@ -362,8 +363,9 @@ ul {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 7% 0 7% 0;
+        padding: 30px 0;
         border-top: 1px black solid;
+        height: 50px;
         font-size: 1.2rem;
     }
     .nav-div a:last-child {
@@ -372,13 +374,21 @@ ul {
     .head    {
         display: flex;
         flex-wrap: wrap;
-        margin-top: 320px;
-        margin-left: -6%;
+        width: 95%;
+        align-self: center;
+        margin-top: 355px;
+    }
+    .head-text div {
+        padding: 5px 0;
+        margin: 0 0 0 21%;
+        text-align: center;
+        width: 40.2%;
     }
     .section-by-2    {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
+        margin-top: 10px;
     }
     .section-by-2 .half    {
         width: 100%;
@@ -394,9 +404,11 @@ ul {
     }
     .section-by-3 .third    {
         width: 100%;
+        max-width: 100%;
         padding: 5%;
+        margin-top: 5%;
     }
     footer {
-        padding-top: 20px;
+        margin-top: 50px;
     }
 }
