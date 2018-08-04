@@ -67,10 +67,10 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 .container {
-	width:880px;
-	display:flex;
+	width: 880px;
+	display: flex;
 	flex-direction: column;
-	margin:0px auto;
+	margin: 0px auto;
 }
 
 header {
@@ -79,93 +79,93 @@ header {
 }
 
 a:hover {
-	color:black;
-
+	color: black;
 }
 
 .navbar {
-	color:white;
-	height:70px;
-	width:650px;
+	color: white;
+	height: 70px;
+	width: 650px;
 	display: flex;
 	justify-content: center;
 }
 
 .logo {
 	padding: 15px;
-	display:flex;
+	display: flex;
 	justify-content: flex-end;
 }
 
 .topNav {
-	color:grey;
-	text-decoration:none;
-	padding:25px;
+	color: grey;
+	text-decoration: none;
+	padding: 25px;
 }
 
 .top-content {
-	width:880px;
-	height:524px;
+	width: 880px;
+	height: 524px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-
 }
 
 .top-content .topTitleText {
 	display: flex;
 	flex-direction: column;
 	font-size: 70px;
-	text-align: center; 
+	text-align: center;
 	padding: 0px 55px;
 }
 
 .top-content .button {
 	margin-bottom: 15px;
-	font-size:14px;
+	font-size: 14px;
 	text-align: center;
 	border: 2px solid black;
 	padding: 5px 50px;
-	margin-top:5px;
-	background-color:white;
+	margin-top: 5px;
+	background-color: white;
 	cursor: pointer;
-
 }
 
-.button:hover {background-color:pink;}
+.button:hover {
+	background-color: pink;
+}
 
 .button:active {
-	background-color:black;
+	background-color: black;
 	color: white;
-	box-shadow:0 6px #FFA500;
+	box-shadow: 0 6px #FFA500;
 	transform: transformY(4px);
 }
 
 .middleContent h3 {
-	margin-top:20px;
+	margin-top: 20px;
 	margin-left: 15px;
 	display: flex;
 	justify-content: flex-start;
 }
 
 .middleContent {
-	display:flex;
+	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
 	border-top: 2px solid black;
 	border-bottom: 2px solid black;
 }
 
-
 .topMiddle-text {
 	display: flex;
 	margin-bottom: 25px;
 }
+
 .sectionText {
 	display: flex;
-	text-align:left;
+	text-align: left;
 	padding-left: 15px;
 }
+
 .features {
 	flex: 1;
 }
@@ -176,10 +176,11 @@ a:hover {
 
 .bottom-text {
 	display: flex;
-	margin-top:10px;
-	margin-bottom:15px;
-	padding-bottom:15px;
+	margin-top: 10px;
+	margin-bottom: 15px;
+	padding-bottom: 15px;
 }
+
 .services {
 	flex: 1;
 }
@@ -193,22 +194,24 @@ a:hover {
 }
 
 .ftr-info {
-	display:flex;
+	display: flex;
 	flex-direction: column;
 }
 
 .ftr-info h3 {
-	margin-top:20px;
+	margin-top: 20px;
 	margin-left: 15px;
 	display: flex;
 	justify-content: flex-start;
 }
+
 .ftr-text {
 	padding-left: 15px;
 }
+
 .copyright-bottom {
 	text-align: center;
-	margin-bottom:100px;
+	margin-bottom: 100px;
 }
 
 /* below css is service page specific */
@@ -218,155 +221,138 @@ a:hover {
 }
 
 .service-top h2 {
-	font-size:25px;
+	font-size: 25px;
 }
+
 .service-top {
-	padding-bottom:25px;
+	padding-bottom: 25px;
 	border-bottom: 1px solid black;
 }
 
 .middle-container {
-	display:flex;
-	flex-wrap:wrap;
+	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
-	padding-top:30px;
+	padding-top: 30px;
 	border-bottom: 1px solid black;
 }
 
 .middle-blocks {
 	border: 1px solid black;
-	margin-bottom:35px;
-	width:425px;
-	background-color:whitesmoke;
-	padding:20px;
+	margin-bottom: 35px;
+	width: 425px;
+	background-color: whitesmoke;
+	padding: 20px;
 }
 
 .middle-blocks button {
-	border:1px solid black;
+	border: 1px solid black;
 	padding: 6px 40px;
-	margin-top:20px;
-	background-color:white;
-	border-radius:10%;
+	margin-top: 20px;
+	background-color: white;
+	border-radius: 10%;
 }
 
 .footer-container {
 	padding: 30px 0px;
 	display: flex;
-
 }
 
 .service-info-img {
-	margin-bottom:25px;
+	margin-bottom: 25px;
 }
+
 .bottom-fact-block {
-	padding-right:30px;
+	padding-right: 30px;
 }
+
 .bottom-fact-block ul {
-	margin-top:25px;
+	margin-top: 25px;
 }
 
 .bottom-fact-block ul li {
-	margin-top:15px;
+	margin-top: 15px;
 	list-style-type: square;
-	margin-left:20px;
+	margin-left: 20px;
 }
 
 @media (max-width:800px) {
-    .container {
-        width:95%;
-    }
-
-    .container header {
-        flex-direction: column-reverse;
-        align-items: center;
-        width:100%;
-    }
-
-    .container .navbar {
-        width: 100%;
-        text-align: center;
-    }
-
-    .container .logo {
-        display: block;
-    }
-
-    .navbar  .topNav {
-      margin: 0px 15px;
-    }
-
-    .top-img {
-        display:none;
-    }
-
-    .top-content {
-        height: auto;
-        width:100%;
-        justify-content: center;
-        margin: 45px 0px;
-    }
-
-    .top-content .button {
-        margin-bottom:5px;
-        padding: 7px 40px;
-        font-size:17px;
-    }
-
-    .middleContent .middle-img {
-        width:100%;
+	.container {
+		width: 95%;
 	}
-	
+	.container header {
+		flex-direction: column-reverse;
+		align-items: center;
+		width: 100%;
+	}
+	.container .navbar {
+		width: 100%;
+		text-align: center;
+	}
+	.container .logo {
+		display: block;
+	}
+	.navbar .topNav {
+		margin: 0px 15px;
+	}
+	.top-img {
+		display: none;
+	}
+	.top-content {
+		height: auto;
+		width: 100%;
+		justify-content: center;
+		margin: 45px 0px;
+	}
+	.top-content .button {
+		margin-bottom: 5px;
+		padding: 7px 40px;
+		font-size: 17px;
+	}
+	.middleContent .middle-img {
+		width: 100%;
+	}
 	.middle-blocks {
-		width:30%;
+		width: 30%;
 	}
 }
 
 @media(max-width:500px) {
-    .container .navbar {
-        height:auto;
-        flex-direction:column;
-        align-items: center;
-        border-bottom: 1px solid lightgray;
-    }
-
-     .topNav {
-        border-top: 1px solid lightgray;
-        width:99%;
-    
-    }
-
-    .container .logo {
-        width: auto;
-    }
-
-    .middleContent .topMiddle-text {
-        flex-direction:column;
-    }
-
-    .middleContent .bottom-text {
-        flex-direction: column;
-    }
-
+	.container .navbar {
+		height: auto;
+		flex-direction: column;
+		align-items: center;
+		border-bottom: 1px solid lightgray;
+	}
+	.topNav {
+		border-top: 1px solid lightgray;
+		width: 99%;
+	}
+	.container .logo {
+		width: auto;
+	}
+	.middleContent .topMiddle-text {
+		flex-direction: column;
+	}
+	.middleContent .bottom-text {
+		flex-direction: column;
+	}
 	.middle-blocks {
-		width:auto;
+		width: auto;
 	}
-
 	.footer-container img {
-		display:none;
+		display: none;
 	}
-
 	.footer-container {
-		width:100%;
+		width: 100%;
 	}
-
 	.bottom-fact-block h3 {
 		text-align: center;
 	}
-
 	.bottom-fact-block p {
-		text-align:center;
+		text-align: center;
 	}
-    footer .copyright-bottom {
-        margin: 35px 0px;
-    }
+	footer .copyright-bottom {
+		margin: 35px 0px;
+	}
 }
