@@ -102,8 +102,13 @@ header {
 	flex-direction: column;
 }
 
-a {
+.mobMenu {
 	display: flex;
+	align-items: flex-end;
+}
+
+a {
+	/*display: flex;*/
 	margin: 5px;
 	justify-content: space-between;
 	
@@ -138,6 +143,8 @@ h1 {
 	/*display: flex;*/
 	text-align: center;
 }
+
+
 
 .GSbutton {
 	/*display: flex;*/
@@ -245,12 +252,30 @@ button {
         margin: 0 auto;
     }
 
+    .topArt {
+        display: flex;
+        width: 80%;
+        justify-content: space-between;
+        margin-bottom: 20px;
+	}
+	
+	
     
 
 }
 
 @media (max-width: 500px){
-    
+
+
+	body {
+		width: 120%;
+		margin: 0 auto;
+	}
+	
+	h1 {
+		font-size: 400%;
+		margin: 20%;
+	}
 
     .logo2 {
         display: none;
@@ -259,16 +284,57 @@ button {
     .logo1 {
         display: block;
         margin: 0 auto;
-    }
+	}
+
+	a {
+		text-decoration: none;
+		margin: 0 auto;
+		padding: 20px;
+	}
+	
+
+	.topArt .botArt {
+		width: 100%;
+		display: flex;
+		justify-content: flex-start;
+		flex-wrap: wrap;
+	}
+
+	.top-matter {
+		border-bottom-width: 100%;
+		border-bottom: solid black;
+		margin: 0 auto;
+	}
 
     .nav {
         display: flex;
         flex-direction: column;
-        align-items: center;
+		align-items: center;
+		
     }
 
     .anchors {
         display: flex;
         flex-direction: column;
-    }
+	}
+	
+	.mobMenu {
+		margin: 0 auto;
+		border-top: solid 1px darkgray;
+		width: 300px;
+
+	}
+
+	.mobMenu2 {
+		margin: 0 auto;
+		border-bottom: solid 1px darkgray;
+		width: 300px;
+
+	}
+
+	.articles {
+		width: 80%;
+		display: block;
+
+	}
 }
