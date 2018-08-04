@@ -1,3 +1,434 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+body {
+	display: flex;
+	justify-content: center;
+}
+
+.container {
+	width: 880px;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 28px;
+}
+
+header nav {
+	display: flex;
+	justify-content: space-between;
+  	width: 690px;
+  	margin-left: 72px;
+}
+
+header nav a {
+  display: inline-block;
+  font-size: 16px;
+  color: gray;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+header nav a:last-child {
+  margin-right: 65px;
+}
+
+header .logo {
+  display: inline-block;
+  width: 190px;
+  margin-right: -85px;
+
+}
+
+.billboard {
+	width: 880px;
+	height: 524px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.billboard-text{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 72px;
+ 	text-align: center;
+ 	margin-left: 135px;
+ 	margin-bottom: 10px;
+ 	width: 400px;
+}
+
+.billboard-text button{
+  background: white;
+  vertical-align: top;
+  padding: 8px 40px;
+  font-size: 17px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.billboard .billboard-text button:hover{
+  background: black;
+  color: white;
+}
+
+.header {
+	margin-right: -112px;
+	margin-bottom: 10px;
+}
+
+.column-content {
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	padding: 39px 0px;
+	display: flex;
+	flex-direction: column;
+}
+
+.two-columns {
+	display: flex;
+	justify-content: space-between;
+}
+
+.two-columns .content {
+	width: 410px;
+}
+
+.middle-img {
+	margin: 45px 0px;
+}
+
+.three-columns {
+	display: flex;
+	justify-content: space-between;
+}
+
+.three-columns .content {
+	width: 275px;
+}
+
+.contact {
+	padding: 39px 10px 0px;
+
+}
+
+.contact p {
+	margin: 20px 0px;
+}
+
+footer {
+	margin: 32px 0px;
+	text-align: center;
+	font-size: 14px;
+}
 
 
+/*Services CSS*/
+.serv-header-img {
+  margin: 35px 0px; 
+}
+
+.serv-header {
+  padding-bottom: 45px; 
+}
+
+.serv-header h2 {
+  font-size: 28px;
+}
+
+.serv-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 40px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.serv-block {
+  width: 420px;
+  border: 1px solid black;
+  margin-bottom: 40px;
+  background-color: whitesmoke;
+  padding: 15px;
+}
+
+.serv-block button {
+  margin-top: 15px;
+  background: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 8px 35px;
+}
+
+.serv-facts {
+  display: flex;
+  padding-top: 40px;
+}
+
+.facts-container {
+  padding-right: 40px;
+}
+.facts-container ul{
+  margin-top: 15px;
+}
+
+.facts-container ul li {
+  margin: 10px 0;
+  list-style: square inside;
+}
+
+
+/* Desktop First */
+
+@media (max-width: 800px){
+	.container {
+		width: 800px;
+		margin: 20px;
+	}
+
+	header {
+		flex-direction: column-reverse;
+		padding-top: 95px;
+	}
+
+	header nav {
+		width: 800px
+		justify-content: space-between;
+		margin-left: 0px;
+	}
+
+	header .logo {
+		margin-bottom: 40px;
+		margin-right: 2px;
+	}
+
+	.header {
+		display: none;
+	}
+
+	.billboard {
+	width: 800px;
+	height: 400px;
+	}
+
+	.billboard-text{
+	width: 400px;
+	justify-content: center;
+	margin-left: 0px;
+	margin-top: 20px;
+
+	}
+
+	.column-content {
+		width: 800px;
+		margin: 20px;
+	}
+
+	.two-columns {
+		width: 750px;
+		justify-content: space-around;
+		margin-left: 20px;
+	}
+
+	.two-columns .content {
+		width: 370px;
+	}
+
+	.middle-img {
+		width: 800px;
+		margin-bottom: 29px;
+	}
+	.three-columns {
+		width: 750px;
+		margin-left: 20px;
+		height: 171px;
+	}
+
+	.three-columns .content {
+		width: 175px;
+	}
+
+	.contact {
+		margin-left: 20px;
+		padding: 15px 10px 5px;
+	}
+
+	.contact p {
+		margin: 15px 0px;
+	}
+
+	footer {
+		margin: 20px 0px 0px 20px;
+		text-align: center;
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 500px){
+	.container{
+		width: 500px;
+	}
+
+	header {
+		flex-direction: column-reverse;
+		padding-top: 0px;
+		margin: 0px 0px 0px 20px;
+	}
+
+	header nav {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	header nav a {
+		width: 500px;
+		text-align: center;
+		padding: 20px;
+		font-size: 20px;
+		border-top: 1px solid gray;
+	}
+
+	header .logo{
+		margin-bottom: 18px;
+	}
+
+	header nav a:last-child {
+  		margin-right: 0px;
+  		border-bottom: 1px solid gray;
+	}
+
+	.billboard {
+		width: 500px;
+		height: 375px;
+	}
+
+	.billboard-text{
+		width: 250px;
+		justify-content: center;
+		margin-left: 15px;
+		margin-top: 0px;
+
+	}
+
+	.column-content {
+		width: 500px;
+		margin: 20px;
+	}
+
+	.two-columns {
+		width: 500px;
+		flex-wrap: wrap;
+		margin-left: 10px;
+	}
+
+	.two-columns .content {
+		width: 500px;
+		padding-top: 20px;
+		padding-bottom: 50px;
+	}
+
+	.middle-img {
+		width: 500px;
+		margin: 25px 10px;
+	}
+
+	.three-columns {
+		width: 750px;
+		margin-left: 10px;
+		height: 437px;
+		flex-wrap: wrap;
+	}
+
+	.three-columns .content {
+		width: 500px;
+		padding-bottom: 90px;
+	}
+
+	.contact {
+		margin-left: 20px;
+		padding: 15px 10px 5px;
+	}
+
+	.contact p {
+		margin: 15px 0px;
+	}
+
+	footer {
+		margin: 20px 0px 0px 20px;
+		text-align: center;
+		font-size: 16px;
+	}
+}
