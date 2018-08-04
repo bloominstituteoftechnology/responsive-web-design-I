@@ -3,7 +3,6 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -65,34 +64,25 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Your code starts here! */
-body{
-	width: 800px;
-}
 header{
 	display: flex;
-	flex-direction: column-reverse;
-	margin-top: 30px;
+	justify-content: space-between;
+	align-items: center;
 }
-.main{
+/* .main{
 	display: flex;
-	justify-content: center;
-}
-#navigation{
-	display: flex;
-	justify-content: space-around;
-	width: 620px;
-	margin-bottom: 20px;
-}
+	flex-direction: row;
+	align-items: center;
+	flex-wrap:nowrap; 
+} */
 .logo{
-	display: flex;
-	margin-bottom: 50px;
-	width: 200px;
-	align-self: center;
+	display: inline-block;
+	margin-bottom: 20px;
+	width: 170px;
 }
 #top{
 	border: 0px solid black;
-	width: 800px;
-	height: 520px;
+	height: 380px;
 	display: flex;
 	align-items: center;
 	justify-content: space-evenly;
@@ -100,22 +90,18 @@ header{
 #starter{
 	display: flex;
 	flex-direction: column;
-	justify-content: space-evenly;
 	align-items: center;
-	font-size: 77px;
-	text-align: left;
-	width: 285px;
+	font-size: 90px;
 }
 h1{
 	display: flex;
 	text-align: center;
-	align-items: center;
+}
+img{
+	display: none;
 }
 button {
-	display: flex;
-	justify-content: center;
-	border: 1px solid black;
-	width: 200px;
+	border: 0px solid black;
 }
 #middle{
 	display: flex;
@@ -142,7 +128,7 @@ h3{
 }
 .middle-img{
 	display: block;
-	border: 1px solid black;
+	border: 0px solid black;
 	width: 800px;
 }
 #bottom{
@@ -169,15 +155,159 @@ h3{
 	text-align: center;
 } 
 
-/* tablet display */
-@media (max-width: 817px) {
-    body {
-        background-color:white;
-    }
+/* tablet first */
+@media (max-width: 800px){
+	.content {
+		width: 800px;
+		color: black;
+		background-color: white;
+	}
+	img {
+		display:none;
+	}
+	.main {
+		margin: 0 auto;
+    	display: flex;
+		flex-direction: column-reverse;
+	}
+	#navigation {
+		margin-top: 35px;
+		word-spacing: 76px;
+	}
+	.logo {
+		margin: 0 auto;
+	}
+	button {
+		padding: 6px 35px 6px 35px;
+		border: 1px solid black;
+		background-color: transparent;
+	}
+	#middle {
+		width: 780px;
+		padding: 10px;
+	}
+	.middle-img {
+		width: 780px;
+	}
+	#bottom {
+		width: 780px;
+		padding: 4px;
+	}
+	h4 {
+		padding: 4px;
+	}
+	address {
+		padding: 4px;
+	}
 }
- /* mobile phone */
- @media (max-width: 500px){
-     body {
-         background-color: pink;
-     }
- }
+
+/* mobile css */
+@media (max-width: 500px) {
+	.content {
+		width: 500px;
+		color: black;
+		background-color: white;
+	}
+	#navigation {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		line-height: 4;
+		margin: 8px;
+		padding-top: 15px;
+		font-size: 16px;
+	}
+	.logo {
+		padding-top:10px;
+	}
+	#middle {
+		display: flex;
+		flex-direction: column;
+		padding-left: 10px;
+		padding-top: 20px;
+    	border-top: 2px solid black;
+    	width: 470px;
+    	margin-left: 4px;
+    	margin-right: 8px;
+	}
+	.middle-img {
+		width: 465px;
+		padding-left: 10px;
+	}
+	#bottom {
+		display: flex;
+		flex-direction: column;
+		padding-left: 10px;
+	}
+	h1 {
+		font-size: 68px;
+	}
+	h3 {
+		font-weight: bold;
+	}
+	h4 {
+		font-weight: bold;
+		width: 470px;
+    	margin-left: 4px;
+    	margin-right: 8px;
+	}
+	#features {
+		padding-top: 40px;
+		width: 470px;
+    	margin-left: 4px;
+    	margin-right: 8px;
+	}
+	#about {
+		padding-top: 40px;
+		width: 470px;
+    	margin-left: 4px;
+    	margin-right: 8px;
+	}
+	.middle-img {
+		padding-top: 35px;
+	}
+	#services {
+		padding-top: 40px;
+		width: 470px;
+    	margin-left: 4px;
+    	margin-right: 8px;
+	}
+	#product {
+		padding-top: 40px;
+		width: 470px;
+    	margin-left: 4px;
+    	margin-right: 8px;
+	}
+	#vision {
+		padding-top: 40px;
+		width: 400px;
+		border-bottom: 2px solid black;
+    	padding-bottom: 30px;
+      	width: 470px;
+    	margin-left: 4px;
+    	margin-right: 8px;
+	}
+	a {
+		border-top: 1px solid black;
+		width: 470px;
+    	margin-left: 4px;
+    	margin-right: 8px;
+    	color: gray;
+		border-color: gray;
+		text-decoration: none;
+	}
+	.contact {
+		width: 470px;
+    	margin-left: 4px;
+    	margin-right: 8px;
+    	color: gray;
+		border-color: gray;
+		border-bottom: 1px solid gray;
+		text-decoration: none;
+	}
+	address {
+		width: 470px;
+    	margin-left: 4px;
+    	margin-right: 8px;
+	}
+}
