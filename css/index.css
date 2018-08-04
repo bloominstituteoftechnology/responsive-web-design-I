@@ -268,8 +268,9 @@ button {
 
 
 	body {
-		width: 120%;
+		width: 500px;
 		margin: 0 auto;
+		
 	}
 	
 	h1 {
@@ -288,13 +289,24 @@ button {
 
 	a {
 		text-decoration: none;
-		margin: 0 auto;
-		padding: 20px;
+		/*margin: 0 auto;*/
+		/*padding: 20px;*/
+		width: 100%;
+		text-align: center;
 	}
 	
 
-	.topArt .botArt {
-		width: 100%;
+	.topArt  {
+		width: 80%;
+		margin: 0% 10%;
+		display: flex;
+		justify-content: flex-start;
+		flex-wrap: wrap;
+	}
+
+	.botArt {
+		width: 80%;
+		margin: 0% 10%;
 		display: flex;
 		justify-content: flex-start;
 		flex-wrap: wrap;
@@ -336,5 +348,11 @@ button {
 		width: 80%;
 		display: block;
 
+	}
+
+	footer {
+		width: 80%;
+		margin: 0 auto;
+		display: block;	
 	}
 }
