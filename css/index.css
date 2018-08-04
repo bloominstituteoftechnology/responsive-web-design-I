@@ -69,6 +69,10 @@ h1, h2, h3, h4, h5 {
 	margin:auto;
 }
 
+.tablogo {
+	display: none;
+}
+
 .topnav {
 	display:flex;
 	flex-direction: row;
@@ -197,13 +201,49 @@ hr {
 		width: 800px;
 	}
 
+	.logo {
+		display: none;
+	}
+
+	.tablogo {
+		display: block;
+		margin: 15px auto 15px auto;
+	}
+
+	.snippet {
+		display:none;
+	}
+
+	.container-head {
+	
+		justify-content: center;
+	}
+
+	.container-head .Attention {
+		margin: 0px;
+		width: 400px;
+		display:flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items:center;
+	}
+
+	.container-bottom {
+		display: flex;
+		flex-wrap: nowrap;
+		width: 800px;
+	
+	}
 }
 
 @media (max-width:500px) {
 	.fullcontainer {
 		width: 500px;
 	}
-
+	
+	.tablogo {
+		display:none;
+	}
 	.snippet {
 		display:none;
 	}
@@ -260,7 +300,14 @@ hr {
 
 	.middle-img {
 		width:400px;
-		margin: 15px;
+		margin:0px;
+	}
+
+	.midimg {
+		display:flex;
+		justify-content: center;
+		height:85px;
+		margin: 0px;
 	}
 
 	.container-bottom .services {
