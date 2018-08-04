@@ -334,5 +334,88 @@ footer {
 }
 
 @media (max-width: 500px){
+	.container{
+		width: 500px;
+	}
 
+	header {
+		flex-direction: column-reverse;
+		padding-top: 0px;
+		margin: 0px 0px 0px 20px;
+	}
+
+	header nav {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	header nav a {
+		width: 500px;
+		text-align: center;
+		padding: 20px;
+		font-size: 20px;
+		border-top: 1px solid gray;
+	}
+
+	header .logo{
+		margin-bottom: 18px;
+	}
+
+	header nav a:last-child {
+  		margin-right: 0px;
+  		border-bottom: 1px solid gray;
+	}
+
+	.billboard {
+	width: 500px;
+	height: 375px;
+	}
+
+	.billboard-text{
+	width: 250px;
+	justify-content: center;
+	margin-left: 15px;
+	margin-top: 0px;
+
+	}
+
+	.column-content {
+		width: 800px;
+		margin: 20px;
+	}
+
+	.two-columns {
+		width: 750px;
+		justify-content: space-around;
+		margin-left: 20px;
+	}
+
+	.two-columns .content {
+		width: 370px;
+	}
+
+	.middle-img {
+		width: 800px;
+		margin-bottom: 29px;
+	}
+	.three-columns {
+		width: 750px;
+		margin-left: 20px;
+		height: 171px;
+	}
+
+	.contact {
+		margin-left: 20px;
+		padding: 15px 10px 5px;
+	}
+
+	.contact p {
+		margin: 15px 0px;
+	}
+
+	footer {
+		margin: 20px 0px 0px 20px;
+		text-align: center;
+		font-size: 16px;
+	}
 }
