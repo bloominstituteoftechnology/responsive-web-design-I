@@ -1,3 +1,348 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Merienda', cursive;
+
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+/*nav {
+	display: inline-block;
+	width: 600px;
+	margin: 0 auto;
+	font-color: grey*/;
+}
+/*
+li {
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+}*/
+
+.nav-header {
+	width: 600px;
+	margin: 0 auto;
+}
+
+.nav-header nav {
+	display: flex;
+	margin: 20px;
+	justify-content: space-around;
+}
+
+
+/*.nav-header nav a {
+    display: inline-block;
+    padding: 14px 16px;
+    text-decoration: none;
+ }
+   */
+
+
+.container {
+  max-width: 880px;
+  width: 100%;
+  margin: 20px;
+}
+
+#top_stuff {
+
+
+}
+
+#headline_div {
+
+  flex-direction: column;
+	font-size: 70px;
+	padding: 1px 20px;
+	margin-right: 20px;
+	margin-bottom: 150px;
+	width: 40%;
+	display: inline-block;
+	position: relative;
+/*	top: -44px;
+   	left: 20px;
+   	bottom: 50px;*/
+
+}
+
+#headline_div h1 {
+	align-self: center;
+}
+
+#logo1 {
+	display: flex;
+}
+
+
+#header_img_div {	
+	height: auto;
+	width: 30%;
+	display: inline-block;
+	margin-top: -28px;
+	margin-bottom: 50px;
+	position: relative;
+	top: 129px;
+   	left: 20px;
+}
+
+
+#button {
+	border: 1px solid black;
+    padding: 15px 32px;
+    text-align: center;
+    margin: 0 0 80px 60px;
+ 	align-items: center; 
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#top_left_text {
+	width: 49%;
+	display: inline-block;
+}
+
+#top_right_text {
+	width: 49%;
+	display: inline-block;
+}
+
+#middle_img_div {
+	padding: 20px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+}
+
+#middle_img {
+	width: 95%;
+	height:	auto;
+}
+
+#bottom_left_text {
+	width: 33%;
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
+#bottom_center_text {
+	width: 33%;
+	display: inline-block;
+
+}
+
+#bottom_three_text_boxes {
+	display: flex;
+
+}
+
+#bottom_right_text {
+	width: 33%;
+	display: inline-block;
+}
+
+#copyright {
+	margin: auto;
+    width: 50%;
+}
+
+address {
+	margin-top: 10px;
+}
+
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+/*Desktop width*/
+
+@media only screen and (min-width: 805px) {
+    body {
+    background-color: lightblue;
+}
+
+#logo1 {
+	display: none;
+}
+}
+
+/* Tablet width */
+  @media (max-width:800px){
+/*h1 needs to be centered and the get started button needs to be moved up a skosh. Logo needs to be put on top*/
+
+ #header_img_div {
+  	display: none;
+}
+
+#top_stuff {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+
+#headline_div {
+  margin-top: 50px;
+}
+
+  .nav-header nav {
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+  .nav-header nav a {
+  	font-color: grey;
+  	text-decoration: none;
+  	padding: 20px;
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+
+}
+
+#logo1 {
+	display: block;
+	padding-bottom: 10px;
+	margin-left: 150px;
+}
+
+#logo2 {
+	display: none;
+}
+}
+
+
+/* Phone width */
+  
+@media (max-width:500px){
+
+  #header_img_div {
+  	display: none;
+}
+
+#
+  .nav-header {
+  	width: 100%;
+}
+
+  .nav-header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+  .nav-header nav a {
+  	font-color: grey;
+  	text-decoration: none;
+  	padding: 10px;
+    border-top: solid 1px grey;
+    font-size: 24px;
+    width: 100%;
+    text-align: center;
+}
+
+#top_stuff {
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#top_stuff h1 {
+  background-color: red;
+  display: inline-flex;
+  margin-right: 40px;
+}
+
+#headline_div {
+  margin-top: 50px;
+}
+
+#logo2 {
+	display: none;
+}
+  #top_left_text {
+  	display: block;
+  	width: 100%;
+  }
+  #top_right_text {
+  	display: block;
+  	width: 100%;
+  }
+  #bottom_left_text {
+  	display: block;
+  	width: 100%;
+  }
+  #bottom_center_text {
+  	display: block;
+  	width: 100%;
+  }
+  #bottom_right_text {
+  	display: block;
+  	width: 100%;
+  }
+}
 
