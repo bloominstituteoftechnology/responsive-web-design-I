@@ -99,12 +99,20 @@ li {
    */
 
 
-
+.container {
+  max-width: 880px;
+  width: 100%;
+  margin: 20px;
+}
 
 #top_stuff {
+
+
 }
 
 #headline_div {
+
+  flex-direction: column;
 	font-size: 70px;
 	padding: 1px 20px;
 	margin-right: 20px;
@@ -226,6 +234,18 @@ address {
   	display: none;
 }
 
+#top_stuff {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+
+#headline_div {
+  margin-top: 50px;
+}
+
   .nav-header nav {
     display: block;
     flex-direction: column;
@@ -257,8 +277,7 @@ address {
 /* Phone width */
   
 @media (max-width:500px){
-  body {
-}
+
   #header_img_div {
   	display: none;
 }
@@ -282,6 +301,24 @@ address {
     font-size: 24px;
     width: 100%;
     text-align: center;
+}
+
+#top_stuff {
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#top_stuff h1 {
+  background-color: red;
+  display: inline-flex;
+  margin-right: 40px;
+}
+
+#headline_div {
+  margin-top: 50px;
 }
 
 #logo2 {
