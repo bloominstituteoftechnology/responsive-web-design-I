@@ -1,3 +1,411 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+/*
+
+
+body {
+	width: 880px;
+	margin: 0 auto;
+
+}
+
+
+.top {
+	width: 880px;
+	display:flex;
+	flex-direction: row;
+	justify-content: space-around;
+	position: fixed;
+	z-index: 1;
+	align-items: center;
+	background-color: white;
+	height: 40px;
+	
+}
+
+.navigation {
+
+	display:flex;
+	justify-content: space-evenly;
+	width:70%;
+}
+
+.block1 {
+	position: relative;
+	top: 40px;
+	display: flex;
+
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.header-text {
+	font-size: 52px;
+	width: 450px;
+	height: 200px;
+	text-align: center;
+
+}
+button {
+	display: flex;
+	width:100px;
+	height: 40px;
+	border: 1px solid black;
+	font-size: 15px;
+	align-items: center;
+	justify-content: center;
+}
+
+.block2 {
+	margin-top: 50px;
+	display: flex;
+	justify-content: space-between;
+	border-top: 1px solid black;
+	padding: 15px;
+}
+
+.features, .about {
+	width: 48%;
+}
+
+.block3 {
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid black;
+	padding: 15px;
+
+}
+
+.contact{
+	padding: 10px;
+}
+
+footer {
+	display:flex;
+	justify-content: center;
+}
+
+*/
+/*services*/
+
+.t-b{
+	padding: 18px 8px;
+	border-bottom: 1px solid black;
+
+}
+
+.m-b{
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	border-bottom: 1px solid black;
+}
+
+.caja {
+	border: 1px solid black;
+	background-color: aliceblue;
+	width: 420px;
+	padding: 10px;
+	margin: 5px;
+}
+
+.caja button {
+	
+	margin: 8px 0;
+	background-color: white;
+	
+}
+
+
+.b-b{
+	display:flex;
+	padding: 18px 8px;
+}
+
+.b-services ul {
+
+	margin-top: top 18px;
+	display: flex;
+	flex-direction: column;
+}
+
+
+/*Mobile Friendly*/
+@media only screen and (max-width: 500px){
+    .top{
+       display: flex;
+       align-items: center;       
+       width: 100%;
+       flex-direction: column;
+       margin:10px 0;
+    }
+
+    .navigation{
+       display: flex;
+       flex-direction: column;
+       order:1;
+       font-size: 18px;
+       width: 100%;
+	   text-align: center;
+	   color:grey;
+    }
+
+    .navigation a {
+		padding: 10px 0;
+    
+	}
+	
+	.navigation a:last-child{
+		border-bottom: 1px grey solid;
+		padding-bottom: 10px;
+	}
+
+    .menu-item{
+        border-top: 1px grey solid;
+    }
+    
+    .logo{
+		order:0;
+		margin-bottom: 25px;
+    
+    }
+    .block1{
+        margin:55px 0;
+    }
+    .block1 header{
+        
+        display: flex;
+        flex-direction: column;
+        width:100%;
+        align-items: center;
+        
+    }
+    .block1 button{
+		width: 125px;
+		background-color: white;
+		border: 1px black solid;
+		font-size: 15px;
+    }
+    .header-text{
+        text-align: center;
+        font-size: 48px;
+    }
+
+    .header-img {
+        display:none;
+    }
+
+    .features, .about, .service, .product,.vision{
+        margin: 10px 0px;
+
+    }
+
+    .middle-img{
+        max-width:100%;
+        padding: 5px 10px;
+	}
+	.block2 {
+		margin-left:auto;
+		margin-right: auto;
+		width:90%;
+		border-top: 2px solid black;
+		padding-top: 35px;
+	}
+	
+	.block3 {
+		margin-left: auto;
+		margin-right: auto;
+		width:90%;
+		border-bottom: 2px solid black;
+		padding-bottom: 35px;
+	}
+	.contact{
+		margin-top:20px;
+		margin-left:auto;
+		margin-right: auto;
+		width:90%;
+	}
+
+	footer{
+		margin-top:20px;
+		text-align: center;
+	}
+}
+
+/*Tablet Friendly */
+@media only screen and (min-width: 800px){
+	.top {
+	display: flex;
+       align-items: center;       
+       width: 100%;
+       flex-direction: column;
+       margin:10px 0;
+
+	}
+
+	.navigation{
+		margin:25px 0px;
+		width:100%;
+		display:flex;
+		order:1;
+		flex-direction: row;
+		justify-content: space-around;
+		color:grey;
+	}
+	.logo{
+		margin:12px;
+		order:0;
+	}
+	.header-img{
+		display:none;
+	}
+	.block1{
+		display:flex;
+		width:100%;
+		align-items: center;
+		flex-direction: column;
+
+	}
+	
+	header {
+		margin:30px 0px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	
+	}
+	
+	.header-text {
+		
+		font-size: 62px;
+		width: 100%;
+		height: 200px;
+		text-align: center;
+	
+	}
+	.block1 button{
+		width: 150px;
+		background-color: white;
+		border: 1px black solid;
+		font-size: 18px;
+	}
+	.features, .about, .service, .product,.vision{
+        margin: 10px 0px;
+
+    }
+
+    .middle-img{
+        max-width:100%;
+        padding: 10px 20px;
+	}
+	.block2 {
+		margin-left:auto;
+		margin-right: auto;
+		width:90%;
+		border-top: 2px solid black;
+		padding-top: 35px;
+		display:flex;
+	}
+	
+	.block3 {
+		margin-left: auto;
+		margin-right: auto;
+		width:90%;
+		border-bottom: 2px solid black;
+		padding-bottom: 35px;	
+		display: flex;
+		justify-content: space-around;
+		
+		
+	}
+	.contact{
+		margin-top:20px;
+		margin-left:auto;
+		margin-right: auto;
+		width:90%;
+	}
+	
+	.service, .product, .vision{
+		width:30%;
+	}
+
+	footer{
+		margin-top:20px;
+		text-align: center;
+	}
+
+}
