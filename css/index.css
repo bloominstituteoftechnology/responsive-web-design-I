@@ -65,11 +65,6 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
-body {
-    background: red;
-}
-
-
 .container {
     display: flex;
     flex-direction: column;
@@ -150,7 +145,7 @@ nav {
 .top-content {
     display: flex;
     padding-top: 20px;
-    padding-bottom: 10px;
+    padding-bottom: 28px;
     width: 100%;
     height: auto;
     background: white;
@@ -166,7 +161,7 @@ nav {
     padding-top: 16px;
 }
 
-.top-content .content-item p {
+.content-item p {
     padding-top: 2px;
     line-height: 18px;
 }
@@ -177,10 +172,29 @@ nav {
 
 .bottom-content {
     display: flex;
+    padding-top: 30px;
+    padding-bottom: 33px;
+    border-bottom: 2px solid black;
 }
 
-.bottom-content .content-item {
-
+.content-item-bottom {
+    width: 293px;
+    margin-right: 20px;
 }
 
+.contact {
+    padding-top: 35px;
+    padding-bottom: 20px;
+}
 
+.contact p {
+    line-height: 25px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    background: white;
+    padding-bottom: 20px;
+}
