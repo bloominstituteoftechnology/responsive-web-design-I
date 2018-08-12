@@ -204,6 +204,39 @@ footer {
 /* Tablet */
 @media (max-width: 800px) {
     /* todo - add media queries in here. */
+
+    .container {
+        width: 800px;
+        background: white;
+    }
+
+    .navigation {
+        flex-direction: column;
+        justify-content: center;
+        background: white;
+    }
+
+    .navigation nav {
+        order: 2;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 20px;
+        padding-right: 51px;
+    }
+
+    .navigation nav a {
+        margin-right: 0px;
+        padding: 10px;
+    }
+
+    .navigation img {
+        order: 1;
+        width: 184px;
+        height: 37px;
+        align-self: center;
+        margin-right: 30px;
+        margin-bottom: 19px;
+    }
 }
 
 /* Phone */
