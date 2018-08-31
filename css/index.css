@@ -1,3 +1,242 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+.allSections {
+	margin: 0 auto;
+}
 
 
+
+
+.navigation a { 
+	
+	margin: 10px;
+	padding: 20px 65px 20px 15px;
+	color: rgba(0, 0, 0, 0.644);
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 14px;
+	text-decoration: none;
+}
+.navBar {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	padding: 10px;
+	background-color: white;
+	overflow: hidden;
+    position: fixed; 
+    top: 0;
+}
+
+.navigation{
+	display:flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	
+	
+
+}
+
+.logo {
+	width: 200px;
+	height: 40px;
+	display: flex;
+	align-self: flex-end;
+	
+
+	
+}
+
+
+.codeCircle {
+	width: 420px;
+	height: 420px;
+display: flex;
+align-self: auto;
+	margin: 30px;
+	z-index: -1;
+	
+}
+.attnCatcher{
+	font-size: 78px;
+	text-align: center;
+}
+
+		
+
+.titleText{
+	padding: 0px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
+	;
+}
+.title{
+	margin: 20px;
+	padding: 80px;
+	border: 1px;
+	border-bottom-color:black; 
+	border-bottom-style: solid;
+	display:flex;
+    flex-direction: row;
+    
+
+}
+.button1 {
+    background-color: white;
+    color: black;
+	border: .5px solid rgb(0, 0, 0);
+	width: 150px;
+	height: 25px;
+	font-size: 14px;
+	display: flex;
+    justify-content: center;
+    border-radius: 1%;
+}
+.importantInfo {
+	column-count: 2;
+	margin: 20px;
+	
+
+}
+.middle-img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	padding: 20px;
+	padding-top: 10px;
+}
+.importantInfo2 {
+	column-count: 3;
+	margin: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px;
+	border-bottom-color: black;
+	border-bottom-style: solid;
+	
+
+}
+.contact{
+	margin: 20px;
+	line-height: 30px;
+
+}
+
+footer {
+	margin: 50px;
+	text-align: center
+}
+/*tablet view*/
+
+@media all and (max-width: 800px) {
+    .logo {
+        width: 200px;
+        height: 40px;
+        
+        }   
+    .navBar {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 20px 10px 5px 20px;
+        background-color: white;
+        overflow: hidden;
+        position: fixed; 
+        top: 0;
+       
+    }    
+
+    .navigation{
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }   
+    .navigation a { 
+	
+        margin: 10px;
+        padding: 20px 45px 20px 15px;
+        color: rgba(0, 0, 0, 0.644);
+        font-family: 'Titillium Web', sans-serif;
+        font-size: 14px;
+        text-decoration: none;
+    }
+    .codeCircle {
+        display: none;
+    }
+    .titleText {
+        padding-top: 50px;
+    }
+    footer{
+        padding-bottom: 20px;
+    }
+}
