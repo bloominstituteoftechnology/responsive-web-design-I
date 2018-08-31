@@ -1,3 +1,604 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+	box-sizing: border-box;
+	
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 0px;
+}
+
+/*Reseting css*/
+
+.master-nav {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    /* margin-right: 50%; */
+}
+
+.navigation {
+    display: flex;
+    position: fixed;
+    width: 60%;
+    justify-content: space-between;
+    /* margin: 20px; */
+    padding: 25px;
+    box-shadow: 0 0 3px 3px white;
+    background: white;
+    
+}
+
+.main-nav :hover {
+	background: black;
+color: white;
+border-radius: 3.5px;
+
+/* box-shadow: 0px 0px 5px 5px blue; */
+}
+
+.main-nav {
+    display: flex;
+    /* padding: 20px; */
+    margin: 0px;
+    
+    width: 100%;
+    justify-content: space-between;
+    padding-right: 10%;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.logo {
+    display: flex;
+    
+}
+
+a {
+    display: flex;
+    padding: 5px;
+    
+    text-decoration: none;
+    font: inherit;
+    font-size: 18px;
+    color: rgba(145, 145, 145, 0.959);
+    
+}
+
+.master-innovation {
+ display: flex;
+ flex-direction: row;
+ 
+ justify-content: space-around;
+ margin-top: 74.6px;
+}
+
+.innovation {
+    display: flex;
+    
+    width: calc(57.5% + 40px);
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0px 40px 0px;
+    
+}
+
+.demand-text {
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    font-size: 85px;
+    
+}
+
+.get-started-button {
+    display: flex;
+    background: white;
+    padding-right: 45px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 45px;
+    margin-top: 15px;
+    box-shadow: 0 0 3px black;
+}
+
+button:hover {
+	background: black;
+color: white;
+}
+
+h4 {
+    display: flex;
+    
+    padding: 20px 0 0 20px;
+
+}
+
+h2 {
+    display: flex;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+p {
+    display: flex;
+    
+    padding-right: 5px;
+    height: 100px;
+    
+}
+
+.snippet {
+    display: flex;
+    
+    height: 400px;
+    width: 400px;
+}
+
+.top-section {
+    display: flex;
+    
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 60%;
+
+}
+
+.feature-about-container {
+    display: flex;
+    justify-content: center;
+}
+
+.features {
+    display: flex;
+    
+    flex-direction: column;
+    width: calc(50%);
+    
+}
+
+.about {
+    display: flex;
+    
+    flex-direction: column;
+    width: 50%;
+    
+}
+
+
+.image-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+}
+
+.middle-img {
+    display: flex;
+    
+    justify-content: center;
+    width: 60%;
+    padding: 20px 0 20px 0;
+}
+
+.service-product-vision-conytainer {
+    display: flex;
+    justify-content: center;
+
+}
+
+.bottom-section {
+    display: flex;
+    
+    width: 60%;
+}
+
+.services {
+    display: flex;
+    
+    flex-direction: column;
+}
+
+.product {
+    display: flex;
+    
+    flex-direction: column;
+}
+
+.vision {
+    display: flex;
+    
+    flex-direction: column;
+}
+
+.separate-container {
+    display: flex;
+    height: 40px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.hr-separate {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    padding-top: 20px;
+   
+}
+
+hr {
+    display: flex;
+    width: 60%;
+    height: 2.5px;
+    
+}
+
+.contact-container {
+    display: flex;
+    
+    justify-content: center;
+    height: 250px;
+}
+
+.contacting {
+    display: flex;
+    flex-direction: column;
+    
+    width: 60%;
+
+}
+
+address {
+display: flex;
+flex-direction: column;
+
+padding: 0 0 0 0;
+}
+
+.addressing{
+    display: flex;
+    flex-direction: column;
+    /* align-content: center; */
+    flex-wrap: wrap;
+}
+
+.wtf {
+    display: flex;
+    
+    padding-right: 5px;
+    height: 55px;
+}
+
+.ftw{
+    display: flex;
+    
+    padding-right: 5px;
+    height: 35px;
+}
+
+footer {
+    display: flex;
+    
+}
+
+.foot-stink {
+    display: flex;
+    
+    
+}
+
+.foot-container {
+    display: flex;
+    
+    width: 100%;
+    justify-content: center;
+}
+
+/* SERICES */
+
+.master-of-service {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 400px;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 40px;
+}
+
+.services-box {
+    display: flex;
+    margin-top: 138.6px;
+    margin-bottom: 20px;
+    width: 60%;
+    padding: 25px 0 25px 0;
+    height: 100%;
+    flex-direction: column;
+
+}
+
+.services-header-img {
+    display: flex;
+    
+}
+
+.stubborn-services {
+    display: flex;
+    
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.services-box .stubborn-services h1 {
+    display: flex;
+    font-size: 32px;
+    padding-top: 25px;
+    padding-bottom: 13px;
+}
+
+.services-box .stubborn-services p {
+    display: flex;
+    font-size: 20px;
+    padding-top: 15px;
+    
+}
+
+/*Middle*/
+
+.master-of-master {
+    display: flex;
+    width: 100%;
+    
+    justify-content: center;
+}
+
+.master {
+    display: flex;
+    
+    
+    width: 60%;
+    height: 100%;
+}
+
+.column1 {
+    display: flex;
+    flex-direction: column;
+   
+    width: 50%;
+    margin: 0px 20px 0px 0px;
+}
+
+.digital-design {
+    display: flex;
+    
+    padding: 25px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background: lightgrey;
+    box-shadow: 0 2px 2px black;
+    box-shadow: 0px 0px 1px 1px black;
+    margin: 40px 0 0 0;
+}
+
+.services-button {
+    display: flex;
+
+}
+
+.marketing {
+    display: flex;
+    
+    padding: 25px;
+    margin: 40px 0 40px 0;
+    flex-direction: column;
+    background: lightgrey;
+    box-shadow: 0 2px 2px black;
+    box-shadow: 0px 0px 1px 1px black;
+}
+
+.ios-dev {
+    display: flex;
+    
+    padding: 25px;
+    flex-direction: column;
+    background: lightgrey;
+    box-shadow: 0 2px 2px black;
+    box-shadow: 0px 0px 1px 1px black;
+    margin: 0 0 40px 0;
+}
+
+.column2 {
+    display: flex;
+    
+    padding: 0px;
+    flex-direction: column;
+    width: 50%;
+    margin: 0px 0px 0px 20px;
+    
+}
+
+.uxui {
+    display: flex;
+    
+    padding: 25px;
+    flex-direction: column;
+    background: lightgrey;
+    box-shadow: 0 2px 2px black;
+    box-shadow: 0px 0px 1px 1px black;
+    margin: 40px 0 0 0;
+}
+
+.web-dev {
+    display: flex;
+    
+    padding: 25px;
+    flex-direction: column;
+    background: lightgrey;
+    box-shadow: 0 2px 2px black;
+    box-shadow: 0px 0px 1px 1px black;
+    margin: 40px 0 40px 0;
+}
+
+.and-dev {
+    display: flex;
+    
+    padding: 25px;
+    justify-content: space-between;
+    flex-direction: column;
+    background: lightgrey;
+    box-shadow: 0 2px 2px black;
+    box-shadow: 0px 0px 1px 1px black;
+    height: 100%;
+    width: 100%;
+    margin: 0 0 40px 0;
+}
+
+.wrapping-facts {
+    display: flex;
+	justify-content: center;
+	margin-top: 35px;
+}
+
+.containment-below {
+    display: flex;
+    width: 60%;
+    
+}
+
+.some-facts  {
+    display: flex;
+   
+    flex-direction: column;
+    width: 50%;
+    padding: 0px 20px 0 0;
+}
+
+.wrapper {
+    display: flex;
+    
+    flex-direction: column;
+    width: calc(50%);
+    padding: 0px 0px 0px 20px;
+}
+
+.computer-lady {
+    display: flex;
+    
+    width: 100%;
+}
+
+.services-info-img {
+    display: flex;
+    
+    width: 100%;
+}
+
+footer {
+
+  /* padding-top: 100px; */
+
+} 
+
+.playing-footsie {
+    display: flex;
+    
+    
+    justify-content: center;
+    align-content: center;
+}
+
+li{
+    /* display: flex; */
+    padding: 0 0 5px 10px;
+    margin: 0 0 0 15.5px;
+    list-style-type: disc;
+}
+
+.services-footer p {
+    padding: 40px 0 0 0;
+   
+}
+
+.big-ol-button {
+	margin: 10px 0 0 0;
+display: flex;
+flex-direction: row;
+width: 150px;
+height: 50px;
+justify-content: center;
+font-style: inherit;
+box-shadow: 0 2px 2px black;
+box-shadow: 0px 0px 1px 1px black
+}
+
+h2 {
+    display: flex;
+    font-size: 22px;
+}
 
