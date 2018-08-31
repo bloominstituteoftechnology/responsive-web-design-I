@@ -487,6 +487,10 @@ p a:hover {
 }
 
 @media (max-width: 800px) {
+  .row:first-of-type {
+    margin-bottom: 8px;
+  }
+
   /* NAVIGATION */
   .navigation {
     height: 180px;
@@ -514,7 +518,7 @@ p a:hover {
   }
   /* HEADER */
   .header {
-    padding: 200px 0 38px;
+    padding: 188px 0 67px;
   }
 
   .heading-primary {
@@ -541,8 +545,9 @@ p a:hover {
     display: none;
   }
 
-  .contact {
-    padding: 10px;
+  .main-index {
+    width: 95%;
+    margin: 0 auto;
   }
 
   /* PAGES */
@@ -585,14 +590,29 @@ p a:hover {
     position: relative;
     height: auto;
   }
+
+  .nav-container {
+    padding: 30px 0 0;
+  }
   .nav-links {
     flex-direction: column;
     width: 100%;
+    text-align: center;
   }
 
   .nav-links a {
+    width: 100%;
     padding: 20px 0;
-    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+  }
+
+  /* HEADER */
+  .header {
+    padding: 40px 0 50px;
+  }
+
+  .cta-button {
+    width: 100%;
   }
 }
 
