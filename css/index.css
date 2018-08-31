@@ -199,3 +199,33 @@ h1, h2, h3, h4, h5 {
 	font-size: 14px;
   }
 
+
+  @media ( max-width: 790px) {
+    
+    header {
+        flex-flow: column-reverse;
+        align-items: center;
+    }
+    
+    header nav {
+        justify-content: flex-start;
+        margin-top: 35px;
+    }
+
+    header .logo {
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .cta {
+        justify-content: center;
+    }
+    .cta .cta-text {
+        text-align: center;
+    }
+
+    .cta .image-header{
+        display: none;
+    }
+  }
+
