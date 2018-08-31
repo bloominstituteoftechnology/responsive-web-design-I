@@ -1,3 +1,246 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+	margin-bottom: 15px;
+	font-size: 50px;
+	font-weight: bold;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+.navBar {
+	display: flex;
+	width: 100%;
+	height: 100px;
+	flex-flow: nowrap;
+}
+
+.navBar a {
+	color: grey;
+	text-decoration: none;
+	justify-content: space-between;
+	margin: 100px;
+	font-size: 20px;
+}
+
+.main-nav .logo {
+	margin-top: 
+	width: 200px;
+	height: auto;
+}
+
+.container {
+	margin: 0 auto;
+	width: 1800px;
+	height: auto;
+}
+
+.headerFlex {
+	display: flex;
+	flex-flow: nowrap;
+	align-items: center;
+	width: 1800px;
+	height: 500px;
+	justify-content: space-around;
+}
+
+button {
+	border: solid green 2px;
+	width: 200px;
+	height: 40px;
+	font-size: 20px;
+	margin-left: 60px;
+}
+
+.container h1{
+	font-size: 80px;
+	text-align: center;
+}
+
+.container button{
+	background: white;
+	font-size: 10px;
+	text-align: center;
+}
+
+.container .headerFlex img{  
+	margin-right: 100px;
+	border-radius: 50%;
+	-webkit-transition: -webkit-transform .8s ease-in-out;
+			transition:         transform .8s ease-in-out;
+
+}
+
+.middle-img {
+	margin-top: 40px;
+	justify-content: center;
+	width: 100%;
+	height: auto;  
+}
+
+.container .section-line {
+	border-bottom: solid black 1px;
+	padding-top: 40px; 
+	display: flex;
+	width: 100%;
+	flex-flow: nowrap;
+	height: 200px;
+	margin-top: 40px;
+}
+
+.container .section-line2 {
+	border-top: solid black 1px;
+	padding-top: 40px; 
+	display: flex;
+	width: 100%;
+	flex-flow: nowrap;
+	height: 200px;
+	margin-top: 40px;
+}
+
+.header-line {
+	font-size: 0px;
+}
+
+p {
+	font-size: 22px;
+}
+
+img:hover {
+	-webkit-transform: rotate(360deg);
+			transform: rotate(360deg);
+} 
+
+footer {
+	text-align: center;
+	margin-top: 50px;
+	padding-bottom: 100px; 
+}
+
+.services-header-img {
+	width: 100%;
+}
+
+.container .contact-margin {
+	margin-top: 40px;
+}
+
+.services-layout {
+	border: solid red 1px;
+}
+
+.grid-sections {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	height: 400px;
+}
+
+.grid-sections .grid-border button {
+	margin-left: 0px;
+	margin-top: 20px;
+	font-size: 15px;
+}
+
+.grid-border {
+	background: rgba(211, 211, 211, 0.459); 
+	margin: 30px;
+	border: solid black 1px;
+}
+
+.grid-border p {
+	padding-top: 20px;
+}
+
+.bottom-section {
+	margin-top: 40px;
+	display: flex;
+	flex-flow: nowrap
+}
+
+.bottom-section p {
+	width: 50%;
+}
+
+.bottom-section .services-info-img {
+	width: 600px;
+}
+
+h3 {
+	font-size: 35px;
+	font-weight: bold;
+}
+
+.bottom-section ul {
+	margin-top: 10px;
+	list-style-type: square;
+	line-height: 20px;
+}
+
+@media (max-width:800px) {
+
+}
+
+@media (max-width:500px) {
+
+}
 
