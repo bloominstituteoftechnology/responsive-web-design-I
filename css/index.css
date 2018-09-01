@@ -245,3 +245,14 @@ h1, h2, h3, h4, h5 {
         margin: 14px 0;
     }
 }
+
+@media only screen and (max-width: 500px) {
+    header nav {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    header nav a {
+        width: 100%;
+        text-align: center;
+    }
+}
