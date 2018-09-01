@@ -1,3 +1,364 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Elements */
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  font-size: .7rem
+}
 
 
+p {
+  font-size: .98rem;
+}
+
+button {
+	margin: 10px 60px 10px 118px;
+	padding: 5px 0px;
+  border-radius: 3%;
+  font-size: 1rem;
+	border: 1px solid black;
+}
+
+button:hover {
+  border: 1px solid mediumseagreen;
+  color: white;
+  background-color: mediumseagreen;
+}
+
+.container-home {
+	width: auto;
+	margin: 0 auto;
+}
+/* Navagation Bar & Logo*/
+.container-home .navigation-bar {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+  align-items: center;
+  padding: 30px 35px 0px 10px;
+  margin-bottom: 60px;
+}
+
+.container-home .navigation-bar nav {
+  width: 90%;
+}
+
+.container-home .navigation-bar a {
+  font-size: 14px;
+	color: darkgrey;
+  text-decoration: none;
+  margin-left: 50px;
+  padding: 0px 8px;
+}
+
+.container-home .navigation-bar a:hover {
+	color: mediumseagreen;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.container-home .navigation-bar img { /* Logo */
+	width: 18%;
+  height: auto;
+}
+
+.container-home .navigation-bar img:hover { /* Logo */
+	width: 20%;
+  height: auto;
+  background-image: linear-gradient(to right, white 90%, yellow 10%);
+}
+
+/* Headline */
+.container-home .headline {
+	width: 100%;
+	display: flex;
+  justify-content: space-evenly;
+  margin: 75px 50px 55px 60px;
+  padding-bottom: 20px;
+}
+
+.container-home .headline .h1-and-button {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-home .headline .h1-and-button h1 {
+  margin-top: 30px;
+  margin-left: 50px;
+	font-size: 72px;
+  text-align: center;
+}
+
+.circle-img {												/* Circle Img */
+  max-width: 375px;
+  height: 375px;
+}
+
+
+.columns-2 {
+  border-top: 1px solid black;
+  margin: 35px 25px 20px 75px;
+  padding: 35px 0px 5px 0px;
+  line-height: 1.1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.middle-img {                     /* Middle Img */
+  width: 90%;
+  margin: 5px 95px 0px 75px;
+}
+
+.columns-3 {
+  margin: 25px 25px 20px 75px;
+  padding: 0px 0px 0px 0px;
+  line-height: 1.1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.columns-3 p {
+  font-size: 1.0rem;
+  padding-right: 18px;
+}
+
+.contact {
+  margin: 36px 25px 20px 75px;
+  border-top: 1px solid black;
+}
+
+.contact h2 {
+  padding-top: 35px;
+}
+
+
+.contact address {
+  font-size: 1.0rem;
+  margin: 0px;
+  padding: 5px 0px;
+}
+
+footer {
+  text-align: center;
+  padding-top: 20px;
+  font-size: .65em;
+}
+
+
+
+/* .container {
+  width: 800px;
+  border: 1px solid red;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.main-nav nav {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.agency h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.agency h1:hover {
+  color: red;
+} */
+
+/* tablet */
+@media (max-width:800px) {
+  
+  .container-home {
+    width: 800px;
+  }
+
+  .container-home .navigation-bar  {
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 0px;
+    padding: 30px 20px 0px 0px;
+  }
+
+  .container-home .navigation-bar img { /* Logo */
+    margin-left: 25px;
+    width: 185px;
+    height: auto;
+    order: -1;
+  }
+
+  .container-home .navigation-bar nav {
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .container-home .navigation-bar a {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px;
+    font-size: 15px;
+  }
+
+  .circle-img {
+    display: none;
+  }
+
+  .container-home .headline {
+    margin: 70px 0px 0px 0px;
+  }
+
+  .container-home .headline .h1-and-button {
+    margin: 0px;
+    padding: 0px;
+
+  }
+
+  .container-home .headline .h1-and-button h1 {
+    margin: 0px;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  button {
+    margin: 30px 60px 0px 60px;
+    padding: 5px 0px;
+  }
+
+  .columns-2 {
+    border-top: 1px solid black;
+    margin: 55px 0px 0px 0px;
+    padding: 35px 10px 0px 30px;
+  }
+
+  .columns-2 p {
+    padding: 0px 30px 0px 0px;
+    font-size: .98rem;
+    line-height: 1.2rem;
+  }
+
+  .middle-img {                     /* Middle Img */
+    width: 95%;
+    margin: 25px 0px 0px 20px;
+    padding: 0px 0px 0px 0px;
+  }
+
+  .columns-3 {
+    margin: 30px 20px 0px 30px;
+    padding: 0px 0px 0px 5px;
+    line-height: 1.15;
+  }
+  
+  .columns-3 p {
+    font-size: 1.02rem;
+    padding-right: 30px;
+  }
+
+  .contact {
+    margin: 36px 25px 20px 28px;
+    border-top: 1px solid black;
+  }
+  
+  .contact address {
+    font-size: 1.0rem;
+    margin: 0px;
+    padding: 0px 0px;
+  }
+
+}
+
+  /* .main-nav nav {
+    flex-direction: column;
+    margin: 40px;
+    align-items: center;
+    border-top: 1px solid black;
+  }
+  
+  .main-nav nav a {
+    width: 100%;
+    padding: 20px;
+    border-bottom: 1px solid black;
+    display: block;
+    text-align: center;
+  }
+
+}
+
+/* mobile */
+/* @media (max-width:500px) {
+  .container {
+
+  }
+} */ 
