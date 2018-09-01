@@ -250,9 +250,40 @@ h1, h2, h3, h4, h5 {
     header nav {
         flex-direction: column;
         flex-wrap: nowrap;
+        margin-top: 14px;
     }
     header nav a {
         width: 100%;
         text-align: center;
+        border-top: 1px solid gray;
+        padding: 20px 0;
+        font-size: 20px;
     }
+    header nav a+a+a+a+a+a {
+        border-bottom: 1px solid gray;
+    }
+    .cta .cta-text {
+        margin-top: 50px;
+    }
+    .top-content {
+        flex-direction: column;
+    }
+    .top-content .text-content {
+        width: 100%;
+        margin-top: 38px;
+    }
+    .bottom-content {
+        flex-direction: column;
+    }
+    .main-content .bottom-content .text-content {
+        width: 100%;
+        margin-top: 42px;
+    }
+
+    .main-content .middle-img {
+        margin-top: 53px;
+        width: 97%;
+        margin-left: 7px;
+    }
+
 }
