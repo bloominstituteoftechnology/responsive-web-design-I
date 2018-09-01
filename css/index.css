@@ -79,11 +79,11 @@ h1, h2, h3, h4, h5 {
 	display: flex;
 	width: 691px;
 	vertical-align: top;
-	margin-top: 35px;
+    margin-top: 35px;
+    border: 1px solid red;
   }
   
   header nav a {
-	/* display: inline-block; */
 	margin-right: 65px;
 	font-size: 14px;
 	color: gray;
@@ -206,5 +206,11 @@ h1, h2, h3, h4, h5 {
 @media only screen and (max-width: 800px) {
     .cta img {
         display: none;
+    }
+    .container header {
+        flex-direction: column-reverse;
+    }
+    header nav {
+        width: 100%;
     }
 }
