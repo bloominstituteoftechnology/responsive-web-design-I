@@ -1,3 +1,404 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+.container {
+  width: 880px;
+  margin: 0 auto;
+}
+
+/* header */
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+  align-items: flex-end;
+}
+
+header nav a {
+  font-size: 14px;
+  color: gray;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* cta */
+
+.cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 2px solid black;
+  padding-bottom: 40px;
+  height: 450px;
+}
+
+.cta .cta-text {
+  padding-top: 50px;
+  font-size: 77px;
+  text-align: center;
+}
+
+.cta .cta-text button {
+  background: white;
+  vertical-align: top;
+  border: 1px solid black;
+  cursor: pointer;
+  padding: 5px 32px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.cta .cta-text button:hover {
+  background: black;
+  color: white;
+}
+
+/* .main-content */
+
+.main-content {
+  margin-top: 30px;
+}
+
+.main-content .top-content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.main-content .bottom-content {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+
+.main-content .bottom-content .text-content {
+  margin-right: 5px;
+}
+
+.contact {
+  border-top: 1px solid black;
+  padding-top: 40px;
+}
+
+footer {
+  margin: 32px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* index.html media queries */
+
+@media (max-width: 800px) {
+    .container {
+        width: 750px;
+        margin: 0 auto;
+    }
+    
+    header {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    header nav {
+        width: 750px;
+        
+    }
+    header a {
+        order: -1;
+        margin: 20px auto;        
+    }
+
+    .cta img {
+        display: none;
+    }
+    .container .middle-img {
+        width: 750px;
+    }
+    .container .top-content .text-content:first-child {
+        padding-right: 30px;
+    }
+    .container .bottom-content .text-content:first-child {
+        padding-right: 40px;
+    }
+    .container .bottom-content .text-content:nth-child(2) {
+        padding-right: 40px;
+    }
+    .container .bottom-content .text-content:nth-child(3) {
+        padding-right: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        width: 450px;
+    }
+    .container header {
+        margin-bottom: 0px;
+    }
+    header nav {
+        display: flex;
+        flex-direction: column;
+        width: 450px;
+    }
+    header nav a {
+        border-top: 1px solid black;
+        width: 458px;
+        padding: 20px 0;
+        font-size: 24px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+    header nav a:nth-child(6) {
+        border-bottom: 1px solid black;
+    }
+    .container .cta {
+        padding: 0px;
+    }
+    .container .cta .cta-text {
+        padding: 0px;
+    }
+    .container .middle-img {
+        width: 450px;
+    }
+    .container .main-content .top-content {
+        display: flex;
+        flex-direction: column;
+    }
+    .container .main-content .top-content .text-content:first-child {
+        padding-bottom: 30px;
+    }
+    .container .main-content .bottom-content {
+        display: flex;
+        flex-direction: column;
+    }
+    .container .main-content .bottom-content .text-content:first-child {
+        padding-bottom: 30px;
+    }
+    .container .main-content .bottom-content .text-content:nth-child(2) {
+        padding-bottom: 30px;
+    }
+}
+
+/* .services styles only */
+
+.services {
+  width: 880px;
+  margin: 0 auto;
+}
+
+.services header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.services header nav {
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+  align-items: flex-end;
+}
+
+.services header nav a {
+  font-size: 14px;
+  color: gray;
+  text-decoration: none;
+}
+
+.services header nav a:hover {
+  text-decoration: underline;
+}
+
+.services .services-header-img {
+  margin-bottom: 40px;
+}
+
+.services .main-info .top-blurb {
+  border-bottom: 1px solid black;
+  padding-bottom: 20px;
+}
+
+.services .main-info .mid-content {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  padding-bottom: 20px;
+}
+
+/* @media only screen 
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+  .services .main-info .mid-content {
+    background: black;
+  }
+} */
+
+@media (hover: none) {
+  .services .main-info .mid-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.services .main-info .mid-content .learn-more-box {
+  border: 1px solid black;
+  background-color: rgb(230, 230, 230);
+  width: 400px;
+  height: 190px;
+  margin: 10px 0px;
+  padding: 10px;
+}
+
+.services .main-info .mid-content .learn-more-box button {
+  margin-top: 20px;
+  background: white;
+  border: 1px solid black;
+  padding: 5px 32px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.services .bottom-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.services .bottom-content .bottom-content-left {
+  margin-right: 50px;
+}
+
+.services .bottom-content .bottom-content-left ul {
+  list-style: disc inside;
+}
+
+.services .bottom-content .bottom-content-left ul li {
+  padding-bottom: 5px;
+}
+
+/* .product styles only */
+
+.product {
+  width: 880px;
+  margin: 0 auto;
+}
+
+.product header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.product header nav {
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+  align-items: flex-end;
+}
+
+.product header nav a {
+  font-size: 14px;
+  color: gray;
+  text-decoration: none;
+}
+
+.product header nav a:hover {
+  text-decoration: underline;
+}
+
+.product .product-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: space-between;
+}
+
+.product .product-section .products {
+  border: 1px solid black;
+  padding: 10px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.product .product-section .products button {
+  
+}
