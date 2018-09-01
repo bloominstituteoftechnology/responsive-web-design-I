@@ -47,10 +47,6 @@ table {
 	border-spacing: 0;
 }
 
-/* Set every element's box-sizing to border-box */
-* {
-    box-sizing: border-box;
-}
 
 html, body {
     height: 100%;
@@ -63,69 +59,44 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* Elements */
+/* Body 990 width for perfect pixel */
 
  * {
   box-sizing: border-box;
 }
 
-a {
-  font-size: .7rem
-}
-
-
-p {
-  font-size: .98rem;
-}
-
-button {
-	margin: 10px 60px 10px 118px;
-	padding: 5px 0px;
-  border-radius: 3%;
-  font-size: 1rem;
-	border: 1px solid black;
-}
-
-button:hover {
-  border: 1px solid mediumseagreen;
-  color: white;
-  background-color: mediumseagreen;
-}
-
 .container-home {
-	width: auto;
-	margin: 0 auto;
+  margin: 0 auto;
 }
 
 .container-home .navigation-bar {
-	width: 100%;
-	display: flex;
+  display: flex;
+  flex-direction: row;
 	justify-content: space-between;
   align-items: center;
-  padding: 30px 35px 0px 10px;
-  margin-bottom: 60px;
+  margin: 30px 40px 60px 74px;
 }
 
 .container-home .navigation-bar nav {
-  width: 90%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .container-home .navigation-bar a {
   font-size: 14px;
-	color: darkgrey;
+  color: darkgrey;
   text-decoration: none;
-  margin-left: 50px;
-  padding: 0px 8px;
+  letter-spacing: 1px;
+  padding: 5px 60px 0px 0px;
 }
 
 .container-home .navigation-bar a:hover {
 	color: mediumseagreen;
-  font-size: 1rem;
   font-weight: bold;
 }
 
 .container-home .navigation-bar img { 
-	width: 18%;
+  width: 180px;
   height: auto;
 }
 
@@ -137,27 +108,42 @@ button:hover {
 
 
 .container-home .headline {
-	width: 100%;
 	display: flex;
-  justify-content: space-evenly;
-  margin: 75px 50px 55px 60px;
-  padding-bottom: 20px;
+  justify-content: space-between;
+  margin: 0px 40px 0px 50px;
 }
 
 .container-home .headline .h1-and-button {
-  margin-top: 20px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  margin-top: 10px;
+  padding-left: 150px;  
 }
 
 .container-home .headline .h1-and-button h1 {
-  margin-top: 30px;
-  margin-left: 50px;
-	font-size: 72px;
+  font-size: 72px;
   text-align: center;
+  margin-bottom: 25px;
 }
 
-.circle-img {					
+.get-started {
+	margin: 0px 60px 0px 60px;
+	padding: 5px 0px 7.5px 0px;
+  border-radius: 3%;
+  font-size: 1rem;
+	border: 1px solid black;
+}
+
+.get-started:hover {
+  border: 1px solid mediumseagreen;
+  color: white;
+  background-color: mediumseagreen;
+}
+
+
+.circle-img {	
+  margin: 15px 0px 5px 0px;				
   max-width: 375px;
   height: 375px;
 }
@@ -165,52 +151,55 @@ button:hover {
 
 .columns-2 {
   border-top: 1px solid black;
-  margin: 35px 25px 20px 75px;
-  padding: 35px 0px 5px 0px;
-  line-height: 1.1rem;
+  margin: 70px 40px 20px 75px;
+  padding: 36px 0px 5px 0px;
+  line-height: 1.15rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
+.topic-features {
+  margin-left: -2px;
+}
 
-.middle-img {                 
-  width: 90%;
-  margin: 5px 95px 0px 75px;
+.topic-about {
+  margin-left: 4px;
+}
+
+.middle-img {    
+  width: 88.2%;             
+  margin: 5px 0px 4px 75px;
 }
 
 .columns-3 {
-  margin: 25px 25px 20px 75px;
-  padding: 0px 0px 0px 0px;
-  line-height: 1.1;
+  margin: 25px 40px 20px 74px;
+  line-height: 1.15;
   display: flex;
   justify-content: space-between;
 }
 
 .columns-3 p {
-  font-size: 1.0rem;
-  padding-right: 18px;
+  margin: 0px 18px 0px 0px;
 }
 
 .contact {
-  margin: 36px 25px 20px 75px;
+  margin: 35px 50px 20px 75px;
   border-top: 1px solid black;
 }
 
 .contact h2 {
   padding-top: 35px;
+  margin-left: -3px;
 }
 
 
 .contact address {
-  font-size: 1.0rem;
-  margin: 0px;
-  padding: 5px 0px;
+  margin-left: -3px;
 }
 
 footer {
   text-align: center;
-  padding-top: 20px;
-  font-size: .65em;
+  padding-top: 18px;
 } 
 
 
@@ -224,39 +213,39 @@ footer {
   }
 
   .container-home .navigation-bar  {
+    width: 100%;
     flex-direction: column;
-    justify-content: space-evenly;
-    margin: 0px;
-    padding: 30px 20px 0px 0px;
+    justify-content: space-between;
+    margin: 30px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    align-items: center;
   }
 
   .container-home .navigation-bar img {  
-    margin-left: 25px;
-    width: 185px;
+    width: 182.5px;
     height: auto;
     order: -1;
   }
 
 
 .container-home .navigation-bar img:hover { 
-	width: 185px;
+  width: 182.5px;
   height: auto;
+  order: -1;
   background-image: linear-gradient(to right, white 90%, yellow 10%);
 }
 
 
 
   .container-home .navigation-bar nav {
-    width: 100%;
-    margin-top: 40px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    margin: 40px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
   }
 
-  .container-home .navigation-bar a {
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px;
+  .container-home .navigation-bar nav a {
+    letter-spacing: 0.5px;
+    margin: 0px 56px 0px 25px;
+    padding: 0px 0px 0px 0px;
     font-size: 15px;
   }
 
@@ -266,26 +255,25 @@ footer {
 
   .container-home .headline {
     margin: 72px 0px 0px 0px;
+    flex-direction: column;
   }
 
   .container-home .headline .h1-and-button {
     margin: 0px;
     padding: 0px;
-
   }
 
   .container-home .headline .h1-and-button h1 {
     margin: 0px;
-    margin: 0px;
     padding: 0px;
   }
 
-  button {
-    margin: 27px 60px 0px 60px;
-    padding: 5px 0px;
+  .get-started {
+    margin: 25px 315px 0px 315px;
+    padding: 6px 0px;
   }
 
-  button:hover {
+  .get-started:hover {
     border: 1px solid mediumseagreen;
     color: white;
     background-color: mediumseagreen;
@@ -293,41 +281,56 @@ footer {
 
   .columns-2 {
     border-top: 1px solid black;
-    margin: 55px 20px 0px 25px;
-    padding: 35px 0px 0px 10px;
+    margin: 76px 20px 0px 20px;
+    padding: 35px 0px 0px 12px;
+    justify-content: space-between;
+  }
+
+  .topic-about {
+    margin-left: 9px;
   }
 
   .columns-2 p {
-    padding: 0px 20px 0px 0px;
-    font-size: .98rem;
-    line-height: 1.2rem;
+    padding: 0px 16px 0px 0px;
+    font-size: 1.0rem;
+    line-height: 1.15rem;
   }
+
+
 
   .middle-img {              
     width: 95%;
-    margin: 25px 0px 0px 20px;
+    margin: 32px 0px 0px 20px;
     padding: 0px 0px 0px 0px;
   }
 
   .columns-3 {
-    margin: 30px 20px 0px 30px;
-    padding: 0px 0px 0px 5px;
+    margin: 28px 12px 0px 30px;
+    padding: 0px 0px 0px 0px;
     line-height: 1.15;
   }
   
   .columns-3 p {
-    font-size: 1.02rem;
-    padding-right: 30px;
+    padding-right: 22.5px;
+  }
+
+  .topic-vision {
+    margin: 0px 0px 0px 0.76px;
   }
 
   .contact {
-    margin: 36px 25px 20px 28px;
+    margin: 35px 20px 20px 20px;
     border-top: 1px solid black;
+  }
+
+  .contact h2 {
+    padding-top: 35px;
+    margin-left: 10px;
   }
   
   .contact address {
     font-size: 1.0rem;
-    margin: 0px;
+    margin: 10px;
     padding: 0px 0px;
   }
 
@@ -342,8 +345,8 @@ footer {
   
     .container-home .navigation-bar  {
       flex-direction: column;
-      justify-content: space-evenly;
-      margin-top: 20px;
+      justify-content: space-between;
+      margin: 20px 0px 0px 0px;
       padding: 0px 0px 0px 0px;
     }
   
@@ -362,7 +365,8 @@ footer {
 
     .container-home .navigation-bar nav {
       width: 100%;
-      margin-top: 20px;
+      margin: 20px 0px 0px 0px;
+      padding: 0px 0px 0px 0px;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -370,12 +374,14 @@ footer {
       border-bottom: 1px solid black;
     }
   
-    .container-home .navigation-bar a {
+    .container-home .navigation-bar nav a {
+      width: 100%;
       margin: 0px 0px 0px 0px;
-      padding: 20px 2500px;
+      padding: 20px 0px 20px 0px;
       font-size: 20px;
       border-top: 1px solid black;
       line-height: 1.25rem;
+      text-align: center;
     }
   
     .circle-img {
@@ -398,23 +404,16 @@ footer {
       padding: 0px;
     }
   
-    button {
-      margin: 27px 60px 0px 60px;
-      padding: 5px 0px;
+    .get-started {
+      margin: 25px 165px 20px 165px;
+      padding: 6px 0px;
     }
   
-    button:hover {
+    .get-started:hover {
       border: 1px solid mediumseagreen;
       color: white;
       background-color: mediumseagreen;
     }
-
-    /*  border-top: 1px solid black;
-  margin: 35px 25px 20px 75px;
-  padding: 35px 0px 5px 0px;
-  line-height: 1.1rem;
-  display: flex;
-  justify-content: space-between;*/
   
     .columns-2 {
       border-top: 1px solid black;
@@ -424,43 +423,39 @@ footer {
     }
 
     .columns-2 h2 {
-      margin: 0px;
+      margin: 0px 0px 0px 2.5px;
       padding: 0px 0px 0px 0px;
-      font-size: .98rem;
-      line-height: 1.2rem;
     }
   
     .columns-2 p {
-      padding: 15px 20px 45px 0px;
+      padding: 15px 20px 45px 2px;
       font-size: 1.0rem;
       line-height: 1.15rem;
+    }
+
+    .topic-about {
+      margin-left: -2px;
     }
   
     .middle-img {              
       width: 95%;
-      margin: 5px 0px 0px 20px;
-      padding: 0px 15px 0px 0px;
+      margin: 7px 0px 0px 20px;
+      padding: 0px 14px 0px 0px;
     }
   
     .columns-3 {
-      margin: 10px 20px 0px 10px;
+      margin: 10px 15px 0px 10px;
       padding: 20px 0px 0px 10px;
       line-height: 1.15;
       display: block;
     }
-
-    .columns-3 h2 {
-      font-size: 1.0rem;
-      padding: 0px;
-    }
     
     .columns-3 p {
-      font-size: 1.0rem;
       padding-bottom: 60px;
     }
 
-    #topic-vision {
-      padding-top: 5px;
+    .topic-vision {
+      padding-top: 4px;
       padding-bottom: 0px;
     }
   
@@ -471,9 +466,13 @@ footer {
     }
     
     .contact address {
-      font-size: 1.0rem;
       margin: 0px;
       padding: 0px 0px;
+    }
+
+    .contact h2 {
+      padding-top: 35px;
+      margin-left: 0px;
     }
 
     footer {
