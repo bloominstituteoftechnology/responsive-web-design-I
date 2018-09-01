@@ -1,3 +1,518 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+
+}
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Bangers', cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+.container {
+  width: 880px;
+  margin: 0 auto;
+}
+
+/* Header-related CSS */
+
+header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  vertical-align: top;
+  margin-top: 35px;
+}
+
+header nav { 
+  width: 70%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+header nav a {
+  display: inline-block;
+  font-size: 14px;
+  color: gray;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+  
+/* CTA-related CSS */
+
+.cta {
+  display: flex;
+  align-items: center;
+  margin-top: 69px;
+}
+
+.cta .cta-text {
+  /*display: inline-block;*/
+  vertical-align: top;
+  font-size: 77px;
+  /* margin-top: 120px; */
+  text-align: center;
+  padding: 0px 75px;
+}
+
+.cta .cta-text button {
+  background: white;
+  vertical-align: top;
+  margin-top: 10px;
+  padding: 6px 40px;
+  font-size: 17px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.cta .cta-text button:hover {
+  background: black;
+  color: white;
+}
+
+.cta img {
+    width: 10;
+    height: 100%;
+    /*margin-top: 69px;*/
+}
+
+.cta-img {
+  right: 0px;
+  width: 500px;
+  height: auto;
+  border-radius: 5%;
+  margin-bottom: 50px;
+}
+
+/* Main Content */
+
+.main-content {
+  border-top: 1px solid black;
+  margin-top: 76px;
+  padding-top: 39px;
+}
+
+.main-content .top-content {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.main-content .top-content .text-content {
+  width: 430px;
+  display: inline-block;
+}
+
+.main-content .middle-img {
+  margin-top: 30px;
+}
+
+.main-content .bottom-content {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin-top: 37px;
+}
+
+.main-content .bottom-content .text-content {
+  width: 274px;
+  display: inline-block;
+  margin-right: 12px;
+}
+
+.bottom-content {
+  padding-bottom: 40px;
+  border-bottom: 1px solid black;
+}
+
+/* Contact & Footer CSS */
+
+.contact {
+  padding: 39px 0 0;
+}
+
+.contact p {
+  margin: 20px 0;
+}
+
+footer {
+  margin: 32px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Main page CSS for screens 800px and below */
+@media (max-width: 800px) {
+
+  .container {
+    width: 92%;
+    margin: 0 auto;
+  }
+
+  header {
+    display: flex;
+    flex-flow: column wrap;
+  }
+
+  header nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+   header nav a {
+     font-weight: bold;
+     font-size: 16px;
+   }
+
+  header a {
+    order: -1;
+    margin-top: 7px;
+    margin-bottom: 30px;
+    align-self: center
+  }
+
+  .cta {
+    display: inline;
+    margin-top: 100px;
+  }
+
+  .cta h1 {
+    margin-top: 42px;
+    margin-left: 30px;
+    font-size: 72px;
+  }
+
+  .cta button {
+    margin-left: 30px;
+  }
+
+  .cta img {
+      display:none;
+  }
+  
+  .main-content {
+    margin-top: 50px;
+  }
+
+  .main-content .top-content .text-content {
+    width: 49%;
+    display: inline-block;
+  }
+
+  .main-content .middle-img {
+    width: 100%;
+  }
+
+  .main-content .bottom-content .text-content {
+    width: 30%;
+  }
+}  
+
+/* Main page CSS for screens 500px and below */
+@media (max-width: 500px) {
+
+  .container {
+    width: 92%;
+    margin: 0 auto;
+  }
+
+  header {
+    display: flex;
+    flex-flow: column wrap;
+  }
+
+  header nav {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+   header nav a {
+     font-weight: bold;
+     font-size: 20px;
+     color: lightgrey;
+     width: 500px;
+     text-align: center;
+     border-top: 1px solid lightgrey;
+     padding: 20px;
+     margin: 0 0;
+   }
+
+   header nav a:last-child {
+    border-bottom: 1px solid lightgrey;
+  }
+
+  header nav a:hover {
+    color: white;
+    background: lightgrey;
+    text-decoration: none;
+  }
+
+  header a {
+    order: -1;
+    align-self: center
+  }
+
+  .cta {
+    display: inline;
+    margin-top: 100px;
+  }
+
+  .cta .cta-text {
+    margin-top: 42px;
+    font-size: 72px;
+    padding: 0 0;
+  }
+
+  .cta h1 {
+    margin-left: 0;
+  }
+
+  .cta button {
+    margin-left: 0;
+  }
+
+  .cta img {
+      display:none;
+  }
+
+  .main-content {
+    padding-top: 0;
+  }
+  
+  .main-content .top-content {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  
+  .main-content .top-content .text-content {
+    width: 100%;
+    display: inline-block;
+    margin-top: 50px;
+  }
+  
+  .main-content .middle-img {
+    margin-top: 30px;
+  }
+  
+  .main-content .bottom-content {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .main-content .bottom-content .text-content {
+    width: 100%;
+    display: inline-block;
+    margin-right: 12px;
+    margin-top: 50px;
+  }  
+}
+
+
+
+
+
+
+/* IGNORE EVERYTHING 
+   PAST HERE FOR NOW */
+
+   /* Service Page CSS */
+
+.hero {
+  margin-bottom: 40px;
+}
+
+.hero h2 {
+  font-size: 25px;
+}
+
+.hero .services-header-img {
+  margin: 20px 0 30px;
+}
+
+.box-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  height: 800px;
+}
+
+.box {
+  height: 220px;
+  width: 420px;
+  padding: 20px;
+  border: 1px solid black;
+  background: whitesmoke;
+}  
+
+.box a {
+  border: 1px solid black;
+  border-radius: 5px;
+  background: white;
+  color: black;
+  text-decoration: none;
+  font-size: 12px;
+  padding: 7.5px 50px
+}
+
+.box p {
+  margin-bottom: 25px;
+}
+
+
+.facts {
+  margin-top: 30px;
+}
+
+.facts-flex {
+  display: flex;
+  flex-flow: column wrap;
+  height: 320px;
+}
+
+.facts-flex p {
+  width: 45%;
+}
+
+.facts-flex ul {
+  list-style-type: square;
+  margin-top: 20px;
+  width: 45%;
+}
+
+.facts-flex li {
+  margin-bottom: 12px;
+  margin-left: 16px;
+}
+
+.facts-flex img {
+  width: 45%;
+  height: auto;
+  align-self: flex-end;
+}
+
+/* About Page */
+
+.box-container2 {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  height: 600px;
+}
+
+.box2 {
+  height: 120px;
+  width: 100%;
+  padding: 20px;
+  border: 1px solid black;
+  background: whitesmoke;
+}  
+
+.box2:hover {
+  transition: .3s;
+	background: black;
+	color: white;
+	text-decoration: none;
+	animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+	transform: translate3d(0, 0, 0);
+	backface-visibility: hidden;
+	perspective: 1000px;
+}
+
+@keyframes shake {
+	10%, 90% {
+	  transform: translate3d(-1px, 0, 0);
+	}
+	
+	20%, 80% {
+	  transform: translate3d(2px, 0, 0);
+	}
+  
+	30%, 50%, 70% {
+	  transform: translate3d(-4px, 0, 0);
+	}
+  
+	40%, 60% {
+	  transform: translate3d(4px, 0, 0);
+	}
+  }
