@@ -1,3 +1,294 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+.container {
+  margin: 30px 60px;
+}
+
+.paragraph {
+  font-size: 17px;
+  line-height: 1.3;
+}
+
+.nav {
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 0 50px;
+}
+
+.nav .nav__item {
+  /* font-family: IBM Plex Mono; */
+  color: darkgray;
+  text-decoration: none;
+  margin-right: 55px;
+  margin-bottom: 5px;
+  padding-top: 5px;
+}
+
+.logo {
+  /* margin-left: 100px; */
+}
+
+.services-header-img {
+  width: 100%;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 80px 0;
+  padding: 0 100px;
+}
+
+.hero .hero__left {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero__left--text {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero__left .hero__left--text {
+  font-size: 85px;
+  text-align: center;
+}
+
+.hero__left .hero__left--btn {
+  background-color: white;
+  height: 40px;
+  width: 200px;
+  border: 3px solid lightgray;
+  padding: 0 10px;
+  font-size: 17px;
+  color: black;
+  border: 1px solid black;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero__right--img {
+  /* margin-bottom: 80px; */
+}
+
+.hero .services-header-img {
+  height: auto;  
+  width: 100%;
+}
+
+.headline {
+  font-family: Bangers;
+  font-size: 28px;
+}
+
+.services {
+  margin-top: 35px;
+}
+
+.customHR {
+  background-color: #000;
+  height: 3px;
+  margin: 40px 0;
+}
+
+.boxes {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.box {
+  box-sizing: content-box;
+  width: 40%;
+  height: 210px;
+  background-color: #F4F3F4;
+  border: 1px solid black;
+  padding: 25px;
+  margin: 20px 0;  
+}
+
+.box__headline {
+  font-family: Bangers;
+  font-size: 18px;
+}
+
+.box__btn {
+  width: 150px;
+  height: 40px;
+  border: 1px solid black;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.services-info-img {
+  width: 44.5%;
+  height: auto;
+}
+
+.facts {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.facts__text {
+  box-sizing: content-box;
+  width: 40%;
+  height: 210px;
+  padding: 25px;
+  margin: 20px 0;
+}
+
+.facts__list {
+  list-style-type: square;
+  margin-left: 20px;
+}
+
+.facts__listItem {
+  margin: 10px 0;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.middleImg {
+  display: flex;
+  justify-content: center;  
+}
+
+.middleImg .middleImg__img {
+  width: 100%;
+}
+
+
+.customHR {
+  height: 3px;
+  background-color: black;
+  margin: 30px 0;
+}
+
+.row1 {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 40px;
+  width: 100%;
+  
+}
+
+.row1__box {
+  display: flex;
+  flex-direction: column;
+  width: 49%;
+  padding: 25px;
+}
+
+
+.row2 {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.row2__box {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  width: 33%;
+  padding: 25px;
+}
+
+.contact__phone {
+  margin: 15px 0;
+}
+
+.contact__email {
+  margin: 15px 0;
+}
+
+address {
+  font-size: 17px;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  font-family: IBM Plex Mono;
+}
 
