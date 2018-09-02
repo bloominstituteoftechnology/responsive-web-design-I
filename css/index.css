@@ -359,34 +359,87 @@ section.services-facts .footer-text li {
 /* Media Query - Mobile Device */
 @media (max-width: 500px) {
 	.container {
-		width: 90%;
-	}
+        width: 500px;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    header {
+        flex-direction: column-reverse;
+        width: 100%;
+        height: 440px;
+        align-content: stretch;
+        /* align-items: center; */
+        /* justify-content: center; */
+    }
 
-	.main-nav a .logo {
+	/* .main-nav a .logo {
 		display: flex;
 		order: -1;
-	}
+	} */
 
-	.main-nav {
-		width: 100%;
-		height: 120px;
-		display: flex;
-		flex-flow: column wrap;
-		justify-content: center;
-		padding-top: 20px;
-	}
+	header nav {
+        flex-flow: column wrap;
+        text-align: center;
+        width: 100%;
+        border-bottom: 1px solid #555;
+    }
 
-	.main-nav a {
-		margin: 8px 0;
-	}
+	header nav a {
+        width: 100%;
+        height: 55px;
+        line-height: 55px;
+        font-size: 20px;
+        border-top: 1px solid #555;
+        /* border-bottom: 1px solid #555; */
+    }
+    
+    header .logo {
+        margin: 0;
+        padding: 0;
+        /* border-bottom: 1px solid #555; */
+    }
+
+    .header-text {
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .hero {
+        padding: 50px 0 75px;
+    }
+
+    .hero, .top-content, .bottom-content, .middle-img, .contact, footer {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .middle-img {
+        margin-top: 60px;
+    }
+
+    .top-content, 
+    .bottom-content {
+        flex-flow: column wrap;
+        justify-content: center;
+    }
+
+    #features, #about, #services, #product, #vision {
+        /* border: 1px solid blue;
+        display: inline-block;
+        vertical-align: top;
+        width: 438px; */
+        margin: 60px 0 0 0;
+        width: 100%;
+    }
 
 	section.services-content,
 	section.services-facts,
 	header.services-header {
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
-		align-items: center;
+		/* justify-content: center;
+		align-items: center; */
 		width: 90%;
 		margin: 0 auto;
 	}
