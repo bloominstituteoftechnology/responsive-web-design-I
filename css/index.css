@@ -72,10 +72,20 @@ h1, h2, h3, h4, h5 {
 	
 }
 
+/* //// CONTAINER MQ //// */
+
+
 @media (max-width: 800px) {
     
     .container {
         width: 800px;
+    }
+}
+
+@media (max-width: 500px) {
+    
+    .container {
+        width: 500px;
     }
 }
 
@@ -142,7 +152,37 @@ header .logo {
     }
 }
 
+@media (max-width: 500px) {
 
+    header {
+        margin-top: 21px;
+    }
+
+    header .logo {
+        padding-right: 19px;
+    
+    }
+
+    header .navigation {
+        border-top: 1px solid grey;
+        flex-direction: column;
+        margin-top: 15px;
+
+    }
+
+    header .navigation a {
+        
+        border-bottom: 1px solid grey;
+        margin: 0px 0px;
+        font-size: 20px;
+        padding: 21px 0px 19px 214px;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+
+}
 
 
 /* //// Header Section //// */
