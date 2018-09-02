@@ -111,6 +111,7 @@ header .logo {
 	text-decoration: none;
     color: grey;
     border: 1px solid green;
+    font-size: 15px;
 }
 
 .navigation a:hover {
@@ -131,6 +132,7 @@ header .logo {
 
     header .logo {
         padding-right: 19px;
+        padding-bottom: 1px;
     }
 
     header .navigation a {
@@ -217,7 +219,7 @@ header .logo {
         font-size: 16px;
         width: 170px;
         margin-right: 99px;
-        margin-bottom: 24px;
+        margin-bottom: 25px;
     }
  
  }
@@ -246,6 +248,7 @@ header .logo {
 
 .cont1 {
     border: 1px solid black;
+    margin-bottom: 9px;
 }
 
 
@@ -301,7 +304,7 @@ header .logo {
 	margin-bottom: 50px;
 }
 
-.text-conent {
+.text-content2 {
 	flex-direction: column;
 	margin: 10px;
 	justify-content: space-evenly;
@@ -309,9 +312,25 @@ header .logo {
 }
 
 
-/* //// CONTENT SECTION 2 //// */
+/* //// CONTENT SECTION 2 MQ //// */
 
+@media (max-width: 800px) {
 
+    .cont2 {
+        border: 1px solid black;
+        padding-bottom: 37px;
+        margin-bottom: 35px;
+        border-bottom: 2px solid black;
+    }
+
+    .cont2 .text-content2 {
+        flex-direction: column;
+        margin: -1px 23px 0px 8px;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding-left: 5px;
+    }
+}
 
 
 /* //// CONTACT SECTION //// */
@@ -326,6 +345,24 @@ footer {
 	text-align: center;
 	padding-bottom: 50px;
 }
+
+/* //// CONTACT SECTION 2 MQ //// */
+
+@media (max-width: 800px) {
+
+    .contact {
+        margin-top: 10px;
+        padding-left: 26px;
+    }
+
+    .container footer {
+        margin-top: 38px;
+    }
+
+}
+
+
+
 
 
 /* //// SERVICES PAGE ONLY //// */
