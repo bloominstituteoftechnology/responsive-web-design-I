@@ -164,6 +164,7 @@ h5 {
   width: 875px;
   z-index: 100;
   position: fixed;
+  background: white;
 }
 
 nav {
@@ -197,13 +198,15 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border: 1px solid red;
 }
+
+.center-text {}
 
 .headerText {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  border: 1px solid red;
 }
 
 header h1 {
@@ -378,9 +381,34 @@ footer {
 
 /* phone */
 @media (max-width:500px) {
-  .link-container .logo {
+  .container {
+    width: 90%;
+  }
+
+  .link-container {
     display: flex;
-    order: -1;
-    border: 1px solid red;
+    flex-direction: column;
+    height: 200px;
+  }
+
+  .link-container a {
+    border-bottom: 1px solid gray;
+    /* border-top: 1px solid red; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 8px;
+  }
+
+  .fixed-nav {}
+
+  .topSection {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bottomSection {
+    display: flex;
+    flex-direction: column;
   }
 }
