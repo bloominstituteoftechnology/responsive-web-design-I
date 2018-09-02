@@ -514,8 +514,9 @@ footer {
 
   .box {
     width: 100%;
-    height: 170px;
+    height: 100%;
     margin-bottom: 20px;
+    padding-bottom: 30px;
   }
 
   .facts-flex {
@@ -536,9 +537,10 @@ footer {
 }  
 
 
-/* Service page CSS for screens 500px and below */
-@media (max-width: 500px) {
+/* The following is unnecessary, so it's commented out. The above media query will govern below 500px perfectly. */
 
+/* Service page CSS for screens 500px and below 
+@media (max-width: 500px) { 
   .container {
     width: 92%;
     margin: 0 auto;
@@ -586,5 +588,5 @@ footer {
     width: 100%;
     height: 220px;
     margin-bottom: 20px;
-  }
-}
+  } 
+} */
