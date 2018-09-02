@@ -202,7 +202,8 @@ header {
 .headerText {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
+  border: 1px solid red;
 }
 
 header h1 {
@@ -320,9 +321,7 @@ footer {
 /* tablet */
 @media (max-width:800px) {
   .container {
-    width: 100%;
-    margin-left: 10px;
-    margin-right: 10px;
+    width: 90%;
   }
 
   .computer-logo {
@@ -374,7 +373,6 @@ footer {
 }
 
 .middle-img {
-  border: 4px solid yellow;
   width: 100%
 }
 
