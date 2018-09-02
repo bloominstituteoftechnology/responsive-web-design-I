@@ -122,7 +122,7 @@ h1 {
 	justify-content: center;
 	align-items: center;
 	border-bottom: solid black 2px;
-	padding: 50px 2% 20px;
+	padding: 40px 2%;
 }
 
 .page-title .title-text{
@@ -262,7 +262,8 @@ footer{
 @media only screen and (max-width: 800px){
     
     .page-title{
-		flex-direction: column;
+        padding: 10px 0;
+        margin: 0;
     }
     
     .vision .service-boxes .box{
@@ -290,12 +291,12 @@ footer{
 	}
 
 	header img{
-		margin: 10px 0;
+		margin: 10px 0 20px;
 	}
 
 	header nav{
 		width: 95%;
-        margin: 10px 10px 0;
+        margin: 20px 10px 0;
 	}
 }
 
@@ -308,7 +309,7 @@ footer{
         min-width: 300px;
     }
     header{
-        margin:10px 0 0;
+        margin:0;
         padding: 0;
     }
 
@@ -319,8 +320,9 @@ footer{
         margin-right: 0;
     }
 
-    header .logo{
-        margin: 10px 0;
+    header img{
+        margin: 0;
+        padding: 20px 0 0;
     }
 
     header nav a{
@@ -365,12 +367,13 @@ footer{
 		width:100%;
 	}
 
-	.page-title .title-text{
-		margin: 15px 0;
-    }
     
-    .page-title{
-        margin-bottom: 10px;
+    .page-title .title-text{
+        margin: 35px 0 60px;
+    }
+
+    .page-title .title-text a{
+        line-height: 2.5;
     }
 
 	.two-column-text, .three-column-text, .contact{
@@ -381,5 +384,10 @@ footer{
 	.two-column-text .text-block, .three-column-text .text-block{
 		width: 100%;
 		margin: 20px 0;
-	}
+    }
+    
+    .contact{
+        margin:0;
+        padding: 20px;
+    }
 }
