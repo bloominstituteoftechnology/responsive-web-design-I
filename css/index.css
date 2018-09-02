@@ -379,19 +379,33 @@ h1, h2, h3, h4, h5 {
 }
 
 @media (max-width: 500px) {
+
+    .container {
+        width: 101%;
+    }
+
+    .mobile-container {
+        width: 95%;
+        margin: 0 auto;
+    }
+
     .nav-no-logo{
         flex-direction: column;
         display: flex;
     }
 
+    .logo-container {
+        height: 25px;
+    }
+
     .nav {
-        display: flex;
+        display: flex; 
         flex-direction: column;
         justify-content: space-between;
     }
     
     .nav a {
-        margin: 10px 0;
+        padding: 16px 0;
         width: 100%;
         text-align: center;
         border: 1px solid gray;
