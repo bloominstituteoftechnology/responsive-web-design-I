@@ -72,17 +72,19 @@ h1, h2, h3, h4, h5 {
     flex-wrap: nowrap;
     justify-content: space-evenly;
     align-items: center;
-    margin: 20px 0 50px 0;
+    margin: 40px 0 20px 0;
     
 }
 
 nav a {
     padding: 0 20px;
+    font-size: 14px;
 
 }
 
 nav a:link {
     text-decoration: none;
+    color: gray;
 }
 
 .ttb {
@@ -135,17 +137,76 @@ footer p {
     font-size: 14px;
 }
 
+/* Services Page CSS*/
+.top-content-svcs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid black;
+}
+
+.middle-content-svcs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom-content-svcs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid black;
+}
+
+.svc-fact-content {
+    display: flex;
+    justify-content: center;
+}
+
+.services-info-img {
+    margin: 10px;
+    padding: 10px;
+}
+
+.svc-footer {
+    text-align: center;
+    font-size: 14px;
+}
+
+.text-content ul {
+    padding: 10px;
+    margin: 10px;
+    list-style-type: disc;
+}
+
+.text-content ul li {
+    padding: 10px;
+}
+
+.top-content-svcs div.text-content,
+.middle-content-svcs div.text-content,
+.bottom-content-svcs div.text-content {
+    border: 2px solid black;
+    background: lightgray; 
+    margin: 40px;
+}
+
+div.text-content button {
+    border: 2px solid black;
+    height: 30px;
+    width: 150px;
+    margin: 20px 0 0 0;
+    border-radius: 5px;
+}
 /*Media Queries*/
 
 @media screen and (max-width: 800px) {
     .wrapper {
         flex-flow: column-reverse nowrap;
-    
-        
     }
 
     nav {
-        margin: 30px 0;
+        margin: 20px 0;
     }
 
     nav a {
@@ -155,6 +216,18 @@ footer p {
     .lg-header-img {
         display: none;
     }
+
+    .svc-fact-content { 
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
+    .services-info-img {
+        max-width: 80%;
+
+    }
+
 }
 
 @media screen and (max-width: 500px) {
@@ -177,12 +250,12 @@ footer p {
         width: 100%;
         text-align: center;
     }
-    .top-content {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .bottom-content {
+    .top-content, 
+    .top-content-svcs, 
+    .middle-content-svcs,
+    .bottom-content,
+    .bottom-content-svcs,
+    .svc-fact-content {
         display: flex;
         flex-direction: column;
     }
