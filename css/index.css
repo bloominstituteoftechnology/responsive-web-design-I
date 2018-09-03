@@ -85,6 +85,12 @@ h1, h2, h3, h4, h5 {
 	}
 }
 
+@media screen and (max-width: 500px) {
+	.container{
+        width: 480px;
+	}
+}
+
 /* Navigation  header */
 .header {
 	height: 100px;
@@ -122,6 +128,36 @@ h1, h2, h3, h4, h5 {
 		margin-top: 30px;
 		display: flex;
 		justify-content: center;
+	}
+}
+
+@media screen and (max-width: 500px) {
+
+	.header {
+		height: auto;
+	}
+	.header nav {
+		flex-direction: column;
+		margin-top: 100px;
+		position: static;
+		margin-top: 75px;
+		font-size: 20px;
+	}
+
+	.header nav a {
+		width: 100%;
+		text-align: center;
+		border-top: solid 1px lightgrey;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 61px;
+		margin-top: 0px;
+	}
+
+	.header nav .logo { 
+		margin-top: 0px;
+		padding-top: 12px;
 	}
 }
 
