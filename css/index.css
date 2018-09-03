@@ -72,31 +72,6 @@ h1, h2, h3, h4, h5 {
   margin: 0 auto;
 }
 
-/* At 768px And below do the following: */
-@media (max-width: 768px) {
-  /* header */
-header {
-  display:flex;
-  justify-content: center; 
-  flex-direction: column;
-  margin-top: 0px;
-  margin-right:0px;
-  border:solid red;
-}
-
-nav {
-  display: flex;
-  flex-direction: column;
-  
-  align-self:center;
-}
-
-header .logo {
-  order: -1;
-  align-self:center;
-}
-}
-
 /* header */
 header {
 	display:flex;
@@ -107,7 +82,7 @@ header {
 
 nav {
 	display: flex;
-	width:600px;
+  width:600px;
 	justify-content:space-between;
 	align-items:center;
 }
@@ -301,3 +276,50 @@ div .allservices{
 li{
   margin: 20px 0;
 }
+
+/* At 768px And below do the following: */
+@media (max-width: 1200px) {
+  /* container */
+  .container {
+    width: 800px;
+    /* TB LR */
+    margin: 0 auto;
+    border: solid red;
+  }
+  
+  /* header */
+header {
+  display:flex;
+  justify-content: center; 
+  flex-direction: column;
+  margin-top: 30px;
+  margin-right:0px;
+  width:auto;
+}
+
+nav {
+  margin-top: 37px;
+  display: flex;
+  width:800px;
+  justify-content: space-around;
+}
+
+header nav a {
+  font-size: 16px;
+  color: gray;
+  text-decoration: none;
+  margin-right:50px;
+}
+
+header .logo {
+  order: -1;
+  align-self:center;
+}
+
+.cta img {
+  display:none;
+}
+}
+
+
+/* End of 768px query */
