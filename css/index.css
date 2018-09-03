@@ -208,6 +208,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  margin: 75px;
 }
 
 header h1 {
@@ -325,7 +326,8 @@ footer {
 /* tablet */
 @media (max-width:800px) {
   .container {
-    width: 90%;
+    width: 100%;
+    margin-top: 10px;
   }
 
   /* .computer-logo {
@@ -346,6 +348,7 @@ footer {
   .great-idea {
     display: flex;
     justify-content: center;
+    margin-bottom: 10px;
   }
 
   .tablet-logo-container {
@@ -399,31 +402,55 @@ footer {
 
   nav {
     height: 200px;
+    display: flex;
+    text-align: center;
+    /* justify-content: center; */
+  }
+
+  nav a {
+    display: flex;
+    border-bottom: 1px solid gray;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    border: 2px solid red;
+    justify-content: center;
   }
 
   .link-container {
     display: flex;
     flex-direction: column;
     height: 200px;
-    justify-content: center;
-  }
-
-  nav a {
-    border-bottom: 1px solid gray;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    border: 2px solid red;
+    align-items: center;
+    text-align: center;
   }
 
   .topSection {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     margin: 0 20px;
+    flex-grow: 1;
+    width: 90%;
+    height: auto;
+  }
+
+  .middle-img {
+    margin-top: 10;
   }
 
   .bottomSection {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    margin: 0 20px;
+    flex-grow: 1;
+    width: 90%;
+  }
+
+  address {
+    display: flex;
+    flex-direction: column;
+    height: auto;
   }
 }
