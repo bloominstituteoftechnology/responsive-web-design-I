@@ -304,11 +304,12 @@ nav a {
 }
 
 /* tablet css */
+
 @media (max-width: 800px) {
 
     .container {
         margin-left: 0;
-        width: 95%;
+        width: 100%;
     }
 
     nav {
@@ -373,6 +374,57 @@ nav a {
 /* mobile css */
 @media (max-width: 500px) {
     
-    
+    body {
+        background-color: bisque;
+    }
+
+    .container {
+        padding: 0;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        border-bottom: 1px solid darkgray;
+        font-size: 20px;
+        padding: 15px 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .banner {
+        margin: 0 0 50px 0;
+    }
+
+    .banner div {
+        padding: 89px 0 61px 0;
+    }
+
+    .top-content {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .blurb {
+        width: 100%;
+        padding: 10px 41px 40px 18px;
+        font-size: 15px;
+    }
+
+    .middle-img {
+        margin: 20px auto;
+        padding-bottom: 0;
+    }
+
+    .bottom-content {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .contact {
+        margin: 0 0 40px 40px;
+    }
 
 }
