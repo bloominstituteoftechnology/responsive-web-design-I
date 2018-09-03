@@ -414,5 +414,38 @@ h1, h2, h3, h4, h5 {
 			text-align: center;
 			margin-bottom: 40px;
 		}
-
-
+@media (max-width: 800px) {
+	.container {
+		max-width: 800px;
+		margin: 0 auto;
+	}
+	.container .cta .main-img {
+		display: none;
+	}
+	.container .cta .cta-text {
+		margin-left: 200px;
+	}
+	.container header {
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
+		margin-right: 150px;
+	}
+	.container header .logo {
+		margin-bottom: 50px;
+	}
+	.container nav {
+		justify-content: space-between;
+	}
+	.container .main-content {
+		margin-right: 130px;
+		padding-left: 20px;
+	}
+	.container .main-content .middle-img {
+		max-width: 650px;
+	}
+	.container .contact {
+		margin-right: 130px;
+		padding-left: 20px;
+	}
+}
