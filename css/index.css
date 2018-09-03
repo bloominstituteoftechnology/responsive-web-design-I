@@ -168,7 +168,6 @@ nav {
   margin-bottom: 150px;
   height: 100px;
   padding: 28px 20px;
-  border: 1px solid black;
 }
 
 nav .link {
@@ -263,6 +262,46 @@ footer {
 }
 /*tablet version once we go below 800px*/
 @media (max-width: 800px) {
+  body {
+    width: 100%;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    padding: none;
+    height: auto;
+    width: 100%;
+    margin-bottom: 80px;
+  }
+
+  nav .link {
+    width: 15%;
+    margin: 35px 5px 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  nav .logo {
+    width: 100%;
+  }
+
+  header img {
+    display: none;
+  }
+
+  header {
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    border: 1px solid red;
+  }
+
+  header div {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 /*mobile version under 500px*/
