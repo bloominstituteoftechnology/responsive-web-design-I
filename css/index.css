@@ -301,27 +301,103 @@ header .logo {
   body {
     /* background: lightblue; */
   }
+
+  .container {
+    width: 800px;
+    padding: 20px;
+  }
+  .fixed-nav  .index-logo{
+    flex-direction: row;
+    width: 800px;
+  }
+
   .fixed-nav {
-    border: dotted green 8px;
+    display: flex;
+    flex-direction: row;
+    width: 800px;
   }
 
   .fixed-nav a {
     text-decoration: none;
-    border: dotted green 8px;
+    width: 50px;
   }
 
   .fixed-nav img {
-    border: dotted red 8px;
+  }
+  .index-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 75px;
   }
 
   .index-cta img {
     display: none;
-  }
-  
+   }
+
+  .index-cta  button {
+    border: solid black 1px;
+    border-radius: 5px;
+    width: 125px;
+    height: 35px;
+
+   }
+
   .index-cta-text {
-    color: blue;
   }
 
+  .index-top-content {
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+    padding: 20px;
+    border: dotted green 8px;
+    border-top: solid black 1px;
+  }
 
+  .index-top-content .text-content{
+    width: 300px;
+    padding: 20px;
+    border: dashed blue 4px;
+  }
+
+  .index-middle-image {
+    width: 100%;
+  }
+
+  .index-main-content {
+    display: flex;
+    
+
+    /* flex-wrap: wrap; */
+
+    justify-content: space-between;
+    width: 800px;
+  }
+
+  .index-main-content .text-content {
+    width: 225px;
+    border: dotted purple 3px;
+  }
+
+  .index-footer {
+  border: dotted sienna 8px;
+    border-top: black solid 2px;
+    width: 800px;
+  }
+
+  .index-footer address {
+    width: 175px;
+    margin: 40px 0px;
+  }
+
+  .index-copyright {
+    text-align: center;
+  }
+  /* 4 values => TRBL is one value for all sides. */
+  /* 3 values => T RL B */ 
+  /* 2 values =>  TB RL is two values. The first for top/bottom the second right left */
+  /* 1 value covers all four sides */
 
 }
+
