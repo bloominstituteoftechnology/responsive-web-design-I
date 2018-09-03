@@ -176,3 +176,52 @@ footer {
   text-align: center;
   font-size: 14px;
 }
+
+/* Tablet */
+@media (max-width: 800px) {
+  .container {
+    width: 758px;
+  }
+
+  /* Header */
+  header {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  header nav {
+    width: 758px;
+  }
+
+  header .logo {
+    margin: 28px 0 0 30px;
+  }
+
+  /* cta */
+  .cta img {
+    display: none;
+  }
+
+  .cta .cta-text {
+    width: 100%;
+  }
+
+  /* Main content */
+  .main-content .top-content,
+  .main-content .bottom-content {
+    margin: 0 9px;
+  }
+
+  .main-content .top-content .text-content {
+    width: 48%;
+  }
+
+  .main-content .bottom-content .text-content {
+    width: 29%;
+  }
+
+  /* Contact */
+  .contact {
+    margin-left: 9px;
+  }
+}
