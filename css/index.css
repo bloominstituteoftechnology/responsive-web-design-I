@@ -71,7 +71,7 @@ h1, h2, h3, h4, h5 {
 }
 
 h3 {
-	font-size: 20px;
+	font-size: 18px;
 	text-align: left;
 }
 
@@ -103,7 +103,7 @@ nav a {
 
 /* this is the start of the header section */
 header.home-page {
-  padding: 20px 0;
+  padding: 25px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -124,7 +124,6 @@ header.home-page {
 }
 .header-info p {
   text-align: center;
-  /* font-size: 18px; */
   padding: 5px 45px;
   border: 1px solid black;
   align-self: center;
@@ -136,45 +135,11 @@ header.home-page {
   justify-content: flex-end;
 }
 
-
-/* header {
-	height: 450px;
-	display: flex;
-	justify-content: space-around;
-}
-header h1 {
-	text-align: center;
-  font-size: 74px;
-  padding-top: 45px;
-  padding-left: 140px;
-}
-.header-left {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-}
-.header-left p {
-	text-align: center;
-	width: 130px;
-	border: 2px black solid;
-	align-self: center;
-}
-.header-right {
-	display: flex;
-	justify-content: center;
-}
-.header-right img {
-	width: 380px;
-	height: auto;
-	align-self: center;
-	padding: 35px 0;
-} */
-
 /* section and section classes */
 section {
-	width: 85%;
+  width: 85%;
 	margin: 0 auto;
-	text-align: center;
+  text-align: center;
 }
 .multi-column {
 	display: flex;
@@ -182,30 +147,42 @@ section {
 
 /* this is the start of the home page content section */
 .home-content {
-	width: 100%;
-	padding: 20px 0;
+	width: 98%;
+	padding: 35px 0 40px;
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
 }
 .home-content p {
 	text-align: left;
-	padding: 0 5px;
+  padding-top: 5px;
+  padding-right: 20px;
 }
 .middle-img {
 	width: 100%;
-	height: auto;
+  height: auto;
+  padding-top: 5px;
+  padding-right: 5px;
 	margin: 30px auto;
 	display: block;
 }
 
 /* start of the contact section */
 .contact {
-	width: 100%;
-	height: 150px;
+  width: 98%;
+  text-align: left;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
 	justify-content: space-around;
+}
+.contact h3 {
+  padding-top: 35px;
+}
+.contact p {
+  padding-top: 15px;
+}
+.contact p:nth-child(2) {
+  padding-top: 0;
 }
 
 /* start of the footer section */
