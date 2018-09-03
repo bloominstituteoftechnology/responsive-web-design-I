@@ -1,3 +1,418 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+	letter-spacing: 1px;  
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+.container {
+	width: 880px;
+	/* TB LR */
+	margin: 0 auto;
+  }
+  
+  /* header */
+  
+  .container header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: 20px;
+  }
+  
+  .container header nav {
+	align-self: center;
+  }
+  .container header nav a {
+	  margin-left: 50px;
+	  color: grey;
+	  text-decoration: none;
+  }
+  .container header nav a:hover {
+	text-decoration: underline;
+  }
+  /* cta */
+  .container .cta {
+	  display: flex;
+	  margin-top: 60px;
+	  height: 400px;
+  }
+  
+  .container .cta .cta-text {
+	display: flex;
+	flex-direction: column;
+	font-size: 77px;
+	text-align: center;
+	margin-top: 70px;
+	margin-left: 90px;
+	margin-bottom: 50px;
+  }
+  
+  .container .cta .cta-text button {
+	background: white;
+	font-size: 17px;
+	border: 1px solid black;
+	cursor: pointer;
+	width: 180px;
+	margin-left: 60px;
+	margin-top: 15px;
+  }
+  
+  .container .cta .cta-text button:hover {
+	background: black;
+	color: white;
+  }
+  
+  .container .cta img {
+	margin-left: 90px;
+  }
+  
+  .container .main-content {
+	border-top: 1px solid black;
+	margin-top: 76px;
+	padding-top: 39px;
+  }
+  
+  .container .main-content .top-content {
+	display: flex;
+	padding: 0 10px;
+  }
+  
+  .container .main-content .top-content .text-content {
+	width: 410px;
+	margin-right: 34px;
+  }
+  
+  .container .main-content .top-content .text-content:last-child {
+	margin-right: 0;
+  }
+  
+  .container .main-content .middle-img {
+	margin-top: 45px;
+  }
+  
+  .container .main-content .bottom-content {
+	display: flex;
+	margin-top: 37px;
+	padding: 0 10px;
+  }
+  
+  .container .main-content .bottom-content .text-content {
+	width: 275px;
+	margin-right: 12px;
+  }
+  
+  .container .main-content .bottom-content .text-content:last-child {
+	margin-right: 0;
+  }
+  
+  .container .contact {
+	margin-top: 57px;
+	border-top: 1px solid black;
+	padding: 39px 10px 0;
+  }
+  
+  .container .contact p {
+	margin: 20px 0;
+  }
+  
+  .container footer {
+	margin: 32px 0;
+	text-align: center;
+	font-size: 14px;
+  }
+  .container2 {
+	width: 880px;
+	margin: 0 auto;
+  }
+  .container2 header {
+	display: flex; 
+	flex-direction: row; 
+	margin-top: 20px;
+	margin-bottom: 20px;
+  }
+  
+  .container2 header nav {
+	align-self: center;
+	flex-direction: row;
+	display: flex;
+	width: 700px;
+  }
+  .container2 header nav a {
+	justify-content: space-evenly;
+	color: grey;
+	text-decoration: none;
+	padding-right: 60px;
+  }
+  .container2 header nav a:hover {
+	text-decoration: underline;
+  }
+  .container2 .services-header-img {
+	  margin-bottom: 40px;
+  }
+  .container2 .services1 h1 {
+	  font-size: 24px;
+  }
+  .container2 .services1 {
+	  border-bottom: 1px solid black;
+  }
+  .container2 .services1 div {
+	  margin-bottom: 40px;
+  }
+  .container2 .main-content-services0 {
+	display: flex;
+  }
+  .container2 .main-content-services1 {
+	  /* border: 1px solid red; */
+	  display: flex;
+	  flex-wrap: wrap;
+  }
+  .container2 .main-content-services2 {
+	/* border: 1px solid red; */
+	display: flex;
+	flex-wrap: wrap;
+  }
+  .container2 .main-content-services0 .main-content-services1 .digital-design {
+	border: 1px solid black;
+	background-color: lightgray;
+	font-size: 20px;
+	padding: 20 30 10 20;
+	margin-right: 20px;
+	margin-bottom: 10px;
+	margin-top: 20px;
+  }
+  .container2 .main-content-services0 .main-content-services1 .digital-design button {
+	  border-radius: 5%;
+	  background: white;
+	  padding: 5 20 5 20;
+	  border: 1px solid black;
+  }
+  .container2 .main-content-services0 .main-content-services1 .digital-marketing {
+	border: 1px solid black;
+	background-color: lightgray;
+	font-size: 20px;
+	padding: 20 30 10 20;
+	margin-right: 20px;
+	margin-bottom: 10px;
+	margin-top: 20px;
+  }
+  .container2 .main-content-services0 .main-content-services1 .digital-marketing button {
+	  border-radius: 5%;
+	  background: white;
+	  padding: 5 20 5 20;
+	  border: 1px solid black;
+  }
+  .container2 .main-content-services0 .main-content-services1 .ios-devlopment {
+	border: 1px solid black;
+	background-color: lightgray;
+	font-size: 20px;
+	padding: 20 30 10 20;
+	margin-right: 20px;
+	margin-bottom: 10px;
+	margin-top: 20px;
+  }
+  .container2 .main-content-services0 .main-content-services1 .ios-devlopment button {
+	  border-radius: 5%;
+	  background: white;
+	  padding: 5 20 5 20;
+	  border: 1px solid black;
+  }
+  .container2 .main-content-services0 .main-content-services2 .ux-ui {
+	border: 1px solid black;
+	background-color: lightgray;
+	font-size: 20px;
+	padding: 20 30 10 20;
+	margin-right: 20px;
+	margin-bottom: 10px;
+	margin-top: 20px;
+  }
+  .container2 .main-content-services0 .main-content-services2 .ux-ui button {
+	  border-radius: 5%;
+	  background: white;
+	  padding: 5 20 5 20;
+	  border: 1px solid black;
+  }
+  .container2 .main-content-services0 .main-content-services2 .web-dev {
+	border: 1px solid black;
+	background-color: lightgray;
+	font-size: 20px;
+	padding: 20 30 10 20;
+	margin-right: 20px;
+	margin-bottom: 10px;
+	margin-top: 20px;
+  }
+  .container2 .main-content-services0 .main-content-services2 .web-dev button {
+	  border-radius: 5%;
+	  background: white;
+	  padding: 5 20 5 20;
+	  border: 1px solid black;
+  }
+  .container2 .main-content-services0 .main-content-services2 .android-dev {
+	border: 1px solid black;
+	background-color: rgb(211, 211, 211);
+	font-size: 20px;
+	padding: 20 30 10 20;
+	margin-right: 20px;
+	margin-bottom: 10px;
+	margin-top: 20px;
+  }
+  .container2 .main-content-services0 .main-content-services2 .android-dev button {
+	  border-radius: 5%;
+	  background: white;
+	  padding: 5 20 5 20;
+	  border: 1px solid black;
+  }
+  .container2 .main-content-services0 {
+	  border-bottom: 3px solid black;
+	  padding-bottom: 25px;
+  }
+  .container2 .footer-services {
+	  display: flex;
+	  margin-top: 40px;
+	  margin-bottom: 30px;
+	  margin-right: 20px;
+  }
+  .container2 .footer-services .footer-services-facts {
+	  padding-right: 60px;
+  }
+  .container2 .copyright {
+	  text-align: center;
+	  margin-bottom: 20px;
+	  margin-top: 100px;
+  }
+  .container2 .footer-services .footer-services-facts .list {
+	  padding-left: 20px;
+	}
+	/* Beggining of product CSS */
+	.container3 {
+		width: 880px;
+		margin: 0 auto;
+		}
+		.container3 header {
+		display: flex; 
+		flex-direction: row; 
+		margin-top: 20px;
+		margin-bottom: 20px;
+		}
+		
+		.container3 header nav {
+		align-self: center;
+		flex-direction: row;
+		display: flex;
+		width: 700px;
+		}
+		.container3 header nav a {
+		justify-content: space-evenly;
+		color: grey;
+		text-decoration: none;
+		padding-right: 60px;
+		}
+		.container3 header nav a:hover {
+		text-decoration: underline;
+		}
+		.container3 .product-cover2 {
+			display: flex;
+			flex-direction: row;
+			width: 100%;
+			height: 35%;
+		}
+		.container3 .intro-products {
+			font-size: 40px;
+			text-align: center;
+			margin-top: 30px;
+		}
+		.container3 .main-products {
+
+			display: flex;
+			margin-top: 30px;
+			border-bottom: 3px solid black;
+		}
+		.container3 .main-products .left-column {
+			border: 1px solid black;
+			flex-wrap: wrap;
+			padding: 20 20;
+			margin-left: 10px;
+			margin-right: 10px;
+			margin-bottom: 30px;
+		}
+		.container3 .main-products .right-column {
+			border: 1px solid black;
+			flex-wrap: wrap;
+			padding: 20 20;
+			margin-left: 10px;
+			margin-right: 10px;
+			margin-bottom: 30px;
+		}
+		.container3 .footer-product {
+			display: flex;
+			margin-top: 30px;
+			margin-bottom: 100px;
+		}
+		.container3 .footer-product .i7 {
+			width: 20%;
+			margin-left: 550px;
+		}
+		.container3 .copyright {
+			text-align: center;
+			margin-bottom: 40px;
+		}
 
 
