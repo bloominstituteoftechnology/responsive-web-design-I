@@ -207,6 +207,7 @@ footer {
   font-size: 24px;
 }
 
+/*Start of Services Page*/
 section .services-header-img {
 	margin-top: 25px;
 	margin-bottom:25px;
@@ -277,14 +278,13 @@ li{
   margin: 20px 0;
 }
 
-/* At 768px And below do the following: */
-@media (max-width: 1200px) {
+/* At 800px And below do the following: */
+@media (max-width: 800px) {
   /* container */
 .container {
   width: 800px;
   /* TB LR */
   margin: 0 auto;
-  border: solid red;
 }
   
   /* header */
@@ -322,13 +322,13 @@ header .logo {
 
 .cta {
 	display: flex;
-	vertical-align:top;
+  vertical-align:top;
 }
 
 .cta .cta-text {
   font-size: 70px;
   margin-top: 75px;
-  margin-left: 180px;
+  margin-left: 178px;
   text-align: center;
 	padding: 0px 0px;
 	width:440px;
@@ -343,5 +343,74 @@ header .logo {
   border: 1px solid black;
   cursor: pointer;
 }
+
+
+.main-content {
+  display: flex;
+  flex-wrap:wrap;
+  border-top: 2px solid black;
+  width:760px;
+  margin-top:55px;
+  margin-left:20px;
+  margin-right:25px;
+  padding-bottom:50px;
+  border-bottom: 2px solid black;
 }
-/* End of 768px query */
+
+.main-content .top-content {
+  padding-right: 25px;
+  padding-left: 15px;
+  width: 760px;
+}
+
+.main-content .top-content .text-content {
+  margin-right: 25px;
+ 
+}
+
+.main-content .top-content .text-content:last-child {
+  margin-right: 0;
+}
+
+.main-content .middle-img {
+  margin-top: 40px;
+  width:100%;
+  height:120%;
+}
+
+div .bottom-content {
+  display:flex;
+  width: 760px;
+}
+.main-content .bottom-content {
+  padding-top:5px;
+  padding-right: 25px;
+  padding-left: 10px;
+  margin-top: 30px;
+}
+
+.main-content .bottom-content .text-content {
+  width: 250px;
+  margin-right: 40px;
+}
+
+.contact {
+  margin-top: 0px;
+  padding: 30px 25px;
+  border-top: none;
+
+}
+
+.contact p {
+  margin: 5px 0;
+}
+
+footer {
+  font-size: 16px;
+}
+
+
+
+}
+
+/* End of 800px query */
