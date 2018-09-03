@@ -194,6 +194,7 @@ h1, h2, h3, h4, h5 {
     header{
         display: flex;
         flex-direction: column;
+        width: 800px;
     }
     header .logo{
         order: -1;
@@ -208,6 +209,7 @@ h1, h2, h3, h4, h5 {
     }
     .main-content .top-content{
         justify-content: space-around;
+        width: 800px;
     }
     .middle-img{
         width: 760px;
@@ -230,4 +232,78 @@ h1, h2, h3, h4, h5 {
         width: 800px;
         padding-left: 20px;
     }
+}
+@media only screen and (max-width: 500px) {  
+        header nav{
+            width: 500;
+            flex-direction: column;
+        }
+        header{
+            display: flex;
+            flex-direction: column;
+            width: 500px;
+        }
+        header nav a{
+            border-top: solid 1px;
+            width: 500px;
+            font-size: 24pt;
+            padding-left: 200px;
+        }
+        header .logo{
+            order: -1;
+            align-self: center;    
+        }
+        .a-contact{
+            border-bottom: 1px solid;
+        }
+        .cta{
+            width: 500px;
+        }
+        .container{
+            width: 500px;
+            margin: 0 auto;
+        }
+        .main-content{
+            width: 500px;
+            display: flex;
+            flex-direction: column;
+        }
+        .contact{
+            width: 500px;
+        }
+        footer{
+            width: 500px;
+        }
+        .middle-img{
+            width: 450px;
+            height: auto;
+            margin-right: 10px;
+            margin-left:10px;
+        }
+
+        .main-content .top-content{
+            display: flex;
+            flex-direction: column;
+            width: 500px;
+        }
+        .main-content .top-content .text-content{
+            width: 450px;
+            margin-bottom: 20px;
+            padding-left: 10px;
+
+        }
+        .main-content .bottom-content{
+            display: flex;
+            flex-direction: column;
+            width: 500px;
+        }
+        .main-content .bottom-content .text-content{
+            width: 450px;
+            margin-bottom: 20px;
+            padding-left: 10px;
+
+        }
+        .cta{
+            width:500px;
+        }
 }
