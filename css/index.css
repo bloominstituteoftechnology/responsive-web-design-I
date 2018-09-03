@@ -332,15 +332,15 @@ header .logo { /* edited, put header in beginning parent-child*/
 }
 
 
-.serv h1 {
+.services h1 {
    font-size: 25px;
 }
 
-.serv h2 {
+.services h2 {
    font-size: 20px;
 }
 
-.serv button {
+.services button {
    background-color: white;
    width: 50%;
    margin: 20px 0px 0px 0px;
@@ -353,7 +353,7 @@ header .logo { /* edited, put header in beginning parent-child*/
    font-size: 15px;
    
 }
-.serv button:hover {
+.services button:hover {
    background-color: black;
    color: lightgrey;
    cursor: pointer;
@@ -465,3 +465,42 @@ header .logo { /* edited, put header in beginning parent-child*/
 .services .hr {
    border: solid black 1.1px;
 }
+
+/* Media query 800px */
+@media (max-width: 800px) {
+	.services {
+		width: 740px;
+	  }
+	
+	  header nav {
+		width: 740px;
+	  }
+	
+	  header nav a {
+		margin-top: -10px;
+		margin-right: 20px;
+		margin-left: 70px;
+	  }
+	
+	  header .logo {
+		margin: 10px 0px 0px 350px;
+	  }
+
+	 .services-header-img {
+		padding: 10px 15px 10px 15px;
+	}
+
+	  .services h1 {
+		font-size: 25px;
+	  }
+
+	  .services hr {
+		width: 860px;
+		margin: 0px 0px 40px 0px;
+	 }	
+
+	 #serv {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	}
