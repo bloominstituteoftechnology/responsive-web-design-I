@@ -72,16 +72,42 @@ h1, h2, h3, h4, h5 {
   margin: 0 auto;
 }
 
+/* At 768px And below do the following: */
+@media (max-width: 768px) {
+  /* header */
+header {
+  display:flex;
+  justify-content: center; 
+  flex-direction: column;
+  margin-top: 0px;
+  margin-right:0px;
+  border:solid red;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  
+  align-self:center;
+}
+
+header .logo {
+  order: -1;
+  align-self:center;
+}
+}
+
 /* header */
 header {
 	display:flex;
 	justify-content:space-between;
-	margin-top: 30px;
+  margin-top: 30px;
+  width:auto;
 }
 
 nav {
 	display: flex;
-	width:650px;
+	width:600px;
 	justify-content:space-between;
 	align-items:center;
 }
