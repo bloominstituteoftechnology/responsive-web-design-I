@@ -103,7 +103,7 @@ button {
 
 button:hover {
     background: black;
-    border: 1ps solid black;
+    border: 2px solid black;
 	color: white;
 	font-weight: bold;
 }
@@ -217,13 +217,13 @@ footer {
 
 /* SERVICES ONLY */
 
-header.services-header, 
+section.services-header, 
 section.services-content,
 section.services-facts {
 	line-height: 1.4;
 }
 
-header.services-header {
+section.services-header {
 	/* border: 1px solid red; */
 	display: flex;
 	flex-direction: column;
@@ -322,7 +322,7 @@ section.services-facts .footer-text li {
 
 
 /* Media Query - Tablet View */
-@media (max-width: 850px){
+@media (max-width: 800px){
     .container {
         width: 90%;
     }
@@ -354,6 +354,11 @@ section.services-facts .footer-text li {
     .bottom-content {
         padding-bottom: 30px;
     }
+
+    .services-info-img {
+        width: 355px;
+        height: 235px;
+    }
 }
 
 /* Media Query - Mobile Device */
@@ -367,7 +372,7 @@ section.services-facts .footer-text li {
     header {
         flex-direction: column-reverse;
         width: 100%;
-        height: 440px;
+        /* height: 440px; */
         align-content: stretch;
         /* align-items: center; */
         /* justify-content: center; */
@@ -387,8 +392,8 @@ section.services-facts .footer-text li {
 
 	header nav a {
         width: 100%;
-        height: 55px;
-        line-height: 55px;
+        height: 60px;
+        line-height: 60px;
         font-size: 20px;
         border-top: 1px solid #555;
         /* border-bottom: 1px solid #555; */
@@ -440,11 +445,10 @@ section.services-facts .footer-text li {
 
 	section.services-content,
 	section.services-facts,
-	header.services-header {
+	section.services-header {
 		display: flex;
 		flex-direction: column;
-		/* justify-content: center;
-		align-items: center; */
+		align-items: center; 
 		width: 90%;
 		margin: 0 auto;
 	}
