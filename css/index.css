@@ -89,7 +89,7 @@ nav {
 	display: flex;
 	justify-content: space-around;
 }
-nav a {
+.nav-menu a {
   text-align: center;
 	text-decoration: none;
   color: black;
@@ -144,6 +144,11 @@ section {
 .multi-column {
 	display: flex;
 }
+@media (max-width: 800px) {
+  /* section tablet styles */
+  
+  
+}
 
 /* this is the start of the home page content section */
 .home-content {
@@ -195,72 +200,35 @@ footer {
 	justify-content: center;
 	padding: 20px 0 35px;
 }
-
-
-
-
-
-/* this is the start of the services page */
-.service-header {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-}
-.service-header h2 {
-	font-size: 36px;
-	padding: 15px 0 0;
-}
-
-/* services section & main content */
-.services {
-	text-align: left;
-	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-	padding: 15px 0;
-	border-top: 1px solid black;
-	border-bottom: 1px solid black;
-}
-.service-header p {
-	padding: 25px 0;
-}
-.service-card {
-	max-width: calc(50% - 40px);
-	border: 2px solid gray;
-	background-color: lightgray;
-	padding: 25px 15px;
-	margin: 20px;
-}
-.service-card .learn-more {
-	text-align: center;
-	width: 130px;
-	background-color: white;
-	padding: 10px 0;
-	border: 1px solid black;
-	border-radius: 5px;
-	margin-top: 20px;
-}
-
-/* the start of the service facts section */
-.service-facts {
-	width: 100%;
-	padding: 30px 0;
-	display: flex;
-	justify-content: space-between;
-}
-.service-facts .multi-column .content {
-	text-align: left;
-	display: flex;
-	flex-direction: column;
-	padding-right: 45px;
-}
-ul {
-	padding: 0;
-	margin: 10px 0 0;
-	align-self: flex-start;
-}
-ul li {
-	list-style-type: square;
-	list-style-position: inside;
-	padding: 5px 0;
+@media (max-width: 800px) {
+  /* core page properties */
+  .page-container {
+    width: 100%;
+  }
+  /* tablet nav display */
+  nav {
+    margin-top: 35px;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .nav-menu {
+    width: 100%;
+  }
+  .nav-menu a {
+    padding-top: 22px;
+    padding-left: 16px;
+  }
+  nav .nav-logo {
+    order: -1;
+    padding-right: 25px;
+    padding-bottom: 15px;
+  }
+  /* tablet header section */
+  .home-page .header-left {
+    margin-top: 90px;
+    margin-right: 55px;
+  }
+  .home-page .header-right {
+    display: none;
+  }
 }
