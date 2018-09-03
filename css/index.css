@@ -1,3 +1,248 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+.page-container {
+	width: 950px;
+}
+
+h3 {
+	font-size: 20px;
+	text-align: left;
+}
+
+/* this is content of the nav section */
+nav {	
+	width: 100%;
+  height: 45px;
+  margin-top: 25px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.nav-menu {
+	width: 70%;
+	display: flex;
+	justify-content: space-around;
+}
+nav a {
+	text-decoration: none;
+  color: black;
+  letter-spacing: 1.5px;
+  padding-left: 55px;
+}
+.logo {
+	height: 100%;
+	width: auto;
+	align-self: center;
+}
+
+/* this is the start of the header section */
+header {
+	height: 450px;
+	display: flex;
+	justify-content: space-around;
+}
+header h1 {
+	text-align: center;
+	font-size: 54px;
+}
+.header-left {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.header-left p {
+	text-align: center;
+	width: 130px;
+	border: 2px black solid;
+	align-self: center;
+}
+.header-right {
+	display: flex;
+	justify-content: center;
+}
+.header-right img {
+	width: 300px;
+	height: auto;
+	align-self: center;
+	padding: 35px 0;
+}
+
+/* section and section classes */
+section {
+	width: 85%;
+	margin: 0 auto;
+	text-align: center;
+}
+.multi-column {
+	display: flex;
+}
+
+/* this is the start of the home page content section */
+.home-content {
+	width: 100%;
+	padding: 20px 0;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+.home-content p {
+	text-align: left;
+	padding: 0 5px;
+}
+.middle-img {
+	width: 100%;
+	height: auto;
+	margin: 30px auto;
+	display: block;
+}
+
+/* start of the contact section */
+.contact {
+	width: 100%;
+	height: 150px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-around;
+}
+
+/* start of the footer section */
+footer {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding: 20px 0 35px;
+}
 
 
+
+
+
+/* this is the start of the services page */
+.service-header {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.service-header h2 {
+	font-size: 36px;
+	padding: 15px 0 0;
+}
+
+/* services section & main content */
+.services {
+	text-align: left;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 15px 0;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+.service-header p {
+	padding: 25px 0;
+}
+.service-card {
+	max-width: calc(50% - 40px);
+	border: 2px solid gray;
+	background-color: lightgray;
+	padding: 25px 15px;
+	margin: 20px;
+}
+.service-card .learn-more {
+	text-align: center;
+	width: 130px;
+	background-color: white;
+	padding: 10px 0;
+	border: 1px solid black;
+	border-radius: 5px;
+	margin-top: 20px;
+}
+
+/* the start of the service facts section */
+.service-facts {
+	width: 100%;
+	padding: 30px 0;
+	display: flex;
+	justify-content: space-between;
+}
+.service-facts .multi-column .content {
+	text-align: left;
+	display: flex;
+	flex-direction: column;
+	padding-right: 45px;
+}
+ul {
+	padding: 0;
+	margin: 10px 0 0;
+	align-self: flex-start;
+}
+ul li {
+	list-style-type: square;
+	list-style-position: inside;
+	padding: 5px 0;
+}
