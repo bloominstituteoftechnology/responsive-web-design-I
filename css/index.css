@@ -262,27 +262,26 @@ h1, h2, h3, h4, h5 {
 
   }
 
-  @media ( max-width: 600px) {
-    .container {
-      width: 570;
-    }
+  @media ( max-width: 500px) {
+    
 
     header {
-      width: 570px;
+      width: 285px;
       flex-flow: column-reverse;
-      align-items: center;
+      
     }
   
     header nav {
       flex-flow: column;
       align-items: center;
-      justify-content: flex-start;
       margin-top: 35px;
+      padding-left: 185px;
       border-top: 1px solid black;
       border-bottom: 1px solid black;
     }
 
     header nav a {
+      margin-right: 0;
       padding: 15px 0;
       border-top: 1px solid black;
     }
@@ -290,14 +289,18 @@ h1, h2, h3, h4, h5 {
     header .logo {
       flex-flow: column;
       align-items: center;
+      padding-left: 190px;
+      margin-right: 0;
     }
 
     .cta {
-      width: 570px;
+      width: 470px;
+      margin-right: 0;
     }
-
-    .cta .cta-text {
-      width: 570;
+    
+    .main-content {
+      width: 470px;
+      margin-right: 0;
     }
 
     .main-content .top-content {
@@ -306,11 +309,15 @@ h1, h2, h3, h4, h5 {
     }
 
     .main-content .top-content .text-content {
-      width: 525px;
+      width: 425px;
+      padding-bottom: 30px;
+      margin-right: 0;
+      margin-bottom: 0;
+
     }
 
     .middle-img {
-      width: 550px;
+      width: 450px;
     }
 
     .main-content .bottom-content {
@@ -319,15 +326,16 @@ h1, h2, h3, h4, h5 {
     }
 
     .main-content .bottom-content .text-content {
-      width: 525px;
+      width: 425px;
+      padding-bottom: 30px;
     }
 
-    .content {
-      width: 570px;
+    .contact {
+      width: 470px;
     }
 
     footer {
-      width: 570px;
+      width: 470px;
     }
 
   }
