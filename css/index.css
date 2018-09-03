@@ -110,24 +110,25 @@ header.home-page {
 }
 .home-page .header-left {
   width: 100%;
-  height: 100%;
-  text-align: center;
+  justify-self: flex-end;
+}
+.header-left .header-info {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  align-items: flex-end;
-  padding: 0 80px 25px 0;
 }
 .header-left h1 {
+  text-align: center;
+  padding-left: 65px;
+  padding-bottom: 20px;
   font-size: 72px;
 }
 .header-info p {
+  text-align: center;
+  font-size: 18px;
   border: 1px solid black;
-  /* padding: 25px 60px; */
-  /* display: none; */
 }
 .home-page .header-right {
-  padding: 45px 0;
+  padding: 45px 15px;
   display: flex;
   justify-content: flex-end;
 }
