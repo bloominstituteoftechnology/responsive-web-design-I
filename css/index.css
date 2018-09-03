@@ -66,7 +66,8 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 .page-container {
-	width: 950px;
+  width: 900px;
+  margin: 0 auto;
 }
 
 h3 {
@@ -89,26 +90,59 @@ nav {
 	justify-content: space-around;
 }
 nav a {
+  text-align: center;
 	text-decoration: none;
   color: black;
-  letter-spacing: 1.5px;
-  padding-left: 55px;
+  padding: 0 30px;
 }
 .logo {
 	height: 100%;
-	width: auto;
-	align-self: center;
+  width: auto;
+  padding-left: 45px;
 }
 
 /* this is the start of the header section */
-header {
+header.home-page {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.home-page .header-left {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding: 0 80px 25px 0;
+}
+.header-left h1 {
+  font-size: 72px;
+}
+.header-info p {
+  border: 1px solid black;
+  /* padding: 25px 60px; */
+  /* display: none; */
+}
+.home-page .header-right {
+  padding: 45px 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+/* header {
 	height: 450px;
 	display: flex;
 	justify-content: space-around;
 }
 header h1 {
 	text-align: center;
-	font-size: 54px;
+  font-size: 74px;
+  padding-top: 45px;
+  padding-left: 140px;
 }
 .header-left {
 	display: flex;
@@ -126,11 +160,11 @@ header h1 {
 	justify-content: center;
 }
 .header-right img {
-	width: 300px;
+	width: 380px;
 	height: auto;
 	align-self: center;
 	padding: 35px 0;
-}
+} */
 
 /* section and section classes */
 section {
