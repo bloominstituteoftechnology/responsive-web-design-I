@@ -181,67 +181,53 @@ h1, h2, h3, h4, h5 {
 	text-align: center;
 	font-size: 14px;
   }
-  /*	Services page css */ 
-.services{
-	width:900px;
-	margin: 0 auto;
-	display:flex;
-	flex-direction: column;
+/* Media queries go here */
+@media only screen and (max-width: 800px) {  
+    .cta img {
+        display: none;
+      }
+    header nav{
+        width: 800px;
+        justify-content: space-around;
+    
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+    header .logo{
+        order: -1;
+        align-self: center;
+    }
+    .main-content .top-content .text-content {
+        width: 360px;
+    
+      }
+    .main-content{
+        width: 800px;
+    }
+    .main-content .top-content{
+        justify-content: space-around;
+    }
+    .middle-img{
+        width: 760px;
+        height: auto;
+        margin-right: 20px;
+        margin-left:20px;
+    }
+    .container{
+        width: 800px;
+    }
+    .main-content .bottom-content .text-content {
+        width: 210px;
+       
+    }
+    .main-content .bottom-content{
+        width: 800px;
+        justify-content: space-around;
+    }
+    .contact{
+        width: 800px;
+        padding-left: 20px;
+    }
 }
-
-.services section{
-	margin-top: 20px;
-}
-.top-section{
-	border-bottom: black 1px solid;
-}
-.services p{
-	margin-bottom: 20px;
-}
-.services button{
-	border-radius: 8px;
-	padding: 5px 20px 5px 20px;
-	background-color: white;
-}
-.main-section .box{
-	border: 1px black solid;
-	padding: 20px;
-	width: 430px;
-	background-color: lightgrey;
-}
-.services-header-img{
-	margin-top: 20px;
-}
-.main-section{
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-}
-.divider{
-	width:900px;
-	display: flex;
-	justify-content: space-between;
-	margin-bottom: 20px;
-}
-.bottom-section{
-	border-top: 3px black solid;
-	padding-top: 30px;
-}
-.copyright{
-	text-align: center;
-}
-
-li{
-	margin-bottom: 10px;
-	list-style-type: square;
-	margin-left: 20px;
-}
-.bottom-text{
-	width:430px;
-}
-.bottom-section{
-	display:flex;
-	justify-content: space-between;
-	margin-bottom: 30px;
-}
-
