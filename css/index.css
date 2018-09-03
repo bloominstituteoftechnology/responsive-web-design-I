@@ -280,12 +280,12 @@ li{
 /* At 768px And below do the following: */
 @media (max-width: 1200px) {
   /* container */
-  .container {
-    width: 800px;
-    /* TB LR */
-    margin: 0 auto;
-    border: solid red;
-  }
+.container {
+  width: 800px;
+  /* TB LR */
+  margin: 0 auto;
+  border: solid red;
+}
   
   /* header */
 header {
@@ -319,7 +319,29 @@ header .logo {
 .cta img {
   display:none;
 }
+
+.cta {
+	display: flex;
+	vertical-align:top;
 }
 
+.cta .cta-text {
+  font-size: 70px;
+  margin-top: 75px;
+  margin-left: 180px;
+  text-align: center;
+	padding: 0px 0px;
+	width:440px;
+}
 
+.cta .cta-text button {
+  background: white;
+  vertical-align: top;
+  margin-top: 14px;
+  padding: 6px 40px;
+  font-size: 17px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+}
 /* End of 768px query */
