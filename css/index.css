@@ -104,7 +104,7 @@ header .main-nav a{
 .main-content{
 	display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid lightgray;
     margin: 71px 0 31px 0;
     padding-bottom: 74px;
 
@@ -135,6 +135,16 @@ h1 {
 .container .main-content .tagline button {
     font-size: 20px;
     margin-top: 17px;
+    padding: 0 30px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.container .main-content .tagline button:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+
 }
 .features-about {
 	margin: 36px 0 30px 0;
@@ -192,9 +202,7 @@ p {
 	padding-bottom: 39px;
 }
 
-.contact h2 {
-    font-size: 14px;
-}
+
 .contact .email{
 	padding-top: 20px;
 
@@ -399,13 +407,12 @@ ul {
         padding-top: 10px;
         flex-direction: column-reverse;
 
-        /* align-content: center; */
-    }
+          }
 
     .nav-header .logo1 {
          width: 50%;
          margin-bottom: 20px;
-        /* align-content: center; */
+        
     }
     
  
@@ -413,9 +420,7 @@ ul {
     .nav-header .main-nav {
         display: flex;
         flex-direction: column;
-        /* border-top: 1px solid lightgrey; */
-        /* justify-content: center; */
-        
+                
     }
 
     .nav-header .main-nav a{
@@ -426,6 +431,58 @@ ul {
         justify-content: center;
 
     }
+
+    .main-content {
+        width: 95%;
+        margin: 0 auto;
+        padding-top: 40px;
+    }
+
+    .features-about {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 20px 10px;
+    }
+
+    .features-about .features {
+        padding-bottom: 30px;
+    }
+
+    .features-about .about {
+        padding-bottom: 30px;
+    }
+
+    .image1 {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .services-product {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 20px 10px;
+    }
+
+    .services-product .services {
+        padding-bottom: 30px;
+    }
+
+    .services-product .product {
+        padding-bottom: 30px;
+    }
+
+
+    .services-product .vision {
+        padding-bottom: 20px;
+    }
+
+    .contact {
+        margin-left: 10px;
+        margin-bottom: 20px;
+    }
+
 
 
 }
