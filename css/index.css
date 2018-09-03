@@ -224,6 +224,16 @@ h1, h2, h3, h4, h5 {
     }
 }
 
+
+@media screen and (max-width: 500px) {
+	.main-content h1 {
+		margin-top: 35px;
+	}
+	.main-content button {
+        margin-top: 13px;
+    }
+}
+
 /* End of Main Content*/
 
 /* Content */
@@ -263,6 +273,31 @@ h1, h2, h3, h4, h5 {
     .content {
         padding-bottom: 45px;
     }
+}
+
+@media screen and (max-width: 500px) {
+	.content {
+		padding-top: 40px;
+	}
+	.content-row {
+		flex-direction: column;
+		margin-top: 20px;
+		margin-bottom: 0px;
+		padding: 0px 10px;
+	}
+
+	.content section{
+		width: 100%;
+		margin-bottom: 150px;
+		height: 0px;
+	}
+
+	.content-row img {
+		margin-top: -15px;
+		margin-bottom: 11px;
+		height: 96px;
+	}
+
 }
 
 /* End of Content */
