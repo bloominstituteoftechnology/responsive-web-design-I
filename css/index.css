@@ -168,7 +168,7 @@ h5 {
 } */
 nav {
   width: 100%;
-  height: 40px;
+  height: 50px;
   display: flex;
 }
 
@@ -177,7 +177,6 @@ nav {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  border: 1px solid blue;
   width: 100%;
 }
 
@@ -186,6 +185,10 @@ nav {
   text-decoration: none;
   display: flex;
   justify-content: space-between;
+}
+
+.great-idea {
+  margin-left: 20px;
 }
 
 .container nav a:hover {
@@ -197,7 +200,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid red;
 }
 
 .center-text {}
@@ -326,14 +328,24 @@ footer {
     width: 90%;
   }
 
-  .computer-logo {
+  /* .computer-logo {
     display: none;
-  }
-
+  } */
   .fixed-nav {
     width: 100%;
     z-index: 100;
     background: white;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column-reverse;
+    align-content: center;
+  }
+
+  .great-idea {
+    display: flex;
+    justify-content: center;
   }
 
   .tablet-logo-container {
@@ -351,6 +363,7 @@ footer {
     align-items: center;
     width: 100;
     background: white;
+    flex-direction: row;
   }
 
   header {
@@ -369,9 +382,9 @@ footer {
     display: none;
   }
 
-  .link-container .computer-logo {
+  /* .link-container .computer-logo {
     display: none;
-  }
+  } */
 }
 
 .middle-img {
@@ -381,29 +394,32 @@ footer {
 /* phone */
 @media (max-width:500px) {
   .container {
-    width: 90%;
+    width: 100%;
+  }
+
+  nav {
+    height: 200px;
   }
 
   .link-container {
     display: flex;
     flex-direction: column;
     height: 200px;
+    justify-content: center;
   }
 
-  .link-container a {
+  nav a {
     border-bottom: 1px solid gray;
-    /* border-top: 1px solid red; */
     width: 100%;
     display: flex;
     justify-content: center;
-    padding-bottom: 8px;
+    border: 2px solid red;
   }
-
-  .fixed-nav {}
 
   .topSection {
     display: flex;
     flex-direction: column;
+    margin: 0 20px;
   }
 
   .bottomSection {
