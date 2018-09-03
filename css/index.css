@@ -262,3 +262,72 @@ h1, h2, h3, h4, h5 {
 
   }
 
+  @media ( max-width: 600px) {
+    .container {
+      width: 570;
+    }
+
+    header {
+      width: 570px;
+      flex-flow: column-reverse;
+      align-items: center;
+    }
+  
+    header nav {
+      flex-flow: column;
+      align-items: center;
+      justify-content: flex-start;
+      margin-top: 35px;
+      border-top: 1px solid black;
+      border-bottom: 1px solid black;
+    }
+
+    header nav a {
+      padding: 15px 0;
+      border-top: 1px solid black;
+    }
+
+    header .logo {
+      flex-flow: column;
+      align-items: center;
+    }
+
+    .cta {
+      width: 570px;
+    }
+
+    .cta .cta-text {
+      width: 570;
+    }
+
+    .main-content .top-content {
+      flex-flow: column;
+      align-items: center;
+    }
+
+    .main-content .top-content .text-content {
+      width: 525px;
+    }
+
+    .middle-img {
+      width: 550px;
+    }
+
+    .main-content .bottom-content {
+      flex-flow: column;
+      
+    }
+
+    .main-content .bottom-content .text-content {
+      width: 525px;
+    }
+
+    .content {
+      width: 570px;
+    }
+
+    footer {
+      width: 570px;
+    }
+
+  }
