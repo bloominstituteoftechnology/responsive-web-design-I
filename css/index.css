@@ -153,13 +153,32 @@ h1 {
 .main-content button {
 	border: solid 1px black;
 	outline: none;
-	height: 35px;
-	width: 160px;
+	height: 32px;
+	width: 170px;
 	font-size: 14px;
 }
 
 .main-content button:hover {
 	cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+	.main-content {
+		flex-direction: column;
+    }
+    
+    .main-content h1 {
+        margin-top: 32px;
+        font-size: 75px;
+    }
+
+    .main-content button {
+        margin-top: 3px;
+    }
+
+	.main-content div {
+		margin-bottom: 50px;
+    }
 }
 
 /* End of Main Content*/
@@ -331,14 +350,6 @@ h1 {
 		width: 100%;
 		padding: 10px 0px 20px 0px;
 	}
-
-	.main-content {
-		flex-direction: column;
-	}
-
-	.main-content div {
-		margin-bottom: 50px;
-    }
 
 
 }
