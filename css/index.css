@@ -122,7 +122,7 @@ div#page-container {
 
 .homepage #main {
 	border-top: 2px solid black;
-    border-bottom: 6px solid lightgray;
+    border-bottom: 2px solid black;
     padding: 5px 0;
 }
 
@@ -132,14 +132,14 @@ div#page-container {
 }
 
 .main-block {
-	margin: 30px 0;
+	margin: 27px 0;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 }
 
 .main-block p {
-    line-height: 1.3;
+    line-height: 1.2;
 }
 
 .two-column {
@@ -147,12 +147,12 @@ div#page-container {
 }
 
 .three-column {
-	width: 33%;
+	width: 31%;
 }
 
 .homepage #contact {
 	margin: 20px 0;
-	height: 180px;
+	height: 150px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
@@ -224,7 +224,7 @@ div#page-container {
     header {
         flex-direction: column-reverse;
         justify-content: space-between;
-        width: 800px;
+        width: 750px;
         height: 125px;
     }
 
@@ -234,19 +234,19 @@ div#page-container {
 
     header > nav {
         width: 100%;
-        justify-content: flex-start;
+        justify-content: center;
     }
 
     header > nav a {
-        margin: 0 52px 0 30px;
+        margin: 0 51px 0 30px;
     }
 
     div#page-container {
-        width: 800px;
+        width: 750px;
     }
 
     .homepage .intro {
-        margin: 78px 0;
+        margin: 78px 0 73px;
         justify-content: center;
     }
 
@@ -256,5 +256,96 @@ div#page-container {
 
     .homepage .intro img {
         display: none;
+    }
+
+    .homepage .two-column {
+        width: 48%;
+        margin-left: 10px;
+        line-height: 0.9;
+    }
+
+    .homepage .three-column {
+        width: 28%;
+        margin: 0 22px 0 10px;
+    }
+
+    .homepage .three-column p {
+        line-height: 1.1;
+    }
+
+    .homepage #contact {
+        margin: 20px 10px 30px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 500px) {
+    body > header {
+        width: 500px;
+        height: 450px;
+    }
+
+    body > header img.logo {
+        margin: 20px 0 0;
+    }
+
+    body > header nav {
+        width: 100%;
+        height: 364px;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    body > header nav:first-child {
+        padding-top: 12px;
+        border-top: 1px solid black;
+    }
+
+    body > header nav a {
+        text-align: center;
+        padding-bottom: 20px;
+        margin: 0;
+        font-size: 20px;
+        border-bottom: 1px solid black;
+    }
+
+    div#page-container {
+        width: 500px;
+    }
+
+    .homepage .intro {
+        margin: 48px 0 75px;
+    }
+
+    .homepage h1 {
+        font-size: 72px;
+    }
+
+    .homepage #main {
+        margin: 0 20px;
+        padding: 10px 0 0 0;
+    }
+
+    .homepage .two-column {
+        width: 100%;
+        margin: 23px 0 23px 0;
+    }
+
+    .homepage #main .middle-img {
+        margin: 0;
+    }
+
+    .homepage #main .main-block {
+        margin-bottom: 0;
+    }
+
+    .homepage .three-column {
+        width: 100%;
+        margin: 27px 0 38px 0;
+        line-height: 1.2;
+    }
+
+    .homepage #contact {
+        margin: 25px 20px;
     }
 }
