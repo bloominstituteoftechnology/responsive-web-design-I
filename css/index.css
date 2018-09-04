@@ -66,9 +66,17 @@ h1, h2, h3, h4, h5 {
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 .container {
-  /* height: 1536px; */
   width: 874px;
   margin: 0 auto;
+}
+
+@media (max-width: 800px) {
+  .container {
+    width: 100%;
+    max-width: 800px;
+    margin: 30px 0;
+    padding: 0px 20px;
+  }
 }
 
 .nav-header {
@@ -79,11 +87,24 @@ h1, h2, h3, h4, h5 {
   height: 92px;
 }
 
+@media (max-width: 800px) {
+  .nav-header {
+    flex-direction: column-reverse;
+  }
+}
+
 .nav-header nav {
   display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	width: 596px;
+}
+
+@media (max-width: 800px) {
+  .nav-header nav {
+    justify-content: space-around;
+    width: 100%;
+  }
 }
 
 .nav-header nav a {
@@ -92,19 +113,23 @@ h1, h2, h3, h4, h5 {
   font-size: 14px;
 }
 
-
-
-.main-header {
+.container .main-header {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
-	margin-top: 41px;
+	margin: 41px 20px 0px;
 	padding-bottom: 77px;
-	border-bottom: 1px solid black;
+	border-bottom: 2px solid black;
 }
 
-.main-header .title-button {
+@media (max-width: 800px) {
+  .container .main-header {
+    margin: 51px 0px 0px;
+  }
+}
+
+.container .main-header .title-button {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -112,14 +137,20 @@ h1, h2, h3, h4, h5 {
 	flex-grow: 1;
 }
 
-.main-header .title-button h1 {
+.container .main-header .title-button h1 {
 	margin-top: 15px;
 	font-size: 81px;
 	text-align: center;
 	line-height: 75px;
 }
 
-.main-header .title-button .button {
+@media (max-width: 800px) {
+  .container .main-header .title-button h1{
+    font-size: 71px;
+  }
+}
+
+.container .main-header .title-button .button {
   border: 1px solid black;
   font-size: 19px;
 	display: flex;
@@ -130,7 +161,13 @@ h1, h2, h3, h4, h5 {
 	width: 175px;
 }
 
-.upper-text {
+@media (max-width: 800px) {
+  .container .main-header img {
+    display: none;
+  }
+}
+
+.container .upper-text {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -138,39 +175,68 @@ h1, h2, h3, h4, h5 {
 
 }
 
-.upper-text div {
-	line-height: 17.5px;
+.container .upper-text div {
+  line-height: 17.5px;
 }
 
-.middle-img {
+@media (max-width: 800px) {
+  .container .upper-text div {
+    margin: 0px 10px;
+    padding-right: 5px;
+  }
+}
+
+.container .middle-img {
   margin-top: 38px;
+  height: auto;
+  width: 100%;
 }
 
-.lower-text {
+@media (max-width: 800px) {
+  .container .middle-img {
+    margin-top: 30px;
+  }
+}
+
+.container .lower-text {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	width: 889px;
+	/* width: 889px; */
 	margin-top: 36px;
 	margin-bottom: 48px;
 }
 
-.lower-text div {
+@media (max-width: 800px) {
+  .container .lower-text {
+    margin: 30px 0px 55px 0px;
+  }
+}
+
+.container .lower-text div {
 	line-height: 17.7px;
 	width: 292px;
 }
 
-.lower-text .center h3 {
-	letter-spacing: 1.5px;
+@media (max-width: 800px) {
+  .container .lower-text div {
+    margin: 0px 10px;
+  }
 }
 
-.contact {
-	border-top: 1px solid black;
+.container .contact {
+	border-top: 2px solid black;
 	padding-top: 38px;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
 	justify-content: space-between;
+}
+
+@media (max-width: 800px) {
+  .container .contact {
+    padding-left: 10px;
+  }
 }
 
 .contact h3 {
@@ -189,6 +255,14 @@ footer {
 	margin-top: 54px;
 	font-size: 14px;
 }
+
+@media (max-width: 800px) {
+  footer {
+    font-size: 100%;
+  }
+}
+
+/* Services page below this point */
 
 .services {
   /* border: 1px solid red; */
