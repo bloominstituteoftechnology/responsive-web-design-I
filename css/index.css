@@ -460,18 +460,31 @@ h1, h2, h3, h4, h5 {
 	.container header {
 		display: flex;
 	}
+	.container header .logo {
+		margin-left: 80px;
+		margin-bottom: 20px;
+	}
 	.container header nav {
 		display: flex;
 		flex-direction: column;
-		border: 1px solid red;
 		height: 200px;
-		justify-content: center;
+		width: 400px;
+		text-align: center;
 	}
 	.container header nav a {
+		border-bottom: 1px solid grey;
+		padding-bottom: 10px;
+	}
+	.container header nav .services {
 		border-top: 1px solid grey;
+		padding-top: 10px;
 	}
 	.container .cta .cta-text {
 		margin-left: 35px;
+		margin-top: 0px;
+	}
+	.container .main-content {
+		margin-top: 0px;
 	}
 	.container .main-content .middle-img {
 		display: flex;
