@@ -301,6 +301,38 @@ footer {
     }
 }
 
+/* mobile phone media query */
 
+@media (max-width: 500px) {
+    .container {
+        width: 100%;
+    }
+
+    header nav {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    header nav a {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        border-bottom: 1px solid black;
+    }
+
+    header nav a:first-child {
+        border-top: 1px solid black;
+    }
+
+    .top-content, .bottom-content {
+        flex-direction: column;
+    }
+
+    .top-content .text-content, .bottom-content .text-content, .contact {
+        width: 90%;
+        margin: 25px;
+    }
+}
 
 
