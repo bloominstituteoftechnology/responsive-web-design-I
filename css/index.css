@@ -470,7 +470,30 @@ footer{
  font-size: 20px;
  line-height: 1.5; 
 }
+
+
 @media(max-width: 800px){
+    .navigation {
+        max-width: 100%;
+        padding: 2%;
+        display: flex;
+        flex-flow: wrap-reverse;
+        justify-content: center;
+    }
+    
+    .navigation a{
+        margin: 0 30px;
+        /* order:5; */
+    }
+    
+    .navigation a:hover{
+        color: #428bca;
+    }
+    
+    .navigation .logo{
+        margin: 10px 0 20px;
+        /* order: 0; */
+    }
 
 }
 
