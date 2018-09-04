@@ -92,10 +92,10 @@ h1, h2, h3, h4, h5 {
     border-bottom:2px solid black;
     display: flex;
     justify-content: flex-end;
-    padding: 50px 0;
+    padding: 62px 0 73px;
 }
 .container .intro div{
-    padding: 40px 75px 0 0;
+    padding:28px 76px 0 0;
     display: flex;
     align-items: center;
     flex-direction:column;
@@ -107,8 +107,10 @@ h1, h2, h3, h4, h5 {
     color:black;
     justify-content: center;
     width:170px;
-    padding:5px;
+    padding:5px 0 9px;
     border:1px solid black;
+    margin-top: 5px;
+    
 }
 .container .intro div h1{
     display: flex;
@@ -117,21 +119,22 @@ h1, h2, h3, h4, h5 {
     font-size:75px;
 }
 .container .intro img{
-    margin-top:-10px;
+    margin-top:-20px;
 }
 
 .top-content{
-    padding:40px 0;
+    padding:36px 0;
     display: flex;
 }
 .bottom-content{
-    padding:40px 0;
+    padding:32px 0 47px;
     display: flex;
     border-bottom:3px solid black;
 }
 
 .contact-section{
-    margin:30px 0;
+    margin:35px 0;
+    line-height: 18px;
 }
 
 address {
@@ -146,7 +149,6 @@ address span{
 }
 
 footer{
-    padding:20px 0;
     text-align: center;
 }
 
@@ -161,10 +163,16 @@ footer{
         align-items: center;   
     }
     .container header nav{
-        margin-top:20px;
+        margin-top:40px;
+        width:100%;
+        justify-content: space-between;
+    }
+    .container header nav a{
+        padding: 0;
     }
     .container .intro {
         justify-content: center;
+        padding:35px 0 78px;
     }
     .container .intro div{
         align-content: center;
@@ -173,9 +181,60 @@ footer{
     .container .intro img{
         display: none;
     }
+    .container .top-content{
+        padding-left:10px;
+    }
+
     .middle-image{
         width:100%;
         height:auto;
+    }
+    .container .bottom-content{
+        padding-left:10px;
+        padding-bottom:70px;
+    }
+    .contact-section{
+        padding-left:10px;
+    }
+
+}
+
+@media (max-width:500px){
+    .container header{
+        align-content: center;
+        margin-top:20px;
+        width:100%;
+    }
+    .container header nav{
+        width:100%;
+        flex-direction: column;
+        margin-bottom:20px;
+        margin-top:20px;
+    }
+    .container header nav a{
+        padding:0;
+        text-align: center;
+        width:100%;
+        border-bottom:1px solid lightgray;
+        padding: 10px;
+    }
+
+    .container .top-content{
+        padding:40px 0 0;
+        flex-direction: column;
+    }
+    .container .top-content div{
+        padding-bottom:20px;
+    }
+    .container .bottom-content{
+        padding:40px 0 0;
+        flex-direction: column;
+    }
+    .container .bottom-content div{
+        padding-bottom:20px;
+    }
+    .contact-section{
+        padding-left:0;
     }
 
 }
