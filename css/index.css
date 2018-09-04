@@ -1,3 +1,70 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+*{
+    box-sizing: border-box;
+    /* border: 1px solid blue; */
+}
+body{
+    overflow-x: hidden;
+}
+.main-container{
+    margin: 0 auto;
+    border: 1px solid blue;
+    /* display: flex;
+    flex-wrap: wrap; */
+    justify-content: center;
+}
+/* tablet-layout */
+@media only screen and (max-width: 800px) and (min-width: 501px){
+    .main-container{
+       width: 800px;
+       margin: 0 auto;
+    }
+    .header-container{
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid blue;
+    }
+    .nav-container{
+        width: 400px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .second-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .second-container div{
+        width: 150px;
+    }
+    .third-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
 
+    }
+    .third-container img{
+        max-width: 100%;
+    }
+    .box{
+        width: 300px;
+    }
+}
+@media only screen and (max-width: 500px)
+{
+    .main-container{
+        width: 500px;
+    }
+    .header-container{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .nav-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
 
