@@ -98,8 +98,8 @@ h1, h2, h3, h4, h5 {
 
 header nav {
   width: 691px;
-  vertical-align: top;
-  margin-top: 35px;
+  /* vertical-align: top; */
+  /* margin-top: 35px; */
 }
 
 header nav a {
@@ -114,15 +114,15 @@ header nav a:hover {
 }
 
 header nav a:first-child {
-  margin-left: 0;
+  /* margin-left: 0; */
 }
 
 header nav a:last-child {
-  margin-right: 0;
+  /* margin-right: 0; */
 }
 
 header .logo {
-  margin-top: 25px;
+  /* margin-top: 25px; */
 }
 
 /* cta */
@@ -131,11 +131,11 @@ header .logo {
 
 .index-cta .index-cta-text {
   /* display: inline-block; */
-  vertical-align: top;
-  font-size: 77px;
-  margin-top: 120px;
-  text-align: center;
-  padding: 0px 75px;
+  /* vertical-align: top; */
+  /* font-size: 77px; */
+  /* margin-top: 120px; */
+  /* text-align: center; */
+  /* padding: 0px 75px; */
 }
 
 .index-cta .index-cta-text button {
@@ -308,29 +308,23 @@ header .logo {
   }
 
   .index-logo{
-    display: flex;
-    /* align-items: center; */
     width: 200px;
-    height: 70px;
-  border: dotted blue 3px;
+    margin: 25px 0;
   }
 
-  .fixed-nav {
+
+  .fixed-nav header nav {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     width: 790px;
-  border: dotted green 3px;
   }
 
   .fixed-nav a {
     text-decoration: none;
     width: 50px;
-  border: dotted green 3px;
   }
 
-  /* .fixed-nav img { */
-  /* } */
   .index-cta {
     display: flex;
     flex-direction: column;
@@ -351,6 +345,9 @@ header .logo {
    }
 
   .index-cta-text {
+    font-size: 70px;
+    text-align: center;
+    margin: 20px 0px;
   }
 
   .index-top-content {
