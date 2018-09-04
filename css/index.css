@@ -265,26 +265,27 @@ h1, h2, h3, h4, h5 {
   @media ( max-width: 500px) {
     
     .container {
-      width: 470px;
+      width: 500px;
+      margin: 0 auto;
     }
 
     header {
-      width: 265px;
-      flex-flow: column-reverse;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 0; 
       
     }
   
     header nav {
       flex-flow: column;
-      align-items: center;
-      margin-top: 35px;
-      padding-left: 185px;
-      border-top: 1px solid black;
+      margin-top: 35px 0;
+      border-bottom: 1px solid black;
       border-bottom: 1px solid black;
     }
 
     header nav a {
-      margin-right: 0;
+      text-align: center;
+      margin: 0;
       padding: 15px 0;
       border-top: 1px solid black;
     }
@@ -292,32 +293,23 @@ h1, h2, h3, h4, h5 {
     header .logo {
       flex-flow: column;
       align-items: center;
-      padding-left: 190px;
       margin-right: 0;
     }
 
     .cta {
-      width: 400px;
-      padding-left: 50px;
       margin-right: 0;
     }
     
-    .main-content {
-      width: 460px;
-      margin-right: 0;
-    }
-
     .main-content .top-content {
       flex-flow: column;
       align-items: center;
+      margin-bottom: 0; 
     }
 
     .main-content .top-content .text-content {
-      width: 425px;
+      width: auto;
       padding-bottom: 30px;
       margin-right: 0;
-      margin-bottom: 0;
-
     }
 
     .middle-img {
@@ -330,16 +322,6 @@ h1, h2, h3, h4, h5 {
     }
 
     .main-content .bottom-content .text-content {
-      width: 425px;
+      width: auto;
       padding-bottom: 30px;
     }
-
-    .contact {
-      width: 460px;
-    }
-
-    footer {
-      width: 460px;
-    }
-
-  }
