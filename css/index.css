@@ -175,8 +175,8 @@ footer {
 @media (max-width: 800px) {
     
     .container {
-        max-width: 800px;
-        width: 90%;
+        width: 800px;
+        max-width: 95%;
         margin: 0 auto;
     }
 
@@ -206,4 +206,55 @@ footer {
         max-width: 100%;
     }
     
+}
+
+@media (max-width: 500px){
+   
+    header img {
+        position: relative;
+        right: 7%;
+    }
+
+    header nav {
+       display: flex;
+       flex-wrap: wrap;
+       margin: 20px;
+   }
+
+   header nav a {
+       display: flex;
+       width: 100%;
+       justify-content: center;
+       padding: 15px 0;
+       border-top: 1px solid black;
+   }
+
+   header .last {
+       border-bottom: 1px solid black;
+   }
+
+   .main-content {
+       display: flex;
+       flex-wrap: wrap;
+   }
+
+   .main-content .top-content {
+       flex-direction: column;
+   }
+
+   .main-content .top-content .text-content {
+       padding: 20px 0;
+   }
+
+   .main-content .middle-img {
+       height: 100px;
+       width: 99%;
+   }
+
+   .main-content .bottom-content {
+    flex-direction: column;
+    }
+
+    .main-content .bottom-content .text-content {
+        padding: 20px 0;
 }
