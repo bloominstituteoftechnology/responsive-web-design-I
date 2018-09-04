@@ -306,24 +306,31 @@ header .logo {
     width: 800px;
     padding: 20px;
   }
-  .fixed-nav  .index-logo{
-    flex-direction: row;
-    width: 800px;
+
+  .index-logo{
+    display: flex;
+    /* align-items: center; */
+    width: 200px;
+    height: 70px;
+  border: dotted blue 3px;
   }
 
   .fixed-nav {
     display: flex;
     flex-direction: row;
-    width: 800px;
+    justify-content: center;
+    width: 790px;
+  border: dotted green 3px;
   }
 
   .fixed-nav a {
     text-decoration: none;
     width: 50px;
+  border: dotted green 3px;
   }
 
-  .fixed-nav img {
-  }
+  /* .fixed-nav img { */
+  /* } */
   .index-cta {
     display: flex;
     flex-direction: column;
