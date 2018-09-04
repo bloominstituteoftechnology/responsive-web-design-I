@@ -100,12 +100,15 @@ header .logo {
 
 /* tablet header styles */
 @media (max-width: 800px) {
+    .container {
+    width: 800px;
+}
+
     header {
         flex-flow: row wrap;
         justify-content: center;
         align-content: center;
         align-items: space-around;
-        width: 90%;
     }
 
     header .logo {
@@ -124,24 +127,25 @@ header .logo {
 /* mobile header styles */
 @media (max-width: 500px) {
 
+    .container {
+        width: 500px;
+    }
+
     header {
         flex-direction: column;
         align-items: center;
-        width: 100%;
-        border: 1px solid blue;
     }
 
     header .logo {
         order: -1;
         margin-bottom: 0;
+        margin-top: 23px;
 
     }
 
     header nav {
         flex-direction: column;
-        justify-content: flex-start;
         align-items: center;
-        border: 1px solid red;
         margin-top: 20px;
     }
 
@@ -190,16 +194,20 @@ header .logo {
 /* cta tablet styles */
 @media(max-width: 800px) {
     .cta {
-        justify-content: center;
+        width: 100%;
+        justify-content: flex-end;
+        margin-left: 40px;
+    }
+
+    .cta .cta-text {
+        width: 100%;
+        border: 1px solid blue;
     }
 
     .cta img {
         display: none;
     }
 }
-
-
-
 
 
 /* Main Content Styles */
@@ -235,8 +243,7 @@ header .logo {
 /* main content tablet styles */
 @media (max-width: 800px) {
     .main-content {
-        width: 90%;
-        padding: 35px 7px;
+        padding: 35px 7px 50px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -249,14 +256,9 @@ header .logo {
     }
 
     .main-content .middle-img {
-        width: 100%;
-        height: auto;
-        margin-left: 15px;
-        margin-right: 20px;
     }
 
-    .main-content .bottom-content .text-content {
-        width: 33%;
+    .main-content .bottom-content {
         padding-left: 25px;
         margin-top: -5px;
     }
@@ -285,7 +287,6 @@ footer {
 @media (max-width: 800px) {
     footer {
         margin-top: 40px;
-        margin-right: 80px;
     }
 }
 
@@ -399,7 +400,3 @@ footer {
         display: none;
     }
 */
-
-
-
-}
