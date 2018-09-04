@@ -199,10 +199,11 @@ footer {
     padding: 15px;
   }
 
-  .container header {
+  .container header{
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
+
   }
 
   .cta .cta-text {
@@ -234,5 +235,15 @@ footer {
 
 /* mobile view */
 @media (max-width: 500px) {
+  .container {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+  }
+  .container header nav {
+    display:flex;
+    flex-direction: column;
+  }
+
 
 }
