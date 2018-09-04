@@ -83,7 +83,6 @@ header nav {
 
 header nav a {
   display: inline-block;
-  margin-right: 65px;
   font-size: 14px;
   color: gray;
   text-decoration: none;
@@ -246,16 +245,21 @@ footer {
     header nav {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        border-bottom: solid black 1px;
+        align-items: stretch;
       }
       header nav a {
           display: flex;
         border-top: solid black 1px;
         font-size: 250%;
-    
-    
+        justify-content: center;
+      }
 
+      header nav a:last-child{
+          border-bottom: solid black 1px;
+      }
+
+      .main-content .middle-img {
+        object-fit: 
       }
 
       .main-content {
