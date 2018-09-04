@@ -239,239 +239,6 @@ footer{
 }
 
 
-/**********  END INDEX PAGE CSS *********************/
-
-/************SERVICES PAGE CSS BEGINS ************/
-
-
-/*** Services CTA HEADER ***/
-.services-header{
-	margin: 80px auto 50px auto;
-	width: 1000px; 
-	height: auto;
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: flex-start;
-}
-
-.services-header .services-header-img{
-	width: 1000px;
-	height: 300px;
-	align-self: center;
-}
-
-.services-header h2{
-	margin-top: 50px ;
-	font-size: 40px;
-}
-.services-header p{
-	padding: 0;
-	font-size: 19px;
-	line-height: 1.5;
-}
-
-
-/*** SERVICES CONTENT ***/
-.services-container{
-	width: 1000px;
-	margin: 0 auto;
-	border-top: 2px solid black;
-	border-bottom: 2px solid black;
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-between;
-}
-
-.services-content{
-	width: 480px;
-	padding: 20px;
-	margin: 40px 0;
-	border: 1px solid black;
-	background-color: #eee;
-	display: flex;
-	flex-flow: column wrap;
-	align-content: center;
-}
-
-.services-content h2{
-	margin: 25px 0;
-	font-size:25px;
-}
-.services-content p {
-	margin-bottom: 20px;
-	font-size: 15px;
-	line-height: 1.8;
-}
-
-.services-content button{
-	width: 150px;
-	margin: 20px 0;
-	padding: 10px;
-	font-size: 15px;
-	border: 1px solid black;
-	border-radius: 5px;
-}
-
-.services-content button:hover{
-	background-color: #5cb85c;
-	color: #fff;
-}
-
-/******** SERVICE INFO CSS ******/
-
-.services-info{
-	width: 1000px;
-	margin: 40px auto;
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-between;
-}
-
-.services-facts{
-	width: 480px;
-	display: flex;
-	flex-flow: column nowrap;
-	align-content: flex-start;
-}
-
-.services-facts h2{
-	font-size:25px;
-}
-
-.services-facts p{
-	margin-bottom: 20px;
-	font-size: 15px;
-	line-height: 1.5;
-}
-
-.services-facts ul{
-	margin-left: 20px;
-	list-style: square;
-	line-height: 1.5;
-}
-
-.services-info-img{
-	width: 480px;
-}
-
-/****************FEATURES CSS ************/
-
-/*** Featuress CTA HEADER ***/
-.features-header{
-	margin: 80px auto 50px auto;
-	width: 1000px; 
-	height: auto;
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: flex-start;
-	border-bottom: 1px solid black;
-}
-
-.features-header .features-header-img{
-	width: 1000px;
-	height: 300px;
-	align-self: center;
-}
-
-.features-header h2{
-	margin-top: 50px ;
-	font-size: 40px;
-}
-.features-header p{
-	margin-bottom: 50px;
-	padding: 0;
-	font-size: 19px;
-	line-height: 1.5;
-}
-
-.features-container{
-	width: 1000px;
-	margin: 50px auto;
-	/* border-top: 1px solid black;
-	border-bottom: 1px solid black; */
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-between;
-}
-
-.feature-content{
-	width: 300px;
-	margin: 25px 0;
-	padding: 20px;
-	display: flex;
-	flex-flow: column wrap;
-	align-content: center;
-	align-items: center;
-	background-color:#eee;
-	border: 0px solid #333;
-	border-radius: 10px;
-}
-
-.feature-content h2{
-	margin: 30px 0;
-	font-family: 'Righteous', cursive; 
-	font-size: 35px;
-}
-
-.feature-content p{
-	width: 230px;
-	font-size: 15px;
-	line-height: 1.7;
-	padding: 0;
-	align-self: center;
-	text-align: center;
-}
-
-.feature-content button{
-	margin: 25px 0;
-	width: 230px;
-	padding: 10px;
-	font-size: 20px;
-	background-color: #5cb85c;
-	border: 0;
-	border-radius: 5px;
-	color: #fff;
-}
-.feature-content button:hover{
-	background-color: #428bca;
-}
-
-.features-img{
-	width: 150px;
-	align-self: center;
-}
-
-
-.feature-cta{
-	width: 1000px;
-	margin: 150px auto 0  auto;
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-around;
-
-}
-
-.feature-cta-img{
-	width: 290px;
-	align-self: flex-start;
-	order: 0;
-}
-
-.feature-cta h2{
-	height: 50px;
-	margin-left: 30px;
-	padding: 0;
-	font-size: 60px;
-	align-self: center;
-}
-
-.feature-cta p{
- margin-top: 50px;
- font-size: 20px;
- line-height: 1.5; 
-}
-
-
 @media(max-width: 800px){
     .navigation {
         max-width: 100%;
@@ -516,7 +283,6 @@ footer{
     }
     
     .content-container h2{
-
         font-size: 20px;
     }
     
@@ -583,21 +349,23 @@ footer{
 
     .navigation {
         position: absolute;
-        display: flex;
-        flex-flow: column-reverse nowrap;
-	    padding: 0px;  
+        padding: 0px;  
         box-shadow: 0px 0px 0px;
         border-bottom: 1px solid #666;
+        display: flex;
+        flex-flow: column-reverse nowrap;
+        align-items: center;
+	    
     }
 
     .navigation a{
         max-width: 100%;
-        padding: 5% 100%;
+        padding: 5% 44%;
         border-top: 1px solid #666;
+        align-self: center;
     }
     
    
-    
     .navigation a:hover{
         background-color: #428bca;
         color: #fff;
@@ -609,10 +377,102 @@ footer{
     }
 
     .header{
-
-        margin: 480px auto 50px auto;
-        width: 100%; 
+        margin: 450px auto 60px auto;
+        width: 90%; 
         display: flex;
         justify-content: center;
     }
+
+    .header .cta h1{
+    
+        width: 80%;
+        margin-bottom: -50px;
+        padding: 5% 5%;
+        font-size: 70px;
+        align-items: center;
+    }
+
+    .header button{
+        width: 180px;
+	    padding: 10px;
+    }
+
+    .content-container{
+
+        max-width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-flow: column nowrap;
+        align-content: flex-start;
+    }
+    
+    .content-container h2{
+        font-size: 20px;
+    }
+    
+    .content-container p{
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    
+    .top-content{
+        max-width: 100%;
+        margin-bottom: 0;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+    }
+    
+    .top-item{
+        width: 100%;
+        margin-bottom: 30px;
+        padding: 0;
+    }
+
+    .middle-img{
+        width: 100%;
+        align-items: center;
+    }
+    
+    .bottom-content{
+        margin: 30px 0;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+    }
+    
+    .bottom-item{
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    /*** Contact ***/
+    .contact{
+        width: 90%;
+    }
+
+    .contact h2{
+        font-size: 20px;
+    }
+
+    .contact address{
+        width: 200px;
+        margin: 10px 0;
+        font-size: 16px;
+        line-height: 1.3;
+    }
+
+    .contact p{
+        margin: 5px 0;
+        font-size: 16px;
+    }
+
+    footer{
+        width: 90%;
+        margin: 0px auto;
+        padding: 5%;
+        text-align: center;
+        font-size: 12px;
+    }
+
 }
