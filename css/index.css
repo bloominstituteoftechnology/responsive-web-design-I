@@ -1,3 +1,317 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+.container{
+	
+	margin: 0 auto;
+	
+    width: 1000px;
+    
+	
+}
+.header{
+	display: flex;
+	justify-content: space-around;
+
+}
+.main-nav {
+
+	display: flex;
+	width: 68%;
+    justify-content: space-between;
+    align-items: flex-end;
+
+	
+}
+.container .main-nav a{
+	
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: gray;
+
+}
+.container .logo {
+	
+	width: 16%;
+	height: 20%;
+	
+
+}
+
+hr{
+    display: flex;
+    width: 92%;
+    justify-content: center;
+    
+}
+
+/* TOP CONTENT */
+.top-content{
+	display: flex;
+	justify-content: space-evenly;
+    padding-top: 50px;
+    padding-bottom: 50px;
+	
+	
+}
+.container .top-content .onDemandWithButton{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	flex-direction: column;
+	
+
+}
+.buttonBox{
+    display: flex;
+    justify-content: center;
+	
+    
+}
+
+.container .top-content .getStartedButton {
+
+	
+	width: 60%;
+	background-color: white;
+    border: 1px solid black;
+}
+
+.container .top-content .headerImage {
+	height: 90%;
+	width: 30%;
+	
+}
+
+.container .top-content .onDemanTitle{
+	display: flex;
+	justify-content: center;
+	padding-left: 30px;
+	
+}
+
+.top-content h1{
+	padding-bottom: 0;
+	font-size:  400%;
+}
 
 
+
+
+
+
+
+
+/* Main Content */
+
+.main-content{
+	display: flex;
+	
+	justify-content: center;
+	flex-wrap: wrap;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	
+	height: 50%;
+}
+
+
+.main-content-top{
+	padding-bottom: 10px;
+}
+
+.main-content .features{
+	display: flex;
+	flex-wrap: wrap;
+    width: 45%;
+    height: 20%;
+    padding: 5px;
+    padding-bottom: 2%;
+	
+  
+}
+
+.main-content .features h2{
+	font-size: 30px;
+}
+
+.main-content .features p{
+	font-size: 20px;
+}
+.main-content .about{
+	display: flex;
+	flex-wrap: wrap;
+    width: 45%;
+    height: 20%;
+	padding-bottom: 5px;
+	
+}
+.main-content .about h2{
+	font-size: 30px;
+}
+.main-content .about p{
+	font-size: 20px;
+}
+.main-content-image{
+	display: flex;
+	justify-content: center;
+	width: 89%;
+}
+.main-content-image .middle-img{
+	width: 120%;
+	height: 82%;
+	
+}
+.main-content .main-content-bottom{
+	display: flex;
+    width: 89%;
+    
+}
+
+.main-content .services{
+	display: flex;
+	flex-wrap: wrap;
+	width: 33%;
+	
+}
+.main-content .services h2{
+	font-size: 30px;
+}
+.main-content .services p{
+	font-size: 20px;
+}
+.main-content .product{
+	display: flex;
+	flex-wrap: wrap;
+	width: 33%;
+	
+}
+.main-content .product h2{
+	font-size: 30px;
+}
+.main-content .product p{
+	font-size: 20px;
+}
+.main-content .vision{
+	display: flex;
+	flex-wrap: wrap;
+	width: 33%;
+	
+}
+
+.main-content .vision h2{
+	font-size: 30px;
+}
+.main-content .vision p{
+	font-size: 20px;
+}
+
+
+
+.container .contact-content{
+    display: flex;
+    
+   flex-direction: column;
+    
+    border: 1px solid red;
+    width: 100%;
+    
+}
+.container .contact-content h1{
+  
+	font-size: 30px;
+	
+}
+
+
+/* Footer */
+.footerInfo{
+	display:flex;
+	justify-content: center;
+	align-content: flex-end;
+	
+	
+	font-size: 20px;
+	
+}
+
+/* Tablet View*/
+
+@media screen and (max-width: 800px){
+	.main-nav {
+
+		display: flex;
+		width: 68%;
+		justify-content: space-between;
+		align-items: flex-end;
+		flex-direction: column;
+	
+	}
+
+}
+
+
+/*Mobile View */
+@media screen and (max-width: 500px){
+
+}
