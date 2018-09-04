@@ -1,9 +1,9 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+v2.0 | 20110126
+License: none (public domain)
+ */
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -18,35 +18,35 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-	display: block;
+    display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
 }
 ol, ul {
-	list-style: none;
+    list-style: none;
 }
 blockquote, q {
-	quotes: none;
+    quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+    content: '';
+    content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 /* Set every element's box-sizing to border-box */
@@ -98,6 +98,29 @@ header .logo {
     margin: 28px 0 0 91px;
 }
 
+/* tablet header styles */
+@media (max-width: 800px) {
+    header {
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: center;
+        align-items: space-around;
+        width: 90%;
+    }
+
+    header .logo {
+        order: -1;
+        margin-left: 0px;
+
+    }
+
+    header nav {
+    display: flex;
+    width: 100%;    
+    justify-content: space-around;
+}
+}
+
 /* Call To Action (CTA) Styles */
 
 .cta {
@@ -132,15 +155,30 @@ header .logo {
     color: white;
 }
 
+/* cta tablet styles */
+@media(max-width: 800px) {
+    .cta {
+        justify-content: center;
+    }
+
+    .cta img {
+        display: none;
+    }
+}
+
+
+
+
+
 /* Main Content Styles */
 
 .main-content {
-   border-top: 2px solid black; 
-   border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
-   padding: 35px 0;
-   font-size: 16px;
-   line-height: 18px;
+    border-top: 2px solid black; 
+    border-bottom: 2px solid black;
+    margin: 75px 0 35px 0;
+    padding: 35px 0;
+    font-size: 16px;
+    line-height: 18px;
 }
 
 .main-content .top-content {
@@ -164,6 +202,37 @@ header .logo {
 
 .contact p {
     margin: 15px 0;
+}
+
+/* main content tablet styles */
+@media (max-width: 800px) {
+    .main-content {
+        width: 90%;
+        padding: 35px 7px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .main-content .top-content .text-content {
+        width: 49%;
+        padding-left: 25px;
+    }
+
+    .main-content .middle-img {
+        width: 100%;
+        height: auto;
+        margin-left: 15px;
+        margin-right: 20px;
+    }
+
+    .main-content .bottom-content .text-content {
+        width: 33%;
+        padding-left: 25px;
+        margin-top: -5px;
+    }
+
 }
 
 /* Footer Styles */
@@ -192,9 +261,9 @@ footer {
 }
 
 .services-content .services-text {
- border-bottom: 1px solid black;
- padding-bottom: 40px;
- margin-bottom: 20px
+    border-bottom: 1px solid black;
+    padding-bottom: 40px;
+    margin-bottom: 20px
 }
 
 .services-content .card {
@@ -237,24 +306,20 @@ footer {
 }
 
 .services-content .services-info .facts {
-  width: 400px;
-  margin: 0 60px 20px 0;
+    width: 400px;
+    margin: 0 60px 20px 0;
 }
 
 .services-content .services-info .facts p {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .services-content .services-info .services-info-img {
-  width: 420px;
-  height: 300px;
+    width: 420px;
+    height: 300px;
 }
 
-@media (max-width: 800px) {
-    .container {
-        max-width: 800px;
-        margin: 0 auto;
-    }
+/*@media (max-width: 800px) {
 
     header {
         flex-flow: row wrap;
@@ -262,14 +327,16 @@ footer {
         align-content: space-around;
         align-items: space-around;
     }
-    
-    header .logo {
-    order: -1;
 
-}
+    header .logo {
+        order: -1;
+        margin-left: 0px;
+
+    }
 
     header nav {
         display: flex;
+        width: 100%;
         justify-content: space-around;
     }
 
@@ -284,8 +351,8 @@ footer {
     .cta img {
         display: none;
     }
+*/
 
 
 
-    
 }
