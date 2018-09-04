@@ -1,3 +1,592 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+/* container div */
+.container {
+	width: 880px;
+	margin: 0 auto;
+	
+}
+
+/* //// CONTAINER MQ //// */
+
+
+@media (max-width: 800px) {
+    
+    .container {
+        width: 800px;
+    }
+}
+
+@media (max-width: 500px) {
+    
+    .container {
+        width: 500px;
+    }
+}
+
+/* /////  generic ///// */
+
+
+p {
+	padding-top: 5px;
+	padding-bottom: 10px;
+}
+
+/* ///// nav bar ///// */
+
+header {
+    
+    display: flex;
+}
+
+.navigation {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+    align-items: center;
+    
+}
+
+header .logo {
+    margin-left: 20px;
+    
+}
+.navigation a {
+	
+	text-decoration: none;
+    color: grey;
+    
+    font-size: 15px;
+}
+
+.navigation a:hover {
+ text-decoration: underline;
+}
+
+/* //// Navigation Media Query Section //// */
+
+@media (max-width: 800px) {
+    
+    header {
+        
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 28px;
+        
+    }
+
+    header .logo {
+        padding-right: 19px;
+        padding-bottom: 1px;
+    }
+
+    header .navigation a {
+        margin: 39px 60px 0px 21px;
+        justify-content: space-evenly;
+
+    }
+}
+
+@media (max-width: 500px) {
+
+    header {
+        margin-top: 21px;
+    }
+
+    header .logo {
+        padding-right: 19px;
+    
+    }
+
+    header .navigation {
+        border-top: 1px solid grey;
+        flex-direction: column;
+        margin-top: 15px;
+
+    }
+
+    header .navigation a {
+        
+        border-bottom: 1px solid grey;
+        margin: 0px 0px;
+        font-size: 20px;
+        padding: 21px 0px 19px 214px;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+
+}
+
+
+/* //// Header Section //// */
+
+.IOD {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	padding-bottom: 50px;
+	border-bottom: 1px solid grey;
+}
+
+.IOD h6 {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	font-family: 'Bangers', cursive;
+	letter-spacing: 1px;
+	font-size: 80px;
+	text-align: center;
+}
+
+.IOD button {
+	border: 1px solid black;
+	background: white;
+	margin-top: 6px;
+	margin-left: 100px;
+	padding: 8px 10px;
+	width: 120px;
+}
+
+.IOD button:hover {
+	background: black;
+	color: white;
+}
+
+
+.IOD .header-img {
+	display: inline-block;
+	border-radius: 50%;
+	vertical-align: top;
+	width: 300px;
+}
+
+
+/* //// IOD MQ SECTION (Get STARTED BANNER) //// */
+
+
+@media (max-width: 800px) {
+
+
+    .IOD {
+        border-bottom: 2px solid black;
+        margin-bottom: 23px;
+        margin-top: 56px;
+    }
+
+    .IOD .header-img {
+         display: none;
+ }
+ 
+     .IOD h6 {
+         font-size: 71px;
+         
+         padding-top: 18px;
+         padding-right: 1px;
+         margin-bottom: 20px;
+ }
+
+    .IOD button {
+        border: 1px solid black;
+        padding: 7px 0px 6px 0px;
+        font-size: 16px;
+        width: 170px;
+        margin-right: 99px;
+        margin-bottom: 25px;
+    }
+ 
+ }
+
+ @media (max-width: 500px) {
+     
+    .IOD {
+        margin-top: 34px;
+    }
+ }
+
+/* ///// CONTENT SECTION 1 ///// */
+
+
+.cont1 {
+	padding: 0 10px;
+	display: flex;
+
+	
+}
+
+.text-content {
+ flex-direction: column;
+ margin: 10px;
+ justify-content: space-evenly;
+ align-items: center;
+}
+
+
+/* //// CONTENT SECTION 1 MQ //// */
+
+@media (max-width: 800px) {
+
+.cont1 {
+    
+    margin-bottom: 9px;
+    font-weight: bold;
+        line-height: 1.1
+}
+
+
+.text-content1 {
+    
+    padding-left: 6px;
+    margin: 14px;
+}
+
+
+.text-content2 {
+    
+    padding-right: 12px;
+}
+
+.text-content p {
+    padding-top: 1px;
+}
+
+
+}
+
+
+@media (max-width: 500px) {
+
+    .cont1 {
+        flex-wrap: wrap;
+        padding: 0px;
+    }
+    
+    .text-content {
+        padding: 0px;
+    }
+
+    .text-content1 {
+        padding-left: 6px;
+        padding-top: 21px;
+    }
+
+    .text-content1 h1 {
+        padding-bottom: 2px;
+    }
+
+   .cont1 .text-content2 {
+        padding-top: 13px;
+        padding-left: 10px;
+    }
+
+    .cont1 .text-content2 h1 {
+        padding-bottom: 2px;
+    }
+}
+
+
+
+
+/* //// middle image //// */
+
+.middle-img {
+	margin-bottom: 50px;
+}
+
+/* //// middle image MQ //// */
+
+@media (max-width: 800px) {
+
+.middle-img {
+    width: 769px;
+    padding-left: 10px;
+    margin-bottom: 14px;
+}
+
+}
+
+
+@media (max-width: 500px) {
+
+    .middle-img {
+        padding-top: 13px;
+        width: 471px;
+    }
+}
+
+
+/* //// CONTENT SECTION 2 //// */
+
+
+.cont2 {
+	display: flex;
+	padding: 0 10px;
+	border-bottom: 1px solid grey;
+	padding-bottom: 50px;
+	margin-bottom: 50px;
+}
+
+.text-content2 {
+	flex-direction: column;
+	margin: 10px;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+
+/* //// CONTENT SECTION 2 MQ //// */
+
+@media (max-width: 800px) {
+
+    .cont2 {
+        
+        padding-bottom: 29px;
+        margin-bottom: 33px;
+        border-bottom: 2px solid black;
+        font-weight: bold;
+        line-height: 1.1
+    }
+
+    .cont2 .text-content2 {
+        flex-direction: column;
+        margin: -1px 23px 2px 8px;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding-left: 5px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .cont2 {
+        flex-wrap: wrap;
+        border-bottom: 2px solid grey;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .cont2 .text-content2 {
+        margin-bottom: 28px;
+        padding-left: 2px;
+    }
+
+    .cont2 .text-content2 .infobox1 {
+        padding-top: 23px;
+    }
+
+    .cont2 .text-content2 .infobox2 {
+        padding-top: 25px;
+    }
+
+
+}
+
+    
+
+
+
+/* //// CONTACT SECTION //// */
+
+.contact {
+	margin-bottom: 20px;
+	margin-top: 20px;
+	
+}
+
+footer {
+	text-align: center;
+	padding-bottom: 50px;
+}
+
+/* //// CONTACT SECTION 2 MQ //// */
+
+@media (max-width: 800px) {
+
+    .contact {
+        margin-top: 10px;
+        padding-left: 29px;
+    }
+
+    .container footer {
+        margin-top: 38px;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .contact {
+        padding-top: 24px;
+        padding-left: 20px;
+    }
+
+}
+
+
+
+
+
+/* //// SERVICES PAGE ONLY //// */
+
+
+.services {
+	width: 880px;
+}
+
+.services .services-header-img {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+
+/* //// HEADER SECTION //// */
+
+
+.services .serv-header {
+	padding-bottom: 50px;
+	border-bottom: 1px solid black;
+}
+.services .serv-header h1 {
+	font-size: 20px;
+}
+
+
+/* //// SERVICES CONTENT SECTION //// */
+
+
+.services .serv-content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: space-between;
+	padding-bottom: 30px;
+	padding-top: 30px;
+
+}
+
+.services .serv-design1 {
+	background: #f4f7fc;
+	width: 415px;
+	margin: 20px 0px 20px 0px;
+	padding: 25px;
+	border: 1px solid black;
+}
+
+
+.serv-content button {
+	border: 1px solid black;
+	padding: 5px 20px;
+	background: white;
+	border-radius: 5%;
+	margin-top: 10px;
+}
+
+.serv-content button:hover {
+	border: 1px solid black;
+	padding: 5px 20px;
+	background: black;
+	color: white;
+	border-radius: 5%;
+}
+
+
+/* //// SERVICES - FACT //// */
+
+
+.serv-facts {
+	display: flex;
+	border-top: 1px solid black;
+	padding-top: 50px;
+	
+}
+
+.serv-facts .facts-design {
+	display: flex;
+	flex-direction: column;
+	width: 1191px;
+	margin-right: 48px;
+}
+
+.serv-facts .services-info-img {
+	width: 1200px;
+}
+
+.serv-facts .facts-design ul li {
+	list-style-type: square;
+	margin: 20px;
+}
+
+footer {
+	margin-top: 50px;
+	margin-bottom: 25px;
+}
 
 
