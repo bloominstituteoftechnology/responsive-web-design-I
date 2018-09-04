@@ -388,6 +388,43 @@ footer {
   }
 }
 
+@media (max-width: 500px) {
+  .services {
+      width: 450px;
+  }
+  .services header {
+      margin-bottom: 0px;
+  }
+  .services header nav {
+      display: flex;
+      flex-direction: column;
+      width: 450px;
+      margin-bottom: 20px;
+  }
+  .services header nav a {
+      border-top: 1px solid black;
+      width: 458px;
+      padding: 20px 0;
+      font-size: 24px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+  }
+  .services header nav a:nth-child(6) {
+      border-bottom: 1px solid black;
+  }
+  .services .services-header-img {
+    display: none;
+  }
+  .services .main-info .mid-content {
+    justify-content: center;
+  }
+  .services .bottom-content .bottom-content-right {
+    display: none;
+  }
+  
+}
+
 /* .product styles only */
 
 .product {
