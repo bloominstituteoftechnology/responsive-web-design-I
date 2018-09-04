@@ -73,7 +73,7 @@ h1 {
 
 
 
-/* MOBILE */
+/* ------------------------ MOBILE ------------------------ */
 
 #entire-page {
 	width: 100%;
@@ -95,6 +95,7 @@ h1 {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
+	padding-bottom: 5%;
 }
 
 .top-header-container .top-header .top-header-logo {
@@ -162,11 +163,12 @@ hr {
 	width: 100%;
 }
 
-/* page content */
+/* page content sections */
 .page-content {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
+	padding-top; 
 }
 
 .page-content .page-content-section {
@@ -174,11 +176,30 @@ hr {
 	padding: 5% 0;
 }
 
+.page-content .page-content-section .learn-more-button {
+	margin-top: 1.5vh;
+	border: 1px solid black;
+	background: white;
+	padding: 2% 5%;
+	border-radius: 5px;
+}
+
 .page-content-img {
 	display: block;
 	width: 100%;
 	height: auto;
+}
 
+.page-content .services-content {
+	border: 1px solid black;
+	background: #f4f3f4;
+	padding: 4% 4%;
+	margin-bottom: 5%;
+}
+
+.services-wrap {
+	flex-wrap: wrap;
+	margin-top: 5%;
 }
 
 /* contact */
@@ -196,15 +217,31 @@ hr {
 footer {
 	width: 100%;
 	text-align: center;
-	padding-bottom: 2%;
+	padding-bottom: 5%;
 }
 
 address {
 	padding-bottom: 1.5vh;
 }
 
+ul {
+	list-style-type: square;
+	margin: 0;
+	padding: 0;
+	list-style-position: inside;
+	margin-top: 1.5vh;
+}
 
-/* TABLET */
+li {
+	padding-bottom: 1.5vh;
+}
+
+li:last-child {
+	padding-bottom: 0;
+}
+
+/* ------------------------ TABLET ------------------------ */
+
 @media (min-width: 500px) {
 	/* navigation and logo at the top of each page */
 	.top-header-container{
@@ -212,7 +249,7 @@ address {
 		background: rgb(255, 255, 255, 0.9);
 		z-index: 100;
 		width: 100%;
-		height: 17vh;
+		height: 125px;
 		padding-top: 25px;
 	}
 	
@@ -242,36 +279,51 @@ address {
 		padding: 0 0 5%;
 	}
 
-	/* page content */
+	/* page content section */
 	.page-content {
 		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.services-content-img {
+		display: block;
+		width: 100%;
+		height: auto;
+		margin-left: 5%;
+		padding-right: 5%;
 	}
 
 	.page-content .two-column {
-		width: 50%;
-		padding: 4% 2%;
+		width: 47.5%;
+		padding: 4% 0;
 	}
 
 	.page-content .three-column {
-		width: 33%;
-		padding: 4% 2%;
+		width: 30%;
+		padding: 4% 0;
+	}
+
+	/* specific services.html styling */
+
+	.page-content .services-content {
+		padding: 4%;
 	}
 }
 
-/* DESKTOP, LAPTOP */
+/* ------------------------ DESKTOP, LAPTOP ------------------------ */
+
 @media (min-width: 800px) {
 	#entire-page {
 		max-width: 950px;
 		margin: 0 auto;
 	}
+	/* navigation and logo at the top of each page */
 
 	.top-header-container{
-		height: 15vh;
+		height: 110px;
 		max-width: 950px;
 		padding-top: 33px;
 	}
-
-	/* navigation and logo at the top of each page */
 	
 	.top-header-container .top-header {
 		flex-direction: row;
@@ -295,30 +347,21 @@ address {
 		padding: 0;
 	}
 
-	/* header image for page container */
+	/* page container*/
 	.page-container {
 		padding-top: 150px;
 	}
 	
+	/* page container header */
 	.page-container .page-header .page-header-img{
 		display: inline-block;
 		max-width: 50%;
 		height: auto;
 	}
 
-	/* page content */
+	/* page content section*/
 	.page-content {
 		justify-content: space-between;
-	}
-
-	.page-content .two-column {
-		width: 49%;
-		padding: 4% 0;
-	}
-
-	.page-content .three-column {
-		width: 32%;
-		padding: 4% 0;
 	}
 
 }
