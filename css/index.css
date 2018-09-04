@@ -71,7 +71,7 @@ h1, h2, h3, h4, h5 {
 
 
 .container{
-	width: 880px;
+	width: 100%;
 	margin: 0 auto;
 }
 .container header{
@@ -124,7 +124,8 @@ header nav{
 
 
 .main-content{
-	border-top: 1px solid black;margin-top: 76px;
+    border-top: 1px solid black;
+    margin-top: 76px;
 	padding-top: 39px;
 }
 .main-content .top-content{
@@ -196,10 +197,40 @@ footer{
 	margin: 40px;
 }
 
+/*tablet view*/
 
+@media (max-width: 800px){
+    
+    .container header{
+        flex-direction: column-reverse;
+        align-items: center;
+	   
+    }
+    .container .logo{
+        margin: 10px 0px 40px 0px;
+    }
+    .container header nav{
+        margin-right: 25px;\]
+    }
+    .container .hero img{
+        display: none; 
+    }
+    .container .hero .hero-text{
+	    font-size: 75px;	
+    }
+    .container .hero button{
+	    padding: 5px 40px;
+        font-size: 16px;
+    }
+    .container .hero .hero-text h1{
+       margin-bottom: 0px;
+        line-height: 70px;
+    }
+}
 
+@media (max-width: 500px){
 
-
+}
 
 
 
