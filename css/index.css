@@ -331,63 +331,237 @@ h2 {
 }
 
 
-/* ------- index.html - tablet -------
+/* ------- index.html - tablet -------*/
 @media (max-width:800px) {
     .index#container {
-        height: auto;
-        background: blue;
-    }
-
-    #navBar {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        width: 750px;
-        margin-left: 25px;
-        
-    }
-    
-    #navBar nav {
-        display: flex;
-        flex-direction:row;
-    
-    }
-    
-    #navBar nav a {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin: 20px;
-          padding:7px;
-          color: red;
-          text-decoration: none;
-          font-weight: lighter;
-    }
-}
-
-/* ------- index.html - mobile ------- */
-@media (max-width:500px) {
-    .index#container {
+        width: 800px;
         height: auto;
        
     }
 
     #navBar {
         display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        align-items: center;
+        width: 700px;
+        margin-left: 20px;
+        
+    }
+    
+    #navBar nav {
+        display: flex;
+        flex-direction:row;
+        width: 700px;
+        justify-content: space-between;
+    
+    }
+    
+    #navBar nav a {
+        display: flex;
         flex-direction: column;
+        justify-content: space-between;
+        padding:15px;
+        font-size: 18px;
+        color: lightgrey;
+        text-decoration: none;
+        font-weight: lighter;
+        text-align: center;
+        margin: 0px;
+    }
+    .logo {
+        margin: 20px;
+    }
+    h1 {
+        font-size: 70px;
+        text-align: center;
+        margin-right: 25px;
+    
+    }
+    
+    h2 {
+        text-align: left;
+    }
+    
+    #slide {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 30px;
+        margin-top: 10px;
+        margin-left: 20px;
+    
+    }
+
+    #slide h1 {
+        margin-top: 20px;
+    }
+    
+    #slideImg {
+       display: none;
+    }
+    
+    .cta {
+        border: 1px solid black;
+        background: white;
+        font-family:Arial, Helvetica, sans-serif;
+        font-weight: 100;
+        font-size: 15px;
+        padding: 5px;
+        margin: 10px;
+        width: 100px;
+    }
+    #started {
+        font-weight: 100;
+        font-size: 30px;
+        padding: 8px;
+    }
+    
+    #features {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-top: 25px;
+        border-top: 2px solid black;
+        width: 725px;
+        margin: 5px;
+        margin-left: 10px;
+        margin-right: 10px;
+      
+    }
+    
+    #features div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 350px;
+        margin-left: 20px;
+        margin-right: 10px;
+        
+    }
+    #features div h2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        width: 350px;
+        margin-bottom: 5px;
+        margin-left: 20px;
+        margin-right: 10px;
+        
+    }
+    #features div p {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        width: 350px;
+        margin-top: 5px;
+        margin-left: 20px;
+        margin-right: 10px;
+    }
+    .middle-img {
+        width: 700px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding:0px;
+        height: 155px;
+        margin: 10px;
+       
+    }
+
+    #image {
+        width:700px;
+        margin:5px;
+    }
+
+    #services {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-top: 10px;
+        border-bottom: 2px solid black;
+        width: 700px;
+        margin: 5px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    #services div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 220px;
+        margin-left: 20px;
+        margin-right: 10px;
+        
+    }
+    #services div h2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        width: 220px;
+        margin-bottom: 5px;
+        margin-left: 20px;
+        margin-right: 10px;
+        
+    }
+
+    #services div p {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        width: 220px;
+        margin-top: 5px;
+        margin-left: 20px;
+        margin-right: 10px;
+        
+    }
+    #bottomAddress div {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 700px;
+        margin-top: 25px;
+        margin-left: 10px;
+    }
+    #copyright {
+        text-align: center;
+        margin: 25px;
+        margin-left: 10px;
+        width: 700px;
+    }
+}
+
+/* ------- index.html - mobile ------- */
+@media (max-width:500px) {
+    .index#container {
+        width: 500px;
+        height: auto;
+       
+    }
+
+    #navBar {
+        display: flex;
+        flex-direction: column-reverse;
         justify-content: flex-start;
         align-items: center;
         width: 400px;
         margin-left: 20px;
-        border: 1px solid green;
         
     }
     
     #navBar nav {
         display: flex;
         flex-direction:column;
-        border: 1px solid purple;
+        width: 500px;
+        margin: 0px;
     
     }
     
@@ -406,11 +580,13 @@ h2 {
         border-bottom: 1px solid lightgray;
         margin: 0px;
     }
+    .logo {
+        margin: 20px;
+    }
     h1 {
         font-size: 70px;
         text-align: center;
         margin-right: 25px;
-    
     }
     
     h2 {
@@ -419,17 +595,21 @@ h2 {
     
     #slide {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
         margin: 30px;
-        margin-top: 60px;
-        margin-left: 250px;
+        margin-top: 10px;
+        margin-left: 20px;
     
+    }
+
+    #slide h1 {
+        margin-top: 20px;
     }
     
     #slideImg {
-        margin-left: 25px;
+       display: none;
     }
     
     .cta {
@@ -455,18 +635,20 @@ h2 {
         align-items: center;
         padding-top: 25px;
         border-top: 2px solid black;
-        width: 400px;
-        margin-left: 20px;
-        margin-right: 20px;
+        width: 450px;
+        margin: 5px;
+        margin-left: 10px;
+        margin-right: 10px;
       
     }
     
     #features div {
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
         align-items: center;
-        width: 430px;
+        width: 450px;
+        margin-left: 20px;
+        margin-right: 10px;
         
     }
     #features div h2 {
@@ -474,55 +656,95 @@ h2 {
         flex-direction: column;
         justify-content: space-evenly;
         align-items: flex-start;
-        width: 430px;
+        width: 450px;
+        margin-bottom: 5px;
+        margin-left: 20px;
+        margin-right: 10px;
+        
     }
-    #image {
+    #features div p {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        width: 450px;
+        margin-top: 5px;
+        margin-left: 20px;
+        margin-right: 10px;
+    }
+    .middle-img {
+        width: 380px;
         display: flex;
         flex-direction: row;
         justify-content: center;
-        margin-top: 25px;
-        margin-bottom: 25px;
-        margin-left: 150px;
+        padding:0px;
+        height: 125px;
+        margin: 10px;
        
     }
+
+    #image {
+        width:400px;
+        margin:5px;
+    }
+
     #services {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
-        padding-top: 25px;
+        padding-top: 10px;
         border-bottom: 2px solid black;
-        width: 400px;
-        margin-left: 20px;
-        margin-right: 20px;
+        width: 450px;
+        margin: 5px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
     
     #services div {
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
         align-items: center;
         width: 400px;
+        margin-left: 20px;
+        margin-right: 10px;
+        
     }
     #services div h2 {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-items: flex-start;
         width: 400px;
+        margin-bottom: 5px;
+        margin-left: 20px;
+        margin-right: 10px;
+        
+    }
+
+    #services div p {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        width: 400px;
+        margin-top: 5px;
+        margin-left: 20px;
+        margin-right: 10px;
+        
     }
     #bottomAddress div {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        width: 875px;
+        width: 400px;
         margin-top: 25px;
-        margin-left: 250px;
+        margin-left: 10px;
     }
     #copyright {
         text-align: center;
         margin: 25px;
-        margin-left: 150px;
-        width: 875px;
+        margin-left: 10px;
+        width: 400px;
     }
 }
