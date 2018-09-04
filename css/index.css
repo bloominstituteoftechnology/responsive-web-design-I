@@ -152,7 +152,7 @@ h5 {
 }
 
 .container {
-    width: 880px;
+    max-width: 880px;
     /* TB LR */
     margin: 0 auto;
 }
@@ -274,3 +274,51 @@ footer {
     text-align: center;
     font-size: 14px;
 }
+
+@media (max-width: 880px) {
+    .container header {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .logo {
+        order: -1;
+        margin-left: 320px
+    }
+
+    .container header nav {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 50px
+    }
+
+    .cta {
+        display: flex;
+        justify-content: center;
+    }
+
+    .cta img {
+        display: none
+    }
+
+    .main-content {
+        display: flex;
+        flex-wrap: wrap;
+        border-top: 1px solid black;
+    }
+
+    .main-content .top-content .text-content {
+        justify-content: space-between;
+        width: 385px;
+        margin-right: 0;
+        margin-left:
+    }
+
+.bottom-content{
+    display: flex;
+    
+}
+}
+
+@media (max-width: 500px) {}
