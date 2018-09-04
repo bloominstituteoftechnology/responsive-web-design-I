@@ -1,3 +1,371 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.container {
+  max-width: 880px;
+  /* TB LR */
+  margin: 0 auto;
+}
+
+/* header */
+
+header nav {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  width: 950px;
+  margin-top: 35px;
+}
+
+header nav a {
+  margin-right: 65px;
+  font-size: 14px;
+  color: gray;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+.nav-links {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+/* cta */
+
+.cta {
+	display: flex;
+	justify-content: space-between;
+}
+
+.cta .cta-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  width: 400px;
+  font-size: 77px;
+  margin-top: 120px;
+  text-align: center;
+  padding: 0 75px 0 100px;
+}
+
+.cta .cta-text button {
+  background: white;
+  vertical-align: top;
+  margin-top: 6px;
+  padding: 8px 44px;
+  font-size: 17px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.cta .cta-text button:hover {
+  background: black;
+  color: white;
+}
+
+.cta img {
+  margin-top: 69px;
+}
+
+.main-content {
+  border-top: 1px solid black;
+  margin-top: 76px;
+  padding-top: 39px;
+}
+
+.main-content .top-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.main-content .top-content .text-content {
+  width: 410px;
+  margin-right: 34px;
+}
+
+.main-content .top-content .text-content:last-child {
+  margin-right: 0;
+}
+
+.main-content .middle-img {
+  margin-top: 45px;
+}
+
+.main-content .bottom-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 37px;
+  padding: 0 10px;
+}
+
+.main-content .bottom-content .text-content {
+  width: 275px;
+  margin-right: 12px;
+}
+
+.main-content .bottom-content .text-content:last-child {
+  margin-right: 0;
+}
+
+.contact {
+  margin-top: 57px;
+  border-top: 1px solid black;
+  padding: 39px 10px 0;
+}
+
+.contact p {
+  margin: 20px 0;
+}
+
+footer {
+  margin: 32px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Services Page */
+
+p {
+	line-height: 1.3;
+}
+
+.services-header-img {
+	margin: 30px 0;
+}
+
+.top-info h2 {
+	font-size: 30px;
+}
+
+.info-boxes {
+	border-top: 1px solid black;
+	border-bottom: 3px solid black;
+	margin: 40px 0;
+}
+
+.service-row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 40px 0;
+}
+
+.service-box {
+	border: 1px solid black;
+	background: #f3f2f3;
+	width: 420px;
+	height: 250px;
+	padding: 20px;
+}
+
+.learn-more {
+	border: 1px solid black;
+	border-radius: 4px;
+	background: white;
+	text-align: center;
+	margin: 20px 0;
+	padding: 10px 20px;
+	width: 160px;
+	font-size: 14px;
+}
+
+.btm-info {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 70px;
+}
+
+.btm-text {
+	margin-right: 45px;
+}
+
+ul {
+	margin: 25px 0;
+	line-height: 2;
+}
+
+/* about */
+
+.about-summary h1 {
+  font-size: 30px;
+  margin: 50px 0 40px;
+  line-height: 1.5;
+}
+
+.sheep {
+  width: 880px;
+  height: auto;
+  border: 3px solid #f6f6f6;
+}
+
+.about-summary h2 {
+  font-size: 20px;
+  margin: 20px 0;
+  padding-bottom: 20px;
+  border-bottom: 4px double black;
+}
+
+.about-full {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-full h2 {
+  font-size: 20px;
+}
+
+.about-full p {
+  font-size: 18px;
+}
+
+.about-text {
+  border: 1px solid grey;
+  border-radius: 2px;
+  width: 750px;
+  padding: 40px;
+  margin: 30px 0;
+}
+
+.off-center {
+  align-self: flex-end;
+  text-align: right;
+}
+
+.img-caption {
+  font-size: 18px;
+  padding-top: 15px;
+}
+
+#jacob {
+  margin-top: 20px;
+}
+
+/* Tablet View */
+
+@media ( max-width: 800px) {
+
+    .container {
+        width: 740px;
+        margin: 30px;
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 80px;
+        align-items: center;
+        width: 740px;
+    }
+
+    header nav a {
+        margin: 0 45px;
+    }
+
+    .nav-links {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .cta img {
+        display: none;
+    }
+
+    .cta .cta-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 80px auto 0;
+        padding: 0 100px;
+    }
+
+    .cta-text h1 {
+        padding: 0 20px;
+    }
+
+    .main-content {
+        width: 740px;
+    }
+
+    .middle-img {
+        width: 740px;
+    }
+
+    .contact {
+        width: 740px
+    }
+}
+
+
+/* Mobile View */
 
