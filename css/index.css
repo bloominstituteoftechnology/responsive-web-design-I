@@ -1,3 +1,405 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
 
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+.container {
+    width: 880px;
+    /* TB LR */
+    margin: 0 auto;
+}
+
+/* header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+}
+
+header nav a {
+    justify-content: flex-start;
+    margin-right: 65px;
+    font-size: 14px;
+    color: gray;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+header nav a:first-child {
+    margin-left: 0;
+}
+
+header nav a:last-child {
+    margin-right: 0;
+}
+
+/* cta */
+
+.cta .cta-text {
+    display: flex;
+    flex-flow: row;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+.cta .cta-text section {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    font-size: 77px;
+    margin-top: 120px;
+    text-align: center;
+}
+
+.cta .cta-text button {
+    align-self: center;
+    background: white;
+    margin-top: 6px;
+    padding: 8px 44px;
+    font-size: 17px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.cta .cta-text button:hover {
+    background: black;
+    color: white;
+}
+
+.cta .ctatext img {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 69px;
+}
+
+.main-content {
+    border-top: 1px solid black;
+    margin-top: 76px;
+    padding-top: 39px;
+}
+
+.main-content .top-content {
+    padding: 0 10px;
+}
+
+.main-content .top-content .text-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 34px;
+}
+
+.main-content .top-content .text-content:last-child {
+    margin-right: 0;
+}
+
+.main-content .middle-img {
+    margin-top: 45px;
+}
+
+.main-content .bottom-content {
+    margin-top: 37px;
+    padding: 0 10px;
+}
+
+.main-content .bottom-content .text-content2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 12px;
+}
+
+.main-content .bottom-content .text-content2:last-child {
+    margin-right: 0;
+}
+
+.contact {
+    margin-top: 57px;
+    border-top: 1px solid black;
+    padding: 39px 10px 0;
+}
+
+.contact p {
+    margin: 20px 0;
+}
+
+footer {
+    margin: 32px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+.serv img {
+    margin: 20px 0px 20px 0px;
+}
+
+.serv .words {
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid black;
+}
+
+.six-text-boxes button {
+    align-self: center;
+    background: white;
+    margin-top: 12px;
+    padding: 8px 22px;
+    font-size: 12px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.six-text-boxes button:hover {
+	background: black;
+	color: white;
+}
+
+.topthird {
+    display: flex;
+    flex-direction: row;
+}
+
+.middlethird {
+    display: flex;
+    flex-direction: row;
+}
+
+.bottomthird {
+    display: flex;
+    flex-direction: row;
+		border-bottom: 1px solid black;
+}
+
+.img-list {
+    display: flex;
+    flex-direction: row;
+    margin: 40px 0px 80px 0px;
+}
+
+.topthird .first {
+    justify-content: flex-start;
+    background: lightgrey;
+    border: 2px solid black;
+    margin: 20px;
+    padding: 20px;
+}
+
+.topthird .second {
+    justify-content: flex-end;
+    background: lightgrey;
+    border: 2px solid black;
+    margin: 20px;
+    padding: 20px;
+}
+
+.middlethird .third {
+    justify-content: flex-start;
+    background: lightgrey;
+    border: 2px solid black;
+    margin: 20px;
+    padding: 20px;
+}
+
+.middlethird .fourth {
+    justify-content: flex-end;
+    background: lightgrey;
+    border: 2px solid black;
+    margin: 20px;
+    padding: 20px;
+}
+
+.bottomthird .fifth {
+    justify-content: flex-start;
+    background: lightgrey;
+    border: 2px solid black;
+    margin: 20px 20px 40px 20px;
+    padding: 20px;
+}
+
+.bottomthird .sixth {
+    justify-content: flex-end;
+    background: lightgrey;
+    border: 2px solid black;
+    margin: 20px 20px 40px 20px;
+    padding: 20px;
+}
+
+.img-list .seventh {
+		justify-content: flex-start;
+		margin-right: 20px;
+}
+
+.img-list ul {
+    margin: 20px;
+}
+
+.img-list ul li {
+    list-style: disc;
+    padding: 5px;
+}
+
+.img-list img {
+		justify-content: flex-end;
+		margin-left: 20px;
+		align-self:
+}
