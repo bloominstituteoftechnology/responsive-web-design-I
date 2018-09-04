@@ -1,3 +1,330 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/*== Layout ==================================================================*/
+
+/*-- Global ------------------------------------*/
+
+.container {
+  margin: 0 auto;
+  width: 880px;
+}
+
+h1 {
+  font-size: 75px;
+}
+
+p {
+  line-height: 1.15;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*-- Header ------------------------------------*/
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 28px 0 35px 0;
+}
+
+header nav {
+  display: flex;
+}
+
+header nav div a {
+  color: #BCBCBC;
+  margin-right: 61px;
+}
+
+/*-- Content ------------------------------------*/
+
+.top-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 70px 0 75px 0;
+}
+
+.top-content .title {
+  flex-grow: 1;
+}
+
+.top-content .title h1 span {
+  display: block;
+  text-align: center;
+}
+
+.top-content .get-started {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.top-content .get-started button {
+  background: white;
+  border: 1px solid black;
+  cursor: pointer;
+  height: 32px;
+  font-family: inherit;
+  font-size: 18px;
+  width: 170px;
+}
+
+.bottom-content {
+  display: flex;
+  flex-wrap:  wrap;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  padding: 36px 0 35px 0;
+}
+
+.bottom-content h3 {
+  margin-bottom: 16px;
+}
+
+.bottom-content div:nth-child(1){ width: 49%; margin-right: 9px; }
+.bottom-content div:nth-child(2){ width: 49% }
+.bottom-content div:nth-child(4){ width: 31.2%; margin-right: 19px; }
+.bottom-content div:nth-child(5){ width: 31.2%; margin-right: 19px; }
+.bottom-content div:nth-child(6){ width: 31.2% }
+
+.middle-img {
+  margin: 30px auto 31px;
+}
+
+
+/*-- Footer ------------------------------------*/
+
+footer {
+  margin: 35px 0 15px 0;
+}
+
+footer address {
+  margin-bottom: 37px;
+}
+
+footer address .contact {
+  margin-bottom: 14px;
+}
+
+footer address .contact span {
+  line-height: 1;
+  display: block;
+}
+
+footer .copyright {
+  text-align: center;
+}
+
+/*== Media Queries ===========================================================*/
+
+/*-- Tablet ------------------------------------*/
+
+@media only screen and (max-width: 800px) {
+
+  /*-- Global ---------------------*/
+  
+  .container {
+    margin: 0 auto;
+    width: 760px;
+  }
+
+  h1 {
+    font-size: 72px;
+  }
+
+  /*-- Header ---------------------*/
+
+  header {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column-reverse;
+    margin: 30px 0 35px 0;
+  }
+
+  header a img {
+    margin-left: 289px;
+  }
+
+  header nav {
+    margin: 38px 0 0 10px;
+  }
+
+  header nav div a {
+    margin-right: 81px;
+  }
+
+  /*-- Content --------------------*/
+
+  .top-content {
+    margin: 72px 0 50px 0;
+  }
+
+  .top-content .get-started {
+    margin: 25px 0;
+  }
+
+  .top-content img {
+    display: none;
+  }
+
+  .middle-img {
+    height: 158px;
+    width: 760px;
+  }
+
+  .bottom-content div:nth-child(1){ width: 46.8%; margin: 0 24px 0 10px; }
+  .bottom-content div:nth-child(2){ width: 46.8% }
+  .bottom-content div:nth-child(4){ width: 28%; margin: 0 41px 0 10px; }
+  .bottom-content div:nth-child(5){ width: 28%; margin-right: 41px; }
+  .bottom-content div:nth-child(6){ width: 28% }
+
+  /*-- Footer ---------------------*/
+  
+  footer {
+    margin: 35px 0 15px 10px;
+  }
+  
+}
+
+/*-- Smartphone --------------------------------*/
+
+@media only screen and (max-width: 500px) {
+
+  /*-- Global ---------------------*/
+
+  .container {
+    margin: 0 auto;
+    width: 460px;
+  }
+
+  /*-- Header ---------------------*/
+
+  header {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+  }
+
+  header a img {
+    margin-left: 0;
+  }
+
+  header nav {
+    display: flex;
+    flex-direction: column;
+    margin: 18px 0;
+  }
+
+  header nav div {
+    border-top: 1px solid black;
+    padding: 20px 0;
+    margin: 0;
+    text-align: center;
+    width: 500px;
+  }
+
+  header nav div:last-child {
+    border-bottom: 1px solid black;
+  }
+
+  header nav div a {
+    font-size: 20px;
+    margin: 0;
+  }
+
+  /*-- Content --------------------*/
+
+  .top-content {
+    margin: 32px 0 50px 0;
+  }
+
+  .bottom-content {
+    padding: 59px 0 35px 0;
+  }
+
+  .bottom-content div:nth-child(1){ width: 95%; margin: 0 0 46px 0; }
+  .bottom-content div:nth-child(2){ width: 95%; margin: 0 0 22px 0; }
+  .bottom-content div:nth-child(4){ width: 95%; margin: 0 0 63px 0; }
+  .bottom-content div:nth-child(5){ width: 95%; margin: 0 0 64px 0; }
+  .bottom-content div:nth-child(6){ width: 95%; margin: 0; }
+
+  .middle-img {
+    height: 96px;
+    width: 460px;
+  }
+
+  /*-- Footer ---------------------*/
+
+  footer {
+    margin-left: 0;
+  }
+}
+
 
 
