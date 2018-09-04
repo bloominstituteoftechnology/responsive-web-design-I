@@ -155,78 +155,13 @@ footer p {
     font-size: 14px;
 }
 
-@media screen and (min-width: 500px) {
-    nav {
-        display: flex;
-        flex-flow: row nowrap;
-     
-    }
 
-    nav a {
-        border-top: 0;
-    }
-    
-    nav a:last-child {
-        border-bottom: 0;
-    }
-
-    .top-content {
-        display: flex;
-        flex-flow: row nowrap;
-    }
-
-    .bottom-content {
-        display: flex;
-        flex-flow: row nowrap;
-    }
-}
-
-@media screen and (min-width: 800px) {
-    .wrapper {
-        display: flex;
-        flex-flow: row nowrap;
-        align-items: center;
-    }
-
-    nav, 
-    nav a {
-        width: 70%;
-    }
-
-    .lg-header-img {
-        display: inline-block;
-    }
-
-}
-/* Services Page CSS
-.top-content-svcs {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-top: 2px solid black;
-}
-
-.middle-content-svcs {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.bottom-content-svcs {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-bottom: 2px solid black;
-}
-
-.svc-fact-content {
-    display: flex;
-    justify-content: center;
-}
-
+/* Service Page CSS */
 .services-info-img {
     margin: 10px;
     padding: 10px;
+    max-width: 100%;
+    align-self: center;
 }
 
 .svc-footer {
@@ -260,69 +195,75 @@ div.text-content button {
     border-radius: 5px;
 }
 
-*/ 
+.top-content-svcs {
+    border-top: 2px solid black;
+}
 
-/*Media Queries
+.bottom-content-svcs {
+    border-bottom: 2px solid black;
+}
 
-@media screen and (max-width: 800px) {
-    .wrapper {
-        flex-flow: column-reverse nowrap;
-    }
+/*Media Queries*/
 
+@media screen and (min-width: 500px) {
     nav {
-        margin: 20px 0;
+        display: flex;
+        flex-flow: row nowrap;
+     
     }
 
     nav a {
-        padding: 0 10px;
+        border-top: 0;
+    }
+    
+    nav a:last-child {
+        border-bottom: 0;
+    }
+
+    .top-content {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    .bottom-content {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    .top-content-svcs,
+    .middle-content-svcs,
+    .bottom-content-svcs {
+        display: flex; 
+        flex-flow: row nowrap;
+    }
+
+    .svc-fact-content {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-content: center;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .wrapper {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+    }
+
+    nav, 
+    nav a {
+        width: 70%;
     }
 
     .lg-header-img {
-        display: none;
+        display: inline-block;
     }
 
-    .svc-fact-content { 
-        display: flex;
-        flex-flow: column nowrap;
-        align-items: center;
-    }
-
-    .services-info-img {
-        max-width: 80%;
-
+    .svc-fact-content {
+        flex-flow: row nowrap;
+        
     }
 
 }
-
-@media screen and (max-width: 500px) {
-    nav {
-        display: flex;
-        flex-direction: column;
-        height: 400px;
-        width: 100%;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    nav a:first-child {
-        border-top: 1px solid gray;
-    }
-
-    nav a {
-        border-bottom: 1px solid gray;
-        padding: 20px 0;
-        width: 100%;
-        text-align: center;
-    }
-    .top-content, 
-    .top-content-svcs, 
-    .middle-content-svcs,
-    .bottom-content,
-    .bottom-content-svcs,
-    .svc-fact-content {
-        display: flex;
-        flex-direction: column;
-    }
-
-} */
-
