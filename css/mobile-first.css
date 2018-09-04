@@ -1,0 +1,403 @@
+/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+/*Index page here*/
+
+/*mobile-first version: under 500px first*/
+body {
+  width: 90%;
+  margin: 0 auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  height: 100px;
+}
+
+nav .link {
+  color: black;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+nav .logo {
+  padding-left: 30px;
+  width: 200px;
+  margin: 20px 0;
+}
+
+nav .link {
+  color: black;
+  border-top: 1px solid gray;
+  width: 100%;
+  order: 1;
+  font-size: 20px;
+  height: 63px;
+  padding: 5px 0;
+  margin: 0px;
+  line-height: 2;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  width: auto;
+  text-align: center;
+  margin: 0;
+  height: 200px;
+  padding-bottom: 175px 0 145px;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid gray;
+}
+
+header div {
+  text-align: center;
+  padding-left: 150px;
+}
+
+header img {
+  width: auto;
+}
+
+header h1 {
+  font-size: 72px;
+}
+
+header button {
+  font-size: 18px;
+  border: 1px solid black;
+  width: 170px;
+  line-height: 1.5;
+  background-color: white;
+}
+
+.top-content {
+  display: flex;
+  flex-direction: column;
+  border-top: 2px solid black;
+  padding: 0 10px;
+  margin-top: 100px;
+  margin-bottom: 0;
+  justify-content: space-between;
+}
+
+.top-content .box {
+  margin: 20px 0;
+  line-height: 1.2;
+  font-size: 16px;
+  padding: 0 10px;
+}
+
+.middle-img {
+  width: 100%;
+  margin: 40px 0 0;
+  padding: 0 15px;
+  height: 100px;
+}
+
+.bottom-content {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid black;
+  justify-content: space-between;
+  margin-top: 10px 0 30px;
+  padding: 0 20px;
+}
+
+.bottom-content .box {
+  font-size: 16px;
+  width: 100%;
+  line-height: 1.2;
+  margin: 15px 0;
+  padding: 10px 0;
+}
+
+.contact {
+  font-size: 16px;
+  margin: 38px 15px 0;
+}
+.contact p {
+  line-height: 1;
+  margin-bottom: 15px;
+}
+
+footer {
+  text-align: center;
+  margin: 40px 0 100px;
+  font-size: 16px;
+}
+/*tablet version once we go above 500px*/
+@media (min-width: 500px) {
+  body {
+    width: 100%;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    padding: none;
+    height: auto;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  nav .link {
+    width: 15%;
+    margin: 35px 5px 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  nav .logo {
+    width: 100%;
+  }
+
+  header img {
+    display: none;
+  }
+
+  header {
+    justify-content: center;
+    margin: 0;
+    height: 300px;
+    padding: 0;
+    border: none;
+  }
+
+  header div {
+    margin: 0;
+    padding: 0;
+  }
+  .top-content {
+    margin: 70px 0 20px;
+    padding: 30px 0 0;
+  }
+
+  .middle-img {
+    height: 150px;
+  }
+
+  .bottom-content {
+    padding-bottom: 60px;
+  }
+
+  .contact {
+    margin: 50px 30px 0;
+  }
+}
+/*desktop version above 800px*/
+@media (min-width: 800px) {
+  body {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  nav {
+    flex-direction: row;
+    margin-bottom: 150px;
+    padding: 28px 20px;
+  }
+
+  nav .link {
+    font-size: 18px;
+  }
+
+  nav .logo {
+    margin: 0;
+  }
+
+  header {
+    margin-bottom: 145px;
+    padding-bottom: 0 0 50px;
+  }
+
+  .top-content .box {
+    margin: 0;
+    line-height: 1;
+  }
+
+  .top-content {
+    border-top: 2px solid black;
+    padding-top: 40px;
+    flex-direction: row;
+  }
+
+  .middle-img {
+    height: 180px;
+  }
+
+  .bottom-content {
+    margin: 30px 0;
+    padding-bottom: 50px;
+    flex-direction: row;
+  }
+
+  .bottom-content .box {
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    width: 30%;
+  }
+
+  .contact {
+    margin: 32px 20px;
+  }
+}
