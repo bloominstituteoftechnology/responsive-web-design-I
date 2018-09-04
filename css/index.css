@@ -1,3 +1,432 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
 
 
+.container {
+	margin: 0 auto;
+	width: 876px;
+}
+
+.nav {
+	display: flex;
+	width: 100%;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.nav-no-logo {
+	display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-right: 50px;
+}
+
+.nav a {
+	text-align: left;
+    font-size: 16px;
+    align-self: center;
+	color: gray;
+    text-decoration: none;
+}
+
+
+.main-header {
+	display: flex;
+	text-align: center;
+	margin-top: 75px;
+	width: 100%;
+	margin-bottom: 75px;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+.main-header .top-image-container {
+    align-items: flex-end;
+	width: 49%;
+}
+
+.main-header img {
+	display: flex;
+    margin-left: 75px;
+    align-self: flex-end;
+
+}
+
+.main-header .big-text {
+	display: flex;
+	justify-content: flex-end;
+    width: 49%;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.main-header h1 {
+    font-size: 74px;
+    display: flex;
+    align-self: flex-end;
+}
+
+.main-header .get-started-container {
+	order: 2;
+	justify-content: center;
+	display: flex;
+    width:50%;
+    margin-right: 50px;
+    margin-bottom: 15px;
+}
+
+.main-header p {
+	border: 1px solid black;
+    padding: 5px 45px;
+    align-self: center;
+    justify-content: flex-start;
+}
+
+
+
+.main-content1 {
+	margin: 20px 0;
+	display: flex;
+	width: 100%;
+}
+
+
+.main-content1 h2 {
+    margin: 10px 0;
+    
+}
+
+.main-content1 p {
+	margin: 10px 0;
+	width: 100%;
+}
+
+/* Don't need styles for these, but leaving them just in case */
+
+/* .main-content1 .features {
+
+}
+
+.main-content1 .about {
+	
+} */
+
+.middle-image img{
+	margin: 20px auto;
+	width: 100%;
+}
+
+.main-content2 {
+	display: flex;
+	width: 100%;
+	margin: 10px 0;
+    height: 200px;
+}
+
+.main-content2 .services {
+	text-align: left;
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+	padding: 0;
+}
+
+.main-content2 .product {
+	text-align: left;
+	display: flex;
+	flex-direction: column;
+	padding: 0;
+}
+
+.main-content2 .vision {
+	text-align: left;
+	display: flex;
+	flex-direction: column;
+	padding: 0;
+}
+
+.main-content2 h2 {
+	margin-bottom: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+.main-content2 p {
+	display: flex;
+	margin: 2px;
+	width: 100%;
+}
+
+.contact {
+	margin: 20px 0;
+}
+
+.footer {
+	margin: 20px;
+	padding: 20px;
+	text-align: center;
+}
+
+
+/* Services Page  */
+
+.servicespage .top-image {
+	margin-top: 37px;
+	width: 100%;
+}
+
+.servicespage .services {
+	height: 100px;
+	width: 900px;
+	margin-top: 15px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.servicespage .box {
+	width: 435px;
+	height: 200px;
+	border: 1px solid black;
+	margin-top: 30px;
+	padding: 10px;
+	background: whitesmoke;
+}
+
+.servicespage .main-content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: 40px;
+}
+
+.servicespage .main-content .learn-more {
+	background: white; 
+	margin: 25px 0;
+	width: 150px;
+	border-radius: 10%;
+	box-shadow: remove;
+	border-style: solid;
+	border: 1px solid black;
+	height: 35px;
+}
+.servicespage .bottom-section {
+	display: flex;
+	margin-top: 40px;
+}
+
+.servicespage .some-facts {
+	margin: 20px 0;
+	width: 450px;
+	margin-right: 40px;
+}
+
+.servicespage .some-facts li {
+	list-style: disc;
+	margin: 10px 20px;
+}
+
+.servicespage footer {
+	text-align: center;
+	margin: 50px;
+}
+
+@media (max-width: 800px) {
+    .main-header img {
+        display: none;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .nav {
+        flex-direction: column;
+    }
+
+    .nav .logo-container {
+        order: -1;
+        display: flex;
+        justify-content: center;
+    }
+
+    .main-header .big-text {
+        width: 100%;
+        justify-content: center;
+    } 
+
+    .main-header .big-text .get-started-container p{
+        width:;
+        justify-content: center;
+        margin-left: 50px;
+
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .container {
+        width: 101%;
+    }
+
+    .mobile-container {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .nav-no-logo{
+        flex-direction: column;
+        display: flex;
+    }
+
+    .logo-container {
+        height: 25px;
+    }
+
+    .nav {
+        display: flex; 
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .nav a {
+        padding: 16px 0;
+        width: 100%;
+        text-align: center;
+        border: 1px solid gray;
+    }
+
+    .main-content1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-content1 h2 {
+        margin-top: 30px;
+    }
+    
+    .main-content2 {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .main-content2 h2 {
+        margin-top: 30px;
+    }
+}
