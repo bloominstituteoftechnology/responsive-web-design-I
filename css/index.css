@@ -1,3 +1,282 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+
+/*== Theme ===================================================================*/
+
+/*-- Global -----------------------------------*/
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+/*-- Header -----------------------------------*/
+.main-navigation a {
+	font-size: 16px;
+	color: #bbb;
+}
+
+/*-- Splash -----------------------------------*/
+.splash .call-to-action h1 {
+	font-size: 75px;
+}
+.button {
+    font-size: 18px;
+	display: inline-block;
+	border: 1px solid black;
+	padding: 5px 40px;
+	background: white;
+}
+
+/*-- Main Content -----------------------------*/
+.content {
+	border-style: solid;
+	border-color: black;
+	border-width: 2px 0px;
+}
+
+
+/*== Layout ==================================================================*/
+
+/*-- Global -----------------------------------*/
+
+/*-- Container --------------------------------*/
+.container {
+    width: 880px;
+    margin: 0 auto;
+}
+.container .main-navigation, .container .splash, .container .blurb-row, .container.page-index footer {
+	padding: 30px 0px;
+}
+.container {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+/*-- Header -----------------------------------*/
+.main-navigation {
+    width: 100%;
+	display: flex;
+	align-items: center;
+    justify-content: space-between;
+    margin-bottom: 14px;
+}
+.logo {
+    order: 1;
+}
+.main-navigation nav {
+    display: flex;
+	justify-content: space-between;
+}
+
+/*-- Splash -----------------------------------*/
+.splash {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+.splash .call-to-action{
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.splash .call-to-action h1 {
+	text-align: center;
+}
+.splash .call-to-action h1 span {
+	display: block;
+}
+
+/*-- Main Content -----------------------------*/
+.content {
+    margin-top: 50px;
+}
+.content .blurb p {
+    line-height: 1.1;
+}
+.blurb-row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+/*-- Footer -----------------------------------*/
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+footer .copyright{
+    display: block;
+    align-self: center;
+    margin: 1rem;
+}
+
+
+/*== Media Queries (Responsive Design) ======================================*/
+
+/*-- Desktop ----------------------------------*/
+.main-navigation nav {
+    width: 600px;
+}
+.content .blurb-row.blurb-row-top .blurb {
+    width: 430px;
+}
+.content .blurb-row.blurb-row-bottom .blurb {
+    width: 275px;
+}
+
+/*-- Tablet -----------------------------------*/
+@media only screen and (max-width: 820px) {
+    .container {
+        width: 760px;
+    }
+    .main-navigation {
+        flex-direction: column;
+        justify-content: center;
+        height: 150px;
+        justify-content: space-between;
+    }
+    .main-navigation .logo{
+        order: -1;
+    }
+    .main-navigation nav {
+        width: 100%;
+    }
+    .splash-img {
+        display: none;
+    }
+    .content .blurb-row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .content .blurb-row.blurb-row-top .blurb {
+        width: 46%;
+    }
+    .content .middle-img {
+        max-width: 100%;
+        height: auto;
+    }
+    .content .blurb-row.blurb-row-bottom .blurb {
+        width: 30%;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+/*-- Phone ------------------------------------*/
+@media only screen and (max-width: 540px){
+    .container {
+        padding: 0;
+        margin: 0 auto;
+        width: 500px;
+    }
+    .main-navigation {
+        height: unset;
+    }
+    .container .main-navigation {
+        padding: unset;
+    }
+    .container .logo {
+        margin: 20px;
+    }
+    .main-navigation nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-navigation nav a {
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid black;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 1.21rem 0;
+    }
+    .main-navigation nav a:first-child {
+        border-top: 1px solid black;
+    }
+    .container > main, .container > footer {
+        width: 460px;
+    }
+    .content .blurb-row {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+    .content .blurb-row.blurb-row-top .blurb, .content .blurb-row.blurb-row-bottom .blurb {
+        width: unset;
+        margin: 1rem 0;
+    }
+}
