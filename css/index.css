@@ -144,26 +144,21 @@ section {
 .multi-column {
 	display: flex;
 }
-@media (max-width: 800px) {
-  /* section tablet styles */
-  
-  
-}
 
 /* this is the start of the home page content section */
 .home-content {
-	width: 98%;
+  width: 98%;
 	padding: 35px 0 40px;
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
 }
 .home-content p {
-	text-align: left;
+  text-align: left;
   padding-top: 5px;
   padding-right: 20px;
 }
 .middle-img {
-	width: 100%;
+  width: 100%;
   height: auto;
   padding-top: 5px;
   padding-right: 5px;
@@ -191,6 +186,17 @@ section {
 }
 .contact p:last-child {
   padding-bottom: 20px;
+}
+@media (max-width: 800px) {
+  /* home page tablet styles */
+  .home-content {
+    width: 95%;
+    padding: 35px 0 50px;
+    margin-top: 50px;
+  }
+  .home-card-wrappers {
+    padding-left: 15px;
+  }
 }
 
 /* start of the footer section */
