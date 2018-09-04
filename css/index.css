@@ -57,8 +57,9 @@ h1, h2, h3, h4, h5 {
     letter-spacing: 1px;
     margin-bottom: 15px;
 }
+/**/
 
-.container {
+.container { /* container */
     width: 880px;
     margin: 0 auto;
     display: flex;
@@ -66,21 +67,19 @@ h1, h2, h3, h4, h5 {
     justify-content: center;
 }
 
-/* Header Styles */
-
-header {
+.container header { /* moved header up nav */
     width: 100%;
     display: flex;
 }
 
-header nav {
+header nav { /* nav */
     margin-top: 40px; 
     width: 610px;
     justify-content: space-between;
     display: flex;
 }
 
-header nav a {
+header nav a { /*nav items */
     text-decoration: none;
     color: #b0b0b0;
 }
@@ -91,26 +90,25 @@ header nav a:hover {
 }
 
 header .logo {
-    margin: 28px 0 0 91px;
+    margin: 29px 0 0 89px;
 }
+/**/
 
-/* Call To Action (CTA) Styles */
-
-.cta {
+.cta { /* innov on demand, image, button section */
     display: flex;
-    margin-top: 72px;
+    margin-top: 75px;
     justify-content: flex-end;
 }
 
 .cta .cta-text {
-    font-size: 72px;
+    font-size: 73px;
     text-align: center;
-    letter-spacing: 5px;
-    display: flex;
-    justify-content: center;
     flex-flow: column;
     align-items: center;
-    margin: 0 82px 0 0;
+	margin: 0 82px 0 0;
+	letter-spacing: 5px;
+    display: flex;
+    justify-content: center;
 }
 
 .cta .cta-text button {
@@ -156,18 +154,16 @@ header .logo {
     padding-right: 20px;
 }
 
-/* Contact Styles */
-
 .contact p {
     margin: 15px 0;
 }
-
-/* Footer Styles */
 
 footer {
     text-align: center;
     margin: 40px 0 20px;
 }
+
+/* Desktop */
 
 @media (max-width: 800px) {
   .container {
@@ -179,12 +175,12 @@ footer {
 
   header {
     flex-direction: column-reverse;
-    flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin: 0px 100px 0px -80px; 
   }
 
   header nav a {
-    margin-right: 70px;
-    margin-left: 10px;
+    margin: 0px 73px 0px 13px;
   }
 
   header .logo {
@@ -325,6 +321,7 @@ header nav { /* practicing child-parent syntax */
 }
 
 header nav a { /* nav items */
+	margin: 0 auto;
    text-decoration: none;
    color: #b0b0b0;
 }
@@ -512,7 +509,7 @@ header .logo { /* edited, put header in beginning parent-child*/
 		padding-right: 10px;
 	}
 	}
-/* Media query 400px */
+/* Media query 500px */
 @media (max-width: 500px) {
 	.services {
 		width: 500px;
@@ -552,5 +549,5 @@ header .logo { /* edited, put header in beginning parent-child*/
 	  header .logo {
 		margin: 20px 10px 0px 165px;
 	}
-	}
+}
 
