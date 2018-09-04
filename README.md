@@ -1,23 +1,73 @@
-# Responsive Web Design I: Adaptive Website
+<div class="container">
 
-It's time to expand our CSS skills into multiple devices.  You will be creating an adaptive version of the "Great Idea" design. You will be working through design mock ups for desktop, tablet, and mobile devices located in the [design-files](design-files) folder. 
+        <header>
+            <nav>
+                <a href="#">Services</a>        
+                <a href="#">Product</a>
+                <a href="#">Vision</a>    
+                <a href="#">Features</a>    
+                <a href="#">About</a>    
+                <a href="#">Contact</a>
+            </nav>
 
-## Task 1: Set Up The Project With Git
+            <img class="logo" src="img/logo.png" alt="Great Idea! Company logo.">
+        </header>
 
-* [ ] Fork the project into your GitHub user account
-* [ ] Clone the forked project into a directory on your machine
-* [ ] You are now ready to build this project with your preferred IDE
+        <section class="cta">
+            <div class="cta-text">
+                <h1>Innovation<br> On<br> Demand</h1>
+                <button>Get Started</button>
+            </div>
+            <img src="img/header-img.png" alt="Image of a code snippet.">
+        </section>
 
-## Task 2: Project Objectives
+        <section class="main-content">
 
-* [ ] Review each [design file](design-files).  Notice the subtle differences between them all. 
-* [ ] Insert a `viewport` meta tag into the head of the project with these html attributes: `content="width=device-width, initial-scale=1"`
-* [ ] Introduce max-width media queries into your project at 800px and 500px  
-* [ ] Do your best to make your styles match the design files at each breakpoint 
+            <div class="top-content">
+                <div class="text-content">
+                    <h4>Features</h4>
+                    <p>Aliquam elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.</p>
+                </div>
+                <div class="text-content">
+                    <h4>About</h4>
+                    <p>Aliquam elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.</p>
+                </div>
+            </div>
 
-## Stretch Goals: 
-* [ ] Create a tablet and mobile version of the services page from previous projects
-* [ ] Once you have completed the project with max-width media queries, start over with min-width media queries to get a feel for how a mobile first approach would be like.  I recommend making a copy of all your contents in a new folder named "mobile-first" to keep it separate
+            <img class="middle-img" src="img/mid-page-accent.jpg" alt="Image of code snippets across the screen">
 
+            <div class="bottom-content">
+                <div class="text-content">
+                    <h4>Services</h4>
+                    <p>Aliquam elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.</p>
+                </div>
+                <div class="text-content">
+                    <h4>Product</h4>
+                    <p>Aliquam elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.</p>
+                </div>
+                <div class="text-content">
+                    <h4>Vision</h4>
+                    <p>Aliquam elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.</p>
+                </div>
+            </div>
 
+        </section>
 
+        <section class="contact">
+
+            <h4>Contact</h4>
+
+            <p>123 Way 456 Street<br>
+            Somewhere, USA</p>
+
+            <p>1 (888) 888-8888</p>
+
+            <p>sales@greatidea.io</p>
+
+        </section>
+
+        <footer>
+            <p>Copyright Great Idea! 2018</p>
+        </footer>
+
+    </div><!-- container -->
