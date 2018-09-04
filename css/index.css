@@ -69,6 +69,8 @@ h1, h2, h3, h4, h5 {
 
 .container-home {
   margin: 0 auto;
+  padding: 30px;
+  max-width: 990px;
 }
 
 .container-home .navigation-bar {
@@ -76,21 +78,25 @@ h1, h2, h3, h4, h5 {
   flex-direction: row;
 	justify-content: space-between;
   align-items: center;
-  margin: 28px 40px 60px 72px;
+  margin: 0px 0px 55px 0px;
 }
 
 .container-home .navigation-bar nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  width: 73%;
+  padding: 0px 0px 0px 10px;
 }
 
 .container-home .navigation-bar a {
+  margin: 0 10px;
   font-size: 14px;
-  color: darkgrey;
+  color: grey;
   font-weight: bold;
   text-decoration: none;
   letter-spacing: 1px;
-  padding: 5px 60.5px 0px 0px;
+  /* padding: 5px 60.5px 0px 0px; */
+
 }
 
 .container-home .navigation-bar a:hover {
@@ -101,6 +107,7 @@ h1, h2, h3, h4, h5 {
 .container-home .navigation-bar img { 
   width: 180px;
   height: auto;
+  margin: 0px 12px 0px 0px;
 }
 
 .container-home .navigation-bar img:hover { 
@@ -113,15 +120,16 @@ h1, h2, h3, h4, h5 {
 .container-home .headline {
 	display: flex;
   justify-content: space-between;
-  margin: 0px 40px 0px 50px;
+  margin: 70px 0px 0px 0px;
+  width: 100%;
 }
 
 .container-home .headline .h1-and-button {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 13px;
-  padding-left: 149px;  
+  margin-top: 10px;
+  padding-left: 170px;  
 }
 
 .container-home .headline .h1-and-button h1 {
@@ -132,7 +140,7 @@ h1, h2, h3, h4, h5 {
 
 .get-started {
 	margin: 0px 61px 5px 60px;
-	padding: 6px 0px 6px 0px;
+	padding: 5px 0px 6px 0px;
   border-radius: 3%;
   font-size: 1rem;
 	border: 2px solid black;
@@ -146,15 +154,14 @@ h1, h2, h3, h4, h5 {
 
 
 .circle-img {	
-  margin: 14px 0px 5px 0px;				
-  max-width: 377px;
-  max-height: 377px;
+  max-width: 100%;
+  max-height: auto;
 }
 
 
 .columns-2 {
   border-top: 1px solid black;
-  margin: 72px 40px 20px 72px;
+  margin: 76px 20px 20px 42px;
   padding: 35px 0px 5px 0px;
   line-height: 1.15rem;
   display: flex;
@@ -162,20 +169,22 @@ h1, h2, h3, h4, h5 {
 }
 
 .topic-features {
-  margin-left: -1px;
 }
 
 .topic-about {
-  margin-left: 4px;
+  margin-left: 12px;
 }
 
 .middle-img {    
-  width: 88.5%;             
-  margin: 5px 0px 4px 75px;
+  width: 100%; 
+  height: auto;            
+  margin: 5px 0px -5px 43px;
+  padding: 0px 52px 0px 0px;
 }
 
 .columns-3 {
-  margin: 24px 38px 20px 75.5px;
+  margin: 34px 7px 20px 42px;
+  padding-right: 4px; 
   line-height: 1.15;
   display: flex;
   justify-content: space-between;
@@ -186,12 +195,8 @@ h1, h2, h3, h4, h5 {
   padding: 0px 0px 0px 0px;
 }
 
-.topic-services {
-  margin: 0px 0px 0px -4px;
-}
-
 .contact {
-  margin: 36px 50px 20px 75px;
+  margin: 35px 50px 20px 44px;
   border-top: 2px solid black;
 }
 
@@ -221,14 +226,24 @@ footer {
 @media (max-width:800px) {
   
   .container-home {
-    width: 800px;
+    max-width: 800px;
+    margin: 0 auto;
   }
+
+
+  /*  Spacing Nav Bar & Logo on the same line using wrap.
+      If Nav Bar should be 600px and screen size is 880px
+      (child width / parent width) * 100
+      (600px / 880px ) * 100
+  */
 
   .container-home .navigation-bar  {
     width: 100%;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 30px 0px 0px 0px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
     align-items: center;
   }
@@ -250,13 +265,14 @@ footer {
 
 
   .container-home .navigation-bar nav {
-    margin: 41px 0px 0px 0px;
+    width: 100%;
+    margin: 38px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
   }
 
   .container-home .navigation-bar nav a {
     letter-spacing: 0.5px;
-    margin: 0px 56px 0px 25px;
+    margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
     font-size: 15px;
   }
@@ -281,7 +297,7 @@ footer {
   }
 
   .get-started {
-    margin: 25px 315px 0px 315px;
+    margin: 24px 38.5%;
     padding: 5px 0px;
   }
 
@@ -293,13 +309,19 @@ footer {
 
   .columns-2 {
     border-top: 2px solid black;
-    margin: 75px 20px 0px 20px;
-    padding: 35px 0px 0px 11px;
+    margin: 50px -5px 0px 0px;
+    padding: 35px 0px 0px 0px;
     justify-content: space-between;
   }
 
+  .topic-features {
+    margin: 0px -35px 0px 0px;
+    padding: 0px 0px 0px 0px;
+  }
+
   .topic-about {
-    margin-left: 9px;
+    margin: 0px 0px 0px 50px;
+    padding: 0px 0px 0px 0px;
   }
 
   .columns-2 p {
@@ -311,13 +333,13 @@ footer {
 
 
   .middle-img {              
-    width: 95%;
-    margin: 30px 0px 0px 20px;
+    width: 100%;
+    margin: 30px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
   }
 
   .columns-3 {
-    margin: 28px 12px 0px 30px;
+    margin: 32px -18px 0px 0px;
     padding: 0px 0px 0px 0px;
     line-height: 1.15;
   }
@@ -341,7 +363,7 @@ footer {
   }
 
   .contact {
-    margin: 35px 20px 20px 20px;
+    margin: 35px 20px 20px -10px;
     border-top: 2px solid black;
   }
 
@@ -362,14 +384,15 @@ footer {
  @media (max-width:500px) {
   
     .container-home {
-      width: 500px;
+      max-width: 500px;
     }
   
     .container-home .navigation-bar  {
       flex-direction: column;
       justify-content: space-between;
-      margin: 20px 0px 0px 0px;
+      margin: -7px 0px 0px 0px;
       padding: 0px 0px 0px 0px;
+      width: 100%;
     }
   
     .container-home .navigation-bar img {  
@@ -381,7 +404,7 @@ footer {
 
     .container-home .navigation-bar nav {
       width: 100%;
-      margin: 20px 0px 0px 0px;
+      margin: 12px 0px 0px 0px;
       padding: 0px 0px 0px 0px;
       display: flex;
       flex-direction: column;
@@ -422,13 +445,13 @@ footer {
     }
   
     .get-started {
-      margin: 25px 165px 20px 165px;
+      margin: 30px 30%;
       padding: 5px 0px;
     }
   
     .columns-2 {
       border-top: 2px solid black;
-      margin: 55px 20px 0px 19px;
+      margin: 43px 20px 0px 0px;
       padding: 58px 0px 0px 0px;
       display: block;
     }
@@ -455,8 +478,8 @@ footer {
     }
   
     .columns-3 {
-      margin: 10px 15px 0px 10px;
-      padding: 20px 0px 0px 10px;
+      margin: 20px 0px 0px 0px;
+      padding: 20px 0px 0px 0px;
       line-height: 1.15;
       display: block;
     }
@@ -479,7 +502,7 @@ footer {
     }
   
     .contact {
-      margin: -25px 20px 0px 20px;
+      margin: -25px 20px 0px 0px;
       padding: 0px;
       border-top: 1px solid black;
     }
