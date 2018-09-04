@@ -406,7 +406,7 @@ p {
 	background-color: #f5f5f5;
 }
 
-.services-container .main-content .andriod-development {
+.services-container .main-content .android-development {
 	display: flex;
 	flex-wrap: wrap;
 	border: 1px solid black;
@@ -489,16 +489,44 @@ p {
 	}
 }
 
-@media (max-width:500px){
+@media (max-width:500px) {
 	.container {
 		width: 500px;
 	}
 
 	.main-head nav {
-		
-		
+		display: flex;
+		flex-flow: column wrap;
+		justify-content: center;
+		width: 500px;
+		border-top: 1px solid grey;
 	}
 
+	.main-head nav a {
+		display: flex;
+		font-size: 22px;
+		color: lightgrey;
+		border-bottom: 1px solid grey;
+		width: 500px;
+		justify-content: center;
+		height: 70px;
+		align-items: center;
+	}
+	.top-content {
+		flex-flow: column wrap;
+	}
 
+	.bottom-content{
+		flex-flow: column wrap;
+	}
+	.bottom-content p {
+		width: 410px;
+	}
+	.middle-img {
+		width: 100%;
 
+	}
+	.container .text-content {
+		margin-top: 20px;
+	}
 }
