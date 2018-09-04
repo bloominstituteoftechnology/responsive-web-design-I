@@ -70,21 +70,25 @@ h1, h2, h3, h4, h5 {
 /* header/nav*/
 
 
-.container{
+.container {
+    max-width: 880px;
 	width: 100%;
 	margin: 0 auto;
 }
-.container header{
+
+.container header {
 	display: flex;
-	margin-top: 20px;
+	margin-top: 30px;
 }
-header nav{
+
+header nav {
 	width: 691px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin-right: 65px;	
+	margin-right: 95px;	
 }
+
 .container nav a {
 	text-decoration: none;
 	color: gray;
@@ -95,24 +99,28 @@ header nav{
 
 /*hero*/
 
-.container .hero{
+.container .hero {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
 }
-.container .hero .hero-text{
+
+.container .hero .hero-text {
 	width: 410px;
-	font-size: 77px;
+	font-size: 70px;
 	text-align: center;
-	margin-top: 69px;
+    margin: 95px 0 0 75px;
+    line-height: 1;
 }
-.container .hero button{
+
+.container .hero button {
 	border: 1px solid black;
-	padding: 8px 44px;
-	font-size: 17px;
-	background:white;
+	padding: 5px 40px;
+	font-size: 16px;
+    background:white;
+    
 }
-.container .hero img{
+.container .hero img {
 	margin-top: 69px;	
 }
 
@@ -123,20 +131,24 @@ header nav{
 /*Top-content*/
 
 
-.main-content{
+.main-content {
     border-top: 1px solid black;
     margin-top: 76px;
-	padding-top: 39px;
+	padding-top: 37px;
 }
-.main-content .top-content{
+
+.main-content .top-content {
 	display: flex;
 	justify-content: space-between;
 }
-.main-content .top-content .one-half{
-	width: 410px;
+
+.main-content .top-content .one-half {
+	width: 440px;
 }
 
-
+.main-content .top-content .one-half p {
+    line-height: 1.2;
+}
 
 
 
@@ -144,8 +156,9 @@ header nav{
 /*Middle img*/
 
 
-.main-content .middle-img{
-	margin-top: 45px;
+.main-content .middle-img {
+    margin-top: 25px;
+    width: 100%;
 }
 
 
@@ -155,15 +168,19 @@ header nav{
 /*bottom Content section*/
 
 
-.main-content .bottom-content{
+.main-content .bottom-content {
 	display: flex;
-	margin-top: 37px;
+	margin-top: 30px;
 	justify-content: space-between;
 }
-.main-content .bottom-content .one-third{
-	width: 275px;
+
+.main-content .bottom-content .one-third {
+	width: 290px;
 }
 
+.main-content .bottom-content .one-third p {
+    line-height: 1.2;  
+}
 
 
 
@@ -171,17 +188,19 @@ header nav{
 /*Contact Section*/
 
 
-.contact{
-	margin-top: 57px;
+.contact {
+	margin-top: 30px;
 	border-top: 1px solid black;
 	display: flex;
 	flex-direction: column;
 }
-.contact h2{
-	margin-top: 30px;	
+
+.contact h2 {
+	margin-top: 35px;	
 }
-.contact p, address{
-	margin-bottom: 20px;
+
+.contact p {
+	margin-bottom: 15px;
 }
 
 
@@ -191,10 +210,10 @@ header nav{
 /*Footer section*/
 
 
-footer{
+footer {
 	display: flex;
 	justify-content: center;
-	margin: 40px;
+	margin: 25px;
 }
 
 /*tablet view*/
