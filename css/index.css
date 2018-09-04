@@ -429,7 +429,7 @@ h1, h2, h3, h4, h5 {
 .container{
     width: 500px;
     margin: auto;
-    display:flex;
+    /* display:flex; */
     flex-direction: column;
     /* align-content: center;  */
 
@@ -437,38 +437,80 @@ h1, h2, h3, h4, h5 {
 
 
 header{
+    display:flex;
     flex-direction: column-reverse;
     align-content: center;
-    flex-wrap: nowrap;
-    height: 300px;
+    /* flex-wrap: nowrap; */
+    /* height: 300px; */
 
 }
 header nav {
+    /* justify-content: center; */
     width: 100%;
-    margin:0px 0px 0px 0px;
-    justify-content: column;
-    align-content: center
+    /* margin:0px 0px 0px 0px; */
+    /* justify-content: column; */
+    /* align-content: center; */
+    border-bottom: 2px gray;
+/* }
+header nav div{
+    border-bottom: 2px gray;
+} */
 }
-header .main-nav{
+/* header nav {
+    margin-top: 40px; 
+    width: 610px;
+    justify-content: space-between;
+    display: flex; */
+
+
+header .main-nav {
     flex-direction: column;
-    justify-content: center;
-    align-content: center;
-   /* align-content: center; */
-   /* width: 100%;
-   Height: 300px; */
-
-}
-header nav a {
-    text-decoration: none;
-    color: #b0b0b0;
-    border-bottom-color: grey;
+    display: flex;
+    height: 400px;
     width: 100%;
-    
-    
+    border-bottom: 2px solid lightgray;
+    /* text-decoration: none;
+    color: #b0b0b0; */
+    /* border-bottom-color: grey; */
+    /* width: 100%; */
+
+    /* align-content: center; */
+    /* margin-left: 45%; */
+    /* margin-bottom: 4px; */
+    /* border-bottom: 2px  solid gray; */
 
 }
+ .main-nav .aservices{
+    border-bottom: 2px solid lightgray;
+    align-self: center;
+  
+ }
 
+ .main-nav .aproduct{
+    border-bottom: 2px solid lightgray;
+    align-self: center;
 
+ }
+ .main-nav .avision{
+    border-bottom: 2px solid lightgray;
+    align-self: center;
+
+ }
+ .main-nav .afeatures{
+    border-bottom: 2px solid lightgray;
+    align-self: center;
+
+ }
+ .main-nav .aabout{
+    border-bottom: 2px solid lightgray;
+    align-self: center;
+
+ }
+ .main-nav .acontact{
+    border-bottom: 2px solid lightgray;
+    align-self: center;
+
+ }
 
 /* 
 
