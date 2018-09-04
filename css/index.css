@@ -219,7 +219,7 @@ header button {
 }
 
 .top-content {
-  border-top: 1px solid black;
+  border-top: 2px solid black;
   padding-top: 40px;
   display: flex;
   justify-content: space-between;
@@ -323,4 +323,67 @@ footer {
 
 /*mobile version under 500px*/
 @media (max-width: 500px) {
+  nav {
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav .link {
+    border-top: 1px solid gray;
+    width: 100%;
+    order: 1;
+    font-size: 20px;
+    height: 63px;
+    padding: 5px 0;
+    margin: 0px;
+    line-height: 2;
+  }
+
+  nav .logo {
+    margin: 20px 0;
+  }
+
+  header {
+    border-top: 1px solid gray;
+    margin: 0;
+    padding: 175px 0 145px;
+  }
+
+  .top-content {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+    margin-top: 100px;
+    margin-bottom: 0;
+  }
+
+  .top-content .box {
+    margin: 20px 0;
+    line-height: 1.2;
+  }
+
+  .middle-img {
+    height: 100px;
+  }
+
+  .bottom-content {
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .bottom-content .box {
+    width: 100%;
+    line-height: 1.2;
+    margin: 15px 0;
+    padding: 10px 0;
+  }
+
+  .contact {
+    margin: 38px 15px 0;
+    padding: 0;
+  }
 }
