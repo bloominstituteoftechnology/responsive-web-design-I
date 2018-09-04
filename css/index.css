@@ -68,31 +68,11 @@ h1, h2, h3, h4, h5 {
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 
-/* ------- index.html - tablet ------- */
-@media screen and (max-width:800px) {
-    .index#container {
-        width: 750px;
-        height: auto;
-        background: red;
-
-}
-
-/* ------- index.html - mobile ------- */
-@media screen and (max-width:500px) {
-    .index#container {
-        height: auto;
-        background: purple;
-
-}
-
-
-
-
-/* ------- index.html-Desktop ------- */
+/* ------- index.html-Desktop ------- */ 
 .index#container {
 	width: 1200px;
 	height: auto;
-}
+    }
 
 #navBar {
 	display: flex;
@@ -352,3 +332,80 @@ h2 {
 	margin-left: 50px;
 }
 
+
+/* ------- index.html - tablet -------
+@media (max-width:800px) {
+    .index#container {
+        height: auto;
+        background: blue;
+    }
+
+    #navBar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 750px;
+        margin-left: 25px;
+        
+    }
+    
+    #navBar nav {
+        display: flex;
+        flex-direction:row;
+    
+    }
+    
+    #navBar nav a {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 20px;
+          padding:7px;
+          color: red;
+          text-decoration: none;
+          font-weight: lighter;
+    }
+}
+
+/* ------- index.html - mobile ------- */
+@media (max-width:500px) {
+    .index#container {
+        height: auto;
+       
+    }
+
+    #navBar {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 400px;
+        margin-left: 20px;
+        border: 1px solid green;
+        
+    }
+    
+    #navBar nav {
+        display: flex;
+        flex-direction:column;
+        border: 1px solid purple;
+    
+    }
+    
+    #navBar nav a {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 500px;
+        padding:15px;
+        font-size: 18px;
+        color: lightgrey;
+        text-decoration: none;
+        font-weight: lighter;
+        text-align: center;
+        border-top: 1px solid lightgray;
+        border-bottom: 1px solid lightgray;
+        margin: 0px;
+    }
+}
