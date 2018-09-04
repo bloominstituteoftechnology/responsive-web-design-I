@@ -298,35 +298,95 @@ address {
 
 /* media queries  */
 @media (max-width: 800px) {
+
+  .container {
+    margin: 20px 5px;
+  }
+
   .hero__right {
     display: none;
   }
 
   .hero {
     justify-content: center;
+    margin-bottom: 73px;
   }
 
   .nav__logo {
-    /* order: -1;    */
     margin: 0 auto;
     flex-wrap: wrap;
-    /* width: 100%;  */
+
   }
 
   .nav {
-    /* border: 1px solid red; */
     flex-wrap: wrap;
+    margin: 0;
+    padding: 10px;
+    justify-content: space-between;
   }
+
+  .nav__logo--box {
+    order: -1;
+    width: 100%;
+    display: flex;
+    /* justify-content: center; */
+    margin-bottom: 35px;
+  }
+
+  .nav__item {
+    justify-content: center;
+  }
+
+  .hero__left--text {
+    font-size: 75px !important;
+    margin-top: -25px;
+  }
+
+  .hero .hero__left .hero__left--btn {
+    height: 35px;
+    width: 170px;
+  }
+
+  .customHR {
+    margin: 10px 15px;
+  }
+
+  .row1 {
+    margin-bottom: 15px;
+  }
+  
+  .box__headline {
+    font-size: 18px;
+  }
+
+  .middleImg .middleImg__img {
+    width: 95%;
+    height: 160px;
+    margin-bottom: -5px;
+  }
+
+  .row2 {
+    margin-bottom: 18px;
+  }
+
+  .row2__box {
+    margin-top: 0;
+  }
+
+  .contact {
+    padding-top: 25px;
+    padding-left: 20px;
+  }
+
 }
 
 
 
 
+
 @media (max-width: 500px) {
+  
   .container {
-    /* border: 10px solid lightblue; */
-    margin: 0;
-    padding: 0;
     font-size: 20px;
   }
 
@@ -346,14 +406,14 @@ address {
     padding-bottom: 20px;
   }
 
+  .nav .nav__item--top {
+    border-top: 1px solid black;
+  }
+
   .nav .nav__logo {
     order: -1;
     margin-top: 20px;
     margin-bottom: 20px;
-  }
-
-  .nav .nav__item--top {
-    border-top: 1px solid black;
   }
 
   .hero {
@@ -398,10 +458,6 @@ address {
   }
 
   .row1__box .box__headline {
-    color: red;
-  }
-
-  .row1__box .box__headline {
     font-size: 17px;
   }
 
@@ -439,7 +495,7 @@ address {
   .contact {
     font-size: 15px;
     padding-left: 20px;
-    margin-botom: 10px;
+    margin-bottom: 10px;
   }
 
   .copyright {
