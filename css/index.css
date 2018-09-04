@@ -78,8 +78,14 @@ h1, h2, h3, h4, h5 {
   }
 }
 
-h1 {
+.container-two h1 {
 	font-size: 40pt;
+}
+
+@media (max-width: 800px){
+  .container-two h1 {
+    font-size: 60pt;
+  }
 }
 .container-top {
 	display: flex;
@@ -144,9 +150,8 @@ h1 {
 	/* width: 450px; */
 }
 
-@media (max-width:800px) {
+@media (max-width: 800px) {
   .container-two .top-right {
-  	flex-basis: 1;
     display: none;
   }
 }
@@ -165,12 +170,15 @@ h1 {
 	height: 200px;
 	padding: 20px;
 }
+
+
 .container-row-one .row-one-right {
 	flex-basis: 1;
 	width: 450px;
 	height: 200px;
 	padding: 20px;
 }
+
 
 .container-middle-img {
 	height: 200px;
