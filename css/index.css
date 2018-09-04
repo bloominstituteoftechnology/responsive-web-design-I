@@ -172,3 +172,28 @@ footer {
 }
 
 
+/* Tablet media query */
+
+
+@media(max-width : 800px) {
+    header{
+        flex-direction: row-reverse;
+    }
+    header .logo{
+        align-self: flex-start;
+    }
+    .cta img{
+        display: none;
+
+    }
+    header nav{
+        flex : none;
+    }
+    .cta .cta-text{        
+        margin-right :  330px;
+    }
+    .top-content .text-content{
+        padding : 20px;
+
+    }
+}
