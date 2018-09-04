@@ -1,3 +1,282 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+a {
+	text-decoration: none;
+}
+
+.container {
+	max-width: 880px;
+	margin: 0 auto;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+	margin: 50px auto;
+	width: 100%;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-around;
+    width: 660px;
+}
+
+.nav-container .main-nav a {
+	margin: 0;
+	color:gray;
+}
+
+
+.logo {
+    width: 21%;
+}
+
+.main-header {
+    display: flex;
+    max-width: 880px;
+    margin: 0 auto;
+}
+
+header .left {
+	display:flex;
+	flex-direction: column;
+	width: 50%;
+}
+
+header .left .butt {
+	margin: 0 auto;
+	background-color: white;
+	padding: 5px 45px;
+	border: 1px solid black;
+	color: black;
+}
+
+header .right {
+	margin: 0 0 50px 0;
+	width: 50%;
+}
+
+header.main-header {
+	text-align: center;
+}
+
+
+
+header h1 {
+	display: inline-block;
+	font-size: 70px;
+}
+
+
+header img {
+	display: inline-block;
+	height: 250px;
+}
+
+.home-page section.content {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 100px auto;
+}
+.first-section {
+    
+    max-width: 880px;
+    width: 100%;
+    margin: 0 auto;
+	padding: 20px 0;
+	display: flex;
+}
+
+.first-section .left {
+	width: 50%;
+	margin: 15px;
+}
+
+.first-section .right {
+	width: 50%;
+	margin: 15px;
+}
+
+.middle-img {
+    max-width: 880px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.second-section {
+    max-width: 880px;
+    width: 100%;
+    margin: 0 auto;
+	padding: 20px 0;
+	display: flex;
+}
+.second-section .left {
+	width: 33%;
+	margin: 20px 5px;
+}
+
+.second-section .middle {
+	width: 33%;
+	margin: 20px 5px;
+}
+
+.second-section .right {
+	width: 33%;
+	margin: 20px 5px;
+}
+
+.contact {
+	display:inline-block;
+	width: 200px;
+	margin: 30px 0 30px 0;
+}
+.contact a{
+	color: black;
+}
+
+footer {
+	text-align: center;
+	margin: 30px auto;
+}
+
+
+/* Services page only */
+
+.services-header {
+	display: flex;
+	flex-direction: column;
+	padding: 30px 0 30px 0;
+}
+
+.services-header-img {
+	margin-bottom: 30px;
+}
+
+article.services-main {
+	display: flex;
+	flex-wrap: wrap;
+	border-top: 1px solid black;
+}
+
+article.services-main section {
+	display: flex;
+	flex-direction: column;
+	width: 45%;
+	background: lightgray;
+	border: 1px solid black;
+	margin: 20px;
+	padding: 20px;
+}
+
+article.services-main section .butt {
+	margin: 10px auto;
+	background-color: white;
+	padding: 5px 45px;
+	border: 1px solid black;
+	color: black;
+}
+
+section.bottom {
+	display: flex;
+	border-top: 1px solid black;
+	padding-top: 30px;
+}
+
+section.bottom ul {
+	list-style-type: disc;
+	margin: 10px 0 10px 10px;
+}
+
+.bottom .left {
+	width: 50%;
+	padding: 10px;
+}
+
+.bottom .right {
+	width: 50%;
+	padding: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    article.services-main section {
+		display: flex;
+		flex-direction: column;
+		width: 95%;
+		background: lightgray;
+		border: 1px solid black;
+		margin: 20px;
+		padding: 20px;
+	}
+}
