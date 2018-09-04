@@ -149,12 +149,33 @@ footer{
     padding:20px 0;
     text-align: center;
 }
+
+
 @media (max-width:800px){
     .container{
+        padding:0 20px;
         width:100%;
     }
-    .container header nav{
-        border:1px solid black;
-        display:inline-block;
+    .container header{
+        flex-direction: column-reverse;
+        align-items: center;   
     }
+    .container header nav{
+        margin-top:20px;
+    }
+    .container .intro {
+        justify-content: center;
+    }
+    .container .intro div{
+        align-content: center;
+        padding:0;
+    }
+    .container .intro img{
+        display: none;
+    }
+    .middle-image{
+        width:100%;
+        height:auto;
+    }
+
 }
