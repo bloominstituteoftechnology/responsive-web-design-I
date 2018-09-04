@@ -57,9 +57,8 @@ h1, h2, h3, h4, h5 {
     letter-spacing: 1px;
     margin-bottom: 15px;
 }
-/* cleaned up 2nd week */
 
-.container { /* body - container */
+.container {
     width: 880px;
     margin: 0 auto;
     display: flex;
@@ -67,39 +66,43 @@ h1, h2, h3, h4, h5 {
     justify-content: center;
 }
 
-header { /* added header to nav */
+/* Header Styles */
+
+header {
     width: 100%;
     display: flex;
 }
 
-header nav { /* practicing child-parent syntax */
+header nav {
     margin-top: 40px; 
     width: 610px;
     justify-content: space-between;
     display: flex;
 }
 
-header nav a { /* nav items */
+header nav a {
     text-decoration: none;
     color: #b0b0b0;
 }
 
-header nav a:hover { /* hover over */
+header nav a:hover {
     text-decoration: underline;
-    color: orange;
+    color: black;
 }
 
-header .logo { /* edited, put header in beginning parent-child*/
+header .logo {
     margin: 28px 0 0 91px;
 }
 
-.cta { /*section for iod*/
+/* Call To Action (CTA) Styles */
+
+.cta {
     display: flex;
     margin-top: 72px;
     justify-content: flex-end;
 }
 
-.cta .cta-text { /* iod text */
+.cta .cta-text {
     font-size: 72px;
     text-align: center;
     letter-spacing: 5px;
@@ -115,17 +118,19 @@ header .logo { /* edited, put header in beginning parent-child*/
     font-size: 16px;
     background: white;
     width: 170px;
-    height: 40px;
+    height: 32px;
     margin-top: 10px;
     cursor: pointer;
 }
 
 .cta .cta-text button:hover {
-    background: orange;
+    background: black;
     color: white;
 }
 
-.main-content { /* section */
+/* Main Content Styles */
+
+.main-content {
    border-top: 2px solid black; 
    border-bottom: 2px solid black;
    margin: 75px 0 35px 0;
@@ -134,7 +139,7 @@ header .logo { /* edited, put header in beginning parent-child*/
    line-height: 18px;
 }
 
-.main-content .top-content { 
+.main-content .top-content {
     display: flex;
 }
 
@@ -151,16 +156,18 @@ header .logo { /* edited, put header in beginning parent-child*/
     padding-right: 20px;
 }
 
+/* Contact Styles */
+
 .contact p {
     margin: 15px 0;
 }
+
+/* Footer Styles */
 
 footer {
     text-align: center;
     margin: 40px 0 20px;
 }
-
-/* Media query 800px */
 
 @media (max-width: 800px) {
   .container {
@@ -181,7 +188,8 @@ footer {
   }
 
   header .logo {
-    margin: 30px 0px 0px 300px;
+    align-self: center;
+    margin: 30px 0 0 11px;
   }
 
   .cta img {
@@ -197,7 +205,7 @@ footer {
     justify-content: space-around;
   }
 
- .main-content .top-content .text-content {
+.main-content .top-content .text-content {
   margin: 0px 15px;
 }
 
@@ -214,89 +222,88 @@ footer {
   }
 }
 
-/* Media query 500px */
-
 @media (max-width: 500px) {
-	.container {
-	  width: 100%;
-	  display: flex;
-	  flex-direction: column;
-	  flex-wrap: nowrap;
-	}
-  
-	header {
-	  flex-direction: column-reverse;
-	  align-content: space-between;
-	}
-  
-	header nav {
-	  width: 100%;
-	  display: flex;
-	  flex-direction: column;
-	  flex-wrap: wrap;
-	  margin-top: 20px;
-	}
-  
-	header nav a{
-	  width: 100%;
-	  font-size: 20px;
-	  padding: 20px 0px;
-	  border-top: 1px solid #b0b0b0;
-	  text-align: center;
-	}
-  
-	header nav a:last-child {
-	  border-bottom: 1px solid #b0b0b0;
-	}
-  
-	header .logo {
-	  margin: 20px 0px 0px 160px;
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
   }
-  
-	.cta img {
-	  display: none;
-	}
-  
-	.cta {
-	  justify-content: center;
-	  margin-top: 50px;
-	}
-  
-	.main-content {
-	  margin: 70px 20px 40px;
-	}
-  
-	.main-content .top-content {
-	  flex-direction: column
-	}
-  
-  .main-content .top-content .text-content {
-	  margin: 25px 0px;
-	}
-  
-	.main-content img {
-	  width: 440px;
-	}
-  
-	.bottom-content {
-	  flex-direction: column;
-	}
-  
-	.bottom-content .text-content {
-	   margin-bottom: 60px;
-	   margin-left: 0px;
-	}
-  
-	.bottom-content .text-content:last-child {
-	  margin-bottom: 10px;
-	}
-  
-	.contact {
-	  margin-left: 20px;
-	}
+
+  header {
+    flex-direction: column-reverse;
+    align-content: space-between;
   }
+
+  header nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+
+  header nav a{
+    width: 100%;
+    font-size: 20px;
+    padding: 20px 0px;
+    border-top: 1px solid #b0b0b0;
+    text-align: center;
+  }
+
+  header nav a:last-child {
+    border-bottom: 1px solid #b0b0b0;
+  }
+
+  header .logo {
+    margin: 20px 0px 0px 11px;
+}
+
+  .cta img {
+    display: none;
+  }
+
+  .cta {
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  .main-content {
+    margin: 70px 20px 40px;
+  }
+
+  .main-content .top-content {
+    flex-direction: column
+  }
+
+.main-content .top-content .text-content {
+  margin: 25px 0px;
+}
+
+  .main-content img {
+    width: 440px;
+  }
+
+  .bottom-content {
+    flex-direction: column;
+  }
+
+  .bottom-content .text-content {
+    margin-bottom: 60px;
+    margin-left: 0px;
+  }
+
+  .bottom-content .text-content:last-child {
+    margin-bottom: 10px;
+  }
+
+  .contact {
+    margin-left: 20px;
+  }
+}
   
 /* services */
+/*NOT DONE */
 .services {
 	width: 880px;
 	margin: 0 auto;
@@ -487,6 +494,7 @@ header .logo { /* edited, put header in beginning parent-child*/
 	  }
 
 	 .services-header-img {
+		width: 700px;
 		padding: 10px 15px 10px 15px;
 	}
 
@@ -504,3 +512,45 @@ header .logo { /* edited, put header in beginning parent-child*/
 		padding-right: 10px;
 	}
 	}
+/* Media query 400px */
+@media (max-width: 500px) {
+	.services {
+		width: 500px;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+	  }
+	
+	  header {
+		flex-direction: column-reverse;
+		align-content: space-between;
+	  }
+	
+	  header nav {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		margin-top: 20px;
+	  }
+	
+	  header nav a{
+		width: 500px;
+		font-size: 20px;
+		padding: 20px 0px;
+		border-top: 1px solid #b0b0b0;
+		width:103%;
+   		margin-left:-10px;
+		text-align: center;
+	  }
+	
+	  header nav a:last-child {
+		border-bottom: 1px solid #b0b0b0;
+
+	  }
+	
+	  header .logo {
+		margin: 20px 10px 0px 165px;
+	}
+	}
+
