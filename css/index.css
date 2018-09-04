@@ -66,8 +66,9 @@ h1, h2, h3, h4, h5 {
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 .container {
-  max-width: 874px;
+  max-width: 880px;
   margin: 0 auto;
+  padding: 30px 20px;
 }
 
 @media (max-width: 800px) {
@@ -75,7 +76,7 @@ h1, h2, h3, h4, h5 {
     width: 100%;
     max-width: 800px;
     margin: 30px 0;
-    padding: 0px 20px;
+    padding: 30px 20px;
   }
 }
 
@@ -92,7 +93,7 @@ h1, h2, h3, h4, h5 {
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-  margin: 30px 0 0;
+  /* margin: 30px 0 0; */
 }
 
 @media (max-width: 800px) {
@@ -120,7 +121,6 @@ h1, h2, h3, h4, h5 {
     margin-top: 20px;
     justify-content: space-around;
     width: 100%;
-    border-top: 1px solid black;
   }
 }
 
@@ -129,6 +129,7 @@ h1, h2, h3, h4, h5 {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    border-top: 1px solid black;
   }
 }
 
@@ -225,6 +226,7 @@ h1, h2, h3, h4, h5 {
 
 .container .upper-text div {
   line-height: 17.5px;
+  margin-right: 10px;
 }
 
 @media (max-width: 800px) {
@@ -277,7 +279,8 @@ h1, h2, h3, h4, h5 {
 
 .container .lower-text div {
 	line-height: 17.7px;
-	max-width: 292px;
+  /* max-width: 292px; */
+  margin-right: 10px;
 }
 
 @media (max-width: 800px) {
@@ -327,7 +330,7 @@ footer {
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
-	margin: 38px 0 38px;
+	margin: 38px 0 10px;
 }
 
 /* @media (max-width: 800px) {
