@@ -147,12 +147,16 @@ header .logo {
         flex-direction: column;
         align-items: center;
         margin-top: 20px;
+        border-top: 1px solid gray;
     }
 
     header nav a {
         font-size: 20px;
         font-weight: bold;
         padding: 20px 0;
+        text-align: center;
+        width: 100%;
+        border-bottom: 1px solid gray;
     }
 }
 
@@ -201,7 +205,6 @@ header .logo {
 
     .cta .cta-text {
         width: 100%;
-        border: 1px solid blue;
     }
 
     .cta img {
@@ -214,6 +217,9 @@ header .logo {
     .cta {
         margin-top: 52px;
     }
+
+    .cta .cta-text button {
+        margin-top: 5px;
 }
 
 
@@ -262,13 +268,44 @@ header .logo {
         padding-left: 25px;
     }
 
-    .main-content .middle-img {
-    }
-
     .main-content .bottom-content {
         padding-left: 25px;
         margin-top: -5px;
     }
+}
+
+@media (max-width: 500px) {
+    .main-content {
+        padding: 60px;
+        padding-left: 0;
+
+    }
+
+    .main-content .top-content {
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    .main-content .top-content .text-content {
+        width: 100%;
+        margin-bottom: 42px;
+    }
+
+    .main-content .middle-img {
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    .main-content .bottom-content {
+        margin-top: 25px;
+        padding-left: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-content .bottom-content .text-content {
+        margin-bottom: 62px;
 }
 
 /* Contact Styles */
