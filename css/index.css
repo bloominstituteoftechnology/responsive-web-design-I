@@ -1,3 +1,304 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+.main-container {
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+@media (max-width:800px){
+  .main-container {
+    max-width: 700px;
+  }
+}
+
+h1 {
+	font-size: 40pt;
+}
+.container-top {
+	display: flex;
+	height: 100px;
+	align-items: center;
+	justify-content: space-between;
+}
+
+@media (max-width: 800px){
+  .container-top {
+  	display: flex;
+    flex-wrap: wrap-reverse;
+  	height: 200px;
+  	align-items: center;
+  	justify-content: center;
+  }
+
+}
+.container-top .top-nav {
+	display: flex;
+	justify-content: space-between;
+	width: 600px;
+}
+
+@media (max-width: 800px) {
+  .container-top .top-nav {
+  	display: flex;
+  	justify-content: space-between;
+  	width: 700px;
+  }
+}
+.container-top .top-nav a {
+	color: gray;
+	text-decoration: none;
+}
+
+.container-two {
+	display: flex;
+	height: 400px;
+	justify-content: space-around;
+  margin: 30px;
+
+}
+.container-two .top-left {
+	flex-basis: 1;
+	text-align: center;
+	/* width: 450px; */
+	height: 380px;
+	padding: 50px;
+}
+
+
+.top-left button {
+	background: white;
+	border: solid black;
+	padding: 10px 40px;
+
+}
+
+.container-two .top-right {
+	flex-basis: 1;
+	/* width: 450px; */
+}
+
+@media (max-width:800px) {
+  .container-two .top-right {
+  	flex-basis: 1;
+    display: none;
+  }
+}
+
+.container-row-one {
+	display: flex;
+	height: 200px;
+  border-top: 3px solid black;
+	/* width: 900px; */
+	/* margin: 0 auto; */
+
+}
+.container-row-one .row-one-left {
+	flex-basis: 1;
+	width: 450px;
+	height: 200px;
+	padding: 20px;
+}
+.container-row-one .row-one-right {
+	flex-basis: 1;
+	width: 450px;
+	height: 200px;
+	padding: 20px;
+}
+
+.container-middle-img {
+	height: 200px;
+	width: 876px;
+}
+
+@media (max-width: 800px){
+  .container-middle-img img{
+  	width: 700px;
+    height: 180px;
+  }
+}
+
+.container-row-two {
+	display: flex;
+	height: 200px;
+	/* width: 900px;
+	margin: 0 auto; */
+	justify-conent: space-around;
+  border-bottom: 3px solid black;
+}
+
+.container-row-two .row-two-left {
+	flex-basis: 1;
+	width: 300px;
+	padding:20px 10px;
+}
+.container-row-two .row-two-center {
+	flex-basis: 1;
+	width: 300px;
+	padding:20px 10px;
+}
+.container-row-two .row-two-right {
+	flex-basis: 1;
+	width: 300px;
+	padding:20px 10px;
+}
+
+.contact {
+	height: 160px;
+	/* width: 900px;
+	margin: 0 auto; */
+	padding: 10px;
+	line-height: 1.6;
+}
+.contact-info {
+	line-height:2.0;
+}
+.copyright {
+	height: 50px;
+	/* width: 900px;
+	margin: 0 auto; */
+	padding-top: 10px;
+	text-align: center;
+}
+.services-header-img {
+	display: block;
+	width: 900px;
+	/* margin: 0 auto; */
+}
+.services {
+	display: block;
+	/* margin: 0 auto; */
+	padding: 20px 0px;
+	/* width: 900px; */
+}
+
+.service-description-boxes {
+	display: flex;
+	/* width: 900px; */
+	height: 1300px;
+	flex-wrap: wrap;
+	/* margin: 0 auto; */
+	justify-content: space-between;
+	border-top: 2px solid black;
+	margin-top: 20px;
+}
+
+.service-box {
+	margin-top: 25px;
+	border: 1px solid black;
+	background-color: #f2f3f4;
+	width: 425px;
+	height: 210px;
+	padding: 20px;
+}
+ .service-box .learn-more {
+	 margin-top: 10px;
+	 background: white;
+	 border: solid black;
+	 border-radius: 5px;
+	 border-style: solid;
+	 padding: 5px 10px;
+ }
+
+.about-services {
+	display: flex;
+	/* width: 900px;
+	margin: 0 auto; */
+	justify-content: space-between;
+	border-top: 2px solid black;
+	margin-bottom: 30px;
+	margin-top: 40px;
+
+}
+.service-facts {
+	width: 430px;
+	height: 210px;
+	margin-top: 40px;
+	margin-right: 50px;
+}
+
+.services-info-img {
+	margin-top: 40px;
+}
+.service-facts-list li{
+margin-top: 15px;
+}
+.service-facts p {
+	padding-right: 10px;
+	margin-bottom: 30px;
+}
+
+.services-copyright {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 200px;
+  width: 900px;
+	/* 	margin: 0 auto; */
+}
