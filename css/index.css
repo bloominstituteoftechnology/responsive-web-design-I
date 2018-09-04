@@ -7,7 +7,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
+    font-size: 62.5%;
     font: inherit;
     vertical-align: baseline;
 }
@@ -47,7 +47,7 @@ table {
 }
 
 html, body {
-    height: 100%;
+    height: 62.5%;
     font-family: 'Titillium Web', sans-serif;
 }
 
@@ -60,7 +60,7 @@ h1, h2, h3, h4, h5 {
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 .container {
-    width: 875px;
+    max-width: 880px;
     margin: 0 auto;
 }
 
@@ -72,7 +72,7 @@ h1, h2, h3, h4, h5 {
 nav {
     width: 100%;
     height: 40px;
-    /* background-color: cornflowerblue; */
+   
 }
 
 .link-container {
@@ -283,15 +283,18 @@ footer {
 
 @media (max-width:500px) {
     .container {
-        width: 100%;
+        width: 95%;
     }
+.container p{
+    margin-bottom: 2rem;
+}
     nav {
         height: auto;
         display: flex;
         text-align: center;
         justify-content: center;
         border-bottom: 1px solid gray;
-        
+        color: #B0B0B0;
        
 
         /* justify-content: center; */
@@ -305,30 +308,42 @@ footer {
         justify-content: center;
         align-items: center;
         order: 1;
-        ;
-        
+        color: #B0B0B0;
+        font-size: 1.5rem;
+        margin:0;
     }
     .link-container {
         display: flex;
         flex-direction: column;
-        height: 200px;
+        height: 435px;
         align-items: center;
         text-align: center;
+       
         
         
     }
     .link-container .logo {
+        justify-content: center;
         
     }
-
+header {
+    height: 21rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 
+}
     .topSection {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         margin: 0 20px;
+        margin-top: 60px;
+
         flex-grow: 1;
         width: 90%;
         height: auto;
+        padding: 50px 5px;
     }
     .middle-img {
         margin-top: 10;
@@ -338,14 +353,14 @@ footer {
         flex-direction: column;
         justify-content: space-between;
         margin: 0 20px;
-        flex-grow: 1;
-        width: 90%;
+        height:auto;
+        width: 100%;
     }
     address {
         display: flex;
         flex-direction: column;
         height: auto;
-        margin-top:160px;
+        /* margin-top:160px; */
     }
     header .headerText{
         display:flex;
@@ -358,6 +373,7 @@ footer {
    .address-section{
        display: flex;
        margin-top:20px;
+       height: auto;
    }
     .fixed-nav .logo {
         margin-top: 20px;
