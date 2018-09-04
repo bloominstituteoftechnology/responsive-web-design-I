@@ -132,7 +132,6 @@ a {
     order: 1;
 }
 .main-navigation nav {
-	width: 600px;
     display: flex;
 	justify-content: space-between;
 }
@@ -167,7 +166,7 @@ a {
 .blurb-row {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: space-around;
 }
 
 /*-- Footer -----------------------------------*/
@@ -187,11 +186,14 @@ footer .copyright{
 /*== Media Queries (Responsive Design) ======================================*/
 
 /*-- Desktop ----------------------------------*/
+.main-navigation nav {
+    width: 600px;
+}
 .content .blurb-row.blurb-row-top .blurb {
-    max-width: 430px;
+    width: 430px;
 }
 .content .blurb-row.blurb-row-bottom .blurb {
-    max-width: 275px;
+    width: 275px;
 }
 
 /*-- Tablet -----------------------------------*/
@@ -216,7 +218,8 @@ footer .copyright{
     }
     .content .blurb-row {
         display: flex;
-        flex-flow: row wrap;
+        flex-direction: row;
+        flex-wrap: wrap;
         justify-content: space-around;
     }
     .content .blurb-row.blurb-row-top .blurb {
@@ -234,6 +237,46 @@ footer .copyright{
 }
 
 /*-- Phone ------------------------------------*/
-@media only screen and (min-width: 500px){
-	/* Don't do anything. Display as Default. */
+@media only screen and (max-width: 540px){
+    .container {
+        padding: 0;
+        margin: 0 auto;
+        width: 500px;
+    }
+    .main-navigation {
+        height: unset;
+    }
+    .container .main-navigation {
+        padding: unset;
+    }
+    .container .logo {
+        margin: 20px;
+    }
+    .main-navigation nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-navigation nav a {
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid black;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 1.21rem 0;
+    }
+    .main-navigation nav a:first-child {
+        border-top: 1px solid black;
+    }
+    .container > main, .container > footer {
+        width: 460px;
+    }
+    .content .blurb-row {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+    .content .blurb-row.blurb-row-top .blurb, .content .blurb-row.blurb-row-bottom .blurb {
+        width: unset;
+        margin: 1rem 0;
+    }
 }
