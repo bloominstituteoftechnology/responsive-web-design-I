@@ -243,6 +243,7 @@ footer address {
   div.container {
     width: 760px;
   }
+
   header {
     flex-direction: column;
     margin-top: 19px;
@@ -260,9 +261,6 @@ footer address {
     align-self: flex-start;
   }
 
-  .jumbotron {
-    padding: 
-  }
 
   .jumbotron .heading {
     margin: 0 auto;
@@ -283,6 +281,74 @@ footer address {
   .middle-img {
     max-width: 760px;
     height: 156px;
+  }
+
+  @media (max-width: 500px) {
+    div.container {
+      max-width: 500px;
+    }
+
+    header {
+      margin-top: 10px;
+      margin-bottom: 0px;
+    }
+    
+    header nav {
+      width: 100%;
+      margin: 18px auto;
+      flex-direction: column;
+    }
+
+    header nav a {
+      margin: 0px auto;
+      width: 100%;
+      border-top: 1px solid black;
+      padding: 20px 0px;
+      font-size: 20px;
+      text-align: center;
+    }
+
+    header nav a:last-child {
+      border-bottom: 1px solid black;
+    }
+
+    .jumbotron {
+      margin-top: 4px;
+      padding-top: 0px;
+    }
+
+    section.info {
+      margin: 4px auto 0px auto;
+      border-top: 2px solid black;
+      width: 92%;
+    }
+
+    .info-top {
+      display: block;
+      margin-top: 35px;
+    }
+
+    .info-top .blerbs {
+      max-width: 100%;
+    }
+    
+    .middle-img {
+      max-width: 458px;
+      height: 102px;
+    }
+
+    .info-bottom {
+      display: block;
+    }
+
+    .info-bottom .blerbs {
+      max-width: 100%;
+    }
+
+    footer {
+      width: 92%;
+      margin: 0px auto;
+    }
   }
 
 }
