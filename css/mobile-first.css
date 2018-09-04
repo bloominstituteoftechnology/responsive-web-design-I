@@ -154,6 +154,7 @@ h5 {
 
 /*Index page here*/
 
+/*mobile-first version: under 500px first*/
 body {
   width: 90%;
   margin: 0 auto;
@@ -163,11 +164,10 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: column;
   width: 100%;
   margin: 0 auto;
-  margin-bottom: 150px;
   height: 100px;
-  padding: 28px 20px;
 }
 
 nav .link {
@@ -179,17 +179,32 @@ nav .link {
 nav .logo {
   padding-left: 30px;
   width: 200px;
+  margin: 20px 0;
+}
+
+nav .link {
+  color: black;
+  border-top: 1px solid gray;
+  width: 100%;
+  order: 1;
+  font-size: 20px;
+  height: 63px;
+  padding: 5px 0;
+  margin: 0px;
+  line-height: 2;
+  text-decoration: none;
 }
 
 header {
   display: flex;
   width: auto;
   text-align: center;
-  margin-bottom: 145px;
+  margin: 0;
   height: 200px;
-  padding-bottom: 50px;
+  padding-bottom: 175px 0 145px;
   justify-content: space-between;
   align-items: center;
+  border-top: 1px solid gray;
 }
 
 header div {
@@ -213,43 +228,51 @@ header button {
   background-color: white;
 }
 
-.top-content .box {
-  font-size: 16px;
+.top-content {
+  display: flex;
+  flex-direction: column;
+  border-top: 2px solid black;
   padding: 0 10px;
+  margin-top: 100px;
+  margin-bottom: 0;
+  justify-content: space-between;
 }
 
-.top-content {
-  border-top: 2px solid black;
-  padding-top: 40px;
-  display: flex;
-  justify-content: space-between;
+.top-content .box {
+  margin: 20px 0;
+  line-height: 1.2;
+  font-size: 16px;
+  padding: 0 10px;
 }
 
 .middle-img {
   width: 100%;
   margin: 40px 0 0;
-  height: 180px;
   padding: 0 15px;
+  height: 100px;
 }
 
 .bottom-content {
-  border-bottom: 1px solid black;
   display: flex;
-  margin: 30px 0;
-  padding: 0 20px 50px;
+  flex-direction: column;
+  border-bottom: 1px solid black;
   justify-content: space-between;
+  margin-top: 10px 0 30px;
+  padding: 0 20px;
 }
 
 .bottom-content .box {
   font-size: 16px;
-  width: 30%;
+  width: 100%;
+  line-height: 1.2;
+  margin: 15px 0;
+  padding: 10px 0;
 }
 
 .contact {
   font-size: 16px;
-  margin: 32px 20px;
+  margin: 38px 15px 0;
 }
-
 .contact p {
   line-height: 1;
   margin-bottom: 15px;
@@ -260,8 +283,8 @@ footer {
   margin: 40px 0 100px;
   font-size: 16px;
 }
-/*tablet version once we go below 800px*/
-@media (max-width: 800px) {
+/*tablet version once we go above 500px*/
+@media (min-width: 500px) {
   body {
     width: 100%;
   }
@@ -320,70 +343,61 @@ footer {
     margin: 50px 30px 0;
   }
 }
+/*desktop version above 800px*/
+@media (min-width: 800px) {
+  body {
+    width: 90%;
+    margin: 0 auto;
+  }
 
-/*mobile version under 500px*/
-@media (max-width: 500px) {
   nav {
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
+    flex-direction: row;
+    margin-bottom: 150px;
+    padding: 28px 20px;
   }
 
   nav .link {
-    border-top: 1px solid gray;
-    width: 100%;
-    order: 1;
-    font-size: 20px;
-    height: 63px;
-    padding: 5px 0;
-    margin: 0px;
-    line-height: 2;
+    font-size: 18px;
   }
 
   nav .logo {
-    margin: 20px 0;
+    margin: 0;
   }
 
   header {
-    border-top: 1px solid gray;
-    margin: 0;
-    padding: 175px 0 145px;
-  }
-
-  .top-content {
-    display: flex;
-    flex-direction: column;
-    padding: 0 10px;
-    margin-top: 100px;
-    margin-bottom: 0;
+    margin-bottom: 145px;
+    padding-bottom: 0 0 50px;
   }
 
   .top-content .box {
-    margin: 20px 0;
-    line-height: 1.2;
+    margin: 0;
+    line-height: 1;
+  }
+
+  .top-content {
+    border-top: 2px solid black;
+    padding-top: 40px;
+    flex-direction: row;
   }
 
   .middle-img {
-    height: 100px;
+    height: 180px;
   }
 
   .bottom-content {
-    flex-direction: column;
-    justify-content: space-between;
-    margin-top: 10px;
-    margin-bottom: 0;
-    padding-bottom: 0;
+    margin: 30px 0;
+    padding-bottom: 50px;
+    flex-direction: row;
   }
 
   .bottom-content .box {
-    width: 100%;
-    line-height: 1.2;
-    margin: 15px 0;
-    padding: 10px 0;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    width: 30%;
   }
 
   .contact {
-    margin: 38px 15px 0;
-    padding: 0;
+    margin: 32px 20px;
   }
 }
