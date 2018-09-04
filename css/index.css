@@ -292,7 +292,7 @@ h1, h2, h3, h4, h5 {
   /* Header Styles */
   
   header {
-      width: 900px;
+      width: 100%;
       display: flex;
       justify-content: space-around;
   }
@@ -307,6 +307,8 @@ h1, h2, h3, h4, h5 {
   header nav a {
       text-decoration: none;
       color: #b0b0b0;
+      border-bottom-color: grey;
+
   }
   
   header nav a:hover {
@@ -419,13 +421,92 @@ h1, h2, h3, h4, h5 {
 
     .cta {
         justify-content: center;
-        margin-left:190px;
+        margin-left:25%;
     }
-  
-  
+}
+  /* phone media queries start here */
+  @media (max-width: 500px){
+.container{
+    width: 500px;
+    margin: auto;
+    display:flex;
+    flex-direction: column;
+    /* align-content: center;  */
+
+}
+
+
+header{
+    flex-direction: column-reverse;
+    align-content: center;
+    flex-wrap: nowrap;
+    height: 300px;
+
+}
+header nav {
+    width: 100%;
+    margin:0px 0px 0px 0px;
+    justify-content: column;
+    align-content: center
+}
+header .main-nav{
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+   /* align-content: center; */
+   /* width: 100%;
+   Height: 300px; */
+
+}
+header nav a {
+    text-decoration: none;
+    color: #b0b0b0;
+    border-bottom-color: grey;
+    width: 100%;
+    
     
 
-  
+}
 
 
-  }
+
+/* 
+
+.main-content .middle-img {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 100%;}
+
+
+} */
+/* .main-content .text-content {
+    width: 100%;
+    flex-direction: column;
+    padding-right: 0px;
+    flex-wrap: wrap;
+} */
+.main-content .middle-img {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 95%;}
+.main-content .top-content {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 100%;}
+.main-content .bottom-content {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 100%;
+    height: 400px;
+    padding-right: 0px;
+}
+.main-content .bottom-content .text-content {
+    width: 446px;
+    margin-right: 12px;
+}
+    
+/* .cta {
+    justify-content: center;
+    margin-left:25%;
+} */
+}
