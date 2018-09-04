@@ -417,7 +417,7 @@ h1, h2, h3, h4, h5 {
 @media (max-width: 800px) {
 	.container {
 		max-width: 800px;
-		margin: 0 auto;
+		margin-left: 50px;
 	}
 	.container .cta .main-img {
 		display: none;
@@ -447,5 +447,52 @@ h1, h2, h3, h4, h5 {
 	.container .contact {
 		margin-right: 130px;
 		margin-left: 20px;
+	}
+}
+@media (max-width: 500px) {
+	.container {
+		margin: 0 auto;
+		max-width: 500px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.container header {
+		display: flex;
+	}
+	.container header nav {
+		display: flex;
+		flex-direction: column;
+		border: 1px solid red;
+		height: 200px;
+		justify-content: center;
+	}
+	.container header nav a {
+		border-top: 1px solid grey;
+	}
+	.container .cta .cta-text {
+		margin-left: 35px;
+	}
+	.container .main-content .middle-img {
+		display: flex;
+		justify-content: flex-start;
+		width: 400px;
+	}
+	.container .main-content .top-content {
+		display: flex;
+		flex-direction: column;
+	}
+	.container .main-content .top-content .text-content {
+		padding-top: 40px;
+	}
+	.container .main-content .bottom-content {
+		display: flex;
+		flex-direction: column;
+	}
+	.container .main-content .bottom-content .text-content {
+		padding-top: 40px;
+	}
+	.container .main-content h4 {
+		padding-bottom: 20px;
 	}
 }
