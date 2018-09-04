@@ -64,7 +64,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-  width: 880px;
+  max-width: 880px;
   /* TB LR */
   margin: 0 auto;
 }
@@ -135,6 +135,7 @@ header .logo {
 
 .cta img {
   margin-top: 69px;
+  max-width: 379px;
 }
 
 .main-content {
@@ -160,6 +161,7 @@ header .logo {
 
 .main-content .middle-img {
   margin-top: 45px;
+  max-width: 100%;
 }
 
 .main-content .bottom-content {
@@ -316,8 +318,8 @@ footer {
 
 @media (max-width:800px) {
     .container {
-        width: 740px;
-        margin: 0 auto;
+        max-width: 800px;
+        margin: 0 30px;
     }
 
     .container header {
@@ -328,6 +330,7 @@ footer {
     header nav {
         display: flex;
         justify-content: space-between;
+        max-width: 100%;
     }
 
     header .logo {
@@ -373,27 +376,27 @@ footer {
 /* MOBILE VIEW */
 @media (max-width:500px) {
     .container:first-child {
-        width: 490px;
+        max-width: 490px;
         margin: 0 auto;
     }
 
     .container .cta {
-        width: 450px;
+        max-width: 450px;
         margin: 0 auto;
     }
 
     .container .main-content {
-        width: 450px;
+        max-width: 450px;
         margin: 0 auto;
     }
 
     .container .contact {
-        width: 450px;
+        max-width: 450px;
         margin: 0 auto;
     }
 
     .container .footer {
-        width: 450px;
+        max-width: 450px;
         margin: 0 auto;
     }
 
