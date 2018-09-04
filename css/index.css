@@ -294,54 +294,74 @@ footer {
     footer {
 	    margin: 25px 0px 0px 15px;
     } 
- 
-   
 }
 
 @media (max-width: 500px){
-    .container header{
-	    margin-top: 10px;
+    
+    .container header {
+	    margin-top: 20px;
     }
+
+    .container .logo {
+        margin-bottom: 20px;
+    } 
+
     header nav {
         flex-direction: column;
-        height: 325px;
-        align-items: center;   
+        border-top: 1px solid gray;
     }
+
     .container nav a {    
-	    font-size: 20px;
+        font-size: 20px;
+        padding: 20px;
+        margin: 0px;
+        border-bottom: 1px solid gray;
+        text-align: center; 
+        width: 100%;
     }
-    .container .hero .hero-text{
-	    margin-top: 60px;
+
+    .container .hero .hero-text {
+	    margin-top: 50px;
     }
-    .hero .hero-text h1{
-        line-height: 60px;
-        padding-top:10px;
-    }
-    .main-content{ 
-        padding-top: 55px;  
-    }
-    .main-content .top-content{
-	    flex-direction: column;
-    }
-    .main-content .top-content .one-half, .bottom-content .one-third{
-        margin: 0px 0px 45px 10px; 
-    }
-    .main-content .middle-img{
-	    margin-top: 10px;
-    }
-    .main-content .bottom-content{
+
+
+    .main-content .top-content, .main-content .bottom-content {
         flex-direction: column;
+    }
+    .main-content .top-content h2 {
         margin-top: 25px;
     }
-    .main-content .bottom-content .one-third{
+
+    .main-content .top-content p {
+        margin-bottom: 20px;
+    }
+
+    .main-content .top-content .one-half {
+        margin-left: 10px;
+        padding-left: 0px;
+    }
+
+    .main-content .middle-img {
+	    margin-top: 30px;
+    }
+
+    .main-content .bottom-content .one-third {
 	    width: 100%;
     }
-    .main-content .bottom-content .one-third h2{
-        margin-bottom: 17px;
+    .bottom-content .one-third h2 {
+        margin: 0px 0px 10px 0px;
     }
-    .main-content .bottom-content .one-third p{
-        margin-bottom: 18px;
+    .bottom-content .one-third p{
+        margin: 0px 0px 55px 0px; 
+        padding-right: 25px;
     }
+    
+    .contact {
+        width: 97%;
+	    margin: 0px 0px 0px 25px;	
+    }
+
+   
     
 
 }
