@@ -497,7 +497,7 @@ h1, h2, h3, h4, h5 {
 		margin: 25px;
 		border: 1px solid black;
 		background-color: #f2f3f4;
-		width: 300px;
+		width: 290px;
 		padding: 20px;
 	}
 }
@@ -508,7 +508,7 @@ h1, h2, h3, h4, h5 {
 		margin: 25px;
 		border: 1px solid black;
 		background-color: #f2f3f4;
-		width: 80%;
+		width: 90%;
 		padding: 20px;
 	}
 }
@@ -544,9 +544,8 @@ h1, h2, h3, h4, h5 {
 	.about-services {
 		display: flex;
 		flex-direction: column-reverse;
-		width: 95%;
+		max-width: 500px;
 		padding: 20px;
-		margin: 0 auto;
 	}
 }
 
@@ -557,6 +556,13 @@ h1, h2, h3, h4, h5 {
 	margin-right: 50px;
 }
 
+@media (max-width: 500px) {
+	.service-facts {
+		width: 100%;
+		padding: 20px;
+	}
+}
+
 .services-info-img {
 	margin: 40px 20px;
 }
@@ -565,7 +571,7 @@ h1, h2, h3, h4, h5 {
 @media (max-width: 800px) {
 	.services-info-img {
 		display: block;
-		width: 50%;
+		width: 300px;
 	}
 }
 
