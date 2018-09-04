@@ -244,8 +244,7 @@ h1, h2, h3, h4, h5 {
   display: flex;
   flex-direction: row;
   margin-bottom: 40px;
-  width: 100%;
-  
+  width: 100%; 
 }
 
 .row1__box {
@@ -292,3 +291,92 @@ address {
   font-family: IBM Plex Mono;
 }
 
+
+
+
+
+
+/* media queries  */
+@media (max-width: 800px) {
+  .hero__right {
+    display: none;
+  }
+
+  .hero {
+    justify-content: center;
+  }
+
+  .nav__logo {
+    /* order: -1;    */
+    margin: 0 auto;
+    flex-wrap: wrap;
+    /* width: 100%;  */
+  }
+
+  .nav {
+    /* border: 1px solid red; */
+    flex-wrap: wrap;
+  }
+}
+
+
+
+
+@media (max-width: 500px) {
+  .container {
+    /* border: 10px solid lightblue; */
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav .nav__item {
+    width: 100%;
+    text-align: center;
+    margin-right: 0;
+    margin-bottom: 0;
+    border-bottom: 1px solid black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .nav .nav__logo {
+    order: -1;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .nav .nav__item--top {
+    border-top: 1px solid black;
+  }
+
+  .hero {
+    margin: 49px;
+  }
+
+  .hero .hero__left .hero__left--text {
+    color: red;
+    font-size: 73px;
+  }
+
+  .hero .hero__left--btn {
+    width: 170px;
+    height: 30px;
+    margin-top: 10px;
+  }
+
+  .row1 {
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    margin-bottom: 40px;
+    width: 100%; 
+  }
+
+}
