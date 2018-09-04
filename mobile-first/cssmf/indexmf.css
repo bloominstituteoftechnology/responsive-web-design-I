@@ -79,11 +79,21 @@ nav {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    
+    width: 100%;
+    margin-top: 10px;
+
 }
 nav a {
     padding: 30px 20px;
-    font-size: 14px;
+    font-size: 12px;
+    width: 100%;
+    border-top: 1px solid gray;
+    text-align: center;
+
+}
+
+nav a:last-child {
+    border-bottom: 1px solid gray;
 }
 
 nav a:link {
@@ -145,6 +155,49 @@ footer p {
     font-size: 14px;
 }
 
+@media screen and (min-width: 500px) {
+    nav {
+        display: flex;
+        flex-flow: row nowrap;
+     
+    }
+
+    nav a {
+        border-top: 0;
+    }
+    
+    nav a:last-child {
+        border-bottom: 0;
+    }
+
+    .top-content {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    .bottom-content {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .wrapper {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+    }
+
+    nav, 
+    nav a {
+        width: 70%;
+    }
+
+    .lg-header-img {
+        display: inline-block;
+    }
+
+}
 /* Services Page CSS
 .top-content-svcs {
     display: flex;
