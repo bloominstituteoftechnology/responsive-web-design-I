@@ -278,6 +278,7 @@ header .logo {
     .main-content {
         padding: 60px;
         padding-left: 0;
+        padding-bottom: 0;
 
     }
 
@@ -295,6 +296,7 @@ header .logo {
         width: 100%;
         height: auto;
         margin: 10px 0;
+        align-self: flex-end;
     }
 
     .main-content .bottom-content {
@@ -306,6 +308,11 @@ header .logo {
 
     .main-content .bottom-content .text-content {
         margin-bottom: 62px;
+    }
+
+    .main-content .bottom-content div:last-of-type {
+        margin-bottom: 38px;
+    }
 }
 
 /* Contact Styles */
@@ -318,6 +325,13 @@ header .logo {
     .contact {
         margin-left: 28px;
     }
+}
+
+@media (max-width: 500px) {
+    .contact {
+        margin-left: 20px;
+    }
+
 }
 
 /* Footer Styles */
