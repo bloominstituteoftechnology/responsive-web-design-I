@@ -1,3 +1,509 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
 
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.container {
+    width: 880px;
+    /* TB LR */
+    margin: 0 auto;
+}
+
+/* header */
+
+header {
+    width: 100%;
+    display: flex;
+}
+
+header nav {
+    margin-top: 40px;
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #b0b0b0;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+header img {
+    margin: 28px 0 0 91px;
+}
+
+/* cta */
+
+.cta .cta-text {
+    display: flex;
+    flex-flow: row;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+.cta .cta-text section {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    font-size: 77px;
+    margin-top: 120px;
+    text-align: center;
+}
+
+.cta .cta-text button {
+    align-self: center;
+    background: white;
+    margin-top: 6px;
+    padding: 8px 44px;
+    font-size: 17px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.cta .cta-text button:hover {
+    background: black;
+    color: white;
+}
+
+.cta .ctatext img {
+    align-self: flex-end margin-top: 69px;
+}
+
+.main-content {
+    border-top: 1px solid black;
+    margin-top: 76px;
+    padding-top: 39px;
+}
+
+.main-content .top-content {
+    padding: 0 10px;
+}
+
+.main-content .top-content .text-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 34px;
+}
+
+.main-content .top-content .text-content:last-child {
+    margin-right: 0;
+}
+
+.main-content .middle-img {
+    margin-top: 45px;
+}
+
+.main-content .bottom-content {
+    margin-top: 37px;
+    padding: 0 10px;
+}
+
+.main-content .bottom-content .text-content2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 12px;
+}
+
+.main-content .bottom-content .text-content2:last-child {
+    margin-right: 0;
+}
+
+.contact {
+    margin-top: 57px;
+    border-top: 1px solid black;
+    padding: 39px 10px 0;
+}
+
+.contact p {
+    margin: 20px 0;
+}
+
+footer {
+    margin: 32px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Services Page */
+
+.serv img {
+    margin: 20px 0px 20px 0px;
+}
+
+.serv .words {
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid black;
+}
+
+.six-text-boxes button {
+    align-self: center;
+    background: white;
+    margin-top: 12px;
+    padding: 8px 22px;
+    font-size: 12px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.six-text-boxes button:hover {
+    background: black;
+    color: white;
+}
+
+.topthird {
+    display: flex;
+    flex-direction: row;
+}
+
+.middlethird {
+    display: flex;
+    flex-direction: row;
+}
+
+.bottomthird {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid black;
+}
+
+.img-list {
+    display: flex;
+    flex-direction: row;
+    margin: 40px 0px 80px 0px;
+}
+
+.topthird .first {
+    justify-content: flex-start;
+    background: lightgrey;
+    border: 2px solid black;
+    margin: 20px;
+    padding: 20px;
+}
+
+.topthird .second {
+    justify-content: flex-end;
+    background: lightgrey;
+    border: 2px solid black;
+    margin: 20px;
+    padding: 20px;
+}
+
+.middlethird .third {
+    justify-content: flex-start;
+    background: lightgrey;
+    border: 2px solid black;
+    margin: 20px;
+    padding: 20px;
+}
+
+.middlethird .fourth {
+    justify-content: flex-end;
+    background: lightgrey;
+    border: 2px solid black;
+    margin: 20px;
+    padding: 20px;
+}
+
+.bottomthird .fifth {
+    justify-content: flex-start;
+    background: lightgrey;
+    border: 2px solid black;
+    margin: 20px 20px 40px 20px;
+    padding: 20px;
+}
+
+.bottomthird .sixth {
+    justify-content: flex-end;
+    background: lightgrey;
+    border: 2px solid black;
+    margin: 20px 20px 40px 20px;
+    padding: 20px;
+}
+
+.img-list .seventh {
+    justify-content: flex-start;
+    margin-right: 20px;
+}
+
+.img-list ul {
+    margin: 20px;
+}
+
+.img-list ul li {
+    list-style: disc;
+    padding: 5px;
+}
+
+.img-list img {
+    justify-content: flex-end;
+    margin-left: 20px;
+    align-self:
+}
+
+/* Tablet */
+
+@media (max-width: 800px) {
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }
+    header {
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+    }
+    header nav {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0 2.5%;
+    }
+    header .logo {
+        align-self: center;
+        margin: 2.5% 0;
+    }
+    .cta {
+        display: flex;
+        justify-content: center;
+    }
+    .cta .cta-text section {
+        margin: 20% 0;
+    }
+    .cta img {
+        display: none;
+    }
+    .main-content {
+        margin: 5% 2.5%;
+    }
+    .top-content {
+        margin-bottom: 5%;
+    }
+    .text-content div {
+        margin: 0 2.5%;
+    }
+    .main-content .middle-img {
+        width: 100%;
+        padding: 0 2.5%;
+        margin: 0;
+    }
+    .bottom-content {
+        margin-top: 5%;
+    }
+    .text-content2 div {
+        margin: 0 2.5%;
+    }
+    .contact {
+        margin: 0 2.5%;
+    }
+}
+
+/* Mobile */
+
+@media( max-width: 500px) {
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }
+    header {
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+    }
+    header .logo {
+        padding: 1% 0px;
+    }
+    header nav {
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid black;
+    }
+    header nav a {
+        padding: 5% 0px;
+        border-top: 1px solid black;
+        text-align: center;
+    }
+    .top-content {
+        display: flex;
+    }
+    .top-content .text-content {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .text-content div {
+        margin: 5% 0;
+    }
+    .main-content .bottom-content {
+        display: flex;
+        margin-top: 5%;
+    }
+    .bottom-content .text-content2 {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .text-content2 div {
+        margin: 5% 0;
+    }
+}
