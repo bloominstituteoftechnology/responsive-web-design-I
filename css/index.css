@@ -374,5 +374,49 @@ footer {
 }
 
 @media (max-width: 500px) {
+  .page-container {
+    width: 100%;
+    padding: 0;
+  }
 
+  header {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  nav {
+    border-top: 1px solid #a5a5a5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  nav button {
+    border-bottom: 1px solid #a5a5a5;
+    margin-right: 0;
+    width: 100%;
+    padding: 20px 0;
+  }
+
+  nav button a {
+    font-size: 20px;
+  }
+
+  .index-page, footer {
+    padding: 0 10px;
+  }
+
+  .index-page .sections section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .index-page .section-item-top, .index-page .section-item-bottom {
+    width: 100%;
+  }
 }
