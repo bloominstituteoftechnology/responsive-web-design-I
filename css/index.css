@@ -54,8 +54,8 @@ table {
     width: 100%;
     margin: 0 auto;
     max-width: 1039px;
-    padding-right: 50px;
-    padding-left: 10px;
+    padding-right: 100px;
+    padding-left: 35px;
 }
 
 /* Top Content */
@@ -64,6 +64,7 @@ table {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 15px;
 }
 
 .container .main-nav a {
@@ -76,20 +77,115 @@ table {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 60px auto;
+    margin: 70px auto;
+    border-bottom: 2px solid black;
 }
 
 .container .top-content .top-info {
     display: flex;
     flex-flow: column wrap;
-    margin-left: 200px;
-    border: 1px solid red;
-
+    margin-left: 50px;
+   
 }
 
 .container .top-content .top-info h1 {
-    font-size: 70px;
+    font-size: 65px;
+    font-weight: bold;
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: 0;
+
+}
+
+.container .top-content .top-info a {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    margin: 30px 130px 0 130px;
+    border: 1px solid black;
+}
+
+.container .top-content img {
+    margin-bottom: 70px;
+}
+
+
+/* Middle Content */
+
+.container .mid-content {
+    display: flex; 
+    justify-content: space-between;
+
+}
+
+.container .mid-content div {
+    padding: 0 20px 15px 0;
+    margin-bottom: 20px;
+    margin-top: -30px;
+}
+
+
+.container .mid-content div h1 {
+    margin-bottom: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: ;
+}
+
+.container .mid-content div p {
+}
+
+/* Middle Bottom Content */
+
+.container .mid-bottom {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+
+}
+
+.container .mid-bottom div {
+    padding: 10px 20px 15px 0;
+    margin-bottom: 30px;
+
+}
+
+.container .mid-bottom div h1 {
+    margin-bottom: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 25px;
+}
+
+
+/* Bottom Content */
+
+.container .bot-content {
+    margin-bottom: 20px;
+}
+
+.container .bot-content h1{
+    font-size: 15px;
+    font-weight: bold;
+    margin: 35px 0 20px 0;
+    text-transform: uppercase;
+}
+
+.container .bot-content address {
+    margin: 15px auto;
+    font-style: italic;
+}
+
+.container .bot-content p {
+    margin: 10px auto;
+}
+
+/* footer */
+
+.down-under {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
 }
