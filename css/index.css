@@ -316,11 +316,11 @@ footer {
 @media (max-width: 800px) {
   .page-container {
     width: 100%;
-    margin: 0 auto;
+    padding: 0 15px;
   }
 
   .main-nav {
-    display: block;
+    position: relative;
     width: 100%;
     padding: 20px 0;
     width: 100%;
@@ -338,7 +338,7 @@ footer {
 
   nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 40px;
     width: 100%;
   }
@@ -357,7 +357,10 @@ footer {
   }
 
   .index-page .subheader {
-    margin: 0 0 50px 256px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
   }
 
   .index-page .section-item-top .section-with-right-margin {
