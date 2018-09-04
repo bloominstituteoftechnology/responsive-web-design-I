@@ -275,7 +275,7 @@ footer {
     font-size: 14px;
 }
 
-@media (max-width: 880px) {
+@media (max-width: 800px) {
     .container header {
         display: flex;
         flex-wrap: wrap;
@@ -315,10 +315,51 @@ footer {
         margin-left:
     }
 
-.bottom-content{
-    display: flex;
-    
-}
+    .bottom-content {
+        display: flex;
+    }
 }
 
-@media (max-width: 500px) {}
+@media (max-width: 500px) {
+    .container header nav {
+        flex-direction: column;
+        border-top: 1px solid gray;
+    }
+
+    .container header nav a {
+        padding: 10px 0;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        border-bottom: 1px solid gray;
+    }
+
+    .container .logo {
+        margin-left: 187px
+    }
+
+    .main-content .top-content .text-content {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-left: 75px;
+    }
+
+    .container .main-content img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .main-content .bottom-content {
+        flex-direction: column;
+        padding-left: 75px
+    }
+
+    .bottom-content .text-content {
+        margin-right: 0;
+}
+
+.main-content h4{
+    margin-top: 15px
+}
+}
