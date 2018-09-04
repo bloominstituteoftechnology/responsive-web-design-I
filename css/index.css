@@ -1,3 +1,169 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+/* Home Page CSS (Redone because we have a 3 day weekend) */
+.container{
+    width:880px;
+    margin:0 auto;
+}
+.container header{
+    margin-top:30px;
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.container header .top-nav{
+    width:69%;
+    display:flex;
+    justify-content: space-between;
+}
+.container header .top-nav a{
+    color:grey;
+    text-decoration: none;
+}
+.container header .top-nav a:hover{
+    color:black;
+    text-decoration: underline;
+}
+.container .get-started{
+    margin-top:70px;
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    padding-bottom:74px;
+    border-bottom:3px solid black;
+    margin-bottom:35px;
+}
+.container .get-started .left-get-started{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    margin-left:125px;
+}
+.container .get-started .left-get-started h1{
+    font-size: 4.5em;
+}
+.container .get-started .left-get-started .get-started-button{
+    display:flex;
+    border:1px solid grey;
+    height:30px;
+    width:58%;
+    justify-content: center;
+    align-items: center;
+}
+.container .get-started .left-get-started .get-started-button:hover{
+    background:black;
+    color:white;
+    transition:1s;
+    cursor: pointer;
+}
+.container .main-section{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+}
+.container .main-section .sub-division{
+    margin-bottom:4%;
+}
+.container .main-section .sub-division2{
+    margin-top:3.5%;
+    padding-bottom:7.3%;
+    border-bottom:2px solid black;
+}
+.container footer{
+    display:flex;
+    margin-top:5%;
+    justify-content: center;
+}
+/* Home Page CSS for Tablet View */
+@media (max-width:801px){
+    .container{
+        width:100%
+    }
+    .container header{
+        margin-top:50px;
+        height:90px;
+        display:flex;
+        flex-direction:column-reverse;
+        justify-content: space-between;
+    }
+    .container header .top-nav{
+        width:100%;
+        justify-content:space-around;
+    }
+    .container .get-started .circle-img{
+        display:none;
+    }
+    .container .get-started{
+        width:100%;
+        display:flex;
+        justify-content: space-between;
+        padding-bottom:74px;
+        border-bottom:3px solid black;
+        margin-bottom:35px;
+    }
+    .container .get-started .left-get-started{
+        margin:0 auto;
+    }
+    
+}
+
+/* .box :nth-child(1) { order: 2; } */
