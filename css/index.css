@@ -1,3 +1,354 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+html{
+    font-size: 62.5%
+}
+.container {
+	max-width: 880px;
+	/* TB LR */
+	margin: 0 auto;
+  }
+  
+  /* header */
+  
+  header nav {
+	display: flex;
+	width: 78%;
+	margin-top: 35px;
+	justify-content: space-between;
+  }
+  
+  header nav a {
+	font-size: 1.4rem;
+	color: gray;
+	text-decoration: none;
+  }
+  
+  header nav a:hover {
+	text-decoration: underline;
+  }
+  header {
+	  display:flex;
+	  justify-content: space-between;
+	  width: 100%;
+
+  }
+  header .logo {
+	display: inline-block;
+    margin-top: 25px;
+    margin-left: 5%;
+  }
+  
+  /* cta */
+  .cta{
+	  width: 100%;
+	  display: flex;
+	  justify-content: space-around;
+  }
+  .cta .cta-text {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 7.7rem;
+	margin-top: 120px;
+	text-align: center;
+	padding: 0px 75px;
+  }
+  
+  .cta .cta-text button {
+	background: white;
+	vertical-align: top;
+	margin-top: 6px;
+	padding: 8px 44px;
+	font-size: 1.7rem;
+	border: 1px solid black;
+	cursor: pointer;
+  }
+  
+  .cta .cta-text button:hover {
+	background: black;
+	color: white;
+  }
+  
+  .cta img {
+	display: inline-block;
+	margin-top: 69px;
+  }
+  
+  .main-content {
+	margin-top: 76px;
+	padding-top: 39px;
+  }
+  
+  .main-content .top-content {
+    padding-top: 40px;
+    border-top: 1px solid black;
+	display:flex;
+	justify-content: space-between;
+  }
+  .main-content h4{
+      font-size: 2.4rem;
+  }
+  .main-content p{
+      font-size: 1.4rem;
+  }
+  .main-content .top-content .text-content {
+	width: 46%;
+
+  }
+  
+  .main-content .middle-img {
+    width: 100%;
+    height:auto;
+	margin-top: 45px;
+  }
+  
+  .main-content .bottom-content {
+	margin-top: 37px;
+	display:flex;
+    justify-content: space-between;
+  }
+  
+  .main-content .bottom-content .text-content {
+	width: 31%;
+  }
+  
+  .contact {
+	margin-top: 57px;
+	border-top: 1px solid black;
+	padding: 39px 10px 0;
+  }
+  
+  .contact p {
+    margin: 20px 0;
+    font-size: 1.4rem;
+  }
+  .contact h4{
+      font-size: 2.4rem;
+  }
+  footer {
+	margin: 32px 0;
+	text-align: center;
+	font-size: 14px;
+  }
+/* Media queries go here */
+/*tablet view start here   */
+@media only screen and (max-width: 800px) {  
+    /* disable image code sniplet */
+    .cta img {
+        display: none;
+      }
+    /* change the width of the nav bar to 800 px, spread the content accross the new bar */
+    header nav{
+        width: 100%;
+        justify-content: space-around;
+        margin-left:0;
+        margin-right:0;  
+    }
+    /* change header width to 800, change flex to column to reposition the logo */
+    header{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+
+    }
+    /* change logo order so it goes on top of the nav bar, reposition it to the center of the page */
+    header .logo{
+        order: -1;
+        align-self: center;
+
+    }
+    .main-content .top-content .text-content {
+        width: 41%;
+    
+      }
+    .main-content{
+        width: 100%;
+
+    }
+    .main-content .top-content{
+        justify-content: space-around;
+        max-width: 95%;
+        margin-right: 2.5%;
+        margin-left:2.5%;
+    }
+    /* change middle image width to fit tablet view */
+    .middle-img{
+        width: 86%;
+        height: auto;
+        padding-right: 2.5%;
+        padding-left:2.5%;
+
+    }
+    .container{
+        width: 100%;
+
+    }
+    .main-content .bottom-content .text-content {
+        width: 24%;
+
+       
+    }
+    .main-content .bottom-content{
+        width: 100%;
+        justify-content: space-around;
+
+    }
+    .contact{
+        max-width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding-left: 0%;
+
+    }
+}
+/* mobile view start here */
+@media only screen and (max-width: 500px) {  
+    /* change flex to colum so the nav organzie by column */
+        header nav{
+            max-width: 100%;
+            flex-direction: column;
+        }
+        header{
+            display: flex;
+            flex-direction: column;
+            max-width: 100%;
+        }
+        /* added bottom and top border, position to the middle of the page */
+        header nav a{
+            border-top: solid 1px;
+            max-width: 100%;
+            font-size: 2.4rem;
+            text-align: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        header .logo{
+            order: -1;
+            align-self: center;    
+        }
+        .a-contact{
+            border-bottom: 1px solid;
+        }
+        .cta{
+            max-width: 100%;
+        }
+        .container{
+           max-width: 100%;
+            margin: 0 auto;
+        }
+        .main-content{
+            max-width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .contact{
+            max-width: 90%;
+            margin-left: 5%;
+            margin-right: 5%;
+            padding-left: 0%;
+        }
+        footer{
+            max-width: 100%;
+        }
+        .middle-img{
+            width: 80%;
+            height: auto;
+            padding-right: 4%;
+
+            margin-left: 0%;
+        }
+
+        .main-content .top-content{
+            display: flex;
+            flex-direction: column;
+            max-width: 90%;
+            margin-right: 5%;
+            margin-left:5%;
+        }
+        .main-content .top-content .text-content{
+            width: 90%;
+            margin-bottom: 20px;
 
 
+        }
+        .main-content .bottom-content{
+            display: flex;
+            flex-direction: column;
+            max-width: 90%;
+            margin-right: 5%;
+            margin-left:5%;
+        }
+        .main-content .bottom-content .text-content{
+            width: 90%;
+            margin-bottom: 20px;
+
+        }
+        .cta{
+            max-width:100%;
+        }
+}
