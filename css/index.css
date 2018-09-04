@@ -308,7 +308,7 @@ header .logo {
   }
 
   .index-logo{
-    width: 200px;
+    width: 100%;
     margin: 25px 0;
   }
 
@@ -317,12 +317,17 @@ header .logo {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    width: 100%
     width: 790px;
   }
 
+  /* header { */
+  /*   width 100%; */
+  /* } */
+
   .fixed-nav a {
     text-decoration: none;
-    width: 50px;
+    width: 100%;
   }
 
   .index-cta {
@@ -416,31 +421,51 @@ header .logo {
     width: 500px;
   }
 
+  header {
+    width: 100%;
+  }
+
+  nav {
+    width: 100%;
+    /* border-bottom: black solid 1px; */
+  }
+
   .fixed-nav {
     display: flex;
     justify-content: center;
+    /* flex-direction: column; */
+    width: 100%;
+  }
+
+  .fixed-nav header nav {
     flex-direction: column;
     width: 100%;
   }
 
-
-  .fixed-nav header nav {
+  .index-logo {
+    text-align: center;
     width: 100%;
   }
 
-  .logo {
+  .index-links {
+    display: flex;
+    border-top: black 1px solid;
+    flex-direction: column;
     width: 100%;
-  border: dotted green 3px;
+
   }
+  /* .fixed-nav a { */
+  /*   text-decoration: none; */
+  /*   width: 100%; */
+  /* } */
 
   .fixed-nav a {
     width: 100%;
     text-align: center;
+    border-bottom: 1px solid black;
     margin: 0px 0px;
-    padding-top: 20px;
-  /* border: dotted yellow 3px; */
-    border-top: solid 1px black;
-    /* border-bottom: solid 1px black; */
+    text-decoration: none;
+    padding: 20px;
 
   }
 
