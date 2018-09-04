@@ -68,13 +68,18 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
+html {
+    font-size: 62.5%;
+}
+
 a {
 	text-decoration: none;
 }
 
 .container {
 	max-width: 880px;
-	margin: 0 auto;
+    margin: 0 auto;
+    font-size: 1.6rem;
 }
 
 .nav-container {
@@ -88,7 +93,7 @@ a {
 .main-nav {
     display: flex;
     justify-content: space-around;
-    width: 660px;
+    width: 75%;
 }
 
 .nav-container .main-nav a {
@@ -104,17 +109,20 @@ a {
 .main-header {
     display: flex;
     max-width: 880px;
-    margin: 0 auto;
+    margin: 50px auto;
+    text-align: center;
 }
 
 header .left {
 	display:flex;
 	flex-direction: column;
-	width: 50%;
+    width: 50%;
+    margin-top: 74px;
+    margin-left: 11%;
 }
 
 header .left .butt {
-	margin: 0 auto;
+	margin: 10px auto;
 	background-color: white;
 	padding: 5px 45px;
 	border: 1px solid black;
@@ -122,25 +130,18 @@ header .left .butt {
 }
 
 header .right {
-	margin: 0 0 50px 0;
+	margin: 20px 0 0 10%;
 	width: 50%;
 }
 
-header.main-header {
-	text-align: center;
-}
-
-
-
 header h1 {
 	display: inline-block;
-	font-size: 70px;
+	font-size: 7.3rem;
 }
 
 
 header img {
-	display: inline-block;
-	height: 250px;
+    width: 100%;
 }
 
 .home-page section.content {
