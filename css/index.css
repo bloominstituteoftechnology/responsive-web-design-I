@@ -234,8 +234,6 @@ footer {
 @media (max-width: 800px) {
     .container {
         max-width: 800px;
-        margin: 0 auto;
-        font-size: 1.5rem;
     }
 
     .nav-container {
@@ -361,7 +359,44 @@ footer {
     
 }
 
+@media (max-width: 500px) {
 
+    .container {
+        max-width: 500px;
+        font-size: 1.9rem;
+    }
+
+    .nav-container {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center; 
+        margin: 20px 0 0 0;
+        width: 100%;
+    }
+    
+    .main-nav {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
+        margin-top: 15px;
+        border-top: 1px solid gray;
+    }
+    
+    .nav-container .main-nav a {
+        width: 100%;
+        margin: 0;
+        color:gray;
+        border-bottom: 1px solid gray;
+        padding: 20px 0;
+        text-align: center;
+    }
+    
+    .logo {
+        width: 45%;
+    }
+
+}
 
 
 
