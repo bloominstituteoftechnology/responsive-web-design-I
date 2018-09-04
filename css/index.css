@@ -72,9 +72,17 @@ h1, h2, h3, h4, h5 {
 	margin: 0 auto;
 }
 
+/* tablet view */
 @media (max-width: 800px){
   .main-container {
-    max-width: 700px;
+    max-width: 800px;
+  }
+}
+
+/* mobile view */
+@media (max-width: 500px){
+  .main-container {
+    max-width: 500px;
   }
 }
 
@@ -82,7 +90,15 @@ h1, h2, h3, h4, h5 {
 	font-size: 40pt;
 }
 
+/* tablet view */
 @media (max-width: 800px){
+  .container-two h1 {
+    font-size: 60pt;
+  }
+}
+
+/* mobile view */
+@media (max-width: 500px){
   .container-two h1 {
     font-size: 60pt;
   }
@@ -95,6 +111,7 @@ h1, h2, h3, h4, h5 {
 	justify-content: space-between;
 }
 
+/* tablet view */
 @media (max-width: 800px){
   .container-top {
   	display: flex;
@@ -105,6 +122,7 @@ h1, h2, h3, h4, h5 {
   }
 }
 
+/* mobile view */
   @media (max-width: 500px) {
     .container-top {
       display: flex;
@@ -121,6 +139,7 @@ h1, h2, h3, h4, h5 {
 	width: 600px;
 }
 
+/* tablet view */
 @media (max-width: 800px) {
   .container-top .top-nav {
   	display: flex;
@@ -129,6 +148,7 @@ h1, h2, h3, h4, h5 {
   }
 }
 
+/* mobile view */
 @media (max-width: 500px) {
   .container-top .top-nav {
     width: 100%
@@ -142,6 +162,7 @@ h1, h2, h3, h4, h5 {
 	text-decoration: none;
 }
 
+/* mobile view */
 @media (max-width: 500px) {
   .container-top .top-nav a {
   	color: gray;
@@ -152,6 +173,7 @@ h1, h2, h3, h4, h5 {
   }
 }
 
+/* mobile view */
 @media (max-width: 500px) {
   .container-top .top-nav a:last-child {
   	color: gray;
@@ -173,7 +195,6 @@ h1, h2, h3, h4, h5 {
 .container-two .top-left {
 	flex-basis: 1;
 	text-align: center;
-	/* width: 450px; */
 	height: 380px;
 	padding: 50px;
 }
@@ -183,20 +204,20 @@ h1, h2, h3, h4, h5 {
 	background: white;
 	border: solid black;
 	padding: 10px 40px;
-
 }
 
 .container-two .top-right {
 	flex-basis: 1;
-	/* width: 450px; */
 }
 
+/* tablet view */
 @media (max-width: 800px) {
   .container-two .top-right {
     display: none;
   }
 }
 
+/* mobile view */
 @media (max-width: 500px) {
   .container-two .top-right {
     display: none;
@@ -209,6 +230,7 @@ h1, h2, h3, h4, h5 {
   border-top: 3px solid black;
 }
 
+/* mobile view */
 @media (max-width: 500px) {
   .container-row-one {
   	display: flex;
@@ -216,7 +238,6 @@ h1, h2, h3, h4, h5 {
   	height: 300px;
     border-top: 3px solid black;
   }
-
 }
 
 .container-row-one .row-one-left {
@@ -226,7 +247,6 @@ h1, h2, h3, h4, h5 {
 	padding: 20px;
 }
 
-
 .container-row-one .row-one-right {
 	flex-basis: 1;
 	width: 450px;
@@ -234,27 +254,37 @@ h1, h2, h3, h4, h5 {
 	padding: 20px;
 }
 
-
 .container-middle-img {
 	height: 200px;
 	width: 876px;
 }
 
+/* tablet view */
+@media (max-width: 800px){
+  .container-middle-img {
+  	width: 760px;
+    height: 180px;
+		margin: 10px;
+  }
+}
+
+/* mobile view */
 @media (max-width: 500px){
   .container-middle-img {
   	width: 430px;
     height: 100px;
-    margin: 0 auto;
   }
 }
 
+/* tablet view */
 @media (max-width: 800px){
   .container-middle-img img {
-  	width: 700px;
+  	width: 750px;
     height: 180px;
   }
 }
 
+/* mobile view */
 @media (max-width: 500px){
   .container-middle-img img {
   	max-width: 100%;
@@ -269,6 +299,7 @@ h1, h2, h3, h4, h5 {
   border-bottom: 3px solid black;
 }
 
+/* mobile view */
 @media (max-width: 500px) {
   .container-row-two {
   	display: flex;
@@ -285,6 +316,7 @@ h1, h2, h3, h4, h5 {
 	padding:20px 10px;
 }
 
+/* mobile view */
 @media (max-width: 500px) {
   .container-row-two .row-two-left {
   	flex-basis: 1;
@@ -299,6 +331,7 @@ h1, h2, h3, h4, h5 {
 	padding:20px 10px;
 }
 
+/* mobile view */
 @media (max-width: 500px) {
   .container-row-two .row-two-center {
   	flex-basis: 1;
@@ -313,6 +346,7 @@ h1, h2, h3, h4, h5 {
 	padding:20px 10px;
 }
 
+/* mobile view */
 @media (max-width: 500px) {
   .container-row-two .row-two-right {
   	flex-basis: 1;
@@ -329,6 +363,7 @@ h1, h2, h3, h4, h5 {
 	line-height: 1.6;
 }
 
+/* mobile view */
 @media (max-width: 500px){
   .contact {
   	height: 160px;
@@ -347,6 +382,7 @@ h1, h2, h3, h4, h5 {
 	text-align: center;
 }
 
+/* mobile view */
 @media (max-width: 500px) {
   .copyright {
   	height: 50px;
@@ -354,27 +390,57 @@ h1, h2, h3, h4, h5 {
   	text-align: center;
   }
 }
+
+/* services page */
 .services-header-img {
 	display: block;
 	width: 900px;
-	/* margin: 0 auto; */
 }
+
+/* tablet view */
+@media (max-width: 800px){
+	.services-header-img {
+		display: block;
+		width: 750px;
+		margin: 10px;
+	}
+}
+
 .services {
 	display: block;
-	/* margin: 0 auto; */
 	padding: 20px 0px;
-	/* width: 900px; */
+}
+
+/* tablet view */
+@media (max-width: 800px) {
+	.services {
+		display: block;
+		width: 95%;
+		margin: 0 auto;
+	}
 }
 
 .service-description-boxes {
 	display: flex;
-	/* width: 900px; */
 	height: 1300px;
 	flex-wrap: wrap;
-	/* margin: 0 auto; */
 	justify-content: space-between;
 	border-top: 2px solid black;
 	margin-top: 20px;
+}
+
+/* tablet view */
+@media (max-width: 800px){
+	.service-description-boxes {
+		display: flex;
+		width: 95%;
+		height: 1300px;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-content: space-between;
+		border-top: 2px solid black;
+		margin-top: 20px;
+	}
 }
 
 .service-box {
@@ -384,6 +450,17 @@ h1, h2, h3, h4, h5 {
 	width: 425px;
 	height: 210px;
 	padding: 20px;
+}
+
+@media (max-width: 800px){
+	.service-box {
+		margin: 25px;
+		border: 1px solid black;
+		background-color: #f2f3f4;
+		width: 40%;
+		height: 260px;
+		padding: 20px;
+	}
 }
  .service-box .learn-more {
 	 margin-top: 10px;
@@ -396,14 +473,20 @@ h1, h2, h3, h4, h5 {
 
 .about-services {
 	display: flex;
-	/* width: 900px;
-	margin: 0 auto; */
-	justify-content: space-between;
 	border-top: 2px solid black;
 	margin-bottom: 30px;
 	margin-top: 40px;
-
 }
+
+/* tablet view */
+@media (max-width: 800px) {
+	.about-services {
+		display: flex;
+		width: 95%;
+		margin: 0 auto;
+	}
+}
+
 .service-facts {
 	width: 430px;
 	height: 210px;
@@ -413,6 +496,14 @@ h1, h2, h3, h4, h5 {
 
 .services-info-img {
 	margin-top: 40px;
+}
+
+/* tablet view */
+@media (max-width: 800px) {
+	.services-info-img {
+		display: block;
+		width: 50%;
+	}
 }
 .service-facts-list li{
 margin-top: 15px;
