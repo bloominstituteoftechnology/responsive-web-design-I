@@ -187,30 +187,21 @@ section {
 .contact p:last-child {
   padding-bottom: 20px;
 }
-@media (max-width: 800px) {
-  /* home page tablet styles */
-  .home-content {
-    width: 95%;
-    padding: 35px 0 50px;
-    margin-top: 50px;
-  }
-  .home-card-wrappers {
-    padding-left: 15px;
-  }
-}
 
 /* start of the footer section */
 footer {
-	width: 100%;
+  width: 100%;
 	display: flex;
 	justify-content: center;
 	padding: 20px 0 35px;
 }
+
 @media (max-width: 800px) {
   /* core page properties */
   .page-container {
     width: 100%;
   }
+  
   /* tablet nav display */
   nav {
     margin-top: 35px;
@@ -229,6 +220,7 @@ footer {
     padding-right: 25px;
     padding-bottom: 15px;
   }
+  
   /* tablet header section */
   .home-page .header-left {
     margin-top: 90px;
@@ -236,5 +228,58 @@ footer {
   }
   .home-page .header-right {
     display: none;
+  }
+  
+  /* home page tablet styles */
+  .home-content {
+    width: 95%;
+    padding: 35px 0 50px;
+    margin-top: 50px;
+  }
+  .home-card-wrappers {
+    padding-left: 15px;
+  }
+
+  /* tablet styles for the contact section */
+  .contact {
+    padding-left: 20px;
+  }
+
+  /* footer tablet styling */
+  footer {
+    padding-left: 15px;
+  }
+}
+
+@media (max-width: 500px) {
+  /* mobile nav display */
+  nav {
+    height: 100%;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .nav-menu {
+    width: 100%;
+  }
+  .nav-menu a {
+    padding-top: 0;
+    padding-left: 0;
+  }
+  nav .nav-logo {
+    order: -1;
+    padding-right: 0;
+    padding-bottom: 5px;
+  }
+  .nav-logo .logo {
+    padding-right: 25px;
+    padding-bottom: 15px; 
+  }
+  .nav-menu {
+    flex-direction: column;
+  }
+  .nav-menu a {
+    font-size: 20px;
+    padding: 20px 0 20px 15px;
+    border: 1px solid black;
   }
 }
