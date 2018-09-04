@@ -157,8 +157,6 @@ h5 {
     margin-bottom: 15px;
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
-
 .container {
     width: 880px;
     /* TB LR */
@@ -168,29 +166,29 @@ h5 {
 /* header */
 
 header {
+    width: 100%;
     display: flex;
+}
+
+header nav {
+    margin-top: 40px;
+    width: 100%;
     justify-content: space-between;
-    margin-top: 35px;
+    display: flex;
 }
 
 header nav a {
-    justify-content: flex-start;
-    margin-right: 65px;
-    font-size: 14px;
-    color: gray;
     text-decoration: none;
+    color: #b0b0b0;
 }
 
 header nav a:hover {
     text-decoration: underline;
+    color: black;
 }
 
-header nav a:first-child {
-    margin-left: 0;
-}
-
-header nav a:last-child {
-    margin-right: 0;
+header img {
+    margin: 28px 0 0 91px;
 }
 
 /* cta */
@@ -227,9 +225,7 @@ header nav a:last-child {
 }
 
 .cta .ctatext img {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 69px;
+    align-self: flex-end margin-top: 69px;
 }
 
 .main-content {
@@ -289,6 +285,8 @@ footer {
     font-size: 14px;
 }
 
+/* Services Page */
+
 .serv img {
     margin: 20px 0px 20px 0px;
 }
@@ -310,8 +308,8 @@ footer {
 }
 
 .six-text-boxes button:hover {
-	background: black;
-	color: white;
+    background: black;
+    color: white;
 }
 
 .topthird {
@@ -327,7 +325,7 @@ footer {
 .bottomthird {
     display: flex;
     flex-direction: row;
-		border-bottom: 1px solid black;
+    border-bottom: 1px solid black;
 }
 
 .img-list {
@@ -385,8 +383,8 @@ footer {
 }
 
 .img-list .seventh {
-		justify-content: flex-start;
-		margin-right: 20px;
+    justify-content: flex-start;
+    margin-right: 20px;
 }
 
 .img-list ul {
@@ -399,7 +397,114 @@ footer {
 }
 
 .img-list img {
-		justify-content: flex-end;
-		margin-left: 20px;
-		align-self:
+    justify-content: flex-end;
+    margin-left: 20px;
+    align-self:
+}
+
+/* Tablet */
+
+@media (max-width: 800px) {
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }
+    header {
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+    }
+    header nav {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0 2.5%;
+    }
+    header .logo {
+        align-self: center;
+        margin: 2.5% 0;
+    }
+    .cta {
+        display: flex;
+        justify-content: center;
+    }
+    .cta .cta-text section {
+        margin: 20% 0;
+    }
+    .cta img {
+        display: none;
+    }
+    .main-content {
+        margin: 5% 2.5%;
+    }
+    .top-content {
+        margin-bottom: 5%;
+    }
+     .text-content div {
+        margin: 0 2.5%;
+    }
+    .main-content .middle-img {
+        width: 100%;
+        padding: 0 2.5%;
+        margin: 0;
+    }
+    .bottom-content {
+        margin-top: 5%;
+    }
+    
+    .text-content2 div {
+        margin: 0 2.5%;
+    }
+    .contact {
+        margin: 0 2.5%;
+    }
+}
+
+/* Mobile */
+
+@media( max-width: 500px) {
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }
+    header {
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+    }
+    header .logo {
+        padding: 1% 0px;
+    }
+    header nav {
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid black;
+    }
+    header nav a {
+        padding: 5% 0px;
+        border-top: 1px solid black;
+        text-align: center;
+    }
+    .top-content {
+        display: flex;
+    }
+    .top-content .text-content {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .text-content div {
+        margin: 5% 0;
+    }
+    .main-content .bottom-content {
+        display: flex;
+        margin-top: 5%;
+    }
+    .bottom-content .text-content2 {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .text-content2 div {
+        margin: 5% 0;
+    }
 }
