@@ -1,3 +1,95 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
+/* Content Starts Here */
 
+* {
+    box-sizing: border-box;
+    
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1039px;
+    padding-right: 50px;
+    padding-left: 10px;
+}
+
+/* Top Content */
+
+.container .main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .main-nav a {
+    margin: 22px;
+    text-decoration: none;
+    color: lightgrey;
+}
+
+.container .top-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 60px auto;
+}
+
+.container .top-content .top-info {
+    display: flex;
+    flex-flow: column wrap;
+    margin-left: 200px;
+    border: 1px solid red;
+
+}
+
+.container .top-content .top-info h1 {
+    font-size: 70px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0;
+}
