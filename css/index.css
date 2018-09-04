@@ -198,11 +198,7 @@ header .logo {
     padding-right: 20px;
 }
 
-/* Contact Styles */
 
-.contact p {
-    margin: 15px 0;
-}
 
 /* main content tablet styles */
 @media (max-width: 800px) {
@@ -232,7 +228,18 @@ header .logo {
         padding-left: 25px;
         margin-top: -5px;
     }
+}
 
+/* Contact Styles */
+
+.contact p {
+    margin: 15px 0;
+}
+
+@media (max-width: 800px) {
+    .contact {
+        margin-left: 28px;
+    }
 }
 
 /* Footer Styles */
@@ -240,6 +247,14 @@ header .logo {
 footer {
     text-align: center;
     margin: 40px 0 20px;
+}
+
+/* footer tablet style */
+@media (max-width: 800px) {
+    footer {
+        margin-top: 40px;
+        margin-right: 80px;
+    }
 }
 
 /* Services Styles */
