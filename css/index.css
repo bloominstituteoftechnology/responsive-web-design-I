@@ -344,8 +344,8 @@ header .logo {
 
   .index-cta  button {
     border: solid black 1px;
-    border-radius: 5px;
-    width: 125px;
+    font-size: 20px;
+    width: 190px;
     height: 35px;
 
    }
@@ -358,14 +358,12 @@ header .logo {
     justify-content: space-between;
     width: 800px;
     padding: 20px;
-    border: dotted green 8px;
     border-top: solid black 1px;
   }
 
   .index-top-content .text-content{
-    width: 300px;
+    width: 350px;
     padding: 20px;
-    border: dashed blue 4px;
   }
 
   .index-middle-image {
@@ -374,35 +372,40 @@ header .logo {
 
   .index-main-content {
     display: flex;
-    
-
     /* flex-wrap: wrap; */
-
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    justify-content: center;
     width: 800px;
   }
 
   .index-main-content .text-content {
     width: 225px;
-    border: dotted purple 3px;
+    margin: 30px;
   }
 
   .index-footer {
-  border: dotted sienna 8px;
-    border-top: black solid 2px;
-    width: 800px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 50px;
+    border-top: black solid 1px;
   }
 
   .index-footer address {
+    line-height: 0.5;
     width: 175px;
     margin: 40px 0px;
   }
 
-  .index-copyright {
+  .index-footer h1 {
+    margin-top: 40px;
+  }
+
+  .index-footer .index-copyright {
     text-align: center;
   }
   /* 4 values => TRBL is one value for all sides. */
-  /* 3 values => T RL B */ 
+  /* 3 values => T RL B */
   /* 2 values =>  TB RL is two values. The first for top/bottom the second right left */
   /* 1 value covers all four sides */
 
