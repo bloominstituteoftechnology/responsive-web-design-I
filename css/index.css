@@ -61,11 +61,12 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
-.container{
+ .container{
 	
 	margin: 0 auto;
 	
-    width: 1000px;
+	width: 1000px;
+	border: 1px solid red;
     
 	
 }
@@ -79,7 +80,9 @@ h1, h2, h3, h4, h5 {
 	display: flex;
 	width: 68%;
     justify-content: space-between;
-    align-items: flex-end;
+	align-items: flex-end;
+	padding-left: 10px;
+	
 
 	
 }
@@ -90,16 +93,12 @@ h1, h2, h3, h4, h5 {
     color: gray;
 
 }
-.container .logo {
-	
-	width: 16%;
-	height: 20%;
-	
 
-}
 
 hr{
-    display: flex;
+	display: flex;
+	height: 3px;
+	background: black;
     width: 92%;
     justify-content: center;
     
@@ -114,6 +113,7 @@ hr{
 	
 	
 }
+
 .container .top-content .onDemandWithButton{
 	display: flex;
 	justify-content: center;
@@ -125,8 +125,6 @@ hr{
 .buttonBox{
     display: flex;
     justify-content: center;
-	
-    
 }
 
 .container .top-content .getStartedButton {
@@ -143,7 +141,7 @@ hr{
 	
 }
 
-.container .top-content .onDemanTitle{
+.container .top-content .onDemandTitle{
 	display: flex;
 	justify-content: center;
 	padding-left: 30px;
@@ -215,11 +213,10 @@ hr{
 .main-content-image{
 	display: flex;
 	justify-content: center;
-	width: 89%;
 }
 .main-content-image .middle-img{
-	width: 120%;
-	height: 82%;
+	width: 100%;
+	
 	
 }
 .main-content .main-content-bottom{
@@ -269,20 +266,26 @@ hr{
 
 
 .container .contact-content{
-    display: flex;
-    
-   flex-direction: column;
-    
-    border: 1px solid red;
-    width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	
+	padding-left: 45px;
+   
     
 }
+
 .container .contact-content h1{
   
 	font-size: 30px;
 	
+	
+	
 }
 
+.contactInfo{
+	display: flex;
+	width: 100%;
+}
 
 /* Footer */
 .footerInfo{
@@ -293,55 +296,134 @@ hr{
 	
 	font-size: 20px;
 	
-}
+} 
 
 /* Tablet View*/
 
 @media screen and (max-width: 800px){
 	.container{
-		max-width: 800px;
+		width: 100%;
 	}
 	.header{
 		
 		display: flex;
 		justify-content: center;
 		flex-wrap: wrap-reverse;
-		border: 1px solid black;
-		height: 100%;
-	
 	}
-	.logo{
-		display: flex;
-		align-items: flex-start;
-		height: 10px;
-	}
+
 	.main-nav {
 	
 		display: flex;
 		justify-content: space-between;
 		align-items: flex-end;
 		width: 100%;
-		height: 85px;
+		padding-top: 50px;
+		padding-bottom: 0;
 		
-		border: 1px solid rgb(0, 255, 42);
 	}
 	.main-nav a{
 		font-size: 20px;
 	}
 	.headerImage{
-		
 		display: none;
 	}
 	.onDemandWithButton{
-		width: 100%;
-		height: 500px;
-		border: 1px solid black;
+	
+		padding-bottom: 30px;
+	}
+	.top-content{
+		padding: 0;
+		padding-top: 30px;
+		justify-content: center;
+	}
+	.middle-img{
+		padding-left: 30px;
+		padding-right: 30px;
+		padding-bottom: 30px;
+		padding-top: 10px;
 	}
 	
 }
 
 
 /*Mobile View */
-@media screen and (max-width: 500px){
 
+
+@media screen and (max-width: 500px){
+	.container{
+		max-width: 500px;
+		background-color: lightblue;
+	}
+
+	
+	.header{
+		
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap-reverse;
+		
+		
+	}
+	.header h1{
+		margin: 20px 0;
+	}
+
+	.logo{
+		display: flex;
+		align-items: flex-start;
+		
+
+	}
+	.main-nav {
+		
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-flow: column;
+		padding-bottom: 0;
+		
+		
+	}
+	.main-nav a{
+		flex-wrap: wrap;
+		font-size: 20px;
+		
+		height: 50px;
+		align-items: center;
+		
+		padding-top:15px;
+		
+	}
+
+	.navABox{
+		display: flex;
+		justify-content: center;
+		border-top: 1px solid gray;
+		border-bottom: 1px solid gray;
+		width: 100%
+	}
+	.headerImage{
+		display: none;
+	}
+	.onDemandWithButton{
+	
+		height: 300px;
+	}
+	.top-content{
+		padding: 0;
+		padding-top: 30px;
+		justify-content: center;
+	}
+
+	.contact-content{
+		
+		align-items: flex-start;
+	}
+	.contactTitle{
+		border: 1px solid yellowgreen;
+	}
+	.contactInfo{
+		border: 1px solid blue;
+	}
+	
 }
