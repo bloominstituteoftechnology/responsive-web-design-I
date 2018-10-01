@@ -296,7 +296,7 @@ footer p{
 }
 
 /* media queries */
-@media screen and (max-width: 880px){
+@media screen and (max-width: 800px){
 	/* body{
 		background-color: pink;
 	} */
@@ -321,40 +321,29 @@ footer p{
 	.container:first-of-type{
 		margin-top: 0px;
 	}
+	.container div:nth-of-type(2){
+		display: none;
+	}
 
-	/* Collapse and make bigger for smaller screens */
+	/* Collapses the logo to the top and the links below it */
 	header{
-		
+			
 		position: static;
 		width: 100%;
 		flex-direction: column-reverse;
 		justify-content: flex-end;
 	}
+
 	header nav{
 		display: flex;
-		flex-direction: column;
-		align-items: stretch;
-
+		justify-content: center;
 		/*This allows the nav to fill the page width and by 
 		inheritence letting my a's as well*/
 		width: 100%; 
 
 		text-align: center;
 	}
-
-	header nav a{
-		margin:0;
-		padding:20px;
-		border: solid 1px black;
-		width: 100%;
-		font-size: 28px;
-	}
-
-	a.button{
-		font-size:28px;
-		width: 80%;
-		text-align: center;
-	}
+	
 	
 	.jumbotron{
 		flex-direction: column;
@@ -386,4 +375,39 @@ footer p{
 	}
 
 	
+}
+
+@media only screen and (max-width:500px){
+	/* Collapse and make bigger for smaller screens */
+	header{
+			
+		position: static;
+		width: 100%;
+		flex-direction: column-reverse;
+		justify-content: flex-end;
+	}
+	header nav{
+		display: flex;
+		flex-direction: column;
+		align-items: stretch;
+
+		/*This allows the nav to fill the page width and by 
+		inheritence letting my a's as well*/
+		width: 100%; 
+		text-align: center;
+	}
+
+	header nav a{
+		margin:0;
+		padding:20px;
+		border-bottom: solid 2px lightgray;
+		width: 100%;
+		font-size: 28px;
+	}
+
+	a.button{
+		font-size:28px;
+		width: 200px;
+		text-align: center;
+	}
 }
