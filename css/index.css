@@ -91,16 +91,18 @@ header{
 	z-index: 1000;
 
 	background-color:white;
+}
+
+header nav{
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	align-items: baseline;
 }
 
 header nav a {
 	text-decoration: none;
 	color: #999;
 	/* margin: 10px; */
-	margin-right: 55px;
 }
 
 header nav a:hover{
@@ -321,29 +323,42 @@ footer p{
 	.container:first-of-type{
 		margin-top: 0px;
 	}
-	.container div:nth-of-type(2){
+	.container section div.right{
 		display: none;
 	}
-
+	
 	/* Collapses the logo to the top and the links below it */
 	header{
-			
 		position: static;
 		width: 100%;
-		flex-direction: column-reverse;
-		justify-content: flex-end;
 	}
 
 	header nav{
 		display: flex;
+		flex-direction: row-reverse;
+		flex-wrap: wrap-reverse;
 		justify-content: center;
+		align-content: space-between;
+		
 		/*This allows the nav to fill the page width and by 
 		inheritence letting my a's as well*/
 		width: 100%; 
-
 		text-align: center;
 	}
-	
+
+	header nav a{
+		padding: 0px;
+		flex: 1;
+		
+	}
+
+	header nav a:last-of-type{
+		flex: 1 1 100%;
+	}
+
+	header nav a img{
+		width: initial; 
+	}
 	
 	.jumbotron{
 		flex-direction: column;
@@ -380,7 +395,6 @@ footer p{
 @media only screen and (max-width:500px){
 	/* Collapse and make bigger for smaller screens */
 	header{
-			
 		position: static;
 		width: 100%;
 		flex-direction: column-reverse;
@@ -388,7 +402,7 @@ footer p{
 	}
 	header nav{
 		display: flex;
-		flex-direction: column;
+		flex-direction: column-reverse;
 		align-items: stretch;
 
 		/*This allows the nav to fill the page width and by 
@@ -396,6 +410,7 @@ footer p{
 		width: 100%; 
 		text-align: center;
 	}
+	
 
 	header nav a{
 		margin:0;
@@ -403,6 +418,11 @@ footer p{
 		border-bottom: solid 2px lightgray;
 		width: 100%;
 		font-size: 28px;
+	}
+
+	/* resets the width */
+	header nav a img{
+		width: initial; 
 	}
 
 	a.button{
