@@ -170,7 +170,7 @@ section.features-about{
 
 /* section containing services product vision */
 section.details{
-	padding: 20px 0px 0px 10px;;
+	padding: 20px 0px 0px 10px;
 	display: flex;
 	margin-bottom: 40px;
 }
@@ -278,11 +278,15 @@ hr.seperate-darker{
 
 footer{
 	margin-top: 50px;
+	padding-left: 10px;
 }
 
 footer p{
 	text-align: center;
 	margin-top: 50px;
+}
+footer address{
+	text-align: left;
 }
 
 /* animations */
@@ -309,16 +313,19 @@ footer p{
 		height: auto;
 	}
 
-	/* center anything in footer */
-	footer{
-		text-align: center;
-	}
 
 	/* collapse container so that width will sretch
 	accross smaller screens */
+	/* My issue here is that the header is inside it's own
+	container and so is the rest of the page */
 	.container{
 		width: 100%;
 	}
+
+	.container:last-of-type {
+		padding: 20px;
+	}
+	
 
 	.container:first-of-type{
 		margin-top: 0px;
@@ -363,19 +370,18 @@ footer p{
 	.jumbotron{
 		flex-direction: column;
 	}
-	.features-about{
-		flex-direction: column;
-	}
-	.details{
-		flex-direction: column;
+	section.details{
+		padding-left: 0px;
 	}
 	div.column{
 		margin-bottom: 15px;
-	}
+		flex: 1 1;
+		padding-right: 25px;
+	} 
 
 	/* flex services collapses to a column */
 	section.services{
-		background-color: pink;
+		
 		height: 100%;
 		flex-direction: column;
 		flex-wrap: nowrap;
@@ -384,15 +390,20 @@ footer p{
 	section.services div{
 		width:100%;
 	}
+	section.services div{
+		margin-top:20px;
+	}
 	
 	section.facts{
 		flex-direction: column;
 	}
-
+	
+	
 	
 }
 
 @media only screen and (max-width:500px){
+	
 	/* Collapse and make bigger for smaller screens */
 	header{
 		position: static;
@@ -411,6 +422,20 @@ footer p{
 		text-align: center;
 	}
 	
+	section.section,
+	section.section .features-about{
+		flex-direction: column;
+		padding: 0px;
+		margin: 0px;
+	}
+
+	img.middle-img{
+		margin: 20px 0px;
+	}
+	section.section .column{
+		margin-top: 25px;
+
+	}
 
 	header nav a{
 		margin:0;
@@ -430,4 +455,9 @@ footer p{
 		width: 200px;
 		text-align: center;
 	}
+
+	hr{
+		margin:20px 0px;
+	}
+	
 }
