@@ -1,3 +1,118 @@
+/* Responsive Web Design */
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* -- Desktop first -- */
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 876px;
+    margin: 0 auto;
+    border: 5px dashed teal;
+    display: flex;
+    align-items: center;
+    background-color: yellow;
+}
+
+header a {
+    text-decoration: none;
+    color: grey;
+    margin: 20px;
+}
+
+.innovation {
+    width: 876px;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed blue;
+    margin-bottom: 400px;
+    border: 3px dashed black;
+}
+
+.innovation-child {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    font-size: 78px;
+    font-family: 'Bangers', cursive;
+    text-align: center;
+    border: 2px solid black;
+    margin: 5px;
+}
+
+.left {
+    display: flex;
+    border: 2px solid purple;
+    position: absolute;
+    left: 150px;
+}
+
+.right {
+    display: flex;
+    border: 2px solid purple;
+    position: absolute;
+    right: 0px;
+}
+
+
+
+a.button {
+    font-size: 16px;
+    font-family: 'Titillium Web', sans-serif;
+    text-decoration: none;
+    color: black;
+    padding: 2px 30px;
+    border: 1px solid black;
+    position: absolute;
+    left: 80px;
+    margin-top: 240px;
+}
+
+.container {
+    width: 876px;
+    margin: 0 auto;
+    border: 5px solid pink;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+}
 
