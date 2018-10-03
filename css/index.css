@@ -570,8 +570,8 @@ footer {
     }
     header nav a {
         width: 100%;
-        padding: 20px 0 20px;
-        margin: 0;
+        padding: 20px 45% 20px;
+        margin: 0 auto;
         border-bottom: 1px solid black;
 
     }
@@ -582,6 +582,12 @@ footer {
     header img {
         order: -1;
     }
+
+    .transform:hover,
+    .transform:focus,
+    .transform:active {
+        transform: scale(1.0);
+}
 
     [class*="box-styling"] {
         width: 100%;
@@ -595,15 +601,28 @@ footer {
         width: 100%;
     }
 
+
+    .middle-img {
+        width: 90%
+    }
+    article section.section-top {
+        width: 95%;
+    }
+    
+
     article section.section-top section {
         width: 100%
     }
 
+    article section.section-bottom {
+        width: 90%;
+    }
     article section.section-bottom section {
         width: 100%
     }
 
     .contact {
+        width: 90%;
         display: flex;
     }
 
