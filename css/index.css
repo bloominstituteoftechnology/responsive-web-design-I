@@ -1,3 +1,626 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
 
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+
+h1 {
+    font-size: 68px;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+ul {
+    display: flex;
+    margin-left: 20px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style: square;
+}
+
+.container {
+    width: 880px;
+    margin: 20px auto;
+    display: flex;
+}
+
+
+header {
+    width: 100%;
+    margin: 0 auto;
+}
+
+header nav {
+    display: flex;
+    align-self: flex-start;
+    justify-content: space-around;
+    padding: 10px;
+    overflow: hidden;
+    width: 100%;
+}
+
+header nav a {
+    text-decoration: none;
+    color: gray;
+}
+
+
+.transform {
+    vertical-align: middle;
+    transform: translateZ(0);
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.transform:hover,
+.transform:focus,
+.transform:active {
+    transform: scale(1.3);
+}
+
+
+
+.logo {
+    width: 183px;
+    height: 36px;
+    align-self: center;
+    justify-self: flex-end;
+}
+
+.beginning {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.beginning h1 {
+    text-align: center;
+}
+
+section.beginning.container img {
+    padding: 0px 0px 20px;
+
+}
+
+button {
+    background: white;
+    margin-top: 5px;
+    margin-left: 55px;
+    padding: 10px 40px;
+    font-size: 17px;
+    border: 1px solid black;
+
+}
+
+article {
+    display: flex;
+    flex-wrap: wrap;
+
+    border-top: 1px solid black;
+    border-bottom: 2px solid black;
+    padding-top: 39px;
+    padding-bottom: 39px;
+    align-content: space-between;
+    justify-content: space-between;
+
+}
+
+article section {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    align-content: space-between;
+    justify-content: space-between;
+}
+
+
+.box-styling {
+    width: 420px;
+    border: 1px solid black;
+    background-color: #f4f3f4;
+    padding: 25px;
+
+}
+
+article section button {
+    margin-left: 0;
+    border-radius: 5px;
+    padding: 5px 20px;
+}
+
+article section.section-top {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+article section.section-top section {
+    margin-right: 34px;
+    width: 400px;
+}
+
+article section.section-top section:last-child {
+    margin-right: 0;
+}
+
+.middle-img {
+    margin: 45px auto 0;
+}
+
+article section.section-top,
+article section.section-bottom {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+article section.section-bottom {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 37px;
+    padding: 0;
+
+}
+
+article section.section-bottom section {
+    width: 265px;
+
+}
+
+.facts {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.facts section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.facts section ul {
+    display: flex;
+}
+
+.contact {
+    margin-top: 57px;
+    padding: 39px 10px 0;
+}
+
+.contact p {
+    margin: 20px 0;
+}
+
+
+footer {
+    margin: 32px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+
+
+/* Features CSS because I was too lazy to create a second css file */
+
+/* .features {
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+#kitty-ipsum-1,
+#kitty-ipsum-2,
+#kitty-ipsum-3,
+#kitty-ipsum-4 {
+    display: flex;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+#kitty-ipsum-2,
+#kitty-ipsum-4 {
+    flex-direction: row-reverse;
+}
+
+#kitty-ipsum-1 section {
+    width: 70%;
+    display: flex;
+}
+
+#kitty-ipsum-2 section {
+    width: 70%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#kitty-ipsum-3 section {
+    width: 70%;
+    display: flex;
+}
+
+#kitty-ipsum-4 section {
+    width: 70%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#kitty-ipsum-1 {
+    color: lightsalmon;
+}
+
+#kitty-ipsum-2 {
+    color: darksalmon;
+}
+
+#kitty-ipsum-3 {
+    color: lightsalmon;
+}
+
+#kitty-ipsum-4 {
+    color: darksalmon;
+}
+
+
+.cat-img {
+    align-self: center;
+    width: 250px;
+    height: 250px;
+
+} */
+
+@media only screen and (max-width: 800px) {
+
+    [class*="container"] {
+        width: 95%;
+    }
+
+    [class*="box-styling"] {
+        width: 100%;
+    }
+
+
+    header {
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+
+    }
+
+    header a {
+        margin: 15px 0;
+        display: flex;
+        order: -1;
+    }
+
+    section.beginning.container {
+        padding: 20px 0;
+    }
+
+    .beginning {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    article.container {
+        padding: 10px 0;
+    }
+
+    button {
+        padding: 4px 50px;
+    }
+
+    section.beginning.container img {
+        width: 25%;
+        display: none;
+    }
+
+    section.beginning.container .services-header-img {
+        width: 100%;
+    }
+    section.section-top {
+        padding: 0;
+        margin: 0;
+    }
+    article section.section-top section {
+        width: 45%
+    }
+
+    article section.section-bottom section {
+        width: 30%
+    }
+
+    .contact {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding: 10px 0;
+        margin: 10px auto;
+    }
+
+    address {
+        width: 20%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .contact p {
+        margin: 8px 0;
+    }
+
+    .facts {
+        height: 500px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: space-between;
+    }
+
+    .facts section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .facts img {
+        width: 70%;
+    }
+
+    ul {
+        width: 50;
+        justify-content: center;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    [class*="container"] {
+        width: 95%;
+    }
+
+    header {
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+
+    }
+
+    header a {
+        display: flex;
+        order: -1;
+    }
+
+    [class*="box-styling"] {
+        width: 100%;
+    }
+
+    section.beginning.container img {
+        width: 25%;
+    }
+
+    section.beginning.container .services-header-img {
+        width: 100%;
+    }
+
+    article section.section-top section {
+        width: 100%
+    }
+
+    article section.section-bottom section {
+        width: 100%
+    }
+
+    .contact {
+        display: flex;
+        justify-content: center;
+    }
+
+    address {
+        width: 30%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .facts {
+        height: 500px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: space-between;
+    }
+
+    .facts section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .facts img {
+        width: 70%;
+    }
+
+    ul {
+        width: 50%;
+        justify-content: center;
+    }
+
+    img {
+        width: 100%;
+    }
+}
