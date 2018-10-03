@@ -96,7 +96,7 @@ header{
 header nav{
 	display: flex;
 	justify-content: space-between;
-	align-items: baseline;
+	align-items: center;
 }
 
 header nav a {
@@ -121,7 +121,7 @@ header nav a:hover{
 
 .container .jumbotron{
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	margin-bottom: 80px;
 	
 }
@@ -132,6 +132,9 @@ header nav a:hover{
 	justify-content: center;
 	align-items: center;
 }
+.container .jumbotron .left a{
+	margin-top: 20px;
+}
 
 /* The divs that contain the catch phrase and round image */
 
@@ -140,19 +143,22 @@ header nav a:hover{
 	font-size: 78px;
 	font-family: 'Bangers', cursive;
 	text-align: center;
+	line-height: 4.7rem;
 }
 
 
 
 
 a.button{
-	font-size: 16px;
+	font-size: 18px;
+	text-align: center;
+	/* font-weight: bold; */
 	font-family: 'Titillium Web', sans-serif;
 	text-decoration: none;
 	color: black;
-	padding: 2px 30px;
+	padding: 3px 30px;
 	border: 1px solid black;
-	width: 140px;
+	width: 160px;
 }
 
 
@@ -270,6 +276,7 @@ section.websites div{
 hr.seperate{
 	border-color:black;
 	margin: 40px 0px;
+	
 }
 
 hr.seperate-darker{
@@ -451,7 +458,7 @@ footer address{
 	}
 
 	a.button{
-		font-size:28px;
+		font-size:30px;
 		width: 200px;
 		text-align: center;
 	}
