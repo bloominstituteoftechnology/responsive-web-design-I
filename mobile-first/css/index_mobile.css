@@ -1,0 +1,193 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    margin: 0px;
+    padding: 50px;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+
+/* NAVBAR ----------------------------------------------------------------------*/
+nav {
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+#links_section {
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    font-size:30px;
+    margin-top:20px;
+}
+
+.link {
+    display:flex;
+    flex-direction:column;
+    text-decoration: none;
+    color:grey;
+    width:100%;
+    border-bottom:1px black solid;
+    align-items:center;
+}
+
+
+
+/* INNOVATION OF DEMAND -------------------------------------------------*/
+
+#innovation-div {
+    display:flex;
+    flex-basis:100%;
+    flex-direction:column;
+    align-items:center;
+}
+
+
+h1 {
+    font-size:50px;
+    display:flex;
+}
+
+#started {
+    border:1px solid black;
+    color:black;
+    padding:5px 10px;
+    text-decoration: none;
+}
+
+
+/* CONTENT -------------------------------------------------------------*/
+#content {
+    display:flex;
+    flex-direction:column;
+}
+
+.row {
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+hr {
+    margin-bottom:20px;
+}
+
+#copyright {
+    text-align:center;
+}
+
+/*TABLET SIZE-------------------------------------------------------*/
+
+@media (min-width:500px) {
+    
+    #logo {
+        margin-bottom:30px;
+    }
+
+    #links_section {
+
+        flex-direction:row;
+
+    }
+
+    .link {
+        border-bottom:none;
+        font-size:20px;
+    }
+    
+    #innovation {
+        margin-top:20px;
+    }
+    
+    #features, #about {
+        width:45%;
+    }
+
+    #services, #product, #vision {
+        width:32%;
+    }
+    
+    .row {
+        display:flex;
+        flex-direction:row;
+        justify-content:space-around;
+    }
+    
+    hr {
+        margin-top:30px;
+        margin-bottom:30px;
+    }
+    
+}
+
+/* DESKTOP VIEW ------------------------------------------------*/
+
+@media (min-width:800px) {
+    
+}
+
