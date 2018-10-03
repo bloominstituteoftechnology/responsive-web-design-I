@@ -156,7 +156,7 @@ a.button{
 	font-family: 'Titillium Web', sans-serif;
 	text-decoration: none;
 	color: black;
-	padding: 3px 30px;
+	padding: 3px 0px;
 	border: 1px solid black;
 	width: 160px;
 }
@@ -368,6 +368,7 @@ footer address{
 
 	header nav a:last-of-type{
 		flex: 1 1 100%;
+		margin-bottom: 35px;
 	}
 
 	header nav a img{
@@ -417,6 +418,8 @@ footer address{
 		width: 100%;
 		flex-direction: column-reverse;
 		justify-content: flex-end;
+		margin-top: 0px;
+		padding-top: 0px;
 	}
 	header nav{
 		display: flex;
@@ -444,12 +447,19 @@ footer address{
 
 	}
 
+	
+
 	header nav a{
 		margin:0;
 		padding:20px;
 		border-bottom: solid 2px lightgray;
 		width: 100%;
 		font-size: 28px;
+	}
+
+	header nav a:last-of-type{
+		flex: 1 1 100%;
+		margin: 0px;
 	}
 
 	/* resets the width */
