@@ -1,3 +1,310 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    margin:0px;
+    padding:50px;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
 
 
+/* NAVBAR STUFF */
+
+.container {
+    max-width:800px;
+    margin:0 auto;
+}
+a {
+    text-decoration: none;
+}
+nav {
+    display:flex;
+}
+
+
+.link {
+    display:flex;
+    color:grey;
+    flex-basis:16%;
+    justify-content:center;
+}
+
+
+#links_section{
+    align-items: center;
+    justify-content: center;
+    display:flex;
+    flex-grow: 5;
+
+}
+
+#logo_section {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+
+}
+
+
+
+
+/*INNOVATION ON DEMAND SECTION */
+#section1 {
+    text-align:center;
+    display:flex;
+}
+h1 {
+    font-size:50px;
+}
+
+#left {
+    display:flex;
+    flex-basis:50%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#started {
+    text-decoration: none;
+    border:black solid 1px;
+    padding:5px 20px;
+    color:black;
+}
+
+#right {
+    display:flex;
+    flex-basis:50%;
+}
+
+
+#circle-image {
+    display:flex;
+    flex-basis:100%;
+    justify-content: flex-end;
+}
+
+
+
+/*PRODUCT SECTION*/
+.section2 {
+    display:flex;
+    justify-content:space-between;
+}
+.section2-1 {
+    flex-direction:column;
+    display:flex;
+    width:49%;
+}
+
+
+.middle-img {
+    max-width:100%;
+}
+
+
+.section4 {
+    display:flex;
+    justify-content: space-between;
+}
+
+.section4-1 {
+    display:flex;
+    flex-direction:column;
+    width:30%
+}
+
+/* CONTACT INFO */
+
+footer {
+    padding-bottom:50px;
+}
+address {
+    width:20%;
+}
+
+#copyright {
+    text-align:center;
+}
+
+
+
+
+
+
+/* Service page styles */
+.services-header-img {
+    max-width:100%;
+}
+
+.services-services {
+    display:flex;
+    flex-direction:column;
+}
+
+.row {
+    display:flex;
+    justify-content:space-between;
+}
+
+#learn {
+    border:black 1px solid;
+    width:35%;
+    text-align:center;
+    padding:5px;
+    background-color:white;
+    border-radius:5px;
+}
+
+.row1-1 {
+    display:flex;
+    flex-direction:column;
+    background-color:lightgrey;
+    border:1px black solid;
+    padding:10px;
+    width:48%;
+}
+
+li {
+    padding-top:15px;
+}
+
+#list {
+    padding-left:30px;
+
+}
+
+.no-background {
+    background-color:transparent;
+    border:none;
+    width:50%;
+}
+
+#copy {
+    text-align:center;
+}
+
+
+/* MEDIA QUERY FOR TABLETS ----------------------------------------------------------------------------------------*/
+
+@media (max-width: 800px) {
+    
+    nav {
+        flex-direction: column-reverse;
+    }
+
+    #logo_section {
+        padding-bottom:20px;
+    }
+    
+    #section1 {
+        display:block;
+        
+    }
+    
+    #right {
+        display:none;
+    }
+    
+    .link {
+        flex-basis:25%;
+    }
+}
+
+
+/* FOR PHONES --------------------------------------------------------------*/
+@media (max-width: 500px) {
+    
+    .link {
+        border: 1px solid black;
+        font-size:20px;
+        flex-basis: 100%;
+        padding: 10px 0px;
+        width:100%;
+    }
+    #links_section {
+        flex-direction: column;
+        border:black solid 1px
+    }
+    
+    .section2 {
+        flex-direction:column;]
+        max-width:500px;
+    }
+    .section2-1 {
+        width:100%;
+        padding-bottom:20px;
+    }
+    
+    .section4-1 {
+        width:100%;
+        padding-bottom:20px;
+    }
+    
+    .section4 {
+        flex-direction: column;
+    }
+}
