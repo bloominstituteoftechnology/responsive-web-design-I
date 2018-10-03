@@ -80,12 +80,12 @@ a {
 }
 
 .page,
-.header-container,
+header,
 .middle-img {
   width: 900px;
 }
 
-.header-container {
+header {
   position: fixed;
   top: 0px;
   background-color: #ffffff;
@@ -110,15 +110,9 @@ nav a:hover {
   color: #000000;
 }
 
-.logo-container {
-  width: 150px;
-  display: flex;
-  justify-content: flex-end;
-}
 
 .logo {
   width: 150px;
-  position: relative;
 }
 
 .top-container {
@@ -321,4 +315,41 @@ nav a:hover {
 footer {
   text-align: center;
   margin-top: 40px;
+}
+
+/* Media queries */
+
+@media (max-width: 800px) {
+  .page {
+    width: 768px;
+  }
+
+
+  header {
+    width: 768px;
+    flex-wrap: wrap;
+    justify-content: ;
+  }
+
+  header a {
+    padding: 40px;
+
+  }
+
+
+  #head-image {
+    display: none;
+  }
+
+  .top-container {
+    justify-content: center;
+  }
+
+  .middle-img {
+    width: 768px;
+  }
+}
+
+@media (max-width: 500px) {
+
 }
