@@ -243,6 +243,8 @@ section p {
 /* Media queries */
 /*****************/
 
+/* Tablet View */
+
 @media (max-width: 800px) {
   nav {
     flex-direction: column;
@@ -281,3 +283,44 @@ section p {
   }
 }
 
+/* Mobile view */
+@media (max-width: 500px) {
+  header {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+
+  nav .links {
+    width: 500px;
+    flex-direction: column;
+    align-content: center;
+  }
+
+  nav .links a {
+    width: 500px;
+    border-top: 1px solid black;
+    padding: 20px;
+    font-size: 20px;
+    margin: 0px;
+    text-align: center;
+  }
+
+  .container {
+    width: 400px;
+  }
+
+  .container .bigSec1, .container .bigSec2 {
+    flex-direction: column;
+  }
+
+  p {
+    font-size: 17px;
+  }
+
+  h2 {
+    font-size: 17px;
+  }
+  
+}
