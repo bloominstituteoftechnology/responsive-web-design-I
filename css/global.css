@@ -1,0 +1,57 @@
+/* IMPORTS */
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500');
+
+/* ------ */
+/* GLOBAL */
+/*------- */
+body {
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+	}
+
+  .container {
+    width: 876px;
+    margin: 0px auto;
+    position: relative;
+  }
+
+  h1{font-size: 25px;}
+  h3{font-size: 18px;}
+  p{line-height: 20px;}
+
+/* ------ */
+/* HEADER */
+/*------- */
+  header{
+    width: 876px;
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+    nav{padding-left: 15px;}
+      nav a{
+        text-decoration: none;
+        color: grey;
+        padding: 0 15px;
+        transition: 0.2s;
+      }
+
+      nav a:hover{color: black;}
+      nav a:first-child{padding-left: 0px;}
+
+/* ------ */
+/* FOOTER */
+/*------- */
+  footer{
+      border-top: 1px solid black;
+      width: 100%;
+      padding: 30px 0px;
+    }
+
+    footer ul li:nth-child(3){padding: 20px 0px;}
+    footer p{
+      padding: 40px 0 15px 0; 
+      text-align: center;
+    }
