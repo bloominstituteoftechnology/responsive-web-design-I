@@ -76,13 +76,12 @@ a {
 
 .page {
   margin: 0 auto;
-  position: relative;
 }
 
 .page,
 header,
 .middle-img {
-  width: 900px;
+  width: 880px;
 }
 
 header {
@@ -96,12 +95,17 @@ header {
 
 nav {
   display: flex;
-  width: 900px;
+  width: 880px;
   justify-content: space-between;
   align-items: center;
 }
 
-nav a {
+.text-links {
+  width: 700px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
   margin: 20px 0px;
   color: #B6B6B6;
 }
@@ -113,6 +117,8 @@ nav a:hover {
 
 .logo {
   width: 150px;
+  align-self: center;
+  margin-left: 70px;
 }
 
 .top-container {
@@ -328,12 +334,22 @@ footer {
   header {
     width: 768px;
     flex-wrap: wrap;
-    justify-content: ;
+    justify-content: space-around;
   }
 
   header a {
-    padding: 40px;
+    /* padding: 40px; */
 
+  }
+
+  nav {
+    width: 768px;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+  }
+
+  .logo {
+    margin: 10px 0px;
   }
 
 
@@ -342,6 +358,7 @@ footer {
   }
 
   .top-container {
+    margin-top: 40px;
     justify-content: center;
   }
 
