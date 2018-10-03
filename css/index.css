@@ -1,4 +1,3 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -64,51 +63,65 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* Your code starts here! */
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
- * {
-	margin: 0 auto;
-} 
 
 .container{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
 	margin: 0 auto;
 	width: 1000px;
 }
 
 /* Header tags */
 header{
-	position: fixed;
-    /* width: 875px; */
-	padding: 20px;
+	display: flex;
+    flex-wrap: nowrap;
+    position: fixed;
+    width: 1000px;
+    height: 75px; 
+    align-items: center;
+    justify-content: space-between;
+    background: white;
 }
  nav{
-	display: inline-block;
-	position: static;
-    padding: 10px 80px 10px 5px;
+	display: flex;
+    position: static;
+    justify-content: space-between;
+    width: 700px;
+    height: 20px;
+    flex-wrap: nowrap;
+    align-items: center;
 }
 
  nav a{
-padding: 30px;
-padding-left: 40px;
-font-size: 12px;
-color: gray;
-position: relative;
-bottom: 15px;
-text-decoration: none;
-
+    font-size: 12px;
+    padding: 20px 20px 20px 0;
+    color: gray;
+    position: relative;
+    bottom: 15px;
+    text-decoration: none;
 }
 
-header img.logo{
-	display: inline-block;
-	position: static;
+ .logo{
+    position: static;
+    /*margin: auto;*/
+    margin-bottom: 40px;
+    align-items: flex-end;
 }
 
 
 .firstSection{
-width: 100%;
-display: inline-block;
-margin: 75px 25px 50px 25px;
-z-index: -1;
+    flex-wrap: nowrap;
+    width: 1000px;
+    height: 500px;
+    display: flex;
+    /* margin: 75px 25px 50px 25px; */
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    z-index: -1;
 }
 
 h1 {
@@ -125,17 +138,19 @@ h1 {
 	padding-top: 6px;
 	margin-left: 30%;
 }
+
 .innovation{
-	z-index: -1;
-	display: inline-block;
-	position: relative;
-    bottom: 50px;
-    margin: 50px;
+    z-index: -1;
+    /* display: inline-block; */
+    position: relative;
+    /* bottom: 30px; */
+    /* margin: 50px; */
     width: 400px;
+    /* height: 500px; */
 }
 
 .codeSnippet{
-	display: inline-block;
+display: inline-block;
     margin-left: 75px;
     /* margin: 50px; */
     width: 390px;
@@ -147,68 +162,313 @@ h1 {
 }
 
 .mainBody{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-evenly;
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
 	padding: 10px 0;
 	z-index: -1;
 }
 
-.features {
-	margin: 25px 0 40px 0;
-	display: inline-block;
-	box-sizing: border-box;
-	width: 490px;
-    /* height: 125px; */
+.upperMain {
+    display: flex;
+    width: 1000px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: 175px;
 }
 
-.about {
-	margin: 25px 0 40px 0;
-	padding-left: 25px;
-	display: inline-block;
-	box-sizing: border-box;
-	width: 500px;
-	/* height: 125px; */
+.child1 {
+	width: 475px;
+    height: 90px;
 }
 
 .middle-img {
-	width: 100%;
+	width: 1000px;
 }
 
-.services  {
-	margin: 40px 0 10px 0;
-	display: inline-block;
-	box-sizing: border-box;
-	width: 325px;
-	height: 125px;
-	padding-right: 25px;
+.lowerMain {
+	/*margin: 0 auto;*/
+    display: flex;
+    width: 1000px;
+    height: 200px;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+    /* margin: 40px 10px 10px 10px; */
 }
 
-.product {
-	margin: 40px 0 10px 0;
-	display: inline-block;
-	box-sizing: border-box;
-	width: 325px;
-	height: 125px;
-	padding-right: 25px;
+.child2 {
+ width: 315px;
+ /* height: 105px; */
+ box-sizing: border-box;
+    flex-direction: row;
+   align-items: center;
+ justify-content: space-between;
 }
 
-.vision {
-	margin: 40px 0 10px 0;
-	display: inline-block;
-	box-sizing: border-box;
-	width: 325px;
-	height: 125px;
-}
 
 footer{
-	margin-top: 40px;
-	top: 50%;
-	float: none;
+	display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-left: 20px;
+    width: 1000px;
+    height: 250px;
 }
 
 
 .copyright {
-	text-align: center;
-	margin: 40px 0;
+    display: flex;
+    flex-direction: row;
+    margin: 40px;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 100px;
+    margin: auto;
 }
 
+/*SERVICES.HTML EXCLUSIVE ELEMENTS */
+
+
+h2 {
+	font-size: 40px;
+	/*text-align: center;*/
+}
+
+
+.firstSection2{
+	    flex-wrap: wrap;
+	        width: 1000px;
+    height: 500px;
+    display: flex;
+    /* margin: 75px 25px 50px 25px; */
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    z-index: -1;
+}
+
+.services-header{
+	width: 1000px;
+	height: 125px;
+
+}
+.services-header-img {
+	width: 1000px;
+}
+
+.services{
+	font-size: 18px;
+}
+
+
+.mainBody2{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 1px solid black;
+    border-bottom: 5px solid black;
+    padding: 50px 0 0 0;
+    z-index: -1;
+}
+
+.child3{
+    justify-content: space-evenly;
+    width: 475px;
+    height: 220px;
+    border: 3px solid black;
+    background: lavender;
+    padding: 30px;
+    margin-bottom: 40px;
+    background-color: whitesmoke;
+}
+
+button {
+    border-radius: 8px;
+    text-align: center;
+    padding: 10px 40px;
+    border: solid 2px black;
+    border-bottom: solid 2px lightgrey;
+    background: white;
+    margin: 17px 0;
+}
+
+.footer2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 1000px;
+    margin: 40px 0px;
+}
+
+.child4{
+   width: 475px;
+}
+
+.facts {
+    display: flex;
+    flex-wrap: wrap;
+    height: 300px;
+    justify-content: flex-start;
+}
+
+.things{
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 100px;
+    display: flex;
+    width: 200px;
+    margin: 20px 0 20px 50px;
+}
+
+.services-info-img2{
+    display: flex;
+    justify-content: flex-end;
+}
+
+ul {
+    list-style-type: square;
+}
+
+li {
+    padding: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+    /* body {
+        background-color: lavender;
+    } */
+    .container{
+        width: 600px;
+    }
+
+    header{
+        flex-wrap: wrap;
+        width: 600px;
+        justify-content: center;
+        /* height: 50px; */
+    }
+
+    nav{
+        flex-wrap: wrap;
+        width: 360px;
+    }
+
+    nav a{
+        padding: 10px;
+    }
+    
+    .logo{
+        flex-wrap: wrap;
+        height: 30px;
+        position: static;
+    }
+
+    .firstSection{
+        width: 600px;
+        height: 350px;
+        justify-content: center;
+    }
+
+    h1{
+        font-size: 45px;
+    }
+    
+    .innovation, .codeSnippet{
+        width: 300px;
+        height: 180px;
+        margin: auto 0;
+    }
+    
+    .codeSnippet img{
+        width: 250px;
+        height: 250px;
+    }
+
+    .getStarted{
+        height: 30px;
+        width: 100px;
+        margin-left: 33%;
+    }
+
+    .mainBody{
+        flex-direction: row;
+        width: 600px;
+        /* height: 790px; */
+    }
+
+    .upperMain, .lowerMain{
+        width: 600px;
+        flex-direction: column;
+    }
+
+    .lowerMain{
+        height: 300px;
+    }
+
+    .child1 {
+        align-items: center;
+    }
+
+    .child2 {
+        align-items: center;
+        width: 475px;
+        padding: 10px 0;
+    }
+    
+    .middle-img {
+        width: 600px;
+    }
+
+    .firstSection2{
+        width: 600px;
+        /* justify-content: center; */
+        /* align-items: center; */
+    }
+
+    .services{
+        width: 500px;
+    }
+
+    .services-header-img{
+        width: 600px;
+    }
+
+    .mainBody2 {
+        /* flex-direction: vertical; */
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer2{
+        width: 600px;
+    }
+
+    .facts{
+        width: 575px;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+    }
+
+    .services-info-img2{
+        margin-left: 70px;
+        justify-content: center;
+    }
+
+    .child4{
+        justify-content: center;
+        align-items: center;
+    }
+
+}
