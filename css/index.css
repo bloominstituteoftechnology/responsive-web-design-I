@@ -344,7 +344,7 @@ li {
     padding: 5px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
     /* body {
         background-color: lavender;
     } */
@@ -354,14 +354,14 @@ li {
 
     header{
         flex-wrap: wrap;
-        width: 600px;
+        width: 500px;
         justify-content: center;
         /* height: 50px; */
     }
 
     nav{
         flex-wrap: wrap;
-        width: 360px;
+        width: 300px;
     }
 
     nav a{
@@ -385,14 +385,20 @@ li {
     }
     
     .innovation, .codeSnippet{
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
         width: 300px;
         height: 180px;
         margin: auto 0;
     }
     
     .codeSnippet img{
-        width: 250px;
-        height: 250px;
+        /* width: 250px;
+        height: 250px; */
+        display: none;
+         width: 5px;
+        height: 5px;
     }
 
     .getStarted{
