@@ -191,3 +191,26 @@ h1, h2, h3, h4, h5, h6 {
 	text-align: center;
 	margin-top: 0.3em;
 }
+
+@media (max-width: 800px) {
+	body {
+		width: 90%;
+	}
+
+	.page-head img {
+		display: none;
+	}
+
+	.nav-header {
+		flex-direction: column-reverse;
+		justify-content: center;
+	}
+
+	.nav-header img {
+		margin: 3em auto;
+	}
+
+	.nav-header nav {
+		width: 100%;
+	}
+}
