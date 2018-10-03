@@ -181,7 +181,8 @@ ul {
 }
 
 .container {
-    width: 880px;
+    width: 100%;
+    max-width: 800px;
     margin: 20px auto;
     display: flex;
 }
@@ -550,18 +551,35 @@ footer {
 @media only screen and (max-width: 500px) {
 
     [class*="container"] {
-        width: 95%;
+        width: 100%;
     }
 
     header {
-        flex-wrap: wrap;
         width: 100%;
+        flex-wrap: wrap;
         justify-content: center;
-
     }
 
-    header a {
+    header nav {
         display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        width: 100%;
+    }
+    header nav a {
+        width: 100%;
+        padding: 20px 0 20px;
+        margin: 0;
+        border-bottom: 1px solid black;
+
+    }
+    header nav a:first-child {
+        border-top: 1px solid black;
+    }
+
+    header img {
         order: -1;
     }
 
@@ -587,15 +605,13 @@ footer {
 
     .contact {
         display: flex;
-        justify-content: center;
     }
 
     address {
         width: 30%;
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
-        text-align: center;
+        justify-content: flex-start;
     }
 
     .facts {
