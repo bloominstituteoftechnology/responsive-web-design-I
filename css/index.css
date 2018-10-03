@@ -358,10 +358,8 @@ li {
     header{
         display: flex;  
         flex-wrap: wrap-reverse;
-       /*  flex-direction: row-reverse;*/
         width: 100%;
         height: 500px;
-        /*justify-content: space-around;*/
         position: relative;
         justify-content: center;
         align-items: center;
@@ -376,7 +374,6 @@ li {
 
     nav{
         flex-direction: column;
-  /*      width: 500px;*/
         height: initial;
     }
 
@@ -384,9 +381,6 @@ li {
         font-size: 23px;
     }
     
-/*    header a: last-child{
- display: -1;
-    }*/
     .logo{
      flex-wrap: wrap;
     height: 40px;
@@ -403,7 +397,7 @@ li {
         font-size: 45px;
     }
     
-    .innovation, .codeSnippet{
+    .innovation{
         flex-wrap: nowrap;
         justify-content: center;
         align-items: center;
@@ -412,13 +406,17 @@ li {
         margin: auto 0;
 }
 
-    .codeSnippet img{
+  /*  .codeSnippet img{
         /* width: 250px;
-        height: 250px; */
+        height: 250px; 
         display: none;
         height: initial;
          width: 5px;
         height: 5px;
+    }*/
+
+    .codeSnippet{
+        display: none;
     }
 
     .getStarted{
