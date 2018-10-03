@@ -388,22 +388,22 @@ li {
     }
 
     .firstSection{
-        width: 500px;
-        height: 350px;
-        justify-content: center;
+       width: 500px;
+    height: 300px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
     }
 
     h1{
-        font-size: 45px;
+        font-size: 70px;
     }
     
     .innovation{
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-items: center;
-        width: 300px;
-        height: 180px;
-        margin: auto 0;
+      flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto 0;
 }
 
   /*  .codeSnippet img{
@@ -421,37 +421,47 @@ li {
 
     .getStarted{
         height: 30px;
-        width: 100px;
-        margin-left: 33%;
+        width: 160px;
+        font-weight: bold;
     }
 
     .mainBody{
+        margin-left: 2%;
         flex-direction: row;
-        width: 500px;
+         max-width: 490px;
+        width: 98%;
+         align-items: center;
         /* height: 790px; */
     }
 
     .upperMain, .lowerMain{
-        width: 500px;
+        width: 97%;
         flex-direction: column;
+        height: inherit;
+        align-items: flex-start;
     }
 
-    .lowerMain{
-        height: 300px;
+    .child1, .child2{
+        justify-content: space-between;
+        align-items: center;
+        padding: 25px 0;
+         width: inherit;
     }
 
     .child1 {
-        align-items: center;
+        height: inherit;
     }
 
-    .child2 {
-        align-items: center;
-        width: 475px;
-        padding: 10px 0;
+    footer {
+        width: 490px;
     }
+
+    /*.child2 {
+        align-items: center;
+    }*/
     
     .middle-img {
-        width: 500px;
+            width: 95%;
     }
 
     .firstSection2{
@@ -479,7 +489,7 @@ li {
     }
 
     .facts{
-        width: 575px;
+        width: 475px;
         justify-content: center;
         align-items: center;
         margin: 10px;
