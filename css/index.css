@@ -137,6 +137,11 @@ button {
 	border-top: 2px solid black;
 }
 
+.middle-img {
+	max-width: 100%;
+	height: auto;
+}
+
 /* alignment of the next 3 paragraphs */
 .bottom-content {
 	display: flex;
@@ -171,7 +176,7 @@ footer {
    .container{
         width: 100%;
         margin: 0 auto;
-        padding: 0;
+		padding: 0;
    }
 
    /*	Changes order of nav-menu items and aligns them	*/
@@ -180,7 +185,6 @@ footer {
        flex-direction: column-reverse;
        align-items: center;
    }
-
 
    .navigation {
        width: 100%;
@@ -210,8 +214,7 @@ footer {
    }
 
    .top-content {
-	   margin: 0 20px 0 20px;
-	  
+	   margin: 0 20px 0 20px;  
    }
 
    .top-paragraphs {
@@ -222,9 +225,18 @@ footer {
 		padding: 5px 30px 5px 10px; 
 	}
 
+	/* To make the image responsive, adjust the max-width
+		100% of the width of it parent, the body	*/
    .middle-img {
-	   width: 95%;
-		margin: 0 20px 0 20px;
+	   /*The commented lines is what I tried at first and even though
+	   		it worked, I wanted to use make the image responsive */
+	   /* max-width: 95%; */
+	   /* margin: 0 20px 0 20px; */
+	   padding-left: 3%;
+	   padding-right: 3%;
+	   max-width: 100%;
+	   height: auto;
+	   
    }
 
    .bottom-content {
@@ -240,6 +252,77 @@ footer {
 	   margin-top: 33px;
 	   font-size: 15px;
    }
-   
-
 }
+
+
+/*	Mobile view	*/
+
+@media (max-width: 500px){
+	.container {
+		width: 100%;
+	}
+
+	.logo {
+		width: 38%;
+		height: auto;
+		margin: 0;
+		padding-bottom: 20px;
+	}
+
+	.navigation {
+		flex-direction: column;
+		border-bottom: 1px solid black;
+		margin: 0;
+	}
+
+	.navigation a {
+		width: 100%;
+		border-top: 1px solid black;
+		padding: 20px;
+		text-align: center;
+		font-size: 20px;
+	}
+
+	.get-started {
+		padding-top: 65px;
+	}
+
+	.get-started h1 {
+		font-size: 70px;
+	}
+
+	/*	Wrap around Features and About paragraphs */
+	.top-content {
+		flex-wrap: wrap;
+	}
+
+	/*	percentages work the same way*/
+	.top-paragraphs{
+		padding: 20px 0 30px 0;
+		/* padding: 4% 0 5% 0; */
+	}
+
+	.middle-img {
+		padding-left: 4%;
+		padding-right: 4%;
+	}
+
+	.bottom-content{
+		flex-wrap: wrap;
+		padding-bottom: 30px;
+	}
+
+	.bottom-paragraphs {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.services-and-products {
+		padding-bottom: 60px;
+	}
+
+	.contact {
+		padding-left: 20px;	
+	}
+}
+
