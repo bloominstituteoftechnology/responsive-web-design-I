@@ -61,6 +61,11 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: 'Bangers', cursive;
 }
 
+/*
+
+Navigatio Bar
+
+*/
 .nav-header {
   display: flex;
   justify-content: space-between;
@@ -104,7 +109,11 @@ h1, h2, h3, h4, h5, h6 {
 		font-weight: bold;
 	}
 }
+/*
 
+Home Page - Desktop
+
+*/
 .page-head {
   display: flex;
   justify-content: space-between;
@@ -192,12 +201,84 @@ h1, h2, h3, h4, h5, h6 {
 	text-align: center;
 	margin-top: 0.3em;
 }
+/*
+
+Services - Desktop
+
+*/
+.services-head{
+	display: flex;
+	flex-wrap: wrap;
+
+}
+
+.services-header-img {
+	width: 100%;
+}
+
+.services-head h1  {
+	font-size: 48px;
+	margin-top: 40px;
+	padding: 0px;
+}
+
+.services-content {
+	margin: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	margin: 3em auto;
+	padding: 2em 0;
+}
+
+.service-box {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid black;
+	margin-bottom: 2em;
+	width: 40%;
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.service-box h2 {
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+.service-box p {
+	margin-left: 20px;
+}
+
+.service-box a {
+	text-decoration: none;
+	text-align: center;
+	border: 1px solid black;
+	border-radius: 3px;
+	width: 25%;
+	padding: 0.5em 0;
+	color: black;
+	background-color: white;
+	font-size: 14px;
+	margin: 20px 0 20px 20px;
+}
+
+.service-box a:hover {
+	background-color: rgba(0,0,0, 0.6);
+	color: ghostwhite;
+}
+
 
 @media (max-width: 800px) {
 	body {
 		width: 90%;
 	}
+	/*
 
+	Home Page - Tablet
+
+	*/
 	.page-head {
 		margin-left: 3em;
 	}
@@ -233,13 +314,46 @@ h1, h2, h3, h4, h5, h6 {
 		margin: 0 auto;
 		margin-top: 2em;
 	}
+	/*
+
+	Services - Tablet
+
+	*/
+	.services-header-img {
+		display: none;
+	}
+
+	.services-head  {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.services-head h1 {
+		margin: 2em 0 1em 0;
+	}
+	.services-head p {
+		padding-left: 25px;
+	}
+
+	.services-content {
+		flex-direction: column;
+		align-items: center;
+	}
+	.service-box {
+		width: 80%;
+	}
 }
 
 @media (max-width: 500px) {
 	body {
 		width: 100%;
 	}
+	/*
 
+	Home Page - Mobile
+
+	*/
 	.nav-header {
 		margin-bottom: 13em;
 	}
