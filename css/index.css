@@ -234,3 +234,31 @@ h1, h2, h3, h4, h5, h6 {
 		margin-top: 2em;
 	}
 }
+
+@media (max-width: 500px) {
+	body {
+		width: 100%;
+	}
+
+	.nav-header {
+		margin-bottom: 13em;
+	}
+
+	.nav-header img {
+		margin: 8em auto;
+	}
+
+	.nav-header nav {
+		flex-direction: column;
+		margin: 0;
+	}
+
+	.nav-header nav a {
+		font-size: 22px;
+		border-top: 1px solid rgba(0, 0, 0, 0.3);
+		border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+		width: 100%;
+		text-align: center;
+		padding: 8px 0;
+	}
+}
