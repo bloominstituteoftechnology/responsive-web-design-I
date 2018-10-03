@@ -172,14 +172,6 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-top: 20px;
-}
-
-nav .links {
-  width: 1000px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   margin: 20px;
 }
 
@@ -193,34 +185,6 @@ nav .links {
   margin: 30px;
 }
 
-/********************/
-/* CSS for homepage */
-/********************/
-
-header .header {
-  display: flex;
-  justify-content: center;
-  margin: 100px 40px 40px;
-}
-
-header .header .headerTitle {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  margin-right: 40px;
-}
-
-header .header .headerTitle button {
-  padding: 3px 40px;
-  align-self: center;
-}
-
-.container .bigSec1 {
-  display: flex;
-  justify-content: space-between;
-}
-
 section {
   margin: 25px 0px;
 }
@@ -229,55 +193,54 @@ section p {
   font-size: 20px;
 }
 
-.container>img {
-  width: 100%;
-}
+/*************************/
+/* CSS for services page */
+/*************************/
 
-.container .bigSec2 {
+.container .services {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  align-content: space-between;
 }
 
-
-/*****************/
-/* Media queries */
-/*****************/
-
-@media (max-width: 800px) {
-  nav {
-    flex-direction: column;
-  }
-
-  nav .links {
-    width: 800px;
-  }
-
-  nav .logo {
-    order: -1;
-  }
-
-  .container {
-    width: 700px;
-  }
-
-  header .header {
-    margin: 30px 0px;
-  }
-
-  header .header img {
-    display: none;
-  }
-
-  header .header .headerTitle h1 {
-    font-size: 70px;
-  }
-
-  section {
-    margin: 25px 20px 25px 0px;
-  }
-
-  h2 {
-    font-size: 20px;
-  }
+section.cube {
+  width: 49%;
+  border: 1px solid black;
+  background-color: lightGrey;
+  padding: 20px;
 }
 
+.services h3 {
+  font-size: 20px;
+}
+
+.services button {
+  padding: 5px 30px;
+  margin-top: 20px;
+}
+
+.container .facts {
+  display: flex;
+  margin-bottom: 60px;
+}
+
+.container .facts ul {
+  margin-top: 20px;
+}
+
+.container .facts ul li {
+  list-style-type: disc;
+  list-style-position: inside;
+  margin: 10px;
+  font-size: 20px;
+}
+
+.container .facts img {
+  margin-top: 20px;
+}
+
+.container img {
+  width: 100%;
+  margin: 30px 0px;
+}
