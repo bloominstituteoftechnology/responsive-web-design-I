@@ -1,3 +1,495 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
 
 
+
+
+
+
+
+
+* div p span {
+	font-style: Garamond;
+
+}
+
+
+
+
+.wrap {
+	width:485px;
+  display: flex;
+
+
+
+
+}
+.left {
+	width:400px;
+	height: 123px;
+	float: left;
+	/* margin-left: 10px; */
+	position: relative;
+	text-align: left;
+	margin: 0px 10px 0px 62px;
+
+
+
+}
+.right {
+	width:400px;
+	height: 123px;
+	float: left;
+	text-align: left;
+	/* margin-right: 10px; */
+	margin: 0 0 0 0;
+
+
+}
+
+.left1{
+	width: 33.3333333333%;
+	height: 123px;
+	text-align: left;
+	float: left;
+	padding-left: 10px;
+
+}
+
+.right1 {
+	width: 33.3333333333%;
+	height: 123px;
+	text-align: left;
+	float: left;
+	padding-left: 10px;
+	margin: 0 0 0 0;
+
+
+
+
+}
+
+
+ .center {
+	width: 33.3333333333%;
+	height: 123px;
+	text-align: left;
+	float: left;
+	padding-left:5px;
+	margin: 0 0 30px 0;
+
+}
+
+
+
+
+ul {
+	list-style-type: none;
+	margin-top: 0;
+	padding: 0;
+	overflow: hidden;
+	width: 100%;
+	justify-content: flex-start;
+
+
+}
+
+li {
+	float: left;
+	padding: 0 10px;
+	text-transform: uppercase; /* capitalize is for first letter*/
+
+}
+
+li a {
+	display: block;
+	text-align: center;
+	padding: 20px 15px;
+	text-decoration: none;
+	color: grey;
+
+}
+
+.urlcontainer {
+	display: flex;
+	justify-content: flex-start;
+
+}
+
+.content-row {
+	display: flex;
+
+}
+
+a.navigation-link {
+	padding: 0px 10px;
+	word-wrap: normal;
+	display: inline-block;
+
+  }
+
+
+
+
+.ul:hover{
+	background-color: #F9F4F4;
+
+
+}
+
+.btn:active{
+	box-shadow: 0 5px #666;
+	transfor: translateY(4px);
+	 }
+
+
+.getStartedButton {
+	background-color: lightgrey;
+	border-radius: 10px;
+	opacity: .75;
+	display: flex;
+	width: 200px;
+	margin-left: 165px;
+
+}
+.button  {
+	padding: 15px 25px;
+	font-size: 24px;
+	text-align: center;
+	cursor: pointer;
+	outline: none;
+	color: black;
+	background-color: white;
+	border: 1px solid lightgrey;
+	border-radius: 15px;
+	box-shadow: 0 9px #999;
+	margin-top: 10px;
+	justify-content: center;
+	margin-left: 15px;
+	margin-right: auto;
+	margin-bottom: auto;
+
+	transition: transform .35s;
+	/* border: 1px solid red; */
+
+}
+
+.button:hover {
+	background-color: lightgray;
+
+	-ms-transform: scale(1.01);
+	-webkit-tranform: scale(1.01);
+	transform: scale(1.01);
+	border: 1px solid black;
+}
+
+.button:active {
+	background-color: #fff;
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+
+}
+
+
+.logo {
+	display: inline-block;
+	position: absolute;
+	left: 720px;
+	top: -1px;
+	margin-top: 7px;
+
+}
+
+
+body {
+	background-color: lightgrey;
+	height: auto;
+}
+
+.fullPage {
+	display: block;
+	width: 930px;
+	height: auto;
+	margin: 0 auto;
+	background-color: white;
+	padding-bottom: 20px;
+	border-radius: 10px;
+
+
+}
+nav {
+	position: relative;
+}
+
+
+.codeSnippet {
+	 margin-right: 50px;
+	 margin-left: auto;
+	 margin-top: -400px;
+	 display: block;
+	 width: 350px;
+	 position: relative;
+	 align-content: right;
+
+ }
+
+ /* margin Top Right Left Bottom */
+
+ .font {
+	display: flex;
+	width: 250px;
+	font-family: "Brush Script MT",cursive;
+	font-size: 70px;
+	margin-top: 100px;
+	margin-left: 140px;
+	position: relative;
+
+	justify-content: center;
+	text-align: center;
+ }
+
+
+
+.middle-img {
+	width: 95%;
+	margin: 17px 0px 18px 17px;
+	padding-left: 4%;
+	padding-bottom: 4%;
+	padding-top: 1.5%;
+	top: 10px;
+}
+
+.footer {
+	align-content: center;
+	text-align: center;
+
+}
+
+@viewport {
+	width: device-width ;
+	zoom: 1.0 ;
+  }
+
+
+.bottomLine {
+	margin-bottom: 10px;
+	margin-top: 50px;
+	width: 85%;
+	border-width: 1px;
+	position: relative;
+
+
+}
+
+
+.topLine {
+	width: 85%;
+	margin-top: 45px;
+	border-width: 2px;
+	margin-top: 100px;
+}
+
+.contacts {
+	text-align: center;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.name {
+	display: block;
+	position: relative;
+	font-family: "Brush Script MT",cursive;
+	font-size: 40px;
+
+}
+
+
+@media (max-width: 800px) {
+  body, .fullPage{
+    width: 800px;
+    margin: 0 auto;
+  }
+  .logo {
+    margin: -11px 0px 0px -450px;
+    justify-content: center;
+  }
+  .urlcontainer {
+    margin: 0 0 0 0;
+    justify-content: center;
+  }
+  .btn {
+    margin: 15px 0 0 0;
+  }
+  .codeSnippet {
+    display: none;
+  }
+  .words {
+    margin: 0 0 0 150px;
+  }
+  .font {
+    font-size: 100px;
+    margin: 0 0 0 150px;
+  }
+  .getStartedButton {
+    margin: 0 0 0 330px;
+  }
+  .left, .right {
+    margin: 20px 0 2px 20px;
+    width: 380px;
+    display: inherit;
+  }
+  .middle-img {
+    margin: 0 auto;
+  }
+  .left1, .center, .right1 {
+    margin: 20px 0 50px 20px;
+    width: 246px;
+  }
+  .topLine, .bottomLine {
+    width: 95%;
+  }
+  .bottomLine {
+    margin: 0px 0px 30px 25px;
+    border-width: 2px;
+  }
+  .createdby {
+    display: inline-block;
+    margin: 0 0 0 360px;
+  }
+}
+
+@media (max-width: 500px) {
+
+  .codeSnippet {
+    display: none;
+  }
+
+  body, .fullPage{
+    width: 500px;
+    margin: 0 auto;
+  }
+
+  .urlcontainer {
+    flex-direction: column;
+  }
+
+  .btn, ul {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    width: 500px;
+  }
+
+  ul {
+    margin-top: 40px;
+  }
+
+  li {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 500px;
+  }
+
+  .logo {
+    margin: 1px 0 0 -550px;
+    position: absolute;
+  }
+
+  .left, .right {
+    display: grid;
+    margin: 10px 0 0 30px;
+    width: 90%;
+  }
+
+  .middle-img {
+    margin: 0 auto;
+  }
+
+  .left1, .center, .right1 {
+    width: 90%;
+    margin: 0 0 -10px 30px;
+  }
+  .words {
+    margin: 0 0 0 0;
+  }
+  .getStartedButton {
+    margin: 10px 0 0 170px;
+  }
+  .topLine {
+    margin-top: 20px;
+  }
+  .bottomLine {
+    margin: 0px 0px 25px 14px;
+  }
+  .topLine, .bottomLine {
+    width: 95%;
+
+}
