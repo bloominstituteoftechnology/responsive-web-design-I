@@ -345,37 +345,56 @@ li {
 }
 
 @media only screen and (max-width: 500px) {
-    /* body {
-        background-color: lavender;
-    } */
+     body {
+   /*     background-color: lavender;*/
+         /*max-width:100%;
+        width: 500px;*/
+    } 
     .container{
-        width: 600px;
-    }
+        max-width: 500px;
+    width: 100%;
+}
 
     header{
-        flex-wrap: wrap;
-        width: 500px;
+        display: flex;  
+        flex-wrap: wrap-reverse;
+       /*  flex-direction: row-reverse;*/
+        width: 100%;
+        height: 500px;
+        /*justify-content: space-around;*/
+        position: relative;
         justify-content: center;
-        /* height: 50px; */
+        align-items: center;
+    }
+
+    a{
+      width: 100%;
+     border-bottom: 1px solid black;
+     display: flex;
+    justify-content: center;
     }
 
     nav{
-        flex-wrap: wrap;
-        width: 300px;
+        flex-direction: column;
+  /*      width: 500px;*/
+        height: initial;
     }
 
     nav a{
-        padding: 10px;
+        font-size: 23px;
     }
     
+/*    header a: last-child{
+ display: -1;
+    }*/
     .logo{
-        flex-wrap: wrap;
-        height: 30px;
-        position: static;
+     flex-wrap: wrap;
+    height: 40px;
+    margin: 20px 0;
     }
 
     .firstSection{
-        width: 600px;
+        width: 500px;
         height: 350px;
         justify-content: center;
     }
@@ -391,12 +410,13 @@ li {
         width: 300px;
         height: 180px;
         margin: auto 0;
-    }
-    
+}
+
     .codeSnippet img{
         /* width: 250px;
         height: 250px; */
         display: none;
+        height: initial;
          width: 5px;
         height: 5px;
     }
@@ -409,12 +429,12 @@ li {
 
     .mainBody{
         flex-direction: row;
-        width: 600px;
+        width: 500px;
         /* height: 790px; */
     }
 
     .upperMain, .lowerMain{
-        width: 600px;
+        width: 500px;
         flex-direction: column;
     }
 
@@ -433,11 +453,11 @@ li {
     }
     
     .middle-img {
-        width: 600px;
+        width: 500px;
     }
 
     .firstSection2{
-        width: 600px;
+        width: 500px;
         /* justify-content: center; */
         /* align-items: center; */
     }
@@ -447,7 +467,7 @@ li {
     }
 
     .services-header-img{
-        width: 600px;
+        width: 500px;
     }
 
     .mainBody2 {
@@ -457,7 +477,7 @@ li {
     }
 
     .footer2{
-        width: 600px;
+        width: 500px;
     }
 
     .facts{
