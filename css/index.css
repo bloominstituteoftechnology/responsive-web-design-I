@@ -1,3 +1,328 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0 auto;
+    width: 1000px;
+}
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    font-family: sans-serif;
+    font-style: normal;
+    
+  }
+  .sec1 {
+      display: flex;
+      flex-direction: row;
+      align-content: flex-start;
+      margin: 25px 0px 25px 0px;
+  }
+  
+  .sec2 {
+      display: flex;
+      flex-direction: row;
+      align-content: flex-start;
+      margin: 25px 0px 25px 0px;
+  }
+  
+  .h1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 25px;
+    font-family: 'Bangers', cursive;
+  }
+  
+  .main {
+    display: flex;
+    flex-direction: column;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    flex-wrap: wrap;
+    margin: auto;
+  }
+  
+  .one {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-start;
+    width: 50%;
+  }
+  
+  .two {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+  }
+  
+  .next {
+    margin-left: 20px;
+  }
+  
+  .img_container {
+    width: 1000px;
+  }
+  
+  header {
+    width: 100%;
+    position: relative;
+  }
+  
+  .navigation {
+    display: flex;
+    width: 100%;
+    margin: 10px 0px 15px;
+  }
+  
+  .nav {
+    display: flex;
+    width: 100%;
+  }
+  
+  .nav li {
+    display: flex;
+    width: 12%;
+   
+  }
+  
+  footer {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .copywrite {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 70px;
+  }
+  
+  .logo {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+  }
+  
+  .intro div {
+    display: flex;
+    flex-direction: column;
+    margin: 60px;
+    
+  }
+  
+  .intro {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start
+  }
+  
+  .h1Intro span {
+    font-size: 70px;
+    font-family: 'Bangers';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .h1Intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 55px;
+  }
+  
+  .code_img {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-end;
+    margin: 45px 0px 45px 0px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: gray;
+    font-family: arial;
+  }
+  
+  .intro .button_container {
+    margin: 20px;
+    border: 1px solid black;
+  }
+  
+  .button {
+    margin: 0px 20px 0px 20px;
+  }
+/* Tablet */
+
+@media (max-width: 800px) {
+    .container {
+        width: 750px;
+	    margin: 0 auto;
+    }
+    body {
+        width: 750px;
+        margin: 0 auto;
+        overflow-x: hidden;
+    }
+    .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .h1intro {
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        font-size: 100px;
+    }
+    .logo {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .code_img {
+        display: none;
+    }
+    
+    .img_container .middle_img {
+        margin: o auto;
+        width: 750px;
+    }
+    .sec1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .sec2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+    }
+    .nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-end;
+       
+       
+    }
+    .nav li {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-top: 80px;
+        margin-right: 50px;
+    }
+    
+    .main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        width: 100%;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    
+}
 
 
+@media (max-width: 500px) {
+    body{
+        width: 100%;
+        margin: 0 auto;
+        overflow-x: hidden;
+    }
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+    .logo {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 25px 50px 0px;
+    }
+
+    .nav {
+        border-bottom: 2px solid grey;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .nav li {
+        border-top: 2px solid grey;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .nav a {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 50px;
+
+    }
+    .main {
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .img_container .middle_img {
+        margin: 0;
+        width: 43%;
+    }
+    .sec1 {
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .sec2 {
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .one {
+        margin: 0 auto;
+        width: 100%
+    }
+    .two {
+        margin: 0 auto;
+        width: 100%;
+    }
+    .next {
+        justify-content: flex-start;
+        margin: 0 auto;
+        width: 100%;
+
+    }
+   
+    
+
+
+
+}
