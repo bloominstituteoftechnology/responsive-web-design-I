@@ -183,7 +183,7 @@ address {
 
 /*------------------------------------------tablet MEDIA QUERIES*/
 
-@media (max-width: 800px) {
+@media only screen and (max-width: 800px) {
 
 	/*--------------------------------------wrapper and debugging color*/
 	body {
@@ -236,5 +236,30 @@ address {
 
 	footer {
 		width: 95%;
+	}
+}
+/*---------------------------------------MOBILE DISPLAYS*/
+@media only screen and (max-width: 500px) {
+
+	body {
+		background-color: red;
+	}
+
+	nav {
+		width: 100%;
+	}
+
+	.nav-container {
+		width: 100%;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+		border: 1px solid black;
+	}
+
+	.links {
+		flex-direction: column;
+		border: 1px solid black;
 	}
 }
