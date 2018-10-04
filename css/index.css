@@ -159,6 +159,7 @@ h5 {
 /* Your code starts here! */
 a {
 	text-decoration: none;
+	color: grey;
 }
 
 a:hover {
@@ -179,6 +180,7 @@ a:hover {
 .container header div nav {
 	width: 100%;
 	margin-top: 15px;
+	color: grey;
 }
 
 header .main-nav a {
@@ -277,7 +279,7 @@ address {
 	}
 	.main-section div {
 		width: 100%;
-		margin-bottom: 20px;
+		margin-bottom: 15px;
 	}
 	.main-section h1 {
 		margin-top: 0;
@@ -290,7 +292,25 @@ address {
 /* phone */
 
 @media (max-width:500px) {
-	.container {
-		background-color: blueviolet;
+	header nav {
+		flex-direction: column;
+	}
+	header nav a {
+		border-top: 1px solid grey;
+		border-left: 1px solid grey;
+		border-right: 1px solid grey;
+	}
+	.contact-border {
+		border-bottom: 1px solid grey;
+	}
+
+	.section2 div {
+		display: block;
+		width: 100%;
+	}
+
+	.section3 div {
+		display: block;
+		width: 100%;
 	}
 }
