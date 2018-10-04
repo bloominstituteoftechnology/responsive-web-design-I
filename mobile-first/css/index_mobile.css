@@ -106,12 +106,12 @@ nav {
     flex-basis:100%;
     flex-direction:column;
     align-items:center;
+    justify-content: center;
 }
 
 
 h1 {
     font-size:50px;
-    display:flex;
 }
 
 #started {
@@ -121,6 +121,9 @@ h1 {
     text-decoration: none;
 }
 
+#img-goes-here {
+    display:none;
+}
 
 /* CONTENT -------------------------------------------------------------*/
 #content {
@@ -165,7 +168,7 @@ hr {
     }
     
     #features, #about {
-        width:45%;
+        width:48%;
     }
 
     #services, #product, #vision {
@@ -175,7 +178,7 @@ hr {
     .row {
         display:flex;
         flex-direction:row;
-        justify-content:space-around;
+        justify-content:space-between;
     }
     
     hr {
@@ -188,6 +191,43 @@ hr {
 /* DESKTOP VIEW ------------------------------------------------*/
 
 @media (min-width:800px) {
+    .container {
+        max-width:800px;
+        margin:auto;
+    }
     
+    nav {
+        flex-direction:row-reverse;
+        align-items: normal;
+    }
+    .link {
+        width:16%;
+    }
+    
+    #logo {
+        margin:0px;
+    }
+    
+    
+    #links_section {
+        margin:0px;
+    }
+    
+    #innovation {
+        display:flex;
+        flex-direction:row;
+    }
+    #innovation-div {
+        flex-basis:50%;
+        align-items:normal;
+        justify-content:center;
+        align-items: center;
+    }
+    #img-goes-here {
+        display:flex;
+        flex-basis:50%;
+        align-items: center;
+        justify-content: center;
+    }
 }
 

@@ -277,17 +277,28 @@ li {
 
 /* FOR PHONES --------------------------------------------------------------*/
 @media (max-width: 500px) {
-    
-    .link {
-        border: 1px solid black;
-        font-size:20px;
-        flex-basis: 100%;
-        padding: 10px 0px;
-        width:100%;
+
+    nav {
+        align-items:center;
     }
+
     #links_section {
-        flex-direction: column;
-        border:black solid 1px
+        width:100%;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        font-size:30px;
+        margin-top:20px;
+    }
+
+    .link {
+        display:flex;
+        flex-direction:column;
+        text-decoration: none;
+        color:grey;
+        width:100%;
+        border-bottom:1px black solid;
+        align-items:center;
     }
     
     .section2 {
