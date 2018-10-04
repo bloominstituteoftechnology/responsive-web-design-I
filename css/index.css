@@ -1,3 +1,344 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+body {
+	width: 800px;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.topcontainer {
+	width: 800px;
+	height: 50px;
+	display: flex;
+	padding-top: 20px;
+}
+
+nav {
+	display: flex;
+	width: 80%;
+	justify-content: space-evenly;
+}
+
+nav a {
+	vertical-align: top;
+	/* display: inline-block; */
+	text-decoration: none;
+	color: gray;
+	font-weight: bold;
+	/* background: blue; */
+	font-size: 16px;
+	/* width: 8.2%;
+	margin-right: 8.2%; */
+}
+
+.logo {
+	/* background: yellow; */
+	width: 20%;
+	/* display: inline-block; */
+	vertical-align: top;
+	position: relative;
+	bottom: 8px;
+}
+
+.mainsec {
+	border-bottom: 2px solid black;
+	margin-bottom: 50px;
+	padding-bottom: 50px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	height: 600px;
+}
+
+.headline {
+	width: 50%;
+	height: 20vh;
+	font-size: 64px;
+	text-align: center;
+	position: relative;
+	bottom: 70px;
+}
+
+button {
+	background: white;
+	border: 1px solid black;
+	font-size: 16px;
+	padding: 10px 50px;
+}
+
+.codesnippet {
+	width: 50%;
+}
+
+.middletop {
+	width: 100%;
+	display: flex;
+	margin-bottom: 50px;
+}
+
+.features {
+	width: 45%;
+	margin-right: 10%
+}
+
+.about {
+	width: 45%;
+}
+
+.middle-img {
+	width: 100%;
+	margin-bottom: 50px;
+}
+
+.middlebottom {
+	padding-bottom: 40px;
+	border-bottom: 2px solid black;
+	display: flex;
+	margin-bottom: 50px;
+}
+
+.contact {
+	width: 100%;
+}
+
+footer {
+	text-align: center;
+	margin-top: 70px;
+	margin-bottom: 50px;
+	width: 100%;
+}
+
+@media (max-width: 800px)  {
+    body {
+        /* background: steelblue; */
+        width: 750px;
+    }
+    .codesnippet {
+        display: none;
+    }
+    .headline {
+        margin: auto;
+    }
+
+    .logo {
+        order: -1;
+        /* width: 100%; */
+        justify-content: center;
+        padding-bottom: 40px;
+        /* background: orange; */
+        position: relative;
+        left: 300px;
+        
+    }
+    nav {
+        order: 2;
+        width: 100%;
+    }
+    .topcontainer {
+        flex-wrap: wrap;
+    }
+    .mainsec {
+        height: 450px;
+    }
+
+    .headline {
+        width: 50%;
+        height: 20vh;
+        font-size: 64px;
+        text-align: center;
+        position: relative;
+        bottom: 5px;
+    }
+  
+    
+    .services {
+        width: 30%;
+    }
+    .product {
+        width: 30%;
+    }
+    .vision {
+        width: 30%;
+    }
+    .middlebottom {
+        justify-content: space-between;
+        
+    }
+}
+
+
+
+@media (max-width: 450px) {
+    body {
+        /* background: pink; */
+        width: 400px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        /* background: blue; */
+        border-bottom: 1px solid black;
+        margin-bottom: 40px;
+        height: 200px;
+        align-items: center;
+    }
+
+    nav a {
+        width: 100%;
+        border-top: 1px solid black;
+        text-align: center;
+        padding-top: 5px;
+        
+
+    }
+    .logo {
+        width: 160px;
+        left: 120px;
+        /* background: blue; */
+        margin-bottom: 1px;
+        
+    }
+    .mainsec {
+        /* background: yellow; */
+        height: 300px;
+    }
+    .topcontainer {
+        /* background: green; */
+        height: 350px;
+    }
+    .headline {
+        text-align: center;
+        position: relative;
+        bottom: 100px;
+    }
+    .middletop {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .features {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+    .about {
+        width: 90%;
+        margin: auto;
+    }
+    .middlebottom {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        bottom: 80px;
+    }
+    .services {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 40px;
+        margin-top: 5px;
+    }
+    .product {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+    .vision {
+        width: 90%;
+        margin: auto;
+    }
+
+    .middle-img {
+        width: 90%;
+        margin: auto;
+        margin-top: 1px;
+        background: blue;
+    }
+
+    .contact {
+        margin-left: 10px;
+    }
+
+    nav {
+        /* background: blue; */
+        position: relative;
+        bottom: 40px;
+    }
+    .logo {
+        /* background: orange; */
+        margin-bottom: 1px;
+        /* padding-bottom: 1px; */
+        
+    }
+
+
+
+}   
 
