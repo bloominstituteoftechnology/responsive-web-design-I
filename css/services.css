@@ -399,9 +399,22 @@ footer {
 		flex-wrap: wrap;
 		justify-content: center;
 	}
+
+	.container section {
+		width: 100%;
+	}
+
+	.facts {
+		width: 100%;
+	}
 }
 
-@media (min-width: 518px) {
+@media (max-width: 518px) {
+
+	body {
+		width: 100%;
+	}
+
 	#fullPage {
 		width: 100%;
 		margin: 0;
@@ -416,4 +429,6 @@ footer {
 	.container a {
 		padding: 5px 1rem;
 	}
+
+
 }
