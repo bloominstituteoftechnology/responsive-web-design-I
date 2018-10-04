@@ -12,8 +12,8 @@ It's time to expand our CSS skills into multiple devices.  You will be creating 
 
 * [X] Review each [design file](design-files).  Notice the subtle differences between them all. 
 * [X] Insert a `viewport` meta tag into the head of the project with these html attributes: `content="width=device-width, initial-scale=1"`
-* [ ] Introduce max-width media queries into your project at 800px and 500px  
-* [ ] Do your best to make your styles match the design files at each breakpoint 
+* [X] Introduce max-width media queries into your project at 800px and 500px  
+* [X] Do your best to make your styles match the design files at each breakpoint 
 
 ## Stretch Goals: 
 * [ ] Create a tablet and mobile version of the services page from previous projects

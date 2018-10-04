@@ -65,13 +65,18 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
+html {
+    font-size: 62.5%;
+}
+
 body {
 	display: flex;
 	justify-content: center;
 }
 
 .container {
-	width: 880px;
+	width: 100%;
+	max-width: 880px;
 }
 
 /* header */
@@ -80,17 +85,18 @@ header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin-top: 35px;
+	margin-top: 36px;
 }
 
 header nav {
 	display: flex;
 	justify-content: space-between;
-	width: 697px;
+	color: gray;
+	font-size: 1.6rem;
+	width: 69%;
 }
 
 header nav a {
-	display: inline-block;
 	color: gray;
 	text-decoration: none;
 }
@@ -99,16 +105,12 @@ header nav a:hover {
 	text-decoration: underline;
 }
 
-header nav a:last-child {
-	margin-right: 65px;
-}
-
 /* call to action */
 
 .cta {
 	display: flex;
-	justify-content: space-evenly;
-	margin: 65px 0px;
+	justify-content: flex-end;
+	margin: 68px 0 74px 0;
 }
 
 .cta-text {
@@ -117,56 +119,76 @@ header nav a:last-child {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	font-size: 77px;
-	width: 420px;
+	font-size: 7.2rem;
+	padding: 0 1% 0 0;
+	width: 51.1%;
 }
 
-button {
+.cta p {
 	border: 1px solid black;
 	background: white;
-	padding: 8px 50px;
+	padding: 7px 43px;
+	margin-top: 10px;
+	font-size: 1.6rem;
+	font-family: Helvetica, sans-serif;
+}
+
+.cta a {
+	color: black;
+	text-decoration: none;
+}
+
+.cta a:hover p {
+	background: black;
+	color: white;
 }
 
 /* middle content */
 
 .middle-content {
-	border-top: 1px solid black;
-	border-bottom: 1px solid black;
-	padding: 35px 0px;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	padding: 36px 0;
 }
 
 .top-content, .bottom-content {
 	display: flex;
 	justify-content: space-between;
+	font-size: 1.6rem;
 }
 
 .top-content .text-content {
-	width: 430px;
+	width: 51.1%;
+	line-height: 1.15;
 }
 
 .bottom-content .text-content {
-	width: 275px;
+	width: 33.2;
+	padding: 0 2.2% 0 0;
+	line-height: 1.15;
 }
 
 .middle-img {
-  margin: 35px 0px;
-  width: 100%;
-  height: auto;
+	margin: 30px 0 28px 0;
+	max-width: 100%;
+	height: auto;
 }
 
 /* footer */
 
 .contact {
-	margin: 35px 0px;
+	margin: 35px 0;
+	font-size: 1.6rem;
 }
 
 .contact p {
-	margin: 20px 0px;
+	margin: 15px 0;
 }
 
 footer {
 	text-align: center;
-	margin: 35px 0px;
+	margin: 38px 0;
+	font-size: 1.6rem;
 }
 
 /* services css below */
@@ -183,7 +205,7 @@ footer {
 }
 
 .services h2 {
-	font-size: 24px;
+	font-size: 2.4rem;
 }
 
 
@@ -200,7 +222,7 @@ footer {
 .middle-container .text-content {
 	border: 1px solid black;
 	width: 420px;
-	margin: 20px 0px;
+	margin: 20px 0;
 	padding: 20px;
 	line-height: 1.2;
 }
@@ -212,7 +234,7 @@ footer {
 	padding: 10px 30px;
 	margin-top: 25px;
 	text-align: center;
-	font-size: 12px;
+	font-size: 1.2rem;
 }
 
 /* facts */
@@ -221,8 +243,8 @@ footer {
 	display: flex;
 	justify-content: space-between;
 	border-top: 2px solid black;
-	margin: 20px 0px;
-	padding: 40px 0px;
+	margin: 20px 0;
+	padding: 40px 0;
 }
 
 .bottom-container .facts {
@@ -233,41 +255,72 @@ footer {
 .bottom-container .facts ul li {
 	list-style-type: square;
 	list-style-position: inside;
-	margin: 14px 0px;
+	margin: 14px 0;
 }
 
-/* tablet media view */
+/* tablet media query */
 
 @media (max-width: 800px) {
-  .container {
-    width: 95%;
-  }
+    .container {
+        width: 100%;
+    }
 
-  header {
-    flex-direction: column-reverse;
-    margin: 0;
-    height: 140px;
-    justify-content: space-evenly;
-  }
+    header {
+        flex-direction: column-reverse;
+    }
 
-  header nav {
-    width: 90%;
-    padding: 0;
-  }
+    header nav {
+        margin-top: 45px;
+        width: 91%;
+    }
 
     header nav a:last-child{
-      margin-right: 0;
-  }
+        margin-right: 0;
+    }
 
-  main .cta {
-    justify-content: center;
-  }
+    .cta {
+        justify-content: center;
+    }
 
-  main .cta .header-img {
-    display: none;
-  }
+    .header-img {
+        display: none;
+    }
 
-  .text-content {
-      margin: 0 5px;
-  }
+    .text-content {
+        margin: 0 5px;
+    }
+}
+
+/* mobile phone media query */
+
+@media (max-width: 500px) {
+    .container {
+        width: 100%;
+    }
+
+    header nav {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    header nav a {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        border-bottom: 1px solid black;
+    }
+
+    header nav a:first-child {
+        border-top: 1px solid black;
+    }
+
+    .top-content, .bottom-content {
+        flex-direction: column;
+    }
+
+    .top-content .text-content, .bottom-content .text-content, .contact {
+        width: 90%;
+        margin: 25px;
+    }
 }
