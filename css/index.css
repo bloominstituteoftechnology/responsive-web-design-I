@@ -98,6 +98,7 @@ nav {
   width: 880px;
   justify-content: space-between;
   align-items: center;
+  margin-top: 20px;
 }
 
 .text-links {
@@ -116,18 +117,18 @@ nav a:hover {
 
 
 .logo {
-  width: 150px;
+  width: 185px;
   align-self: center;
-  margin-left: 70px;
+  margin-left: 90px;
 }
 
 .top-container {
   position: relative;
-  top: 90px;
+  top: 125px;
   padding-bottom: 50px;
   display: flex;
   align-items: center;
-  margin-bottom: 100px;
+  margin-bottom: 150px;
 }
 
 .headline-button {
@@ -163,8 +164,13 @@ nav a:hover {
   background-color: #000000;
 }
 
+.content {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
 #head-image {
-  width: 450px;
+  width: 400px;
 }
 
 .first-row,
@@ -175,10 +181,11 @@ nav a:hover {
 
 .first-row {
   display: flex;
+  justify-content: space-between;
 }
 
 .content-first-row {
-  width: 50%;
+  width: 425px;
   display: flex;
   flex-direction: column;
 }
@@ -328,6 +335,7 @@ footer {
 @media (max-width: 800px) {
   .page {
     width: 768px;
+    padding: 5px;
   }
 
 
@@ -345,7 +353,6 @@ footer {
   nav {
     width: 768px;
     flex-direction: column-reverse;
-    justify-content: flex-start;
   }
 
   .logo {
@@ -362,21 +369,30 @@ footer {
     justify-content: center;
   }
 
+  .content-first-row {
+    width: 375px;
+  }
+
   .middle-img {
     width: 768px;
   }
 }
 
 @media (max-width: 500px) {
+
+  body {
+    width: 476px;
+  }
+
   header {
     position: static;
-    width: 500px;
+    width: 476px;
     margin: 0px;
     align-items: center;
   }
 
   nav {
-    width: 500px;
+    width: 476px;
     align-items: center;
   }
 
@@ -384,27 +400,29 @@ footer {
   .logo-link {
     display: flex;
     justify-content: center;
-    width: 500px;
+    width: 476px;
     border-bottom: 1px solid gray;
   }
 
   .text-links {
+    margin-top: 10px;
     flex-direction: column;
     text-align: center;
     align-items: center;
-    width: 500px;
+    width: 476px;
   }
 
   .text-links a {
-    width: 500px;
+    width: 476px;
     border-bottom: 1px solid gray;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
+    padding-top: 10px;
     margin-bottom: 10px;
 
   }
 
   .page {
-    width: 500px;
+    width: 476px;
     padding: 0px 12px;
   }
 
@@ -440,6 +458,7 @@ footer {
 
 
   .middle-img {
-    width: 476px;
+    width: 450px;
+    /* align-self: center; */
   }
 }
