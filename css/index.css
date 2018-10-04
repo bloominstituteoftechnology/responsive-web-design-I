@@ -66,21 +66,21 @@ h1, h2, h3, h4, h5 {
 .container{
     margin: 0 auto;
     width:1000px;
-    /* height:2000px; */
+    height:1400px;
     display:flex;
     flex-wrap:wrap;
     justify-content:space-evenly;
     /* debug code-take out once done */
     border:1px solid black;
     /* debug code-take out once done */
+    position: relative;
 }
 header{
     width:876px;
-    height:650px;
+    height:500px;
     display:flex;
     flex-wrap:wrap;
     justify-content:space-between;
-    border-bottom:2px solid black;
     margin-bottom: 20px;
     align-items: center;
     padding-bottom:20px;
@@ -104,11 +104,10 @@ nav{
     border:1px solid black;
     /* debug code-take out once done */
 }
-nav img{
-    /* position: relative;
-    right:-5px; */
-    
-
+.logo{
+    position: relative;
+    right:-2px;
+    top:10px;
 }
 a{
     text-decoration: none;
@@ -129,9 +128,17 @@ a{
      /* debug code-take out once done */
     
 }
+.main-content{
+    width:876px;
+    display:flex;
+    justify-content:center;
+    position:relative;
+    top:50px;
+    right:-10px;
+}
 h1{
-    font-size:60px;
-    width:200px; 
+    font-size:72px;
+    width:270px; 
     text-align:center;  
 }
 button{
@@ -145,9 +152,15 @@ button{
 .top-content{
     display:flex;
     width:876px;
+    position: relative;
+    top:35px;
+    border-top:2px solid black;
+    padding-top:30px;
 }
 .middle-img{
-    margin: 30px 0px 30px 0px;
+    margin: 15px 0px 15px 0px;
+    position:relative;
+    top:20px;
 
 }
 .middle-content{
@@ -155,7 +168,12 @@ button{
     width:876px;
     height:150px;
     border-bottom:2px solid black;
-    margin-bottom: 40px;
+    margin-bottom: 0px;
+    justify-content:space-between;
+}
+.middle-paragraphs{
+    width:274px;
+    align-self:center;
 }
 .bottom-content{
     display:flex;
@@ -164,21 +182,25 @@ button{
 }
 footer{
     align-self: center;
+    margin-top:50px;
 }
 @media (max-width:800px){
     .container{
-        width:720px;
+        width:760px;
+        margin:0 auto;
     }
     .code-snip{
       display:none;
     }
     nav{
         width:720px;
-        height:200px;
+        height:100px;
         flex-flow:column;
         justify-content: center;
+        margin-top:20px;
     }
     .links{ 
+        margin-top:50px;
         align-self:center;
         width:720px;
     }
@@ -188,10 +210,36 @@ footer{
     }
     header{
         flex-flow:column;
-        
+        margin-bottom:0px;
+    }
+    .heading-container{
+        position:relative;
+        bottom:60px;
+    }
+    h1{
+        position:relative;
+        bottom:10px;
+    }
+    .top-content{
+        bottom:10px;
+        justify-content: space-evenly;
     }
     .middle-img{
-        width:720px;
+        width:760px;
+    }
+    .middle-content{
+        justify-content: space-evenly;
+        height:200px;
+    }
+    .top-paragraphs{
+        width:360px;
+    }
+    .middle-paragraphs{
+        width:214px;
+    }
+    .bottom-content{
+        justify-content: space-evenly;
+        width:700px;
     }
 }
 @media (max-width:500px){
@@ -224,6 +272,7 @@ footer{
     }
     .bottom-content{
         width:420px;
+        margin-top:400px;
     }
 
 }
