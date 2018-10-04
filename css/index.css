@@ -70,9 +70,6 @@ h1, h2, h3, h4, h5 {
     display:flex;
     flex-wrap:wrap;
     justify-content:space-evenly;
-    /* debug code-take out once done */
-    border:1px solid black;
-    /* debug code-take out once done */
     position: relative;
 }
 header{
@@ -84,25 +81,17 @@ header{
     margin-bottom: 20px;
     align-items: center;
     padding-bottom:20px;
-    
-
 }
 nav{
     width:876px;
     display:flex;
     align-items:baseline;
     justify-content: space-between;
-    /* debug code-take out once done */
-    border:1px solid black;
-    /* debug code-take out once done */
 }
 .links{
     width:605px;
     display:flex;
     justify-content:space-between;
-    /* debug code-take out once done */
-    border:1px solid black;
-    /* debug code-take out once done */
 }
 .logo{
     position: relative;
@@ -113,9 +102,6 @@ a{
     text-decoration: none;
     color: grey;
     align-self:flex-start;
-    /* position:relative;
-    top:10px;
-    left:0px; */
 }
 .heading-container{
     display:flex;
@@ -123,10 +109,6 @@ a{
     align-items: center;
     justify-content: center;
     width:475px;
-     /* debug code-take out once done */
-     border:1px solid blue;
-     /* debug code-take out once done */
-    
 }
 .main-content{
     width:876px;
@@ -161,7 +143,6 @@ button{
     margin: 15px 0px 15px 0px;
     position:relative;
     top:20px;
-
 }
 .middle-content{
     display:flex;
@@ -244,35 +225,73 @@ footer{
 }
 @media (max-width:500px){
     .container{
-        width:420px;
+        width:440px;
+        height: 1950px;
         flex-flow:column;
         align-items: center;
+    }
+    .logo{
+        margin-top:20px;
+    }
+    nav{
+        position: relative;
+        bottom:70px;
+        
     }
     .links{
         flex-flow:column;
         width:420px;
     }
     a{
-        width:420px;
-        border-top:1px solid grey;
+        width:485px;
         border-bottom:1px solid grey;
         align-self: center;
         text-align:center;
+        font-size:20px;
+        padding: 15px 10px;
+    }
+    a:first-child{
+        border-top: 1px solid grey;
+    }
+    .heading-container{
+        position:relative;
+        top:170px;
+        width:420px;
     }
     .top-content{
         flex-flow:column;
-        width:420px;
+        width:440px;
+        margin-top:150px;
+        top:70px;
+        height:300px;
+    }
+    .top-content section{
+        margin-top:0px;
+    }
+    .top-paragraphs{
+        margin:0px 0px 20px 0px;
+        width:430px;
+    }
+    .middle-paragraphs{
+        width:440px;
+        margin:0px 0px 60px 0px;
     }
     .middle-img{
-        width:420px;
+        width:440px;
+        margin-bottom: 40px;
     }
     .middle-content{
         flex-flow:column;
-        width:420px;
+        width:440px;
+        height:420px;
     }
     .bottom-content{
-        width:420px;
-        margin-top:400px;
+        width:440px;
     }
+    footer{
+        position: relative;
+        top:15px;
+    }
+
 
 }
