@@ -1,3 +1,296 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
 
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+	font-family: 'Indie Flower', cursive;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: 'Bangers', cursive;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	color: dodgerblue;
+}
+
+.container {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.container header {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 15px;
+}
+
+.container header div nav {
+	width: 100%;
+	margin-top: 15px;
+}
+
+header .main-nav a {
+	padding: 17px;
+}
+
+.main-section {
+	/* background: url(file:///C:/Users/Lee/User-Interface/great-idea-website/img/header-img.png); */
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin: 30px 0;
+}
+
+.main-section div {
+	justify-content: center;
+	width: 45%;
+}
+
+.main-section h1 {
+	text-align: center;
+	font-size: 60px;
+	text-transform: uppercase;
+	margin-top: 25%;
+}
+
+/* @keyframes myanimation {
+	0% {color: orchid}
+	50%{color:dodgerblue}
+	100%{color:goldenrod}
+} */
+
+.main-section button {
+	background-color: white;
+	display: block;
+	margin: auto;
+	padding: 0 15px;
+	font-size: 16px;
+}
+
+.section2 div {
+	display: inline-block;
+	width: 49%;
+	height: 100%;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+.middle-img {
+	display: block;
+	width: 100%;
+	margin: 30px 0;
+}
+
+.section3 div {
+	display: inline-block;
+	width: 32%;
+	height: 100%;
+	padding: 10px;
+	margin-top: 10px;
+}
+
+hr {
+	display: block;
+	border-top: 1px solid black;
+	margin: 10px 0 30px;
+}
+
+footer {
+	text-align: center;
+	margin-top: 30px;
+}
+
+address {
+	/* color: orchid; */
+	/* background: url(file:///C:/Users/Lee/User-Interface/great-idea-website/img/mid-page-accent.jpg); */
+}
+
+/* media queries */
+/* tablet */
+
+@media (max-width:800px) {
+	header {
+		flex-direction: column-reverse;
+		text-align: center;
+	}
+	header nav {
+		display: flex;
+	}
+	header nav a {
+		width: 100%;
+		justify-content: space-between;
+	}
+	.main-section img {
+		display: none;
+	}
+	.main-section div {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.main-section h1 {
+		margin-top: 0;
+	}
+	.container {
+		margin: 0 10px;
+	}
+}
+
+/* phone */
+
+@media (max-width:500px) {
+	.container {
+		background-color: blueviolet;
+	}
+}
