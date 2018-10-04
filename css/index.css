@@ -72,7 +72,7 @@ h1, h2, h3, h4, h5 {
 header {
     display: flex;
     justify-content: space-between;
-    width: 80%;
+    width: 876px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -97,7 +97,7 @@ nav a {
 .innovation {
     display: flex;
     flex-wrap: wrap;
-    width: 876px;
+    width: 100%;
     align-items: center;
     justify-content: space-between;
     padding: 50px 0px; 
@@ -137,6 +137,7 @@ section.features-about{
 section.features-about div{
     display: flex;
     width: 50%;
+    justify-content: space-between;
     text-align: left;
     align-items: left;
     flex-direction: column;
@@ -165,22 +166,17 @@ footer {
     flex-direction: column;
 }
 
-@media (max-width: 876px) {
-    header {
-        width: 876px;
-    }
-
+/* Desktop first media queries */
+@media (max-width: 1400px) {
+    /* 800 - 0 */
     .container {
-        width: 876px;
+        border: 3px dotted lavender;
     }
-}
+} 
 
-@media (max-width: 500px) {
-    header {
-        width: 500px;
-    }
-
+@media (max-width: 1200px) { 
+    /* 500 - 0 */
     .container {
-        width: 500px;
+        border: 3px dashed whitesmoke;
     }
 }
