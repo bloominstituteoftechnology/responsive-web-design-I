@@ -254,11 +254,36 @@ footer {
 	margin-top: 30px;
 }
 
-address {
-	/* color: orchid; */
-	/* background: url(file:///C:/Users/Lee/User-Interface/great-idea-website/img/mid-page-accent.jpg); */
+/* SERVICE */
+
+#service-nav a {
+	color: rebeccapurple;
+	font-size: 22px;
 }
 
+#main-section-service {
+	display: flex;
+	flex-direction: column;
+}
+
+#main-section-service div {
+	text-align: center;
+}
+
+#main-section-service h1{
+	color: red;
+	font-size: 50px;
+	text-transform: uppercase;
+	margin: 20px 0;
+}
+
+#service-img{
+	border-radius: 50%;
+}
+
+#service-section h3{
+	color: red;
+}
 /* media queries */
 /* tablet */
 
@@ -287,6 +312,9 @@ address {
 	.container {
 		margin: 0 10px;
 	}
+	header nav#service-nav {
+		background-color: rgb(240, 255, 30);
+	}
 }
 
 /* phone */
@@ -313,4 +341,9 @@ address {
 		display: block;
 		width: 100%;
 	}
+
+	header nav#service-nav {
+		background-color: aquamarine;
+	}
 }
+
