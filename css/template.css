@@ -1,0 +1,182 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+body {
+	width: 876px;
+	margin: 0 auto;
+}
+
+.nav-container header {
+	width: 900px;
+	position: fixed;
+	top: 0px;
+	margin: 0 auto;
+	height: 55px;
+	background: white;
+	z-index: 10;
+	display: flex;
+	justify-content: space-between;
+}
+
+.nav-container header nav {
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.nav-container header img {
+	height: 45px;
+	margin-top: 10px; 
+}
+
+.nav-container nav a {
+	display: inline-block;
+	text-decoration: none;
+	color: lightgray;
+  	height: 50px;
+	font-size: 14px;
+	flex-grow: 1;
+	padding-top: 18px;
+	padding-left: 8px;
+	margin-right: 2px;
+	margin-top: 5px;
+	transition: all ease-out 400ms;
+	z-index: 100;
+}
+
+.nav-container nav a:hover {
+  box-shadow: inset 0px 2px 6px 2px rgba(0,0,0,0.4);
+  color: black;
+  z-index: 1000;
+}
+
+
+
+
+footer {
+  text-align: center;
+	font-size: 14px;
+	margin-bottom: 25px;
+}
+
+@keyframes pulse {
+ from { transform: scale(1); }
+ to { transform: scale(1.2); }
+}
+
+
+@media (max-width: 800px) {
+  body {
+    width: 90%;
+  }
+
+  .nav-container header {
+    width: 90%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-around;
+    height: 120px;
+  }
+
+  .nav-container header nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav-container header img {
+    position: relative;
+	}
+}
+
+@media (max-width: 500px) {
+  body {
+    width: 90%;
+  }
+
+  .nav-container header {
+    width: 100%;
+    height: 400px;
+    position: static;
+  }
+
+  .nav-container header nav {
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-container header nav a:nth-child(1) {
+    border-top: 1px solid lightgray;
+  }
+
+  .nav-container header nav a {
+    width: inherit;
+    border-bottom: 1px solid lightgray;
+    text-align: center;
+	}
+}
