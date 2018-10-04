@@ -345,12 +345,10 @@ li {
 }
 
 @media only screen and (max-width: 800px) {
-     body {
-       background-color: lavender;
+    /* body {
         max-width:100%;
-   /*     width: 800px;*/
      }
-    
+    */
 
     .container{
            max-width: 800px;
@@ -372,9 +370,18 @@ li {
         align-items: center;
     }
 
+    nav{
+        width: 800px;
+        justify-content: space-around;
+    }
+
     nav a{
         margin: 20px;
-        font-size: 18px;
+        font-size: 16px;
+    }
+
+    a {
+        color: #d3d3d3;
     }
 
      .logo{
@@ -383,17 +390,50 @@ li {
     margin: 10px 0;
     }
 
+    .mainBody{
+         margin-left: 2%;
+          width: 96%;
+    }
+
     .codeSnippet{
         display: none;
     }
 
      .firstSection{
     width: 800px;
-    /* height: 400px; */
+     height: 375px; 
     justify-content: center;
     display: flex;
     align-items: center;
     }
+
+    .upperMain{
+        width: 99%;
+    }
+
+
+    .upperMain, .lowerMain{
+        width: 98%;
+        flex-direction: row;
+        height: inherit;
+        align-items: flex-start;
+    }
+
+    .middle-img {
+    width: 765px;
+    }
+
+    .child1, .child2{
+        justify-content: space-between;
+        align-items: center;
+        padding: 25px 0;
+         width: inherit;
+    }
+
+    .child1 {
+        height: inherit;
+    }
+
 }
 @media only screen and (max-width: 500px) {
 
@@ -417,6 +457,8 @@ li {
      border-bottom: 1px solid black;
      display: flex;
     justify-content: center;
+
+
     }
 
     nav{
@@ -436,7 +478,7 @@ li {
     }
 
     .firstSection{
-       width: 500px;
+    width: 500px;
     height: 300px;
     justify-content: center;
     display: flex;
