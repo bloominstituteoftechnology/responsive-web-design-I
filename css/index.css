@@ -1,7 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -52,6 +49,10 @@ table {
     box-sizing: border-box;
 }
 
+html {
+	font-size: 62.5%;
+}
+
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
@@ -69,57 +70,61 @@ body {
 	display: flex;
 	justify-content: center;
 }
+
 .container {
-	width: 880px;
+	max-width: 880px;
+	width: 100%;
 }
 
 /* header */
 header {
 	display: flex;
 	justify-content: space-between;
+	background-color: white;
 	align-items: center;
 	margin-top: 25px;
+	z-index: 80;
+	width: 100%;
+	max-width: 880px;
 }
-header nav {
+
+nav {
 	display: flex;
+	align-items: center;
 	justify-content: space-between;
-  width: 690px;
+  max-width: 750px;
+	width: 77%;
 }
 
 header nav a {
-  display: inline-block;
-  font-size: 14px;
-  color: gray;
-  text-decoration: none;
-}
-
-header nav a:hover {
-  text-decoration: underline;
-}
-
-header nav a:last-child {
-  margin-right: 65px;
+	padding: 20px 2.5%;
+	font-size: 1.6rem;
+	color: gray;
+	text-decoration: none;
 }
 
 header .logo {
-  display: inline-block;
+  display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 5.2%;
 }
+
+
 
 /* cta */
 .cta {
-	width: 880px;
-	height: 524px;
 	display: flex;
-	justify-content: space-evenly;
 	align-items: center;
+	justify-content: space-evenly;
+	margin-top: 60px;
+	margin-bottom: 30px;
 }
 .cta-text {
 	display: flex;
+	font-size: 7rem;
 	flex-direction: column;
-	justify-content: space-between;
 	align-items: center;
-  font-size: 77px;
-  text-align: center;
 }
 
 .cta-text button {
@@ -145,17 +150,34 @@ header .logo {
 	flex-direction: column;
 }
 
+h3 {
+	font-size: 2rem;
+}
+
+h4 {
+	font-size: 1.8rem;
+}
+
 .top-content {
 	display: flex;
+	margin: 30px 0px;
 	justify-content: space-between;
 }
 
+.text-content p {
+	font-size: 1.4rem;
+}
+
 .top-content .text-content {
-  width: 410px;
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+  width: 47%;
 }
 
 .middle-img {
   margin: 45px 0px;
+	width: 100%;
 }
 
 .bottom-content {
@@ -164,30 +186,83 @@ header .logo {
 }
 
 .bottom-content .text-content {
-	width: 275px;
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+	justify-content: space-between;
+	width: 30%;
 }
 
 
 .contact {
-  padding: 39px 10px 0;
+  margin-top: 24px;
+	display: flex;
+	flex-direction: column;
 }
 
 .contact p {
-  margin: 20px 0;
+	font-size: 1.3rem;
+  margin: 10px 0;
 }
 
 footer {
   margin: 32px 0;
-  text-align: center;
-  font-size: 14px;
+	display: flex;
+	align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
 }
 
 
 
+/* TABLET VIEW */
+
+@media (max-width:800px){
+    .container {
+			width: 95%;
+		}
+
+		header.logo {
+			margin: 0px;
+		}
+
+		nav {
+			margin-top: 10px;
+			width: 100%;
+		}
+
+		header {
+			flex-direction: column-reverse;
+			position: static;
+		}
+
+		.cta {
+			margin-top: 35px;
+		}
+
+    .cta img {
+        display: none;
+    }
+
+}
 
 
+/* MOBILE VIEW */
 
+@media (max-width: 500px){
+		.container {
+			width: 95%;
+		}
 
+		nav {
+			flex-direction: column;
+			width: 500px;
+			border-bottom: 2px solid grey;
+		}
 
-
-/* buffer for code above */
+		nav a {
+			text-align: center;
+			border-top: 2px solid grey;
+			width: 100%;
+		}
+}
