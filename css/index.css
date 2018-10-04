@@ -1,4 +1,25 @@
-/* Responsive Web Design */
+/* ---- Responsive Web Design ---- */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -35,84 +56,131 @@ table {
     box-sizing: border-box;
 }
 
-body {
+html, body {
     margin: 0;
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
 }
 
-/* -- Desktop first -- */
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+/* ----- Desktop first ----- */
 header {
     display: flex;
     justify-content: space-between;
-    width: 876px;
+    width: 80%;
     margin: 0 auto;
-    border: 5px dashed teal;
     display: flex;
     align-items: center;
-    background-color: yellow;
 }
 
-header a {
+.container {
+    display: flex;
+    width: 876px;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
     text-decoration: none;
     color: grey;
     margin: 20px;
+    font-family: 'Titillium Web', sans-serif;
 }
 
 .innovation {
+    display: flex;
+    flex-wrap: wrap;
     width: 876px;
     align-items: center;
-    justify-content: center;
-    border: 2px dashed blue;
-    margin-bottom: 400px;
-    border: 3px dashed black;
+    justify-content: space-between;
+    padding: 50px 0px; 
 }
 
 .innovation-child {
     display: flex;
-    flex-wrap: wrap;
-    width: 50%;
-    font-size: 78px;
+    height: 350px;
+    width: 45%/*438px*/;
+    font-size: 74px;
     font-family: 'Bangers', cursive;
     text-align: center;
-    border: 2px solid black;
-    margin: 5px;
+    justify-content: center;
+    flex-direction: column;
 }
-
-.left {
-    display: flex;
-    border: 2px solid purple;
-    position: absolute;
-    left: 150px;
-}
-
-.right {
-    display: flex;
-    border: 2px solid purple;
-    position: absolute;
-    right: 0px;
-}
-
-
 
 a.button {
+    display: flex;
+    width: 140px;
     font-size: 16px;
     font-family: 'Titillium Web', sans-serif;
     text-decoration: none;
     color: black;
-    padding: 2px 30px;
+    padding: 6px 30px;
     border: 1px solid black;
-    position: absolute;
-    left: 80px;
-    margin-top: 240px;
+    align-self: center;
+    margin-top: 15px;
 }
 
-.container {
-    width: 876px;
-    margin: 0 auto;
-    border: 5px solid pink;
+/* features-about-services-product-vision */
+section.features-about{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: red;
+    flex-wrap: wrap;
+    padding: 20px 0px;
 }
 
+section.features-about div{
+    display: flex;
+    width: 50%;
+    text-align: left;
+    align-items: left;
+    flex-direction: column;
+}
+
+/* features-about-services-product-vision */
+section.services-product-vision{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0px;
+}
+
+section.services-product-vision div{
+    display: flex;
+    width: 33%;
+    text-align: left;
+    align-items: left;
+    flex-direction: column;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    text-align: left;
+    align-items: left;
+    flex-direction: column;
+}
+
+@media (max-width: 876px) {
+    header {
+        width: 876px;
+    }
+
+    .container {
+        width: 876px;
+    }
+}
+
+@media (max-width: 500px) {
+    header {
+        width: 500px;
+    }
+
+    .container {
+        width: 500px;
+    }
+}
