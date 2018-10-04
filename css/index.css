@@ -74,18 +74,23 @@ body{
 		margin: auto;
 		width: 900px;
 	}
+
 	#top_body nav {
 		padding: 20px 0px 0px 0px;
 		display: flex;
 		align-items: center;
-		justify-content: space-between;
+		justify-content: space-evenly;
 	}
-
+	.nav_logo_tab {
+		display: none;
+	}
 	.nav_buttons {
 	  	color: #d5d2cc;
 		text-decoration: none;
 	}
-
+	.mobile_nav_div {
+		display: none;
+	}
 /* -- main splash page -- */
 .splash {
 	display: flex;
@@ -126,24 +131,24 @@ body{
 
 
 .features_about_border {
-	border-top: solid black 1px;
+	border-top: solid black 2px;
 }
-		.features_about {
-			display: flex;
-			justify-content: space-evenly;
-			flex-wrap: wrap;
-			padding: 40px 0px 40px 0px;
-		}
+	.features_about {
+		display: flex;
+		justify-content: space-evenly;
+		flex-wrap: wrap;
+		padding: 40px 0px 40px 0px;
+	}
 
-		.features, .about {
-			width: 380px;
-		}
-		.middle-img {
-			padding: 40px 0px 10px 0px;
-		}
+	.features, .about {
+		width: 380px;
+	}
+	.middle-img {
+		padding: 40px 0px 10px 0px;
+	}
 
 .services_product_vision {
-	border-bottom: 1px solid black;
+	border-bottom: 2px solid black;
 	display: flex;
 	justify-content: space-evenly;
 	padding: 0px 0px 40px 0px;
@@ -178,64 +183,64 @@ body{
 
 /*-- services css --*/
 
-.services-header-img {
-	padding: 30px 0px 0px 0px;
-}
-
-.services {
-	padding: 0px 0px 20px 0px;
-	border-bottom: 1px solid black;
-}
-	.services_title {
-		font-size: 25px;
-		padding: 30px 0px 0px 0px ;
+	.services-header-img {
+		padding: 30px 0px 0px 0px;
 	}
 
-.the_six_options {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	padding: 20px 0px 40px 0px;
-	border-bottom: 2px solid black
-}
-	.main_div {
-		width: 430px;
-		padding: 20px 20px 30px 20px;
-		border: 1px solid black;
-		margin: 20px 0px 0px 0px;
-		background-color: #F4F3F4;
+	.services {
+		padding: 0px 0px 20px 0px;
+		border-bottom: 1px solid black;
 	}
-		.main_div p {
-			padding: 0px 0px 40px 0px;
+		.services_title {
+			font-size: 25px;
+			padding: 30px 0px 0px 0px ;
 		}
-		.learn_more_button {
+
+	.the_six_options {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		padding: 20px 0px 40px 0px;
+		border-bottom: 2px solid black
+	}
+		.main_div {
+			width: 430px;
+			padding: 20px 20px 30px 20px;
 			border: 1px solid black;
-			text-decoration: none;
-			border-radius: 5px;
-			padding: 8px 40px 8px 40px;
-			background-color: white;
-			font-size: 10px;
-
+			margin: 20px 0px 0px 0px;
+			background-color: #F4F3F4;
 		}
+			.main_div p {
+				padding: 0px 0px 40px 0px;
+			}
+			.learn_more_button {
+				border: 1px solid black;
+				text-decoration: none;
+				border-radius: 5px;
+				padding: 8px 40px 8px 40px;
+				background-color: white;
+				font-size: 10px;
 
-.some_facts {
-	padding: 30px 0px 0px 0px;
-	display: flex;
-	justify-content: space-between;
-}
-	.facts_left_side {
-		width: 400px;
+			}
+
+	.some_facts {
+		padding: 30px 0px 0px 0px;
+		display: flex;
+		justify-content: space-between;
 	}
-		.facts_left_side p {
-			padding: 0px 0px 20px 0px;
+		.facts_left_side {
+			width: 400px;
 		}
-		.facts_left_side ul {
-			margin: 0px 0px 0px 20px;
-		}
-		.facts_left_side ul li{
-			list-style-type: square;
-			padding: 10px 0px 0px 0px;
-		}
+			.facts_left_side p {
+				padding: 0px 0px 20px 0px;
+			}
+			.facts_left_side ul {
+				margin: 0px 0px 0px 20px;
+			}
+			.facts_left_side ul li{
+				list-style-type: square;
+				padding: 10px 0px 0px 0px;
+			}
 
 /* @media */
 
@@ -244,19 +249,54 @@ body{
 		padding: 30px 0px 0px 0px;
 	}
 	#main_contain{
-		width: 800px;
+		width: 700px;
 	}
-	.nav_logo_tab {
-		display: flex;
-		margin: auto;
-	}
-		.nav_logo {
+		.starting_img {
 			display: none;
 		}
-	.nav_buttons {
-		justify-content: space-evenly;
+		.nav_logo_tab {
+			display: flex;
+			margin: auto;
+		}
+			.nav_logo {
+				display: none;
+			}
+			.nav_buttons {
+				justify-content: space-evenly;
+			}
+
+		.middle-img {
+			width: 700px;
+		}
+
+		.features, .about {
+			width: 280px;
+		}
+	.info {
+		width: 195px;
+	}	
+	.address, .phone, .email {
+		padding: 15px 0px 0px 0px;
 	}
-	.starting_img {
+	.copyright {
+		margin: 10px 0px 10px 0px;
+	}
+}
+
+@media(max-width: 500px) {
+	#main_contain {
+		width: 400px;
+	}
+	.mobile_nav_div {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		/*width: 50px;*/
+		margin:auto;
+	}
+	#top_body {
 		display: none;
+	}
+	.mobile_nav {
 	}
 }
