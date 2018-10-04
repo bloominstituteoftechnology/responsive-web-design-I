@@ -1,3 +1,269 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+.container {
+	width: 880px;
+	margin: 0 auto;
+	display:flex;
+	flex-direction:column;
+}
 
 
+a:hover {
+	background: whitesmoke;
+	color: red;
+}
+
+a:link {
+	text-decoration: none;
+	color: grey;
+}
+
+a:visited {
+	color: grey;
+}
+
+.container .nav{
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+	padding: 10px 0px;
+	color: grey;
+}
+.container .nav-child {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.container .header  {
+	display: flex;
+	justify-content: space-between;
+	align-items: center; 
+	padding: 30px;
+}
+
+.container header section div p {
+	font-size: 20px;
+	text-align: center;
+	padding: 5px 40px;
+	border: 2px solid black;
+}
+
+.container .header-text {
+	text-align: center;
+	font-size: 90px;
+}
+
+.container .top-content {
+	display: flex;
+}
+
+.container .top-text {
+	padding: 10px;
+}
+
+.container .middle-img {
+	padding: 10px 0px;
+}
+
+.container .bottom-content {
+	display: flex;
+	padding: 10px 5px;
+}
+
+/* .container .bottom-text {
+} */
+
+.container .contact p {
+	padding: 5px 0px;
+}
+
+.container footer {
+	text-align:center;
+	padding: 20px 0px;
+}
+
+/* services.css */
+
+.SmallHR {
+	size: 2px;
+	padding: 2px;
+}
+
+.services-header-img {
+	border: 1px solid black;
+}
+
+.services-text {
+	display: flex;
+	flex-direction:column;
+	padding: 30px 0px;
+}
+
+.row {
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.box {
+	border: 1px solid black;
+	background: #F4F3F4;
+	justify-content: space-between;
+	margin: 20px;
+	padding: 20px;
+}
+
+.LMbutton {
+	border: 1px black solid;
+	display: inline-block;
+	border-radius: 5px;
+	background: white;
+	margin: 20px 0px 0px 0px;
+	padding: 8px 30px;
+	font-size: 14px;
+}
+
+.services-facts {
+	display:flex;
+	padding: 20px 0px;
+}
+
+.services-facts-text {
+	margin: 0px 20px 0px 0px;
+}
+
+.fact-list {
+	padding: 20px;
+}
+
+.services-info-img {
+	border: 1px solid black;
+}
+
+.fact-list li {
+	padding: 5px;
+}
+
+/*---------------RESPONSIVE DESIGNING-----------*/
+
+@media (max-width: 800px) {
+  .container {
+    width: 80%;
+  }
+
+  .nav {
+    
+    justify-content: center;
+  }
+
+  .nav-child {
+    justify-content: center;
+    order:1
+  }
+
+  .logo-nav {
+    max-width: 800px;
+  }
+
+  .header {
+  }
+
+  .header-text {
+    justify-content: flex-start;
+    margin: 0px 0px 0px 50px;
+  }
+
+  .header-image {
+    display: none;
+  }
+
+  .top-content {
+  }
+
+  .middle-img {
+    
+  }
+
+  .bottom-content {
+    
+  }
+
+  .contact {
+    
+  }
+
+  footer {
+    
+  }
+}
+
+@media (max-width: 500px) {
+
+
+
+}
