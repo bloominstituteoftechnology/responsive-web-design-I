@@ -1,3 +1,530 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+    
+}
+
+h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+/* navigation*/
+
+.container-one {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 70px
+}
+.navigation {
+    width: 1100px;
+    height: 60px;
+    padding-top: 20px;
+    background-color: #88B9DF;
+    border: 1px solid #000B1B;
+    position: fixed;
+    z-index: 1;
+}
+
+a {
+    margin-left: 70px;
+    text-decoration: none;
+    color: /*#C0C0C0;*/ black;
+}
+
+.logo {
+    margin-left: 80px;
+    margin-top: -10px;
+    position: absolute;
+}
+
+
+/* header */
+.header-one {
+    width: 1100px;
+    border-bottom: 1px solid black;
+    margin: 0 auto;
+    padding-bottom: 60px;
+    padding-top: 70px;
+    border-bottom: 1px solid black;
+}
+
+.container {
+    display: flex;
+    justify-content: center; 
+}
+
+.h1-container {
+    font-size: 80px;
+    position: relative;
+    top: 55px;
+    left: 90px;
+}
+
+/* first span element*/
+.move-1 {
+    margin-left: -35px;
+}
+
+/* second span element*/
+.move-2 {
+    margin-left: 80px;
+}
+
+/*
+button {
+    position: relative;
+    right: 182px;
+    bottom: 46px;
+    padding: 5px 40px;
+    border: 1px solid black;
+    background-color: white;
+    font-size: 15px;
+}
+*/
+
+.button-header {
+    align-self: flex-end;
+    position: relative;
+    left: -170px;
+    top: -50px;
+}
+
+.img-container {
+    position: relative;
+    left: 20px;
+}
+
+/* section-one */
+.section-one {
+    width: 1100px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.div-p-h3 {
+    padding-left: 6px;
+    margin-top: 40px;
+}
+
+
+/* section-two */
+.section-two {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.middle-img {
+    width: 1100px;
+}
+
+.section-three {
+    display: flex;
+    margin: 0 auto;
+    border-bottom: 1px solid black;
+    justify-content: center;
+    width: 1100px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+
+.address {
+    position: relative;
+    width: 200px;
+    left: 400px;
+    top: 40px;
+/*
+    margin-left: 400px;
+    margin-top: 40px;
+    padding-bottom: 40px;
+*/
+}
+
+.copyright {
+    margin: 0 auto;
+    width: 213px;
+    padding-bottom: 50px
+
+}
+
+/* Services CSS section/////////////////////*/
+
+.header-img {
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.services-header-img {
+    width: 1100px;
+}
+
+.services-header {
+    display: flex;
+    justify-content: center;
+}
+
+
+.services-h1-text {
+    width: 1100px;
+    margin-top: 40px;
+    padding-bottom: 35px;
+    border-bottom: 1px solid black;
+}
+
+h1 {
+    font-family: 'Bangers', cursive;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+
+.services-categories {
+    margin: 0 auto;
+    width: 1100px;
+    padding-bottom: 20px;
+}
+
+.categories {
+    margin-top: 40px;
+    width: 500px;
+    height: 220px;
+    border: 1px solid black;
+    display: inline-block;
+    padding: 20px 20px;
+    background-color:  #e8e8e8 ;
+}
+
+
+button {
+    position: relative;
+    top: 20px;
+    left: 0px;
+    border-radius: 7%;
+    position: relative;
+    right: 182px;
+    bottom: 46px;
+    padding: 5px 40px;
+    border: 1px solid black;
+    background-color: white;
+    font-size: 15px;
+}
+
+.cat-align-two {
+    margin-left: 90px;
+}
+
+.some-facts-img {
+   margin: 0 auto;
+    width: 1100px;
+}
+
+.cont {
+    margin: 0 auto;
+    width: 1100px;
+}
+
+.mover {
+    display: inline-block;
+    width: 500px;
+}
+
+.move {
+    display: inline-block;
+    margin-left: 170px;
+    position: relative;
+    top: 40px;
+}
+
+ul {
+    margin-top: 20px;
+    margin-left: 20px;
+    list-style-type: initial;
+}
+
+.hr {
+    border-bottom: 1px solid black;
+    width: 1100px;
+   
+}
+
+footer {
+    position: relative;
+    top: 100px;
+}
+
+/* media queries */
+@media (max-width: 800px) {
+    body {
+       
+    }
+    
+    .logo {
+        display: flex;
+        justify-content: center;
+        margin-left: 260px;
+        margin-top: -90px;
+        position: absolute;
+    }
+    
+   
+    .navigation {
+        margin-top: 60px;
+        width: 740px;
+    }
+    
+    .header-one {
+        display: flex;
+        justify-content: column;
+        width: 760px;
+    }
+    
+    .container {
+        margin: 0 auto;
+    }
+    
+    .h1-container {
+        margin-right: 670px;
+        margin-bottom: 100px;
+        display: inline-block;
+    }
+    
+    .button-header {
+        margin-top: 0px;
+        margin-bottom: -50px;
+        margin-left: -667px;
+    }
+    
+    
+    
+    .img-container {
+        display: none;   
+    }
+    
+    .section-one {
+        display: flex;
+        justify-content: space-evenly;
+        width: 750px;
+    }
+    
+   .div-p-h3 h3 {
+        margin-top: -20px;
+        display: inline-block; 
+       
+    }
+    
+    .div-p-h3 {   
+        width: 400px;
+        display: inline-block;
+        padding-right: 40px;
+    }
+    
+    .section-two img {
+        width: 760px;
+    }
+    
+    .section-three {
+        display: flex;
+        justify-content: space-evenly;
+        width: 740px;
+    }
+    
+    .div-h3-p {
+        width: 230px
+    }
+    
+    .address {
+        margin-left: -370px;
+    }
+}
+
+
+@media (max-width: 500px) {
+    
+    
+    body {
+       over-flow: hidden;
+    }
+    .container-one {
+        display: flex;
+        align-items: column;
+        margin-left: 90px;
+        width: 320px;
+    }
+    
+    .navigation {
+        position: relative;
+    }
+     
+    
+    .logo {
+        margin-top: -390px;
+        order: 1;
+    }
+    
+    .nav-anchor-1 {
+        order: 2;
+        border: 1px solid black; 
+        display: block;
+        padding: 16px;
+        
+    }
+    
+    .nav-anchor-2 {
+        order: 3;
+        border: 2px solid black; 
+        display: block;
+        width: 500px;
+        padding: 16px;
+        margin-left: 100px;
+    }
+    
+    .nav-anchor-3 {
+        order: 4;
+        border: 2px solid black; 
+        display: block;
+        width: 500px;
+        padding: 16px;
+        margin-left: 100px;
+    }
+    
+    .nav-anchor-4 {
+        order: 5;
+        border: 2px solid black; 
+        display: block;
+        width: 500px;
+        padding: 16px;
+        margin-left: 100px;
+    }
+    
+    .nav-anchor-5 {
+        order: 6;
+        border: 2px solid black; 
+        display: block;
+        width: 500px;
+        padding: 16px;
+        margin-left: 100px;
+    }
+    
+    .nav-anchor-6 {
+        order: 7;
+        border: 2px solid black; 
+        display: block;
+        width: 500px;
+        padding: 16px;
+        margin-left: 100px;
+    }
+    
+    .header-one {
+        margin-top: 240px;
+        margin-right: 800px;
+        width: 480px;
+        
+    }
+    
+    .section-one {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .div-p-h3 {
+        width: 500px;
+        padding: 0 20px 0 20px;
+    }
+    
+    .section-width {
+        width: 20px;
+    }
+    
+    .section-two  {
+        display: flex;
+        width: 100px;
+    }
+    
+    .section-two{
+        
+        
+    }
+    
+    
+    .section-three {
+        display: flex;
+        flex-direction: column;
+    
+    }
+    
+    .div-h3-p {
+        width: 400px;
+        padding: 10px;
+        margin-left: 5px;
+        
+    }
+     
+}
+    
+   
+
+
+
+
+
+
+
+
+
 
