@@ -1,3 +1,170 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+
+/********************/
+/* CSS for homepage */
+/********************/
+
+h1 {
+  font-size: 90px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+
+nav .links {
+  width: 1000px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.copyright {
+  text-align: center;
+  margin: 30px;
+}
+
+header .header {
+  display: flex;
+  justify-content: center;
+  margin: 100px 40px 40px;
+}
+
+header .header .headerTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-right: 40px;
+}
+
+header .header .headerTitle button {
+  padding: 3px 40px;
+  align-self: center;
+}
+
+.container .bigSec1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+section {
+  margin: 25px 0px;
+}
+
+section p {
+  font-size: 20px;
+}
+
+.container>img {
+  width: 100%;
+}
+
+.container .bigSec2 {
+  display: flex;
+  justify-content: space-between;
+}
 
 
+/*****************/
+/* Media queries */
+/*****************/
+
+/* Tablet View */
+
+@media (max-width: 800px) {
+  nav {
+    flex-direction: column;
+  }
+
+  nav .links {
+    width: 800px;
+  }
+
+  nav .logo {
+    order: -1;
+  }
+
+  .container {
+    width: 700px;
+  }
+
+  header .header {
+    margin: 30px 0px;
+  }
+
+  header .header img {
+    display: none;
+  }
+
+  header .header .headerTitle h1 {
+    font-size: 70px;
+  }
+
+  section {
+    margin: 25px 20px 25px 0px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+}
+
+/* Mobile view */
+@media (max-width: 500px) {
+  header {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav .links {
+    width: 500px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  nav .links a {
+    width: 500px;
+    border-top: 1px solid black;
+    padding: 20px;
+    font-size: 20px;
+    margin: 0px;
+    text-align: center;
+  }
+
+  nav .links a:last-child {
+    border-bottom: 1px solid black;
+  }
+
+  .container {
+    width: 400px;
+  }
+
+  .container .bigSec1, .container .bigSec2 {
+    flex-direction: column;
+  }
+
+  p {
+    font-size: 17px;
+  }
+
+  h2 {
+    font-size: 17px;
+  }
+  
+}
