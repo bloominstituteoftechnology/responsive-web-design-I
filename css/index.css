@@ -1,6 +1,6 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
-/* Meyers CSS Reset */
+/**** Meyers CSS Reset ****/
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -251,13 +251,6 @@ h5 {
     padding-bottom: 30px;
 }
 
-
-/*.container .header header {
-	background-color: white;
-	display: flex;
-	flex-direction: column;
-}*/
-
 /* Parent to our nav */
 .container .header nav {
     display: flex;
@@ -282,12 +275,6 @@ h5 {
     line-height: 25px;
     padding-bottom: 20px;
 }
-
-/*
-.header header nav a .current {
-	color: rgb(70, 167, 70);
-}
-*/
 
 .container .header header .header-image img {
     width: 1000px;
@@ -465,4 +452,50 @@ section .boxes .android button {
 .container footer {
     padding: 40px;
     text-align: center;
+}
+
+
+
+/***** Media Queries *****/
+@media (max-width: 500px) {
+    .container .header .flex header nav {
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        padding: 0 20px 0 20px;
+    }
+
+    .container .header .flex header nav a {
+        border-bottom: 1px solid gray;
+        width: 100%;
+        text-align: center;
+    }
+
+    .container .header .flex header nav img {
+        margin-top: 20px;
+        margin-right: 140px;
+    }
+
+    .container .header header .get-started .innovation {
+        margin-left: 100px;
+        font-size: 70px;
+    }
+
+    .container .header header .get-started .innovation .photo img {
+        display: none;
+    }
+}
+
+@media (max-width: 800px) {
+    .container .header .flex header {
+        margin: 60px;
+    }
+
+    .get-started .innovation h1 {
+        text-align: center;
+    }
+
+    .get-started .photo img {
+        display: none;
+    }
 }
