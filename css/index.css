@@ -217,7 +217,7 @@ footer {
         bottom: 5px;
     }
   
-    }
+    
     .services {
         width: 30%;
     }
@@ -231,12 +231,114 @@ footer {
         justify-content: space-between;
         
     }
-
 }
 
-@media (max-width: 400px) {
+
+
+@media (max-width: 450px) {
     body {
-        background: pink;
+        /* background: pink; */
+        width: 400px;
+        display: flex;
+        flex-wrap: wrap;
     }
-    
-}
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        /* background: blue; */
+        border-bottom: 1px solid black;
+        margin-bottom: 40px;
+        height: 200px;
+        align-items: center;
+    }
+
+    nav a {
+        width: 100%;
+        border-top: 1px solid black;
+        text-align: center;
+        padding-top: 5px;
+        
+
+    }
+    .logo {
+        width: 160px;
+        left: 120px;
+        /* background: blue; */
+        margin-bottom: 1px;
+        
+    }
+    .mainsec {
+        /* background: yellow; */
+        height: 300px;
+    }
+    .topcontainer {
+        /* background: green; */
+        height: 350px;
+    }
+    .headline {
+        text-align: center;
+        position: relative;
+        bottom: 100px;
+    }
+    .middletop {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .features {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+    .about {
+        width: 90%;
+        margin: auto;
+    }
+    .middlebottom {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        bottom: 80px;
+    }
+    .services {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 40px;
+        margin-top: 5px;
+    }
+    .product {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+    .vision {
+        width: 90%;
+        margin: auto;
+    }
+
+    .middle-img {
+        width: 90%;
+        margin: auto;
+        margin-top: 1px;
+        background: blue;
+    }
+
+    .contact {
+        margin-left: 10px;
+    }
+
+    nav {
+        /* background: blue; */
+        position: relative;
+        bottom: 40px;
+    }
+    .logo {
+        /* background: orange; */
+        margin-bottom: 1px;
+        /* padding-bottom: 1px; */
+        
+    }
+
+
+
+}   
+
