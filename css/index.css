@@ -186,9 +186,9 @@ address {
 @media only screen and (max-width: 800px) {
 
 	/*--------------------------------------wrapper and debugging color*/
-	body {
+	/* body {
 		background: lightblue;
-	}
+	} */
     .wrapper {
 		width: 95%;
 		margin: 0 auto;
@@ -241,25 +241,51 @@ address {
 /*---------------------------------------MOBILE DISPLAYS*/
 @media only screen and (max-width: 500px) {
 
+
+/* 	
 	body {
+		border: 1px solid black;
 		background-color: red;
-	}
-
-	nav {
+	} */
+/*-----------------------------------------MOBILE Wrapper*/
+	.wrapper {
 		width: 100%;
+		margin: 0 auto;
 	}
-
+/*----------------------------------------Mobile NAV*/
 	.nav-container {
-		width: 100%;
 		margin: 0 auto;
 		display: flex;
 		flex-direction: column;
 		align-content: center;
-		border: 1px solid black;
 	}
 
 	.links {
 		flex-direction: column;
-		border: 1px solid black;
+		text-align: center;
+	}
+
+	.links a {
+		padding: 20px;
+		border-top: 1px solid black;
+	}
+
+	.links a:last-child {
+		border-bottom: 1px solid black;
+	}
+
+	/*----------------------------------MOBILE CONTENT*/
+
+	.top-section {
+		flex-direction: column;
+	}
+
+	.top-section section,
+	.bottom-section section {
+		padding-bottom: 30px;
+	}
+
+	.bottom-section {
+		flex-direction: column;
 	}
 }
