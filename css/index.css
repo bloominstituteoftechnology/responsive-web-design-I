@@ -86,17 +86,20 @@ nav{
 
     justify-content: space-between;
 }
+.navList{
+    width: 60%;
+    display:flex;
+    justify-content: space-around;
+}
 
 
 
-
-.navList a {
+.navList a{
     /*margin-left:80px;*/
     color: lightgray;
     padding-top: 20px;
     text-decoration: none;
     color:lightgray;
-
 }
 
 .logo{
@@ -238,8 +241,6 @@ button{
         /* border:10px solid red; */
         padding-top: 20px;
 
-
-
         /*margin-top:20px;*/
 
         display: flex;
@@ -250,6 +251,7 @@ button{
         display : flex;
         justify-content: space-around;
         padding-top: 30px;
+        width: 100%;
 
     }
     nav a {
@@ -263,9 +265,6 @@ button{
         align-self: center;
     }
 
-}
-
-@media (max-width:800px){
     .header1 {
         width: 80%;
         height: 400px;
@@ -321,7 +320,7 @@ button{
 
     nav {
         width:100%;
-        height: 470px;
+        height: 460px;
         /* border:10px solid red; */
         padding-top: 40px;
 
@@ -334,7 +333,7 @@ button{
         display: flex;
         flex-flow: column-reverse;
         justify-content: space-between;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
         margin-left: 0;
         text-align: center;
         font-size: 25px;
@@ -349,6 +348,7 @@ button{
     nav .navList {
         display: flex;
         flex-flow: column;
+        width:100%;
     }
 
     nav .navList a {
