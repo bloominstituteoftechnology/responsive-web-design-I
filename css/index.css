@@ -2,28 +2,25 @@
 /* Your code starts here! */
 
 .nav-container section {
-	height: 450px;
-	position: relative;
 	margin-top: 70px;
 	padding-bottom: 70px;
 	border-bottom: 1px solid black;
+	display: flex;
+	justify-content: space-between;
 }
 
- .nav-container section img {
-	 position: absolute;
-	 right: 0px;
- }
-
 .get-started {
-	display: inline-block;
-	width: 50%;
+	display: flex;
+	flex-grow: 1;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	text-align: center;
-	padding-top: 65px;
 }
 
 .get-started h1 {
-	display: inline-block;
 	font-size: 65px;
+	margin-bottom: 15px;
 }
 
 .get-started button {
@@ -41,12 +38,10 @@
   box-shadow: 0 5px 10px 0px rgba(0,0,0,0.35);
 }
 
-.get-started button:hover + h1 {
-  color: blue;
-}
-
 .container {
 	border-bottom: 1px solid black;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .container h2 {
@@ -54,32 +49,36 @@
 }
 
 .container .top {
-	display: inline-block;
-	width: 434px;
-	margin: 40px 0;
+	 width: 50%;
+	 margin: 40px 0;
  }
 
 .container .bottom {
-	display: inline-block;
-	width: 288px;
-	margin: 40px 0;
+	 width: 33%;
+	 margin: 40px 0;
  }
 
 .contact {
-	margin: 40px 0;
+	 margin: 40px 0;
  }
 
 .contact p {
-	margin: 20px 0;
+	 margin: 20px 0;
  }
 
 
 @media (max-width: 800px) {
   .nav-container section {
+    margin-top: 120px;
+    height: 350px;
     display: flex;
     justify-content: center;
   }
 
+  .get-started {
+    display: flex;
+    flex-direction: column;
+  }
   .nav-container section img {
     display: none;
   }
