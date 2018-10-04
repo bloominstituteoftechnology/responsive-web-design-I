@@ -1,9 +1,3 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -67,92 +61,111 @@ h1, h2, h3, h4, h5 {
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 header{
-	display: flex;
-	justify-content: space-around;
-	padding: 20px;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+header img{
+  padding-bottom: 20px;
+}
+
+header nav{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 10px;
+  flex-direction: column;
+  align-items: center;
+  font-size: 24px;
+  border-top: 1px solid black;
 }
 
 header hr{
-  display: none;
-}
-header nav{
-	width: 60%;
-	display: flex;
-	justify-content: space-between;
+  display: block;
+  width: 100%;
+  height: 1px;
 }
 
 header nav a{
-	text-decoration: none;
-	color: lightgray;
-}
-
-.innovation-section{
-	display: flex;
-	justify-content: space-around;
-	padding: 30px;
-	padding-bottom: 50px;
+  text-decoration: none;
+  color: lightgray;
+  padding: 20px 0px;
 }
 
 .innovation-section img{
-	margin-right: 40px;
+  display: none;
+}
+
+.innovation-section{
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 0px;
 }
 
 .innovation{
-	padding: 50px;
-	margin-left: 40px;
-	width: 40%;
-	text-align: center;
+  padding: 0px;
+  margin: 0 auto;
+  width: 90%;
+  text-align: center;
 }
 
 .innovation h1{
-	font-size: 70px;
+  font-size: 70px;
 }
 
 .innovation p{
-	display: inline-block;
-	padding: 5px 30px;
-	border: 1px solid black;
+  display: inline-block;
+  border: 1px solid black;
+  padding: 5px 40px;
 }
 
- hr{
-	 width: 90%;
-   border: 0;
-   height: 2px;
-   background: #000;
-   background-color: #000;
- }
+hr{
+  width: 90%;
+  border: 0;
+  height: 2px;
+  background: #000;
+  background-color: #000;
+}
 
 .primary_info{
   width: 90%;
-	display: flex;
-	justify-content: space-between;
-	margin: 0 auto;
-	padding: 20px 0px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 20px 0px;
+  flex-direction: column;
 }
 
 .features{
-	padding: 20px 0px;
-	text-align: left;
-	width: 45%;
+  padding: 20px 0px;
+  text-align: left;
+  width: 100%;
 }
+
 .middle-img{
 	width: 90%;
 	display: block;
 	margin: 0 auto;
  }
 
- .three-sections{
-	 width: 90%;
-	 margin: 0 auto;
-	 padding: 20px 0px;
-	 display: flex;
-	 justify-content: space-between;
- }
+.three-sections{
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px 0px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
 
- .spv{
-	 width: 31%;
-	 padding: 20px 0px;
- }
+.spv{
+  padding: 20px 0px;
+  width: 100%;
+}
+
 
 .contact-section{
 	width: 90%;
@@ -174,7 +187,7 @@ footer{
 	padding: 10px;
 }
 
-/* services page */
+/* // Services // */
 .services-header-img{
 	width: 90%;
 	margin: 0 auto;
@@ -199,9 +212,8 @@ footer{
 	margin: 0 auto;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: center;
 }
-
 
 .product_info{
 	background: #E8E8E8	;
@@ -209,7 +221,7 @@ footer{
 	margin: 10px;
 	border: 1px solid black;
 	display: inline-block;
-	width: 47%;
+	width: 90%;
 	line-height: 18px;
 }
 
@@ -222,14 +234,17 @@ footer{
 
 .fact_container{
 	width: 90%;
-	margin: 10px auto;
-	padding: 20px 0px 30px 0px;
 	display: flex;
 	justify-content: space-between;
+	flex-direction: column-reverse;
+	align-items: center;
+	margin: 10px auto;
+	padding: 20px 0px 30px 0px;
 }
 
 .some_facts{
-	width: 40%;
+	width: 90%;
+	margin: 20px auto;
 }
 
 .some_facts ul{
@@ -239,133 +254,102 @@ footer{
 	list-style-type: disc;
 }
 
-.contact_us_blurb{
-	padding: 30px 0px;
-	width: 90%;
-	margin: 0 auto;
-}
 
-.photo{
-	display: block;
-	width: 50%;
-	margin: 0 auto;
-}
+@media (min-width: 500px){
 
-form{
-	width: 90%;
-	margin: 0 auto;
-}
-
-form p{
-	line-height: 30px;
-	font-style: italic;
-}
-
-@media (max-width: 800px){
- header{
-   width: 100%;
-   flex-direction: column-reverse;
-   align-items: center;
- }
-
- header nav{
-   padding-top: 30px;
-   width: 90%;
-   display: flex;
-   justify-content: space-between;
- }
-
- .innovation-section img{
-   display: none;
- }
- .innovation-section{
- 	display: flex;
- 	padding: 30px;
- 	padding-bottom: 50px;
- }
-
- .innovation{
- 	padding: 0px;
-  margin: 0 auto;
- 	width: 90%;
- 	text-align: center;
- }
-}
-
-@media (max-width: 740px){
-	.products{
-		flex-direction: column;
-
-	}
-
-	.product_info{
-		width: 90%;
-		margin: 20px auto;
-	}
-
-	.fact_container{
-		flex-direction: column-reverse;
-		align-items: center;
-	}
-
-	.some_facts{
-		width: 90%;
-		margin: 20px auto;
-	}
-
-}
-
-@media (max-width: 500px){
   header{
-    margin: 0;
-    padding: 0;
-  }
-  header img{
-    padding-bottom: 20px;
+    width: 100%;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 20px;
   }
 
   header nav{
-    width: 100%;
-    padding-top: 10px;
-    flex-direction: column;
-    align-items: center;
-    font-size: 24px;
-    border-top: 1px solid black;
-  }
-
-  header hr{
-    display: block;
-    width: 100%;
-    height: 1px;
+    display: flex;
+    font-size: 16px;
+    padding-top: 15px;
+    width: 90%;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: none;
   }
 
   header nav a{
-    padding: 20px 0px;
+    padding: 0px;
+  }
+
+  header hr{
+    display: none;
   }
 
   .innovation-section{
-    padding: 50px 0px;
+   display: flex;
+   padding: 30px;
+   padding-bottom: 50px;
   }
 
-  .innovation p{
-    padding: 5px 40px;
+  .innovation{
+   padding: 0px;
+   margin: 0 auto;
+   width: 90%;
+   text-align: center;
   }
 
   .primary_info{
-    flex-direction: column;
+    flex-direction: row;
   }
 
   .features{
-  	width: 100%;
+    width: 45%;
   }
 
   .three-sections{
-    flex-direction: column;
+    flex-direction: row;
   }
 
   .spv{
-    width: 90%;
+    width: 31%;
   }
 
+	.fact_container{
+		flex-direction: row;
+	}
+ }
 
+@media (min-width: 800px){
+  header{
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  header nav{
+    width: 60%;
+    padding-top: 0px;
+
+  }
+
+  header img{
+    padding-bottom: 0px;
+  }
+
+  .innovation-section{
+    padding: 30px;
+    padding-bottom: 50px;
+  }
+
+  .innovation-section img{
+    display: block;
+    margin-right: 40px;
+  }
+
+  .innovation{
+    padding: 50px;
+    margin-left: 40px;
+    width: 40%;
+    text-align: center;
+  }
+
+  .innovation p{
+    padding: 5px 30px;
+  }
 }
