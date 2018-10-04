@@ -144,6 +144,11 @@ section.features-about div{
     flex-direction: column;
 }
 
+/* center image */
+img {
+    max-width: 100%;
+}
+
 /* features-about-services-product-vision */
 section.services-product-vision{
     display: flex;
@@ -168,16 +173,43 @@ footer {
 }
 
 /* Desktop first media queries */
-@media (max-width: 1400px) {
-    /* 800 - 0 */
+@media (max-width: 800px) {
+    /* 800 - 600 */
+    header {
+        width: 600px;
+    }
     .container {
+        width: 600px;
         border: 3px solid rgb(117, 117, 223);
+    }
+    .right img { 
+        visibility: hidden;
+        transform: scale(0);
+    }
+    .right {
+        transform: scale(0);
+    }
+    .left {
+        display: flex;
+        width: 100%;
+        font-size: 74px;
+        font-family: 'Bangers', cursive;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .right {
+        display: none;
     }
 } 
 
-@media (max-width: 1200px) { 
-    /* 500 - 0 */
+@media (max-width: 600px) { 
+    /* 600 - 0 */
+    header {
+        width: 300px;
+    }
     .container {
+        width: 300px;
         border: 3px solid rgb(230, 133, 133);
     }
 }
