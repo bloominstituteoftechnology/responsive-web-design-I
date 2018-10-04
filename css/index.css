@@ -149,7 +149,9 @@ button {
 }
 
 .middle-img {
-	margin: 35px 0px;
+  margin: 35px 0px;
+  width: 100%;
+  height: auto;
 }
 
 /* footer */
@@ -237,8 +239,11 @@ footer {
 /* tablet media view */
 
 @media (max-width: 800px) {
+  .container {
+    width: 95%;
+  }
+
   header {
-    border: 1px solid purple;
     flex-direction: column-reverse;
     margin: 0;
     height: 140px;
@@ -246,10 +251,23 @@ footer {
   }
 
   header nav {
+    width: 90%;
     padding: 0;
+  }
+
+    header nav a:last-child{
+      margin-right: 0;
+  }
+
+  main .cta {
+    justify-content: center;
   }
 
   main .cta .header-img {
     display: none;
+  }
+
+  .text-content {
+      margin: 0 5px;
   }
 }
