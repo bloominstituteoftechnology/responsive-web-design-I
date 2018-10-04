@@ -1,3 +1,240 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 
+
+/*--------------------------------------Fonts, Colors and Styles*/
+h1 {
+	font-size: 80px;
+}
+
+.wrapper {
+	width: 50%;
+	margin: 0 auto;	
+}
+
+/*---------------------------------------NAV POSITIONING*/
+nav {
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.links a {
+    align-self: space-around;
+}
+
+/*----------------------------------------POSITIONING THE TAGLINE*/
+.tagline {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 1px solid black;
+    padding-bottom: 100px;
+}
+
+.tagline-right {
+    margin-right: 15%;
+    text-align: center;
+    align-self: center;   
+}
+
+.button {
+    border: 1px solid black;
+    padding: 10px;
+    width: 200px;
+    margin: 0 auto;
+}
+
+/*------------------------------------------Positioning top section of main content*/
+
+.top-section {
+	padding: 40px 0;
+	/* border: 1px solid black; */
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+
+.top-section p {
+	margin-right: 15px;
+}
+
+.middle-image {
+	width: 100%;
+	padding-bottom: 40px;
+}
+
+.bottom-section {
+	padding-bottom: 40px;
+	border-bottom: 1px solid black;
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-content: center;
+}
+
+.bottom-section p {
+	margin-right: 15px;
+}
+
+/*------------------------------------------FOOTER POSITIONING*/
+footer {
+	width: 50%;
+	margin: 0 auto;
+}
+
+address {
+	padding: 20px 0;
+}
+
+.cr-container {
+	height: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+/*------------------------------------------tablet MEDIA QUERIES*/
+
+@media (max-width: 800px) {
+
+	/*--------------------------------------wrapper and debugging color*/
+	body {
+		background: lightblue;
+	}
+    .wrapper {
+		width: 95%;
+		margin: 0 auto;
+	}
+
+	nav {
+		width: 100%;
+		padding: 10px 20px;
+	}
+
+	.nav-container {
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.nav-image {
+		order: -1;
+		padding: 20px 0 30px;
+	}
+
+	.links {
+		width: 100%;
+		align-self: space-between;
+	}
+
+
+	/*------------------------------------Tagline*/
+	.tagline img {
+		display: none;
+	}
+
+	.tagline {
+		width: 100%;
+		justify-content: center;
+		align-content: center;
+		margin: 0 auto;
+		padding-bottom: 50px;
+		border-bottom: 2px solid black;
+	}
+
+	.tagline-right {
+		margin: 0;
+		padding-bottom: 10px;
+	}
+
+	footer {
+		width: 95%;
+	}
+}
