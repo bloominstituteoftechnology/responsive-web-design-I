@@ -1,0 +1,274 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  font-family: 'Roboto Mono', monospace, 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Bangers', cursive;
+}
+
+/*
+
+Home Mobile style
+
+*/
+.nav-header {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.nav-header nav {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.nav-header img {
+  margin: 2em 0 1em 0;
+}
+
+.nav-header nav a {
+  text-decoration: none;
+  text-align: center;
+  color: grey;
+  font-size: 22px;
+
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+  width: 100%;
+  padding: 12px 0;
+}
+
+.nav-header nav a:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  color: black;
+}
+
+.page-head {
+  margin-bottom: 6em;
+}
+
+.page-head img {
+  display: none;
+}
+
+.get-started {
+text-align: center;
+}
+
+.get-started h1 {
+  font-size: 80px;
+  margin: 0.5em 0;
+}
+
+.get-started a {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+
+  border: 1px solid black;
+  padding: 5px 30px;
+}
+
+.get-started a:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.main-content img {
+  width: 95%;
+}
+
+.top-content, .bottom-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-block {
+  margin-top: 3em;
+  width: 70%
+}
+
+.content-block:last-of-type {
+  margin-bottom: 2em;
+}
+
+.content-block h2 {
+  font-size: 26px;
+  margin-bottom: 1em;
+}
+
+.contact-block {
+	padding: 18px 35px;
+}
+
+.contact-block h3 {
+	font-weight: bold;
+	font-size: 18px;
+	margin-bottom: 1em;
+}
+
+.contact-block p {
+	margin-bottom: 1em;
+}
+
+#copyright {
+	text-align: center;
+	margin-top: 0.3em;
+}
+
+@media (min-width: 500px) {
+  .nav-header img {
+    margin: 3em auto;
+  }
+
+  .nav-header nav {
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 3em;
+  }
+
+  .nav-header nav a {
+    border: none;
+  }
+
+  .main-content {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .top-content, .bottom-content {
+    flex-direction: row;
+    margin-left: 2em;
+  }
+
+  .top-content  p, .bottom-content p {
+    width: 90%;
+  }
+
+  .content-block {
+    width: 60%;
+    margin: 2em 0;
+  }
+}
+
+@media (min-width: 800px) {
+  body {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .nav-header {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2em;
+  }
+
+  .nav-header nav {
+    width: 75%;
+    margin: 0;
+  }
+
+  .nav-header img {
+    margin: 0;
+  }
+
+  .nav-header nav a {
+    align-items: center;
+  }
+
+  .page-head img {
+    display: block;
+  }
+
+  .page-head {
+    display: flex;
+    justify-content: space-around;
+    margin: 6em 3em 0 0;
+    width: 100%;
+  }
+
+
+  .main-content {
+    margin-top: 5em;
+  }
+
+  .main-content img {
+    width: 100%;
+  }
+
+  .top-content, .bottom-content {
+    margin: 0;
+  }
+
+  .content-block p {
+    margin: 0;
+  }
+}

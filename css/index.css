@@ -1,3 +1,440 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 55.5%;
+  margin: 0 auto;
+  font-family: 'Roboto Mono', monospace, 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Bangers', cursive;
+}
+
+/*
+
+Navigatio Bar
+
+*/
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  margin: 1.5em auto;
+}
+
+.nav-header nav{
+  width: 72%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-header img {
+  margin-right: 2.25em;
+	margin-bottom: 0.75em;
+}
+
+.nav-header nav a {
+  text-decoration: none;
+  color: grey;
+	width: 60%;
+	padding-left: 13px;
+}
+
+.nav-header nav a:hover {
+	animation: text-grow 500ms forwards;
+}
+
+@keyframes text-grow {
+	from {
+		font-size: inherit;
+		letter-spacing: inherit;
+		color: inherit;
+		font-weight: inherit;
+	}
+	to {
+		font-size: 18px;
+		letter-spacing: 2px;
+		color: black;
+		font-weight: bold;
+	}
+}
+/*
+
+Home Page - Desktop
+
+*/
+.page-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4em;
+  padding-right: 35px;
+}
+
+.page-head img {
+	margin-left: 4.5em;
+	margin-bottom: 15px;
+}
+
+.get-started {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 65%;
+}
+
+.get-started h1 {
+	margin: 0.1em 0;
+	margin-top: 0.75em;
+	margin-left: 1.75em;
+  text-align: center;
+  font-size: 74px;
+}
+
+.get-started a {
+  text-decoration: none;
+  color: black;
+  margin-bottom: 3.2em;
+	margin-left: 7.75em;
+  padding: 7px 35px;
+  border: 1px solid black;
+}
+
+.get-started a:hover {
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.main-content {
+	width: 100%;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	margin-top: 5em;
+	margin-bottom: 1em;
+	padding: 2em;
+}
+
+.main-content img {
+	padding: 23px 5px;
+	width: 100%
+}
+
+.top-content {
+	display: flex;
+	justify-content: space-around;
+}
+
+.bottom-content {
+	display: flex;
+}
+
+.content-block {
+	width: 45%;
+}
+
+.content-block h2{
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 1.4em;
+}
+
+.contact-block {
+	padding: 18px 35px;
+}
+
+.contact-block h3 {
+	font-weight: bold;
+	font-size: 18px;
+	margin-bottom: 1em;
+}
+
+.contact-block p {
+	margin-bottom: 1em;
+}
+
+#copyright {
+	text-align: center;
+	margin-top: 0.3em;
+}
+/*
+
+Services - Desktop
+
+*/
+.services-head{
+	display: flex;
+	flex-wrap: wrap;
+
+}
+
+.services-header-img {
+	width: 100%;
+}
+
+.services-head h1  {
+	font-size: 48px;
+	margin-top: 40px;
+	padding: 0px;
+}
+
+.services-content {
+	margin: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	margin: 3em auto;
+	padding: 2em 0;
+}
+
+.service-box {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid black;
+	margin-bottom: 2em;
+	width: 40%;
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.service-box h2 {
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+.service-box p {
+	margin-left: 20px;
+}
+
+.service-box a {
+	text-decoration: none;
+	text-align: center;
+	border: 1px solid black;
+	border-radius: 3px;
+	width: 25%;
+	padding: 0.5em 0;
+	color: black;
+	background-color: white;
+	font-size: 14px;
+	margin: 20px 0 20px 20px;
+}
+
+.service-box a:hover {
+	background-color: rgba(0,0,0, 0.6);
+	color: ghostwhite;
+}
 
 
+@media (max-width: 800px) {
+	body {
+		width: 90%;
+	}
+	/*
+
+	Home Page - Tablet
+
+	*/
+	.page-head {
+		margin-left: 3em;
+	}
+
+	.page-head img {
+		display: none;
+	}
+
+	.nav-header {
+		flex-direction: column-reverse;
+		justify-content: center;
+	}
+
+	.nav-header img {
+		margin: 3em auto;
+	}
+
+	.nav-header nav {
+		width: 100%;
+	}
+
+	.get-started {
+		margin: 0 auto;
+		padding: 0;
+	}
+
+	.get-started h1 {
+		margin: 0 auto;
+		margin-top: 1em;
+	}
+
+	.get-started a {
+		margin: 0 auto;
+		margin-top: 2em;
+	}
+	/*
+
+	Services - Tablet
+
+	*/
+	.services-header-img {
+		display: none;
+	}
+
+	.services-head  {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.services-head h1 {
+		margin: 2em 0 1em 0;
+	}
+	.services-head p {
+		padding-left: 25px;
+	}
+
+	.services-content {
+		flex-direction: column;
+		align-items: center;
+	}
+	.service-box {
+		width: 80%;
+	}
+
+	.service-box h2 {
+		font-size: 26px;
+		margin-bottom: .5em;
+	}
+}
+
+@media (max-width: 500px) {
+	body {
+		width: 100%;
+	}
+	/*
+
+	Home Page - Mobile
+
+	*/
+	.nav-header {
+		margin-bottom: 13em;
+	}
+
+	.nav-header img {
+		margin: 10em auto;
+	}
+
+	.nav-header nav {
+		flex-direction: column;
+		margin: 0;
+	}
+
+	.nav-header nav a {
+		font-size: 22px;
+		border-top: 1px solid rgba(0, 0, 0, 0.3);
+		border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+		width: 100%;
+		text-align: center;
+		padding: 12px 0;
+	}
+
+	.page-head {
+		margin: 0 auto;
+		margin-left: 2em;
+
+	}
+
+	.page-head h1 {
+		margin-top: 2em;
+	}
+
+	.get-started a {
+		margin-left: 3.75em;
+	}
+
+	.top-content {
+		flex-direction: column;
+	}
+
+	.bottom-content {
+		flex-direction: column;
+	}
+
+	.content-block {
+		width: 100%;
+		margin-bottom: 2em;
+	}
+	/*
+
+	Services Mobile
+
+	*/
+	.services-head h1 {
+		margin: 3em 0 .5em 0;
+	}
+
+	.service-box {
+		align-items: center;
+		padding: 10px;
+	}
+
+	.service-box p {
+		width: 90%;
+		padding: 20px;
+	}
+
+	.service-box p, .service-box h2, .service-box a {
+		margin: 0;
+	}
+}
