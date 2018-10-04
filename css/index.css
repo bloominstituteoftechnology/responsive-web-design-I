@@ -1,3 +1,240 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+	html, body, div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, img, ins, kbd, q, s, samp,
+	small, strike, strong, sub, sup, tt, var,
+	b, u, i, center,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td,
+	article, aside, canvas, details, embed, 
+	figure, figcaption, footer, header, hgroup, 
+	menu, nav, output, ruby, section, summary,
+	time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+	}
+	/* HTML5 display-role reset for older browsers */
+	article, aside, details, figcaption, figure, 
+	footer, header, hgroup, menu, nav, section {
+		display: block;
+	}
+	body {
+		line-height: 1;
+	}
+	ol, ul {
+		list-style: none;
+	}
+	blockquote, q {
+		quotes: none;
+	}
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+		content: '';
+		content: none;
+	}
+	table {
+		border-collapse: collapse;
+		border-spacing: 0;
+	}
+
+	/* Set every element's box-sizing to border-box */
+	* {
+	    box-sizing: border-box;
+	}
+
+	html, body {
+	    height: 100%;
+	    font-family: 'Titillium Web', sans-serif;
+	}
+
+	h1, h2, h3, h4, h5 {
+	    font-family: 'Bangers', cursive;
+	    letter-spacing: 1px;
+	    margin-bottom: 15px;
+	}
+
+/* Your code starts here! */
+
+body{
+	display: flex;
+	/*align-items: center;*/
+
+}
+	#main_contain {
+		width: 1000px;
+	}
+	#top_body nav {
+		padding: 20px 0px 0px 0px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.nav_buttons {
+	  	color: #d5d2cc;
+		text-decoration: none;
+	}
+
+/* -- main splash page -- */
+.splash {
+	display: flex;
+	justify-content: space-evenly;
+	padding: 40px 0px 40px 0px;
+	align-items: center;
+}
+
+	.get_started_left {
+		width: 200px;
+		flex-direction: column;
+		display: flex;	
+	}
+
+	.get_started_title {
+		display: flex;
+		justify-content: center;
+		font-size: 80px;
+
+	}
+
+	.get_started_button {
+		display: flex;
+		justify-content: center;
+		text-decoration: none;
+		border: 1px solid black;
+		color: black;
+		font-weight: bold;
+	}
+		.get_started_button p {
+			display: flex;
+			align-items: center;
+			height: 40px;		}
+
+		.starting_img {
+			padding: 0px 0px 0px 50px;
+		}
+
+
+.features_about_border {
+	border-top: solid black 1px;
+}
+		.features_about {
+			display: flex;
+			justify-content: space-evenly;
+			flex-wrap: wrap;
+			padding: 40px 0px 40px 0px;
+		}
+
+		.features, .about {
+			width: 380px;
+		}
+		.middle-img {
+			padding: 40px 0px 10px 0px;
+		}
+
+.services_product_vision {
+	border-bottom: 1px solid black;
+	display: flex;
+	justify-content: space-evenly;
+	padding: 0px 0px 40px 0px;
+
+}
+
+	.info {
+		width: 265px;
+	}	
+
+
+.contact_title {
+	padding: 40px 0px 0px 0px;
+	margin: 0px ;
+}
+	.contact {
+		display: flex;
+		flex-direction: column;
+		margin: 0px 0px 0px 25px;
+
+	}
+	.address, .phone, .email {
+		padding: 20px 0px 0px 0px;
+	}
+
+.copyright {
+	display: flex;
+	justify-content: center;
+	margin: 50px 0px 80px 0px;
+	font-size: 18px;
+}
+
+/*-- services css --*/
+
+.services-header-img {
+	padding: 30px 0px 0px 0px;
+}
+
+.services {
+	padding: 0px 0px 20px 0px;
+	border-bottom: 1px solid black;
+}
+	.services_title {
+		font-size: 25px;
+		padding: 30px 0px 0px 0px ;
+	}
+
+.the_six_options {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 20px 0px 40px 0px;
+	border-bottom: 2px solid black
+}
+	.main_div {
+		width: 430px;
+		padding: 20px 20px 30px 20px;
+		border: 1px solid black;
+		margin: 20px 0px 0px 0px;
+		background-color: #F4F3F4;
+	}
+		.main_div p {
+			padding: 0px 0px 40px 0px;
+		}
+		.learn_more_button {
+			border: 1px solid black;
+			text-decoration: none;
+			border-radius: 5px;
+			padding: 8px 40px 8px 40px;
+			background-color: white;
+			font-size: 10px;
+
+		}
+
+.some_facts {
+	padding: 30px 0px 0px 0px;
+	display: flex;
+	justify-content: space-between;
+}
+	.facts_left_side {
+		width: 400px;
+	}
+		.facts_left_side p {
+			padding: 0px 0px 20px 0px;
+		}
+		.facts_left_side ul {
+			margin: 0px 0px 0px 20px;
+		}
+		.facts_left_side ul li{
+			list-style-type: square;
+			padding: 10px 0px 0px 0px;
+		}
+
+/* @media */
 
