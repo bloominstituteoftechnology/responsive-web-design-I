@@ -88,7 +88,7 @@ body{
 	  	color: #d5d2cc;
 		text-decoration: none;
 	}
-	.mobile_nav_div {
+	.mobile_nav {
 		display: none;
 	}
 /* -- main splash page -- */
@@ -284,19 +284,70 @@ body{
 }
 
 @media(max-width: 500px) {
+	body {
+		padding: 0px;
+	}
 	#main_contain {
 		width: 400px;
 	}
-	.mobile_nav_div {
+	.mobile_nav{
 		display: flex;
 		flex-direction: column;
-		flex-wrap: wrap;
-		/*width: 50px;*/
 		margin:auto;
+		align-items: center;
 	}
+		.nav_buttons_mobile, .nav_logo_mobile {
+			padding: 20px 0px 20px 0px;
+		  	color: #d5d2cc;
+		  	text-decoration: none;
+
+		}
+			.border {
+			  flex: 1 1 auto;
+			  width: 400px;
+			  border-bottom: 1px solid black;
+			}
 	#top_body {
 		display: none;
 	}
-	.mobile_nav {
+	.splash {
+		padding: 40px 0px 60px 0px;
+
 	}
+	.get_started_button {
+		margin: 20px 0px 0px 0px;
+	}
+
+	.features_about {
+		padding: 10px 0px 10px 0px;
+	}
+		.features, .about {
+			width: 500px;
+			padding: 40px 0px 0px 0px;
+		}
+		.middle-img {
+			width: 400px;
+			height: 150px;
+		}
+
+	.services_product_vision {
+		justify-content: space-evenly;
+		flex-wrap: wrap;
+		padding: 5px 0px 40px 0px;
+
+	}
+
+	.info {
+		padding: 50px 0px 0px 0px;
+		width: 405px;
+	}	
+	.contact_title {
+
+		padding: 30px 0px 0px 0px;
+		margin: 0px;
+	}
+	.contact {
+		margin: 0px;
+	}
+
 }
