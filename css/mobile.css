@@ -1,0 +1,283 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+header{
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+header img{
+  padding-bottom: 20px;
+}
+
+header nav{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 10px;
+  flex-direction: column;
+  align-items: center;
+  font-size: 24px;
+  border-top: 1px solid black;
+}
+
+header hr{
+  display: block;
+  width: 100%;
+  height: 1px;
+}
+
+header nav a{
+  text-decoration: none;
+  color: lightgray;
+  padding: 20px 0px;
+}
+
+.innovation-section img{
+  display: none;
+}
+
+.innovation-section{
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 0px;
+}
+
+.innovation{
+  padding: 0px;
+  margin: 0 auto;
+  width: 90%;
+  text-align: center;
+}
+
+.innovation h1{
+  font-size: 70px;
+}
+
+.innovation p{
+  display: inline-block;
+  border: 1px solid black;
+  padding: 5px 40px;
+}
+
+hr{
+  width: 90%;
+  border: 0;
+  height: 2px;
+  background: #000;
+  background-color: #000;
+}
+
+.primary_info{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 20px 0px;
+  flex-direction: column;
+}
+
+.features{
+  padding: 20px 0px;
+  text-align: left;
+  width: 100%;
+}
+
+.middle-img{
+	width: 90%;
+	display: block;
+	margin: 0 auto;
+ }
+
+.three-sections{
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px 0px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.spv{
+  padding: 20px 0px;
+  width: 100%;
+}
+
+
+.contact-section{
+	width: 90%;
+	padding-top: 20px;
+	margin: 0 auto;
+}
+ address{
+	 padding: 10px 0px;
+ }
+
+.contact-section a{
+	line-height: 30px;
+	text-decoration: none;
+	color: inherit;
+}
+
+footer{
+	text-align: center;
+	padding: 10px;
+}
+
+@media (min-width: 500px){
+
+  header{
+    width: 100%;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 20px;
+  }
+
+  header nav{
+    display: flex;
+    font-size: 16px;
+    padding-top: 15px;
+    width: 90%;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: none;
+  }
+
+  header nav a{
+    padding: 0px;
+  }
+
+  header hr{
+    display: none;
+  }
+
+  .innovation-section{
+   display: flex;
+   padding: 30px;
+   padding-bottom: 50px;
+  }
+
+  .innovation{
+   padding: 0px;
+   margin: 0 auto;
+   width: 90%;
+   text-align: center;
+  }
+
+  .primary_info{
+    flex-direction: row;
+  }
+
+  .features{
+    width: 45%;
+  }
+
+  .three-sections{
+    flex-direction: row;
+  }
+
+  .spv{
+    width: 31%;
+  }
+ }
+
+@media (min-width: 800px){
+  header{
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  header nav{
+    width: 60%;
+    padding-top: 0px;
+
+  }
+
+  header img{
+    padding-bottom: 0px;
+  }
+
+  .innovation-section{
+    padding: 30px;
+    padding-bottom: 50px;
+  }
+
+  .innovation-section img{
+    display: block;
+    margin-right: 40px;
+  }
+
+  .innovation{
+    padding: 50px;
+    margin-left: 40px;
+    width: 40%;
+    text-align: center;
+  }
+
+  .innovation p{
+    padding: 5px 30px;
+  }
+}
