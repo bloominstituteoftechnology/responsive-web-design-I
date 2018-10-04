@@ -1,3 +1,265 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.contentcontainer {
+    width: 876px;
+    margin: 0 auto;
+    align-self: center;
+}
+    
+header {
+    background-color: gray;
+    position: fixed;
+    height: 36px;
+    z-index: 1000;
+}
+    
+header nav {
+    width: 876px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav a {
+    text-decoration: none;
+    color: lightgray;
+}
+
+a:hover {
+	color: black;
+}
+
+.navdeco {
+	width: 100%;
+	position: fixed;
+	background-color: gray;
+	height: 36px;
+	z-index: 1000;
+}
+
+.gettingStarted {
+	display: flex;
+	height: 520px;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.inOnDeStart {
+	height: 379px;
+	width: 379px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.gettingStarted h1 {
+	font-size: 70px;
+	width: 240px;
+	text-align: center;
+}
+
+.gettingStarted button {
+	height: 30px;
+	width: 140px;
+	text-align: center;
+	color: black;
+}
+
+.gettingStarted img {
+	align-self: flex-end;
+}
+
+.contentDivider {
+	border-bottom: 1px solid black;
+}
+
+.topContent {
+	margin-top: 30px;
+	margin-bottom: 40px;
+	display: flex;
+}
+
+.bottomContent {
+	margin-top: 30px;
+	margin-bottom: 40px;
+	display: flex;
+}
+
+footer {
+	margin-top: 30px;
+}
+
+footer .contact {
+	width: 200px;
+}
+
+.contact p {
+	margin-bottom: 32px;
+}
+
+.centered {
+	text-align: center;
+}
+
+.gettingStarted button:hover {
+	animation-name: startbutton;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes startbutton {
+	0% {
+
+	}
+
+	100% {
+		background-color: gray;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+    body{
+        width: 100%;
+    }
+
+    .contentcontainer {
+        width: 100%;
+    }
+
+    .navdeco {
+        display: none;
+    }
+
+    header {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    header nav {
+        width: 100%;
+        flex-wrap: wrap;
+        padding-bottom: 20px;
+    }
+
+    header nav :last-child {
+        order: -1;
+        max-width: 183px;
+        margin-right: calc(50% - 91.5px);
+        margin-left: calc(50% - 91.5px);
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    .gettingStarted {
+        flex-direction: row;
+        height: 400px;
+    }
+
+    .gettingStarted img {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    header nav {
+        flex-direction: column;
+        padding-bottom: 0px;
+    }
+
+    header nav a {
+        border: 1px solid black;
+        width: 100%;
+        text-align: center;
+        padding: 20px 0px 20px 0px;
+    }
+
+    header nav :last-child {
+        border: none;
+        margin-top: 10px;
+        padding: 0px;
+    }
+
+    .topContent {
+        flex-direction: column;
+    }
+
+    .bottomContent {
+        margin-top: 10px;
+        flex-direction: column;
+    }
+
+    section section {
+        margin-top: 25px;
+    }
+}
