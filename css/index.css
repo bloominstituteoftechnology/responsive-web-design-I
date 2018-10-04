@@ -1,3 +1,345 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
 
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+/* main axis up down */
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 880px;
+    margin: auto;
+}
+
+.nav-container {
+    display: flex;
+    margin: 54px 0 0 0;
+}
+
+.nav-container nav {
+    display: flex;
+    justify-content: space-between;
+    width: 880px;
+    margin: -14px 88px 0 0px;
+}
+
+.logo {
+    margin: -24px 0 0 0;
+}
+
+a {
+    text-decoration: none;
+    color: #d3d3d3;
+    padding: 0 0 0 0;
+}
+
+/*end navigation*/
+
+.innovation {
+    display: flex;
+    justify-content: space-between;
+    width: 880px;
+    margin: 76px 0 35px 0;
+    padding: 0 0 73px 0;
+    border-bottom: 2px solid black;
+}
+
+.h1text {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+h1 {
+    font-family: fantasy;
+    font-size: 52pt;
+    text-align: center;
+    font-family: 'Bangers', cursive;
+    margin: 59px 0 0 150px;
+}
+
+button {
+    background-color: white;
+    border: 1px solid black;
+    width: 170px;
+    padding: 8px 0 8px 0;
+    margin: 25px 0 0 187px;
+}
+
+.feat-about {
+    display: flex;
+    justify-content: space-evenly;
+    width: 880px;
+}
+
+p {
+    margin: 25px 0 25px 0;
+}
+
+h2 {
+    font-family: 'Bangers', cursive;
+}
+
+.top-paragraphs {
+    display: flex;
+    flex-direction: column;
+    width: 430px;
+    margin: 0 0 0 0;
+}
+
+.middle-img {
+    width: 100%;
+}
+
+.bottom-paragraphs {
+    display: flex;
+    justify-content: space-around;
+    width: 880px;
+    padding: 0 0 25px 0;
+    margin: 40px 0 50px 0px;
+    border-bottom: 2px solid black;
+}
+
+.spv-boxes {
+    display: flex;
+    flex-direction: column;
+    width: 263px;
+}
+
+.contact {
+    width: 263px;
+}
+
+.copyright {
+    margin: 80px 0 40px 400px;
+}
+
+@media (max-width: 800px) {
+    .container {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        width: 780px;
+        margin: auto;
+    }
+    .nav-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 780px;
+        margin: 54px 0 0 0;
+    }
+    .logo {
+        z-index: 1000;
+        margin: -90px 288px 1px 250px;
+    }
+    .nav-container nav {
+        display: flex;
+        justify-content: space-between;
+        width: 707px;
+        margin: 51px 63px 0px 30px;
+    }
+    .innovation {
+        display: flex;
+        justify-content: space-between;
+        width: 780px;
+        margin: 76px 0 35px 0;
+        padding: 0 0 73px 127px;
+        border-bottom: 2px solid black;
+    }
+    .h1text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .innovation img {
+        display: none;
+    }
+    button {
+        background-color: white;
+        border: 1px solid black;
+        width: 170px;
+        padding: 8px 0 8px 0;
+        margin: 25px 0 0 187px;
+    }
+    .feat-about {
+        display: flex;
+        justify-content: space-evenly;
+        width: 780px;
+    }
+    .top-paragraphs {
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+        margin: 0 0 0 0;
+    }
+    .middle-img {
+        width: 780;
+    }
+    .spv-boxes {
+        display: flex;
+        .bottom-paragraphs {
+            display: flex;
+            justify-content: space-around;
+            width: 780px;
+            padding: 0 0 25px 0;
+            margin: 40px 0 50px 0px;
+            border-bottom: 2px solid black;
+        }
+        flex-direction: column;
+        width: 225px;
+    }
+    .contact {
+        width: 225px;
+    }
+}
+
+@media(max-width:500px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 460px;
+        margin: auto;
+        align-items: center;
+    }
+    .nav-container {
+        width: 460px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-container nav {
+        width: 460px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 37px 0 40px 0;
+        padding: 0 0 25px 0;
+    }
+    .nav-container nav a {
+        text-align: center;
+        border: 1px solid gray;
+        width: 460px;
+        padding: 20px;
+    }
+    .logo {
+        z-index: 1000;
+        margin: -485px 0 337px 20px;
+    }
+    .innovation img {
+        display: none;
+    }
+    .innovation {
+        width: 460px;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        align-items: center;
+    }
+    .h1text {
+        margin: 42px 245px 0 0;
+        width: 460px;
+    }
+    button {
+        margin: 25px 0 0 224px;
+    }
+    .feat-about {
+        width: 460px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    p {
+        margin: 0 0 -14px 0;
+    }
+    .top-paragraphs {
+        width: 460px;
+        justify-content: flex-start;
+        margin: 37px 0px 0 42px;
+        padding: 10px;
+    }
+    .middle-img {
+        width: 460px;
+        margin: 50px 0 0 0;
+    }
+    .bottom-paragraphs {
+        flex-direction: column;
+        align-items: center;
+        width: 460px;
+    }
+    .spv-boxes {
+        width: 460px;
+        margin: 0 0 50px 60px;
+    }
+    .contact {
+        display: flex;
+        flex-direction: column;
+        width: 460px;
+        margin: 0 0 0 60px;
+    }
+    .contact p {
+        margin: 0 0 28px 0;
+    }
+    .copyright {
+        width: 460px;
+        margin: 84px 0 0 306px;
+    }
+}
