@@ -3,19 +3,87 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -23,25 +91,44 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 }
-ol, ul {
+
+ol,
+ul {
 	list-style: none;
 }
-blockquote, q {
+
+blockquote,
+q {
 	quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -49,18 +136,23 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+html,
+body {
+	height: 100%;
+	font-family: 'Titillium Web', sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: 'Bangers', cursive;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
 }
 
 .main-container {
@@ -78,7 +170,7 @@ h1, h2, h3, h4, h5 {
 	padding: 0px;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-evenly;
+	justify-content: space-around;
 	list-style-type: none;
 }
 
@@ -95,7 +187,7 @@ h1, h2, h3, h4, h5 {
 
 .logo {
 	align-self: center;
-} 
+}
 
 .h1-splash {
 	display: flex;
@@ -154,16 +246,16 @@ h1, h2, h3, h4, h5 {
 
 .middle-img {
 	display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 85%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 85%;
 }
 
 .services-header-img {
 	display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 85%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 85%;
 }
 
 .bottom-content {
@@ -195,23 +287,102 @@ footer {
 
 @media (max-width: 800px) {
 	/* 800 - 0 */
-.main-container {
-	width: 800px;
+	.main-container {
+		width: 800px;
+	}
+
+	.menu-header {
+		margin-top: 3%;
+		flex-wrap: wrap-reverse;
+	}
+
+	.title-img {
+		display: none;
+	}
+
+	.h1-splash {
+		margin: 0;
+		justify-content: center;
+		align-items: center;
+	}
 }
 
-.menu-header {
-	margin-top: 3%;
-	flex-wrap: wrap-reverse;
+@media (max-width: 500px) {
+	/* 500 - 0 */
+	.main-container {
+		width: 500px;
+	}
+
+	.logo {
+		padding-bottom: 15px;
+	}
+
+	.main-nav {
+		width: 100%;
+		flex-direction: column;
+		justify-content: center;
+		border-top: 1px solid grey;
+	}
+	
+	.menu {
+		width: 100%;
+		border-bottom: 1px solid grey;
+		text-align: center;
+		padding: 20px;
+	}
+
+	.h1-splash {
+		margin: 30px;
 }
 
-.title-img {
-	display: none;
+.top-content {
+	width: 100%;
+	flex-direction: column;
+	margin: 30px;
 }
 
-.h1-splash {
-	margin: 0;
-	justify-content: center;
-	align-items: center;
+.features {
+	width: 90%;
+	margin-bottom: 30px;
 }
-   
+
+.about {
+	width: 90%;
+	margin-bottom: 30px;
+}
+
+.middle-img {
+	width: 90%;
+}
+
+.bottom-content {
+	width: 100%;
+	flex-direction: column;
+	margin: 30px;
+}
+
+.services {
+	width: 90%;
+	margin-bottom: 30px;
+}
+
+.product {
+	width: 90%;
+	margin-bottom: 30px;
+}
+
+.vision {
+	width: 90%;
+	border-bottom: 2px solid black;
+	padding-bottom: 30px;
+}
+
+hr {
+   display: none;
+}
+
+.contact {
+	width: 40%;
+	margin-left: 30px;
+}
 }
