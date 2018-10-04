@@ -1,3 +1,244 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* Meyer reset added via CDN. */
 
 
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.nav-bar {
+  z-index: 1;
+  background-color: #bde0ff;
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  top: 0;
+  left: 0;
+  height: 7%;
+  width: 100%;
+  border-bottom: 4px solid black;
+}
+.nav-bar nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 75%;
+  height: 50%;
+}
+.nav-bar a {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  color: gray;
+  text-decoration: none;
+}
+.logo {
+  width: 183px;
+  height: 36px;
+  background: url(../img/logo.png);
+}
+.logo:hover {
+  background: url(../img/logo-hover.png);
+}
+.intro {
+  margin-top: 7.65%;
+  padding-top: 50px;
+  display: flex;
+}
+.intro div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 50%;
+	text-align: center;
+	user-select: none;
+}
+.header-img {
+	width: 38vw;
+	height: 38vw;
+}
+.intro div h1 {
+  font-size: 7vw;
+}
+.intro button {
+  margin-top: 10px;
+  color: gray;
+  padding: 0 2.5rem;
+  background: transparent;
+  border: 1px solid gray;
+  line-height: 2em;
+  font-size: 1.2em;
+  font-family: 'Titillium Web', sans-serif;
+  cursor: pointer;
+}
+hr {
+  width: 80%;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  border-style: solid;
+}
+.main {
+  position: relative;
+  margin: 0 10%;
+}
+.content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.content:first-child div {
+	width: 45%;
+}
+.content:last-child div {
+	width: 30%;
+}
+.subheading {
+  position: relative;
+  font-size: 1.3em;
+}
+.subheading span {
+  position: absolute;
+  top: -7vh;
+}
+.accent-img {
+  background: url(../img/mid-page-accent.jpg) no-repeat center;
+  background-size: contain;
+  width: 100%;
+  height: 182px;
+  margin: 20px 0;
+}
+footer {
+  margin: 0 10%;
+}
+footer address {
+  margin: 20px 0;
+}
+.copyright {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 800px){ /* Tablet screens */
+.nav-bar {
+	position: static;
+	flex-direction: column;
+	height: auto;
+}
+.nav-bar a {
+	order: -1;
+	margin-top: 1.5rem;
+}
+.nav-bar nav {
+	display: flex;
+	width: auto;
+	justify-content: space-around;
+	align-self: stretch;
+	margin-bottom: .5rem;
+	margin-top: 1.5rem;
+}
+.intro {
+	margin: 0;
+	padding: 2.5rem 0;
+}
+.intro img {
+	display: none;
+}
+.intro div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+.intro div h1 {
+	font-size: 10vw;
+}
+.intro div button {
+	font-size: 3vw;
+}
+hr {
+	width: 90%;
+	margin: 0 auto;
+	margin-bottom: 2rem;
+}
+.main {
+	margin: 0 auto;
+	width: 90%;
+}
+.content:last-child {
+	margin-bottom: 2rem;
+}
+footer {
+	margin: 0 5%;
+}
+
+}
+
+@media only screen and (max-width: 500px){ /* Mobile screens */
+	.nav-bar a{
+		margin-top: 1rem;
+		padding-bottom: 1rem;
+	}
+	.nav-bar nav {
+		text-align: center;
+		align-items: stretch;
+		margin: 0;
+		flex-direction: column;
+	}
+	.nav-bar nav a {
+		font-weight: bold;
+		padding: 1rem 0;
+		margin-top: 0;
+		border-bottom: 1px solid black;
+	}
+	.nav-bar nav a:first-child {
+		border-top: 1px solid black;
+	}
+	.nav-bar nav a:last-child {
+		border-bottom: none;
+	}
+	.intro div h1 {
+		font-size: 15vw;
+	}
+	.intro div button {
+		font-size: 4vw;
+	}
+	.content {
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: stretch;
+	}
+	hr {
+		margin: 2rem auto;
+	}
+	hr:first-of-type {
+		margin-top: 1rem;
+		margin-bottom: 3rem;
+	}
+	.main .content{
+		width: 100%;
+	}
+	.main .content div {
+		width: 100%;
+		margin-bottom: 3rem;
+	}
+	.main .content div:last-child {
+		margin-bottom: 0;
+	}
+	.main .accent-img {
+		margin: 0;
+		background-size: 125%;
+	}
+}
