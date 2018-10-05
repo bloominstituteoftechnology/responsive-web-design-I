@@ -238,6 +238,7 @@ h5 {
 /* Footer */
 .container footer p {
     margin-left: 400px;
+    text-align: center;
     padding: 30px;
 }
 
@@ -458,11 +459,13 @@ section .boxes .android button {
 
 /***** Media Queries *****/
 @media (max-width: 500px) {
+
     .container .header .flex header nav {
         display: flex;
         flex-direction: column;
         width: 500px;
         padding: 0 20px 0 20px;
+        width: 493px
     }
 
     .container .header .flex header nav a {
@@ -476,13 +479,60 @@ section .boxes .android button {
         margin-right: 140px;
     }
 
-    .container .header header .get-started .innovation {
-        margin-left: 100px;
+    .container .header .get-started .innovation {
+        margin-left: 60px;
         font-size: 70px;
+        padding-bottom: 20px;
+    }
+
+    .container .header .get-started .innovation button {
+        margin-left: 150px;
     }
 
     .container .header header .get-started .innovation .photo img {
         display: none;
+    }
+
+    .container .section1 {
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        border-bottom: 3px solid black;
+    }
+
+    .container .section1 .features {
+        padding-bottom: 40px;
+    }
+
+    .container .middle-photo img {
+        width: 470px;
+        margin-left: 10px;
+    }
+
+    .container .section2 {
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        border-bottom: 3px solid black;
+    }
+
+    .container .section2 .services {
+        padding-bottom: 40px;
+    }
+
+    .container .section2 .product {
+        padding-bottom: 40px;
+    }
+
+    .container .contact {
+        margin-left: 20px;
+    }
+
+    .container footer p {
+        margin-left: 0;
+        margin-left: 100px;
     }
 }
 
