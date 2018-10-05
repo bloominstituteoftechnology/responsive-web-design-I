@@ -72,6 +72,10 @@ h1, h2, h3, h4, h5 {
 	flex-direction:column;
 }
 
+hr {
+  width: 100%;
+  color: black;
+}
 
 a:hover {
 	background: whitesmoke;
@@ -209,6 +213,8 @@ a:visited {
 	padding: 5px;
 }
 
+
+
 /*---------------RESPONSIVE DESIGNING-----------*/
 
 @media (max-width: 800px) {
@@ -217,14 +223,17 @@ a:visited {
   }
 
   .nav {
-    justify-content: center;
+    display: flex;
+    justify-content: space-between;
     align-content: center;
+    padding: 10px 0px;
+    color: grey;
   }
 
   .nav a {
+    display: flex;
     justify-content: center;
-    align-content: center;
-    order: 0
+    align-items: center;
   }
 
   .nav a:last-child {
@@ -237,10 +246,13 @@ a:visited {
   }
 
   .header {
+    justify-content: center;
+    align-content: center;
   }
 
   .header-text {
     justify-content: center;
+    align-content: center;
   }
 
   .header-image {
@@ -276,12 +288,13 @@ a:visited {
 .nav {
   flex-direction: column;
   justify-content: center;
+  width: 100%;
+
 }
 
 .nav a {
   justify-content: center;
   align-content: center;
-  order: 0;
   padding: 20px 0px;
   width: 100%;
   font-size: 22px;
