@@ -1,4 +1,3 @@
-
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -232,7 +231,6 @@ li {
 
 .content {
   display: flex;
-  flex: wrap;
   justify-content: space-between;
 }
 .content-wrapper {
@@ -318,83 +316,94 @@ li {
   border-bottom: 2px solid #1a1a1a;
 }
 
-
-
 /* Tablet */
-@media (max-width: 800px) { 
+@media (max-width: 800px) {
+  .header {
+    margin: 20px 0;
+    flex-direction: column-reverse;
+    height: 100%;
+  }
+  .header .nav-menu {
+    width: 100%;
+  }
 
-    .header {
-        margin: 20px 0;
-        flex-direction: column-reverse;
-    }
-    .header .nav-menu {
-        width: 100%;
-    }
+  .header .logo {
+    margin-bottom: 10px;
+  }
 
-    .header .logo {
-        margin-bottom: 10px;
-    }
+  .header-img {
+    display: none;
+  }
 
-    .header-img {
-        display: none;
-    }
+  .header-section .innovation-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+  }
 
-    .header-section .innovation-section {
-        display: flex;
-        flex-direction: column;
-        margin-top: 5%;
-    }
-
-    /* Services Page */
-    .container .header {
+  /* Services Page */
+  /* .container .header {
         margin-bottom: 20px;
-    }
-
-
+    } */
 }
-
 
 /* Mobile */
 @media (max-width: 500px) {
+  .header-section .innovation-section h1 {
+    font-size: 60px;
+  }
+  .container {
+    width: 100%;
+  }
 
-    .header-section .innovation-section h1 {
-        font-size: 60px;
-    }
-    .container {
-        width: 100%;
-    }
-    
-    .content-container {
-        width: 90%;
-        margin: 0 auto;
-    }
+  .content-container {
+    width: 90%;
+    margin: 0 auto;
+  }
 
-    .header {
-        height: 100%;
-    }
+  .header {
+    height: 100%;
+  }
 
-    .header .nav-menu {
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 20px;
-    }
+  .header .nav-menu {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
 
-    .header .nav-menu a {
-        border: 1px solid black;
-        padding: 5% 100%;
-    }
+  .header .nav-menu a {
+    border: 1px solid black;
+    padding: 5% 100%;
+  }
 
-    .top-content, .bottom-content {
-        flex-direction: column;
-        margin: 10px 0;
-        margin-bottom: 20px;
-    }
-    .top-content .content, .bottom-content .content {
-        width: 100%;
-        margin: 15px 0;
-    }
+  .top-content,
+  .bottom-content {
+    flex-direction: column;
+    margin: 10px 0;
+    margin-bottom: 20px;
+  }
+  .top-content .content,
+  .bottom-content .content {
+    width: 100%;
+    margin: 15px 0;
+  }
 
-    .footer {
-        height: 60px; 
-    }
+  .content,
+  .bottom-content {
+    flex-direction: column;
+  }
+
+  .content .box-content,
+  .bottom-content .fact-content,
+  .bottom-content .services-info-img {
+    width: 100%;
+  }
+
+  .services-info-img {
+    margin-top: 20px;
+  }
+
+  .footer {
+    height: 60px;
+  }
 }
