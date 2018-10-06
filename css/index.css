@@ -1,3 +1,409 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+* {
+  box-sizing: border-box;
+  color: #1a1a1a;
+}
+
+h1,
+h2 {
+  font-family: "Titillium Web", serif;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+p,
+li {
+  font-family: "Lato", serif;
+  line-height: 1.4;
+  font-size: 15px;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  height: 60px;
+}
+
+.header .nav-menu {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
+
+.header .nav-menu a {
+  text-decoration: none;
+  color: #b3b3b3;
+  padding: 10px;
+}
+
+.wide-img {
+  display: block;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.services-info {
+  border-bottom: 2px solid #1a1a1a;
+  padding-bottom: 30px;
+}
+
+.box-content {
+  border: 2px solid #1a1a1a;
+  background-color: #f5f5f5;
+  width: 48%;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+.btn {
+  border: 2px solid #1a1a1a;
+  padding: 10px;
+  text-align: center;
+  width: 130px;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+.content-wrapper {
+  padding-bottom: 30px;
+  border-bottom: 2px solid #1a1a1a;
+}
+
+.bottom-content {
+  display: flex;
+  flex: wrap;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+
+.bottom-content .fact-content {
+  width: 48%;
+}
+
+.bottom-content .services-info-img {
+  width: 48%;
+}
+
+.bottom-content .fact-content ul li {
+  list-style: square inside none;
+  line-height: 2;
+}
+
+.footer {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* CSS For Index HTML */
+
+.header-section .innovation-section h1 {
+  font-size: 80px;
+  text-align: center;
+}
+
+.header-section {
+  padding-bottom: 30px;
+  border-bottom: 2px solid #1a1a1a;
+  display: flex;
+  justify-content: space-around;
+}
+.header-section img {
+  height: 300px;
+  width: 300px;
+}
+
+.innovation-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-content,
+.bottom-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+
+.top-content .content {
+  display: flex;
+  flex-direction: column;
+  width: 49.5%;
+}
+
+.bottom-content .content {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+}
+
+.bottom-content {
+  padding-bottom: 30px;
+  border-bottom: 2px solid #1a1a1a;
+}
+
+/* Tablet */
+@media (max-width: 800px) {
+  .header {
+    margin: 20px 0;
+    flex-direction: column-reverse;
+    height: 100%;
+  }
+  .header .nav-menu {
+    width: 100%;
+  }
+
+  .header .logo {
+    margin-bottom: 10px;
+  }
+
+  .header-img {
+    display: none;
+  }
+
+  .header-section .innovation-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+  }
+
+  /* Services Page */
+  /* .container .header {
+        margin-bottom: 20px;
+    } */
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+  .header-section .innovation-section h1 {
+    font-size: 60px;
+  }
+  .container {
+    width: 100%;
+  }
+
+  .content-container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .header {
+    height: 100%;
+  }
+
+  .header .nav-menu {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .header .nav-menu a {
+    border: 1px solid black;
+    padding: 5% 100%;
+  }
+
+  .top-content,
+  .bottom-content {
+    flex-direction: column;
+    margin: 10px 0;
+    margin-bottom: 20px;
+  }
+  .top-content .content,
+  .bottom-content .content {
+    width: 100%;
+    margin: 15px 0;
+  }
+
+  .content,
+  .bottom-content {
+    flex-direction: column;
+  }
+
+  .content .box-content,
+  .bottom-content .fact-content,
+  .bottom-content .services-info-img {
+    width: 100%;
+  }
+
+  .services-info-img {
+    margin-top: 20px;
+  }
+
+  .footer {
+    height: 60px;
+  }
+}
