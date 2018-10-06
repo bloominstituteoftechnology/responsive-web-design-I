@@ -1,3 +1,337 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-family: 'Rubik', sans-serif;
+}
+
+p {
+    line-height: 1.4;
+}
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.top-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    border-bottom: 1px dashed black;
+}
+
+.top-content .text-container {
+    width: 48%;
+    padding: 0 1%;
+    padding-bottom: 20px;  
+}
+
+.middle-content {
+    margin-bottom: 20px;
+    border-bottom: 1px dashed black;
+}
+
+.middle-content h2 {
+    padding: 0 2%;
+    margin-bottom: 0;
+}
+
+.middle-content .boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.middle-content .boxes .box {
+    width: 12.5%;
+    height: 100px;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom-content {
+    display: flex;
+    margin: 0 2% 20px;
+    justify-content: space-around;
+}
+
+.bottom-content .text-container {
+    padding-right: 4%;
+}
+
+.bottom-content .text-container:last-child {
+    padding-right: 0;
+}
+
+footer {
+    width: 100%;
+    background: black;
+}
+
+footer nav {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 2%;
+    font-size: 14px;
+}
+
+footer nav a {
+    color: white;
+    text-decoration: none;
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+    height: 75px;
+    justify-content: space-around;
+}
+
+header a {
+    color: black;
+    text-decoration: none;
+}
+header a:hover{
+    text-decoration: underline;
+}
+
+
+.lambda-black-pic{
+     padding-bottom: 25px;
+}
+
+#box1{
+    background-color: teal;
+}
+#box2{
+    background-color: gold;
+}
+#box3{
+    background-color: cadetblue;
+}
+#box4{
+    background-color: coral;
+}
+#box5{
+   background-color: crimson;
+}
+#box6{
+    background-color: forestgreen;
+}
+#box7{
+   background-color: darkorchid;
+}
+#box8{
+    background-color: hotpink;
+}
+#box9{
+    background-color: indigo;
+}
+#box10{
+    background-color: dodgerblue;
+}
+
+.speedy-traffic{
+    padding-bottom: 30px;
+}
+
+.skyline{
+    padding-bottom: 30px;
+}
+
+.about {
+    padding-left: 15px;
+    padding-bottom: 30px;
+    border-bottom: 1px dashed black;
+}
+
+.about-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.about-content section {
+    width: 352px;
+    padding: 20px 0px 20px 0px;
+}
+.about-content section h2{
+    padding-top: 10px;
+}
+.about-content section img{
+    width: 352px;
+    
+}
+.about-content section button {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    height: 30px;
+    width: 100px;
+    margin-top: 15px;
+    border-radius: 6px;
+}
+.about-content section a button:hover{
+    color:white;
+    background-color:black;
+}
+.about-top-row{
+    border-bottom: 1px dashed grey;
+}
+
+.about-bottom-row{
+    margin-top: 45px;
+    border-bottom: 1px dashed black;
+}
+
+.work-together{
+    margin-top: 45px;
+    margin-left: 24px;
+}
+
+.work-together p{
+    font-size: 15px;
+}
+
+.skyline-pic{
+    width:800px;
+    height: 153px;
+    
+}
+.our-products{
+    padding: 30px 0px;
+    padding-left: 15px;
+    border-bottom: 1px dashed black;
+}
+
+.product-top{
+    border-bottom: 1px dashed gray;
+}
+
+.product-content img{
+    height:250px;
+    width: 352px;
+}
+
+
+.product-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.product-content section {
+    width: 352px;
+    padding: 20px 0px 20px 0px;
+}
+.product-content section h2{
+    margin-top: 30px;
+}
+
+.product-content section button{
+      background-color: white;
+    color: black;
+    border: 2px solid black;
+    height: 30px;
+    width: 100px;
+    margin-top: 15px;
+    border-radius: 6px;
+
+}
+
+.product-content section button:hover{
+    color:white;
+    background-color:black;
+}
+
+.lm-button{
+      background-color: white;
+    color: black;
+    border: 2px solid black;
+    height: 30px;
+    width: 100px;
+    margin-top: 15px;
+    border-radius: 6px;
+
+}
+
+.lm-button:hover{
+    color:white;
+    background-color:black;
+}
+
+.ln-products{
+    margin-bottom: 30px;
+    padding-top: 30px;
+    border-top: 1px dashed black;
+}
+
