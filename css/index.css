@@ -1,3 +1,4 @@
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -131,14 +132,12 @@ table {
 /* Set every element's box-sizing to border-box */
 * {
   box-sizing: border-box;
-  color: #1a1a1a;
 }
 
 html,
 body {
   height: 100%;
   font-family: "Titillium Web", sans-serif;
-  font-size: 62.5%;
 }
 
 h1,
@@ -148,7 +147,13 @@ h4,
 h5 {
   font-family: "Bangers", cursive;
   letter-spacing: 1px;
-  margin-bottom: 4%;
+  margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+* {
+  box-sizing: border-box;
+  color: #1a1a1a;
 }
 
 h1,
@@ -158,52 +163,46 @@ h2 {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 30px;
 }
 
 h2 {
-  font-size: 2.4rem;
+  font-size: 24px;
 }
 
 p,
 li {
   font-family: "Lato", serif;
   line-height: 1.4;
-  font-size: 1.5rem;
+  font-size: 15px;
 }
 
 .container {
   width: 90%;
   margin: 0 auto;
+  /* border: 1px solid red; */
 }
 
-.container .header {
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 2.5% 0;
-  /* height: 60px; */
-  height: 10%;
+  margin-bottom: 20px;
+  height: 60px;
 }
 
 .header .nav-menu {
   display: flex;
   justify-content: space-between;
   width: 70%;
-
 }
 
 .header .nav-menu a {
-  font-size: 1.6rem;
   text-decoration: none;
   color: #b3b3b3;
+  /* border: 1px solid red; */
   padding: 10px;
 }
-
-.header .nav-menu a:hover {
-    text-decoration: underline;
-}
-
 
 .wide-img {
   display: block;
@@ -281,7 +280,6 @@ li {
   padding-bottom: 30px;
   border-bottom: 2px solid #1a1a1a;
   display: flex;
-  flex: wrap;
   justify-content: space-around;
 }
 .header-section img {
@@ -323,19 +321,32 @@ li {
 }
 
 
+
 /* Tablet */
 @media (max-width: 800px) { 
-    .container .header {
+    .header {
         margin: 5% 0;
+        margin-bottom: 10%;
         flex-direction: column-reverse;
     }
-    .container .header .nav-menu {
+    .header .nav-menu {
         width: 100%;
     }
+
+    .header .logo {
+        margin-bottom: 10%;
+    }
+
+    .header-img {
+        display: none;
+    }
+
 }
 
 
 /* Mobile */
 @media (max-width: 500px) {
+
+    
 
 }
