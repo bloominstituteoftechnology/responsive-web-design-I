@@ -462,15 +462,14 @@ section .boxes .android button {
 
     .container .header .flex header nav {
         display: flex;
-        flex-direction: column;
-        width: 500px;
+        flex-direction: column-reverse;
         padding: 0 20px 0 20px;
-        width: 493px
+        width: 493px;
     }
 
     .container .header .flex header nav a {
         border-bottom: 1px solid gray;
-        width: 100%;
+        width: 900px;
         text-align: center;
     }
 
@@ -479,14 +478,14 @@ section .boxes .android button {
         margin-left: 150px;
     }
 
-    .container .header .get-started .innovation {
+    .container .header .get-started .innovation h1 {
         margin-left: 10px;
-        font-size: 70px;
-        padding-bottom: 20px;
+        margin-top: 0;
+        margin-bottom: 40px;
     }
 
     .container .header .get-started .innovation button {
-        margin-left: 150px;
+        margin-left: 100px;
     }
 
     .container .header header .get-started .innovation .photo img {
@@ -498,7 +497,7 @@ section .boxes .android button {
         display: flex;
         flex-direction: column;
         margin-left: 20px;
-        border-bottom: 3px solid black;
+        /*border-bottom: 3px solid black;*/
     }
 
     .container .section1 .features {
@@ -506,8 +505,8 @@ section .boxes .android button {
     }
 
     .container .middle-photo img {
-        width: 470px;
-        margin-left: 10px;
+        width: 400px;
+        margin-left: 20px;
     }
 
     .container .section2 {
@@ -515,7 +514,7 @@ section .boxes .android button {
         display: flex;
         flex-direction: column;
         margin-left: 20px;
-        border-bottom: 3px solid black;
+        /*border-bottom: 3px solid black;*/
     }
 
     .container .section2 .services {
@@ -537,6 +536,11 @@ section .boxes .android button {
 }
 
 @media (max-width: 800px) {
+    .container {
+        width: 400px;
+        margin: o auto;
+    }
+
     .container .header .flex header nav a {
         width: 70px;
         margin: 10px;
@@ -547,11 +551,20 @@ section .boxes .android button {
         margin-left: 30px;
     }
 
+    .get-started .innovation {
+        margin-bottom: 30px;
+    }
+
     .get-started .innovation h1 {
         text-align: center;
+        margin-left: 150px;
     }
 
     .get-started .photo img {
         display: none;
+    }
+
+    .get-started .innovation button {
+        margin-left: 230px;
     }
 }
