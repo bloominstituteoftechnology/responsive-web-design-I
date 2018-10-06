@@ -1,3 +1,341 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+  color: #1a1a1a;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 62.5%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 4%;
+}
+
+h1,
+h2 {
+  font-family: "Titillium Web", serif;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+p,
+li {
+  font-family: "Lato", serif;
+  line-height: 1.4;
+  font-size: 1.5rem;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.container .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2.5% 0;
+  /* height: 60px; */
+  height: 10%;
+}
+
+.header .nav-menu {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+
+}
+
+.header .nav-menu a {
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #b3b3b3;
+  padding: 10px;
+}
+
+.header .nav-menu a:hover {
+    text-decoration: underline;
+}
 
 
+.wide-img {
+  display: block;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.services-info {
+  border-bottom: 2px solid #1a1a1a;
+  padding-bottom: 30px;
+}
+
+.box-content {
+  border: 2px solid #1a1a1a;
+  background-color: #f5f5f5;
+  width: 48%;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+.btn {
+  border: 2px solid #1a1a1a;
+  padding: 10px;
+  text-align: center;
+  width: 130px;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.content {
+  display: flex;
+  flex: wrap;
+  justify-content: space-between;
+}
+.content-wrapper {
+  padding-bottom: 30px;
+  border-bottom: 2px solid #1a1a1a;
+}
+
+.bottom-content {
+  display: flex;
+  flex: wrap;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+
+.bottom-content .fact-content {
+  width: 48%;
+}
+
+.bottom-content .services-info-img {
+  width: 48%;
+}
+
+.bottom-content .fact-content ul li {
+  list-style: square inside none;
+  line-height: 2;
+}
+
+.footer {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* CSS For Index HTML */
+
+.header-section .innovation-section h1 {
+  font-size: 80px;
+  text-align: center;
+}
+
+.header-section {
+  padding-bottom: 30px;
+  border-bottom: 2px solid #1a1a1a;
+  display: flex;
+  flex: wrap;
+  justify-content: space-around;
+}
+.header-section img {
+  height: 300px;
+  width: 300px;
+}
+
+.innovation-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-content,
+.bottom-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+
+.top-content .content {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+}
+
+.bottom-content .content {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+}
+
+.bottom-content {
+  padding-bottom: 30px;
+  border-bottom: 2px solid #1a1a1a;
+}
+
+
+/* Tablet */
+@media (max-width: 800px) { 
+    .container .header {
+        margin: 5% 0;
+        flex-direction: column-reverse;
+    }
+    .container .header .nav-menu {
+        width: 100%;
+    }
+}
+
+
+/* Mobile */
+@media (max-width: 500px) {
+
+}
