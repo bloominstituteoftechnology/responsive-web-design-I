@@ -180,7 +180,6 @@ li {
 .container {
   width: 90%;
   margin: 0 auto;
-  /* border: 1px solid red; */
 }
 
 .header {
@@ -324,9 +323,9 @@ li {
 
 /* Tablet */
 @media (max-width: 800px) { 
+
     .header {
-        margin: 5% 0;
-        margin-bottom: 10%;
+        margin: 20px 0;
         flex-direction: column-reverse;
     }
     .header .nav-menu {
@@ -334,11 +333,17 @@ li {
     }
 
     .header .logo {
-        margin-bottom: 10%;
+        margin-bottom: 10px;
     }
 
     .header-img {
         display: none;
+    }
+
+    .header-section .innovation-section {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5%;
     }
 
 }
@@ -346,7 +351,41 @@ li {
 
 /* Mobile */
 @media (max-width: 500px) {
-
     
+    .header-section .innovation-section h1 {
+        font-size: 60px;
+    }
+    .container {
+        width: 100%;
+    }
+    
+    .content-container {
+        width: 90%;
+        margin: 0 auto;
+    }
 
+    .header {
+        height: 100%;
+    }
+
+    .header .nav-menu {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .header .nav-menu a {
+        border: 1px solid black;
+        padding: 5% 100%;
+    }
+
+    .top-content, .bottom-content {
+        flex-direction: column;
+        margin: 10px 0;
+        margin-bottom: 20px;
+    }
+    .top-content .content, .bottom-content .content {
+        width: 100%;
+        margin: 15px 0;
+    }
 }
