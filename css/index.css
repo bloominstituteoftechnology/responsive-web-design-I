@@ -514,7 +514,7 @@ section.hero .hero-img {
 .services-hero {
 	width: 100%;
 	overflow: hidden;
-	padding: 90px 0 20px;
+	padding: 10px 0 20px;
 	border-bottom: 1px solid gray;
 	margin-bottom: 30px;
 }
@@ -567,14 +567,61 @@ section.hero .hero-img {
 
 .services-facts__left ul li {
 	margin: 0 0 20px 20px;
-	list-style: disc;
+	list-style: square;
 	padding-left: 20px;
+}
+
+.services-facts img {
+  width: 50%;
 }
 
 .services footer {
 	text-align: center;
 	margin: 60px auto 15px;
 }
+
+
+@media (max-width: 800px) {
+.services-facts {
+  flex-direction: column;
+}
+
+.services-facts__left {
+  width: 100%;
+}
+
+  .services-facts img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .services-hero {
+    margin: 350px 20px 20px;
+    width: 95%;
+  }
+
+  .services-hero img {
+    display: none;
+  }
+
+  services-cards-section {
+    flex-direction: column;
+  }
+
+  .services-card {
+    width: 95%;
+    margin: 20px auto;
+  }
+
+  .services-facts__left {
+    width: 95%;
+    padding: 20px;
+  }
+}
+
+
+
 
 .vision-hero {
 	padding-top: 80px;
