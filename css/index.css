@@ -327,10 +327,16 @@ h1, h2, h3, h4, h5 {
 
   /* services */
 
-.services .services-header-img {
+ .services .services-header-img {
 	  display: block;
 	margin: 30px 0;
-  }
+  } 
+  @media (max-width: 800px) {
+    .services .services-header-img {
+        max-width: 100%;
+        height: auto;
+    }
+}
 .services .main-info {
 	border-bottom: 1px solid black;
 	padding-bottom: 25px;
@@ -348,14 +354,48 @@ h1, h2, h3, h4, h5 {
 		padding-top: 25px;
 		height: 800px;
 }
+@media (max-width: 800px) {
+    .services .main-contents{
+        height: 1100px
+    }
+}
+@media (max-width: 500px){
+    .services .main-contents{
+        flex-flow: column nowrap;
+        height: auto;
+        align-items: stretch;
+    }
+}
 .services .article-box{
 border: 1px solid black;
 width: 48%;
 height: 30%;
 background-color: rgb(237, 237, 237);
 }
+@media (max-width: 800px){
+    .services .article-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+@media (max-width: 500px){
+    .services .article-box{
+        width: 100%;
+        margin: 20px 0;
+    }
+    .services .article-box:last-child{
+        margin-bottom: 40px;
+    }
+}
+
 .services .article-box h4{
 	padding: 15px 0 0 15px;
+}
+@media (max-width:800px){
+    .services .article-box h4{
+        align-self: center;
+    }
 }
 
 .services .article-box p{
@@ -387,6 +427,14 @@ background-color: rgb(237, 237, 237);
 	
 	width: 48%;
 }
+@media (max-width: 500px) {
+    .services .bottom-left{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
 
 .services .bottom-left p{
 	margin-bottom: 15px;
@@ -394,10 +442,28 @@ background-color: rgb(237, 237, 237);
 .services .bottom-left ul{
 	list-style-type: square;
 	padding-left: 17px;
+}  
+@media (max-width: 500px){
+    .services .bottom-left ul{
+        list-style-type: none;
+        padding-left: 0;
+        font-weight: bold;
+    }
 }
 
 .services .bottom-right{
 	
 	width: 48%;
 	
+}
+@media (max-width: 800px) {
+    .services .services-info-img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+@media (max-width: 500px){
+    .services .bottom-right {
+        display: none;
+    }
 }
