@@ -184,10 +184,9 @@ header nav a:hover {
 	padding-bottom: 15px;
 }
 
+/* Services Page General Styles */
   
-/*Service Page CSS*/
-
-  header nav {
+header nav {
 	display: flex;
 	width: 80%;
 	margin-top: 35px; 
@@ -203,6 +202,8 @@ header nav a:hover {
 ul li {
 	padding-top: 10px;
 }
+
+/*Service Page CSS*/
 
 .container .services-header-img {
 	width: 100%;
@@ -244,12 +245,7 @@ ul li {
 	justify-self: flex-start;
 } 
 
-.button:hover {
-	color: white;
-	background: black;
-}
-
-.button {
+.button { 
 	display: flex;
 	color: black;
 	background: white;
@@ -264,6 +260,11 @@ ul li {
 	margin-left: -5px;
 }
 
+.services-main .box .box-header .button:hover {
+	color: white;
+	background: black;
+}
+
 .bottom-box {
 	display: flex;
 	margin-top: 30px; 
@@ -273,14 +274,14 @@ ul li {
 	
 }
 
-.bottom-box1 {
+.bottom-box .bottom-box1 {
 	display: flex;
 	flex-direction: column;
 	height: 250px;
 	width: 35%;
 } 
 
-.bottom-box2 {
+.bottom-box .bottom-box2 {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
@@ -290,6 +291,8 @@ ul li {
 	margin-top: 100px;
 	text-align: center;
 } 
+
+/* Home Page Media Query */
 
 /* Tablet */
 
@@ -319,23 +322,28 @@ ul li {
         justify-content: space-between;
         flex-direction: row;
         width: 100%;
-        /* margin: 35px 0; */
     }
 
     .container .main-content .top-content .text-content {
         justify-content: space-between;
         margin-bottom: 40px;
         width: 49%;
-        /* border: 1px solid red; */
     }
 
     .middle-img {
         margin-top: -10px;
     }
 
+    .bottom-content .text-content {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-right: 20px;
+    } 
 }
 
 /* Mobile */
+
 @media (max-width: 500px) {
     .container {
         width: 95%;
@@ -409,6 +417,8 @@ ul li {
     }  
         
 }  
+
+/* Services Page Media Query */
 
 /* Services Page Tablet */
 
