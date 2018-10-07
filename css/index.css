@@ -3,7 +3,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-    
+
     html,
     body,
     div,
@@ -93,7 +93,7 @@
         vertical-align: baseline;
     }
     /* HTML5 display-role reset for older browsers */
-    
+
     article,
     aside,
     details,
@@ -107,21 +107,21 @@
     section {
         display: block;
     }
-    
+
     body {
         line-height: 1;
     }
-    
+
     ol,
     ul {
         list-style: none;
     }
-    
+
     blockquote,
     q {
         quotes: none;
     }
-    
+
     blockquote:before,
     blockquote:after,
     q:before,
@@ -129,23 +129,23 @@
         content: '';
         content: none;
     }
-    
+
     table {
         border-collapse: collapse;
         border-spacing: 0;
     }
     /* Set every element's box-sizing to border-box */
-    
+
     * {
         box-sizing: border-box;
     }
-    
+
     html,
     body {
         height: 100%;
         font-family: 'Titillium Web', sans-serif;
     }
-    
+
     h1,
     h2,
     h3,
@@ -156,20 +156,20 @@
         margin-bottom: 15px;
     }
     /* Copy and paste your work from yesterday here and start to refactor into flexbox */
-    
+
     .container {
         width: 880px;
         /* TB LR */
         margin: 0 auto;
     }
     /* header */
-    
+
     header {
         display: flex;
         /* flex-wrap: wrap; */
         justify-content: space-between;
     }
-    
+
     header nav {
         width: 75%;
         margin-top: 35px;
@@ -177,31 +177,31 @@
         justify-content: space-around;
         /* border: 1px solid red; */
     }
-    
+
     header nav a {
         font-size: 14px;
         color: gray;
         text-decoration: none;
     }
-    
+
     header nav a:hover {
         text-decoration: underline;
     }
-    
+
     header nav a:first-child {
         margin-left: 0;
     }
-    
+
     header nav a:last-child {
         margin-right: 0;
     }
-    
+
     header .logo {
         display: inline-block;
         margin-top: 25px;
     }
     /* cta */
-    
+
     .cta .cta-text {
         width: 44%;
         display: flex;
@@ -214,7 +214,7 @@
         text-align: center;
         /* padding: 0px 75px; */
     }
-    
+
     .cta .cta-text button {
         background: white;
         vertical-align: top;
@@ -225,12 +225,12 @@
         border: 1px solid black;
         cursor: pointer;
     }
-    
+
     .cta .cta-text button:hover {
         background: black;
         color: white;
     }
-    
+
     .cta {
         margin: 60px;
         display: flex;
@@ -239,7 +239,7 @@
         align-items: center;
         justify-content: space-between;
     }
-    
+
     .cta img {
         /* display: flex;
 flex-wrap: nowrap;;
@@ -247,7 +247,7 @@ flex-direction: row;
 /* margin-top: 69px; */
         */
     }
-    
+
     .main-content {
         /* display: flex; */
         flex-direction: row;
@@ -255,28 +255,28 @@ flex-direction: row;
         margin-top: 76px;
         padding-top: 30px;
     }
-    
+
     .main-content .top-content {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         padding: 0 10px;
     }
-    
+
     .main-content .top-content .text-content {
         width: 410px;
         /* display: inline-block; */
         margin-right: 34px;
     }
-    
+
     .main-content .top-content .text-content:last-child {
         margin-right: 0;
     }
-    
+
     .main-content .middle-img {
         margin-top: 45px;
     }
-    
+
     .main-content .bottom-content {
         margin-top: 37px;
         padding: 0 10px;
@@ -284,7 +284,7 @@ flex-direction: row;
         flex-direction: row;
         justify-content: space-between;
     }
-    
+
     .main-content .bottom-content .text-content {
         width: 275px;
         /* display: flex;
@@ -292,42 +292,42 @@ flex-direction: row;
         /* display: inline-block; */
         margin-right: 12px;
     }
-    
+
     .main-content .bottom-content .text-content:last-child {
         margin-right: 0;
     }
-    
+
     .contact {
         margin-top: 57px;
         border-top: 1px solid black;
         padding: 39px 10px 0;
     }
-    
+
     .contact p {
         margin: 20px 0;
     }
-    
+
     footer {
         margin: 32px 0;
         text-align: center;
         font-size: 14px;
     }
     /* services */
-    
+
     .services .services-info {
         padding-bottom: 30px;
         border-bottom: 1px solid black;
         margin-bottom: 30px;
     }
-    
+
     .services .services-info h1 {
         font-size: 20px;
     }
-    
+
     .container .services {}
-    
+
     .container .services .bigPic {}
-    
+
     .servicesGroup {
         width: 879px;
         border-bottom: line solid black;
@@ -337,7 +337,7 @@ flex-direction: row;
         /* align-content: center; */
         flex-wrap: wrap;
     }
-    
+
     .servicesGroup .sixGroup {
         width: 400px;
         border: 1px solid black;
@@ -351,7 +351,7 @@ flex-direction: row;
         flex-wrap: wrap;
         background-color: aliceblue;
     }
-    
+
     .servicesGroup .sixGroup .po {
         border: 1px solid black;
         padding: 10px;
@@ -364,24 +364,24 @@ flex-direction: row;
         background-color: white;
         margin: 15px;
     }
-    
+
     .services-header-img {
         display: block;
         margin: 30px 0;
     }
-    
+
     .bigPic {}
-    
+
     .aaa {
         border-bottom: line solid red;
     }
-    
+
     .container .linelowerr {
         width: 845px;
         margin: 25px;
         /* border-bottom: line solid black; */
     }
-    
+
     .services .lowerLevel {
         width: 870px;
         display: flex;
@@ -390,36 +390,49 @@ flex-direction: row;
         border-top: 1px solid black;
         padding-top: 34px;
     }
-    
+
     .services .lowerLevel article {
         width: 400px;
         /* border: line solid white; */
     }
-    
+
     .square {
         list-style: square;
         padding: 10px 10px 10px 18px;
     }
     /* After stretch period: */
-    
+
     @media (max-width: 800px) {
         .container {
-            width: 760px;
-            margin: 0 auto;
+            width: 768px;
+            /* margin: 0 auto; */
+        }
+
+        header {
+          flex-wrap: wrap;
+        }
+        header nav {
+          width:768;
         }
         .logo {
-            order: initial;
+            order: -1;
             display: block;
+            margin: 35px;
         }
         #hideMe {
             display: none;
         }
     }
-    
+
     @media (max-width: 500px) {
+      /* *{
+        justify-content: center;
+      } */
+        .container{
         background-color: rgba(224, 255, 255, 0.767);
+      }
     }
-    
+
     @media (min-width: 409px) {
         background-color: lightcyan;
     }
