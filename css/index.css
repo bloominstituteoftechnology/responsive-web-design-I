@@ -69,7 +69,7 @@ h1, h2, h3, h4, h5 {
 
 /* -------- General Styles */
 h1 { 
-	font-size: 54px;
+	font-size: 72px;
 }
 
 h2 {
@@ -114,6 +114,11 @@ body {
 	}
 }
 
+@media (max-width: 500px) {
+	.navContainer {
+	}
+}
+
 .navContainer nav {
 	display: flex;
 	width: 600px;
@@ -123,8 +128,15 @@ body {
 
 @media (max-width: 800px) {
 	.navContainer nav {
-		width: 97%;
+		width: 100%;
 		margin: 2% 3%;
+	}
+}
+
+@media (max-width: 500px) {
+	.navContainer nav {
+		flex-direction: column;
+		margin: 0;
 	}
 }
 
@@ -138,6 +150,15 @@ body {
 	font-weight: bold;
 }
 
+@media (max-width: 500px) {
+	.navContainer nav a {
+		width: 100%;
+		border-top: 1px solid black;
+		text-align: center;
+		padding: 4%;
+		font-size: 22px;
+	}
+}
 
 .navContainer .logo{
 	padding: 22px 0;
@@ -146,6 +167,12 @@ body {
 @media (max-width: 800px) {
 	.navContainer .logo {
 		padding: 12% 0;
+	}
+}
+
+@media (max-width: 500px) {
+	.navContainer .logo {
+		width: 100%;		
 	}
 }
 
@@ -190,6 +217,7 @@ footer {
 	justify-content: space-between;
 	align-items: center;
 	border-bottom: 1px solid #000;
+	text-align: center;
 }
 
 @media (max-width: 800px) {
@@ -200,16 +228,22 @@ footer {
 	}
 }
 
+@media (max-width: 500px) {
+	.indexHeader {
+		border-top: 1px solid black;
+		padding: 6% 0 12%;
+	}
+}
+
 .indexHeader .bigH1{
 	width: 360px;
 	justify-items: center;
 	align-items: center;
-	text-align: center;
+	
 	margin-left: 100px;
 }
 
-.indexHeader .bigH1 h1{
-	font-size: 72px;
+.indexHeader .bigH1 h1 {
 	margin: 0;
 	padding: 0;
 }
@@ -220,7 +254,12 @@ footer {
 		margin: 4% auto;
 		padding: 0;
 	}
+}
 
+@media (max-width: 500px) {
+	.indexHeader h1 {
+		text-align: center;
+	}
 }
 
 .indexHeader img {
@@ -241,6 +280,12 @@ footer {
 	margin-top: 30px;
 }
 
+@media (max-width: 500px) {
+	.indexHeader .button {
+		margin-top: 24px;
+	}
+}
+
 .indexSection1 {
 	display: flex;
 	padding-top: 40px;
@@ -254,13 +299,28 @@ footer {
 	}
 }
 
+@media (max-width: 500px) {
+	.indexSection1 {
+		flex-direction: column;
+		padding-top: 31px;
+	}
+}
+
 .indexSection1 .indexTop {
-	width: 390px;
+	width: 48%;
 }
 
 @media (max-width: 800px) {
 	.indexSection1 .indexTop {
 		width: 49%;
+	}
+}
+
+@media (max-width: 500px) {
+	.indexSection1 .indexTop {
+		width: 100%;
+		margin: 2% 2% 10%;
+		line-height: 110%;
 	}
 }
 
@@ -291,6 +351,15 @@ footer {
 	}
 }
 
+@media (max-width: 500px) {
+	.indexSection2 {
+		flex-direction: column;
+		justify-content: space-around;
+		margin: 2%;
+	}
+}
+
+
 .indexSection2 .indexBottom {
 	width: 280px;
 }
@@ -300,6 +369,14 @@ footer {
 		width: 29%;
 	}
 }
+
+@media (max-width: 500px) {
+	.indexSection2 .indexBottom {
+		width: 100%;
+		margin: 2%;
+	}
+}
+
 .indexContact {
 	padding: 50px 0;
 	width: 100%;
