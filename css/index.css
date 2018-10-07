@@ -422,7 +422,6 @@ flex-direction: row;
         .logo {
             order: -1;
             display: flex;
-            display: flex;
             align-items: center;
             justify-content: center;
 
@@ -480,81 +479,142 @@ flex-direction: row;
         align-items:flex-start;
         justify-content:flex-start;
             /* margin: 0 auto; */
-        header {
+        }
+
+        .container header {
+          width: 99%;
           display: flex;
           flex-direction: column;
           flex-wrap: nowrap;
           align-items: center;
           justify-content: center;
+          border-bottom: line solid black;
+          /* padding: 5%; */
               /* justify-content: center; */
-            }
+          }
         header nav {
-              width:500;
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-              /* justify-content: space-between; */
+          width:98%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          /* justify-content: space-between; */
 
-              border-bottom: line solid black;
-              font-size: 20%;
-            }
+        }
+
+        .container header nav a {
+          padding: 15px;
+          width:97%;
+          font-size: 23px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        header nav a:first-child {
+          border-top: line solid gray;
+        }
+
+        header nav a {
+          border-top: line solid gray;
+
+        }
+
+        /* .container header nav:child {
+          border-bottom: line solid gray;
+
+        } */
+        /* body header nav a {
+          border: line solid gray;
+          border-right: line solid gray;
+            font-size: 14px;
+            color: gray;
+            text-decoration: none;
+        } */
+
+        header nav a:hover {
+            text-decoration: underline;
+        }
+
+
         .logo {
-                order: -1;
-                display: flex;
-                display: flex;
-                align-items: center;
-                justify-content: center;
+          order: -1;
+          display: flex;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-bottom: line solid black;
 
                 /* align-self: center; */
-                margin: 28px;
-            }
+          margin: 28px;
+        }
 
         #hideMe {
-                display: none;
-            }
+          display: none;
+        }
         .cta {
-              width: 99%;
-              display: flex;
-              align-items: center;
-              justify-content: center;
+          width: 99%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
             }
-        .cta-text {
-              width: 99%;
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-              justify-content: flex-end;
+        .container .cta .cta-text {
+          width: 99%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: flex-end;
 
             }
         .cta .cta-text button {
-              width: 35%;
-              display: block;
-              font-size: 15px;
+          width: 35%;
+          display: block;
+          font-size: 15px;
             }
         .middle-img {
-              width: 99%
-            }
+          width: 99%
+        }
 
-        .text-content {
+        .main-content {
+          display: flex;
+          flex-direction: column;
+
+        }
+
+        .container  .main-content .top-content {
           width: 98%;
           display: flex;
           flex-direction: column;
           justify-content: flex-start;
           align-items: flex-start;
-          flex-wrap: nowrap;
+          flex-wrap: nowrap:
+          display:block;
+        }
 
+          .container  .main-content .bottom-content {
+            width: 98%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            border-bottom: line solid black:
 
-            }
+          }
+          .container  .main-content .text-content{
+            padding: 3%;
+            width: 95%;
+          }
+          /* .container .contact {
+            border-top: line solid white;
 
-            .bottom-content {
-              width: 98%;
-              display: block;
-              font-size: 15px;
-              display: block;
-              display: flex;
-              flex-direction: column;
-              justify-content: flex-start;
-            }
+          } */
+          .contact {
+              margin-top: 7px;
+              border-top: 1px solid white;
+
+          }
+          #needLine {
+            padding-bottom: 30px;
+            border-bottom: 1px solid black;
+
+          }
 
 
 
