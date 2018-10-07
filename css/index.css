@@ -1,3 +1,593 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+/**** Meyers CSS Reset ****/
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: flex;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 900px;
+    margin: 0 auto;
+}
+
+/*** HOME PAGE ***/
+
+/* Nav Section */
+.container .header .flex .get-started {
+    color: rgb(173, 173, 173);
+}
+
+/* Header section */
+.container .header .get-started {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.innovation h1 {
+    font-size: 90px;
+    margin-left: 60px;
+    margin-top: 30px;
+}
+
+.innovation button {
+    margin-left: 85px;
+    padding: 10px 60px 10px 60px;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+
+/* Code snippet photo */
+.photo img {
+    margin-right: 30px;
+    margin-bottom: 80px;
+}
+
+/* section1 */
+.container .section1 .features {
+    margin-right: 25px;
+}
+
+/* Middle-photo */
+.container .middle-photo img {
+    width: 990px;
+}
+
+/* Section2 */
+.container .section2 {
+    border-bottom: 1px solid black;
+}
+
+.container .section2 .services {
+    margin-right: 25px;
+}
+
+.container .section2 .product {
+    margin-right: 25px;
+}
+
+/* Contact section */
+.container .contact {
+    margin-top: 50px;
+}
+
+/* Footer */
+.container footer p {
+    margin-left: 400px;
+    text-align: center;
+    padding: 30px;
+}
+
+/*** SERVICES PAGE ***/
+
+.container .header {
+    /* width: 100%; */
+    /*background-color: white;*/
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    padding-bottom: 30px;
+}
+
+/* Parent to our nav */
+.container .header nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.container .header header nav a {
+    margin-left: 20px;
+    padding: 18px;
+    color: rgb(141, 141, 141);
+    text-decoration: none;
+}
+
+.container .header nav img {
+    margin-left: 166px;
+}
+
+
+.container .header header p {
+    line-height: 25px;
+    padding-bottom: 20px;
+}
+
+.container .header header .header-image img {
+    width: 1000px;
+    padding-bottom: 10px;
+}
+
+/* Section 1 portion */
+section {
+    width: 1000px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-top: 1px solid black;
+    /*border-bottom: 1px solid black;*/
+}
+
+section .boxes {
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* Digital box */
+section .boxes .digital {
+    padding: 20px;
+    border: 1px solid black;
+    background-color: #F0F0F0;
+    width: 460px;
+    margin-bottom: 30px;
+}
+
+section .boxes .digital p {
+    line-height: 20px;
+    padding-bottom: 20px;
+}
+
+section .boxes .digital button {
+    padding: 5px 25px 5px 25px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+section .boxes .digital .start {
+    justify-content: flex-start;
+}
+
+/* ux-ui box */
+section .boxes .ux-ui {
+    padding: 20px;
+    border: 1px solid black;
+    background-color: #F0F0F0;
+    width: 460px;
+    margin-bottom: 30px;
+}
+
+section .boxes .ux-ui p {
+    line-height: 20px;
+    padding-bottom: 20px;
+}
+
+section .boxes .ux-ui button {
+    padding: 5px 25px 5px 25px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+/* marketing box */
+section .boxes .marketing {
+    padding: 20px;
+    border: 1px solid black;
+    background-color: #F0F0F0;
+    width: 460px;
+    margin-bottom: 30px;
+}
+
+section .boxes .marketing p {
+    line-height: 20px;
+    padding-bottom: 20px;
+}
+
+section .boxes .marketing button {
+    padding: 5px 25px 5px 25px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+/* webdev box */
+
+section .boxes .webdev {
+    padding: 20px;
+    border: 1px solid black;
+    background-color: #F0F0F0;
+    width: 460px;
+    margin-bottom: 30px;
+}
+
+section .boxes .webdev p {
+    line-height: 20px;
+    padding-bottom: 20px;
+}
+
+section .boxes .webdev button {
+    padding: 5px 25px 5px 25px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+/* ios box*/
+section .boxes .ios {
+    padding: 20px;
+    border: 1px solid black;
+    background-color: #F0F0F0;
+    width: 460px;
+    margin-bottom: 30px;
+}
+
+section .boxes .ios p {
+    line-height: 20px;
+    padding-bottom: 20px;
+}
+
+section .boxes .ios button {
+    padding: 5px 25px 5px 25px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+/*android*/
+section .boxes .android {
+    padding: 20px;
+    border: 1px solid black;
+    background-color: #F0F0F0;
+    width: 460px;
+    margin-bottom: 30px;
+}
+
+section .boxes .android p {
+    line-height: 20px;
+    padding-bottom: 20px;
+}
+
+section .boxes .android button {
+    padding: 5px 25px 5px 25px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+/* section2 */
+.container section .last {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 15px;
+}
+
+.container section .last .foot {
+    padding: 20px;
+    width: 460px;
+}
+
+.container section .last .foot p {
+    line-height: 19px;
+}
+
+.container section .last .foot ul li {
+    padding: 10px;
+}
+
+.container section .last img {
+    padding-top: 20px;
+    margin-left: 120px;
+}
+
+/* footer */
+.container footer {
+    padding: 40px;
+    text-align: center;
+}
+
+
+
+/***** Media Queries *****/
+@media (max-width: 500px) {
+    .container .header .flex header nav {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 0 20px 0 20px;
+        width: 493px;
+    }
+
+    .container .header .flex header nav a {
+        border-bottom: 1px solid gray;
+        width: 900px;
+        text-align: center;
+    }
+
+    .container .header .flex header nav img {
+        margin-top: 20px;
+        margin-left: 150px;
+    }
+
+    .container .header .get-started .innovation h1 {
+        margin-left: 10px;
+        margin-top: 0;
+        margin-bottom: 40px;
+    }
+
+    .container .header .get-started .innovation button {
+        margin-left: 100px;
+    }
+
+    .container .header header .get-started .innovation .photo img {
+        display: none;
+    }
+
+    .container .section1 {
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        /*border-bottom: 3px solid black;*/
+    }
+
+    .container .section1 .features {
+        padding-bottom: 40px;
+    }
+
+    .container .middle-photo img {
+        width: 400px;
+        margin-left: 20px;
+    }
+
+    .container .section2 {
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        /*border-bottom: 3px solid black;*/
+    }
+
+    .container .section2 .services {
+        padding-bottom: 40px;
+    }
+
+    .container .section2 .product {
+        padding-bottom: 40px;
+    }
+
+    .container .contact {
+        margin-left: 20px;
+    }
+
+    .container footer p {
+        margin-left: 0;
+        margin-left: 100px;
+    }
+}
+
+@media (max-width: 800px) {
+    .container {
+        width: 200px;
+        margin: o auto;
+    }
+
+    .container .header .flex header nav a {
+        width: 70px;
+        margin: 10px;
+    }
+
+    .container .header .flex header nav img {
+        margin-left: 0;
+        margin-left: 30px;
+    }
+
+    .get-started .innovation {
+        margin-bottom: 30px;
+    }
+
+    .get-started .innovation h1 {
+        text-align: center;
+        margin-left: 150px;
+    }
+
+    .get-started .photo img {
+        display: none;
+    }
+
+    .get-started .innovation button {
+        margin-left: 230px;
+    }
+
+    .container .section1 {
+        width: 700px;
+        margin-left: 20px;
+    }
+
+    .container .middle-photo img {
+        width: 700px;
+        margin-left: 20px;
+    }
+
+    .container .section2 {
+        width: 700px;
+        margin-left: 20px;
+    }
+
+    .container .contact {
+        margin-left: 20px;
+    }
+
+    .container footer p {
+        margin-left: 0;
+        margin-left: 230px;
+    }
+}
