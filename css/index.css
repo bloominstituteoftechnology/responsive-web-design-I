@@ -134,7 +134,8 @@ header nav a:hover {
 .container .main-content {
 	margin-top: 50px;
 	margin-bottom: 50px;
-	border-top: 1px solid black;
+    border-top: 1.5px solid black;
+    border-bottom: 1.5px solid black;
 }
 
 .container .main-content .top-content {
@@ -148,12 +149,8 @@ header nav a:hover {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: flex-start;
-	width: 40%;
+	width: 50%;
 }
-
-/* .container .main-content .top-content .text-content .top-content-box1{
-    margin-right: 20px;
-} */
 
 .container .main-content .top-content .text-content .top-content-box1 h4 {
     align-self: flex-start;
@@ -164,12 +161,20 @@ header nav a:hover {
 	margin-top: 35px;
 }
 
+.container .main-content .bottom-content .text-content  {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-right: 20px;
+    /* width: 40%;
+    border: 1px solid orange; */
+}
+
 .container .bottom-content {
 	margin-top: 30px;
 	padding-bottom: 30px;
 	display: flex;
 	flex-direction: row;
-	border-bottom: 1px solid black;
 }
 
 .container .contact {
