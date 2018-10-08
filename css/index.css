@@ -1,3 +1,231 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+@keyframes header-anima {
+    0%   {opacity:1;}
+    25%  {opacity:0.25;}
+    50%  {opacity:1;}
+    75%  {opacity:0.25;}
+    100% {opacity:1;}
+}
+
+/* General Styles */
+* {
+	font-family: 'Titillium Web', sans-serif;
+}
+
+p {
+	font-size: 1em;
+	line-height: 1.21;
+}
+
+.container {
+	/* border: 1px solid black; */
+	width: 880px;
+	margin: 0 auto;
+}
+
+.container header {
+	display: flex;
+	justify-content: space-between;
+	margin: 29px 0px 69px 0px;
+}
+
+.container header nav {
+	color: #ACB1B6;
+	display: flex;
+  flex-grow: 1;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.container header img {
+  margin-left: 90px;
+}
+
+.container header nav a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.container header nav a:hover {
+	animation-name: header-anima;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+
+.container footer {
+	/* border: 1px solid red; */
+	text-align: center;
+	margin: 6px 0px 20px 0px;
+}
+
+.container section {
+	margin-bottom: 30px;
+}
+
+.main-content {
+	width: 100%;
+  margin-top: 75px;
+	border-top: 1.5px solid black;
+	border-bottom: 1.5px solid black;
+}
+
+/* Home Styles */
+.index .cta {
+	display: flex;
+	justify-content: space-between;
+}
+
+.index .cta-text {
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	/* border: 1px solid red; */
+}
+
+.index h1 {
+	font-size: 4.5em;
+	text-align: center;
+}
+
+.index button {
+  font-size: 100%;
+  padding: auto 45px;
+}
+
+.index .top-content {
+	padding: 35px 0px 29px 0px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.index .bottom-content {
+	padding: 30px 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.index .text-content {
+	padding-right: 20px;
+}
+
+.index .contact p {
+	margin: 13px 0px;
+}
+
+
+/* Services Styles */
+.services .intro img {
+	margin-bottom: 20px;
+}
+
+.services .main-content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-bottom: 30px;
+}
+
+.services .main-items {
+	width: 48%;
+	border: 1.5px solid black;
+	margin-top: 30px;
+	padding: 20px;
+	background-color: #F4F3F4;
+}
+
+.services .more-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1.5px solid black;
+	border-radius: 5px;
+	width: 150px;
+	height: 40px;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.services ul {
+	margin: 10px 0px 10px 25px;
+}
+.services li {
+	list-style-type: square;
+	margin-top: 10px;
+}
+
+.services .misc {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
 
