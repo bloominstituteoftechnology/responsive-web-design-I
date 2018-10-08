@@ -1,0 +1,223 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+.sneaky{
+  display:none;
+  text-align:center;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+/* -----------------------------------------------------------------------------
+							-----------------------
+							MY CODE STARTS HERE!!!!
+							-----------------------
+-------------------------------------------------------------------------------- */
+/* header section */
+*{
+  box-sizing:border-box;
+}
+header{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+ }
+header .logo{
+  order: 1;
+  padding:4%;
+}
+
+header .top-nav{
+  order:2;
+  width:100%;
+  display:flex;
+  flex-wrap:wrap;
+  text-align:center;
+}
+header .top-nav a{
+  text-decoration:none;
+  border-bottom:1px solid black;
+  width:100%;
+  color:darkgray;
+  font-size:20px;
+  padding: 4% 0;
+}
+header .top-nav a:nth-of-type(1){
+  border-top:1px solid black;
+}
+/* cta section */
+section.cta{
+  display:flex;
+  justify-content:center;
+  font-size:72px;
+  /* border-bottom:1px solid black; */
+  margin: 20px 8px;  
+}
+section.cta .cta-text{
+  text-align:center; 
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+section.cta .cta-text h1{
+  margin-top:10%;
+}
+section.cta button {
+  background:white;
+  border:1px solid black;
+  font-size: 17px;
+  padding:2% 13%;
+  margin:4% 0 19% 0;
+}
+section.cta img {
+  display:none;
+}
+/* main-content starts here */
+.main-content{
+  margin:4%;
+  border-top:2px solid black;
+  border-bottom:2px solid black;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-around;
+  align-content:space-between;
+}
+.text-content {
+  margin:40px 0;
+}
+
+.middle-img {
+  width:100%;
+}
+/* contact section */
+section.contact {
+  margin:4%;
+}
+.contact address{
+
+}
+footer{
+  text-align:center;
+}
+
+@media (min-width:500px){
+  header .top-nav{
+    flex-wrap:nowrap;
+    }
+  header .top-nav a,header .top-nav a:nth-of-type(1){
+    border:none;
+  }
+  div.top-content, div.bottom-content{
+    display:flex;
+    justify-content:space-between;
+  }
+  .text-content{
+  padding:0 10px;
+  }
+  section.contact{
+    padding-left:10px;
+  }
+  }
+
+@media(min-width:800px){
+  .container{
+    padding:4%;
+  }
+  header {
+    flex-wrap:nowrap;
+    flex-direction:row-reverse;
+    align-items:center;
+    margin:0 4%;
+  }
+  section.cta, section.cta .cta-text{
+    justify-content:space-around;
+  }
+  section.cta img{
+    display:inherit;
+  }
+  header .top-nav a{
+    font-size: 16px;
+  }
+
+  }
+@media (min-width:1920px){
+  .container{
+    display:none;
+  }
+  .sneaky{
+    display:flex;
+    flex-direction:row;
+    width:100%;
+    justify-content:center;
+    align-items:center;
+  }
+  .sneaky h1{
+    font-size:172px;
+    margin:0 1%;
+  }
+  .sneaky img{
+    width:50%;
+    height:50%;
+  }
+}
+
+
