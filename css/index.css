@@ -76,47 +76,54 @@ h1, h2, h3, h4, h5 {
 	margin: 0 auto;
 }
 
-.container .topList {
+.container .header {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	justify-content: space-between;
   margin-bottom: 30px;
+  
 }
 
-.container .topList a {
+.container .header a {
+  text-decoration: none;
 	color: #999;
 }
 
 /* home page Style */
-.home .header {
-	display: flex;
+.home .topContent {
+  display: flex;
+  border-bottom: 2px solid black;
 }
 
-.home .header .heading-wrapper {
+.home .topContent .topContent-wrapper {
 	display: flex;
 	width: 49.8%;
 	height: 500px;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;
+  align-items: center;
 }
 
-.home .header .heading-wrapper h1 {
+.home .topContent .topContent-wrapper .nav-header {
+	justify-content: space-between;
+}
+
+.home .topContent .topContent-wrapper  h1 {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	font-size: 72px;
 }
 
-.home .header .heading-wrapper .btnGettingStarted {
+.home .topContent .topContent-wrapper .btnGettingStarted {
 	text-decoration: none;
 	color: inherit;
 	padding: 8px 40px;
 	border: 1px solid black;
 }
 
-.home .header .headerImage {
+.home .topContent .headerImage {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -131,7 +138,8 @@ h1, h2, h3, h4, h5 {
 .home .bottom-section {
 	display: flex;
 	max-width: 100%;
-	justify-content: space-between;
+  justify-content: space-between;
+  margin: 30px 0;
 }
 
 .home .bottom-section article {
@@ -154,25 +162,37 @@ footer {
   .container {
     max-width: 100%;
     margin: 0 auto;
+  }
+
+  .home .header {
     flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #999;
   }
 
-  .home .topList a {
+  .home .header a {
     order: 1;
+    color: white;
+    border: 2px solid black;
+    background-color: darkblue;
+    padding: 1% 4%;
+    margin-bottom: 2%;
   }
-  .home .topList .logo {
-    border: 1px solid red;
-    margin: 0 auto;
+  .home .header div {
+    display: flex;
     width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 29px 0;
   }
 
-  .home .header .heading-wrapper {
-    border: 1px solid red;
+  .home .topContent .topContent-wrapper {
     margin: 0;
     width: 100%;
   }
 
-  .home .header .headerImage {
+  .home .topContent .headerImage {
     display: none;
   }
 
@@ -186,9 +206,8 @@ footer {
   .container {
     flex-wrap: nowrap;
   }
-  .home .topList a {order: 1;}
-  .home .topList{
+  .home .header .nav-header {order: 1;}
+  .home .header{
     flex-direction: column;
-    
   }
 }
