@@ -1,3 +1,271 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Bangers', cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox
+   Student Notes: I decided to re-do the code from scratch here.
+*/
+* {
+	box-sizing: border-box;
+  }
+
+/* General Style */
+.container {
+	max-width: 884px;
+	margin: 0 auto;
+}
+
+.container .header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	justify-content: space-between;
+  margin-bottom: 30px;
+  
+}
+
+.container .header a {
+  text-decoration: none;
+	color: #999;
+}
+
+/* home page Style */
+.home .topContent {
+  display: flex;
+  border-bottom: 2px solid black;
+}
+
+.home .topContent .topContent-wrapper {
+	display: flex;
+	width: 49.8%;
+	height: 500px;
+	flex-direction: column;
+	justify-content: center;
+  align-items: center;
+}
+
+.home .topContent .topContent-wrapper .nav-header {
+	justify-content: space-between;
+}
+
+.home .topContent .topContent-wrapper  h1 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 72px;
+}
+
+.home .topContent .topContent-wrapper .btnGettingStarted {
+	text-decoration: none;
+	color: inherit;
+	padding: 8px 40px;
+	border: 1px solid black;
+}
+
+.home .topContent .headerImage {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.home .top-section {
+	display: flex;
+	max-width: 100%;
+	margin: 30px 0;
+}
+
+.home .bottom-section {
+	display: flex;
+	max-width: 100%;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+
+.home .bottom-section article {
+	width: 32%;
+}
+
+.home .contact-section {
+	margin: 30px 0;
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	margin: 30px 0;
+}
+
+/* Tablet */
+@media (max-width: 800px) {
+  .container {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .home .header {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #999;
+  }
+
+  .home .header a {
+    order: 1;
+    color: white;
+    border: 2px solid black;
+    background-color: darkblue;
+    padding: 1% 4%;
+    margin-bottom: 2%;
+  }
+  .home .header div {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 29px 0;
+  }
+
+  .home .topContent .topContent-wrapper {
+    margin: 0;
+    width: 100%;
+  }
+
+  .home .topContent .headerImage {
+    display: none;
+  }
+
+  .home .sectionImg {
+    max-width: 100%;
+  }
+}
+
+/* Phone */
+@media (max-width: 500px) {
+  .container {
+    flex-wrap: nowrap;
+  }
+
+  .home .header{
+    flex-direction: column;
+    background-color: white;
+  }
+
+  .home .header a {
+    display: flex;
+    order: 1;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2% 0;
+    justify-content: center;
+    align-items: center;
+    background-color: #999;
+    border: 1px solid black;
+  }
+
+  .home .header div {
+    background-color: darkblue;
+    padding: 5% 0;
+  }
+
+  .home .topContent {
+    border-bottom: 2px solid black;
+    margin: 0 auto;
+  }
+
+  .home .topContent .topContent-wrapper {
+    height: 100%;
+  }
+
+  .home .topContent .topContent-wrapper .btnGettingStarted {
+    margin-bottom: 5%;
+  }
+
+  .home .details .top-section {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  
+  .home .details .top-section article {
+    margin-top: 5%;
+  }
+
+  .home .details .sectionImg {
+    margin-top: 5%;
+  }
+
+  .home .details .bottom-section {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .home .details .bottom-section article {
+    width: 100%;
+    margin-top: 5%;
+  }
+
+  hr {
+    margin-top: 5%;
+  }
+}
