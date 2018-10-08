@@ -87,7 +87,8 @@ p {
 
 .container {
 	/* border: 1px solid black; */
-	width: 880px;
+	max-width: 880px;
+  width: 90%;
 	margin: 0 auto;
 }
 
@@ -159,6 +160,7 @@ p {
 
 .index button {
   font-size: 100%;
+  width: 170px;
   padding: auto 45px;
 }
 
@@ -167,6 +169,10 @@ p {
 	display: flex;
 	justify-content: space-between;
 }
+
+.main-content .middle-img {
+      width: 100%;
+    }
 
 .index .bottom-content {
 	padding: 30px 0;
@@ -229,3 +235,98 @@ p {
 	justify-content: space-between;
 }
 
+@media only screen and (max-width: 800px) {
+  .container {
+    width: 95%;
+  }
+  .container header {
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-bottom: 32px;
+  }
+
+  .container header img {
+    margin: 0px;
+    padding-left: 16px;
+  }
+
+  .container header nav {
+    margin: 39px 0px;
+    padding: 0px 25px 0px 10px;
+    align-self: stretch;
+  }
+
+  .index .cta img {
+    display: none;
+  }
+
+  .index .cta .cta-text {
+    width: 100%;
+    padding-left: 20px;
+  }
+
+  .index .cta-text button {
+    margin-top: 10px;
+  }
+
+  .index .main-content .text-content {
+    padding-left: 12px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .container {
+    width: 100%;
+  }
+  .container header nav {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 19px;
+  }
+
+  .container header {
+    margin-top: 20px;
+    margin-bottom: 12px;
+    font-size: 1.22em;
+  }
+
+  .container header nav a {
+    align-self: stretch;
+    text-align: center;
+    border-top: 1px solid black;
+    padding: 20px;
+    padding-left: 47px;
+  }
+
+  .container header nav a:last-child {
+    border-bottom: 1px solid black;
+  }
+
+  .main-content .top-content,
+  .main-content .bottom-content {
+    flex-direction: column;
+    padding-left: 10px;
+  }
+
+  .main-content .text-content {
+    margin-top: 26px;
+    margin-bottom: 18px;
+  }
+
+  .main-content .bottom-content .text-content {
+    margin-top: 0px;
+    margin-bottom: 58px;
+  }
+
+  .main-content .bottom-content .text-content:last-child {
+    margin-bottom: 5px;
+  }
+
+  .contact {
+    padding-left: 20px;
+  }
+
+  .footer {
+    padding-left: 20px;
+  }
+}
