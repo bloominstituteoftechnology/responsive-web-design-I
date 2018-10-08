@@ -1,3 +1,659 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+
+.container {
+    width: 880px;
+	/* TB LR */
+	margin: 0 auto;
+  }
+  
+  /* header */
+  header {
+	  display: flex;
+	  justify-content: space-between;
+  }
+
+  header nav {
+	display: flex;
+	width: 660px;
+    margin-top: 35px;
+    justify-content: space-between;
+  }
+  
+  header nav a {
+	font-size: 14px;
+	color: gray;
+	text-decoration: none;
+  }
+  
+  header nav a:hover {
+	text-decoration: underline;
+  }
+  
+  header nav a:first-child {
+	margin-left: 0;
+  }
+  
+  header nav a:last-child {
+	margin-right: 0;
+  }
+  
+  header .logo {
+	display: inline-block;
+	margin-top: 25px;
+  }
+  
+  /* cta */
+
+  .cta {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+  }
+  
+  .cta .cta-text {
+	width: 460px;
+	font-size: 77px;
+	margin-top: 120px;
+	text-align: center;
+	padding: 0px 75px;
+  }
+  
+  .cta .cta-text button {
+	background: white;
+	vertical-align: top;
+	margin-top: 6px;
+	padding: 8px 44px;
+	font-size: 17px;
+	border: 1px solid black;
+	cursor: pointer;
+  }
+  
+  .cta .cta-text button:hover {
+	background: black;
+	color: white;
+  }
+  
+  .cta img {
+	width: 379px;
+	margin-top: 69px;
+  }
+  
+  .main-content {
+	border-top: 1px solid black;
+	margin-top: 76px;
+	padding-top: 39px;
+  }
+  
+  .main-content .top-content {
+	padding: 0 10px;
+	display: flex;
+	justify-content: space-between;
+  }
+  
+  .main-content .top-content .text-content {
+	width: 410px;
+	margin-right: 34px;
+  }
+  
+  .main-content .top-content .text-content:last-child {
+	margin-right: 0;
+  }
+  
+  .main-content .middle-img {
+	margin-top: 45px;
+  }
+  
+  .main-content .bottom-content {
+	margin-top: 37px;
+	padding: 0 10px;
+	display: flex;
+	justify-content: space-between;
+  }
+  
+  .main-content .bottom-content .text-content {
+	width: 275px;
+	margin-right: 12px;
+  }
+  
+  .main-content .bottom-content .text-content:last-child {
+	margin-right: 0;
+  }
+  
+  .contact {
+	margin-top: 57px;
+	border-top: 1px solid black;
+	padding: 39px 10px 0;
+  }
+  
+  .contact p {
+	margin: 20px 0;
+  }
+  
+  footer {
+	margin: 32px 0;
+	text-align: center;
+	font-size: 14px;
+  }
+
+  /* Services */
+
+  .services .services-header-img {
+	  display: block;
+	  margin: 30px 0;
+  }
+
+.services .services-info {
+	padding-bottom: 30px;
+	border-bottom: 1px solid black;
+	margin-bottom: 30px;
+	line-height: 1.2;
+}
+
+.services .services-info h2 {
+	font-size: 20px;
+}
+
+/* Services blocks start */
+
+.services-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	border-bottom: 2px solid black;
+	margin-bottom: 20px;
+}
+
+.services-container .services-blocks {
+	width: 420px;
+	height: 240px;
+    border: 1px solid black;
+	padding: 20px;
+	margin: 5px 0 40px 0;
+	background: #f1f1f1;
+}
+
+.services-container .services-blocks p {
+	margin-bottom: 16px;
+	line-height: 1.2;
+}
+
+.services-container .services-blocks button {
+	background: white;
+	vertical-align: top;
+	margin-top: 6px;
+	padding: 8px 38px;
+    font-size: 12px;
+	border: 1px solid black;
+	cursor: pointer;
+	border-radius: 6px;
+  }
+  
+  .services-container .services-blocks button:hover {
+	background: black;
+	color: white;
+  }
+
+  /* Services blocks end */
+
+
+  /* Some information about services start */
+
+  .services-container__no-border {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+  }
+
+  .services-container__no-border .services-facts {
+	width: 420px;
+	padding: 20px 20px 20px 0;
+	margin: 5px 0 40px 0;
+  }
+
+  .services-container__no-border .services-facts p {
+	  margin-bottom: 20px;
+	  line-height: 1.2;
+  }
+
+  .services-container__no-border .services-facts ul {
+	  list-style-type: square;
+	  margin-left: 17px;
+  }
+
+  .services-container__no-border .services-facts ul li {
+	  line-height: 2;
+  }
+
+  /* Some information about services end */
+
+
+  /* ↓ Media queries for screens 801px-920px start (index.html) ↓ */
+@media (max-width: 920px) {
+  .container {
+    width: 90vw;
+    /* TB LR */
+    margin: 0 auto;
+    
+  }
+
+  header nav {
+	display: flex;
+	width: 70%;
+    margin-top: 35px;
+    justify-content: space-between;
+  }
+
+  cta {
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .cta .cta-text {
+      width: 300px;
+      padding-right: 0;
+      padding-left: 25px;
+  }
+
+  .cta img {
+    transform: scale(0.8);
+  }
+
+  .main-content .middle-img{
+    width: 100%;
+    display: block;
+
+  } 
+
+}
+  /* ↑ Media queries for screens 801px-920px end (index.html)  ↑ */
+
+
+
+ /* ↓ Media queries for tablet view start (index.html) ↓ */
+
+ @media (max-width: 800px) {
+    .container {
+        width: 90vw;
+        /* TB LR */
+        margin: 0 auto;
+        
+      }
+    
+    header {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    
+    header .logo {
+        width: 183px;
+        margin-top: 25px;
+      }
+
+    header nav {
+        display: flex;
+        width: 90%;
+        margin-top: 35px;
+        justify-content: space-around;
+      } 
+
+    .cta img {
+        display: none;
+    }
+
+    .cta  {
+        justify-content: center;
+        margin-bottom: 0;
+    }
+
+    .cta .cta-text  {
+        width: 460px;
+        margin-top: 60px;
+        padding-left: 0;
+    }
+
+    .main-content {
+        width: 100%;
+        margin-top: 45px;
+    }
+
+    .main-content .middle-img{
+        width: 100%;
+        display: block;
+    
+    } 
+
+    .main-content .top-content .text-content {
+        width: 50%;
+        margin-bottom: 20px;
+    
+    }
+
+    .main-content .bottom-content .text-content {
+        width: 205px;
+        margin-right: 12px;
+      }
+
+    .contact {
+        width: 100%;
+      }
+       
+ }
+
+ /*  ↑ Meadia queries for tablet view end  ↑ */ 
+
+
+
+ /* ↓ Media queries for phone view start (index.html)↓ */
+
+ @media (max-width: 500px) {
+    .container {
+        width: 90vw;
+        /* TB LR */
+        margin: 0 auto; 
+        
+      }
+    
+    header {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+ 
+    }
+    
+    header .logo {
+        width: 170px;
+        margin-top: 18px;
+      }
+
+    header nav {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        margin-top: 18px;
+        align-items: center;
+        text-align: center;
+      } 
+
+      header nav a {
+          padding: 15px 0;
+          width: 100vw;
+          font-size: 1.05rem;
+      }
+
+      header nav a:hover {
+          text-decoration: none;
+          background: rgba(75, 159, 230, .6);
+          color: white;
+      }
+      header nav a:first-child {
+          padding-top: 15px;
+          width: 100vw;
+          border-bottom: 1px solid #5a5b5b;
+          border-top: 1.8px solid #c8cbd1;
+      }
+      header nav a:last-child {
+          padding-bottom: 15px;
+          width: 100vw;
+          border-top: 1px solid #5a5b5b;
+          border-bottom: 1.8px solid #c8cbd1;
+      }
+
+      header nav a:nth-child(2) {
+        border-bottom: 1px solid #5a5b5b;
+      }
+
+      header nav a:nth-child(3) {
+        border-bottom: 1px solid #5a5b5b;
+      }
+
+      header nav a:nth-child(4) {
+        border-bottom: 1px solid #5a5b5b;
+      }
+
+
+    .cta  {
+        justify-content: center;
+        margin-bottom: 0;
+    }
+
+    .cta .cta-text  {
+        margin-top: 40px;
+        font-size: 4rem;
+    }
+
+    .cta .cta-text button {
+        padding: 6px 38px;
+        font-size: 14px;
+    }
+
+
+    .main-content {
+        width: 100%;
+        margin-top: 40px;
+        padding-top: 5px;
+        border-top: 2px solid black;
+    }
+
+    .main-content .middle-img{
+        width: 100%;
+        display: block;
+        margin-top: 25px;
+    
+    } 
+
+    .main-content .top-content {
+        padding: 0 10px 0 0;
+        display: flex;
+        flex-direction: column;
+      }
+
+
+    .main-content .top-content .text-content {
+        width: 100%;
+        margin-bottom: 25px;
+        padding-top: 40px;
+    
+    }
+
+    .main-content .top-content .text-content:nth-child(2) {
+        padding-top: 20px;
+    
+    }
+
+    .main-content .bottom-content {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .main-content .bottom-content .text-content {
+        width: 100%;
+        margin-right: 12px;
+        margin-bottom: 50px;
+      }
+
+    .main-content .bottom-content .text-content:last-child {
+        margin-bottom: 0px;
+      }  
+
+    .contact {
+        width: 100%;
+        margin-top: 40px;
+      }
+
+ }
+
+ 
+
+  /* ↓ Media queries for screens 801px-920px start (services.html) ↓ */
+
+ @media (max-width: 920px) {
+    .services {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .services-container {
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+    
+    .services-container .services-blocks {
+        width: 100%;
+        height: 25%;
+    }
+
+    .services-container__no-border {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+    .services-container__no-border .services-facts:first-child {
+        width: 40%;
+        padding: 20px 20px 20px 0;
+        margin: 5px 0 40px 0;
+      }
+
+    .services-container__no-border .services-facts:last-child {
+        margin-top: 20px;
+    }
+
+ }
+
+ /* ↑ Media queries for screens 801px-920px end (services.html) ↑ */
+
+
+
+ /* ↓ Media queries for tablet view start (services.html)↓ */
+
+ @media (max-width: 800px) {
+    .services .services-header-img {
+        transform: scaleX(.8);
+        transform: scaleY(.7);
+    }
+
+    .services-container__no-border {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .services-container__no-border .services-facts:first-child {
+        width: 100%;
+        padding: 20px 20px 20px 0;
+        margin: 5px 0 5px 0;
+    }
+
+    .services-container__no-border .services-facts:first-child h3{
+        text-align: center;
+        
+      }
+
+    .services-container__no-border .services-facts:first-child ul{
+        text-align: center;
+        list-style-type: none;
+      }
+
+
+    .services-container__no-border .services-facts:last-child {
+        width: 100%;
+        height: 180px;
+        margin-top: 0px;
+        text-align: center;
+        background-image: url(http://paperlief.com/images/apple-computer-keyboard-wallpaper-2.jpg);
+        background-size: 100% 180px;
+        background-repeat: no-repeat;
+
+    } 
+
+    .services-container__no-border .services-facts:last-child img {
+        display: none;
+    }
+
+}
+
+  /* ↑ Media queries for tablet view end (services.html) ↑ */
+
+
+
+  /* ↓ Media queries for phone view start (services.html)↓ */
+
+  @media (max-width: 500px){
+    header nav.brown-on-hover a:hover {
+        background: rgba(140, 134, 141, .6);
+    }
+  }
