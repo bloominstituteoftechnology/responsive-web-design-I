@@ -125,11 +125,11 @@ header nav .nav-items:last-child {
 
 .cta .cta-text button {
   background: white;
+  border: 1px solid black;
   vertical-align: top;
   margin-top: 6px;
   padding: 8px 44px;
   font-size: 17px;
-  border: 1px solid black;
   cursor: pointer;
 }
 
@@ -144,7 +144,7 @@ header nav .nav-items:last-child {
 }
 
 .main-content {
-  border-top: 1px solid black;
+
   margin-top: 76px;
   padding-top: 39px;
 }
@@ -186,7 +186,6 @@ header nav .nav-items:last-child {
 
 .contact {
   margin-top: 57px;
-  border-top: 1px solid black;
   padding: 39px 10px 0;
 }
 
@@ -199,6 +198,119 @@ footer {
   text-align: center;
   font-size: 14px;
 }
+
+/* Main Content Styles */
+
+.main-content {
+   border-top: 2px solid black; 
+   border-bottom: 2px solid black;
+   margin: 75px 0 35px 0;
+   padding: 35px 0;
+   font-size: 16px;
+   line-height: 18px;
+}
+
+.main-content .top-content {
+    display: flex;
+}
+
+.main-content .middle-img {
+    display: block;
+    margin: 30px auto;
+}
+
+.main-content .bottom-content {
+    display: flex;
+}
+
+.main-content .bottom-content p {
+    padding-right: 20px;
+}
+
+/* Contact Styles */
+
+
+/* Services Styles */
+
+.services-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    line-height: 1.3;
+}
+
+.services-content .services-header-img {
+    width: 100%;
+    height: 100%;
+}
+
+.services-content h1 {
+    font-size: 26px;
+    margin: 10px 0;
+}
+
+.services-content .services-text {
+border-bottom: 2px solid black;
+ padding-bottom: 40px;
+ margin-bottom: 20px
+}
+
+.services-content .card {
+    padding: 20px;
+    border: 1px solid black;
+    width: 45%;
+    background: whitesmoke;
+    margin: 20px 0;
+}
+
+.services-content .card button {
+    padding: 10px 40px;
+    margin-top: 20px;
+    cursor: pointer;
+    background: white;
+    border-radius: 6px;
+    border: 1px solid black;
+
+ 
+}
+
+.services-content .card button:hover {
+    background: black;
+    color: white;
+} 
+
+.services-content .services-info ul {
+    margin: 20px;
+}
+
+.services-content .services-info ul li{
+    list-style: square;
+    padding: 5px;
+}
+
+.services-content .services-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-top: 2px solid black; 
+    margin: 20px 0 35px 0;
+    padding-top: 40px; 
+}
+
+.services-content .services-info .facts {
+  width: 45%;
+}
+
+.services-content .services-info .facts p {
+  margin-bottom: 20px;
+}
+
+.services-content .services-info .services-info-img {
+  width: 45%;
+  height: 315px;
+}
+
+/* Media Queries */
 
 @media( max-width: 800px) and (min-width: 500px){
     header {
@@ -232,6 +344,32 @@ footer {
     .main-content{
         margin: 0px;
     }
+     .services-content .services-info .services-info-img {
+        display: none;
+     }
+     .services-content .services-info .facts {
+        width: 100%;
+        margin: 0 60px 20px 0;
+}
+.services-content .card {
+    padding: 20px;
+ 
+    width: 48%;
+    background: whitesmoke;
+    margin: 20px 0;
+}
+.services-header-img{
+    margin-top: 20px;
+}
+.card p{
+    font-size: 14px;
+}
+.services-info{
+    font-size: 14px;
+}
+.services-text p{
+    font-size: 14px;
+}
 }
 
 @media( max-width: 500px){
@@ -271,6 +409,7 @@ footer {
         width: 115px;
         height: 25px;
         font-size: 12px;
+        border: 1px solid black;
         padding: 0px;
     }
     .main-content{
@@ -307,158 +446,27 @@ footer {
     footer{
         font-size: 10px;
     }
+   .services-content .services-info .services-info-img {
+ display: none;
+     }
+     .services-content .services-info .facts {
+  width: 100%;
+  margin: 0 60px 20px 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-services sheet
-*/
-/* .services-head{
-	font-size: 36px;
-}
-#services-item{
-	margin: 20px 0px;
-	padding-bottom: 20px;
-	
-}
-
 .services-header-img{
-	margin: 20px 0px;
-	
+    margin-top: 20px;
+}
+.card p{
+    font-size: 12px;
+}
+.services-info{
+    font-size: 12px;
+}
+.services-text p{
+    font-size: 12px;
 }
 
-.section-one{
-	border-top: 2px solid black;
-	padding-top: 20px;
-	display: flex;
-
+.services-content .card {
+    width: 100%;
 }
-
-#digital-design-item{
-	width: 416px;
-	padding:20px;
-	border: 1px solid black;
-	background-color: #F0EFEF;
-	margin: 20px 45px 20px 0px;
 }
-#ux-ui-item{
-	width: 416px;
-	padding:20px;
-	border: 1px solid black;
-	background-color: #F0EFEF;
-	margin: 20px 0px 20px 0px;
-
-}
-
-.section-two{
-	display: flex;
-
-}
-
-#digital-marketing-item{
-	width: 416px;
-	padding:20px;
-	border: 1px solid black;
-	background-color: #F0EFEF;
-	margin: 20px 45px 20px 0px;
-}
-#web-development-item{
-	width: 416px;
-	padding:20px;
-	border: 1px solid black;
-	background-color: #F0EFEF;
-	margin: 20px 0px 20px 0px;
-}
-
-.section-three{
-	display: flex;
-	padding-bottom: 15px;
-    border-bottom: 1px solid black;
-    border: 1px solid red;
-}
-
-#ios-development-item{
-	width: 440px;
-	padding:20px;
-	border: 1px solid black;
-	background-color: #F0EFEF;
-	margin: 20px 45px 20px 0px;
-
-}
-#android-development-item{
-	width: 440px;
-	padding:20px;
-	border: 1px solid black;
-	background-color: #F0EFEF;
-	margin: 20px 0px 20px 0px;
-
-}
-
-.facts{
-	width: 416px;
-	padding: 30px 0px ;
-	
-	
-	
-}
-
-.s-button{
-	background-color: white;
-	border: 1px solid black;
-	height: 30px;
-	width: 125px;
-	margin-top: 20px;
-}
-
-.bullets{
-	margin: 30px 15px;
-}
-.section-4{
-	display: flex;
-	justify-content: space-between;
-
-}
-
-.services-info-img{
-	padding-top: 30px;
-	height: 300px;
-}
- */
