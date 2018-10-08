@@ -229,6 +229,7 @@
     .cta .cta-text button:hover {
         background: black;
         color: white;
+        border: 2px solid darkred;
     }
 
     .cta {
@@ -407,7 +408,7 @@ flex-direction: row;
 
     @media (max-width: 800px) {
         .container {
-            width: 768px;
+            width: 99%;
             /* margin: 0 auto; */
         }
 
@@ -416,9 +417,15 @@ flex-direction: row;
           justify-content: center;
         }
         header nav {
-          width:768;
+          width:99%;
           justify-content: space-between;
         }
+
+        header nav a{
+          font-size: 100%;
+
+        }
+
         .logo {
             order: -1;
             display: flex;
@@ -426,7 +433,7 @@ flex-direction: row;
             justify-content: center;
 
             /* align-self: center; */
-            margin: 28px;
+            margin: 3%;
         }
 
 
@@ -435,7 +442,7 @@ flex-direction: row;
             display: none;
         }
         .cta {
-          width: 99%;
+          width: 88%;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -448,9 +455,13 @@ flex-direction: row;
           justify-content: flex-end;
 
         }
-        button {
-          width: 25%;
+        .cta .cta-text button{
+          width: 68%;
+          font-size: 14px;
+          display: flex;
+          flex-direction: row;
         }
+
         .middle-img {
           width: 99%
         }
@@ -460,6 +471,46 @@ flex-direction: row;
 
 
         }
+
+        .container .main-content .text-content:hover {
+          background-color: gray;
+          text-decoration-color: white;
+          text-decoration-style: solid;
+          text-decoration-line: underline;
+          line-height: 1.25;
+
+        }
+
+        .container .main-content .text-content h4:hover {
+          color: darkred;
+          text-transform: full-width;
+          font-size: 20px;
+        }
+
+
+.contact:hover {
+          color: darkgray;
+          background-color: black;
+          text-transform: full-width;
+        }
+
+.logo:hover {
+        transform-origin: bottom right;
+        transform scale(1.75);
+        border-radius: 10px;
+        border: 1px dashed gray;
+        padding: 5px;
+      }
+
+header nav a:hover {
+          text-decoration: underline;
+          background-color: black;
+      }
+
+.container .cta .cta-text:hover {
+          color: darkred;
+        }
+
 
         .bottom-content {
           width: 98%;
@@ -472,7 +523,7 @@ flex-direction: row;
       } */
         .container{
         background-color: rgba(224, 255, 255, 0.767);
-        width: 500px;
+        /* width: 500px; */
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
@@ -488,7 +539,7 @@ flex-direction: row;
           flex-wrap: nowrap;
           align-items: center;
           justify-content: center;
-          border-bottom: line solid black;
+          /* border-bottom: 1px solid black; */
           /* padding: 5%; */
               /* justify-content: center; */
           }
@@ -508,14 +559,18 @@ flex-direction: row;
           display: flex;
           flex-direction: column;
           align-items: center;
-          border-top: line solid gray;
+          border-top: 1px solid gray;
         }
         .container header nav a:first-child {
-          border-top: line solid gray;
+          border-top: 1px solid gray;
+        }
+
+        .container header nav a:last-child {
+          border-bottom: 1px solid gray;
         }
 
         .container header nav a {
-          border-top: line solid gray;
+          border-top: 1px solid gray;
 
         }
 
@@ -534,6 +589,8 @@ flex-direction: row;
         header nav a:hover {
             text-decoration: underline;
             background-color: black;
+            border: 2px solid darkred;
+            line-height: 1.25;
         }
 
 
@@ -546,20 +603,27 @@ flex-direction: row;
           border-bottom: line solid black;
 
                 /* align-self: center; */
-          margin: 28px;
+          margin: 0;
+        }
+        .logo:hover {
+          transform-origin: bottom right;
+          transform scale(1.75);
+          border-radius: 10px;
+	        border: 1px dashed gray;
+	        padding: 5px;
         }
 
         #hideMe {
           display: none;
         }
         .cta {
-          width: 99%;
+          width: 83%;
           display: flex;
           align-items: center;
           justify-content: center;
             }
         .container .cta .cta-text {
-          width: 99%;
+          width: 98%;
           display: flex;
           flex-direction: column;
           align-items: center;
@@ -567,7 +631,7 @@ flex-direction: row;
 
             }
         .cta .cta-text button {
-          width: 35%;
+          width: 48%;
           display: block;
           font-size: 15px;
             }
@@ -610,23 +674,37 @@ flex-direction: row;
 
           .container .main-content .text-content:hover {
             background-color: gray;
-            text-decoration-color: dodgerblue;
-            text-decoration-style: double;
+            text-decoration-color: white;
+            text-decoration-style: solid;
             text-decoration-line: underline;
+            line-height: 1.25;
 
           }
 
           .container .main-content .text-content h4:hover {
-            color: white;
+            color: darkred;
+            text-transform: full-width;
+            font-size: 18px;
           }
 
           .contact {
-              margin-top: 7px;
+              margin-top: .875%;
               border-top: 1px solid white;
 
           }
+
+          .contact:hover {
+            color: darkgray;
+            background-color: black;
+            text-transform: full-width;
+          }
+
+          .container .cta .cta-text:hover {
+            color: darkred;
+          }
+
           #needLine {
-            padding-bottom: 30px;
+            padding-bottom: 3.75%;
             border-bottom: 1px solid black;
 
           }
