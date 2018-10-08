@@ -210,7 +210,7 @@ h1, h2, h3, h4, h5 {
 	 }
 
 	  .cta {
-		 height: 420px;
+		 height: 400px;
 		 margin-left: 170px;
 		 position: relative;
 	 }
@@ -247,13 +247,42 @@ h1, h2, h3, h4, h5 {
 
 /* Mobile */
 
-@media (max-width:500px) {
-	.container {
-		background-color: blue;
+@media (max-width: 500px) {
+	header nav {
+		width: 100%;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 0px;
 	}
 
-	.header {
-		display: flex;
+	header nav a {
+		font-size: 20px;
+		margin-top: 30px;
+		padding: 0 200px;
+		padding-bottom: 20px;
+		border-bottom: 1px solid black;
+	}
+
+	header nav a:first-child{
+		padding-top: 30px;
+		border-top: 1px solid black;
+	}
+
+	header .logo {
+		margin-top: 15px;
+		padding-bottom: 25px;
+	}
+
+	.cta {
+	margin-left: 0px;
+	}
+
+	.main-content div {
 		flex-direction: column;
+		margin-top: 30px;
+	}
+
+	.main-content .bottom-content .text-content {
+		width: 100%;
 	}
 }
