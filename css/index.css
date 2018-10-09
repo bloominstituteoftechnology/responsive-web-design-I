@@ -1,3 +1,257 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
 
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+/* prettier-ignore */
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+body {
+	color: #232323;
+}
+
+/* Layout */
+
+.container {
+	max-width: 910px;
+	padding: 0 15px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+/* Navigation */
+
+.nav {
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav a {
+    margin-right: 62px;
+	text-decoration: none;
+    color: #999;
+}
+
+.nav .logo {
+    position: relative;
+    bottom: 7px;
+}
+
+/* Header */
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 0px;
+    margin-bottom: 60px;
+}
+
+.heading-wrapper {
+    display: flex;
+    align-items: center;
+	padding: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 50%;
+}
+
+.img-wrapper {
+    width: 50%;
+    padding: 20px;
+}
+
+.heading {
+	font-size: 58px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.header .btn {
+    text-decoration: none;
+    color: inherit;
+    padding: 6px 35px;
+    border: 1px solid black;
+    min-width: 150px;
+}
+
+/* Main Content  */
+
+.top-section {
+    display: flex;
+    flex: wrap;
+}
+
+.top-section article {
+    padding: 10px 0px;
+}
+.middle-img {
+    object-fit: cover;
+}
+
+.bottom-section {
+    display: flex;
+    flex: wrap;
+}
+
+.bottom-section article {
+    padding: 0px 10px 0px 0px;
+}
+
+hr {
+    border: 1px solid black;
+    margin: 20px 0px;
+}
+
+/* Contact and Footer */
+
+.contact-section {
+    text-decoration: none;
+    font-style: normal;
+    padding: 10px 0px 0px 0px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0px;
+}
+
+/* Tablet Media Style */
+
+@media (max-width: 800px) {
+
+    .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .nav .logo { order: -1; }
+    .nav {
+        display: flex; 
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        padding: 20px 0px;
+        margin: 0px;
+        font-size: 20px;
+    }
+    .nav .nav-links {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
+    .nav .logo {
+        padding: 30px 0px;
+    }
+    .img-wrapper {
+        display: none;
+    }
+    .header {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 90px;
+        margin: 0px;
+    }
+    .heading-wrapper {
+        width: 50%;
+        margin: 0px;
+        padding: 0px 30px;
+    }
+    .header .btn {
+        padding: 3px 35px;
+        margin: 10px 0px;
+    }
+    .bottom-section {
+        padding: 25px 0px;
+    }
+
+}
+
+/* Mobile Style */
+
+@media (max-width: 500px) {
+    .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px;
+    }
+    .img-wrapper {
+        display: none;
+    }
+    .header {
+        padding: 10px 0px 50px 0px;
+    }
+    .nav {
+        align-items: center;
+        font-size: 28px;
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
+    .nav .nav-links {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        border-top: 1px solid black;
+    }
+    .nav .logo {
+        padding: 20px 0px;
+    }
+    .nav .nav-links a {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        border-bottom: 1px solid black;
+        padding: 15px 0px;
+        margin: 0px;
+        font-size: 20px;
+    }
+    .header {
+        display: flex;
+        flex-wrap: wrap;
+        align-self: center;
+        width: 50%;
+    }
+    .heading-wrapper {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+        margin: 0px;
+        padding: 0px 30px;
+    }
+    .top-section, .bottom-section {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .top-section {
+        margin-top: 10px;
+        padding-top: 10px;
+    }
+    .middle-img {
+        height: 90px;
+    }
+    .bottom-section {
+        padding-bottom: 20px;
+    }
+    .contact-section {
+        padding: 0px;
+        width: 50%;
+        height: 20%;
+        line-height: 100%;
+    }
+}
