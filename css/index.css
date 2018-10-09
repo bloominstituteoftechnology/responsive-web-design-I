@@ -1,3 +1,407 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+/* general CSS */
+.container {
+  max-width: 880px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+footer {
+  text-align: center;
+  margin-top: 25px;
+  margin: 30px;
+  padding: 10px;
+}
+
+/* navigator and nav */
+
+.navigator-header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.navigator-header nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 90px;
+}
+
+.navigator-header nav a {
+  text-decoration: none;
+  color: #a7a7a7;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.navigator-header img {
+  margin: 0;
+  padding: 0;
+}
+
+/* home header */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 67px 0 77px 0;
+  margin-bottom: 5px;
+  border-bottom: 2px solid black;
+}
+
+header div.main-heading {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  margin-left: 45px;
+  width: 100%;
+}
+
+header h1.main-heading {
+  font-size: 73px;
+  text-align: center;
+  width: 100%;
+}
+
+header button {
+  align-self: center;
+  border: 1px solid black;
+  background-color: white;
+  padding: 5px 50px;
+  margin-top: 10px;
+}
+
+/* home content */
+.home .text-content {
+  margin: 30px 0;
+}
+
+.home section.top-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.home section .text-content p {
+  line-height: 1.2;
+}
+
+.home section.bottom-content {
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 2px solid black;
+}
+
+.home .bottom-content .text-content p {
+  line-height: 1.15;
+  padding-right: 20px;
+}
+
+.home section.img {
+  display: flex;
+  justify-content: center;
+}
+
+.home .contact span {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.home .contact {
+  margin: 40px 0;
+}
+
+/* tablet */
+
+@media (max-width: 800px) {
+  .navigator-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin-top: 30px;
+  }
+
+  .navigator-header .nav,
+  .logo {
+    margin: 33px 0;
+  }
+
+  .navigator-header nav {
+    order: 1;
+    padding: 0px 0;
+    justify-content: space-between;
+    padding-right: 45px;
+    padding-left: 10px;
+    margin-top: 30px;
+    margin-right: 0;
+  }
+
+  .container {
+    width: 760px;
+  }
+
+  .home header h1.main-heading {
+    margin: 0px;
+  }
+
+  .home header {
+    padding: 75px 40px 75px 0;
+    margin: 0;
+  }
+
+  .home header img {
+    display: none;
+  }
+
+  .home button {
+    margin-top: 20px;
+    padding: 10px 50px;
+  }
+
+  .home div.text-content {
+    justify-content: space-between;
+    padding-left: 10px;
+  }
+
+  .home div.text-content p {
+    width: 97%;
+  }
+
+  .home section.img {
+    max-width: 800px;
+    width: 100%;
+  }
+
+  .home section.image .middle-img {
+    width: 100%;
+  }
+
+  .home .contact {
+    padding-left: 10px;
+  }
+}
+
+/* mobile */
+
+@media (max-width: 500px) {
+  .container {
+    width: 500px;
+  }
+
+  .navigator-header .logo {
+    margin: 20px 0 0 0;
+  }
+
+  .navigator-header nav {
+    flex-direction: column;
+    border-top: 1px solid black;
+    padding: 0;
+    margin-top: 18px;
+  }
+
+  .navigator-header nav a {
+    width: 100%;
+    text-align: center;
+    padding: 22px 0;
+    margin: 0;
+    border-bottom: 1px solid black;
+  }
+
+  .home header {
+    padding-top: 50px;
+
+    border-bottom: 2px solid black;
+    margin: 0 20px;
+    margin-bottom: 30px;
+  }
+
+  section.top-content,
+  .bottom-content {
+    flex-direction: column;
+  }
+
+  .home .text-content {
+    margin: 30px 10px;
+  }
+
+  .home .bottom-content .text-content {
+    width: 98%;
+  }
+
+  .home .image {
+    padding: 0 20px;
+  }
+
+  .home section.bottom-content {
+    border-bottom: none;
+  }
+
+  .home .contact {
+    border-top: 2px solid black;
+    margin: 10px 20px;
+    padding: 40px 0 0;
+  }
+
+  footer {
+    margin: 30px;
+    padding: 10px;
+  }
+}
