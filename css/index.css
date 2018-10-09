@@ -1,3 +1,573 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+/* General Styling */
+
+.container {
+	width: 922px;
+	padding: 15px 20px;
+	margin: 0 auto;
+}
+
+.container nav {
+	display: flex;
+	justify-content: space-between;
+	height: 70px;
+	padding: 10px 0;
+}
+
+.container nav .header-links {
+	display: flex;
+	justify-content: space-between;
+	width: 70%;
+}
+
+.container nav a, a:visited {
+	color: grey;
+	text-decoration: none;
+	padding:  5px 10px;
+	align-self: center;
+}
+
+.container nav .logo {
+	padding-right: 10px;
+}
+
+.container footer {
+	height: 110px;
+	margin-top: 80px;
+}
+
+.container footer p {
+	text-align: center;
+}
+
+
+/* Home Page Styling */
+
+
+.container header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 500px;
+	border-bottom: 1px solid black;
+}
+.container header .phrase {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-self: center;
+	width: 50%;
+	margin: 0px 0 50px 55px;
+}
+
+.container header .phrase h1 {
+	align-self: center;
+	font-size: 72px;
+	text-align: center;
+}
+
+.container header .phrase .get-started {
+	font-size: 18px;
+	color: grey;
+	text-align: center;
+	text-decoration: none;
+	justify-content: center;
+	align-self: center;
+	width: 170px;
+	border: 1px solid grey;
+	padding: 5px 0;
+	margin: 24px 4px 0 0;
+	border-radius: 5%;
+}
+
+.container header img {
+	align-self: center;
+	padding: 0px;
+}
+
+.container .body {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 510px;
+	border-bottom: 1px solid black;
+	padding: 25px 0;
+}
+
+.container .body .top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.container .body .middle {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 300px;
+}
+
+.container .body .bottom {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.container .body .top .content-container {
+	width: 50%;
+	margin: 30px 0;
+}
+
+.container .body img {
+	width: 100%;
+	margin: 30px auto;
+}
+
+.container .body .bottom .content-container {
+	width: 33%;
+	margin: 30px 0;
+	padding: 30px 0 10px;
+}
+
+.container .contact {
+	margin: 40px 0 0;
+}
+
+
+/* Services Page Styling */
+
+
+.container .services-header {
+	display: flex;
+	flex-direction: column;
+	height: 400px;
+	border-bottom: 1 px solid black; 
+	margin-bottom: 30px;
+} 
+
+.container .services-header .content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 50%;
+}
+
+.container .services-header h1 {
+	align-self: flex-start;
+	font-size: 36px;
+}
+
+.container .services-header p {
+	align-self: flex-start;
+}
+
+.container .services-body {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-between;
+	justify-content: space-between;
+	height: 800px;
+	border-bottom: 1px solid black;
+	padding: 20px 0 40px;
+	margin-bottom: 40px;
+}
+
+.container .services-body .digital-design {
+	background: rgb(231, 231, 231);
+	border: 1px solid black;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-between;
+	height: 30%;
+	width: 48%;
+	padding: 20px;
+}
+
+.container .services-body .ux-ui {
+	background: rgb(231, 231, 231);
+	border: 1px solid black;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-between;
+	height: 30%;
+	width: 48%;
+	padding: 20px;
+}
+
+.container .services-body .digital-marketing {
+	background: rgb(231, 231, 231);
+	border: 1px solid black;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-between;
+	height: 30%;
+	width: 48%;
+	padding: 20px;
+}
+
+.container .services-body .web-dev {
+	background: rgb(231, 231, 231);
+	border: 1px solid black;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-between;
+	height: 30%;
+	width: 48%;
+	padding: 20px;
+}
+
+.container .services-body .ios-dev {
+	background: rgb(231, 231, 231);
+	border: 1px solid black;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-between;
+	height: 30%;
+	width: 48%;
+	padding: 20px;
+}
+
+.container .services-body .android-dev {
+	background: rgb(231, 231, 231);
+	border: 1px solid black;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-between;
+	height: 30%;
+	width: 48%;
+	padding: 20px;
+}
+
+.container .services-body button {
+	width: 120px;
+	border-radius: 7.5%;
+	border-color: black;
+	padding: 7px 20px;
+}
+
+.container .facts-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.container .facts-container .facts{
+	width: 45%;
+}
+
+.container .facts-container ul{
+	list-style-type: square;
+	line-height: 1.5;
+	padding-left: 20px;
+}
+
+.services-footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	padding-bottom: 15px;
+	height: 100px;
+}
+
+/* Tablet */
+
+@media (max-width: 800px) {
+
+    .container {
+        width: 100%;
+    }
+
+    .container nav {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+        align-items: center;
+        height: 123px;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .container nav .header-links {
+        justify-content: space-between;
+        width: 100%;
+        text-align: center;
+        padding-right: 30px;
+    }
+
+    .container nav .logo {
+        padding-right: 0px;
+    }
+
+    .container header {
+		height: 380px;
+		width: 100%;
+		justify-content: center;
+		padding-top: 30px;
+    }
+
+    .container header .phrase {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container header .phrase h1 {
+        font-size: 72px;
+    }
+
+    .container header .phrase .get-started {
+        font-size: 18px;
+        width: 170px;
+        margin: 15px 7px -6px 0;
+    }    
+
+    .container header img {
+        display: none;
+    }
+
+    .container .body {
+        height: 589px;
+        padding: 15px 0 35px;
+    }
+    
+    .container .body .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0px 0 0px;
+    }
+    
+    .container .body .top .content-container {
+        width: 50%;
+        padding: 0px 10px;
+		line-height: 1.1;
+		margin: 20px 0 0;
+    }
+    
+	.container .body .middle {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 210px;
+	}
+
+    .container .body img {
+        width: 100%;
+    	margin: 30px auto;
+    }
+
+    .container .body .bottom {
+        justify-content: flex-start;
+    }
+    
+    .container .body .bottom .content-container {
+        width: 33%;
+        padding: 0px 10px;
+    	margin: 5px 0 0px;	
+    }
+    
+    .container .contact {
+        margin: 35px 0 0 10px;
+        height: 155px;
+	}
+	
+	.container footer {
+		height: 25px;
+		margin-top: 10px;
+	}
+}
+
+
+/* Mobile */
+
+
+@media (max-width: 500px) {
+
+    .container {
+		width: 100%;
+		padding: 0;
+    }
+
+    .container nav {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+		align-items: center;
+		flex-wrap: wrap;
+        height: 448px;
+		width: 100%;
+    }
+
+    .container nav .header-links {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		width: 100%;
+		text-align: center;
+		padding-right: 0;
+	}
+	
+	.container nav .header-links a {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+		font-size: 21px;
+		height: 61px;
+		padding: 25px 0;
+		border-bottom: 1px solid grey;
+    }
+
+	#services-nav {
+		border-top: 1px solid grey;
+	}
+	
+    .container nav .logo {
+		width: 100%;
+		padding-right: 0px;
+		padding-top: 5px;
+    }
+
+    .container header {
+        height: 395px;
+        width: 92%;
+		justify-content: center;
+		margin: 0 auto;
+		border-bottom: 2px solid black;
+    }
+
+    .container header .phrase {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 32px;
+        padding: 0 50px 0 0;
+    }
+
+    .container header .phrase h1 {
+        font-size: 72px;
+    }
+
+    .container header .phrase .get-started {
+        font-size: 18px;
+        width: 170px;
+        margin: 15px 7px 3px 0;
+    }    
+
+    .container .body {
+        height: 820px;
+		padding: 10px 0 40px;
+		margin: 0 auto;
+		width: 92%;
+		border-bottom: 2px solid black;
+    }
+    
+    .container .body .top {
+		display: flex;
+		flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+		padding: 15px 0;
+		height: 300px;
+	}
+	
+	.container .body .top .content-container {
+		width: 100%;
+    }
+	
+	.container .body .middle {
+		height: 160px;
+	}
+
+    .container .body img {
+		width: 100%;
+        padding: 0 10px;
+	}
+
+	.container .body .bottom {
+		display: flex;
+		flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+		padding: 0 00px;
+		height: 400px;
+	}
+
+	.container .body .bottom .content-container {
+		width: 100%;
+    }
+	
+    .container .contact {
+        margin: 36px 0 0 27px;
+    	height: 145px;
+    }
+}
 
 
