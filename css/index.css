@@ -1,3 +1,658 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* Set every element's box-sizing to border-box */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+.wrapper {
+    max-width: 910px;
+    padding: 0 15px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.nav-bar a {
+    color: gray;
+    /*
+ margin-top: 30px;
+    */
+    margin-right: 60px;
+    text-decoration: none;
+    display: inline-block;
+    transform: translateY(-10px);
+}
+
+.nav-bar {
+    color: gray;
+    padding: 30px 0;
+}
+
+.header {
+    padding: 50px;
+}
+
+.heading-wrapper {
+    text-align: center;
+    display: inline-block;
+    padding: 50px;
+    /* float: left; */
+}
+
+.heading {
+    font-size: 72px;
+    margin-bottom: 20px;
+}
+
+.img-wrapper {
+    display: inline-block;
+}
+
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+}
+
+.group:after {
+    clear: both;
+}
+
+.group {
+    zoom: 1;
+    /* For IE 6/7 (trigger
+hasLayout) */
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    padding: 8px 60px;
+    border: 1px solid black;
+}
+
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* Set every element's box-sizing to border-box */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+
+/* Your code starts here! */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+
+/* prettier-ignore */
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+body {
+    color: #232323;
+}
+
+
+/* Layout */
+
+.container {
+    max-width: 910px;
+    padding: 0 15px;
+    width: 100%;
+    margin: 0 auto;
+    /* border: 1px solid palevioletred; */
+}
+
+
+/* Navigation */
+
+.nav {
+    /* padding ensures the background-color covers the space around */
+    padding: 30px 0;
+    /* background-color: #bdbdbd; */
+}
+
+.nav a {
+    margin-right: 62px;
+    text-decoration: none;
+    color: #999;
+    display: inline-block;
+    transform: translateY(-10px);
+}
+
+
+/* Header */
+
+.header {
+    padding: 50px;
+}
+
+.heading-wrapper {
+    text-align: center;
+    /* display: inline-block; */
+    padding: 50px;
+    float: left;
+}
+
+.heading {
+    font-size: 72px;
+    margin-bottom: 20px;
+}
+
+.img-wrapper {
+    display: inline-block;
+}
+
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+}
+
+.group:after {
+    clear: both;
+}
+
+.group {
+    zoom: 1;
+    /* For IE 6/7 (trigger hasLayout) */
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    padding: 8px 60px;
+    border: 1px solid black;
+}
+
+
+/* Contents */
+
+.top-section,
+.bottom-section,
+.contact-section {
+    padding: 30px 0;
+    text-align: justify;
+}
+
+.top-section article {
+    display: inline-block;
+    width: 49.8%;
+    padding-right: 20px;
+}
+
+.bottom-section article {
+    display: inline-block;
+    width: 33%;
+    padding-right: 20px;
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+    font-size: 14px;
+    padding: 15px 0;
+}
+
+
+/* Services */
+
+.services-card {
+    /* border-bottom: 2px solid black; */
+    padding-bottom: 40px;
+    width: 880px;
+    /* height: 700px; */
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.services-card div {
+    padding-bottom: 0px;
+    border-bottom: 1px solid black;
+    width: 420px;
+    height: 205px;
+    padding: 20px;
+    margin: 10px;
+    background: rgb(241, 241, 241);
+    border: 1px solid black;
+}
+
+.services-card .services-header-img {
+    margin: 20px 0;
+}
+
+.services-card h1 {
+    font-size: 26px;
+    margin: 10px 0;
+}
+
+.services-card .service-desc {
+    border-bottom: 1px solid black;
+    padding-bottom: 40px;
+    margin-bottom: 20px
+}
+
+.services-card .card button {
+    padding: 10px 40px;
+    margin-top: 20px;
+    cursor: pointer;
+    background: white;
+    border-radius: 5px;
+    /* border: 1px solid black; */
+}
+
+.services-card .card button:hover {
+    background: black;
+    color: white;
+}
+
+.services-card .services-info ul {
+    margin: 20px;
+}
+
+.services-card .services-info {
+    display: flex;
+    flex-wrap: wrap;
+    /* border-top: 2px solid black; */
+    margin: 20px 0 35px 0;
+    padding-top: 40px;
+}
+
+
+/* .services-card .services-info .fact-service {
+    width: 40px;
+    margin: 0 60px 20px 0;
+} */
+
+.fact-service {
+    display: flex;
+    border-top: 1px solid #000;
+    padding: 30px 0;
+    /* margin-top: 30px; */
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 300px;
+    /* border: 1px solid red; */
+}
+
+.facts {
+    width: 49%;
+    /* margin-top: 30px; */
+    /* border: 1px solid blue; */
+}
+
+.facts h3 {
+    margin: 10px;
+}
+
+.facts p {
+    margin: 10px;
+}
+
+.facts ul li {
+    list-style: inside;
+    padding: 5px;
+    margin: 5px;
+}
+
+.services-info {
+    padding-bottom: 40px;
+    /* width: 880px; */
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-content {
+    text-align: center;
+    margin: 30px;
+    /* height: 20px; */
+}
+
+
+/* Desktop */
+
+@media (max-width: 800px) {
+    .container {
+        width: 100%;
+        /* background: blue; */
+    }
+    .container .nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        /*align-content: space-around;
+        margin: 20px; */
+        /* width: 100%; */
+    }
+    .container .nav .logo {
+        order: 1;
+        display: block;
+        /* width: 100%; */
+        padding: 0 60px;
+        margin: 0 40%;
+    }
+    .container .nav a {
+        order: 2;
+        width: 16.66666%;
+        text-align: center;
+        margin: 20px 0 0 0;
+        /* justify-content: space-around;
+        align-content: space-around; */
+    }
+    .img-wrapper {
+        display: none;
+    }
+    .heading-wrapper {
+        /* border-bottom: 1px solid black; */
+        width: 100%;
+        margin: 20px;
+        padding: 30px;
+    }
+    .top-section {
+        display: flex;
+        flex-wrap: wrap;
+        border-top: 1px solid black;
+    }
+    .middle-img {
+        width: 100%;
+    }
+    .bottom-section {
+        display: flex;
+        flex-wrap: wrap;
+        border-bottom: 1px solid black;
+    }
+}
+
+
+/* Mobile */
+
+@media (max-width: 500px) {
+    .container {
+        width: 100%;
+    }
+    .nav {
+        width: 100%;
+    }
+    .container .nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container .nav a {
+        /* padding: 10px; */
+        /* border-top: 1px solid lightgray; */
+        border-bottom: 1px solid lightgray;
+        font-size: 28px;
+        width: 100%;
+    }
+    .container .logo {
+        /* padding: 10px; */
+        width: 100%;
+        /* padding: 20px; */
+        margin-bottom: 20px;
+        border-bottom: 1px solid lightgray;
+    }
+    .container .top-section article {
+        display: inline-block;
+        margin: 0;
+        width: 100%;
+        /* display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap; */
+    }
+    .top-section h3 {
+        margin-top: 10px;
+    }
+    .middle-img {
+        width: 100%;
+    }
+    .container .bottom-section article {
+        display: inline-block;
+        margin: 0px;
+        width: 100%;
+    }
+    .bottom-section h3 {
+        margin-top: 10px;
+    }
+}
