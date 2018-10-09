@@ -69,39 +69,40 @@ h1, h2, h3, h4, h5 {
 .container {
   width: 880px;
   margin: 0 auto;
+	border: 1px solid red;
 }
 
 header nav {
   display: flex;
   flex-direction: row;
-  vertical-align: top;
-  /* margin-top: 35px; */
-	flex-wrap: nowrap;
-	paddi
+	border: 1px solid red;
 }
 
-header nav a {
+header nav .nav-bar a {
   display: flex;
   margin-right: 65px;
   font-size: 14px;
   color: gray;
   text-decoration: none;
-	align-items: flex-end;
+	flex-direction: row;
+	justify-content: flex-start;
+	border: 1px solid red;
+
 }
 
-header nav a:hover {
+header nav .nav-bar a:hover {
   text-decoration: underline;
 }
 
-header nav a:first-child {
+header nav .nav-bar a:first-child {
   margin-left: 0;
 }
 
-header nav a:last-child {
+header nav .nav-bar a:last-child {
   margin-right: 0;
 }
 
-header .logo {
+header nav .nav-bar-logo {
   display: inline-block;
   margin-top: 25px;
 }
@@ -113,6 +114,7 @@ header .logo {
   margin-top: 120px;
   text-align: center;
   padding: 0px 75px;
+	border: 1px solid red;
 }
 
 .top-intro .top-text button {
@@ -222,20 +224,54 @@ border: 1px solid black;
 /* Media Queries */
 
 @media (max-width: 800px) {
-	header {
-		display: flex;
-		flex-wrap: wrap;
+	.container{
+	  width: 100%;
 	}
 	header nav {
-		flex-direction: row;
-		flex-wrap: wrap;
+	  display: flex;
+	  flex-direction: column-reverse;
+	  vertical-align: top;
+		align-items: center;
+		flex-wrap: nowrap;
+		border: 1px solid red;
+	}
+	header nav .nav-bar {
+		display: flex;
+		justify-content: space-around;
+		padding: 10px;
+	}
+	header .logo{
+	  justify-content: center;
+    align-self: center;
+	}
+	.top-intro {
+		display: flex;
 		justify-content: center;
 	}
 	.top-intro img {
 		display: none;
- }
+	}
   .top-text {
 		align-self: center;
+		margin-top: 90px;
+	}
+
+  .middle-bar {
+	display: flex;
+	justify-content: space-between;
+  }
+
+	.middle-img {
+		max-width: 100%
+		height: auto;
+	}
+
+	.bottom-content {
+		flex-direction: row;
+	}
+	.contact {
+		display: flex;
+		flex-direction: column;
 	}
 }
 
@@ -252,9 +288,8 @@ border: 1px solid black;
 		flex
 	}
 	.middle-bar {
-		display: flex;
-		align-items: center;
-		flex-wrap: wrap;
+		max-width: 100%;
+		height: auto;
 	}
 	.text-content {
 		flex-direction: column;
