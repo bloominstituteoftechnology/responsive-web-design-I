@@ -1,4 +1,376 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 62.5%;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+/* --------------- */
+/* Global Settings */
+
+.container {
+	/* border: 1px solid red; */
+	max-width: 880px;
+    margin: 0 auto;
+    font-size: 1.6rem;
+
+}
+
+.navigation {
+	/* border: 1px solid red; */
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+    margin: 30px 0;
+    width: 100%;
+}
+
+.navigation nav {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.navigation a {
+	/* border: 1px solid red; */
+	/* background-color: grey; */
+	text-decoration: none;
+	color: lightgrey;
+}
+
+.navigation a:hover {
+	color: black;
+}
+
+hr .hr-style {
+	margin: 40px 0;
+	/* border-top: 1px solid #8c8b8b; */
+}
+
+p {
+    line-height: 1.2;
+    /* letter-spacing: .2px; */
+}
+
+footer {
+	margin: 35px 0 25px 0;
+	text-align: center;
+}
 
 
+/* --------------------------- */
+/* Home Page Local Settings    */
+
+.header-content {
+	display: flex;
+	/* border: 1px solid red; */
+	justify-content: space-between;
+	align-items: center;
+	padding: 45px 0 70px 0;
+	border-bottom: 1px solid black;
+}
+
+.header-content .header-text {
+	/* border: 1px solid red; */
+	width: 50%;
+    margin-left: 5%;
+    /* padding: 0 20px; */
+}
+
+.header-content .header-text .innovate-content {
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: center;
+    /* margin: 0 100px; */
+    margin: 0 0 0 35px;
+}
+
+.header-content .header-text .innovate-content h1 {
+	font-size: 7.1rem;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.header-content .header-text .innovate-content a {
+	text-decoration: none;	
+	text-align: center;
+	border: 1px solid black;
+	border-radius: 2px;
+	padding: 7px 40px;
+    color: black;
+    font-size: 1.8rem;
+}
+
+.feature-about-content {
+	display: flex;
+    margin: 38px 0;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.feature-about-content .feature-content {
+	/* border: 1px solid red; */
+	/* justify-content: space-between; */
+	margin-right: 10px;
+	/* line-height: 1.1; */
+}
+
+.service-product-vision-content {
+	display: flex;
+	margin: 30px 0;
+	/* padding-bottom: 2px; */
+}
+
+.service-product-vision-content .service-content {
+	justify-content: space-between;
+    margin-right: 10px;
+	/* line-height: 1.1; */
+}
+
+.contact-content {
+	display: block;
+	padding-top: 30px;
+	border-top: 1px solid black;
+	/* border: 1px solid red; */
+}
+
+.contact-content .phone-content {
+	margin: 15px 0;
+}
+
+
+
+/* --------------------------- */
+/* Service Page Local Settings */
+
+.service-header .service-content {
+	line-height: 1.2;
+	margin: 30px 0;
+	padding-bottom: 30px;
+	border-bottom: 1px solid lightgray;
+}
+
+.info-box {
+	/* border: 1px solid red; */
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 35px 0;
+
+}
+
+.info-box .info-box-style {
+	/* line-height: 1.1; */
+	border: 1px solid black;
+	background-color: whitesmoke;
+	padding: 20px;
+	padding-right: 30px;
+	width: 48%;
+	height: 240px; 
+	align-items: center;
+}
+
+.info-box .info-box-style a {
+	display: block;
+	padding: 10px 30px;
+	margin: 20px 0 0 0;
+	border: 1px solid black;
+	text-decoration: none;
+	width: 150px;
+	border-radius: 3px;
+	background-color: white;
+	color: black;
+	font-size: 14px;
+	text-align: center;
+}
+
+.facts-section {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 35px 0;
+}
+
+.facts-section .facts-text {
+	/* border: 1px solid red; */
+	margin-right: 50px;
+	width: 46%;
+}
+
+.facts-section .facts-text p {
+	margin-bottom: 30px;
+	/* line-height: 1.3; */
+}
+
+.facts-section .facts-text ul {
+	list-style-type: square;
+	margin-left: 15px;
+	/* line-height: 1.2; */
+
+}
+
+.facts-section .facts-text ul li {
+	margin: 10px 0;
+}
+
+
+
+/* -------------------------- */
+/* Product Page Local Setting */
+
+.product-header .product-header-img {
+	width: 880px;
+	height: 200px;
+	margin: 20px 0;
+}
+
+.below-header-content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.below-header-content-boxes {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 32%;
+	height: 300px;
+	/* border: 1px solid red; */
+	padding: 20px;
+	background-color: whitesmoke;
+	margin-bottom: 30px;
+}
+
+.below-header-content-boxes h2 {
+	text-align: center;
+}
+
+.below-header-content-boxes a {
+	display: block;
+	text-decoration: none;
+	color: black;
+	text-align: center;
+	border: 1px solid rgb(167, 167, 167);
+	padding: 5px;
+	/* width: 100px; */
+}
+
+.below-header-content-boxes a:hover {
+	background-color: rgb(189, 189, 189);
+	color: white;
+}
+
+.main-content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	/* border: 1px solid red; */
+	margin-top: 50px;
+}
+
+.main-content img {
+/* height: 50%; */
+width: 120px;
+}
+
+.main-content .main-text-content {
+	width: 60%;
+}
+
+.main-content .main-text-content h2 {
+	font-size: 30px;
+}
+
+.main-content .main-text-content p {
+	margin-bottom: 20px;
+	line-height: 1.3;
+}
+
+.background-img {
+	background-image: url(../img/Code-Cracker-Banner-img.jpg);
+	background-color: red;
+	width: 100%;
+	height: 200px;
+}
+
+
+
+@media(max-width: 800px)
+{
+    .navigation {
+        /* border: 1px solid red; */
+        /* display: flex; */
+        /* justify-content: space-between; */
+        /* align-items: center; */
+        margin: 20px 0;
+    }
+}
+
+@media(max-width: 500px) 
+{
+
+}
