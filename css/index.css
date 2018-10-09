@@ -1,3 +1,700 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+/* DESKTOP */
+
+/* INDEX HOME PAGE */
+
+.container {
+  border: 2px solid red;
+  width: 880px;
+  /* TB LR */
+  margin: 0 auto;
+}
+
+/* shared header */
+
+header {
+	display: flex;
+	justify-content: space-between;
+	
+}
+
+header nav {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  width: 550px;
+  margin: 0 50px;
+  margin-top: 35px;
+}
+
+header nav a {
+  font-size: 14px;
+  opacity: .6;
+  color: gray;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+header .logo {
+  margin-top: 25px;
+  margin-right: 50px;
+}
+
+/* UNIQUE TO INDEX */
+/* cta */
+
+.cta {
+	display: flex;
+	/* border: 2px solid black; */
+	justify-content: center;
+	align-items: center;
+	height: 500px;
+	justify-content: space-evenly;
+}
+
+.cta .cta-text {
+	/* display: flex; */
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+  font-size: 77px;
+  text-align: center;
+}
+
+.cta .cta-text button {
+  background: white;
+  padding: 8px 44px;
+  font-size: 17px;
+  /* border: 1px solid black; */
+  cursor: pointer;
+}
+
+.cta .cta-text button:hover {
+  background: black;
+  color: white;
+}
+
+.cta .cta-text button {
+	align-self: flex-end;
+  }
+
+header .cta-img {
+    border: 2px solid red;
+    display: none;
+}
+
+.main-content {
+  border-top: 1px solid black;
+  padding-top: 39px;
+}
+
+.main-content .top-content {
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-content .top-content .text-content {
+  width: 450px;
+}
+
+.main-content .top-content .text-content h4 {
+  font-size: 18px;
+}
+
+.main-content .middle-img {
+  margin-top: 45px;
+}
+
+.main-content .bottom-content {
+  display: flex;
+  justify-content: space-between;
+  
+  margin-top: 37px;
+  
+}
+
+.main-content .bottom-content .text-content {
+  width: 290px;
+  
+
+}
+
+.main-content .bottom-content .text-content h4 {
+	font-size: 18px;
+}
+
+.contact {
+  margin-top: 57px;
+  border-top: 1px solid black;
+  padding: 39px 10px 0;
+}
+
+.contact  h4 {
+	font-size: 18px;
+}
+
+.contact p {
+  margin: 20px 0;
+}
+
+footer {
+  margin: 32px 0;
+  text-align: center;
+  font-size: 14px;
+}
 
 
+/* TABLET */
+
+@media (max-width: 800px) {
+    /* TABLET HEADER */
+    header {
+        display: flex;
+        flex-direction: column-reverse;
+        
+        
+    }
+
+    header .logo{
+          display: flex;
+          justify-content: center;
+          padding-top: 2px;
+          padding-right: 27px;         
+      }
+      
+      header nav {
+        display: flex; 
+        
+        width: 710px;
+        margin-top: 40px;
+        margin-left: 25px;  
+      }
+
+      header nav a {
+        font-size: 16px;
+        opacity: .6;
+        color: gray;
+        text-decoration: none;
+      }
+      
+      /* TABLET CTA  */
+      .cta-img {
+          display: none;
+      }
+
+      .cta {
+        display: flex;
+        
+        justify-content: center;
+        align-items: center;
+        height: 400px;
+        margin-bottom: 20px;
+        margin-right: 80px;
+    }
+    
+    .cta .cta-text {
+      display: flex;
+      flex-direction: column;
+      font-size: 77px;
+      line-height: .93;
+    }
+
+    .cta-text  h1 {
+      letter-spacing: -1px;
+      margin-bottom: 26px;
+      margin-top: 18px
+        }
+    
+    .cta .cta-text button {
+      background: white;
+      padding: 6px 42px;
+      font-size: 15.5px;
+      cursor: pointer;
+      margin-right: 60px;
+    }
+    
+    .cta .cta-text button:hover {
+      background: black;
+      color: white;
+    }
+
+    /* TABLET MAIN CONTENT */
+
+    .main-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        border-top: 1px solid black;
+        width: 800px;
+        padding-top: 36px;
+      }
+      
+      .main-content .top-content {
+        
+        display: flex;
+       justify-content: space-evenly;
+        width: 800px;
+       
+      }
+      
+      .main-content .top-content .text-content {
+        width: 360px;
+       
+      }
+      
+      .main-content .top-content .text-content h4 {
+        font-size: 14px;
+      }
+      
+      .main-content .middle-img {
+        margin-top: 45px;
+        width: 95%;
+        height: 110%;
+      }
+      
+      .main-content .bottom-content {
+        display: flex;
+        justify-content: space-evenly;
+        width: 775px;
+        margin-top: 28px;
+        margin-right: 20px;
+        
+      }
+      
+      .main-content .bottom-content .text-content {
+        width: 220px;
+        line-height: 1.2;
+        
+      
+      }
+      
+      .main-content .bottom-content .text-content h4 {
+          font-size: 15px;
+      }
+      
+      .contact {
+        margin-top: 57px;
+        border-top: 1px solid black;
+        padding: 30px 10px 0;
+        margin-left: 20px;
+      }
+      
+      .contact  h4 {
+          font-size: 16px;
+      }
+      
+      .contact p {
+        margin: 15px 0;
+      }
+      
+      .footer {
+        margin-right: 80px;
+        margin-bottom: 15px;
+        text-align: center;
+        font-size: 16px;
+      }
+
+    
+}
+
+/* PHONE */
+
+@media (max-width: 500px) {
+    /* PHONE HEADER */
+
+    .container {
+      border: 2px solid aquamarine;
+      width: 500px;
+      margin: 0 auto;
+    }
+
+    header .logo{
+          display: flex;
+          justify-content: center;  
+          margin: 0;
+          margin-top: 20px;
+          padding: 0;  
+            
+      }
+      
+      header nav {
+        display: flex; 
+        flex-direction: column; 
+        border-top: 1px solid gray; 
+        width: 500px;
+        margin-left: 0;
+        margin-top: 17px;
+      }
+
+      header nav a {
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+        opacity: .6;
+        color: gray;
+        text-decoration: none;
+        padding: 20.5px 0;
+        border-bottom: 1px solid gray;
+      }
+      
+      /* PHONE CTA  */
+      .cta-img {
+          display: none;
+      }
+
+      .cta {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 395px;
+        width: 93%;
+        margin-bottom: 0;
+        margin-right: 0;
+        margin-left: 16.5px;
+        padding-bottom: 20px;
+        border-bottom: 2px solid gray;
+        
+    }
+    
+    .cta .cta-text {
+      display: flex;
+      flex-direction: column;
+      font-size: 77px;
+      line-height: .93;
+      padding: 0;
+      margin: 0;
+      
+    }
+
+    .cta-text  h1 {
+      letter-spacing: -1px;
+      margin-bottom: 26px;
+      margin-top: 0px
+        }
+    
+    .cta .cta-text button {
+      background: white;
+      padding: 6px 42px;
+      font-size: 15.5px;
+      cursor: pointer;
+      margin-right: 60px;
+    }
+    
+    .cta .cta-text button:hover {
+      background: black;
+      color: white;
+    }
+
+    /* PHONE MAIN CONTENT */
+
+    .main-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 500px;
+        padding-top: 10px;
+      }
+      
+      .main-content .top-content {
+        
+        display: flex;
+        flex-direction: column;
+         width: 800px;
+       
+      }
+      
+      .main-content .top-content .text-content {
+        width: 450px;
+        display: flex;
+        flex-direction: column;
+        padding: 45px 15px 5px 15px;
+       
+        line-height: 1.2;
+      }
+      
+      .main-content .top-content .text-content h4 {
+        font-size: 16px;
+      }
+      
+      .main-content .middle-img {
+        margin-top: 43px;
+        width: 93%;
+        height: 110%;
+      }
+      
+      .main-content .bottom-content {
+        
+        display: flex;
+        flex-direction: column;
+         width: 800px;
+         margin-left: 15px;
+        
+      }
+      
+      .main-content .bottom-content .text-content {
+        display: flex;
+        flex-direction: column;
+        width: 420px;
+        line-height: 1.2;
+        margin-bottom: 62px;
+      }
+      
+      .main-content .bottom-content .text-content h4 {
+          font-size: 15px;
+      }
+
+      
+      .contact {
+        margin-top: 0px;
+        border-top: 1px solid black;
+        padding: 20px 10px 0;
+        margin-left: 10px;
+      }
+      
+      .contact  h4 {
+          font-size: 16px;
+      }
+      
+      .contact p {
+        margin: 15px 0;
+      }
+      
+      .footer {
+        margin-right: 20px;
+        margin-bottom: 15px;
+        text-align: center;
+        font-size: 16px;
+      }
+
+    
+}
+
+
+
+
+/* UNIQUE TO SERVICES */
+
+/* .services {
+	border: 2px solid red;
+	width: 880px; */
+	/* TB LR */
+	/* margin: 0 auto;
+	padding: 0 00px;
+  }
+
+.services-header-img {
+	width: 775px;
+}
+.serv-img {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 30px;
+	margin-top: 20px;
+}
+
+.service-intro {
+	display: flex;
+	justify-content: center;
+	border-bottom: 1px solid rgb(7, 5, 5);
+	height: 120px;
+	line-height: 1.3;
+	margin: 0 45px;
+	margin-bottom: 20px;
+	
+}
+
+.service-intro h1 {
+	font-size: 20px;
+}
+
+.service-intro p {
+	font-size: 14px;
+}
+
+.services-all {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	
+}
+
+.services-all button{
+	width: 150px;
+	padding: 10px 10px;
+	border-radius: 6px;
+	margin-top: 15px;
+}
+
+.services-all p {
+	line-height: 1.3;
+	font-size: 15px;
+}
+  
+.services-all div {
+	display: flex;
+	flex-direction: column;
+	background: rgb(241, 241, 241);
+	border: 1px solid black;
+	padding: 20px;
+	margin: 20px 0;
+	width: 372px;
+} */
+
+/* .services-all .ux{
+	display: flex;
+	flex-direction: column;
+	background: rgb(241, 241, 241);
+	border: 1px solid black;
+	padding: 20px;
+	margin: 20px 0;
+	width: 372px;
+}
+
+.services-all .marketing{
+	display: flex;
+	flex-direction: column;
+	background: rgb(241, 241, 241);
+	border: 1px solid black;
+	padding: 20px;
+	margin: 20px 0;
+	width: 372px;
+}
+
+.services-all .web{
+	display: flex;
+	flex-direction: column;
+	background: rgb(241, 241, 241);
+	border: 1px solid black;
+	padding: 20px;
+	margin: 20px 0;
+	width: 372px;
+}
+
+.services-all .ios{
+	display: flex;
+	flex-direction: column;
+	background: rgb(241, 241, 241);
+	border: 1px solid black;
+	padding: 20px;
+	margin: 20px 0;
+	width: 372px;
+}
+
+.services-all .android{
+	display: flex;
+	flex-direction: column;
+	background: rgb(241, 241, 241);
+	border: 1px solid black;
+	padding: 20px;
+	margin: 20px 0;
+	width: 372px;
+} */
+
+/* FACT SECTION */
+
+/* .facts {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 30px 50px;
+	padding-top: 40px;
+	border-top: 2px solid black;
+}
+
+.fact-text {
+	width: 375px;
+	margin-right: 20px;
+}
+
+.facts .fact-text h3 {
+	margin-bottom: 15px;
+	
+}
+
+.fact-text p {
+	margin-bottom: 20px;
+	line-height: 1.25;
+}
+
+.services-info-img {
+  width: 375px;
+}
+
+ul {
+	list-style-type: square;
+	line-height: 1.6;
+	margin-left: 20px;
+}
+
+footer p{
+	margin-top: 60px;
+} */
