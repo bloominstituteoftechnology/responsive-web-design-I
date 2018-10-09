@@ -70,71 +70,47 @@ h1, h2, h3, h4, h5 {
 .container {
 	max-width: 886px;
 	margin: 0 auto;
-	/* border: 1px solid red; */
 }
 
 nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	/* text-align: center; */
-	/* border: 1px solid red; */
-	/* padding: 20px; */
 	margin: 20px auto;
 }
 
 nav a {
 	color: grey;
 	text-decoration: none;
-	/* display: inline; */
 }
 
 .nav-text {
 	font-size: 80%;
-	/* border: 1px solid red; */
 	width: 80%;
-	/* display: inline-block; */
-	/* position: relative; */
-	/* bottom: 10px; */
 }
 
 .nav-text a {
 	margin-right: 60px;
 }
 
-.main-logo {
-	/* position: relative; */
-	/* left: 30px; */
-	/* display: inline-block; */
-	/* border: 1px solid red; */
-}
 
 h1 {
-	/* display: inline-block; */
 	font-size: 80px;
 }
 
 .main-image {
-	/* display: inline-block; */
 	width: 50%;
-	/* border: 1px solid red; */
 }
 
 .title1, .title2, .title3 {
-	/* display: block; */
 	text-align: center;
-	/* position: relative; */
-	/* bottom: 80px; */
-	/* left: 50px; */
 }
 
 .left-main {
-	/*display: inline-block;*/
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	/* border: 1px solid red; */
 	width: 50%;
 }
 
@@ -143,9 +119,6 @@ h1 {
 	color: black;
 	border: 2px solid black;
 	padding: 3px 40px;
-	/* position: relative; */
-	/* right: 195px; */
-	/* bottom: 30px; */
 }
 
 .jumbotron {
@@ -161,19 +134,9 @@ h1 {
 }
 
 .body1, .body2 {
-	/* display: inline-block; */
-	/* border: 1px solid red; */
 	width: 49%;
 	padding: 30px 0;
 }
-
-/* .body1 { */
-	/* float: left; */
-/* } */
-
-/* .body2 { */
-	/* float: right; */
-/* } */
 
 .middle p {
 	font-size: 90%;
@@ -189,22 +152,8 @@ h1 {
 }
 
 .body3, .body4, .body5 {
-	/* display: inline-block; */
-	/* border: 1px solid red; */
 	width: 32%;
 	padding: 30px 0;
-}
-
-.body3 {
-	/* float: left; */
-}
-
-.body4 {
-	/* position: relative; */
-	/* left: 30px; */
-}
-.body5 {
-	/* float: right; */
 }
 
 .middle {
@@ -230,17 +179,6 @@ h1 {
 
 
 
-
-/* diff between sizings
-
-tablet: 
-jumbo pic goes away
-nav rearranges
-
-mobile:
-everything vertical
-*/
-
 /* Tablet */
 @media (max-width:800px) {
 
@@ -251,20 +189,16 @@ everything vertical
 	.container {
 		width: 100%;
 		margin: 0 20px;
-		/* border: 1px solid red; */
 	}
 
 	.container nav {
 		flex-direction: column-reverse;
-		/* align-items: center; */
-		/* border: 1px solid red; */
 	}
 
 	.container .nav-text {
 		margin-top: 30px;
 		display: flex;
 		justify-content: space-between;
-		/* border: 1px solid red; */
 	}
 
 	.nav-text a {
@@ -279,8 +213,6 @@ everything vertical
 	}
 
 	.main-logo {
-		/* border: 1px solid red; */
-		/* max-width: 33%; */
 		width: 100%;
 		display: flex;
 		justify-content: center;
@@ -292,14 +224,11 @@ everything vertical
 	}
 
 	.main-logo .logo {
-		/* height: auto; */
 		max-width: 80%;
 		padding: 10px;
-		/* border: 1px solid red; */
 	}
 
 	.container nav {
-		/* border: 1px solid red; */
 		justify-content: center;
 	}
 
@@ -307,7 +236,6 @@ everything vertical
 		margin-top: 0;
 		flex-direction: column;
 		align-items: center;
-		/* border: 1px solid red; */
 		width: 100%;
 	}
 
@@ -316,7 +244,6 @@ everything vertical
 		width: 100%;
 		display: flex;
 		justify-content: center;
-		/* border: 1px solid red; */
 		padding: 15px;
 	}
 
@@ -328,7 +255,6 @@ everything vertical
 	.middle {
 		display: flex;
 		flex-direction: column;
-		/* margin-top: 20px; */
 	}
 
 	.middle .mid-top {
@@ -340,8 +266,6 @@ everything vertical
 	}
 
 	.body1, .body2, .body3, .body4, .body5 {
-		/* display: inline-block; */
-		/* border: 1px solid red; */
 		width: 100%;
 		padding: 20px 0;
 	}
