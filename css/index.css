@@ -1,3 +1,557 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.container {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.stat-banner {
+	width: 100%;
+	height: auto;
+	margin: auto;
+	padding: 35px 0;
+	position: fixed;
+	background: white;
+	z-index: 99;
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+}
+
+.stat-banner nav {
+	margin: 0 100px;
+	padding: 8px 0 0 25px;
+	width: 860px;
+	height: auto;
+	position: absolute;
+	display: flex;
+	justify-content: space-between;
+}
+
+.stat-banner nav a {
+	color: gray;
+}
+
+.stat-banner img {
+	margin-left: 80%;
+	height: 33px;
+}
+
+header {
+	margin: auto;
+	padding: 120px 100px 50px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header .inline {
+	margin-left: 10%;
+	vertical-align: top;
+	height: auto;
+	padding: 55px 0;
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	text-align: center;
+}
+
+header .inline h1 {
+	font-size: 74px;
+}
+
+header .inline a {
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+}
+
+header .inline a:hover {
+    text-decoration: underline;
+}
+
+header .inline button {
+    padding: 10px;
+    margin: 20px 110px 0 110px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+header img {
+	margin-left: 65%;
+	width: auto;
+	height: auto;
+}
+
+.top-content {
+	margin: 0 100px;
+	padding: 50px 0 25px;
+	height: auto;
+	border-top: 1px solid;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	text-align: justify;
+}
+
+.top-content h2 {
+	font-size: 24px;
+}
+
+.top-content .feats {
+	width: 500px;
+}
+
+.top-content .about {
+	width: 500px;
+}
+
+.middle-img {
+	margin: 10px 0;
+	padding: 35px 100px 0;
+	width: 100%;
+	height: auto;
+}
+
+.bottom-content {
+	margin: 0 100px;
+	padding: 35px 0 35px;
+	height: auto;
+	border-bottom: 1px solid;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	text-align: justify;
+}
+
+.bottom-content h2 {
+	font-size: 24px;
+}
+
+.bottom-content .servs {
+	width: 340px
+}
+
+.bottom-content .prods {
+	width: 340px
+}
+
+.bottom-content .vis {
+	width: 340px
+}
+
+.contact {
+	padding: 35px 100px 25px;
+	width: 100%;
+	height: auto;
+  }
+
+.contact address {
+	margin: 10px 0;
+  }
+
+.contact p {
+	margin: 10px 0;
+}
+
+.contact a {
+	margin: 10px 0;
+}
+
+footer {
+	padding: 25px 0 100px;
+	width: 100%;
+	height: auto;
+	text-align: center;
+}
+
+/* Services Page */
+.services-header-img {
+	margin: 75px 0 35px;
+	padding: 35px 100px 0;
+	width: 100%;
+	height: auto;
+}
+
+/* Tablet */
+@media screen and (max-width: 800px) {
+    .stat-banner {
+        width: 700px;
+        height: auto;
+        margin: auto;
+        padding: 0;
+        position: unset;
+        background: none;
+        z-index: none;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+    .stat-banner nav {
+        margin: 0;
+        padding: 8px 0 25px;
+        width: 100%;
+        height: auto;
+        position: unset;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .stat-banner nav a {
+        width: auto;
+        height: 50px;
+        padding-top: 15px;
+        margin: 0;
+        text-align: center;
+    }
+
+    .stat-banner img {
+        width: auto;
+        height: auto;
+        margin: 20px 0;
+        height: 33px;
+    }
+
+    header {
+        margin: auto;
+        padding: 50px 0;
+        width: 100%;
+        justify-content: center;
+        border-top: 0.5px solid black;
+    }
+
+    header .inline {
+        margin: 0;
+        vertical-align: 0;
+        height: auto;
+        padding: 0;
+        position: unset;
+        flex-direction: column;
+        align-content: center;
+        text-align: center;
+    }
+
+    header .inline button {
+        padding: 10px;
+        margin: 20px 110px 0 110px;
+        cursor: pointer;
+        border-radius: 5px;
+        border: 1px solid black;
+    }
+
+    header img {
+        display: none;
+    }
+
+    .top-content {
+        width: 100%;
+        margin: 0;
+        padding: 50px 10px 25px;
+        height: auto;
+        border-top: 1px solid black;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: justify;
+    }
+    
+    .top-content h2 {
+        font-size: 24px;
+    }
+    
+    .top-content .feats {
+        width: 310px;
+        padding: 0 10px;
+    }
+    
+    .top-content .about {
+        width: 310px;
+        padding: 0 10px;
+    }
+    
+    .middle-img {
+        margin: 10px 0;
+        padding: 0 20px;
+        width: 100%;
+        height: auto;
+    }
+    
+    .bottom-content {
+        width: 100%;
+        margin: 0;
+        padding: 35px 10px 35px;
+        height: auto;
+        border-bottom: 1px solid black;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: justify;
+    }
+    
+    .bottom-content h2 {
+        font-size: 24px;
+    }
+    
+    .bottom-content .servs {
+        width: 340px;
+        padding: 0 10px;
+    }
+    
+    .bottom-content .prods {
+        width: 340px;
+        padding: 0 10px;
+    }
+    
+    .bottom-content .vis {
+        width: 340px;
+        padding: 0 10px;
+    }
+    
+    .contact {
+        padding: 25px 20px 25px;
+        width: 100%;
+        height: auto;
+      }
+    
+    .contact address {
+        margin: 10px 0;
+      }
+    
+    .contact p {
+        margin: 10px 0;
+    }
+    
+    .contact a {
+        margin: 10px 0;
+    }
+    
+    footer {
+        padding: 15px 0 40px;
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 500px) {
+    .stat-banner {
+        width: 400px;
+        height: auto;
+        margin: auto;
+        padding: 0;
+        position: unset;
+        background: none;
+        z-index: none;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+    .stat-banner nav {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        position: unset;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .stat-banner nav a {
+        width: auto;
+        height: 50px;
+        padding-top: 15px;
+        margin: 0;
+        text-align: center;
+        border-top: 1px solid black;
+    }
+
+    .stat-banner img {
+        width: auto;
+        height: auto;
+        margin: 10px 29%;
+        height: 33px;
+    }
+
+    header {
+        margin: auto;
+        padding: 50px 0;
+        width: 100%;
+        border-top: 0.5px solid black;
+    }
+
+    header .inline {
+        margin: 0;
+        vertical-align: 0;
+        height: auto;
+        padding: 0;
+        position: unset;
+        flex-direction: column;
+        align-content: center;
+        text-align: center;
+    }
+
+    header .inline button {
+        padding: 10px;
+        margin: 20px 110px 0 110px;
+        cursor: pointer;
+        border-radius: 5px;
+        border: 1px solid black;
+    }
+
+    header img {
+        display: none;
+    }
+
+    .top-content {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 40px 20px 25px;
+        border-top: 1px solid black;
+        flex-direction: column;
+        justify-content: center;
+        text-align: justify;
+    }
+
+    .top-content h2 {
+        font-size: 100%;
+    }
+
+    .top-content .feats {
+        width: 100%;
+    }
+
+    .top-content .about {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .middle-img {
+        margin: 10px 0;
+        padding: 0;
+        width: 100%;
+        height: auto;
+    }
+
+    .bottom-content {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 20px 20px 45px;
+        flex-direction: column;
+        justify-content: center;
+        text-align: justify;
+    }
+
+    .bottom-content h2 {
+        font-size: 100%;
+    }
+
+    .bottom-content .servs {
+        width: 100%;
+    }
+
+    .bottom-content .prods {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .bottom-content .vis {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .contact {
+        width: 100%;
+        height: auto;
+        margin-top: 50px;
+        padding: 0 20px;
+    }
+
+    .contact address {
+        margin: 10px 0;
+    }
+
+    .contact p {
+        margin: 10px 0;
+    }
+
+    .contact a {
+        margin: 10px 0;
+    }
+
+    footer {
+        margin-top: 40px;
+        padding: 0 0 50px;
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+}
