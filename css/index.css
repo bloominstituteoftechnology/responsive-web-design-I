@@ -1,3 +1,428 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+.container {
+	margin: 0 auto;
+	width: 900px;
+}
+
+/*Index Specific CSS*/
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 20px;
+
+}
+
+nav a {
+  color: gray;
+  text-decoration: none;
+
+}
+
+.top-info {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 50px 0;
+	margin-bottom: 40px;
+}
+
+.top-info div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	text-align: center;
+	margin-right: 40px;
+	font-size: 60px;
+}
+
+button {
+	height: 25px;
+	width: 160px;
+	border: 1px solid black;
+	border-radius: 4px;
+}
+
+.main-info {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	border-top: 1px solid black;
+}
+
+.middle-img {
+	width: 100%;
+	height: auto;
+	padding: 25px 0;
+}
+
+.top-section {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 25px;
+	
+}
+
+.top-section div {
+	width: 50%;
+	padding-top: 30px;
+}
+
+.bottom-section {
+	display: flex;
+	border-bottom: solid black 1px;
+	justify-content: space-between;	
+	padding-bottom: 20px;
+}
+
+.bottom-section div {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 32%;
+	padding-bottom: 30px;
+}
+
+.contact {
+	display: flex;
+	flex-direction: column;
+	padding-top: 20px;
+	margin-top: 20px;
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	margin: 50px 0;	
+	padding-top: 20px;
+} 
+
+/*End of Index Specific CSS*/
+
+
+/* .logo {
+	margin-right: 15px;
+} */
+
+/* .services-header-img {
+	display: flex;
+	
+} */
+
+/* .left {
+	display: flex;
+	flex-direction: column;
+	align-content: flex-start;
+	width: 450px;
+	margin: auto;
+}
+
+.right {
+	display: flex;
+	flex-direction: column;
+	align-content: flex-end;
+	width: 450px;
+	margin: auto;
+}
+
+.block {
+	border: 1px solid black;
+	width: 430px;
+	height: 200px;
+	margin: 10px;
+	flex-direction: column;	
+	background-color: lightgray;
+	padding: 15px;
+} */
+
+/* .sections {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+} */
+
+/* 
+header {
+	display: flex;
+	padding: 20px 0;
+	flex-direction: column;
+
+} */
+
+/* header div {
+	padding: 50px;
+} */
+
+/* .innovation {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 50px;
+	
+} */
+
+/* .ondemand {
+	font-size: 50px;
+	text-align: center;
+} */
+
+/* .facts {
+	display: flex;
+	justify-content: baseline;
+	padding-top: 20px;
+	border-top: 1px solid black;
+}
+
+li {
+	list-style-type: square;
+	list-style-position: inside;
+	padding: 5px;
+} */
+
+
+/* header button {
+  width: 150px;
+  height: 25px;
+} */
+
+/* header img {
+  border-radius: 50%;
+  height: 40%;
+  width: 40%;
+} */
+
+/* .top-section {
+	display: flex;
+
+} */
+
+/* .bottom-section div {
+	padding: 30px 0;
+
+} */
+
+
+/*Tablet*/
+@media (max-width:800px) {
+
+	.container {
+		width: 800px;
+	}
+
+	nav {
+		display: flex;
+		justify-content: space-around;
+		padding-top: 20px;
+		flex-wrap: wrap;
+	  }
+
+	nav .nav-logo {
+		order: -1;
+		flex: 100%;
+		text-align: center;
+		padding-bottom: 30px;
+	}
+	  
+	  
+	  .top-info {
+		  padding: 50px 0;
+	  }
+
+	  .top-info img {
+		  display: none;
+	  }
+	  
+	  .top-info div {
+		  padding-top: 20px;
+		  font-size: 70px;
+	  }
+	  
+	  button {
+		  margin-top: 20px;
+	  }
+	  
+	  .main-info {
+		  width: 780px;
+		  margin: 30px auto;
+	  }
+	  
+	  .middle-img {
+		  width: 100%;
+		  padding: 25px 0;
+		  margin: 20px 0;
+	  }
+	  
+	  .top-section {
+		  padding-top: 25px;
+		
+		  
+	  }
+	  
+	  .top-section div {
+		  width: 50%;
+		  padding: 0 10px;
+	  }
+	  
+	  .bottom-section {	
+		  margin: 0 10px;
+	  }
+	  
+	  .bottom-section div {
+		  width: 30%;
+		  margin-bottom: 30px;
+	  }
+	  
+	  .contact {
+		  padding: 0 20px;
+
+	  }
+	  
+	  footer {
+		  padding-bottom: 50px;
+	
+	  } 
+
+}
+
+/*Mobile*/
+
+@media (max-width:500px) {
+
+	.container {
+		width: 500px;
+	}
+
+	nav {
+		display: flex;
+		flex-direction: column;
+		/* padding-top: 20px; */
+	  }
+
+	nav a {
+		border-bottom: 1px solid black;
+		width: 100%;
+		text-align: center;
+		padding: 20px 0;
+
+	}
+
+	/* nav .nav-logo {
+		order: -1;
+		flex: 100%;
+		text-align: center;
+		padding-bottom: 30px;
+	} */
+	  
+	  
+	  .main-info {
+		  width: 480px;
+		  margin: 30px auto;
+	  }
+	  
+	  .middle-img {
+		  width: 100%;
+		  padding: 25px 0;
+		  margin: 20px 0;
+		  height: 50%;
+	  }
+	  
+	  .top-section { 
+		  flex-direction: column;
+	  }
+	  
+	  .top-section div {
+		  width: 100%;
+		  padding: 10px;
+	  }
+	  
+	  .bottom-section {	
+		  flex-direction: column;
+	  }
+	  
+	  .bottom-section div {
+		  width: 100%;
+		  margin-bottom: 30px;
+	  }
+	  
+	  .contact {
+		  padding: 20px;
+
+	  }
+	  
+	  footer {
+		  margin: 40px 0;
+	
+	  } 
+
+}
 
