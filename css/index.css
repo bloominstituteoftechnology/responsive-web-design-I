@@ -68,7 +68,7 @@ h1, h2, h3, h4, h5 {
 /* Your code starts here! */
 
 .container {
-	width: 886px;
+	max-width: 886px;
 	margin: 0 auto;
 	/* border: 1px solid red; */
 }
@@ -180,7 +180,7 @@ h1 {
 }
 
 .middle-img {
-	width: 900px;
+	width: 100%;
 }
 
 .middle .mid-bot {
@@ -228,6 +228,9 @@ h1 {
 	margin: 20px 0;
 }
 
+
+
+
 /* diff between sizings
 
 tablet: 
@@ -243,6 +246,28 @@ everything vertical
 
 	.main-image {
 		display: none;
+	}
+	
+	.container {
+		width: 100%;
+		/* border: 1px solid red; */
+	}
+
+	.container nav {
+		flex-direction: column-reverse;
+		/* align-items: center; */
+		/* border: 1px solid red; */
+	}
+
+	.container .nav-text {
+		margin-top: 30px;
+		display: flex;
+		justify-content: space-between;
+		/* border: 1px solid red; */
+	}
+
+	.nav-text a {
+		margin-right: 0;
 	}
 }
 
