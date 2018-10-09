@@ -392,13 +392,25 @@ footer {
 /* --------Services Styles */
 
 .contentTop {
-	width: 880px;
+	width: 100%;
 	padding: 20px 0;
 	border-bottom: 1px solid #000000;
 }
 
+@media (max-width: 800px) {
+	.contentTop {
+		
+	}
+}
+
+@media (max-width: 500px) {
+	.contentTop {
+		margin: 2%;
+	}
+}
+
 .services-header-img {
-	width: 880px;
+	width: 100%;
 }
 
 .container {
@@ -409,26 +421,71 @@ footer {
 .middle {
 	height: 900px;
 	border-bottom: 1px solid #000000;
+	display: flex;
 	align-content: space-around;
 	justify-content: space-between;
 }
 
+@media (max-width: 800px) {
+	.middle {
+		flex-wrap: wrap;
+		height: auto;
+		margin: 2% 0;
+	} 
+}
+
 .contentMid {
-	width: 410px;
+	width: 47%;
+	display: flex;
+	flex-wrap: wrap;
 	border: 1px solid #000000;
 	background-color: #F4F3F4;
 	padding: 20px;
 }
 
-.button {
-	display: inline-block;
+@media (max-width: 800px) {
+	.contentMid {
+		width: 48%;
+		height: auto;
+		padding: 3% 1%;
+		margin: 2% 1%;
+		
+	}
+}
+
+@media (max-width: 500px) {
+	.contentMid {
+		width: 100%;
+		justify-content: center;
+	}
+
+	.contentMid h3 {
+		font-size: 110%;
+	}
+}
+
+.contentMid a.button {
 	border: 1px solid #000000;
-	border-radius:5%;
+	border-radius:5px;
 	background-color: #ffffff;
-	padding: 8px 35px;
-	margin-top: 20px;
+	/* padding: 8px 35px; */
+	margin-top: 2%;
 	text-decoration: none;
 	color: #000000;
+}
+
+@media (max-width: 800px) {
+	.contentMid .button {
+		background: green;
+	}
+}
+
+@media (max-width: 500px) {
+	.contentMid .button {
+		background: blue;
+		width: 80%;
+		text-align: center;
+	}
 }
 
 .button:hover {
@@ -442,9 +499,28 @@ footer {
 	justify-content: space-between;
 }
 
+@media (max-width: 800px) {
+	.bottom {
+		margin: 2%;
+	}
+}
+
+
 .contentBottom {
 	width: 380px;
 	margin-bottom: 80px;
+}
+
+@media (max-width: 800px) {
+	.contentBottom {
+		width: 48%;
+	}
+}
+
+@media (max-width: 500px) {
+	.contentBottom {
+		text-align: center;
+	}
 }
 
 .contentBottom ul {
@@ -458,6 +534,18 @@ footer {
 .services-info-img {
 	width: 380px;
 	height: 260px;
+}
+
+@media (max-width: 800px) {
+	.services-info-img {
+		width: 48%;
+	}
+}
+
+@media (max-width: 500px) {
+	.services-info-img {
+		display: none;
+	}
 }
 
 footer {
