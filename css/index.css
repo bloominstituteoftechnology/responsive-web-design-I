@@ -1,3 +1,331 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+/* Site-wide Styles */
+
+* {
+
+	box-sizing: border-box;
+
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+nav {
+
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 0px;
+
+}
+
+a {
+
+	text-decoration: none;
+	color: grey;
+
+}
+
+h1 {
+
+	font-size: 27px;
+
+}
+
+p {
+
+	line-height: 1.2;
+
+}
+
+ul {
+
+	list-style: square;
+	list-style-position: inside;
+
+}
+
+footer {
+
+	text-align: center;
+	margin: 20px 0px;
+
+}
+
+.container {
+
+	width: 1016px;
+	margin: auto;
+	padding: 20px 70px 0px 70px;
+
+}
+
+/* Home Styles */
+
+.homeBanner {
+
+	display: flex;
+	border-bottom: 1px solid black;
+	margin-bottom: 40px;
+	padding: 5% 0px 10% 0px;
+	justify-content: space-between;
+
+}
+
+.header-text {
+
+	width: 50%;
+	text-align: center;
+
+}
+
+.header-text h1 {
+
+	font-size: 78px;
+
+}
+
+.startButton {
+
+	border: 1px solid black;
+	padding: 10px 50px;
+	background-color: white;
+
+}
+
+.section1 {
+
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.section1 section {
+
+	width: 49%;
+
+}
+
+.middle-img {
+
+	margin: 40px 0px;
+
+}
+
+.section2 {
+
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.section2 section {
+
+	width: 32%;
+
+}
+
+.contact {
+
+	border-top: 1px solid black;
+	padding-top: 40px;
+	margin-top: 50px;
+
+}
+
+.pg1footer {
+
+	padding-top: 50px;
+	height: 200px;
+
+}
+
+/* Responsive */
+
+@media (max-width: 800px) {
+
+  nav {
+
+    flex-wrap: wrap;
+
+  }
+
+  .container {
+
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+
+  }
+
+  .header-img {
+
+    display: none;
+
+  }
+
+  .header-text {
+
+    width: 100%;
+		margin-top: -77px;
+
+  }
+
+  .logo {
+
+    order: -1;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+		margin-top: -11px;
+
+  }
+
+	.middle-img {
+
+		width: 100%;
+
+	}
+
+}
+
+@media (max-width: 500px) {
+
+	nav {
+
+		flex-direction: column;
+
+	}
+
+	a {
+
+		font-size: 20px;
+		width: 100%;
+		border-bottom: 1px solid black;
+		padding: 20px 0px;
+		text-align: center;
+
+	}
+
+	.container {
+
+		padding: 0px;
+
+	}
+
+	.logo {
+
+		padding: 20px 0px;
+		margin-bottom: 0px;
+
+	}
+
+	.section1 {
+
+		flex-direction: column;
+		margin: 20px;
+
+	}
+
+	.section1 section {
+
+		width: 100%;
+		margin-bottom: 40px;
+
+	}
+
+	.middle-img {
+
+		margin-top: 0px;
+
+	}
+
+	.section2 {
+
+		flex-direction: column;
+		margin: 20px;
+
+	}
+
+	.section2 section {
+
+		width: 100%;
+		margin-bottom: 40px;
+
+	}
+
+	.contact {
+
+		margin-top: 0px;
+		margin: 20px;
+
+	}
+
+	.homeBanner {
+
+		margin: 20px;
+		margin-bottom: 40px;
+		border-bottom: 2px solid black;
+
+	}
+
+}
