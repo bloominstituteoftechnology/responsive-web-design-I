@@ -71,6 +71,11 @@ h1, h2, h3, h4, h5 {
 /* --------------- */
 /* Global Settings */
 
+img {
+    width: 100%;
+    height: auto;
+}
+
 .container {
 	/* border: 1px solid red; */
 	max-width: 880px;
@@ -235,7 +240,7 @@ footer {
 	padding: 20px;
 	padding-right: 30px;
 	width: 48%;
-	height: 240px; 
+	/* height: 240px;  */
 	align-items: center;
 }
 
@@ -256,13 +261,14 @@ footer {
 .facts-section {
 	display: flex;
 	flex-wrap: wrap;
-	margin: 35px 0;
+    margin: 35px 0;
+    justify-content: space-between;
 }
 
 .facts-section .facts-text {
 	/* border: 1px solid red; */
-	margin-right: 50px;
-	width: 46%;
+	/* margin-right: 50px; */
+	width: 45%;
 }
 
 .facts-section .facts-text p {
@@ -530,6 +536,31 @@ width: 120px;
 
     .service-product-vision-content .service-content:last-child {
         margin: 15px 0 20px 0;
+    }
+
+    .info-box {
+        margin: 0px 0;
+    }
+
+    .info-box .info-box-style {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .facts-section img {
+        display: none;
+    }
+
+    .facts-section {
+        width: 100%;
+    }
+
+    .facts-section .facts-text {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        /* align-items: center; */
+        /* margin: 0px 0px; */
     }
 
 }
