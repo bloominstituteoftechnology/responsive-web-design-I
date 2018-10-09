@@ -1,3 +1,619 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
 
 
+
+/* End of @media queries */
+
+/* -------- General Styles */
+h1 { 
+	font-size: 72px;
+}
+
+h2 {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+body {
+	width: 880px;
+	margin: 0 auto;
+}
+
+@media (max-width: 800px) {
+	body {
+		width: 100%;
+	}
+}
+
+.container {
+	width: 100%;
+}
+
+.active {
+	font-size: 120%;
+	font-weight: bolder;
+}
+
+.navContainer {
+	display: flex;
+	flex-wrap: wrap;
+	width: 880px;
+	height: 80px;
+	justify-content: space-between;
+}
+
+@media (max-width: 800px) {
+	.navContainer {
+		width: 100%;
+		height: auto;
+		justify-content: center;
+		flex-wrap: wrap-reverse;
+	}
+}
+
+@media (max-width: 500px) {
+	.navContainer {
+	}
+}
+
+.navContainer nav {
+	display: flex;
+	width: 600px;
+	align-items: center;
+	justify-content: space-between;
+}
+
+@media (max-width: 800px) {
+	.navContainer nav {
+		width: 100%;
+		margin: 2% 3%;
+	}
+}
+
+@media (max-width: 500px) {
+	.navContainer nav {
+		flex-direction: column;
+		margin: 0;
+	}
+}
+
+.navContainer nav a {
+	text-decoration: none;
+	color: #000000;
+}
+
+.navContainer nav a:hover {
+	color: dodgerblue;
+	font-weight: bold;
+}
+
+@media (max-width: 500px) {
+	.navContainer nav a {
+		width: 100%;
+		border-top: 1px solid black;
+		text-align: center;
+		padding: 4%;
+		font-size: 22px;
+	}
+}
+
+.navContainer .logo{
+	padding: 22px 0;
+}
+
+@media (max-width: 800px) {
+	.navContainer .logo {
+		padding: 12% 0;
+	}
+}
+
+@media (max-width: 500px) {
+	.navContainer .logo {
+		width: 100%;		
+	}
+}
+
+
+/* header {
+
+} */
+
+.button {
+	/* display: inline-block; */
+	height: 35px;
+	border: 1px solid #000000;
+	border-radius:5%;
+	background-color: #ffffff;
+	padding: 8px 35px;
+	margin-top: 20px;
+	text-decoration: none;
+	color: #000000;
+}
+
+.button:hover {
+	background-color: dodgerblue;
+	color: white;
+}
+
+footer {
+	text-align: center;
+	width: 100%;
+}
+
+
+
+/* --------End of General Styles, RIP */
+
+/* --------Index Styles */
+
+.indexHeader {
+	width: 100%;
+	padding: 40px 0 80px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid #000;
+	text-align: center;
+}
+
+@media (max-width: 800px) {
+	.indexHeader {
+		width: 100%;
+		padding: 3% 0 6%;
+		justify-content: center;
+	}
+}
+
+@media (max-width: 500px) {
+	.indexHeader {
+		border-top: 1px solid black;
+		padding: 6% 0 12%;
+	}
+}
+
+.indexHeader .bigH1{
+	width: 360px;
+	justify-items: center;
+	align-items: center;
+	
+	margin-left: 100px;
+}
+
+.indexHeader .bigH1 h1 {
+	margin: 0;
+	padding: 0;
+}
+
+@media (max-width: 800px) {
+	.indexHeader .bigH1 {
+		width: auto;
+		margin: 4% auto;
+		padding: 0;
+	}
+}
+
+@media (max-width: 500px) {
+	.indexHeader h1 {
+		text-align: center;
+	}
+}
+
+.indexHeader img {
+	width: 360px;
+}
+
+@media (max-width: 800px) {
+	.indexHeader img {
+		display: none;
+	}
+}
+
+.indexHeader .button {
+	width: 170px;
+	height: 32px;
+	border-radius: 0;
+	padding: 5px;
+	margin-top: 30px;
+}
+
+@media (max-width: 500px) {
+	.indexHeader .button {
+		margin-top: 24px;
+	}
+}
+
+.indexSection1 {
+	display: flex;
+	padding-top: 40px;
+	justify-content: space-between;
+}
+
+@media (max-width: 800px) {
+	.indexSection1 {
+		margin: 4% 2%;
+		padding-top: 0;
+	}
+}
+
+@media (max-width: 500px) {
+	.indexSection1 {
+		flex-direction: column;
+		padding-top: 31px;
+	}
+}
+
+.indexSection1 .indexTop {
+	width: 48%;
+}
+
+@media (max-width: 800px) {
+	.indexSection1 .indexTop {
+		width: 49%;
+	}
+}
+
+@media (max-width: 500px) {
+	.indexSection1 .indexTop {
+		width: 100%;
+		margin: 2% 2% 10%;
+		line-height: 110%;
+	}
+}
+
+.middle-img {
+	width: 100%;
+	height: 80%;
+	margin: 40px 0;
+}
+
+@media (max-width: 800px) {
+	.middle-img {
+		margin: 3% 0;
+	}
+}
+
+.indexSection2 {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-bottom: 50px;
+	border-bottom: 1px solid #000;
+}
+
+@media (max-width: 800px) {
+	.indexSection2 {
+		margin: 2%;
+	}
+}
+
+@media (max-width: 500px) {
+	.indexSection2 {
+		flex-direction: column;
+		justify-content: space-around;
+		margin: 2%;
+	}
+}
+
+
+.indexSection2 .indexBottom {
+	width: 280px;
+}
+
+@media (max-width: 800px) {
+	.indexSection2 .indexBottom {
+		width: 29%;
+	}
+}
+
+@media (max-width: 500px) {
+	.indexSection2 .indexBottom {
+		width: 100%;
+		margin: 2%;
+	}
+}
+
+.indexContact {
+	padding: 50px 0;
+	width: 100%;
+}
+
+@media (max-width: 800px) {
+	.indexContact {
+		padding: 2%;
+	}
+}
+/* --------End of Index Styles */
+
+/* --------Services Styles */
+
+.contentTop {
+	width: 100%;
+	padding: 20px 0;
+	border-bottom: 1px solid #000000;
+}
+
+@media (max-width: 800px) {
+	.contentTop {
+		
+	}
+}
+
+@media (max-width: 500px) {
+	.contentTop {
+		margin: 2%;
+	}
+}
+
+.services-header-img {
+	width: 100%;
+}
+
+.container {
+	display: flex;	
+	flex-wrap: wrap;
+}
+
+.middle {
+	height: 900px;
+	border-bottom: 1px solid #000000;
+	display: flex;
+	align-content: space-around;
+	justify-content: space-between;
+}
+
+@media (max-width: 800px) {
+	.middle {
+		flex-wrap: wrap;
+		height: auto;
+		margin: 2% 0;
+	} 
+}
+
+.contentMid {
+	width: 47%;
+	display: flex;
+	flex-wrap: wrap;
+	border: 1px solid #000000;
+	background-color: #F4F3F4;
+	padding: 20px;
+}
+
+@media (max-width: 800px) {
+	.contentMid {
+		width: 48%;
+		height: auto;
+		padding: 3% 1%;
+		margin: 2% 1%;
+		
+	}
+}
+
+@media (max-width: 500px) {
+	.contentMid {
+		width: 100%;
+		justify-content: center;
+	}
+
+	.contentMid h3 {
+		font-size: 110%;
+	}
+}
+
+.contentMid a.button {
+	border: 1px solid #000000;
+	border-radius:5px;
+	background-color: #ffffff;
+	/* padding: 8px 35px; */
+	margin-top: 2%;
+	text-decoration: none;
+	color: #000000;
+}
+
+@media (max-width: 800px) {
+	.contentMid .button {
+		background: green;
+	}
+}
+
+@media (max-width: 500px) {
+	.contentMid .button {
+		background: blue;
+		width: 80%;
+		text-align: center;
+	}
+}
+
+.button:hover {
+	background-color: dodgerblue;
+	color: white;
+}
+
+.bottom {
+	width: 100%;
+	margin-top: 40px;
+	display: flex;
+	align-content: center;
+	justify-content: space-between;
+}
+
+@media (max-width: 800px) {
+	.bottom {
+		margin: 2%;
+		flex-wrap: wrap;
+	}
+}
+
+.contentBottom {
+	width: 45%;
+	margin-bottom: 80px;
+}
+
+@media (max-width: 800px) {
+	.contentBottom {
+		width: 100%;
+		padding: 4%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+@media (max-width: 500px) {
+	.contentBottom {
+		text-align: center;
+		padding: 1% 5%;
+	}
+}
+
+.contentBottom ul {
+	list-style-type: square;
+	padding: 15px 20px;
+}
+
+
+@media (max-width: 800px) {
+	.contentBottom ul {
+		/* width: 100%; */
+	}
+}
+
+.contentBottom li {
+	padding-top: 10px;
+	text-align: left;
+}
+.services-info-img {
+	width: 380px;
+	height: 260px;
+}
+
+@media (max-width: 800px) {
+	.services-info-img {
+		display: none;
+	}
+}
+/* 
+@media (max-width: 500px) {
+	.services-info-img {
+		display: none;
+	}
+} */
+
+footer {
+	margin-top: 20px;
+	text-align: center;
+}
+/* --------End of Services Styles */
+
+/* --------Start of Contact Styles */
+
+.contactTop {
+	height: 200px;
+	padding-top: 100px;
+	text-align: center;
+	border-bottom: 1px solid #000;
+}
+
+.contactMiddle {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	border-bottom: 1px solid black;
+}
+
+.contactMiddle .contactForm form {
+	display: flex;
+	flex-wrap: wrap;
+	width: 600px;
+	padding: 20px;
+	margin: 20px;
+	justify-content: center;
+
+}
+
+.contactMiddle .contactForm .formItem {
+	width: 500px;
+	height: 100px;
+}
+
+.contactMiddle .contactForm .formItem input {
+	width: 80%;
+	height: 30px;
+}
+
+.contactMiddle .contactForm .formItem textarea {
+	width: 100%;
+	height: 100px;
+}
+
+/* --------End of Contact Styles */
+
+
+
+
+ 
