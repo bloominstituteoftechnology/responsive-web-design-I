@@ -1,3 +1,480 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+/* Your code starts here! */
+
+/* elements */
+ul{
+	list-style: square;
+	list-style-position: inside;
+	margin:10px 0px;
+}
+li{
+	margin:10px 0px;
+
+}
+li span{
+	margin-left: 15px;
+}
+
+header{
+	width: 880px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	padding: 10px 0px;
+	top: 0;
+	/* border: 1px solid black; */
+	position: fixed;
+	z-index: 1000;
+
+	background-color:white;
+}
+
+header nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header nav a {
+	text-decoration: none;
+	color: #999;
+	/* margin: 10px; */
+}
+
+header nav a:hover{
+	animation: link-animation .2s ease-in forwards;
+}
+
+/* main container */
+.container{
+	width: 880px;
+	margin: 0 auto;
+	margin-top: 50px;
+	/* This fixes collapsing margins but I don't know why */
+	padding-top: 1px;
+	
+}
+
+.container .jumbotron{
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 80px;
+	
+}
+
+.container .jumbotron .left{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.container .jumbotron .left a{
+	margin-top: 20px;
+}
+
+/* The divs that contain the catch phrase and round image */
+
+/* main big text */
+.catch-phrase{
+	font-size: 78px;
+	font-family: 'Bangers', cursive;
+	text-align: center;
+	line-height: 4.7rem;
+}
 
 
+
+
+a.button{
+	font-size: 18px;
+	text-align: center;
+	/* font-weight: bold; */
+	font-family: 'Titillium Web', sans-serif;
+	text-decoration: none;
+	color: black;
+	padding: 3px 0px;
+	border: 1px solid black;
+	width: 160px;
+}
+
+
+
+
+
+/* The section containing features and about */
+section.features-about{
+	/* TB LR */
+	padding: 20px 0px;
+	display: flex;
+	margin-bottom: 20px;
+}
+
+
+/* section containing services product vision */
+section.details{
+	padding: 20px 0px 0px 10px;
+	display: flex;
+	margin-bottom: 40px;
+}
+
+
+
+/* features ideas section */
+/* font-size 0 fixes the rendered whitespace with display:inline-block */
+section.ideas {
+	font-size: 0px;
+}
+
+section.ideas h2{
+	text-align: center;
+	font-size: 50px;
+}
+
+section.ideas div{
+	width: 50%;
+	font-size:16px;
+	margin-bottom: 30px;
+	padding: 10px;
+
+	overflow: hidden;
+}
+
+section.ideas div img{
+	height: 100px;
+	width: auto;
+	float:left;
+	border-radius: 2px;
+	margin-right: 10px;
+}
+
+/* services.html */
+div.container h1{
+	font-size: 26px;
+	margin-top: 20px;
+}
+/* services section. */
+section.services {
+	/* border: 1px solid black; */
+	height: 770px;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: space-between;
+	
+}
+
+section.services div{
+	border: 1px solid black;
+	padding: 20px;
+	width: 420px;
+	background-color:rgb(236, 230, 230);
+	
+	display: flex;
+	flex-direction: column;
+}
+
+section.services div p {
+	margin-bottom: 15px;
+}
+
+section.services div a{
+	background-color: white;
+	border-radius: 4px;
+	padding: 10px;
+	text-align: center;
+	font-size: 14px;
+}
+
+/* facts section */
+section.facts{
+	display: flex;
+}
+
+section.facts div:first-of-type{
+	display: flex;
+	padding-right: 50px;
+	flex-direction: column;
+	justify-content: flex-start;
+	/* background-color: red; */
+}
+
+section.websites{
+	display:flex;
+	flex-direction: column;
+}
+section.websites div{
+	border: 1px solid black;
+	margin: 25px 0px;
+}
+
+hr.seperate{
+	border-color:black;
+	margin: 40px 0px;
+	
+}
+
+hr.seperate-darker{
+	border: 1.2px solid black;
+}
+
+footer{
+	margin-top: 50px;
+	padding-left: 10px;
+}
+
+footer p{
+	text-align: center;
+	margin-top: 50px;
+}
+footer address{
+	text-align: left;
+}
+
+/* animations */
+
+/* animation for links */
+@keyframes link-animation{
+	from{
+		color:#999;
+	}
+	to{
+		color:black;
+	}
+}
+
+/* media queries */
+@media screen and (max-width: 800px){
+	/* body{
+		background-color: pink;
+	} */
+
+	/* make imgs responsive */
+	img{
+		width: 100%;
+		height: auto;
+	}
+
+
+	/* collapse container so that width will sretch
+	accross smaller screens */
+	/* My issue here is that the header is inside it's own
+	container and so is the rest of the page */
+	.container{
+		width: 100%;
+	}
+
+	.container:last-of-type {
+		padding: 20px;
+	}
+	
+
+	.container:first-of-type{
+		margin-top: 0px;
+	}
+	.container section div.right{
+		display: none;
+	}
+	
+	/* Collapses the logo to the top and the links below it */
+	header{
+		position: static;
+		width: 100%;
+	}
+
+	header nav{
+		display: flex;
+		flex-direction: row-reverse;
+		flex-wrap: wrap-reverse;
+		justify-content: center;
+		align-content: space-between;
+		
+		/*This allows the nav to fill the page width and by 
+		inheritence letting my a's as well*/
+		width: 100%; 
+		text-align: center;
+	}
+
+	header nav a{
+		padding: 0px;
+		flex: 1;
+		
+	}
+
+	header nav a:last-of-type{
+		flex: 1 1 100%;
+		margin-bottom: 35px;
+	}
+
+	header nav a img{
+		width: initial; 
+	}
+	
+	.jumbotron{
+		flex-direction: column;
+	}
+	section.details{
+		padding-left: 0px;
+	}
+	div.column{
+		margin-bottom: 15px;
+		flex: 1 1;
+		padding-right: 25px;
+	} 
+
+	/* flex services collapses to a column */
+	section.services{
+		
+		height: 100%;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		align-items: stretch;
+	}
+	section.services div{
+		width:100%;
+	}
+	section.services div{
+		margin-top:20px;
+	}
+	
+	section.facts{
+		flex-direction: column;
+	}
+	
+	
+	
+}
+
+@media only screen and (max-width:500px){
+	
+	/* Collapse and make bigger for smaller screens */
+	header{
+		position: static;
+		width: 100%;
+		flex-direction: column-reverse;
+		justify-content: flex-end;
+		margin-top: 0px;
+		padding-top: 0px;
+	}
+	header nav{
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: stretch;
+
+		/*This allows the nav to fill the page width and by 
+		inheritence letting my a's as well*/
+		width: 100%; 
+		text-align: center;
+	}
+	
+	section.section,
+	section.section .features-about{
+		flex-direction: column;
+		padding: 0px;
+		margin: 0px;
+	}
+
+	img.middle-img{
+		margin: 20px 0px;
+	}
+	section.section .column{
+		margin-top: 25px;
+
+	}
+
+	
+
+	header nav a{
+		margin:0;
+		padding:20px;
+		border-bottom: solid 2px lightgray;
+		width: 100%;
+		font-size: 28px;
+	}
+
+	header nav a:last-of-type{
+		flex: 1 1 100%;
+		margin: 0px;
+	}
+
+	/* resets the width */
+	header nav a img{
+		width: initial; 
+	}
+
+	a.button{
+		font-size:30px;
+		width: 200px;
+		text-align: center;
+	}
+
+	hr{
+		margin:20px 0px;
+	}
+	
+}
