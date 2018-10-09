@@ -250,6 +250,7 @@ everything vertical
 	
 	.container {
 		width: 100%;
+		margin: 0 20px;
 		/* border: 1px solid red; */
 	}
 
@@ -273,8 +274,79 @@ everything vertical
 
 /* Mobile */
 @media (max-width:500px) {
+	.container {
+		margin: 0 auto;
+	}
 
-	.main-image {
-		display: none;
+	.main-logo {
+		/* border: 1px solid red; */
+		/* max-width: 33%; */
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+
+	.main-logo a {
+		display: flex;
+		justify-content: center;
+	}
+
+	.main-logo .logo {
+		/* height: auto; */
+		max-width: 80%;
+		padding: 10px;
+		/* border: 1px solid red; */
+	}
+
+	.container nav {
+		/* border: 1px solid red; */
+		justify-content: center;
+	}
+
+	.container .nav-text {
+		margin-top: 0;
+		flex-direction: column;
+		align-items: center;
+		/* border: 1px solid red; */
+		width: 100%;
+	}
+
+	.container .nav-text a {
+		border-top: 1px solid lightgrey;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		/* border: 1px solid red; */
+		padding: 15px;
+	}
+
+	.container .nav-text .last-nav {
+		border-bottom: 1px solid lightgrey;
+
+	}
+
+	.middle {
+		display: flex;
+		flex-direction: column;
+		/* margin-top: 20px; */
+	}
+
+	.middle .mid-top {
+		margin-top: 20px;
+	}
+
+	.middle .mid-top, .middle .mid-bot {
+		flex-direction: column;
+	}
+
+	.body1, .body2, .body3, .body4, .body5 {
+		/* display: inline-block; */
+		/* border: 1px solid red; */
+		width: 100%;
+		padding: 20px 0;
+	}
+
+	.jumbotron, .middle, footer {
+		margin: 0 20px;
 	}
 }
