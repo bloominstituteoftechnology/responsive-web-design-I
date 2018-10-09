@@ -365,7 +365,158 @@ footer {
     
 }
 
+/* PHONE */
 
+@media (max-width: 500px) {
+    /* PHONE HEADER */
+    header {
+        display: flex;
+        flex-direction: column-reverse;
+        
+        
+    }
+
+    header .logo{
+          display: flex;
+          justify-content: center;
+          padding-top: 2px;
+          padding-right: 27px;         
+      }
+      
+      header nav {
+        display: flex; 
+        
+        width: 710px;
+        margin-top: 40px;
+        margin-left: 25px;  
+      }
+
+      header nav a {
+        font-size: 16px;
+        opacity: .6;
+        color: gray;
+        text-decoration: none;
+      }
+      
+      /* PHONE CTA  */
+      .cta-img {
+          display: none;
+      }
+
+      .cta {
+        display: flex;
+        
+        justify-content: center;
+        align-items: center;
+        height: 400px;
+        margin-bottom: 20px;
+        margin-right: 80px;
+    }
+    
+    .cta .cta-text {
+      display: flex;
+      flex-direction: column;
+      font-size: 77px;
+      line-height: .93;
+    }
+
+    .cta-text  h1 {
+      letter-spacing: -1px;
+      margin-bottom: 26px;
+      margin-top: 18px
+        }
+    
+    .cta .cta-text button {
+      background: white;
+      padding: 6px 42px;
+      font-size: 15.5px;
+      cursor: pointer;
+      margin-right: 60px;
+    }
+    
+    .cta .cta-text button:hover {
+      background: black;
+      color: white;
+    }
+
+    /* PHONE MAIN CONTENT */
+
+    .main-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        border-top: 1px solid black;
+        width: 800px;
+        padding-top: 36px;
+      }
+      
+      .main-content .top-content {
+        border: 2px solid red;
+        display: flex;
+       justify-content: space-evenly;
+        width: 800px;
+       
+      }
+      
+      .main-content .top-content .text-content {
+        width: 360px;
+        border: 2px solid green;
+      }
+      
+      .main-content .top-content .text-content h4 {
+        font-size: 14px;
+      }
+      
+      .main-content .middle-img {
+        margin-top: 45px;
+        width: 95%;
+        height: 110%;
+      }
+      
+      .main-content .bottom-content {
+        display: flex;
+        justify-content: space-evenly;
+        width: 775px;
+        margin-top: 28px;
+        margin-right: 20px;
+        
+      }
+      
+      .main-content .bottom-content .text-content {
+        width: 220px;
+        line-height: 1.2;
+        
+      
+      }
+      
+      .main-content .bottom-content .text-content h4 {
+          font-size: 15px;
+      }
+      
+      .contact {
+        margin-top: 57px;
+        border-top: 1px solid black;
+        padding: 30px 10px 0;
+        margin-left: 20px;
+      }
+      
+      .contact  h4 {
+          font-size: 16px;
+      }
+      
+      .contact p {
+        margin: 15px 0;
+      }
+      
+      .footer {
+        margin-right: 80px;
+        margin-bottom: 15px;
+        text-align: center;
+        font-size: 16px;
+      }
+
+    
+}
 
 
 
