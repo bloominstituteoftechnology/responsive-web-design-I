@@ -98,6 +98,10 @@ p {
 	margin: 29px 0px 69px 0px;
 }
 
+.container header .fa {
+  display: none;
+}
+
 .container header nav {
 	color: #ACB1B6;
 	display: flex;
@@ -171,8 +175,8 @@ p {
 }
 
 .main-content .middle-img {
-      width: 100%;
-    }
+  width: 100%;
+}
 
 .index .bottom-content {
 	padding: 30px 0;
@@ -191,6 +195,7 @@ p {
 
 /* Services Styles */
 .services .intro img {
+  width: 100%;
 	margin-bottom: 20px;
 }
 
@@ -235,6 +240,10 @@ p {
 	justify-content: space-between;
 }
 
+.services .misc img {
+  width: 50%;
+}
+
 @media only screen and (max-width: 800px) {
   .container {
     width: 95%;
@@ -272,6 +281,10 @@ p {
   .index .main-content .text-content {
     padding-left: 12px;
   }
+
+  .services .misc img {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 500px) {
@@ -288,6 +301,14 @@ p {
     margin-top: 20px;
     margin-bottom: 12px;
     font-size: 1.22em;
+  }
+
+  .container header .fa {
+    display: inline-block;
+  }
+
+  .container header nav{
+    display: none;
   }
 
   .container header nav a {
@@ -324,6 +345,18 @@ p {
 
   .contact {
     padding-left: 20px;
+  }
+
+  .services {
+    width: 96%;
+  }
+
+  .services .main-items {
+    width: 100%;
+  }
+
+  .services .misc img {
+    display: none;
   }
 
   .footer {
