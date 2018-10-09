@@ -1,3 +1,371 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+.page {
+    max-width: 876px;
+    margin: auto;
+}
+
+.heading {
+    display: flex; 
+    justify-content: space-evenly;
+
+}
 
 
+.heading nav {
+	padding: 0px;
+    padding-top: 10px;
+	word-spacing: 60px;
+	width: 700px;
+    height: 40px;
+    color: gray;
+}
+
+.heading nav a {
+    color: gray;
+    text-decoration: none;
+}
+.main{
+    width: 876px;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 1px solid black;
+    padding: 60px 400px 0px 60px;
+    
+
+}
+
+.main h1 {
+    justify-content: flex-start;
+	font-size: 78px;
+    text-align: center;
+    /* border: 1px solid purple; */
+}
+
+
+.main button {
+	border: 1px solid black;
+	padding: 5px;
+	width: 170px;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align:center;
+    height: 30px;
+    background: none;
+    font-size: 16px;
+    margin-left: 115px;
+
+}
+
+	
+.main .image{
+	
+	margin-top: -370px;
+	margin-left: 425px; 
+}
+
+.firstbox  {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.firstbox .maincontent {
+    width: 50%;
+    padding: 10px;
+    padding-left: 0px;
+}
+
+
+.About {
+	margin: 0px;
+	width: 400px;
+	Position: relative;
+	left: 473px;
+	top: -50px;
+	/* border: 1px solid red; */
+}
+
+.middle-img {
+	position: relative;
+	left: 0px;
+}
+.second {
+
+	border-bottom: 1px solid black;
+	height: 160px;
+    display: flex;
+    flex-wrap: wrap; 
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.second .secondcon {
+    width: 33%;
+    
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+	width: 876px;
+	height: 150px;
+    line-height:35px;
+    margin-top: 10px;
+}
+.bottom .contact { 
+    width: 20%;
+}
+.contact .p1 {
+	line-height:15px; 
+}
+
+footer {
+	text-align: center;
+	position: relative;
+	top: 80px;
+}
+
+/* tablet */
+@media (max-width: 800px) {
+    
+    
+    .page {
+        margin:0 15px;
+    }
+    .heading {
+        display: flex;
+        flex-direction: column;
+        padding:10px;
+        align-items: center;
+
+        
+    
+    }
+    .heading .logo {
+        
+        width: 170px;
+        order: -1;
+        
+        
+         
+    } 
+
+    .heading nav {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        margin-top: 10px;
+        justify-content: space-evenly;
+    }
+    
+
+    .main {
+        width:100%;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        padding: 0px;
+    }
+    .main h1 {
+        margin-left: 0px;
+        display: flex;
+        justify-content: center;
+        align-content:center;
+    }
+
+    .main button {
+        justify-content: center;
+        margin-left: 290px;
+
+    }
+
+    .main .image {
+        display: none;
+    }
+    
+    .middle-img {
+        max-width: 100%;
+    }
+    
+    .second {
+        width:100%;
+    }
+    
+    .firstbox {
+        width: 100%;
+    }
+    .bottom {
+        width:100%;
+    }
+    
+    .bottom .contact {
+        width: 20%;
+    }
+    
+        
+}
+
+/* Mobile */
+@media (max-width: 500px){
+    .heading {
+        display: flex;
+        flex-direction: column;
+        padding:10px;
+    }
+    .heading .logo {  
+        width: 170px;
+        order: -1;   
+    } 
+
+    .heading nav {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        /* border: 1px solid red; */
+        margin-top: 150px;
+        margin-bottom: 80px;
+
+    }
+    .heading nav a {
+        width: 100%;
+        padding: 15px;
+        border-bottom: 1px solid gray;
+        border-top: 1px solid gray;
+        
+    }
+
+    .main {
+        width:100%;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        padding: 0px;
+        height: 400px;
+        margin-top: 30px;
+
+    }
+    .main h1 {
+        margin-left: 0px;
+        display: flex;
+        justify-content: center;
+        align-content:center;
+    }
+
+    .main button {
+        justify-content: center;
+        margin-left: 145px;
+
+    }
+
+    .main .image {
+        display: none;
+    }
+    
+    .middle-img {
+        max-width: 100%;
+    }
+    
+    .second {
+        width:100%;
+        height: 500px;
+        display:flex;
+        flex-direction: column;
+    }
+
+    .second .secondcon {
+        width: 100%;
+        padding: 30px 0px;
+        
+    }
+    
+    .firstbox {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .firstbox .maincontent {
+       width: 100%;
+    }
+    
+    .bottom {
+        width:100%;
+    }
+    
+    .bottom .contact {
+        width: 30%;
+        
+    }
+    .footer {
+        margin-top: 10px;
+    }
+
+
+}
