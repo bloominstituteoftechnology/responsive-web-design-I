@@ -1,3 +1,342 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 
+
+/* My CSS */
+
+/* html {
+    font-size:62.5%;
+} */
+
+.page {
+    max-width: 880px;
+	width:90%;
+	margin:0 auto;
+}
+
+.header {
+    width: 100%;
+    display:flex;
+    flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+
+.navBar {
+	display:flex;
+	width:70%;
+	justify-content: space-between;
+	align-items:center;
+}
+
+
+.navBar__Links {
+	color:grey;
+    text-decoration:none;
+}
+
+ /*     Index    */
+
+.logo {
+    width:183px;
+    height:36px;
+}
+
+.mathImg {
+    width:380px;
+    height:380px;
+}
+
+.footer {
+	display:flex;
+	align-items: center;
+	justify-content: space-around;
+	margin: 60px 0px 40px;
+}
+
+.getStarted {
+    margin-top:20px;
+	display:flex;
+	flex-direction: row;
+	justify-content: right;
+	height:379px;
+}
+
+.getStarted__leftSide{
+	width:540px;
+	height:379px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.H1--index{
+	font-size: 50px;
+	margin:0px;
+}
+ .getStarted__Button {
+	border-radius: 4px;
+	border:1px solid black;
+	margin-top:10px;
+	width:160px;
+	height:40px;
+ }
+
+.topContent {
+    width:100%;
+    display:flex;
+    border-top:1px solid black;
+    margin-top:20px;
+}
+
+.topContent__container {
+    padding:20px 20px 20px 0px;
+}
+
+.middleSection {
+ display: flex;
+ border-bottom:1px solid black;
+ margin-bottom:20px;
+}
+
+.middleSection_containers {
+    width:33%;
+    padding:20px 20px 20px 0px;
+}
+
+
+.middleImg {
+    width:100%;
+}
+
+
+
+/*     Services    */
+.IntroWrapper {
+	padding-bottom:40px;
+}
+
+.ServicesIntro{
+	padding-top:20px;
+	padding-bottom:30px;
+	border-bottom:1px solid black;
+}
+
+.H1{
+	font-size: 30px;
+}
+
+.ServiceSection{
+	border-bottom:2px solid black;
+	padding-bottom:40px;
+	width:880px;
+	height:700px;
+	display:flex;
+	flex-direction: row;
+	align-content: space-between;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.ServiceSection__Services{
+	width:420px;
+	height:205px;
+	padding:20px;
+	background:rgb(241, 241, 241);
+	border:1px solid black;
+}
+
+.Services__Para{
+	margin-bottom:15px;
+}
+
+.H2{
+	font-size: 15px;
+}
+.LearnMoreButton{
+	padding:7px 40px;
+	border-radius: 4px;
+	border:1px solid black;
+}
+
+.LearnMoreButton:hover{
+	font-weight: bold;
+}
+
+.FactsWrapper{
+	width:880px;
+	height:300px;
+	margin:40px 0px;
+	display: flex;
+	justify-content: space-between;
+}
+.FactsText{
+	width:430px;
+	margin:0px;
+	display: flex;
+	flex-flow: wrap;
+}
+
+.FactsTextDiv{
+
+}
+
+
+.FactsTextDiv__Para{
+	padding-top: 0px;
+	padding-right: 20px;
+}
+.FactsText__FactsList{
+	padding-top: 0px;
+	line-height: 1.5;
+	list-style-type: disc;
+	padding-left:20px;
+}
+
+.FactsImage {
+
+}
+
+
+@media(max-width:800px){
+    .header {
+        width: 100%;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        margin: 20px auto;
+    }
+
+    .topContent {
+        width: 100%;
+    }
+
+   .mathImg {
+    display:none;
+   } 
+
+   .getStarted__leftSide{
+	width:100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+}
+
+@media(max-width:500px){
+    .navBar {
+        flex-direction: column;
+        width:100%;
+        justify-content: center;
+        align-items:center;
+    }
+
+    .navBar__Links {
+        text-align: center;
+        width:100%;
+        padding:20px;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+
+    .topContent {
+        flex-direction: column;
+    }
+    
+    .topContent__container {
+        padding:20px 0px;
+    }
+
+    .getStarted {
+        height: auto;
+        margin-top:0px;
+    }
+
+    .getStarted__leftSide {
+        height: auto;
+        margin-top:0px;
+    }
+
+    .middleSection {
+        flex-direction: column;
+        border-bottom:1px solid black;
+        margin-bottom:20px;
+       }
+       
+    .middleSection_containers {
+        width:100%;
+        padding:20px 0px;
+    }
+    
+       
+}
