@@ -165,7 +165,9 @@ footer {
 	text-align: center;
 	border: 1px solid black;
 	border-radius: 2px;
-	padding: 7px 40px;
+    padding: 7px 0;
+    max-width: 200px;
+    width: 80%;
     color: black;
     font-size: 1.8rem;
 }
@@ -454,6 +456,10 @@ width: 120px;
 /* Mobile View */
 @media(max-width: 500px) 
 {
+    .container {
+        padding: 0;
+    }
+
     /* Navigation Settings */
     /* ------------------- */
     .navigation {
@@ -471,7 +477,8 @@ width: 120px;
         /* justify-content: center; */
         /* align-items: center; */
         /* border: 1px solid red; */
-        margin: 0 0 0 22px;
+        /* margin: 0 0 0 22px; */
+        padding: 0;
     }
 
     .navigation nav a {
@@ -499,8 +506,9 @@ width: 120px;
 
     .header-content .header-text .innovate-content a {
         text-align: center;
-        padding: 05px 60px;  
+        /* padding: 05px 20px;   */
         font-size: 1.5rem;
+        width: 80%;
         /* font-weight: bold; */
         /* border: 1px solid red;      */
     }
