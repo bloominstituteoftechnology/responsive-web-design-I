@@ -102,7 +102,10 @@ header .logo {
   display: inline-block;
   margin-top: 25px;
 }
-
+.top-section {
+  display: flex;
+  flex-direction: column;
+}
 /* cta */
 
 .cta .cta-text {
@@ -188,10 +191,7 @@ footer {
   text-align: center;
   font-size: 14px;
 }
-
-@media(max-width: 800 px) {
+@media(max-width: 500 px) {
   .container {
     width: 100%;
     background-color: gray;
-  }
-}
