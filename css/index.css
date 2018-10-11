@@ -77,6 +77,10 @@ header nav {
   flex-direction: row;
 	border: 1px solid red;
 }
+header nav .nav-bar {
+	display: flex;
+	flex-direction: row;
+}
 
 header nav .nav-bar a {
   display: flex;
@@ -86,7 +90,7 @@ header nav .nav-bar a {
   text-decoration: none;
 	flex-direction: row;
 	justify-content: flex-start;
-	border: 1px solid red;
+	align-items: center;
 
 }
 
@@ -114,7 +118,6 @@ header nav .nav-bar-logo {
   margin-top: 120px;
   text-align: center;
   padding: 0px 75px;
-	border: 1px solid red;
 }
 
 .top-intro .top-text button {
@@ -233,7 +236,6 @@ border: 1px solid black;
 	  vertical-align: top;
 		align-items: center;
 		flex-wrap: nowrap;
-		border: 1px solid red;
 	}
 	header nav .nav-bar {
 		display: flex;
@@ -251,6 +253,10 @@ border: 1px solid black;
 	.top-intro img {
 		display: none;
 	}
+	.top-content {
+		display: flex;
+		justify-content: space-between;
+	}
   .top-text {
 		align-self: center;
 		margin-top: 90px;
@@ -259,15 +265,18 @@ border: 1px solid black;
   .middle-bar {
 	display: flex;
 	justify-content: space-between;
+	flex-direction: column;
   }
 
-	.middle-img {
+	/* .middle-img {
 		max-width: 100%
+		margin 80%;
 		height: auto;
-	}
+	} */
 
 	.bottom-content {
-		flex-direction: row;
+		display: flex;
+	 	justify-content: space-between;
 	}
 	.contact {
 		display: flex;
@@ -279,16 +288,31 @@ border: 1px solid black;
 	header nav {
 		display: flex;
 		justify-content: center;
-		flex-direction: column;
+		flex-direction: column-reverse;
 		align-items: center;
 		flex-wrap: wrap;
 	}
 	header nav .logo {
 		flex-direction: column-reverse;
-		flex
+		justify-content: center;
+	}
+	header nav .nav-bar {
+		display: flex;
+		flex-direction: column;
+
+	}
+	header nav .nav-bar a {
+		border-bottom: 1px solid grey;
+		padding: 20px 30px;
+		font-size: 24px;
+		font-weight: bold;
+	}
+	.top-content {
+		display: flex;
+		flex-direction: column;
 	}
 	.middle-bar {
-		max-width: 100%;
+		max-width: 50%;
 		height: auto;
 	}
 	.text-content {
@@ -297,25 +321,22 @@ border: 1px solid black;
 		align-items: center;
 	}
 	.middle-img {
-		display: none;
+		display: flex;
 		flex-direction: column;
-		width: auto;
+		width: 50%;
 		height: auto;
-		flex-wrap: wrap;
 	}
-  .bottom-content .text-content {
+  .bottom-content {
+		display: flex;
 		flex-direction: column;
 		flex-wrap: wrap;
   }
 	.contact {
 		display: flex;
-		flex-wrap: wrap;
 		flex-direction: column;
-		align-items: center;
 	}
 	.footer {
 		display: flex;
-		flex-wrap: wrap;
 		flex-direction: column;
 		align-items: center;
 	}
