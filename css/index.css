@@ -1,3 +1,368 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+.container {
+	width: 880px;
+	margin: 0 auto;
+	line-height: 1.1; 
+	}
+	  
+  header nav {
+	display: flex;
+	justify-content: flex-start;
+	margin-top: 35px;
+  }
+  
+  header nav a {
+	display: flex;
+	margin-right: 65px;
+	font-size: 14px;
+	color: gray;
+	text-decoration: none;
+  }
+  
+  header nav a:hover {
+	text-decoration: underline;
+  }
+  
+  header nav a:first-child {
+	margin-left: 0;
+  }
+  
+  header nav a:last-child {
+	margin-right: 0;
+  }
+
+  header {
+	display: flex;
+  }
+  header .logo {
+	align-self: flex-end;
+	margin: 25px 0 0 90px;
+  }
+  
+  .mid-section {
+	  display: flex;
+  }
+  .mid-section .mid-text {
+	font-size: 77px;
+	margin-top: 120px;
+	text-align: center;
+	padding: 0px 75px;
+  }
+  
+  .mid-section .mid-text button {
+	background: white;
+	vertical-align: top;
+	margin-top: 6px;
+	padding: 8px 44px;
+	font-size: 17px;
+	border: 1px solid black;
+	cursor: pointer;
+  }
+  
+  .mid-section .mid-text button:hover {
+	background: black;
+	color: white;
+  }
+  
+  .mid-section img {
+	margin-top: 69px;
+  }
+  
+  .main {
+	border-top: 1px solid black;
+	margin-top: 76px;
+	padding-top: 39px;
+  }
+  
+  .main .top-content {
+	padding: 0 10px;
+	display: flex;
+  }
+  
+  .main .top-content .text-content {
+	width: 410px;
+	margin-right: 34px;
+  }
+  
+  .main .top-content .text-content:last-child {
+	margin-right: 0;
+  }
+  
+  .main .middle-img {
+	margin-top: 45px;
+  }
+  
+  .main .bottom-content {
+	margin-top: 37px;
+	padding: 0 10px;
+	display: flex;
+  }
+  
+  .main .bottom-content .text-content {
+	width: 275px;
+	margin-right: 12px;
+  }
+  
+  .main .bottom-content .text-content:last-child {
+	margin-right: 0;
+  }
+  
+  .contact {
+	margin-top: 57px;
+	border-top: 1px solid black;
+	padding: 39px 10px 0;
+  }
+  
+  .contact p {
+	margin: 20px 0;
+  }
+  
+  footer {
+	margin: 32px 0;
+	text-align: center;
+	font-size: 14px;
+  }
+
+  .top-section h1{
+	font-size: 30px;
+	margin: 20px 0;
+  }
+
+  .services-header-img {
+	  margin: 20px 0;
+  }
+  
+  .main-service {
+	border-top: 1px solid black;
+    margin-top: 76px;
+    padding-top: 39px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .main-service .content {
+	border: 1px solid black;
+    background: rgba(236, 235, 235, 0.377);
+    padding: 20px;
+    margin: 15px 0;
+    width: 400px;
+    height: 230px;
+  }
+
+  .main-service .content button {
+	background: white;
+	vertical-align: top;
+	margin-top: 20px;
+	padding: 12px 39px;
+	font-size: 15px;
+	border: 1px solid black;
+	cursor: pointer;
+	border-radius: 5px;
+  }
+  .bottom {
+	margin-top: 57px;
+    border-top: 1px solid black;
+    padding: 39px 0;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    flex-wrap: wrap;
+  }
+  
+  .bottom p {
+	  width: 400px;
+  }
+
+  .bottom ul, li {
+	  margin: 10px;
+  }
+
+  /*Tablet view*/
+  @media (max-width: 800px) {
+
+    .container {
+        width: 100%;
+    }
+
+    header {
+        flex-direction: column-reverse;
+    }
+
+    header nav {
+        justify-content: space-evenly;
+    }
+
+    header .logo {
+        margin: 5% 0 0 39%;
+    }
+
+    .mid-section {
+        justify-content: center;
+    }
+
+    .mid-section .header-img {
+        display: none;
+    }
+
+    .mid-section .mid-text {
+        margin-top: 7%;
+    }
+
+    .main {
+        margin-top: 5%;
+    }
+
+    .main .top-content {
+        padding-left: 3%;
+    }
+    
+    .main .top-content .text-content {
+        margin-right: 3%;
+    }
+
+    .main .middle-img {
+        width: 100%;
+    }
+
+    .main .bottom-content {
+        padding-left: 3%;
+    }
+
+    .main .bottom-content .text-content {
+        margin-right: 6%;
+    }
+
+  }
+
+  /*Mobile view*/
+  @media (max-width: 500px) {
+
+    .container {
+        width: 100%;
+    }
+
+    header {
+        flex-direction: column-reverse;
+    }
+
+    header .logo {
+        margin: 5% 0 0 34%;
+    }
+
+    header nav {
+        margin-left: 15%;
+        margin-top : 3%;
+        align-self: center;
+        flex-wrap: wrap;
+    }
+
+    header nav a {
+        border: 1px solid grey;
+        font-size: 22px;
+        width: 500px;
+        padding: 3% 0 3% 37%;
+    }
+
+    header nav a:last-child {
+        margin-right: 65px; 
+    }
+
+    .mid-section .mid-text{
+        margin-top: 10%;
+    }
+    .main {
+        margin-top: 5%;
+        padding-top: 4%;
+    }
+
+    .main .top-content {
+        display: block;
+    }
+    
+    .main .top-content .text-content {
+        margin-top: 8%;
+    }
+
+    .main .middle-img {
+        width: 100%;
+    }
+
+    .main .bottom-content {
+        display: block;
+    }
+
+    .main .bottom-content .text-content {
+        width: 100%;
+        margin-right: 12px;
+        margin-top: 8%;
+    }
+
+  }
