@@ -79,7 +79,7 @@ h2{
 }
 
 .container {
-	width: 880px;
+	max-width: 880px;
 	margin: 0 auto;
 }
 
@@ -170,7 +170,7 @@ nav a:hover{
 
 .middle-img{
 	margin: 30px 0;
-
+	width: 100%;
 }
 
 
@@ -179,4 +179,29 @@ nav a:hover{
 	margin-top: 45px;
 }
 
+@media (max-width: 817px){
 
+	.container{
+		padding: 75px 20px 20px 20px;
+	}
+
+	.container nav{
+		justify-content: space-between;
+		padding: 31px 0px;
+	}
+
+	header{
+		padding-bottom: 79px;
+	}
+
+	.logo{
+		display: none;
+		margin: 0 auto;
+	}
+
+	.header-cont-right{
+		display: none;
+	}
+
+	
+}
