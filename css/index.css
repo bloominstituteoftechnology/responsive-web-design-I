@@ -1,3 +1,413 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+/* General Styles */
+
+.static-navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgb(0, 93, 189);
+  z-index: 5;
+}
+
+nav {
+  width: 880px;
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav div a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+
+.logo-link {
+  margin-right: 0;
+  margin-left: 20px;
+}
+
+nav div a:hover {
+  color: rgb(176, 177, 178);
+}
+
+nav div {
+  margin-top: 25px;
+}
+
+.nav-links {
+  margin-top: 35px;
+  width: 614px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.website-wrapper {
+  width: 880px;
+  margin: 130px auto 0 auto;
+  z-index: 1;
+}
+
+/* Home Styles */
+
+header {
+  border-bottom: 1px solid black;
+  height: 490px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.header-title {
+  width: 500px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header-title h1 {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 75px;
+}
+
+.header-title a {
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  padding: 9px 48px;
+}
+
+.section-one {
+  margin-top: 39px;
+  display: flex;
+}
+
+.section-one div:first-child {
+  margin-right: 20px;
+}
+
+.section-one div p {
+  line-height: 1.16;
+}
+
+.middle-img {
+  margin-top: 38px;
+}
+
+.section-two {
+  border-bottom: 1px solid black;
+  margin-top: 36px;
+  padding-bottom: 47px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-two div p {
+  line-height: 1.16;
+}
+
+.section-two div:nth-child(2) {
+  margin: 0 20px;
+}
+
+address {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+address h2 {
+  margin-bottom: 13px;
+}
+
+address div {
+  line-height: 1.16;
+  display: flex;
+  flex-direction: column;
+}
+
+address div span {
+  margin: 17px 0 0 0;
+}
+
+footer {
+  width: 100%;
+  height: 183px;
+  display: flex;
+  justify-content: center;
+}
+
+footer p {
+  margin-top: 56px;
+  font-size: 14px;
+}
+
+/* Services Styles */
+
+.services-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 374px;
+}
+
+.header-text {
+  margin-top: 28px;
+}
+
+.header-text h1 {
+  font-size: 25px;
+}
+
+.header-text p {
+  line-height: 1.3;
+}
+
+.body {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+}
+
+.body div {
+  height: 252px;
+  width: 420px;
+  background-color: rgb(242, 241, 242);
+  border: 1px solid black;
+  margin-bottom: 40px;
+  padding: 22px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.body div p {
+  line-height: 1.3;
+  margin-bottom: 12px;
+}
+
+.body div a {
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 4px;
+  width: 141px;
+  height: 35px;
+  text-align: center;
+  padding-top: 11px;
+}
+
+.service-facts {
+  margin-top: 42px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.service-facts div:first-child {
+  margin-right: 50px;
+}
+
+.service-facts div p {
+  margin-top: 18px;
+  line-height: 1.3;
+}
+
+.service-facts div ul {
+  margin-top: 26px;
+  margin-left: 19px;
+  height: 105px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  list-style-type: square;
+}
+
+.services-footer {
+  margin-top: 40px;
+}
+
+/* Product Styles */
+
+.product-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-header div h1 {
+  font-size: 25px;
+}
+
+.product-header div p {
+  line-height: 1.3;
+}
+
+.product-header div img {
+  width: 100%;
+  margin-top: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid black;
+}
+
+.product-body {
+  margin-top: 315px;
+}
