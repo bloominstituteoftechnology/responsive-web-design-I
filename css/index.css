@@ -155,13 +155,59 @@ h5 {
   box-sizing: border-box;
 }
 
-@media (min-width: 400px) {
+.logo-link-wrapper {
+  margin-left: 3px;
+}
+
+.navbar nav {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  margin-top: 4.1vw;
+  width: 100%;
+}
+
+.navbar nav .nav-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 3.4vw;
+  width: 100%;
+}
+
+.navbar nav .nav-links a {
+  text-decoration: none;
+  color: rgb(167, 166, 167);
+  height: 11.9vw;
+  font-size: 4vw;
+  border-top: 1px solid black;
+  width: 100%;
+  text-align: center;
+  padding-top: 4vw;
+  font-weight: bold;
+}
+
+.navbar nav .nav-links a:last-child {
+  border-bottom: 1px solid black;
+}
+
+.navbar nav .nav-links a:hover {
+  background-color: black;
+  color: white;
+}
+
+. @media (min-width: 400px) {
 }
 
 @media (min-width: 800px) {
 }
 
 /* Home Styles */
+
+.header-image {
+  display: none;
+}
 
 @media (min-width: 400px) {
 }
