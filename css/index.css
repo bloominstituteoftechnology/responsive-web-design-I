@@ -197,7 +197,7 @@ h5 {
   color: white;
 }
 
-. @media (min-width: 400px) {
+@media (min-width: 400px) {
 }
 
 @media (min-width: 800px) {
@@ -207,6 +207,40 @@ h5 {
 
 .header-image {
   display: none;
+}
+
+header .header-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10vw;
+  font-size: 14.1vw;
+}
+
+header .header-title h1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header .header-title a {
+  text-decoration: none;
+  color: black;
+  font-size: 3.4vw;
+  margin-top: 2vw;
+  margin-left: 3px;
+  border: 1px solid black;
+  padding: 1.3vw 8vw;
+}
+
+header .header-title a:hover {
+  background-color: black;
+  color: white;
+}
+
+.header-divider-line {
+  border: 1px solid black;
+  margin: 14.5vw 4vw 0;
 }
 
 @media (min-width: 400px) {
