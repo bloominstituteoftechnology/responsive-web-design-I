@@ -233,6 +233,7 @@ h5 {
     border: 0;
     padding-top: 0;
     font-size: 1.6vw;
+    height: 3vw;
   }
 
   .navbar nav .nav-links {
@@ -240,11 +241,11 @@ h5 {
   }
 
   .navbar nav .nav-links {
-    margin: 4vw 5.1vw 0 4.5vw;
+    margin: 4vw 6vw 0 4.5vw;
   }
 
   .navbar nav .logo-link-wrapper {
-    margin-top: 2.9vw;
+    margin: 2.9vw 4.8vw 0 0;
   }
 }
 
@@ -425,6 +426,26 @@ footer {
 }
 
 @media (min-width: 800px) {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header-image {
+    display: flex;
+    margin-top: 6vw;
+    margin-right: 5vw;
+  }
+
+  .header-divider-line {
+    display: none;
+  }
+
+  header .header-title {
+    margin-left: 20vw;
+    margin-top: 8vw;
+    font-size: 7.2vw;
+  }
 }
 
 /* Services Styles */
