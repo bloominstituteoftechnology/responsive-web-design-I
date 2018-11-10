@@ -1,3 +1,213 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+
+nav a {
+	padding: 20px;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	margin: 50px;
+}
+
+h1 {
+	display: block;
+	text-align: center;
+	font-size: 75px;
+	padding: 10px;
+	margin: 10px;
+}
+
+button {
+	display: block;
+	width: 100px;
+}
+
+h2 {
+	font-size: 20px;
+}
+
+
+p {
+	font-size: 18px;
+}
+
+.container {
+	margin: 0 auto;
+	width: 900px;
+}
+
+.top-nav {
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	margin: 20px;
+}
+
+.logo {
+	padding: 0 20px;
+}
+
+.top-box{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.middle-stuff {
+	display: flex;
+	justify-content: space-evenly;
+	border-top: 1px solid black;
+	margin: 0 auto;
+	padding: 30px 0;
+}
+
+.mid {
+	padding: 20px 0;
+	width: 49%;
+	display: inline-block;
+}
+
+.middle-img {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.bottom-stuff {
+	display: flex;
+	justify-content: space-around;
+	margin: 0 auto;
+	padding: 40px 0;
+	border-bottom: 1px solid black;
+}
+
+.bot {
+	padding: 10px;
+}
+
+.contact {
+	padding: 40px 0;
+}
+
+.address {
+	padding-bottom: 15px;
+}
+
+.phone-number {
+	padding-bottom: 15px;
+}
+
+.copyright {
+	display: flex;
+	justify-content: center;
+}
+
+.nav-page2 {
+	margin: 20px 10px;
+}
+
+.services-header-img {
+	display: block;
+	margin: 20px auto;
+}
+
+.bigger-h2 {
+	font-size: 30px;
+}
+
+.service-options {
+	width: 910px;
+	margin-bottom: 35px;
+}
+
+.middle-meat {
+	display: flex;
+	flex-wrap: wrap;
+	border-top:  1px solid black;
+	border-bottom: 1px solid black;
+}
+
+.meat-piece {
+	padding: 10px;
+	margin: 10px;
+	background-color: lightgray;
+	border: 1px solid black;
+	width: 400px;
+}
+
+.bottom-facts {
+	display: flex;
+	padding: 20px;
+}
+
 
 
