@@ -95,7 +95,7 @@ footer{
 
 .nav a{
 	display: inline-flex;
-	margin: 30px;
+	margin: 30px 16px;
 	text-decoration: none;
 	color: gray;
 	font-weight: 200;
@@ -124,15 +124,20 @@ footer{
 /* sec1 & sec2 */
 .sec1 , .sec2 {
 	display: flex;
-	margin: 40px 0;
+    margin: 40px 0;
+    justify-content: space-between;
 }
 
 .sec1_features{
 	margin-right: 20px;
 }
 
-.sec2:not(:last-child) {
+/* .sec2:not(:last-child) {
 	margin-right: 50px; 
+} */
+
+.sec2 .sec2-div {
+    margin: 20px;
 }
 
 
@@ -286,3 +291,41 @@ footer{
 	margin-left: auto;
 	
 }
+
+@media (max-width: 800px){
+
+    .container .header{
+        flex-direction: column-reverse;
+    }
+
+    .nav a{
+        margin: 30px 10px;
+        font-size: 17px;
+
+    }
+
+    .container .main .main-img img {
+        display: none;
+    }
+
+    .container .main .main-heading {
+        margin: 0 auto;
+    }
+
+
+    .sec2:not(:last-child) {
+        margin-right: 0;
+    }
+    
+    .sec2 .sec2-div {
+        padding: 5px;
+        margin: 0;
+    }
+}
+
+@media (max-width: 500px){
+    .container{
+        border: pink 3px solid;
+    }
+}
+
