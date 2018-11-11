@@ -225,14 +225,124 @@ footer p {
   text-align: center;
   margin: 2.2rem 0;
 }
-
+.tablet-logo {
+  display: none;
+}
+/* tablet-only-media-style */
 @media (max-width: 800px) {
   .container {
-    width: 800px;
+    width: 720px;
+    margin: 0 auto;
+  }
+  header nav {
+    justify-content: space-around;
+    height: 90px;
+  }
+
+  header .tablet-logo {
+    display: block;
+    text-align: center;
+    margin-top: 1.7rem;
+  }
+  header nav a:nth-of-type(7) {
+    display: none;
+  }
+
+  /* <!-- Main Banner style Here --> */
+  .banner {
+    height: 350px;
+  }
+  .banner .getStarted button {
+    font-size: 1rem;
+  }
+  .banner div:nth-of-type(2) {
+    display: none;
+  }
+  .main {
+    width: 750px;
+    margin: 2.5rem auto 0 auto;
+  }
+  .main div p {
+    margin-right: 21px;
+  }
+  .main .middle-img {
+    margin: 2rem auto;
+    width: 100%;
+  }
+  .spv_wrapper {
+    display: flex;
+    margin-bottom: 2rem;
+  }
+  .spv_wrapper div p {
+    margin-right: 21px;
+  }
+}
+/* phone-only-media-style */
+@media (max-width: 500px) {
+  .container {
+    width: 500px;
+    margin: 0 auto;
+  }
+  header nav {
+    flex-direction: column;
+    height: 365px;
+    margin-top: 0.6rem;
+  }
+  header nav a {
+    font-size: 1.3rem;
+    border-bottom: 1px solid gray;
+    width: 100%;
+    padding: 1rem 0;
+    text-align: center;
+  }
+
+  header .tablet-logo {
+    display: block;
+    text-align: center;
+    margin-top: 1.7rem;
+  }
+  header nav a:nth-of-type(7) {
+    display: none;
+  }
+
+  /* <!-- Main Banner style Here --> */
+  .banner {
+    height: 380px;
+  }
+
+  .banner div:nth-of-type(2) {
+    display: none;
+  }
+  .main {
+    width: 450px;
+    margin: 0 auto;
+  }
+  .main div p {
+    margin-right: 0;
+  }
+  .fa_wrapper {
+    flex-direction: column;
+  }
+  .fa_wrapper div {
+    margin: 1.3rem 0;
+  }
+
+  .spv_wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+  }
+  .spv_wrapper div {
+    margin: 1.3rem 0;
+  }
+  .spv_wrapper div p {
+    margin-right: 21px;
+  }
+  .contact_wrapper {
+    width: 450px;
     margin: 0 auto;
   }
 }
-
 /*
 Task 1: Set Up The Project With Git
 x  Fork the project into your GitHub user account
