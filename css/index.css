@@ -187,9 +187,9 @@ footer{
 
 }
 
-.services-about .services-items:nth-child(odd){
+/* .services-about .services-items:nth-child(odd){
 	margin-right: 40px
-}
+} */
 
 .services-about .services-items a{
 	display: inline-flex;
@@ -320,7 +320,46 @@ footer{
     .sec2 .sec2-div {
         padding: 5px;
         margin: 0;
-    }
+	}
+	
+	/* Services Mobile View Styling */
+	.container .services {
+		text-align: center;
+	 }
+	 
+	 .container .services h2{
+		font-size: 50px;
+	 }
+	 
+	 .container .services p{
+		font-size: 18px;
+	 }
+	 
+	 .container .services-about {
+	   display: block;
+	   text-align: center;
+	 }
+	 .container .services-about .services-items:nth-child(odd) {
+	   margin-right: 0;
+	 }
+	 .container .services-about .services-items{
+	   width: 100%; 
+	 }
+	 .container .services-facts{
+	   display: block;
+	 }
+	 .container .services-facts img{
+	   display: none;
+	 }
+	 .container .services-facts .services-info{
+	   width: 100%;
+	   text-align: center;
+	 }
+	 
+	 .container .service-list{
+	   list-style-type: none;  
+	   border: 2px black dashed;
+	 }  
 }
 
 @media (max-width: 500px){
@@ -344,6 +383,7 @@ footer{
     .nav a {
         display: flex;
         padding: 20px 43%;
+        font-size: 20px;
         align-items: center;  
         margin: 0;   
         width: 100%;
@@ -375,6 +415,8 @@ footer{
 
     .sec2 .sec2-div:not(:last-child){
         margin-bottom: 20px;
-    }
+	}
+	
+	
 }
 
