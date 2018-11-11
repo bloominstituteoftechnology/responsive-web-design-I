@@ -189,12 +189,11 @@ h5 {
   }
 
   .container div.big {
-    border-bottom: 2px solid black;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10% 0 10% 0;
-    margin: 0 0 10% 0;
+    padding: 10% 0 0 0;
+    margin: 0 0 5% 0;
   }
 
   .container div.big div.title {
@@ -217,7 +216,7 @@ h5 {
   }
 
   .container div.big div.title div.subhead {
-    border: 2px solid black;
+    border: 1px solid black;
     padding: 2% 5%;
     width: 50%;
     align-self: center;
@@ -225,13 +224,26 @@ h5 {
 
 
   .container section div.content div.words {
-    padding: 5% 0px;
+    padding: 0 0;
     display: flex;
     flex-direction: column;
   }
 
   .container section div.content div.words div {
     margin: 5%;
+    font-size: 10pt;
+  }
+
+  .container section div.content div.words div.halves1 {
+    border-top: 1px solid black;
+    padding: 12% 0 0 0;
+    width: 90%;
+  }
+
+  .container section div.content div.words div.lastthirds{
+    border-bottom: 1px solid black;
+    padding: 0 0 12% 0;
+    width: 90%;
   }
 
   .content {
@@ -239,18 +251,23 @@ h5 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-bottom: 1px solid black;
   }
 
   img.middle-img {
     width: 90%;
+    padding: 10% 0 5% 0;
   }
 
   footer {
     margin: 5%;
-    padding: 5% 0px;
+    padding: 0 0;
+    font-size: 10pt;
   }
 
+  div.copyright {
+    margin: 10% 0 0 0;
+    text-align: center;
+  }
 }
 @media (max-width: 800px) {
 
