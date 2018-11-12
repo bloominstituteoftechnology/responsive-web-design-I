@@ -128,7 +128,8 @@ table {
   border-spacing: 0;
 }
 
-/* Set every element's box-sizing to border-box */
+/* My Code */
+
 * {
   box-sizing: border-box;
 }
@@ -149,12 +150,22 @@ h5 {
   margin-bottom: 15px;
 }
 
-/* Main Page */
+h1 {
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+h3 {
+  font-size: 15px;
+}
 
 .container {
   width: 880px;
+  /* TB LR */
   margin: 0 auto;
 }
+
+/* header */
 
 header {
   display: flex;
@@ -189,104 +200,13 @@ header .logo {
   margin-top: 25px;
 }
 
-.cta {
-  display: flex;
-}
-
-.cta .cta-text {
-  vertical-align: top;
-  font-size: 77px;
-  margin-top: 120px;
-  text-align: center;
-  padding: 0px 75px;
-}
-
-.cta .cta-text button {
-  background: white;
-  vertical-align: top;
-  margin-top: 6px;
-  padding: 8px 44px;
-  font-size: 17px;
-  border: 1px solid black;
-  cursor: pointer;
-}
-
-.cta .cta-text button:hover {
-  background: black;
-  color: white;
-}
-
-.cta img {
-  margin-top: 69px;
-}
-
-.main-content {
-  border-top: 1px solid black;
-  margin-top: 76px;
-  padding-top: 39px;
-}
-
-.main-content .top-content {
-  padding: 0 10px;
-  display: flex;
-}
-
-.main-content .top-content .text-content {
-  width: 410px;
-  margin-right: 34px;
-}
-
-.main-content .top-content .text-content:last-child {
-  margin-right: 0;
-}
-
-.main-content .middle-img {
-  margin-top: 45px;
-}
-
-.main-content .bottom-content {
-  display: flex;
-}
-
-.main-content .bottom-content .text-content {
-  margin-top: 37px;
-  padding: 0 10px;
-}
-
-.main-content .bottom-content .text-content {
-  width: 350px;
-  margin-right: 12px;
-}
-
-.main-content .bottom-content .text-content:last-child {
-  margin-right: 0;
-}
-
-.contact {
-  margin-top: 57px;
-  border-top: 1px solid black;
-  padding: 39px 10px 0;
-}
-
-.contact p {
-  margin: 20px 0;
-}
-
-footer {
-  margin: 32px 0;
-  text-align: center;
-  font-size: 14px;
-}
-
-/* Services */
 .services-header-img {
   margin-top: 20px;
-  margin-bottom: 20px;
 }
 
 /* main content */
 
-.main-content-services {
+.main-content {
   border-top: 1px solid black;
   margin-top: 40px;
   padding-top: 39px;
@@ -304,12 +224,12 @@ button {
   cursor: pointer;
 }
 
-.top-content-services {
+.top-content {
   display: flex;
   flex-wrap: wrap;
 }
 
-.text-content-services {
+.text-content {
   border: 1px solid;
   width: 400px;
   padding: 25px;
@@ -318,18 +238,18 @@ button {
 }
 
 /* footer */
-.foot-content-services {
+.foot-content {
   border-top: 1px solid black;
   margin-top: 76px;
   padding-top: 39px;
 }
 
-.bottom-content-services {
+.bottom-content {
   display: flex;
   justify-content: space-between;
 }
 
-.foot-text-content-services {
+.foot-text-content {
   width: 400px;
   padding: 20px;
 }
