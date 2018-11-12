@@ -191,6 +191,7 @@ hr {
 }
 
 footer {
+  margin-top: 10px;
   border-bottom: 30px solid gray;
 }
 /* page style */
@@ -219,7 +220,6 @@ footer {
 }
 
 .main-content {
-  /* width: 400px; */
   line-height: 1.5;
 }
 
@@ -228,7 +228,6 @@ footer {
 .motto-section {
   font-size: 3px;
   padding: 50px 25px;
-  /* margin: 50px 5px; */
   display: flex;
   justify-content: space-evenly;
 }
@@ -298,49 +297,67 @@ address {
 }
 
 /*Services pages styles*/
+.header-img-container {
+  display: flex;
 
+  justify-content: center;
+}
 .services-header-img {
-  width: 1160px;
+  width: 90%;
   height: 200px;
   border-radius: 10px;
   margin: 10px;
 }
+@media (max-width: 500px) {
+  .services-header-img {
+    display: none;
+  }
+}
 
+.our-services-container {
+  display: flex;
+  justify-content: center;
+}
 .our-services {
   font-size: 25px;
   line-height: 1.5;
-  width: 1160px;
+  width: 90%;
   margin: 15px;
 }
-
+@media (max-width: 500px) {
+  .our-services {
+    font-size: 17px;
+  }
+}
 .our-services h2 {
   font-size: 35px;
 }
 
 .top-cards {
   display: flex;
-  justify-content: space-between;
-}
-
-.middle-cards {
-  display: flex;
-  justify-content: space-between;
-}
-
-.bottom-cards {
-  display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .card {
   font-size: 20px;
-  background-color: #d3d3d3;
+  background-color: #f4f4f4;
   line-height: 1.5;
   padding: 15px;
-  margin: 25px;
-  width: 500px;
+  margin: 50px;
+  width: 35%;
   border: 1px solid black;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .top-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    font-size: 17px;
+    width: 90%;
+  }
 }
 
 .card-btn {
@@ -348,24 +365,33 @@ address {
   background-color: white;
   padding: 5px;
   margin: 10px;
-  width: 150px;
+  width: 50%;
   border: 1px solid black;
   border-radius: 10px;
 }
 
 .facts-about {
-  margin: 40px;
+  width: 95%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: flex-end;
 }
 
 .facts-about ul {
   margin: 30px;
   list-style-type: disc;
 }
+@media (max-width: 500px) {
+  .facts-about {
+    font-size: 14px;
+  }
+  .facts-about ul {
+    font-size: 13px;
+  }
+}
 
 .facts {
-  width: 500px;
+  width: 50%;
   line-height: 1.5;
 }
 
@@ -457,7 +483,7 @@ address {
 
 /* Tablet styles */
 @media (max-width: 800px) {
-  /* Home paage tablet styles */
+  /* Home page tablet styles */
   .nav-logo {
     display: flex;
     width: 100%;
@@ -479,6 +505,29 @@ address {
   }
 
   /* services page tablet styles */
+
+  .facts {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+  }
+  .facts-about .img {
+    display: none;
+  }
+  .facts-about ul {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    margin: 10px;
+  }
+
+  .our-services {
+    text-align: center;
+  }
 }
 
 /* Mobile styles */
