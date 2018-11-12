@@ -131,13 +131,13 @@ li {
 address {
 	border-top: 1px solid black;
 	padding-top: 40px;
+	margin-left: 13px;
 	/* margin: 40px 0; */
 }
 
 footer {
 	height: 50px;
-	padding-top: 20px;
-	margin-top: 40px;
+	margin-top: 30px;
 	text-align: center;
 	font-size: 14px;
 }
@@ -213,10 +213,10 @@ footer {
 }
 
 .card {
-	border: 1px solid black;
-	background-color: #ededed;
-	margin: 15px 5px;
-	padding: 40px;
+	/* border: 1px solid black; */
+	/* background-color: #ededed; */
+	/* margin: 15px 5px; */
+	/* padding: 40px; */
 	width: 47%;
 }
 
@@ -244,8 +244,60 @@ footer {
 
 /* MEDIA QUERIES */
 
-/* Adjusts from 900px fixed width to responsive for any screen size. */
-@media (max-width: 900px) {
+/* Tablet Styling || 800px and smaller */
+
+@media (max-width: 800px) {
+	body {
+		width: 98%;
+	}
+
+	.top-nav {
+		flex-direction: column-reverse;
+		align-items: center;
+		height: 140px;
+	}
+
+	.logo {
+		margin: 0;
+		padding: 0;
+	}
+	
+	.main-banner {
+		/* align-items: center; */
+		justify-content: center;
+		padding: 65px 0;
+	}
+
+	.title-block {
+		/* margin-top2: -15px; */
+		padding: 0;
+	}
+
+	.header-img img {
+		display: none;
+	}
+
+}
+
+
+/* Mobile Styling || 500px and smaller */
+
+@media (max-width: 500px) {
+	
+	.parent-container {
+		flex-direction: column;
+	}
+
+	.card {
+		width: 95%;
+		margin: 2.5% 0;
+	}
+}
+
+
+
+/* Media Queries from prior week - stretch goal */
+/* @media (max-width: 900px) {
 	body {
 		width: 95%;
 	}
@@ -256,7 +308,7 @@ footer {
 		margin-top: 50px;
 	}
 	.top-nav a {
-		/* display: inline-block; */
+		display: inline-block;
 		padding: 5px 15px;
 	}
 	.logo {
@@ -316,4 +368,4 @@ footer {
 	.card {
 		margin: 15px 0;
 	}
-}
+}  */
