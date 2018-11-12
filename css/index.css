@@ -69,7 +69,7 @@ hr {
 	border: 1px solid black
 }
 .container,
-.header-container {
+header {
 	max-width: 80%;
 	margin: 0 auto;
 }
@@ -77,13 +77,24 @@ hr {
 
 /* Header */
 
+header {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 50px;
+	padding: 20px 0 20px 0;
+}
+
+header nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	margin-right: 40px;
+}
+
 header nav a {
 	text-decoration: none;
 	color: black;
-	/* padding: 0 20px 0 20px; */
-	margin: 0 70px 0 0;
-	/* border-right: .5px solid black; */
-	/* margin: 0 70px 0 0; */
 }
 
 
@@ -302,39 +313,27 @@ header nav a:hover {
 
     /* Header */
 
-    header {
-        max-width: 100%;
-        margin: 0 auto;
-        margin-bottom: 50px;
-        padding: 22px 0 21px 0;
-        /* background-color: lightgrey; */
-    }
-
-    .header-container {
-        
-        height: 100px;
-		padding-top: 10px;
-		max-width: 95%;
-
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: space-between;
-        align-items: center; 
-    }
-
-    .header-container nav {
-        display: flex;
-		justify-content: flex-start;
-		width: 100%;
+	header {
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
+		justify-content: space-between;
+		margin: 10px auto;
+		max-width: 100%;
 	}
 	
-	.header-container nav a {
-		padding-right: 5px;
-		margin-left: 7px;
+	header nav {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 93%;
+		padding: 40px 0;
+		margin: 0 auto;
+	}
+	
+	header nav a {
 		font-size: 16px;
-		color: darkgrey;
-		
-		
+		color: darkgrey;	
 	}
 
 
@@ -436,6 +435,243 @@ header nav a:hover {
 
 	/* Middle */
 
+	
+	.services-middle-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.card-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		margin: 20px auto;
+		
+		background: lightgrey;
+		border: 1px solid black;
+		box-shadow: 3px 7px 13px -3px rgba(0,0,0,0.43);
+		padding: 30px;
+		
+	}
+
+
+	/* Bottom */
+
+
+	.services-bottom-container {
+		display: flex;
+		flex-direction: column-reverse;
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+
+	.services-bottom-content {
+		display: flex;
+		flex-direction: column; 
+		align-items: flex-start;
+		
+	}
+
+
+	.services-bottom-content ul  {
+		display: flex;
+		flex-direction: column;		
+		text-decoration: disc;
+	}
+
+	.services-bottom-content h3 {
+		font-size: 17px;
+	} 
+
+
+	
+	
+
+}
+
+
+
+@media (max-width: 500px) {
+	
+	hr {
+		display: none;
+	}
+	.container {
+		max-width: 100%;
+	}
+
+	/* -- HOME PAGE --*/
+
+	/* Header */
+
+	header {
+		display: flex; 
+		flex-direction: column-reverse;
+		justify-content: space-between;
+		align-items: space-between; 
+		margin: 0;
+		margin-bottom: 30px;
+		
+		
+	}
+	header img {
+		margin-bottom: 10px;
+	}
+	header nav {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	
+	header nav a {
+		font-size: 20px;
+		color: darkgrey;
+		border-bottom: 1px solid black;
+		width: 100%;
+		text-align: center;
+		padding: 20px 0;
+		
+	}
+
+	header nav:first-child {
+		border-top: 1px solid black;
+		margin-top: 10px;
+	}
+
+
+
+	/* -- Homepage Banner -- */
+
+
+
+	.banner {
+		/* border-bottom: 1px solid black; */
+		margin-bottom: 71px;
+	}
+	.banner .banner-title h1 {
+		font-size: 72px;
+		margin: 0;
+	}
+
+	.banner .banner-title button {
+		margin-top: 22px;
+		padding: 5px 0 5px 0;
+		width: 170px;
+		height: 39px;
+		text-align: center;
+		font-family: 'Titillium Web', sans-serif;
+		font-size: 18px;
+	}
+
+	.banner img {
+		display: none;
+	}
+
+
+		/* HOME TOP  */
+
+
+	.home.top-container {
+		margin: 0 auto;
+		margin-top: 40px;
+		margin-bottom: 45px;
+		/* margin-right: 200px; */
+		padding: 0 10px 0 10px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: flex-start;
+		width: 95%;
+
+		border-top: 2px solid black;
+		
+	}
+
+	.home.top-container .top-item {
+		display: flex;
+		flex-direction: column;
+		padding: 10px 0;
+
+		margin-top: 45px;
+	}
+
+	.home.top-container .top-item p {
+		font-size: 15px
+	}
+
+	.middle-img {
+		object-fit: fill;
+		max-width: 100%;
+		padding: 0 20px;
+		margin-top: 15px;
+		margin-bottom: 10px;
+		
+	}
+
+
+	/*-- Home Bottom Content -- */
+
+	.bottom-container {
+		max-width: 90%;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.bottom-item {
+		margin: 30px 0;
+		/* padding: 15px 0; */
+		
+		/* padding-top: 35px; */
+		line-height: 1.2;
+		width: 100%;
+	}
+
+	.bottom-item p {
+		font-size: 15px;
+	}
+
+	/* Home Contact */
+
+	.contact-container {
+		margin: 35px auto;
+		width: 90%;
+		
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		/* padding-left: 10px; */
+
+		border-top: 2px solid black;
+		padding-top: 30px;
+		
+	}
+	
+	.address,
+	.contact p {
+		margin-bottom: 15px;
+	}
+	
+	
+	.copyright {
+		text-align: center;
+		margin-top: -35px;
+	}
+
+
+
+	/* -- Services Tablet Styles -- */
+
+	/* Middle */
+
 	.services-middle-container {
 		display: flex;
 		flex-direction: column;
@@ -493,25 +729,5 @@ header nav a:hover {
 	
 	
 
-}
 
-
-
-@media (max-width: 560px) {
-	.card-container {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		width: 100%;
-		margin: 20px auto;
-		
-		background: lightgrey;
-		border: 1px solid black;
-		box-shadow: 3px 7px 13px -3px rgba(0,0,0,0.43);
-		padding: 30px;
-
-		text-align: center;
-		
-	}
 }
