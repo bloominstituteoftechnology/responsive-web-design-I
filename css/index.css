@@ -101,8 +101,7 @@ header h1{
 header a{
     margin: 2% auto 0;
     border: 1px solid black;
-    padding: 2% 6%;
-    width: 40%;
+    padding: 1.5% 7.5%;
     color: black;
 
 }
@@ -116,6 +115,7 @@ header img{
     border-bottom: 2px solid black;
     padding: 5% 0 0;
     width: 95%;
+    flex-direction: column;
 }
 .main-content div{
     margin: 10% 0;
@@ -130,6 +130,8 @@ header img{
 /* ADDRESS */
 address{
     padding: 7% 0 0;
+    margin: 0 auto;
+    width: 95%;
 }
 address div{
     margin: 3% 0;
@@ -144,11 +146,61 @@ footer{
 /* SINGLE COLUMN CARD LAYOUT & Formatting bottom DIV*/
 
 @media only screen and (min-width: 500px){
-	
+    /***NAVIGATION***/
+    .navigation{
+        margin: 0 auto; 
+        width: 100%;
+    }
+   nav{
+       flex-direction: row;
+       justify-content: space-around;
+   }
+   nav a{
+       border: none;
+       width: 15%;
+    }
+    /***HEADER***/
+    .container header{
+        border: none;
+    }
+    .container h1 {
+        font-size: 5em;
+    }
+    header a{
+        padding: 1% 7.5%;
+    }
+    /***MAIN CONTENT***/
+    .main-content{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .main-content .top-content{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    .top-content .text-content{
+        width: 48%;
+    }
+    .main-content .bottom-content{
+        display: flex;
+        justify-content: space-between;
+    }
+    .bottom-content .text-content{
+        width: 30%;
+    }
+    .main-content p{
+        width: 100%;
+    }
+    .main-content div {
+        margin: 3% 0;
+    }
 }
 
 @media only screen and (min-width: 800px) {
-
+    /***NAVIGATION***/
+    
 
 }
 
