@@ -89,12 +89,16 @@ nav a {
     padding: 3.5% 0;
 }
 /*HEADER*/
-.main-header{
-    flex-direction: column;
-    text-align: center;
+header{
     border-top: 1px solid grey;
-    padding: 10% 0 15%;
 }
+header .left-content{
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10% 0 15%;
+ }
 header h1{
     font-size: 4em;
 }
@@ -160,13 +164,18 @@ footer{
        width: 15%;
     }
     /***HEADER***/
-    .container header{
+    header {
         border: none;
     }
-    .container h1 {
+    header .left-content{
+        flex-direction: column;
+        justify-content: center;
+        padding: 40px;
+     }
+    .container .left-content h1 {
         font-size: 5em;
     }
-    header a{
+    header .left-content a{
         padding: 1% 7.5%;
     }
     /***MAIN CONTENT***/
@@ -215,6 +224,24 @@ footer{
     nav a{
         width: 16%;
         padding: 30px;
+     }
+     /***HEADER***/
+     .container header{
+         flex-direction: row;
+         margin: 0 auto;
+         justify-content: center;
+         padding: 10% 0 10%;
+     }
+     header .left-content{
+        flex-direction: column;
+        justify-content: center;
+        padding: 40px;
+     }
+     header img{
+         display: inline-block;
+     }
+     header a{
+         padding: 2% 15%;
      }
 
 }
