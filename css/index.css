@@ -1,3 +1,249 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+/* Your code starts here! */
+
+.container {
+	/* border: 1px solid red; */
+	/* display: flex; */
+	width: 100%;
+	padding: 3% 5%;
+}
+
+header {
+	/* background-color: lightpink; */
+	/* position: fixed; */
+	display: flex;
+	justify-content: space-around;
+}
+
+nav {
+	/* border: 1px solid red; */
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+nav a {
+	color: grey;
+	text-decoration: none;
+	padding-right: 60px;
+}
+
+img {
+    width: 100%;
+}
+
+ul {
+	list-style-type: square;
+	padding: 20px;
+	line-height: 2;
+}
+
+button {
+	border: 1px solid black;
+	padding: 5px 30px;
+}
+
+footer {
+	text-align: center;
+}
+
+/* .content-col p {
+	background-color: red;
+} */
+
+.logo {
+
+}
+
+.first-section {
+	/* height: 475px; */
+	padding: 70px 0;
+	display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.motto {
+	text-align: center;
+    margin-left: 125px;
+    margin-right: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.motto h1 {
+	font-size: 75px;
+}
+
+.motto button {
+	width: 165px;
+    font-size: 18px;
+}
+
+.first-section img{
+    max-width: 379px;
+    max-height: 379px;
+    width: 50%;
+}
+
+.about {
+	border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    padding: 0 20px;
+}
+
+.content-row {
+	display: flex;
+	justify-content: space-between;
+}
+
+.content-col {
+    margin: 40px 0px;
+    padding: 0 5px;
+    font-size: 15px;
+}
+
+.contact-section {
+	margin: 40px 0;
+}
+
+/* services styling below */
+
+.services-h1 {
+	font-size: 40px;
+}
+
+.services-header-img {
+	padding: 30px 0;
+}
+
+.services-intro {
+	padding-bottom: 30px;
+}
+
+/* ended up setting the height here to get the spacing between service boxes...how about that? */
+.services-list {
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	padding-top: 30px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: space-between;
+}
+
+.service {
+	border: 1px solid black;
+	background-color: #EFEFEF;
+	padding: 25px;
+	margin-bottom: 30px;
+	width: 420px;
+}
+
+button.services-button {
+	border-radius: 5px;
+	margin-top: 15px;
+}
+
+.services-closer {
+	padding: 30px 0;
+	display: flex;
+	justify-content: space-between;
+}
+.services-facts {
+	width: 420px;
+	padding-right: 20px;
+}
+
+/* tablet-view */
+@media (max-width: 800px) {
+	body{
+		 background-color: lightgreen;
+	}
+
+	nav {
+		width: 100%;
+		display: flex;
+		flex-direction: column; 
+	}
+
+	.header-top-row {
+		width: 100%;
+		display: flex;
+		flex-direction: column-reverse;
+		justify-content: center;
+	}
+}
+
+/* mobile-view */
+@media (max-width: 500px) {
+
+}
