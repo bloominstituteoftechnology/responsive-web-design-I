@@ -333,7 +333,11 @@ ol li {
 
 /* responsive section here */
 
-@media (max-width: 900px) {
+@media (max-width: 800px) {
+    .container {
+        width: 850px;
+    }
+
     .container .navcontainer {
         flex-direction: column-reverse;
     }
@@ -342,8 +346,24 @@ ol li {
         padding-bottom: 2rem;
     }
 
+    .container .headermain {
+        display: flex;
+        border: 1px solid red;
+    }
+
+    .container .headermain .headertext {
+        width: 100%;
+        border: 1px solid red;
+        justify-content: center;
+        padding-left: 0;
+    }
+
     .container .headermain img {
         display: none;
     }
 
+}
+
+@media (max-width: 500px) {
+    
 }
