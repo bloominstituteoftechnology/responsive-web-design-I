@@ -350,13 +350,19 @@ footer p {
     .main footer .contact {
         line-height: 1;
     }
+
+    /* ---- Services Tablet ---- */
+
+    .services .top {
+        margin: 110px 0 30px;
+    }
 }
 
 /* ---- Mobile Media Queries ---- */
 
 @media (max-width: 520px) {
 
-    .main {
+    .main, .services {
         width: 100%;
     }
 
@@ -371,13 +377,14 @@ footer p {
         align-items: center;
         position: static;
     }
+    
     header .logo {
         order: -1;
         margin: 0 auto 20px;
         padding: 0;
     }
 
-	nav {
+	header nav {
         margin: 0;
         padding: 0;
 		flex-direction: column;
@@ -387,7 +394,8 @@ footer p {
         border-top: 1px solid black;
 	}
 
-	nav a {
+	header nav a {
+        margin: 0 auto;
         width: 100%;
         text-align: center;
         font-size: 130%;
@@ -411,7 +419,7 @@ footer p {
         align-items: center;
     }
     
-    .main .top-half button {
+    .main .top-half .innovation button  {
         align-self: center;
         width: 74%;
         font-size: 18px;
@@ -475,7 +483,7 @@ footer p {
 
 @media (max-width: 520px) {
 
-	.services {
+	/* .services {
 		width: 80vw;
 	}
 
@@ -492,7 +500,10 @@ footer p {
 
 	.services nav a {
 		margin: 2px 8px 0 0;
-	}
+    } */
+    .services .top img {
+        display: none;
+    }
 
 	.services .middle {
 		flex-direction: column;
@@ -500,6 +511,12 @@ footer p {
 	}
 
 	.services .bottom {
-		flex-direction: column;
-	}
+        flex-direction: column;
+        align-items: center;
+        margin: 0 20px;
+    }
+    
+    .services .bottom .facts {
+        width: 92%;
+    }
 }
