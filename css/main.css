@@ -162,6 +162,13 @@ p {
   margin: auto;
 }
 
+@media screen and (max-width: 800px) {
+  .container {
+    width: 800px;
+    margin: auto;
+  }
+}
+
 /* Header Styles */
 
 header {
@@ -191,6 +198,26 @@ header .logo {
   margin: 28px 0 0 91px;
 }
 
+@media screen and (max-width: 800px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+  header nav {
+    margin-right: 30px;
+    width: 88%;
+    order: 1;
+    align-items: space-evenly;
+  }
+  header a {
+    margin: 0;
+  }
+  header .logo {
+    margin: 30px 0 0 0;
+    flex-wrap: nowrap;
+    order: -1;
+  }
+}
 /* Call To Action (CTA) Styles */
 
 .cta {
@@ -225,6 +252,17 @@ header .logo {
   color: white;
 }
 
+@media screen and (max-width: 800px) {
+  .cta img {
+    display: none;
+  }
+  .cta {
+    justify-content: center;
+  }
+  .cta .cta-text {
+    margin: 0;
+  }
+}
 /* Main Content Styles */
 
 .main-content {
@@ -350,4 +388,10 @@ footer {
 .services-content .services-info .services-info-img {
   width: 420px;
   height: 300px;
+}
+
+@media screen and (max-width: 800px) {
+}
+
+@media screen and (max-width: 500px) {
 }
