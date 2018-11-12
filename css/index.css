@@ -87,44 +87,45 @@ h1, h2, h3, h4, h5 {
 	box-sizing: border-box;
 }
 
-p {
-	font-family: 'Roboto', sans-serif;
-}
-
 /* nav bar */
 
 body {
 	margin: 0 auto;
-	width: 876px;
+	max-width: 880px;
 	display: block;
 	position: relative;
 }
 
-body nav {
+.container {
+}
+
+.container nav {
 	position: fixed;
 	padding: 2rem 0;
 	top: 0;
 	background-color: white;
 	z-index: 500;
 	border-bottom: 1px solid grey;
-	width: 876px;
+	width: 880px;
 }
 
-.navcontainer {
-	width: 100%;
+.container .navcontainer {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
 
-.navmenu {
-	
+.container .navcontainer .navmenu {
+	display: flex;
+	justify-content: space-between;
+	width: 605px;
 }
 
 .navmenu a {
-	padding: 0 3rem 0 0;
+	
 	text-decoration: none;
 	color: grey;
+	
 }
 
 .navmenu a:hover {
@@ -132,12 +133,6 @@ body nav {
 
 }
 
-.navcontainer img {
-}
-
-/* .navmenu a:hover{
-
-} */
 
 /* header */
 
@@ -146,7 +141,7 @@ body nav {
 	align-items: center;
 	justify-content: space-between;
 	padding: 5rem 0 2rem 0;
-	margin: 5rem 0 2.5rem 0;
+	margin: 5rem 0 2.7rem 0;
 }
 
 .headertext {
@@ -154,21 +149,22 @@ body nav {
 	text-align: center;
 	display: flex;
 	flex-direction: column;
-    padding-left: 70px;
-    align-items: center;
+	padding-left: 8rem;
+	align-items: center;
 }
 
 .headertext h1 {
-	font-size: 5rem;
+	font-size: 4.5rem;
 }
 
 .home-page .headermain .headertext .get-started {
 	border: 1px solid black;
-    padding: .6rem;
-    width: 11rem;
-    margin-top: 5px;
-    cursor: pointer;
-    text-align: center;
+	padding: .4rem 1rem;
+	width: 10.6rem;
+	cursor: pointer;
+	text-align: center;
+	font-size: 1.1rem;
+	margin-top: .6rem;
 }
 
 .home-page .headermain .headertext .get-started:hover {
@@ -183,9 +179,10 @@ body nav {
 /* above image section */
 
 .above-img {
-	margin-top: 2.5rem;
+	margin-top: 2.2rem;
 	display: flex;
 	justify-content: space-between;
+	line-height: 1.18rem;
 }
 
 .features {
@@ -197,27 +194,30 @@ body nav {
 }
 
 .middle-img {
-	margin-top: 2.5rem;
+	margin-top: 1.84rem;
 }
 
-address {
-	margin-top: 2rem;
-}
 
 .below-img {
-	margin: 2.5rem 0;
+	margin: 1.8rem 0 2.15rem 0;
 	display: flex;
-	justify-content: space-between
+	justify-content: space-between;
 }
 
 .below-item {
-	width: 32%;
+	width: 33%;
+	line-height: 1.18rem;
 }
 
+address {
+	margin-top: 2.1rem;
+}
 
 footer {
-	margin: 3rem 0 8rem 0;
+	margin: 2.4rem 0 8rem 0;
 	text-align: center;
+	padding-bottom: 1.3rem;
+	border-bottom: 1px dashed black;
 }
 
 /* services page */
@@ -298,7 +298,7 @@ ol li {
 
 .productheader {
 	margin-top: 3rem;
-	width: 876px;
+	width: 100%;
 }
 
 .p-animation {
@@ -333,27 +333,43 @@ ol li {
 
 /* responsive section here */
 
+@media (max-width: 880px) {
+	.container nav {
+		width: 100%;
+	}
+}
+
 @media (max-width: 800px) {
     .container {
-        width: 850px;
+				width: 100%;
+				overflow: hidden;
     }
 
+		.container nav {
+			display: flex;
+			justify-content: center;
+			width: 100%;
+		}
+
     .container .navcontainer {
-        flex-direction: column-reverse;
+				flex-direction: column-reverse;
     }
 
     .container .navcontainer img {
         padding-bottom: 2rem;
-    }
+		}
+		
+		.container .navcontainer .navmenu {
+			
+		}
 
     .container .headermain {
         display: flex;
-        border: 1px solid red;
+				justify-content: center;
     }
 
     .container .headermain .headertext {
         width: 100%;
-        border: 1px solid red;
         justify-content: center;
         padding-left: 0;
     }
@@ -365,5 +381,7 @@ ol li {
 }
 
 @media (max-width: 500px) {
-    
+    .container .navcontainer .navmenu {
+			flex-direction: column;
+		}
 }
