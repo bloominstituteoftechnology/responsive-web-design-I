@@ -269,8 +269,125 @@ h5 {
     text-align: center;
   }
 }
-@media (max-width: 800px) {
 
+@media (max-width: 800px) {
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .container header {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items:center;
+    width: 100%;
+    margin: 5% 0 0 0;
+  }
+
+  .container header nav {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .container header nav a {
+    color: gray;
+    text-decoration: none;
+    text-align: center;
+    font: bold;
+    font-family: "Titillium Web", sans-serif;
+    padding: 5% 5%;
+  }
+
+  .container div.big {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2% 0 0 0;
+    margin: 0 0 5% 0;
+  }
+
+  .container div.big div.title {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .container div.big img {
+    display: none;
+  }
+
+  h1 {
+    font: bold;
+    font-size: 45pt;
+    width: 48%
+  }
+
+  .container div.big div.title div.subhead {
+    border: 1px solid black;
+    padding: 1% 3%;
+    width: 25%;
+    align-self: center;
+  }
+
+  .container section.index {
+    display: flex;
+    justify-content: center;
+  }
+  .container section div.content {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+
+  .container section div.content div.words {
+    padding: 0 0;
+    display: flex;
+    flex-direction: row;
+  }
+
+  img.middle-img {
+    width: 90%;
+    padding: 10% 0 5% 0;
+  }
+
+  .container section div.content div.words {
+    padding: 20px 0px;
+    display: flex;
+  }
+
+  .container section div.content div.words div.halves1 {
+    margin: 0 20px 0 0;
+  }
+
+  .container section div.content div.words div.halves2 {
+  }
+
+  .container section div.content div.words div.thirds {
+  }
+
+  .container section div.content div.words div.lastthirds {
+  }
+
+  .middle-img {
+  }
+
+  footer {
+    margin: 5%;
+    padding: 0 0;
+  }
+
+  div.copyright {
+    margin: 10% 0 0 0;
+    text-align: center;
+  }
 }
 
 @media (min-width: 801px) {
