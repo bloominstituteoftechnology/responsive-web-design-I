@@ -1,3 +1,274 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
 
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+.container {
+	width: 880px;
+	margin: 0 auto;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 20px 0;
+}
+
+header nav a {
+		text-decoration: none;
+		color: gray;
+		margin-right: 50px;
+}
+
+.title {
+	display: flex;
+	height: 400px;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+h1 {
+	display: inline-block;
+	font-size: 60px;
+	text-align: center;
+	margin: 20px;
+}
+
+.services-top {
+	margin: 20px 0px;
+}
+
+.boxes {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	height: 700px;
+	justify-content: space-between;
+	align-content: space-between;
+}
+
+.box {
+	border: 1px solid black;
+	padding: 20px;
+	margin: 5px 0px;
+	background-color: rgb(243, 243, 243);
+	width: 425px;
+}
+
+button {
+	background-color: white;
+	border: 1px solid black;
+	padding: 5px 35px;
+	margin-top: 15px;
+}
+
+.get-started {
+	margin: 0;
+}
+
+.top-content {
+	display: flex;
+	justify-content: space-between;
+	margin: 20px 0px;
+}
+
+.bottom-content {
+	display: flex;
+	margin: 20px 0px;
+}
+
+.third-div {
+	margin: 10px;
+}
+
+.services-bottom {
+	display: flex;
+	width: 440px;
+	flex-direction: column;
+}
+
+.services-bottom p {
+	margin: 10px 0px;
+}
+
+.bottom-div {
+	display: flex;
+	margin: 25px 0px;
+	height: 300px;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: flex-start;
+}
+
+li {
+	margin: 25px 0px 0px 20px; 
+}
+
+footer {
+	text-align: center;
+	margin: 30px 0px 80px 0px;
+}
+
+.contact h2 {
+	margin: 20px 0px 0px 0px;
+}
+
+/* tablet */
+@media (max-width: 800px) {
+	.container {
+		max-width: 790px;
+		margin: 0 auto;
+	}
+	header {
+		flex-wrap: wrap-reverse;
+		justify-content: space-between;
+	}
+
+	header img {
+		margin-bottom: 40px;
+		margin-left: 320px;
+	}
+
+	header nav a {
+		margin: 0 35px;
+}
+
+	.title {
+		margin-top: 0px;
+		height: 350px;
+	}
+
+	.title .code-pic {
+		display: none;
+	}
+
+	.top-content .half-div {
+		margin: 0px 10px;
+	}
+
+	.middle-img {
+		width: 800px;
+	}
+}
+
+/* mobile */
+@media (max-width: 500px) {
+	.container {
+		max-width: 500px;
+		margin: 0 auto;
+	}
+	
+	header nav{
+		display: flex;
+		width: 490px;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		border-bottom: 1px solid black;
+	}
+	
+	header nav a {
+		display: flex;
+		width: 500px;
+		height: 50px;
+		border-top: 1px solid black;
+		text-align: center;
+		align-items: center;
+		justify-content: center;
+	}
+
+	header img {
+		margin-left: 160px;
+	}
+
+	.title {
+		height: 300px;
+		margin-bottom: 40px;
+
+	}
+
+	.middle-img {
+		width: 490px;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+
+	.top-content .half-div {
+		width: 490px;
+		margin-bottom: 30px;
+	}
+
+	.top-content {
+		justify-content: column;
+		flex-wrap: wrap;
+		margin-top: 40px;
+	}
+
+	.bottom-content {
+		flex-wrap: wrap;
+	}
+
+	.bottom-content .third-div {
+		margin-bottom: 20px;
+	}
+}
