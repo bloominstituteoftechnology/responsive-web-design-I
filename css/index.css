@@ -274,6 +274,82 @@ footer p {
 	text-align: center;
 }
 
+/* ---- Tablet Media Queries ---- */
+
+@media (max-width: 820px) {
+    body {
+        width: 94.7%;
+    }
+
+    header {
+        position: static;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 35px;
+    }
+
+    header .logo {
+        order: -1;
+        margin: 40px auto;
+    }
+
+    header nav {
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+
+    header nav a {
+        margin: 0 42px 0 9px;
+    }
+
+    .main .top-half {
+       justify-content: center;
+       height: 51vh;
+    }
+
+    .main .top-half .innovation {
+        margin: 90px auto 0;
+    }
+
+    .main .top-half img {
+        display: none;
+    }
+
+    .main .top-half .innovation button {
+        width: 45%;
+        font-size: 17px;
+    }
+
+    .main .main-content .top {
+        margin: 35px 0 25px;
+    }
+
+    .main .main-content .top div {
+        width: 48.5%;
+        margin: 0 10px;
+    }
+
+    .main .main-content img {
+        height: 157px;
+    }
+
+    .main .main-content .bottom {
+        margin: 30px 0 53px;;
+        justify-content: space-around;
+    }
+
+    .main .main-content .bottom div {
+        width: 30%;
+    }
+
+    .main footer {
+        margin: 34px 10px;
+    }
+
+    .main footer .contact {
+        line-height: 1;
+    }
+}
 
 /* ---- Mobile Media Queries ---- */
 
