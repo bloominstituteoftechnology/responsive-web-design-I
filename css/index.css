@@ -182,21 +182,31 @@ nav a:hover{
 @media (max-width: 817px){
 
 	.container{
-		padding: 75px 20px 20px 20px;
+		padding: 0px 20px 20px 20px;
 	}
 
 	.container nav{
 		justify-content: space-between;
-		padding: 31px 0px;
+		flex-wrap: wrap-reverse;
+		align-content: center;
+		padding: 0px 0px;
+		height: 200px;
+		margin-bottom: 0px;
 	}
 
 	header{
-		padding-bottom: 79px;
+		padding-bottom: 73px;
+	}
+
+	.logo-wrap{
+		width: 100%;
 	}
 
 	.logo{
-		display: none;
+		display: block;
 		margin: 0 auto;
+		position: relative;
+		bottom: 40px;
 	}
 
 	.header-cont-right{
