@@ -155,8 +155,19 @@ h5 {
 }
 nav {
   display: flex;
-  justify-content: space-evenly;
   width: 100%;
+
+  flex-direction: column;
+  align-items: center;
+}
+
+nav a {
+  width: 100%;
+  border-bottom: 1px solid black;
+  text-align: center;
+}
+nav a:first-child {
+  border-top: 1px solid black;
 }
 
 .nav-logo {
@@ -165,7 +176,7 @@ nav {
   margin: 0 auto;
 
   justify-content: space-around;
-  align-items: center;
+  flex-direction: column-reverse;
 }
 
 h1 {
@@ -197,10 +208,9 @@ footer {
 /* page style */
 
 .logo {
+  width: 100%;
   display: flex;
-  width: 30%;
-
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 .logo img {
@@ -211,12 +221,16 @@ footer {
 
 .top-section {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
 }
 
 .bottom-section {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.main-section {
+  flex-direction: column;
 }
 
 .main-content {
@@ -224,7 +238,11 @@ footer {
 }
 
 /* specific styles */
-
+.motto-and-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .motto-section {
   font-size: 3px;
   padding: 50px 25px;
@@ -232,10 +250,8 @@ footer {
   justify-content: space-evenly;
 }
 
-.motto-and-button {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.motto-section {
+  justify-content: center;
 }
 
 .motto {
@@ -247,7 +263,7 @@ footer {
 }
 
 .motto-pic img {
-  height: 350px;
+  display: none;
 }
 
 .button {
@@ -275,14 +291,14 @@ footer {
 }
 
 .main-content {
-  margin: 30px;
+  margin: 10px;
 }
 
 .about-pic {
-  width: 100%;
+  width: 95%;
+  border: 1px solid red;
 }
 .middle-img {
-  margin: 20px 0;
   width: 100%;
   height: 150px;
 }
@@ -297,21 +313,9 @@ address {
 }
 
 /*Services pages styles*/
-.header-img-container {
-  display: flex;
 
-  justify-content: center;
-}
 .services-header-img {
-  width: 90%;
-  height: 200px;
-  border-radius: 10px;
-  margin: 10px;
-}
-@media (max-width: 500px) {
-  .services-header-img {
-    display: none;
-  }
+  display: none;
 }
 
 .our-services-container {
@@ -319,15 +323,11 @@ address {
   justify-content: center;
 }
 .our-services {
-  font-size: 25px;
+  text-align: center;
+  font-size: 17px;
   line-height: 1.5;
   width: 90%;
   margin: 15px;
-}
-@media (max-width: 500px) {
-  .our-services {
-    font-size: 17px;
-  }
 }
 .our-services h2 {
   font-size: 35px;
@@ -345,19 +345,9 @@ address {
   line-height: 1.5;
   padding: 15px;
   margin: 50px;
-  width: 35%;
+  width: 100%;
   border: 1px solid black;
   border-radius: 10px;
-}
-@media (max-width: 500px) {
-  .top-cards {
-    flex-direction: column;
-    align-items: center;
-  }
-  .card {
-    font-size: 17px;
-    width: 90%;
-  }
 }
 
 .card-btn {
@@ -371,70 +361,156 @@ address {
 }
 
 .facts-about {
-  width: 95%;
+  font-size: 14px;
+  text-align: center;
   display: flex;
-  justify-content: space-around;
-  align-items: flex-end;
+  flex-direction: row;
+  justify-content: center;
 }
-
 .facts-about ul {
-  margin: 30px;
-  list-style-type: disc;
-}
-@media (max-width: 500px) {
-  .facts-about {
-    font-size: 14px;
-  }
-  .facts-about ul {
-    font-size: 13px;
-  }
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  justify-content: space-between;
+  font-size: 13px;
 }
 
 .facts {
-  width: 50%;
+  width: 100%;
   line-height: 1.5;
 }
 
-/* media query styles */
+.img {
+  display: none;
+}
 
-/* Tablet styles */
-@media (max-width: 800px) {
+/* media query styles */
+/* tablet styles */
+@media (min-width: 500px) {
   /* Home page tablet styles */
+  nav {
+    display: flex;
+    width: 100%;
+
+    flex-direction: row;
+    align-items: center;
+  }
+  nav a {
+    width: 100%;
+    text-align: center;
+  }
+  nav a {
+    width: 100%;
+    border-bottom: 1px solid white;
+    text-align: center;
+  }
+  nav a:first-child {
+    border-top: 1px solid white;
+  }
+  .motto-pic img {
+    display: none;
+  }
+  .top-section {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+  }
+  .bottom-section {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-evenly; */
+  }
+  .main-section {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .about-pic {
+    width: 96%;
+  }
+  .main-content {
+    margin: 15px;
+  }
+
+  /* Sevices page tablet styles */
+  .header-img-container {
+    display: flex;
+
+    justify-content: center;
+  }
+  .services-header-img {
+    display: block;
+    width: 90%;
+    height: 200px;
+    border-radius: 10px;
+    margin: 10px;
+  }
+  .top-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .card {
+    font-size: 20px;
+    background-color: #f4f4f4;
+    line-height: 1.5;
+    padding: 15px;
+    margin: 50px;
+    width: 35%;
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+}
+
+/* desktop styles */
+@media (min-width: 800px) {
+  /* Home page desktop styles */
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+  }
   .nav-logo {
     display: flex;
     width: 100%;
     margin: 0 auto;
 
+    flex-direction: row;
     justify-content: space-around;
-    flex-direction: column-reverse;
   }
   .logo {
-    width: 100%;
     display: flex;
-    justify-content: center;
+    width: 30%;
+
+    justify-content: flex-start;
   }
   .motto-section {
-    justify-content: center;
+    justify-content: space-around;
   }
   .motto-pic img {
-    display: none;
+    display: block;
   }
 
-  /* services page tablet styles */
+  /* services page desktop styles */
 
   .facts {
+    font-size: 20px;
+    text-align: left;
     display: flex;
     flex-wrap: wrap;
-    width: 90%;
+    width: 35%;
+  }
+  .facts-about {
+    justify-content: space-around;
   }
   .facts-about .img {
-    display: none;
+    display: block;
   }
+
   .facts-about ul {
-    width: 90%;
+    font-size: 20px;
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    flex-direction: column;
   }
 
   .card {
@@ -442,47 +518,9 @@ address {
   }
 
   .our-services {
-    text-align: center;
-  }
-}
-
-/* Mobile styles */
-@media (max-width: 500px) {
-  /* Home page mobile styles */
-  nav {
-    display: flex;
-    width: 100%;
-
-    flex-direction: column;
-    align-items: center;
-  }
-  nav a {
-    width: 100%;
-    border-bottom: 1px solid black;
-    text-align: center;
-  }
-  nav a:first-child {
-    border-top: 1px solid black;
-  }
-  .top-section {
-    display: flex;
-    flex-direction: column;
-    /* justify-content: space-between; */
-  }
-  .bottom-section {
-    display: flex;
-    flex-direction: column;
-    /* justify-content: space-evenly; */
-  }
-  .main-section {
-    flex-direction: column;
-  }
-  .about-pic {
-    width: 91%;
-  }
-  .main-content {
+    font-size: 25px;
+    line-height: 1.5;
+    width: 90%;
     margin: 15px;
   }
-
-  /* Sevices page mobile styles */
 }
