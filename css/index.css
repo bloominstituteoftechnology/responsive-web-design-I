@@ -156,6 +156,12 @@ h5 {
 	box-sizing: border-box;
 }
 
+html,
+body {
+	height: 100%;
+	width: 100%;
+}
+
 .container {
 	max-width: 1000px;
 	margin: 0 auto;
@@ -273,7 +279,7 @@ footer {
 }
 
 #home .main-middle img {
-	/* width: 100%; */
+	width: 100%;
 	margin: 20px 0;
 }
 
@@ -338,6 +344,10 @@ footer {
 /* -------------------Media Queries----------------- */
 @media (max-width: 800px) {
 	/* ----------------Home Page------------------------- */
+	.container {
+		/* max-width: 100%; */
+	}
+
 	.title {
 		margin: 18px 0 20px;
 	}
@@ -438,6 +448,8 @@ footer {
 
 	#home header nav {
 		flex-direction: column;
+		display: flex;
+		align-content: center;
 	}
 
 	#home header nav a {
@@ -445,7 +457,7 @@ footer {
 		/* width: 100%; */
 		border-bottom: 1px solid black;
 		padding-bottom: 20px;
-		/* padding-left: 45%; */
+		align-self: center;
 		margin-bottom: 20px;
 	}
 
@@ -457,6 +469,7 @@ footer {
 	#home header nav a.logo {
 		padding-bottom: 20px;
 		margin-bottom: 20px;
+		padding-left: 0;
 	}
 
 	#home .first-section {
