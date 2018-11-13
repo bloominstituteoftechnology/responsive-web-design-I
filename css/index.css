@@ -188,331 +188,103 @@ nav .nav-links a {
   text-decoration: none;
   color: rgb(167, 166, 167);
   height: 60px;
-  font-size: 19px;;
+  font-size: 19px;
   border-top: 1px solid black;
   width: 100%;
   text-align: center;
-  padding-top: 4vw;
+  padding-top: 20px;
   font-weight: bold;
 }
 
-.navbar nav .nav-links a:hover {
+nav .nav-links a:hover {
   background-color: black;
   color: white;
 }
 
 @media (min-width: 501px) {
-  /* .logo-link-wrapper {
-    margin-left: 15px;
-  }
+}
 
-  .navbar nav .nav-links {
-    flex-direction: row;
-    align-items: flex-start;
-  }
+@media (min-width: 801px) {
+}
 
-  .navbar nav .nav-links a {
-    padding-top: 1vw;
-    font-size: 2vw;
-  }
+/* Home Page Styles */
 
-  .navbar nav .nav-links a:hover {
-    background-color: white;
-    color: black;
-  }
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 18px;
+}
 
-  .navbar nav .nav-links a:last-child {
-    border-bottom: 0;
-  }
-} */
-
-@media (min-width: 800px) {
-  /* .navbar nav {
-    flex-direction: row;
-    align-items: flex-start;
-    margin-top: 0;
-  }
-
-  .navbar nav .nav-links a {
-    border: 0;
-    padding-top: 0;
-    font-size: 1.6vw;
-    height: 3vw;
-  }
-
-  .navbar nav .nav-links {
-    margin: 0;
-  }
-
-  .navbar nav .nav-links {
-    margin: 4vw 6vw 0 4.5vw;
-  }
-
-  .navbar nav .logo-link-wrapper {
-    margin: 2.9vw 7vw 0 0;
-  }
-} */
-
-/* Home Styles */
-
-/* .header-image {
+header .header-img {
   display: none;
 }
 
 header .header-title {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin-top: 10vw;
-  font-size: 14.1vw;
 }
 
 header .header-title h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-size: 68px;
+  margin-top: 50px;
 }
 
 header .header-title a {
+  padding: 7px 40px;
+  margin: 6px 0;
+  border: 1px solid black;
   text-decoration: none;
   color: black;
-  font-size: 3.4vw;
-  margin-top: 2vw;
-  margin-left: 3px;
-  border: 1px solid black;
-  padding: 1.3vw 8vw;
 }
 
 header .header-title a:hover {
-  background-color: black;
+  background: black;
   color: white;
 }
 
-.header-divider-line {
-  border: 1px solid black;
-  margin: 14.5vw 4vw 0;
+header .header-divider-line {
+  border-bottom: 1px solid black;
+  width: 100%;
+  margin: 66px 0 0;
 }
 
 .section-one {
-  display: flex;
-  flex-direction: column;
-  margin: 12vw 4vw 10vw;
-}
-
-.section-one div:last-child {
-  margin-top: 9vw;
+  margin: 55px 18px 0;
 }
 
 .section-one div p {
-  line-height: 1.16;
+  line-height: 1.17;
+  font-size: 15.2px;
+}
+
+.section-one div:last-child {
+  margin-top: 45px;
+}
+
+.middle-img-wrapper {
+  margin: 49px 18px;
 }
 
 .middle-img {
-  margin: 0 4vw;
-  width: 90vw;
+  width: 100%;
+  height: auto;
 }
 
 .section-two {
-  display: flex;
-  flex-direction: column;
-  margin: 0 4vw;
+  margin: 55px 18px 0;
 }
 
-.section-two div {
-  margin-top: 9vw;
+@media (min-width: 501px) {
 }
 
-.section-two div p {
-  line-height: 1.16;
+@media (min-width: 801px) {
 }
 
-address {
-  border-top: 1px solid black;
-  margin: 7vw 4vw 0;
-}
-
-address h2 {
-  margin-top: 7vw;
-}
-
-address div {
-  display: flex;
-  flex-direction: column;
-}
-
-address div span {
-  margin: 2.6vw 0 0;
-}
-
-footer {
-  display: flex;
-  justify-content: center;
-  margin-top: 8vw;
-  margin-bottom: 5vw;
-} */
-
-@media (min-width: 500px) {
-  /* header .header-title {
-    margin-top: 0;
-    margin-left: 1vw;
-    font-size: 9vw;
-  }
-
-  header .header-title a {
-    font-size: 2.2vw;
-    margin-top: 1.3vw;
-    margin-left: 3.5px;
-    padding: 0.8vw 5vw;
-  }
-
-  .header-divider-line {
-    margin: 9.5vw 2.5vw 0;
-  }
-
-  .section-one {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    margin: 4.5vw 4vw 0;
-  }
-
-  .section-one div {
-    width: 45vw;
-  }
-
-  .section-one div:last-child {
-    margin-top: 0;
-  }
-
-  .section-one div:first-child {
-    margin-right: 5vw;
-  }
-
-  .middle-img {
-    margin: 4vw 2.5vw 0;
-    width: 93vw;
-  }
-
-  .section-two {
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 3.3vw;
-    margin-bottom: 4.5vw;
-    height: 100%;
-  }
-
-  .section-two div {
-    margin-right: 4.5vw;
-    margin-top: 0;
-  }
-
-  .section-two div:last-child {
-    margin-right: 0;
-  }
-
-  address {
-    border-top: 1px solid black;
-    margin: 0 2.5vw;
-  }
-
-  .address-container {
-    margin-left: 1vw;
-  }
-
-  address h2 {
-    margin-top: 4.5vw;
-  }
-
-  address div span {
-    margin: 2vw 0 0;
-  }
-
-  footer {
-    margin: 5vw 0 5vw 2vw;
-  }
-} */
-
-@media (min-width: 800px) {
-  /* .website-wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  .header-image {
-    display: inline-block;
-    margin-top: 6vw;
-    margin-right: 7vw;
-    max-width: 100%;
-  }
-
-  .header-divider-line {
-    margin: 7vw 7vw 0 7vw;
-    width: 100%;
-  }
-
-  header .header-title {
-    margin-left: 19vw;
-    margin-top: 6vw;
-    font-size: 7vw;
-  }
-
-  header .header-title a {
-    padding: 0.59vw 4vw;
-    margin-right: 0.5vw;
-    margin-top: 1vw;
-    font-size: 1.7vw;
-  }
-
-  .section-one {
-    margin: 3.5vw 7vw 0 7vw;
-  }
-
-  .section-one div:first-child {
-    margin-right: 0;
-  }
-
-  .middle-img {
-    display: block;
-    margin: 3vw auto 0;
-    width: 100%;
-    max-width: 1000px;
-  }
-
-  .section-two {
-    margin: 3vw 7vw 3.5vw;
-  }
-
-  .section-two div {
-    margin-right: 3.7vw;
-  }
-
-  .section-two div:last-child {
-    margin-right: 4vw;
-  }
-
-  address {
-    margin: 0 7vw;
-  }
-
-  address .address-container {
-    margin: 0;
-    padding: 0;
-  }
-
-  address .address-container h2 {
-    margin-top: 3.5vw;
-  }
-
-  address div span {
-    margin: 1.5vw 0 0;
-  }
-
-  footer {
-    margin: 3.5vw 0 5vw;
-  }
-} */
+/* Services Page Styles */
