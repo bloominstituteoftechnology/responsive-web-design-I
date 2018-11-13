@@ -1,0 +1,530 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+.container {
+	max-width: 100%;
+}
+
+/* -- HOME PAGE --*/
+
+/* Header */
+
+header {
+	display: flex; 
+	flex-direction: column-reverse;
+	justify-content: space-between;
+	align-items: center; 
+	margin: 19px 0;
+	
+	
+	
+}
+header img {
+	margin-bottom: 10px;
+}
+header nav {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+header nav a {
+	font-size: 20px;
+	color: darkgrey;
+	border-bottom: 1px solid black;
+	width: 100%;
+	text-align: center;
+	text-decoration: none;
+	padding: 20px 0;
+	
+}
+
+header nav:first-child {
+	border-top: 1px solid black;
+	margin-top: 10px;
+}
+
+
+
+/* -- Homepage Banner -- */
+
+
+
+.banner-title {
+	text-align: center;
+	margin: 52px auto;
+	width: 90%;
+}
+
+.banner .banner-title h1 {
+	font-size: 72px;
+	margin: 0;
+}
+
+.banner .banner-title button {
+	margin-top: 22px;
+	padding: 5px 0 5px 0;
+	width: 170px;
+	height: 39px;
+	text-align: center;
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 18px;
+}
+
+.banner img {
+	display: none;
+}
+
+
+	/* HOME TOP  */
+
+
+.home.top-container {
+	margin: 70px auto 0 auto;
+	/* margin-top: 40px;
+	margin-bottom: 45px; */
+	/* margin-right: 200px; */
+	/* padding: 20px 10px 0 15px; */
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+	width: 92%;
+
+	border-top: 2px solid black;
+	
+}
+
+.home.top-container .top-item {
+	display: flex;
+	flex-direction: column;
+	padding-top: 60px;
+	margin-bottom: 12px;
+	
+
+	/* margin-top: 45px; */
+}
+
+.home.top-container .top-item p {
+	font-size: 15px
+}
+
+.middle-img {
+	object-fit: fill;
+	max-width: 100%;
+	padding: 0 20px;
+	margin-top: 69px;
+	/* margin-bottom: 5px; */
+	
+}
+
+
+/*-- Home Bottom Content -- */
+
+.bottom-container {
+	max-width: 92%;
+	margin: 26px auto 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	
+}
+
+.bottom-item {
+	margin-bottom: 80px;
+	line-height: 1.2;
+	width: 100%;
+}
+
+.bottom-item p {
+	font-size: 15px;
+}
+
+/* Home Contact */
+
+.contact-container {
+	margin: -25px auto;
+	width: 92%;
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	/* padding-left: 10px; */
+
+	border-top: 2px solid black;
+	padding-top: 32px;
+	
+}
+
+.address,
+.contact p {
+	margin-bottom: 15px;
+}
+
+
+.copyright {
+	text-align: center;
+	margin-top: 54px;
+}
+
+
+
+/* -- Services Styles -- */
+
+.services-header-img {
+	width: 100%;
+	margin: 30px auto;
+}
+
+.services-top-container {
+	max-width: 90%;
+	margin: 20px auto;
+	padding-bottom: 25px;
+	border-bottom: 2px solid black;	
+}
+
+
+
+/* Middle */
+
+.services-middle-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	max-width: 92%;
+	margin: 0 auto;
+}
+
+.card-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	margin: 20px auto;
+	
+	background: lightgrey;
+	border: 1px solid black;
+	box-shadow: 3px 7px 13px -3px rgba(0,0,0,0.43);
+	padding: 30px;
+	
+}
+
+.learn-btn {
+	border-radius: 5px;
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 15px;
+	width: 120px;
+	height: 40px;
+	margin-top: 30px;
+}
+
+/* Bottom */
+
+
+.services-bottom-container {
+	max-width: 92%;
+	margin: 50px auto;
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+.services-bottom-content {
+	display: flex;
+	flex-direction: column; 
+	align-items: flex-start;
+	
+}
+
+.services-info-img {
+	margin-bottom: 40px;
+}
+
+.services-bottom-content ul  {
+	display: flex;
+	flex-direction: column;		
+	margin: 20px 0;
+}
+
+.services-bottom-content ul li {
+	list-style: disc;
+	list-style-position: inside;
+	margin: 5px 0;
+}
+
+.services-bottom-content h3 {
+	font-size: 17px;
+}
+
+
+
+@media (max-width: 800px) {
+	
+	.container {
+		max-width: 100%;
+	}
+
+    /* -- HOME PAGE --*/
+
+    /* Header */
+
+	header {
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: space-between;
+		justify-content: space-between;
+		margin: 30px auto;
+		max-width: 100%;
+		
+	}
+	
+	header nav {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: space-around;
+		max-width: 100%;
+		/* padding: 0px 0px; */
+		margin: 0 auto;
+		
+	}
+	
+	header nav a {
+		font-size: 16px;
+		color: darkgrey;
+		border: none;
+		max-width: 100%;	
+	}
+
+	header nav:first-child {
+		border: none;
+	}
+
+
+
+	/* -- Homepage Banner -- */
+
+
+
+	.banner {
+		/* border-bottom: 1px solid black; */
+		margin-bottom: 71px;
+	}
+	.banner .banner-title h1 {
+		font-size: 72px;
+		margin: 0;
+	}
+
+	.banner .banner-title button {
+		margin-top: 22px;
+		padding: 5px 0 5px 0;
+		width: 170px;
+		height: 39px;
+		text-align: center;
+		font-family: 'Titillium Web', sans-serif;
+		font-size: 18px;
+	}
+
+    .banner img {
+        display: none;
+    }
+
+
+		/* HOME TOP  */
+
+
+	.home.top-container {
+		margin-top: 35px;
+		margin-bottom: 45px;
+		/* margin-right: 200px; */
+		padding: 0 10px 0 10px;
+		display: flex;
+		justify-content: space-between;
+		width: 100%
+		
+	}
+
+	.home.top-container .top-item {
+		display: flex;
+		flex-direction: column;
+		line-height: 1.2;
+		/* width: 100% */
+	}
+
+	.last-top-item {
+		/* border: 1px solid black; */
+		padding-left: 10px;
+	}
+
+
+
+	/*-- Home Bottom Content -- */
+
+	.bottom-container {
+		margin: 27px 0 38px 0;
+		display: flex;
+		justify-content: space-around;
+	}
+	
+	.bottom-item {
+		line-height: 1.3;
+	}
+
+	/* Home Contact */
+
+	.contact-container {
+		margin-top: 35px;
+		height: 200px;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		padding-left: 10px;
+		
+	}
+	
+	.address,
+	.contact p {
+		margin-bottom: 15px;
+	}
+	
+	
+	.copyright {
+		text-align: center;
+		margin-top: -35px;
+	}
+
+
+
+	/* -- Services Tablet Styles -- */
+
+	/* Middle */
+
+	
+	.services-middle-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.card-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		margin: 20px auto;
+		
+		background: lightgrey;
+		border: 1px solid black;
+		box-shadow: 3px 7px 13px -3px rgba(0,0,0,0.43);
+		padding: 30px;
+		
+	}
+
+
+	/* Bottom */
+
+
+	.services-bottom-container {
+		display: flex;
+		/* flex-direction: column-reverse; */
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+
+	.services-bottom-content {
+		display: flex;
+		flex-direction: column; 
+		align-items: flex-start;
+		
+	}
+
+
+	.services-bottom-content ul  {
+		display: flex;
+		flex-direction: column;		
+		text-decoration: disc;
+	}
+
+	.services-bottom-content h3 {
+		font-size: 17px;
+	} 
+
+	.copyright {
+		margin-top: 80px;
+	}
+
+	
+	
+
+}
