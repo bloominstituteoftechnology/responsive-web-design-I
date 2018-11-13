@@ -268,6 +268,7 @@ footer {
         
       }
       header .logo{
+        display:flex;
         margin:0 auto;
         margin-top: 20px;
         justify-content:center;
@@ -283,6 +284,10 @@ footer {
   .cta img {
       display:none;
   }
+  .top-content .text-content{
+      margin-right:12px;
+  }
+
 
   .middle-img {
       max-width: 100%;
@@ -294,6 +299,70 @@ footer {
 
 /* START MOBILE VERSION */
 
+@media (max-width:500px){
+    .container{
+        width: 100%;
+        padding: 0px;
+    }
+    header {
+        display: flex;
+        flex-direction: column-reverse;
+    }
 
+    header nav{
+        display:flex;
+        flex-direction:column;
+        width:100%;
+    }
+    header nav a{
+       
+        border:1px solid grey;
+        text-align: center;
+        
+        padding:20px;
+    }
+    .top-content {
+        display:flex;
+        flex-direction: column; 
+        margin: 0 auto;
+        margin-left: 5%;
+        padding: 10px;
 
+    }
+
+    .top-content .text-content{
+        margin-bottom: 5%;
+    }
+    .middle-img {
+        max-width: 90%;
+        height:auto;
+        margin-left:5%;
+        justify-content:center;
+    }
+
+    .bottom-content{
+        display:flex;
+        flex-direction:column;
+        margin: 0 auto;
+        margin-left: 5%;
+        padding: 10px;
+
+    }
+
+    .bottom-content .text-content{
+        margin-bottom:5%;
+    }
+
+    .contact{
+        display:flex;
+        width:100%;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-left:5%;
+        padding:10px;
+        
+    }
+    
+
+}
 }
