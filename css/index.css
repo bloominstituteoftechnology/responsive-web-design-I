@@ -1,3 +1,345 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+	box-sizing: border-box;
+	
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+/* Global */
+.container{
+	width: 950px;
+	margin: 0 auto;
+	padding-top: 100px;
+
+}
+hr{
+	width: 100%;
+	border: 1px solid black;
+}
+
+
+/* Navigation styling */
+.navigation{
+	position: fixed;
+	width: 100%;
+}
+.navigation header{
+	display: flex;
+	margin-bottom: 85px;
+	padding: 30px;
+	background-color: rgba(248, 223, 78, 0.863);
+	justify-content: center;
+	align-items: center;
+}
+
+nav{
+	display: flex;
+	margin-right: 50px;
+}
+
+nav a{
+	text-decoration: none;
+	color: rgb(2, 2, 2);
+	font-size: 1.1em;
+	margin-left: 20px; 
+	margin-right: 20px;
+	transition: 0.5s;
+}
+nav a:hover{
+	color:black;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.445);
+	transition: 0.1s;
+}
+
+
+/* Main heading styling */
+
+.main-article{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.main-article section{
+	text-align: center;
+}
+.main-article h1{
+	font-size: 4.6em;
+	word-spacing: 300px;
+	line-height: 75px;
+}
+
+.main-article button{
+	padding: 10px 35px;
+	background-color: white;
+	border: 1px solid black;
+}
+.main-article button:hover{
+	background-color: rgb(173, 173, 173);
+	color: black;
+	transition: 0.5s;
+}
+
+
+/* Main content styling */
+
+.first-section{ 
+	display:flex;
+	justify-content: center;
+	padding: 10px;
+}
+.first-section h2{
+	font-size: 1.2em;
+}
+
+.content-article img{
+	padding: 10px;
+}
+
+.second-section{
+	display:flex;
+	justify-content: space-between;
+	padding: 10px;
+}
+.second-section h2{
+	font-size: 1.2em;
+}
+
+/* Footer styling */
+
+footer h3{
+	margin: 45px 0 0 0;
+}
+footer p{
+	text-align: center;
+	margin-top: 25px;
+}
+
+
+/* Services  css */
+.services-header-img{
+	width: 100%;
+}
+.services-section{
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+.services-section h1{
+	font-size: 2em;
+}
+
+.services-card{
+	display:flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	
+}
+.services-card section{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	border: 1px solid black;
+	flex: 0 45%;
+	padding: 20px;
+	margin: 20px;
+	width: 100%;
+	height: 240px;
+	background: rgb(248, 248, 248);
+}
+.services-card section p{
+	margin-bottom: 10px;
+}
+
+.services-card section button{
+	padding: 5px 35px;
+	background-color: white;
+	border: 1px solid black;
+	border-radius: 6px;
+	transition: 0.4s;
+}
+.services-card section button:hover{
+	background-color: rgb(173, 173, 173);
+	color: white;
+	transition: 0.5s;
+}
+
+
+/* Services Footer */
+
+.footer-flex{
+	display:flex;
+	margin-top: 35px;
+	
+}
+
+.footer-flex section p{
+	text-align: left;
+	width: 75%;
+	margin-bottom: 25px;
+}
+.footer-flex section ol{
+	list-style: square;
+	padding-left: 20px;
+}
+.footer-flex section li{
+	padding-bottom: 10px;
+}
+#copyright{
+	padding: 30px 0;
+}
+/* Mobile css */
+@media only screen and (max-width:800px){
+	.container{
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+	}
+	.navigation{
+		position: relative;
+		margin: 0;
+	}
+
+	.navigation header{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin: 0;
+		padding-left: 75px;
+		background-color: rgba(248, 223, 78, 0.863);
+	}
+	.navigation a{
+		font-size: 0.9em;
+	
+	}
+	.navigation header img{
+		padding-top: 10px;
+	}
+	
+	.services-card section{
+		flex: 0 100%;
+		margin: 10px 0;
+		border: none;
+		justify-content: center;
+	}
+	.footer-flex{
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.footer-flex section{
+		margin-bottom: 25px;
+	}
+	.footer-flex section p{
+		text-align: center;
+		width: 100%;
+	}
+
+	.footer-flex section ol{
+		list-style: none;
+		padding: 25px;
+		background-color: rgb(247, 247, 247);
+	}
+	.footer-flex section li{
+		padding-bottom: 50px;
+	}
+}
+@media only screen and (max-width:500px){
+
+    .navigation header{
+        flex-direction: column-reverse;
+    }
+    .navigation nav {
+        display:flex;
+        flex-direction: column;
+    }
+    .navigation a{
+        padding: 10px;
+        font-size: 1.5em;
+    }
+    .main-article img{
+        display: none;
+    }
+    .main-article{
+        margin:25px 0;
+    
+    }
+    .first-section{
+        flex-direction: column;
+        padding: 25px 0;
+    }
+    .first-section section{
+        margin-top: 25px;
+    }
+    .second-section{
+        flex-direction: column;
+    }
+    .second-section section{
+        margin-top: 25px;
+    }
+   
+}
