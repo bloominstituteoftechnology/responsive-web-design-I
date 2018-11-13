@@ -68,12 +68,9 @@ h1, h2, h3, h4, h5 {
 
 .container {
 	width: 880px;
-	/* TB LR */
 	margin: 0 auto;
   }
   
-  /* header */
-
   header {
 	margin-top: 35px;
 	display: flex;
@@ -102,16 +99,14 @@ h1, h2, h3, h4, h5 {
   
   header nav a:last-child {
 	margin-right: 0;
-  }
-
-  /* cta */
+	}
+	
   .cta {
 	  display: flex;
 	  justify-content: center;
 	  align-content: center;
   }
   .cta .cta-text {
-	/* font-size: 300px; */
 	display: flex;
 	flex-direction: column;
 	margin-top: 120px;
@@ -154,11 +149,10 @@ h1, h2, h3, h4, h5 {
 	align-content: center;
 	flex-direction: row;
   }
-  
+
   .main-content .top-content .text-content {
 	width: 410px;
 	margin-right: 34px;
-	/* flex-direction: row; */
   }
   
   .main-content .top-content .text-content:last-child {
@@ -206,8 +200,8 @@ h1, h2, h3, h4, h5 {
 
 @media (max-width: 800px) {
 	.container {
-			width: 800px;
-			border: solid red 1px;
+			width: 750px;
+			margin: 10px;
 	}
 	.container header {
 			flex-direction: column-reverse;
@@ -237,6 +231,7 @@ h1, h2, h3, h4, h5 {
 @media (max-width: 500px) {
 	.container {
 			width: 500px;
+			margin-left: 0px;
 	} 
 	.container header {
 			flex-direction: column-reverse;
@@ -276,6 +271,7 @@ h1, h2, h3, h4, h5 {
 	}
 	.container .main-content img.middle-img {
 			width: 450px;
+			margin-left: 10px;
 	}
 	.main-content .top-content {
 		width: 450px;
