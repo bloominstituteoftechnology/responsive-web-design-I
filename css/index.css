@@ -66,8 +66,9 @@ h1, h2, h3, h4, h5 {
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 .container {
-    width: 880px;
-    margin: auto;
+    width: 1024px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 /* Header Styles */
@@ -79,7 +80,7 @@ header {
 
 header nav {
     margin-top: 40px; 
-    width: 610px;
+    width: 720px;
     justify-content: space-between;
     display: flex;
 }
@@ -158,13 +159,14 @@ header .logo {
   .main-content .top-content .text-content {
 	display: flex;
 	flex-direction: column;
-	width: 410px;
+	width: 480px;
   }
   
    
   
   .main-content .middle-img {
-	margin-top: 45px;
+    margin-top: 45px;
+    width: 100%;
   }
   
   .main-content .bottom-content {
@@ -279,12 +281,73 @@ header .logo {
 }
 
 
+@media (max-width: 800px) {
+
+.container {
+    width: 750px;
+    margin: 0 auto;
+}
+
+header {
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header img {
+    order: -1;
+    }
+
+header nav {
+  width: 600px;
+  display: flex;
+  align-items: flex-start;
+}
 
 
 
+#top-image {
+  display:none;
+}
+
+.cta .cta-text {
+  width: 600px;
+  justify-content: center;
+  margin: 30px 0px 30px 15px;
+}
+
+.main-content {
+  width: 700px;
+}
+.main-content .top-content .text-content {
+  width: 330px;
+  padding: 10px;
+}
+
+.main-content .bottom-content .text-content {
+  width: 220px;
+  padding: 10px;
+}
+
+.contact {
+  width: 700px;
+  }
+
+.contact p {
+  width: 640px;
+}
+
+footer {
+  width: 700px;
+ }
+
+footer p {
+  width: 700px;
+}
 
 
-
+}
 
 
 
