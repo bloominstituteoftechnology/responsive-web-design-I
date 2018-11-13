@@ -1,3 +1,341 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 
+/*
+General CSS
+*/
+
+
+
+.container {
+	width:90%;
+	min-width:800px;
+	margin: 0 auto;
+	
+}
+
+/*nav*/
+.header {
+	display: flex;
+	
+	justify-content: space-between;
+	align-items: center;
+	height: 30%;
+
+	margin-top: 2vh;
+}
+
+.nav {
+	display:flex;
+	justify-content: space-between;
+	width: 60%;
+}
+
+.nav a {
+	text-decoration: none;
+	color: rgba(0,0,0,.3);
+}
+
+button {
+	background: transparent;
+}
+
+button:hover {
+    outline: none;
+    border: none;
+}
+
+button:active {
+    outline: none;
+    border: none;
+}
+
+footer {
+	padding: 6vh 0;
+	text-align: center;
+}
+
+
+/* -------------------      Home Page CSS  ----------------------*/
+
+
+
+/*cta*/
+
+.cta {
+	display:flex;
+	align-items: center;
+	justify-content: space-between;
+	
+
+	margin-top: 7vh;
+}
+
+.cta-text {
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	padding-left: 10vw;
+}
+
+.cta-text h1 {
+	font-size: 80px;
+}
+
+.cta button {
+	width: 10vw;
+	height: 4vh;
+}
+
+
+
+/* main content */
+
+.main-content {
+	display:flex;
+	flex-direction:column;
+
+	
+	margin: 6vh 0;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+.top-content {
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 4vh 0;
+	/*margin-bottom: 4vh;*/
+}
+
+.top-content .text-content {
+	width:calc(100%/2 - 1vw);
+}
+
+.bottom-content {
+	display:flex;
+	flex-direction:row;
+	justify-content: space-between;
+	padding: 4vh 0;
+	/*margin-top:4vh;*/
+}
+
+
+.bottom-content .text-content {
+	width: calc(100%/3 - 2vw);
+}
+
+/* contact section */
+
+.contact * {
+	padding: .8vh 0;
+}
+
+
+
+
+
+
+/*  -------------------    Services Pages CSS   -------------------   */
+
+.services-header-img {
+	width:100%;
+	padding: 4vh 0;
+}
+
+.info-section {
+	padding: 4vh 0;
+}
+
+.info-section h1 {
+	font-size: 35px;
+}
+
+.services {
+	border-top: 2px solid rgba(0,0,0,.25);
+	border-bottom: 2px solid rgba(0,0,0,.25);
+	padding: 1vh 0;
+
+}
+
+/* middle section */
+
+.row {
+	display:flex;
+	justify-content: space-between;
+	margin: 4vh 0;
+	
+}
+
+.card {
+	background: rgba(0,0,0,.15);
+	border: 2px solid rgba(0,0,0,.25);
+	width: calc(100%/2 - 1.5vw);
+}
+
+.card * {
+	padding: 2vh 2vh;
+
+}
+
+card h4 {
+	font-size: 20px;
+}
+
+.card button {
+	width: 16vw;
+	height: 2vh;
+	background: white;
+	margin-bottom: 2vh;
+	text-align:center;
+	vertical-align: middle;
+}
+
+/* bottom section */
+
+.facts {
+	display: flex;
+	margin: 4vh 0;
+}
+
+.facts ul {
+	list-style: disc;
+	padding-top: 3vh;
+}
+
+.facts ul li {
+	padding: 1vh 0;
+}
+
+.facts__left-side {
+	display:flex;
+	flex-direction: column;
+}
+
+
+/*  -------------------    About Page CSS   -------------------   */
+
+
+.main_info {
+	display:flex;
+	flex-direction: column;
+	height: 10vh;
+	margin: 10vh 0;
+	align-items: center;
+}
+
+.main_info h1 {
+	font-size: 60px;
+}
+
+.main_info img {
+	width: 100%;
+	
+}
+
+.cast {
+	display:flex;
+	margin-top: 30vh;
+	
+	
+}
+
+.row-cast {
+	display:flex;
+	flex-direction:row;
+	align-items: center;
+	justify-content: space-between;
+
+	margin-top: 60vh;
+	
+	width:100%;
+	text-align: center;
+}
+
+.card-cast .cast-img {
+	transform: scale(.75);
+	display: inline-block;
+	border: 4px solid grey;
+}
+
+.info h3 {
+	font-size: 40px;
+	
+}
+
+.info h4 {
+	font-size:25px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	color: blue;
+}
+
+.list {
+	margin-left:1.5vw;
+}
