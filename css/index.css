@@ -1,3 +1,238 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Shared Styles */
+div.container {
+	width: 875px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.container hr {
+	margin-bottom: 35px;
+    border-width: 0.5px;
+    border-color: black;
+    width: 875px;
+}
+div.container nav {
+	width: 100%;
+	display: flex;
+    justify-content: space-between;
+	align-items: center;
+	margin-top: 15px;
+}
+
+div.container nav a {
+	font-family: 'Titillium Web', sans-serif;
+    font-size: 14px;
+    text-decoration-line: none;
+	color: #B0B0B0;
+}
+/* index.html */
+div.home div.header {
+	display: flex;
+    width: 875px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 35px 0 35px 0;
+}
+
+div.home div.header-left {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+}
+
+div.home div.header-left h1 {
+	font-size: 76px;
+}
+
+div.home a.get-started {
+	color: black;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 30px;
+    border-width: 1px;
+    border-style: solid;
+}
+
+div.home section.content-block{
+	display: inline-flex;
+    flex-wrap: wrap;
+}
+
+div.home section.top {
+	width: 423px;
+    margin-right: 12px;
+    margin-bottom: 35px;
+}
+
+div.home section.bottom {
+	width: 288px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+div.home footer {
+	display: flex;
+    flex-flow: column wrap;
+    width: 875px;
+}
+
+div.home footer address {
+	line-height: 20px;
+}
+
+div.home footer address div {
+	line-height: 16px;
+}
+
+div.home footer address a {
+	color: black;
+	text-decoration-color: black;
+}
+
+div.home div.copyright {
+	align-self: center;
+}
+
+/* services.html */
+div.services header {
+	display: flex;
+	flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+div.services header img.banner {
+	margin: 20px 0 30px 0;
+}
+
+div.services header h1 {
+	font-size: 24px;
+}
+
+div.services div.service-box-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+div.services section.service-box {
+	display: inline-flex;
+    width: 420px;
+    background: #F4F3F4;
+    flex-wrap: wrap;
+    padding: 20PX;
+    border: 1px solid black;
+    margin-bottom: 40px;
+}
+
+div.services section.service-box a {
+	text-decoration: none;
+    background: white;
+    font-size: 12px;
+    padding: 10px 40px;
+    border: 1px solid black;
+    color: black;
+    border-radius: 4px;
+    margin-top: 22px;
+}
+
+div.services footer {
+	display: flex;
+	flex-wrap: wrap;
+	width: 875px;
+	justify-content: center;
+}
+
+div.services footer div.facts {
+	display: inline-flex;
+    flex-wrap: wrap;
+    width: 50%;
+    align-content: flex-start;
+}
+
+div.services footer div.facts h2{
+	height: 24px;
+}
+
+div.services footer div.facts ul {
+	list-style-type: square;
+    list-style-position: inside;
+	width: 200px;
+	margin-top: 30px;
+}
+
+div.services footer div.facts ul li {
+	margin-bottom: 10px;
+}
+
+div.services footer div.copyright {
+	margin-top: 35px;
+}
