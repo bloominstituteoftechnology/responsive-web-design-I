@@ -1,3 +1,355 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/*
+    [CSS RESET CODE HERE]
 
+    http://meyerweb.com/eric/tools/css/reset/ 
+    v2.0 | 20110126
+    License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* 
+    HTML5 display-role reset for older browsers 
+*/
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body {
+	background-color: white;
+}
+
+/* 
+    SETTING OTHER DEFAULT VALUES (INITIALLY DEFINED BY INSTRUCTOR) 
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* 
+    STYLING CODE 
+*/
+
+.top-overlay {
+    background-color: white;
+    margin: 0 auto;
+    width: 90%;
+    height: 20px;   
+    position: fixed;
+    top: 0px;
+    left: 5%;
+    z-index: 1;   
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.container > header {
+    position: relative;
+}
+
+.container > header > nav {
+    display: flex;
+    align-items: center;
+    background-color: silver;
+    /* padding: 2px 0 20px; */
+    position: fixed;
+    top: 20px;
+    z-index: 1;
+    overflow: hidden;
+    width: 90%;
+    height: 45px;
+}
+
+.container > header > nav >  a.main-link {
+    width: 12.5%;
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.container > header > nav >  a.main-link:hover {
+    border: 5px double grey;
+    transition-duration: 62.5ms;
+    transition-property: all;
+}
+
+.container > header > nav > a.main-link:active {
+    border: 5px solid grey;
+    font-weight: normal;
+}
+
+a.logo-link:empty {
+    background-image: url('http://i67.tinypic.com/14ugk5j.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    top: 2px;
+    right: 25px;
+}
+
+.container > header > div.home-header {
+    display: flex;
+    justify-content: center;
+    margin: 75px 0 45px;
+}
+
+.get-started-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.get-started-container > div {
+    margin: 20px 25px;
+}
+
+.slogan {
+    font-size: 75px;
+    text-align: center;
+}
+
+.get-started-button {
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.get-started-button > span {
+    font-family: "Fira Mono";
+    border: 1px solid black;
+    padding: 5px 25px;
+}
+
+.get-started-button:hover > span {
+    border: 1px solid grey;
+    background-color: grey;
+    color: white;
+    transition-duration: 500ms;
+    transition-property: all;
+}
+.get-started-button:active > span {
+    background-color: silver;
+    border: 1px dotted white;
+    transition-duration: 125ms;
+    transition-property: all;
+}
+    
+.get-started-image:empty {
+    background-image: url('http://i68.tinypic.com/f6lqu.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 380px;
+    height:  380px;
+    border-radius: 100%;   
+}
+
+header {
+    border-bottom: 1px solid black;
+    margin: 35px auto;
+}
+
+.grouping-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px auto;
+}
+
+.grouping-container > section {
+    margin: 0 20px;
+}
+
+.middle-img {
+    background-image: url('http://i64.tinypic.com/zbpkg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 250px;
+    margin: 25px 0;
+}
+
+footer {
+    margin-top: 30px;
+    border-top: 1px solid black;
+    padding-top: 30px;
+}
+
+footer > address {
+    line-height: 1.15;
+}
+
+footer > div.copyright-section {
+    margin: 30px auto;
+    text-align: center;
+}
+
+.header-image {
+    width: 100%;
+    height: 300px;
+    margin: 50px 0 25px;
+}
+
+.container > header > .header-description {
+    line-height: 1.5;
+    padding-bottom: 20px;
+    margin: 25px 0 25px;
+}
+
+.container > header > .header-description > h1,
+.container > header > .header-description > h2,
+.container > header > .header-description > h3 {
+    font-size: 37.5px;
+}
+
+.header-description > p {
+    font-size: 20px;
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    border-bottom: 2.5px solid black;
+    margin: 50px 0;
+}
+
+.services > article {
+    width: 35%;
+    background-color: rgb(233, 232, 232);
+    border: 1px solid black;
+    line-height: 1.25;
+    padding: 20px;
+    margin: 37.5px 0;
+}
+
+.services > article > * {
+    margin: 10px 0;
+}
+
+.services > article > h1
+.services > article > h2 {
+    font-size: 20px;
+}
+
+.services > article > a {
+    display: block;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+    width: 100px;
+    height: 40px;
+    margin: 25px 0 15px;
+    background-color: snow;
+    color: black;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.extra-information-has-image {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.extra-information-has-image > article {
+    width: 70%;
+    line-height: 1.5;
+}
+
+.extra-information-has-image h3 {
+    font-size: 20px;
+}
+
+.extra-information-has-image  ul,
+.extra-information-has-image  ol {
+    line-height: 2;
+    margin: 10px;
+    padding-left: 25px;
+}
+
+.extra-information-has-image ul > li{
+    list-style-type: square;
+}
+
+.extra-information-has-image ol > li{
+    list-style-type: decimal;
+}
+
+.extra-information-has-image img {
+    display: block;
+    width: 500px;
+    height: 300px;
+}
+
+@media (max-width: 700px) {
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services > article {
+        width: 50%;
+    }
+}
