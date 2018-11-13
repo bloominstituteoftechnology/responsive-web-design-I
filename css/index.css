@@ -1,3 +1,376 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+body {
+	width: 900px;
+	margin: 0 auto;
+}
+
+h1 {
+	font-size: 70px;
+	letter-spacing: 5px;
+}
+
+h2 {
+	font-size: 28px;
+}
+
+h3 {
+	font-size: 18px;
+}
+
+p {
+	line-height: 1.25;
+}
+
+/* Header Styles */
+
+.top-nav {
+	height: 80px;
+    display: flex;
+    
+}
+
+nav {
+    margin: 32px auto;
+    text-align: center;
+    
+}
+
+
+
+
+ nav a {
+    text-decoration: none;
+    color: #b0b0b0;
+    padding: 0 30px;
+}
+
+ nav a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+ .logo {
+    right: 0;
+    margin: 20px 0;
+    padding-right: 10px;
+}
+
+/* Call To Action (CTA) Styles */
+
+.cta {
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.cta .cta-text {
+    padding-right: 20px;
+}
+
+.cta .cta-text button {
+    border: 1px double black;
+    font-size: 16px;
+    background: white;
+    width: 170px;
+    height: 32px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.cta .cta-text button:hover {
+    background: black;
+    color: white;
+}
+
+/* Main Content Styles */
+
+.main-content {
+   
+   border-bottom: 2px solid black;
+   margin: 0px 0 35px 0;
+   padding: 35px 0;
+   font-size: 16px;
+   line-height: 18px;
+}
+
+.main-content .top-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-content .middle-img {
+    display: block;
+    margin: 30px auto;
+}
+
+.main-content .bottom-content {
+    display: flex;
+}
+
+.main-content .bottom-content p {
+    padding-right: 20px;
+}
+
+
+.text-content{
+    justify-content: space-between;
+    width:47%
+}
+
+
+/* Contact Styles */
+
+.contact p {
+    margin: 15px 0;
+}
+
+/* Footer Styles */
+
+footer {
+    text-align: center;
+    margin: 40px 0 20px;
+}
+
+/* Services Styles */
+
+.services-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    line-height: 1.3;
+}
+
+.services-content .services-header-img {
+    margin: 20px 0;
+}
+
+.services-content h1 {
+    font-size: 26px;
+    margin: 10px 0;
+}
+
+.services-content .services-text {
+ border-bottom: 1px solid black;
+ padding-bottom: 40px;
+ margin-bottom: 20px
+}
+
+.services-content .card {
+    padding: 20px;
+    border: 1px solid black;
+    width: 420px;
+    background: whitesmoke;
+    margin: 20px 0;
+}
+
+.services-content .card button {
+    padding: 10px 40px;
+    margin-top: 20px;
+    cursor: pointer;
+    background: white;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.services-content .card button:hover {
+    background: black;
+    color: white;
+} 
+
+.services-content .services-info ul {
+    margin: 20px;
+}
+
+.services-content .services-info ul li{
+    list-style: square;
+    padding: 5px;
+}
+
+.services-content .services-info {
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 2px solid black; 
+    margin: 20px 0 35px 0;
+    padding-top: 40px; 
+}
+
+.services-content .services-info .facts {
+  width: 400px;
+  margin: 0 60px 20px 0;
+}
+
+.services-content .services-info .facts p {
+  margin-bottom: 20px;
+}
+
+.services-content .services-info .services-info-img {
+  width: 420px;
+  height: 300px;
+}
+
+/* Media queries for Tablet less than 800px */
+
+@media (max-width: 800px) {
+	body {
+		width: 95%;
+    }
+
+   .top-nav {
+        display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
+		height: 140px;
+    }    
+    
+    .logo {
+		margin: 0;
+		padding: 0;
+    }
+    
+    .cta{
+        
+        justify-content: center;
+		padding: 65px 0;
+    }
+
+    .cta-text{
+        padding: 0;
+    }
+
+        .cta img {
+            display:none;
+        }
+    
+        .main-content{
+            margin: 0px;
+           
+        }
+
+        h1 {
+            margin-bottom: 0x;
+        }
+    }
+
+
+    /* Media queries for Mobile less than 500px */
+
+    @media (max-width: 500px) {
+        .top-nav {
+            justify-content: center;
+            flex-wrap: nowrap;
+            height: 500px;
+            width: 100%;
+        }
+    
+        .top-nav nav {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .top-nav nav a {
+            width: 460px;
+            padding: 22px 0;
+            font-size: 20px;
+            border-bottom: 1px solid black;
+        }
+    
+        .top-nav nav a:nth-child(1) {
+            border-top: 1px solid black;
+            margin-top: -10px;
+        }
+    
+        .main-banner {
+            padding: 10px 0 70px 0;
+        }
+    
+        .parent-container {
+            flex-direction: column;
+        }
+    
+        .card {
+            width: 95%;
+            margin: 2.5% 0;
+            padding-top: 14px;
+        }
+    
+        .card h3 {
+            font-size: 18px;
+        }
+    
+        .middle-img {
+            margin: 10px 0 -15px 0 ;
+        }
+    }
+    
+    
 
