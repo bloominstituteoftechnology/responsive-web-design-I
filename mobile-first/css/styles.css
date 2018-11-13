@@ -1,0 +1,449 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+		font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+p {
+  line-height: 18px;
+}
+
+body {
+	margin: 0 auto;
+	max-width: 500px;
+	display: block;
+	position: relative;
+}
+/* navbar */
+
+.container nav {
+	position: fixed;
+	top: 0;
+	background-color: white;
+	z-index: 500;
+	border-bottom: 1px solid grey;
+  width: 500px;
+  border-bottom: 1px solid black;
+  margin: 0;
+  padding: 0 0 0 0;
+}
+
+.container .burger {
+  display: block;
+  position: absolute;
+  height: 60px;
+  top: 0;
+  right: 0;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.container .navcontainer .logo {
+  margin: 0 0 18px 0;
+  padding: 0 0 20px 0;
+}
+
+.container nav {
+  padding-top: 20px;
+}
+
+.container .navcontainer {
+  display: flex;
+  flex-direction: column-reverse;
+  text-align: center;
+}
+
+.container .navcontainer .navmenu {
+  justify-content: center;
+  flex-direction: column;
+  width: 500px;
+  display: flex;
+}
+
+.container .navcontainer .navmenu a{
+  padding: 20px 0 20px 0;
+  text-align: center;
+  border-top: 1px solid black;
+  font-size: 1.3em;
+}
+
+#menu-links {
+  display: none;
+}
+
+.last-menu {
+  border-bottom: 1px solid black;
+}
+
+.navmenu a {
+	
+	text-decoration: none;
+	color: grey;
+	
+}
+
+.navmenu a:hover {
+	text-decoration: underline;
+
+}
+
+/* header */
+
+.container .headermain img {
+  display: none;
+}
+
+
+.headermain {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 80px 0 32px 0;
+	margin: 80px 0 43.2px 0;
+}
+
+.headertext {
+	flex: 0;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+  align-items: center;
+}
+
+.headertext h1 {
+	font-size: 72px;
+}
+
+.home-page .headermain .headertext .get-started {
+	border: 1px solid black;
+	padding: 6.4px 16px;
+	width: 169.6px;
+	cursor: pointer;
+	text-align: center;
+	font-size: 1.1rem;
+	margin-top: 6.4px;
+}
+
+.home-page .headermain .headertext .get-started:hover {
+	background-color: black;
+	color: white;
+}
+
+.headermain .logo {
+	flex: 0;
+}
+
+/* above image content */
+
+.container .above-img {
+  display: flex;
+  flex-direction: column;
+  padding: 52px 20px 0 20px;
+}
+
+.container .above-img .featuress {
+  padding-bottom: 46px;
+}
+
+.container .above-img .about {
+  padding-bottom: 53px;
+}
+
+/* middle image  */
+
+.container .middle-img {
+  padding: 0 20px 30px 20px;
+  width: 100%;
+}
+
+/* below image content */
+
+.container .below-img {
+  padding: 0 20px;
+}
+
+.container .below-img .product {
+    padding: 63px 0 0 0;
+}
+
+.container .below-img .vision {
+  padding: 64px 0 30px 0;
+}
+
+.container address {
+  padding: 25px 20px 0 20px;
+}
+
+footer {
+  padding-top: 25px;
+  text-align: center;
+}
+
+@media (min-width: 800px) {
+  body {
+    margin: 0 auto;
+    max-width: 800px;
+    display: block;
+    position: relative;
+  }
+
+  .container nav {
+    width: 800px;
+    max-width: 880px;
+  }
+
+  .container .navcontainer .logo {
+    padding: 0;
+  }
+
+  .container .navcontainer .navmenu {
+    display: flex;
+    flex-direction: row;
+    padding-left: 30px;
+    justify-content: space-between;
+    width: 92%;
+  }
+
+  .container .navcontainer .navmenu a {
+    border: none;
+    font-size: 1em;
+  }
+
+  #menu-links {
+    display: flex;
+  }
+
+  .container .navcontainer .burger {
+    display: none;
+  }
+
+  /* above image content*/
+
+  .container .above-img {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 28px 30px 5px 30px;
+  }
+
+  .container .above-img .above-content-block {
+    width: 50%;
+    padding-bottom: 0;
+  }
+  
+  .container .above-img .featuress {
+    padding-bottom: 46px;
+  }
+  
+  .container .above-img .about {
+    padding-left: 10px;
+    padding-bottom: 0;
+  }
+
+  .container .middle-img {
+
+  }
+  
+  /* below image content */
+  .container .below-img {
+    padding: 0 0 0 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .container .below-img .below-item {
+    width: 33%;
+    padding-left: 30px;
+    padding-bottom: 44px;
+  }
+  
+  .container .below-img .product {
+      padding:0 20px;
+  }
+  
+  .container .below-img .vision {
+    padding: 0 10px;
+  }
+  
+  .container address {
+    padding: 25px 10px 0 30px;
+  }
+  
+  footer {
+    padding-top: 25px;
+    text-align: center;
+  }
+
+}
+
+@media (min-width: 880px) {
+  body {
+    margin: 0 auto;
+    max-width: 880px;
+    display: block;
+    position: relative;
+  }
+  /* navbar */
+
+  .container nav {
+    width: 880px;
+  }
+
+  .container .navcontainer {
+    flex-direction: row;
+    justify-content: space-between
+  }
+
+  .container .navcontainer .navmenu {
+    width: 69%;
+    padding-left: 0;
+    margin: none;
+  }
+
+  /* header content */
+
+  .container .headermain {
+    display: flex;
+    justify-content: space-between
+  }
+
+  .container .headermain img {
+    display: block;
+  }
+
+  .container .headermain .headertext {
+    padding-left: 127px;
+  }
+
+  /* above image content*/
+
+  #above-img {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 27px 0 0 0;
+  }
+
+  .container .above-img .above-content-block {
+    width: 50%;
+    padding: none;
+  }
+  
+  .container .above-img .featuress {
+    padding-left: 0;
+  }
+  
+  .container .above-img .about {
+    padding-left: 0;
+  }
+
+  .container .middle-img {
+    padding: 0 0 0 0;
+    margin-top: -14px;
+  }
+  
+  /* below image content */
+  .container .below-img {
+    padding-top: 28px;
+  }
+
+  .container .below-img .below-item {
+    width: 33%;
+    padding-left: 0;
+    padding-bottom: 30px;
+  }
+  
+  .container .below-img .product {
+      padding-left: 2px;
+  }
+  
+  .container .below-img .vision {
+    padding-left: 6px;
+  }
+  
+  .container address {
+    padding: 25px 0 0 0;
+  }
+  
+  footer {
+    padding-top: 25px;
+  }
+}

@@ -1,3 +1,589 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+		font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
 
 
+* {
+	box-sizing: border-box;
+}
+
+/* nav bar */
+
+body {
+	margin: 0 auto;
+	max-width: 880px;
+	display: block;
+	position: relative;
+}
+
+.container {
+}
+
+.container nav {
+	position: fixed;
+	padding-top: 32px;
+	top: 0;
+	background-color: white;
+	z-index: 500;
+	border-bottom: 1px solid grey;
+	width: 880px;
+}
+
+.container .burger {
+	display: none;
+}
+
+.container .navcontainer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.container .navcontainer .navmenu {
+	display: flex;
+	justify-content: space-between;
+	width: 605px;
+}
+
+.navmenu a {
+	
+	text-decoration: none;
+	color: grey;
+	
+}
+
+.navmenu a:hover {
+	text-decoration: underline;
+
+}
+
+
+/* header */
+
+.headermain {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 80px 0 32px 0;
+	margin: 80px 0 43.2px 0;
+}
+
+.headertext {
+	flex: 0;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	padding-left: 128px;
+	align-items: center;
+}
+
+.headertext h1 {
+	font-size: 72px;
+}
+
+.home-page .headermain .headertext .get-started {
+	border: 1px solid black;
+	padding: 6.4px 16px;
+	width: 169.6px;
+	cursor: pointer;
+	text-align: center;
+	font-size: 1.1rem;
+	margin-top: 6.4px;
+}
+
+.home-page .headermain .headertext .get-started:hover {
+	background-color: black;
+	color: white;
+}
+
+.headermain .logo {
+	flex: 0;
+}
+
+/* above image section */
+
+.above-img {
+	margin-top: 35.2px;
+	display: flex;
+	justify-content: space-between;
+	line-height: 18.88px;
+	flex-wrap: wrap;
+}
+
+.container .above-img .above-content-block {
+	width: 50%;
+}
+
+/* .features {
+	width: 50%;
+}
+
+.about {
+	width: 50%;
+} */
+
+.middle-img {
+	margin-top: 29.44px;
+}
+
+
+.below-img {
+	margin: 28.8px 0 34.4px 0;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.below-item {
+	width: 33%;
+	line-height: 18.88px;
+}
+
+address {
+	margin-top: 33.6px;
+}
+
+footer {
+	margin: 38.4px 0 128px 0;
+	text-align: center;
+	padding-bottom: 20.8px;
+	border-bottom: 1px dashed black;
+}
+
+/* services page */
+
+.services-header-img {
+	width: 100%;
+	margin-top: 70px;
+}
+
+.headerservices {
+	margin: 32px 0;
+}
+
+.headerservices h1 {
+	font-size: 1.5rem;
+}
+
+.flexcontainer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.flexitems a {
+	text-decoration: none;
+	color: black;
+}
+
+.flexitems {
+	padding: 1rem;
+	width: 48%;
+	margin-top: 2rem;
+	padding-bottom: 1.5rem;
+	border: 1px solid black;
+	background: #f5f5f5;
+}
+
+.flexitems p {
+	margin-bottom: 1.5rem;
+}
+
+.learnmore {
+	font-size: .75rem;
+	margin-top: 1rem;
+	background: white;
+	border: 1px solid black;
+	border-radius: 5px;
+	padding: .3rem 2.4rem;
+}
+
+.flexsection {
+	margin-bottom: 2rem;
+}
+
+.hrthird {
+	height: 3px;
+	background-color: black;
+}
+
+.last-section {
+	margin: 2rem 0 7rem 0;
+	display: flex;
+}
+
+ol {
+	list-style: square inside;
+
+}
+
+ol li {
+	margin-bottom: 1rem;
+}
+
+.header2 {
+	margin-top: 5rem;
+	padding-top: 5rem;
+}
+
+.productheader {
+	margin-top: 3rem;
+	width: 100%;
+}
+
+.p-animation {
+	overflow:hidden;
+	width: 100%;
+}
+
+.p-animation p {
+	width:	100%;
+	animation-duration: 3s;
+	animation-name: slidein;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+@keyframes slidein {
+	from {
+		margin-left: 100%;
+		width: 300%;
+	}
+
+	to {
+		margin-left: 0%;
+		width: 100%;
+	}
+	75% {
+		font-size: 300%;
+		margin-left: 25%;
+		width: 150%;
+	}
+}
+
+/* responsive section here */
+
+@media (max-width: 880px) {
+
+	/* this is for the full max width */
+	.container nav {
+		width: 100%;
+	}
+}
+
+@media (max-width: 800px) {
+
+	/* navbar */
+    .container {
+				width: 100%;
+				overflow: hidden;
+		}
+
+		.container nav {
+			display: flex;
+			justify-content: center;
+			width: 100%;
+		}
+
+    .container .navcontainer {
+				flex-direction: column-reverse;
+    }
+
+    .container .navcontainer img {
+        padding-bottom: 2em;
+		}
+		
+		.container .navcontainer .navmenu {
+			max-width: 800px;
+			width: 89%;
+		}
+
+		.container .navcontainer {
+			width: 100%;
+			justify-content: space-between;
+			padding-bottom: 15px;
+		}
+		#menu-links {
+			display: flex;
+		}		
+		/* horizontal rule */
+
+		.hr {
+			height: 2px;
+		}
+
+		/* header */
+
+    .container .headermain {
+        display: flex;
+				justify-content: center;
+		}
+
+		.container .headermain .headertext {
+			width: 100%;
+			justify-content: center;
+			padding-left: 0;
+	}
+
+	.container .headermain img {
+			display: none;
+	}
+		
+		.container .above-img {
+			padding-left: 20px;
+			padding-bottom: 20px;
+		}
+
+		.container .above-img .featuress {
+			padding-left: 10px;
+		}
+
+
+		/* middle image */
+		.middle-img {
+			width: 100%;
+			padding: 0 20px;
+		}
+
+		/* below image content */
+
+		.container .below-img .services{
+			padding: 0 0 0 30px;
+		}
+		.container .below-img .product{
+			padding: 0 0 0 15px;
+		}
+
+		.below-img {
+			padding-bottom: 20px;
+		}
+		address {
+			padding: 0 30px;
+		}
+
+		/* services page */
+		.container .services-header-img {
+			padding-top: 60px;
+		}
+
+		.container .headerservices {
+			padding: 0 30px;
+		}
+		
+		.container .flexsection {
+			padding: 0 30px;
+		}
+		.container .last-section {
+			padding: 0 30px;
+		}
+		.container .last-section img {
+			display: none;
+		}
+
+		.container .last-section .firstpart ol {
+			padding-top: 40px;
+		}
+}
+
+@media (max-width: 500px) {
+	.container {
+		padding: 0;
+	}
+
+	/* navbar */
+
+	.contianer nav {
+		border-bottom: 0;
+		margin: 0;
+		padding: 0 0 0 0;
+		
+	}
+
+	.container .burger {
+		display: block;
+		position: absolute;
+		height: 80px;
+		top: 0;
+		right: 0;
+		margin-top: 20px;
+		cursor: pointer;
+	}
+
+	.container .navcontainer .logo {
+		margin: 0 0 18px 0;
+		padding: 0;
+	}
+
+	.container .navcontainer .navmenu {
+		justify-content: center;
+		flex-direction: column;
+		width: 500px;
+		display: flex;
+	}
+
+	.last-menu {
+		border-bottom: 1px solid black;
+	}
+	
+	#menu-links {
+		display: none;
+	}
+/* horizonal rule */
+	.hr {
+		padding: 0 20px;
+	}
+
+	.container .navcontainer .navmenu a{
+		padding: 20px 0 20px 0;
+		text-align: center;
+		border-top: 1px solid black;
+		font-size: 1.3em;
+	}
+
+	/* above image content */
+
+	.container .above-img {
+		flex-direction: column;
+		padding: 20px 20px 0 20px;
+	}
+
+	.container .above-img .above-content-block {
+		width: 100%;
+		padding: 0 0 0 0;
+	}
+
+	.container .above-img .featuress {
+		padding-bottom: 50px;
+	}
+
+	.container .above-img .about {
+		padding-bottom: 20px;
+	}
+
+	/* middle image content */
+
+	.container .middle-img {
+		padding: 0 20px;
+	}
+
+	/* below image content */
+
+	.container .below-img {
+		flex-direction: column;
+		padding: 0 20px 0 20px;
+	}
+
+	.container .below-img .below-item {
+		width: 100%;
+		padding: 0 0 0 0;
+	}
+
+	.container .below-img .services {
+		padding-bottom: 62px;
+	}
+	.container .below-img .product {
+		padding-bottom: 62px;
+	}
+
+	.container .below-img .vision {
+
+	}
+
+	address{
+		padding:0 20px 0 20px;
+	}
+
+	/* services page */
+
+	.container .flexsection .flexcontainer {
+		flex-direction: column;
+		width: 100%;
+	}
+	.container .flexsection .flexitems {
+		width: 100%;
+	}
+
+	.services-page .services-header-img {
+		padding-top: 32px;
+	}
+}
