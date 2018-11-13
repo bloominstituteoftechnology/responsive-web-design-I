@@ -158,7 +158,6 @@ h5 {
     margin: 30px auto;
     position: absolute;
     margin-left: 30%;
-    align-self: flex-start;
   }
   header nav {
     width: 768px;
@@ -182,6 +181,61 @@ h5 {
   main-content .middle-img {
     margin-top: 45px;
     width: 768px;
+  }
+}
+
+@media (max-width: 480px) {
+  header .logo {
+    margin: 20px 30%;
+    position: absolute;
+    margin-left: 150px;
+    align-self: flex-start;
+  }
+  .main-content .top-content {
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+  }
+  .container {
+    width: 480px;
+    margin: 0 auto;
+  }
+  header {
+    display: flex;
+    height: 400px;
+  }
+  header nav {
+    width: 480px;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 10px;
+    flex-direction: column;
+    font-size: 60px;
+    text-decoration: none;
+    display: flex;
+    position: absolute;
+  }
+  header nav a {
+    padding-top: 20px;
+    font-size: 20px;
+    color: gray;
+    text-decoration: none;
+    border-bottom: 1px solid gray;
+    height: 60px;
+  }
+  .cta img {
+    margin-top: 69px;
+    display: none;
+  }
+  .main-content .middle-img {
+    margin-top: 45px;
+    width: 480px;
+  }
+  .main-content .bottom-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
   }
 }
 
