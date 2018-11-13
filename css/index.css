@@ -157,7 +157,7 @@ h5 {
 
 .website-wrapper {
   width: 100%;
-  max-width: 880px;
+  max-width: 1024px;
   margin: 0 auto;
 }
 
@@ -169,7 +169,7 @@ nav {
   width: 100%;
 }
 
-.logo-link img {
+nav div .logo-link img {
   width: 175px;
   height: auto;
 }
@@ -202,9 +202,28 @@ nav .nav-links a:hover {
 }
 
 @media (min-width: 500px) {
+  nav {
+    margin-top: 30px;
+  }
+
+  nav .nav-links {
+    flex-direction: row;
+    align-items: flex-start;
+    height: 0;
+  }
+
+  nav .nav-links a {
+    font-size: 16px;
+    padding-top: 16px;
+  }
+
+  nav .nav-links a:hover {
+    background: white;
+    color: black;
+  }
 }
 
-@media (min-width: 801px) {
+@media (min-width: 800px) {
 }
 
 /* Home Page Styles */
@@ -320,9 +339,56 @@ footer {
 }
 
 @media (min-width: 500px) {
+  header {
+    margin-top: 50px;
+  }
+
+  header .header-title h1 {
+    font-size: 67px;
+  }
+
+  header .header-divider-line {
+    margin-top: 62px;
+  }
+
+  .section-one {
+    display: flex;
+    margin: 34px 26px 0;
+  }
+
+  .section-one div:last-child {
+    margin: 0 0 0 15px;
+  }
+
+  .middle-img-wrapper {
+    margin: 26px 20px 0;
+  }
+
+  .section-two {
+    margin: 26px 26px 0;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .section-two div {
+    width: 200px;
+    margin: 0 0 0 36px;
+  }
+
+  .section-two div:first-child {
+    margin: 0;
+  }
+
+  address {
+    margin: 30px 18px 35px;
+  }
+
+  address .address-container {
+    margin-left: 9px;
+  }
 }
 
-@media (min-width: 801px) {
+@media (min-width: 800px) {
 }
 
 /* Services Page Styles */
