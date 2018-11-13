@@ -49,9 +49,23 @@ table {
 }
 
 /* Set every element's box-sizing to border-box */
+
+/* Defaults: */
+
 * {
     box-sizing: border-box;
 }
+
+html {
+      font-size: 62.5%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Body:  */
 
 html, body {
     height: 100%;
@@ -63,6 +77,8 @@ h1, h2, h3, h4, h5 {
     letter-spacing: 1px;
     margin-bottom: 15px;
 }
+
+/* Container:  */
 
 .container {
     width: 880px;
@@ -79,8 +95,8 @@ header {
 header nav {
     margin-top: 40px; 
     width: 610px;
-    justify-content: space-between;
     display: flex;
+    justify-content: space-between;
 }
 
 header nav a {
@@ -96,6 +112,13 @@ header nav a:hover {
 header .logo {
     margin: 28px 0 0 91px;
 }
+
+@media(max-width: 500px) {
+    header {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
 
 /* Call To Action (CTA) Styles */
 
@@ -171,43 +194,3 @@ footer {
     text-align: center;
     margin: 40px 0 20px;
 }
-
-@media (max-width: 500px) {
-    .container {
-        background: orange;
-    }
-    
-}
-
-@media (max-width: 800px) {
-    .container {
-        background: blue;
-    }
-}
-
-/* Struggling to get mine to work at all. 
-I am rewatching the lesson but wanted to sumbit my work so far.
-I just have the background colors to help me see where the width is.
-My PixelPerfect extention isn't working.
-Below are some things google told me might help but didn't.
- */
-
-/* {
-    .container {
-    background: orange;
-    #wrap { width : 960px; margin: 0 auto; }
-    #content{float:left;width:60%;}
-    #sidebar{float:right;width:35%}
-    }
-
-} */
-
-/* @media (max-width: 500px) {
-    .container {
-        background: blue;
-        #content{width:95%;}
-        #sidebar{width:95%;}   
-    }
-} */
-
-img { height: auto; max-width: 100%; }
