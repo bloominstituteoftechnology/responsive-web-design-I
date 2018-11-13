@@ -1,3 +1,360 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+/*
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    border:1px solid red;
+*/
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+.container{
+    margin: 90px 110px auto;
+}
+
+header {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+header nav a {
+    margin: 10px 36px ;
+    text-decoration: none;
+    color: gray;
+}
+
+.logo {
+    margin: -7px;
+}
 
 
+header{
+    margin: 10px 0px 30px 0px;
+}
+/******first section css and header*************/
+
+.btn {
+    display: flex;
+    margin-top:110px;
+    margin-left: 50px;
+    font-size: 20px;
+    padding: 0px 20px 0px 20px ;
+}
+
+.ondemand img{
+    object-fit: contain;
+}
+
+.ondemand {
+    display: flex;
+    justify-content: center;
+}
+
+.ondemand h1{
+    font-size: 70px;
+    line-height: 90px;
+}
+
+.on{
+    margin: 50px;
+    font-size: 80px;
+}
+
+/******section one css*************/
+
+.sectionone{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.sectionone p {
+    margin: 20px 0px 40px 0px;
+}
+
+/******The image between ********/
+
+.middle-img{
+    width: 100%;
+}
+
+/******section two css ********/
+
+.sectiontwo {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.sectiontwo h3{
+    margin-top: 23px;
+}
+
+.sectiontwo p {
+    margin: 20px 0px 40px 0px;
+}
+
+/******footer css **********/
+
+.copy{
+    text-align: center;
+    margin-bottom: 80px;
+    margin-top: 90px;
+}
+
+hr{
+    border:none;
+    height: 20px;
+    height: 50px;
+    margin-top: 0;
+    border-bottom: 1px solid #1f1209;
+    box-shadow: 0 20px 20px -20px #333;
+    margin: -50px auto 10px; 
+}
+
+/*****+++++++++++++++++++++++secondpage********************/
+
+.services-header-img{
+    width: 100%;
+}
+
+.square1{
+    display: flex;    
+}
+
+.firstset {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border : 1px solid grey;
+    margin: 40px 0px 20px 0px;
+}
+
+.firstset h2, .firstset p{
+   padding: 30px;
+}
+
+.firstset button {
+    margin: 10px 0px 20px 28px;
+    border-radius: 10px;
+    padding: 10px 10px;
+}
+/*******right side element*/
+
+.secondset{
+    margin: 40px 0px 20px 50px;
+}
+
+/*
+.thirdset{
+    display: flex;
+    flex: wrap;
+    justify-content: space-between;
+}
+
+
+
+.border {
+    border: none;
+}
+
+.pic{
+    margin: 40px 0px 20px 155px;
+}
+
+*/
+/** styling the last paragraph*/
+ul{
+    padding: 50px;
+    list-style:initial;
+    line-height: 1.5;
+}
+
+.column{
+    float: left;
+    width: 50%; 
+    margin: 40px 0px 20px 0px;
+}
+
+.square2:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.services-info-img{
+    margin: 10px 0px 0px 30px;
+}
+
+.services{
+    margin: 40px 0px 50px 0px;
+}
+
+/***** adding media query****/
+
+
+@media(max-width : 760px){
+
+    body .container{
+        margin: 50px 10px 20px 10px;
+    }
+    .sectionone p, .sectionone h2, .sectiontwo p , .sectiontwo h2{
+        margin: 7px;
+    }
+
+    .contact p {
+        margin: 6px 1px 9px 0px;
+        line-height: 1px;
+    }
+
+    p{
+        font-size: 15px
+    }
+
+    header {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav  {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        margin: 43px 0px 0px 0px;
+    }
+
+    .ondemand img { 
+        display: none;
+    }
+
+    .ondemand {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ondemand h1{
+        text-align: center;
+    }
+
+    .ondemand button {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media(max-width : 400px){
+  
+    body {
+        margin:0;
+        padding:0;
+        overflow-x: hidden;
+    }
+
+    .container header a{
+        width:100%;
+        margin: 0 auto;
+    }
+    
+    .container header nav a:nth-last-child(odd), .container header nav a:nth-last-child(even){
+        border-bottom: none
+    }
+
+    .logo{
+        margin: -31px;
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    nav a {
+        border: 1px solid black;
+        border-left:none;
+        border-right: none;
+        padding: 10px;
+    }
+        
+    .ondemand {
+        margin: -39px
+    }
+
+    .sectionone {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    .sectionone .column {
+        width: 100%;
+    }
+
+    .sectiontwo{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
