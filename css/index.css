@@ -1,3 +1,349 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+p {
+	line-height: 1.25;
+}
+h2 {
+	font-size: 1.2rem;
+}
+hr {
+	margin: 40px 0;
+}
+@media (max-width: 800px) {
+    hr {
+        width: 90%;
+        margin: 40px auto;
+    }
+}
+@media(max-width: 750px) {
+	hr {
+		margin: 20px;
+	}
+}
+button {
+	background: none;
+	border: 2px solid black;
+	padding: 20px 100px;
+	font-family: 'Titillium Web', sans-serif;
+}
+button:hover {
+	background-color: #f7f7f7;
+}
+header {
+	position: relative;
+}
+
+
+.container {
+	max-width: 900px;
+	margin: 30px auto;
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 30px;
+}
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column-reverse;
+    }
+}
+@media(max-width: 750px) {
+	.navbar {
+		flex-direction: column-reverse;
+	}
+	.nav-logo {
+		margin-bottom: 5px;
+	}
+}
+@media (max-width: 500px) {
+	.navbar {
+		margin-bottom: 10px;
+	}
+}
+.nav-links {
+	display: flex;
+	justify-content: space-between;
+}
+.nav-links a {
+	color: gray;
+	text-decoration: none;
+	font-size: 1.2rem;
+	margin-right: 40px;
+}
+@media (max-width: 800px) {
+    .nav-links {
+        width: 100%;
+        justify-content: space-around;
+    }
+    .nav-links a {
+        margin: 0;
+    }
+    .nav-logo {
+        margin-bottom: 30px;
+    }
+}
+@media(max-width: 750px) {
+	.nav-links {
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+	.nav-links a {
+		border-bottom: 1px solid gray;
+		padding: 20px;
+		text-align: center;
+	}
+	.top-nav-link {
+		border-top: 1px solid gray;
+	}
+	.nav-logo {
+		margin-bottom: 20px;
+	}
+}
+.nav-links a:hover {
+	color: black;
+}
+
+.heading {
+	display: flex;
+	justify-content: space-between;
+}
+.start {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width: 800px) {
+    .start {
+        padding: 40px;
+    }
+    .start button {
+        padding: 5px 50px;
+        font-size: 1.1rem;
+    }
+}
+.start h1 {
+	font-size: 3.5rem;
+    text-align: center;
+}
+@media (max-width: 800px) {
+    .header-img {
+		display: none;
+    }
+    .start h1 {
+        font-size: 4.5rem;
+    }
+}
+@media (max-width: 750px) {
+	.header-img {
+		display: none;
+	}
+}
+.about {
+	display: flex;
+}
+@media (max-width: 800px) {
+    .about-blurb {
+        padding: 0 30px;
+    }
+}
+@media (max-width: 750px) {
+	.about {
+		flex-direction: column;
+	}
+	.about-blurb {
+		margin-bottom: 25px;
+		padding: 0 30px;
+	}
+}
+
+.middle-img {
+	margin: 25px auto;
+}
+@media (max-width: 750px) {
+	.middle-img {
+		width: 100%;
+	}
+}
+.services {
+	display: flex;
+    justify-content: space-between;
+}
+.middle-services-blurb {
+	margin: 0 30px;
+}
+@media (max-width: 800px) {
+    .services-blurb {
+        padding: 0 30px;
+    }
+    .middle-services-blurb {
+        margin: 0;
+    }
+}
+@media (max-width: 750px) {
+	.services {
+		flex-direction: column;
+	}
+	.services-blurb {
+		margin-bottom: 25px;
+		padding: 0 30px;
+	}
+	.middle-services-blurb {
+		margin: 0 0 25px 0;
+	}
+}
+footer p {
+	margin-top: 30px;
+	text-align: center;
+}
+@media (max-width: 800px) {
+    footer {
+        padding: 0 30px;
+    }
+}
+/* *************8SERVICES PAGE STYLESHEET*****************/
+
+.services-header-img {
+	margin-bottom: 20px;
+}
+@media (max-width: 750px) {
+	.services-header-img {
+		width: 100%;
+	}
+	.services-summary {
+		text-align: center;
+		padding: 0 30px;
+	}
+}
+.services-service-page {
+	display: flex;
+	flex-wrap: wrap;
+}
+.service-box {
+	border: 1px solid black;
+    padding: 20px;
+    background-color: #ededed;
+	width: 400px;
+	margin: 10px auto;
+}
+@media(max-width: 750px) {
+	.service-box {
+		margin: 10px 5px;
+		text-align: center;
+	}
+}
+.service-box p {
+	margin-bottom: 15px;
+}
+.service-box button {
+	background-color: white;
+	border-radius: 5px;
+}
+.service-box button:hover {
+	background-color: #f7f7f7;
+}
+
+.about-services {
+	display: flex;
+}
+.services-facts {
+	padding-right: 70px;
+}
+.services-facts ul {
+	display: block;
+	list-style-type: disc;
+	margin-top: 1em;
+	margin-bottom: 1 em;
+	margin-left: 0;
+	margin-right: 0;
+	padding-left: 40px;
+}
+.services-facts ul li {
+	margin-bottom: 10px;
+}
+@media (max-width: 750px) {
+	.about-services {
+		flex-direction: column;
+	}
+	.services-facts {
+			padding: 0;
+			text-align: center;
+			margin: 0 25px;
+		}
+	.services-facts ul {
+		padding-inline-start: 0;
+		list-style-type: none;
+		margin-bottom: 20px;
+	}
+}
 
