@@ -237,7 +237,7 @@ h1, h2, h3, h4, h5 {
 	.container {
 			width: 450px;
 	} 
-	/* IMPROVMENT NEEDED 
+	IMPROVMENT NEEDED 
 	.container header {
 			flex-direction: column-reverse;
 			align-items: center;
@@ -248,12 +248,24 @@ h1, h2, h3, h4, h5 {
 			display: flex;
 			flex-direction: column;
 			padding: 20px;
-			justify-content: space-between;
-			width: 450px;
-			height: 500px;
+			width: 500px;
+			height: 510px;
 			align-items: center;
 	}
-	*/
+	.container header nav a {
+			width: 500px;
+			height: 100px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			border-top: solid black 1px;
+			margin-right: 0px;
+			font-size: 16px;
+	}
+	.container header nav a:last-child {
+		border-bottom: solid black 1px;
+	}
 	.container .cta .cta-text {
 			margin-top: 0px;
 			width: 450px;
