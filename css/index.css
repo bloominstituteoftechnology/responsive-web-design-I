@@ -18,7 +18,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
+	border:0;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -69,7 +69,7 @@ h1, h2, h3, h4, h5 {
 /*full Size screen*/
 
 
-@media (max-width:1000px){
+
 header{
 	width: 100%;
 	padding-top: 25px;
@@ -216,6 +216,9 @@ footer p{
 }
 
 .serviceSection{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content: space-between;
 	padding-bottom: 20px;
 }
 .serviceBox{
@@ -223,23 +226,12 @@ footer p{
 
 	border: 1px solid black;
 	padding: 20px;
+	width:48%;
 
 
 }
 
-.serviceBox:nth-child(odd){
-	margin-right: 20px;
-}
 
-.serviceBox:nth-child(even){
-	margin-left:20px;
-}
-
-div .serviceSection:nth-child(4){
-	padding-bottom: 30px;
-	border-bottom: 1px solid black;
-	margin-bottom: 20px;
-}
 .serviceBox button{
 	border-radius: 5px;
 	border: 1px solid black;
@@ -260,7 +252,7 @@ div .serviceSection:nth-child(4){
 	border-bottom: 1px solid black;
 	margin-bottom: 30px;
 }
-}
+
 
 
 /* Tablet */
@@ -272,13 +264,22 @@ div .serviceSection:nth-child(4){
 
 	header{
 		display: flex;
-		flex-direction: column-reverse;	}
+		flex-direction: column-reverse;
+		align-items: center;
+	}
 
-	.logo{
+	header a{
 		width:25%;
+
+	}
+	.logo{
+		margin: 0 auto;
+	}
+	a .logo{
+		width:100%;
 		margin:0 auto;
-		padding: 0;
-		padding-bottom:2%;
+
+
 	}
 	.splitHalf{
 		width:48%;
@@ -325,10 +326,15 @@ div .serviceSection:nth-child(4){
 		display: flex;
 		flex-direction: column-reverse;
 
+
+	}
+	header a{
+		width:40%;
+		margin: 0 auto;
 	}
 	.logo{
-		width: 40%;
-		margin: 0 auto;
+		width: 100%;
+		padding: 0 auto;
 		margin-top:2%;
 		margin-bottom:5%;
 	}
@@ -391,6 +397,27 @@ div .serviceSection:nth-child(4){
 	.contactInfo{
 		padding-top: 4%;
 	}
+	.serviceSection .splitHalf{
+		margin-bottom: 6%;
+	}
+	.serviceSection{
+		display: flex;
+		flex-direction: column;
+		padding:0;
 
+	}
+	.services-header-img{
+		width:100%;
+	}
 
+	#services{
+		display:flex;
+		flex-direction: column;
+		align-content: center;
+
+	}
+
+	.splitHalf{
+		margin:0;
+	}
 }
