@@ -130,7 +130,7 @@ a.logo-link:empty {
     text-decoration: none;
     justify-content: space-between;
     color: silver;
-    font-size: 25px;
+    font-size: 20px;
     padding: 5px;
     text-align: center;
     font-weight: bold;
@@ -219,8 +219,6 @@ header {
 }
 
 .middle-img {
-    background-size: contain;
-    background-repeat: no-repeat; 
     width: 100%;
     height: auto;
     margin: 25px 0;
@@ -243,8 +241,8 @@ footer > div.copyright-section {
 
 .header-image {
     width: 100%;
-    height: 300px;
-    margin: 50px 0 25px;
+    height: auto;
+    margin: 20px 0;
 }
 
 .container > header > .header-description {
@@ -305,15 +303,32 @@ footer > div.copyright-section {
     padding: 10px;
 }
 
+.extra-information {
+    position: relative;
+    margin: 0 0 75px;
+}
+
+.info-img-right {
+    display: inline-block;
+    width: 40%;
+    position: absolute;
+    right: 0;
+}
+
+.info-img-right > img {
+    width: 420px;
+    height: 300px;
+    position: absolute;
+    right: 0;
+}
+
 .extra-information-has-image {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin: 20px 0;
+    display: inline-block;
+    width: 55%;
 }
 
 .extra-information-has-image > article {
-    width: 70%;
+    width: 100%;
     line-height: 1.5;
 }
 
@@ -336,12 +351,6 @@ footer > div.copyright-section {
     list-style-type: decimal;
 }
 
-.extra-information-has-image img {
-    display: block;
-    width: 500px;
-    height: 300px;
-}
-
 @media (max-width: 800px) {
     a.logo-link:empty {
         display: block;
@@ -355,7 +364,6 @@ footer > div.copyright-section {
         text-decoration: none;
         justify-content: space-between;
         color: silver;
-        font-size: 25px;
         padding: 5px;
         text-align: center;
         font-weight: bold;
@@ -369,6 +377,33 @@ footer > div.copyright-section {
 
     .get-started-image:empty {
         display: none;
+    }
+
+    .header-description {
+        width: 90%;
+    }
+
+    .services > article {
+        width: 45%;
+        line-height: 1.5;
+    }
+
+    .info-img-right {
+        display: block;
+        width: 50%;
+        margin: 0 auto 37.5px;
+        position: relative;
+    }
+
+    .info-img-right > img {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .extra-information-has-image {
+        display: block;
+        width: 100%;
     }
 }
 
@@ -387,7 +422,7 @@ footer > div.copyright-section {
         height: auto;
     }
 
-    .container > header > nav >  a.main-link {
+    .container > header > nav > a.main-link {
         width: 100%;
         padding: 20px 0;
         border-top: 0.5px solid grey;
@@ -395,15 +430,15 @@ footer > div.copyright-section {
         margin: -0.5px 0; 
     }
 
-    .container > header > nav >  a.main-link:first-child {
+    .container > header > nav > a.main-link:first-child {
         border-top: 1.5px solid grey;
     }
 
-    .container > header > nav >  a.main-link:last-child {
+    .container > header > nav > a.main-link:last-child {
         border-bottom: 1.5px solid grey;
     }
 
-    .container > header > nav >  a.main-link:hover {
+    .container > header > nav > a.main-link:hover {
         border: none;
         color: snow;
         background-color: silver;
@@ -426,15 +461,64 @@ footer > div.copyright-section {
     }
 
     .grouping-container > section {
+        line-height: 1.5;
         margin: 25px 0;
     }
 
-    .mobile-middle-img-container {
-        width: 90%;
-        margin: 37.5px auto;
+    .mobile-img-container {
+        width: 95%;
+        margin: 10px auto;
     }
 
-    .middle-img {
-        width: 100%
+    .mobile-img-container img {
+        width: 100%;
+    }
+
+    .header-image {
+        margin: 20px 0 0;
+    }
+
+    .header-description > * {
+        width: 90%;
+        margin: auto;
+        line-height: 2;
+    }
+
+    .header-description > p {
+        font-size: 12px;
+    }
+
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services > article {
+        width: 90%;
+        line-height: 1.75;
+        font-size: 12px;
+    }
+
+    .services > article > a {
+        padding: 5px;
+    }
+
+    .info-img-right {
+        display: block;
+        width: 50%;
+        margin: 0 auto 37.5px;
+        position: relative;
+    }
+
+    .info-img-right > img {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .extra-information-has-image {
+        display: block;
+        margin: 0 auto;
+        width: 90%;
     }
 }
