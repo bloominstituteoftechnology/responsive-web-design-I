@@ -363,7 +363,7 @@ img {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 100%;
+        width: auto;
     }
 
     .logo {
@@ -378,8 +378,14 @@ img {
         margin: 20px 0px;
     }
 
+    header {
+        margin: 0px 15px;
+    }
+
     header nav {
+        display: flex;
         flex-direction: row;
+        justify-content: space-between;
         width: 100%;
     }
 
@@ -388,7 +394,7 @@ img {
     }
 
     .cta {
-        margin: 36px 0px;
+        margin: 76px 0px;
         display: flex;
         text-align: center;
         justify-content: center;
@@ -416,6 +422,7 @@ img {
 @media only screen and (max-width: 500px) {
     .container {
         width: auto;
+        margin: 0px 15px;
     }
 
     header {
@@ -432,11 +439,13 @@ img {
     .logo1 {
         display: flex;
         align-items: center;
+        margin: 14px 0px;
         justify-content: center;
     }
 
     header nav {
         margin-top: 0px;
+        border-top: 1px solid black;
         width: 100%;
         flex-direction: column;
         justify-content: center;
@@ -459,15 +468,15 @@ img {
     }
 
     .cta {
-        margin: 36px 0;
+        margin: 36px 0px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
     }
 
-    .cta-text {
-        margin: 0 0 0 0;
-    }
-
-    .main-content {
-        margin: 0px 15px;
+    .cta .cta-text {
+        margin: 0%;
     }
 
     #hedimg {
@@ -486,7 +495,8 @@ img {
         padding: 22px 0px;
     }
 
-    .contact {
-        padding: 15px;
+    footer {
+        padding-bottom: 20px;
+        border-bottom: 2px solid lightgrey;
     }
 }
