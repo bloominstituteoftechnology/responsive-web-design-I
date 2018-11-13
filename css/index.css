@@ -67,223 +67,186 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
-
 .container {
-	display: flex;
-	width: 1000px;
+	width: 880px;
 	margin: 0 auto;
+}
 	
-	flex-direction: column;
-	align-items: center;
-}
-
-nav {
-	display: flex;
-	width: 1000px;
-	background-color: rgb(16, 255, 195);
-	border-radius: 5px;
-	padding: 0 25px;
-	position: fixed;
-	justify-content: space-between;
-	
-}
-
-/*more Specific*/
-
-nav a {
-	display: flex;
-	align-items: center;
-	color: grey;
-	text-decoration: none;
-	padding: 0;
-}
-
-nav a:hover {
-	color: white;
-	padding: 0 10px;
-}
-
-nav a.active {
-	color: white;
-	padding: 0 10px;
-	background: rgb(42, 226, 180);
-	border-radius: 5px;
-}
-
 header {
 	display: flex;
-	align-items: center;
-	justify-content: space-around;
-	flex-direction: row;
-	font-size: 65pt;
-	margin-top: 60px;
-	width: 1000px;
-	text-align: center;
-}
-
-header .snippet {
-	border-radius: 50%;
-	box-shadow: 2px 2px 7px rgb(0, 0, 0);
-}
-
-header a {
-	color: black;
-	border: 1px solid rgb(0, 0, 0);
-	font-size: 16pt;
-	padding: 0 20px;
-	text-decoration: none;
-	background-color: rgb(107, 107, 250);
-	border-radius: 5px;
-	box-shadow: 2px 2px 7px rgb(44, 44, 44);
-}
-
-a:hover {
-	transform: translate(0.6%, -0.6%);
-	box-shadow: 2px 2px 7px rgb(56, 55, 55);
-	color: white;
-	border-radius: 5px;
-}
-
-h3 {
-	margin: 20px 0 20px 0;
-}
-
-.upper {
-	border-top: 1px solid black;
-	display: flex;
-	margin-top: 30px;
-	width: 880px;
 	justify-content: space-between;
 }
+     
+header nav {
+    width: 691px;
+	vertical-align: top;
+	margin-top: 35px;
+}
+  
+header nav a {
+	margin-right: 65px;
+	font-size: 14px;
+	color: gray;
+    text-decoration: none;
+    
+}
+  
+header nav a:hover {
+	text-decoration: underline;
+}
+  
+header nav a:first-child {
+	margin-left: 0;
+}
+  
+header nav a:last-child {
+	margin-right: 0;
+}
+  
+header .logo {
+	margin-top: 25px;
 
-.container .upper .first {
-	width: 460px;
-	margin: 10px 0;
+}
+  
+.cta .cta-text {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 77px;
+	margin-top: 120px;
+	text-align: center;
+	padding: 0px 90px;
+}
+	
+.cta {
+		display: flex;
+}
+  
+.cta .cta-text button {
+	background: white;
+	vertical-align: top;
+	margin-top: 6px;
+	padding: 8px 44px;
+    font-size: 17px;
+    border-radius: 5px;
+	border: 1px solid black;
+	cursor: pointer;
+}
+  
+.cta .cta-text button:hover {
+	background: rgb(54, 53, 53);
+	color: white;
+}
+  
+.cta img {
+	margin-top: 69px;
 }
 
-.container .upper .second {
-	width: 460px;
-	margin-left: 20px;
-	margin: 10px 0;
+.main-content {
+	border-top: 1px solid black;
+	margin-top: 76px;
+	padding-top: 39px;
+    display: flex;
+    flex-direction: column;
 }
-
-.middle-img {
-	margin: 20px 30px;
-	box-shadow: 2px 2px 7px rgb(0, 0, 0)
+   
+  
+.main-content .top-content {
+    padding: 0 10px;
+    display: flex;
 }
-
-.lower {
-	display: flex;
-	width: 880px;
-	justify-content: space-around;
-	padding-bottom: 20px;
-	border-bottom: 1px solid black
+  
+.main-content .top-content .text-content {
+	width: 410px;
+	margin-right: 34px;
 }
-
-.container .lower .first {
-	width: 295px;
-	margin: 10px 0;
+  
+.main-content .top-content .text-content:last-child {
+	margin-right: 0;
 }
-
-.container .lower .second {
-	width: 295px;
-	margin: 10px 0;
-	margin-left: 20px;
+  
+.main-content .middle-img {
+	margin-top: 45px;
 }
-
-.container .lower .third {
-	width: 295px;
-	margin: 10px 0;
-	margin-left: 20px;
+  
+.main-content .bottom-content {
+	margin-top: 37px;
+    padding: 0 10px;
+    display: flex;
 }
-
+  
+.main-content .bottom-content .text-content {
+	width: 275px;
+	margin-right: 12px;
+}
+  
+.main-content .bottom-content .text-content:last-child {
+	margin-right: 0;
+}
+  
 .contact {
-	display: flex;
-	flex-direction: column; 
-	justify-content: flex-start;
-	width: 880px;
-	padding-bottom: 20px;
+	margin-top: 57px;
+	border-top: 1px solid black;
+	padding: 39px 10px 0;
 }
 
 .contact p {
-	margin: 15px 0;
+	margin: 20px 0;
 }
-
+  
 footer {
+	margin: 32px 0;
 	text-align: center;
-	background-color: rgb(16, 255, 195);
-	padding: 10px;
-	width: 1000px;
-}
-/*services Page*/
-
-.top {
-	border-bottom: 2px solid black;
-	margin-top: 30px;
-	padding-bottom: 30px;
-	width: 880px;
-	line-height: 1.2;
+	font-size: 14px;
 }
 
-.middle {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	border-bottom: 2px solid black;
-	margin-top: 30px;
-	padding-bottom: 30px;
-	width: 880px;
-	line-height: 1.2;
-	
-}
+/**********************************
+        ** For Tablet **
+ *********************************/
 
-.bottom {
-	display: flex;
-	margin: 30px;
-	padding: 10px 0;
-	width: 880px;
-	line-height: 1.2;
-}
 
-div .square {
-	width: 280px;
-	margin: 10px 0;
-	padding: 15px;
-	border: 1px solid black;
-	background-color: rgb(236, 236, 236)
-}
+@media (max-width: 800px) {
+    header {
+        width: 761px;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
 
-.top h1{
-	font-size: 16pt;
-}
+    header nav {
+        width: 761px;
+        padding: 0px 0;
+        text-align: center;
+        justify-content: space-between;
 
-ul li {
-	list-style-type: square;
-	margin-left: 20px;
-}
+    }
 
-div .square button {
-	border: 1px solid black;
-	border-radius: 5px;
-	padding: 8px 30px;
-	margin: 15px 0;
-	background-color: white;
-}
+    header .logo {
+        width: 180px;
+        margin-left: 60px
+    }
 
-.bottom div ul {
-	padding-top: 10px;
-	line-height: 2;
-}
+    .cta {
+        justify-content: center;
+    }
+    
+    .cta img {
+        display: none;
+    }
+    
+    .cta .cta-text {
+        margin-right: 55px;
+        margin-top: 65px;
+        font-size: 72px;
+    }
 
-/*Products*/
-.brands {
-	margin-top: 30px;
-	padding-bottom: 10px;
-	width: 880px;
-	line-height: 1.2;
-}
+    .main-content {
+        width: 650px;
+        justify-content: center;
+        margin-left: 80px;
+    }
 
-.brands h2 {
-	font-size: 29px;
+    .contact {
+        width: 650px;
+        justify-content: center;
+        margin-left:80px
+    }
 }
-
