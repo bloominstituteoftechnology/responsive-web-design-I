@@ -169,11 +169,6 @@ nav {
   width: 100%;
 }
 
-nav div .logo-link img {
-  width: 175px;
-  height: auto;
-}
-
 nav .nav-links {
   display: flex;
   flex-direction: column;
@@ -201,6 +196,11 @@ nav .nav-links a:hover {
   color: white;
 }
 
+nav .logo-link-wrapper .logo-link img {
+  width: 175px;
+  height: auto;
+}
+
 @media (min-width: 500px) {
   nav {
     margin-top: 30px;
@@ -224,6 +224,43 @@ nav .nav-links a:hover {
 }
 
 @media (min-width: 800px) {
+  .website-wrapper {
+    padding: 0 70px;
+  }
+
+  nav {
+    flex-direction: row;
+    margin: 24px 0;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  nav .nav-links {
+    margin-top: 0;
+    margin-right: 40px;
+    height: 50px;
+    justify-content: space-between;
+    border: 0;
+  }
+
+  nav .nav-links a {
+    border: 0;
+    text-align: left;
+    width: auto;
+  }
+
+  nav .nav-links a:last-child {
+    margin-right: 50px;
+  }
+
+  nav .logo-link-wrapper {
+    margin: 4px 4px 0 0;
+  }
+
+  nav .logo-link-wrapper .logo-link img {
+    width: 182px;
+  }
 }
 
 /* Home Page Styles */
@@ -389,6 +426,13 @@ footer {
 }
 
 @media (min-width: 800px) {
+  header .header-img {
+    display: inline-block;
+  }
+
+  .middle-img-wrapper {
+    margin: 26px 0 0;
+  }
 }
 
 /* Services Page Styles */
