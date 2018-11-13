@@ -1,3 +1,356 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
-
-
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+/* Your code starts here! */
+p {
+  display: inline-block;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav a {
+  /* padding: 32px; */
+  /* vertical-align: 12px; */
+  color: #575757;
+  text-decoration: none;
+}
+
+body {
+  width: 900px;
+  margin: 10px auto;
+}
+.heading-text {
+  display: inline-block;
+}
+.heading-text h1 {
+  font-size: 72px;
+  text-align: center;
+  /* vertical-align: top; */
+}
+
+.upper-content {
+  padding: 69px;
+  /* width: 880px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.upper-content button {
+  text-decoration: none;
+  font-size: 100%;
+  border-color: black;
+  background: white;
+  padding: 5px 50px;
+  margin-left: 45px;
+}
+.features,
+.about,
+.services,
+.product {
+  width: 49%;
+  padding: 20px;
+  /* display: inline-block; */
+}
+.vision {
+  width: 90%;
+  padding: 20px;
+  align-self: flex-end;
+}
+.contact {
+  width: 50%;
+  padding: 20px;
+}
+
+.main-bottom {
+  border-bottom: 2px solid #000;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-top {
+  border-top: 2px solid #000;
+  display: flex;
+}
+
+.middle-img {
+  width: 100%;
+}
+.servicelist {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.servicelist div {
+  background: #f4f3f4;
+  width: 45%;
+  padding: 20px;
+  margin: 20px 0;
+  border: 1px solid #000000;
+}
+
+#services {
+  padding: 30px 0;
+  width: 100%;
+  border-bottom: 1px solid #000000;
+}
+.servicelist div button {
+  text-decoration: none;
+  font-size: 100%;
+  border: 1px solid black;
+  background: white;
+  padding: 5px 30px;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+.faq {
+  border-top: 1px solid #000000;
+  display: flex;
+  margin: 15px;
+  padding: 25px 0;
+}
+.faq ul {
+  padding: 20px;
+}
+footer {
+  text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    width: auto;
+  }
+  .servicelist {
+    flex-direction: column;
+    margin: 20px 20px;
+  }
+  .services-header-img {
+    display: none;
+  }
+  .servicelist div {
+    width: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  body {
+    font-size: 20px;
+    margin: 10px;
+  }
+  nav {
+    flex-direction: column;
+    text-align: center;
+  }
+  nav a {
+    border-top: 1px solid black;
+    padding: 20px;
+    width: 100%;
+  }
+  nav img {
+    order: -1;
+    padding: 0px 0px 20px;
+  }
+  .middle-img {
+    width: 100%;
+  }
+  .upper-content {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid black;
+  }
+  .upper-content button {
+    padding: 4px 0px;
+    margin: 10px 60px;
+    margin-left: 62px;
+    font-size: 85%;
+  }
+  .heading-text {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-top {
+    margin: 15px 10px;
+    flex-direction: column;
+    padding-top: 40px;
+  }
+  .main-top div {
+    width: 100%;
+    margin: -3px -18px;
+  }
+  .main-bottom {
+    flex-direction: column;
+  }
+  .main-bottom div {
+    padding: 15px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 800px) {
+  .heading-text {
+    display: flex;
+    flex-direction: column;
+  }
+  .upper-content {
+    justify-content: center;
+  }
+
+  .upper-content img {
+    display: none;
+  }
+}
