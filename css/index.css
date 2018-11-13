@@ -266,9 +266,51 @@ button.services-button {
 
 /* mobile-view */
 @media (max-width: 500px) {
+    .container {
+        padding: 3% 0;
+    }
+    
+    header a img {
+        margin-bottom: 20px;
+    }
+
 	nav {
 		width: 100%;
 		display: flex;
-		flex-direction: column;
+        flex-direction: column;
+        border-bottom: 1px solid grey;
+        margin: 0;
+    }
+
+    nav a {
+        display: block;
+        width: 100%;
+        border-top: 1px solid grey;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .about {
+        border-top: 3px solid black;
+        border-bottom: 3px solid black;
+        padding: 15px 0;
+    }
+
+    .content-row {
+        display: inline-block;
+    }
+    
+    .content-col {
+        margin: 5px 0px;
+        padding: 20px 5px;
+        font-size: 15px;
+    }
+
+    .middle-img {
+        padding: 10px 5px;
+    }
+
+    .contact-section {
+        padding: 0 5px;
     }
 }
