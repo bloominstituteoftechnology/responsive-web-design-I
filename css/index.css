@@ -149,21 +149,23 @@ h5 {
   margin-bottom: 15px;
 }
 
-@media (max-width: 768) {
+@media (max-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
     margin: 0 auto;
   }
   header .logo {
-    margin: 30px auto;
+    margin: 20px 50%;
     position: absolute;
-    margin-left: 30%;
+    margin-left: 40%;
   }
   header nav {
     width: 768px;
     vertical-align: top;
     margin-top: 100px;
-    margin-left: 50px;
+  }
+  header nav a {
+    margin-top: 100px;
   }
   .cta img {
     display: none;
@@ -178,7 +180,7 @@ h5 {
     padding: 0px 75px;
     height: 275px;
   }
-  main-content .middle-img {
+  .main-content .middle-img {
     margin-top: 45px;
     width: 768px;
   }
@@ -198,7 +200,7 @@ h5 {
     margin-left: 5%;
   }
   .container {
-    width: 480px;
+    max-width: 480px;
     margin: 0 auto;
   }
   header {
@@ -206,9 +208,7 @@ h5 {
     height: 400px;
   }
   header nav {
-    width: 480px;
     text-align: center;
-    margin-top: 70px;
     margin-bottom: 10px;
     flex-direction: column;
     font-size: 60px;
@@ -223,6 +223,7 @@ h5 {
     text-decoration: none;
     border-bottom: 1px solid gray;
     height: 60px;
+    margin-top: 10px;
   }
   .cta img {
     margin-top: 69px;
@@ -237,6 +238,9 @@ h5 {
     flex-direction: column;
     margin-left: 10%;
   }
+  footer {
+    max-width: 480px;
+  }
 }
 
 /* Main Page */
@@ -250,15 +254,20 @@ header {
   display: flex;
 }
 
+nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 header nav {
-  width: 691px;
+  width: 100%;
   vertical-align: top;
   margin-top: 35px;
+  font-size: 14px;
 }
 
 header nav a {
-  margin-right: 65px;
-  font-size: 14px;
+  margin-right: 0px;
   color: gray;
   text-decoration: none;
 }
@@ -272,7 +281,7 @@ header nav a:first-child {
 }
 
 header nav a:last-child {
-  margin-right: 0;
+  margin-right: 0px;
 }
 
 header .logo {
