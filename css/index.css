@@ -65,7 +65,7 @@ h1, h2, h3, h4, h5 {
 
 .container {
     width: 880px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 /* Header Styles */
@@ -97,11 +97,81 @@ header .logo {
 }
 
 @media (max-width: 800px) {
+    .container {
+      width: 90%;
+    }
+  
+    header {
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
+    }
+  
+    header nav {
+      order: 1;
+      justify-content: space-around;
+      width: 100%;
+    }
+  
     header .logo {
+      margin: 0 auto;
+    }
+  
+    .cta {
+      justify-content: center;
+    }
+  
+    .cta .cta-text {
+      margin: 0;
+    }
+  
+    .cta img {
+      display: none;
+    }
+  
+    .main-content .middle-img {
+      width: 100%;
+    }
+  }
+
+@media (max-width: 500px) {
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav a {
+        display: flex;
+        margin: 10px;
+        padding: 10px;
+        border-bottom: 1px solid gray;
+        width: 100%;
         justify-content: center;
+        font-size: 1.2rem;
+    }
+
+    header .logo {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    img {
+        display: none;
     }
 }
-
 /* Call To Action (CTA) Styles */
 
 .cta {
@@ -137,6 +207,12 @@ header .logo {
 }
 
 @media (max-width: 800px) {
+    .cta .cta-text img {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
     .cta .cta-text img {
         display: none;
     }
