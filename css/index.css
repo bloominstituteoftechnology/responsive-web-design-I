@@ -559,7 +559,43 @@ footer .copyright {
 	font-weight: bold;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
+
+    #services .main-content {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    #services .heading {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    #services .main-content .info-panel {
+        width: 95%;
+        margin: 8px auto;
+    }
+    
+    #services .services-facts {
+        width: 95%;
+        margin: 0 auto;
+		align-items: center;
+		margin-top: 24px;
+	}
+	
+	#services .facts-panel {
+		width: 95%;
+        margin: 0 auto;
+	}
+
+	#services .facts-image {
+		width: 95%;
+        margin: 0 auto;
+        order: -1;
+	}
+}
+
+@media (min-width: 501px) and (max-width: 800px) {
 	#services {
 		width: 100%;
 	}
@@ -589,6 +625,7 @@ footer .copyright {
 	}
 
 	#services .facts-image {
-		width: 100%;
+        width: 100%;
+        order: -1;
 	}
 }
