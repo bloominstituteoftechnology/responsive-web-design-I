@@ -1,3 +1,349 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+.container {
+	width: 880px;
+	margin: 0 auto;
+}
+	
+header {
+	display: flex;
+	justify-content: space-between;
+}
+     
+header nav {
+    width: 691px;
+	vertical-align: top;
+	margin-top: 35px;
+}
+  
+header nav a {
+	margin-right: 65px;
+	font-size: 14px;
+	color: gray;
+    text-decoration: none;
+    
+}
+  
+header nav a:hover {
+	text-decoration: underline;
+}
+  
+header nav a:first-child {
+	margin-left: 0;
+}
+  
+header nav a:last-child {
+	margin-right: 0;
+}
+  
+header .logo {
+	margin-top: 25px;
+
+}
+  
+.cta .cta-text {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 77px;
+	margin-top: 120px;
+	text-align: center;
+	padding: 0px 90px;
+}
+	
+.cta {
+		display: flex;
+}
+  
+.cta .cta-text button {
+	background: white;
+	vertical-align: top;
+	margin-top: 6px;
+	padding: 8px 44px;
+    font-size: 17px;
+    border-radius: 5px;
+	border: 1px solid black;
+	cursor: pointer;
+}
+  
+.cta .cta-text button:hover {
+	background: rgb(54, 53, 53);
+	color: white;
+}
+  
+.cta img {
+	margin-top: 69px;
+}
+
+.main-content {
+	border-top: 1px solid black;
+	margin-top: 76px;
+	padding-top: 39px;
+    display: flex;
+    flex-direction: column;
+}
+   
+  
+.main-content .top-content {
+    padding: 0 10px;
+    display: flex;
+}
+  
+.main-content .top-content .text-content {
+	width: 410px;
+	margin-right: 34px;
+}
+  
+.main-content .top-content .text-content:last-child {
+	margin-right: 0;
+}
+  
+.main-content .middle-img {
+	margin-top: 45px;
+}
+  
+.main-content .bottom-content {
+	margin-top: 37px;
+    padding: 0 10px;
+    display: flex;
+}
+  
+.main-content .bottom-content .text-content {
+	width: 275px;
+	margin-right: 12px;
+}
+  
+.main-content .bottom-content .text-content:last-child {
+	margin-right: 0;
+}
+  
+.contact {
+	margin-top: 57px;
+	border-top: 1px solid black;
+	padding: 39px 10px 0;
+}
+
+.contact p {
+	margin: 20px 0;
+}
+  
+footer {
+	margin: 32px 0;
+	text-align: center;
+	font-size: 14px;
+}
+
+/**********************************
+        ** For Tablet **
+ *********************************/
+
+
+@media (max-width: 800px) {
+    header {
+        width: 761px;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    header nav {
+        width: 761px;
+        padding: 0px 0;
+        text-align: center;
+        justify-content: space-between;
+
+    }
+
+    header .logo {
+        width: 180px;
+        margin-left: 60px
+    }
+
+    .cta {
+        justify-content: center;
+    }
+    
+    .cta img {
+        display: none;
+    }
+    
+    .cta .cta-text {
+        margin-right: 55px;
+        margin-top: 65px;
+        font-size: 72px;
+    }
+
+    .main-content {
+        width: 650px;
+        justify-content: center;
+        margin-left: 80px;
+    }
+
+    .contact {
+        width: 650px;
+        justify-content: center;
+        margin-left:80px
+    }
+}
+
+/**********************************
+        ** For Phone **
+ *********************************/
+
+ @media (max-width: 500px) {
+
+    header {
+        padding-top: 20px 0 0 0;
+        width: 500px;
+
+    }
+
+    header nav {
+        display: flex;
+        width: 500px;
+        flex-direction: column;
+
+        align-content: center;
+    }
+
+    header a {
+        align-content: center;
+        padding: 20px;
+        border-top: 1px solid black;
+    }
+
+    header .logo {
+        width: 180px;
+        padding-top: 20px;
+        margin: 0;
+        justify-content: center;
+    }
+
+    .cta {
+        margin-left: 20px;
+        width: 500px;
+        
+    }
+    
+    .cta img {
+        display: none;
+    }
+    
+    .cta .cta-text {
+        margin-right: 55px;
+        margin-top: 65px;
+        font-size: 72px;
+    }
+
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        justify-content: center;
+        margin-left: 20px;
+    }
+
+    .middle-img {
+        width: 500px;
+        
+    }
+
+    .main-content .top-content {
+        flex-direction: column;
+        width: 500px;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .main-content .bottom-content {
+        flex-direction: column;
+        width: 500px;
+    }
+
+    .main-content .top-content .text-content{
+        width: 410px;
+        margin-bottom: 50px;
+    }
+
+    .main-content .bottom-content .text-content{
+        width: 410px;
+        margin-bottom: 50px;
+    }
+
+    .contact {
+        width: 500px;
+        justify-content: center;
+        margin-left: 20px
+    }
+
+    footer {
+        width: 500px;
+        display: flex;
+        justify-content: center;
+    }
+ }
