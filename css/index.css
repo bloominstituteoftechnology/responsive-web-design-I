@@ -100,6 +100,12 @@ align-content: flex-start | flex-end | center | space-between | space-around | s
     width: 70%;
 }
 
+.navbar a {
+    font-family: 'Titillium Web', sans-serif;
+    text-decoration: none;
+    color: gray;
+}
+
 .logo-box {
     width: 10%;
     display: flex;
@@ -324,4 +330,68 @@ ul{
         padding-right: 2%; */
 
     }
+}
+
+@media (max-width: 500px) {
+    .body {
+        padding: 0%;
+    }
+
+    .top {
+        height: 500px;
+        width: 100%;
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        /* align-content: center; */
+    }
+
+    .navbar {
+        height: 80%;
+        flex-direction: column;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .navbar a {
+        width: 100%;
+        border-top: 2px solid gray;
+        text-align: center;
+        padding-top: 20px;
+        font-size: 25px;
+         
+    }
+
+    .navbar a:last-child {
+        border-bottom: 2px solid gray;
+        padding-bottom: 20px;
+    }
+
+    .first-box {
+        height: 450px;
+        padding-bottom: 40px;
+    }
+
+    .second-box {
+        flex-direction: column;
+        height: 300px;
+        justify-content: space-around;
+        /* border: 1px solid red; */
+        padding-bottom: 0px;
+    }
+
+    .features, .about {
+        width: 100%;
+    }
+
+    .third-box {
+        flex-direction: column;
+        justify-content: space-between;
+        height: 450px;
+    }
+
+    .services, .product, .vision {
+        width: 100%;
+    }
+
 }
