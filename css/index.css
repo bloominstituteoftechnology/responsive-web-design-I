@@ -1,3 +1,337 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+.container{
+	width: 1024px;
+	margin: 0 auto;
+}
+.navigation{
+	height: 40px;
+	display:flex;
+	align-items:center;
+}
+.navigation a{
+	text-decoration: none;
+	font-size: 15px;
+	padding: 10px;
+	color:grey;
+	margin-right: 50px;
+	position: relative;
+	transition: .3s;
+}
+.navigation a:hover{
+	color: white;
+	background-color:black;
+	border: 1px grey solid;
+}
+.logo{
+	display:flex;
+	position: absolute;
+	right: 60px;
+	top:5px;
+}
+.header{
+	position: relative;
+	margin: 40px;
+}
+section div{
+	display: flex;
+}
+section img{
+	right: 0;
+	display: flex;
+}
+h1{
+	font-size: 75px;
+}
+h2{
+	font-size:18px;
+}
+.heading{
+	height: 400px;
+	width: 450px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+ }
+.button{
+	display: flex;
+	border:1px solid black;
+	font-size: 16px;
+	width: 200px;
+	justify-content: center;
+	padding: 10px 20px;
+	color:black;
+	text-decoration: none;
+	font-family: 'Montserrat', sans-serif;
+	transition:.3s;
+}
+.button:hover{
+	border:1px solid white;
+	color:white;
+	background-color: black;
+}
+footer p{
+	text-align: center;
+	margin-bottom: 120px;
+}
+.main-content{
+	display:flex;
+	height: 480px;
+	margin: 0 40px;
+	border-bottom: 1px solid black;
+}
+.main-image{
+	height:379px;
+	width:379px;
+	display: flex;
+}
+.middle-img{
+	margin: 0 55px;
+}
+.features, .about{
+	width: 430px;
+	height: 95px;
+	margin: 40px 3px;
+	flex-direction: column;
+}
+.section2{
+	margin: 0 50px;
+	display:flex;
+}
+.section3{
+	margin: 0 50px;
+	border-bottom: 1px solid black;
+	display:flex;
+}
+.services, .product, .vision{
+	width: 280px;
+	flex-direction: column;
+	margin: 40px 12px;
+}
+.contact{
+	height: 150px;
+	width: 150px;
+	margin: 53px 60px;
+}
+.newpage_image{
+	height:300px;
+	width: 300px;
+	margin: 25px 50px;
+	margin-bottom: 50px;
+}
+
+/* Services page */
+
+.h2services{
+	font-size: 23px;
+	margin: 30px 0 9px 0;
+}
+
+.servicesHeader{
+	margin: 0 50px 0 50px;
+	border-bottom: 1px solid black;
+	padding-bottom: 40px;
+}
+.servicesContainer{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	padding-bottom: 50px;
+	margin: 0 50px;
+}
+.item{
+	height:270px;
+	width:425px;
+	border: 1px solid black;
+	padding: 20px;
+	background-color:#efefef;
+	margin-top: 50px;
+}
+.item p{
+	margin-bottom: 30px;
+	line-height: 23px;
+}
+.learnMoreButton{
+	font-size: 14px;
+	text-decoration: none;
+	color: black;
+	background-color: white;
+	padding: 7px 40px;
+	border: 1px solid black;
+	border-radius: 5px;
+	transition:.2s;
+}
+.learnMoreButton:hover{
+	background-color: black;
+	color: white;
+}
+.list {
+	margin: 20px;
+	list-style-type: square;
+}
+.list li{
+	margin-bottom: 10px;
+}
+.serviceFacts{
+	border-top: 1px solid black;
+	padding: 50px 0 70px 0;
+	display:flex;
+	justify-content: space-evenly;
+	margin: 0 50px;
+}
+.listSection{
+	width: 350px;
+	height: 300px;
+	line-height: 20px;
+	display:flex;
+	flex-direction: column;
+	margin-right: 150px;
+}
+@media(max-width:800px){
+    .main-image{
+        display:none;
+    }
+    .main-content{
+        text-align: center;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+        align-content: space-around;
+        height: unset;
+    }
+    .heading{
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        height: unset;
+        width: unset;
+        margin: 40px 60px 60px 60px;
+    }
+    .header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin:unset;
+        margin-top: 30px;
+    }
+    .logo{
+        order: -1;
+        position: unset;
+        margin-bottom: 20px;
+    }
+    .navigation{
+        order: 1;
+        justify-content: space-between;
+    }
+    .navigation a{
+        margin: 0 45px;
+    }
+}
+@media (max-width:500px){
+    .navigation{
+        flex-direction: column;
+        width: 100%;
+        height: 230px;
+        border-bottom: 1px solid black;
+    }
+    .navigation a{
+        text-align: center;
+        width: 100%;
+        border-top: 1px solid black;
+    }
+    .section2{
+        flex-direction: column;
+        width: 450px;
+        margin: 15px;
+    }
+    .section3{
+        flex-direction: column;
+        margin: 0 15px;
+    }
+    .middle-img{
+        width: 100%;
+        height: auto;
+        margin: unset;
+    }
+    .container{
+        width: 100%;
+        overflow-x: hidden;
+    }
+    .features, .about{
+        width: 100%;
+        margin: 15px;
+    }
+    .services, .product, .vision{
+        margin: 15px;
+        width: 100%;
+    }
+}
