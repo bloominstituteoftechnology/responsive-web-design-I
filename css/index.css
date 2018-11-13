@@ -344,10 +344,6 @@ footer {
 /* -------------------Media Queries----------------- */
 @media (max-width: 800px) {
 	/* ----------------Home Page------------------------- */
-	.container {
-		/* max-width: 100%; */
-	}
-
 	.title {
 		margin: 18px 0 20px;
 	}
@@ -454,11 +450,12 @@ footer {
 
 	#home header nav a {
 		font-size: 20px;
-		/* width: 100%; */
+		width: 100%;
 		border-bottom: 1px solid black;
 		padding-bottom: 20px;
 		align-self: center;
 		margin-bottom: 20px;
+		padding-left: 43%;
 	}
 
 	header nav a:hover {
@@ -476,13 +473,9 @@ footer {
 		padding-bottom: 60px;
 	}
 
-	#home .main-section {
-		padding: 20px 20px;
-		margin: 0 auto;
-	}
-
 	#home .main-section .main-top {
 		flex-direction: column;
+		padding: 0 20px;
 	}
 
 	#home .main-section .main-top div {
@@ -492,7 +485,7 @@ footer {
 	}
 
 	#home .main-section .main-middle {
-		margin: 0 13px;
+		padding: 0 20px;
 	}
 
 	#home .main-section .main-middle img {
@@ -504,6 +497,7 @@ footer {
 	#home .main-section .main-bottom {
 		flex-direction: column;
 		margin: 0;
+		padding: 0 20px;
 	}
 
 	#home .main-section .main-bottom div {
