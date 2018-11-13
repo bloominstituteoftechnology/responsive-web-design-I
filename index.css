@@ -237,9 +237,9 @@ footer {
   display:flex;
 }
 
-@media (max-width: 100px){
+@media (min-width: 600px){
     .container{
-        width: 500px;
+        width: 600px;
         display: flex;
         flex-direction: column;
         background: green;
@@ -256,14 +256,22 @@ footer {
 
     header .logo{
         width: 200px;
+        margin-left: 100px;
     }
     header .nav{
         display: flex;
         flex-direction: column;
+        margin-left: 150px;
+    }
+    header .nav a{
+        font-size: 36px;
+        border-top: 2px grey;
+        border-bottom: 2px grey;
     }
     .main-content{
         display: flex;
         flex-direction: column;
+        border-top: 2px solid;
     }
     .main-content .top-content{
         display: flex;
@@ -279,7 +287,10 @@ footer {
     .cta{
         flex-direction: column;
     }
-}
+    .contact h4{
+        margin-bottom: 5px;
+    }
+};
 /* 
 @media (max-width: 800px){
     .container{
