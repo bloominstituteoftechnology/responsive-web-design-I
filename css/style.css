@@ -219,7 +219,6 @@ header {
 }
 
 .middle-img {
-    /* background-image: url('http://i64.tinypic.com/zbpkg.jpg'); */
     background-size: contain;
     background-repeat: no-repeat; 
     width: 100%;
@@ -370,5 +369,67 @@ footer > div.copyright-section {
 
     .get-started-image:empty {
         display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .top-overlay {
+        display: none;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .container > header > nav {
+        flex-direction: column;
+        justify-content: flex-start;
+        height: auto;
+    }
+
+    .container > header > nav >  a.main-link {
+        width: 100%;
+        padding: 20px 0;
+        border-top: 0.5px solid grey;
+        border-bottom: 0.5px solid grey;
+        margin: -0.5px 0; 
+    }
+
+    .container > header > nav >  a.main-link:first-child {
+        border-top: 1.5px solid grey;
+    }
+
+    .container > header > nav >  a.main-link:last-child {
+        border-bottom: 1.5px solid grey;
+    }
+
+    .container > header > nav >  a.main-link:hover {
+        border: none;
+        color: snow;
+        background-color: silver;
+        transition-duration: 375ms;
+        transition-property: all;
+    }
+    
+    .container > header > nav > a.main-link:active {
+        border: 5px solid grey;
+        font-weight: normal;
+    }
+
+    .mobile-container {
+        width: 90%;
+        margin: auto;
+    }
+
+    .grouping-container {
+        flex-direction: column;
+    }
+
+    .grouping-container > section {
+        margin: 25px 0;
+    }
+
+    .middle-img {
+        width: 100%;
     }
 }
