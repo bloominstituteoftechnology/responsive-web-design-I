@@ -231,10 +231,10 @@ footer {
 }
 
 /* services page */
-/* 
+
 .services-header-img {
 	width: 100%;
-	margin-top: 80px;
+	margin-top: 70px;
 }
 
 .headerservices {
@@ -339,7 +339,7 @@ ol li {
 		margin-left: 25%;
 		width: 150%;
 	}
-} */
+}
 
 /* responsive section here */
 
@@ -353,7 +353,6 @@ ol li {
     .container {
 				width: 100%;
 				overflow: hidden;
-				padding: 0 1.2em;
 		}
 
 		.container nav {
@@ -375,14 +374,24 @@ ol li {
 		}
 		
 		.container .navcontainer .navmenu {
-			width: 750px;
 			max-width: 800px;
+			width: 89%;
+		}
+
+		.container .navcontainer {
+			width: 100%;
+			justify-content: space-between;
+			padding-bottom: 15px;
 		}
 
     .container .headermain {
         display: flex;
 				justify-content: center;
-    }
+		}
+		
+		.middle-img {
+			padding: 0 20px;
+		}
 
     .container .headermain .headertext {
         width: 100%;
@@ -397,12 +406,12 @@ ol li {
 		.container .above-img {
 		}
 
-		.container .above-img .above-content-block {
-			padding: 0 15px 0 10px;
+		.container .above-img .featuress {
+			padding: 0 30px;
 		}
 
-		.features {
-
+		.container .above-img .about {
+			padding-left: 10px;
 		}
 
 
@@ -410,7 +419,46 @@ ol li {
 			width: 100%;
 		}
 
+		#menu-links {
+			display: flex;
+		}
+
+		.container .below-img .services{
+			padding: 0 0 0 30px;
+		}
+		.container .below-img .product{
+			padding: 0 0 0 15px;
+		}
+
+		.below-img {
+			padding-bottom: 20px;
+		}
+		address {
+			padding: 0 30px;
+		}
+
+		/* services page */
+		.container .services-header-img {
+			padding-top: 60px;
+		}
+
+		.container .headerservices {
+			padding: 0 30px;
+		}
 		
+		.container .flexsection {
+			padding: 0 30px;
+		}
+		.container .last-section {
+			padding: 0 30px;
+		}
+		.container .last-section img {
+			display: none;
+		}
+
+		.container .last-section .firstpart ol {
+			padding-top: 40px;
+		}
 }
 
 @media (max-width: 500px) {
@@ -473,7 +521,6 @@ ol li {
 
 	.container .above-img {
 		flex-direction: column;
-		padding: 20px 10px 0 10px;
 	}
 
 	.container .above-img .above-content-block {
@@ -506,5 +553,19 @@ ol li {
 	}
 	.product {
 		padding-bottom: 62px;
+	}
+
+	/* services page */
+
+	.container .flexsection .flexcontainer {
+		flex-direction: column;
+		width: 100%;
+	}
+	.container .flexsection .flexitems {
+		width: 100%;
+	}
+
+	.services-page .services-header-img {
+		padding-top: 32px;
 	}
 }
