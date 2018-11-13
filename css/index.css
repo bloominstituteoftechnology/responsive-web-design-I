@@ -289,5 +289,60 @@ footer {
 
 /* Mobile */
 @media (max-width:500px) {
+    .container {
+        width: 100%
+    }
+
+    header nav {
+        margin: 0;
+    }
+    .nav-container nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-container nav a {
+        border-bottom: 1px solid #b0b0b0;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        display: flex;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 20px 0;
+    }
+
+    .nav-container nav a:first-child {
+        border-top: 1px solid #b0b0b0;
+    }
+
+    .header-logo {
+        margin: 0;
+        padding: 0;
+    }
+     header .logo {
+        margin: 0;
+        padding: 20px 0;
+    }
+
+    .main-content {
+        margin: 75px 35px 0 35px;
+    }
+
+    .top-content {
+        flex-direction: column;
+    }
+
+    .bottom-content {
+        flex-direction: column;
+    }
+
+    .text-content {
+        margin-top: 20px;
+    }
+
+    .contact {
+        margin: 35px 0 0 35px;
+    }
 
 }
