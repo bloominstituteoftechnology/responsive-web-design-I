@@ -224,18 +224,69 @@ nav a:hover{
 	
 }
 
-@media (max-width: 517px){
+@media (max-width: 518px){
+
+	.container{
+		padding: 0 0;
+	}
+
 	.container nav{
 		height: auto;
+		flex-wrap: wrap;
+		padding-top: 25px;
+		margin-bottom: 51px;
 	}
 
 	.container nav a{
 		width: 100%;
 		text-align: center;
-		padding: 20px 0;
+		padding: 21px 0;
+		border-bottom: 1px solid black;
+		font-size: 18px;
+	}
+
+	.logo-wrap{
+		order: -1;
+		margin-bottom: 15px;
 	}
 
 	.logo{
 		bottom: 6px;
+	}
+
+	header{
+		padding-bottom: 81px;
+	}
+
+	section{
+		padding: 20px 13px;
+	}
+
+	.flex-cont{
+		flex-direction: column;
+	}
+
+	.info-blocks{
+		margin-bottom: 45px;
+	}
+
+	.middle-img{
+		margin: 7px 0 24px 0;
+	}
+
+	.below-image:nth-of-type(1){
+		margin-bottom: 64px;
+	}
+
+	.below-image:nth-of-type(2){
+		margin-bottom: 61px;
+	}
+
+	.below-image:nth-of-type(3){
+		margin-bottom: 15px;
+	}
+
+	footer{
+		padding: 0 10px 20px 10px;
 	}
 }
