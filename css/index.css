@@ -54,7 +54,9 @@ table {
 
 html, body {
     height: 100%;
+    width:100%;
     font-family: 'Titillium Web', sans-serif;
+    
 }
 
 h1, h2, h3, h4, h5 {
@@ -63,7 +65,11 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+/* 
+Note building desktop first
+start with unmanipulated css designed for desktop
+then using max-width work your way from tablet @ 800px to mobile(at the bottom) being 500px
+*/
 
 
 /*
@@ -74,7 +80,7 @@ General CSS
 
 .container {
 	width:90%;
-	min-width:800px;
+	
 	margin: 0 auto;
 	
 }
@@ -89,11 +95,38 @@ General CSS
 
 	margin-top: 2vh;
 }
+/* tablet */
+@media screen and (max-width: 800px) {
+    .header {
+        /* flex-direction: row-reverse; */
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+
+}
+
+/*mobile */
+@media screen and (max-width: 500px) {
+    .header {
+        flex-direction: column-reverse;
+    }
+
+}
 
 .nav {
 	display:flex;
 	justify-content: space-between;
-	width: 60%;
+	width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+    .nav {
+        width:100%;
+    }
+
+    .nav a {
+        font-size:10px;
+    }
 }
 
 .nav a {
@@ -148,9 +181,43 @@ footer {
 	font-size: 80px;
 }
 
+
+
 .cta button {
 	width: 10vw;
 	height: 4vh;
+}
+
+/* tablet */
+@media screen and (max-width: 800px) {
+    .cta-text {
+        width: 100%;
+    }
+
+    .cta-text h1 {
+        font-size: 70px;
+    }
+
+    .cta img{
+        display: none;
+    }
+
+}
+
+/*mobile */
+@media screen and (max-width: 500px) {
+    .cta-text {
+        width: 100%;
+    }
+
+    .cta-text h1 {
+        font-size: 60px;
+    }
+
+    .cta img{
+        display: none;
+    }
+
 }
 
 
@@ -339,3 +406,4 @@ card h4 {
 .list {
 	margin-left:1.5vw;
 }
+
