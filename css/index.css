@@ -90,18 +90,22 @@ h1, h2, h3, h4, h5 {
 header {
     width: 100%;
     display: flex;
+    border: 1px solid red;
 }
 
 header nav {
-    margin-top: 40px; 
+    margin-top: 40px;  
     width: 610px;
     display: flex;
     justify-content: space-between;
 }
 
 header nav a {
+    display: flex;
+    flex-wrap: wrap;
     text-decoration: none;
     color: #b0b0b0;
+    border: 1px solid red;
 }
 
 header nav a:hover {
@@ -126,10 +130,11 @@ header .logo {
     display: flex;
     margin-top: 72px;
     justify-content: flex-end;
+    border: 1px solid red;
 }
 
 .cta .cta-text {
-    font-size: 72px;
+    font-size: 4.5rem; 
     text-align: center;
     letter-spacing: 5px;
     display: flex;
@@ -163,6 +168,7 @@ header .logo {
    padding: 35px 0;
    font-size: 16px;
    line-height: 18px;
+   border: 1px solid red;
 }
 
 .main-content .top-content {
@@ -186,6 +192,7 @@ header .logo {
 
 .contact p {
     margin: 15px 0;
+    border: 1px solid red;
 }
 
 /* Footer Styles */
@@ -193,4 +200,19 @@ header .logo {
 footer {
     text-align: center;
     margin: 40px 0 20px;
+    border: 1px solid red;
+
+}
+
+@media (max-width: 500px) {
+.container {
+    width: 500px;
+    }
+}
+
+@media (max-width: 800px) {
+    .container {
+        max-width: 800px;
+    }
+
 }
