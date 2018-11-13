@@ -1,24 +1,91 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
-
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -27,21 +94,34 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
 	display: block;
 }
 body {
 	line-height: 1;
 }
-ol, ul {
+ol,
+ul {
 	list-style: none;
 }
-blockquote, q {
+blockquote,
+q {
 	quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
 	content: '';
 	content: none;
 }
@@ -52,45 +132,121 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+html,
+body {
+	height: 100%;
+	font-family: 'Titillium Web', sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: 'Bangers', cursive;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
 }
 
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
-
 .container {
-    max-width: 1100px;
-    margin: 0 auto;
+	max-width: 1100px;
+	margin: 0 auto;
 }
 
 header {
-	margin: 20px 40px;
+	margin: 20px 30px;
 	display: flex;
 	justify-content: space-between;
+}
+
+@media (max-width: 500px) {
+	.container {
+		max-width: 500px;
+	}
+
+	header {
+		margin: 0;
+		width: 100%;
+		flex-wrap: wrap-reverse;
+		justify-content: center;
+	}
+	header nav {
+		margin: 0;
+		width: 100%;
+		flex-direction: column;
+	}
+
+	header nav a {
+		margin: 8px 0;
+		padding-bottom: 15px;
+		width: 100%;
+		border-bottom: 1px solid darkgray;
+		text-decoration: none;
+		color: grey;
+		text-align: center;
+	}
+
+	.cta {
+		margin: 0;
+		align-content: center;
+	}
+
+	.cta img {
+		display: none;
+	}
+
+	.cta .cta-text {
+		margin: 0;
+	}
+
+	.cta .cta-text h1 {
+		margin-top: 0;
+		font-size: 70px;
+		text-align: center;
+	}
+
+	.top-content {
+    margin: 0;
+    display: flex;
+}
+
+	.text-content {
+		margin-bottom: 40px;
+	}
+
+	.main-content {
+		margin: 0;
+		border-top: 1px solid black;
+		border-bottom: 1px solid black;
+	}
+
+	.main-content .middle-img {
+		max-width: 100%;
+		height: auto;
+    }
+    
+    .bottom-content {
+	margin: 45px 0;
+	display: flex;
+	flex-wrap: wrap;
+}
 }
 
 header nav {
-    width: 100%;
+	width: 100%;
 	display: flex;
 	justify-content: space-between;
-	
 }
 
 header nav a {
-    width: 80%;
+	width: 80%;
 	text-decoration: none;
 	color: grey;
 }
@@ -100,7 +256,7 @@ header nav a:hover {
 }
 
 .cta {
-	margin: 110px 40px;
+	margin: 110px 30px;
 	display: flex;
 	justify-content: flex-end;
 }
@@ -134,7 +290,7 @@ header nav a:hover {
 }
 
 .main-content {
-    margin: 20px 40px;
+	margin: 20px 30px;
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
 }
@@ -145,8 +301,8 @@ header nav a:hover {
 }
 
 .main-content .middle-img {
-    margin: 0;
-    width: 1020px;
+	margin: 0;
+	width: 1020px;
 }
 
 .bottom-content {
@@ -166,7 +322,7 @@ header nav a:hover {
 }
 
 .contact {
-	margin: 40px;
+	margin: 30px;
 }
 
 .contact p {
