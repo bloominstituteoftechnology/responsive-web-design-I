@@ -66,7 +66,7 @@ h1, h2, h3, h4, h5 {
 
 .container {
     width: 880px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 /* Header Styles */
@@ -249,10 +249,45 @@ footer {
   height: 300px;
 }
 
+/* Tablet */
 @media (max-width:800px) {
+    .container {
+        width: 700px;
+    }
+    
+    .nav-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
 
+    .nav-container nav {
+        width: 100%;
+    }
+
+    .header-logo {
+        order: -1;
+        padding-right: 75px;
+    }
+    
+    .cta {
+        align-items: center;
+        justify-content: center;
+        margin-left: 50px;
+    }
+
+    .cta img {
+        display: none;
+    }
+
+    .main-content .middle-img {
+        width: 100%;
+    }
 }
 
+/* Mobile */
 @media (max-width:500px) {
-    
+
 }
