@@ -1,3 +1,375 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    /* font-family: 'Spicy Rice', cursive; */
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+*{
+	box-sizing: border-box;
+}
+p{
+	line-height: 1.2;
+}
+.container{
+	width: 900px;
+	margin: 0 auto;
+	/* position: relative; */
+}
+header{
+	margin: 10px 0 30px 0;
+	height: 40px;
+	width: 900px;
+	display:flex;
+	align-content: flex-end;
+	justify-content: space-between;
+}
+header nav{
+	display: flex;	
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+
+header nav a{
+	text-decoration: none;
+	color: gray;
+	padding: 5px 15px;
+}
+header nav a:hover{
+	border-bottom: 2px solid gray;
+}
+
+.section{
+	display: flex;
+	margin-bottom: 5px;
+	padding-bottom: 5px;
+}
+article p{
+	padding-right: 15px;
+}
+address{
+	line-height: 1.5;
+}
+address p{
+	margin-bottom: 10px;	
+}
+
+.logo{
+	width: 150px;
+	height: 40px;
+	margin: 5px 15px 0 0;
+	background-image: url("../img/logo.png");
+	background-repeat: no-repeat;
+	background-size: 150px 40px;
+	background-position: center;
+}
+
+h1{
+	font-size: 70px;
+	/* text-align: center; */
+}
+
+h2{
+	font-size: 30px;
+}
+
+h3{
+	font-size: 17px;
+}
+
+#hero{
+	/* padding:100px 0 0 0; */
+    margin-bottom: 40px;
+    padding-bottom: 67px;
+	border-bottom: 2px solid black;
+	/* text-align: center; */
+	display: flex;
+}
+.hero-title{
+	text-align: center;
+}
+.services{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.left{
+	padding-top: 90px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.left .services{
+	border-bottom: 1px solid black;
+}
+
+.right{
+	height: 400px;
+	width: 450px;
+	background-image: url("../img/header-img.png");
+	background-repeat: no-repeat;
+	background-size: 375px 375px;
+    background-position: center;
+    margin-top: 40px;
+    float: right;
+}
+.home{
+	height: 400px;
+	width: 450px;
+}
+.button{
+	padding: 8px 45px;
+    border: 1px solid black;
+    color: black;
+	text-align: center;
+	margin: 0 auto;
+	text-decoration: none;
+}
+.button:hover{
+	background-color: maroon;
+	color: white;
+}
+
+.middle-img{
+	margin: 10px auto 48px;;
+	width: 870px;
+	height: 175px;
+	background-image: url("../img/mid-page-accent.jpg");
+	background-size: 870px 175px;
+	background-repeat: no-repeat;
+    background-position: center;
+}
+
+.services-header-img{
+	margin-bottom: 35px;
+}
+
+.copyright{
+	width: 200px;
+	margin: 35px auto;
+}
+footer{
+	display: flex;
+	justify-content: center;
+	margin: 25px 0;
+}
+.foot{
+    border-top: 2px solid black;
+    padding-top: 30px;
+    margin-top: 20px;
+}
+/* Information Box */
+li{
+	list-style: disc;
+	margin: 10px 0 0 20px;
+}
+.bigBox{
+	display: flex;
+	justify-content: space-between;
+	/* border-bottom: 2px solid black; */
+}
+.smallBox{
+	padding: 15px;
+	width: 430px;
+	margin-top: 40px;
+	display: flex;
+	flex-direction: column;
+}
+.infoBox{
+	border: 1px solid gray;
+	background-color: whitesmoke;
+}
+.facts{
+	margin: 40px 0;
+	padding-top: 40px;
+	border-top: 2px solid black;
+}
+.learnMore{
+	border: 1px solid black;
+	background-color: white;
+	text-decoration: none;
+	color: black;
+	width: 150px;
+	padding: 10px 0;
+	margin: 15px 0;
+	display: flex;
+	justify-content: center;
+}
+
+a.learnMore:hover{
+	background-color: maroon;
+	color: white;
+}
+
+/* About Page */
+.about{
+	display: flex;
+	margin: 30px 0;
+	align-items: center;
+	justify-content: space-around;
+	align-items: center;
+}
+.aboutBox{
+	display: flex;
+	flex-direction: column;
+	margin-right: 20px;
+}
+.headshot img{
+	height: 200px;
+}
+.about p{
+	width: 600px;;
+}
+
+/* Media Query */
+@media (max-width: 800px){
+    .container{
+        width: 800px;
+        padding: 25px 5px;
+    }
+	header{
+        flex-direction: column;
+        align-content: center;
+        height: 100%;
+        width: 100%;
+        margin: 0 auto;
+    }
+    header nav{
+        justify-content: space-between;
+        margin: 30px 0 60px 0;
+        padding: 0;
+    }
+    .logo{
+     order: -1;   
+     background-size: 180px 40px;
+     margin-bottom: 15px;
+     height: 40px;
+     width: 180px;
+     align-self: center;
+    }
+    #hero{
+        justify-content: center;
+        padding-bottom:  62px;
+    }
+    
+    .right{
+        display: none;
+    }
+    .left{
+        padding:10px;
+        height: 100%;
+    }
+    .left .home{
+        margin: 0 auto;
+    }
+    .middle-img{
+        width: 750px;
+        background-size: 750px;
+    }
+}
+@media (max-width: 500px){
+    .container, header, header nav, .section{
+        flex-direction: column;
+        width: 100%;
+    }
+    header nav{
+        align-content: center;
+    }
+    header nav a{
+        align-self: center;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        padding: 15px 100%;
+        margin-top: -1px;
+    }
+    header nav a:hover{
+        background-color: maroon;
+        color: white;
+    }
+    article{
+        margin-bottom: 25px;
+    }
+    .middle-img{
+        width: 450px;
+        background-size: 450px;
+    }
+
+}
