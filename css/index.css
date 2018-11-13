@@ -426,12 +426,39 @@ footer {
 }
 
 @media (min-width: 800px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 60px 0 0;
+    padding-bottom: 75px;
+    border-bottom: 1px solid black;
+  }
+
+  header .header-title {
+    margin: 55px 0 0 130px;
+  }
+
+  header .header-title h1 {
+    margin: 0;
+    font-size: 72px;
+  }
+
   header .header-img {
     display: inline-block;
   }
 
   .middle-img-wrapper {
     margin: 26px 0 0;
+  }
+
+  header .header-divider-line {
+    display: none;
+  }
+
+  header .header-title a {
+    padding: 7px 46px;
+    margin: 25px 0;
   }
 }
 
