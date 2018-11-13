@@ -117,6 +117,8 @@ header .logo {
 
 .cta .cta-text button {
     border: 1px double black;
+    border-radius: 3px;
+    font-family: unset;
     font-size: 16px;
     background: white;
     width: 170px;
@@ -248,9 +250,59 @@ footer {
   height: 300px;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 @media only screen and (max-width: 800px) and (min-width: 500px) {
-    * {
-        
+    .container {
+        width: 800px;
+    }
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .logo {
+        width: unset;
+        text-align: center;
+    }
+
+    header nav {
+        margin-top: 0px;
+        justify-content: space-between;
+    }
+
+    .middle-img {
+        width: 800px;
+    }
+
+    .main-content {
+        margin: 0px 15px;
+    }
+
+    .cta {
+        margin: 36px 0px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cta .cta-text {
+        margin: 0%;
+    }
+
+    #hedimg {
+        display: none;
+    }
+
+    .text-content {
+        padding: 22px 0px;
     }
     
 }
@@ -260,25 +312,33 @@ footer {
         width: 500px;
     }
     header {
-        display: block;
+        display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 100%;
     }
 
     .logo {
+        margin: unset;
+        position: absolute;
+        top: 0;
+        text-align: center;
     }
 
     header nav {
+        margin-top: 0px;
         width: 100%;
-        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
     }
     header nav a {
         display: flex;
-        justify-content: center;
-        align-items: center; 
-        font-size: 1.2em;
         width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-size: 1.2em;
         height: 60px;
         border-bottom: 1px solid black;
     }
@@ -291,21 +351,22 @@ footer {
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+        padding: 20px 0px;
+    }
+
+    .main-content {
+        margin: 0px 15px;
     }
 
     .cta {
         display: flex;
-        margin-top: 72px;
+        margin-top: 0px;
         justify-content: center;
         align-items: center;
     }
 
     #hedimg {
         display: none;
-    }
-
-    .main-content {
-        padding: 0px 15px;
     }
 
     .main-content .top-content {
