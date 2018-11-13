@@ -1,50 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 /* Set every element's box-sizing to border-box */
@@ -52,12 +141,17 @@ table {
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
     margin-bottom: 15px;
@@ -76,7 +170,7 @@ header {
 }
 
 header nav {
-    margin-top: 40px; 
+    margin-top: 40px;
     width: 610px;
     justify-content: space-between;
     display: flex;
@@ -121,8 +215,8 @@ header .logo {
 
 .cta .cta-text button {
     border: 1px double black;
-    border-radius: 3px;
-    font-family: unset;
+    border-radius: 1px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 16px;
     background: white;
     width: 170px;
@@ -139,12 +233,12 @@ header .logo {
 /* Main Content Styles */
 
 .main-content {
-   border-top: 2px solid black; 
-   border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
-   padding: 35px 0;
-   font-size: 16px;
-   line-height: 18px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    margin: 75px 0 35px 0;
+    padding: 35px 0;
+    font-size: 16px;
+    line-height: 18px;
 }
 
 .main-content .top-content {
@@ -196,9 +290,9 @@ footer {
 }
 
 .services-content .services-text {
- border-bottom: 1px solid black;
- padding-bottom: 40px;
- margin-bottom: 20px
+    border-bottom: 1px solid black;
+    padding-bottom: 40px;
+    margin-bottom: 20px
 }
 
 .services-content .card {
@@ -221,13 +315,13 @@ footer {
 .services-content .card button:hover {
     background: black;
     color: white;
-} 
+}
 
 .services-content .services-info ul {
     margin: 20px;
 }
 
-.services-content .services-info ul li{
+.services-content .services-info ul li {
     list-style: square;
     padding: 5px;
 }
@@ -235,23 +329,23 @@ footer {
 .services-content .services-info {
     display: flex;
     flex-wrap: wrap;
-    border-top: 2px solid black; 
+    border-top: 2px solid black;
     margin: 20px 0 35px 0;
-    padding-top: 40px; 
+    padding-top: 40px;
 }
 
 .services-content .services-info .facts {
-  width: 400px;
-  margin: 0 60px 20px 0;
+    width: 400px;
+    margin: 0 60px 20px 0;
 }
 
 .services-content .services-info .facts p {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .services-content .services-info .services-info-img {
-  width: 420px;
-  height: 300px;
+    width: 420px;
+    height: 300px;
 }
 
 img {
@@ -309,20 +403,21 @@ img {
         display: none;
     }
 
-    .text-content {
-        margin: 10px;
+    .main-content {
+        margin: 0px 15px;
     }
 
     .contact {
         margin: 15px;
     }
-    
+
 }
 
 @media only screen and (max-width: 500px) {
     .container {
         width: auto;
     }
+
     header {
         display: flex;
         flex-direction: column;
@@ -345,8 +440,9 @@ img {
         width: 100%;
         flex-direction: column;
         justify-content: center;
-        align-items: center; 
+        align-items: center;
     }
+
     header nav a {
         display: flex;
         width: 100%;
@@ -357,6 +453,7 @@ img {
         height: 60px;
         border-bottom: 1px solid black;
     }
+
     .middle-img {
         width: auto;
     }
