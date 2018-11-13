@@ -104,20 +104,20 @@ header .logo {
   
     header {
         display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      text-align: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
     }
   
     header nav {
         display: flex;
-      order: 1;
-      justify-content: space-around;
-      width: 100%;
+        order: 1;
+        justify-content: space-around;
+        width: 100%;
     }
   
     header .logo {
-     margin: 0 auto;
+        margin: 20px 50px 20px 50px;
     }
   
   }
@@ -153,7 +153,7 @@ header .logo {
 
     header .logo {
         display: flex;
-        justify-content: center;
+        align-items: center;
         margin-top: 20px;
     }
 
@@ -218,11 +218,14 @@ header .logo {
 }
 
 @media (max-width: 500px) {
+    .cta {
+        margin: 15px;
+    }
+
     .cta .cta-text img {
         display: none;
     }
 }
-
 
 /* Main Content Styles */
 
@@ -255,11 +258,16 @@ header .logo {
 @media (max-width: 800px) {
     .main-content {
         border-top: 2px solid black;
-        margin: 75px 0px 47px 50px;
+        margin: 20px;
     }
   
     .main-content .middle-img {
       width: 100%;
+    }
+
+    .main-content .top-content .text-content {
+        width: 100%;
+        margin-right: 10px;
     }
 }
 
@@ -302,6 +310,13 @@ header .logo {
 
 .contact p {
     margin: 15px 0;
+}
+
+@media (max-width: 800px) {
+    .contact {
+        width: 100%;
+        margin: 40px 20px 20px 20px;
+    }
 }
 
 @media (max-width: 500px) {
