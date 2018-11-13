@@ -155,32 +155,40 @@ h5 {
   box-sizing: border-box;
 }
 
-.logo-link-wrapper {
-  margin-left: 3px;
+.website-wrapper {
+  width: 100%;
+  max-width: 880px;
+  margin: 0 auto;
 }
 
-.navbar nav {
+nav {
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
-  margin-top: 4.1vw;
+  margin-top: 20px;
   width: 100%;
 }
 
-.navbar nav .nav-links {
+.logo-link img {
+  width: 175px;
+  height: auto;
+}
+
+nav .nav-links {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
-  margin-top: 3.4vw;
+  margin-top: 15px;
   width: 100%;
+  height: 350px;
+  border-bottom: 1px solid black;
 }
 
-.navbar nav .nav-links a {
+nav .nav-links a {
   text-decoration: none;
   color: rgb(167, 166, 167);
-  height: 11.9vw;
-  font-size: 4vw;
+  height: 60px;
+  font-size: 19px;;
   border-top: 1px solid black;
   width: 100%;
   text-align: center;
@@ -188,17 +196,13 @@ h5 {
   font-weight: bold;
 }
 
-.navbar nav .nav-links a:last-child {
-  border-bottom: 1px solid black;
-}
-
 .navbar nav .nav-links a:hover {
   background-color: black;
   color: white;
 }
 
-@media (min-width: 500px) {
-  .logo-link-wrapper {
+@media (min-width: 501px) {
+  /* .logo-link-wrapper {
     margin-left: 15px;
   }
 
@@ -220,10 +224,10 @@ h5 {
   .navbar nav .nav-links a:last-child {
     border-bottom: 0;
   }
-}
+} */
 
 @media (min-width: 800px) {
-  .navbar nav {
+  /* .navbar nav {
     flex-direction: row;
     align-items: flex-start;
     margin-top: 0;
@@ -247,11 +251,11 @@ h5 {
   .navbar nav .logo-link-wrapper {
     margin: 2.9vw 7vw 0 0;
   }
-}
+} */
 
 /* Home Styles */
 
-.header-image {
+/* .header-image {
   display: none;
 }
 
@@ -345,10 +349,10 @@ footer {
   justify-content: center;
   margin-top: 8vw;
   margin-bottom: 5vw;
-}
+} */
 
 @media (min-width: 500px) {
-  header .header-title {
+  /* header .header-title {
     margin-top: 0;
     margin-left: 1vw;
     font-size: 9vw;
@@ -426,11 +430,12 @@ footer {
   footer {
     margin: 5vw 0 5vw 2vw;
   }
-}
+} */
 
 @media (min-width: 800px) {
-  .website-wrapper {
+  /* .website-wrapper {
     max-width: 1200px;
+    margin: 0 auto;
   }
   header {
     display: flex;
@@ -474,7 +479,8 @@ footer {
   .middle-img {
     display: block;
     margin: 3vw auto 0;
-    width: 84vw;
+    width: 100%;
+    max-width: 1000px;
   }
 
   .section-two {
@@ -509,4 +515,4 @@ footer {
   footer {
     margin: 3.5vw 0 5vw;
   }
-}
+} */
