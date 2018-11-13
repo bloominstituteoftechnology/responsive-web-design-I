@@ -138,6 +138,7 @@ header .logo {
         display: flex;
         flex-direction: column;
         align-items: center;
+        /* margin: 10px; */
     }
 
     header nav a {
@@ -264,24 +265,36 @@ header .logo {
 
 @media (max-width: 500px) {
     .main-content {
+        margin: 20px;
         display: flex;
         flex-direction: column;
         align-items: center;
         flex-wrap: nowrap;
+        align-content: space-evenly;
+    }
+
+    .main-content .top-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-content .top-content .text-content {
+        margin-bottom: 40px;
     }
 
     .main-content .middle-img {
         width: 100%;
     }
 
-    .bottom-content {
+    .main-content .bottom-content {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: center;        
     }
 
-    .bottom-content .text-content {
-        margin-bottom: 20px;
+    .main-content .bottom-content .text-content {
+        margin-bottom: 40px;
     }
 }
 
@@ -289,6 +302,13 @@ header .logo {
 
 .contact p {
     margin: 15px 0;
+}
+
+@media (max-width: 500px) {
+    .contact {
+        width: 100%;
+        margin: 20px;
+    }
 }
 
 /* Footer Styles */
