@@ -1,3 +1,436 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: square;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.container {
+  width: 880px;
+ 
+  margin: 0 auto;
+}
+
+
+header {
+	display: flex;
+    justify-content: space-between;
+    
+
+
+}
+
+
+header nav {
+  width: 650px;
+  margin-top: 35px;
+  display: flex;
+  justify-content: space-between;
+   
+}
+
+header nav a {
+  font-size: 14px;
+  color: gray;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+header nav a:first-child {
+  margin-left: 0;
+}
+
+header nav a:last-child {
+  margin-right: 0;
+}
+
+header .logo {
+  display: flex;
+  margin-top: 25px;
+  
+}
+
+
+
+.cta {
+  
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+.cta .cta-text {
+  display: flex;
+  flex-wrap: wrap;
+  vertical-align: top;
+  font-size: 77px;
+  margin-top: 120px;
+  text-align: center;
+  padding: 0px 75px;
+ 
+  width: 500px;
+  justify-content: center;
+}
+
+.cta .cta-text button {
+  display: flex;
+  
+  background: white;
+  vertical-align: top;
+  margin-top: 6px;
+  padding: 8px 44px;
+  font-size: 17px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.cta .cta-text button:hover {
+  background: black;
+  color: white;
+}
+
+.cta img {
+  display: flex;
+  margin-top: 69px;
+  
+  
+}
+
+.main-content {
+  border-top: 1px solid black;
+  margin-top: 76px;
+  padding-top: 39px;
+}
+
+.main-content .top-content {
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+ 
+}
+
+
+
+.main-content .top-content .text-content:last-child {
+  margin-right: 0;
+}
+
+.main-content .middle-img {
+  margin-top: 45px;
+  max-width: 100%;
+}
+
+.main-content .bottom-content .text-content {
+   padding: 0 10px;
+  
+  display: flex;
+  flex-direction: column;
+  
+  margin-bottom: 20px;
+  
+  
+}
+
+
+
+.main-content .bottom-content .text-content {
+  width: 275px;
+  display: flex;
+  margin-right: 12px;
+}
+
+.main-content .bottom-content .text-content:last-child {
+  margin-right: 0;
+}
+
+.contact {
+  margin-top: 57px;
+  border-top: 1px solid black;
+  padding: 39px 10px 0;
+}
+
+.contact p {
+  margin: 20px 0;
+}
+
+footer {
+  margin: 32px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+
+
+.services .services-header-img {
+   display: block;
+   margin: 30px 0;
+}
+
+.services .services-info {
+	padding: 30px;
+	border-bottom: 1px solid black;
+  margin-bottom: 30px;
+  
+
+}
+
+.container2 {
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+
+.services h1 {
+	font-size: 20px
+}
+
+.services .digital-info {
+	padding: 30px;
+	border: 1px solid black;
+	width: 400px;
+	padding-bottom: 30px;
+	background-color: rgb(230, 228, 225);
+  margin-bottom: 30px;
+  
+	
+	
+
+}
+	
+.services .UX {
+  padding: 30px;
+  border: 1px solid black;
+  width: 400px;
+	padding-bottom: 30px;
+	background-color: rgb(230, 228, 225);
+  margin-bottom: 30px;
+  
+}
+	
+
+ .services .DM {
+ padding: 30px;
+ border: 1px solid black;
+ width: 400px;
+ padding-bottom: 30px;
+ background-color: rgb(230, 228, 225);
+ margin-bottom: 30px;
+}
+
+
+.services .WD {
+  padding: 30px;
+  border: 1px solid black;
+  width: 400px;
+  padding-bottom: 30px;
+  background-color: rgb(230, 228, 225);
+  margin-bottom: 30px;
+}
+
+.services .Apple {
+  padding: 30px;
+  border: 1px solid black;
+  width: 400px;
+  padding-bottom: 30px;
+  background-color: rgb(230, 228, 225);
+  margin-bottom: 30px;
+}
+
+.services .Droid {
+  padding: 30px;
+  border: 1px solid black;
+  width: 400px;
+  padding-bottom: 30px;
+  background-color: rgb(230, 228, 225);
+  margin-bottom: 30px;
+}
+
+
+
+.services .facts {
+ 
+  width: 400px;
+  
+ 
+}
+
+.services .facts p {
+  margin-bottom: 30px;
+  max-width: 100%;
+}
+
+.services .facts  ul {
+  margin-bottom: 30px;
+  padding: 30px;
+  
+}
+
+.services .facts li {
+  margin-bottom: 10px;
+}
+
+/* @media queries */
+/* Tablet */
+
+@media screen and (min-width: 501px) and (max-width:800px) {
+    .container {background-color: lightblue;}
+    header {
+        display: flex;
+        flex-direction: column-reverse;
+        max-width: 100%;
+        align-items: center;
+       
+        justify-items: center;}
+
+        
+       .container nav {
+            padding-left: 40px;
+        }
+        .cta img {
+            display: none;
+        }
+       .cta .cta-text {
+             font-size: 6em;
+             padding-left: 400px;
+            
+        }
+        .main-content {
+          
+          max-width: 100%;
+         font-size: 1.5em;
+         display: flex;
+         flex-direction: column;
+
+        }
+        h4 {
+            padding-top: 20px;
+        }
+    
+}
+
+
+/* cell phone  */
+
+
+@media screen and (max-width: 500px) {
+	header {
+		
+		display: flex;
+		flex-direction:column-reverse;
+		align-items:center;
+		width: 50%
+
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.container header img {
+		width: 100%;
+		align-items:center;
+		border-bottom: 1px solid gray;
+		padding-left: 70px
+	}
+}
+
+
+@media  screen and (max-width: 500px) {
+    .container {background-color: lightpink; }
+   .container header nav {
+        display: flex;
+		flex-direction: column;
+		justify-content:center;
+		align-items: center;
+		padding-left: 50px
+
+   }
+
+
+@media  screen and (max-width: 500px) {
+    .container {background-color: lightpink; }
+   .container header nav a {
+   	border-bottom: 1px solid gray;
+   	width:74%;
+   	display: flex;
+   	justify-content:center;
+   	font-size: 3em
+
+   	
+   }
+
+@media screen and (max-width: 500px) {
+	.cta img {
+		display: none;
+	}
+@media screen and (max-width:500px) {
+	.main-content {
+		width: 55%;
+		
+        flex-direction: column;
+        font-size: 1.75em;
+    }
+    
+
+    
 
 
