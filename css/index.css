@@ -207,13 +207,15 @@ footer {
 
     header .logo {
         display: flex;
-        max-width: 20%;
+        max-width: 100%;
         height: auto;
+        align-content: center;
     }
 
     header nav {
         display: flex;
         font-size: 14pt;
+        align-content: space-around;
     }
 
     /* header {
@@ -259,30 +261,29 @@ footer {
 
     header .logo {
         display: flex;
-        flex-direction: column-reverse;
-        align-items: flex-start;
-        /* align-content: center; */
+        flex-direction: column;
+        align-items: center;
+
     }
 
     header nav {
         display: flex;
+        align-items: center;
         flex-direction: column;
-        align-items: flex-end;
-        align-content: center;
         width: 100%;
         height: 300px;
         margin: 50px;
         font-size: 16pt;
     
     }
+
     header nav a {
         display: flex;
         flex-direction: column;
         align-items: center;
-        align-content: flex-end;
+        align-content: center;
         width: 100%;
         height: 300px;
-        float: center;
         border-top: 1px solid gray; 
         border-bottom: 1px solid gray;
         padding-top: 15px;
@@ -293,7 +294,7 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
-        align-content: space-around;
+        align-content: flex-start;
     }
 
     .cta .image {
