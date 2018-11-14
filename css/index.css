@@ -263,25 +263,22 @@ footer {
 /* tablet width */
 @media (max-width: 800px) {
   .container {
-    background-color: orange;
-    width: 800px;
-    margin-left: 10px;
+    width: 100%;
   }
 
   header {
     flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
+  }
+
+  header .nav {
+    width: 768px;
+    padding: 0 30px;
   }
 
   header .logo {
-    margin: 0 auto;
-  }
-
-  header nav {
-    order: 1;
-    justify-content: space-around;
-    width: 800px;
+    order: -1;
+    display: block;
+    margin: 30px auto 0;
   }
 
   .cta {
@@ -297,101 +294,84 @@ footer {
   }
 
   .main-content .middle-img {
-    width: 800px;
+    width: 100%;
   }
 
-  .main-content .top-content p {
-    margin-bottom: 20px;
+  .main-content {
+    margin: 75px 20px 35px;
   }
 
-  .main-content .bottom-content {
-    margin-top: 20px;
+  .text-content {
+    margin: 0 10px;
   }
 
-  .main-content .bottom-content p {
-    margin-bottom: 85px;
-  }
-
-  .contact p {
-    margin-top: 18px;
-  }
-
-  footer {
-    margin-top: 20px;
+  .contact {
+    margin: 0 30px;
   }
 }
 
 /* phone width */
 @media (max-width: 500px) {
-  .container {
-    background-color: green;
-  }
-
   header {
-    flex-wrap: wrap;
     justify-content: center;
-    text-align: center;
   }
 
   header nav {
-    font-size: 25px;
+    margin: 0;
     flex-direction: column;
-    order: 1;
-    justify-content: space-evenly;
-    width: 500px;
+    padding: 0;
+    width: 100%;
   }
 
   header nav a {
+    width: 100%;
+    display: block;
+    text-align: center;
     border-bottom: 1px solid gray;
-    padding: 10px;
+    padding: 20px 0;
+    font-size: 20px;
+  }
+
+  header nav a:first-child {
+    border-top: 1px solid gray;
+  }
+
+  header nav a:hover {
+    background: gray;
   }
 
   header .logo {
-    margin: 0 auto;
+    margin: 20px 0;
+    order: -1;
   }
 
   .cta {
-    justify-content: center;
-  }
-
-  .cta .cta-text {
-    margin: 0;
-    margin-top: 48px;
+    align-items: center;
+    margin-top: 50px;
+    flex-flow: column;
   }
 
   .cta img {
-    display: none;
-    margin-bottom: 300px;
-  }
-
-  .main-content {
-    margin: 0;
+    width: 80%;
   }
 
   .main-content .top-content {
     flex-direction: column;
-    margin-top: 100px;
-  }
-
-  .main-content .top-content p {
-    flex-direction: column;
-  }
-
-  .main-content .middle-img {
-    width: 500px;
-    margin: 0;
-    margin-top: 50px;
+    justify-content: space-around;
+    height: 300px;
   }
 
   .main-content .bottom-content {
-    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+    height: 440px;
   }
 
-  .main-content .bottom-content p {
-    margin-bottom: 50px;
+  .text-content {
+    margin: 0;
   }
 
-  footer {
-    margin-top: 50px;
+  .contact {
+    margin: 20px;
   }
 }
