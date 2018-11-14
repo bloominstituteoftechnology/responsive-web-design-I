@@ -301,14 +301,19 @@ footer {
         display: none;
     }
 
-    .top-content .text-content h4 p {
+   .main-content .top-content .text-content {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
-        align-content: flex-start;
+        flex-wrap: wrap;
     }
 
-    .bottom-content .text-content {
+   .main-content .top-content .text-content h4 p {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .main-content .bottom-content .text-content {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
@@ -333,3 +338,9 @@ footer {
     }
 
 }
+
+/* flex-direction: column;
+        align-items: flex-start;
+        align-content: flex-start;
+
+        for top content */
