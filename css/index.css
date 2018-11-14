@@ -301,16 +301,62 @@ footer {
         display: none;
     }
 
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: flex-start;
+    }
+
+    .main-content .top-content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: flex-start;
+    }
+
    .main-content .top-content .text-content {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
     }
 
-   .main-content .top-content .text-content h4 p {
+   .main-content .top-content .text-content h4 {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+        align-items: flex-start;
+        align-content: flex-start;
+    }
+
+    .main-content .top-content .text-content h5 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        align-content: flex-start;
+    }
+
+    .main-content .top-content .text-content p {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        align-content: flex-start;
+    }
+
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: flex-start;
+    }
+
+    .main-content .bottom-content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: flex-start;
     }
 
     .main-content .bottom-content .text-content {
@@ -321,7 +367,28 @@ footer {
         align-content: flex-start;
     }
 
-    h4 {
+    .main-content .bottom-content .text-content h4 p {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: flex-start;
+        align-content: flex-start;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    
+    }
+
+}
+
+
+
+
+
+    /* h4 {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
@@ -335,9 +402,7 @@ footer {
         flex-direction: column;
         align-items: flex-start;
         align-content: flex-start;
-    }
-
-}
+    } */
 
 /* flex-direction: column;
         align-items: flex-start;
