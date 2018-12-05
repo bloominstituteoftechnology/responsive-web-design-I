@@ -213,6 +213,29 @@ footer {
 }
 
 @media only screen and (min-width: 500px) {
+	.container {
+		padding: 15px;
+	}
+	
+	nav li {
+		padding: 0;
+		border-bottom: none;
+		/* display: block; */
+	}	
+	
+	nav ul {
+		display: flex;
+		justify-content: space-between;
+		/* align-items: center; */
+		flex-wrap: wrap;
+		/* text-align: center */
+	}	
+	
+	li:first-child {
+		width: 100%;
+		margin: 10px 0 30px 0;
+	}
+
 	.features,
 	.about {
 		/* margin: 20px 0; */
