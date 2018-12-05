@@ -3,6 +3,10 @@
     box-sizing: border-box;
 }
 
+* {
+	/* outline: 1px solid red; */
+}
+
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
@@ -38,7 +42,7 @@ nav ul {
 }
 
 nav li {
-	padding: 10px;
+	padding: 20px;
 	border-bottom: 1px solid #000;
 	/* display: block; */
 }
@@ -97,30 +101,37 @@ nav a {
 .main {
 	display: flex;
 	flex-wrap: wrap;	
+	padding: 20px;
+}
+
+.main section {
+	margin: 20px 0;
 }
 
 .features,
 .about {
-	margin: 20px 0;
-	flex: 1 0 49%;
+	/* margin: 20px 0; */
+	flex: 1 0 100%;
 }
 
 .features {
-	margin-right: 2%;
+	/* margin-right: 2%; */
 }
 
 .main img {
 	/* https://stackoverflow.com/questions/26086515/css-flex-how-to-display-one-item-on-first-line-and-two-on-the-next-line */
 	/* important part is flex-basis of 100% */
-	flex: 0 1 100%;
-	margin: 10px 0 30px;
+	/* flex: 0 1 100%; */
+	width: 100%;
+	height: 100%;
+	/* padding: 20px; */
 }
 
 .services,
 .product,
 .vision {
-	flex: 1 0 33%;
-	margin-bottom: 30px;
+	flex: 1 0 100%;
+	/* margin-bottom: 30px; */
 }
 
 .contact {
