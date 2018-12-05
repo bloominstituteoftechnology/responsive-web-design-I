@@ -114,10 +114,6 @@ nav a {
 	flex: 1 0 100%;
 }
 
-.features {
-	/* margin-right: 2%; */
-}
-
 .main img {
 	/* https://stackoverflow.com/questions/26086515/css-flex-how-to-display-one-item-on-first-line-and-two-on-the-next-line */
 	/* important part is flex-basis of 100% */
@@ -216,12 +212,25 @@ footer {
   margin-bottom: 15px;
 }
 
-@media only screen and (min-width: 401px) {
-	.service-item, .fact-item {
+@media only screen and (min-width: 500px) {
+	.features,
+	.about {
+		/* margin: 20px 0; */
+		flex: 1 0 49%;
+	}
+
+	.main {
+		padding: 0;
+	}
+
+	section.features {
+		margin-right: 2%;
+	}
+	/* .service-item, .fact-item {
 		width: 49%;
 	}
 
 	nav ul {
 		flex-direction: row;
-	}
+	} */
 }
