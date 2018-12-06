@@ -82,6 +82,10 @@ nav a {
 	text-align: center;
 }
 
+.jumbo-img {
+	display: none;
+}
+
 .btn {
 	display: inline-block;
 	border: 1px solid #000;
@@ -273,4 +277,18 @@ footer {
 		padding: 0;
 		margin-top: 30px;
 	}
+}
+
+@media only screen and (min-width: 800px) {
+
+	.jumbo {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	.jumbo-img {
+		display: block;
+	}
+
 }
