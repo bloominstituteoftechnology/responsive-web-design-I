@@ -168,10 +168,7 @@ h5 {
         'top-section'
         'mid'
         'bottom-section'
-        'contact'
-        'copyright';
-    justify-items: center;
-    align-items: center;
+        'footer';   
 }
 
 /* Navbar
@@ -179,6 +176,7 @@ h5 {
 
 .logo {
     grid-area: logo;
+    justify-self: center;
 }
 
 nav {
@@ -208,7 +206,7 @@ a:first-child {
 ============================*/
 
 section {
-    padding: 30px;
+    padding: 2rem;
 }
 
 /* Header
@@ -222,8 +220,8 @@ section {
 }
 
 .header > button {
-    min-width: 250px;
-    height: 50px;
+    min-width: 10rem;
+    height: 2rem;
     background: #fff;
     border: 1px solid black;
     font-size: 1.1rem;
@@ -243,6 +241,7 @@ section {
 .header-img {
     display: none;
 }
+
 
 /* Middle section
 ============================*/
@@ -270,28 +269,50 @@ section {
     grid-template-columns: 1fr;
 }
 
-/* Contact section
+/* Footer section
+============================*/
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    'contact'
+    'copyright';
+}
+
+/* Contact 
 ============================*/
 
 .contact {
     grid-area: contact;
-    max-width: 300px;
-    margin-top: 50px;
+    justify-self: start;
+    max-width: 12rem;
 }
 
 .contact > a {
+    padding: 0;
+    margin: 0;
     color: black;
+    border: none;
+    text-align: left;
 }
 
 address {
-    margin: 20px 0;
+    margin: 1.2rem 0;
 }
 
-/* Copyright section
+/* Copyright 
 ============================*/
 
-#copyright {
+.copyright {
     grid-area: copyright;
-    margin: 150px auto;
+    margin: 150px auto 50px;
     text-align: center;
+}
+
+/* Media Queries 
+============================*/
+
+@media (min-width: 500px) {
+    
 }
