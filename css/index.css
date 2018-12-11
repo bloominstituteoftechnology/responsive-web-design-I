@@ -106,8 +106,8 @@ section {
     display: block;
 }
 body {
-	line-height: 1;
-	margin: 30px;
+    line-height: 1;
+    margin: 30px;
 }
 ol,
 ul {
@@ -137,8 +137,8 @@ table {
 html,
 body {
     height: 100%;
-	font-family: 'Titillium Web', sans-serif;
-	font-size: 1.2rem;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1.2rem;
 }
 
 h1,
@@ -148,19 +148,42 @@ h4,
 h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
-	margin-bottom: 15px;
+    margin-bottom: 15px;
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
+/* Container
+============================*/
+
+.container {
+    width: 95%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        'logo'
+        'nav'
+        'header'
+        'top-section'
+        'mid'
+        'bottom-section'
+        'contact'
+        'copyright';
+    justify-items: center;
+    align-items: center;
+}
+
 /* Navbar
 ============================*/
 
+.logo {
+    grid-area: logo;
+}
+
 nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 1rem;
+    width: 100%;
+    padding: 1rem;
 }
 
 nav > a:hover {
@@ -168,8 +191,17 @@ nav > a:hover {
 }
 
 a {
+    display: block;
     text-decoration: none;
     color: grey;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid grey;
+}
+
+a:first-child {
+    border-top: 1px solid grey;
 }
 
 /* Default styles
@@ -182,64 +214,67 @@ section {
 /* Header
 ============================*/
 
-.one {
-    display: flex;
-    justify-content: space-around;
-    margin: 80px auto;
+.header {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
 }
 
-.big-text > button {
-    width: 250px;
+.header > button {
+    min-width: 250px;
     height: 50px;
     background: #fff;
     border: 1px solid black;
     font-size: 1.1rem;
 }
 
-.big-text > button:hover {
+.header > button:hover {
     background-color: black;
     color: white;
 }
 
-.big-text {
-    width: 400px;
+#big-text {
+    max-width: 19rem;
+    font-size: 5rem;
     text-align: center;
 }
 
-#big-text {
-    font-size: 6rem;
-    text-align: center;
+.header-img {
+    display: none;
 }
 
 /* Middle section
 ============================*/
 
-.two {
-    display: flex;
-    padding: 50px 0px;
-    justify-content: space-around;
+.top-section {
+    grid-area: top-section;
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 /* Middle image
 ============================*/
 
 #mid {
+    grid-area: mid;
     width: 100%;
 }
 
 /* Bottom section
 ============================*/
 
-.three {
-    display: flex;
-    padding: 50px 0px;
-    justify-content: space-around;
+.bottom-section {
+    grid-area: bottom-section;
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 /* Contact section
 ============================*/
 
 .contact {
+    grid-area: contact;
     max-width: 300px;
     margin-top: 50px;
 }
@@ -256,6 +291,7 @@ address {
 ============================*/
 
 #copyright {
+    grid-area: copyright;
     margin: 150px auto;
     text-align: center;
 }
