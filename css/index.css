@@ -1,4 +1,3 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -107,7 +106,8 @@ section {
     display: block;
 }
 body {
-    line-height: 1;
+	line-height: 1;
+	margin: 30px;
 }
 ol,
 ul {
@@ -137,7 +137,8 @@ table {
 html,
 body {
     height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 1.2rem;
 }
 
 h1,
@@ -147,102 +148,114 @@ h4,
 h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
-    margin-bottom: 15px;
+	margin-bottom: 15px;
 }
 
-/* Your code starts here! */
-.container {
-    margin: 50px 100px;
-    position: relative;
-}
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
-.logo {
-    position: absolute;
-    top: -15px;
-    left: 75%;
-}
+/* Navbar
+============================*/
 
-nav > a {
-    left: 0;
-    padding: 50px 85px 50px 0px;
-    font-size: 1.3rem;
-    text-decoration: none;
-    color: grey;
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1rem;
 }
 
 nav > a:hover {
     color: black;
 }
 
-.big-text {
-    display: inline-block;
-    margin: 120px 30px 50px 250px;
-    width: 300px;
-    height: 400px;
-    font-size: 5rem;
-    text-align: center;
+a {
+    text-decoration: none;
+    color: grey;
 }
 
-button {
+/* Default styles
+============================*/
+
+section {
+    padding: 30px;
+}
+
+/* Header
+============================*/
+
+.one {
+    display: flex;
+    justify-content: space-around;
+    margin: 80px auto;
+}
+
+.big-text > button {
     width: 250px;
     height: 50px;
-    font-size: 1.2rem;
-    background: white;
+    background: #fff;
     border: 1px solid black;
+    font-size: 1.1rem;
 }
 
-button:hover {
+.big-text > button:hover {
     background-color: black;
     color: white;
 }
 
-.header-img {
-    position: absolute;
-    margin: 100px 0px 50px 100px;
+.big-text {
+    width: 400px;
+    text-align: center;
 }
 
-.top-section > div {
-    padding: 30px 30px 30px 0;
+#big-text {
+    font-size: 6rem;
+    text-align: center;
 }
 
-.left-div {
-    float: left;
-    width: 50%;
+/* Middle section
+============================*/
+
+.two {
+    display: flex;
+    padding: 50px 0px;
+    justify-content: space-around;
 }
 
-.right-div {
-    float: right;
-    width: 50%;
-}
+/* Middle image
+============================*/
 
-.middle-img {
+#mid {
     width: 100%;
 }
 
-.bottom-section > div {
-    padding: 30px 30px 30px 0;
+/* Bottom section
+============================*/
+
+.three {
+    display: flex;
+    padding: 50px 0px;
+    justify-content: space-around;
 }
 
-.first-div {
-    float: left;
-    width: 33.3%;
-}
-
-.second-div {
-    float: left;
-    width: 33.3%;
-}
-
-.third-div {
-    float: left;
-    width: 33.3%;
-}
+/* Contact section
+============================*/
 
 .contact {
-    padding: 30px 30px 30px 0;
+    max-width: 300px;
+    margin-top: 50px;
 }
 
-footer > p {
+.contact > a {
+    color: black;
+}
+
+address {
+    margin: 20px 0;
+}
+
+/* Copyright section
+============================*/
+
+#copyright {
+    margin: 150px auto;
     text-align: center;
-    padding: 80px;
 }
