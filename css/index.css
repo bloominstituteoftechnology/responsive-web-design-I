@@ -277,7 +277,9 @@ article {
     max-width: 500px;
   }
 
-  header {
+  /* Ugly hack */
+  header, .banner, header nav a, footer {
+    width: 500px;
     height: auto;
   }
   header nav {
@@ -285,6 +287,7 @@ article {
   }
 
   header nav a {
+    text-align: center;
     padding: 5px 0;
     border-bottom: 2px solid lightgray;
   }
