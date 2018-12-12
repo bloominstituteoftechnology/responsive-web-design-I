@@ -1,3 +1,326 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: flex;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+body {
+	margin: 0 auto;
+	width: 880px;
+	font-size: 16px;
+}
+
+.navbar{
+   width: 880px;
+   top: 0;
+   position: fixed;
+   z-index: 2;
+ }
+
+ .services-header-img {
+	 margin-top: 20px;
+ }
+
+ .services-header {
+	 margin-top: 32px;
+	 padding-bottom: 40px;
+	 border-bottom: 1px solid black;
+	
+
+ }
+
+ .services div {
+	background-color: #F4F3F4;
+    width: 420px;
+    padding: 20px;
+    border: 1px solid black;
+    margin-bottom: 40px;
+ }
+
+ .services, .facts {
+	 display: flex;
+	 flex-direction: row;
+	 flex-flow: wrap;
+	 justify-content: space-between;
+	 margin-top: 40px;
+ }
+
+header {
+   display: flex;
+   width: 100%;
+   background-color: white;
+   padding: 1px;
+   flex-direction: row;
+ }
+
+ header nav a{
+   margin: 11px 32px 0px 32px;
+   font-size: 15px;
+   text-decoration: none;
+   color: gray;
+   display: flex;
+   
+ }
+ 
+ header nav a:first-of-type{
+   margin-left: 0;
+   margin-right: 34px;
+ }
+ 
+ .greatidealogo{
+	display: flex;
+   position: absolute;
+   right: 0;
+   margin-top: -2px;
+   margin-right: 0px;
+
+ }
+
+ .logo {
+	 display: flex;
+	 right: 0;
+	 padding-left: 90px;
+ }
+
+	.facts p {
+		width: 400px;
+	}
+
+ p {
+	 line-height: 1.25;
+ }
+
+ .services p, .facts p {
+	margin-top: 17px;	
+}
+
+.facts ul {
+    margin-top: 27px;
+    list-style-type: square;
+    list-style-position: inside;
+	margin-left: 1px;
+}
+.facts li {
+	margin-top 13px;
+}
+ .start-section button {
+   border: 1px solid black;
+   background-color: white;
+   padding: 0 30px 0px 28px;
+   font-family: 'Titillium Web', sans-serif;
+   font-weight: 600;
+   font-size: 17px;
+   width: 170px;
+   height: 34px; 
+   margin-right: -109px;
+   margin-top: 9px;
+ }
+ 	.services {
+		border-bottom: 2px solid black;
+
+	 }
+ .servicesh1{
+	 font-size: 26px;
+	 margin-bottom: 14px;
+ }
+
+ .services h2, .facts h2 {
+	 margin-top: 2px;
+ }
+
+ h1 {
+	 font-size: 72px;
+     font-weight: 500;
+     padding-left: 106px;
+     padding-top: 5px;
+ }
+
+ h2 {
+	 font-weight: 500;
+ }
+
+ .start-section {
+   margin-top: 35px;
+   width: 880px;
+   height: 440px;
+   position: relative;
+ }
+ 
+ .left-div {
+   	display: flex;
+	 padding: 50px;
+	 width: 440px;
+	 text-align: center;
+	 margin-top: 70px;
+	 position: absolute;
+	 flex-direction: column;
+	 align-items: center;
+   }
+
+   .right-div {
+	   display: flex;
+	   width: 440px;
+	   position: absolute;
+	   padding: 30px 0;
+	   right: 0;
+	 }
+
+   .top-section {
+	   border-top: 1px solid black;
+		 margin-bottom: 39px;
+  		padding-top: 39px;
+   }
+
+   .middle-section {
+	   padding: 30px 15px 35px 0;
+	 }
+
+	 .bottom-section {
+		margin-top: 41px;
+		padding-bottom: 48px;
+		border-bottom: 1px solid black;
+		margin-bottom: 39px;
+	  }
+
+
+	 p, .features, .about, h2, .servicesgreatidea, .product, .vision {
+		display: flex;
+		flex-direction: column;
+		vertical-align: top;
+	  }
+	  
+	  .top-section, .bottom-section {
+		display: flex;
+		flex-direction: row;
+
+	}
+
+   .features {
+	   /* display: inline-block; */
+	   width: 425px;
+	   margin-right: 10px;
+	 }
+
+   .about {
+	   /* display: inline-block; */
+	   width: 425px;
+	   margin-left: 22px;
+   }
+
+   .servicesgreatidea {
+	   margin-left: 0;
+	   width: 275px;
+   }
+
+   .product {
+	width: 275px;
+	margin-left: 23px;
+   }
+
+   .vision {
+	width: 275px;
+	margin-left: 24px;
+   }
+
+   .footer {
+	   margin-top: 30px;
+	   margin-bottom: 40px;
+   }
+   .copyright {
+	   text-align: center;
+	   display: flex;
+	   flex-direction: column;
+	   justify-content: flex-end;
+	   padding-left: 200px;
+   }
+
+  .container {
+	  width: 1000px;
+	min-height: 1px;
+	margin: auto;
+	padding: 0 60px;
+  }
+
+  .small {
+		text-align: center;
+		display: block;
+		margin-top: 90px;
+		padding-bottom: 20px;
+  }
+ 
+button {
+	background-color: white;
+	border: 2px solid black;
+	border-radius: 0px;
+	height: 33px;
+	width: 140px;
+	font-family: inherit;
+	font-size: 12px;
+	margin-top: 18px;
+}
+
+
 
 
