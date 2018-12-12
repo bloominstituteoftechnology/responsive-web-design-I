@@ -96,7 +96,7 @@ p {
 	display: flex;
 }
 .container {
-	max-width: 1000px;
+	max-width: 600px;
 	margin: 0 auto;
 	height: 1536px;
 }
@@ -274,24 +274,22 @@ footer p {
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
+    .container {
+        padding: 0px;
+    }
     header nav {
         flex-direction: column;
-        border: 1px solid red;
-        align-items: center;
     }
     header nav a {
         border: 1px solid gray;
         font-size: 30px;
-        width: 400px;
+        width: 459px;
     }
     .btn {
         width: 50%;
     }
-    section .top-content .card {
-        /* flex-wrap: wrap;
-        width: 100px; */
-    }
+    
     .top-content {
         width: 100%;
         flex-wrap: wrap;
@@ -305,5 +303,10 @@ footer p {
     }
     .card4, .card5 {
         margin-left: 0px;
+    }
+    footer p {
+        display: flex;
+        width: 100%;
+        justify-content: center;
     }
 }
