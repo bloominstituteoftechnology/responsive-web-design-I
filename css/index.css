@@ -37,71 +37,11 @@ q:before, q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
-/* Set every element's box-sizing to border-box */
-* {
-    box-sizing: border-box;
-}
-
-html, body {
-    height: 100%;
-    font-family: 'Titillium Web', sans-serif;
-}
-
-h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
-}
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
 
 * {
     box-sizing: border-box;
@@ -119,8 +59,6 @@ h1, h2, h3, h4, h5 {
     letter-spacing: 1px;
     margin-bottom: 15px;
 }
-
-/* Your code starts here! */
 
 nav {
 	width: 875px;
@@ -174,20 +112,6 @@ h1 {
 	margin-bottom: 30px;
 }
 
-.head-contact {
-	font-size: 40px;
-	margin-top: 50px;
-	margin-bottom: 30px;
-	text-align: center;
-}
-
-.contactimg {
-	width: 875px;
-	height: 250px;
-	margin-right: 15px;
-	margin-top: 30px;
-}
-
 .derp {
 	display: flex;
 	justify-content: space-around;
@@ -211,34 +135,8 @@ h1 {
 	width: 150px;
 }
 
-.service {
-	border-bottom: 2px solid black;
-	display: flex;
-	flex-direction: column;
-	height: 370px;
-}
-
-.services-header-img {
-	height: 200px;
-	width: 100%;
-}
-
-.services {
-	width: 875px;
-	margin-top: 30px;
-}
-
-.services > h2 {
-	font-size: 30px;
-}
-
 section {
 	display: flex;
-}
-
-.types {
-	display: flex;
-	flex-wrap: wrap;
 }
 
 .content1 p {
@@ -251,125 +149,9 @@ section {
 	margin-bottom: 20px;
 }
 
-.derpderp {
-	height: 220px;
-	width: 400px;
-	border: 1px solid black;
-	background-color: #EAECEE;
-	padding: 15px;
-	margin: 15px;
-}
-
-.derpderp:last-of-type {
-	margin-bottom: 40px;
-}
-
-button {
-	height: 35px;
-	width: 120px;
-	border: 1px solid black;
-	border-radius: 10px;
-	margin-top: 20px;
-}
-
 .middle-img {
 	margin-top: 40px;
 	margin-bottom: 40px;
-}
-
-.facts {
-	display: flex;
-	flex-direction: row;
-	border-top: 2px solid black;
-	padding-top: 40px;
-	margin-bottom: 40px;
-}
-
-.text {
-	padding: 0 15px;
-}
-
-.text > ul {
-	line-height: 2;
-	padding-top: 20px;
-	padding-left: 15px;
-	list-style-type: square;
-}
-
-form {
-	line-height: 1.5;
-	width: 600px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	border: 2px dashed black;
-	margin-left: 150px;
-	margin-bottom: 40px;
-	padding: 50px;
-	background-color: #EEEAEA
-}
-
-.last {
-	height: 50px;
-}
-
-.submit {
-	height: 50px;
-	width: 80px;
-	border: 1px solid black;
-	text-align: center;
-}
-
-.container {
-	display: block;
-	position: relative;
-	padding-left: 35px;
-	margin-bottom: 12px;
-	cursor: pointer;
-}
-
-.container input {
-	position: absolute;
-	opacity: 0;
-	cursor: pointer;
-	height: 0;
-	width: 0;
-}
-
-.checkmark {
-	position: absolute;
-	top: 5px;
-	left: 0;
-	height: 25px;
-	width: 25px;
-	background-color: #EEE;
-	border: 1px solid black;
-}
-
-.container:hover input ~ .checkmark {
-	background-color: #CCC;
-}
-
-.container input:checked ~ .checkmark:after {
-	background-color:  #BBC4CD;
-}
-
-.checkmark:after {
-	content: "";
-	position: absolute;
-	display: none;
-}
-
-.container input:checked ~ .checkmark:after {
-	display: block;
-}
-
-.container .checkmark:after {
-	left: 8px;
-	top: 5px;
-	width: 5px;
-	height: 10px;
-	border: solid darkgray 1px;
 }
 
 .contact {
@@ -399,24 +181,14 @@ footer {
 	padding-right: 15px;
 }
 
-#get-started {
-	font-family: 'Titillium Web', sans-serif;
-	color: silver;
-	text-decoration: none;
-	margin-right: 70px;
-	margin-top: 50px;
-	display: fixed;
-}
 
-.services-header-img {
-	height: 200px;
-	width: 100%;
-}
+@media only screen and (max-width: 800px) {
+	html {
+		width: 700px;
+	}
 
-
-@media (max-width: 800px) {
 	body {
-		width: 750px;
+		width: 700px;
 	}
 
 	.nav-logo {
@@ -468,12 +240,11 @@ footer {
 	}
 
 	.content1 p {
-		width: 360px;
+		width: 320px;
 	}
 
 	.middle-img {
-		width: 750px;
-		margin: 20px 0;
+		width: 100%;
 	}
 
 	.content2 p {
@@ -481,6 +252,89 @@ footer {
 	}
 }
 
-@media (max-width: 500px) {
+@media only screen and (max-width: 500px) {
+	html {
+		width: 430px;
+	}
+
+	body {
+		width: 430px;
+	}
+
+	.nav-logo {
+		display: none;
+	}
+
+	.logo-tablet {
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+
+	.head {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 0;
+		padding-top: 0;
+	}
+
+	nav {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		height: 300px;
+		padding-left: 20px;
+		width: 430px;
+		font-size: 20px;
+	}
+
+	nav > a {
+		padding: 15px 240px 0;
+		border-top: 1px solid gray;
+	}
+
+	nav > a:last-of-type {
+		padding-bottom: 15px;
+		border-bottom: 1px solid gray;
+	}
+
+	header {
+		padding-right: 30px;
+		width: 100%;
+		flex-direction: column;
+	}
+
+	section {
+		width: 480px;
+		display: flex;
+		flex-direction: column;
+		margin: 0 auto;
+	}
+
+	.section1 {
+		margin-left: 20px;
+	}
+
+	.content1 > p {
+		width: 400px;
+	}
+
+	.middle-img {
+		width: 100%;
+		margin: 15px auto;
+	}
+
+	.content2 {
+		margin-top: 40px;
+	}
+
+	.content2 > p {
+		width: 400px;
+	}
+
+	.section2 {
+		display: flex;
+		flex-direction: column;
+	}
 
 }
