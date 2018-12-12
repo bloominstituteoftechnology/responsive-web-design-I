@@ -291,7 +291,22 @@ article {
 
   header nav a:first-child {
     border-top: 2px solid lightgray;
-  } 
+  }
+
+
+  .main-content-wrapper * {
+    display: block;
+  }
+
+  .introduction .intro-column, .product-and-services .p-and-s-column {
+    width: 100%;
+    border: 1px solid green;
+    margin: 2rem 0;
+  }
+
+  .introduction .intro-column:first-child {
+    margin-top: 0;
+  }
 }
 
 
