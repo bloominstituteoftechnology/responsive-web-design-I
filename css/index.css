@@ -1,3 +1,285 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+.container {
+  margin: 0 auto;
+  width: 876px;
+/*   border: 1px solid red; */
+  display: inline-block
+}
+
+/* .container img {
+  padding: 30px 0px 0px 930px;
+} */
+header {
+  width: 876px;
+  height: 10px;
+  position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+}
+
+header .logo {
+  top: 0;
+  right: 0;
+/*   border: 1px solid red; */
+  display: inline-block;
+  position: absolute;
+}
+
+header a {
+  text-decoration: none;
+  background: lightblue;
+  color: gray;
+  line-height: 3;
+/*   width: 500px; */
+  margin-left: 20px;
+  margin-right: 20px;
+  
+/*   border: 1px solid red; */
+
+  display: inline-block
+  position: absolute;
+
+}
+
+.mainheading {
+width: 873px;
+  height: 435px;
+/*   border: 1px solid red; */
+  margin-top: 100px;
+  display: inline-block;
+  position: relative;
+   border-bottom-color: black;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+
+.mainheading .box3a {
+  width: 436px;
+  height: 435px;
+  text-transform: uppercase;
+  weight: bold;
+  font-size: 40px;
+/*   border: 1px solid red; */
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  padding-top: 70px;
+}
+
+.mainheading .box3a button {
+/*   border: 1px solid red; */
+  font-size:50%;
+  background: white;
+  border-color: black;
+  border-width: 1px;
+  border-style: ridge; 
+/*     padding-top: 100px; */
+}
+
+.mainheading .box3b {
+ width: 435px;
+/*   border: 1px solid red; */
+  position: absolute;
+  right: 0;
+}
+
+.top-section {
+/*    border: 1px solid red; */
+  height: 130px;
+}
+
+.top-section .box4 {
+  width: 440px;
+  padding: 10px 0px 10px 0px;
+  display: inline-block;
+  position: relative;
+/*   border: 1px solid red; */
+  display: inline-block; 
+}
+
+.top-section .box4 h2 {
+    font-weight: bold;
+    text-transform: uppercase;
+/*     border: 1px solid red; */
+}
+
+.top-section .box5 {
+  width: 435px;
+  left: 440px;
+  bottom: 120px;
+  padding: 10px 0px 10px 0px;
+  display: inline-block;
+  position: relative;
+/*   border: 1px solid red; */
+}
+
+.top-section .box5 h2{
+    font-weight: bold;
+    text-transform: uppercase;
+/*     border: 1px solid red; */
+}
+
+.middle-img{
+/*   background: white; */
+/*   max-width: 6000px; */
+/*   height: auto; */
+  
+  width: 876px;
+    height: 182px;
+    object-fit: cover;
+/*     border: 1px solid red; */
+}
+
+
+.bottom-section {
+/*    border: 1px solid red; */
+  border-bottom-color: black;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+
+.bottom-section .box-7 {
+  width: 279px;
+  padding: 0px 0px 0px 10px;
+  display: inline-block;
+  position: relative;
+/*     border: 1px solid red; */
+/*   display: inline-block; */
+/*   box-sizing: border-box; */
+  
+}
+
+.bottom-section .box-7 h2{
+    font-weight: bold;
+    text-transform: uppercase;
+/*     border: 1px solid red; */
+}
+
+.bottom-section .box-8 {
+/*   right:10; */
+/*   top: 0; */
+/*   margin: 0px 0px 0px 80px; */
+  width: 279px;
+/*  border: 1px solid red; */
+  display: inline-block;
+  position: relative;
+/*   display: inline-block; */
+/*   box-sizing: border-box; */
+  
+}
+
+.bottom-section .box-8 h2{
+    font-weight: bold;
+    text-transform: uppercase;
+/*     border: 1px solid red; */
+}
+
+.bottom-section .box-9 {
+  width: 279px;
+  display: inline-block;
+  position: relative;
+/*     border: 1px solid red; */
+/*   display: inline-block; */
+/*   box-sizing: border-box; */
+  
+}
+
+.bottom-section .box-9 h2{
+    font-weight: bold;
+    text-transform: uppercase;
+/*     border: 1px solid red; */
+}
+
+
+
+.contact {
+  line-height: 2;
+  margin: 10px 0px 0px 80px;
+  width: 300px;
+  padding: 0px 0px 10px 0px;
+  display: inline-block;
+  position: relative;
+/*     border: 1px solid red; */
+}
+
+.box-10 {
+  display: inline-block;
+  position: relative;
+}
+.container3 h2 {
+  font-weight: bold;
+}
+
+.box-11 {
+  
+  width: 900px;
+  padding: 10px 0px 0px 300px;
+  display: inline-block;
+  position: relative;
+/*       border: 1px solid red; */
+}
