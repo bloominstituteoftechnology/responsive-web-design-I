@@ -1,0 +1,290 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+.container{
+	width: 100%;
+	height: 100%;
+}
+p{
+    line-height: 1.4;
+}
+h1{
+	font-size: 30px;
+}
+body{
+	width: 70%;
+	margin:  0 auto;
+}
+.logo{
+	margin-bottom: 2%;
+}
+.nav-container {
+	display: flex;
+	align-items: center;
+	flex: 1;
+	justify-content: space-between;
+	width: 100%;
+	background-color: white;
+  }
+
+.anav{
+    display: block;
+    float: left;
+    padding: 10px 2%;
+    color: lightslategray;
+    text-decoration: none;
+    text-align: center;
+	border-radius: 3px;
+	order:0;
+}
+
+.nav-container a:nth-child(1){
+	order: 1;
+}
+.anav:hover{
+    padding: 10px 2%;
+    color: white;
+    background-color: slategray;
+    text-decoration: none;
+}
+
+a{
+    color: grey;
+    text-decoration: none;
+}
+
+
+.features, .services{
+	display: flex;
+}
+.content p, .content h2{
+	margin: 20px;
+}
+
+
+.divider{
+    border: 1px solid black;
+    margin: 4% 0;
+}
+.divider1{
+    border: .5px solid black;
+    margin: 4% 0;
+}
+
+
+.copyright{
+    text-align: center;
+	padding: 20px 0;
+	margin-top: 20px;   
+}
+
+.sector{
+	margin: 20px 0 0 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.sector h1{
+	font-size: 70px;
+	text-align: center;
+}
+.innovation{
+	text-align: center;
+}
+strong{
+    border: 1px solid black;
+    padding: .5% 12%;
+}
+.middle-img{
+	max-width: 100%;
+	margin: 30px 0;
+	width: 100%;
+}
+.ino-img{
+	border-radius: 100%;
+	max-width: 100%;
+	animation: pulse 2s infinite;
+}
+
+.services-service{
+padding: 0 15px 0 0;
+}
+
+.services-vision{
+padding: 0 0 0 15px;
+}
+
+@keyframes pulse{
+    0% {box-shadow: 0 0 0 0 rgba(0,0,0,0.4)}
+    70% {box-shadow: 0 0 0 10px rgba(0,0,0,0)}
+    100%{box-shadow: 0 0 0 0 rgba(0,0,0,0)}
+}
+
+
+
+/* Small devices (portrait tablets and large phones, 800px and down) */
+@media only screen and (max-width: 800px) {
+	.ino-img{
+		display: none;
+	}
+
+	body{
+		width: 95%;
+		margin: 0 auto;
+	}
+
+	.nav-container{
+		flex-flow: row wrap;
+	}
+	.nav-container .anav{
+		order: 1;
+	}
+	.nav-container a:nth-child(1){
+		order: 0;
+		width: 100%;
+		text-align: center;
+	}
+
+} 
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 500px) {
+
+.logo{
+	margin-top: 5px;
+	order: 0;
+}
+
+.sector h1{
+	font-size: 50px;
+}
+.ino-img{
+	display: none;
+}
+
+.features{
+	flex-direction: column;
+
+}
+.features{
+	text-align:center;
+}
+.features-feature {
+	margin-bottom: 25px;
+}
+.services{
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.services-vision{
+	padding: 0;
+	margin: 10px 0;
+}
+
+.services-product{
+	margin: 15px 0;
+	padding: 0;
+}
+.services-service{
+	margin: 10px 0;
+	padding: 0;
+}
+
+footer, .copyright{
+	text-align: center;
+}
+
+.divider{
+	margin: 20px 0;
+}
+body{
+	width: 100%;
+}
+.nav-container{
+	width: 100%;
+	margin-top: 0px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.anav{
+	color: gray;
+	border: .5px solid lightgray;
+	width: 100%;
+	border-radius: 0;
+}
+
+header{
+	display: flex;
+	flex-direction: column;
+}
+
+} 
