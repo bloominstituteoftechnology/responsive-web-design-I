@@ -80,7 +80,7 @@ header nav {
 header nav ul {
     display: flex;
     flex-direction: row;
-    margin-top: 122px;
+    align-self: flex-end;
     margin-left: 10px;
 }
 
@@ -94,13 +94,11 @@ header nav ul a {
 }
 
 header nav a {
-    margin-top: 100px;
     margin-right: 20px;
+    display: flex;
+    align-self: flex-end;
 }
 
-header nav a img {
-    margin-left: 20px;
-}
 div.second-part {
 	display: flex;
 	text-align: center;
@@ -114,12 +112,11 @@ div.header-anchor{
     margin-top: 77px;
     margin-right: 54px;
     margin-left: 140px;
+    align-items: center;
 }
 
 div.second-part h1 {
 	font-size: 80px;
-	top: 60px;
-	right: 580px;
 }
 
 div.second-part .header-anchor .get-started {
@@ -129,7 +126,6 @@ div.second-part .header-anchor .get-started {
     border: solid 1px black;
     padding-top: 5px;
     color: gray;
-    margin-left: 85px;
 }
 
 hr {
@@ -174,5 +170,50 @@ section.contact div {
 footer {
 	text-align: center;
 }
+
+/* When the width of the display is 800px apply these styles */
+@media (max-width: 800px){
+    .container {
+        width: 800px;
+    }
+    header nav {
+        flex-direction: column-reverse;
+    }
+
+    header nav ul {
+        align-self: center;
+    }
+    
+    header nav a {
+        align-self: center;
+        margin-top: 20px;
+    }
+
+    hr {
+        width: 736px;
+    }
+
+    
+    div.second-part {
+        justify-content: center;
+    }
+
+    .second-part img {
+        display: none;
+    }
+
+    div.header-anchor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    align-items: center;
+    }
+
+    img.middle-img {
+        width: 720px;
+        margin-left: 37px;
+}
+
 
 
