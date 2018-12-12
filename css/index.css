@@ -1,3 +1,170 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+body { line-height: 1; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after,
+q:before, q:after { content: ''; content: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+/* Set every element's box-sizing to border-box */
+* { box-sizing: border-box; }
+html, body { height: 100%; font-family: 'Titillium Web', sans-serif; }
+h1, h2, h3, h4, h5 { font-family: 'Bangers', cursive; letter-spacing: 1px; margin-bottom: 15px; }
 
 
+/*****************************
+	Your code starts here! 
+*****************************/
+body { width: 100%; margin: 0 auto; padding: 0 24px 0 24px; }
+@media only screen and (min-width: 800px) { body { width: 800px; } }
+
+section { position: relative; }
+h1 { font-size: 64px; }
+h2 { font-size: 24px; }
+p { line-height: 1.25; }
+
+nav { 
+	margin: 0 0 48px -24px; 
+    position: fixed;
+    background-color: white;
+    padding: 12px 24px 12px 24px;
+    width: 100%;
+    z-index: 5;
+}
+nav a { font-size: 12px; text-decoration: unset; color: #888888; }
+nav a:hover { color: black; transition-duration: 0.25s; }
+@media only screen and (min-width: 800px) { nav { width: 800px; } }
+
+.container-nav { display: flex; flex-direction: row; }
+.nav-ul { width: 100%; display: flex; justify-content: space-between;  }
+.nav-li { flex: 1 1 auto; margin: 5px 0 0 0; }
+.nav-logo { flex: 0 1 auto; margin: -5px 0 0 0; }
+@media only screen and (min-width: 800px) { .nav-ul { width: 800px; } }
+
+#header { position: relative; top: 96px; margin: 0 0 133px 0; }
+
+.header-left { align-self: center; flex: 1 1 auto; }
+.header-right { align-self: center; flex: 1 1 auto; }
+
+.header-img { min-width: 200px;	max-width: 80%; }
+.middle-img { width: 100%; }
+
+.services-header { position:relative; top:72px; margin:0 0 100px 0; }
+.services-header-img { width: 100%; }
+.services-info-img { width: 100%; }
+
+.container { margin: 24px 0 24px 0; }
+.container-col { display: flex; flex-direction: column; }
+.container-row { display: flex; }
+.item { flex: 0 1 auto; padding: 0 24px 0 0; }
+
+.container-gallery { display: flex; margin: 0 -12px 0 -12px; }
+.item-gallery { 
+	flex: 0 1 auto; 
+	background-color: #dddddd;
+	padding: 24px;
+	margin: 24px 12px 0px 12px;
+	border: 1px solid black; }
+
+.product-header { position:relative; top:96px; margin:0 0 72px 0; }
+.product-header-img { width: 50%; }
+.h1-product { 
+	margin:-200px 0 200px 0; 
+	color: #ffffff; }
+@media only screen and (min-width: 0px) and (max-width: 799px) { .h1-product { margin: -28% 0 28% 0; } }	
+.product-gallery-1 { 
+	flex: 0 1 auto; 
+	background-color: #333333;
+	color: #dddddd;
+	padding: 24px;
+	margin: 24px 12px 0px 12px;
+	border: 1px solid black; }
+.product-gallery-2 { 
+	flex: 0 1 auto; 
+	background-color: #dddddd;
+	padding: 24px;
+	margin: 24px 12px 0px 12px;
+	border: 1px solid black; }
+
+.border-top { 
+	border-top: 1px solid black;
+	margin: 32px 0 32px 0;
+	padding: 32px 0 0 0;
+}
+.border-bottom { 
+	border-bottom: 1px solid black;
+	margin: 32px 0 32px 0;
+	padding: 0 0 32px 0;
+}
+
+a.body-link { color: #555555; font-style: italic; text-decoration: none; }
+a.body-link:hover { color: black; text-decoration: none; transition-duration: 0.25s; }
+a.body-link:visited { color: #333333; text-decoration: none; }
+
+.contact { margin: 32px 12px 32px 12px; }
+
+footer { margin: 24px 0 0 0; padding: 24px 0 12px 0; }
+.copyright { font-size: 12px; text-align: center; }
+
+a.phone, a.email { 
+	color: black;
+	text-decoration: none;
+	line-height: 2; }
+a.phone:visited, a.email:visited { 
+	color: black;
+	text-decoration: none; }
+
+.w-50 { width: 50%; margin: 0 -5px 0 0; }
+.w-33 { width: 33%; margin: 0 -1px 0 0; }
+
+ul.services-list { list-style-type: square; list-style-position: inside; margin: 12px 0 0 12px; }
+
+
+/**************************
+Button styling override
+https://css-tricks.com/overriding-default-button-styles
+**************************/
+button {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 16px;
+    background: #ffffff;
+    color: #000000;
+    display: inline-block;
+    border: 1px solid black;
+    padding: 6px 24px 6px 24px;
+    margin: 0;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    transition: background 250ms ease-in-out, 
+                transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+button:hover, button:focus { border: 1px solid white; background: #030303; color: #ffffff; }
+button:focus { outline: 1px solid #ffffff; outline-offset: -4px; }
+button:active { transform: scale(0.99); }
