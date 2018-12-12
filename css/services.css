@@ -65,11 +65,9 @@ h1, h2, h3, h4, h5 {
 
 /* Your code starts here! */
 
- body{
-	/* width:876px; 
-	margin:0 auto;  */
-	
-} 
+h1{
+    font-size: 25px;
+}
 
 .master{
 	display:flex;
@@ -83,120 +81,106 @@ h1, h2, h3, h4, h5 {
 	justify-items: center;
 	width: 876px;
 }
-
 header{
 	display: flex;
 	justify-content: space-between;
-	width:880px;
-	height: 200px;
-	margin-bottom: 15px;
+	width:100%;
+	height: 10%;
 	align-items: center;
-	padding-top: 50px;
+    padding-top: 25px;
+}
+
+.services{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3%;
+    border-bottom: 1px solid black;
+    height: 8%;
 }
 
 nav{
 	display: flex;
-	width: 700px;
 	align-content: center;
-	justify-content: flex-start;
-	align-content: baseline;
-}
-
-a{
-	text-decoration: none;
-	color:black;
-	font-weight: 600;
+	justify-content: space-around;
+    align-content: baseline;
+    width: 70%;
 }
 
 nav a{
-	margin-right: 30px;
-	height:35px;
-	width: 75px;
-	display:flex;
-	justify-content: center;
-	align-items: center;
-	border:2px solid white;
+    text-decoration: none;
+    color: #A7A7A7;
+    font-weight: 600;
 }
 
-nav a:hover{
-	border:2px solid black;
-	border-radius: 10px;
-	background-color:grey;
+.grey-box-container{
+    display:flex;
+    flex-wrap: wrap;
+    width:100%;
+    height: 900px;
+    align-content: space-between;
+    justify-content: space-between;
+    margin-top: 5%;
+    padding-bottom: 5%;
+    border-bottom: 2px solid black;
 }
 
-address p{
-	margin-bottom: 10px;
+.grey-box{
+    border:1px solid black;
+    display:flex;
+    align-content: space-evenly;
+    justify-content: space-evenly;
+    background-color: #F4F3F4;
+    padding: 10px;
+    flex-direction: column;
+    width: 48%;
+    height: 30%;   
 }
 
-.large-items {
-	display: flex;
-	justify-content: space-between;
-	align-items: center; 
-	width: 100%;
-	margin-bottom: 60px;
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    background-color: rgb(255, 254, 255);
+    border: 1px solid black;
+    height: 15%;
+    width: 35%;
+    border-radius: 5px;
 }
 
-.innovation{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	height: 379px;
-	width: 379px;
-	margin-left: 75px;
+.fun-facts{ 
+    display:flex;
+    justify-content: space-between;
 }
 
-.large-items div h1{
-	text-align: center;
-	font-size: 68px;
-	letter-spacing: 3px;
-	margin-bottom: 45px;
+.fun-facts img{
+    margin-top: 4%;
+    display:flex;
 }
 
-.large-items div p{
-	height: 32px;
-	width: 175px;
-	display: flex;
-	border: 1px solid black;
-	align-items: center;
-	justify-content: center;
-	letter-spacing: 2px;
+.fun-facts section{
+    margin-top: 4%;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    justify-content: space-between;
 }
 
-.large-items div p:hover{
-	background-color: grey;
+
+address{
+    margin-top:10%;
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
 }
 
-.Features-and-about{
-	display: flex;
-	/* width: 100%; */
-	margin-bottom: 26px;
-	justify-content: center;
-	padding: 30px 10px 10px 10px;
-	border-top: 2px solid black;
+ol{
+    display:flex;
+    flex-direction: column;
+    list-style-type: square;   
+    list-style-position: inside;
 }
 
-.triple-menu{
-	display: flex;
-	margin-bottom: 75px;
-	justify-content: space-between;
-}
-
-.middle-img{
-	margin-bottom: 30px;
-}
-
-.contact-info{
-	display: flex;
-	flex-direction: column;
-	border-top:	2px solid black;
-	padding-top: 25px;
-	width: 100%;
-}
-
-.copyright {
-	margin-top: 20px;
-	display: flex;
-	justify-content: center;
-	font-size: 16px;
+li{
+    margin-bottom: 10px;
 }
