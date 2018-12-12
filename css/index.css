@@ -236,7 +236,7 @@ footer p {
 @media (max-width: 800px) {
 
     .container {
-        padding: 20px;
+        /* padding: 20px; */
     }
 
     header {
@@ -280,11 +280,13 @@ footer p {
     }
     header nav {
         flex-direction: column;
+        padding: 0;
     }
     header nav a {
         border: 1px solid gray;
         font-size: 30px;
-        width: 459px;
+        width: 481px
+        /* border-right: 100px; */
     }
     .btn {
         width: 50%;
@@ -293,20 +295,32 @@ footer p {
     .top-content {
         width: 100%;
         flex-wrap: wrap;
+        padding: 10px;
     }
     .card2 {
         margin-left: 0px;
     }
+    .middle-img {
+        width: 100%;
+    }
+
     .bottom-content {
         width: 100%;
         flex-wrap: wrap;
+        padding: 10px;
     }
     .card4, .card5 {
         margin-left: 0px;
     }
+
+    .contact {
+        padding: 10px;
+    }
+
     footer p {
         display: flex;
         width: 100%;
         justify-content: center;
+        padding: 10px;
     }
 }
