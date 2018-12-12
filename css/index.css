@@ -64,17 +64,17 @@ h1, h2, h3, h4, h5 {
 
 .container {
   margin: 20px auto;
-  width: 876px;
+  width: 768px;
   /* border: 1px solid red; */
 }
 
-header {
+.header {
   border: 25px blue;
   display: flex;
   justify-content: space-between;
 }
 
-header .logo {
+.header .logo {
   /* border: 1px solid red; */
 }
 
@@ -102,11 +102,11 @@ header a {
 }
 
 .mainheading {
-width: 873px;
+/* width: 873px; */
   height: 435px;
 /*   border: 1px solid red; */
   margin-top: 100px;
-  display: inline-block;
+  /* display: inline-block; */
   position: relative;
   border-bottom: 3px solid black;
 }
@@ -115,7 +115,7 @@ width: 873px;
   width: 436px;
   height: 435px;
   text-transform: uppercase;
-  weight: bold;
+  /* weight: bold; */
   font-size: 40px;
 /*   border: 1px solid red; */
   text-align: center;
@@ -273,4 +273,77 @@ width: 873px;
 .box-11 {
   padding: 10px 0px 0px 300px;
 /*       border: 1px solid red; */
+}
+
+
+@media (max-width: 800px) {
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  
+  .header header a {
+    padding: 15px;
+    background-color: white;
+  }
+
+  .header header nav {
+    display: flex;
+    justify-content: space-between;
+    align-content: baseline;
+  }
+
+.mainheading {
+  margin-top: 0px;
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap; */
+}
+
+  .mainheading .box3a {
+      /* height: 435px; */
+    font-size: 60px;
+    /* text-align: center; */
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* position: absolute; */
+    /* flex-direction: column; */
+    /* padding-top: 70px; */
+    /* justify-content: center; */
+    /* align-content: center; */
+    font-style: italic;
+    font-weight: bold;
+
+  }
+
+  .box3b {
+    display: none;
+  }
+
+  .container {
+    width: 768px;
+    border: 9px solid papayawhip;
+    /* display: flex;
+    justify-content: center;
+    align-items: flex-end; */
+
+  }
+  
+}
+
+@media (max-width: 500px){
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  
+  header {
+    align-items: flex-start;
+  }
+  
 }
