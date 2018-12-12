@@ -63,30 +63,26 @@ h1, h2, h3, h4, h5 {
 /* Your code starts here! */
 
 .container {
-  margin: 0 auto;
+  margin: 20px auto;
   width: 876px;
-/*   border: 1px solid red; */
-  display: inline-block
+  /* border: 1px solid red; */
 }
 
-/* .container img {
-  padding: 30px 0px 0px 930px;
-} */
 header {
-  width: 876px;
-  height: 10px;
-  position: fixed;
-    left: 0px;
-    top: 0px;
-    z-index: 1;
+  border: 25px blue;
+  display: flex;
+  justify-content: space-between;
 }
 
 header .logo {
-  top: 0;
-  right: 0;
-/*   border: 1px solid red; */
-  display: inline-block;
-  position: absolute;
+  /* border: 1px solid red; */
+}
+
+header nav {
+  /* border: 1px solid red;  */
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
 }
 
 header a {
@@ -100,8 +96,8 @@ header a {
   
 /*   border: 1px solid red; */
 
-  display: inline-block
-  position: absolute;
+  display: inline-block;
+  /* position: absolute; */
 
 }
 
@@ -112,9 +108,7 @@ width: 873px;
   margin-top: 100px;
   display: inline-block;
   position: relative;
-   border-bottom-color: black;
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
+  border-bottom: 3px solid black;
 }
 
 .mainheading .box3a {
@@ -149,17 +143,17 @@ width: 873px;
 }
 
 .top-section {
-/*    border: 1px solid red; */
-  height: 130px;
+   /* border: 1px solid red; */
+  height: 163px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
 }
 
 .top-section .box4 {
   width: 440px;
-  padding: 10px 0px 10px 0px;
-  display: inline-block;
-  position: relative;
-/*   border: 1px solid red; */
-  display: inline-block; 
+  /*   border: 1px solid red; */
 }
 
 .top-section .box4 h2 {
@@ -170,11 +164,6 @@ width: 873px;
 
 .top-section .box5 {
   width: 435px;
-  left: 440px;
-  bottom: 120px;
-  padding: 10px 0px 10px 0px;
-  display: inline-block;
-  position: relative;
 /*   border: 1px solid red; */
 }
 
@@ -182,6 +171,7 @@ width: 873px;
     font-weight: bold;
     text-transform: uppercase;
 /*     border: 1px solid red; */
+
 }
 
 .middle-img{
@@ -195,12 +185,21 @@ width: 873px;
 /*     border: 1px solid red; */
 }
 
+.box-6 {
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .bottom-section {
 /*    border: 1px solid red; */
-  border-bottom-color: black;
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
+  border-bottom: 3px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  height: 180px;
 }
 
 .bottom-section .box-7 {
@@ -259,11 +258,7 @@ width: 873px;
 
 .contact {
   line-height: 2;
-  margin: 10px 0px 0px 80px;
-  width: 300px;
-  padding: 0px 0px 10px 0px;
-  display: inline-block;
-  position: relative;
+  /* padding: 0px 0px 10px 0px; */
 /*     border: 1px solid red; */
 }
 
@@ -276,10 +271,6 @@ width: 873px;
 }
 
 .box-11 {
-  
-  width: 900px;
   padding: 10px 0px 0px 300px;
-  display: inline-block;
-  position: relative;
 /*       border: 1px solid red; */
 }
