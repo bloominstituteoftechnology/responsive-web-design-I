@@ -1,3 +1,250 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+.container {
+	width: 1024px;
+	margin: 40px auto;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 1024px;
+	height: 100px;
+	padding: 40px 72px;
+	position: fixed;
+	top: 0;
+	z-index: 2;
+	background: white;
+}
+
+header nav {
+	display: flex;
+	line-height: 36px;
+}
+
+header nav a {
+  margin: 0 60px 0 0;
+	text-decoration: none;
+	font-size: .95rem;
+	font-weight: bold;
+	color: gray;
+}
+
+header nav a:hover {
+	text-decoration: underline;
+}
+
+header .logo {
+	margin-right: 0;
+}
+
+header, nav, .logo {
+	height: 40px;
+}
+
+section {
+ margin: 50px auto;
+ width: 876px;
+ line-height: 1.5;
+}
+
+.banner {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	height: 450px;
+	margin-top: 120px;
+	border-bottom: 1px solid black;
+}
+
+.banner .banner-column {
+	width: 50%;
+}
+
+.banner #headline {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 75px 0;
+	text-align: center;
+	line-height: 1;
+}
+
+.banner #headline h1 {
+	font-size: 4rem;
+}
+
+.banner #headline .button {
+	width: 150px;
+	padding: 5px 10px;
+	border: 1px solid black;
+	cursor: pointer;
+}
+
+.introduction {
+	display: flex;
+}
+
+.introduction .intro-column {
+	width: 50%;
+}
+
+.middle-image-wrapper {
+	text-align: center;
+}
+
+.product-and-services {
+	display: flex;
+	padding: 0 0 40px 0;
+	border-bottom: 1px solid black;
+	
+}
+
+.product-and-services .p-and-s-column {
+	width: 33%;
+}
+
+.contact-info {
+	line-height: 1;
+}
+
+.contact-info a {
+	color: black;
+	text-decoration: none;
+}
+
+.contact-info a:hover {
+	text-decoration: underline;
+}
+
+.footer {
+	padding-bottom: 150px;
+	bottom: 0;
+	text-align: center;
+	font-size: .85rem;
+}
+
+/* Services Page */
+.svc-section {
+	/* width: 1024px; */
+	/* margin: 0 auto; */
+}
+
+.services-intro {
+	display: flex;
+	flex-direction: column;
+}
+
+.services-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	border-top: 1px solid black;
+}
+
+.service-item {
+	flex: 0 0 48%;
+	border: 1px solid black;
+	padding: 2rem;
+	margin: 1.5rem 0;
+	background: #F4F3F4;
+}
+
+.svc-button {
+	width: 130px;
+	padding: 0.25rem 2rem;
+	margin-top: 1rem;
+	border: 1px solid black;
+	border-radius: 5px;
+	text-align: center;
+	background: white;
+	font-size: 0.75rem;
+	cursor: pointer;
+}
+
+.about-services {
+	display: flex;
+	justify-content: space-between;
+	border-top: 2px solid black;
+}
+
+.about-services-text ul {
+	width: 420px;
+	list-style-type: disc;
+	margin: 1.15rem;
+}
+
+.about-services-text, .services-info-img {
+	flex: 0 0 48%;
+	margin: 1.5rem 0;
+}
+
+
 
 
