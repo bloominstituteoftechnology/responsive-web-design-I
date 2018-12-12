@@ -1,3 +1,976 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5, .Innovation, .On, .Demand {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 
+
+@media (max-width: 800px){
+	.content1image {display: none;
+ }
+ 	.Header{
+		 display: flex;
+		 flex-direction: column-reverse;
+		 justify-content: center;
+		 
+	 }
+
+	 nav{
+		 width: 100%;
+		 order: 1;
+		 display: flex;
+		 justify-content: space-around;
+	 }
+
+	
+	
+	 div .content1{
+		width: 100%;
+		/* justify-content: center; */
+		/* background: lightblue; */
+		display: flex;
+		
+	 }
+	 
+
+	 button.GS{
+		align-self: center;
+		width: 180px;
+	height: 40px;
+ }
+
+
+
+}
+
+
+
+
+
+
+body{
+	width:800px;
+	/* display: flex; */
+	margin: 0 auto;
+}
+
+.container{
+	/* border: 1px solid red; */
+	width: 800px;
+	margin:0 auto;
+	/* display: flex;
+	justify-content: center; */
+	}
+
+.Header{
+	/* border: 1px solid blue; */
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: center;
+	line-height: 36px;  
+}
+
+
+nav{
+	/* border: 1px solid purple; 
+	background: lightgray; */
+	display: flex;
+	margin-left: 0;
+	}
+
+div nav a{
+	/* border: 1px solid green; */
+	margin: 15px 15px 20px 15px;
+	text-decoration: none; 
+	color: grey;
+	font-size: 12px;
+	width: 60px;
+	color: grey;
+	
+	}
+
+
+
+	
+  nav a:hover{
+	/* animation: wiggle 1s ease;
+  animation-iteration-count: 1; */
+  /* background: black; */
+	/* background: whitesmoke; */
+	
+	border-radius: 10px;
+	color:grey;
+	font-size: 20px;
+  }
+
+.Header .imglogo{
+	/* border: 1px solid yellowgreen; */
+	display: flex;
+	margin-top: 15px;
+	/* display: inline-block;
+	margin-right: 0px;
+	padding-left: 40px;
+	padding-top: 30px;
+	position: absolute; */
+	
+
+}
+
+ .logo{
+	/* border: 1px solid orange; */
+	/* display: inline-block;  */
+	/* margin-right: 0;
+	padding-top: 30px;
+	left: 920px;
+	top: 0; */
+	display: flex;
+	width: 183px;
+	height: 40px;
+
+	/* position: absolute;
+	background-image: url("img/logo.png"); */
+ }
+
+.logo:hover{
+	width: 230px;
+	height: 60px;
+}
+
+
+div .section1{
+	/* border: 1px solid green; */
+	margin-top: 15px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	/* background: lightblue; */
+	/* display: inline-block;
+	position: relative;
+	padding-top: 0; */
+	/* border-bottom: 3px solid black; */
+	width: 100%;
+	padding-bottom: 25px;
+}
+
+ 
+
+.content1{
+	/* border: 1px solid red;
+	background: lightgrey; */
+	font-size: 70px;
+	/* display: inline-block; */
+	width: 400px;
+	/* text-align: center; */
+	padding-left: 70px;
+	/* position: absolute; */
+	padding-top: 70px;
+	/* text-align: justify; */
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+.GS{
+	text-align: center;
+	/* display: block; */
+	width: 150px;
+	height: 30px;
+	/* margin-left: 55px; */
+	background: white;
+	align-self: center;
+	display: flex;
+	justify-content: center;
+	margin-top: 15px;
+}
+
+p.GStext{
+	display: flex;
+}
+
+/* h1{
+	border: 1px solid red;
+	display: flex;
+	flex-direction: column; 
+	align-items: center;
+
+} */
+  .Innovation, .On, .Demand{
+	/* border: 1px solid green; */
+	align-self: center;
+	font-size: 70px;
+	display: flex;
+  }
+
+  
+  h1 .On{
+	  /* padding-left: 80px; */
+  }
+
+  h1 .Demand{
+	  /* padding-left: 40px; */
+  }
+
+.content1image{
+	/* border: 1px solid blue;
+	background: lightpink; */
+	/* display: none; */
+	/* display: inline-block;
+	margin-right: 0;
+	margin-left: 200px;
+	padding-left: 200px;
+	width: 250px; */
+}
+
+
+
+p{
+	font-size: 12px;
+}
+
+.section2{
+	margin-top: 15px;
+	/* border: 1px solid red; */ 
+  /* background: lightgray;
+  /* position: relative; */
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+
+.main1{
+	/* border: 1px solid yellow; */
+	/* display: inline-block; */
+	width: 50%;
+	height: 100px;
+	
+
+}
+
+.main1 h5{
+	/* order: 1px solid green; */
+	
+	padding-top: 10px;
+
+}
+
+.main1 p{
+	/* order: 1px solid green; */
+	
+	font-size: 12px;
+}
+.main2{
+	/* border: 1px solid purple; */
+	/* display: inline-block; */
+	width: 50%;
+	/* margin-right: 0; */
+	/* position: absolute; */
+	height: 100px;
+	
+}
+
+.main2 h5{
+	/* order: 1px solid purple; */
+	padding-top: 10px;
+}
+
+.main2 p{
+	/* order: 1px solid orange; */
+	font-size: 12px;
+	
+}
+
+.section3{
+	/* border: 1px solid purple; */
+	/* display: block; */
+	width: 100;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-top: 10px;
+}
+
+.main3{
+	display: flex;
+	/* border: 1px solid purple; */
+	width:100%;
+	/* display: block; */
+}
+
+.middle-img{
+	/* border: 1px solid purple; */
+	/* display: block; */
+	width: 100%
+}
+
+.Section4{
+	/* border: 1px solid green; */
+	/* border: lightblue; */
+	/* display: inline-block; */
+	width: 100%;
+	height: 150px;
+	/* position: relative; */
+	display: flex;
+	flex-direction: row;
+	
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 15px;
+}
+
+.Section4 .Services{
+	/* border: 1px solid purple; */
+	/* width: 150px; */
+	margin: 0 5px;
+	/* flex-direction: row;
+	justify-content: flex-start;
+	flex-wrap: wrap; */
+	/* right: 50px; */
+	/* display: inline-block; */
+	/* top: 0;
+	bottom: 0;
+	left:0;
+	right:150px;  */
+	/* position: absolute; */
+}
+
+.Services p{
+	/* border: 1px solid green; */
+	display: flex;
+
+}
+
+.Section4 .Products{
+	/* border: 1px solid purple; */
+	/* width: 250px;
+	height: 100px;
+	display: flex; */
+	/* flex-direction: row;
+	justify-content: flex-start;
+	flex-wrap: wrap; */
+	/* display: inline-block; */
+	/* top: 0;
+	bottom: 0;
+	left: 270px;
+	right: 160px;  */
+	/* position: absolute; */
+}
+
+
+.Products p{
+	/* border: 1px solid green; */
+	display: flex;
+}
+
+.Section4 .Vision{
+	/* border: 1px solid purple; */
+	/* width: 250px;
+	height: 100px;
+	display: flex; */
+	/* flex-direction: row;
+	justify-content: flex-start;
+	flex-wrap: wrap; */
+	/* display: inline-block;
+	top: 0;
+	bottom: 0;
+	left: 550px;
+	right: 0px;  */
+	/* position: absolute; */
+}
+
+.Vision p{
+	/* border: 1px solid green; */
+	display: flex;
+}
+
+.bottomMain{
+	/* border: 1px solid purple; */
+	/* border-top: 2px solid black; */
+	padding-top: 15px;
+	margin-bottom: 50px;
+}
+
+.indexFooter{
+	/* border: 1px solid purple; */
+	margin-bottom: 75px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.copyright{
+	/* border: 1px solid purple; */
+	display: flex;
+}
+
+.SVcontainer{
+	/* border: 1px solid red; */
+	width: 800px;
+	margin: 0 auto;
+}
+
+.SVheader{
+	/* border: 1px solid blue; */
+	display: flex;
+	align-items: center;
+	justify-content: space-between; 	
+	/* flex-direction: row;
+	flex-wrap: wrap; */
+	/* background: lightgreen; */
+	/* justify-content: flex-start; */
+	width: 100%;
+	/* position: relative; */
+	margin-top: 30px;
+}
+
+.SVheader nav{
+	/* border: 1px solid red; */
+	/* background: lightpink; */
+	/* position: absolute; */
+	margin-left: 0;
+	display: flex;
+	justify-content: space-between;
+	background-color:transparent;
+	border: none;
+	
+	}
+
+.SVheader a{
+	/* border: 1px solid red; */
+	display: flex;
+	display: inline-block;
+	/* background: lightyellow; */
+	color: grey;
+	border: none;
+}
+
+
+.SVheader .SVIlogo{
+	/* border: 1px solid green; */
+	display: flex;
+	/* flex-direction: row;
+	flex-wrap: wrap; */
+	/* width: 200px;
+	z-index: 1;
+	position: absolute;
+	left:595px; */
+}
+
+.SVlogo{
+	display: flex;
+}
+
+.SVlogo:hover{
+	width: 230px;
+	height: 60px;
+}
+
+
+div .topImage{
+	/* border: 1px solid red; */
+	margin-top: 50px;
+}
+
+.topImage .services-header-img{
+	/* border: 1px solid red; */
+	width: 100%
+}
+
+.AboutServices{
+	/* border: 1px solid red; */
+	display: flex;
+	flex-direction: column;
+	/* background: lightsalmon; */
+	padding-bottom: 20px;
+	border-bottom: 1px solid black;
+}
+
+
+.AboutServices h1 {
+	margin-top: 15px;
+	/* border: 1px solid red; */
+	/* background: lightgreen; */
+	width: 80px;
+	font-size: 25px;
+	border: none;
+}
+
+.pAbtSv{
+	/* border: 1px solid red; */
+}
+
+
+.SVsection1{
+	/* border: 1px solid red; */
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	/* background: lightgreen; */
+
+}
+
+ .Svmain1{
+	border: 1px solid black;
+	display: flex;
+	flex-direction: column;
+	background: #E8E8E8;
+	margin-right: 10px;
+	width: 60%;
+	height: 210px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding: 20px;
+	
+}
+
+.SVmain2{
+	border: 1px solid black;
+	display: flex;
+	flex-direction: column;
+	background: #E8E8E8;
+	width: 60%;
+	height: 210px;
+	margin-left: 10px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding: 20px;
+}
+
+button{
+	display:flex;
+	width: 115px;
+	height: 25px;
+	margin-top: 50px;
+	background: white;
+	border:2px solid black;
+}
+
+button .GS, button:hover{
+opacity: 0.5;
+transition:all 0.25s ease;
+	
+} 
+
+
+
+ .SVsection2{
+	/* border: 1px solid red;  */
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start; 
+	/* background: lightgreen;  */
+} 
+
+ .SVmain3{
+	border: 1px solid black;
+	display: flex;
+	flex-direction: column;
+	background: #E8E8E8;
+	margin-right: 10px;
+	width: 60%;
+	height: 210px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding: 20px;
+	
+}
+
+.SVmain4{
+	border: 1px solid black;
+	display: flex;
+	flex-direction: column;
+	background: #E8E8E8;
+	width: 60%;
+	height: 210px;
+	margin-left: 10px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding: 20px;
+}
+ 
+
+
+ .SVsection3 {
+	/* border: 1px solid red; */
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	/* background: lightgreen; */
+	/* padding-bottom: 20px; */
+	border-bottom: 1px solid black;
+}
+
+.SVmain5{
+	border: 1px solid black;
+	display: flex;
+	flex-direction: column;
+	background: #E8E8E8;
+	margin-right: 10px;
+	width: 60%;
+	height: 210px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding: 20px;
+
+}
+
+.SVmain6{
+	border: 1px solid black;
+	display: flex;
+	flex-direction: column;
+	background: #E8E8E8;
+	width: 60%;
+	height: 210px;
+	margin-left: 10px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding: 20px;
+}
+
+.SVbottomSection{
+	/* border: 1px solid red; */
+	/* background: lightseagreen; */
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+.factsSummary{
+	/* border: 1px solid red; */
+	display: flex;
+	flex-direction: column;
+	/* background: lightgrey; */
+	margin-right: 10px;
+	width: 60%;
+	height: 270px;
+	margin-top: 20px;
+	margin-bottom: 15px;
+	padding: 20px;
+
+}
+
+ul {
+	list-style-type: disc;
+	list-style-position: inside;
+	/* background: lightcoral; */
+}
+
+.facts p{
+	/* border: 1px solid red; */
+} 
+
+.bottomImg{
+	/* border: 1px solid purple; */
+	display: flex;
+	flex-direction: row;
+	background: lightgrey;
+	width: 60%;
+	height: 270px;
+	margin-left: 10px;
+	margin-top: 20px;
+	margin-bottom: 15px;
+	/* padding: 20px; */
+}
+
+.services-info-img{
+	/* border: 1px solid red; */
+	display: flex;
+	width: 100%;
+	height: 100%;
+}
+
+.SVCR {
+	margin-top: 75px;
+	/* border: 1px solid red; */
+	display: flex;
+	justify-content: center;
+}
+
+.SVfooter{
+	display: flex;
+}  
+
+
+@media (max-width: 500px){
+	
+	.Header{
+		padding: 0;
+		/* background: lightblue; */
+	}
+	
+		.Header nav{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			/* justify-content: center; */
+			margin: 0;
+			/* background: lightpink; */
+			padding: 0;
+		}
+	
+	.Header nav a{
+		padding: 10px;
+		border-top: 1px solid grey;
+		font-size: 30px;
+		width: 100%;
+		text-align: center;
+		/* background: lightyellow; */
+		margin: 0;
+	
+	}
+	
+	.imglogo{
+		padding: 10px;
+		margin: 0;
+	}
+	
+	div .section1{
+		/* background: lightblue; */
+		margin-top: 0;
+		/* display: flex;
+		justify-content: center;
+		align-self: center; */
+	}
+	
+	.section1 .content1{
+		/* background: lightgreen; */
+		display:flex;
+		align-items: center;
+		justify-content: center;
+		align-content: center;
+	}
+	
+	button.GS{
+		width: 180px;
+		height: 40px;
+		display: flex;
+		align-self: center;
+		
+	}	
+	
+	.Innovation, .On, .Demand{
+		display: flex;
+	}
+	
+	.content1image.snippet{
+		/* background: lightyellow; */
+		margin-top: 0;
+	}
+	
+	p.GStext{
+		font-size: 20px;
+	}
+	
+	.section2{
+		display:flex;
+		flex-direction: column;
+		align-items: center;
+		/* background: lightyellow; */
+		height: 330px;
+		width: 800px;
+		/* border: 1px solid green; */
+	
+	}
+	
+	
+	 .main1, .main2 {
+		/* background: lightblue;  */
+		/* border: 1px solid red; */
+		width: 460px;
+		height: 160px;
+	
+	}
+	
+	
+	.main1 h5, .main2 h5{
+		font-size: 25px;
+		
+	}
+	
+	div .main2 p, div .main1 p{
+		font-size: 18px;
+		
+		/* border: 1px solid blue; */
+		
+		
+	}
+	
+	
+	
+	div .section3{
+		
+		justify-content: center;
+	}
+	
+	.section3 .main3{
+		width: 460px;
+		height: 160px;
+	}
+	
+  .Section4{
+		display:flex;
+		flex-direction: column;
+		/* border: 3px solid black;
+		background: lightpink; */
+		height: 480px;
+		width: 800px;
+		justify-content: center;
+		align-items: center;
+
+	}
+	
+	
+	.Vision,  .Products, .Services{
+		/* background: lightgreen; */
+		width: 460px;
+		height: 160px;
+		/* border: 1px solid red; */
+		display: flex;
+		flex-direction: column;
+	
+	}
+	
+	
+	.Vision h5, .Products h5, .Services h5{
+		font-size: 25px;
+		display: flex;
+		flex-direction: column;
+		/* border: 1px solid green;
+		background: lightcoral; */
+		
+		
+	}
+	
+	div .Vision p, div .Services p, div .Products p{
+		font-size: 18px;
+		/* background: lightgrey;
+		border: 1px solid blue; */
+		display: flex;
+		
+		
+	}
+
+	.bottomMain{
+		margin-left: 170px;
+	}
+
+	
+	
+}
+
+
+
+	/* div .Section4{
+		display: block;
+		flex-direction: column;
+		background: lightgreen;
+		flex-wrap: nowrap;
+		justify-content: center;
+		width: 500px;
+		height: 600px;
+		border: 1px solid blue;
+		
+	} */
+	
+	
+	
+	 /* div .Services, div .Products, div.Vision{
+		width: 500px;
+		height: 275px;
+		border: 1px solid red;
+		background: lightblue;
+		/* margin: 20px, 0; */
+		/* display: block; */
+		/* flex-direction: column; 
+		
+	}*/
+	
+	
+	
+	/*.Products h5, .Vision h5, .Services h5{
+		 font-size: 25px;
+		display: block;
+		width: 500px;
+		background: lightskyblue; 
+		
+	}*/
+	
+	
+	/*div .Services p, .Products p, .Vision p{
+		 font-size: 12px;
+		/* background: lightpink; */
+		/* border: 1px solid blue;
+		width: 500px;
+		display: block;
+		height: 250px;	 
+	} */
+	
+	
+	
+	
+	
