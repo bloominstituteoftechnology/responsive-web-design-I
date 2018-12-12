@@ -279,14 +279,26 @@ article {
 @media (max-width: 800px) {
   .container, .main-content-wrapper {
     max-width: 800px;
+    border: 1px solid fuchsia;
   }
 
   header {
     flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  header nav {
+    margin: 0 auto;
+    justify-content: space-evenly;
+  }
+
+  header nav a {
+    margin: 0 35px;
   }
 
   .banner {
     flex-direction: column;
+    justify-content: center;
   }
 
   .banner #hero-image-wrapper {
