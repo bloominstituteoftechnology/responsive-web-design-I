@@ -1,3 +1,281 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.main-container {
+    max-width: 874px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+}
+
+nav {
+    background-color: white;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.nav-item-wrapper {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding-left: 10px;
+    vertical-align: top;
+    width: 50%;
+}
+
+nav a {
+    color: gray;
+    text-decoration: none;
+}
+
+.logo-wrapper {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    width: 49%;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    height: 455px;
+    margin-bottom: 100px;
+    margin-top: 90px;
+}
+
+.header-container {
+    /* TODO update to flexbox */
+}
+
+.header-wrapper {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 350px;
+}
+
+.header {
+    font-size: 94px;
+}
+
+.button {
+    border: 1px solid;
+    font-size: 20px;
+    margin-top: 10px;
+    padding: 5px;
+    width: 185px;
+}
+
+.btn-learn {
+    border-radius: 6px;
+    font-size: 12px;
+    margin-top: 26px;
+    padding: 8px;
+    width: 126px;
+}
+
+.header-image {
+    height: 100%;
+}
+
+.divider {
+    margin-bottom: 50px;
+}
+
+.feature-content {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.feature-wrapper {
+    padding-right: 20px;
+    width: 50%;
+}
+
+.middle-img {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.service-content {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.service-wrapper {
+    padding-right: 10px;
+    width: 33.4%;
+}
+
+/* Below: service page
+row-column section flexbox */
+
+/*.services-header-img {*/
+    /*margin-top: 50px;*/
+    /*width: 100%;*/
+/*}*/
+
+/*.services-page-top-section {*/
+    /*margin-top: 30px;*/
+    /*margin-bottom: 40px;*/
+/*}*/
+
+/*.services-page-h1 {*/
+    /*font-size: 45px;*/
+/*}*/
+
+/*.row {*/
+    /*display: flex;*/
+    /*flex-direction: row;*/
+    /*flex-wrap: wrap;*/
+    /*width: 100%;*/
+/*}*/
+
+/*.column {*/
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*flex-basis: 100%;*/
+    /*flex: 1;*/
+    /*border: 1px solid;*/
+    /*background-color: #ededed;*/
+    /*margin-bottom: 40px;*/
+    /*padding: 20px;*/
+
+/*}*/
+
+/*.column-left {*/
+    /*margin-left: 20px;*/
+/*}*/
+
+/*.column-right {*/
+    /*margin-right: 20px;*/
+/*}*/
+
+/*.services-page-divider {*/
+    /*border-style: solid;*/
+    /*height: 3px;*/
+    /*background-color: black;*/
+/*}*/
+
+/*.services-page-last-section {*/
+    /*display: flex;*/
+    /*justify-content: space-around;*/
+/*}*/
+
+/*!*.facts-section-wrapper {*!*/
+/*!*width: 400px;*!*/
+/*!*}*!*/
+
+/*.facts-list-wrapper {*/
+    /*margin-right: 20px;*/
+/*}*/
+
+/*.facts-list {*/
+    /*list-style-type: disc;*/
+    /*margin-top: 30px;*/
+    /*padding-left: 0;*/
+
+/*}*/
+
+/*.facts-list-items {*/
+    /*margin-bottom: 20px;*/
+    /*list-style-position: inside*/
+/*}*/
+
+/* Above: service page row-column */
+
+.contact {
+    margin-bottom: 20px;
+}
+
+/* mail and phone emoji below */
+
+a[href^="mailto"]::before {
+    content: "📧 ";
+    text-decoration: none;
+}
+
+a[href^="tel"]::before {
+    content: "📞 ";
+    text-decoration: none;
+}
+
+.link {
+    color: black;
+    text-decoration: none;
+}
+
+.footer {
+    margin-bottom: 40px;
+    margin-top: 40px;
+    text-align: center;
+}
