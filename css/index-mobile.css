@@ -1,0 +1,286 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+*{
+  transition: all .55s ease-in-out;
+}
+
+body{
+	margin: 0 auto;
+	width: 880px;
+	font-size: 16px;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+
+nav:first-child{
+	padding-left: 0;
+}
+
+nav a{
+	text-decoration: none;
+	color: gray;  
+	background-position: right bottom;
+	transition: all .25s ease-in-out;
+	box-sizing: content-box;
+	display: inline-block;
+	padding: 25px;
+  }
+  
+nav a:hover{
+	background: linear-gradient(to right, black 50%, white 50%);
+	background-size: 200% 100%;
+	color: white;
+	background-position: left bottom;
+  }
+
+  nav a:last-child:hover{
+	background: white
+  }
+
+.starting-section{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 25px 0;
+	align-items: center;
+}
+
+.starting-section button{
+	border: 1px solid black;
+	background-color: white;
+	padding: 0 30px ;
+	font-family: 'Titillium Web', sans-serif;
+	font-weight: 600;
+	font-size: 16px;
+	width: 170px;
+	height: 40px; 
+	background-position: right bottom;
+	transition: all .25s ease-in-out;
+  }
+  
+  .starting-section button:hover{
+	background: linear-gradient(to right, black 50%, white 50%);
+	background-size: 200% 100%;
+	color: white;
+	background-position: left bottom;
+  }
+
+h1{
+	font-size: 72px;
+	text-align: center;
+}
+
+.left-div{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-left: 75px;
+}
+
+.main-section{
+	display: flex;
+	flex-wrap: wrap;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	justify-content: space-between;
+	padding: 20px 0;
+	align-content: space-between;
+}
+
+.sec1{
+	width: 49%;
+	
+}
+.sec2{
+	width: 32%;
+}
+
+.section{
+	display: flex;
+	align-items: center;
+	height: 250px;
+}
+
+.footer{
+	padding-top: 40px;
+}
+
+.copyright {
+	padding-top: 40px;
+	text-align: center;
+}
+
+.contact{
+	width: 59%;
+}
+
+@media (min-width: 500px) and (max-width: 800px){
+  body{
+    width: 100%;
+  }
+  nav{
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  } 
+  nav a{
+    padding: 15px;
+  }  
+  nav a:last-child{
+    order: -1;
+    width: 100%;
+    margin: 0 50%;
+  } 
+  .right-div{
+    display: none;
+  }
+  .left-div{
+    margin: 0;
+  }
+  .starting-section{
+    justify-content: center;
+    margin: 55px 0;
+  }
+  .middle-img{
+    margin-left: -10px;
+    width: 753px;
+  }
+  .section{
+    height: 220px;
+  }
+  .main-section{
+    padding: 40px 10px;
+  } 
+}
+
+@media (min-width: 0px) and (max-width: 500px){
+  body{
+    width: 100%;
+    padding: 10px;
+  }
+  
+  nav{
+    flex-direction: column;
+    flex-wrap: wrap;
+  } 
+  
+  nav a{
+    width: 100%;
+    border-bottom: 1px solid black;
+    text-align: center;
+    font-size: 24px;
+  }
+
+  nav a:last-child{
+    order: -1;
+    width: 100%;
+    margin: 0 50%;
+  } 
+
+  .starting-section{
+    justify-content: center;
+    margin: 55px 0;
+  }
+
+  .left-div{
+    margin: 0;
+  }
+
+  .right-div{
+    display: none;
+  }
+  
+  .sec1{
+    width: 475px;
+    padding: 25px 0;
+  }
+  
+  .sec2{
+    width: 480px;
+    padding: 25px 0;
+  }
+  
+  .main-section{
+    padding: 40px 0;
+  } 
+  
+  .middle-img{
+    margin-left: -10px;
+    width: 500px;
+  }
+  
+  .section {
+    height: 120px;
+  }
+  
+}
