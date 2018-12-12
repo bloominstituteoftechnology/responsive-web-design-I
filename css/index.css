@@ -313,7 +313,11 @@ footer {
 
     header>img {
        order: 1;
+       width: 200px;
+       height: 60px;
+       max-width: 140px;
        margin-bottom: 20px;
+       margin-top: 10px;
     }
 
     header > nav {
@@ -327,6 +331,15 @@ footer {
         text-align: left;
     }
 
+    .get-started {
+        width: 800px;
+        height: 460px;
+    }
+
+    .get-started>section>h1 {
+        font-size: 4.4em;
+       
+    }
  
 
     .get-started>img {
@@ -336,35 +349,39 @@ footer {
     .middle-img {
         width: 800px;
         max-width: 800px;
+        height: 140px;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 
     .main {
         width: 800px;
-        height: 600px;
+        height: 532px;
     }
 
-    .main>section{
-        
-        
-    }
+    
 
     #features {
         width: 300px;
         margin-right: 0;
         margin-left: 20px;
-        margin-bottom: 40px;
+        margin-bottom: 0;
         padding-left: 0;
         padding-right: 0;
+        margin-top: 10px;
+        height: 140px;
         
     }
 
     #about {
-        width: 300px;
+        width: 350px;
         margin-right: 20px;
         margin-left: 0;
-        margin-bottom: 40px;
+        margin-bottom: 0;
         padding-left: 0;
         padding-right: 0;
+        margin-top: 10px;
+        height: 140px;
         
     }
 
@@ -372,28 +389,42 @@ footer {
 
      #services {
         width: 200px;
+        height: 200px;
         margin-right: 0;
         margin-left: 20px;
-        margin-bottom: 40px;
+        margin-bottom: 0;
         padding-left: 0;
         padding-right: 0;
-        
+        margin-top: 0;
+       
     }
 
     #vision {
         width: 200px;
+        height: 200px;
         margin-right: 20px;
         margin-left: 0;
-        margin-bottom: 40px;
+        margin-bottom: 0;
         padding-left: 0;
         padding-right: 0;
+        margin-top: 0;
     }
 
     #product {
         width: 200px;
-        
-        margin-bottom: 40px;
+        margin-top: 0;
+        height: 200px;
+        margin-bottom: 0;
         padding-left: 0;
         padding-right: 0;
     }
+
+    #contact {
+        padding-left: 20px;
+    }
+}
+
+@media only screen and (max-width : 500px) {
+
+    body { width: 500px; }
 }
