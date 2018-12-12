@@ -64,35 +64,46 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 .container {
-	width: 1024px;
-	margin: 40px auto;
+	max-width: 1024px;
+  margin: 0 auto;
+  border: 2px solid dodgerblue;
 }
 
 header {
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
-	width: 1024px;
+  align-items: center;
 	height: 100px;
-	padding: 40px 72px;
-	position: fixed;
-	top: 0;
+	position: sticky;
+  top: 0;
+  margin: 0 auto;
+  padding: 10px 0;
 	z-index: 2;
-	background: white;
+  background: white;
+  border: 1px solid crimson;
 }
 
 header nav {
-	display: flex;
-	line-height: 36px;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: flex-start; */
+  line-height: 36px;
+  border: 1px solid olive;
+  margin: 0 10px;
 }
 
 header nav a {
-  margin: 0 60px 0 0;
+  margin-right: 70px;
 	text-decoration: none;
-	font-size: 1rem;
-	font-weight: bold;
+	font-size: 1.12rem;
+  font-weight: bold;
 	color: gray;
 }
 
@@ -100,12 +111,12 @@ header nav a:hover {
 	text-decoration: underline;
 }
 
-header .logo {
-	margin-right: 0;
-}
-
-header, nav, .logo {
-	height: 40px;
+header #logo-image-wrapper {
+  width: 210px;
+  margin-right: 20px;
+  justify-self: flex-end;
+  align-self: center;
+  border: 1px solid purple;
 }
 
 section {
