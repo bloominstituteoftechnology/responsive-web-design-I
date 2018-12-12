@@ -1,3 +1,256 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+
+#container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#navwrapper {
+    display: flex;
+}
+
+nav {
+	margin-top: 35px;
+	display: flex;
+}
+
+nav > a {
+	display: flex;
+	color: gray;
+	text-decoration: none;
+	font-size: .9em;
+	margin-right: 80px;
+}
+
+.logo {
+	margin-top: 20px;
+}
+
+nav > a:hover {
+	color: royalblue;
+	border-bottom: 1px solid royalblue;
+}
+
+h1 {
+	font-size: 4.5em;
+	width: 250px;
+	margin-top: 45px;
+	margin-left: 55px;
+	letter-spacing: 2px;
+	/* text-align: center; */
+}
+
+#banner {
+	display: flex;
+	/* align-content: flex-end; */
+	margin-top: 50px;
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+#titlewrap {
+	margin-right: 300px;
+	
+}
+
+button {
+	font-family: "Titillium Web";
+	background-color: white;
+	border: 1px solid black;
+	height: 30px;
+	width: 175px;
+	margin-left: 100px;
+	font-size: .9em;
+}
+
+button:hover {
+	text-decoration: underline;
+	color: royalblue;
+	border: 1px solid royalblue;
+}
+
+section {
+	text-align: center;
+}
+
+#doubleboxes {
+	border-top: 1px solid black;
+	width: 984px;
+	display: flex;
+}
+
+.dblbox {
+	padding-top: 35px;
+	text-align: left;
+}
+
+.middle-img {
+	display: flex;
+	width: 984px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+#tripleboxes {
+	border-bottom: 1px solid black;
+	width: 984px;
+	display: flex;
+}
+
+.trplbox {
+	margin-left: 20px;
+	text-align: left;
+	padding-bottom: 35px;
+}
+
+#contact {
+	margin-top: 35px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+#phone {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+#copy {
+	display: flex;
+	font-style: italic;
+	margin-top: 15px;
+	margin-bottom: 30px;
+	margin-left: 400px;
+	font-family: 'Shadows Into Light';
+} 
+
+
+@media (max-width: 800px) {
+    #circleboi {
+      display: none;
+    }
+
+   #navwrapper .logo {
+        border: 1px solid red;
+        align-self: center;
+    }
+
+    #navwrapper {
+        flex-direction: column;
+        border: 1px solid red;
+        text-align: center;
+    }
+
+    nav {
+        order: 2;
+        margin-left: 100px;
+    }
+
+    #titlewrap {
+        margin-left: 220px;
+    }
+
+    button {
+        margin-left: 65px;
+    }
+
+    #doubleboxes {
+        width: 750px;
+    }
+
+    .dblbox {
+        margin-right: 25px;
+    }
+
+    .middle-img {
+        width: 750px;
+    }
+
+    #tripleboxes {
+        width: 750px;
+    }
+
+    footer {
+        margin-right: 600px;
+    }
+
+    #copy {
+        margin-left: 100px;
+    }
+  }
+
+
+  /* @media (max-width: 500px) {
+    .box1 {
+      background: brown;
+      width: 400px;
+    }
+  } */
 
