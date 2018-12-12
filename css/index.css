@@ -71,253 +71,184 @@ a {
 	font-size: 14px;
 }
 
-.main-conteiner {
-	margin: 0 auto;
+h1 {
+    font-size: 72px;
+    text-align: center;
+    margin-bottom: 2px;
+}
+
+button {
+    margin-top: 23px;
+    padding: 6px 41px;
+    font-size: 16px;
+    background-color: white;
+    border: 1px black solid;
 }
 
 .container {
-	display: flex;
-	flex-direction: column;
-	width: 950px;
-	margin: 0 auto;
+    width: 1024px;
+    margin: 0 auto;
 }
 
+/* ====== HEADER starts here ===== */
 header {
-	width: 950px;
-	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
-	margin: 0 auto;
-	padding: 15px;
-	padding-top: 27px;
-	padding-right: 0;
+	width: 1024px;
 }
 
-.items {
-	display: flex;
-	justify-content: space-between;
-	width: 80%;
-	padding-right: 82px;
+        /* ---- HEADER-TOP starts here ----- */
+header > div.header-top {
+    width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 27px;
+}
+                /* --- NAVIGATION starts here --- */
+nav {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    margin-top: 4px;
+    margin-left: 42px;
+    margin-right: 26px;
 }
 
-header nav {
-	display: flex;
-	justify-content: space-around;
-	padding-left: 50px;
+nav a {
+    color: gray;
+    font-size: 16px;
+    font-weight: bold;
+}
+                /* --- NAVIGATION ends here --- */
+
+.header-top a.home-page {
+    width: 30%;
+    align-self: flex-end;
+    padding-left: 33px;
+}
+        /* ---- HEADER-TOP ends here ----- */
+
+
+        /* ---- HEADER-BOTTOM starts here ----- */
+.header-bottom {
+    width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 57px;
 }
 
-header nav a {
-	padding: 10px;
-	color: gray;
-	font-size: 14px;
+.header-bottom > div {
+    flex: 1;
 }
 
-@keyframes increase {
-	from {
-		font-size: 14px;
-		color: gray;
-		font-weight: normal;
-		border: none;
-		background-color: transparent;
-	}
-	to {
-		font-size: 20px;
-		color: peru;
-		font-weight: bold;
-		border: 1px dotted peru;
-		border-radius: 5px;
-		background-color: papayawhip;
-		padding: 5 auto;
-	}
+.header-bottom > .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 118px;
+    padding-top: 12px;
 }
 
-header nav a:hover {
-	font-size: 14px;
-	color: gray;
-	animation-name: increase;
-	animation-duration: 3s;
-	animation-iteration-count: infinite;
+img.code {
+    margin-top: 14px;
+    margin-left: 2px;
 }
+        /* ---- HEADER-BOTTOM ends here ----- */
+/* ====== HEADER ends here ===== */
 
-.container a.home-page {
-	width: 20%;
-	align-self: flex-end;
-	padding-left: 4px;
-	padding-right: 2px; 
-}
-
-
-.title {
-	width: 950px;
-	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
-	margin-top: 132px;
-}
-
-.left {
-	display: flex;
-	flex-direction: column;
-	width: 60%;
-	align-items: center;
-	justify-content: space-between;
-	padding-bottom: 50px;
-}
-
-h1 {
-	font-size: 445%;
-	font-weight: bold;
-	letter-spacing: 0.085em;
-	line-height: 1.05em;
-	padding-top: 5px;
-	padding-left: 61px;
-	padding-bottom: 11px;
-	margin-top: 55px;
-	text-align: center;
-}
-
-
-#get-started>a {
-	color: black;
-	font-size: 110%;
-	letter-spacing: 0.04em;
-	border: 1px solid black;
-	padding: 3px 40px;
-	width: 160px;
-	margin-left: 55px;
-}
-
-.right {
-	display: flex;
-	justify-content: flex-start;
-	width: 40%;
-}
-
-hr {
-	margin: 0 auto;
-	width: 950px;
-}
 
 hr.one {
-	margin-top: 78px;
+    margin-top: 73px;
+    border: 1px solid black;
+    margin-left: 72px;
+    width: 880px;
 }
 
+/* ====== CONTENT starts here ===== */
 .content {
-	width: 950px;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	align-content: space-around;
-	padding-top: 10px;
-	margin: 0 auto;
+    width: 1024px;
+    margin-left: 72px;
+    margin-top: 36px;
+    margin-right: 72px;
 }
 
-.first {
-	display: flex;
-	justify-content: flex-start;
-	margin-bottom: 38px;
+        /* ---- CONTENT-TOP starts here ---- */
+.content-top {
+    width: 880px;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 30px;
 }
 
-h2 {
-	font-weight: bold;
+.content-top > div {
+    flex: 1;
 }
 
-p {
-	line-height: 1.15em;
-	font-size: 99%;
-	letter-spacing: 0.00002em;
-	text-align: left;
+.content-top > div > h2 {
+    margin-bottom: 16px;
 }
 
-.features {
-	width: 50%;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	margin-top: 19px;
+.content-top > div > p {
+    line-height: 1.13em;
+}
+        /* ---- CONTENT-TOP ends here ---- */
+
+aside {
+    margin-left: 2px;
+    margin-bottom: 29px;
 }
 
-.about {
-	width: 50%;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	margin-top: 19px;
-	padding-left: 35px;
+        /* ---- CONTENT-BOTTOM starts here ---- */
+.content-bottom {
+    width: 880px;
+    display: flex;
+    justify-content: flex-start;
 }
 
-.aside {
-	display: flex;
-	justify-content: center; 
-	margin-bottom: 30px;
+.content-bottom > div {
+    flex: 1;
+    padding-right: 20px;
 }
 
-.aside img.middle-img {
-	width: 100%;
+.content-bottom > div > h2 {
+    margin-bottom: 16px;
 }
 
-.second {
-	display: flex;
-	justify-content: flex-start;
-	margin-top: 8px;
-	margin-bottom: 39px;
+.content-bottom > div > p {
+    line-height: 1.13em;
+}
+        /* ---- CONTENT-BOTTOM ends here ---- */
+/* ====== CONTENT ends here ===== */
+
+hr.two {
+    margin-top: 35px;
+    border: 1px solid black;
+    margin-left: 72px;
+    width: 880px;
 }
 
-.services {
-	width: 33%;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-}
-
-.product {
-	width: 33%;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	margin-left: 35px;
-
-}
-
-.vision {
-	width: 33%;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	margin-left: 35px;
-}
-
+/* ====== FOOTER starts here ===== */
 footer {
-	width: 950px;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	margin: 0 auto;
-	margin-top: 27px;
+    width: 1024px;
+    margin-left: 72px;
+    margin-top: 35px;
 }
 
 footer h2 {
-	margin-left: 4px;
-	margin-bottom: 17px;
-
+	margin-bottom: 15px;
 }
 
 .address {
-	margin-bottom: 21px;
-	margin-left: 3px;
+	margin-bottom: 15px;
 }
 
 .phone {
-	margin-bottom: 21px;
-	margin-left: 3px;
-}
-
-.email {
-	margin-left: 3px;
+	margin-bottom: 15px;
 }
 
 .copyright {
-	margin-left: 361px;
-	margin-top: 54px;
-	font-size: 87%;
+    margin-top: 40px;
+    margin-left: 350px;
 }
+/* ====== FOOTER ends here ===== */
