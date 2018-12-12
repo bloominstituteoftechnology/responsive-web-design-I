@@ -426,5 +426,41 @@ footer {
 
 @media only screen and (max-width : 500px) {
 
-    body { width: 500px; }
+    body { 
+        width: 500px; 
+        flex-direction: column;
+}
+
+        header, .get-started, .main, #contact {
+            flex-direction: column;
+            width: 500px;
+        }
+
+        header {
+            height: 400px;
+        }
+
+        header nav {
+            flex-direction: column;
+        }
+
+        .main {
+            height: 1000px;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        .middle-img {
+            max-width: 500px;
+            width: 500px;
+        }
+
+        #about, #features, #services, #product, #vision {
+            width: 500px;
+            height: 120px;
+            justify-content: flex-start;
+            margin: 0;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+  
 }
