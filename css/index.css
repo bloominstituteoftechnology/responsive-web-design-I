@@ -86,18 +86,20 @@ button {
 }
 
 .container {
-    width: 1024px;
+    width: 100%;
     margin: 0 auto;
+    max-width: 1024px;
 }
 
 /* ====== HEADER starts here ===== */
 header {
-	width: 1024px;
+    width: 100%;
+    margin-top: 0;
 }
 
         /* ---- HEADER-TOP starts here ----- */
 header > div.header-top {
-    width: 1024px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -130,7 +132,7 @@ nav a {
 
         /* ---- HEADER-BOTTOM starts here ----- */
 .header-bottom {
-    width: 1024px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -159,7 +161,7 @@ img.code {
 
 
 hr.one {
-    margin-top: 73px;
+    margin-top: 72px;
     border: 1px solid black;
     margin-left: 72px;
     width: 880px;
@@ -167,7 +169,7 @@ hr.one {
 
 /* ====== CONTENT starts here ===== */
 .content {
-    width: 1024px;
+    width: 100%;
     margin-left: 72px;
     margin-top: 36px;
     margin-right: 72px;
@@ -175,7 +177,7 @@ hr.one {
 
         /* ---- CONTENT-TOP starts here ---- */
 .content-top {
-    width: 880px;
+    width: 85%;
     display: flex;
     justify-content: flex-start;
     margin-bottom: 30px;
@@ -183,6 +185,10 @@ hr.one {
 
 .content-top > div {
     flex: 1;
+}
+
+.content-top > div:nth-child(2) {
+    margin-left: 9px;
 }
 
 .content-top > div > h2 {
@@ -201,7 +207,7 @@ aside {
 
         /* ---- CONTENT-BOTTOM starts here ---- */
 .content-bottom {
-    width: 880px;
+    width: 86%;
     display: flex;
     justify-content: flex-start;
 }
@@ -230,7 +236,7 @@ hr.two {
 
 /* ====== FOOTER starts here ===== */
 footer {
-    width: 1024px;
+    width: 100%;
     margin-left: 72px;
     margin-top: 35px;
 }
@@ -252,3 +258,88 @@ footer h2 {
     margin-left: 350px;
 }
 /* ====== FOOTER ends here ===== */
+
+@media (max-width: 800px) {
+    header {
+        margin-top: 0;
+    }
+    .header-top {
+        padding-top: 0;
+        width: 100%;
+        flex-direction: column-reverse;
+        align-items: center;
+        align-content: center;
+    }
+    .home-page {
+        width: 100%;
+        margin-right: 284px;
+        margin-top: 2px;
+    }
+    .items {
+        width: 100%;
+        margin-left: 0;
+        padding-right: 7px;
+        margin-top: 40px;
+    }
+    .title {
+        width: 100%;
+        margin-left: 135px;
+        margin-top: 2px;
+    }
+    img.code {
+        display: none;
+    }
+
+    hr.one {
+        margin-top: 75px;
+        margin-left: 19px;
+        width: 760px;
+    }
+
+    .content {
+        margin-left: 19px;
+        margin-right: 0;
+    }
+
+    .content-top {
+        width: 93%;
+        margin-left: 10px;
+    }
+
+    .content-top > div:nth-child(2) {
+        margin-left: 21px;
+        padding-right: 5px;
+    }
+
+    aside {
+        margin-left: 0;
+    }
+    .middle-img {
+        height: 158px;
+    }
+
+    .content-bottom {
+        width: 95%;
+        margin-left: 10px;
+    }
+    .content-bottom > div {
+        padding-right: 20px;
+    }
+
+    .content-bottom > div > p {
+        padding-right: 20px;
+    }
+
+    hr.two {
+        margin-left: 19px;
+        width: 760px;
+    }
+
+    footer {
+        margin-left: 29px;
+    }
+    
+    .copyright {
+        margin-left: 280px;
+    }
+}
