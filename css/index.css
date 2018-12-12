@@ -1,3 +1,294 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
 
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+h2 {
+	font-size: 1.5em;
+}
+
+/* tablet */
+@media (max-width: 800px;) {
+
+}
+.container {
+	width: 900px;
+	margin: 20px auto;
+}
+
+nav {
+	width: 100%;
+	display: flex;
+    justify-content: space-between;
+}
+
+nav .nav-items a {
+	width: 65%;
+	font-size: 16px;
+	text-decoration: none;
+	color: darkslategrey;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav .logo {
+	width: 25%;
+	justify-content: flex-end;
+}
+
+.services-header {
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 30px auto;
+	padding-bottom: 20px;
+	border-bottom: 1px solid black;
+}
+
+.services-info {
+	margin: 17px auto;
+}
+
+header {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 40px auto 40px auto;
+	padding-bottom: 40px;
+	border-bottom: 1px solid black;
+}
+
+header  .getting-started {
+	width: 49.5%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	text-align: center;
+	font-size: 80px;
+}
+
+header .getting-started .start {
+	justify-content: center;
+	font-size: 16px;
+	padding: 5px 30px;
+	border: 1px solid black;
+}
+
+header .snippet {
+	width: 49.5%;
+	margin: 20px auto;
+	justify-content: flex-end;
+	align-self: center;
+}
+
+services-header-img {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+main {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-top: 40px;
+	padding-bottom: 40px;
+}
+
+main .top {
+	width: 100%;
+	display: flex;
+}
+
+main .top .features {
+	margin: 30px auto;
+	justify-content: flex-start;
+}
+
+main .top .about {
+	margin: 30px auto;
+	justify-content: flex-end;}
+
+main .middle {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+main .middle .middle-img {
+	width: 100%;
+}
+
+main .bottom {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	padding-bottom: 40px;
+}
+
+main .bottom .services {
+	width: 33%;
+	margin-top: 30px;
+	justify-content: flex-start;
+}
+
+main .bottom .product {
+	width: 33%;
+	margin-top: 30px;
+	justify-content: center;
+}
+main .bottom .vision {
+	width: 33%;
+	margin-top: 30px;
+	justify-content: flex-end;
+}
+
+.services-main {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-grow: 1;
+	flex-wrap: wrap;
+	margin-top: 40px;
+	padding-bottom: 40px;
+}
+
+.service-description {
+	width: 48%;
+	background-color: #F4F3F4;
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+	margin-top: 40px;
+	padding: 20px;
+	border: 1px solid black;
+}
+.service-description p {
+	margin-bottom: 20px;
+}
+
+.services-buttons {
+	border: 1px solid black;
+	border-radius: 2px;
+	background-color: white;
+	font-size: 10px;
+	padding: 10px 15px;
+}
+
+.some-facts {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin: 30px auto;
+	border-top: 1px solid black;
+}
+
+.fact-list {
+	width: 48%;
+	margin: 30px 0;
+}
+
+.fact-list ul {
+	margin-top: 30px;
+}
+
+.fact-list ul li {
+	list-style-type: square;
+	list-style-position: inside;
+	margin: 0 0 10px 0;
+}
+
+.services-info-img {
+	width: 48%;
+	margin: 30px 0;
+
+}
+
+.contact {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-content: space-around;
+	border-top: 1px solid black;
+}
+
+.contact h2, p {
+	margin-top: 30px;
+	margin-bottom: 0;
+}
+
+footer {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+/* mobile */
+@media (min-width: 500px;) {
+
+}
