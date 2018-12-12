@@ -322,22 +322,32 @@ footer span {
 @media (max-width: 800px) {
   .container {
     padding: 15px 0;
-    max-width: 700px;
+    max-width: 760px;
   }
+
   .sticky-nav {
     flex-direction: column-reverse;
     clip-path: none;
     margin: 0 auto;
   }
 
+  .sticky-nav img {
+    padding: 4px 0 0 15px;
+  }
+
   .sticky-nav a {
     align-self: center;
+    font-size: 16px;
   }
 
   .sticky-nav nav ul {
     margin: 40px auto;
-    padding: 0;
-    justify-content: space-around;
+    padding: 0 35px 0 20px;
+    justify-content: space-between;
+  }
+
+  .nav-ul li:not(:first-child) {
+    margin-left: 0;
   }
 
   .header-left {
@@ -350,8 +360,13 @@ footer span {
 
   .main-header {
     justify-content: center;
-    margin: 0;
-    padding: 0;
-    height: 360px;
+    margin: 35px 0 0 0;
+    padding: 0 0 0 16px;
+    height: 345px;
+  }
+  .main-header h1 {
+    letter-spacing: 2px;
+    font-size: 70px;
+    margin-bottom: 30px;
   }
 }
