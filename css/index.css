@@ -457,7 +457,18 @@ footer span {
   }
 
   .main-header {
+    border-bottom: none;
     padding-left: 0;
+  }
+
+  .main-header:after {
+    content: "";
+    background: black;
+    position: absolute;
+    bottom: 60px;
+    left: 20px;
+    height: 2px;
+    width: 460px;
   }
 
   section {
@@ -468,6 +479,10 @@ footer span {
 
   section:nth-child(1) div:nth-child(2) {
     margin-left: 10px;
+  }
+
+  main {
+    border-bottom: none;
   }
 
   main section div {
@@ -483,5 +498,34 @@ footer span {
     height: 95px;
     width: 480px;
     padding-left: 18px;
+  }
+
+  .section-div-3col:not(:first-child) {
+    padding-left: 0;
+  }
+  main .section-div-3col:not(:last-child) {
+    margin-bottom: 65px;
+  }
+
+  main .section-div-3col:last-child {
+    margin-bottom: 0;
+  }
+
+  footer {
+    padding-left: 20px;
+  }
+
+  footer::before {
+    content: "";
+    background: black;
+    position: absolute;
+    top: 1809px;
+    left: 20px;
+    height: 2px;
+    width: 460px;
+  }
+
+  .copyright {
+    padding-right: 20px;
   }
 }
