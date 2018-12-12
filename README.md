@@ -1,3 +1,5 @@
+MILLAN FIGUEROA
+
 # Responsive Web Design I: Adaptive Website
 
 It's time to expand our CSS skills into multiple devices.  You will be creating an adaptive version of the "Great Idea" design. You will be working through design mock ups for desktop, tablet, and mobile devices located in the [design-files](design-files) folder. 
