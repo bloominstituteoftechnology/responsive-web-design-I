@@ -80,7 +80,7 @@ h1, h2, h3, h4, h5 {
 .container{
 	display:flex;
 	flex-direction: column;
-	justify-items: center;
+	align-items: center;
 	width: 876px;
 }
 
@@ -169,7 +169,7 @@ address p{
 
 .Features-and-about{
 	display: flex;
-	/* width: 100%; */
+	width: 876px;
 	margin-bottom: 26px;
 	justify-content: center;
 	padding: 30px 10px 10px 10px;
@@ -178,6 +178,7 @@ address p{
 
 .triple-menu{
 	display: flex;
+	width:876px;
 	margin-bottom: 75px;
 	justify-content: space-between;
 }
@@ -199,4 +200,57 @@ address p{
 	display: flex;
 	justify-content: center;
 	font-size: 16px;
+}
+
+/* media for tablet */
+@media(max-width:800px){
+	header{
+		flex-direction: column-reverse;
+		height: 150px;
+	}
+
+	nav{
+		width:760px;
+		justify-content: space-between;
+	}
+
+	.big-pic{
+		display:none;
+	}
+
+	.large-items{
+		justify-content: center;
+		margin:0px;
+	}
+
+	.large-items *{
+		margin: 0;
+	}
+
+	.Features-and-about{
+		width: 750px;
+		font-size: 18px;
+		margin:20px 0 30px 0;
+		padding: 35px 0 0 10px;
+		justify-items: space-between;
+		border-top:2px solid black;
+	}
+
+	.middle-img{
+		width: 760px;
+	}
+
+	.triple-menu{
+		width: 760px;
+		height: 200px;
+		margin-bottom: 15px;
+	}
+
+	.triple-menu section{
+		padding:0 20px;
+	}
+
+	.contact-info{
+		width: 760px;
+	}
 }
