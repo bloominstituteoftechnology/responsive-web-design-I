@@ -319,12 +319,16 @@ footer span {
   font-size: 14px;
 }
 
+/***************800PX BREAK***********/
+
 @media (max-width: 800px) {
+  /*General*/
   .container {
     padding: 15px 0;
     max-width: 760px;
   }
 
+  /*Nav Area*/
   .sticky-nav {
     flex-direction: column-reverse;
     clip-path: none;
@@ -350,6 +354,7 @@ footer span {
     margin-left: 0;
   }
 
+  /*Header Area*/
   .header-left {
     padding: 0;
   }
@@ -370,6 +375,7 @@ footer span {
     margin-bottom: 30px;
   }
 
+  /*Main*/
   main {
     padding-left: 10px;
     padding-bottom: 0;
@@ -395,6 +401,7 @@ footer span {
     line-height: 1.15;
   }
 
+  /*Footer*/
   footer {
     padding-left: 10px;
     padding-top: 35px;
@@ -414,10 +421,15 @@ footer span {
   }
 }
 
+/***************500PX BREAK***********/
+
 @media (max-width: 500px) {
+  /*General*/
   .container {
     width: 500px;
   }
+
+  /*Nav Area*/
   .sticky-nav {
     justify-content: flex-start;
     margin-top: -10px;
@@ -456,6 +468,7 @@ footer span {
     border-bottom: 1px solid black;
   }
 
+  /*Header*/
   .main-header {
     border-bottom: none;
     padding-left: 0;
@@ -471,6 +484,7 @@ footer span {
     width: 460px;
   }
 
+  /*Main Area*/
   section {
     display: flex;
     flex-direction: column;
@@ -511,6 +525,7 @@ footer span {
     margin-bottom: 0;
   }
 
+  /*Footer*/
   footer {
     padding-left: 20px;
   }
