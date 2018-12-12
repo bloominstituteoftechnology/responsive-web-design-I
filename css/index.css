@@ -175,4 +175,38 @@ footer .Copyright {
 	margin-bottom: 20px;
 }
 
-
+@media (max-width: 800px){
+    .container header {
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 60px;
+    }
+    .logo {
+        display: flex;
+        border: 1px solid red;
+        order: -1;
+    }
+    .logo2 {
+        display: none;
+    }
+    .mainheading-left {
+        width: 432px;
+    }
+    .container section  {
+        display: flex;
+        margin-bottom: 60px;
+        justify-content: center;
+    }
+    .containerFirstSection {
+        border-top: 2px solid black;
+    }
+    nav {
+        /* border: 1px solid red; */
+        width: 876px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
