@@ -78,7 +78,7 @@ h1, h2, h3, h4, h5 {
 	display: flex;
 	top: 0;
 	justify-content: space-evenly;
-	justify-content: baseline;
+    justify-content: baseline;
 	margin-bottom: 80px;
 	flex-wrap: wrap;
 }
@@ -115,8 +115,12 @@ nav a:hover {
 	to {background:#fae;}
 }
 @keyframes colorchange2 {
-	from {background:#81DFA0;}
-	to {background: white;}
+	from {background:#81DFA0}
+	to {background: whitesmoke}
+}
+@keyframes colorchangeMQ {
+	from {background:whitesmoke;}
+	to {background: #81DFA0;}
 }
 
 h1 {
@@ -135,7 +139,12 @@ h1:hover {
 	box-shadow: -2px 2px rgba(0, 0, 0, 0.541);
 }
 
+h2 {
+    font-size: 1.4em;
+}
+
 .spacer {
+    height: 70px;
 	margin-bottom: 100px;
 }
 
@@ -145,13 +154,16 @@ header {
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
-	flex-wrap: wrap;
+    border-bottom: 2px solid black;
+    padding-bottom: 90px;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .innovationtext {
 	font-size: 4em;
 	text-align: center;
-	font-family: Unlock;
+    font-family: Unlock;
 }
 
 
@@ -177,52 +189,54 @@ header {
 
 /* UNDERNEATH THE HEADER */
 .underhead {
-	width: 80%;
+	width: 90%;
 	z-index: -1;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	flex-wrap: wrap;
-	margin: 0 auto;
+    margin: 0 auto 30px auto;
+    padding-bottom: 50px;
 }
 
 .top {
 	margin: 50px 0;
 	display: flex;
 	justify-content: center;
-	justify-content: space-around;
+    justify-content: space-between;
+}
+
+.top section {
+    padding: 10px;
 }
 
 .middle-img {
-	width: 100%; 
+    width: 100%;
+    margin-bottom: 60px; 
 }
 
 
 .bottom {
-	display: flex;
+    display: flex;
+    border-bottom: 2px solid black;
+    padding-bottom: 50px;
 }
 
 .bottom section {
 	padding: 10px;
 }
 
-hr {
-	width: 80%;
-}
-
 section {
-	font-size: 18px;
-	font-family: Roboto;
+	font-size: 14px;
+	font-family: ;
 	letter-spacing: 2px;
-	line-height: 1.2;
+	line-height: 1;
 }
 
 .contact{
 	margin-top: 50px;
-	width: 80%;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
-	margin: 0 auto;
+    justify-content: space-between;
 }
 
 address {
@@ -271,4 +285,96 @@ footer {
 .bod {
 	font-size: 20px;
 	padding: 20px 0;
+}
+
+/* Responsive Web 
+Media Queries */
+
+@media (max-width: 800px) {
+    .navigation {
+        background: white;
+        flex-direction: column-reverse;
+        align-items: center;
+        flex-wrap: nowrap;
+        align-content: center;
+    }
+
+    nav {
+        flex-wrap: nowrap;
+    }
+
+    .navigation a {
+        width: auto;
+    }
+
+    nav a:hover {
+        animation-name: colorchangeMQ;
+    }
+
+    .circlecode {
+        display: none;
+    }
+
+    .innovationtext {
+        margin: 0 auto;
+    }
+
+    header {
+        margin: 0 auto;
+        border-bottom: 2px solid black;
+        padding-bottom: 100px;
+    }
+
+    .middle-img {
+        width: 760px;
+    }
+
+    .top {
+        width: 760px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .top section {
+        padding: 20px;
+        width: 400px;
+    }
+
+    .underhead {
+        width: 760px;
+        justify-content: space-between;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+.navigation {
+    position: relative;
+    width: 500px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+.navigation a {
+    display: flex;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    align-items: center;
+    font-size: 2em;
+    padding: 30px;
+}
+
+#home {
+    border: none;
+}
+
+#logo {
+    border: none;
+}
+
 }
