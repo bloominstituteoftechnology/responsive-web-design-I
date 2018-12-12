@@ -65,15 +65,14 @@ h1, h2, h3, h4, h5 {
 }
 
 img {
-  width: 100%;
-  height: auto;
+    width: 100%;
+    height: auto;
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 .container {
 	max-width: 1024px;
   margin: 0 auto;
-  border: 2px solid dodgerblue;
 }
 
 header {
@@ -84,7 +83,7 @@ header {
 	position: sticky;
   top: 0;
   margin: 0 auto;
-  padding: 10px 0;
+  padding: 10px;
 	z-index: 2;
   background: white;
 }
@@ -92,9 +91,7 @@ header {
 header nav {
   display: flex;
   justify-content: space-between;
-  /* align-items: flex-start; */
   line-height: 36px;
-  /* border: 1px solid olive; */
   margin: 0 10px;
 }
 
@@ -115,20 +112,22 @@ header #logo-image-wrapper {
   margin-right: 20px;
   justify-self: flex-end;
   align-self: center;
-  /* border: 1px solid purple; */
 }
 
 section {
- margin: 50px auto;
- /* width: 876px; */
- line-height: 1.5;
+  line-height: 1.5;
+ 
+}
+
+section h2 {
+  font-size: 1.2rem;
 }
 
 .banner {
 	display: flex;
 	justify-content: flex-end;
-	align-items: center;
-  border: 1px solid crimson;
+  align-items: center;
+  margin: 60px auto;
 }
 
 .banner .banner-column {
@@ -142,7 +141,6 @@ section {
   margin: 0 25px;
 	text-align: center;
   line-height: 1;
-  border: 1px solid cornflowerblue;
 }
 
 .banner #headline h1 {
@@ -158,9 +156,25 @@ section {
 }
 
 .banner #hero-image-wrapper {
-  border: 1px solid chartreuse;
   margin: 0 25px;
 }
+
+.main-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 991px;
+  padding: 25px 5px;
+  margin: 10px auto;
+}
+
+
+article {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  padding: 30px 0;
+}
+
 
 .introduction {
 	display: flex;
@@ -171,13 +185,13 @@ section {
 }
 
 .middle-image-wrapper {
+  margin: 35px auto;
 	text-align: center;
 }
 
 .product-and-services {
 	display: flex;
-	padding: 0 0 40px 0;
-	border-bottom: 1px solid black;
+	/* padding: 0 0 40px 0; */
 	
 }
 
@@ -186,7 +200,8 @@ section {
 }
 
 .contact-info {
-	line-height: 1;
+  padding: 50px 0;
+  line-height: 1;
 }
 
 .contact-info a {
@@ -199,10 +214,10 @@ section {
 }
 
 .footer {
-	padding-bottom: 150px;
+  height: 150px;
 	bottom: 0;
 	text-align: center;
-	font-size: .85rem;
+  font-size: 1.1rem;
 }
 
 /* Services Page */
