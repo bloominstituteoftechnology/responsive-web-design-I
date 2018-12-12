@@ -1,3 +1,308 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+.container {
+	width: 876px;
+	margin: 0 auto;
+}
+
+p {
+	line-height: 1.25;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	/* border: 1px solid red; */
+}
+
+nav {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	/* border: 1px solid blue; */
+}
+
+nav a {
+	padding-right: 65px;
+	color: darkgray;
+	font-size: 90%;
+	text-decoration: none;
+	padding-top: 5px;
+}
+
+.top {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 70px;
+}
+
+.innovation {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.innovation h1 {
+	font-size: 65px;
+	white-space: pre-line;
+	text-align: center;
+}
+
+.button {
+	border: 1px solid black;
+	padding: 7px 40px;
+	width: 160px;
+}
+
+hr {
+	border-color: black;
+	margin-top: 60px;
+	margin-bottom: 30px;
+}
+
+#services-hr {
+	border-color: black;
+	margin-top: 0;
+	margin-bottom: 30px;
+}
+
+.middle-content {
+	display: flex;
+	justify-content: space-between;
+}
+
+.middle-content > div {
+	width: 49%;
+}
+
+.middle-img {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.bottom-content {
+	display: flex;
+	justify-content: space-between;
+}
+
+.bottom-content > div {
+	width: 33%
+}
+
+.copyright {
+	font-size: 85%;
+	text-align: center;
+	margin-top: 40px;
+}
+
+.copyright-larger {
+	font-size: 100%;
+	margin-top: 100px;
+	text-align: center;
+}
+
+.services-header-img {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+ul {
+	list-style-type: square;
+	list-style-position: inside;
+	line-height: 2;
+	margin-top: 20px;
+}
+
+.services {
+	margin-bottom: -10px;
+}
+
+.services h1 {
+	font-size: 25px;
+}
+
+.boxes {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.boxes > section {
+	background-color: #F4F3F4;
+	border: 1px solid black;
+	width: 48%;
+	padding: 20px;
+	margin-bottom: 40px;
+}
+
+.boxes span {
+	border: 1px solid black;
+	width: 140px;
+	height: 35px;
+	border-radius: 5px;
+	background-color: white;
+	font-size: 80%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.services-bottom {
+	display: flex;
+	justify-content: space-between;
+}
+
+.services-bottom div {
+	width: 45%;
+}
+
+.contact-header {
+	width: 100%;
+	margin-top: 20px;
+}
+
+.contact-header-text {
+	font-size: 40px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.contact {
+	display: flex;
+	justify-content: space-between;
+}
+
+.contact-content {
+	width: 60%;
+}
+
+.typing {
+	width: 100%;
+	margin-top: 20px;
+}
+
+.contact-content > p {
+	margin-bottom: 10px;
+}
+
+.contact-content ul {
+	margin-top: -10px;
+	margin-left: 5px;
+}
+
+.content-form {
+	width: 40%;
+}
+
+.form {
+	list-style-type: none;
+	list-style-position: inside;
+	line-height: 2;
+	margin-top: 20px;
+	padding: 10px;
+	border: 1px solid black;
+	border-radius: 5px;
+	background-color: #F4F3F4;
+	
+}
+
+.contact-method {
+	list-style-type: none;
+	list-style-position: outside;
+}
+
+.contact-form input {
+	width: 100%;
+}
+
+.contact-form textarea {
+	width: 100%;
+}
+
+button {
+	border: 1px solid black;
+	width: 140px;
+	height: 35px;
+	border-radius: 5px;
+	background-color: white;
+	font-size: 80%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 20px;
+	margin-left: 20%;
+	margin-bottom: 10px;
+}
+
+.contact-content {
+	display: flex;
+}
