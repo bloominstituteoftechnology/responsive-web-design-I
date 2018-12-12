@@ -66,6 +66,10 @@ h1, h2, h3, h4, h5 {
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 
+:root {
+  --nav-border-color: rgb(128,128,128);
+}
+
 h1 {
   line-height: 70px;
 }
@@ -291,4 +295,35 @@ address p {
   .vision {
     margin-right: 21px;
   }
+}
+
+
+@media (max-width: 500px) {
+  .container {
+    width: 500px;
+  }
+
+  header {
+    width: 500px;
+    margin: 20px 0 0 0;
+  }
+
+  #logo {
+    padding: 0 0 20px 0;
+  }
+  nav {
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    margin: 0;
+  }
+
+  nav a {
+    border-top: 1px solid var(--nav-border-color);
+    width: 500px;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 20px;
+  }
+
 }
