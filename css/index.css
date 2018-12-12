@@ -70,12 +70,41 @@ h1, h2, h3, h4, h5 {
 
 /* Makes Everything Centered */
 
+
+
 .container {
-	width: 80%;
-	margin: 0 auto;
-	overflow: hidden;
+    width: 90%; 
+     /* width: 1000px; */
+	margin: 0 auto; 
+    overflow: hidden;
+    /* padding: 10px 80px; */
 	
  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  
 
 
@@ -84,16 +113,19 @@ h1, h2, h3, h4, h5 {
  
 
  header {
-	 display: flex;
-	 /* border: 1px solid black; */
+     display: flex;
 	 justify-content: space-between;
 	 align-items: center;
-	 padding: 20px;
+     
+     
+     
  }
 
+
+
  header nav {
-	 /* border: 1px solid red;	 */
-	 display:flex;
+     display:flex;
+     
 	 
  }
 
@@ -102,53 +134,84 @@ h1, h2, h3, h4, h5 {
 	 text-decoration: none;
 	 color: black;
 	 padding: 10px 20px;
-	 border: 1px solid gray;
-	 border-radius: 5px;
-	 transition: 0.2s ease-in;	
-	 /* border: 1px solid blue; */
+	
  }
 
 
  header nav a:hover {
-	background-color: aquamarine;
-	border: 1px solid black;
+	/* background-color: aquamarine; */
 	font-weight: bold;
 	
  }
 
 
 	 /* Main and  First Image */
-	 
+     
+     .main {
+         display: flex;
+     }
 
-.main {
+     .main .inner1, .inner2 {
+         flex: 1;
+     }
+
+     
+     .main .inner1 .inno {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         height: 400px;
+         text-align: center;
+     }
+
+     .main .inner1 .inno h1 {
+         font-size: 80px;
+         text-align: center;
+     }
+
+     #main-p {
+        text-align: center;
+        font-family: 'Text Me One', sans-serif;
+             
+    }
+    
+    #main-p a {
+        color: black;
+        text-decoration: none;
+        border: 1px solid gray;
+        padding: 5px 30px;
+        transition: 0.2s ease-in;
+        
+    }
+    
+    #main-p a:hover {
+        color: black;
+        background-color: aquamarine;
+        font-weight: bold;
+    }
+
+
+    h2 {
+        font-weight: bold;
+        font-size: 24px;
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* .main {
 	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-top: 20px;
-	padding-bottom: 100px;
-	margin-bottom: 50px;
-	border-bottom: 2px solid black;
-
-}
-
-.main .inner {
-	flex: 1;
-	flex-basis: 50%;
-
-	
-
-}
-
-.main .inner .inno {
-	width: 50%;
-	height: 400px;
-	margin-left: 120px;
-	
-}
-
-.main .inner .inno h1 {
-	font-size: 90px;
-	padding: 20px;
 	text-align: center;
 }
 
@@ -175,12 +238,28 @@ h1, h2, h3, h4, h5 {
 
 .main .inner .main-img {
 	margin-left: 100px;
+    justify-content: center; 
+	align-items: center;
+	margin-top: 20px;
+	padding-bottom: 100px;
+	margin-bottom: 50px;
+
 }
 
-h2 {
-	font-weight: bold;
-	font-size: 24px;
+
+
+.main .inner .inno {
+	width: 50%;
+	height: 400px;
+	margin-left: 120px;
+	
 }
+
+.main .inner .inno h1 {
+	font-size: 90px;
+	padding: 20px;
+} */
+
 
 
 
@@ -188,7 +267,9 @@ h2 {
  /* Features and About  */
 
  .secondContent {
-	 display: flex;
+     display: flex;
+     border-top: 2px solid black;
+     padding-top: 40px;
  }
 
 
@@ -205,8 +286,11 @@ h2 {
  /* Services, Product, Vision */
 
  .thirdContent {
-	 display: flex;
+     display: flex;
+     border-bottom: 2px solid black;
+     padding-bottom: 40px;
  }
+
 
 
  .third {
@@ -218,11 +302,15 @@ h2 {
  /* Contact */
 
  .contact {
-	margin-top: 40px;
-	border-top: 1px solid black;
-	padding: 40px 0;
+    margin: auto;
+    padding: 30px 0;
 	
-	}
+	
+    }
+    
+ footer {
+    text-align: center;
+}
 
 
 
@@ -234,19 +322,65 @@ h2 {
 
  @media (max-width: 800px) {
 
+   header {
+       flex-direction: column-reverse;
+   }
 
+   header .logo {
+       margin-bottom: 30px;
+   }
+
+
+   .main .inner2 {
+	display: none;
+}
+
+
+
+
+    
+    
 
  }
 
 
 
- 
+
 
 /* MOBILE VIEW */
 
 
 @media (max-width: 500px) {
 
+    header nav {
+        flex-wrap: wrap;
+        text-align: center;
+        
+    }
+
+    header nav a{
+        width: 100%;
+        border-bottom: 1px solid lightgray;
+        color: gray;
+    }
+
+    header .logo {
+        border-bottom: 1px solid lightgray;
+        width: 100%;
+        text-align: center;
+    }
+
+    .secondContent, .thirdContent {
+        flex-wrap: wrap;
+    }
+
+    .thirdContent {
+        margin-bottom: 20px;
+    }
+
+    .middle, .final {
+        margin-top: 20px;
+    }
 
 
 }
