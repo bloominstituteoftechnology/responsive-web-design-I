@@ -309,8 +309,9 @@ address p {
   }
 
   #logo {
-    padding: 0 0 20px 0;
+    padding-bottom: 20px;
   }
+
   nav {
     flex-direction: column;
     align-items: center;
@@ -324,6 +325,52 @@ address p {
     text-align: center;
     padding: 20px 0;
     font-size: 20px;
+  }
+
+  nav a:nth-child(6) {
+    border-bottom: 1px solid var(--nav-border-color);
+  }
+
+  .innovation {
+    margin: 50px 0 0 0;
+  }
+
+  .top-section, .bottom-section {
+    padding: 13px 0 52px 0;
+    margin: 0;
+  }
+
+  .top-section, .bottom-section {
+    flex-direction: column;
+  }
+
+  .top-section div, .bottom-section div {
+    width: 425px;
+  }
+
+  .top-section div {
+    margin-top: 46px;
+  }
+
+  .bottom-section {
+    padding: 29px 0 0 0;
+  }
+
+  .bottom-section div {
+    padding: 0 0 63px 0;
+  }
+
+  .bottom-section .vision {
+    padding-bottom: 35px;
+    padding-top: 1px;
+  }
+
+  .middle-img {
+    width: 460px;
+  }
+
+  footer {
+    padding: 35px 0 0 0;
   }
 
 }
