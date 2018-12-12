@@ -155,7 +155,7 @@ header {
 	justify-content: space-evenly;
 	align-items: center;
     border-bottom: 2px solid black;
-    padding-bottom: 90px;
+    padding-bottom: 30px;
     width: 90%;
     margin: 0 auto;
 }
@@ -169,15 +169,17 @@ header {
 
 .startbutton {
 	display: flex;
-	justify-content: center;
+    justify-content: center;
+    align-items: center; 
 	text-align: center;
 	border: 1px solid black;
 	padding: 7px 8px;
-	width: 160px;
+    width: 160px;
+    height: 40px;
 	font-family: 'Titillium Web';
 	font-size: 16px;
 	margin: 0 auto;
-	margin-top: 20px;
+	margin-top: 40px;
 }
 
 .startbutton:hover {
@@ -251,7 +253,7 @@ address {
 footer {
 	display: flex;
 	justify-content: center;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 	padding: 20px;
 	margin-top: 50px;
 }
@@ -291,12 +293,19 @@ footer {
 Media Queries */
 
 @media (max-width: 800px) {
+
     .navigation {
         background: white;
         flex-direction: column-reverse;
         align-items: center;
         flex-wrap: nowrap;
         align-content: center;
+        position: relative;
+        margin-top: 20px;
+    }
+
+    .spacer {
+        display: none;
     }
 
     nav {
@@ -311,6 +320,10 @@ Media Queries */
         animation-name: colorchangeMQ;
     }
 
+    h1 {
+        margin-bottom: 30px;
+    }
+
     .circlecode {
         display: none;
     }
@@ -323,26 +336,35 @@ Media Queries */
         margin: 0 auto;
         border-bottom: 2px solid black;
         padding-bottom: 100px;
-    }
-
-    .middle-img {
-        width: 760px;
+        width: 95%;
     }
 
     .top {
-        width: 760px;
+        width: 100%;
         display: flex;
         justify-content: space-between;
+        margin: 0 auto;
     }
 
     .top section {
         padding: 20px;
         width: 400px;
+        margin: 0 auto;
     }
 
     .underhead {
-        width: 760px;
+        width: 95%;
         justify-content: space-between;
+    }
+
+    .bottom {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .middle-img {
+        width: 100%;
+        margin: 20px auto;
     }
 
 }
@@ -362,19 +384,59 @@ nav {
 
 .navigation a {
     display: flex;
-    border-top: 1px solid black;
     border-bottom: 1px solid black;
     align-items: center;
-    font-size: 2em;
+    font-size: 1.3em;
     padding: 30px;
+    width: 100%;
+    justify-content: center;
 }
 
 #home {
-    border: none;
+    padding: 0;
 }
 
-#logo {
-    border: none;
+.spacer {
+    display: none;
 }
 
+header {
+    padding-bottom: 70px;
+    width: 460px;
+    margin-bottom: 40px;
+}
+
+ .innovationtext {
+    width: 100%;
+    padding-left: 30px;
+}
+
+.middle-img {
+    height: 90px;
+}
+
+.top {
+    flex-direction: column;
+    width: 500px;
+}
+
+.top section {
+    width: 100%;
+    margin: 0;
+}
+
+.bottom {
+    flex-direction: column;
+}
+
+h2 {
+    font-size: 1.2em;
+}
+
+section {
+    margin: 30px auto;
+}
+
+.contact {
+    margin: 20px 0;
 }
