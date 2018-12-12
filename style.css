@@ -75,8 +75,6 @@ nav a {
 }
 
 .main {
-	display: flex;
-	flex-wrap: wrap;	
 	padding: 15px;
 }
 
@@ -84,30 +82,13 @@ nav a {
 	margin: 20px 0;
 }
 
-.features,
-.about {
-	/* margin: 20px 0; */
-	flex: 1 0 100%;
-}
-
 .main img {
-	/* https://stackoverflow.com/questions/26086515/css-flex-how-to-display-one-item-on-first-line-and-two-on-the-next-line */
-	/* important part is flex-basis of 100% */
-	/* flex: 0 1 100%; */
 	width: 100%;
 	height: 100%;
 	/* padding: 20px; */
 }
 
-.services,
-.product,
-.vision {
-	flex: 1 0 100%;
-	/* margin-bottom: 30px; */
-}
-
 .contact {
-	/* margin-top: 30px; */
 	padding: 15px;
 }
 
@@ -171,8 +152,6 @@ footer {
 	justify-content: space-between;
 }
 
-/* flex on .fact-item ? */
-
 .fact-item ul {
 	list-style-type: square;
 	margin-left: 16px;
@@ -191,7 +170,7 @@ footer {
 }
 
 /* tablet */
-@media only screen and (min-width: 500px) {
+@media (min-width: 500px) {
 	.container {
 		padding: 15px;
 	}
@@ -213,15 +192,16 @@ footer {
 		margin: 10px 0 30px 0;
 	}
 
+	.main {
+		padding: 0;
+		display: flex;
+		flex-wrap: wrap;	
+	}
+
 	.features,
 	.about {
 		/* margin: 20px 0; */
-		/* maybe could just do width here */
-		flex: 1 0 49%;
-	}
-
-	.main {
-		padding: 0;
+		width: 49%;
 	}
 
 	section.features {
@@ -231,7 +211,7 @@ footer {
 	.services,
 	.product,
 	.vision {
-		flex: 1 0 32%;
+		width: 32%;
 		/* margin-bottom: 30px; */
 	}
 
@@ -250,7 +230,7 @@ footer {
 }
 
 /* desktop */
-@media only screen and (min-width: 800px) {
+@media (min-width: 800px) {
 	.jumbo {
 		display: flex;
 		justify-content: space-around;
