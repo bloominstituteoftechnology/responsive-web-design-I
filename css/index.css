@@ -1,3 +1,331 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
 
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+/* General */
+.container {
+  background-color: azure;
+  padding: 15px 69px 15px 75px;
+  margin: 0 auto;
+  max-width: 1024px;
+  width: 1024px;
+}
+/* Navigation Area */
+.sticky-nav {
+  background-color: azure;
+  display: flex;
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 0 70%);
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+nav {
+  height: 10vh;
+}
+
+nav ul {
+  font-size: 18px;
+  display: flex;
+  padding-top: 25px;
+}
+
+.nav-ul li:not(:first-child) {
+  margin-left: 67px;
+}
+
+.nav-ul a {
+  color: grey;
+  text-decoration: none;
+}
+
+.logo {
+  align-self: flex-start;
+  margin-top: 12px;
+}
+
+/* Header */
+
+.main-header {
+  border-bottom: 1px solid black;
+  display: flex;
+  height: 470px;
+  justify-content: flex-end;
+  margin-top: 14px;
+  padding-top: 12px;
+  width: 100%;
+}
+
+.header-left {
+  padding-top: 60px;
+  padding-right: 85px;
+  text-align: center;
+}
+
+.main-header h1 {
+  font-size: 72px;
+  letter-spacing: 6px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.main-header h1 span {
+  display: block;
+  margin-bottom: 3px;
+}
+
+.main-header img:hover {
+  animation: spin 2s linear infinite;
+}
+
+header a {
+  background-color: lightblue;
+  border: 1px solid black;
+  color: black;
+  padding: 6px 42px;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+header a:hover {
+  animation: headerBtnFade 0.4s forwards ease-out;
+}
+
+header a:active {
+  animation: headerBtnClick 0.2s forwards ease-out;
+}
+
+@keyframes headerBtnFade {
+  0% {
+    background-color: lightblue;
+    color: black;
+  }
+  100% {
+    background-color: black;
+    color: white;
+  }
+}
+
+@keyframes headerBtnClick {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(2px);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Main */
+
+main {
+  border-bottom: 1px solid black;
+  margin-top: 40px;
+  padding-bottom: 10px;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 39px;
+  line-height: 17px;
+}
+
+/*I know this is not the best way, I just wanted to practice with nth child :)*/
+section:nth-child(1) div:nth-child(2) {
+  margin-left: 14px;
+}
+
+section img {
+  width: 100%;
+}
+
+.section-div-3col:not(:first-child) {
+  padding-left: 18px;
+}
+
+/* Footer */
+
+footer {
+  padding-top: 38px;
+  display: flex;
+  flex-direction: column;
+  height: 235px;
+}
+
+footer span {
+  display: block;
+  margin-bottom: 2px;
+}
+
+.span-big-margin {
+  margin-top: 20px;
+}
+
+.copyright {
+  padding-top: 50px;
+  align-self: center;
+  font-size: 14px;
+}
+
+@media (max-width: 800px) {
+  .sticky-nav {
+    flex-direction: column-reverse;
+    clip-path: none;
+  }
+
+  .sticky-nav a {
+    align-self: center;
+  }
+}
