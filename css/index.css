@@ -31,7 +31,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+	line-height: 1.05;
 }
 ol, ul {
 	list-style: none;
@@ -56,6 +56,7 @@ table {
 
 html, body {
     height: 100%;
+    line-height: 1.1;
     font-family: 'Titillium Web', sans-serif;
 }
 
@@ -81,7 +82,7 @@ h1, h2, h3, h4, h5 {
 
 nav {
 	display: flex;
-	width: 70%;
+    width: 69%;
 	justify-content: space-between;
 }
 
@@ -96,38 +97,41 @@ nav {
 }
 
 .call-to-action {
-	width: 100%;
-	margin-top: 50px;
-	margin-bottom: 60px;
-	display: flex;
-	justify-content: space-between;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 61px;
+    padding-left: 128px;
+    margin-bottom: 78px;
 }
 
 .cta-text {
-	text-align: center;
-	align-self: center;
-	width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .innovation {
-	font-size: 80px;
-	margin-bottom: 15px;
+    font-size: 70px;
+    margin-bottom: 20px;
 }
 
 .get-started a {
 	text-decoration: none;
-	border: 1px solid black;
-	padding-left: 35px;
-	padding-right: 35px;
+    border: 1px solid black;
+    padding: 3px;
+	padding-left: 45px;
+	padding-right: 45px;
 	color: black;
+    transition: 0.5s;
+    font-size: 17px;
 }
 
-.get-started {
-	transition: 1s
-}
-
-.get-started:hover {
-	transform: scale(1.5);
+.get-started a:hover {
+    background: darkblue;
+    border:1px solid lightcyan;
+    color: lightcyan;
 }
 
 .top-content {
@@ -137,22 +141,30 @@ nav {
 }
 
 .middle-img {
-	padding-top: 35px;
-	padding-bottom: 35px;
+	padding-top: 32px;
+	padding-bottom: 26px;
 }
 
 .bottom-content {
 	border-bottom: 1px solid black;
-	padding-bottom: 45px;
-	display: flex;
+	padding-bottom: 40px;
+    display: flex;
+}
+
+.bottom-content div {
+    width: 31.2%
 }
 
 .services, .product {
-	margin-right: 13.6px;
+    margin-right: 20px;
 }
 
 .contact {
-	margin-top: 40px;
+	margin-top: 33px;
+}
+
+.contact p {
+    margin-bottom: 12px;
 }
 
 address {
@@ -163,7 +175,15 @@ address {
 
 .copyright {
 	text-align: center;
-	margin-top: 50px;
+	margin-top: 32px;
 	margin-bottom: 40px;
-	font-size: 14px;
+	font-size: 16px;
+}
+
+@media (max-width: 800px) {
+
+}
+
+@media (max-width: 500px) {
+
 }
