@@ -1,3 +1,178 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* My CSS code starts here */
+
+.container {
+	/* border: 1px solid red; */
+	width: 876px;
+	margin: 0 auto;
+}
+
+.container header {
+	/* border: 1px solid black; */
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	height: 70px;
+	/* margin-bottom: 10px; */
+	/* background-color: teal; */
+	position: flex;
+	width: 876px;
+	/* z-index: 1;  */
+}
+
+.container header nav {
+	/* border: 1px solid red; */
+	align-self: center;
+}
+
+.container header nav a {
+	/* border: 1px solid red; */
+	color: lightgray;
+	margin-right: 30px;
+}
+.container	header .logo {
+	/* border: 1px solid red; */
+	align-self: flex-start;
+	margin-top: 5px;
+}
+
+.container section  {
+	/* border: 1px solid red; */
+	display: flex;
+	flex-wrap: nowrap;
+	margin-bottom: 20px;
+}
+
+.container section .mainheading-left {
+	/* border: 1px solid red; */
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.container section .mainheading-left h1{
+	font-size: 70px;
+	text-align: center;
+	color: black;
+}
+.container section .mainheading-left a {
+	border: 2px solid black;
+	padding: 5px 20px;
+	text-decoration: none;
+}
+
+.container section .logo2 {
+	/* border: 1px solid red; */
+	width: 50%;
+}
+.containerFirstSection {
+	display: flex;
+	flex-direction: row;
+	padding-top: 30px;
+	border-top: 1px solid black;
+	margin-bottom: 30px;
+}
+
+.containerFirstSection .FirstSectionItems {
+	width: 50%;
+}
+.middle-img {
+	display: flex;
+}
+
+.containerThirdSection {
+	display: flex;
+	justify-content: space-evenly;
+	padding-top: 30px; 
+	padding-bottom: 40px;
+	border-bottom: 1px solid black;
+}
+
+.ThirdSectionItems {
+	/* border: 1px solid red; */
+	width: 32%;
+}
+footer .footer-index-container {
+	/* border: 1px solid red; */
+	display: flex;
+	flex-direction: column;
+	padding-top: 20px;
+	margin-bottom: 50px;
+}
+
+footer .Copyright {
+	/* border: 1px solid red; */
+	text-align: center;
+	font-size: 14px;
+	margin-top: 20px;
+}
+
+.container header a .logo {
+	/* border: 1px solid red; */
+	margin-top: 5px;
+	margin-bottom: 20px;
+}
 
 
