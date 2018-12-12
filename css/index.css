@@ -273,6 +273,25 @@ article {
 /* Mobile Screen */
 @media (max-width: 500px) {
 
+  .container, .main-content-wrapper {
+    max-width: 500px;
+  }
+
+  header {
+    height: auto;
+  }
+  header nav {
+    flex-direction: column;
+  }
+
+  header nav a {
+    padding: 5px 0;
+    border-bottom: 2px solid lightgray;
+  }
+
+  header nav a:first-child {
+    border-top: 2px solid lightgray;
+  } 
 }
 
 
