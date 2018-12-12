@@ -59,49 +59,40 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 /* Your code starts here! */
-/*TOP NAVIGATION*/
 body {
-	align-items: center;
+    align-items: center;
 	display: flex;
 	flex-direction: column;
 	height: auto;
 }
-header {
-	display: flex;
-	flex-direction: column;
-	width: 877px;
+body .container {
+    width: 880px;
 }
+/*TOP NAVIGATION*/
 header nav {
-	align-items: center;
-	display: flex;
-	height: 37px;
-		width: 100%;
-	justify-content: space-between;
-	margin-top: 27px;
+    display: flex;
+    width: 100%;
 }
-header nav a {
-	color: #ababab;
-	font-size: 16px;
-	text-decoration: none;
+header nav .links {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    align-items: center;
+    height: 60px;
 }
-header img {
-	margin-top: 20px;
+header nav .links .link {
+    text-decoration: none;
+    color: rgb(174,174,174);
+    margin-top: 3px;
 }
-header p {
-	line-height: 19px;
-}
-header figure {
-	background-image: url(../img/logo.png);
-	background-size: contain;
-	background-repeat: no-repeat;
-	display: inline-block;
-	height: 37px;
-	margin: 0 0 0 28px;
-	width: 183px;
-}
-header h2 {
-	margin-top: 33px;
-	font-size: 26px;
+header nav .logo {
+    display: block;
+    background-image: url("../img/logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 183px;
+    margin-left: 90px;
 }
 /*HEADER TEXT AND IMAGE*/
 #header-banner {
