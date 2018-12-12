@@ -191,12 +191,10 @@ article {
 
 .product-and-services {
 	display: flex;
-	/* padding: 0 0 40px 0; */
-	
 }
 
 .product-and-services .p-and-s-column {
-	width: 33%;
+	flex: 0 0 33%;
 }
 
 .contact-info {
@@ -221,11 +219,6 @@ article {
 }
 
 /* Services Page */
-.svc-section {
-	/* width: 1024px; */
-	/* margin: 0 auto; */
-}
-
 .services-intro {
 	display: flex;
 	flex-direction: column;
@@ -282,18 +275,18 @@ article {
   }
 
   header {
-    height: 150px;
+    height: 180px;
     flex-direction: column-reverse;
     justify-content: center;
   }
 
   header #logo-image-wrapper {
-    margin: 30px auto;
+    margin: 15px auto;
   }
 
   header nav {
-    margin: 0 auto;
-    justify-content: space-evenly;
+    margin: 0;
+    justify-content: space-between;
   }
 
   header nav a {
@@ -303,6 +296,7 @@ article {
   .banner {
     flex-direction: column;
     justify-content: center;
+    margin: 40px auto;
   }
 
   .banner #hero-image-wrapper {
@@ -311,18 +305,19 @@ article {
 
   .main-content-wrapper {
     padding: 23px;
-    border: 1px solid blue;
   }
 
-  article {
+  article, .contact-info {
     padding: 50px 10px;
-    border: 1px solid green;
   }
 
-  
+  .product-and-services {
+    justify-content: space-between;
+  }
 
-  
-
+  .product-and-services .p-and-s-column {
+	  flex: 0 0 30%;
+  }
 }
 
 /* Mobile Screen */
