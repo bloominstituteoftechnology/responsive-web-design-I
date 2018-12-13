@@ -1,3 +1,552 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
 
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+/* General */
+.container {
+  background-color: azure;
+  padding: 15px 69px 15px 75px;
+  margin: 0 auto;
+  max-width: 1024px;
+  width: 1024px;
+}
+/* Navigation Area */
+.sticky-nav {
+  background-color: azure;
+  display: flex;
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 0 70%);
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+nav {
+  height: 10vh;
+}
+
+nav ul {
+  font-size: 18px;
+  display: flex;
+  padding-top: 25px;
+}
+
+.nav-ul li:not(:first-child) {
+  margin-left: 67px;
+}
+
+.nav-ul a {
+  color: grey;
+  text-decoration: none;
+}
+
+.logo {
+  align-self: flex-start;
+  margin-top: 12px;
+}
+
+/* Header */
+
+.main-header {
+  border-bottom: 1px solid black;
+  display: flex;
+  height: 470px;
+  justify-content: flex-end;
+  margin-top: 14px;
+  padding-top: 12px;
+  width: 100%;
+}
+
+.header-left {
+  padding-top: 60px;
+  padding-right: 85px;
+  text-align: center;
+}
+
+.main-header h1 {
+  font-size: 72px;
+  letter-spacing: 6px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.main-header h1 span {
+  display: block;
+  margin-bottom: 3px;
+}
+
+.main-header img:hover {
+  animation: spin 2s linear infinite;
+}
+
+header a {
+  background-color: lightblue;
+  border: 1px solid black;
+  color: black;
+  padding: 6px 42px;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+header a:hover {
+  animation: headerBtnFade 0.4s forwards ease-out;
+}
+
+header a:active {
+  animation: headerBtnClick 0.2s forwards ease-out;
+}
+
+@keyframes headerBtnFade {
+  0% {
+    background-color: lightblue;
+    color: black;
+  }
+  100% {
+    background-color: black;
+    color: white;
+  }
+}
+
+@keyframes headerBtnClick {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(2px);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Main */
+
+main {
+  border-bottom: 1px solid black;
+  margin-top: 40px;
+  padding-bottom: 10px;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 39px;
+  line-height: 17px;
+}
+
+/*I know this is not the best way, I just wanted to practice with nth child :)*/
+section:nth-child(1) div:nth-child(2) {
+  margin-left: 14px;
+}
+
+section img {
+  width: 100%;
+}
+
+.section-div-3col:not(:first-child) {
+  padding-left: 18px;
+}
+
+/* Footer */
+
+footer {
+  padding-top: 38px;
+  display: flex;
+  flex-direction: column;
+  height: 235px;
+}
+
+footer span {
+  display: block;
+  margin-bottom: 2px;
+}
+
+.span-big-margin {
+  margin-top: 20px;
+}
+
+.copyright {
+  padding-top: 50px;
+  align-self: center;
+  font-size: 14px;
+}
+
+/***************800PX BREAK***********/
+
+@media (max-width: 800px) {
+  /*General*/
+  .container {
+    padding: 15px 0;
+    max-width: 760px;
+  }
+
+  /*Nav Area*/
+  .sticky-nav {
+    flex-direction: column-reverse;
+    clip-path: none;
+    margin: 0 auto;
+  }
+
+  .sticky-nav img {
+    padding: 4px 0 0 15px;
+  }
+
+  .sticky-nav a {
+    align-self: center;
+    font-size: 16px;
+  }
+
+  .sticky-nav nav ul {
+    margin: 40px auto;
+    padding: 0 35px 0 20px;
+    justify-content: space-between;
+  }
+
+  .nav-ul li:not(:first-child) {
+    margin-left: 0;
+  }
+
+  /*Header Area*/
+  .header-left {
+    padding: 0;
+  }
+
+  .header-right {
+    display: none;
+  }
+
+  .main-header {
+    justify-content: center;
+    margin: 35px 0 0 0;
+    padding: 0 0 0 16px;
+    height: 345px;
+  }
+  .main-header h1 {
+    letter-spacing: 2px;
+    font-size: 70px;
+    margin-bottom: 30px;
+  }
+
+  /*Main*/
+  main {
+    padding-left: 10px;
+    padding-bottom: 0;
+  }
+
+  main section {
+    margin-bottom: 35px;
+  }
+
+  main section div {
+    padding-right: 10px;
+  }
+
+  main section img {
+    margin-left: -8px;
+    width: 760px;
+    height: 160px;
+  }
+
+  main .section-div-3col {
+    margin-top: -6px;
+    padding-right: 25px;
+    line-height: 1.15;
+  }
+
+  /*Footer*/
+  footer {
+    padding-left: 10px;
+    padding-top: 35px;
+  }
+
+  footer span {
+    margin-bottom: 0;
+  }
+
+  .span-big-margin {
+    margin-top: 15px;
+  }
+
+  .copyright {
+    padding-top: 40px;
+    font-size: 16px;
+  }
+}
+
+/***************500PX BREAK***********/
+
+@media (max-width: 500px) {
+  /*General*/
+  .container {
+    padding-top: 5px;
+    width: 486px;
+  }
+
+  /*Nav Area*/
+  .sticky-nav {
+    justify-content: flex-start;
+    position: relative;
+  }
+
+  .sticky-nav img {
+    padding-right: 10px;
+  }
+  nav {
+    height: 400px;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+  }
+
+  .sticky-nav .nav-ul {
+    margin-top: 17px;
+  }
+  .nav-ul li a {
+    display: flex;
+    width: 500px;
+    height: 61px;
+    font-size: 20px;
+    padding-left: 15px;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid black;
+  }
+
+  .nav-ul li a:hover,
+  .nav-ul li a:active {
+    background-color: black;
+    color: white;
+  }
+
+  .nav-ul li:last-child {
+    border-bottom: 1px solid black;
+  }
+
+  /*Header*/
+  .main-header {
+    border-bottom: none;
+    padding-left: 0;
+  }
+
+  .main-header:after {
+    content: "";
+    background: black;
+    position: absolute;
+    bottom: 60px;
+    left: 15px;
+    height: 2px;
+    width: 460px;
+  }
+
+  /*Main Area*/
+  section {
+    display: flex;
+    flex-direction: column;
+    width: 480px;
+  }
+
+  section:nth-child(1) div:nth-child(2) {
+    margin-left: 10px;
+  }
+
+  main {
+    border-bottom: none;
+  }
+
+  main section div {
+    margin: 22px 0 28px 10px;
+  }
+
+  main section div h2 {
+    margin-bottom: 18px;
+  }
+
+  main section img {
+    margin-top: -12px;
+    height: 95px;
+    width: 480px;
+    padding-left: 18px;
+  }
+
+  .section-div-3col:not(:first-child) {
+    padding-left: 0;
+  }
+  main .section-div-3col:not(:last-child) {
+    margin-bottom: 65px;
+  }
+
+  main .section-div-3col:last-child {
+    margin-bottom: 0;
+  }
+
+  /*Footer*/
+  footer {
+    padding-left: 20px;
+  }
+
+  footer::before {
+    content: "";
+    background: black;
+    position: absolute;
+    top: 1809px;
+    left: 15px;
+    height: 2px;
+    width: 460px;
+  }
+
+  .copyright {
+    padding-right: 20px;
+  }
+}
