@@ -254,5 +254,58 @@ footer {
 /* Mobile Layout */
 
 @media (max-width: 500px) {
-    
+    body {
+		width: 500px;
+	}
+
+	.logo {
+		width: 200px;
+		margin-bottom: 20px;
+	}
+
+	nav {
+		flex-direction: column;
+		justify-content: center;
+		width: 500px;
+	}
+
+	nav a {
+		width: 500px;
+		border-top: 1px solid black;
+		font-size: 20px;
+		text-align: center;
+		padding: 15px 0px 15px 0px;
+	}
+
+	nav a:last-child {
+		border-bottom: 1px solid black;
+	}
+
+	#banner {
+		width: 475px;
+		margin: 0 auto;
+		justify-content: center;
+	}
+
+	#main {
+		width: 475px;
+		height: 850px;
+		margin: 0 auto 40px;
+	}
+
+	#section1 {
+		height: 200px;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	#section3 {
+		height: 300px;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	#section1 section, #section3 section {
+		width: 475px;
+	}
 }
