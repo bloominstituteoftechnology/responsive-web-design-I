@@ -84,20 +84,20 @@ h1, h2, h3, h4, h5 {
     align-items: center;
 }
 
-.nav-container {
-    /*position: fixed;*/
-    top: 0;
-    left: 0;
-    width: 100%;
-    /*border: 1px solid black;*/
-    height: 50px;
-    /*background-color: cadetblue;*/
+/*.nav-container {*/
+    /*!*position: fixed;*!*/
+    /*top: 0;*/
+    /*left: 0;*/
+    /*width: 100%;*/
+    /*!*border: 1px solid black;*!*/
+    /*height: 50px;*/
+    /*!*background-color: cadetblue;*!*/
 
-    /*!* box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit; *!*/
-    /*-moz-box-shadow: 0 0 5px 0 black;*/
-    /*-webkit-box-shadow: 0 0 5px 0 black;*/
-    /*box-shadow: 0 0 5px 0 black;*/
-}
+    /*!*!* box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit; *!*!*/
+    /*!*-moz-box-shadow: 0 0 5px 0 black;*!*/
+    /*!*-webkit-box-shadow: 0 0 5px 0 black;*!*/
+    /*!*box-shadow: 0 0 5px 0 black;*!*/
+/*}*/
 
 header a {
     color: grey;
@@ -354,6 +354,88 @@ address {
     .section-content3by {
         margin-right: 0;
         padding-right: 0;
+    }
+
+    .section2 {
+        padding-bottom: 40px;
+        margin-bottom: 30px;
+    }
+    footer {
+        font-size: 12px;
+        padding: 5px 0;
+    }
+    footer h2 {
+        font-size: 14px;
+    }
+
+
+}
+
+@media (max-width: 500px) {
+    header {
+        margin: 0;
+        padding: 0;
+    }
+    header nav {
+        margin: 0 auto;
+        padding: 0;
+        width: 400px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header nav a {
+        align-self: center;
+        text-align: center;
+        font-size: 15px;
+        padding: 16px 0;
+        border-bottom: 1px solid black;
+        width: 400px;
+        
+    }
+
+    header nav a:nth-child(1) {
+        border-top: 1px solid black;
+    }
+
+    .logo {
+        margin: 0 0 10px 0;
+    }
+
+    /*.container {*/
+        /*margin: 0 auto;*/
+        /*width: 400px;*/
+    /*}*/
+
+    .blurb-section h1 {
+        margin: 25px auto;
+    }
+
+    .section {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 400px;
+        margin: 30px auto;
+    }
+
+    .main-text {
+        width: 400px;
+        margin: 18px 15px 0 0;
+        padding: 0 15px 0 0;
+    }
+
+    .middle-img {
+        width: 400px;
+        margin: 0 auto;
+        padding: 0;
+        display: flex;
+    }
+
+    footer {
+        width: 400px;
+        margin: 0 auto;
     }
 }
 
