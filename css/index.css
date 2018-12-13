@@ -1,3 +1,269 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* General */
+
+nav,header,#section1,#middle,.section2,.container4, address,footer{
+margin: auto;
+width: 95%;
+}
+
+/* 800px logo */
+.hiddenlogo{
+ display: none;
+}
+
+/* 500px logo */
+.mobilelogo{
+  display: none;
+}
+/* NAV */
+.container1{
+	display:flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+}
+
+.container1 .item{
+	margin-top: 15px;
+}
+
+.container1 a{
+	padding-left: 1em;
+	padding-right:1em; 
+	text-decoration: none;
+	color: grey;
+}
+
+nav a:hover{
+	text-decoration: underline;
+}
+
+/* HEADER */
+.container2{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	margin-top: 2.5em;
+}
+
+#demand{
+	width: 30%;
+	margin-top: 2em;
+	margin-left: 7em;
+	margin-bottom: 5em;
+} 
+
+#button{
+	border: black 1px solid;
+	background-color: white;
+	padding: 4px;
+	padding-left: 35px;
+	padding-right: 35px;
+	font-size: 19px;
+margin-left: 22%;
+text-decoration: none;
+color: black;
+}
+
+#button:hover{
+	display: inline-block;
+	transition-duration: 0.6s;
+	transition-property: transform;
+	transform: scale(1.5);
+}
+
+h1{
+	font-size:5.3em;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+#ball{
+	margin-left: 5em;
+	margin-right: 3em;
+}
+
+.title{
+	width: 40%;
+}
+
+/* FEATURES/ABOUT */
+#section1{
+	margin-top: 3em;
+	border-top: black 1px solid;
+}
+
+.container3{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+}
+
+.blurb1{
+	margin-top: 1em;
+	margin-bottom: 1.5em;
+	width: 48%;
+	font-size: 1.2em;
+}
+
+/* Middle IMG */
+.middle-img{
+	width: 100%;
+} 
+
+/* SERVICE/PRODUCT/VISION */
+#section2{
+	margin-bottom: 2em;
+	padding-top: 15px;
+}
+
+.container4{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.blurb2{
+	width: 30%;
+	font-size: 1.2em;
+}
+
+/* ADDRESS */
+address{
+
+	border-top: black 1px solid;
+	padding-top: 2em;
+}
+#addy{
+	font-size: 1.2em;
+}
+
+/* FOOTER */
+footer{
+	text-align: center;
+	margin: 4em;
+}
+
+@media(max-width:  800px){
+  .hiddenlogo{
+    display: block;
+    width: 100%;
+    margin-left: 17.5em;
+    margin-right: 17em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+  .navlogo{
+    display: none;
+  }
+  .mobilelogo{
+    display:none;
+  }
+ #ball{
+   display: none;
+ }
+#demand{
+  width: 300px;
+  margin: auto;
+}
+}
+
+@media(max-width: 500px){
+  .hiddenlogo{
+    display: none;
+  }
+  .navlogo{
+    display: none;
+  }
+  .mobilelogo{
+    display: flex;
+    justify-content: center;
+  }
+  .container1{
+    display: flex;
+    flex-direction: column;      
+    } 
+  .item{
+    width: 450px;
+    text-align: center;
+    border-bottom: black 1px solid;
+    padding-bottom: 1em;
+  }
+  .container3, .container4{
+    flex-direction: column;
+  }
+
+  .blurb1{
+    width: 450px;
+  }
+  .blurb2{
+    width: 450px;
+    padding-bottom: 2.5em;
+  }
+
+  }
 
 
