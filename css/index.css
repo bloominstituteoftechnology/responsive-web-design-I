@@ -64,61 +64,33 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+/*Start Code for Webpage */
 
-.navigation-bar {
-	display: flex;
-	padding: 10px;
-	justify-content: center;
-	/*width: 850px;
-	top: 0;
-	border-bottom: 0px solid black;
-	position: fixed;
-	background-color: white;
-	width: 900px;
-	z-index: 5;*/
-}
-
-
-body {
+ .container { 
 	margin: 0 auto;
-	width: 880px;
+	padding: 15px;
 	font-size: 16px;
 }
 
-header {
-	background-color: white;
-	width: 100%;
-	align-items: center;
-	height: 36px;
+.navigation-bar header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 15px;
 }
 
-header nav a {
-	vertical-align: middle;
-	margin: 10px 28px;
-	font-size: 15px;
+.navigation-bar header nav a {
+    font-size: 15px;
 	text-decoration: none;
 	background-color: white;
-	color: lightgrey;
+    color: lightgrey;
 }
 
-header nav a:first-of-type {
-	margin-left: 0;
-}
 
-header nav a:hover {
+.navigation-bar header nav a:hover {
 	color: black;
 	font-size: 18px;
 	border-bottom: 2px dashed black;
-}
-
-
-.logo {
-	padding-left: 25px;
-	background-color: white;
-	/*justify-content: flex-end;*/
-	margin: 0 0 0 0;
-	vertical-align: middle;
 }
 
 h1 {
@@ -167,7 +139,7 @@ h3 {
 
 
 .middle-img {
-	width: 880px;
+	width: 100%;
 }
 
 .third-group {
@@ -182,11 +154,6 @@ h3 {
 .third-section:last-of-type {
 	margin-right: 0;
 }
-/*.third-section {
-	width: 275px;
-	margin-right: 15px;
-	display: inline-block;
-}*/
 
 footer .footer {
 	margin-top: 30px;
@@ -198,101 +165,36 @@ footer .copyright {
 	margin-top: 40px 0;
 }
 
-.services-header-img {
-	padding-bottom: 30px;
-	padding-top: 5px;
+@media (max-width: 800px) {
+    
+    .navigation-bar header nav{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .navigation-bar header nav .logo {
+        justify-content: center;
+    }
+
+    .right-side {
+        display: none;
+    }
+
+    .first-section {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+        
+
 }
 
-.services-heading {
-	border-bottom: 1px solid black;
-	padding-bottom: 35px;
-}
+@media (max-width: 500px) {
 
-.services-boxes {
-	border-bottom: 2px solid black;
-	margin-bottom: 40px;
-}
+    .navigation-bar header nav a{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
 
-.services-boxes .container1 {
-	display: flex;
-	justify-content: space-between;
-	margin-top: 40px;
 }
-
-.services-boxes .container1 .boxes {
-	width: 420px;
-	border: 1px solid black;
-	display: flex;
-	flex-direction: column;
-	background: #F4F4F4;
-	padding: 25px;
-	}
-
-.services-boxes .container1 button {
-	border-radius: 5px;
-	border: 1px solid black;
-	font-family: inherit;
-	background: white;
-	padding: 5px 25px 5px;
-	width: 120px;
-	margin-top: 20px;
-}
-.services-boxes .container1 .last-boxes {
-	margin-bottom: 40px;
-}
-
-section .container2 {
-	display: flex;
-	justify-content: space-between;
-	margin-bottom: 80px;
-}
-
-section .container2 .list-side {
-	display: flex;
-	flex-direction: column;
-	margin-right: 50px;
-}
-section .container2 .list-side ul {
-	display: flex;
-	flex-direction: column;
-}
-
-section .container2 .list-side ul li {
-	list-style-type: disc;
-	margin: 10px 0 0 18px;
-}
-
-.image-header-products {
-	display: flex;
-	flex-direction: row;
-	padding-bottom: 50px;
-}
-.product-boxes {
-	border-bottom: 2px solid black;
-	padding-bottom: 40px;
-	margin-bottom: 40px;
-}
-
-.product-boxes .container1 {
-	display: flex;
-	justify-content: space-between;
-	margin-top: 40px;
-}
-
-.product-boxes .container1 .boxes {
-	width: 270px;
-	border: 1px solid black;
-	background: #F4F4F4;
-	padding: 25px;
-}
-
-.product-boxes .container1 button {
-	border-radius: 5px;
-	border: 1px solid black;
-	font-family: inherit;
-	background: white;
-	padding: 5px 25px 5px;
-	width: 120px;
-	margin-top: 20px;
-}
-
