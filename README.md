@@ -1,3 +1,6 @@
+## View the Index Page of Project
+1. <a href="https://davidaceves.github.io/responsive-web-design-I/blob/master/index.html">Click here</a>
+
 # Responsive Web Design I: Adaptive Website
 
 It's time to expand our CSS skills into multiple devices.  You will be creating an adaptive version of the "Great Idea" design. You will be working through design mock ups for desktop, tablet, and mobile devices located in the [design-files](design-files) folder. 
