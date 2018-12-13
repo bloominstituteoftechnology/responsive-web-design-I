@@ -66,53 +66,39 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
+/* Index Page CSS Below */
+
+html {
+	margin: 0 auto;
+	padding: 0;
+}
+
 body {
 	margin: 0 auto;
-	width: 880px;
+	max-width: 876px;
 	font-size: 16px;
 }
 
-.navbar{
+p {
+    line-height: 1.25;
+}
+
+.nav{
    width: 880px;
    top: 0;
    position: fixed;
    z-index: 2;
  }
 
- .services-header-img {
-	 margin-top: 20px;
- }
-
- .services-header {
-	 margin-top: 32px;
-	 padding-bottom: 40px;
-	 border-bottom: 1px solid black;
-	
-
- }
-
- .services div {
-	background-color: #F4F3F4;
-    width: 420px;
-    padding: 20px;
-    border: 1px solid black;
-    margin-bottom: 40px;
- }
-
- .services, .facts {
-	 display: flex;
-	 flex-direction: row;
-	 flex-flow: wrap;
-	 justify-content: space-between;
-	 margin-top: 40px;
- }
-
 header {
    display: flex;
-   width: 100%;
-   background-color: white;
-   padding: 1px;
+   position: fixed;
    flex-direction: row;
+   justify-content: space-between;
+   height: 60px;
+   width: 867px;
+   align-items: center;
+   margin-top: -46px;
  }
 
  header nav a{
@@ -138,33 +124,26 @@ header {
 
  }
 
- .logo {
-	 display: flex;
-	 right: 0;
-	 padding-left: 90px;
- }
 
-	.facts p {
-		width: 400px;
-	}
-
- p {
-	 line-height: 1.25;
- }
-
- .services p, .facts p {
-	margin-top: 17px;	
+ button {
+	background-color: white;
+	border: 2px solid black;
+	border-radius: 0px;
+	height: 33px;
+	width: 140px;
+	font-family: inherit;
+	font-size: 12px;
+	margin-top: 18px;
 }
 
-.facts ul {
-    margin-top: 27px;
-    list-style-type: square;
-    list-style-position: inside;
-	margin-left: 1px;
-}
-.facts li {
-	margin-top 13px;
-}
+.start-section { 
+    margin-top: 35px;
+    width: 880px;
+    height: 440px;
+    position: relative;
+  }
+
+
  .start-section button {
    border: 1px solid black;
    background-color: white;
@@ -177,19 +156,7 @@ header {
    margin-right: -109px;
    margin-top: 9px;
  }
- 	.services {
-		border-bottom: 2px solid black;
-
-	 }
- .servicesh1{
-	 font-size: 26px;
-	 margin-bottom: 14px;
- }
-
- .services h2, .facts h2 {
-	 margin-top: 2px;
- }
-
+ 
  h1 {
 	 font-size: 72px;
      font-weight: 500;
@@ -199,13 +166,6 @@ header {
 
  h2 {
 	 font-weight: 500;
- }
-
- .start-section {
-   margin-top: 35px;
-   width: 880px;
-   height: 440px;
-   position: relative;
  }
  
  .left-div {
@@ -223,7 +183,8 @@ header {
 	   display: flex;
 	   width: 440px;
 	   position: absolute;
-	   padding: 30px 0;
+       padding: 61px 61px 0px 60px;
+       margin-top: -27px;
 	   right: 0;
 	 }
 
@@ -242,21 +203,15 @@ header {
 		padding-bottom: 48px;
 		border-bottom: 1px solid black;
 		margin-bottom: 39px;
-	  }
-
-
-	 p, .features, .about, h2, .servicesgreatidea, .product, .vision {
-		display: flex;
-		flex-direction: column;
-		vertical-align: top;
-	  }
-	  
-	  .top-section, .bottom-section {
+      }
+      
+      .top-section, .bottom-section {
 		display: flex;
 		flex-direction: row;
-
 	}
 
+	  
+	
    .features {
 	   /* display: inline-block; */
 	   width: 425px;
@@ -266,7 +221,7 @@ header {
    .about {
 	   /* display: inline-block; */
 	   width: 425px;
-	   margin-left: 22px;
+	   margin-left: 6px;
    }
 
    .servicesgreatidea {
@@ -276,12 +231,12 @@ header {
 
    .product {
 	width: 275px;
-	margin-left: 23px;
+	margin-left: 17px;
    }
 
    .vision {
 	width: 275px;
-	margin-left: 24px;
+	margin-left: 20px;
    }
 
    .footer {
@@ -296,31 +251,118 @@ header {
 	   padding-left: 200px;
    }
 
-  .container {
-	  width: 1000px;
-	min-height: 1px;
-	margin: auto;
-	padding: 0 60px;
-  }
-
   .small {
 		text-align: center;
 		display: block;
 		margin-top: 90px;
 		padding-bottom: 20px;
   }
+
+  p, .features, .about, h2, .servicesgreatidea, .product, .vision {
+    display: flex;
+    flex-direction: column;
+    vertical-align: top;
+  }
  
-button {
-	background-color: white;
-	border: 2px solid black;
-	border-radius: 0px;
-	height: 33px;
-	width: 140px;
-	font-family: inherit;
-	font-size: 12px;
-	margin-top: 18px;
+
+/* Services Page  Only CSS Below */
+
+.services-header-img {   /* Services Page */
+    margin-top: 20px;
+}
+
+.services-header { /* Services Page */
+    margin-top: 32px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid black;
+   
+
+}
+
+.services div { /* Services Page */
+   background-color: #F4F3F4;
+   width: 420px;
+   padding: 20px;
+   border: 1px solid black;
+   margin-bottom: 40px;
+}
+
+.services, .facts { /* Services Page */
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.logo { /* Services Page */
+    display: flex;
+    right: 0;
+    padding-left: 90px;
+}
+
+   .facts p { /* Services Page */
+       width: 400px;
+   }
+
+   .services p, .facts p { /* Services Page */
+	margin-top: 17px;	
+}
+
+.facts ul { /* Services Page */
+    margin-top: 27px;
+    list-style-type: square;
+    list-style-position: inside;
+	margin-left: 1px;
+}
+.facts li { /* Services Page */
+	margin-top 13px;
+}
+
+.services { /* Services Page */
+    border-bottom: 2px solid black;
+
+ }
+.servicesh1{ /* Services Page */
+ font-size: 26px;
+ margin-bottom: 14px;
+}
+
+.services h2, .facts h2 { /* Services Page */
+ margin-top: 2px;
 }
 
 
+/******* Media Query's Below /*********
+
+/* Tablet Portrait */
+
+@media only screen and (max-width: 800px) {
+ 
+    body {
+        width: 800px;
+    }
+
+    header {
+        width: 800px;
+        height: 100px;
+        flex-direction: column;
+    }
+
+    header>img {
+        order: 1;
+        width: 200px;
+        height: 60px;
+     }
+     header>nav {
+        order: 2;
+        width: 800px;
+        justify-content: space-between;
+    }
+
+}
+
+@media (max-width: 500px) {
 
 
+}
