@@ -220,12 +220,14 @@ header .logo {
   padding-bottom: 50px;
 }
 
-.first-section .button {
+.first-section .first-section-text button {
   font-size: 16px;
   width: 170px;
   height: 32px;
-  margin-top: 10px;
-  margin-left: 80px;
+  margin-top: 30px;
+  margin-left: 20px;
+  background: white;
+  border: 1px solid black;
 }
 
 .first-section .first-section-text button:hover {
@@ -280,8 +282,8 @@ footer {
 @media (max-width: 800px) {
 
 .container {
-  width: 800px;
-  margin: 20px auto;
+  width: 750px;
+  margin: 0px auto;
 }
 
 header {
@@ -289,9 +291,11 @@ header {
 }
 
 header .logo {
+  width: 750px;
   order: -1;
-  margin: 20px 300px 30px auto;
-  padding-bottom: 20px;
+  justify-content: center;
+  margin: 0px;
+  padding: 0 280px 40px 310px;
 }
 
 header nav {
@@ -302,37 +306,37 @@ header nav {
 
 .first-section {
   justify-content: center;
-  margin-left: 60px;
-  padding-bottom:90px;
+  padding: 0 0 70px 150px;
 }
 
 .first-section .first-section-text img {
   display: none;
 }
 
-.first-section .button {
-  margin-left: 100px;
+.first-section .first-section-text button {
+  margin-left: 50px;
 }
 
 .second-section {
   width: 750px;
-  margin: 0px 10px;
+  margin: 0px;
 }
 
 .middle-img {
-  margin-left: 10px;
+  margin: 0px;
   width: 750px;
   padding: 20px 0;
 }
 
 .third-section {
-  margin: 0px 10px;
+  margin: 0px;
   width: 750px;
   padding-bottom: 20px;
 }
 
 address {
-  margin-left: 20px;
+  margin: 0px;
+  padding-top: 30px;
 }
 
 footer {
@@ -345,7 +349,7 @@ footer {
 @media (max-width: 500px) {
 
   .container {
-    width: 500px;
+    width: 460px;
     margin: 0;
   }
   
@@ -364,12 +368,10 @@ footer {
     margin: 0px;
     flex-direction: column;
     text-align: center;
-    width: 450px;
+    width: 480px;
     padding: 20px 150px;
   }
   
-  
-
   header nav a {
     padding: 20px 0;
     text-align: center;
@@ -383,40 +385,41 @@ footer {
   }
   
   .first-section {
-    justify-content: center;
-    padding-bottom: 50px;
-    margin-top: 18px;
+    width: 460px;
+    padding: 20px 0 50px 60px;
+    margin: 0;
   }
   
   .first-section .first-section-text img {
     display: none;
   }
   
-  .first-section .button {
-    margin-left: 100px;
+  .first-section .first-section-text button {
+    margin-left: 60px;
   }
   
   .second-section {
     flex-direction: column;
     width: 450px;
-    margin: 48px 8px;
+    margin: 0;
   }
   
   .middle-img {
-    margin-left: 8px;
-    width: 460px;
-    padding: 6px 8px 18px 8px;
+    margin-left: 0px;
+    width: 450px;
+    padding: 35px 8px 18px 8px;
   }
   
   .third-section {
     flex-direction: column;
     justify-content: space-around;
     width: 450px;
-    padding-bottom: 35px;
+    padding-bottom: 20px;
   }
   
   address {
     margin-left: 8px;
+    padding-top: 30px;
   }
   
   footer {
