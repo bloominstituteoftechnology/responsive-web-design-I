@@ -1,5 +1,5 @@
 ## View the Index Page of Project
-1. <a href="https://davidaceves.github.io/responsive-web-design-I/blob/master/index.html">Click here</a>
+1. <a href="https://davidaceves.github.io/responsive-web-design-I/index.html">Click here</a>
 
 # Responsive Web Design I: Adaptive Website
 
