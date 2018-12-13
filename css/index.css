@@ -222,6 +222,36 @@ article {
   font-size: 2rem;
 }
 
+.services-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+  border-top: 1px solid black;
+  margin: 2rem auto;
+}
+
+.service-item {
+	flex: 0 0 48%;
+	border: 1px solid black;
+	padding: 2rem;
+	margin: 1.5rem 0;
+	background: #F4F3F4;
+}
+
+.svc-button {
+	width: 130px;
+	padding: 0.25rem 2rem;
+	margin-top: 1rem;
+	border: 1px solid black;
+	border-radius: 5px;
+	text-align: center;
+	background: white;
+	font-size: 0.75rem;
+	cursor: pointer;
+}
+
+
+/*ADAPTIVE DESIGN SETTINGS*/
 /* Tablet Screen */
 @media (max-width: 800px) {
   .container, .main-content-wrapper {
