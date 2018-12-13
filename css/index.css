@@ -182,8 +182,8 @@ h5 {
 
 nav {
     grid-area: nav;
-    width: 100%;
-    padding: 1rem;
+    margin: 1rem 0;
+    font-size: 1.2rem;
 }
 
 nav > a:hover {
@@ -235,8 +235,8 @@ section {
 }
 
 #big-text {
-    max-width: 19rem;
-    font-size: 5rem;
+    width: 100%;
+    font-size: 4rem;
     text-align: center;
 }
 
@@ -269,7 +269,7 @@ hr {
 
 #mid {
     grid-area: mid;
-    width: 100%;
+    width: 95%;
 }
 
 /* Bottom section
@@ -351,11 +351,16 @@ address {
     nav {
         display: flex;
         justify-content: space-between;
-        padding: 2rem 0;
+        font-size: 0.6rem;
+        font-weight: 600;
+        padding: 0;
+        margin: 0;
+        width: 100%;
     }
 
     a {
         border: none;
+        padding: 0;
     }
 
     a:first-child {
@@ -376,14 +381,19 @@ address {
         grid-gap: 5%;   
     }
 
-    .footer {
+    /* .footer {
     grid-area: footer;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
         'contact contact contact'
         'copyright copyright copyright';
+    } */
+
+    .copyright {
+       justify-self: center;
     }
+
 }
 
 /* Desktop View 
@@ -411,8 +421,8 @@ address {
 
     nav {
         display: flex;
-        justify-content: space-between;
-        padding: 2rem 0;
+        justify-content: space-evenly;
+        padding: 1rem 0;
     }
 
     .header {
@@ -429,6 +439,7 @@ address {
 
     a {
         border: none;
+        padding: 2rem 0;
     }
 
     a:first-child {
@@ -456,6 +467,5 @@ address {
     grid-template-areas:
         'contact . .'
         '. copyright .';
-    width: 100%;
     }
 }
