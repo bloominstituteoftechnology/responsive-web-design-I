@@ -109,13 +109,13 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	width: 877px;
+	/* width: 877px; */
 }
 
 nav {
-display: flex;
-justify-content: space-between;
-width: 600px;
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
 
 }
 nav a {
@@ -157,7 +157,7 @@ nav a {
 
 }
 
-/* main section */
+/* main section /////////////////*/
 main {
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
@@ -197,7 +197,7 @@ main, .middle-img {
 	margin-bottom: 40px;
 }
 
-/* footer */
+/* footer //////////////////////// */
 footer {
 	margin-top: 40px;
 }
@@ -218,21 +218,80 @@ footer a {
 	margin: 48px 0 108px;
 	font-size: 14px;
 }
+/* //////////////////////////////// */
+@media all and (max-width: 800px) {
+   
+  /* body {
+      width: 800px;
+      margin: 0 auto;
+  } */
 
-@media (max-width: 800px) {
+header {
+    margin-top: 30px;
+}
+
+ header nav {
+     order: 2;
+     width: 800px;
+     justify-content: space-between;
+     margin-left: 45px;
+ }
+
+ .wrapper {
+     flex-direction: column;
+ }
+
 .logo{
     display: flex;
-    /* flex-direction: column; */
-	/* justify-content: flex-end; */
-	width: 277px;
+    justify-content: center;
+    order: 1;
+    width: 277px;
+    
 }
 
-    #code-snip {
-        display: none;
+
+#code-snip {
+    display: none;
     }
     
-.hero, .half {
-    margin: 125px 0 75px;
-    justify-content: center;
+ .half {
+    margin: 40px auto;
 }
+
+.half div.title  {
+    display: block;
+    width: 800px;
+}
+.title {
+    margin-top: 150px;
+    margin-left: -10px;
+}
+.hero {
+}
+main {
+    margin: 0 20px;
+}
+
+main p {
+    font-size: 0.85em;
+}
+
+.thirds div.description {
+    width: 200px;
+    margin-right: 50px;
+}
+
+main .middle-img {
+    width: 760px;
+    margin-top: -40px;
+}
+footer {
+    padding: 0 40px 40px;
+}
+}
+/* media for 500 //////// */
+@media all and (max-width: 500px) {
+
+
+
 }
