@@ -1,3 +1,315 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+* {
+    box-sizing: border-box;
+      
+  }
+   
+  html, body {
+    font-family: 'Titillium Web', sans-serif;
+  }
+   
+  .container {
+    margin: 0 auto;
+    width: 800px;
+  }
+   
+  h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+  }
+     
+  header {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+   
+  .searchbar {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: flex-start;
+  }
+   
+  .logo {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+   
+  nav>a {
+    text-decoration: none;
+    color: silver;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 10px;
+  } 
+   
+   
+  .get-started {
+    width: inherit;
+    padding: 0;
+    margin: 0;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+  }
+   
+  .get-started section, .get-started img {
+    text-align: center;
+    margin: 0 auto;
+    padding: 40px;
+  }
+   
+  .get-started section {
+    padding: 20px;
+    margin: 0 auto;
+    padding-top: 40px;
+  }
+   
+  .get-started section h1 {
+    height: 100px;
+    font-size: 3em;
+    margin-bottom: 80px;
+  }
+   
+  .get-started, #get-started-code {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+   
+  #get-started-img {
+    width:300px;
+    height: 100%;
+    margin-left: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+   
+  .get-started section button {
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 5px 30px;
+    font-family: 'Titillium Web', sans-serif;
+  }
+   
+  .middle-img {
+    width: 100%;
+    margin-bottom: 20px;
+    margin: 0 auto;
+  }
+   
+  section {
+    margin-bottom: 20px;
+  }
+   
+  .content-row-1, .content-row-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+  }
+   
+  .content-row-2 {
+    margin-bottom: 40px;
+  /*    padding: 20px; */
+  }
+   
+  #features, #about {
+    width: 50%;
+    padding: 10px;
+  }
+   
+  #about {
+    margin-left: 30px;
+  }
+   
+  #services, #product, #vision {
+    width: 300px;
+    padding: 10px;
+  }
+  
+   
+  #contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding-top: 20px;
+    border-top: 1px solid black;
+  }
+   
+  footer p {
+    text-align: center;
+    display: block;
+    font-size: 14px;
+  }
+  /* For Tablets*/
+  @media (max-width: 800px) {
+    body {
+      width: 800px;
+      padding: 0;
+    }
+    
+    header {
+      width: 800px;
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+    }
+    
+    header>img {
+      order: 1;
+      width: 200px;
+      max-width: 140px;
+      margin-bottom: 10px;
+      margin-top: 10px;
+    }
+    
+    header>nav {
+      order: 2;
+      width: 800px;
+      justify-content: space-around;
+    }
 
+        
+    #get-started-img {
+      display: none;
+    }
+    
+    .logo{
+      justify-content: center;
+      margin: 0 auto;
+    }
+        
+    .middle-img {
+      width: 100%;
+    }
+    
+    .content-row-1, .content-row-2 {
+      width: 800px;  
+      display: flex;
+      flex-direction: row;
+      /* flex-wrap: wrap; */
+      align-content: space-around;
+      padding: 0;
+      margin: 0;
+    }
+    
+    #features {
+      /* width: 500px; */
+      margin: 0 auto;
+      padding: 0;
+    }
+  
+    #about {
+      /* width: 500px; */
+      margin: 0 auto;
+      padding: 0;
+    }
+  
+    #services {
+      /* width: 500px; */
+      margin: 0 auto;
+      padding: 0;
+      padding-top: 20px;
+    }
+    
+    #product {
+      /* width: 500px; */
+      margin: 0 auto;
+      padding: 0;
+      padding-top: 20px;
+    }
+  
+    #vision {
+      /* width: 500px; */
+      margin: 0 auto;
+      padding: 0;
+      padding-top: 20px;
+    }
+    
+    #contact {
+      padding-left: 20px;
+    }
+  }
+  
+  /* For Mobile Devices*/
+  @media (max-width: 500px) {
+    body {
+      width: 500px;
+      flex-direction: column;
+    }
 
+    .container {
+      width: 500px;
+    }
+    
+    header {
+      width: 500px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+    
+    header nav {
+      align-items: center;
+      width: 500px;
+    }
+  
+    
+    .logo {
+      width: 500px;
+      align-items: flex-start;
+      justify-content: center; 
+  
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+        
+    .searchbar {
+      flex-direction: column;
+      margin: 0 auto;
+      border-top: 1px solid black;
+    }
+    
+    header nav>a {
+      flex-direction: column;
+      text-align: center;
+      border-bottom: 1px solid black;
+      border-top: 1ps solid black;
+      width: 500px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    #get-started-img {
+      display: none;
+    }
+
+    .content-row-1, .content-row-2 {
+      width: 500px;  
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-content: space-between;
+    }
+
+    #features, #about, #services, #product, #vision {
+      width: 500px;
+      padding: 0;
+    }
+  }
+  
+  
