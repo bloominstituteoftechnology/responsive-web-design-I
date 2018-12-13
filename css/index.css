@@ -99,7 +99,7 @@ header nav a {
 }
 
  header nav a:hover {
-  color: black;
+  color: rgb(68, 152, 185);
 }
 
 header nav a:last-child {
@@ -190,68 +190,129 @@ footer {
   font-size: 14px;
 }
 
-/* Media queries */
+/* Media Queries */
+
+/* Tablet View */
 
 @media (max-width: 800px) {
-  .container {
-    width: 100%;
-  }
-  header {
-    display: flex;
-    justify-content: center;
+    .container {
+      width: 800px;
+      padding: 20px;
+    }
+    
+    header {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+
+    header nav {
+      width: 100%;
+      justify-content: space-between;
+    }
+
+    header nav a {
+      font-size: 18px;
+    }
+
+    header .logo {
+      margin-bottom: 40px;
+    }
+
+    header nav a:last-child {
+      margin-right: 0;
+    }
+
+    .lg-logo {
+      justify-content: center;
+      width: 800px;
+    }
+
+    .lg-logo .round-img {
+      display: none;
+    }
+
+    .main-content .top-content {
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .middle-img {
+      justify-content: center;
+      width: 800px;
+    }
+
+    .bottom-content {
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 20px;
+    }
+
+    .contact p {
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    footer {
+      justify-content: center;
+    }
   }
 
-  header nav a .logo {
-    display: flex;
-    justify-content: column-reverse;
-  }
-  header nav a {
-    display: flex;
-    justify-content: center;
-  }
-  .lg-logo .lg-logo-text {
-    display: flex;
-    justify-content: center;
-  }
-  .lg-logo .round-img {
-    display: none;
-  }
-  .main-content .top-content .text-content {
-    width: 750px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin: 20px;
-  }
-  .middle-img {
-    display: flex;
-    justify-content: center;
-    margin: 20px;
-  }
-  .bottom-content .text-content {
-    width: 750px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin: 20px;
-  }
-  .contact {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-  }
+  /* Mobile View */
 
-  footer {
-    display: flex;
-    justify-content: center;
-  }
+  @media (max-width: 500px) {
+    .container {
+      width: 500px;
+      padding: 0;
+    }
 
-}
+    header nav {
+      flex-direction: column;
+    }
 
-@media (max-width: 500px) {
-  .container {
-    width: 350px;
+    header nav a {
+      font-size: 24px;
+      padding: 20px 0;
+      border-top: 1px solid rgb(68, 152, 185);
+      width: 100%;
+      text-align: center;
+    }
+
+    header nav a:last-child {
+      border-bottom: 1px solid rgb(68, 152, 185);
+    }
+
+    .lg-logo {
+      width: 500px;
+    }
+
+    .main-content .top-content {
+      flex-direction: column;
+    }
+
+    .text-content {
+      padding: 20px;
+    }
+
+    .middle-img {
+      width: 500px;
+    }
+
+    .bottom-content {
+      flex-direction: column;
+    }
+
+    .bottom-content .text-content {
+      width: 500px;
+      padding: 20px 38px 20px 0;
+    }
+
+    .contact {
+      padding: 20px;
+    }
+
+    footer {
+      font-size: 17px;
+    }
   }
-}
