@@ -261,7 +261,7 @@ footer {
 	.nav a {
 		padding-bottom: 20px;
 		display:block;
-		width: 16.6%;
+		width: 10%;
 	}
 
 	.contentbox2 {
@@ -280,7 +280,7 @@ footer {
 }
 @media screen and (max-width: 500px) {
 	.container {
-		width: 360px;
+		width: 300px;
 	}
 
 	.nav {
@@ -305,13 +305,26 @@ footer {
 	}
 
 	.nav a {
-		font-size: 14px;
+		border-radius: 10px;
+		background: rgba(226,226,226,1);
+		text-align: center;
+		word-break: break-all;
+		padding: 20px;
+		border: 1px solid grey;
+		font-size: 20px;
 		margin-left: 10px;
-		width: 13.0%;
+		width: 100%;
+	}
+
+	.nav a:hover {
+		color: black;
+		transition: 0.5s;
+		box-shadow: 2px 2px black;
 	}
 	.contentbox2 {
 		display: none;
 	}
+
 	.contentbox1 {
 		padding:0 0 25px 25px;
 	}
