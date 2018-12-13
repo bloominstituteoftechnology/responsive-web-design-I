@@ -189,6 +189,77 @@ h1{
 	width: 59%;
 }
 
+.contact form{
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: column;
+}
+
+.contact form input{
+	border: 1px solid black;
+}
+
+.contact form textarea{
+	border: 1px solid black;
+	transition: all .25s ease-in-out;
+	background-color: white;
+	background-position: right bottom;
+}
+
+.contact form textarea:hover{
+	background: linear-gradient(to right, black 50%, white 50%);
+	background-size: 200% 100%;
+	color: white;
+	background-position: left bottom;
+}
+
+.contact form button{
+	border: 1px solid black;
+	background-color: white;
+	padding: 0 30px ;
+	font-family: 'Titillium Web', sans-serif;
+	font-weight: 600;
+	font-size: 16px;
+	width: 170px;
+	height: 40px; 
+	background-position: right bottom;
+	transition: all .25s ease-in-out;
+	margin-top: 20px;
+}
+
+.contact form button:hover{
+	background: linear-gradient(to right, black 50%, white 50%);
+	background-size: 200% 100%;
+	color: white;
+	background-position: left bottom;
+}
+
+.contact2{
+	width: 29%
+}
+
+.contact-main{
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.contact2 ul{
+	list-style-type:square;
+	list-style-position: inside;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.contact2 li{
+	margin: 10px;
+	display: flex;
+	align-items: center;
+}
+.contact2 img{
+	width: 24px;
+	margin-right: 20px;
+}
+
 @media (max-width: 800px){
   body{
     width: 100%;
@@ -243,6 +314,7 @@ h1{
     border-bottom: 1px solid black;
     text-align: center;
     font-size: 24px;
+    width: 100%;
   }
   
   .sec1{
@@ -261,6 +333,20 @@ h1{
   
   .section {
     height: 120px;
+  }
+
+  .contact-main{
+    flex-direction: column;
+  }
+
+  .contact{
+    width: 100%;
+  }
+
+  .contact2{
+    order: -1;
+    width: 100%;
+    margin-bottom: 50px;
   }
   
 }
