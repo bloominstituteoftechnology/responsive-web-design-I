@@ -143,7 +143,7 @@ h1, h2, h3, h4, h5 {
 .botcontainer{
     display: flex;
     justify-content: space-evenly;
-    border-top: 1px solid black;
+    border-bottom: 1px solid black;
     line-height: 1.2;
     font-size: 20px;
     flex-basis: 100%;
@@ -179,11 +179,44 @@ h1, h2, h3, h4, h5 {
 }
 
 
-/*~~~~~~~~~~~~~~~~~ TABLET NAV BAR~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~~~~~~~~~ TABLET~~~~~~~~~~~~~~~*/
 
 @media (max-width: 800px){
 
 
+    .logocontainer{
+        order: -1;
+        width: 768px;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 30px;
+        margin-top: 25px;
+    }
+
+    .firstimg{
+        display:none;
+    }
+
+    .barcontainer{
+        flex-wrap: wrap;
+    }
+
+    .topcontainer{
+        font-size: 14px;
+    }
+
+    .middleimg{
+       margin-left: 0px;
+        width: 70%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-right: 420px;
+    }
+
+
+    .botcontainer{
+        font-size: 14px;
+    }
 
 
 
@@ -191,5 +224,4 @@ h1, h2, h3, h4, h5 {
 
 
 
-    
 }
