@@ -195,7 +195,7 @@ header nav .logo {
 #content {
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
-	padding: 40px 0 49px 0;
+	padding: 36px 0 33px 0;
 	margin-top: 69px;
 }
 #content p {
@@ -206,7 +206,16 @@ header nav .logo {
 	justify-content: space-between;
 }
 #content .content-row section {
-	margin: 0 12px;
+	line-height: 20px;
+}
+#content .content-row section.third {
+    width: 274px;
+}
+#content .content-row section.third p {
+    line-height: 18px;
+}
+#content .content-row section.third:last-of-type {
+    margin-right: 18px;
 }
 #content .content-row section:first-of-type {
 	margin-left: 0;
@@ -216,12 +225,13 @@ header nav .logo {
 }
 #content #middle-img {
 	background-image: url(../img/mid-page-accent.jpg);
-	background-size: contain;
-	background-repeat: no-repeat;
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 	display: inline-block;
-	margin: 40px 0;
+	margin: 33px 0 29px 0;
 	height: 182px;
-	width: 877px;
+	width: 880px;
 }
 /*FOOTER*/
 footer {
