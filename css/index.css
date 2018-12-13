@@ -1,3 +1,316 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+html{
+  font-family: 'Titillium Web', sans-serif;
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  margin: 0 auto;
+ /* height: 100%; */
+}
 
 
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Bangers', cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+.nav-container {
+  max-width: 800px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar_top {
+  display: flex;
+  max-width: 880px;
+  justify-content: space-between;
+  align-items: center;
+ /* height: 40px;    */
+}
+
+
+.nav-container .navbar_top a {
+  padding: 20px;
+}
+/*
+a{
+  padding: 0 62px 0 0;
+  font-size: 15px;
+}
+*/
+
+.navbar_top a{
+  color: #BABABA;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+.nav-container .navbar_top a:first-child {
+  padding-left: 0;
+}
+
+.navbar_top a:hover {
+  font-size: 16px;
+  color: white;
+}
+
+.logoIMG {
+  width: 191.78px;
+  height: 40px;
+  /*background: lightgrey; */
+}
+
+.header {
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: 2px solid black;
+  align-items: center;
+  padding: 50px 0;
+
+  /*  margin: 45px 0 30px 0; */
+}
+
+.banner {
+  display: flex;
+  /*width: 400px; */
+  height: 360px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
+/*  margin: 60px 0 0 40px; */
+}
+
+h1 {
+  font-size: 80px;
+  font-family: 'Bangers', sans-serif;
+  text-align: center;
+  margin: 0;
+  line-height: 80px;
+}
+
+button {
+  text-align: center;
+  vertical-align: center;
+  font-size: 15px;
+  border: 1px solid black;
+  width: 160px;
+  margin: 0 auto;
+  line-height: 15px;
+  padding: 10px 0;
+
+}
+
+button:hover {
+  background: lightgray;
+}
+
+.headerIMG {
+  display: flex;
+   height: 400px;
+    padding-left: 35px;
+}
+
+.top {
+  display: flex;
+  margin-top: 30px;
+}
+
+.top .top-content{
+  display: flex;
+  flex-direction: column;
+ /* width: 400px; */
+  padding: 10px;
+}
+
+
+
+.middleIMG{
+  display: flex;
+  margin: 45px auto;
+  max-width: 800px;
+}
+
+.bottom{
+  border-bottom: 2px solid black;
+  padding-bottom: 30px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom-content {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  padding-bottom: 20px;
+}
+
+.bottom-content:last-child {
+  padding-left: 5px;
+}
+
+address {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 20px;
+
+}
+
+.phone {
+  padding: 25px 0;
+}
+
+h4 {
+  display: flex;
+  justify-content: center;
+  padding: 45px;
+}
+
+
+@media (max-width: 800px) {
+
+  body {
+    margin: 0 auto;
+  }
+
+  .nav-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .nav-container .navbar_top {
+    display: flex;
+    justify-content: center;
+  }
+
+
+  .logoIMG {
+    margin: 30px auto;
+    order: -1;
+  }
+
+  .headerIMG {
+    display: none;
+  }
+
+}
+
+
+@media (max-width: 500px) {
+  body {
+    margin: 0 auto;
+  }
+
+  .nav-container .navbar_top .logoIMG  img{
+    order: -1;
+    margin: 0;
+  }
+
+  .nav-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    /*   justify-content: center;
+    align-items: center;*/
+    margin: 0 auto;
+  }
+
+
+  .nav-container .navbar_top{
+    border: 1px solid green;
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+ }
+
+  .nav-container .navbar_top a{
+    width: 500px;
+    border-bottom: 1px solid grey;
+    text-align: center;
+    padding: 10px 0;
+  /*  margin: 0 auto; */
+  }
+
+  .top-content {
+    max-width: 500px;
+  }
+
+  .bottom .bottom-content {
+    width: 500px;
+  }
+
+  .top, .bottom, address {
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+
+}
