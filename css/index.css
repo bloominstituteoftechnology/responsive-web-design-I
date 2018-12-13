@@ -66,13 +66,15 @@ h1, h2, h3, h4, h5 {
 	margin: 0 auto;
 	width: 900px;
 }
-
+header {
+	border-bottom: 2px solid black;
+	margin-bottom: 50px;
+}
 nav {
 	display:flex;
 	width: 900px;
 	flex-flow:row;
 	justify-content: space-evenly;
-	margin-bottom: 50px;
 }
 nav a {
 	text-decoration: none;
@@ -90,12 +92,13 @@ nav img {
 }
 
 .electric-boogaloo {
-	border: 1px solid rebeccapurple;
+	margin: 50px;
+	/* border: 1px solid rebeccapurple; */
 	display: flex; 
 	justify-content: space-around;
 }
 .marketing {
-	border: 1px solid chartreuse;
+	/* border: 1px solid chartreuse; */
 	padding: 50px;
 	display: flex;
 	flex-flow: wrap column;
@@ -116,5 +119,34 @@ button {
 	font-size: 16px;
 }
 .header-img {
-	border: 1px solid crimson;
+	/* border: 1px solid crimson; */
+}
+.container {
+	border-bottom: 3px solid black;
+	width: 900px;
+	margin: 0 auto;
+}
+.more-info {
+	/* border: 1px solid chartreuse; */
+	display: flex;
+	margin-bottom: 20px;
+}
+.mid-page {
+	display: flex;
+	flex-flow: wrap row;
+	justify-content: center;
+}
+.even-more-info {
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
+}
+.even-more-info section {
+	/* border: 1px solid crimson; */
+	width: 290px;
+	margin: 20px 0px; 
+}
+p {
+	line-height: 1.1;
+	font-size: 16px;
 }
