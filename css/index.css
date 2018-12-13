@@ -227,17 +227,16 @@ button {
 article {
   /* border: 3px solid red; */
   margin: 35px 0 20px 0;
-  height: 500px;
-  padding-left: 17px;
+  padding-top: 60px;
+  height: 600px;
+  padding-left: 10px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
 }
 
 .two-box {
   display: flex;
   margin-bottom: 35px;
-}
-
-.middleimg {
-  text-align: center;
 }
 
 .three-box {
@@ -263,8 +262,9 @@ footer {
 /* Small Tablet */
 @media only screen and (max-width: 800px) {
   .container {
+    /* border: 3px solid red; */
     width: 800px;
-    margin: 0 auto;
+    margin: 0;
   }
   header {
     /* border: 3px solid red; */
@@ -276,20 +276,20 @@ footer {
   }
 
   .nav {
-    width: 800px;
     margin-top: 35px;
     /* border: 3px solid red; */
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    padding: 0;
   }
 
   a {
-    margin-right: 55px;
+    /* border: 3px solid red; */
+    margin: 30px;
   }
 
   #firstbox {
-    margin-top: 65px;
+    margin-top: 50px;
     /* border: 3px solid red; */
     display: flex;
     flex-direction: column;
@@ -307,25 +307,48 @@ footer {
   }
 
   article {
-    width: 600;
-    margin-bottom: 50px;
+    width: 750px;
+    height: 600px;
+    padding-top: 40px;
+    margin: 0 0 50px 25px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+  }
+
+  .two-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .twobox {
+    /* border: 3px solid red; */
+    width: 350px;
+    height: 150px;
   }
 
   .three-box {
+    /* border: 3px solid red; */
+    width: 740px;
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: row;
+    justify-content: space-between;
     margin-top: 30px;
-    width: 750px;
+  }
+
+  .threebox {
+    /* border: 3px solid red; */
+    width: 300px;
+    height: 170px;
   }
 
   #product {
-    margin: 0 35px;
+    margin: 0 40px;
   }
 
   .middle-img {
-    margin-top: 25px;
     width: 750px;
-    padding-right: 50px;
+    padding-right: 40px;
   }
   .address {
     padding-left: 30px;
