@@ -69,8 +69,7 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 .nav-container {
-  display: flex;
-  justify-content: space-around;
+  max-width: 600px;
   margin-top: 30px;
 
 }
@@ -252,24 +251,27 @@ h4 {
 
 
 @media (max-width: 500px) {
- .nav-container {
-   display: flex;
-   flex-direction: column;
- }
+  .nav-container {
+    border: 3px solid blue;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+  }
 
 
   .nav-container .navbar_top{
     border: 1px solid green;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: space-between;
+    flex-direction: column;  /* UGH */
+    width: 500px;
+
  }
 
   .nav-container .navbar_top a{
     display: flex;
     flex-direction: column;
-    height: 15px;
+
+    width: 500px;
   }
 
   .top, .bottom, address {
@@ -282,5 +284,8 @@ h4 {
     align-items: center;
   }
 
+  .logoIMG {
+    display: none;
+  }
 
 }
