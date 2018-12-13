@@ -11,3 +11,4 @@ Lambda School.
 
 For full effect: 
 Resize window from 1000px to 750px to 450px. 
+Check Contact page. 
