@@ -71,7 +71,8 @@ h1, h2, h3, h4, h5 {
 
 body{
 	margin: 0 auto;
-	width: 880px;
+  width: 100%;
+  max-width: 800px;
 	font-size: 16px;
 }
 
@@ -93,7 +94,11 @@ nav a{
 	transition: all .25s ease-in-out;
 	box-sizing: content-box;
 	display: inline-block;
-	padding: 25px;
+	padding: 23px;
+  }
+
+  nav a:last-child{
+    padding-right: 0px;
   }
   
 nav a:hover{
@@ -158,6 +163,10 @@ h1{
 	align-content: space-between;
 }
 
+.middle-img{
+  width: 100%;
+}
+
 .sec1{
 	width: 49%;
 	
@@ -212,8 +221,7 @@ h1{
     margin: 55px 0;
   }
   .middle-img{
-    margin-left: -10px;
-    width: 753px;
+    width: 100%;
   }
   .section{
     height: 220px;
@@ -239,6 +247,7 @@ h1{
     border-bottom: 1px solid black;
     text-align: center;
     font-size: 24px;
+    padding: 10px 0;
   }
 
   nav a:last-child{
@@ -261,12 +270,12 @@ h1{
   }
   
   .sec1{
-    width: 475px;
+    width: 100%;
     padding: 25px 0;
   }
   
   .sec2{
-    width: 480px;
+    width: 100%;
     padding: 25px 0;
   }
   
@@ -275,8 +284,7 @@ h1{
   } 
   
   .middle-img{
-    margin-left: -10px;
-    width: 500px;
+    width: 100%;
   }
   
   .section {

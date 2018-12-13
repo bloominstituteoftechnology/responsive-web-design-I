@@ -67,7 +67,8 @@ h1, h2, h3, h4, h5 {
 
 body{
 	margin: 0 auto;
-	width: 880px;
+  width: 100%;
+  max-width: 800px;
 	font-size: 16px;
 }
 
@@ -99,8 +100,12 @@ nav a:hover{
 	background-position: left bottom;
   }
 
+nav a:last-child{
+  padding-right: 0px;
+}
+
   nav a:last-child:hover{
-	background: white
+  background: white;
   }
 
 .starting-section{
@@ -168,6 +173,10 @@ h1{
 	height: 250px;
 }
 
+.section .middle-img{
+  width: 100%;
+}
+
 .footer{
 	padding-top: 40px;
 }
@@ -208,8 +217,7 @@ h1{
     margin: 55px 0;
   }
   .middle-img{
-    margin-left: -10px;
-    width: 753px;
+    width: 100%;
   }
   .section{
     height: 220px;
@@ -221,7 +229,7 @@ h1{
 
 @media (max-width: 500px){
   body{
-    width: 500px;
+    width: 100%;
     padding: 10px;
   }
   
@@ -232,30 +240,24 @@ h1{
   } 
   
   nav a{
-    width: 500px;
     border-bottom: 1px solid black;
     text-align: center;
     font-size: 24px;
   }
   
   .sec1{
-    width: 475px;
+    width: 100%;
     padding: 25px 0;
   }
   
   .sec2{
-    width: 480px;
+    width: 100%;
     padding: 25px 0;
   }
   
   .main-section{
     padding: 40px 0;
   } 
-  
-  .middle-img{
-    margin-left: -10px;
-    width: 500px;
-  }
   
   .section {
     height: 120px;
