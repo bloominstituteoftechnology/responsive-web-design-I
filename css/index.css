@@ -235,26 +235,25 @@ button {
   nav {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    font-size: 16px;
   }
 
   .menu {
-    width: 100%;
     order: 2;
   }
 
+  .menu a {
+    padding-right: 72px;
+    font-size: 14px;
+  }
+
   .logo-container {
-    width: 760px;
     order: 1;
   }
 
-  /* .hero img {
-    display: none;
-  } */
-
-  h1 {
-    font-size: 36px;
+  .logo-container img {
+    width: 160px;
+    padding-bottom: 30px;
   }
 
   .hero {
@@ -264,15 +263,27 @@ button {
 
   .hero .inner1 {
       width: 760px;
-      border: 2px solid red;
   }
 
   .hero .inner1:last-child {
     display: none;
   }
 
+  h1 {
+    font-size: 56px;
+  }
+
+  .cta {
+    width: 140px;
+    margin: 0 auto;
+    border: 2px solid #c9c9c9;
+    padding: 5px 26px;
+    font-size: 14px;
+  }
+
   .middle-img {
     max-width: 760px;
   }
+
 
 }
