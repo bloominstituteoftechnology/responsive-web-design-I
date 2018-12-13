@@ -163,7 +163,7 @@ a {
 	.container {
 		width: 500px;
 		margin: 0 auto;
-		border: 1px solid red;
+		/* border: 1px solid red; */
 	}
 	/* Navigation */
 	.navigation {
@@ -241,8 +241,9 @@ a {
 	.top-section h2 {
 		margin-top: 20px;
 	}
-	.image {
-		width: 500px;
+	.image img {
+		width: 100%;
+		height: auto;
 	}
 	/* Bottom Section */
 	.bottom-section {
@@ -276,4 +277,105 @@ a {
 }
 
  @media (max-width: 800px) {
+	.container {
+		width: 800px;
+		margin: 0 auto;
+		/* border: 1px solid red; */
+	}
+	/* Navigation */
+	.navigation {
+		width: 800px;
+		display: flex;
+		justify-content: space-between; 
+		/* border: 1px solid red; */
+	}
+	a {
+		text-decoration: none;
+		margin-right: 65px;
+		display: flex;
+		align-items: flex-end; 
+		color: grey;
+		text-decoration: none;
+	}
+	.logo img {
+		display: flex;
+		justify-content: flex-end;
+	}
 	
+	/* Header */
+	.header {
+		/* border: red 1px solid; */
+		height: 400px;
+		width: 800px;
+		display: flex;
+		justify-content: center;
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+	.header div { 
+		padding-top: 100px;
+		/* border: 1px solid red;  */
+		display: flex; 
+		flex-direction: column; 
+		align-items: center;  
+	}
+	.header h1 {
+		font-size: 80px;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		/* border: 1px solid red; */
+	}
+	.header button {
+		display: block;
+		margin-top: 10px;
+		background-color: white;
+		border: 1px solid black;
+		height: 30px;
+		width: 160px;
+		font-family: 'Titillium Web', sans-serif;
+	}
+	.header img {
+		display: none;
+	}
+	/* Top Section */
+	#lineThing {
+		border: 1px solid black;
+		margin-top: 10px;
+		width: 800px;
+	}
+	.top-section {
+		margin-top: 40px;
+		margin-bottom: 40px;
+		display: flex;
+	}
+	.image img {
+		width: 100%;
+		height: auto;
+	}
+	/* Bottom Section */
+	.bottom-section {
+		
+		display: flex;
+		margin-top: 40px;
+		margin-left: 10px
+	}
+	/* Contact */
+	.contact {
+		margin-top: 40px;
+		display: flex;
+		flex-direction: column;
+	}
+	.contact p {
+		margin-top: 20px;
+	}
+	.contact div {
+		border: 1px solid black;
+		margin-bottom: 40px;
+	}
+	/* Footer */
+	.footer {
+		display: flex;
+		justify-content: center;
+	}
+} 
