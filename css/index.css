@@ -73,9 +73,9 @@ html {
 	padding: 0;
 }
 
-body {
+.container {
 	margin: 0 auto;
-	max-width: 876px;
+	max-width: 880px;
 	font-size: 16px;
 }
 
@@ -84,21 +84,20 @@ p {
 }
 
 .nav{
-   width: 880px;
-   top: 0;
-   position: fixed;
-   z-index: 2;
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   padding-left: 23px;
  }
 
 header {
    display: flex;
-   position: fixed;
    flex-direction: row;
    justify-content: space-between;
-   height: 60px;
-   width: 867px;
-   align-items: center;
-   margin-top: -46px;
+   height: 50px;
+   width: 800px;
+   align-items: baseline;
+   margin-top: 27px;
  }
 
  header nav a{
@@ -116,13 +115,17 @@ header {
  }
  
  .greatidealogo{
-	display: flex;
-   position: absolute;
-   right: 0;
-   margin-top: -2px;
-   margin-right: 0px;
+
+    display: flex;
+   margin-top: 7px;
+   margin-right: -78px;
+   margin-bottom: 14px;
+   align-self: baseline;
+   align-self: flex-end;
 
  }
+
+
 
 
  button {
@@ -137,10 +140,9 @@ header {
 }
 
 .start-section { 
-    margin-top: 35px;
     width: 880px;
-    height: 440px;
     position: relative;
+    margin-bottom: 100px;
   }
 
 
@@ -162,6 +164,7 @@ header {
      font-weight: 500;
      padding-left: 106px;
      padding-top: 5px;
+     flex-shrink: inherit;
  }
 
  h2 {
@@ -171,21 +174,23 @@ header {
  .left-div {
    	display: flex;
 	 padding: 50px;
-	 width: 440px;
+	 width: 434px;
 	 text-align: center;
-	 margin-top: 70px;
-	 position: absolute;
+     margin-top: 45px;
+     margin-bottom: 21px;
 	 flex-direction: column;
-	 align-items: center;
+     align-items: center;
+     margin-left: -5px;
    }
 
    .right-div {
 	   display: flex;
-	   width: 440px;
+	   width: 482px;
 	   position: absolute;
-       padding: 61px 61px 0px 60px;
-       margin-top: -27px;
-	   right: 0;
+       padding: 0px 61px 0px 60px;
+       margin-top: -390px;
+       right: 0;
+       margin-right: -34px;
 	 }
 
    .top-section {
@@ -202,7 +207,8 @@ header {
 		margin-top: 41px;
 		padding-bottom: 48px;
 		border-bottom: 1px solid black;
-		margin-bottom: 39px;
+        margin-bottom: 39px;
+        margin-left: 4px;
       }
       
       .top-section, .bottom-section {
@@ -213,13 +219,11 @@ header {
 	  
 	
    .features {
-	   /* display: inline-block; */
 	   width: 425px;
 	   margin-right: 10px;
 	 }
 
    .about {
-	   /* display: inline-block; */
 	   width: 425px;
 	   margin-left: 6px;
    }
@@ -337,27 +341,44 @@ header {
 
 /* Tablet Portrait */
 
-@media only screen and (max-width: 800px) {
+@media (max-width: 800px) {
  
-    body {
+    .container {
         width: 800px;
+    }
+
+    .compleximage {
+        display: none;
+        
     }
 
     header {
-        width: 800px;
-        height: 100px;
+        display: flex;
+        width: 100%;
         flex-direction: column;
+        position: relative;
     }
 
-    header>img {
-        order: 1;
-        width: 200px;
-        height: 60px;
-     }
-     header>nav {
+     header nav {
+        width: 100%;
+        justify-content: space-evenly;
+        display: flex;
         order: 2;
-        width: 800px;
-        justify-content: space-between;
+    }
+
+    header .greatidealogo {
+        order: 1;
+        /* width: 200px;
+        height: 60px; */
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        margin-top: 20px;
+        display: block;
+     }
+
+    .start-section .left-div {
+        display: block;
     }
 
 }
