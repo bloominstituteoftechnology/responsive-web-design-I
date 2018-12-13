@@ -284,9 +284,6 @@ p {
 		margin-bottom: 35px;
 	}
 
-	.line1 a {
-	}
-
 	.logo {
 		margin-top: 20px;
 	}
@@ -341,10 +338,139 @@ p {
 
 	.copyright {
 		margin-bottom: 30px;
-	}
-
-	
+	}	
 }
 
-/* 800px = tablet */
-/* 500px = phone */
+@media (max-width: 500px) {
+
+	.container {
+		width: 480px;
+		height: 2400px;
+	}
+
+	.buttons {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 472px;
+		height: 200px;
+	}
+
+	nav a {
+		padding: 5px;
+		border-bottom: 1px solid gray;
+	}
+
+	.logo {
+		position: relative;
+		left: 35px;
+		height: 75px;
+	}
+
+	.title {
+		height: none;
+		margin-top: 20px;
+		position: relative;
+		top: 150px;
+	}
+
+	.get-started {
+		width: 180px;
+	}
+
+	.content {
+		width: 472px;
+		position: relative;
+		top: 150px;
+		right: 78px;
+	}
+
+	.above-pic {
+		width: 472px;
+	}
+
+	.about {
+		position: relative;
+		top: 175px;
+		right: 235px;
+	}
+
+	.p-1 {
+		position: relative;
+	}
+
+	.p-2 {
+		position: relative;
+		top: 175px;
+		right: 300px;
+	}
+
+	.middle-img {
+		position: relative;
+		top: 200px;
+		width: 450px;
+	}
+
+	.services {
+		position: relative;
+		top: 200px;
+	}
+
+	.service-p {
+		position: relative;
+		top: 200px;
+	}
+
+	.product {
+		position: relative;
+		top: 400px;
+		right: 200px;		
+	}
+
+	.product-p {
+		position: relative;
+		top: 400px;
+		right: 200px;
+	}
+
+	.vision {
+		position: relative;
+		top: 600px;
+		right: 400px;
+	}
+
+	.vision-p {
+		position: relative;
+		top: 600px;
+		right: 400px;
+	}
+
+	.p2 {
+		border: none;
+	}
+
+	p {
+		justify-content: none;
+		align-items: none;
+		padding-right: 0;
+	}	
+
+	footer h5 {
+		position: relative;
+		top: 700px;
+		right: 83px;
+		border-top: 1.5px solid black;
+		padding-top: 30px;
+	}
+
+	footer p {
+		position: relative;
+		top: 700px;
+		right: 83px;
+	}
+
+	.copyright {
+		position: relative;
+		top: 710px;
+	}	
+}
