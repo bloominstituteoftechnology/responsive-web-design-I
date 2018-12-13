@@ -1,3 +1,257 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 880px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  align-items: center;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  width: 668px;
+}
+
+header .logo {
+  display: inline-block;
+}
+
+header nav a {
+  display: inline-block;
+  color: gray;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+ header nav a:hover {
+  color: black;
+}
+
+header nav a:last-child {
+  margin-right: 65px;
+}
+
+.lg-logo {
+  width: 880px;
+  height: 524px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.lg-logo .lg-logo-text {
+  display: flex;
+  font-size: 77px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.lg-logo .lg-logo-text button {
+  transition-duration: 0.4s;
+  color: black;
+  border: 1px solid black;
+  font-size: 17px;
+  padding: 5px 40px;
+  box-shadow: 3px 3px grey;
+}
+
+.lg-logo .lg-logo-text button:hover {
+  background-color: rgb(68, 152, 185);
+  color: white;
+  cursor: pointer;
+}
+
+.lg-logo .lg-logo-text button:active {
+  transform: translate(4px);
+}
+
+.main-content {
+  border-top: 2px solid rgb(68, 152, 185);
+  padding: 39px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-content {
+  display: flex;
+  width: 880px;
+  justify-content: space-around;
+}
+
+.top-content .text-content {
+  width: 440px;
+}
+
+.middle-img {
+  margin-top: 45px;
+}
+
+.bottom-content {
+  margin-top: 41px;
+  display: flex;
+  width: 880px;
+  justify-content: space-between;
+}
+
+.bottom-content .text-content {
+  width: 275px;
+}
+
+.contact {
+  margin-top: 19px;
+  border-top: 2px solid rgb(68, 152, 185);
+  padding: 38px 3px 0;
+}
+
+.contact p {
+  line-height: 1.75;
+}
+
+footer {
+  margin: 50px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Media queries */
+
+@media (max-width: 800px) {
+  .container {
+    width: 100%;
+  }
+  header {
+    display: flex;
+    justify-content: center;
+  }
+
+  header nav a .logo {
+    display: flex;
+    justify-content: column-reverse;
+  }
+  header nav a {
+    display: flex;
+    justify-content: center;
+  }
+  .lg-logo .lg-logo-text {
+    display: flex;
+    justify-content: center;
+  }
+  .lg-logo .round-img {
+    display: none;
+  }
+  .main-content .top-content .text-content {
+    width: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px;
+  }
+  .middle-img {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+  }
+  .bottom-content .text-content {
+    width: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px;
+  }
+  .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+  }
+
+}
+
+@media (max-width: 500px) {
+  .container {
+    width: 350px;
+  }
+}
