@@ -1,0 +1,264 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 560;
+}
+
+h1 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    font-size: 26px;
+} 
+
+h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+p {
+    line-height: 20px;
+}
+
+/* Code Begin */
+
+.container {
+    width: 880px;
+    margin: 0px auto;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+nav {
+	display: flex;
+	width: 70%;
+	justify-content: space-between;
+}
+
+.nav-button {
+	text-decoration: none;
+    color: grey;
+    transition: transform 0.4s;
+}
+
+.nav-button:hover {
+	transform: scale(1.2);
+}
+
+.top-content {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.services {
+    margin-top: 30px;
+}
+
+.middle-content {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.middle-content div {
+    border: 1px solid black;
+    background:#F5F5F5;
+    padding: 20px;
+    width: 47%;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.learn-more {
+    border: 1px solid black;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+    margin-top: 20px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 38%;
+    font-size: 12px;
+    background: white;
+}
+
+.bottom-content {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 90px;
+}
+
+.facts {
+    width: 45%
+}
+
+.facts ul li {
+    list-style-type: square;
+    list-style-position: inside;
+    margin-top: 15px;
+}
+
+.copyright {
+	text-align: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+@media (max-width: 800px) {
+    .container {
+        width: 640px;
+    }
+
+    .nav-content {
+        flex-direction: column;
+    }
+
+    .logo {
+        margin-bottom: 36px;
+    }
+
+    nav {
+        width: 100%;
+        order: 1;
+    }
+
+    .services-header-img {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .services-info-img {
+        width: 50%;
+        height: 50%;
+        align-self: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        width: 460px;
+    }
+    
+    .nav-content {
+        margin-top: 19px;
+    }
+
+    .logo {
+        margin-bottom: 25px;
+    }
+
+    nav {
+        flex-direction: column;
+        width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .nav-button {
+        border-top: 1px solid black;
+        text-align: center;
+        padding: 19.8px;
+        font-size: 20px;
+    }
+
+    nav a:last-child {
+        border-bottom: 1px solid black;
+    }
+
+    .services {
+        margin-left: 20px;
+        margin-right: 14px;
+    }
+
+    .middle-content {
+        flex-direction: column;
+    }
+
+    .middle-content div {
+        width: 100%
+    }
+
+    .bottom-content {
+        flex-direction: column;
+    }
+
+    .services-info-img {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 40px;
+    }
+    
+    .facts {
+        width: 100%;
+        order: 1;
+        text-align: left;
+        margin-left: 20px;
+        padding-right: 25px;
+    }
+}
