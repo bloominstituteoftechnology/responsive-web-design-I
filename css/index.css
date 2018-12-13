@@ -1,3 +1,520 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* The use of !important was avoided so Carlos wouldn't cry himself to sleep */
+
+/* 2 Stretch Tasks achieved*/
+
+/* Gotta make some rules here so that everything has a limit */
+.container {
+	width: 950px;
+	margin: auto;
+}
+
+/* Nav bar and header styles */ 
+
+header {
+	height: 60px;
+	width: 950px;
+	position: fixed;
+	top: 0;
+	background-image: linear-gradient(to bottom right, rgb(0, 110, 255), rgb(255, 255, 251));
+	z-index: 10;
+    display: flex;
+
+}
+
+header nav {
+	height: 60px;
+	width: 100%;
+	display: flex;
+	position: relative;
+	line-height: 25px;
+	flex-direction: row;
+	
+}
+
+header nav a {
+	margin: 10px 60px 0 20px;
+	text-decoration: none;
+	justify-content: flex-start;
+	color: rgb(68, 69, 160);
+	line-height: 36px;
+	font-size: 14px;
+}
+
+header .logo {
+	margin-top: 5px;
+	margin-right: 5px;
+	height: 40px;
+    width: auto;
+	justify-content: flex-start;
+}
+
+/* Hands down the most challenging part, at one point the fonts even got wacky on me */
+.main-content {
+	width: 100%;
+	height: 475px;
+	position: relative;
+	display: flex;
+	margin-top: 60px;
+}
+
+.main-content .stack-text {
+	position: absolute;
+	margin-top: 50px;
+	margin-left: 35px;
+	height: 310px;
+	width: 60%;
+	text-align: center;
+	line-height: 80px;
+	font-size: 75px;
+}
+
+.main-content .snippy {
+	position: absolute;
+	right: 0;
+	top: 10;
+	height: 380px;
+	width: 40%;
+}
+
+.main-content .start {
+	position: absolute;
+	border: 1px solid gray;
+	left: 230px;
+	bottom: 125px;
+	padding: 5px 45px 3px 45px;
+	height: 35px;
+	font-size: 18px;
+	text-align: center;
+}
+
+/* After what happened ^^^ there, this was pretty simple */
+h2 {
+	font-size: 16px;
+}
+
+.info-content .feature-about {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.info-content .feature {
+	padding-top: 10px;
+	margin-right: 20px;
+	width: 45%;
+}
+
+.info-content .about {
+	padding-top: 10px;
+	margin-left: 20px;
+	width: 45%;
+}
+
+.middle-img {
+	margin: 35px 0;
+	width: 100%;
+}
+
+.info-content .ser-pro-vis {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.info-content .services {
+	margin-right: 10px;
+	width: 30%;
+	padding-bottom: 25px;
+}
+
+.info-content .product {
+	margin: 0 5px;
+	width: 30%;
+}
+
+.info-content .vision {
+	margin-left: 10px;
+	width: 30%;
+}	
+
+footer {
+	text-align: center;
+	margin-top: 100px;
+}
+
+/* And so begins the tablet break */
+
+@media (max-width: 800px){
+
+    .container {
+        width: 800px;
+    }
+
+    header {
+        height: 130px;
+        width: 800px;
+        position: fixed;
+        top: 0;background-image: none;
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+    
+    }
+
+    header nav {
+        height: 60px;
+        width: 800px;
+        display: flex;
+        position: relative;
+        line-height: 25px;
+        flex-direction: row;
+        
+    }
+    
+    header nav a {
+        margin: 95px 55px 0 28px;
+        text-decoration: none;
+        justify-content: flex-start;
+        color: rgb(159, 159, 180);
+        line-height: 36px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    
+    header .logo {
+        margin-bottom: 65px;
+        height: 36px;
+        width: auto;
+        align-self: center;
+    }
+    
+    .main-content .snippy {
+        display: none;
+    }
+    
+    .main-content .stack-text {
+        position: absolute;
+        margin-top: 130px;
+        margin-left: 160px;
+        height: 310px;
+        text-align: center;
+        line-height: 73px;
+        font-size: 73px;
+    }
+
+    .main-content .start {
+        position: absolute;
+        border: 1px solid gray;
+        left: 315px;
+        bottom: 67px;
+        padding: 8px 40px 3px 43px;
+        height: 33px;
+        font-size: 17px;
+        text-align: center;
+        font-weight: bold;
+	}
+	
+	.toppy {
+		border-bottom: 2px solid black;
+		margin: 7px 21px 0px 21px;
+	}
+
+	h2 {
+		font-size: 16px;
+	}
+	
+	.info-content .feature-about {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	
+	.info-content .feature {
+		padding-top: 37px;
+		margin-right: 10px;
+		margin-left: 30px;
+		width: 350px;
+		line-height: 18px;
+		font-size: 16px;
+	}
+	
+	.info-content .about {
+		padding-top: 37px;
+		width: 370px;
+		line-height: 18px;
+	}
+	
+	.middle-img {
+		margin: 30px 21px 30px 11px;
+		height: 156px;
+		width: 760px;
+	}
+	
+	.info-content .ser-pro-vis {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	
+	.info-content .ser-pro-vis .services {
+		margin-right: 0px;
+		margin-left: 30px;
+		padding-right: 20px;
+		height: 200px;
+		width: 235px;
+		padding-bottom: 0px;
+		line-height: 18px;
+	}
+	
+	.info-content .product {
+		margin: 0 0px 0px 15px;
+		padding-right: 10px;
+		width: 235px;
+		line-height: 18px;
+	}
+	
+	.info-content .vision {
+		padding-left: 13px;
+		width: 235px;
+	}	
+	
+	.addressFooter .botty {
+		border-bottom: 1px solid black;
+		margin: 15px 21px 0px 21px;
+	}
+
+	.addy{
+		margin-top: 34px;
+		margin-left: 30px
+	}
+
+}
+/* So Ends the tablet CSS */
 
 
+/* So begins the mobile CSS */
+
+@media (max-width: 500px) {
+
+	.container {
+		max-width: 500px;
+	}
+
+	header {
+		height: 445px;
+		width: 500px;
+		position: relative;
+		background-image: none;
+		z-index: 10;
+		display: flex;
+	
+	}
+	
+	header nav {
+		margin-top: 70px;
+		height: 60px;
+		width: 100%;
+		display: flex;
+		position: relative;
+		line-height: 25px;
+		flex-direction: column;
+		align-items: center;
+		
+	}
+	
+	header nav a {
+		margin: 0px 0px 0 0px;
+		text-decoration: none;
+		align-items: center;
+		color: rgb(104, 104, 104);
+		line-height: 10px;
+		font-size: 20px;
+		border-top: 1px solid grey;
+		padding: 30px 250px;
+		height: 40px;
+	}
+	
+	.contacty {
+		border-bottom: 1px solid grey; 
+	}
+
+	.logo {
+		position: absolute;
+		height: 40px;
+		width: auto;
+		margin-top: 20px;
+
+	}
+	
+	section .main-content {
+		height: 335px;
+	}
+    .main-content .snippy {
+        display: none;
+    }
+    
+    .main-content .stack-text {
+        position: absolute;
+        margin-top: -10px;
+        margin-left: 100px;
+        height: 310px;
+        line-height: 73px;
+		font-size: 73px;
+
+    }
+
+    .main-content .start {
+        position: absolute;
+        border: 1px solid gray;
+        left: 165px;
+        bottom: 75px;
+        padding: 8px 40px 3px 43px;
+        height: 33px;
+        font-size: 17px;
+		font-weight: bold;
+		
+	}
+	
+	.toppy {
+		border-bottom: 2px solid black;
+		margin: 0px 21px 0px 21px;
+	}
+
+	h2 {
+		font-size: 16px;
+	}
+	
+	.info-content .feature-about {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	
+	.info-content .feature {
+		padding-top: 58px;
+		margin-right: 10px;
+		margin-left: 20px;
+		width: 500px;
+		line-height: 18px;
+		font-size: 16px;
+	}
+	
+	.info-content .about {
+		padding-top: 45px;
+		width: 500px;
+		line-height: 18px;
+	}
+	
+	.middle-img {
+		margin: 70px 21px 30px 21px;
+		height: 100px;
+		width: 500px;
+	}
+	
+	.info-content .ser-pro-vis {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	
+	.info-content .ser-pro-vis .services {
+		margin-right: 0px;
+		margin-left: 20px;
+		padding-right: 0px;
+		height: 150px;
+		width: 500px;
+		padding-bottom: 0px;
+		line-height: 18px;
+	}
+	
+	.info-content .product {
+		margin: 12px 0px 0px 20px;
+		height: 150px;
+		width: 500px;
+		height: 150px;
+		line-height: 18px;
+	}
+	
+	.info-content .vision {
+		margin-top: 18px;
+		padding-left: 13px;
+		height: 128px;
+		width: 450px;
+	}	
+	
+	.addressFooter .botty {
+		border-bottom: 1px solid black;
+		margin: 15px 21px 0px 21px;
+	}
+
+	.addy{
+		margin-top: 34px;
+		margin-left: 30px
+	}
+}
