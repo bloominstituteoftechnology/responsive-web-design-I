@@ -107,6 +107,7 @@ header a {
 /*   border: 1px solid red; */
   margin-top: 100px;
   /* display: inline-block; */
+  display: flex;
   position: relative;
   border-bottom: 3px solid black;
 }
@@ -277,6 +278,10 @@ header a {
 
 
 @media (max-width: 800px) {
+  .container {
+    font-size: small; 
+  }
+  
   .header {
     display: flex;
     justify-content: center;
@@ -299,6 +304,7 @@ header a {
     margin-top: 0px;
     display: flex;
     justify-content: center;
+    height: 400px;
   }
 
   .mainheading .box3a {
@@ -310,33 +316,56 @@ header a {
   .box3b {
     display: none;
   }
+  .box-6 .middle-img {
+    margin: 0px;
+  }
+
+  .container3 {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .box-10 {
+    border: 1px solid red;
+  }
 
 
-  
-}
+  }
 
 @media (max-width: 500px){
+  
+  .container {
+    font-size: large; 
+  }
+
   nav {
     flex-direction: column;
     align-items: center;
   }
 
-  .header {
+  header {
     /* display: flex;
     justify-content: center;
-    align-items: center; */
-    /* flex-direction: column-reverse; */
-  }
-  
-  .header header a {
-    /* padding: 15px; */
-    background-color: white;
+    align-items: center;
+    flex-direction: column-reverse; */
+    border-bottom: 1px black;
   }
 
-  .header header nav {
-    display: flex;
-    justify-content: space-between;
-    align-content: baseline;
+  .header header a {
+    padding: 5px;
+    border-bottom: 1px solid black;
+    width: 500px;
+    text-align: center;
   }
   
+  .mainheading{
+  border-bottom: 1px solid black;
+  }
+
+  .top-section {
+    display: flex;
+    flex-direction: column;
+    font-size: small;
+  }
 }
