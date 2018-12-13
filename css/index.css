@@ -304,3 +304,31 @@ a[href^="tel"]::before {
         width: auto;
     }
 }
+
+@media(max-width: 500px) {
+
+    nav {
+        height: 372px;
+        position: static;
+    }
+
+    header {
+        margin-top: auto;
+    }
+
+    .nav-item-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-item-wrapper a {
+        border: 1px solid;
+        width: 100%;
+    }
+
+    .logo-wrapper {
+        margin: 20px 0;
+        width: auto;
+        height: auto;
+    }
+}
