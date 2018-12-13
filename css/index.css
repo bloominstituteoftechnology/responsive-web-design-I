@@ -52,18 +52,20 @@ table {
     box-sizing: border-box;
 }
 
+/* General styling */
+
 html, body {
-    height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+	height: 100%;
+	font-family: 'Titillium Web', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
+	font-family: 'Bangers', cursive;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+/* Desktop Layout */
 
 body {
 	width: 1150px;
@@ -80,7 +82,6 @@ header {
 }
 
 nav {
-	width: 800px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -93,7 +94,7 @@ nav a {
 }
 
 .logo {
-	height: 40px;
+	width: 200px;
 }
 
 #banner {
@@ -174,7 +175,80 @@ footer {
 /* Tablet Layout */
 
 @media (max-width: 800px) {
+	body {
+		width: 700px;
+	}
 
+	header {
+		margin-top: 30px;
+	}
+
+	#topbar {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.logo {
+		order: 1;
+		width: 170px;
+		margin-bottom: 50px;
+	}
+
+	nav {
+		order: 2;
+		width: 700px;
+	}
+
+	nav a {
+		font-size: 16px;
+	}
+
+	#banner {
+		justify-content: center;
+		height: 450px;
+	}
+
+	.banner-content h1 {
+		font-size: 80px;
+	}
+
+	.banner-content a {
+		font-size: 18px;
+	}
+
+	img.banner-content {
+		display: none;
+	}
+
+	h2 {
+		font-size: 18px;
+	}
+
+	p {
+		font-size: 16px;
+	}
+
+	#main {
+		height: 600px;
+		margin-bottom: 35px;
+	}
+
+	#section1 section {
+		width: 340px;
+	}
+
+	#section3 section {
+		width: 200px;
+	}
+
+	address p {
+		margin-bottom: 15px;
+	}
+
+	footer {
+		padding-top: 20px;
+		margin-bottom: 20px;
+	}
 }
 
 /* Mobile Layout */
