@@ -120,6 +120,19 @@ header a {
 }
 
 .contentbox1 button {
+		cursor: pointer;
+    border-radius: 5px;
+    width: 80%;
+		height: 40px;
+    border: 1px solid grey;
+}
+
+.contentbox1 button:hover {
+		background-color: #222222;
+		color: white;
+		transition: 0.5s;
+		transform: scaleX(1.08);
+		cursor: pointer;
     border-radius: 5px;
     width: 80%;
 		height: 40px;
@@ -202,6 +215,8 @@ footer {
 	}
 
 	.nav a {
+		cursor: pointer;
+		text-decoration: none;
 		vertical-align: top;
 	}
 
@@ -220,6 +235,7 @@ footer {
 	}
 
 	.nav a {
+		text-decoration: none;
 		display:block;
 		width: 16.6%;
 	}
@@ -277,6 +293,8 @@ footer {
 	}
 
 	.nav a {
+		cursor: pointer;
+		text-decoration: none;
 		padding-bottom: 2%;
 		display:block;
 		width: 10%;
@@ -331,6 +349,8 @@ footer {
 	}
 
 	.nav a {
+		cursor: pointer;
+		text-decoration: none;
 		border-radius: 20%;
 		background: rgba(226,226,226,1);
 		text-align: center;
@@ -343,9 +363,12 @@ footer {
 	}
 
 	.nav a:hover {
-		color: black;
+		cursor: pointer;
+		background-color: #222222;
+		color: white;
+		transform: scaleX(1.08);
 		transition: 0.5s;
-		box-shadow: 2px 2px black;
+		box-shadow: 4px 4px grey;
 	}
 	.contentbox2 {
 		display: none;
