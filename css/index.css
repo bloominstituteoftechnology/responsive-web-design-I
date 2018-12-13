@@ -82,36 +82,42 @@ h1, h2, h3, h4, h5 {
  }
 
 
+  /* Header, Nav, and Logo */
+
+header {
+    margin-top: 30px;
+   
+}
+
+
+header nav ul {
+    display: flex;
+    align-items: center;
+}
+
+
+header nav ul .item {
+    flex: 1;
+}
+
+header nav ul .item a {
+    text-decoration: none;
+    color: gray;
+}
+
+header nav ul .item a:hover {
+    font-weight: bold;
+    color: black;
+}
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
 
 
 
  /* Header, Nav, and Logo */
  
-
+/* 
  header {
      display: flex;
 	 justify-content: space-between;
@@ -139,16 +145,18 @@ h1, h2, h3, h4, h5 {
 
 
  header nav a:hover {
-	/* background-color: aquamarine; */
+	background-color: aquamarine;
 	font-weight: bold;
 	
- }
+ } */
 
 
 	 /* Main and  First Image */
      
      .main {
          display: flex;
+         margin-top: 30px;
+    
      }
 
      .main .inner1, .inner2 {
@@ -314,6 +322,8 @@ h1, h2, h3, h4, h5 {
 
 
 
+
+
  /* MEDIA QUERIES */
 
 
@@ -322,24 +332,29 @@ h1, h2, h3, h4, h5 {
 
  @media (max-width: 800px) {
 
-   header {
-       flex-direction: column-reverse;
+
+
+   header nav ul {
+       flex-wrap: wrap;
    }
 
-   header .logo {
-       margin-bottom: 30px;
+   header nav ul .item {
+       order: 1;
+       margin-top: 30px;
+       
    }
 
+   header nav ul .logo {
+       order: 0;
+       flex-basis: 100%;
+       text-align: center;
+       
+   }
 
    .main .inner2 {
 	display: none;
 }
-
-
-
-
-    
-    
+  
 
  }
 
@@ -352,23 +367,46 @@ h1, h2, h3, h4, h5 {
 
 @media (max-width: 500px) {
 
-    header nav {
-        flex-wrap: wrap;
-        text-align: center;
-        
+    header {
+       margin-top: 10px;
     }
 
-    header nav a{
-        width: 100%;
-        border-bottom: 1px solid lightgray;
-        color: gray;
-    }
 
-    header .logo {
-        border-bottom: 1px solid lightgray;
-        width: 100%;
-        text-align: center;
-    }
+   header nav ul {
+       flex-direction: column;
+   }
+
+   header nav ul li {
+       padding: 10px;
+       border-bottom: 1px solid gray;
+       width: 100%;
+       text-align: center;
+       
+   }
+
+   header nav ul .item {
+       margin-top: 0;
+       padding: 20px;
+       transition: 250ms ease-in-out;
+   }
+
+   header nav ul .item:hover{
+       background: aquamarine;
+       cursor: pointer;
+   }
+
+   header nav ul .item a {
+       padding: 16px 140px;
+   }
+
+  
+
+
+   .main  {
+       margin-top: 0;
+   }
+
+  
 
     .secondContent, .thirdContent {
         flex-wrap: wrap;
