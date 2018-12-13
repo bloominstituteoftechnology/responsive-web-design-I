@@ -1,3 +1,255 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/*Start Code for Webpage */
+
+ .container { 
+	margin: 0 auto;
+	padding: 15px;
+	font-size: 16px;
+}
+
+.navigation-bar header nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+
+.navigation-bar header nav ul li a {
+    font-size: 15px;
+	text-decoration: none;
+	background-color: white;
+    color: lightgrey;
+}
 
 
+.navigation-bar header nav ul li a:hover {
+	color: black;
+	font-size: 18px;
+	border-bottom: 2px dashed black;
+}
+
+h1 {
+	font-size: 70px;
+	text-align: center;
+}
+
+h3 {
+	font-size: 26px;
+	margin-bottom: 14px;
+}
+
+.first-section {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 45px;
+    margin-bottom: 50px;
+}
+
+.first-section .left-side{
+    display: flex;
+    flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.first-section .left-side button {
+	border: 1px solid black;
+	background-color: white;
+	padding: 5px 40px;
+	font-family: 'Titillium Web', sans-serif;
+	font-weight: 600;
+	font-size: 16px;
+}
+
+.first-section .left-side {
+	padding-top: 50px;
+}
+
+.second-section {
+	padding: 30px 0 50px 0;
+	border-top: 1px solid black;
+	display: flex;
+	justify-content: space-between;
+}
+
+
+.middle-img {
+	width: 100%;
+}
+
+.third-group {
+	padding-top: 45px;
+	padding-bottom: 50px;
+	border-bottom: 1px solid black;
+	display: flex;
+	justify-content: space-between;
+	padding-right: 15px;
+}
+
+.third-section:last-of-type {
+	margin-right: 0;
+}
+
+footer .footer {
+	margin-top: 30px;
+	margin-bottom: 40px;
+}
+
+footer .copyright {
+	text-align: center;
+	margin-top: 40px 0;
+}
+
+@media (max-width: 800px) {
+
+    .navigation-bar header nav ul {
+        flex-flow: row wrap;
+    }
+
+    .navigation-bar header nav ul li{
+        order: 1;
+    }
+
+    .navigation-bar header nav ul .logo {
+        order: 0;
+        text-align: center;
+        display: block;
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    
+    .first-section .left-side {
+        padding-top: 0;
+    }
+
+    .right-side {
+        display: none;
+    }
+
+    .first-section {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        padding: 0;
+    }
+
+/*Navigation-start*/
+    .navigation-bar header nav ul{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navigation-bar header nav ul li{
+        padding: 15px 50px;
+        border-bottom: 1px solid black;    
+        display: block;
+        width: 100%;
+    }
+
+    .navigation-bar header nav ul .logo {
+        margin-bottom: 0;
+    }
+/*Navigation End*/
+
+/*Second Section Start*/
+    .second-section {
+        margin-left: 15px;
+        display: block;
+        border-top: 2px solid
+    }
+
+    .second-section .section2b {
+        margin-top: 40px;
+    }
+
+    .middle-img {
+        padding: 0 15px;
+    }
+/*Second Section End */
+
+/*Third Section Start*/
+    .third-group {
+        display: block;
+        margin: 0 15px;
+        padding: 0px 0 30px 0;
+    }
+
+    .third-group .third-section{
+        margin-top: 30px;
+    }
+
+    footer {
+        padding: 15px;
+    }
+
+}
