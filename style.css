@@ -19,7 +19,7 @@ h1, h2, h3, h4, h5 {
 
 .container {
 	/* seems thinner via perfectpix */
-	max-width: 1024px;
+	/* max-width: 1024px; */
 	margin: 0 auto;
 }
 
@@ -178,6 +178,7 @@ footer {
 @media (min-width: 500px) {
 	.container {
 		padding: 15px;
+		width: 800px;
 	}
 
 	.jumbo {
@@ -203,14 +204,15 @@ footer {
 
 	.main {
 		padding: 0;
-		display: flex;
-		flex-wrap: wrap;	
+		/* display: flex; */
+		/* flex-wrap: wrap;	 */
 	}
 
 	.features,
 	.about {
 		/* margin: 20px 0; */
-		width: 49%;
+		display: inline-block;
+		width: 373px;
 	}
 
 	.main section p {
@@ -218,19 +220,20 @@ footer {
 	}
 
 	section.features {
-		margin-right: 2%;
+		margin-right: 16px;
 	}
 
 	.services,
 	.product,
 	.vision {
-		width: 32%;
+		display: inline-block;
+		width: 246px;
 		/* margin-bottom: 30px; */
 	}
 
 	section.services,
 	section.product {
-		margin-right: 2%;
+		margin-right: 16px;
 	}
 	/* .service-item, .fact-item {
 		width: 49%;
@@ -244,19 +247,37 @@ footer {
 
 /* desktop */
 @media (min-width: 800px) {
+	.container {
+		width: 1024px;		
+	}
+
 	.jumbo {
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
 	}
-
+	
 	.jumbo-img {
 		display: block;
 	}
-
+	
 	li:first-child {
 		width: auto;
 		margin: 0;
 		order: 1;
 	}		
+	
+	.features,
+	.about {
+		/* margin: 20px 0; */
+		display: inline-block;
+		width: 487px;
+	}
+	.services,
+	.product,
+	.vision {
+		display: inline-block;
+		width: 318px;
+		/* margin-bottom: 30px; */
+	}
 }
