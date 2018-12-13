@@ -23,7 +23,7 @@
    nav a:hover {
     color: black;
   }
-   nav ul {
+   nav {
     display: flex;
     align-items: baseline;
   }
@@ -34,7 +34,7 @@
    hr {
     border: 1px solid black;
   }
-   /* Header */
+   
    .tagline-section {
     display: flex;
     margin-top: 35px;
@@ -100,7 +100,7 @@
     text-align: center;
     margin-bottom: 50px;
   }
-   /* Utilities */
+   
   p {
     margin-top: 1em;
     margin-bottom: 1em;
@@ -118,53 +118,24 @@
       margin-left: 0;
       padding-top: 0;
     }
-     .tagline-section div:nth-child(2) {
+     .tagline-section {
       display: none;
     }
      .tagline-section {
       justify-content: center;
     } 
-    nav ul {
-      flex-wrap: wrap;
-      justify-content: space-around;
-      padding-left: 25px;
-    }
-     nav ul li:first-child{
-      order: 2;
-    }
-    nav ul li:nth-child(2){
-      order: 3;
-    }
-    nav ul li:nth-child(3){
-      order: 4;
-    }
-    nav ul li:nth-child(4){
-      order: 5;
-    }
-    nav ul li:nth-child(5){
-      order: 6;
-    }
-    nav ul li:nth-child(6){
-      order: 7;
-    }
-    nav ul li:nth-child(7){
-      order: 1;
-      width: 100%;
-      text-align: center;
-      padding-bottom: 40px;
-    }
-  }
+
    @media (max-width: 500px) {
-    nav ul {
+    nav {
       padding-left: 0px;
     }
     
-    nav ul {
+    nav {
       flex-direction: column;
       align-items: center;
       max-width: 500px;
     }
-    nav ul li {
+    nav {
       border-bottom: 1px solid grey;
       width: 100%;
       text-align: center;
@@ -173,9 +144,7 @@
     nav a {
       margin-right: 0;
     }
-     nav ul li:nth-child(7){
-      padding-bottom: 20px;
-    }
+   
     .top-content, .bottom-content {
       flex-wrap: wrap;
     }
