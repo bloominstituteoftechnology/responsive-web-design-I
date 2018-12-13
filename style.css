@@ -1,23 +1,24 @@
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 html, body {
-    height: 100%;
-		font-family: 'Titillium Web', sans-serif;
-		font-size: 18px;
+	height: 100%;
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 18px;
 }
 
 h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
+	font-family: 'Bangers', cursive;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
 }
 
 /* Your code starts here! */
 
 .container {
+	/* seems thinner via perfectpix */
 	max-width: 1024px;
 	margin: 0 auto;
 }
@@ -80,6 +81,10 @@ nav a {
 
 .main section {
 	margin: 20px 0;
+}
+
+.main section p {
+	margin-bottom: 40px;
 }
 
 .main img {
@@ -174,6 +179,10 @@ footer {
 	.container {
 		padding: 15px;
 	}
+
+	.jumbo {
+		padding-top: 65px;
+	}
 	
 	nav li {
 		padding: 0;
@@ -202,6 +211,10 @@ footer {
 	.about {
 		/* margin: 20px 0; */
 		width: 49%;
+	}
+
+	.main section p {
+		margin-bottom: 0;
 	}
 
 	section.features {
