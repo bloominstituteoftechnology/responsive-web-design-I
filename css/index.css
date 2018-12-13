@@ -295,11 +295,16 @@ nav{
 }
 @media (max-width: 800px) {
   .logo {
+	order: 1;
 
   }
   nav {
+	order: 2;
 
   }
+	a {
+		order: 2;
+	}
   .circlecode {
       display: none;
       /* width: 60%; */
@@ -325,14 +330,16 @@ nav{
   nav {
     display: flex;
     flex-direction: column;
-		align-items: center;
+		/* align-items: center; */
 		/* align-content: center; */
 		border: 2px solid lightgrey;
-		order: 2;
+		/* order: 2; */
 
 
   }
 	a {
+		order: 2;
+		text-align:center;
 
 	}
 
