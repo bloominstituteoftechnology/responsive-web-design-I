@@ -142,7 +142,6 @@ section .left-side, .right-side {
     margin-left: 33px;
     height: 160px;
     width: 486px;
-    text-align: left;
 }
 
 .middle-img {
@@ -240,6 +239,15 @@ footer {
         margin-top: 20px;
     }
 
+    .contact {
+        margin-top: 7%;
+    }
+
+    footer {
+        margin-top: 5%
+    }
+}
+
     @media (max-width: 500px) {
         .container {
             height: 2047px;
@@ -301,7 +309,46 @@ footer {
         hr {
             width: 92%;
         }
+
+        .top-content {
+            flex-direction: column;
+            margin-top: 12%;
+        }
+
+        section .left-side, .right-side {
+            height: 150px;
+            width: 450px;
+            padding: 0;
+            margin-left: 4%;
+        }
+
+        .middle-img {
+            height: 5%;
+        }
+
+        .bottom-content {
+            flex-direction: column;
+        }
+
+        section.bottom-content div {
+            height: 150px;
+            width: 450px;
+            display: flex;
+            flex-direction: column;
+            margin-left: 4%;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .contact {
+            margin-top: 7%;
+        }
+
+        footer {
+            margin-top: 8%
+        }
     }
+
 }
 
 
