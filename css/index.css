@@ -1,3 +1,435 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* -------------------------------------- */
+
+.navigation {
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	max-width: 75%;
+	
+}
+
+a {
+	margin: 30px;
+	font-weight: bold;
+	font-size: 15px;
+	padding-top: 24px;
+	padding-bottom: 16px;
+	padding-right: 32px;
+	color: #E2E5E8;
+	text-decoration: none;
+	max-width: 75%;
+}
+
+
+.idea-img {
+	display: inline-block;
+	position: absolute;
+	top: 45px;
+	right: 175px;
+	
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+    margin: 20px;
+}
+
+.header h1 {
+	font-size: 84px;
+	text-align: center;
+}
+
+.getstarted-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+	padding-right: 500px;
+	font-weight: bold;
+	
+}
+
+.top-section-header {
+    display: flex;
+    justify-content: space-around;
+    align-content: column;
+    margin: 24px;
+    padding-top: 45px;
+    border-top: 2px solid black;
+}
+
+.top-section {
+    display: flex;
+    justify-content: center;
+    align-content: column;
+    margin: 24px;
+    margin-right: 12px;
+}
+
+.middle-img {
+    display: flex;
+    justify-content: space-around;
+    align-content: column;
+    margin: 0 auto;
+}
+
+
+.bottom-section-header {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: column;
+    margin: 24px;
+    margin-right: 12px;
+}
+
+.bottom-section {
+    display: flex;
+    justify-content: center;
+    align-content: column;
+    margin: 24px;
+    border-bottom: 2px solid black;
+    padding-bottom: 16px;
+   
+}
+
+
+
+.contact-header {
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+    padding-top: 12px;
+    margin: 24px;
+    padding-right: 750px;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+    padding-top: 16px;
+    margin: 24px;
+    padding-right: 675px;
+}
+
+.footer {
+	display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 16px;
+}
+
+/* Tablet Specs */
+
+@media (max-width: 800px) {
+    .idea-img {
+        display: flex;
+        justify-content: center;
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: center;
+        flex-direction: row; 
+        margin: 32px;
+    }
+
+    .circle-img {
+        display: none;
+    }
+
+    .innovation-header {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .middle-img {
+		display: flex;
+		justify-content: space-around;
+		align-content: column;
+		margin: 0 auto;
+		max-width: 100%;
+	}
+
+	.getstarted-button {
+		display: flex;
+		justify-content: flex-end;
+		padding-right: 370px;
+}
+
+
+/* Mobile Specs */
+
+@media (max-width: 500px) {
+    .idea-img {
+        display: flex;
+        justify-content: center;
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: center;
+        flex-direction: column; 
+        margin: 32px;
+    }
+}
+
+
+/* Services Page - INCOMPLETE */
+
+/* 
+ .services-header {
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	margin: auto;
+	
+}
+
+.services-main {
+	display: flex;
+	flex-wrap: nowrap;
+	font-size: 32px;
+	justify-content: flex-start;
+	padding-left: 315px;
+	padding-top: 24px;
+}
+
+.services-text {
+	display: flex;
+	flex-wrap: nowrap;
+	font-size: 18px;
+	justify-content: flex-start;
+	padding-left: 315px;
+	padding-top: 10px;
+}  
+
+.digital-design {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	flex-direction: column;
+	padding-left: 315px;
+	padding-top: 24px;
+}
+
+.digital-design #border-main {
+	border: 1px solid black;
+	background-color: #F1EDED;
+	height: 200px;
+	width: 440px;
+	padding-left: 12px;
+}
+
+.digital-design h2 {
+	font-size: 16px;
+	font-weight: bold;
+	padding-left: 10px;
+	padding-top: 10px;
+}
+
+.digital-design .main-p {
+	font-size: 14px;
+	font-style: normal;
+	 
+}
+
+.digital-design p {
+	padding-top: 16px;
+	padding-left: 16px;
+	font-weight: bold;
+	font-size: 12px; 
+}
+
+.digital-design #border-button {
+	border: 1px thin black;
+	background-color: #FCF7F7;
+	height: 40px;
+	width: 100px;
+}
+
+
+.digital-marketing {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	flex-direction: column;
+	padding-left: 315px;
+	padding-top: 24px;
+}
+
+.digital-marketing #border-main {
+	border: 1px solid black;
+	background-color: #F1EDED;
+	height: 200px;
+	width: 440px;
+	padding-left: 12px;
+}
+
+.digital-marketing h2 {
+	font-size: 16px;
+	font-weight: bold;
+	padding-left: 10px;
+	padding-top: 10px;
+}
+
+.digital-marketing .main-p {
+	font-size: 14px;
+	font-style: normal;
+	 
+}
+
+.digital-marketing p {
+	padding-top: 16px;
+	padding-left: 16px;
+	font-weight: bold;
+	font-size: 12px; 
+}
+
+.digital-marketing #border-button {
+	border: 1px thin black;
+	background-color: #FCF7F7;
+	height: 40px;
+	width: 100px;
+}
+
+
+.ios-development {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	flex-direction: column;
+	padding-left: 315px;
+	padding-top: 24px;
+}
+
+.ios-development #border-main {
+	border: 1px solid black;
+	background-color: #F1EDED;
+	height: 200px;
+	width: 440px;
+	padding-left: 12px;
+}
+
+.ios-development h2 {
+	font-size: 16px;
+	font-weight: bold;
+	padding-left: 10px;
+	padding-top: 10px;
+}
+
+.ios-development .main-p {
+	font-size: 14px;
+	font-style: normal;
+	 
+}
+
+.ios-development p {
+	padding-top: 16px;
+	padding-left: 16px;
+	font-weight: bold;
+	font-size: 12px; 
+}
+
+.ios-development #border-button {
+	border: 1px thin black;
+	background-color: #FCF7F7;
+	height: 40px;
+	width: 100px;
+}
+
+
+.facts {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	flex-direction: column;
+	padding-left: 315px;
+	padding-top: 24px;
+}
+
+
+ul {
+	list-style-type: square;
+	margin: 10px;
+}
+
+.services-info {
+	display: inline-block;
+	position: absolute;
+	top: 1130px;
+	right: 195px;
+}
+
+*/
