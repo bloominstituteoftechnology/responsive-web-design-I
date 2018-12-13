@@ -1,3 +1,591 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+.container {
+  width: 900px;
+  margin: 0 auto;
+}
+
+header {
+  /* border: 3px solid red; */
+  width: 900px;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 35px;
+}
+
+.nav {
+  width: 800px;
+  /* border: 3px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+a {
+  margin-right: 39px;
+  border-radius: 20px;
+  color: black;
+  text-decoration: none;
+  padding: 10px;
+}
+
+a:hover {
+  background: black;
+  color: white;
+}
+
+.image {
+  float: right;
+  /* border: 3px solid red; */
+  /* justify-content: flex-end; */
+}
+
+#firstbox {
+  /* border: 3px solid red; */
+  margin: 65px 0 75px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#words {
+  height: 300px;
+  width: 420px;
+  /* border: 3px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: 80px;
+}
+
+h1 {
+  font-size: 70px;
+  text-align: center;
+}
+
+button {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  width: 170px;
+  height: 35px;
+  font-size: 17px;
+}
+
+article {
+  /* border: 3px solid red; */
+  margin: 35px 0 20px 0;
+  padding-top: 60px;
+  height: 600px;
+  padding-left: 10px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.two-box {
+  display: flex;
+  margin-bottom: 35px;
+}
+
+.three-box {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
+  width: 850px;
+}
+
+.address {
+  padding-left: 15px;
+}
+
+h2 {
+  margin-top: 35px;
+}
+
+footer {
+  text-align: center;
+  margin: 35px 0;
+}
+
+/* Small Tablet */
+@media only screen and (max-width: 800px) {
+  .container {
+    /* border: 3px solid red; */
+    width: 800px;
+    margin: 0;
+  }
+  header {
+    /* border: 3px solid red; */
+    width: 800px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-top: 35px;
+  }
+
+  .nav {
+    margin-top: 35px;
+    /* border: 3px solid red; */
+    display: flex;
+    align-items: center;
+    padding: 0;
+  }
+
+  a {
+    /* border: 3px solid red; */
+    margin: 30px;
+  }
+
+  #firstbox {
+    margin-top: 50px;
+    /* border: 3px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 90px;
+    margin-bottom: 60px;
+  }
+
+  h1 {
+    font-size: 70px;
+  }
+
+  #display {
+    display: none;
+  }
+
+  article {
+    width: 750px;
+    height: 600px;
+    padding-top: 40px;
+    margin: 0 0 50px 25px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+  }
+
+  .two-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .twobox {
+    /* border: 3px solid red; */
+    width: 350px;
+    height: 150px;
+  }
+
+  .three-box {
+    /* border: 3px solid red; */
+    width: 740px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+
+  .threebox {
+    /* border: 3px solid red; */
+    width: 300px;
+    height: 170px;
+  }
+
+  #product {
+    margin: 0 40px;
+  }
+
+  .middle-img {
+    width: 750px;
+    padding-right: 40px;
+  }
+  .address {
+    padding-left: 30px;
+  }
+
+  footer {
+    margin-top: 40px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .container {
+    width: 500px;
+    margin: 0 auto;
+  }
+
+  header {
+    /* border: 3px solid red; */
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-top: 35px;
+    width: 500px;
+  }
+
+  .nav {
+    width: 500px;
+    /* border: 3px solid red; */
+    display: flex;
+    align-items: center;
+    padding: 0;
+    border-top: 2px solid rgb(207, 205, 205);
+  }
+  nav {
+    /* border: 3px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image {
+    padding-left: 30px;
+    text-align: center;
+    font-size: 70px;
+    width: 500px;
+  }
+
+  a {
+    font-size: 25px;
+    color: rgb(207, 205, 205);
+    margin-right: 0;
+    border-radius: 0;
+    width: 500px;
+    margin: 10px 0;
+    padding: 30px 0;
+    /* border: 3px solid red; */
+    border-bottom: 2px solid rgb(207, 205, 205);
+    text-align: center;
+  }
+
+  #firstbox {
+    margin: 0 0 35px 0;
+    width: 500px;
+    height: 500px;
+    /* border: 3px solid red; */
+    text-align: center;
+    padding-left: 10px;
+  }
+
+  h1 {
+    font-size: 100px;
+  }
+  #words {
+    /* border: 3px solid red; */
+    height: 500px;
+  }
+
+  button {
+    /* border: 3px solid red; */
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    width: 170px;
+    height: 35px;
+    font-size: 17px;
+  }
+
+  article {
+    /* border: 3px solid red; */
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    height: 1000px;
+    width: 450px;
+    padding: 0 10px 0 0;
+  }
+
+  .two-box {
+    flex-direction: column;
+    margin-top: 35px;
+  }
+
+  #feature {
+    /* border: 3px solid red; */
+    width: 450px;
+  }
+  #about {
+    /* border: 3px solid red; */
+    width: 450px;
+    /* margin: 10px 0; */
+  }
+
+  .middle-img {
+    /* border: 3px solid red; */
+    padding: 0;
+    width: 450px;
+  }
+
+  .three-box {
+    flex-direction: column;
+    width: 450px;
+    /* border: 3px solid red; */
+  }
+  .threebox {
+    /* border: 3px solid red; */
+    width: 450px;
+  }
+
+  #product {
+    margin: 10px 0;
+  }
+
+  .address {
+    margin-top: 0;
+  }
+
+  footer {
+    width: 500px;
+    /* border: 3px solid red; */
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .container {
+    width: 414px;
+  }
+
+  header {
+    /* border: 3px solid red; */
+    width: 414px;
+  }
+
+  .nav {
+    width: 414px;
+    /* border: 3px solid red; */
+  }
+
+  .image {
+    width: 414px;
+  }
+
+  a {
+    width: 414px;
+
+    /* border: 3px solid red; */
+  }
+
+  #firstbox {
+    width: 414px;
+    height: 450px;
+    /* border: 3px solid red; */
+  }
+
+  h1 {
+    font-size: 60px;
+  }
+  #words {
+    /* border: 3px solid red; */
+    height: 414px;
+  }
+
+  button {
+    /* border: 3px solid red; */
+    width: 120px;
+    height: 30px;
+    font-size: 12px;
+  }
+
+  article {
+    /* border: 3px solid red; */
+
+    height: 1000px;
+    width: 360px;
+  }
+
+  .two-box {
+    flex-direction: column;
+    margin-top: 35px;
+  }
+
+  #feature {
+    /* border: 3px solid red; */
+    width: 360px;
+  }
+  #about {
+    /* border: 3px solid red; */
+    width: 360px;
+    /* margin: 10px 0; */
+  }
+
+  .middle-img {
+    /* border: 3px solid red; */
+    padding: 0;
+    width: 360px;
+  }
+
+  .three-box {
+    flex-direction: column;
+    width: 360px;
+    /* border: 3px solid red; */
+  }
+  .threebox {
+    /* border: 3px solid red; */
+    width: 360px;
+  }
+
+  #product {
+    margin: 10px 0;
+  }
+
+  .address {
+    margin-top: 0;
+  }
+
+  footer {
+    width: 414px;
+    /* border: 3px solid red; */
+    text-align: center;
+  }
+}
