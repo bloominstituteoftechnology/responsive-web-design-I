@@ -1,3 +1,607 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+
+
+
+	/* ===== About Page =======*/
+
+/* Makes Everything Centered */
+
+
+
+.container {
+    width: 90%; 
+     /* width: 1000px; */
+	margin: 0 auto; 
+    overflow: hidden;
+    /* padding: 10px 80px; */
+	
+ }
+
+
+  /* Header, Nav, and Logo */
+
+header {
+    margin-top: 30px;
+   
+}
+
+
+header nav ul {
+    display: flex;
+    align-items: center;
+}
+
+
+header nav ul .item {
+    flex: 1;
+}
+
+header nav ul .item a {
+    text-decoration: none;
+    color: gray;
+}
+
+header nav ul .item a:hover {
+    font-weight: bold;
+    color: black;
+}
+
+
+
+
+
+
+ /* Header, Nav, and Logo */
+ 
+/* 
+ header {
+     display: flex;
+	 justify-content: space-between;
+	 align-items: center;
+     
+     
+     
+ }
+
+
+
+ header nav {
+     display:flex;
+     
+	 
+ }
+
+ header nav a {
+	 margin-right: 40px;
+	 text-decoration: none;
+	 color: black;
+	 padding: 10px 20px;
+	
+ }
+
+
+ header nav a:hover {
+	background-color: aquamarine;
+	font-weight: bold;
+	
+ } */
+
+
+	 /* Main and  First Image */
+     
+     .main {
+         display: flex;
+         margin-top: 30px;
+    
+     }
+
+     .main .inner1, .inner2 {
+         flex: 1;
+     }
+
+     
+     .main .inner1 .inno {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         height: 400px;
+         text-align: center;
+     }
+
+     .main .inner1 .inno h1 {
+         font-size: 80px;
+         text-align: center;
+     }
+
+     #main-p {
+        text-align: center;
+        font-family: 'Text Me One', sans-serif;
+             
+    }
+    
+    #main-p a {
+        color: black;
+        text-decoration: none;
+        border: 1px solid gray;
+        padding: 5px 30px;
+        transition: 0.2s ease-in;
+        
+    }
+    
+    #main-p a:hover {
+        color: black;
+        background-color: aquamarine;
+        font-weight: bold;
+    }
+
+
+    h2 {
+        font-weight: bold;
+        font-size: 24px;
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* .main {
+	display: flex;
+	text-align: center;
+}
+
+#main-p {
+	text-align: center;
+	font-family: 'Text Me One', sans-serif;
+		 
+}
+
+#main-p a {
+	color: black;
+	text-decoration: none;
+	border: 1px solid gray;
+	padding: 10px 40px;
+	transition: 0.2s ease-in;
+	
+}
+
+#main-p a:hover {
+	color: black;
+	background-color: aquamarine;
+	font-weight: bold;
+}
+
+.main .inner .main-img {
+	margin-left: 100px;
+    justify-content: center; 
+	align-items: center;
+	margin-top: 20px;
+	padding-bottom: 100px;
+	margin-bottom: 50px;
+
+}
+
+
+
+.main .inner .inno {
+	width: 50%;
+	height: 400px;
+	margin-left: 120px;
+	
+}
+
+.main .inner .inno h1 {
+	font-size: 90px;
+	padding: 20px;
+} */
+
+
+
+
+
+ /* Features and About  */
+
+ .secondContent {
+     display: flex;
+     border-top: 2px solid black;
+     padding-top: 40px;
+ }
+
+
+
+  /* Full Width Img */
+ 
+  .middle-img {
+	width: 100%;
+	margin: 50px 0;
+}
+
+
+
+ /* Services, Product, Vision */
+
+ .thirdContent {
+     display: flex;
+     border-bottom: 2px solid black;
+     padding-bottom: 40px;
+ }
+
+
+
+ .third {
+	width: 95%;
+}
+ 
+
+
+ /* Contact */
+
+ .contact {
+    margin: auto;
+    padding: 30px 0;
+	
+	
+    }
+    
+ footer {
+    text-align: center;
+}
+
+
+
+
+
+ /* MEDIA QUERIES */
+
+
+
+ /* TABLET VIEW */
+
+ @media (max-width: 800px) {
+
+
+
+   header nav ul {
+       flex-wrap: wrap;
+   }
+
+   header nav ul .item {
+       order: 1;
+       margin-top: 30px;
+       
+   }
+
+   header nav ul .logo {
+       order: 0;
+       flex-basis: 100%;
+       text-align: center;
+       
+   }
+
+   .main .inner2 {
+	display: none;
+}
+  
+
+ }
+
+
+
+
+
+/* MOBILE VIEW */
+
+
+@media (max-width: 500px) {
+
+    header {
+       margin-top: 10px;
+    }
+
+
+   header nav ul {
+       flex-direction: column;
+   }
+
+   header nav ul li {
+       padding: 10px;
+       border-bottom: 1px solid gray;
+       width: 100%;
+       text-align: center;
+       
+   }
+
+   header nav ul .item {
+       margin-top: 0;
+       padding: 20px;
+       transition: 250ms ease-in-out;
+   }
+
+   header nav ul .item:hover{
+       background: aquamarine;
+       cursor: pointer;
+   }
+
+   header nav ul .item a {
+       padding: 16px 140px;
+   }
+
+  
+
+
+   .main  {
+       margin-top: 0;
+   }
+
+  
+
+    .secondContent, .thirdContent {
+        flex-wrap: wrap;
+    }
+
+    .thirdContent {
+        margin-bottom: 20px;
+    }
+
+    .middle, .final {
+        margin-top: 20px;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ======= OLD CODE ========= */
+
+
+
+ /* header {
+	 position: relative;
+	 margin-top: 20px;
+	 height: 120px;
+	
+	
+	 
+ }
+ 
+ header nav {
+	 display: inline-block;
+	 /* position: absolute; 
+	 line-height: 40px;
+	 position: fixed;
+	 
+	
+	 
+ }
+ 
+ header nav a {
+	 text-decoration: none;
+	 color: black;
+	 margin: 20px;
+	 border: 1px solid gray;
+	 border-radius: 5px;
+	 padding: 10px 20px;
+	 font-family: 'Text Me One', sans-serif;
+	 transition: 0.2s ease-in;	
+ }
+ 
+ header nav a:hover {
+	background-color: aquamarine;
+	border: 1px solid black;
+	font-weight: bold;
+	
+ }
+ 
+ header .logo {
+	 position: absolute;
+	 right: 0;  
+	 
+ }
+  */
+ 
+
+
+
+
+
+
+ 
+ /* Main and  First Image */
+ 
+ 
+ /* .main .inner {
+	 display:inline-block;
+	 width: 50%;	
+ }
+	
+ .main .inner .inno {
+	 padding: 60px;
+	 
+ }
+ 
+ 
+ .main .inner h1 {
+	 font-size: 100px;
+	 text-align: center;  
+	 font-weight: bold;
+	 line-height: 1.5  
+	
+ }
+ 
+  
+ #main-p {
+	 text-align: center;
+	 width: 200px;
+	 padding: 10px 15px;
+	 margin-left: 120px;
+	 font-family: 'Text Me One', sans-serif;
+	 	 
+ }
+ #main-p a {
+	 color: black;
+	 text-decoration: none;
+	 border: 1px solid gray;
+	 padding: 10px 40px;
+	 transition: 0.2s ease-in;
+	 
+ }
+ #main-p a:hover {
+	 color: black;
+	 background-color: aquamarine;
+	 font-weight: bold;
+ }
+ 
+ 
+ .main .inner .main-img {
+	 margin-left: 100px
+	 
+ } */
+ 
+ 
+ 
+ 
+ /* Features and About  */
+
+
+ 
+
+ 
+ /* .secondContent {
+	 margin-top: 50px;
+	 padding: 30px 0;
+	 border-top: 1px solid black;
+	 
+ }
+ 
+ .secondContent .middle {
+	 display: inline-block;
+	 width: 50%;
+	 margin-top: 20px;
+ }
+  */
+
+ 
+ 
+
+ 
+ 
+ 
+ 
+ /* Services, Product, Vision */
+ 
+ /* .thirdContent {
+ margin-bottom: 60px;
+ }
+ 
+ .thirdContent .final {
+	 display: inline-block;
+	 width: 33%;
+ }
+ 
+ 
+ .third {
+	 width: 95%;
+ }
+  */
+ 
+/*  
+ Contact
+ .contact {
+ margin-top: 40px;
+ border-top: 1px solid black;
+ padding: 40px 0;
+ 
+ } */
+ 
+ 
+ 
+ 
+
+
+
 
 
