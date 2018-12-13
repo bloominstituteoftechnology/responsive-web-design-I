@@ -72,7 +72,7 @@ h1, h2, h3, h4, h5 {
 
 nav {
     background-color: white;
-    height: 50px;
+    height: 106px;
     position: fixed;
     top: 0;
     width: 100%;
@@ -106,13 +106,14 @@ header {
     display: flex;
     justify-content: space-around;
     height: 455px;
-    margin-bottom: 100px;
-    margin-top: 90px;
+    border-bottom: 2px solid;
+    margin-bottom: 30px;
+    margin-top: 136px;
 }
 
-.header-container {
-    /* TODO update to flexbox */
-}
+/*.header-container {*/
+    /*!* TODO update to flexbox *!*/
+/*}*/
 
 .header-wrapper {
     position: relative;
@@ -120,11 +121,12 @@ header {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    width: 350px;
+    width: 480px;
 }
 
-.header {
-    font-size: 94px;
+.header-h1 {
+    display: block;
+    font-size: 76px;
 }
 
 .button {
@@ -141,14 +143,6 @@ header {
     margin-top: 26px;
     padding: 8px;
     width: 126px;
-}
-
-.header-image {
-    height: 100%;
-}
-
-.divider {
-    margin-bottom: 50px;
 }
 
 .feature-content {
@@ -168,10 +162,12 @@ header {
 
 .service-content {
     display: flex;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid;
 }
 
 .service-wrapper {
+    margin-bottom: 30px;
     padding-right: 10px;
     width: 33.4%;
 }
