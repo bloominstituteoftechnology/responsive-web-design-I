@@ -75,10 +75,11 @@ body {
 }
 
 header{
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: baseline;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    margin-bottom: 25px;
 	
 }
 
@@ -86,7 +87,7 @@ nav>a {
     text-decoration: none;
     color: silver;
     margin-right: 40px;
-    font-size: x-small;
+    font-size: small;
     padding: 7px;
 
 }
@@ -173,7 +174,7 @@ button {
 
 section {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	flex-wrap: wrap;
 	margin-bottom: 40px;
 
@@ -204,4 +205,49 @@ footer p {
 	text-align: center;
 }
 
+@media (max-width: 800px) {
+	body{
+		width: 775px;
+	}
+	nav {
+		padding-top: 51px;
+		position: relative;
+		right: -63px;
+		
+	}
+	nav >a {
+		font-size: large;
+		padding: 0;
+	}
+    header img {
+	right: 343px;
+    top: -42px;
+    max-width: 148px;
+    max-height: 37px;
+	}
 
+	.start img{
+		display: none;
+	}	
+	.start section h1 {
+		height: 100px;
+		font-size: 4.5em;
+		margin-bottom: 80px;
+		position: relative;
+		right: 5px;
+	}
+	.g-button {
+		position: relative;
+		left: 0px;
+		top: 20px;
+	}
+
+
+	#features, #about {
+	    width: 47%;
+	}
+	.mid {
+		
+		width: 769px;
+	}
+}
