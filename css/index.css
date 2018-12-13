@@ -176,6 +176,11 @@ footer {
 	
 	.contact {
 		padding: 10px 0 10px 20px;
+	
+	}
+
+	.contact p {
+		margin: 5px;
 	}
 
   }
@@ -185,5 +190,83 @@ footer {
 
   @media (max-width: 500px) {
 	body {
+		width: 500px;
 	}
+
+	nav {
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+		
+	}
+	  
+	header nav a {
+		width: 500px;
+		font-size: 16px;
+		padding:  10px 0px 10px 0px;
+		text-align: center;
+		border-top: 1px solid lightgrey;
+	}
+
+	header nav {
+		align-content: center;
+		justify-content: center;
+		text-align: center;
+	}
+
+	.container {
+		width: 500px;
+		margin: 0;
+	}
+
+	.logo {
+		width: 150px;
+	}
+
+	.main-content {
+		padding: 0;
+		width: 500px;
+	}
+
+	.middle-img {
+		width: 420px;
+		margin: 0 auto;
+	}
+
+	.cta {
+
+		border-top: 1px solid lightgrey;
+	}
+
+	.cta .cta-text h1 {
+		font-size: 69px;
+	}
+
+	.main-content .top-content{
+		flex-direction: column;
+		margin: 0 auto;
+		padding: 0;
+		width: 450px;
+		
+	}
+
+	.main-content .bottom-content {
+		display: block;
+		width: 450px;
+		margin: 0 auto;
+	}
+	
+	.bottom-content .text-content {
+		width: 450px;
+	}
+
+	.contact {
+		width: 450px;
+		margin: 0 auto;
+	
+	}
+
+	
+
+
 }
