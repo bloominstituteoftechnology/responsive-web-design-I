@@ -40,22 +40,31 @@
     /* border: 1px solid black; */
   }
   .iod {
-    /* border: 1px solid black; */
+    
+    width:800;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-evenly;
+    align-items: center;
     margin: 70px 0px 50px 0px;
   }
-  .iod .iod-text h1 {
-    font-size: 50px;
-    margin-top: 70px;
-    margin-right: 100px;
-    text-align: center;
-    letter-spacing: 10px;
+  .iod .iod-text{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   font-size: 45px;
+   text-align: center;
   }
   button {
-    font-size: 30px;
-    margin-left: 60px;
-    margin-top: 30px;
+   background: white;
+   padding: 8px 40px;
+   font-size: 15px;
+   cursor: pointer;
+   border-radius: 5px;
+  }
+  button:hover{
+      background: gray;
+      color: white;
   }
   .top-content {
     border-top: 1px solid black;
@@ -99,6 +108,37 @@
   }
   
   /* @Media*/
+@media (max-width:800px){
+    .container {
+        width: 800px;
+        margin: 10px;  
+    }
+    header {
+        display: flex;
+        flex-direction: column-reverse;
+        
+        
+    }
+    .logo {
+        width: 230px;
+        margin: 20px 0px;
+        margin-left: 290px;
+        margin-bottom: 50px;
+    }
+    nav {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .iod img {
+        display: none;
+    }
+    .iod {
+        display: flex;
+        justify-content: center;
+    }
+}
+
   @media (max-width:500px){
       .container {
           width: 500px;
@@ -111,13 +151,14 @@
         align-items: center;
         margin-top: 20px;
       }
+      nav {
+        display: flex;
+        flex-direction: column;  
+      }
       nav a {
         text-decoration: none;
         color:gray;
         font-size: 20px;
-        display: flex;
-        flex-direction: column;
-        
         padding: 25px 225px 25px 225px;
         border-top: 1px solid gray;
       }
@@ -129,18 +170,14 @@
           display: none;
       }
       .iod {
-          margin-top: 50px;
+          width: 500px;
+          display: flex;
+          align-items: center;
+         
          
       }
-      .iod .iod-text {
-          margin: 20px;
-          margin-right: 40px;
-        /* border: 1px solid burlywood; */
-        
-      }
-      .iod .iod-text h1 {
-          margin-top: 0px;
-      }
+      
+      
       .top-content{
           display: flex;
           flex-direction: column;
