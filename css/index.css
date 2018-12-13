@@ -202,9 +202,9 @@ header a {
   height: 180px;
 }
 
-.bottom-section .box-7 {
+.bottom-section .bottom-child {
   width: 279px;
-  padding: 0px 0px 0px 10px;
+  /* padding: 0px 0px 0px 10px; */
   display: inline-block;
   position: relative;
 /*     border: 1px solid red; */
@@ -213,46 +213,12 @@ header a {
   
 }
 
-.bottom-section .box-7 h2{
+.bottom-section .bottom-child h2{
     font-weight: bold;
     text-transform: uppercase;
 /*     border: 1px solid red; */
 }
 
-.bottom-section .box-8 {
-/*   right:10; */
-/*   top: 0; */
-/*   margin: 0px 0px 0px 80px; */
-  width: 279px;
-/*  border: 1px solid red; */
-  display: inline-block;
-  position: relative;
-/*   display: inline-block; */
-/*   box-sizing: border-box; */
-  
-}
-
-.bottom-section .box-8 h2{
-    font-weight: bold;
-    text-transform: uppercase;
-/*     border: 1px solid red; */
-}
-
-.bottom-section .box-9 {
-  width: 279px;
-  display: inline-block;
-  position: relative;
-/*     border: 1px solid red; */
-/*   display: inline-block; */
-/*   box-sizing: border-box; */
-  
-}
-
-.bottom-section .box-9 h2{
-    font-weight: bold;
-    text-transform: uppercase;
-/*     border: 1px solid red; */
-}
 
 
 
@@ -337,8 +303,9 @@ header a {
     font-size: large; 
     display: flex;
     flex-direction: column;
-    height: auto;
     align-items: center;
+    height: auto;
+    width: 450px;
   }
 
   nav {
@@ -367,10 +334,10 @@ header a {
 
   .top-section {
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: end;
     font-size: small;
-    width: 400px;
+    width: 440px;
     height: 360px;
   }
 
@@ -381,14 +348,8 @@ header a {
     width: 400px;
   }
 
-  .bottom-section {
-    display: flex;
-    flex-direction: column;
-    font-size: small;
-    margin: 0px;
-    width: 450px;
-    height: 500px;
-    justify-content: space-evenly
+  .top-secton .child h2 {
+    font: bold;
   }
 
   .box-6 {
@@ -403,10 +364,30 @@ header a {
     height: auto;
   }
 
+  .bottom-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: initial;
+    font-size: small;
+    margin: 0px;
+    width: 440px;
+    height: 500px;
+    padding: 20px 0px 20px 0px;
+  }
+
+  .bottom-section .bottom-child {
+    width: 279px;
+    display: inline-block;
+    position: relative;
+  }
+
+
   .contact {
     margin: 0px;
-    width: 450px;
+    width: 420px;
     height: auto;
+    
 
 }
 
