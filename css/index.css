@@ -91,7 +91,7 @@ nav a{
 	margin-right: 30px;
 	text-decoration: none;
 	font-size: 20px;
-	color: #DDDDDD;
+    color: #DDDDDD;
 }
 
 .main-content {
@@ -103,9 +103,10 @@ nav a{
 
 .main-content button {
 	font-size: 20px;
-	width: 150px;
+	width: 200px;
 	background: white;
-	padding: 2%;
+    padding: 2%;
+    border: 1px solid black;
 }
 
 .middle-section {
@@ -115,17 +116,19 @@ nav a{
 
 .middle-content-top {
 	width: 50%;
-	margin-bottom: 5px;
-	padding: 5px;
+	margin-bottom: 10px;
+    padding: 5px;
 }
 
 .middle-picture {
 	align-content: center;
+    margin-bottom: 10px;
 }
 
 .bottom-section {
 	display: flex;
-	align-content: space-between;
+    align-content: space-between;
+    margin-bottom: 10px;
 }
 
 .bottom-content {
@@ -138,10 +141,16 @@ footer .home-footer{
 	padding: 5px;
 }
 
+small {
+    padding-bottom: 10px;
+}
+
 @media (max-width: 800px) {
 
     body {
-        width: 782px;
+        max-width: 782px;
+        width: 100%;
+        padding: 2%;
     }
 
     header {
@@ -151,26 +160,26 @@ footer .home-footer{
 
     .logo {
         order: 1;
-        border: 1px solid red;
-
     }
     
     nav {
         order: 2;
+        margin-top: 20px;
+        flex-direction: row;
         width: 100%;
-        justify-content: space-between;
-        border: 1px solid black;
+        align-content: center;
+        text-align: center;
+        padding: 0 20px;
     }
+
+
 
     .hide-pic {
         display: none;
     }
 
-    .inner-text {
-        align-content: center;
-    }
-
     .middle-pic {
+        max-width: 782px;
         width: 100%;
     }
 
