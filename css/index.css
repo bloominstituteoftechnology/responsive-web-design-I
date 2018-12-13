@@ -1,3 +1,200 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
-
+container {
+    margin: 10px auto;
+    max-width: 876px;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+   header {
+    margin-bottom: 100px;
+  }
+   /* Navigation */
+  nav {
+    margin-bottom: 40px;
+    
+  }
+   nav a {
+    text-decoration: none;
+    color: darkgray;
+    margin-right: 50px;
+    
+  }
+   nav a:hover {
+    color: black;
+  }
+   nav ul {
+    display: flex;
+    align-items: baseline;
+  }
+   .logo {
+    margin-left: 80px;
+    padding-top: 10px;
+  }
+   hr {
+    border: 1px solid black;
+  }
+   /* Header */
+   .hero {
+    display: flex;
+    margin-top: 35px;
+    margin-bottom: 70px;
+  }
+   .hero > div {
+    width: 50%;
+    text-align: center;
+   }
+   .hero h1 {
+    font-size: 82px;
+    text-align: center;
+    margin-top: 20px;
+  }
+   .hero img {
+    padding-left: 50px;
+  }
+   .get-started {
+    border: 1px solid black;
+    padding: 10px;
+    color: black;
+    background-color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 170px;
+    cursor: pointer;
+  }
+   button:hover {
+    color: white;
+    background-color: black;
+  }
+   .middle-img {
+    width: 100%;
+    height: auto;
+  }
+   /* Top content */
+   .top-content {
+    display: flex;
+    margin-bottom: 40px;
+    margin-top: 40px;
+  }
+   .top-content > div {
+    max-width: 450px;
+    padding-right: 20px;
+  }
+   /* Bottom content */
+   .bottom-content {
+    display: flex;
+    padding-left: 10px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+   .bottom-content > div {
+    max-width: 300px;
+    padding-right: 20px;
+  }
+   address {
+    margin-top: 40px;
+  }
+  footer {
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+   /* Utilities */
+  p {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+  }
+   h2 {
+    font-weight: bold;
+  }
+   @media  (max-width: 800px) {
+     header {
+      margin-bottom: 0px;
+    }
+    .logo {
+      margin-left: 0;
+      padding-top: 0;
+    }
+     .hero div:nth-child(2) {
+      display: none;
+    }
+     .hero {
+      justify-content: center;
+    } 
+    nav ul {
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding-left: 25px;
+    }
+     nav ul li:first-child{
+      order: 2;
+    }
+    nav ul li:nth-child(2){
+      order: 3;
+    }
+    nav ul li:nth-child(3){
+      order: 4;
+    }
+    nav ul li:nth-child(4){
+      order: 5;
+    }
+    nav ul li:nth-child(5){
+      order: 6;
+    }
+    nav ul li:nth-child(6){
+      order: 7;
+    }
+    nav ul li:nth-child(7){
+      order: 1;
+      width: 100%;
+      text-align: center;
+      padding-bottom: 40px;
+    }
+  }
+   @media (max-width: 500px) {
+    nav ul {
+      padding-left: 0px;
+    }
+    
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+      max-width: 500px;
+    }
+    nav ul li {
+      border-bottom: 1px solid grey;
+      width: 100%;
+      text-align: center;
+      padding: 20px;
+    }
+    nav a {
+      margin-right: 0;
+    }
+     nav ul li:nth-child(7){
+      padding-bottom: 20px;
+    }
+    .top-content, .bottom-content {
+      flex-wrap: wrap;
+    }
+    .top-content > div, .bottom-content > div {
+      max-width: 500px;
+    
+    }
+     .top-content > div {
+      padding-right: 0;
+    }
+     .features, .services, .product {
+      margin-bottom: 40px;
+    }
+     .hero h1 {
+      font-size: 50px;
+    }
+     section {
+      margin-top: 0;
+    }
+   
+  }
 
