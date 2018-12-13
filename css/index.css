@@ -1,3 +1,333 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+.container {
+  margin: 0px auto;
+  width: 50%;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.nav-bar a {
+  margin-right: 50px;
+  text-decoration: none;
+  color: gray;
+}
+.logo {
+  flex-direction: flex-end;
+}
+article {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  margin-top: 80px;
+  border-bottom: 1px solid black;
+}
+.intro-title {
+  flex-wrap: wrap;
+  padding-top: 45px;
+  padding-left: 20px;
+  width: 256px;
+  height: 300px;
+  font-size: 64px;
+  text-align: center;
+  margin-top: 30px;
+}
+.btn {
+  display: flex;
+  width: 250px;
+  justify-content: center;
+  margin-bottom: 50px;
+  padding-left: 20px;
+}
+h2 {
+  border: 1px solid black;
+  width: 150px;
+  height: 30px;
+  text-align: center;
+  padding-top: 5px;
+}
+.second-img {
+  display: flex;
+  width: 800px;
+  justify-content: flex-end;
+  margin-bottom: 50px;
+}
+.section-one {
+  display: flex;
+  flex-direction: row;
+  margin: 50px 0px;
+}
+.middle-img {
+  width: 900px;
+}
+.section-two {
+  display: flex;
+  flex-direction: row;
+  margin: 60px 0px;
+  border-bottom: 1px solid black;
+}
+.box {
+  margin-bottom: 30px;
+  padding-right: 10px;
+}
+footer {
+  width: 100%;
+  padding-left: 10px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+}
+footer h3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  justify-content: flex-start;
+}
+footer address {
+  font-family: "Courier New", Courier, monospace;
+  justify-content: flex-start;
+}
+footer small {
+  text-align: center;
+  margin-top: 5px;
+  justify-content: center;
+}
+@media (max-width: 800px) {
+  .container {
+    width: 700px;
+    margin: 0px auto;
+  }
+  header {
+    height: 100px;
+    width: 700px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 700px;
+  }
+  .logo {
+    align-items: flex-start;
+    margin-bottom: 30px;
+  }
+  article {
+    width: 700px;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .second-img {
+    display: none;
+  }
+  .intro-title {
+    padding: 20px 0px;
+    justify-content: center;
+    margin: 0px;
+  }
+  .middle-img {
+    width: 700px;
+  }
+  .section-two {
+    width: 700px;
+  }
+}
+@media (max-width: 500px) {
+  .container {
+    width: 700px;
+    margin: 0 auto;
+  }
+  header {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    height: 400px;
+    border-bottom: 1px solid gray;
+  }
+  .nav-bar {
+    flex-direction: column;
+    align-items: center;
+    width: 701px;
+  }
+  .nav-bar a {
+    align-items: flex-end;
+    padding: 30px;
+    border-bottom: 1px solid gray;
+    width: 705px;
+    text-align: center;
+    color: gray;
+  }
+  .logo {
+    padding-bottom: 20px;
+    border-bottom: 1px soid gray;
+  }
+  section {
+    display: flex;
+  }
+  .section-one {
+    flex-direction: column;
+    padding: 10px;
+  }
+  .section-two {
+    flex-direction: column;
+    padding: 10px;
+  }
+}
