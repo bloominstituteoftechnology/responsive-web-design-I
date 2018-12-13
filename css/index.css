@@ -136,7 +136,6 @@ header .logo {
   border-top: 1px solid black;
   margin-top: 76px;
   padding-top: 39px;
-  border: 1px solid red;
 }
 
 .main-content .top-content {
@@ -195,24 +194,26 @@ footer {
 @media (max-width: 800px) {
     .container {
         width: 600px;
-        border: 2px solid blue;
     }
 
     header {
         display: flex;
         flex-direction: column-reverse;
         justify-content: space-around;
+        align-items: center;
     }
     nav a {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
       }
 
     header .logo {
         display: flex;
         align-items: center;
+        width: 183px;
 
+        
     }  
 
     .cta {
@@ -224,13 +225,30 @@ footer {
         display: none;
     }
 
+    .cta .cta-text {
+        
+        margin-top: 65px;
+    }
+
     .main-content {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+
+    .top-content {
+        display: flex;
+        justify-content: space-between;
+ 
 
     }
 
+        .bottom-content {
+            display: flex;
+            justify-content: space-between;
+        }
  
 
 }
@@ -238,9 +256,23 @@ footer {
 
 @media (max-width: 500px) {
 
+    .container {
+        border: 1px solid red;
+    }
+
+    header nav {
+        width: 480px;
+    }
+
     nav a {
+        display: flex;
+        width: 480px;
         flex-direction: column;
-        align-items: center;
+        text-align: center;
+        font-size: 80px;
+        margin: 20px auto;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
       }
 
 }
