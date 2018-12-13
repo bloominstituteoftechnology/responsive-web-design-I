@@ -1,3 +1,461 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+a {
+	text-decoration: none;
+	color: gray;
+	font-size: 14px;
+}
+
+h1 {
+    font-size: 72px;
+    text-align: center;
+    margin-bottom: 2px;
+}
+
+button {
+    margin-top: 23px;
+    padding: 6px 41px;
+    font-size: 16px;
+    background-color: white;
+    border: 1px black solid;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1024px;
+}
+
+/* -------------- HEADER starts here -------------- */
+header {
+    width: 100%;
+    margin-top: 0;
+}
+
+        /* ---- HEADER-TOP starts here ----- */
+header > div.header-top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 27px;
+}
+                /* --- NAVIGATION starts here --- */
+nav {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    margin-top: 4px;
+    margin-left: 42px;
+    margin-right: 26px;
+}
+
+nav a {
+    color: gray;
+    font-size: 16px;
+    font-weight: bold;
+}
+                /* --- NAVIGATION ends here --- */
+
+.header-top a.home-page {
+    width: 30%;
+    align-self: flex-end;
+    padding-left: 35px;
+}
+        /* ---- HEADER-TOP ends here ----- */
 
 
+        /* ---- HEADER-BOTTOM starts here ----- */
+.header-bottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 57px;
+}
+
+.header-bottom > div {
+    flex: 1;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 121px;
+    padding-top: 12px;
+}
+
+img.code {
+    margin-top: 14px;
+    margin-left: 2px;
+}
+        /* ---- HEADER-BOTTOM ends here ----- */
+/* ------------- HEADER ends here ------------- */
+
+
+hr.one {
+    margin-top: 73px;
+    border: 1px solid black;
+    margin-left: 74px;
+    width: 880px;
+}
+
+/* ------------ CONTENT starts here ------------ */
+.content {
+    width: 100%;
+    margin-left: 74px;
+    margin-top: 36px;
+    margin-right: 72px;
+}
+
+        /* ---- CONTENT-TOP starts here ---- */
+.content-top {
+    width: 85%;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+}
+
+.content-top > div {
+    flex: 1;
+}
+
+.content-top > div:nth-child(2) {
+    margin-left: 9px;
+}
+
+.content-top > div > h2 {
+    margin-bottom: 16px;
+}
+
+.content-top > div > p {
+    line-height: 1.13em;
+}
+        /* ---- CONTENT-TOP ends here ---- */
+
+aside {
+    margin-left: 2px;
+    margin-bottom: 29px;
+}
+
+        /* ---- CONTENT-BOTTOM starts here ---- */
+.content-bottom {
+    width: 86%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.content-bottom > div {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.content-bottom > div > h2 {
+    margin-bottom: 16px;
+}
+
+.content-bottom > div > p {
+    line-height: 1.13em;
+}
+        /* ---- CONTENT-BOTTOM ends here ---- */
+/* ------------ CONTENT ends here ------------ */
+
+hr.two {
+    margin-top: 35px;
+    border: 1px solid black;
+    margin-left: 74px;
+    width: 880px;
+}
+
+/* ---------- FOOTER starts here ---------- */
+footer {
+    width: 100%;
+    margin-left: 74px;
+    margin-top: 35px;
+}
+
+footer h2 {
+	margin-bottom: 15px;
+}
+
+.address {
+	margin-bottom: 15px;
+}
+
+.phone {
+	margin-bottom: 15px;
+}
+
+.copyright {
+    margin-top: 40px;
+    margin-left: 350px;
+}
+/* ---------- FOOTER ends here ---------- */
+
+
+
+
+/* ===================== TABLET version ======================== */
+
+@media (max-width: 800px) {
+    /* ---- HEADER ---- */
+    header {
+        margin-top: 0;
+    }
+    .header-top {
+        padding-top: 0;
+        width: 100%;
+        flex-direction: column-reverse;
+        align-items: center;
+        align-content: center;
+    }
+    .home-page {
+        width: 100%;
+        margin-right: 287px;
+        margin-top: 3px;
+    }
+    .items {
+        width: 100%;
+        margin-left: 2px;
+        padding-right: 9px;
+        margin-top: 38px;
+    }
+    .title {
+        width: 100%;
+        margin-left: 132px;
+        margin-top: 3px;
+    }
+    img.code {
+        display: none;
+    }
+    /* --- HEADER ends ---- */
+
+    hr.one {
+        margin-top: 75px;
+        margin-left: 19px;
+        width: 760px;
+    }
+    /* ---- CONTENT ---- */
+    .content {
+        margin-left: 19px;
+        margin-right: 0;
+    }
+
+    .content-top {
+        width: 93%;
+        margin-left: 10px;
+    }
+
+    .content-top > div:nth-child(2) {
+        margin-left: 21px;
+        padding-right: 5px;
+    }
+
+    aside {
+        margin-left: 0;
+    }
+    .middle-img {
+        height: 158px;
+    }
+
+    .content-bottom {
+        width: 95%;
+        margin-left: 10px;
+    }
+    .content-bottom > div {
+        padding-right: 20px;
+    }
+
+    .content-bottom > div > p {
+        padding-right: 20px;
+    }
+    /* ---- CONTENT ends ---- */
+
+    hr.two {
+        margin-left: 19px;
+        width: 760px;
+    }
+
+    /* ---- FOOTER ---- */
+    footer {
+        margin-left: 29px;
+    }
+    
+    .copyright {
+        margin-left: 280px;
+    }
+    /* ---- FOOTER ends ---- */
+}
+
+
+/* ====================== MOBILE version ======================== */
+@media (max-width: 500px) {
+    /* ---- HEADER ---- */
+    header > div.header-top {
+        padding-top: 20px;
+    }
+
+    a.home-page {
+        width: 100%;
+        margin-right: 226px;
+        margin-top: 0;
+    }
+    .items {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: 0;
+        margin: 0 auto;
+        margin-top: 18px;
+    }
+
+    .items > a {
+        width: 100%;
+        border-top: 1px solid lightgrey;
+        font-size: 20px;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .items > a:last-child {
+        border-bottom: 1px solid lightgrey;
+    }
+
+    .header-bottom {
+        margin-top: 35px;
+    }
+    .title {
+        padding-left: 0;
+        margin-left: 104px;
+    }
+    /* ---- HEADER ends ---- */
+
+    hr.one {
+        margin-top: 75px;
+        margin-left: 20px;
+        width: 460px;
+    }
+
+    /* ---- CONTENT ---- */
+    .content {
+        margin: 0;
+    }
+
+    .content-top {
+        flex-direction: column;
+        margin-left: 20px;
+        margin-top: 59px;
+    }
+
+    .content-top > div:first-child {
+        margin-bottom: 45.5px;
+    }
+
+    .content-top > div:nth-child(2) {
+        margin-left: 0;
+        margin-bottom: 22px;
+    }
+
+    .middle-img {
+        height: 96px;
+        margin-left: 20px;
+        width: 460px;
+    }
+
+    .content-bottom {
+        flex-direction: column;
+        margin-left: 20px;
+    }
+
+    .content-bottom > div:first-child {
+        margin-bottom: 63px;
+    }
+
+    .content-bottom > div:nth-child(2) {
+        margin-bottom: 64px;
+    }
+    /* ---- CONTENT ends ---- */
+
+    hr.two {
+        margin-left: 20px;
+        width: 460px;
+    }
+
+    /* ---- FOOTER ---- */
+    footer {
+        margin-left: 20px;
+    }
+
+    .copyright {
+        margin-left: 140px;
+    } 
+    /* ---- FOOTER ends ---- */
+}
