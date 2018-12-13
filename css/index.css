@@ -1,3 +1,375 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+.container {
+	max-width: 1024px;
+  margin: 0 auto;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+  align-items: center;
+	height: 100px;
+	position: sticky;
+  top: 0;
+  margin: 0 auto;
+  padding: 10px;
+	z-index: 2;
+  background: white;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  line-height: 36px;
+  margin: 0 10px;
+}
+
+header nav a {
+  margin-right: 70px;
+	text-decoration: none;
+	font-size: 1.12rem;
+  font-weight: bold;
+	color: gray;
+}
+
+header nav a:hover {
+	text-decoration: underline;
+}
+
+header #logo-image-wrapper {
+  width: 210px;
+  margin-right: 20px;
+  justify-self: flex-end;
+  align-self: center;
+}
+
+section {
+  line-height: 1.5;
+}
+
+section h2 {
+  font-size: 1.2rem;
+}
+
+.banner {
+	display: flex;
+	justify-content: flex-end;
+  align-items: center;
+  margin: 60px auto;
+}
+
+.banner .banner-column {
+	flex: 0 0 40%;
+}
+
+.banner #headline {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  margin: 0 25px;
+	text-align: center;
+  line-height: 1;
+}
+
+.banner #headline h1 {
+	font-size: 5rem;
+}
+
+.banner #headline .button {
+	width: 190px;
+	padding: 10px;
+  border: 1px solid black;
+  font-size: 1.15rem;
+	cursor: pointer;
+}
+
+.banner #hero-image-wrapper {
+  margin: 0 25px;
+}
+
+.main-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 991px;
+  padding: 25px 5px;
+  margin: 10px auto;
+}
+
+article {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  padding: 30px 0;
+}
+
+.introduction {
+	display: flex;
+}
+
+.introduction .intro-column {
+	flex: 0 0 48%;
+}
+
+.middle-image-wrapper {
+  margin: 35px auto;
+	text-align: center;
+}
+
+.product-and-services {
+	display: flex;
+}
+
+.product-and-services .p-and-s-column {
+	flex: 0 0 33%;
+}
+
+.contact-info {
+  padding: 50px 0;
+  line-height: 1;
+}
+
+.contact-info a {
+	color: black;
+	text-decoration: none;
+}
+
+.contact-info a:hover {
+	text-decoration: underline;
+}
+
+.footer {
+  height: 150px;
+	bottom: 0;
+	text-align: center;
+  font-size: 1.1rem;
+}
+
+/* Services Page */
+.services-into-text h1 {
+  margin: 1rem 0;
+  font-size: 2rem;
+}
+
+.services-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+  border-top: 1px solid black;
+  margin: 2rem auto;
+}
+
+.service-item {
+	flex: 0 0 48%;
+	border: 1px solid black;
+	padding: 2rem;
+	margin: 1.5rem 0;
+	background: #F4F3F4;
+}
+
+.svc-button {
+	width: 130px;
+	padding: 0.25rem 2rem;
+	margin-top: 1rem;
+	border: 1px solid black;
+	border-radius: 5px;
+	text-align: center;
+	background: white;
+	font-size: 0.75rem;
+	cursor: pointer;
+}
+
+.about-services {
+	display: flex;
+	justify-content: space-between;
+	border-top: 2px solid black;
+}
+
+.about-services-text ul {
+	list-style-type: disc;
+	margin: 1.15rem;
+}
+
+.about-services-text, .services-info-img {
+	flex: 0 0 48%;
+	margin: 1.5rem 0;
+}
+
+
+/*ADAPTIVE DESIGN SETTINGS*/
+/* Tablet Screen */
+@media (max-width: 800px) {
+  .container, .main-content-wrapper {
+    max-width: 800px;
+  }
+
+  header {
+    height: 180px;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  header #logo-image-wrapper {
+    margin: 15px auto;
+  }
+
+  header nav {
+    margin: 0;
+    justify-content: space-between;
+  }
+
+  header nav a {
+    margin: 0 35px;
+  }
+
+  .banner {
+    flex-direction: column;
+    justify-content: center;
+    margin: 40px auto;
+  }
+
+  .banner #hero-image-wrapper {
+    display: none;
+  }
+
+  .main-content-wrapper {
+    padding: 23px;
+  }
+
+  article, .contact-info {
+    padding: 50px 10px;
+  }
+
+  .product-and-services {
+    justify-content: space-between;
+  }
+
+  .product-and-services .p-and-s-column {
+	  flex: 0 0 30%;
+  }
+
+  .services-list {
+    flex-direction: column;
+  }
+
+	.about-services {
+		flex-direction: column-reverse;
+		align-items: center;
+	}  
+
+}
+
+/* Mobile Screen */
+@media (max-width: 500px) {
+
+  .container, .main-content-wrapper {
+    max-width: 500px;
+  }
+
+  /* Ugly hack */
+  header, .banner, header nav a, footer {
+    width: 500px;
+    height: auto;
+  }
+  
+  header nav {
+    flex-direction: column;
+  }
+
+  header nav a {
+    text-align: center;
+    padding: 5px 0;
+    border-bottom: 2px solid lightgray;
+  }
+
+  header nav a:first-child {
+    border-top: 2px solid lightgray;
+  }
+
+  .introduction, .product-and-services {
+    flex-direction: column;
+  }
+
+ .introduction .intro-column, .product-and-services .p-and-s-column {
+    margin: 1rem auto;
+    margin-bottom: 3rem;
+  }
+
+  .product-and-services .p-and-s-column:last-child {
+    margin-bottom: 0;
+  }
+}
+
+
 
 
