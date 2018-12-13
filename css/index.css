@@ -53,11 +53,10 @@ table {
 }
 
 html, body {
-
   font-family: 'Titillium Web', sans-serif;
   display: flex;
   flex-direction: column;
- /* width: 100%; */
+  max-width: 800px;
   height: 100%;
   margin:  0 auto;
 }
@@ -70,19 +69,16 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 .nav-container {
-  border: 1px solid blue;
   display: flex;
-  justify-content: space-between;
-  width: 880px;
+  justify-content: space-around;
   margin-top: 30px;
-/*  position: fixed;
-  z-index: 0;
-  background: darkblue;*/
+
 }
 
 .navbar_top {
-  border: 1px solid pink;
+  border: 1px solid blue;
   display: flex;
+  justify-content: space-around;
   align-items: center;
   height: 40px;
 }
@@ -92,11 +88,12 @@ a{
   font-size: 15px;
 }
 
+
 .navbar_top a{
-  border: 1px solid green;
   display: flex;
  /* justify-content: space-between; */
   align-items: center;
+  justify-content: space-around;
   color: #BABABA;
   text-decoration: none;
   font-weight: bolder;
@@ -114,11 +111,10 @@ a{
 .logoIMG {
   width: 191.78px;
   height: 40px;
-  background: lightgrey;
+  /*background: lightgrey; */
 }
 
 .header {
-  border: 1px solid green;
   display: flex;
   justify-content: space-evenly;
   border-bottom: 2px solid black;
@@ -129,9 +125,8 @@ a{
 }
 
 .banner {
-  border: 1px solid purple;
   display: flex;
-  width: 400px;
+  /*width: 400px; */
   height: 360px;
   flex-direction: column;
   justify-content: center;
@@ -141,7 +136,6 @@ a{
 }
 
 h1 {
-  border: 1px solid orange;
   font-size: 80px;
   font-family: 'Bangers', sans-serif;
   text-align: center;
@@ -166,26 +160,30 @@ button:hover {
 }
 
 .headerIMG {
-  width: 400px;
+  display: flex;
+   height: 400px;
   padding-left: 35px;
 }
 
-
 .top {
+ border: 3px solid red;
   display: flex;
-  justify-content: space-between;
 }
 
-.top-content{
+.top .top-content{
+  border: 1px solid blue;
   display: flex;
   flex-direction: column;
-  width: 440px;
+ /* width: 400px; */
+  padding: 10px;
 }
 
 
 
 .middleIMG{
-  margin: 45px 0;
+  display: flex;
+  margin: 45px auto;
+  max-width: 800px;
 }
 
 .bottom{
@@ -226,3 +224,63 @@ h4 {
 }
 
 
+@media (max-width: 800px) {
+
+  .nav-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar_top {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+
+  .logoIMG {
+    margin: 30px auto;
+    order: -1;
+  }
+
+  .headerIMG {
+    display: none;
+  }
+
+}
+
+
+@media (max-width: 500px) {
+ .nav-container {
+   display: flex;
+   flex-direction: column;
+ }
+
+
+  .nav-container .navbar_top{
+    border: 1px solid green;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-between;
+ }
+
+  .nav-container .navbar_top a{
+    display: flex;
+    flex-direction: column;
+    height: 15px;
+  }
+
+  .top, .bottom, address {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+}
