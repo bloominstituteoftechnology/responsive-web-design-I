@@ -70,7 +70,7 @@ h1, h2, h3, h4, h5 {
 
 .container {
     margin: 0 auto;
-    width: 860px;
+    max-width: 860px;
 }
 
 header {
@@ -80,14 +80,14 @@ header {
 }
 
 header a {
-	align-items: flex-start;
+	align-items: center;
 	display: flex;
 
 }
 
 .nav  {
 		width: 70%;
-    margin-top: 10px;
+    margin-top: 3%;
     justify-content: space-between;
     align-items: center;
     display: flex;
@@ -101,6 +101,7 @@ header a {
 
 /* Top Content Box */
 .content1 {
+		margin-top: 4%;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -110,29 +111,29 @@ header a {
 /* Top Header and Button */
 .contentbox1 {
     text-align: center;
-    margin: 0 60px 0 0;
+    margin: 0 8% 0 0;
     align-items: center;
 }
 
 .contentbox1 h2 {
-    font-size: 60px;
+    font-size: 380%;
 }
 
 .contentbox1 button {
     border-radius: 5px;
-    width: 150px;
-    height: 40px;
+    width: 80%;
+		height: 40px;
     border: 1px solid grey;
 }
 
 /* Top image */
 .contentbox2 {
-    margin: 25px 0 25px 50px;
+    margin: 4% 0 4% 8%;
 }
 
 /* First Row of Article content */
 .content2 {
-    margin: 40px 0 0 0;
+    margin-top: 6%;
     justify-content: space-around;
     display: flex;
 }
@@ -146,10 +147,11 @@ header a {
     justify-content: space-between;
     display: flex;
     align-items: center;
-    height: 250px;
+    height: 50%;
 }
 
 .content3 img {
+		margin: 4% 0;
 		width: 98.5%;
 }
 
@@ -163,12 +165,12 @@ header a {
 }
 
 .textcard2 {
-    margin-bottom: 45px;
+    margin-bottom: 6%;
     width: 30%;
 }
 
 footer {
-    margin-bottom: 50px;
+    margin-bottom: 4%;
 }
 
 .copyright {
@@ -177,6 +179,10 @@ footer {
 }
 
 @media screen and (max-width: 880px) {
+
+	html {
+		font-size: 62.5%;
+	}
 
 	*{
 		transition: all .25s ease-in-out;
@@ -187,8 +193,8 @@ footer {
 	}
 
 	.nav {
-		padding-left: 20px;
-		margin-bottom: 30px;
+		padding-left: 4%;
+		margin-bottom: 2%;
 		width: 100%;
 		align-items: flex-start;
 		justify-content: space-between;
@@ -206,7 +212,7 @@ footer {
 	}
 
 	header a {
-		margin: 50px 0;
+		margin: 8% 0;
 		width: 100%;
 		justify-content: center;
 		align-items: center;
@@ -223,11 +229,11 @@ footer {
 	}
 
 	.contentbox1 {
-		padding-bottom: 40px;
+		padding-bottom: 4%;
 	}
 
 	.content3 img {
-		padding-left: 25px;
+		padding-left: 4%;
 		width: 91.5%;
 		height: 50%;
 	}
@@ -239,6 +245,9 @@ footer {
 }
 
 @media screen and (max-width: 800px) {
+	html {
+		font-size: 62.5%;
+	}
 	*{
 		transition: all .25s ease-in-out;
 	}
@@ -247,7 +256,7 @@ footer {
 	}
 
 	.nav {
-		margin-bottom: 30px;
+		margin-bottom: 4%;
 		width: 100%;
 		justify-content: space-between;
 		flex-wrap: wrap;
@@ -260,7 +269,7 @@ footer {
 	}
 
 	header a {
-		margin: 50px 0;
+		margin: 4% 0;
 		width: 100%;
 		justify-content: center;
 		align-items: flex-start;
@@ -268,7 +277,7 @@ footer {
 	}
 
 	.nav a {
-		padding-bottom: 20px;
+		padding-bottom: 2%;
 		display:block;
 		width: 10%;
 	}
@@ -277,10 +286,10 @@ footer {
 		display: none;
 	}
 	.contentbox1 {
-		padding:0 0 40px 40px;
+		padding:0 0 4% 4%;
 	}
 	.content3 img {
-		padding-left: 20px;
+		padding-left: 2%;
 		width: 92%;
 		height: 50%;
 	}
@@ -288,6 +297,9 @@ footer {
 
 }
 @media screen and (max-width: 500px) {
+	html {
+		font-size: 62.5%;
+	}
 	*{
 		transition: all .25s ease-in-out;
 	}
@@ -297,8 +309,8 @@ footer {
 
 	.nav {
 		border-bottom: 1px solid grey;
-		margin-bottom: 30px;
-		padding-bottom: 20px;
+		margin-bottom: 4%;
+		padding-bottom: 4%;
 		width: 100%;
 		justify-content: space-between;
 		flex-wrap: wrap;
@@ -311,7 +323,7 @@ footer {
 	}
 
 	header a {
-		margin: 20px 0;
+		margin: 8% 0;
 		width: 100%;
 		justify-content: center;
 		align-items: flex-start;
@@ -319,14 +331,14 @@ footer {
 	}
 
 	.nav a {
-		border-radius: 10px;
+		border-radius: 20%;
 		background: rgba(226,226,226,1);
 		text-align: center;
 		word-break: break-all;
-		padding: 20px;
+		padding: 8%;
 		border: 1px solid grey;
-		font-size: 20px;
-		margin-left: 10px;
+		font-size: 180%;
+		margin-left: 4%;
 		width: 100%;
 	}
 
@@ -341,12 +353,13 @@ footer {
 
 	.contentbox1 {
 		text-align: center;
-		padding:0 0 25px 25px;
+		padding:0 0 4% 4%;
+		margin: 6% 0;
 	}
 	.content3 img {
-		padding-left: 15px;
+		padding-left: 3%;
 		width: 92%;
-		height: 50%
+		height: 50%;
 	}
 
 }
