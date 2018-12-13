@@ -7,7 +7,7 @@ Lambda School.
  <a href="https://aaharbaugh.github.io/responsive-web-design-I/index.html">Click here</a>
 
 ## View the Index Page of Project (mobile first media queries
-<a href="https://aaharbaugh.github.io/responsive-web-design-I/index-mobiles.html">Click here</a>
+<a href="https://aaharbaugh.github.io/responsive-web-design-I/index-mobile.html">Click here</a>
 
 For full effect: 
 Resize window from 1000px to 750px to 450px. 
