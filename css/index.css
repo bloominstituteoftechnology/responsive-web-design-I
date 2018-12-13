@@ -1,3 +1,260 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
 
 
+
+
+.container {
+	width: 880px;
+	margin: 0 auto;
+}
+
+
+p {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+
+.navigation {
+	display: inline-block;
+	vertical-align: top;
+	width: 88%;
+}
+
+.navigation .logo {
+	display: inline-block;
+	margin-left: 20px;
+	margin-top: 15px;
+}
+.navigation a {
+	display: inline-block;
+	margin: 0 20px 10px 20px;
+	color: grey;
+	
+}
+
+
+
+
+.innovation {
+	margin-bottom: 20px;
+	display: inline-block;
+	width: 100%;
+	height: auto;
+	border-bottom: 1px solid grey;
+}
+
+.innovation .header-text {
+	font-family: 'Bangers', cursive;
+	letter-spacing: 1px;
+	display: inline-block;
+	font-size: 80px;
+	text-align: center;
+	margin-top: 50px;
+	padding: 0 75px;
+	width: 50%;
+}
+
+.innovation button {
+	border: 1px solid black;
+	background: white;
+	vertical-align: top;
+	margin-top: 6px;
+	padding: 8px 44px;
+
+}
+
+
+.innovation .header-img {
+	display: inline-block;
+	border-radius: 50%;
+	vertical-align: top;
+	width: 300px;
+	margin-top: 50px;
+	margin-left: 50px;
+	
+}
+
+
+.upper-section {
+	
+	padding: 0 10px;
+	width: 100%;
+}
+
+.upper-section .features-about .text-content {
+	width: 410px;
+	display: inline-block;
+	margin-left: 10px;
+	margin-bottom: 50px;
+}
+
+
+.middle-img {
+	margin-bottom: 50px;
+}
+
+
+.lower-section {
+	width: 100%;
+	padding: 0 10px;
+	border-bottom: 1px solid grey;
+}
+
+.lower-section .bottom-content .text-content2 {
+	width: 31%;
+	display: inline-block;
+	margin-left: 13px;
+	margin-bottom: 25px;
+	
+}
+
+
+.contact {
+	margin-bottom: 20px;
+	margin-top: 20px;
+	
+}
+
+footer {
+	text-align: center;
+}
+
+@media (max-width: 800px) {
+    .innovation .header-img {
+        display: none;
+    }
+    .innovation .header-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 175px;
+    
+    }
+    .navi {
+        display: flex;
+        flex-direction: column;
+    }
+    .navigation {
+        display: flex;
+       justify-content: center;
+        
+    }
+    .navigation a {
+        width: 786px;
+        order: 4;
+    }
+    .contact {
+        margin-left: 20px;
+    }
+    .middle-img {
+        margin-left: 20px;
+    }
+    
+    .logo {
+        order: 3;
+            background-color:grey;
+        margin-left: 325px;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .features-about {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        
+    }
+    .bottom-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    
+    }
+    .navigation a {
+        border-bottom: 1px solid black;
+        order: 2;
+        padding-left: 325px;
+        
+    }
+    
+    .logo {
+        order: 1;
+        padding-left: 100px;
+        border: 2px solid blue;
+    }
+    .contact{
+        margin-left: 20px;
+    }
+}
