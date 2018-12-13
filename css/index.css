@@ -112,7 +112,7 @@ header {
 }
 
 /*.header-container {*/
-    /*!* TODO update to flexbox *!*/
+    /*!* TODO update to flexbox!*/
 /*}*/
 
 .header-wrapper {
@@ -307,6 +307,10 @@ a[href^="tel"]::before {
 
 @media(max-width: 500px) {
 
+    .main-container {
+        width: 500px;
+    }
+
     nav {
         height: 372px;
         position: static;
@@ -319,16 +323,48 @@ a[href^="tel"]::before {
     .nav-item-wrapper {
         display: flex;
         flex-direction: column;
+        font-size: 20px;
+        padding: unset;
+        width: 500px;
     }
 
     .nav-item-wrapper a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         border: 1px solid;
-        width: 100%;
+        height: 54px;
+        width: 500px;
     }
 
     .logo-wrapper {
         margin: 20px 0;
         width: auto;
         height: auto;
+    }
+
+    .feature-content {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    .feature-wrapper {
+        width: auto;
+        margin-bottom: 40px;
+    }
+
+    .middle-img {
+        margin-bottom: 30px;
+    }
+
+    .service-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .service-wrapper {
+        width: auto;
+        margin-bottom: 40px;
     }
 }
