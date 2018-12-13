@@ -358,18 +358,27 @@ article {
   }
 
 
-  .main-content-wrapper * {
+  /* .main-content-wrapper * {
     display: block;
+  } */
+
+  .introduction, .product-and-services {
+    flex-direction: column;
   }
 
-  .introduction .intro-column, .product-and-services .p-and-s-column {
-    width: 100%;
-    margin: 2rem 0;
+ .introduction .intro-column, .product-and-services .p-and-s-column {
+    margin: 1rem auto;
+    margin-bottom: 3rem;
+    border: 1px solid blue;
   }
 
-  .introduction .intro-column:first-child {
+  .product-and-services .p-and-s-column:last-child {
+    margin-bottom: 0;
+  }
+
+   /* .introduction .intro-column:first-child {
     margin-top: 0;
-  }
+  } */
 
 }
 
