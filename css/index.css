@@ -75,6 +75,7 @@ header {
 header nav {
     display: flex;
     width: 100%;
+    justify-content: center;
 }
 header nav .links {
     display: flex;
@@ -95,6 +96,7 @@ header nav .logo {
     background-repeat: no-repeat;
     background-position: center center;
     width: 183px;
+    height: 60px;
     margin-left: 90px;
 }
 /*HEADER TEXT AND IMAGE*/
@@ -300,7 +302,32 @@ footer#services-footer #copyright {
 /*======MEDIA QUERIES======*/
 /*=========================*/
 @media (max-width: 800px) {
-
+    body .container {
+        width: 763px;
+    }
+    header nav {
+        width: 763px;
+        position: absolute;
+        justify-content: space-around;
+        display: flex;
+    }
+    header nav .links {
+        margin-right: 1px;
+        margin-top: 65px;
+        justify-content: space-between;
+        padding-left: 11px;
+        padding-right: 43px;
+    }
+    header nav .links .link {
+        text-decoration: none;
+        margin-top: 5px;
+    }
+    header nav .logo {
+        position: absolute;
+        margin: 2px 0 0 0;
+    }
+    header {
+    }
 }
 @media (max-width: 500px) {
     
