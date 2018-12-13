@@ -154,12 +154,13 @@ h1.product-title {
 img.vision-header-img { width: 100%; }
 h4.graffiti {
 	transform: scale(40, 60) rotate(-4deg);
-	z-index: -1;
-	text-align: center;
 	color: #ecebeb;
-	position: relative;
-	top: 30vh;
-	letter-spacing: -0.4px; }
+	position: absolute;
+	top: 60vh;
+	left: 50vw;
+	letter-spacing: -0.4px;
+	z-index: -1; }
+
 
 /* ****************************************************** */
 /* 800px and smaller **************************************/
@@ -189,6 +190,10 @@ h4.graffiti {
 	.services-header { top: 128px; margin: 0 0 156px 0; }
 	.product-header { top: 128px; margin: 0 0 96px 0; }
 	h1.product-title { font-size: 56px; margin: -25% 0 25% 0; }
+	
+	.vision-header { position: relative; top: 128px; margin: 0 0 146px 0; }
+	h4.graffiti { transform: scale(30, 50) rotate(-13deg); top: 75vh; }
+
 }
 
 
@@ -223,15 +228,19 @@ h4.graffiti {
 		margin: 4px 0 8px 0; }
 
 	#header { top: 24px; margin: 0 0 48px 0; }
-	.services-header { top: 24px; margin: 0 0 48px 0; }
-	.product-header { top: 24px; margin: 0 0 48px 0; }
-	h1.product-title { font-size: 32px; margin: -55% 0 0 0; }
+	.services-header { width: calc(100% + 36px); position: relative; top: 24px; margin: 0 auto 48px -18px; }
+	.product-header { top: 24px; margin: 0 0 0 0; }
+	img.product-header-img { width: 80%; }
+	h1.product-title { color: black; text-align: left; font-size: 48px; margin: 0; }
 
 	.item.item-gallery { padding: 24px 8px; }
 
 	.container-row, .container { flex-flow: column wrap; margin: 0; }
 	.item { padding: 24px 0; }
-   
+	
+	.vision-header { width: calc(100% + 36px); position: relative; top: 15px; margin: 0 auto 36px -18px; }
+	h4.graffiti { transform: scale(20, 25) rotate(-33deg); top: 95vh; }
+
 }
 
 
