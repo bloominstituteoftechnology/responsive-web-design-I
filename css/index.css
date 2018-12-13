@@ -1,3 +1,460 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+body {
+    line-height: 1;
+    margin: 30px;
+}
+ol,
+ul {
+    list-style: none;
+}
+blockquote,
+q {
+    quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1.2rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+/* Container
+============================*/
+
+.container {
+    width: 95%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        'logo'
+        'nav'
+        'header'
+        'hr'
+        'top-section'
+        'mid'
+        'bottom-section'
+        'footer';
+}
+
+/* Navbar
+============================*/
+
+.logo {
+    grid-area: logo;
+    justify-self: center;
+}
+
+nav {
+    grid-area: nav;
+    margin: 1rem 0;
+    font-size: 62.5%;
+}
+
+nav > a:hover {
+    color: black;
+    font-size: 62.5%;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: grey;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid grey;
+}
+
+a:first-child {
+    border-top: 1px solid grey;
+}
+
+/* Default styles
+============================*/
+
+section {
+    padding: 2rem;
+}
+
+/* Header
+============================*/
+
+.header {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+.header > button {
+    min-width: 10rem;
+    height: 2rem;
+    background: #fff;
+    border: 1px solid black;
+    font-size: 1.1rem;
+}
+
+.header > button:hover {
+    background-color: black;
+    color: white;
+}
+
+#big-text {
+    width: 100%;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.header-img {
+    display: none;
+}
 
 
+/* Horizontal Line
+============================*/
+
+hr {
+    grid-area: hr;
+    height: 2px;
+    width: 100%;
+    margin: 2rem 0; 
+}
+
+/* Middle section
+============================*/
+
+.top-section {
+    grid-area: top-section;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* Middle image
+============================*/
+
+#mid {
+    grid-area: mid;
+    width: 100%;
+}
+
+/* Bottom section
+============================*/
+
+.bottom-section {
+    grid-area: bottom-section;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* Footer section
+============================*/
+
+.footer {
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        'contact'
+        'copyright';
+}
+
+/* Contact 
+============================*/
+
+.contact {
+    grid-area: contact;
+    justify-self: start;
+    max-width: 12rem;
+}
+
+.contact > a {
+    padding: 0;
+    margin: 0;
+    color: black;
+    border: none;
+    text-align: left;
+}
+
+address {
+    margin: 1.2rem 0;
+}
+
+/* Copyright 
+============================*/
+
+.copyright {
+    grid-area: copyright;
+    margin: 150px auto 50px;
+    text-align: center;
+}
+
+/* Tablet View
+============================*/
+
+@media (min-width: 500px) {
+
+    .container {
+    width: 95%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        'logo logo logo'
+        'nav nav nav'
+        'header header header'
+        'hr hr hr'
+        'top-section top-section top-section'
+        'mid mid mid'
+        'bottom-section bottom-section bottom-section'
+        'footer footer footer';
+    }
+
+    .logo {
+        padding: 2rem;
+    }
+
+    nav {
+        display: flex;
+    }
+
+    a {
+        border: none;
+        padding: 0;
+    }
+
+    a:first-child {
+        border: none;
+    }
+
+    section {
+        padding: 2rem 0;
+    }
+
+    .top-section {
+        display: flex;
+        grid-gap: 5%;
+    }
+
+    .bottom-section {
+        display: flex;
+        grid-gap: 5%;   
+    }
+
+    /* .footer {
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        'contact contact contact'
+        'copyright copyright copyright';
+    } */
+
+    .copyright {
+       justify-self: center;
+    }
+
+}
+
+/* Desktop View 
+============================*/
+
+@media (min-width: 800px) {
+      .container {
+    width: 95%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        'logo nav nav'
+        'header header header'
+        'hr hr hr'
+        'top-section top-section top-section'
+        'mid mid mid'
+        'bottom-section bottom-section bottom-section'
+        'footer footer footer';
+    }
+
+    .logo {
+        padding: 2rem;
+    }
+
+    .header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        '. header-img'
+    }
+
+    .header-img {
+        grid-area: header-img;
+        display: inline-block;
+    }
+
+    a {
+        border: none;
+        padding: 2rem 0;
+    }
+
+    a:first-child {
+        border: none;
+    }
+
+    section {
+        padding: 2rem 0;
+    }
+
+    .top-section {
+        display: flex;
+        grid-gap: 5%;
+    }
+
+    .bottom-section {
+        display: flex;
+        grid-gap: 5%;   
+    }
+
+    .footer {
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        'contact . .'
+        '. copyright .';
+    }
+}
