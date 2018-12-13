@@ -107,9 +107,21 @@ nav{
 }
 
 nav a{
+    display:flex;
+    justify-content: center;
+    padding-top:2px;
     text-decoration: none;
     color: #A7A7A7;
     font-weight: 600;
+    border: 1px solid white;
+    height: 25px;
+    width: 75px;
+}
+
+nav a:hover{
+    background-color: grey;
+    color:white;
+    border-radius: 5px;
 }
 
 .grey-box-container{
@@ -132,8 +144,8 @@ nav a{
     background-color: #F4F3F4;
     padding: 10px;
     flex-direction: column;
-    width: 48%;
-    height: 30%;   
+    width: 374px;
+    height: 258px;   
 }
 
 .button{
@@ -146,6 +158,11 @@ nav a{
     height: 15%;
     width: 35%;
     border-radius: 5px;
+}
+
+.button:hover{
+    background-color: grey;
+    color:white;
 }
 
 .fun-facts{ 
@@ -183,4 +200,131 @@ ol{
 
 li{
     margin-bottom: 10px;
+}
+
+/* media for tablet */
+@media(max-width:800px){
+	header{
+		flex-direction: column-reverse;
+        height: 150px;
+        margin-bottom:40px;
+    }
+    
+    .services-header-img{
+        display:none;
+    }
+
+	nav{
+		width:760px;
+		justify-content: space-between;
+	}
+
+    .main-box{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+	.services{
+        width: 600px;
+        height:150px;
+        padding:0;
+    }
+
+    .grey-box-container{
+        width: 675px;
+        height: 750px;
+    }
+
+    .grey-box{
+        width: 330px;
+        height:225px;
+    }
+
+    .button{
+        align-self: center;
+    }
+
+    .fun-facts{
+        width:675px;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    .fun-facts img{
+        display:none;
+    }
+
+    ol{
+        margin-top:25px;
+    }
+}
+
+
+/* media for phone */
+@media(max-width:500px){
+	header{
+		height: 475px;
+		margin:0;
+	}
+
+	nav{
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		font-size: 20px;
+		width: 450px;
+		height:400px;
+		margin-top: 20px;
+	}
+	nav a{
+		border-top: 1px solid black;
+		border-collapse: collapse;
+		color:#ACACB3;
+		height:75px;
+		width: 500px;
+		margin:0;
+	}
+
+	p{
+		line-height: 1;
+	}
+
+	nav a:last-child{
+		border-bottom: 1px solid black;
+	}
+
+	.Features-and-about{
+		flex-wrap: wrap;
+		width: 475px;
+	}
+
+	.Features, .About{
+		margin: 24px 0;
+	}
+
+	.middle-img{
+		width:460px;
+		margin-bottom: 15px;
+	}
+
+	.triple-menu{
+		flex-wrap: wrap;
+		align-content: space-between;
+		padding:0;
+		margin-bottom: 20px;
+		width: 475px;
+		height: 460px;
+	}
+
+	section.Services, section.Product, section.Vision{
+		padding:0 0 0 10px;
+		margin-bottom: 25px;
+	}
+
+	.contact-info{
+		width:460px;
+		padding-top: 30px;
+	}
 }
