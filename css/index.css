@@ -40,7 +40,7 @@ h1, h2, h3, h4, h5 { font-family: 'Bangers', cursive; letter-spacing: 1px; margi
 	------------ Your code starts here! ------------
 **************************************************/
 * { box-sizing: border-box; transition-duration: 0.33s; }
-body { display: block; width: 800px; margin: 0 auto; }
+body { display: block; width: 800px; margin: 0 auto; overflow-x: hidden;  }
 section { position: relative; }
 h1 { font-size: 64px; }
 h2 { font-size: 24px; }
@@ -149,7 +149,17 @@ h1.product-title {
 	margin: -200px 0 200px 0; 
 	color: #ffffff; }
 
-
+/* Vision Page ********************************/
+.vision-header { position: relative; top: 96px; margin: 0 0 124px 0; }
+img.vision-header-img { width: 100%; }
+h4.graffiti {
+	transform: scale(40, 60) rotate(-4deg);
+	z-index: -1;
+	text-align: center;
+	color: #ecebeb;
+	position: relative;
+	top: 30vh;
+	letter-spacing: -0.4px; }
 
 /* ****************************************************** */
 /* 800px and smaller **************************************/
