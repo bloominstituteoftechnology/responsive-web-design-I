@@ -68,9 +68,9 @@ h1, h2, h3, h4, h5 {
   margin-bottom: 15px;
 }
 
-section {
+/* section {
   position: relative;
-}
+} */
 
 h1 {
   font-size: 78px;
@@ -221,4 +221,58 @@ button {
 
 .services-bottom-row p {
 	padding-bottom: 20px;
+}
+
+/* Tablet */
+
+@media (max-width: 800px) {
+
+  .container {
+    width: 760px;
+    margin: 0 auto;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .menu {
+    width: 100%;
+    order: 2;
+  }
+
+  .logo-container {
+    width: 760px;
+    order: 1;
+  }
+
+  /* .hero img {
+    display: none;
+  } */
+
+  h1 {
+    font-size: 36px;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero .inner1 {
+      width: 760px;
+      border: 2px solid red;
+  }
+
+  .hero .inner1:last-child {
+    display: none;
+  }
+
+  .middle-img {
+    max-width: 760px;
+  }
+
 }
