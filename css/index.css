@@ -91,7 +91,7 @@ button {
     max-width: 1024px;
 }
 
-/* ====== HEADER starts here ===== */
+/* -------------- HEADER starts here -------------- */
 header {
     width: 100%;
     margin-top: 0;
@@ -125,7 +125,7 @@ nav a {
 .header-top a.home-page {
     width: 30%;
     align-self: flex-end;
-    padding-left: 33px;
+    padding-left: 35px;
 }
         /* ---- HEADER-TOP ends here ----- */
 
@@ -148,7 +148,7 @@ nav a {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding-left: 118px;
+    padding-left: 121px;
     padding-top: 12px;
 }
 
@@ -157,20 +157,20 @@ img.code {
     margin-left: 2px;
 }
         /* ---- HEADER-BOTTOM ends here ----- */
-/* ====== HEADER ends here ===== */
+/* ------------- HEADER ends here ------------- */
 
 
 hr.one {
-    margin-top: 72px;
+    margin-top: 73px;
     border: 1px solid black;
-    margin-left: 72px;
+    margin-left: 74px;
     width: 880px;
 }
 
-/* ====== CONTENT starts here ===== */
+/* ------------ CONTENT starts here ------------ */
 .content {
     width: 100%;
-    margin-left: 72px;
+    margin-left: 74px;
     margin-top: 36px;
     margin-right: 72px;
 }
@@ -225,19 +225,19 @@ aside {
     line-height: 1.13em;
 }
         /* ---- CONTENT-BOTTOM ends here ---- */
-/* ====== CONTENT ends here ===== */
+/* ------------ CONTENT ends here ------------ */
 
 hr.two {
     margin-top: 35px;
     border: 1px solid black;
-    margin-left: 72px;
+    margin-left: 74px;
     width: 880px;
 }
 
-/* ====== FOOTER starts here ===== */
+/* ---------- FOOTER starts here ---------- */
 footer {
     width: 100%;
-    margin-left: 72px;
+    margin-left: 74px;
     margin-top: 35px;
 }
 
@@ -257,9 +257,15 @@ footer h2 {
     margin-top: 40px;
     margin-left: 350px;
 }
-/* ====== FOOTER ends here ===== */
+/* ---------- FOOTER ends here ---------- */
+
+
+
+
+/* ===================== TABLET version ======================== */
 
 @media (max-width: 800px) {
+    /* ---- HEADER ---- */
     header {
         margin-top: 0;
     }
@@ -272,30 +278,31 @@ footer h2 {
     }
     .home-page {
         width: 100%;
-        margin-right: 284px;
-        margin-top: 2px;
+        margin-right: 287px;
+        margin-top: 3px;
     }
     .items {
         width: 100%;
-        margin-left: 0;
-        padding-right: 7px;
-        margin-top: 40px;
+        margin-left: 2px;
+        padding-right: 9px;
+        margin-top: 38px;
     }
     .title {
         width: 100%;
-        margin-left: 135px;
-        margin-top: 2px;
+        margin-left: 132px;
+        margin-top: 3px;
     }
     img.code {
         display: none;
     }
+    /* --- HEADER ends ---- */
 
     hr.one {
         margin-top: 75px;
         margin-left: 19px;
         width: 760px;
     }
-
+    /* ---- CONTENT ---- */
     .content {
         margin-left: 19px;
         margin-right: 0;
@@ -329,12 +336,14 @@ footer h2 {
     .content-bottom > div > p {
         padding-right: 20px;
     }
+    /* ---- CONTENT ends ---- */
 
     hr.two {
         margin-left: 19px;
         width: 760px;
     }
 
+    /* ---- FOOTER ---- */
     footer {
         margin-left: 29px;
     }
@@ -342,16 +351,20 @@ footer h2 {
     .copyright {
         margin-left: 280px;
     }
+    /* ---- FOOTER ends ---- */
 }
 
+
+/* ====================== MOBILE version ======================== */
 @media (max-width: 500px) {
+    /* ---- HEADER ---- */
     header > div.header-top {
         padding-top: 20px;
     }
 
     a.home-page {
         width: 100%;
-        margin-right: 225px;
+        margin-right: 226px;
         margin-top: 0;
     }
     .items {
@@ -377,12 +390,13 @@ footer h2 {
     }
 
     .header-bottom {
-        margin-top: 36px;
+        margin-top: 35px;
     }
     .title {
         padding-left: 0;
         margin-left: 104px;
     }
+    /* ---- HEADER ends ---- */
 
     hr.one {
         margin-top: 75px;
@@ -390,6 +404,7 @@ footer h2 {
         width: 460px;
     }
 
+    /* ---- CONTENT ---- */
     .content {
         margin: 0;
     }
@@ -401,7 +416,7 @@ footer h2 {
     }
 
     .content-top > div:first-child {
-        margin-bottom: 46px;
+        margin-bottom: 45.5px;
     }
 
     .content-top > div:nth-child(2) {
@@ -421,18 +436,20 @@ footer h2 {
     }
 
     .content-bottom > div:first-child {
-        margin-bottom: 62.5px;
+        margin-bottom: 63px;
     }
 
     .content-bottom > div:nth-child(2) {
         margin-bottom: 64px;
     }
+    /* ---- CONTENT ends ---- */
 
     hr.two {
         margin-left: 20px;
         width: 460px;
     }
 
+    /* ---- FOOTER ---- */
     footer {
         margin-left: 20px;
     }
@@ -440,4 +457,5 @@ footer h2 {
     .copyright {
         margin-left: 140px;
     } 
+    /* ---- FOOTER ends ---- */
 }
