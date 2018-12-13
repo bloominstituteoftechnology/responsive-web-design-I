@@ -1,19 +1,79 @@
 <!doctype html>
-
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <title>Great Idea - Responsive I</title>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Bangers|Titillium+Web" rel="stylesheet">
-  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
 </head>
-
 <body>
-<!-- Use your own code or past solution for Great Idea Web Page HTML here! -->
+  <div class="container">
+    <header>
+      <nav>
+        <ul>
+          <li><img class="logo" src="img/logo.png" alt="Great Idea! Company logo."></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="#">Product</a></li>
+          <li><a href="#">Vision</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="jumbo">
+      <div class="jumbo-text">
+        <h1><span>Innovation</span> <span>On</span> <span>Demand</span></h1>
+
+        <a href="#" class="btn animate">Get Started</a>
+        
+      </div>
+      <div class="jumbo-img">
+        <img src="img/header-img.png" alt="Image of a code snippet.">
+      </div>
+    </section>
+    <hr>
+    <div class="main">
+      <section class="features">
+        <h2>Features</h2>
+        <p>Aliquam elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.</p>
+        <!-- formatted this way to get rid of whitespace between inline-block divs -->
+      </section><section class="about">
+        <h2>About</h2>
+        <p>Aliquam elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.</p>
+      </section>
+
+      <img src="img/mid-page-accent.jpg" alt="">
+
+      <section class="services">
+        <h2>Services</h2>
+        <p>Aliquam elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.</p>
+      </section><section class="product">
+        <h2>Product</h2>
+        <p>Aliquam elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.</p>
+      </section><section class="vision">
+        <h2>Vision</h2>
+        <p>Aliquam elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.</p>
+      </section>
+  </div>
+  <hr>
+    <section class="contact">
+      <h3>Contact</h3>
+      <address>
+        123 Way 456 Street<br>
+        Somewhere, USA<br>
+        <span>1 (888) 888-8888</span>
+        sales@greatidea.io
+      </address>
+    </section>
+  
+    <footer>Copyright Great Idea! 2018</footer>
+  </div>  
 </body>
 </html>
