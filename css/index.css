@@ -55,7 +55,7 @@ table {
 
 html, body {
     height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+	font-family: 'Titillium Web', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
@@ -71,22 +71,20 @@ body {
 	margin: 0 auto;
 }
 
+.container {
+	display: flex;
+}
+
 .navigation {
 	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
+	justify-content: space-evenly;
 	width: 844px;
-	margin-top: 28px;
+	margin-top: 15px;
 }
 
 .navigation a {
 	text-decoration: none;
 	color: grey;
-}
-
-.logo {
-    align-self: flex-end;
 }
 
 header {
@@ -95,16 +93,16 @@ header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-    margin-top: 25px;
-    margin-bottom: 25px;
+	margin-top: 25px;
+	margin-bottom: 30px;
 }
 
 .h1-div {
     display: flex;
     flex-direction: column;
-	font-size: 75px;
+	font-size: 73px;
     width: 290px;
-    margin-left: 120px;
+	margin-left: 120px;
 } 
 
 button {
@@ -121,7 +119,7 @@ button {
 	border-top: 2px solid black;
 	text-align: justify;
 	padding-top: 38px;
-	padding-bottom: 30px;
+	padding-bottom: 37px;
 	display: flex;
 	justify-content: space-between;
 }
@@ -134,7 +132,7 @@ button {
 	text-align: left;
 	border-bottom: 2px solid black;
 	padding-top: 30px;
-	padding-bottom: 30px;
+	padding-bottom: 46px;
 	display: flex;
 	justify-content: space-between;
 }
@@ -144,13 +142,17 @@ button {
 }
 
 .contact {
-	margin-top: 20px;
+	margin-top: 36px;
 	width: 140px;
 	height: 140px;
 }
 
 address {
-	line-height: 22px;
+	line-height: 20px;
+}
+
+.street, .phone {
+	padding-bottom: 5px;
 }
 
 footer {
@@ -212,7 +214,70 @@ ul {
  	list-style-type: square;
 }
 
-@media only screen and (max-width: 768px) {
+@media (max-width: 800px) {
+	.body {
+		width: 800px;
+	}
+
+	.navigation {
+		width: 800px;
+		margin-top: 43px;
+	}
+
+	.container {
+		flex-direction: column-reverse;
+	}
+
+	.logo {
+		align-self: center;
+		margin-top: 25px;
+	}
+
+	header {
+		justify-content: center;
+		margin-top: -25px;
+		margin-bottom: -46px;
+	}
+
+	.h1-div {
+		margin-left: 0;
+	}
+
+	.image-circle {
+		display: none;
+	}
+
+	.middle-container {
+		width: 800px;
+	}
+
+	.middle-img {
+		display: block;
+		width: 780px;
+		margin: 0 auto;
+	}
+
+	.top-content, .bottom-content {
+		width: 800px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.top-content div {
+		width: 360px;
+	}
+
+	.bottom-content div {
+		width: 200px;
+	}
+
+	.contact {
+		margin-left: 20px;
+	}
+
+}
+
+/* @media only screen and (max-width: 768px) {
 	body {
 		width: 100%;
 	}
@@ -246,5 +311,5 @@ ul {
 		padding-left: 15px;
 		padding-right: 15px;
 	}
-}
+} */
 

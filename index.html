@@ -3,9 +3,10 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Great Idea - Responsive I</title>
 
-  <link href="https://fonts.googleapis.com/css?family=Bangers|Titillium+Web" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bangers|Titillium+Web: 400, 600" rel="stylesheet">
   <link rel="stylesheet" href="css/index.css">
 
   <!--[if lt IE 9]>
@@ -15,15 +16,17 @@
 
 <body>
 <!-- Use your own code or past solution for Great Idea Web Page HTML here! -->
-<nav class="navigation">
-  <a href="services.html">Services</a>
-  <a href="#">Product</a>
-  <a href="#">Vision</a>
-  <a href="#">Features</a>
-  <a href="#">About</a>
-  <a href="#">Contact</a>
-  <img class="logo" src="img/logo.png" alt="Great Idea! Company logo.">
-</nav>
+   <div class="container">
+      <nav class="navigation">
+         <a href="services.html">Services</a>
+         <a href="#">Product</a>
+         <a href="#">Vision</a>
+         <a href="#">Features</a>
+         <a href="#">About</a>
+         <a href="#">Contact</a>
+      </nav>
+      <img class="logo" src="img/logo.png" alt="Great Idea! Company logo.">
+   </div>
 <header>
   <div class="h1-div">
     <h1>
@@ -60,7 +63,9 @@
      </p>
   </div>
 </section>
-<img class="middle-img" src="img/mid-page-accent.jpg" alt="Image of code snippets across the screen">
+<div class="middle-container">
+   <img class="middle-img" src="img/mid-page-accent.jpg" alt="Image of code snippets across the screen">
+</div>
 <section class="bottom-content">
   <div class="services">
      <h2>
@@ -89,9 +94,13 @@
 <section class="contact">
   <h2>Contact</h2>
   <address>
-     123 Way 456 Street
-     Somewhere, USA</br>
-     1 (888) 888-8888
+     <p class="street">
+        123 Way 456 Street
+        Somewhere, USA
+     </p>
+     <p class="phone">
+        1 (888) 888-8888
+     </p>
      sales@greatidea.io
   </address>
 </section>
