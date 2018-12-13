@@ -56,14 +56,18 @@ table {
 
 html, body {
     height: 100%;
-    line-height: 1.1;
+    line-height: 1;
     font-family: 'Titillium Web', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
-    margin-bottom: 15px;
+    margin-bottom: 18px;
+}
+
+p {
+    line-height: 1.1;
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
@@ -100,9 +104,9 @@ nav {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-top: 61px;
-    padding-left: 128px;
-    margin-bottom: 78px;
+    margin-top: 65px;
+    padding-left: 126px;
+    margin-bottom: 79px;
 }
 
 .cta-text {
@@ -113,8 +117,8 @@ nav {
 }
 
 .innovation {
-    font-size: 70px;
-    margin-bottom: 20px;
+    font-size: 72px;
+    margin-bottom: 30px;
 }
 
 .get-started a {
@@ -147,7 +151,7 @@ nav {
 
 .bottom-content {
 	border-bottom: 1px solid black;
-	padding-bottom: 40px;
+	padding-bottom: 38px;
     display: flex;
 }
 
@@ -175,13 +179,65 @@ address {
 
 .copyright {
 	text-align: center;
-	margin-top: 32px;
+	margin-top: 28px;
 	margin-bottom: 40px;
 	font-size: 16px;
 }
 
 @media (max-width: 800px) {
 
+    .container {
+        width: 760px;
+        margin-left: 20px;
+    }
+    
+    .cta-img {
+        display: none;
+    }
+
+    .nav-content {
+        flex-direction: column;
+    }
+
+    .logo {
+        margin-bottom: 36px;
+    }
+
+    nav {
+        width: 100%;
+        order: 1;
+        padding-right: 41px;
+        padding-left: 9px;
+    }
+
+    .call-to-action {
+        justify-content: center;
+        margin-top: 74px;
+        margin-bottom: 84px;
+        padding-left: 0;
+    }
+    
+    .innovation {
+        font-size: 72px;
+        margin-bottom: 32px;
+    }
+    
+    .get-started a {
+        text-decoration: none;
+        border: 1px solid black;
+        padding: 3px;
+        padding-left: 45px;
+        padding-right: 45px;
+        color: black;
+        transition: 0.5s;
+        font-size: 17px;
+    }
+    
+    .get-started a:hover {
+        background: darkblue;
+        border:1px solid lightcyan;
+        color: lightcyan;
+    }
 }
 
 @media (max-width: 500px) {
