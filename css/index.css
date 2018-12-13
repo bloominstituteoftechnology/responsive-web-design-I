@@ -74,14 +74,16 @@ h1, h2, h3, h4, h5 {
 }
 
 header nav {
+    margin-top: 3%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 header nav ul {
     display: flex;
     flex-direction: row;
-    align-self: flex-end;
-    margin-left: 10px;
+    align-items: flex-end;
+    width: 70%;
+    justify-content: space-evenly;
 }
 
 header nav ul a {
@@ -89,12 +91,10 @@ header nav ul a {
     color: silver;
     text-decoration: none;
     padding: 0 30px 0 30px;
-    margin-top: 40px;
-    margin-left: 5px;
+    font-weight: bold;
 }
 
 header nav a {
-    margin-right: 20px;
     display: flex;
     align-self: flex-end;
 }
@@ -115,7 +115,7 @@ div.header-anchor{
 }
 
 div.second-part h1 {
-	font-size: 80px;
+	font-size: 75px;
 }
 
 div.second-part .header-anchor .get-started {
@@ -190,7 +190,7 @@ footer {
     
     header nav a {
         align-self: center;
-        margin-top: 20px;
+        margin-bottom: 20px;
     }
 
     hr {
@@ -220,11 +220,8 @@ footer {
     }
 
     section .left-side, .right-side {
-        padding: 15px;
-        margin-left: 33px;
         height: 160px;
         width: 350px;
-        text-align: left;
     }
 
     .bottom-left, .bottom-middle, .bottom-right {
@@ -233,13 +230,77 @@ footer {
     }
 
     section.bottom-content div {
-        margin-top: 30px;
-        width: 195px;
+        margin-top: 20px;
+        width: 190px;
         margin-bottom: 20px;
     }
 
     section.contact div {
         margin-left: 48px;
+        margin-top: 20px;
+    }
+
+    @media (max-width: 500px) {
+        .container {
+            height: 2047px;
+            width: 500px;
+        }
+
+        header nav {
+            margin-top: 0;
+            width: 100%;
+        }
+
+        ul.nav-buttons {
+            display: flex;
+            flex-direction: column;
+            width: 100%
+
+        }
+        
+        header nav a {
+            margin-right: 0;
+        }
+
+        header nav ul a {
+            border-bottom: solid 1px black;
+            width: 100%;
+        }
+
+        header nav ul a.services {
+            border-top: solid 1px black;
+        }
+
+        header nav ul a {
+            padding: 20px;
+            margin-top: 0;
+            margin-left: 0;
+            font-size: 20px;
+        }
+        header nav a {
+            padding: 20px;
+            margin-bottom: 0;
+        }
+
+        div.second-part {
+            display: flex;
+            text-align: center;
+            margin-bottom: 77px;
+            margin-top: 50px;
+        }
+
+        div.second-part h1 {
+            font-size: 70px;
+        }
+
+        div.second-part .header-anchor .get-started {
+            width: 170px;
+            margin-top: 17px;
+        }
+
+        hr {
+            width: 92%;
+        }
     }
 }
 
