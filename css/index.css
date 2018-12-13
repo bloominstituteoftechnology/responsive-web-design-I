@@ -218,28 +218,65 @@ address {
     }
     
     .innovation {
-        font-size: 72px;
         margin-bottom: 32px;
     }
     
-    .get-started a {
-        text-decoration: none;
-        border: 1px solid black;
-        padding: 3px;
-        padding-left: 45px;
-        padding-right: 45px;
-        color: black;
-        transition: 0.5s;
-        font-size: 17px;
+    .top-content {
+        padding-left: 10px;
+    }
+
+    .features, .about {
+        width: 48%;
+    }
+
+    .features {
+        margin-right: 20px;
+    }
+
+    .top-content {
+        border-top: 1px solid black;
+        display: flex;
+        padding-top: 35px;
     }
     
-    .get-started a:hover {
-        background: darkblue;
-        border:1px solid lightcyan;
-        color: lightcyan;
+    .middle-img {
+        width: 100%;
+        padding-bottom: 28px;
+    }
+    
+    .bottom-content {
+        border-bottom: 1px solid black;
+        padding-bottom: 36px;
+        display: flex;
+        padding-left: 10px;
+    }
+    
+    .bottom-content div {
+        width: 28.5%
+    }
+    
+    .services, .product {
+        margin-right: 39px;
+    }
+
+    .contact {
+        margin-top: 35px;
+        padding-left: 10px;
+    }
+    
+    .contact p {
+        margin-bottom: 12px;
+    }
+
+    .contact h2 {
+        margin-bottom: 16px;
     }
 }
 
 @media (max-width: 500px) {
 
+    nav {
+        flex-direction: column;
+        border: 1px solid black;
+    }
 }
