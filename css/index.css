@@ -1,3 +1,274 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+body { line-height: 1; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after,
+q:before, q:after { content: ''; content: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+/* Set every element's box-sizing to border-box */
+* { box-sizing: border-box; }
+html, body { height: 100%; font-family: 'Titillium Web', sans-serif; }
+h1, h2, h3, h4, h5 { font-family: 'Bangers', cursive; letter-spacing: 1px; margin-bottom: 15px; }
 
 
+/**************************************************
+	------------ Your code starts here! ------------
+**************************************************/
+* { box-sizing: border-box; transition-duration: 0.33s; }
+body { display: block; width: 800px; margin: 0 auto; overflow-x: hidden;  }
+section { position: relative; }
+h1 { font-size: 64px; }
+h2 { font-size: 24px; }
+p { line-height: 1; margin: 8px 0; }
+img:hover { filter: brightness(111%); }
+/* Colors ********************************/
+.bg-darkgray { background-color: #333333; }
+.bg-lightgray { background-color: #efefef; }
+.cblack { color: #000000; }
+.clightgray { color: #dddddd; }
+/* Fonts ********************************/
+.italic { font-style: italic; }
+
+/* Nav bar ********************************/
+nav { 
+	width: 800px;
+	background-color: white;
+	position: fixed;
+	padding: 14px 0;
+	font-size: 12px; 
+	z-index: 5; }
+nav a { text-decoration: unset; color: #888888; }
+nav .nav-li a:hover, nav .nav-li a:active { 
+	color: white; 
+	background-color: black; 
+	padding: 12px; 
+	margin: -12px;
+	text-decoration: none; }
+/*nav .nav-li a:hover {  }*/
+
+
+nav.nav-container { display: block; }
+ul.nav-ul { width: 800px; display: flex; align-items: center; }
+li.nav-li { flex: 1 1 auto; }
+li.nav-logo { flex: 0 1 auto; }
+
+/* Header ********************************/
+#header { position: relative; top: 96px; margin: 0 0 133px 0; }
+.header-left, .header-right { flex: 1 1 auto; align-self: center; }
+img.header-img { min-width: 200px;	max-width: 80%; }
+
+/* Footer ********************************/
+footer { margin: 24px 0 0 0; padding: 24px 0 12px 0; }
+.copyright { font-size: 12px; text-align: center; }
+
+/* Containers ********************************/
+.container { margin: 24px 0; }
+.container-col { display: flex; flex-direction: column; }
+.container-row { display: flex; }
+.item { 
+	flex: 1 1 50%; 
+	padding: 0 12px 0 0; }
+.container-gallery { 
+	display: flex;
+	align-items: flex-start;
+	margin: 0 -12px; }
+.item-gallery { 
+	padding: 24px;
+	margin: 24px 12px 0px 12px;
+	border: 1px solid #acacac; }
+.item-tight { flex: 1 1 auto; align-self: center; }
+.item img { margin-right: -12px; max-width: 50vw; }
+
+
+/* Lists ********************************/
+.inset-list { margin:12px 12px; }
+section [class^="container-"] ul li, section [class*=" container-"] ul li {
+	list-style-type: square; margin:6px 24px; }
+
+
+/* Links ********************************/
+section .container-row a { color: #1f1f1f; font-style: italic; text-decoration: none; }
+section .container-row a:hover { 
+	color: black;
+	border-bottom: 0.75px dashed black;
+	border-radius: 10%; }
+
+
+/* Box Borders ********************************/
+.border-top { 
+	border-top: 1px solid black;
+	margin: 32px 0 32px 0;
+	padding: 32px 0 0 0; }
+.border-bottom { 
+	border-bottom: 1px solid black;
+	margin: 32px 0 18px 0;
+	padding: 0 0 32px 0; }
+
+
+
+/* ***  Pages  ********************************/
+/* Home Page ********************************/
+img.middle-img { width: 100%; }
+section.contact { margin: 28px 0 0 0; }
+
+
+/* Services Page ********************************/
+.services-header { position:relative; top: 72px; margin: 0 0 100px 0; }
+.services-header-img { width: 100%; }
+
+
+/* Product Page ********************************/
+.product-header { position:relative; top: 96px; margin: 0 0 72px 0; }
+img.product-header-img { width: 50%; filter: hue-rotate(90deg); filter: contrast(66%); }
+h1.product-title { 
+	margin: -200px 0 200px 0; 
+	color: #ffffff; }
+
+/* Vision Page ********************************/
+.vision-header { position: relative; top: 96px; margin: 0 0 124px 0; }
+img.vision-header-img { width: 100%; }
+h4.graffiti {
+	transform: scale(40, 60) rotate(-4deg);
+	color: #ecebeb;
+	position: absolute;
+	top: 60vh;
+	left: 50vw;
+	letter-spacing: -0.4px;
+	z-index: -1; }
+
+
+/* ****************************************************** */
+/* 800px and smaller **************************************/
+@media only screen and (max-width: 800px) { 
+	body { width: 100%; padding: 0 12px; }
+
+	nav { 
+		width: 100%; 
+		padding: 14px;
+		margin: 0 0 0 -12px; } 
+	ul.nav-ul { 
+		width: 100%; 
+		flex-flow: row wrap; } 
+	li.nav-li { order: 1; text-align: center; }
+	li.nav-logo { 
+		order: 0; 
+		width: 100%; 
+		text-align: center;
+		margin: 12px 0 24px 0; }
+
+	.container { margin: 24px 12px; }
+	.container-row { margin: 0 12px; }
+
+	.header-right, img.header-img { display: none; }
+
+	#header { top: 146px; margin: 0 0 194px 0; }
+	.services-header { top: 128px; margin: 0 0 156px 0; }
+	.product-header { top: 128px; margin: 0 0 96px 0; }
+	h1.product-title { font-size: 56px; margin: -25% 0 25% 0; }
+	
+	.vision-header { position: relative; top: 128px; margin: 0 0 146px 0; }
+	h4.graffiti { transform: scale(30, 50) rotate(-13deg); top: 75vh; }
+
+}
+
+
+/* ****************************************************** */
+/* 500px and smaller **************************************/
+@media only screen and (max-width: 500px) {
+	body {  }
+	section#nav { margin: 0 -12px; }
+	nav { 
+		position: relative;
+		font-size: 16px;
+		width: 100%;
+		padding: 8px;
+		margin: 0; } 
+	nav.nav-container { border-bottom: 1px solid gray; padding: 0; }
+
+	nav .nav-li a:hover, nav .nav-li a:active {
+		color: white; 
+		background-color: black; 
+		padding: 4px 25vw; 
+		margin: -4px -25vw; }
+	nav .nav-li a:hover { text-decoration: none; }
+
+	ul.nav-ul { 
+		width: 100%;
+		flex-flow: column wrap; }
+	li.nav-li { 
+		width: 100%;
+		padding: 12px 0;
+		border-top: 1px solid gray; }
+	li.nav-logo { 
+		margin: 4px 0 8px 0; }
+
+	#header { top: 24px; margin: 0 0 48px 0; }
+	.services-header { width: calc(100% + 36px); position: relative; top: 24px; margin: 0 auto 48px -18px; }
+	.product-header { top: 24px; margin: 0 0 0 0; }
+	img.product-header-img { width: 80%; }
+	h1.product-title { color: black; text-align: left; font-size: 48px; margin: 0; }
+
+	.item.item-gallery { padding: 24px 8px; }
+
+	.container-row, .container { flex-flow: column wrap; margin: 0; }
+	.item { padding: 24px 0; }
+	
+	.vision-header { width: calc(100% + 36px); position: relative; top: 15px; margin: 0 auto 36px -18px; }
+	h4.graffiti { transform: scale(20, 25) rotate(-33deg); top: 95vh; }
+
+}
+
+
+
+
+
+
+
+/**************************
+Button styling override
+https://css-tricks.com/overriding-default-button-styles
+**************************/
+button {
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 16px;
+	background: #ffffff;
+	color: #000000;
+	display: inline-block;
+	border: 1px solid black;
+	padding: 6px 24px 6px 24px;
+	margin: 0;
+	text-decoration: none;
+	cursor: pointer;
+	text-align: center;
+	transition: background 250ms ease-in-out, transform 150ms ease;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+button:hover, button:focus { border: 1px solid white; background: #030303; color: #ffffff; }
+button:focus { outline: 1px solid #ffffff; outline-offset: -4px; }
+button:active { transform: scale(0.99); }
