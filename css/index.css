@@ -39,8 +39,7 @@
     margin: 0px 25px 0px 0px;
     /* border: 1px solid black; */
   }
-  .iod {
-    
+  .iod {  
     width:800;
     display: flex;
     justify-content: space-evenly;
@@ -52,18 +51,19 @@
    flex-direction: column;
    justify-content: space-between;
    align-items: center;
-   font-size: 45px;
-   text-align: center;
+   font-size: 48px;
+   text-align: center;  
   }
   button {
    background: white;
    padding: 8px 40px;
-   font-size: 15px;
+   font-size: 20px;
    cursor: pointer;
    border-radius: 5px;
+   margin-top: 25px;
   }
   button:hover{
-      background: gray;
+      background: lightgray;
       color: white;
   }
   .top-content {
@@ -73,7 +73,6 @@
     justify-content:space-between;
   }
   .top-content .text-content {
-    /* border: 1px solid black; */
     width: 370px;
     line-height: 30px;
     margin-top: 30px;
@@ -93,7 +92,6 @@
     border-bottom: 1px solid black;
   }
   .bottom-content .text-content {
-    /* border: 1px solid black; */
     width: 333px;
     line-height: 30px;
     margin: 20px 10px 50px 0px;
@@ -108,6 +106,7 @@
   }
   
   /* @Media*/
+  
 @media (max-width:800px){
     .container {
         width: 800px;
@@ -115,9 +114,7 @@
     }
     header {
         display: flex;
-        flex-direction: column-reverse;
-        
-        
+        flex-direction: column-reverse;   
     }
     .logo {
         width: 230px;
@@ -129,7 +126,6 @@
         display: flex;
         justify-content: space-around;
     }
-
     .iod img {
         display: none;
     }
@@ -141,8 +137,8 @@
 
   @media (max-width:500px){
       .container {
-          width: 500px;
-         
+         width: 500px;
+         margin:6px;
       }
     header {
         border-bottom: 1px solid gray;
@@ -172,24 +168,20 @@
       .iod {
           width: 500px;
           display: flex;
-          align-items: center;
-         
-         
+          align-items: center;  
       }
-      
       
       .top-content{
           display: flex;
           flex-direction: column;
       }
       .top-content .text-content{
-         width:  480px;
+          width:  480px;
           margin: 10px 0px 0px 5px;
       }
       
       .middle-img {
-
-        width: 500px;
+          width: 500px;
       }
       .bottom-content {
           display: flex;
@@ -197,8 +189,8 @@
           padding-bottom: 30px;
       }
       .bottom-content .text-content {
-        width:  480px;
-        margin: 10px 0px 0px 5px;
+         width:  480px;
+         margin: 10px 0px 0px 5px;
       }
       .contact {
           margin-left: 5px;
