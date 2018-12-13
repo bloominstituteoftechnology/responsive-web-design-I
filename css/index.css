@@ -157,7 +157,7 @@ button {
 
 .top-section{
 	display: flex;
-	width: 1000px;
+	width: 800px;
 	flex-direction: row;
 	justify-content: flex-start;
 	margin: 0 auto;
@@ -189,8 +189,8 @@ button {
 	flex-direction: row;
 	justify-content: center;
     margin: 0 auto 20px 200px;
-   padding-top: 30px;
-   padding-right: 10px;
+    padding-top: 30px;
+    padding-right: 10px;
  }
 
   .services {
@@ -208,6 +208,7 @@ button {
 
  .vision {
     width: 420px;
+    margin: 0 auto;
     padding-right: 10px;
  }
 
@@ -243,3 +244,128 @@ footer {
  }
 
 /* tablet media */
+
+@media (max-width: 800px){
+.navigation {
+	display: flex;
+	width: 800px;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.nav {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 800px;
+    order: 2;
+   
+}
+
+.nav-logo {
+    text-align: center;
+    padding-top: 20px;
+    width: 400px;
+    order: 1;
+
+}
+
+header {
+	width: 800px;
+	justify-content: flex-end; 
+    margin: 0 auto 74px auto;
+}
+
+
+.header-title {
+    margin: 0 auto;
+    width: 500px;
+    padding-top: 20px;
+}
+
+.img-head {
+   display: none;
+}
+
+.line-border {
+    display: none;
+}
+
+.top-section{
+    border-top: 2px solid black;
+    padding-top: 15px;
+	display: flex;
+	width: 800px;
+	flex-direction: row;
+	justify-content: flex-start;
+    margin: 0 auto;
+    padding-left: 20px;
+	
+}
+
+.features {
+    width: 360px;
+    align-self: stretch;
+    padding-top: 17px;
+}
+
+.about {
+    width: 360px;
+    align-self: stretch;
+    padding-top: 17px;
+    margin-left: 20px;
+	
+}
+
+.img-center{
+    margin-left: 0;
+    padding: 20px 10px 0 10px;
+    margin-right: 20px;
+
+}
+
+ .bottom-section {
+	display: flex;
+    width: 800px;
+    margin: 0  180px 0 auto;
+    justify-content: flex-start;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid black;
+ }
+
+  .services {
+    width: 210px;
+    padding-right: 0;
+ }
+
+ .product {
+    width: 210px;
+    padding-right: 0;
+ }
+
+ .vision {
+    width: 210px;
+    padding-right: 0;
+
+ }
+
+
+.line-border2 {
+   display: none; 
+}
+
+ .contact {
+	width: 800px;
+	margin: 35px auto 0 20px;
+	
+ }
+  
+
+footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+    margin-top: 20px;
+    margin-right: 90px;
+ }
+}
