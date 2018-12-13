@@ -54,11 +54,11 @@ table {
 
 html, body {
 
-  height: 100%;
   font-family: 'Titillium Web', sans-serif;
   display: flex;
   flex-direction: column;
  /* width: 100%; */
+  height: 100%;
   margin:  0 auto;
 }
 
@@ -70,35 +70,40 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 .nav-container {
-  border: 1px solid pink;
-  height: 40px;
-  width: 880px;
-  position: fixed;
-  /*z-index: 0; */
-  background: darkblue;
-  top: 0;
+  border: 1px solid blue;
   display: flex;
   justify-content: space-between;
+  width: 880px;
+  margin-top: 30px;
+/*  position: fixed;
+  z-index: 0;
+  background: darkblue;*/
 }
 
 .navbar_top {
+  border: 1px solid pink;
   display: flex;
-  justify-content: center;
   align-items: center;
+  height: 40px;
 }
 
 a{
-  padding-right: 50px;
+  padding: 0 62px 0 0;
+  font-size: 15px;
 }
 
 .navbar_top a{
+  border: 1px solid green;
   display: flex;
-  justify-content: space-between;
+ /* justify-content: space-between; */
   align-items: center;
   color: #BABABA;
   text-decoration: none;
-  font-family: 'Raleway', sans-serif;
   font-weight: bolder;
+}
+
+.nav-container .navbar_top a:first-child {
+  padding-left: 0;
 }
 
 .navbar_top a:hover {
@@ -113,35 +118,46 @@ a{
 }
 
 .header {
+  border: 1px solid green;
   display: flex;
   justify-content: space-evenly;
   border-bottom: 2px solid black;
-  padding-bottom: 430px;
-  padding-top: 50px;
-  margin: 40px 0 30px 0;
+
+  padding-bottom: 450px;
+  padding-top: 70px;
+  margin: 45px 0 30px 0;
 }
 
 .banner {
+  border: 1px solid purple;
   display: flex;
   width: 400px;
-  height: 300px;
+  height: 360px;
   flex-direction: column;
-  text-align: center;
-  margin: 60px 0 0 40px;
+  justify-content: center;
+  align-items: center;
+/*  margin: 60px 0 0 40px; */
 }
 
 h1 {
-  font-size: 70px;
-  width: 250px;
-  font-family: 'Questrial', sans-serif;
+  border: 1px solid orange;
+  font-size: 80px;
+  font-family: 'Bangers', sans-serif;
+  text-align: center;
+  margin: 0;
+  line-height: 80px;
 }
 
 button {
-  font-size: 26px;
+  text-align: center;
+  vertical-align: center;
+  font-size: 15px;
   border: 1px solid black;
-  width: 220px;
-  border-radius: 5px;
-  margin-left: 18px;
+  width: 160px;
+  margin: 0 auto;
+  line-height: 15px;
+  padding: 10px 0;
+
 }
 
 button:hover {
@@ -153,9 +169,6 @@ button:hover {
   padding-left: 35px;
 }
 
-h2 {
-  font-family: 'Black Han Sans', sans-serif;
-}
 
 .top {
   display: flex;
@@ -174,12 +187,12 @@ h2 {
 
 
 .middleIMG{
-  margin: 50px 0;
+  margin: 40px 0;
 }
 
 .bottom{
   border-bottom: 2px solid black;
-  padding-bottom: 20px;
+  padding-bottom: 60px;
   display: flex;
   justify-content: space-between;
 }
@@ -192,14 +205,14 @@ h2 {
 }
 
 .bottom-content:last-child {
-  padding-left: 20px;
+  padding-left: 5px;
 }
 
 address {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding-top: 30px;
+  padding-top: 40px;
 
 }
 
@@ -210,7 +223,7 @@ address {
 h4 {
   display: flex;
   justify-content: center;
-  padding: 30px;
+  padding: 45px;
 }
 
 
