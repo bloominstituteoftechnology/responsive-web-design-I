@@ -69,7 +69,6 @@ h1, h2, h3, h4, h5 {
 }
 
 .header {
-  border: 25px blue;
   display: flex;
   justify-content: space-between;
 }
@@ -318,17 +317,16 @@ header a {
   }
   .box-6 .middle-img {
     margin: 0px;
+
   }
 
   .container3 {
-    border: 1px solid red;
     display: flex;
     flex-direction: column;
   }
 
-  .box-10 {
-    border: 1px solid red;
-  }
+  /* .box-10 {
+  } */
 
 
   }
@@ -337,6 +335,10 @@ header a {
   
   .container {
     font-size: large; 
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    align-items: center;
   }
 
   nav {
@@ -366,6 +368,46 @@ header a {
   .top-section {
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     font-size: small;
+    width: 400px;
+    height: 360px;
   }
+
+  .top-section .child {
+    display: flex;
+    flex-direction: column;
+    font-size: small;
+    width: 400px;
+  }
+
+  .bottom-section {
+    display: flex;
+    flex-direction: column;
+    font-size: small;
+    margin: 0px;
+    width: 450px;
+    height: 500px;
+    justify-content: space-evenly
+  }
+
+  .box-6 {
+    margin: 0px;
+    width: 450px;
+    height: auto;
+  }
+
+  .box-6 .middle-img {
+    margin: 0px;
+    width: 450px;
+    height: auto;
+  }
+
+  .contact {
+    margin: 0px;
+    width: 450px;
+    height: auto;
+
+}
+
 }
