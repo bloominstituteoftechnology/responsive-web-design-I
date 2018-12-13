@@ -65,8 +65,13 @@ h1, h2, h3, h4, h5 {
 
 /* Your code starts here! */
 
+/* Desktop! */
+/* Note: the tablet breakpoint comes at
+   800px, so change width from 880px to
+   800px throughout the desktop layout */
+
 body {
-    width: 880px;
+    width: 800px;
     margin: 0 auto;
 }
 
@@ -90,20 +95,20 @@ header {
     top: 0;
     z-index: 2;
     height: 80px;
-    width: 880px;
+    width: 800px;
     background-color: rgb(220,220,220);
 }
 
 header nav {
     vertical-align: top;
     display: inline-block;
-    width: 680px;
+    width: 600px;
     height: 80px;
 }
 
 header nav a {
     display: inline-block;
-    width: 100px;
+    width: 90px;
     height: 80px;
     padding-top: 30px;
     text-align: center;
@@ -118,7 +123,7 @@ header nav a:hover {
     color: white;
 }
 
-header a .logo {
+header .logo-anchor {
     display: inline-block;
     margin-top: 20px;
 }
@@ -130,7 +135,7 @@ header a .logo {
     margin-top: 130px;
     margin-bottom: 20px;
     height: 460px;
-    width: 880px;
+    width: 800px;
     border-bottom: 2px solid rgb(120,120,120);
 }
 
@@ -138,23 +143,23 @@ header a .logo {
     display: inline-block;
     vertical-align: top;
     height: 350px;
-    width: 490px;
+    width: 400px;
 }
 
 .splash-text h1 {
-    width: 350px;
+    width: 320px;
     height: 220px;
     margin-top: 50px;
-    margin-left: 60px;
+    margin-left: 40px;
     font-size: 76px;
     text-align: center;
 }
 
 .splash-text .start-button {
     height: 35px;
-    width: 165px;
-    margin-left: 150px;
-    margin-top: 20px;
+    width: 155px;
+    margin-left: 120px;
+    margin-top: 30px;
     border: 2px solid rgb(120,120,120);
 }
 
@@ -166,7 +171,7 @@ header a .logo {
     color: rgb(80,80,80);
     font-size: 18px;
     font-weight: bold;
-    padding-top: 5px;
+    padding-top: 6px;
 }
 
 .start-button a:hover {
@@ -183,18 +188,18 @@ header a .logo {
 /* Top content section */
 
 .top-section {
-    width: 880px;
+    width: 800px;
 }
 
 .two-column {
     display: inline-block;
-    width: 438px;
+    width: 49%;
     padding: 10px 15px 10px 0px;
 }
 
 .two-column:last-child {
     display: inline-block;
-    width: 438px;
+    width: 400px;
     padding: 10px 0px 10px 0px;
 }
 
@@ -203,7 +208,7 @@ header a .logo {
 
 .middle-img {
     display: block;
-    width: 880px;
+    width: 800px;
     margin: 30px 0px 20px 0px;
 }
 
@@ -211,7 +216,7 @@ header a .logo {
 /* bottom content section */
 
 .bottom-section {
-    width: 880px;
+    width: 800px;
     margin-bottom: 40px;
     border-bottom: 2px solid rgb(120,120,120);
 }
@@ -245,3 +250,64 @@ footer {
     font-weight: bold;
     margin: 40px 0px;
 }
+
+
+/* Tablet! */
+/* Notes: move logo above the nav bar
+   hide the splash image.  We should
+   also let the nav bar scroll up so
+   it doesn't hog the screen */
+@media (max-width: 800px) {
+
+    body {
+        width: 500px;
+    }
+
+    header {
+        position: relative;
+        height: 120px;
+        width: 500px;
+        background-color: white;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    header nav {
+        width: 500px;
+        height: 40px;
+    }
+
+    header nav a {
+        width: 80px;
+        height: 40px;
+        padding: 10px 0px;
+    }
+
+    header .logo-anchor {
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .splash {
+        height: 460px;
+        width: 600px;
+        display: flex;
+        justify-content: center;
+        border-bottom: 2px solid rgb(120,120,120);
+    }
+
+    .splash .splash-img {
+        display: none;
+    }
+
+}
+
+
+/* Mobile! */
+@media (max-width: 500px) {
+
+
+}
+
