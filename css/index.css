@@ -234,7 +234,6 @@ address {
     }
 
     .top-content {
-        border-top: 1px solid black;
         display: flex;
         padding-top: 35px;
     }
@@ -245,7 +244,6 @@ address {
     }
     
     .bottom-content {
-        border-bottom: 1px solid black;
         padding-bottom: 36px;
         display: flex;
         padding-left: 10px;
@@ -275,8 +273,88 @@ address {
 
 @media (max-width: 500px) {
 
+    .container {
+        width: 460px;
+    }
+    
+    .nav-content {
+        margin-top: 19px;
+    }
+
+    .logo {
+        margin-bottom: 17px;
+    }
+
     nav {
         flex-direction: column;
-        border: 1px solid black;
+        width: 500px;
+        padding-right: 0;
+        padding-left: 0;
     }
+
+    .nav-button {
+        border-top: 1px solid black;
+        text-align: center;
+        padding: 19.8px;
+        font-size: 20px;
+    }
+
+    nav a:last-child {
+        border-bottom: 1px solid black;
+    }
+
+    .nav-button:hover {
+        transform: scale(1.2s);
+    }
+
+    .call-to-action {
+        margin-top: 49px;
+        margin-bottom: 83px;
+    }
+    
+    .top-content {
+        padding-left: 0;
+        flex-direction: column;
+        padding-top: 59px;
+    }
+
+    .features, .about {
+        width: 95%;
+    }
+
+    .features {
+        margin-right: 0;
+        margin-bottom: 45px;
+    }
+    
+    .about {
+        margin-bottom: 21px;
+    }
+    
+    .bottom-content {
+        padding-left: 0;
+        flex-direction: column;
+    }
+    
+    .bottom-content div {
+        width: 95%;
+        margin-bottom: 63px;
+    }
+
+    .bottom-content .vision {
+        margin-bottom: 0px;
+    }
+
+    .contact {
+        margin-top: 35px;
+        padding-left: 0;
+    }
+    
+    .contact p {
+        margin-bottom: 12px;
+    }
+
+    .contact h2 {
+        margin-bottom: 16px;
+    
 }
