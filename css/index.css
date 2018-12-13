@@ -143,7 +143,7 @@ header .logo {
 }
 
 .main-content .top-content .text-content {
-  width: 410px;
+
   display: inline-block;
   margin-right: 34px;
 }
@@ -162,7 +162,7 @@ header .logo {
 }
 
 .main-content .bottom-content .text-content {
-  width: 275px;
+
   display: inline-block;
   margin-right: 12px;
 }
@@ -241,8 +241,6 @@ footer {
     .top-content {
         display: flex;
         justify-content: space-between;
- 
-
     }
 
         .bottom-content {
@@ -256,12 +254,13 @@ footer {
 
 @media (max-width: 500px) {
 
-    .container {
-        border: 1px solid red;
-    }
+
 
     header nav {
         width: 480px;
+    }
+    header nav a {
+        font-size: 20px;
     }
 
     nav a {
@@ -269,10 +268,32 @@ footer {
         width: 480px;
         flex-direction: column;
         text-align: center;
-        font-size: 80px;
-        margin: 20px auto;
+        font-size: 50px;
+        padding-top: 20px;
+        padding-bottom: 20px;
         border-top: 1px solid black;
         border-bottom: 1px solid black;
       }
 
+    .top-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .top-content .text-content {
+        margin: 20px 0;
+        margin-right: 0;
+    }
+
+    .bottom-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;        
+    }
+
+    .bottom-content .text-content {
+        margin: 20px 0;
+
+    }
 }
