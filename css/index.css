@@ -1,3 +1,313 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+/* Desktop! */
+/* Note: the tablet breakpoint comes at
+   800px, so change width from 880px to
+   800px throughout the desktop layout */
+
+body {
+    width: 800px;
+    margin: 0 auto;
+}
+
+
+h2 {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+p {
+    font-weight: bold;
+    font-size: 16px;
+    color: rgb(100,100,100);
+}
+
+
+/* Top navigation bar */
+
+header {
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    height: 80px;
+    width: 800px;
+    background-color: rgb(220,220,220);
+}
+
+header nav {
+    vertical-align: top;
+    display: inline-block;
+    width: 600px;
+    height: 80px;
+}
+
+header nav a {
+    display: inline-block;
+    width: 90px;
+    height: 80px;
+    padding-top: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(100,100,100);
+    font-size: 13.5px;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    background-color: rgb(150,150,150);
+    color: white;
+}
+
+header .logo-anchor {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+
+/* Splash display */
+
+.splash {
+    margin-top: 130px;
+    margin-bottom: 20px;
+    height: 460px;
+    width: 800px;
+    border-bottom: 2px solid rgb(120,120,120);
+}
+
+.splash-text {
+    display: inline-block;
+    vertical-align: top;
+    height: 350px;
+    width: 400px;
+}
+
+.splash-text h1 {
+    width: 320px;
+    height: 220px;
+    margin-top: 50px;
+    margin-left: 40px;
+    font-size: 76px;
+    text-align: center;
+}
+
+.splash-text .start-button {
+    height: 35px;
+    width: 155px;
+    margin-left: 120px;
+    margin-top: 30px;
+    border: 2px solid rgb(120,120,120);
+}
+
+.start-button a {
+    display: block;
+    height: 31px;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(80,80,80);
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 6px;
+}
+
+.start-button a:hover {
+    background-color: rgb(120,120,120);
+    color: white;
+}
+
+.splash .splash-img {
+    display: inline-block;
+
+}
+
+
+/* Top content section */
+
+.top-section {
+    width: 800px;
+}
+
+.two-column {
+    display: inline-block;
+    width: 49%;
+    padding: 10px 15px 10px 0px;
+}
+
+.two-column:last-child {
+    display: inline-block;
+    width: 400px;
+    padding: 10px 0px 10px 0px;
+}
+
+
+/* image divider */
+
+.middle-img {
+    display: block;
+    width: 800px;
+    margin: 30px 0px 20px 0px;
+}
+
+
+/* bottom content section */
+
+.bottom-section {
+    width: 800px;
+    margin-bottom: 40px;
+    border-bottom: 2px solid rgb(120,120,120);
+}
+
+.three-column {
+    display: inline-block;
+    width: 33%;
+    padding: 20px 10px 30px 0px;
+}
+
+.three-column:last-child {
+    display: inline-block;
+    width: 33%;
+    padding: 20px 0px 30px 0px;
+}
+
+
+/* contact section */
+
+address p {
+    margin: 20px 0px;
+}
+
+/* footer */
+
+footer {
+    display: block;
+    text-align: center;
+    color: rgb(100,100,100);
+    font-size: 14px;
+    font-weight: bold;
+    margin: 40px 0px;
+}
+
+
+/* Tablet! */
+/* Notes: move logo above the nav bar
+   hide the splash image.  We should
+   also let the nav bar scroll up so
+   it doesn't hog the screen */
+@media (max-width: 800px) {
+
+    body {
+        width: 500px;
+    }
+
+    header {
+        position: relative;
+        height: 120px;
+        width: 500px;
+        background-color: white;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    header nav {
+        width: 500px;
+        height: 40px;
+    }
+
+    header nav a {
+        width: 80px;
+        height: 40px;
+        padding: 10px 0px;
+    }
+
+    header .logo-anchor {
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .splash {
+        height: 460px;
+        width: 600px;
+        display: flex;
+        justify-content: center;
+        border-bottom: 2px solid rgb(120,120,120);
+    }
+
+    .splash .splash-img {
+        display: none;
+    }
+
+}
+
+
+/* Mobile! */
+@media (max-width: 500px) {
+
+
+}
 
