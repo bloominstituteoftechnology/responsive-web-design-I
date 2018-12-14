@@ -347,6 +347,11 @@ header {
         width: 800px;
     }
 
+    body {
+        width: 100%;
+        padding: 0 12px;
+    }
+
     .compleximage {
         display: none;
         
@@ -374,16 +379,86 @@ header {
         justify-content: center;
         margin: 0 auto;
         margin-top: 20px;
-        display: block;
+        margin-bottom: 12px;
+        /* display: block; */
      }
 
     .start-section .left-div {
-        display: block;
+        /* display: block; */
+        display: flex;
+        margin-left: 127px;
+        margin-top: 69px;
+    }
+
+    main {
+        margin-top: -51px;
+        margin-right: 27px;
     }
 
 }
 
 @media (max-width: 500px) {
 
+    .container {
+        max-width: 500px;
+    }
+    body {
+        width: 100%;
+        padding: 0 12px;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    header .greatidealogo {
+        /* order: 1; */
+        margin-bottom: 30px;
+        padding-bottom: 62px;
+        margin-top: -16px;
+        padding-top: 2px;
+    }
+
+    .greatidealogo{
+
+    }
+
+.nav {
+    /* order: 2; */
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 107px;
+    width: 483px;
+}
+
+header nav a:first-of-type {
+    margin-right: 0px;
+    border-top: 1px solid grey;
+    padding-top: 16px;
+}
+
+header nav a{
+    border-bottom: 1px solid grey;
+    margin-top: 0px;
+    margin-bottom: 18px;
+    width: 118%;
+    display: block;
+    text-align: center;
+    padding: 0px 0px 26px 0px;
+
+}
+
+.start-section {
+    padding-bottom: 0px;
+    padding-top: 271px;
+}
+
+.start-section .left-div {
+    /* display: block; */
+    display: flex;
+    margin-left: -26px;
+    margin-top: 69px;
+    }
 
 }
