@@ -1,3 +1,344 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
+:root {
+  --border: 1px solid red;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Bangers', cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+/******* general styles *******/
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  /* border: var(--border); */
+  padding: 20px;
+  /* background: blue; */
+}
+
+/******* menu/navigation *******/
+.topNav {
+  display: flex;
+  /* border: var(--border); */
+  justify-content: space-around;
+}
+
+.topNav nav {
+  align-self: center;
+}
+
+.mainNav {
+  display: flex;
+}
+
+.mainNav li {
+  list-style: none;
+}
+
+.mainNav li a {
+  text-decoration: none;
+  padding: 0 40px 0 0;
+  align-self: center;
+  color: grey;
+}
+
+.mainNav li a:hover {
+  text-decoration: underline;
+  /* transition: 5s all; */
+}
+
+/******* header *******/
+header {
+  display: flex;
+  justify-content: space-evenly;
+  /* justify-content: space-around; */
+  margin-bottom: 20px;
+}
+
+header .cta {
+  /* border: var(--border); */
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+header h1 {
+  font-size: 36px;
+  width: 140px;
+  text-align: center;
+  /* border: var(--border); */
+  margin-top: 50px;
+}
+
+.headerIMG {
+  width: 100%;
+  max-width:400px;
+  /* border: var(--border); */
+}
+
+header button {
+  padding: 10px 20px;
+  border: 1px solid black;
+}
+
+header button a {
+  text-decoration: none;
+  color: black;
+  align-items: center;
+  /* padding: 50px 20px; */
+}
+
+header button a:hover {
+  /* padding: 10px 20px; */
+  /* background: grey; */
+  color: blue;
+  /* font-size: 18px; */
+  /* border: 3px solid blue; */
+}
+
+/******* features *******/
+.diffFeatures {
+  width: 100%;
+  max-width: 750px;
+  padding-right: 10px;
+}
+
+.features {
+  display: flex;
+}
+
+.middle-img {
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+/******* services *******/
+.services {
+  display: flex;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.diffServices {
+  max-width: 450px;
+  width: 100%;
+  padding-right: 10px;
+}
+
+hr {
+  max-width: 950px;
+  margin-bottom: 20px;
+}
+
+.contactPart {
+  margin: 20px 0;
+}
+
+/****** footer ******/
+footer p {
+  text-align: center;
+}
+
+/******* tablet version *******/
+@media (max-width: 800px){
+  .container{
+    /* background: red; */
+    padding: 10px;
+    max-width: 799px;
+    width: 100%;
+  }
+
+  .topNav {
+    flex-direction: column-reverse;
+    /* justify-content: center; */
+    align-items: center;
+    margin: 20px 0 0 0;
+  }
+
+  .topNav img {
+    margin: 0 0 20px 0;
+  }
+
+  .headerIMG {
+    display: none;
+  }
+
+  header .cta h1 {
+    font-size: 40px;
+  }
+
+  .mainNav a {
+    /* display: inline-block; */
+    font-size: 18px;
+  }
+
+  .mainNav a:last-child {
+    margin-right: 0; 
+  }
+  
+  .diffFeatures {
+    width: 100%;
+    max-width: 350px;
+    /* padding-right: 40px; */
+  }
+
+  .features>.diffFeatures {
+    margin-right: 40px;
+  }
+
+  .about {
+    margin-right: 0;
+    padding-right: 0;
+  }
+
+  .services {
+    max-width: 800px;
+    padding: 10px;
+  }
+
+  .diffServices {
+    /* border: var(--border); */
+    max-width: 260px;
+    width: 100%;
+    margin-right: 10px;
+  }
+
+  .middle-img {
+    width: 100%;
+    max-width: 799px;
+    /* padding-right: 100px; */
+    /* margin-left: 0; */
+    /* padding-left: 0px; */
+  }
+
+  hr {
+    max-width: 750px;
+  }
+
+  .middleContent {
+    text-align: center;
+  }
+
+  .middleContent p {
+    text-align: justify;
+  }
+
+  .contactPart {
+    width: 120px;
+  }
+
+  header .cta {
+    margin-top: 0;
+  }
+}
+
+/******* mobile version *******/
+@media (max-width: 500px) {
+  .container {
+    /* background: green; */
+    max-width: 500px;
+    width: 100%;
+  }
+
+  .mainNav {
+    flex-direction: column;
+  }
+
+  .mainNav li {
+    padding: 10px 0 10px 0;
+    max-width: 500px;
+    text-align: center;
+    border-bottom: 2px solid black;
+    width: 500px;
+  }
+
+  .mainNav li a {
+    padding-right: 0;
+  }
+
+  .features {
+    flex-direction: column;
+  }
+
+  .diffFeatures {
+    margin-bottom: 20px;
+    /* width: 100%; */
+    max-width: 500px;
+    /* border: var(--border); */
+  }
+
+  .diffFeatures h2 {
+    text-align: left;
+  }
+
+  .services {
+    /* border: var(--border); */
+    flex-direction: column;
+    max-width: 500px;
+  }
+
+  .diffServices {
+    /* border: var(--border); */
+    max-width: 500px;
+    margin-top: 20px;
+  }
+}
