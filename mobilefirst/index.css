@@ -47,6 +47,10 @@ table {
 	border-spacing: 0;
 }
 /* ______________________ */
+* {
+    box-sizing: border-box;
+}
+
 body {
     width: 100%;
 }
@@ -187,16 +191,18 @@ footer {
     nav {
         flex-direction: row;
         font-size: .7em;
+        width: 100%;
     }
 
     .navigation {
         align-items: center;
+        width: 100%;
     }
 
     .navigation a {
         border: none;
         padding: 10px;
-        margin: 20px 50px;
+        margin: 20px auto;
         width: 60px;
     }
 
@@ -215,6 +221,10 @@ footer {
         border-bottom: 1px solid black;
         width: 95%;
         margin: 0 auto;
+    }
+
+    header .startbutton {
+        font-size: .4em;
     }
 
     .underhead {
@@ -246,5 +256,22 @@ footer {
 } 
 
 @media (min-width: 800px) {
+    .navigation {
+        flex-direction: row-reverse;
+    }
 
+    .circlecode {
+        display: flex;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .innovationtext {
+        margin: 0;
+    }
 }
