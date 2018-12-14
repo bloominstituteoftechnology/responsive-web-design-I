@@ -1,3 +1,351 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 
+/* Desktop View, Line 302 starts tablet view */
+
+.main {
+	width: 850px;
+	margin: 0 auto;
+	background: white;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	padding-bottom: 10px;
+}
+
+	.main .navbar {
+      top: 0;
+		display: flex;
+		flex-direction: row;
+		position: fixed;
+		z-index: 1;
+		width: 100%;
+		padding-right: 10px;
+		padding-left: 10px;
+		margin-bottom: 75px;
+		height: 100px;
+		justify-content: space-between;
+		align-items: center;
+		background: white;
+	}
+		.main .navbar nav  {
+			display: flex;
+			text-decoration: none;
+			
+		}
+		
+		
+			.main .navbar nav a {
+				justify-content: space-between;
+				margin-right: 50px;
+				color: gray;
+				
+			}
+		
+	.main .wowmuchlarge {
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		top: 100px;
+		position: relative;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 100px;
+
+	}
+
+		.main .wowmuchlarge h1 {
+			text-align: center;
+			font-size: 60px;
+		}
+
+		.main .wowmuchlarge .muchtext {
+            margin-left: 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+		}
+		
+
+		.main .wowmuchlarge .headimg {
+			border-radius: 25%;
+			margin-left: 20px;
+			margin-bottom: 50px;
+		}
+		
+
+.middle-img {
+	
+	height: 300px;
+	width: 100%;
+}
+
+
+.main .wowmuchlarge .muchtext #getitdone {
+    color: inherit;
+    height: 30px;
+	width: 150px;
+    text-align: center;
+    padding-top: 5px;
+    border: 1px solid black;
+}
+a {
+	text-decoration: none;
+}
+
+.container-above {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-content: flex-start;
+	height: 100px;
+	width: 100%;
+	margin-top: 20px;
+	margin-bottom: 5px;
+	padding-top: 20px;
+	border-top: 1px solid black;
+}
+
+	.services, .product .vision, .features, .about {
+		padding: 5px;
+	}
+
+.container-below {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-content: flex-start;
+	width: 100%;
+	height: 100px;
+	margin-top: 10px;
+	padding-bottom: 30px;
+}
+
+.middle-img {
+	position: relative;
+	margin-top: 30px;
+	margin-bottom: 15px;
+}
+
+
+
+.contact {
+	padding-top: 10px;
+	position: relative;
+	top: 70px;
+	border-top: 1px solid black;
+
+}
+
+
+
+footer {
+	height: 100px;
+	text-align: center;
+	margin-top: 50px;
+}
+
+.services-header-img {
+	width: 800px;
+	position: relative;
+	margin-top: 60px;
+}
+.services-header {
+	position: relative;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+h2 {
+	font-weight: bold;
+}
+
+.middleblocks {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	width: 100%;
+	border-top: 1px solid black;
+	margin-top: 30px;
+}
+
+.middleblock {
+	align-self: center;
+	height: 200px;
+	width: 375px;
+	background: #F4F3F4;
+	border: 1px solid black;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	padding: 10px;
+}
+
+	.middleblock button {
+		margin-top: 15px;
+		border-radius: 5px;
+		width: 200px;
+		height: 30px;
+		padding: 0 auto;
+		background: white;
+		border: 1px solid black;
+	}
+body {
+	background: gray;
+}
+
+.bottom-block {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: space-between;
+	margin-bottom: 80px;
+	width: 800px;
+	border-top: 1px solid black;
+	
+}
+
+.bottom-block .bottom-text {
+	height: 200px;
+	width: 375px;
+	margin-top: 10px;
+}
+
+.bottom-block .bottom-img {
+	height: 200px;
+	width: 375px;
+	margin-top: 10px;
+
+}
+
+#copyright {
+	width: 100%;
+	text-align: center;
+}
+li {
+	margin-top: 10px;
+	list-style-type: square;
+}
+ul {
+	padding-left: 20px;
+}
+
+/* tablet view */
+
+@media only screen and  (max-width: 800px){
+    .main {
+        width: 780px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .main .navbar{
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    width: 100%;
+    background: white;
+    z-index: 1;
+    top: 0;
+    }
+    .main .navbar nav a {
+        justify-content: center;
+        background: white;
+    }
+    .main .navbar .logo {
+        margin-bottom: 40px;
+    }
+    .main .wowmuchlarge .headimg {
+        display: none;
+    }
+    .main .wowmuchlarge {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        margin-bottom: 100px;
+    }
+    .main .wowmuchlarge .muchtext {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .main .wowmuchlarge .muchtext #getitdone{
+    height: 30px;
+	width: 150px;
+    border: 1px solid black;
+    text-align: center;
+    padding-top: 5px;
+    }
+}
+
+/* mobile view */
