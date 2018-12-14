@@ -64,11 +64,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Your code starts here! */
+.full-container {
+
+	margin: 0 auto;
+
+}
+
 .container {
 	padding-left: 90px;
 	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: flex-end;
 	margin-bottom: 5%;
 }
@@ -123,9 +128,11 @@ a {
 	color: grey;
 }
 
+
 nav {
 	word-spacing: 70px;
 }
+
 
 button {
 	cursor: pointer;
@@ -139,9 +146,9 @@ h1 {
 }
 
 hr {
-	padding-top: 10px;
-	margin: 50px 0px;
+	border-top: 1px solid black;
 }
+
 
 .middle-img {
 	width: 100%;
@@ -151,7 +158,6 @@ hr {
 @media(max-width: 800px) {
 
 .container {
-	border: 1px solid blue;
 	flex-direction: column-reverse;
 	align-items: center;
 	padding: 0px 10px;
@@ -180,13 +186,14 @@ hr {
 }
 
 
+nav {
+	word-spacing: 60px;
+}
+
 
 }
 /* mobile view */
 @media(max-width: 500px) {
-	.container {
-		border: 1px solid red;
-	}
 
 	.container5 {
 		flex-direction: column;
@@ -209,7 +216,24 @@ hr {
 		padding: 10px;
 	}
 
-	a {
+	nav {
+		width: 460px;
+		word-spacing: 300px;
+		padding: 20px;
 		text-align: center;
+		display: flex;
+		flex-direction: column;
 	}
-}	
+	
+	a {
+		line-height: 70px;
+		border-bottom: 1px solid black;
+	}
+
+	.logo {
+		width: 425px;
+		border-bottom: 1px solid black;
+		text-align: center;
+		padding-bottom: 20px;
+	}
+}
