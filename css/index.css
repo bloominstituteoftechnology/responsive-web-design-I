@@ -100,9 +100,9 @@ nav {
 
 header img {
 	max-width: 130px;
-    max-height: 30px;
+    max-height: 84px;
     position: relative;
-    right: -31px;
+	right: 121px;
     top: 6px;
 	
 	
@@ -110,7 +110,7 @@ header img {
 
 .start {
     height: 300px;
-    width: inherit;
+	width: 766px;
     padding: 0;
     margin: 0;
     border-bottom: 1px solid black;
@@ -159,7 +159,7 @@ button {
     border: 1px double #555555;
     margin: 49px;
     position: relative;
-    right: -32px;
+    right: 1spx;
     top: 20px
 }
 
@@ -177,6 +177,7 @@ section {
 	flex-direction: column;
 	flex-wrap: wrap;
 	margin-bottom: 40px;
+	width: 766px;
 
 }
 
@@ -200,19 +201,29 @@ section {
 	border-bottom: 1px solid black;
 	margin-bottom: 40px;
 }
-
+footer{
+	width: 766px;
+}
 footer p {
 	text-align: center;
 }
 
+hr {
+	display: none;
+}
+
 @media (max-width: 800px) {
+	*{
+		box-sizing: content-box;
+	}
 	body{
 		width: 775px;
 	}
 	nav {
 		padding-top: 51px;
 		position: relative;
-		right: -63px;
+		right: -110px;
+		top: 10px;
 		
 	}
 	nav >a {
@@ -220,10 +231,11 @@ footer p {
 		padding: 0;
 	}
     header img {
-	right: 343px;
-    top: -42px;
-    max-width: 148px;
-    max-height: 37px;
+		right: 292px;
+		top: -28px;
+		max-width: 148px;
+		max-height: 37px;
+	
 	}
 
 	.start img{
@@ -237,10 +249,15 @@ footer p {
 		right: 5px;
 	}
 	.g-button {
+
+   
 		position: relative;
-		left: 0px;
-		top: 20px;
-	}
+		left: 36px;
+		top: 16px;
+		width: 156px;
+		height: 40px;
+}
+	
 
 
 	#features, #about {
@@ -251,3 +268,92 @@ footer p {
 		width: 769px;
 	}
 }
+
+@media (max-width: 500px){
+	body{
+		width: 470px;
+	}
+     .max{
+		 width: 470px;
+	 }
+	.nav{
+	    display: flex;
+    flex-direction: column;
+    line-height: 4em;
+    right: -6px;
+    justify-items: center;
+    border-bottom: 1px solid gray;
+	top: 26px;
+	width: 470px;
+    
+	}
+	nav a{
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    font-size: 1.7em;;
+    padding-left: 72px;
+    text-align: center;
+    width: 470px;
+}
+  
+	
+
+	header img {
+		right: 247px;
+		top: -30px;
+		max-width: 197px;
+		max-height: 61px;
+	
+		}
+		.start section h1 { 
+			font-size: 5em;
+		}
+		.g-button {
+			position: relative;
+			left: 54px;
+			top: 16px;
+			width: 88px;
+			height: 24px;
+	}
+
+	#features, #about {
+	text-align: left;
+    flex-direction: column;
+    width: 89%;
+    position: relative;
+    top: -26px;
+	}
+
+	#features{
+	 position: relative;
+		right: -6px;
+	}
+
+	#about {
+		position: relative;
+		right: 23px;
+	}
+
+
+		.mid {
+			width: 413px;
+			position: relative;
+			right: -19px;;
+		}
+
+		#services, #product, #vision {
+			position: relative;
+			display: block;
+			width: 87%;
+			height: 10%;
+			right: -6px;
+		}
+		#contact{
+			display: flex;
+			flex-direction: column;
+			flex-wrap: wrap;
+			margin-bottom: 40px;
+			position: relative;
+			right: -6px;
+		}
+	}
