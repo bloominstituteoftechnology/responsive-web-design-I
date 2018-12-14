@@ -65,22 +65,20 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Your code starts here! */
 .container {
+	padding-left: 90px;
 	display: flex;
-	width: 100%;
-	margin-bottom: 5%;
-	justify-content: space-evenly;
+	flex-direction: row;
+	justify-content: space-around;
 	align-items: flex-end;
+	margin-bottom: 5%;
 }
 
-.nav1 {
-	color: grey;
-	word-spacing: 80px;
-}
+
 .container2 {
-	width: 100%;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-evenly;
 }
+
 .container3 {
 	font-weight: bold;
 	font-size: 45px;
@@ -93,7 +91,6 @@ h1, h2, h3, h4, h5, h6 {
 .container5{
 	display: flex;
 	margin-bottom: 20px;
-	
 }
 .container6{
 	margin-top: 30px;
@@ -121,7 +118,14 @@ h1, h2, h3, h4, h5, h6 {
 	line-height: 50px;
 }
 
+a {
+	text-decoration: none;
+	color: grey;
+}
 
+nav {
+	word-spacing: 70px;
+}
 
 button {
 	cursor: pointer;
@@ -130,6 +134,9 @@ button {
 	font-size: 20px;
 }
 
+h1 {
+	text-align: center;
+}
 
 hr {
 	padding-top: 10px;
@@ -144,37 +151,65 @@ hr {
 @media(max-width: 800px) {
 
 .container {
-	border: 1px solid black;
+	border: 1px solid blue;
 	flex-direction: column-reverse;
 	align-items: center;
-}
-.nav1 {
-	word-spacing: 40px;
+	padding: 0px 10px;
 }
 
+
 .container4 {
-	display: none
+	display: none;
 }
+
+
+.middle-img {
+	padding: 10px;
+}
+
+.serve {
+	padding: 0px 20px;
+}
+
+.prod {
+	padding: 0px 20px;
+}
+
+.visi{
+	padding: 0px 20px;
+}
+
+
 
 }
 /* mobile view */
 @media(max-width: 500px) {
-
-
 	.container {
-		flex-direction: row-reverse;
+		border: 1px solid red;
 	}
-
 
 	.container5 {
 		flex-direction: column;
+		width: 400px;
 	}
 
 	.container6 {
 		flex-direction: column;
+		margin: 20px;
+	}
+	.about {
+		margin-left: 30px;
+	}
+
+	button {
+		width: 125px;
 	}
 
 	.middle-img {
 		padding: 10px;
 	}
-}
+
+	a {
+		text-align: center;
+	}
+}	
