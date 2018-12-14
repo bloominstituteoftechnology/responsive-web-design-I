@@ -65,94 +65,17 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 0px;
 }
 /* Your code starts */
-
-.container {
-    width: 1024px;
-    margin: 0 auto;
-    
-}
-
 header {
     display: flex;
 	flex-direction: column;
 	padding-bottom: 30px;    
 }
 
-.nav-holder {
-    background: white;
-    border-bottom: 1px solid black;
-    padding-top: 30px;
-    width: 100%;
-	display: flex;
-    justify-content: space-around;
-}
-
-.nav-container {
-    width: 100%;
-	display: flex;
-	justify-content: space-around;
-	align-self: flex-start;
-    align-items: center;
-}
-
-.nav-container a {
-	color: darkgray;
-    font-size: 16px;
-    line-height: 2;
-    text-decoration: none;
-    margin-right: 10px;
-}
-
-.logo {
-
-
-}
-
-.cta {
-  border-bottom: 1px solid black;  
-  display: flex;
-  justify-content: space-around;
-  padding: 30px 0;
-  margin: 70px;
-}
-
-.main-header {
-    margin-top: 55px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
 
 h1 {
     font-size: 75px;
     text-align: center;
-    margin-left: 50px;
     
-}
-
-button {
-    background: white;
-    font-size: 16px;
-    margin: 10px 0 60px 45px;
-    padding: 5px 42px;
-}
-
-.header-logo {
-    width: 50%;
-    height: 400px;
-}
-
-.top-section {
-    margin-left: 70px;
-    display: flex;
-    justify-content: space-between;
-    width: 85%;
-}
-
-.top-overlay {
-    width: 50%;
 }
 
 h2 {
@@ -160,38 +83,107 @@ h2 {
 }
 
 p {
-    margin-top: 10px;
     font-size: 16px;
 }
 
-.middle-img {
-    margin: 20px 0 0 70px;
-    padding: 20px 0;
-    width: 86%;
-}
-
-.bottom-section {
-    margin-left: 70px; 
-    width: 85%;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.bottom-overlay {
-    border-bottom: 1px solid black;
-    width: 33%;
-    padding-bottom: 50px
-}
-
-.contact {
-    padding: 50px 0;
-    margin-left: 70px;
+button {
+    background: white;
+    font-size: 16px;
+    margin-top: 10px;
+    padding: 5px 42px;
 }
 
 footer {
     text-align: center;
     padding-bottom: 100px;
 }
+
+.container {
+    width: 1024px;
+    margin: 0 auto; 
+}
+
+.nav-holder {
+    background: white;
+    border-bottom: 1px solid black;
+    padding: 15px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.nav-container {
+    width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.nav-container a {
+	color: darkgray;
+    font-size: 16px;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.cta {
+  border-bottom: 1px solid black;  
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+}
+
+.main-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.top-section {
+    padding: 20px 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-around;
+}
+
+.top-overlay {
+    width: 47%;
+}
+
+
+.middle-img {
+    padding: 20px 0;
+    width: 100%;
+}
+
+.bottom-section {
+    padding: 20px 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-around;
+}
+
+.bottom-overlay {
+    width: 30%;
+    padding-bottom: 50px;
+}
+
+.contact {
+    border-top: 1px solid black;
+    padding: 50px 0;
+}
+
 
 /* STRETCH vision.html section */
 
@@ -234,7 +226,6 @@ footer {
 }
 
 .design {
-    margin: 80px;
     padding: 20px 10px;
     display: flex;
     flex-direction: column;
@@ -255,178 +246,65 @@ footer {
 }
 
 @media only screen and (max-width: 800px) {
-    body {
-        margin: 0 auto;
-    }
 
     .container {
-        width: 800px;
+        width: 750px;
     }
-
+    
     .nav-holder {
-        display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         border-bottom: none;
-    }
-
-    .logo {
-        display: flex;
-        align-self: center;
     }
 
     .nav-container {
-        width: 80%;
-    }
-
-    .nav-container a {
-        margin-top: 30px;
-        margin-left: 80px;
-    }
-
-    .cta {
-        margin: 0;
-        padding: 0;
-        padding-bottom: 30px;
-        border: none;
-        width: 80%;
-        margin-left: 50px;
-    }
-    .header-logo {
-        display: none;
-    }
-
-    .top-section {
-        border-top: 1px solid black;
-        padding-top: 30px;
-        width: 80%;
-        display: flex;
-        justify-content: space-around;
-        align-self: center;
+        padding: 20px;
         
     }
 
-    .top-overlay {
-        margin-right: px;
-        width: 100%;
+    .cta {
+        padding: 0 0 60px 0;
+    
     }
 
-    .top-overlay h2 {
-        font-size: 16px;
-    }
-
-    .top-overlay p {
-        font-size: 16px;
-    }
-
-    .middle-img {
-        width: 80%;
-    }
-
-    .bottom-section {
-        width: 80%;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .bottom-overlay {
-        border-bottom: none;
-        width: 33%;
-        padding-right: px;
-    }
-
-    .contact {
-        border-top: 1px solid black;
+    .header-logo {
+        display: none;
     }
 }
 
 @media only screen and (max-width: 500px) {
-    body {
-    }
-
-    .nav-holder {
-        width: 80%;
+    
+    .container {
+        width: 450px;
     }
 
     .nav-container {
-        margin: 0;
-        padding: 0;
-        display: flex;
         flex-direction: column;
-    }
-
-    .logo {
-        margin-right: 100px;
-        margin-bottom: 20px;
-    }
-
-    .nav-container a {
-        margin: 0;
-        border-top: 1px solid black;
-        width: 80%;
-        display: flex;
-        justify-content: center;
-    }
-    .cta {
-        margin: 0;
-        padding: 0;
-        padding-bottom: 30px;
-        border: none;
-        width: 50%;
-        margin-left: 50px;
-    }
-    .header-logo {
-        display: none;
-    }
-
-    .top-section {
-        border-top: 1px solid black;
-        padding-top: 30px;
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-self: center;
+        align-items: center;
+        padding: 20px;
         
     }
 
-    .top-overlay {
-        margin: 10px 0;
+    nav a {
+        border-top: 1px solid gray;
         width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    } 
+
+    .top-section {
+       flex-direction: column;
     }
 
-    .top-overlay h2 {
-        font-size: 16px;
-    }
-
-    .top-overlay p {
-        font-size: 16px;
-    }
-
-    .middle-img {
-        width: 50%;
+    .top-overlay {
+        width: 100%;
+        padding: 20px 0;
     }
 
     .bottom-section {
-        width: 60%;
-        display: flex;
         flex-direction: column;
-        justify-content: space-between;
     }
 
     .bottom-overlay {
-        border-bottom: none;
-        width: 80%;
-        padding-right: px;
-    }
-
-    .contact {
-        border-top: 1px solid black;
-        width: 50%;
-    }
-
-    footer {
-        width: 60%;
+        width: 100%;
     }
 }
