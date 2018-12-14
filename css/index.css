@@ -1,3 +1,198 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+* {
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    height: 100%;
+    font-family: "Titillium Web", sans-serif;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: "Bangers", cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+  }
+  
+  /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+  
+  body {
+    width: 800px;
+    margin: auto;
+  }
+  header {
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  nav a {
+    text-decoration: none;
+    color: gray;
+    font-size: 20px;
+    margin: 0px 25px 0px 0px;
+    /* border: 1px solid black; */
+  }
+  .iod {  
+    width:800;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 70px 0px 50px 0px;
+  }
+  .iod .iod-text{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   font-size: 48px;
+   text-align: center;  
+  }
+  button {
+   background: white;
+   padding: 8px 40px;
+   font-size: 20px;
+   cursor: pointer;
+   border-radius: 5px;
+   margin-top: 25px;
+  }
+  button:hover{
+      background: lightgray;
+      color: white;
+  }
+  .top-content {
+    border-top: 1px solid black;
+    margin: 20px 0px 20px 0px;
+    display: flex;
+    justify-content:space-between;
+  }
+  .top-content .text-content {
+    width: 370px;
+    line-height: 30px;
+    margin-top: 30px;
+  }
+  
+  h4 {
+    letter-spacing: 3px;
+    font-size: 20px;
+  }
+  
+  .middle-img {
+    width: 800px;
+    margin: 10px 0 10px 0px;
+  }
+  .bottom-content {
+    display: flex;
+    border-bottom: 1px solid black;
+  }
+  .bottom-content .text-content {
+    width: 333px;
+    line-height: 30px;
+    margin: 20px 10px 50px 0px;
+  }
+  .contact {
+    line-height: 40px;
+    margin: 40px 0px 50px 0px;
+  }
+  
+  footer {
+    text-align: center;
+  }
+  
+  /* @Media*/
+  
+@media (max-width:800px){
+    .container {
+        width: 800px;
+        margin: 10px;  
+    }
+    header {
+        display: flex;
+        flex-direction: column-reverse;   
+    }
+    .logo {
+        width: 230px;
+        margin: 20px 0px;
+        margin-left: 290px;
+        margin-bottom: 50px;
+    }
+    nav {
+        display: flex;
+        justify-content: space-around;
+    }
+    .iod img {
+        display: none;
+    }
+    .iod {
+        display: flex;
+        justify-content: center;
+    }
+}
 
+  @media (max-width:500px){
+      .container {
+         width: 500px;
+         margin:6px;
+      }
+    header {
+        border-bottom: 1px solid gray;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 20px;
+      }
+      nav {
+        display: flex;
+        flex-direction: column;  
+      }
+      nav a {
+        text-decoration: none;
+        color:gray;
+        font-size: 20px;
+        padding: 25px 225px 25px 225px;
+        border-top: 1px solid gray;
+      }
+      .logo {
+          width: 230px;
+          margin: 20px 0px;
+      }
+      .iod img {
+          display: none;
+      }
+      .iod {
+          width: 500px;
+          display: flex;
+          align-items: center;  
+      }
+      
+      .top-content{
+          display: flex;
+          flex-direction: column;
+      }
+      .top-content .text-content{
+          width:  480px;
+          margin: 10px 0px 0px 5px;
+      }
+      
+      .middle-img {
+          width: 500px;
+      }
+      .bottom-content {
+          display: flex;
+          flex-direction: column;
+          padding-bottom: 30px;
+      }
+      .bottom-content .text-content {
+         width:  480px;
+         margin: 10px 0px 0px 5px;
+      }
+      .contact {
+          margin-left: 5px;
+      }
+  }
