@@ -307,7 +307,6 @@ footer#services-footer #copyright {
     }
     header nav {
         width: 763px;
-        position: absolute;
         justify-content: space-around;
         display: flex;
     }
@@ -326,9 +325,87 @@ footer#services-footer #copyright {
         position: absolute;
         margin: 2px 0 0 0;
     }
-    header {
+    header #header-banner {
+        margin: 4px 73px 0 0;
     }
+    header #header-banner h1 {
+        line-height: 72px;
+    }
+    header #header-banner a {
+        margin-top: 26px;
+        padding-left: 0;
+    }
+    header #header-banner #header-image {
+        display: none;
+    }
+    #content {
+        margin-top: 19px;
+		padding-top: 33px;
+		padding-bottom: 35px;
+    }
+    #content .content-row section {
+        line-height: 21px;
+        padding: 0 15px 0 1px;
+        margin: 0 4px;
+    }
+    #content .content-row section:first-of-type {
+        margin-left: 11px;
+    }
+    #content .content-row h2 {
+        margin-bottom: 13px;
+    }
+    #content .content-row p {
+        line-height: 18px;
+    }
+    #content #middle-img {
+        margin: 32px 0 29px 0;
+        height: 157px;
+        width: 761px;
+    }
+    #content .content-row section.third {
+        padding-right: 16px;
+        margin-right: 19px;
+    }
+    #content .content-row section.third:last-of-type {
+        margin-left: 4px;
+	}
+	footer {
+		padding-left: 12px;
+	}
+	footer #copyright {
+		padding-right: 12px;
+	}
 }
 @media (max-width: 500px) {
-    
+    body .container {
+		width: 500px;
+	}
+	header {
+		margin-top: 6px;
+	}
+	header nav {
+		width: 500px;
+	}
+	header nav .links {
+		flex-direction: column;
+		margin-top: 70px;
+		width: 500px;
+		height: auto;
+	}
+	header nav .links .link {
+		margin-top: 0;
+		margin-left: 35px;
+		height: 61px;
+		width: 500px;
+		text-align: center;
+		line-height: 61px;
+		font-size: 21px;
+		border-top: 1px solid #888;
+	}
+	header nav .links .link:last-of-type {
+		border-bottom: 1px solid #888;
+	}
+	#header-banner #header-text {
+		margin-top: 34px;
+	}
 }
