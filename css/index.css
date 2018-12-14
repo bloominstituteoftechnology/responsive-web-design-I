@@ -68,7 +68,6 @@ h1, h2, h3, h4, h5 {
 header {
     display: flex;
 	flex-direction: column;
-	padding-bottom: 30px;    
 }
 
 
@@ -184,6 +183,88 @@ footer {
     padding: 50px 0;
 }
 
+.services-header-img {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+.super-main-container {
+	width: 900px;
+	margin: 0 auto;
+}
+
+.serviceh2 {
+    font-size: 30px;
+}
+
+.container1 {
+	border-top: 1px solid black;
+	padding-top: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.services-container {
+	background: #F4F3F4;
+	border: 1px solid black;
+	display: flex;
+	flex-direction: column;
+	margin: 20px 0;
+	padding: 20px;
+	width: 47%;
+
+}
+
+.services-button {
+	background: white;
+	border: 1px solid black;
+	border-radius: 5px;
+	margin: 20px 0 10px;
+	padding: 10px 20px;
+	width: 33%;
+}
+
+.services-button:hover {
+	background: gray;
+	color: white;
+}
+
+.something {
+	border-top: solid 1px black;
+	display: flex;
+	margin-top: 30px;
+	padding: 20px 0;
+	width: 100%;	
+}
+
+.closing-container {
+    width: 50%;
+}
+
+ul {
+	margin-left: 40px; 
+	margin-top: 20px;
+}
+
+li {
+	line-height: 1.5;
+}
+
+.services-info-img {
+	margin-left: 50px;
+}
+
+.closing-container h3 {
+    padding: 20px 0;
+}
+
+footer {
+	text-align: center;
+	padding: 50px;
+}
+
 
 /* STRETCH vision.html section */
 
@@ -269,6 +350,16 @@ footer {
     .header-logo {
         display: none;
     }
+
+    .services-button {
+        width: 200px;
+        align-self: center;
+    }
+
+    .services-info-img {
+        width: 80%;
+        margin-left: 70px;
+    }
 }
 
 @media only screen and (max-width: 500px) {
@@ -306,5 +397,21 @@ footer {
 
     .bottom-overlay {
         width: 100%;
+    }
+
+    .container1 {
+        flex-direction: column;
+    }
+
+    .services-container {
+        width: 100%;
+    }
+
+    .closing-container {
+        width: 100%;
+    }
+
+    .services-info-img {
+        display: none;
     }
 }
