@@ -68,8 +68,8 @@ h1, h2, h3, h4, h5 {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
-  border: var(--border);
-  /* padding: 20px; */
+  /* border: var(--border); */
+  padding: 20px;
   /* background: blue; */
 }
 
@@ -189,7 +189,7 @@ header button a:hover {
 }
 
 hr {
-  width: 950px;
+  max-width: 950px;
   margin-bottom: 20px;
 }
 
@@ -259,13 +259,15 @@ footer p {
   }
 
   .services {
-    width: 700px;
+    max-width: 800px;
+    padding: 10px;
   }
 
   .diffServices {
-    max-width: 250px;
+    /* border: var(--border); */
+    max-width: 260px;
     width: 100%;
-    padding-right: 40px;
+    margin-right: 10px;
   }
 
   .middle-img {
@@ -302,6 +304,7 @@ footer p {
   .container {
     /* background: green; */
     max-width: 500px;
+    width: 100%;
   }
 
   .topNav {
@@ -315,9 +318,37 @@ footer p {
   .mainNav li {
     padding: 10px 0 10px 0;
     border-bottom: 2px solid black;
-    width: 500px;
+    max-width: 500px;
     text-align: center;
   }
 
-  
+  .features {
+    flex-direction: column;
+  }
+
+  .diffFeatures {
+    /* align-self: center; */
+    /* justify-content: flex-start; */
+    /* align-content: space-between; */
+    margin-bottom: 20px;
+    /* width: 100%; */
+    max-width: 500px;
+    /* border: var(--border); */
+  }
+
+  .diffFeatures h2 {
+    text-align: left;
+  }
+
+  .services {
+    /* border: var(--border); */
+    flex-direction: column;
+    max-width: 500px;
+  }
+
+  .diffServices {
+    /* border: var(--border); */
+    max-width: 500px;
+    margin-top: 20px;
+  }
 }
