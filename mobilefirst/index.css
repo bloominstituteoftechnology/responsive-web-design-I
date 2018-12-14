@@ -1,0 +1,277 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* ______________________ */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#home {
+    display: flex;
+    justify-content: center;
+}
+
+.navigation a {
+    border-bottom: 1px solid black;
+    font-size: 1.5em;
+    width: 100%;
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+nav a {
+    display: flex;
+    justify-content: center;
+
+}
+
+.circlecode {
+    display: none;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.innovationtext {
+    font-size: 4em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin: 20px auto;
+    font-family: Bangers;
+}
+
+.innovationtext a {
+    border: 2px solid black;
+    font-size: .5em;
+    width: 160px;
+    margin: 10px auto;
+    padding: 10px;
+    font-family: Titillium Web;    
+    
+}
+
+@keyframes buttons {
+    from {}
+    to {
+        background: #ace;
+    }
+}
+.innovationtext a:hover {
+    animation-name: buttons;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-family: Bangers;
+}
+
+.middle-img {
+    width: 100%;
+}
+
+.underhead {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom {
+    border-bottom: 1px solid black;
+}
+
+section {
+    margin: 20px auto;
+}
+
+p {
+    font-family: Titillium Web;
+}
+
+.contact p {
+    padding: 20px 0;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    margin: 20px 0px;
+    width: 100%;
+}
+
+footer {
+    text-align: center;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+@media (min-width: 500px) {
+    nav {
+        flex-direction: row;
+        font-size: .7em;
+        width: 100%;
+    }
+
+    .navigation {
+        align-items: center;
+        width: 100%;
+    }
+
+    .navigation a {
+        border: none;
+        padding: 10px;
+        margin: 20px auto;
+        width: 60px;
+    }
+
+    .navigation a:hover {
+        animation-name: buttons;
+        animation-duration: 0.2s;
+        animation-fill-mode: forwards;
+        box-shadow: -2px 2px black;
+    }
+
+    #home {
+        width: 25%;
+    }
+
+    header {
+        border-bottom: 1px solid black;
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    header .startbutton {
+        font-size: .4em;
+    }
+
+    .underhead {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        width: 95%;
+    }
+
+    .top {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .bottom {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .top section {
+        width: 45%;
+    }
+
+    .bottom section {
+        width: 30%;
+    }
+} 
+
+@media (min-width: 800px) {
+    .navigation {
+        flex-direction: row-reverse;
+    }
+
+    .circlecode {
+        display: flex;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .innovationtext {
+        margin: 0;
+    }
+}
