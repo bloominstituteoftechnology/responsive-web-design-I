@@ -171,79 +171,56 @@ span {
 /* Above pic */
 .above-pic {
 	/* height: 80px; */
-	margin-top: 30px;
-	padding-top: 50px;
+	margin: 30px 0 30px 0;
+	padding-top: 30px;
 	display: flex;
+	flex-wrap: wrap;
 	border-top: solid 1.75px black;
 	align-items: center;
 }
 
-.features {
+.features-div {
 	width: 50%;
 }
 
-.about {
+.about-div {
 	width: 50%;
 }
 
 
-.p1 {
-	display: flex;
-	margin-bottom: 25px;
-}
-
-.p1 p {
-	justify-content: space-evenly;
-	padding-right: 10px;
-}
 /* Above pic */
 
-/* .middle-img {
-	margin-bottom: 80px;
-} */
+.middle-img {
+	width: 100%;
+}
 
 
 /* Below pic */
 .below-pic {
 	/* height: 80px; */
-	margin-top: 30px;
+	margin: 30px 0 30px 0;
+	padding-bottom: 30px;
 	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
-}
-
-.services {
-	width: 33.5%;
-}
-
-.product {
-	width: 33.5%;
-}
-
-.vision {
-	width: 33.5%;
-}
-
-
-.p2 {
-	display: flex;
-	margin-bottom: 50px;
-	padding-bottom: 50px;
 	border-bottom: solid 1.75px black;
 }
 
-p {
-	justify-content: space-evenly;
-	padding-right: 10px;
+.services-div {
+	width: 32%;
+}
+
+.product-div {
+	width: 32%;
+}
+
+.vision-div {
+	width: 32%;
 }
 /* Below pic */
 
 
 /* footer */
-
-/* .contact {
-
-} */
-
 .address {
 	display: flex;
 	flex-direction: column;
@@ -262,7 +239,7 @@ p {
 .copyright {
 	display: flex;
 	justify-content: center;
-	margin-bottom: 75px;
+	margin-bottom: 10px;
 }
 
 
@@ -344,133 +321,132 @@ p {
 @media (max-width: 500px) {
 
 	.container {
-		width: 480px;
-		height: 2400px;
+		max-width: 468px;
 	}
 
-	.buttons {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		width: 472px;
-		height: 200px;
-	}
-
-	nav a {
-		padding: 5px;
-		border-bottom: 1px solid gray;
+	.line1 {
+		width: 100%;
+		height: 10%;
 	}
 
 	.logo {
-		position: relative;
-		left: 35px;
-		height: 75px;
+		width: 100%;
+		justify-content: center;
 	}
 
-	.title {
-		height: none;
-		margin-top: 20px;
-		position: relative;
-		top: 150px;
+	.buttons {
+		width: 100%;
+		flex-direction: column;
+		align-items: center;
+		margin: 0;
+	}
+
+	.buttons a {
+		width: 100%;
+		padding: 15px;
+		padding-left: 45%;
+		border-top: 1px solid gray;
+		border-bottom: 1px solid gray;
 	}
 
 	.get-started {
-		width: 180px;
+		padding-left: 25px;
+		padding-right: 25px;
+		width: 70%;
 	}
 
 	.content {
-		width: 472px;
-		position: relative;
-		top: 150px;
-		right: 78px;
+		width: 100%;
 	}
 
 	.above-pic {
-		width: 472px;
+		flex-direction: column;
+		align-items: flex-start;
+		width: 100%;
+		left: 0;
+		padding: 10px;
+		padding-top: 50px;
+		padding-bottom: 0;
+		margin: 0;
 	}
 
-	.about {
-		position: relative;
-		top: 175px;
-		right: 235px;
+	.features {
+		width: 100%;
+	}
+
+	.features-div {
+		width: 100%;
+		margin-bottom: 50px;
 	}
 
 	.p-1 {
-		position: relative;
+		width: 100%;
 	}
 
-	.p-2 {
-		position: relative;
-		top: 175px;
-		right: 300px;
+	.about {
+		width: 100%;
+	}
+
+	.about-div {
+		width: 100%;
+		margin-bottom: 50px;
 	}
 
 	.middle-img {
-		position: relative;
-		top: 200px;
-		width: 450px;
+		width: 100%;
+		left: 0;
+	}
+
+	.below-pic {
+		flex-direction: column;
+		align-items: flex-start;
+		width: 100%;
+		left: 0;
+		padding: 10px;
+		/* padding-top: 50px; */
 	}
 
 	.services {
-		position: relative;
-		top: 200px;
+		width: 100%;
 	}
 
-	.service-p {
-		position: relative;
-		top: 200px;
+	.services-div {
+		width: 100%;
+		margin-bottom: 50px;
 	}
 
 	.product {
-		position: relative;
-		top: 400px;
-		right: 200px;		
+		width: 100%;
 	}
 
-	.product-p {
-		position: relative;
-		top: 400px;
-		right: 200px;
+	.product-div {
+		width: 100%;
+		margin-bottom: 50px;
 	}
 
 	.vision {
-		position: relative;
-		top: 600px;
-		right: 400px;
+		width: 100%;
 	}
 
-	.vision-p {
-		position: relative;
-		top: 600px;
-		right: 400px;
+	.vision-div {
+		width: 100%;
+		margin-bottom: 50px;
 	}
 
-	.p2 {
-		border: none;
+	.contact {
+		width: 100%;
+		left: 0;
+		padding: 10px;
 	}
 
-	p {
-		justify-content: none;
-		align-items: none;
-		padding-right: 0;
-	}	
-
-	footer h5 {
-		position: relative;
-		top: 700px;
-		right: 83px;
-		border-top: 1.5px solid black;
-		padding-top: 30px;
+	.address {
+		left: 0;
+		width: 100%;
+		padding: 10px;
 	}
+	
 
-	footer p {
-		position: relative;
-		top: 700px;
-		right: 83px;
-	}
 
-	.copyright {
-		position: relative;
-		top: 710px;
-	}	
+
+	
 }
