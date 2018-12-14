@@ -1,3 +1,523 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: flex;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+/* Index Page CSS Below */
+
+html {
+	margin: 0 auto;
+	padding: 0;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 880px;
+	font-size: 16px;
+}
+
+p {
+    line-height: 1.25;
+}
+
+.nav{
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   padding-left: 23px;
+ }
+
+header {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   height: 50px;
+   width: 800px;
+   align-items: baseline;
+   margin-top: 27px;
+ }
+
+ header nav a{
+   margin: 11px 32px 0px 32px;
+   font-size: 15px;
+   text-decoration: none;
+   color: gray;
+   display: flex;
+   
+ }
+ 
+ header nav a:first-of-type{
+   margin-left: 0;
+   margin-right: 34px;
+ }
+ 
+ .greatidealogo{
+
+    display: flex;
+   margin-top: 7px;
+   margin-right: -78px;
+   margin-bottom: 14px;
+   align-self: baseline;
+   align-self: flex-end;
+
+ }
 
 
+
+
+ button {
+	background-color: white;
+	border: 2px solid black;
+	border-radius: 0px;
+	height: 33px;
+	width: 140px;
+	font-family: inherit;
+	font-size: 12px;
+	margin-top: 18px;
+}
+
+.start-section { 
+    width: 880px;
+    position: relative;
+    margin-bottom: 100px;
+  }
+
+
+ .start-section button {
+   border: 1px solid black;
+   background-color: white;
+   padding: 0 30px 0px 28px;
+   font-family: 'Titillium Web', sans-serif;
+   font-weight: 600;
+   font-size: 17px;
+   width: 170px;
+   height: 34px; 
+   margin-right: -109px;
+   margin-top: 9px;
+ }
+ 
+ h1 {
+	 font-size: 72px;
+     font-weight: 500;
+     padding-left: 106px;
+     padding-top: 5px;
+     flex-shrink: inherit;
+ }
+
+ h2 {
+	 font-weight: 500;
+ }
+ 
+ .left-div {
+   	display: flex;
+	 padding: 50px;
+	 width: 434px;
+	 text-align: center;
+     margin-top: 45px;
+     margin-bottom: 21px;
+	 flex-direction: column;
+     align-items: center;
+     margin-left: -5px;
+   }
+
+   .right-div {
+	   display: flex;
+	   width: 482px;
+	   position: absolute;
+       padding: 0px 61px 0px 60px;
+       margin-top: -390px;
+       right: 0;
+       margin-right: -34px;
+	 }
+
+   .top-section {
+	   border-top: 1px solid black;
+		 margin-bottom: 39px;
+  		padding-top: 39px;
+   }
+
+   .middle-section {
+	   padding: 30px 15px 35px 0;
+	 }
+
+	 .bottom-section {
+		margin-top: 41px;
+		padding-bottom: 48px;
+		border-bottom: 1px solid black;
+        margin-bottom: 39px;
+        margin-left: 4px;
+      }
+      
+      .top-section, .bottom-section {
+		display: flex;
+		flex-direction: row;
+	}
+
+	  
+	
+   .features {
+	   width: 425px;
+	   margin-right: 10px;
+	 }
+
+   .about {
+	   width: 425px;
+	   margin-left: 6px;
+   }
+
+   .servicesgreatidea {
+	   margin-left: 0;
+	   width: 275px;
+   }
+
+   .product {
+	width: 275px;
+	margin-left: 17px;
+   }
+
+   .vision {
+	width: 275px;
+	margin-left: 20px;
+   }
+
+   .footer {
+	   margin-top: 30px;
+	   margin-bottom: 40px;
+   }
+   .copyright {
+	   text-align: center;
+	   display: flex;
+	   flex-direction: column;
+	   justify-content: flex-end;
+	   padding-left: 200px;
+   }
+
+  .small {
+		text-align: center;
+		display: block;
+		margin-top: 90px;
+		padding-bottom: 20px;
+  }
+
+  p, .features, .about, h2, .servicesgreatidea, .product, .vision {
+    display: flex;
+    flex-direction: column;
+    vertical-align: top;
+  }
+ 
+
+/* Services Page  Only CSS Below */
+
+.services-header-img {   /* Services Page */
+    margin-top: 20px;
+}
+
+.services-header { /* Services Page */
+    margin-top: 32px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid black;
+   
+
+}
+
+.services div { /* Services Page */
+   background-color: #F4F3F4;
+   width: 420px;
+   padding: 20px;
+   border: 1px solid black;
+   margin-bottom: 40px;
+}
+
+.services, .facts { /* Services Page */
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.logo { /* Services Page */
+    display: flex;
+    right: 0;
+    padding-left: 90px;
+}
+
+   .facts p { /* Services Page */
+       width: 400px;
+   }
+
+   .services p, .facts p { /* Services Page */
+	margin-top: 17px;	
+}
+
+.facts ul { /* Services Page */
+    margin-top: 27px;
+    list-style-type: square;
+    list-style-position: inside;
+	margin-left: 1px;
+}
+.facts li { /* Services Page */
+	margin-top 13px;
+}
+
+.services { /* Services Page */
+    border-bottom: 2px solid black;
+
+ }
+.servicesh1{ /* Services Page */
+ font-size: 26px;
+ margin-bottom: 14px;
+}
+
+.services h2, .facts h2 { /* Services Page */
+ margin-top: 2px;
+}
+
+
+/******* Media Query's Below /*********
+
+/* Tablet Portrait */
+
+@media (max-width: 800px) {
+ 
+    .container {
+        width: 800px;
+    }
+
+    body {
+        width: 100%;
+        padding: 0 12px;
+    }
+
+    .compleximage {
+        display: none;
+        
+    }
+
+    header {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        position: relative;
+    }
+
+     header nav {
+        width: 100%;
+        justify-content: space-evenly;
+        display: flex;
+        order: 2;
+    }
+
+    header .greatidealogo {
+        order: 1;
+        /* width: 200px;
+        height: 60px; */
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 12px;
+        /* display: block; */
+     }
+
+    .start-section .left-div {
+        /* display: block; */
+        display: flex;
+        margin-left: 127px;
+        margin-top: 69px;
+    }
+
+    main {
+        margin-top: -51px;
+        margin-right: 27px;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .container {
+        max-width: 500px;
+    }
+    body {
+        width: 100%;
+        padding: 0 12px;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    header .greatidealogo {
+        /* order: 1; */
+        margin-bottom: 30px;
+        padding-bottom: 62px;
+        margin-top: -16px;
+        padding-top: 2px;
+    }
+
+    .greatidealogo{
+
+    }
+
+.nav {
+    /* order: 2; */
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 107px;
+    width: 483px;
+}
+
+header nav a:first-of-type {
+    margin-right: 0px;
+    border-top: 1px solid grey;
+    padding-top: 16px;
+}
+
+header nav a{
+    border-bottom: 1px solid grey;
+    margin-top: 0px;
+    margin-bottom: 18px;
+    width: 118%;
+    display: block;
+    text-align: center;
+    padding: 0px 0px 26px 0px;
+
+}
+
+.start-section {
+    padding-bottom: 0px;
+    padding-top: 271px;
+}
+
+.start-section .left-div {
+    /* display: block; */
+    display: flex;
+    margin-left: -26px;
+    margin-top: 69px;
+    }
+
+.top-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.features{
+    padding-bottom: 49px;
+}
+.middle-img {
+    margin-left: 2px;
+    width: 103%;
+}
+
+.bottom-section {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+
+}
+
+
+.servicesgreatidea {
+    padding-bottom: 69px;
+    margin-top: -37px;
+}
+
+.servicesgreatidea p {
+    width: 170%;
+}
+
+.product p {
+    width: 170%;
+}
+
+.vision p {
+    width: 170%;
+}
+
+.product {
+    margin-left: 0px;
+    margin-bottom: 54px;
+}
+
+.vision {
+    margin-left: 0px;
+}
+
+
+.footer {
+
+    margin-top: 0px;
+}
+
+.copyright {
+]
+    padding-left: 0px;
+
+}
+
+}
