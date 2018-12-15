@@ -80,22 +80,32 @@ html {
     width: 100%;
     max-width: 880px;
     margin: 0 auto;
-    border: 3px solid yellow;
+    border: 8px solid orange;
 }
-
-
 
 .navigation {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    align-items: baseline;
+}
+
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
     border: 5px solid red;
 }
 
-.navigation a {
+nav a {
     text-decoration: none;
     font-size: 1.4rem;
     color: gray;
+}
+
+.logo {
+    border: 3px solid lime;
 }
 
 
@@ -199,7 +209,9 @@ p {
 }
 
 footer {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
     width: 100%;
     
 }
@@ -207,13 +219,18 @@ footer {
   display: flex;
   margin-top: 40px;
   flex-direction: column;
+   border: 3px solid rebeccapurple;
   /* align-content: space-between; */
 }
  .copyright {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
     width: 100%;
     padding-bottom: 60px;
     text-align: center;
+    border: 3px solid lime;
+
 }
 
 .one {
@@ -381,6 +398,7 @@ ul {
 
 
 button {
+    max-width: 0 150px;
 	background-color: white;
     border: 1.5px solid black;
     padding: 5px 35px;
@@ -410,13 +428,22 @@ button {
         font-size: 80px;
     }
 
-    .navigation .logo {
+    .navigation {
         display: flex;
-        align-self: flex-start;
-        background-color: red;
+        flex-direction: column-reverse;
+        justify-content: center;
+        margin: 0 auto;
     }
 
-    .navigation {
+    .logo {
+        display: flex;
+        justify-content: center;
+        max-width: 120px;
+        width: 100%;
+    }
+
+
+    nav {
         width: 100%;
         display: flex;
         flex-wrap: wrap-reverse;
@@ -436,10 +463,95 @@ button {
         display: none;
     }
 
+    button {
+        max-width: 0 100px;
+        width: 100%;
+        background-color: white;
+        border: 1.5px solid black;
+        padding: 5px 35px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        margin: 10px 0 10px 0;
+    }
+
    
   }
 
   @media (max-width: 500px) {
+
+    .container {
+        width: 100%;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        margin: 0 auto;
+    }
+
+    h1 {
+
+        font-size: 80px;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: column-reverse;
+
+        max-width: 500px;
+        width: 100%;
+        align-items: center;
+    }
+
+    .navigation a {
+        display: flex;
+        justify-content: center;
+        border: 1px solid black;
+        max-width: 500px;
+        width: 100%;
+        padding: 20px 0;
+        font-size: 2rem;
+    }
+
+    nav {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .top-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Features {
+        margin: 20px 0;
+    }
+
+    .About {
+        margin: 20px 0;
+    }
+
+    .bottom-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+     .Services {
+        margin: 20px 0;
+    }
+
+     .Product {
+        margin: 20px 0;
+    }
+
+     .Vision {
+        margin: 20px 0;
+    }
+
    
   }
 
