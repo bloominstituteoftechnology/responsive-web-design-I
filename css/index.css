@@ -1,3 +1,242 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
 
 
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+
+
+
+.container {
+	width: 876px;
+    margin: 0 auto;
+  
+    
+}
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+
+.navigation {
+    margin-top: 10px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: rgb(128,128,128);
+    padding-right: 55px;
+    margin-top: 25px;
+    width: 100%;
+}
+
+
+
+
+.innovation-section {
+	margin-bottom: 40px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.innovation-block {
+	align-self: center;
+}
+
+.innovation-text {
+    font-size: 70px;
+    text-align: center;
+}
+
+.button {
+    margin-left: 90px;
+    padding: 0 20px;
+    border: 1px solid black;
+}
+
+
+.upper-section {
+    display: flex;
+    flex-direction: row;
+    margin: 30px 0;
+}
+
+.features {
+    margin-right: 20px;
+}
+
+/* 
+.middle-img {
+	margin-bottom: 50px;
+} */
+
+
+.lower-section {
+    display: flex;
+    flex-direction: row;
+    margin: 30px 0;
+}
+
+.services, .product {
+	padding-right: 20px;
+	
+}
+
+
+.contact {
+	margin: 30px 0;
+	
+}
+
+footer {
+	text-align: center;
+}
+
+@media (max-width: 800px) {
+    .container {
+        width: 760px;
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo {
+        order: -1;
+        margin: 20px 0;
+    }
+    .innovation-block {
+        margin: 30px 0;
+        margin-left: 50%;
+    }
+    .header-img {
+        visibility: hidden;
+    }
+    .middle-img {
+        width: 100%;
+    }
+    
+}
+
+@media (max-width: 500px) {
+    .container {
+        width: 400px;
+        border: 1px solid grey;
+    }
+    article {
+        padding: 10px;
+    }
+    .logo {
+        width: 40%;
+    }
+    header {
+        width: 100%;
+    }
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    
+    }
+    .navigation a {
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        padding: 20px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+
+    .innovation-block {
+        
+        margin-left: 80%;
+    }
+
+    .upper-section {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        padding: 20px 0;
+    }
+    .features, .services, .product, .vision {
+        margin-bottom: 20px;
+    }
+
+    .lower-section {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+    /* .contact{
+        margin-left: 20px;
+    } */
+}
