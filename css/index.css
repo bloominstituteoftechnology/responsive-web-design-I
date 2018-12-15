@@ -1,3 +1,318 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+
+
+.container {
+	width: 800px;
+	margin: 0 auto;
+}
+
+.navigation .logo {
+	display: flex;
+	justify-content: flex-end;
+}
+
+header .navigation {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 15px;
+}
+
+.navigation a {
+	color: gray;
+	text-decoration: none;
+	font-size: 16px;
+	
+}
+
+.cta {
+	display: flex;
+	width: 800px;
+	justify-content: center; 
+	align-items: center;
+}
+
+.header-img {
+	padding: 25px 0;
+}
+
+.middle-img {
+    width: 100%;
+}
+
+.cta-header {
+    display: flex; 
+    flex-direction: column;
+	
+	text-align: center;  
+	font-size: 64px;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.left .cta-header .innovation {
+    display: flex;
+}
+
+.left .cta-button {
+	width: 67%;
+	height: 35px;
+	font-size: 1.13rem; 
+    border: 1px solid black;
+    background-color: white;
+}
+
+.top-section {
+	display: flex;
+	padding: 25px 0;
+	border-top: 1px solid black;
+	align-items: center;
+}
+
+.bottom-section {
+	display: flex;
+	padding: 25px 3px;
+	border-bottom: 1px solid black;
+	justify-content: center;
+}
+
+.footer {
+	display: flex;
+	padding: 25px 0;
+}
+
+.copyright {
+    padding-left: 19rem;
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        margin: 0 auto;
+    }
+
+    header .navigation {
+        margin-top: 20px;
+        margin-right: 20px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navigation a {
+        justify-content: space-between;
+        margin: 0 20px;
+    }
+
+    .navigation .logo {
+        align-self: center;
+        order: -1;
+        margin-bottom: 25px;
+        padding: 0 19rem;
+    }   
+
+    .header-img {
+        display: none;
+    }
+
+    .top-section {
+        margin-left: 20px;
+        margin-right: 20px;
+        border-top: 1px solid black;
+        align-items: center;
+    }
+
+    .about-section {
+        margin-left: 20px;
+    }
+
+
+    .cta .left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .cta-header {
+        display: flex;
+        flex-direction: column;
+        margin: 10% 0;
+
+    }
+
+    .left .cta-button {
+        width: 150px;
+        background-color: white;
+        height: 35px;
+        border: 1px solid black;
+        font-size: 1.13rem;
+        margin-bottom: 50px;
+    }
+
+    .middle-img {
+        width: 95%;
+        margin: 0 20px;
+    }
+
+    .bottom-section {
+        margin-left: 20px;
+        margin-right: 20px;
+        border-bottom: 1px solid black;
+        align-items: center;
+    }
+
+    .services-section, .product-section, .vision-section {
+        padding: 10px;
+        justify-content: center
+    }
+
+    .contact-section {
+        margin-left: 20px;
+    }
+
+    .copyright {
+        padding-left: 19rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        margin: 0 auto;
+    }
+
+    header .navigation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navigation .logo {
+        margin-bottom: 15px;
+        padding: 0 19rem;
+    }
+
+    .navigation a {
+        border-top: 1px solid black;
+        
+        width: 100%;
+        padding: 10px;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .contact {
+        border-bottom: 1px solid black;
+    }
+
+   .cta-header {
+       display: flex;
+       flex-direction: column;
+       padding-bottom: 15px;
+   }
+
+   .left .cta-button {
+       width: 67%;
+       justify-content: center;
+       background-color: white;
+       height: 45px;
+       font-size: 1.13rem;
+   }
+
+   .top-section {
+       flex-direction: column;
+       padding: 15px;
+       line-height: 1.4;
+   }
+
+   .features-section {
+       margin: 15px 0;
+   }
+
+   .about-section {
+       margin: 15px 0;
+   }
+
+   .middle-img {
+       padding: 0 15px;
+       
+   }
+
+   .bottom-section {
+       display: flex;
+       flex-direction: column;
+       padding: 15px;
+       line-height: 1.4;
+   }
+
+   .copyright {
+       padding-left: 19rem;
+   }
+}
