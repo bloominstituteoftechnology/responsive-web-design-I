@@ -214,6 +214,11 @@ h5 {
   display: flex;
   justify-content: space-between;
   padding-top: 30px;
+  margin: 0 5px; 
+}
+
+.container .content-rows{ 
+  margin: 0 5px; 
 }
 
 .container .content-row {
@@ -228,6 +233,10 @@ h5 {
   justify-content: space-between;
   padding-bottom: 55px;
   border-bottom: 2px solid black;
+}
+
+.container .middle-img { 
+  margin: 0 5px; 
 }
 
 .container .content-box {
@@ -270,9 +279,9 @@ h5 {
     margin-bottom: 20px;
   }
 
-  .container nav {
+  .container header nav {
     display: flex;
-    width: 100vw;
+    width: 768px; 
     flex-direction: row;
     justify-content: space-between;
   }
@@ -285,12 +294,10 @@ h5 {
     justify-content: center;
   }
 
-  .container .nav-a-container {
-    margin: 0;
-    display: flex;
-    width: auto;
-    justify-content: space-between;
+  .container .middle-img { 
+    width: 768px; 
   }
+
 }
 
 @media (max-width: 400px) {
@@ -317,11 +324,12 @@ h5 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 400px; 
   }
 
   .container header a {
     text-align: center;
-    width: 100vw;
+    width: 400px; 
     border-bottom: 1px solid lightgray;
   }
 
@@ -342,16 +350,23 @@ h5 {
     margin: 0 5px; 
   }
 
-  .container .content-boxes {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 5px; 
-  }
-  .container .middle-img { 
-    margin: 0 5px; 
-  }
-
   .container .contact-box { 
     padding-bottom: 40px; 
+  }
+
+  .container .middle-img{ 
+    width: 395px; 
+  }
+
+  .container .content-row { 
+    width: 395px; 
+  }
+
+  .container .content-boxes { 
+    flex-direction: column; 
+  }
+
+  .container .content-box { 
+    width: 395px; 
   }
 }
