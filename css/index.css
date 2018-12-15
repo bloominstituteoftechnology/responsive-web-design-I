@@ -1,3 +1,254 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
 
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.super-container {
+	margin: 0 auto;
+	width: 900px;
+}
+header {
+	border-bottom: 2px solid black;
+	margin-bottom: 50px;
+}
+nav {
+	display:flex;
+	width: 900px;
+	flex-flow:row;
+	justify-content: space-evenly;
+}
+nav a {
+	text-decoration: none;
+	color: gray;
+	font-family: 'Tiillium', sans-serif;
+}
+.nav-links {
+	display: flex;
+	width: 700px;
+	justify-content: space-evenly;
+	align-items: flex-end;
+}
+nav img {
+	width: 200px;
+}
+
+.electric-boogaloo {
+	margin: 50px;
+	/* border: 1px solid rebeccapurple; */
+	display: flex; 
+	justify-content: space-around;
+}
+.marketing {
+	/* border: 1px solid chartreuse; */
+	padding: 50px;
+	display: flex;
+	flex-flow: wrap column;
+	align-items: center;
+}
+h1 {
+	font-size: 72px;
+	text-align: center;
+	display: flex;
+	flex-flow: wrap column;
+}
+
+button {
+	background: white;
+	border: 1px solid black;
+	width: 160px;
+	height: 30px;
+	font-size: 16px;
+}
+.header-img {
+	/* border: 1px solid crimson; */
+}
+.container {
+	border-bottom: 3px solid black;
+	width: 900px;
+	margin: 0 auto;
+}
+.more-info {
+	/* border: 1px solid chartreuse; */
+	display: flex;
+	margin-bottom: 20px;
+}
+.mid-page {
+	display: flex;
+	flex-flow: wrap row;
+	justify-content: center;
+}
+.even-more-info {
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
+}
+.even-more-info section {
+	/* border: 1px solid crimson; */
+	width: 290px;
+	margin: 20px 0px; 
+}
+p {
+	line-height: 1.1;
+	font-size: 16px;
+}
+
+footer {
+	/* border: 1px solid rebeccapurple; */
+	width: 900px;
+	margin: 40px auto;
+}
+.contact {
+	/* border: 1px solid chartreuse; */
+	width: 200px;
+}
+.contact p {
+	margin : 5px 0;
+}
+.copyright {
+	/* border: 1px solid crimson; */
+	text-align: center;
+	font-family: cursive;
+}
+
+/* Tablet view */
+@media (max-width: 800px) {
+	.header-img {
+		display: none;
+	}
+	.top-nav {
+		flex-flow: column wrap;
+		align-items: center;
+	}
+	.logo-img {
+		order: 1;
+		margin: 40px;
+		/* border: 1px solid crimson; */
+	}
+	.nav-links {
+		order: 2;
+		justify-content: space-between;
+		/* border: 1px solid chartreuse; */
+	}
+	.super-container {
+		width: 750px;
+	}
+	nav {
+		width: 750px;
+	}
+	.container {
+		width: 750px;
+	}
+	.mid-page-img{
+		width: 750px;
+	}
+	footer {
+		width: 750px;
+		/* border: 10px solid chartreuse; */
+	}
+}
+
+@media (max-width: 500px) {
+	.nav-links {
+		flex-flow: column wrap;
+		/* border: 1px solid red; */
+		align-items: center;
+		width: 500px;
+	}
+	nav a {
+		border: 1px solid grey;
+		padding: 20px;
+		width: 500px;
+		text-align: center;
+		font-size: 24px;
+	}
+	.super-container {
+		width: 490px;
+	}
+	nav {
+		width: 500px;
+	}
+	.container {
+		width: 490px;
+	}
+	.mid-page-img{
+		width: 490px;
+	}
+	footer {
+		width: 490px;
+	}
+	.more-info {
+		flex-flow : column wrap;
+	}
+	.more-info section {
+		width: 490px;
+		margin: 20px 0px; 
+	}
+	.even-more-info {
+		flex-flow: column wrap;
+	}
+	.even-more-info section {
+		width: 490px;
+	}
+	header { 
+		margin-bottom: 10px;
+	}
+}
