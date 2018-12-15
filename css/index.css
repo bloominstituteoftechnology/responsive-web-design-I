@@ -65,23 +65,23 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Your code starts here! */
-html { 
-    font-size: 62.5%;
-}
+
 
 
 
 .container {
 	width: 876px;
-	margin: 0 auto;
+    margin: 0 auto;
+  
+    
 }
 
 
 header {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    margin: 20px 0;
+    justify-content: space-between;
+    margin: 30px 0;
 }
 
 
@@ -90,9 +90,11 @@ header {
 }
 
 .navigation a {
+    text-decoration: none;
     color: rgb(128,128,128);
     padding-right: 55px;
     margin-top: 25px;
+    width: 100%;
 }
 
 
@@ -171,47 +173,70 @@ footer {
         order: -1;
         margin: 20px 0;
     }
-    .innovation-section {
+    .innovation-block {
         margin: 30px 0;
+        margin-left: 50%;
     }
     .header-img {
         visibility: hidden;
     }
-
+    .middle-img {
+        width: 100%;
+    }
     
 }
 
 @media (max-width: 500px) {
-    .features-about {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        
+    .container {
+        width: 400px;
+        border: 1px solid grey;
     }
-    .bottom-content {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
+    article {
+        padding: 10px;
+    }
+    .logo {
+        width: 40%;
+    }
+    header {
+        width: 100%;
     }
     .navigation {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        width: 100%;
     
     }
     .navigation a {
+        border-top: 1px solid black;
         border-bottom: 1px solid black;
-        order: 2;
-        padding-left: 325px;
+        padding: 20px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+
+    .innovation-block {
+        
+        margin-left: 80%;
+    }
+
+    .upper-section {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        padding: 20px 0;
+    }
+    .features, .services, .product, .vision {
+        margin-bottom: 20px;
+    }
+
+    .lower-section {
+        display: flex;
+        flex-direction: column;
         
     }
     
-    .logo {
-        order: 1;
-        padding-left: 100px;
-        border: 2px solid blue;
-    }
-    .contact{
+    /* .contact{
         margin-left: 20px;
-    }
+    } */
 }
