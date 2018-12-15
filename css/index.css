@@ -77,10 +77,12 @@ html {
 
 .container {
     font-size: 1.6rem;
+    width: 100%;
     max-width: 880px;
     margin: 0 auto;
     border: 3px solid yellow;
 }
+
 
 
 .navigation {
@@ -146,12 +148,17 @@ p {
     font-size: 1.5rem;
 }*/
 
+.main-content {
+    border: 5px solid red;
+}
+
 .top-content {
     display: flex;
     margin-top: 20px;
     margin-bottom: 20px;
     flex-direction: row;
     justify-content: space-between;
+    border: 5px solid lime;
     /* padding: 20px 20px 20px; */
 }
 
@@ -172,6 +179,7 @@ p {
     margin-bottom: 20px;
     flex-direction: row;
     justify-content: space-between;
+    border: 5px solid blue;
     /* padding: 20px 20px 20px; */
 }
 
@@ -387,7 +395,7 @@ button {
 @media (max-width: 800px) {
 
     .container {
-        width: 800px;
+        width: 100%;
     }
 
     header {
@@ -402,8 +410,18 @@ button {
         font-size: 80px;
     }
 
+    .navigation .logo {
+        display: flex;
+        align-self: flex-start;
+        background-color: red;
+    }
+
     .navigation {
         width: 100%;
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: space-around;
+
 
     }
 
