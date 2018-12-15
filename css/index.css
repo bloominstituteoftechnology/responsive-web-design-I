@@ -158,19 +158,13 @@ h5 {
   /* border: 1px solid red;  */
   display: flex;
   justify-content: space-between;
-  padding: 15px;
-  align-items: center;
+  margin-top: 30px;
 }
 
-.container .nav-a-container {
-  margin-left: -112px;
+.container header nav {
   display: flex;
-  width: 637px;
   justify-content: space-between;
-}
-
-.container .logo {
-  align-self: flex-end;
+  width: 900px; 
 }
 
 .container .tablet-logo {
@@ -277,9 +271,10 @@ h5 {
   }
 
   .container nav {
-    width: 768px;
+    display: flex;
+    width: 100vw;
     flex-direction: row;
-    align-items: space-between;
+    justify-content: space-between;
   }
 
   .container .tablet-logo {
@@ -303,6 +298,10 @@ h5 {
     width: 400px;
   }
 
+  .container .main-heading { 
+    padding-bottom: 30px; 
+  }
+
   .container .main-image {
     display: none;
   }
@@ -310,29 +309,49 @@ h5 {
   .container .logo {
     display: none;
   }
+
   .container header {
+    margin-top: 10px;
+  }
+  .container header nav {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .container header a { 
-    text-align: center; 
-    width: 100vw; 
-    border-bottom: 1px solid lightgray; 
+  .container header a {
+    text-align: center;
+    width: 100vw;
+    border-bottom: 1px solid lightgray;
   }
 
-  .container header a:first-child { 
-    border-top: 1px solid lightgray; 
+  .container header a:first-child {
+    border-top: 1px solid lightgray;
   }
 
-  .container .nav-a-container {
-    flex-direction: column;
-    align-items: center;
+  .container header img {
+    margin: 0 auto;
+    padding-bottom: 10px;
   }
 
-  .container header img { 
-    margin: 0 auto; 
-    padding-bottom: 10px; 
+  .container .top-rows {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 30px;
+    margin: 0 5px; 
+  }
+
+  .container .content-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 5px; 
+  }
+  .container .middle-img { 
+    margin: 0 5px; 
+  }
+
+  .container .contact-box { 
+    padding-bottom: 40px; 
   }
 }
