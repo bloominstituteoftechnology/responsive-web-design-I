@@ -57,6 +57,7 @@ html, body {
     font-family: 'Titillium Web', sans-serif;
 }
 
+
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
@@ -64,120 +65,92 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Your code starts here! */
-
+html { 
+    font-size: 62.5%;
+}
 
 
 
 .container {
-	width: 880px;
+	width: 876px;
 	margin: 0 auto;
 }
 
 
-p {
-	padding-top: 10px;
-	padding-bottom: 10px;
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 20px 0;
 }
 
 
 .navigation {
-	display: inline-block;
-	vertical-align: top;
-	width: 88%;
+    margin-top: 10px;
 }
 
-.navigation .logo {
-	display: inline-block;
-	margin-left: 20px;
-	margin-top: 15px;
-}
 .navigation a {
-	display: inline-block;
-	margin: 0 20px 10px 20px;
-	color: grey;
-	
+    color: rgb(128,128,128);
+    padding-right: 55px;
+    margin-top: 25px;
 }
 
 
 
 
-.innovation {
-	margin-bottom: 20px;
-	display: inline-block;
-	width: 100%;
-	height: auto;
-	border-bottom: 1px solid grey;
+.innovation-section {
+	margin-bottom: 40px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
-.innovation .header-text {
-	font-family: 'Bangers', cursive;
-	letter-spacing: 1px;
-	display: inline-block;
-	font-size: 80px;
-	text-align: center;
-	margin-top: 50px;
-	padding: 0 75px;
-	width: 50%;
+.innovation-block {
+	align-self: center;
 }
 
-.innovation button {
-	border: 1px solid black;
-	background: white;
-	vertical-align: top;
-	margin-top: 6px;
-	padding: 8px 44px;
-
+.innovation-text {
+    font-size: 70px;
+    text-align: center;
 }
 
-
-.innovation .header-img {
-	display: inline-block;
-	border-radius: 50%;
-	vertical-align: top;
-	width: 300px;
-	margin-top: 50px;
-	margin-left: 50px;
-	
+.button {
+    margin-left: 90px;
+    padding: 0 20px;
+    border: 1px solid black;
 }
 
 
 .upper-section {
-	
-	padding: 0 10px;
-	width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 30px 0;
 }
 
-.upper-section .features-about .text-content {
-	width: 410px;
-	display: inline-block;
-	margin-left: 10px;
-	margin-bottom: 50px;
+.features {
+    margin-right: 20px;
 }
 
-
+/* 
 .middle-img {
 	margin-bottom: 50px;
-}
+} */
 
 
 .lower-section {
-	width: 100%;
-	padding: 0 10px;
-	border-bottom: 1px solid grey;
+    display: flex;
+    flex-direction: row;
+    margin: 30px 0;
 }
 
-.lower-section .bottom-content .text-content2 {
-	width: 31%;
-	display: inline-block;
-	margin-left: 13px;
-	margin-bottom: 25px;
+.services, .product {
+	padding-right: 20px;
 	
 }
 
 
 .contact {
-	margin-bottom: 20px;
-	margin-top: 20px;
+	margin: 30px 0;
 	
 }
 
@@ -186,42 +159,26 @@ footer {
 }
 
 @media (max-width: 800px) {
-    .innovation .header-img {
-        display: none;
+    .container {
+        width: 760px;
     }
-    .innovation .header-text {
+    header {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        margin-left: 175px;
-    
+        align-items: center;
     }
-    .navi {
-        display: flex;
-        flex-direction: column;
-    }
-    .navigation {
-        display: flex;
-       justify-content: center;
-        
-    }
-    .navigation a {
-        width: 786px;
-        order: 4;
-    }
-    .contact {
-        margin-left: 20px;
-    }
-    .middle-img {
-        margin-left: 20px;
-    }
-    
     .logo {
-        order: 3;
-            background-color:grey;
-        margin-left: 325px;
-        padding: 20px;
+        order: -1;
+        margin: 20px 0;
     }
+    .innovation-section {
+        margin: 30px 0;
+    }
+    .header-img {
+        visibility: hidden;
+    }
+
+    
 }
 
 @media (max-width: 500px) {
