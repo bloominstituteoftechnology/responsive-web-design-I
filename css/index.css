@@ -65,44 +65,87 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
+* {
+    box-sizing: border-box;
+/*    background-color: rebeccapurple;
+*/}
+
+html {
+    font-size: 62.5%;
+}
+
+
 .container {
-    width: 1000px;
+    font-size: 1.6rem;
+    max-width: 880px;
     margin: 0 auto;
+    border: 3px solid yellow;
 }
 
 
 .navigation {
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
+    border: 5px solid red;
 }
 
 .navigation a {
     text-decoration: none;
+    font-size: 1.4rem;
+    color: gray;
 }
 
-/* .navigation a {
-    display: flex;
-    padding: 30px 90px;
-} */
+
+
+.header-img, .middle-img {
+   
+    width: 100%
+}
+
+/*.logo {
+    margin-left: 20px;
+    border: 3px solid purple;
+    */
+}
+
+
 
 h1 {
-    font-size: 60px;
+    display: flex; 
+    width: 100%;
 }
 
 .blockone {
     padding: 60px;
+    font-size: 6rem;
+    text-align: center;
+    border: 3px solid orange;
+}
+
+.blocktwo {
+    border: 3px solid green;
+
 }
 
 header {
     display: flex;
     flex-direction: row;
-    /* border: 1px solid blue; */
-    width: 100%;
     justify-content: center;
     margin-top: 70px;
     margin-bottom: 50px;
+    border-bottom: 2px solid black;
 
 }
+
+/*h2 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1.5rem;
+}*/
+
 .top-content {
     display: flex;
     margin-top: 20px;
@@ -134,7 +177,7 @@ header {
 
 .Services {
     margin-right: 20px;
-}
+   }
 
 .Product {
     margin-right: 20px;
@@ -175,7 +218,7 @@ footer {
 
 .three {
     padding: 10px 0;
-} */
+} 
 
 
 /* .categories {
@@ -192,9 +235,6 @@ footer {
     font-size: 30px;
 }
 
-.logo {
-    margin-left: 20px;
-}
 
 .Digital-Design {
     display: flex;
@@ -216,17 +256,13 @@ footer {
 
 
 
-.nav {
+/*.nav {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
     text-decoration: none;
-}
+}*/
 
-.navigation a {
-    text-decoration: none;
-    color: gray;
-}
 
 
 .cont {
@@ -338,8 +374,8 @@ ul {
 
 button {
 	background-color: white;
-    border: 2px solid black;
-    padding: 10px 35px;
+    border: 1.5px solid black;
+    padding: 5px 35px;
     text-align: center;
     text-decoration: none;
     font-size: 16px;
@@ -364,6 +400,11 @@ button {
     h1 {
 
         font-size: 80px;
+    }
+
+    .navigation {
+        width: 100%;
+
     }
 
     .blockone {
