@@ -162,11 +162,11 @@ h5 {
   align-items: center;
 }
 
-.container .nav-a-container { 
-  margin-left: -112px; 
+.container .nav-a-container {
+  margin-left: -112px;
   display: flex;
-  width: 637px; 
-  justify-content: space-between; 
+  width: 637px;
+  justify-content: space-between;
 }
 
 .container .logo {
@@ -265,36 +265,74 @@ h5 {
     display: none;
   }
 
-  .container header { 
-	  display: flex; 
-	  flex-direction: column; 
-	  align-items: center; 
+  .container header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
-  .container header img { 
-    margin-top: 30px; 
-    margin-bottom: 20px; 
+  .container header img {
+    margin-top: 30px;
+    margin-bottom: 20px;
   }
 
-  .container nav { 
-	  width: 768px; 
-	  flex-direction: row;
-	  align-items: space-between; 
+  .container nav {
+    width: 768px;
+    flex-direction: row;
+    align-items: space-between;
   }
 
   .container .tablet-logo {
-	display: flex;
+    display: flex;
   }
 
   .container .main-heading {
     justify-content: center;
   }
 
-  .container .nav-a-container { 
-    margin: 0; 
+  .container .nav-a-container {
+    margin: 0;
     display: flex;
-    width: auto; 
-    justify-content: space-between; 
+    width: auto;
+    justify-content: space-between;
   }
-  
+}
+
+@media (max-width: 400px) {
+  .container {
+    width: 400px;
+  }
+
+  .container .main-image {
+    display: none;
+  }
+
+  .container .logo {
+    display: none;
+  }
+  .container header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container header a { 
+    text-align: center; 
+    width: 100vw; 
+    border-bottom: 1px solid lightgray; 
+  }
+
+  .container header a:first-child { 
+    border-top: 1px solid lightgray; 
+  }
+
+  .container .nav-a-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container header img { 
+    margin: 0 auto; 
+    padding-bottom: 10px; 
+  }
 }
