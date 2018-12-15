@@ -1,3 +1,358 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+.container {
+	margin: 0 auto;
+	height: 1536px;
+	max-width: 1080px;
+	width : 1080px;
+	border: solid 1px black;
+}
+
+header nav {
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-evenly;
+}
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    width: 70%;
+    justify-content: space-evenly;
+}
+
+header nav ul a {
+    font-weight: bold;
+    color: silver;
+    text-decoration: none;
+    padding: 0 30px 0 30px;
+    font-weight: bold;
+}
+
+header nav a {
+    display: flex;
+    align-self: flex-end;
+}
+
+div.second-part {
+	display: flex;
+	text-align: center;
+	margin-top: 77px;
+    margin-bottom: 77px;
+    justify-content: space-evenly;
+}
+
+div.header-anchor{
+    display: flex;
+    flex-direction: column;
+    margin-top: 77px;
+    align-items: center;
+}
+
+div.second-part h1 {
+	font-size: 75px;
+}
+
+div.second-part .header-anchor .get-started {
+    width: 160px;
+    height: 30px;
+    text-decoration: none;
+    border: solid 1px black;
+    padding-top: 5px;
+    color: gray;
+}
+
+hr {
+	width: 990px;
+}
+
+.top-content {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-evenly;
+}
+
+section .left-side, .right-side {
+    padding: 15px;
+    margin-left: 33px;
+    height: 160px;
+    width: 486px;
+}
+
+.middle-img {
+    display: flex;
+    justify-content: center;
+}
+
+div.middle-img img {
+    width: 90%;
+}
+
+section.bottom-content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ section.bottom-content div {
+    margin-top: 30px;
+    width: 285px;
+    margin-bottom: 20px;
+}
+
+section.contact div {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+}
+
+footer {
+	text-align: center;
+}
+
+/* When the width of the display is 800px apply these styles */
+@media (max-width: 800px){
+    .container {
+        width: 800px;
+    }
+    header nav {
+        flex-direction: column-reverse;
+    }
+
+    header nav ul {
+        align-self: center;
+    }
+    
+    header nav a {
+        align-self: center;
+        margin-bottom: 20px;
+    }
+
+    hr {
+        width: 736px;
+    }
+
+    
+    div.second-part {
+        justify-content: center;
+    }
+
+    .second-part img {
+        display: none;
+    }
+
+    div.header-anchor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    align-items: center;
+    }
+
+    img.middle-img {
+        width: 720px;
+        margin-left: 37px;
+    }
+
+    section .left-side, .right-side {
+        height: 160px;
+        width: 350px;
+    }
+
+    .bottom-left, .bottom-middle, .bottom-right {
+        display: flex;
+        flex-direction: column;
+    }
+
+    section.bottom-content div {
+        margin-top: 20px;
+        width: 190px;
+        margin-bottom: 20px;
+    }
+
+    section.contact div {
+        margin-left: 48px;
+        margin-top: 20px;
+    }
+
+    .contact {
+        margin-top: 7%;
+    }
+
+    footer {
+        margin-top: 5%
+    }
+}
+
+    @media (max-width: 500px) {
+        .container {
+            height: 2047px;
+            width: 500px;
+        }
+
+        header nav {
+            margin-top: 0;
+            width: 100%;
+        }
+
+        header nav ul {
+            display: flex;
+            flex-direction: column;
+            width: 100%
+
+        }
+        
+        header nav a {
+            margin-right: 0;
+            padding: 20px;
+            margin-bottom: 0;
+        }
+
+        header nav ul a {
+            display: flex;
+            justify-content: center;
+            border-bottom: solid 1px black;
+            width: 100%;
+            padding: 20px;
+            margin-top: 0;
+            margin-left: 0;
+            font-size: 20px;
+        }
+
+        header nav ul a.services {
+            border-top: solid 1px black;
+        }
+        
+
+        div.second-part {
+            display: flex;
+            text-align: center;
+            margin-bottom: 77px;
+            margin-top: 50px;
+        }
+
+        div.second-part h1 {
+            font-size: 70px;
+        }
+
+        div.second-part .header-anchor .get-started {
+            width: 170px;
+            margin-top: 17px;
+        }
+
+        hr {
+            width: 92%;
+        }
+
+        .top-content {
+            flex-direction: column;
+            margin-top: 12%;
+        }
+
+        section .left-side, .right-side {
+            height: 150px;
+            width: 450px;
+            padding: 0;
+            margin-left: 4%;
+        }
+
+        .middle-img {
+            height: 5%;
+        }
+
+        .bottom-content {
+            flex-direction: column;
+            margin-top: 12%;
+        }
+
+        section.bottom-content div {
+            height: 150px;
+            width: 450px;
+            display: flex;
+            flex-direction: column;
+            margin-left: 4%;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        section.contact div {
+            margin-left: 4%;
+            margin-top: 0;
+        }
+
+        .contact {
+            margin-top: 7%;
+        }
+
+        footer {
+            margin-top: 6%
+        }
+    }
+}
+
 
 
