@@ -285,5 +285,65 @@ button {
     max-width: 760px;
   }
 
+}
+
+/* Mobile */
+
+@media screen and (max-width: 500px) {
+
+  nav {
+      display: flex;
+      align-items: stretch;
+      padding-top: 30px;
+  }
+
+.logo-container {
+  text-align: center;
+}
+
+.logo-container img {
+  width: 260px;
+  padding-bottom: 30px;
+}
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+  }
+
+ .menu a {
+   min-width: 500px;
+   font-size: 32px;
+   padding: 20px 0;
+   border-top: 1px solid #000;
+   text-align: center;
+ }
+
+ .menu a:last-child {
+   border-bottom: 1px solid #000;
+ }
+
+ .hero h1 {
+   font-size: 100px;
+ }
+
+ .cta {
+   width: 240px;
+   margin: 0 auto;
+   border: 2px solid #c9c9c9;
+   padding: 10px 26px;
+   font-size: 22px;
+   margin-top: 30px;
+ }
+
+.top-row, .bottom-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.inner1, .inner2 {
+  min-width: 760px;
+  padding: 0 15px;
+}
 
 }
