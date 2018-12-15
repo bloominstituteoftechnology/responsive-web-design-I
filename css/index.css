@@ -96,22 +96,35 @@ header .navigation {
 	padding: 25px 0;
 }
 
+.middle-img {
+    width: 100%;
+}
+
 .cta-header {
     display: flex; 
-	justify-content: center;
+    flex-direction: column;
+	
 	text-align: center;  
 	font-size: 64px;
 }
 
+.left {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.left .cta-header .innovation {
+    display: flex;
+}
+
 .left .cta-button {
-	width: 150px;
-	height: 50px;
-	border-radius: 5px;
-	text-align: center;
-	font-size: 16px; 
-	display: flex;
-	justify-content: center;
-	margin-left: 165px;
+	width: 67%;
+	height: 35px;
+	font-size: 1.13rem; 
+    border: 1px solid black;
+    background-color: white;
 }
 
 .top-section {
@@ -134,8 +147,7 @@ header .navigation {
 }
 
 .copyright {
-	position: relative;
-	left: 360px;
+    padding-left: 19rem;
 }
 
 @media screen and (max-width: 800px) {
@@ -163,10 +175,9 @@ header .navigation {
     .navigation .logo {
         align-self: center;
         order: -1;
-        margin-bottom: 50px;
-        margin-left: 300px;
-        margin-right: 300px;
-    }
+        margin-bottom: 25px;
+        padding: 0 19rem;
+    }   
 
     .header-img {
         display: none;
@@ -183,6 +194,7 @@ header .navigation {
         margin-left: 20px;
     }
 
+
     .cta .left {
         display: flex;
         flex-direction: column;
@@ -190,10 +202,18 @@ header .navigation {
     }
 
     .cta-header {
-        margin-top: 45px;
+        display: flex;
+        flex-direction: column;
+        margin: 10% 0;
+
     }
 
-    .cta-button {
+    .left .cta-button {
+        width: 150px;
+        background-color: white;
+        height: 35px;
+        border: 1px solid black;
+        font-size: 1.13rem;
         margin-bottom: 50px;
     }
 
@@ -211,7 +231,7 @@ header .navigation {
 
     .services-section, .product-section, .vision-section {
         padding: 10px;
-        justify-content: center;
+        justify-content: center
     }
 
     .contact-section {
@@ -219,8 +239,7 @@ header .navigation {
     }
 
     .copyright {
-        position: relative;
-        left: 300px;
+        padding-left: 19rem;
     }
 }
 
@@ -229,8 +248,71 @@ header .navigation {
         margin: 0 auto;
     }
 
-    .navigation .logo {
+    header .navigation {
         display: flex;
-        border: 1px solid red;
+        flex-direction: column;
+        align-items: center;
     }
+
+    .navigation .logo {
+        margin-bottom: 15px;
+        padding: 0 19rem;
+    }
+
+    .navigation a {
+        border-top: 1px solid black;
+        
+        width: 100%;
+        padding: 10px;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .contact {
+        border-bottom: 1px solid black;
+    }
+
+   .cta-header {
+       display: flex;
+       flex-direction: column;
+       padding-bottom: 15px;
+   }
+
+   .left .cta-button {
+       width: 67%;
+       justify-content: center;
+       background-color: white;
+       height: 45px;
+       font-size: 1.13rem;
+   }
+
+   .top-section {
+       flex-direction: column;
+       padding: 15px;
+       line-height: 1.4;
+   }
+
+   .features-section {
+       margin: 15px 0;
+   }
+
+   .about-section {
+       margin: 15px 0;
+   }
+
+   .middle-img {
+       padding: 0 15px;
+       
+   }
+
+   .bottom-section {
+       display: flex;
+       flex-direction: column;
+       padding: 15px;
+       line-height: 1.4;
+   }
+
+   .copyright {
+       padding-left: 19rem;
+   }
 }
