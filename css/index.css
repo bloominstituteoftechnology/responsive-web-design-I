@@ -67,16 +67,31 @@ h1, h2, h3, h4, h5 {
 /* Your code starts here! */
 
 /*~~~~~~~~~~~~~~~~~ Nav Bar~~~~~~~~~~~~~~~*/
-.barcontainer{
+.header{
     display: flex;
+    justify-content: space-between;
+    align-content: space-around;
+
+}
+.barcontainer{
+    
+    display: flex;
+    
     justify-content: space-evenly;
 	font-size: 12px;
     background: white;
-    align-items: baseline;
+    align-items: flex-end;
+    /* border: 2px dashed green; */
+    width: 1150px;
 	
 }
 .bar{
     color: grey;
+    /* border: 2px dashed blue; */
+}
+
+.logocontainer{
+    /* border: 2px dashed red; */
 }
 
 
@@ -183,14 +198,18 @@ h1, h2, h3, h4, h5 {
 
 @media (max-width: 800px){
 
+    .header{
+        flex-direction: column;
+    }
 
     .logocontainer{
-        order: -1;
-        width: 768px;
         display: flex;
         justify-content: center;
+        align-items: center;
+        order: -1;
         padding-bottom: 30px;
         margin-top: 25px;
+        
     }
 
     .firstimg{
@@ -198,7 +217,10 @@ h1, h2, h3, h4, h5 {
     }
 
     .barcontainer{
-        flex-wrap: wrap;
+        display: flex;
+        
+        justify-content: space-between;
+        
     }
 
     .topcontainer{
@@ -217,11 +239,70 @@ h1, h2, h3, h4, h5 {
     .botcontainer{
         font-size: 14px;
     }
+}
 
+/*~~~~~~~~~~~~~~~~~ Mobile~~~~~~~~~~~~~~~*/
+@media (max-width: 500px){
 
+    .bodycontainer{
+        /* background-color: lightpink; */
+    }
 
+    .logocontainer{
+  
+    }
 
+    .bar{
+        padding: 20px 0;
+        width: 475px;
+        padding-left: 200px;
+        border-top: 1px solid grey;
+        border-bottom: 1px solid grey;
+    }
 
+    .serv{
+        border-top: 2px solid grey;
+    }
+    
+    .cont{
+        border-bottom: 2px solid grey;
+    }
+    
+    .barcontainer{
+        display: flex;
+        flex-direction: column;
+        width: 480px;
+        align-items: center;
+        font-size: 20px;
+    }
 
+    .topcontainer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 480px;
+    }
+    
+    .top{
+        width: 460px;
+    }
+
+    .middleimg{
+        width: 480px;
+        margin-right: auto;
+    }
+
+    .botcontainer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 480px;
+        height: 400px;
+    }
+    
+    .bot{
+        width: 460px;
+        margin: 5px 0;
+    }
 
 }
