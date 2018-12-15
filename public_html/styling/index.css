@@ -1,0 +1,398 @@
+/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+
+/* Your code starts here! */
+* {
+		font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 860px;
+}
+
+header {
+	align-items: center;
+	justify-content: space-between;
+	display: flex;
+}
+
+header a {
+	align-items: center;
+	display: flex;
+
+}
+
+.nav  {
+		width: 70%;
+    margin-top: 3%;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+.nav a {
+		text-decoration: none;
+		cursor: pointer;
+    color: grey;
+}
+
+
+
+/* Top Content Box */
+.content1 {
+		margin-top: 4%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-bottom: 1px solid grey;
+}
+
+/* Top Header and Button */
+.contentbox1 {
+    text-align: center;
+    margin: 0 8% 0 0;
+    align-items: center;
+}
+
+.contentbox1 h2 {
+    font-size: 3.8rem;
+}
+
+.contentbox1 button {
+		cursor: pointer;
+    border-radius: 12%;
+    width: 80%;
+		font-size: 1.2rem;
+		height: 40px;
+    border: 1px solid grey;
+}
+
+.contentbox1 button:hover {
+		background-color: #222222;
+		color: white;
+		transition: 0.5s;
+		transform: scaleX(1.08);
+    border-radius: 5px;
+    width: 80%;
+		height: 40px;
+    border: 1px solid grey;
+}
+
+/* Top image */
+.contentbox2 {
+    margin: 4% 0 4% 8%;
+}
+
+/* First Row of Article content */
+.content2 {
+    margin-top: 6%;
+    justify-content: space-around;
+    display: flex;
+}
+
+.textcard {
+    width: 40%;
+}
+
+/* Img in middle of Article content */
+.content3 {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+.content3 img {
+		margin: 4% 0;
+		width: 98.5%;
+}
+
+/* Bottom content row of Article content */
+.content4 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    border-bottom: 1px solid grey;
+
+}
+
+.textcard2 {
+    margin-bottom: 6%;
+    width: 30%;
+}
+
+footer {
+    margin-bottom: 4%;
+}
+
+.copyright {
+    text-align: center;
+    color: grey;
+}
+
+@media screen and (max-width: 880px) {
+
+	html {
+		font-size: 62.5%;
+	}
+
+	*{
+		transition: all .5s ease-in-out;
+	}
+
+	.container {
+		width: 87%;
+	}
+
+	.nav {
+		padding-left: 4%;
+		margin-bottom: 2%;
+		width: 100%;
+		align-items: flex-start;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	.nav a {
+		text-decoration: none;
+		vertical-align: top;
+	}
+
+	header {
+		width: 100%;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	header a {
+		order: -1;
+		margin: 4% 0;
+		width: 100%;
+		font-size: 2.0rem;
+		justify-content: center;
+		align-items: center;
+		display:flex;
+	}
+
+	.nav a {
+		text-decoration: none;
+		display:block;
+		width: 16.6%;
+	}
+
+	.contentbox2 {
+		display: none;
+	}
+
+	.contentbox1 {
+		padding-bottom: 4%;
+	}
+
+	.content3 img {
+		padding-left: 4%;
+		width: 91.5%;
+		height: 50%;
+	}
+
+	footer {
+		width: 90%
+	}
+
+	.textcard1 {
+		font-size: 1.2rem;
+	}
+
+}
+
+@media screen and (max-width: 800px) {
+	html {
+		font-size: 62.5%;
+	}
+	*{
+		transition: all .5s ease-in-out;
+	}
+	.container {
+		width: 60%;
+	}
+
+	.nav {
+		margin-bottom: 4%;
+		width: 100%;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	header {
+		width: 100%;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	header a {
+		order: -1;
+		margin: 4% 0;
+		font-size: 1.15rem;
+		width: 100%;
+		justify-content: center;
+		align-items: flex-start;
+		display:flex;
+	}
+
+	.nav a {
+		padding-bottom: 2%;
+		display:block;
+		width: 10%;
+	}
+
+	.contentbox2 {
+		display: none;
+	}
+	.contentbox1 {
+		padding:0 0 4% 4%;
+	}
+	.content3 img {
+		padding-left: 2%;
+		width: 92%;
+		height: 50%;
+	}
+	.textcard1 {
+		font-size: 1.2rem;
+	}
+
+
+}
+@media screen and (max-width: 500px) {
+	html {
+		font-size: 62.5%;
+	}
+	*{
+		transition: all .5s ease-in-out;
+	}
+	.container {
+		width: 60%;
+	}
+
+	.nav {
+		border-bottom: 1px solid grey;
+		margin-bottom: 4%;
+		padding-bottom: 4%;
+		width: 100%;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	header {
+		width: 100%;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	header a {
+		order: -1;
+		margin: 6% 0;
+		width: 100%;
+		justify-content: center;
+		align-items: flex-start;
+		display:flex;
+	}
+
+	.nav a {
+		border-radius: 20%;
+		background: rgba(226,226,226,1);
+		text-align: center;
+		word-break: break-all;
+		padding: 8%;
+		border: 1px solid grey;
+		font-size: 3rem;
+		margin-left: 4%;
+		width: 100%;
+	}
+
+	.nav a:hover {
+		background-color: #222222;
+		color: white;
+		transform: scaleX(1.08);
+		transition: 0.5s;
+		box-shadow: 4px 4px grey;
+	}
+	.contentbox2 {
+		display: none;
+	}
+
+	.contentbox1 {
+		text-align: center;
+		padding:0 0 4% 4%;
+		margin: 6% 0;
+	}
+	.content3 img {
+		padding-left: 3%;
+		width: 92%;
+		height: 50%;
+	}
+
+}
+
+}
