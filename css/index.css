@@ -1,3 +1,366 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+.container{
+	width: 880px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.navigation {
+	display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.aNav {
+    display: flex;
+    justify-content: space-between;
+    width: 650px;
+    align-items: center;
+}
+
+.navigation a {
+	color: grey;
+    text-decoration: none; 
+}
+ 
+header {    
+	padding-top: 20px;
+	margin-bottom: 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+.innovationDiv {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.blockInn{
+    margin-left: 125px;
+    margin-top: 50px;
+}
+
+.innovation {
+    font-size: 75px;
+    text-align: center;
+    width: 75%;
+}
+
+.getStarted{
+    width: 160px;
+    margin-left: 57px;
+}
+
+.top-content{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.bottom-content{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+
+.product{
+    margin-right: 10px;
+}
+
+.vision{
+    margin-right: 10px;
+}
+
+.contact p{
+    margin-bottom: 20px;
+}
+
+hr{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h1{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+h2{
+	font-weight: bold;
+}
+
+button{
+    margin-top: 15px;
+    padding: 8px 35px;
+	font-size: 14px;
+    background: white;
+    border-radius: 6px;
+    width: 40%;
+}
+
+.blocks{
+    display: flex;
+    width: 49%;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 25px;
+    background-color: rgb(243, 241, 241);
+    border: 1px solid;
+    padding: 20px;
+}
+
+.blockContainer{
+    display: flex;  
+    justify-content: space-between;
+}
+
+.bottomHr{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}   
+
+.bottomBlock{
+    display: flex;
+    width: 49%;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.bottomBlockContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul{
+    margin-top: 10px;
+    list-style-type: square;
+    margin-bottom: 80px;
+    padding-left:20px;
+}
+
+li{
+    padding: 5px;
+}
+
+footer{
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 800px) {
+
+    .navigation {
+        flex-direction: column-reverse;
+    }
+
+    .logoDiv {
+        text-align: center;
+        width: 800px;
+    }
+
+    .aNav {
+        text-align: center;
+        width: 800px;
+        margin-top: 45px;
+        padding-left: 65px;
+        padding-right: 75px;
+    }
+    
+    .innovation {
+        width: 275px;
+        text-align: center;
+        margin-left: 120px; 
+    }
+
+    .blockInn button {
+        margin-left: 175px;
+        margin-bottom: 53px;
+    }
+
+    .codePic {
+        display: none;
+    }    
+
+    hr {
+        width: 750px;
+        margin-right: 105px;
+    }
+
+    .top-content {
+        padding-left: 45px;
+        padding-right: 115px;
+    }
+
+    .middle-img {
+        width: 780px;
+        padding-left: 20px; 
+    }
+
+    .bottom-content {
+        padding-left: 45px;
+        padding-right: 115px;
+    }
+
+    .contact {
+        margin-left: 45px;
+    }
+
+    footer {
+        margin-right: 75px;       
+    }
+}
+
+@media (max-width: 500px) {
+
+    .navigation {
+        margin-left: -150px;
+    }
+
+    .aNav {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    a {
+        padding: 15px 0;
+        border-bottom: 1px solid grey;
+        width: 400px;
+    }
+
+    .a1{
+        border-top: 1px solid grey;
+        width: 400px;
+    }
+
+
+    img {
+        margin-bottom: -25px;
+        padding-bottom: 25px;
+        
+    }
+
+    hr {
+       margin-left: 15px;
+       width: 450px;
+       border-color: black;
+    }
+
+    
+
+    .blockInn {
+        
+        margin-left: -20px;
+    }
+
+    .top-content {
+        width: 600px;
+        flex-direction: column;
+        padding-top: 65px;
+    
+    }
+
+    .aboutDiv {
+        padding-top: 50px;
+    }
+
+    .middle-img {
+        padding-top: 25px;
+        width: 475px;
+        padding-bottom: 35px;
+    }
+
+    .bottom-content {
+        flex-direction: column;
+        width: 600px;
+    }
+
+    .services {
+        padding-bottom: 50px;
+    }
+
+    .product {
+        padding-bottom: 50px;
+    }
+
+    .vision {
+        padding-bottom: 20px;
+    }
+
+    .contact {
+        padding-top: 15px;
+    }
+
+    footer {
+        width: 400px;
+        margin-left: 45px;
+    }
+
+}
