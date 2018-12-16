@@ -1,3 +1,4 @@
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -16,40 +17,44 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-	display: block;
+    display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
 }
 ol, ul {
-	list-style: none;
+    list-style: none;
 }
 blockquote, q {
-	quotes: none;
+    quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+    content: '';
+    content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 /* Set every element's box-sizing to border-box */
 * {
     box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
 }
 
 html, body {
@@ -63,84 +68,130 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* Your code starts here! */
-
 .container {
-	/* border: 1px solid red; */
-	margin: 0 auto;
-	width: 900px; 
+  width: 880px;
+  margin: 0 auto;
 }
 
-header {
-	margin-top: 20px;
-	color: grey;
-	display: flex;
-	align-items: center;
+/* header */
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  width: 950px;
+  margin-top: 35px;
 }
 
 header nav a {
-	text-decoration: none;
-	margin-left: 50px;
-	font-size: 12px;
-	color: gray;
+  margin-right: 65px;
+  font-size: 1.4rem;
+  color: gray;
+  text-decoration: none;
 }
 
-.logo {
-    margin-left: 100px;
-    /* border: 1px solid red; */
+header nav a:hover {
+  text-decoration: underline;
 }
 
-.left {
-	
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
-h1 {
-	/* border: 1px solid brown; */
-	font-size: 60px;
-	height: 200px;
-	width: 350px;
-	margin: 20px 100px;
-	padding: 50px;
-	
+/* cta */
+
+.cta {
+    display: flex;
+    justify-content: space-between;
 }
 
-.button a {
-	border: 2px solid black;
-    border-radius: 10px;
-    padding: 5px 10px;
-    width: 125px;
-	text-align: center;
-	text-decoration: none;
-	font-size: 14px;
-    
+.cta .cta-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  width: 400px;
+  font-size: 77px;
+  margin-top: 120px;
+  text-align: center;
+  padding: 0 75px 0 100px;
 }
 
-.right {
-	display: inline-block;
+.cta .cta-text button {
+  background: white;
+  vertical-align: top;
+  margin-top: 6px;
+  padding: 8px 44px;
+  font-size: 1.7rem;
+  border: 1px solid black;
+  cursor: pointer;
 }
 
-img {
-	/* border: 1px solid red; */
+.cta .cta-text button:hover {
+  background: black;
+  color: white;
 }
 
-.top-content {
-	/* border: 1px solid purple; */
+.cta img {
+  margin-top: 69px;
 }
 
-.middle-img {
-	/* border: 1px solid red; */
-	position: absolute;
+.main-content {
+  border-top: 1px solid black;
+  margin-top: 76px;
+  padding-top: 39px;
 }
 
-.bottom-content {
-	/* border: 1px solid orange; */
+.main-content .top-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.main-content .top-content .text-content {
+  width: 410px;
+  margin-right: 34px;
+  font-size: 1.6rem;
+}
+
+.main-content .top-content .text-content:last-child {
+  margin-right: 0;
+}
+
+.main-content .middle-img {
+  margin-top: 45px;
+}
+
+.main-content .bottom-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 37px;
+  padding: 0 10px;
+}
+
+.main-content .bottom-content .text-content {
+  width: 275px;
+  margin-right: 12px;
+  font-size: 1.6rem;
+}
+
+.main-content .bottom-content .text-content:last-child {
+  margin-right: 0;
 }
 
 .contact {
-	/* border: 1px solid yellow; */
+  margin-top: 57px;
+  border-top: 1px solid black;
+  padding: 39px 10px 0;
+  font-size: 1.6rem;
+}
+
+.contact p {
+  margin: 20px 0;
 }
 
 footer {
-	/* border: 1px solid black; */
+  margin: 32px 0;
+  text-align: center;
+  font-size: 1.4rem;
 }
-
