@@ -1,3 +1,144 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+*{
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: 'Bangers', cursive;
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+
+h2 (
+  font-size: 2.2rem;
+)
+
+
+p, a, address {
+  font-size: 1.6rem;
+}
+
+.container {
+  width: 95%;
+  }
+
+.logo {
+  display: block;
+  margin: 0 auto;
+  padding: 1.5rem 0 0 0;
+}
+
+/** NAVIGATION SECTION **/
+
+nav {
+  display: flex;
+  flex-direction: column;  
+  padding: 2rem;
+  align-items: center;    
+  }
+
+nav a:hover {
+  color: black;
+  }
+
+.tagline-header {
+  display: flex;
+  padding: 3rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}  
+
+.tagline-text {
+  font-size: 7rem;
+  }
+
+.top-content *{
+  padding: 1rem;
+}
+
+.middle-img {
+  width: 100%;
+  padding: 0 1%;
+}
+
+.bottom-content *{
+  padding: 1rem;
+}
+
+.contact-info {
+  padding: 2rem;
+  max-width: 25rem;
+}
+
+.email-info{
+  text-decoration: none;
+  line-height: 2;  
+}
+
+.email-info:hover {
+  color: grey;
+}
+
+.copyright {
+  text-align: center;
+  padding: 2rem;
+}
+
+/** Tablet Size **/
+
+@media (min-width: 500px){
+
+nav {
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+nav a:hover {
+  color: var(--dark);
+    background-color: var(--light);
+    transform: scale(1.2);
+    transition: 300ms;
+}
+
+.top-content {
+  display: flex;
+}
+
+/** Desktop Size **/
+@media (min-width: 800px) {
+
+.container {
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: baseline;
+  flex-direction: row-reverse;
+}
+
+.logo {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.tagline-header {
+  flex-direction: row;
+  justify-content: space-between;
+} 
+
+.tagline-img {
+  display: block;
+  width: 100%;
+  max-width: 50%;
+}
 
 
