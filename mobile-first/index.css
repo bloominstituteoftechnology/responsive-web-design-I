@@ -70,6 +70,8 @@ h1, h2, h3, h4, h5 {
   --nav-border-color: rgb(128,128,128);
 }
 
+/* previous desktop styling */
+
 h1 {
   line-height: 70px;
 }
@@ -80,24 +82,18 @@ a {
 }
 
 .container {
-  width: 1024px;
   min-height: 1px;
   margin: 0 auto;
 }
 
 header {
-  margin-left: 72px;
-  margin-right: 72px;
-  margin-top: 27px;
   display:flex;
   justify-content: space-between;
 }
 
 nav {
   vertical-align: top;
-  margin-top: 13px;
   display: flex;
-  width: 606px;
   justify-content: space-between;
 }
 
@@ -112,12 +108,8 @@ nav a {
 }
 
 #splash {
-  margin-top: 70px;
-  margin-bottom: 73px;
   display:flex;
   justify-content: space-between;
-  margin-left: 195px;
-  margin-right: 72px;
   align-items: flex-start;
 }
 
@@ -126,9 +118,7 @@ nav a {
   flex-direction: column; 
   align-items: center;
   text-align: center;
-  margin-top: 55px;
   vertical-align: top;
-  width: 300px;
 }
 
 h1 {
@@ -147,15 +137,6 @@ h1 {
   font-size: 17px;
 }
 
-.code-snippet {
-  margin-top: 2px;
-}
-
-main, footer {
-  margin-left: 72px;
-  margin-right: 72px;
-}
-
 section {
   display: block;
 }
@@ -164,15 +145,6 @@ p, .features, .about, h2, .services, .product, .vision {
   display: flex;
   flex-direction: column;
   vertical-align: top;
-}
-
-.features {
-  width: 425px;
-}
-
-.about {
-  width: 425px;
-  margin-right: 15px;
 }
 
 .top-section, .bottom-section {
@@ -189,49 +161,137 @@ section p {
 
 .top-section {
   border-top: 2px solid black;
-  margin-bottom: 30px;
-  padding-top: 36px;
-}
-
-.middle-img {
-  margin-left: 2px;
 }
 
 .bottom-section {
-  margin-top: 29px;
-  padding-bottom: 35px;
   border-bottom: 2px solid black;
-  margin-bottom: 35px;
   display: flex;
   justify-content: space-between;
-  padding-right: 19px;
-}
-
-.services, .product, .vision {
-  width: 274px;
 }
 
 small {
   text-align: center;
   display:block;
   font-size: 16px;
-  margin-top: 40px;
-  margin-bottom: 20px;
 }
 
 address p {
   margin-bottom: 15px;
 }
 
+/* 500px max width styling */
 
-@media (max-width: 800px) {
+.container {
+  width: 482px;
+}
+
+header {
+  width: 482px;
+  margin: 20px 0 0 0;
+}
+
+#logo {
+  padding-bottom: 20px;
+  align-self: initial;
+  margin: 0;
+  padding-left: 1px;
+}
+
+nav {
+  align-self: flex-start;
+  flex-direction: column;
+  align-items: center;
+  width: 482px;
+  margin: 0;
+}
+
+nav a {
+  border-top: 1px solid var(--nav-border-color);
+  width: 482px;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 20px;
+}
+
+nav a:nth-child(6) {
+  border-bottom: 1px solid var(--nav-border-color);
+}
+
+#splash {
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  padding-bottom: 75px;
+}
+
+.code-snippet {
+  display: none;
+}
+
+main, footer {
+  margin: 0 20px;
+}
+
+.innovation {
+  margin: 50px 0 0 0;
+}
+
+.top-section, .bottom-section {
+  padding: 13px 0 52px 0;
+  margin: 0;
+}
+
+.top-section, .bottom-section {
+  flex-direction: column;
+}
+
+.top-section div, .bottom-section div {
+  width: 407px;
+}
+
+.top-section div {
+  margin-top: 46px;
+}
+
+.bottom-section {
+  padding: 29px 0 0 0;
+}
+
+.bottom-section div {
+  padding: 0 0 63px 0;
+}
+
+.bottom-section .vision {
+  padding-bottom: 35px;
+  padding-top: 1px;
+}
+
+.middle-img {
+  width: 442px;
+}
+
+footer {
+  padding: 35px 0 0 0;
+}
+
+header {
+  flex-direction: column-reverse;
+  align-items: center;
+} 
+
+small {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+
+@media (min-width: 800px) {
   .container {
     width: 782px;
   }
 
   header {
-    flex-direction: column-reverse;
-    align-items: center;
+    width: auto;
     margin: 0px;
     margin-top: 30px;
     margin-left: 30px;
@@ -239,43 +299,47 @@ address p {
   }
 
   #logo {
-    align-self: initial;
-    margin: 0;
-    padding-left: 1px;
     padding-bottom: 27px;
   }
 
   nav {
     width: 690px;
-    align-self: flex-start;
+    flex-direction: row;
+    font-size: 16px;
+    margin-top: 13px;
   }
 
-  #splash {
-    margin: 0;
+  nav a {
+    width: auto;
     padding: 0;
-    justify-content: center;
-    padding-bottom: 75px;
+    border: none;
+    font-size: 16px;
   }
 
-  .code-snippet {
-    display: none;
+  nav a:nth-child(6) {
+    border: none;
   }
 
   .innovation {
     margin-top: 72px;
+    width: 300px;
   }
   
-  main, footer {
-    margin: 0 20px;
+  .top-section {
+    padding-top: 36px;
+    padding-bottom: 0px;
+    margin-bottom: 30px;
   }
 
   .top-section, .bottom-section, footer {
     padding-left: 10px;
     padding-right: 10px;
+    flex-direction: row;
   }
 
   .top-section div {
     width: 346px;
+    margin-top: 0;
   }
 
   .about {
@@ -290,87 +354,116 @@ address p {
 
   .bottom-section div {
     width: 209px;
-  }
-
-  .vision {
-    margin-right: 21px;
-  }
-}
-
-
-@media (max-width: 500px) {
-  .container {
-    width: 482px;
-  }
-
-  header {
-    width: 482px;
-    margin: 20px 0 0 0;
-  }
-
-  #logo {
-    padding-bottom: 20px;
-  }
-
-  nav {
-    flex-direction: column;
-    align-items: center;
-    width: 482px;
-    margin: 0;
-  }
-
-  nav a {
-    border-top: 1px solid var(--nav-border-color);
-    width: 482px;
-    text-align: center;
-    padding: 20px 0;
-    font-size: 20px;
-  }
-
-  nav a:nth-child(6) {
-    border-bottom: 1px solid var(--nav-border-color);
-  }
-
-  .innovation {
-    margin: 50px 0 0 0;
-  }
-
-  .top-section, .bottom-section {
-    padding: 13px 0 52px 0;
-    margin: 0;
-  }
-
-  .top-section, .bottom-section {
-    flex-direction: column;
-  }
-
-  .top-section div, .bottom-section div {
-    width: 407px;
-  }
-
-  .top-section div {
-    margin-top: 46px;
-  }
-
-  .bottom-section {
-    padding: 29px 0 0 0;
-  }
-
-  .bottom-section div {
-    padding: 0 0 63px 0;
+    padding: 0;
   }
 
   .bottom-section .vision {
-    padding-bottom: 35px;
+    margin-right: 21px;
+    padding-top: 0px;
+  }
+}
+
+@media (min-width: 1042px) {
+  .container {
+    width: 1024px;
+  }
+  
+  header {
+    flex-direction: row;
+    margin-left: 72px;
+    margin-right: 72px;
+    margin-top: 27px;
+
+  }
+
+  #logo {
     padding-top: 1px;
+    padding-bottom: 0;
+  }
+
+  nav {
+      margin-top: 13px;
+      width: 606px;
+  }
+  
+  #splash {
+    margin: 70px 0 0 0;
+    justify-content: flex-end;
+    padding-right: 72px;
+    padding-bottom: 73px;
+  }
+
+  .code-snippet {
+    padding-left: 78px;
+    display: inline;
+  } 
+
+  .top-section {
+    padding-left: 1px;
+    padding-right: 0px;
+  }
+  
+  .top-section div {
+    width: 425px;
   }
 
   .middle-img {
-    width: 442px;
+    width: 876px;
+  }
+
+  .bottom-section {
+    margin-top: 29px;
+    margin-bottom: 35px;
+    padding: 0 0 0 1px;
+    justify-content: flex-start;
+  }
+
+  .bottom-section div {
+    width: 274px;
+  }
+
+  .innovation {
+    margin-top: 55px;
+    width: 300px;
+  }
+
+  .code-snippet {
+    margin-top: 2px;
+  }
+
+  main, footer {
+    margin-left: 72px;
+    margin-right: 72px;
+  }
+
+  .bottom-section .product {
+    margin-left: 19px;
+  }
+
+  .bottom-section .vision {
+    margin-right: 0px;
+    margin-left: 19px;
+  }
+
+  .features {
+    width: 425px;
+  }
+
+  .about {
+    width: 425px;
+    margin-right: 15px;
+  }
+
+  .top-section {
+    margin-bottom: 30px;
+    padding-top: 36px;
+  }
+
+  .middle-img {
+    margin-left: 2px;
   }
 
   footer {
-    padding: 35px 0 0 0;
+    padding: 0;
   }
-
 }
