@@ -4,7 +4,7 @@ It's time to expand our CSS skills into multiple devices.  You will be creating 
 
 ## Task 1: Set Up The Project With Git
 
-* [ ] Fork the project into your GitHub user account
+* [COMPLETE] Fork the project into your GitHub user account
 * [ ] Clone the forked project into a directory on your machine
 * [ ] You are now ready to build this project with your preferred IDE
 
