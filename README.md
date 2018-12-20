@@ -6,12 +6,12 @@ It's time to expand our CSS skills into multiple devices.  You will be creating 
 
 * [COMPLETE] Fork the project into your GitHub user account
 * [COMPLETE] Clone the forked project into a directory on your machine
-* [ ] You are now ready to build this project with your preferred IDE
+* [COMPLETE] You are now ready to build this project with your preferred IDE
 
 ## Task 2: Project Objectives
 
-* [ ] Review each [design file](design-files).  Notice the subtle differences between them all. 
-* [ ] Insert a `viewport` meta tag into the head of the project with these html attributes: `content="width=device-width, initial-scale=1"`
+* [COMPLETE] Review each [design file](design-files).  Notice the subtle differences between them all. 
+* [COMPLETE] Insert a `viewport` meta tag into the head of the project with these html attributes: `content="width=device-width, initial-scale=1"`
 * [ ] Introduce max-width media queries into your project at 800px and 500px  
 * [ ] Do your best to make your styles match the design files at each breakpoint 
 
