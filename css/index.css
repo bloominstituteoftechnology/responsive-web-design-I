@@ -1,3 +1,154 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+a {
+    margin-top: 20px;
+    color: lightgrey;
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: bold;
+}
 
+.Address {
+    line-height: 25%;
+}
+
+body {
+    background-color: black
+}
+
+button {
+    background-color: white;
+    width: 165px;
+    padding: 5px;
+    border: 1px solid black;
+    font-family: 'Titillium Web';
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+
+}
+
+.Container {
+    margin-top: -15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    background-color: white;
+}
+
+.ContactSection {
+    margin-left: 50px;
+}
+
+.Footer {
+  text-align: center;  
+}
+
+h2 {
+    font-family: 'Bangers';
+}
+
+.H1 {
+    line-height: 50%;
+}
+
+.Header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+hr{
+    border: 1px solid black;
+    font-weight: bolder;
+    margin: 75px 50px 50px 50px;
+
+}
+
+.IOD {
+    font-family: 'Bangers';
+    font-size: 35px;
+    text-align: center;
+    margin-top: 25px;
+    margin-right: 140px;
+}
+
+.Info2 {
+    width: 275px;
+}
+
+.Logo {
+    margin-top: 15px;
+
+}
+
+.Menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 700px;
+
+}
+
+.Mid {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 50px;
+    margin-right: 50px;
+}
+
+.Mid-Low {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0 50px;
+}
+
+.Mid-Page-Accent {
+    margin-right: 55px;
+    margin-left: 55px;
+}
+
+p {
+    font-family: 'Titillium Web';
+    font-weight: bold;
+}
+
+/*TABLET VIEW*/
+@media (max-width: 800px){
+    .Container {
+        width: 800px;
+    }
+    
+    .Header {
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .Header-Img {
+        display: none;
+    }
+
+    .IOD {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .Menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .Mid-Page-Accent {
+        width: 90%;
+    }
+}
+
+/*MOBILE VIEW*/
+@media (max-width: 500px){
+
+}
