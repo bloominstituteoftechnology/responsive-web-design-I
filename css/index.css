@@ -110,8 +110,33 @@ p {
 
 /*TABLET VIEW*/
 @media (max-width: 800px){
+    .Container {
+        width: 800px;
+    }
+    
     .Header {
-        border: 1px solid red;
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .Header-Img {
+        display: none;
+    }
+
+    .IOD {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .Menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .Mid-Page-Accent {
+        width: 90%;
     }
 }
 
