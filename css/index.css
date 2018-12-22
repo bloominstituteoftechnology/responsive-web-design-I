@@ -68,6 +68,10 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
+
+
+
+/* My code starts here */
 .container {
   width: 880px;
   margin: 0 auto;
@@ -194,4 +198,95 @@ footer {
   margin: 32px 0;
   text-align: center;
   font-size: 1.4rem;
+}
+
+
+
+
+
+/* tablet view */
+
+@media (max-width: 800px) {
+  
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .nav-logo {
+    margin-left: 50px;
+  }
+  
+  header nav {
+    width: 95%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 35px;
+  }
+
+  header nav a {
+    margin-top: 40px;
+    margin-right: 80px;
+  }
+
+  .cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta img {
+    display: none;
+  }
+
+  .main-content {
+    width: 100%;
+  }
+
+  .middle-img {
+    width: 100%;
+  }
+}
+
+
+
+
+/* mobile view  */
+
+@media (max-width: 500px) {
+  
+  .container {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  header nav .nav-links {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+  }
+  
+  header nav .nav-links a {
+    /* border: 1px solid lightgrey; */
+  }
+  
+  .main-content .top-content {
+    flex-direction: column;
+  }
+
+  .main-content .top-content .text-content {
+    margin-bottom: 30px;
+  }
+
+  .main-content .bottom-content {
+    flex-direction: column;
+  }
+
+  .main-content .bottom-content .text-content {
+    margin-bottom: 30px;
+  }
+
+  
 }
