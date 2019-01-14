@@ -317,13 +317,62 @@ header nav a:first-child {
         margin-top: 0;
     }
     header nav a {
-        margin: 21px 0;
+        margin: 5px 0;
+        padding: 16.5px 0;
         font-size: 1.15rem;
+        width: 100vw;
+        text-align: center;
+        height: 52.5px;
+    }
+    header nav a:first-child {
+        border-top: 1px solid black;
+    }
+    header nav a:nth-child(even) {
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
     }
     .cta .cta-text h1 {
         margin-top: 45px;
         margin-right: 50px;
         line-height: .95;
     }
-
+    .top-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .top-content div.text-content:first-child {
+        margin: 60px 3px;
+        height: 90px;
+    }
+    .top-content div.text-content:nth-child(2) {
+        margin: 0 3px 46px;
+    }
+    .middle-img {
+        margin-left: 5px;
+    }
+    .bottom-content {
+        flex-direction: column;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    .bottom-content .text-content:first-child {
+        margin-top: 27px;
+        margin-bottom: 22px;
+    }
+    .bottom-content .text-content:last-child {
+        margin-top: 22px;
+        margin-bottom: 9px;
+    }
+    .contact {
+        position: relative;
+        bottom: 14px;
+    }
+    #phone-number {
+        margin: 0;
+        line-height: 0;
+    }
+    footer {
+        margin-top: 26px;
+        font-size: 1rem;
+    }
   }
