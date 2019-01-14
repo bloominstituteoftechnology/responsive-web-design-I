@@ -232,35 +232,53 @@ footer {
     }
 
     .section.top .nav {
+        width: 400px;
     }
 
     .section.top li  {
-        margin-right: 15px;
+        margin-right: 5px;
         padding: 5px;
+        font-size: 90%;
     }
 
     .section.top .logo {
         position: relative;
         top: 5px;
-        right: 2.5px;
-        width: 25%; 
+        right: 2.5px; 
     }
 
     .section-main .item.maintext {
+        size: 75%; 
+    }
+
+    .section-main .item.image {
+        height: 75%; 
     }
 
     .middle-img {
         width: 90%; 
         margin: 15px;
     }
+
+    .section.description .item.mainpage{
+        padding: 5px;
+    }
+
+
+    .section.description .item.mainpage.row1{
+        width: 90%;
+    }
 }
 
 
-@media (max-width: 500 px) {
+@media (max-width: 500px) {
 
     .section.top {
         margin: 5px; 
     }
 
+    .section.top .logo {
+        width: 50%;
+    }
 
 }
