@@ -2,7 +2,6 @@ footer {
   border-top: 2px solid grey;
   margin: 0 auto;
   display: flex;
-  margin-top: 2rem;
   max-width: 80rem;
   width: 100%;
   padding-bottom: 4rem;
@@ -10,6 +9,11 @@ footer {
 
   &__container {
     padding: 2rem 2rem;
+  }
+
+  @media only screen and (max-width: 700px) {
+    width: 96%;
+    margin: 2rem 2% 0 2%;
   }
 
 }
