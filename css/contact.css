@@ -84,13 +84,14 @@ html {
 }
 
 body {
-	max-width: 1024px;
+	max-width: 775px;
 	width: 90%;
 	margin: 0 auto;
 }
 
 h3, p {
-	font-size: 1rem;
+    font-size: .8rem;
+    line-height: 1rem
 }
 
 /* ******* Nav ******* */
@@ -98,97 +99,90 @@ nav {
 	width: 100%;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
 	margin-top: 20px;
-	padding: 10px 0;
 }
 
-nav a img {
-    justify-self: flex-end;
+nav img {
+    margin-left: 60px;
 }
 
 nav div {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
-	align-items: center;
+	justify-content: space-between;
 	width: 100%;
+	padding: 10px 0;
 }
 
-nav a {
+nav div a {
 	color: gray;
-    font-size: 1rem;
-    /* font-weight: bold; */
+    font-size: .7rem;
+    font-weight: bold;
 }
 
+/* =================== Header =================== */
 
 header {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
-	align-items: center;
-	text-align: center;
-	margin-top: 40px;
-	border-bottom: 1px solid black;
-	padding-bottom: 50px;
-}
-
-header h1 {
-	font-size: 70px;
-}
-
-header a {
-	color: black;
-	border: 1px solid black;
-	font-size: .8rem;
-	padding: 1px 25px;
+    margin-top: 10px;
+    width: 100%;
+    padding-bottom: 30px;
+    border-bottom: 1px solid black;
 }
 
 header img {
-	width: 40%;
-	height: 40%;
+    width: 100%;
+    height: auto;
 }
 
-.section1 {
-	margin-top: 30px;
-	margin-bottom: 30px;
-	display: flex;
-	flex
+header h1 {
+    margin-top: 30px;
+    font-size: 1.3rem;
 }
 
-.middle-img {
-	width: 100%;
+
+/* =================== Form Section =================== */
+section {
+    border: 1px solid black;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    background-color: #F4F1F4;
 }
 
-.section2 {
-	margin-top: 30px;
-	padding-bottom: 30px;
-	display: flex;
-	flex-direction: row;
-	border-bottom: 1px solid black;
+.contact div {
+    display: block;
+    width: 50%;
+    text-align: left;
+    padding: 15px;
 }
 
-.section2-middle {
-	margin: 0 15px;
+.contactInfo p {
+    margin-top: 15px;
+    font-size: .8rem;
 }
 
-.contact {
-	margin-top: 30px;
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: .8rem;
+    text-align: left;
 }
 
-address {
-	font-size: .8rem;
+input {
+    display: block;
+    margin-top: 2px;
+    margin-right: auto;
 }
 
-.contact p {
-	margin-top: 15px;
-}
+
+
+/* =================== footer =================== */
 
 footer {
-	margin-top: 30px;
+	margin-top: 45px;
 	margin-bottom: 80px;
 	text-align: center;
 	font-size: .8rem;
 }
-
