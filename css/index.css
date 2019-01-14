@@ -70,24 +70,19 @@ h1, h2, h3, h4, h5 {
 	width: 98%;
 }
 
-@media (max-width: 800px) {
-    body {
-        background-color: green;
-    }
-}
-
 header {
     height: 5%;
 
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     margin: 1%;
 }
 
 @media (max-width: 800px) {
     header {
+        height: 12%;
         flex-flow: column-reverse nowrap;
     }
 }
@@ -125,6 +120,7 @@ header nav a {
 
     .top-design-catchphrase {
         flex-flow: column nowrap;
+        height: 40%;
     }
 }
 
