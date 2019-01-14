@@ -1,0 +1,70 @@
+.image-gallery {
+  margin: 0 auto;
+  display: block;
+  max-width: 70rem;
+  width: 100%;
+  background-image: linear-gradient(to bottom right, #8080800a, #69696980);
+  height: 50vh;
+  position: relative;
+
+  &__img1 {
+    width: 200px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+  }
+
+  &__img2 {
+    width: 200px;
+    height: auto;
+    position: absolute;
+    top: 30%;
+    left: 25%;
+  }
+
+  &__img3 {
+    width: 200px;
+    height: auto;
+    position: absolute;
+    top: 14%;
+    left: 40%;
+  }
+
+  &__img4 {
+    width: 200px;
+    height: auto;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+  }
+
+  &__img5 {
+    width: 200px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 58%;
+  }
+
+  &__img6 {
+    width: 200px;
+    height: auto;
+    position: absolute;
+    top: 28%;
+    left: 70%;
+  }
+
+  &__img {
+    border: 3px solid white;
+    border-radius: 20px;
+    transition: all .4s ease-in-out;
+    box-shadow: 0 1px 7px 1px black;
+
+    &:hover {
+      z-index: 6;
+      transform: scale(2);
+      box-shadow: 0 2px 9px 2px black;
+    }
+  }
+}

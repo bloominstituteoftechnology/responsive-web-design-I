@@ -1,3 +1,396 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-family: 'Rubik', sans-serif;
+}
+
+p {
+    line-height: 1.4;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.header {
+    margin: 2rem 0;
+    display: flex;
+
+}
+
+.header nav {
+    width: 100%;
+    height: 40px;
+}
+
+.top-img {
+    width: 100%;
+    background-size: cover;
+    height: 153px;
+    margin-bottom: 2rem;
+}
+
+.top-img--home-page {
 
 
+}
+
+.top-img--about-page {
+    background-image: url("../img/jumbo-about.png");
+}
+
+.header nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 40px
+}
+
+.header__link {
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.header__link:hover {
+    padding: 1rem;
+    border-radius: 10px;
+    animation: pulsate 1s infinite;
+}
+
+.header__link.active {
+    animation: pulsate 1s infinite;
+}
+
+.header__logo {
+    animation: slidInRight 1s;
+}
+
+.top-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    border-bottom: 1px dashed black;
+}
+
+.top-content .text-container {
+    width: 48%;
+    padding: 0 1%;
+    padding-bottom: 20px;
+}
+
+.middle-content {
+    margin-bottom: 20px;
+    border-bottom: 1px dashed black;
+}
+
+.middle-content h2 {
+    padding: 0 2%;
+    margin-bottom: 0;
+}
+
+.middle-content .boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.middle-content .boxes .box {
+    width: 12.5%;
+    height: 100px;
+    background: black;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.box:hover {
+    animation: pulsateBig 1s infinite;
+}
+
+#teal {
+    background-color: teal;
+}
+
+#gold {
+    background-color: gold;
+}
+
+#cadetblue {
+    background-color: cadetblue;
+}
+
+#coral {
+    background-color: coral;
+}
+
+#crimson {
+    background-color: crimson;
+}
+
+#forestgreen {
+    background-color: forestgreen;
+}
+
+#darkorchid {
+    background-color: darkorchid;
+}
+
+#hotpink {
+    background-color: hotpink;
+}
+
+#indigo {
+    background-color: indigo;
+}
+
+#dodgerblue {
+    background-color: dodgerblue;
+}
+
+.bottom-content {
+    display: flex;
+    margin: 0 2% 20px;
+    justify-content: space-around;
+}
+
+.bottom-content .text-container {
+    padding-right: 4%;
+}
+
+.bottom-content .text-container:last-child {
+    padding-right: 0;
+}
+
+footer {
+    width: 100%;
+    background: black;
+}
+
+footer nav {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 2%;
+    font-size: 14px;
+}
+
+footer nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.about-section {
+    padding: 0 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px dashed black
+}
+
+.info-cards-section {
+    padding: 0 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.info-cards-section__info-card {
+    padding-bottom: 1rem;
+    border-bottom: 1px dashed black;
+    margin: 2rem 0;
+}
+
+.info-cards-section__card-text {
+    max-width: 370px;
+}
+
+.info-cards-section__card-heading {
+    padding-top: .5rem;
+}
+
+.info-cards-section__card-text {
+    padding: .5rem 0;
+}
+
+.info-cards-section__button {
+    font-size: 1rem;
+    margin: 1rem 0;
+    border-radius: 10px;
+    padding: .4rem 2rem;
+    background-color: transparent;
+    transition: all .5s;
+    z-index: 5;
+
+    position: relative;
+}
+
+.info-cards-section__button::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    padding: 1rem 4.6rem;
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+    z-index: -4;
+    display: none;
+}
+
+.info-cards-section__button:hover.info-cards-section__button::before {
+    animation: growOut .8s;
+    display: block;
+
+}
+
+
+@keyframes growOut {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(5);
+        opacity: 0;
+    }
+
+}
+
+
+.info-cards-section__button:hover {
+    background-color: black;
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 2px 4px 2px #00000094;
+}
+
+.bottom-section {
+    padding: 0 1rem;
+    margin-bottom: 2rem;
+}
+
+
+@keyframes pulsate {
+    0% {
+        transform: scale(1);
+        box-shadow: none;
+    }
+
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 1rem 4rem rgba(0,0,0, .25);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: none;
+    }
+
+}
+
+@keyframes pulsateBig {
+    0% {
+        transform: scale(1);
+        box-shadow: none;
+    }
+
+    50% {
+        transform: scale(1.5);
+        box-shadow: 0 1rem 4rem rgba(0,0,0, .25);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: none;
+    }
+
+}
+
+
+@keyframes slidInRight {
+    0%{
+        opacity: 0;
+        transform: translateX(-5rem);
+    }
+
+    80% {
+        transform: translateX(1rem);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+
+}

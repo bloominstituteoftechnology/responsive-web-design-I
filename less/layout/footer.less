@@ -1,0 +1,43 @@
+footer {
+  border-top: 2px solid grey;
+  margin: 0 auto;
+  display: flex;
+  margin-top: 2rem;
+  max-width: 80rem;
+  width: 100%;
+  padding-bottom: 4rem;
+  flex-direction: column;
+
+  &__container {
+    padding: 2rem 2rem;
+  }
+
+}
+
+.footer__col > nav > ul {
+  width: max-content;
+  margin: 0 auto;
+  display: flex;
+
+  & > li {
+    padding-top: 2rem;
+    flex-direction: column;
+    font-size: 1.2rem;
+    transform: rotate(-22deg) translateY(2rem);
+    transform-origin: left;
+    transition: all .3s ease-in;
+
+    &:hover {
+      transform: rotate(0) translate(0);
+      transform-origin: left;
+    }
+
+    & > a {
+      text-decoration: underline;
+    }
+
+    &:not(:last-child){
+      padding-right: 4rem;
+    }
+  }
+}
