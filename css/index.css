@@ -76,42 +76,58 @@ h1, h2, h3, h4, h5 {
 	.container {
 		background-color:white;
 		margin: 0 auto;
-		width: 720px;
+		width: 85%;
 	}
 }
 
 @media (max-width: 500px) {
 	.container {
-		background-color: pink;
+		background-color: white;
 		margin: 0 auto;
-		width: 450px;
+		width: 100%;
 	}
 }
 
 .navigation {
 	display: flex;
 	justify-content: space-around;
-	
 }
 
 @media (max-width: 800px) {
 	.navigation {
 		display: flex;
 		justify-content: space-between;
-		width: 700px;
+		width: 95%;
 		flex-wrap: wrap;
-
-		
-
 	}
+}
+
+@media (max-width: 500px) {
+	.navigation {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 100%;
+	}
+}
+
+@media (max-width: 800px) {
 	.logo {
+		display: flex;
 		order: -1;
-		height: 36px;
-		width: 183px;
-		margin: 10px 308.5px 30px 308.5px;
 		
 	}
 }
+
+@media (max-width: 500px) {
+	.logo {
+		display: flex;
+		order: -1;
+		width: 183;
+		height: 36;
+	}
+}
+
 
 .navigation a {
 	align-content: stretch;
@@ -122,12 +138,21 @@ h1, h2, h3, h4, h5 {
 
 @media (max-width: 800px) {
 	.navigation a {
+		align-content: center;
 		justify-content: space-between;
 		
 
 	}
 }
 
+@media (max-width: 500px) {
+	.navigation a {
+		border: 1px solid darkgray;
+		text-align: center;
+		padding: 10px;
+		background: white;
+	}
+}
 
 .invitation {
 	display: flex;
@@ -180,6 +205,16 @@ h1, h2, h3, h4, h5 {
 	justify-content: space-between;
 	border-bottom: 1px solid black;
 	border-top: 1px solid black;
+}
+
+@media (max-width: 500px) {
+	.text-layouts {
+		display: flex;
+		flex-direction: column;
+	}
+	.text-layouts p {
+		margin: 20px 0 40px 0;
+	}
 }
 
 .second-text {
