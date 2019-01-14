@@ -301,3 +301,29 @@ header nav a:first-child {
         margin-top: 0;
     }
   }
+
+  @media (max-width: 500px) {
+    .container {
+        max-width: 500px;
+    }
+    header nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end;
+    }
+    header .logo {
+        margin-bottom: 22.5px;
+        margin-top: 0;
+    }
+    header nav a {
+        margin: 21px 0;
+        font-size: 1.15rem;
+    }
+    .cta .cta-text h1 {
+        margin-top: 45px;
+        margin-right: 50px;
+        line-height: .95;
+    }
+
+  }
