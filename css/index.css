@@ -1,3 +1,53 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
 * {
     box-sizing: border-box;
 }
@@ -7,23 +57,22 @@ html, body {
     font-family: 'Titillium Web', sans-serif;
 }
 
-h1, h2, h3, h4, h5, {
+h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
     margin-bottom: 15px;
 }
 
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 /* Start */
 
-/* Navigation */
+body{
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+Navigation
 header{
     display: flex;
     justify-content: center;
@@ -31,7 +80,7 @@ header{
     margin: 20px 0 0;   
 }
 
-nav > a{
+nav a{
     margin: 0 40px 0;
     text-decoration: none;
     color: #b6bfc2;
@@ -41,32 +90,51 @@ nav > a{
 
 .banner{
     display: flex;
-    justify-content: center;
-
-    margin: 40px 0 0;
+    justify-content: space-between;
+    margin: 25px 0;
+    /* align-items: center; */
 }
 
-.get-started > h1{
+.left-banner > h1{
+    text-align: center;
+    font-size: 72px;
+}
+
+.left-banner > a > button{
+    width: 180px;
+    height: 40px;
+    border: 1px solid black;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 16px;
+  
+}
+
+    /* display: flex;
+    justify-content: center;
+
+    margin: 40px 0 0; */ 
+/* } test
+
+.left-banner > h1{
     height: 100px;
     margin-bottom: 80px;
     text-transform: uppercase;
+    text-align: center;
     font-weight: bold;
-    font-size: 44px;   
+    font-size: 70px;   
 }
 
-.get-started > a > button{
+.left-banner > a > button{
     padding: 4px 28px 4px;
     margin: 4px 2px;
     cursor: pointer;
     border: 1px solid;
+    font-size: 16px;
     background-color: white;
     color: black;
-  }
+  } */
 
-  .get-started > img{
-    width: 100%;
-    height: auto;
-  }
+
 
 
 
