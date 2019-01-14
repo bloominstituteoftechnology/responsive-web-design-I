@@ -74,7 +74,7 @@ h1, h2, h3, h4, h5 {
 
 header {
 	/* border: 2px dotted purple; */
-	/* display: flex; */
+	display: flex;
 	width: 50%;
 	height: 175px;
 	justify-content: space-between;
@@ -241,20 +241,24 @@ address {
 }
 @media(max-width:800px) {
     .container {
-     background: lightgray;
 	 width: 75%;
 	}
 	header {
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	flex-direction: column;
+	justify-content: between;
+	width: 100%;
+	}
+	
+	header nav a {
+		margin: 0 10px 0 10px;
+	}
+	.innovation h1{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 	}
 	.innovation img {
 		display: none;
-	}
-	.middle-image {
-		width: 50%;
 	}
 }
 
