@@ -82,6 +82,13 @@ body {
 	margin: 0 auto;
 }
 
+@media (max-width: 800px){
+	body {
+		padding: 0px;
+		margin: 0px;
+	}
+}
+
 nav {
 	margin-top: 28px;
 	width: 100%;
@@ -102,6 +109,12 @@ nav {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
+}
+@media (max-width: 800px){
+	.nav-left {
+		margin-top: 40px;
+		justify-content: space-around;
+	}
 }
 
 nav a {
@@ -132,6 +145,12 @@ header {
 	border-bottom: 2px solid black;
 }
 
+@media (max-width: 800px) {
+	header {
+		flex-direction: column;
+	}
+}
+
 header div {
 	width: 100%;
 	border: 1px solid red;
@@ -143,17 +162,31 @@ header div {
 	margin-left: 100px;
 }
 
+@media (max-width: 800px) {
+	header div {
+		margin-top: 10px;
+		margin-left: 0px;
+	}
+}
+
 h1 {
-	font-size: 70px;
+	font-size: 72px;
 	margin-bottom: 25px;
 }
 
 header div a {
 	text-decoration: none;
-	color: gray;
-	border: 1px solid gray;
-	padding: 5px 50px;
-	margin-top: 10px;
+	color: black;
+	border: 1px solid black;
+	padding: 7px 45px;
+	margin-top: 0px;
+	margin-left: 10px;
+}
+
+@media (max-width: 800px) {
+	.header-img {
+		display: none;
+	}
 }
 
 .section1 {
@@ -166,15 +199,30 @@ header div a {
 	justify-content: flex-start;
 }
 
+@media (max-width: 800px) {
+	.section1 {
+		width: 95%;
+		margin: 30px auto 0px auto;
+	}
+}
+
 .section1 div {
 	width: 50%;
 	padding: 10px;
-
+}
+.section1 div p {
+	line-height: 1.1rem;
 }
 
 .middle-img {
-	margin: 30px 15px;
+	padding: 20px 15px;
 	/* width: 100%; */
+}
+
+@media (max-width: 800px) {
+	.middle-img{
+		width: 100%;
+	}
 }
 
 .section2 {
@@ -184,16 +232,38 @@ header div a {
 	padding-bottom: 40px;
 }
 
+@media (max-width: 800px){
+	.section2 {
+		justify-content: space-evenly;
+		margin-left: 3%;
+		margin-right: 3%;
+	}
+}
+
+.section2 div p {
+	line-height: 1.1rem;
+	margin-top: 5px;
+}
+
 .section2 div {
-	padding-right: 20px;
+	margin-top: 10px;
+	width: calc(33%);
 }
 
 .contact {
 	margin-top: 40px;
+	width: 100%;
 }
 
 .contact p {
 	margin-top: 15px;
+}
+
+@media (max-width: 800px) {
+	.contact {
+		width: 100%;
+		padding-left: 30px;
+	}
 }
 
 footer {
