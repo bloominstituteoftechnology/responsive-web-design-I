@@ -1,3 +1,243 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+.container, .svc-container {
+	width: 880px;
+	margin: 0 auto;
+	/* border: 1px solid red; */
+}
+
+header {
+	/* border: 2px dotted purple; */
+	display: flex;
+	width: 880px;
+	height: 75px;
+	justify-content: space-around;
+	align-items: center;
+
+}
+header nav {
+	display: flex;
+	margin: 20px 120px 25px 0px;
+	/*border: 2px dashed green;*/
+}
+
+header nav a {
+	/* border: 2px dashed green; */
+	margin: 0 20px 0 20px;
+	padding: 10px;
+	font-size: 14px;
+	color: gray;
+}
+
+header nav a:hover {
+	color: red;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.logo {
+	width: 160px;
+	height: 35px;
+	margin-right: 40px;
+	/* border: 2px solid magenta; */
+}
+.innovation {
+	display: flex;
+	width: 880px;
+	padding: 20px;
+	margin-top: 30px;
+	/*border: 3px solid orange;*/
+}
+
+.innovation h1{
+	display: flex;
+	font-family: "Bangers" cursive;
+	font-size: 70px;
+	text-align: center;
+	flex-wrap: wrap;
+	margin: 0 70px 0;
+}
+.innovation .header-image {
+	width: 40%;
+	height: 40%;
+}
+	
+.innovation button  {
+	background: white;
+	width: 150px;
+	height: 30px;
+	margin-left: 75px;
+	border: 1px solid black;
+}
+.innovation button:hover {
+	color: red;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.main-content-top {
+	border-top: 1px solid black;
+	margin: 10px 0 10px 0;
+}
+h2 {
+	font-size: 20px;
+	font-weight: bold;
+}
+ .main-content-top {
+	/* border: 3px solid magenta; */
+	display: flex;
+	justify-content: space-between;
+	
+} 
+
+.features, .about {
+	width: 400px;
+	margin: 30px 0 40px 0;
+}
+.main-content-bottom {
+	/* border: 3px solid magenta; */
+	display: flex;
+	justify-content: space-between;
+}
+
+.services, .product, .vision {
+	width:250px;
+	margin: 30px 0 40px 0;
+}
+
+.main-content-bottom {
+	border-bottom: 1px solid black;
+}
+
+footer {
+	margin-top: 40px;
+}
+address {
+	margin: 15px 0 15px 0;
+}
+.copyright {
+	display: flex;
+	justify-content: center;
+}
+
+/* Services*/
+
+.svc-intro {
+	padding: 20px;
+
+}
+.svc-main-content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 50px;
+	padding-top: 30px;
+	border-top: 1px solid black;
+}
+
+.svc-main-content button {
+	margin-top: 30px;
+	background: white;
+	width: 150px;
+	height: 30px;
+	border: 1px solid black;
+	border-radius: 5px;
+}
+
+.svc-main-content button:hover {
+	color: red;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.design, .uxui, .marketing, .webdev, .ios, .android {
+	width: 420px;
+	height: 250px;
+	background: rgb(240, 234, 234);
+	margin: 30px 0 30px 0;
+	padding: 20px;
+	
+}
+
+.facts-content{
+	display: flex;
+	margin-top: 35px;
+	padding: 30px;
+	border-top: 1px solid black;
+}
+.facts p {
+	display:flex;
+	width: 375px;
+}
+
+.facts {
+	display: flex;
+	flex-wrap: wrap;
+}
 
 
