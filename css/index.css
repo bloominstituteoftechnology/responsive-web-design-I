@@ -192,8 +192,49 @@ footer {
 
 /* New responsive css */
 
-@media {
+/* 800px tablet-view */
+@media(max-width: 800px) {
+    .container {
+        /* background: yellow;  */
+    }
+    
+    .container header{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .container header nav{
+        align-self: center
+    }
+
+    .container header img {
+        align-self: center
+    }
+    
+    .container .cta {
+        display: flex;
+        justify-content: center;
+    }
+
+    .container .cta img {
+        display: none;
+        }
 }
 
-@media {
+/* 500px mobile-veiw */
+@media(max-width: 500px) {
+    .container {
+        background: red;
+    }
+
+    .container header nav, img{
+        display: flex;
+        justify-content:center;
+        flex-direction: column;
+    }
+
+    .container .cta img {
+        display: none;
+        }
 }
