@@ -259,3 +259,33 @@ header nav a:first-child {
 	  text-align: center;
 	  font-weight: 800;
   }
+
+  @media (max-width: 800px) {
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+    header nav a {
+        position: relative;
+        bottom: 10px;
+    }
+    header img {
+        order: -1;
+        margin-bottom: 50px;
+    }
+    .cta img {
+        display: none;
+    }
+    .cta .cta-text {
+        margin: 0 auto 0; 
+    }
+    .cta .cta-text h1 {
+        margin-top: 60px;
+        margin-right: 35px;
+    }
+    .cta .cta-text button {
+        margin-top: 0px;
+        padding: 4px 0;
+        width: 175px;
+    }
+  }
