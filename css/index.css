@@ -72,10 +72,45 @@ h1, h2, h3, h4, h5 {
 	padding-top: 20px;
 }
 
+@media (max-width: 800px) {
+	.container {
+		background-color:white;
+		margin: 0 auto;
+		width: 720px;
+	}
+}
+
+@media (max-width: 500px) {
+	.container {
+		background-color: pink;
+		margin: 0 auto;
+		width: 450px;
+	}
+}
+
 .navigation {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	
+}
+
+@media (max-width: 800px) {
+	.navigation {
+		display: flex;
+		justify-content: space-between;
+		width: 700px;
+		flex-wrap: wrap;
+
+		
+
+	}
+	.logo {
+		order: -1;
+		height: 36px;
+		width: 183px;
+		margin: 10px 308.5px 30px 308.5px;
+		
+	}
 }
 
 .navigation a {
@@ -84,6 +119,15 @@ h1, h2, h3, h4, h5 {
 	text-decoration: none;
 	padding-top: 10px;
 }
+
+@media (max-width: 800px) {
+	.navigation a {
+		justify-content: space-between;
+		
+
+	}
+}
+
 
 .invitation {
 	display: flex;
@@ -101,11 +145,33 @@ h1, h2, h3, h4, h5 {
 	flex-direction: column;
 }
 
+@media (max-width: 800px) {
+	.invitation h1 {
+		padding-left: 40px;
+		padding-bottom: 30px;
+	}
+}
+
 .invitation button {
 	height: 35px;
-	width: 150px;
-	margin-top: 20px;
+	width: 180px;
+	margin-top: 40px;
+	background: white;
+	border: 1px solid black;
+	font-size: 18px;
 	
+}
+
+@media (max-width: 800px) {
+	.invitation img {
+		display: none;
+	}
+}
+
+@media (max-width: 800px) {
+	.middle-img {
+		width: 100%;
+	}
 }
 
 .text-layouts {
@@ -118,6 +184,12 @@ h1, h2, h3, h4, h5 {
 
 .second-text {
 	padding: 40px 1px 40px 1px;
+}
+
+@media (max-width: 800px) {
+	.text-layouts p {
+		padding: 5px;
+	}
 }
 
 .text-layouts p strong {
@@ -147,8 +219,3 @@ h1, h2, h3, h4, h5 {
 /* media queries*/
 
 /* Tablet Styles */
-@media (max-width: 800px) {
-	body {
-		background-color: #F09A9D;
-	}
-}
