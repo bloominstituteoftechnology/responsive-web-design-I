@@ -84,14 +84,13 @@ time,
 mark,
 audio,
 video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
-
 
 /* HTML5 display-role reset for older browsers */
 
@@ -106,355 +105,375 @@ hgroup,
 menu,
 nav,
 section {
-    display: block;
+  display: block;
 }
 
 body {
-    line-height: 1;
+  line-height: 1;
 }
 
 ol,
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 blockquote,
 q {
-    quotes: none;
+  quotes: none;
 }
 
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-    content: "";
-    content: none;
+  content: "";
+  content: none;
 }
 
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
-
 
 /* Set every element's box-sizing to border-box */
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
-    font-size: 62.8%;
+  font-size: 62.8%;
 }
 
 body {
-    height: 100%;
-    font-family: "Titillium Web", sans-serif;
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+  overflow-x: hidden;
 }
 
 h1,
 h2 {
-    font-family: "Bangers", cursive;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
+  font-family: "Bangers", cursive;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
 }
 
 h3,
 h4,
 h5 {
-    font-family: "Bangers", cursive;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
 }
-
 
 /* Your code starts here! */
 
 .container {
-    margin: auto;
-    width: 100%;
-    max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  width: 100%;
+  max-width: 1280px;
 }
 
 nav {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem;
 }
 
 nav .menu {
-    display: flex;
-    width: 70%;
-    justify-content: space-between;
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
 }
 
 nav .menu a {
-    font-size: .8em;
-    color: gray;
-    text-decoration: none;
+  font-size: 2rem;
+  color: gray;
+  text-decoration: none;
 }
 
-nav .nav-logo {}
+nav .menu a:hover {
+  font-size: 2.5rem;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+nav .nav-logo {
+  width: 20%;
+}
 
 header {
-    display: flex;
-    flex-flow: row;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: solid black 1px;
-    margin: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: solid black 1px;
+  margin: 2rem 0;
+  padding-bottom: 1rem;
 }
 
 header .left-head {
-    text-align: center;
-    width: 65%;
+  text-align: center;
+  width: 65%;
 }
 
 header .left-head h1 {
-    font-size: 10vh;
+  font-size: 10vh;
 }
 
 header button {
-    width: 150px;
-    border: solid black 1px;
-    background-color: transparent;
-    vertical-align: top;
-    margin-top: 6px;
-    font-size: 14px;
-    cursor: pointer;
+  width: 150px;
+  padding: 1rem;
+  border: solid black 1px;
+  background-color: transparent;
+  vertical-align: top;
+  margin: 2rem;
+  font-size: 1.5rem;
+  cursor: pointer;
 }
 
 header .left-head button:hover {
-    background: black;
-    color: white;
+  background: black;
+  color: white;
 }
 
-header .right-head {}
+header .right-head {
+}
 
 header .head-img {
-    padding: 20px;
-    max-width: 100%;
-    max-height: 100%;
+  padding: 2rem;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .main-content {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.8rem;
 }
 
 .main-content .top-content {
-    display: flex;
-    margin: 20px;
-    font-family: "Titillium Web", sans-serif;
+  display: flex;
+  margin: 2rem 0;
+  font-family: "Titillium Web", sans-serif;
 }
 
 .main-content .middle-content {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .main-content .middle-content .middle-img {
-    margin: 20px;
+  width: 100%;
+  margin: 2rem 0;
 }
 
 .main-content .bottom-content {
-    display: flex;
+  display: flex;
+  max-width: 100%;
 }
-
+.card {
+  margin-right: 1rem;
+}
 .contact {
-    margin-top: 57px;
-    border-top: 1px solid black;
-    padding: 39px 10px 0;
+  margin-top: 3rem;
+  border-top: 1px solid black;
+  padding: 3.9rem 0;
+  font-size: 1.7rem;
 }
 
 .contact p {
-    margin: 20px 0;
+  margin: 2rem 0;
+  font-size: 2rem;
 }
 
 footer {
+  margin: 32px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+@media (max-width: 800px) {
+  .container {
+    margin: auto;
+    padding: 10px;
+    max-width: 650px;
+    width: 100%;
+  }
+  h2 {
+    font-size: 13px;
+  }
+  nav {
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    margin: 20px 0 0 0;
+  }
+  nav .nav-logo {
+    order: 1;
+  }
+  nav .menu {
+    width: 100%;
+    order: 2;
+    padding: 10px 0;
+    margin: 20px 0 0 0;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+  }
+  header .right-head .head-img {
+    display: none;
+  }
+  header {
+    padding: 20px;
+    margin-top: 20px;
+  }
+  header .left-head {
+    text-align: center;
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  header .left-head h1 {
+    font-size: 65px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .main-content {
+    padding: 20px 20px 0 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .main-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-content .top-content {
+    display: flex;
+    margin: 0;
+    font-family: "Titillium Web", sans-serif;
+  }
+  .main-content .middle-content {
+    display: flex;
+    justify-content: center;
+    height: 170px;
+  }
+  .main-content .middle-content .middle-img {
+    margin: 20px;
+  }
+  .main-content .bottom-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  .main-content .bottom-content .card {
+    padding-right: 10px;
+  }
+  .contact {
+    margin: 20px;
+    border-top: 1px solid black;
+    padding: 10px 10px 0;
+  }
+  .contact p {
+    margin: 20px 0;
+  }
+  footer {
     margin: 32px 0;
     text-align: center;
     font-size: 14px;
+  }
 }
 
-@media (max-width:800px) {
-    .container {
-        margin: auto;
-        padding: 10px;
-        max-width: 650px;
-        width: 100%;
-    }
-    h2 {
-        font-size: 13px;
-    }
-    nav {
-        flex-flow: row wrap;
-        justify-content: center;
-        align-content: center;
-        margin: 20px 0 0 0;
-    }
-    nav .nav-logo {
-        order: 1;
-    }
-    nav .menu {
-        width: 100%;
-        order: 2;
-        padding: 10px 0;
-        margin: 20px 0 0 0;
-        font-size: 25px;
-        display: flex;
-        justify-content: space-between;
-    }
-    header .right-head .head-img {
-        display: none;
-    }
-    header {
-        padding: 20px;
-        margin-top: 20px;
-    }
-    header .left-head {
-        text-align: center;
-        width: 100%;
-        padding-bottom: 20px;
-    }
-    header .left-head h1 {
-        font-size: 65px;
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
-    .main-content {
-        padding: 20px 20px 0 20px;
-        display: flex;
-        flex-direction: column;
-    }
-    .main-content {
-        display: flex;
-        flex-direction: column;
-    }
-    .main-content .top-content {
-        display: flex;
-        margin: 0;
-        font-family: "Titillium Web", sans-serif;
-    }
-    .main-content .middle-content {
-        display: flex;
-        justify-content: center;
-        height: 170px;
-    }
-    .main-content .middle-content .middle-img {
-        margin: 20px;
-    }
-    .main-content .bottom-content {
-        display: flex;
-        justify-content: space-between;
-    }
-    .main-content .bottom-content .card {
-        padding-right: 10px;
-    }
-    .contact {
-        margin: 20px;
-        border-top: 1px solid black;
-        padding: 10px 10px 0;
-    }
-    .contact p {
-        margin: 20px 0;
-    }
-    footer {
-        margin: 32px 0;
-        text-align: center;
-        font-size: 14px;
-    }
-}
-
-@media (max-width:500px) {
-    .container {
-        margin: auto;
-        padding: 10px;
-        max-width: 450px;
-        width: 100%;
-    }
-    h2 {
-        font-size: 13px;
-    }
-    nav {}
-    nav .nav-logo {
-        order: 1;
-    }
-    nav .menu {
-        width: 100%;
-        order: 2;
-        margin: 20px 0 0 0;
-        font-size: 30px;
-        align-items: center;
-        text-align: center;
-        justify-items: center;
-        display: flex;
-        flex-flow: column wrap;
-    }
-    nav .menu a {
-        width: 100%;
-        padding: 20px;
-        border-bottom: lightgrey 1px solid;
-    }
-    nav .menu a:first-child {
-        border-top: lightgrey 1px solid;
-    }
-    header .right-head .head-img {
-        display: none;
-    }
-    header {
-        padding: 20px;
-        margin-top: 20px;
-    }
-    header .left-head {
-        text-align: center;
-        width: 100%;
-        padding-bottom: 20px;
-    }
-    header .left-head h1 {
-        font-size: 65px;
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
-    .main-content .top-content {
-        flex-wrap: wrap;
-    }
-    .main-content .top-content .col1 {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-    .main-content .middle-content {
-        display: flex;
-        justify-content: center;
-        height: 170px;
-        margin-bottom: 0;
-    }
-    .main-content .middle-content .middle-img {
-        margin-top: 20px;
-    }
-    .main-content .bottom-content {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .main-content .bottom-content .card {
-        padding-right: 10px;
-        width: 100%;
-        margin-top: 20px;
-    }
-    .contact {
-        margin: 20px;
-        border-top: 1px solid black;
-        padding: 10px 10px 0;
-    }
-    .contact p {
-        margin: 20px 0;
-    }
-    footer {
-        margin: 32px 0;
-        text-align: center;
-        font-size: 14px;
-    }
+@media (max-width: 500px) {
+  .container {
+    margin: auto;
+    padding: 10px;
+    max-width: 450px;
+    width: 100%;
+  }
+  h2 {
+    font-size: 13px;
+  }
+  nav {
+  }
+  nav .nav-logo {
+    order: 1;
+  }
+  nav .menu {
+    width: 100%;
+    order: 2;
+    margin: 20px 0 0 0;
+    font-size: 30px;
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+    display: flex;
+    flex-flow: column wrap;
+  }
+  nav .menu a {
+    width: 100%;
+    padding: 20px;
+    border-bottom: lightgrey 1px solid;
+  }
+  nav .menu a:first-child {
+    border-top: lightgrey 1px solid;
+  }
+  header .right-head .head-img {
+    display: none;
+  }
+  header {
+    padding: 20px;
+    margin-top: 20px;
+  }
+  header .left-head {
+    text-align: center;
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  header .left-head h1 {
+    font-size: 65px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .main-content .top-content {
+    flex-wrap: wrap;
+  }
+  .main-content .top-content .col1 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .main-content .middle-content {
+    display: flex;
+    justify-content: center;
+    height: 170px;
+    margin-bottom: 0;
+  }
+  .main-content .middle-content .middle-img {
+    margin-top: 20px;
+  }
+  .main-content .bottom-content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .main-content .bottom-content .card {
+    padding-right: 10px;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .contact {
+    margin: 20px;
+    border-top: 1px solid black;
+    padding: 10px 10px 0;
+  }
+  .contact p {
+    margin: 20px 0;
+  }
+  footer {
+    margin: 32px 0;
+    text-align: center;
+    font-size: 14px;
+  }
 }
