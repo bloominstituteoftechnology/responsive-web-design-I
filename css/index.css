@@ -103,6 +103,17 @@ h1, h2, h3, h4, h5 {
     }
 }
 
+@media ( max-width: 500px ) {
+    .nav {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 0px;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
 .nav a {
 	text-decoration: none;
 	color: lightgray;
@@ -112,7 +123,20 @@ h1, h2, h3, h4, h5 {
     .nav a {
         text-decoration: none;
         color: lightgray;
-        margin: 18px;
+        padding: 18px;
+    }
+}
+
+@media ( max-width: 500px ) {
+    .nav a {
+        text-decoration: none;
+        color: lightgray;
+        padding: 18px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        border-top: 1px solid lightgray;
+        border-bottom: 1px solid lightgray;
     }
 }
 
@@ -121,6 +145,12 @@ h1, h2, h3, h4, h5 {
         width: 100%;
         display: flex;
         justify-content: center;
+    }
+}
+
+@media ( max-width: 800px ) {
+    .logo-container {
+        order: -1;
     }
 }
 
@@ -146,11 +176,29 @@ footer {
 	margin: 0 1px;
 }
 
+@media ( max-width: 500px ) {
+    .bottom-content {
+        flex-direction: column;
+    }
+}
+
+@media ( max-width: 500px ) {
+    .bottom-content .text-content {     
+        margin: 10px 0;
+    }
+}	
+
 .main-content {
 	border-top: 1px solid black;
 	margin: 36px 0;
 	padding: 39px 0;
 	border-bottom: 1px solid black;
+}
+
+@media ( max-width: 500px ) {
+    .main-content {
+        margin: 36px 10px;
+    }
 }
 
 .middle-img {
@@ -163,8 +211,16 @@ footer {
     align-items: stretch;
 }
 
-.top-content .text-content {
-	margin: 0;
+@media ( max-width: 500px ) {
+    .top-content {
+        flex-direction: column;
+    }
+}
+
+@media ( max-width: 500px ) {
+    .top-content .text-content {     
+        margin: 10px 0;
+    }
 }	
 
 /* Home Page CTA Section Styles */
@@ -202,6 +258,12 @@ footer {
 
 .contact {
 	margin-left: 1px;
+}
+
+@media ( max-width: 500px ) {
+    .contact {
+        margin: 0 10px;
+    }
 }
 
 /* ------- Services Page Specific Styles ------- */
