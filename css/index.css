@@ -70,6 +70,12 @@ h1, h2, h3, h4, h5 {
 	width: 98%;
 }
 
+@media (max-width: 800px) {
+    body {
+        background-color: green;
+    }
+}
+
 header {
     height: 5%;
 
@@ -80,11 +86,24 @@ header {
     margin: 1%;
 }
 
+@media (max-width: 800px) {
+    header {
+        flex-flow: column-reverse nowrap;
+    }
+}
+
 header nav {
     width: 75%;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
+}
+
+@media (max-width: 800px) {
+    header nav {
+        width: 100%;
+        align-content: space-between;
+    }
 }
 
 header nav a {
@@ -99,6 +118,16 @@ header nav a {
     justify-content: space-around;
 }
 
+@media (max-width: 800px) {
+    .top-img {
+        display: none;
+    }
+
+    .top-design-catchphrase {
+        flex-flow: column nowrap;
+    }
+}
+
 .catchphrase {
     display: flex;
     flex-flow: column wrap;
@@ -111,12 +140,25 @@ header nav a {
     font-size: 80px;
 }
 
+@media (max-width: 800px) {
+    .catchphrase h1 {
+        font-size: 70px;
+    }
+}
+
 .catchphrase button {
     width: 40%;
     height: 8%;
     background-color: white;
     color: black;
     border: 1px solid black;
+}
+
+@media (max-width: 800px) {
+    .catchphrase button {
+        width: 20%;
+        height: 20%;
+    }
 }
 
 .top-content {
