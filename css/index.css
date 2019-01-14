@@ -200,14 +200,19 @@ header nav a {
     margin-left: 3%;
 }
 
+@media (max-width: 500px) {
+    .top-content {
+        flex-flow: column nowrap;
+    }
+}
+
 .features, .about {
     width: 49%;
 }
 
 @media (max-width: 500px) {
-    .catchphrase button {
-        width: 40%;
-        height: 20%;
+    .features, .about {
+        width: 100%;
     }
 }
 
@@ -216,6 +221,7 @@ header nav a {
     margin-right: 3%;
     margin-left: 3%;
 }
+
 
 .bottom-content {
     display: flex;
@@ -228,8 +234,20 @@ header nav a {
     margin-left: 3%;
 }
 
+@media (max-width: 500px) {
+    .bottom-content {
+        flex-flow: column nowrap;
+    }
+}
+
 .services, .product, .vision {
     width: 32%;
+}
+
+@media (max-width: 500px) {
+    .services, .product, .vision {
+        width: 100%;
+    }
 }
 
 .contact {
