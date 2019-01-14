@@ -89,6 +89,8 @@ body {
 	}
 }
 
+/* ============================ Navigation ============================ */
+
 nav {
 	margin-top: 28px;
 	width: 100%;
@@ -104,6 +106,12 @@ nav {
 	}
 }
 
+@media (max-width: 600px){
+	nav {
+		margin-top: 21px;
+	}
+}
+
 .nav-left {
 	width: 100%;
 	display: flex;
@@ -114,6 +122,13 @@ nav {
 	.nav-left {
 		margin-top: 40px;
 		justify-content: space-around;
+	}
+}
+
+@media (max-width: 600px){
+	.nav-left {
+		margin-top: 20px;
+		border-bottom: 1px solid gray;
 	}
 }
 
@@ -135,6 +150,17 @@ nav a {
 	}
 }
 
+@media (max-width: 600px){
+	.nav-left a {
+		border-top: 1px solid gray;
+		text-align: center;
+		font-weight: bold;
+		font-size: 1.2rem;
+	}
+}
+
+/* ============================ Header ============================ */
+
 header {
 	width: 100%;
 	margin-top: 60px;
@@ -151,9 +177,17 @@ header {
 	}
 }
 
+@media (max-width: 600px) {
+	header {
+		margin-top: 40px;
+	}
+}
+
+
+
 header div {
 	width: 100%;
-	border: 1px solid red;
+	/* border: 1px solid red; */
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -182,12 +216,20 @@ header div a {
 	margin-top: 0px;
 	margin-left: 10px;
 }
+@media (max-width: 600px) {
+	header div a {
+		margin-left: 0px;
+		font-size: 1.05rem;
+	}
+}
 
 @media (max-width: 800px) {
 	.header-img {
 		display: none;
 	}
 }
+
+/* ============================ Section 1 ============================ */
 
 .section1 {
 	display: flex;
@@ -206,9 +248,26 @@ header div a {
 	}
 }
 
+@media (max-width: 600px) {
+	.section1 {
+		width: 100%;
+		flex-direction: column;
+		padding: 10px 5%;
+		margin-top: 0px;
+	}
+}
+
 .section1 div {
 	width: 50%;
 	padding: 10px;
+}
+
+@media (max-width: 600px) {
+	.section1 div {
+		margin-top: 50px;
+		width: 100%;
+		padding: 8px;
+	}
 }
 .section1 div p {
 	line-height: 1.1rem;
@@ -240,6 +299,13 @@ header div a {
 	}
 }
 
+@media (max-width: 600px) {
+	.section2 {
+		flex-direction: column;
+		margin-bottom: 0px;
+	}
+}
+
 .section2 div p {
 	line-height: 1.1rem;
 	margin-top: 5px;
@@ -250,9 +316,22 @@ header div a {
 	width: calc(33%);
 }
 
+@media (max-width: 600px) {
+	.section2 div {
+		width: 100%;
+		margin-bottom: 50px;
+	}
+}
+
 .contact {
 	margin-top: 40px;
 	width: 100%;
+}
+
+@media (max-width: 600px) {
+	.contact {
+		margin-top: 0px;
+	}
 }
 
 .contact p {
@@ -263,6 +342,12 @@ header div a {
 	.contact {
 		width: 100%;
 		padding-left: 30px;
+	}
+}
+
+@media (max-width: 600px) {
+	.contact {
+		padding-top: 35px;
 	}
 }
 
