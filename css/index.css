@@ -73,9 +73,16 @@ h1, h2, h3, h4, h5 {
 /* Container Styles */
 
 .container {
-	width: 880px;
+	max-width: 880px;
 	margin: 0 auto;
 }
+
+@media ( max-width: 800px ) {
+    .container {
+        max-width: 745px;
+    }    
+}
+
 
 /* Navigation */
 
@@ -86,9 +93,35 @@ h1, h2, h3, h4, h5 {
     margin-top: 16px;
 }
 
+@media ( max-width: 800px ) {
+    .nav {
+        display: flex;
+        align-items: center;
+        margin-top: 16px;
+        flex-wrap: wrap-reverse;
+        justify-content: space-between;
+    }
+}
+
 .nav a {
 	text-decoration: none;
 	color: lightgray;
+}
+
+@media ( max-width: 800px ) {
+    .nav a {
+        text-decoration: none;
+        color: lightgray;
+        margin: 18px;
+    }
+}
+
+@media ( max-width: 800px ) {
+    .logo-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
 }
 
 /* Footer Styles */
@@ -147,6 +180,13 @@ footer {
 	font-size: 77px;
 	text-align: center;
 }
+
+@media( max-width: 800px ) {
+    .cta img {
+        display: none;
+    }
+}
+
 
 .cta .cta-text button {
 	background: white;
@@ -219,5 +259,4 @@ footer {
     margin: 19px 0;
 }
 
-/* ------- Responsive Design Styles ------- */
 
