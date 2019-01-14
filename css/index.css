@@ -241,12 +241,13 @@ address {
 }
 @media(max-width:800px) {
     .container {
-	 width: 75%;
+	 	background: lightgray;
+		width: 75%;
 	}
 	header {
-	display: flex;
-	justify-content: between;
-	width: 100%;
+		display: flex;
+		justify-content: between;
+		width: 100%;
 	}
 	
 	header nav a {
@@ -260,5 +261,11 @@ address {
 	.innovation img {
 		display: none;
 	}
+}
+@media(max-width:500px) {
+	.container {
+		background: pink;
+	}
+	
 }
 
