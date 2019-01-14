@@ -62,8 +62,8 @@ h1, h2, h3, h4, h5 {
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 body{
-	margin: 0 auto;
-	width: 880px;
+	margin: auto;
+	width: 100%;
 	font-size: 16px;
 }
 
@@ -322,6 +322,21 @@ h1{
 	margin-right: 20px;
 }
 
-@media{
+.fluidcontainer{
+	width: 100%;
+	margin: auto;
+}
 
+@media(max-width: 800px){
+	.body{
+	background-color: aqua;
+	max-width: 800px;
+}
+}
+
+@media(max-width: 500px){ 
+	.body{
+	background-color:palegoldenrod;
+	max-width: 500px;
+	}
 }
