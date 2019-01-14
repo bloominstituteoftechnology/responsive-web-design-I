@@ -20,8 +20,8 @@ time, mark, audio, video {
   padding: 0;
   border: 0;
   vertical-align: baseline;
-  font-size: 62.5%;
   font: inherit;
+
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -55,7 +55,21 @@ table {
 }
 
 * {
+
+  box-sizing: inherit;
+}
+
+html {
+
+
   box-sizing: border-box;
+  //This defines what 1rem is
+  font-size: 62.5%; // 1 rem = 10px
+
+  @media only screen and (max-width: 1000px) {
+    font-size: 50%; // 1rem = 8px
+  }
+
 }
 
 html, body {
@@ -79,8 +93,6 @@ a {
 }
 
 html {
-  //This defines what 1rem is
-  font-size: 100%; // 1 rem = 10px
 
 }
 
