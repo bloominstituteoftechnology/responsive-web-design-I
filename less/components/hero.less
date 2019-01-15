@@ -11,6 +11,10 @@
     background-size: cover;
     background-position: 0 -700px;
     z-index: 3;
+
+    @media only screen and (max-width: 800px) {
+      background-position: 0px;
+    }
   }
 
   &__text {
@@ -21,6 +25,12 @@
     font-size: 3rem;
     background-image: radial-gradient(white 30%, transparent 100%);
     transition: all 1s ease-out;
+
+    @media only screen and (max-width: 800px) {
+      text-align: center;
+      font-size: 2rem;
+    }
+
 
     &:hover {
       position: absolute;
@@ -50,5 +60,12 @@
     border-radius: 100px;
     opacity: 0;
     transition: all 1s ease-in-out;
+
+    @media only screen and (max-width: 800px) {
+      opacity: 100;
+      transform: translate(-50%, -85%);
+      background-image: radial-gradient(white 10%, transparent 100%);
+    }
+
   }
 }

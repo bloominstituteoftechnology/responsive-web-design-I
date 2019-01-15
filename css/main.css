@@ -297,6 +297,12 @@ a {
   background-position: 0 -700px;
   z-index: 3;
 }
+
+@media only screen and (max-width: 800px) {
+    .hero__img {
+        background-position: 0px;
+    }
+}
 .hero__text {
   position: absolute;
   top: 50%;
@@ -305,6 +311,13 @@ a {
   font-size: 3rem;
   background-image: radial-gradient(white 30%, transparent 100%);
   transition: all 1s ease-out;
+}
+
+@media only screen and (max-width: 800px) {
+    .hero__text {
+        text-align: center;
+        font-size: 2rem;
+    }
 }
 .hero__text:hover {
   position: absolute;
@@ -331,6 +344,14 @@ a {
   border-radius: 100px;
   opacity: 0;
   transition: all 1s ease-in-out;
+}
+
+@media only screen and (max-width: 800px) {
+    .hero__hidden-text {
+        opacity: 100;
+        transform: translate(-50%, -85%);
+        background-image: radial-gradient(white 10%, transparent 100%);
+    }
 }
 .info-cards {
   margin: 0 auto;
@@ -404,7 +425,6 @@ a {
   height: 50vh;
   position: relative;
 }
-
 @media only screen and (max-width: 700px) {
   .image-gallery {
       display: none;
@@ -517,22 +537,18 @@ a {
   transform: scale(2);
   box-shadow: 0 2px 9px 2px black;
 }
-
 .blueimp-gallery-display {
     opacity: 01;
     display: none !important;
 }
-
 @media only screen and (max-width: 700px) {
     .blueimp-gallery-display {
         display: block !important;
     }
 }
-
 .blueimp-gallery-carousel {
     box-shadow: 0 0 0px #000;
 }
-
 .blueimp-gallery {
     background: #f5efef;
 }
@@ -679,12 +695,32 @@ footer__container {
   background-color: #f2f2f2;
   display: flex;
 }
+
+@media only screen and (max-width: 1000px) {
+    .content {
+        max-width: 100%;
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .content {
+        flex-direction: column;
+    }
+}
 .content__col {
   padding: 0 2rem;
   width: 33%;
 }
+
+@media only screen and (max-width: 600px) {
+    .content__col {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+}
 .content__col h2 {
-  font-size: 1.4rem;
+    font-size: 1.5rem;
 }
 .information {
   display: flex;
@@ -813,7 +849,7 @@ footer__container {
 }
 .features-section {
   margin: 0 auto;
-  margin-top: 5rem;
+    margin-top: 7rem;
   max-width: 70rem;
   display: flex;
   flex-wrap: wrap;
