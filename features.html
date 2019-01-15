@@ -113,30 +113,26 @@
     <img src="./img/emile-perron-190221-unsplash.jpg" class="image-gallery__img6 image-gallery__img" alt="">
 </section>
 
-<div id="links">
-    <a href="./img/farzad-nazifi-71686-unsplash.jpg" title="">
-    </a>
-    <a href="./img/fancycrave-277756-unsplash.jpg" title="">
-    </a>
-    <a href="./img/fabian-irsara-92113-unsplash.jpg" title="">
-    </a>
-    <a href="./img/rawpixel-579231-unsplash.jpg" title="">
-    </a>
-    <a href="./img/domenico-loia-274200-unsplash.jpg" title="">
-    </a>
-    <a href="./img/emile-perron-190221-unsplash.jpg" title="">
-    </a>
-</div>
 
 </body>
 
 <script src="js/blueimp-gallery.min.js"></script>
 <script>
-	blueimp.Gallery(
-		document.getElementById( 'links' ).getElementsByTagName( 'a' ),
-		{
-			container: '#blueimp-gallery-carousel',
-			carousel: true
-		}
-	);
+
+	let size = window.screen.width;
+
+	if( size <= 700 ) {
+		blueimp.Gallery( [
+				'./img/farzad-nazifi-71686-unsplash.jpg',
+				'./img/fancycrave-277756-unsplash.jpg',
+				'./img/fabian-irsara-92113-unsplash.jpg',
+				'./img/rawpixel-579231-unsplash.jpg',
+				'./img/domenico-loia-274200-unsplash.jpg',
+				'./img/domenico-loia-274200-unsplash.jpg',
+				'./img/emile-perron-190221-unsplash.jpg'
+			], { container: '#blueimp-gallery-carousel', carousel: true }
+		);
+	}
+
+
 </script>
