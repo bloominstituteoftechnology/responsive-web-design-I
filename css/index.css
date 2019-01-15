@@ -79,7 +79,13 @@ h1, h2, h3, h4, h5 {
 
 @media ( max-width: 800px ) {
     .container {
-        max-width: 745px;
+        max-width: 86%;
+    }    
+}
+
+@media ( max-width: 500px ) {
+    .container {
+        max-width: 100%;
     }    
 }
 
@@ -116,14 +122,15 @@ h1, h2, h3, h4, h5 {
 
 .nav a {
 	text-decoration: none;
-	color: lightgray;
+    color: lightgray;
+    padding: 2%;
 }
 
 @media ( max-width: 800px ) {
     .nav a {
         text-decoration: none;
         color: lightgray;
-        padding: 18px;
+        padding: 2%;
     }
 }
 
@@ -131,8 +138,8 @@ h1, h2, h3, h4, h5 {
     .nav a {
         text-decoration: none;
         color: lightgray;
-        padding: 18px;
         width: 100%;
+        padding: 3%;
         display: flex;
         justify-content: center;
         border-top: 1px solid lightgray;
@@ -185,19 +192,26 @@ footer {
 @media ( max-width: 500px ) {
     .bottom-content .text-content {     
         margin: 10px 0;
+        padding: 0 1%;
     }
 }	
 
 .main-content {
 	border-top: 1px solid black;
-	margin: 36px 0;
+	margin: 36px 2%;
 	padding: 39px 0;
 	border-bottom: 1px solid black;
 }
 
+@media ( max-width: 800px ) {
+    .main-content {
+        margin: 36px 2%;
+    }
+}
+
 @media ( max-width: 500px ) {
     .main-content {
-        margin: 36px 10px;
+        margin: 36px 2%;
     }
 }
 
@@ -221,6 +235,7 @@ footer {
 @media ( max-width: 500px ) {
     .top-content .text-content {     
         margin: 10px 0;
+        padding: 0 1%;
     }
 }	
 
@@ -258,12 +273,13 @@ footer {
 /* Contact Section Styles */
 
 .contact {
-	margin-left: 1px;
+	margin: 0 2%;
 }
 
 @media ( max-width: 500px ) {
     .contact {
         margin: 0 10px;
+        padding: 0 1%;
     }
 }
 
