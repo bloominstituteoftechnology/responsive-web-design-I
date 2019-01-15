@@ -67,12 +67,25 @@ h1, h2, h3, h4, h5 {
 /*--------------------*/
 
 .container{
-	width:880px;
+	width:1024px;
 	height: 2000px;
 	margin: auto;
 	/*border: 1px solid black;*/
 }
 
+@media(max-width: 800px){
+    .container{
+        width: 800px;
+    }
+}
+
+@media(max-width: 500px){
+    .container{
+
+    }
+}
+
+/*---------------------------------*/
 .header{
 	/*border: 1px solid blue;*/
 	height:5%;
@@ -158,8 +171,10 @@ section.index-sec1  div p{
 /*-----------------------------------------------------------*/
 
 section.index-sec2{
-	/*height: 25%;*/
-	margin-bottom: 3%;
+    /*height: 25%;*/
+    margin-bottom: 3%;
+    display:flex;
+    justify-content: center
 }
 
 /*-------------------------------------------------------------*/
