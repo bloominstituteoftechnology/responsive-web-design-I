@@ -4,6 +4,6 @@
 
 <h3>Media queries at max-width: 800px and 500px</h3>
 
-<a href="#">Click here</a>
+<a href="https://itelsunday.github.io/responsive-web-design-I/">Click here</a>
 
-<h3Resize windows from full screen to 450px for responsiveness view</h3>
+<h3>Resize windows from full screen to 450px for responsiveness view</h3>
