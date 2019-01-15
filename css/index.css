@@ -92,15 +92,17 @@ a {
 	top: 10px;
 }
 
-.section.top ul li {
-	display: inline;
-	list-style-type: none; 
+.section.top ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center; 
 }
 
-.section.top li  {
-	margin-right: 25px;
-	padding: 10px;
-	border-radius: 25px; 
+.section.top ul li {
+    list-style-type: none; 
+    padding: 15px;
 }
 
 .section.top .logo {
@@ -117,57 +119,73 @@ a {
 }
 
 .section.main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
 	border-bottom: 1px solid black;
-	padding-bottom: 25px;
+    padding-bottom: 25px;
+    
+   
+}
+
+.section.main .item.main {
+    width: 50%; 
+   
+}
+
+.section.main .item.main.text {
+    display: flex;
+
+    flex-direction: column;
+    justify-content: space-evenly center;
+
+    align-items: center;
 }
 
 .section.main .border {
-	display: infline-flex;
 	background-color: white;
 	border: 1px solid black;
-	text-align: center;
+    text-align: center;
+    
 	padding: 5px;
-	align-self: flex-start;
 	width: 50%;
-	margin-top: 15px;
-	margin-bottom: 5px;
-	margin-left: 69px;
 }
 
 .section.main .item.main h1 {
     font-size: 75px;
-    width: 250px;
     text-align: center; 
-    margin: 45px;
+    width: 299px;
 }
 
-.section.main .item.main {
-	width: 45%;
-	text-align: center;
-}
 
 .section.description {
-	flex-wrap: wrap;
+    display: flex; 
+    flex-direction: row; 
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: space-around;
+
 	border-bottom: 1px solid black;
 	padding-bottom: 20px;
 }
 
-
-
 .section.description .item.mainpage {
-	height: auto;
-	margin: 20px;
+    height: auto;
 	padding: 15px;
-	background-color: white; 
-	
+    background-color: white; 
+    margin-top: 15px;
+    margin-bottom: 15px; 
+    
 } 
 
 .section.description .item.mainpage.row1 {
-	width: 44%;
+    width: 44%;
 }
 
 .section.description .item.mainpage.row2 {
-	width: 26%;
+    width: 33%;
 }
 
 .section.description .item.servicespage {
@@ -193,6 +211,7 @@ a {
 .section.bottom {
 margin-top: 30px;
 flex-wrap: wrap;
+flex-direction: column;
 }
 
 .section.bottom .item.bottom {
@@ -230,27 +249,39 @@ footer {
     }
 
     .section.top {
-        margin: 15px; 
-    }
+        display: flex;
+        flex-direction: column;
 
-    .section.top .nav {
-        width: 400px;
-    }
-
-    .section.top li  {
-        margin-right: 5px;
-        padding: 5px;
-        font-size: 90%;
+        align-items: center;
+        align-content: center;
+        
     }
 
     .section.top .logo {
-        position: relative;
-        top: 5px;
-        right: 2.5px; 
+        order: 0;
+        width: 200px;
+        align-self: center; 
+        margin: 15px 0px 15px 0px;
     }
 
-    .section.main .item.main {
-        width: 45%; 
+    .section.top nav {
+        order: 1;
+        align-self: center;
+    }
+
+    .section.top nav ul {
+        align-items: stretch;
+    }
+    .section.top nav ul li {
+        padding: 0 5% 0 5%;
+    }
+
+    .section.main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section.main .item.main { 
         margin: 5px;
     }
 
@@ -258,14 +289,15 @@ footer {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column; 
-        align-items: center; 
+        align-items: center;
+        align-self: center; 
+        text-align: center;  
     }
 
-    .section.main .item.main h1 {
-        font-size: 45px;
-        height: 10px;
-        text-align: center; 
-        padding-bottom: 50px;
+    .section.main .item.main.mainimage {
+        display: none; 
+        width: 0px;
+        height: 0px;
     }
 
     .section.main .item.main img {
@@ -279,41 +311,27 @@ footer {
         margin: 15px;
     }
 
-    .section.description .item.mainpage{
-        padding: 5px;
-    }
-
-    .section.description .item.mainpage p {
-        font-size: 20px;
-    }
-
-    .section.description .item.mainpage h3 {
-        text-align: center;
-        font-size: 30px;
-    }
-
-    .section.description .item.mainpage.row1{
-        width: 90%;
-    }
-
-    .section.description .item.mainpage.row2 {
-        width: 90%;
-    }
-
     
 }
 
 
 @media (max-width: 500px) {
 
-    .section.top {
-        margin: 5px; 
+    .section.top nav ul {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: stretch;
+        align-items: stretch;
     }
 
-    .section.top .logo {
-        width: 50%;
-    }
+    .section.top nav ul li {
+        
+        padding: 15px 100% 15px 100% ;
+        width: 100%; 
+        align-self: center; 
 
+        border: 1px solid black;
+    }
 
     .section.main .item.main .text {
         width: 100%;
@@ -323,6 +341,20 @@ footer {
     .section.main .item.main img {
         display: none;
         width: 0%; 
+    }
+
+    .section.description {
+        display: flex; 
+        flex-direction: column; 
+        flex-wrap: wrap;
+    }
+
+    .section.description .item.mainpage.row1 {
+        width: 100%;
+    }
+    
+    .section.description .item.mainpage.row2 {
+        width: 100%;
     }
 
 }
