@@ -404,9 +404,10 @@ a {
   height: 50vh;
   position: relative;
 }
-@media only screen and (max-width: 400px) {
+
+@media only screen and (max-width: 700px) {
   .image-gallery {
-    height: 80vh;
+      display: none;
   }
 }
 .image-gallery__img1 {
@@ -515,6 +516,25 @@ a {
   z-index: 6;
   transform: scale(2);
   box-shadow: 0 2px 9px 2px black;
+}
+
+.blueimp-gallery-display {
+    opacity: 01;
+    display: none !important;
+}
+
+@media only screen and (max-width: 700px) {
+    .blueimp-gallery-display {
+        display: block !important;
+    }
+}
+
+.blueimp-gallery-carousel {
+    box-shadow: 0 0 0px #000;
+}
+
+.blueimp-gallery {
+    background: #f5efef;
 }
 footer {
   border-top: 2px solid grey;

@@ -9,10 +9,13 @@
     <title>Great Idea!</title>
 
     <link href="https://fonts.googleapis.com/css?family=Bangers|Titillium+Web" rel="stylesheet">
+    <link rel="stylesheet" href="css/blueimp-gallery.min.css">
     <link rel="stylesheet" href="css/main.css">
+
 
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.1/min/tiny-slider.js"></script>
     <![endif]-->
 </head>
 
@@ -91,6 +94,16 @@
 
 </section>
 
+<!-- The Gallery as inline carousel, can be positioned anywhere on the page -->
+<div id="blueimp-gallery-carousel" class="blueimp-gallery blueimp-gallery-carousel">
+    <div class="slides"></div>
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+</div>
+
 <section class="image-gallery">
     <img src="./img/farzad-nazifi-71686-unsplash.jpg" class="image-gallery__img1 image-gallery__img" alt="">
     <img src="./img/fancycrave-277756-unsplash.jpg" class="image-gallery__img2 image-gallery__img" alt="">
@@ -100,4 +113,30 @@
     <img src="./img/emile-perron-190221-unsplash.jpg" class="image-gallery__img6 image-gallery__img" alt="">
 </section>
 
+<div id="links">
+    <a href="./img/farzad-nazifi-71686-unsplash.jpg" title="">
+    </a>
+    <a href="./img/fancycrave-277756-unsplash.jpg" title="">
+    </a>
+    <a href="./img/fabian-irsara-92113-unsplash.jpg" title="">
+    </a>
+    <a href="./img/rawpixel-579231-unsplash.jpg" title="">
+    </a>
+    <a href="./img/domenico-loia-274200-unsplash.jpg" title="">
+    </a>
+    <a href="./img/emile-perron-190221-unsplash.jpg" title="">
+    </a>
+</div>
+
 </body>
+
+<script src="js/blueimp-gallery.min.js"></script>
+<script>
+	blueimp.Gallery(
+		document.getElementById( 'links' ).getElementsByTagName( 'a' ),
+		{
+			container: '#blueimp-gallery-carousel',
+			carousel: true
+		}
+	);
+</script>
