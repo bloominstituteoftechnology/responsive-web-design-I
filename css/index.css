@@ -66,7 +66,6 @@ h1, h2, h3, h4, h5 {
 /* -------------------------------------------------------- */
 .container {
   max-width: 880px;
-  /* TB LR */
   width: 100%;
   margin: 0 auto;
 }
@@ -116,6 +115,18 @@ header .logo {
   margin-top: 25px;
 }
 
+@media(max-width:800px){
+    header{
+        flex-direction: column-reverse;
+        align-items: center;
+
+    }
+
+    header .logo{
+    
+    }
+}
+
 /* cta */
 .cta{
     display: flex;
@@ -150,6 +161,13 @@ header .logo {
   display:flex;
   width: 40%;
   margin-top: 69px;
+}
+@media(max-width: 800px){
+    .cta img{
+        flex-direction: column;
+        display:none;
+    }
+
 }
 
 /* ------------------------------------------------------------ */
