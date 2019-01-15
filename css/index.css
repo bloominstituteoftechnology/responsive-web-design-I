@@ -63,267 +63,159 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-
-/*--------------------*/
-
-.container{
-	width:1024px;
-	height: 2000px;
-	margin: auto;
-	/*border: 1px solid black;*/
+/* -------------------------------------------------------- */
+.container {
+  max-width: 880px;
+  /* TB LR */
+  width: 100%;
+  margin: 0 auto;
 }
 
-@media(max-width: 800px){
-    .container{
-        width: 800px;
-    }
+@media(max-width:800px){
+    .container{}
 }
 
-@media(max-width: 500px){
-    .container{
-
-    }
+@media(max-width:500px){
+    .container{}
 }
-
-/*---------------------------------*/
-.header{
-	/*border: 1px solid blue;*/
-	height:5%;
-	display: flex;
-	
-}
-
-.header nav {
-	width: 90%;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	margin: auto;
-	/*border: 1px solid blue;*/
-	 
-}
-
-.header nav a{
-	text-decoration: none;
-	color:#b0b0b0;
-}
-
-.header nav a:hover {
-	text-decoration: underline;
-	color: black;
-}
-
-/*-----------------------------*/
-
-.billboard {
-	border-bottom: 2px solid black;
-	display:flex;
-	height: 25%;
-	justify-content: space-around;
-	align-items: center;
-	text-align: center;
-}
-
-.billboard div{ 
-	height: 99%;
-	width: 49%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-content: space-around;
-	align-items: center;
-}
-
-.billboard h1{
-	font-size: 65px;
-	width: 60%;
-}
-
-.billboard a{
-
-}
-
-/*-----------This is a section--------------------*/
-
-section.index-sec1{
-	display:flex;
-	height:10%;
-	justify-content: space-around;
-
-}
-
-section.index-sec1  div{
-	height: 90%;
-	width: 45%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-}
-
-section.index-sec1  div h2{
-	font-size: 175%;
-}
-
-section.index-sec1  div p{
-	font-size: 105%;
-}
-
-/*-----------------------------------------------------------*/
-
-section.index-sec2{
-    /*height: 25%;*/
-    margin-bottom: 3%;
+/* header */
+header{
     display:flex;
-    justify-content: center
+    width:100%;
+    justify-content: space-around;
 }
 
-/*-------------------------------------------------------------*/
-
-section.index-sec3{
-	/*margin: 0 2%;*/
-	height:10%;
-	display:flex;
-	justify-content: space-around;
-	border-bottom: 2px solid black;
+header nav {
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+  margin-top: 35px;
 }
 
-section.index-sec3  div{
-	height: 90%;
-	width: 32%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	/*margin: 3% 2% 3% 2%;*/
-
+header nav a {
+  /* margin-right: 65px; */
+  font-size: 14px;
+  color: gray;
+  text-decoration: none;
 }
 
-section.index-sec3 div h2{
-	font-size: 175%;
+header nav a:hover {
+  text-decoration: underline;
 }
 
-section.index-sec3  div p{
-	font-size: 105%;
-}
-/*------------------------------------------------------------------*/
-
- .footer-p1{
- 	margin: 3% 2%;
- 	height: 10%;
- 	justify-content: space-around;
-
- }
-
- .footer-p1 h2{
- 	font-size: 175%;
- }
-
-.footer-p1 p{
-	margin: 3% 0;
-}
-p.copyright {
-	text-align: center;
+header nav a:first-child {
+  margin-left: 0;
 }
 
-
-/* ---- Services Page ----------------*/
-
-section.splash{
-	display: flex;
-	border-bottom: 2px solid black;
-	height: 18%;
-	margin-bottom: 3%;
+header nav a:last-child {
+  margin-right: 0;
 }
 
-.splash h1{
-	font-size: 250%;
-	margin: 2% 0;
+header .logo {
+  display: flex;
+  margin-top: 25px;
 }
 
-.splash p{
-	font-size: 110%;
+/* cta */
+.cta{
+    display: flex;
+    width:100%;
+    justify-content: space-around;
 }
 
-/*----------------------------------*/
-
-section.p2-sec1{
-	height: 40%; /*height to increase when it's too small but not default*/ 
-	margin-bottom: 5%;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-content: space-between;
-
+.cta .cta-text {
+  display: flex;
+  flex-direction: column;
+  font-size: 77px;
+  margin-top: 120px;
+  text-align: center;
+  padding: 0px 75px;
 }
 
-.card{
+.cta .cta-text button {
+  background: white;
+  margin-top: 6px;
+  padding: 8px 44px;
+  font-size: 17px;
+  border: 1px solid black;
+  cursor: pointer;
+}
 
-	height: 30%;
-	width: 45%;
-	background: whitesmoke;
-	border: 1px solid black;
-	padding: 3%;
-	margin: 2%;
+.cta .cta-text button:hover {
+  background: black;
+  color: white;
+}
+
+.cta img {
+  display:flex;
+  width: 40%;
+  margin-top: 69px;
+}
+
+/* ------------------------------------------------------------ */
+.main-content {
+
+  border-top: 1px solid black;
+  margin-top: 76px;
+  padding-top: 39px;
+}
+
+.main-content .top-content {
+    display:flex;
+    justify-content: space-around;
+  /* padding: 0 10px; */
 
 }
 
-.card h2{
-	font-size: 125%;
+.main-content .top-content .text-content {
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+  /* margin-right: 34px; */
 }
 
-.card p{
-	font-size: 105%;
+.main-content .top-content .text-content:last-child {
+  margin-right: 0;
 }
 
-.card button{
-	border: 1px solid black;
-	border-radius: 5px;
-	background: white;
-	margin-top: 5%;
-	padding: 1% 3%;
+.main-content .middle-img {
+  margin-top: 45px;
+  width:100%;
 }
 
-.card button:hover {
-	background: black;
-	color: white;
+.main-content .bottom-content {
+  margin-top: 37px;
+  display: flex;
+  justify-content: space-around;
+  /* padding: 0 10px; */
 }
 
-/*---------------------------------*/
-
-section.p2-sec2{
-	margin-top: 3%;
-	border-top: 2px solid black;
-	display: flex;
-	/*flex-wrap: nowrap;*/
-	justify-content: space-around;
-
+.main-content .bottom-content .text-content {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  /* margin-right: 12px; */
 }
 
-.facts{
-	height:30%;
-	width: 45%;
-	margin-top: 5%;
-
+.main-content .bottom-content .text-content:last-child {
+  margin-right: 0;
 }
 
-.services-info-img{
-	margin-top: 5%;
-
-}
-.facts h2{
-	font-size: 125%;
-}
-
-.facts p{
-	font-size: 105%;
+.contact {
+  display:flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: 57px;
+  border-top: 1px solid black;
+  padding: 39px 0;
 }
 
-.footer-p2{
-	text-align: center;
-	margin-top: 5%;
+.contact p {
+  margin: 20px 0;
 }
 
-.list{
-	list-style:square;
+footer {
+  margin: 32px 0;
+  text-align: center;
+  font-size: 14px;
 }
-
-
