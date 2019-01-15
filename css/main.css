@@ -404,6 +404,11 @@ a {
   height: 50vh;
   position: relative;
 }
+@media only screen and (max-width: 400px) {
+  .image-gallery {
+    height: 80vh;
+  }
+}
 .image-gallery__img1 {
   width: 200px;
   height: auto;
@@ -411,12 +416,24 @@ a {
   top: 50%;
   left: 10%;
 }
+@media only screen and (max-width: 400px) {
+  .image-gallery__img1 {
+    top: 50%;
+    left: 5%;
+  }
+}
 .image-gallery__img2 {
   width: 200px;
   height: auto;
   position: absolute;
   top: 30%;
-  left: 25%;
+  left: 15%;
+}
+@media only screen and (max-width: 400px) {
+  .image-gallery__img2 {
+    top: 30%;
+    left: 15%;
+  }
 }
 .image-gallery__img3 {
   width: 200px;
@@ -425,12 +442,30 @@ a {
   top: 14%;
   left: 40%;
 }
+@media only screen and (max-width: 400px) {
+  .image-gallery__img3 {
+    top: 14%;
+    left: 30%;
+  }
+}
 .image-gallery__img4 {
   width: 200px;
   height: auto;
   position: absolute;
   top: 40%;
   left: 50%;
+}
+@media only screen and (max-width: 700px) {
+  .image-gallery__img4 {
+    top: 56%;
+    left: 40%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .image-gallery__img4 {
+    top: 75%;
+    left: 20%;
+  }
 }
 .image-gallery__img5 {
   width: 200px;
@@ -439,12 +474,36 @@ a {
   top: 50%;
   left: 58%;
 }
+@media only screen and (max-width: 700px) {
+  .image-gallery__img5 {
+    top: 45%;
+    left: 50%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .image-gallery__img5 {
+    top: 60%;
+    left: 35%;
+  }
+}
 .image-gallery__img6 {
   width: 200px;
   height: auto;
   position: absolute;
   top: 28%;
   left: 70%;
+}
+@media only screen and (max-width: 700px) {
+  .image-gallery__img6 {
+    top: 28%;
+    left: 58%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .image-gallery__img6 {
+    top: 45%;
+    left: 45%;
+  }
 }
 .image-gallery__img {
   border: 3px solid white;
@@ -744,6 +803,16 @@ footer__container {
   padding-left: 1rem;
   padding-right: 1rem;
 }
+@media only screen and (max-width: 700px) {
+  .features-section {
+    margin-top: 14rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .features-section {
+    margin-top: 34rem;
+  }
+}
 .features-section__feature {
   margin-top: 2rem;
   max-width: 30%;
@@ -752,6 +821,17 @@ footer__container {
   border-radius: 1rem;
   position: relative;
   box-shadow: 0 2px 7px 2px black;
+}
+@media only screen and (max-width: 700px) {
+  .features-section__feature {
+    max-width: 48%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .features-section__feature {
+    max-width: 90%;
+    margin: 2rem auto 0 auto;
+  }
 }
 .features-section__feature:hover {
   transform: translateY(-3px) scale(1.1);
@@ -765,6 +845,11 @@ footer__container {
   font-size: 1.7rem;
   font-weight: bold;
   background-image: radial-gradient(white 0%, transparent 100%);
+}
+@media only screen and (max-width: 700px) {
+  .features-section__heading {
+    top: 20px;
+  }
 }
 .features-section__paragraph {
   padding: 0 2rem;
@@ -786,6 +871,12 @@ footer__container {
   width: 100%;
   background-size: cover;
 }
+@media only screen and (max-width: 700px) {
+  .features-section__img--1 {
+    -webkit-clip-path: none;
+    clip-path: none;
+  }
+}
 .features-section__img--2 {
   background-image: linear-gradient(to bottom right, #c6c9ce94, #c6c9cecf), url("../../img/emile-perron-190221-unsplash.jpg");
   height: 70%;
@@ -793,6 +884,12 @@ footer__container {
   clip-path: polygon(0 0, 100% 0, 100% 84%, 0% 100%);
   width: 100%;
   background-size: cover;
+}
+@media only screen and (max-width: 700px) {
+  .features-section__img--2 {
+    -webkit-clip-path: none;
+    clip-path: none;
+  }
 }
 .features-section__img--3 {
   background-image: linear-gradient(to bottom right, #c6c9ce94, #c6c9cecf), url("../img/fancycrave-277756-unsplash.jpg");
@@ -802,6 +899,12 @@ footer__container {
   width: 100%;
   background-size: cover;
 }
+@media only screen and (max-width: 700px) {
+  .features-section__img--3 {
+    -webkit-clip-path: none;
+    clip-path: none;
+  }
+}
 .features-section__img--4 {
   background-image: linear-gradient(to bottom right, #c6c9ce94, #c6c9cecf), url("../img/lilly-rum-342740-unsplash.jpg");
   height: 70%;
@@ -809,6 +912,12 @@ footer__container {
   clip-path: polygon(0 0, 100% 0, 100% 84%, 0% 100%);
   width: 100%;
   background-size: cover;
+}
+@media only screen and (max-width: 700px) {
+  .features-section__img--4 {
+    -webkit-clip-path: none;
+    clip-path: none;
+  }
 }
 .features-section__img--5 {
   background-image: linear-gradient(to bottom right, #c6c9ce94, #c6c9cecf), url("../img/rawpixel-191102-unsplash.jpg");
@@ -818,6 +927,12 @@ footer__container {
   width: 100%;
   background-size: cover;
 }
+@media only screen and (max-width: 700px) {
+  .features-section__img--5 {
+    -webkit-clip-path: none;
+    clip-path: none;
+  }
+}
 .features-section__img--6 {
   background-image: linear-gradient(to bottom right, #c6c9ce94, #c6c9cecf), url("../img/paul-calescu-1022076-unsplash.jpg");
   height: 70%;
@@ -825,5 +940,11 @@ footer__container {
   clip-path: polygon(0 0, 100% 0, 100% 84%, 0% 100%);
   width: 100%;
   background-size: cover;
+}
+@media only screen and (max-width: 700px) {
+  .features-section__img--6 {
+    -webkit-clip-path: none;
+    clip-path: none;
+  }
 }
 /*# sourceMappingURL=main.css.map */
