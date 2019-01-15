@@ -1,3 +1,353 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+.main-pg, .services-pg {
+	width: 100%;
+}
+
+header {
+    height: 5%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1%;
+}
+
+@media (max-width: 800px) {
+    header {
+        height: 12%;
+        flex-flow: column-reverse nowrap;
+        margin-top: 25px;
+    }
+}
+
+@media (max-width: 500px) {
+    header {
+        height: 370px;
+        flex-flow: column-reverse nowrap;
+    }
+
+    header:first-child {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 500px) {
+    header h1 {
+        margin: 50px 0px;
+    }
+}
+
+header nav {
+    width: 75%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+@media (max-width: 800px) {
+    header nav {
+        width: 100%;
+        height: 80%;
+        align-content: flex-end;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 500px) {
+    header nav {
+        flex-flow: column nowrap;
+        justify-items: center;
+        align-items: center;
+        margin: 30px 0px;
+    }
+}
+
+header nav a {
+    color: lightgray;
+    text-decoration: none;
+}
+
+@media (max-width: 500px) {
+    header nav a {
+        width: 100%;
+        text-align: center;
+        border-top: 1px solid lightgray;
+        padding: 16px;
+    }
+
+    header nav a:last-child {
+        border-bottom: 1px solid lightgray;
+    }
+}
+
+.top-design-catchphrase {
+    margin: 3% 0%;
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+@media (max-width: 800px) {
+    .top-img {
+        display: none;
+    }
+
+    .top-design-catchphrase {
+        flex-flow: column nowrap;
+        height: 40%;
+    }
+}
+
+.catchphrase {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.catchphrase h1 {
+    text-align:center;
+    font-size: 80px;
+}
+
+@media (max-width: 800px) {
+    .catchphrase h1 {
+        font-size: 70px;
+    }
+}
+
+.catchphrase button {
+    width: 40%;
+    height: 8%;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+@media (max-width: 800px) {
+    .catchphrase button {
+        width: 20%;
+        height: 20%;
+    }
+}
+
+@media (max-width: 500px) {
+    .catchphrase button {
+        width: 30%;
+        height: 20%;
+    }
+}
+
+.top-content {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    border-top: 1px solid black;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin-right: 3%;
+    margin-left: 3%;
+}
+
+@media (max-width: 500px) {
+    .top-content {
+        flex-flow: column nowrap;
+    }
+}
+
+.features, .about {
+    width: 49%;
+}
+
+@media (max-width: 500px) {
+    .features, .about {
+        width: 100%;
+        margin: 0%;
+        margin: 15px 0px;
+    }
+}
+
+.middle-img {
+    width: 94%;
+    margin-right: 3%;
+    margin-left: 3%;
+}
 
 
+.bottom-content {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    border-bottom: 1px solid black;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin-right: 3%;
+    margin-left: 3%;
+}
+
+@media (max-width: 500px) {
+    .bottom-content {
+        flex-flow: column nowrap;
+    }
+}
+
+.services, .product, .vision {
+    width: 32%;
+}
+
+@media (max-width: 500px) {
+    .services, .product, .vision {
+        width: 100%;
+        margin: 15px 0px;
+    }
+}
+
+.contact {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: space-around;
+    padding: 3%;
+}
+
+.copyright {
+    text-align: center;
+    margin: 3%;
+}
+
+.services-intro {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 3%;
+}
+
+.services-intro h1 {
+    font-size: 30px;
+}
+
+.services-header-img {
+    width: 94%;
+    margin: 3%;
+}
+
+.services-content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin: 3%;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid black;
+}
+
+.service-summary-link {
+    border: 1px solid black;
+    background-color: lightgray;
+    width: 48%;
+    padding: 2%;
+}
+
+.digital-design, .digital-marketing, ios-development{
+    margin-right: 1%;
+    margin-bottom: 2%;
+}
+
+.ux-ui, .web-development, android-development {
+    margin-left: 1%;
+    margin-bottom: 2%;
+} 
+
+.service-summary-link button {
+    margin: 3%;
+    width: 30%;
+    height: 20%;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: white;
+}
+
+.service-facts {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    margin: 3%;
+}
+
+.facts-list ul{
+    margin: 3%;
+    list-style-type: square;
+}
+
+.services-info-img {
+    margin: 1%;
+}
