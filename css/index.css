@@ -260,6 +260,7 @@ header nav a:first-child {
 	  font-weight: 800;
   }
 
+  /* Index.html Tablet Sized Devices */
   @media (max-width: 800px) {
     header {
         display: flex;
@@ -302,6 +303,7 @@ header nav a:first-child {
     }
   }
 
+  /* Index.html mobile sized devices */
   @media (max-width: 500px) {
     .container {
         max-width: 500px;
@@ -376,3 +378,173 @@ header nav a:first-child {
         font-size: 1rem;
     }
   }
+
+  /*  Services Page Styles */
+
+  /* Header Image */
+  .services-header-img {
+    margin: 20px 0;
+    width: 100%;
+    }
+    /* services-top h1 */
+    .services-top h1 {
+        font-size: 30px;
+    }
+
+    /* services-top p */
+    .services-top p {
+        margin: 10px 0 20px;
+        padding: 10px 0 40px;
+        border-bottom: 1px solid black;
+    }
+
+    .services-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    }
+
+    .service-listing {
+    border: 1px solid black;
+    margin: 20px 0;
+    background: rgba(240, 240, 240, 0.831);
+    width: 48%;
+    padding: 20px 20px;
+    }
+
+    .services-list .service-listing button {
+    background: white;
+    margin: 20px 0 0;
+    padding: 5px 10px;
+    font-size: 12px;
+    border: 1px solid black;
+    cursor: pointer;
+    width: 100px;
+    text-align: center;
+    border-radius: 7%;
+    }
+
+    .services-bottom {
+    border-top: 2.5px solid black;
+    margin-top: 30px; 
+    padding-top: 40px;
+    display: flex;
+    }
+
+    .service-bottom-text {
+    /* border: 1px solid red; */
+    margin: 0 60px 20px 0;
+    }
+
+    .services-bottom ul {
+    margin: 20px 0;
+    }
+
+    .services-bottom li {
+    list-style-type: square;
+    margin-left: 20px;
+    line-height: 1.75;
+    }
+
+    .service-bottom-text p,
+    .service-bottom-text li
+    {
+        font-weight: 500;
+    }
+
+    footer p {
+        margin: 75px 0 25px;
+        text-align: center;
+        font-weight: 800;
+    }
+
+    @media (max-width: 1000px) {
+        .container {
+            max-width: 1000px;
+        }
+        header nav a:first-child {
+            margin-left: 25px;
+        }
+        .services-list .service-listing {
+            width: 47vw;
+            margin: 10px;
+        }
+        .logo {
+            position: relative;
+            right: 25px;
+        }
+        .services-top {
+            margin: 15px;
+        }
+        .services-list {
+            margin: 0 10px;
+        }
+        .services-bottom {
+            margin: 25px;
+        }
+    }
+
+@media (max-width: 960px) {
+    #header-image {
+        position: relative;
+        right: 25px;
+        width: 60%;
+    }
+    nav a:first-child{
+        position: relative;
+        left: 20px;
+    }
+    .services-top {
+        width: 80vw;
+        margin: 0 auto;
+    }
+    .services-list .service-listing {
+        width: 80vw;
+    }
+    .services-list {
+        display: flex;
+        justify-content: center;
+
+    }
+    .services-info-img {
+        object-fit: contain;
+    }
+    .services-bottom {
+        width: 80vw;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 900px) {
+    header {
+        width: 100vw;
+    }
+    header nav :first-child {
+        margin-left: 25px;
+    }
+    header nav a {
+        margin: 25px;
+    }
+    .services-bottom {
+        flex-direction: column;
+        border: 1px solid red;
+    }
+    .services-info-img {
+        order: -1;
+        width: 60vw;
+        margin: 0 auto 35px;
+    }
+}
+
+@media (max-width: 800px) {
+    header nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .services-header-img {
+        width: 100vw;
+        margin: 0 auto;
+    }
+}
