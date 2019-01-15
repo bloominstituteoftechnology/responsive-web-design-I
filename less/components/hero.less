@@ -1,0 +1,71 @@
+.hero {
+  margin: 0 0% 0 0%;
+  width: 100vw;
+  height: 85vh;
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    background-image: url("../../img/daniel-chen-546446-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 -700px;
+    z-index: 3;
+
+    @media only screen and (max-width: 800px) {
+      background-position: 0px;
+    }
+  }
+
+  &__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    background-image: radial-gradient(white 30%, transparent 100%);
+    transition: all 1s ease-out;
+
+    @media only screen and (max-width: 800px) {
+      text-align: center;
+      font-size: 2rem;
+    }
+
+
+    &:hover {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      padding: 3rem;
+      transform: translate(-50%, -50%) scale(1.3);
+      font-size: 3rem;
+      border-radius: 100px;
+      background-image: radial-gradient(white 30%, transparent 100%);
+
+      & ~ .hero__hidden-text {
+        opacity: 100;
+        transform: translate(-50%, -85%);
+        background-image: radial-gradient(white 10%, transparent 100%);
+      }
+    }
+  }
+
+  &__hidden-text {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    padding: 3rem;
+    transform: translate(-50%, 0%);
+    font-size: 2rem;
+    border-radius: 100px;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+
+    @media only screen and (max-width: 800px) {
+      opacity: 100;
+      transform: translate(-50%, -85%);
+      background-image: radial-gradient(white 10%, transparent 100%);
+    }
+
+  }
+}

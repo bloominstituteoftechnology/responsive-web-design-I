@@ -1,0 +1,32 @@
+.content {
+  padding: 2rem;
+  max-width: 70rem;
+  margin: 0 auto;
+  align-items: center;
+  background-color: #f2f2f2;
+  display: flex;
+
+  @media only screen and (max-width: 1000px) {
+    max-width: 100%;
+    font-size: 1.2rem;
+
+  }
+
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+  }
+
+  &__col {
+    padding: 0 2rem;
+    width: 33%;
+
+    @media only screen and (max-width: 600px) {
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+
+    & h2 {
+      font-size: 1.5rem;
+    }
+  }
+}

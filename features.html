@@ -1,0 +1,138 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Great Idea!</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Bangers|Titillium+Web" rel="stylesheet">
+    <link rel="stylesheet" href="css/blueimp-gallery.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.1/min/tiny-slider.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<<header class="header">
+    <div class="header__content">
+        <nav class="header__nav">
+            <ul>
+                <li class="header__li"><a href="./services.html">Services</a></li>
+                <li class="header__li">Product</li>
+                <li class="header__li">Vision</li>
+                <li class="header__li selected" ><a href="./features.html">Features</a></li>
+                <li class="header__li"><a href="./About.html">About</a></li>
+                <li class="header__li">Contact</li>
+            </ul>
+        </nav>
+
+        <div class="header__logo clearfix ">
+            <a href="./index.html">
+                <div class="logo"></div>
+            </a>
+        </div>
+    </div>
+</header>
+
+<section class="features-section">
+
+    <div class="features-section__feature">
+        <div class="features-section__img features-section__img--1"></div>
+        <h2 class="features-section__heading" >Excellent code base.</h2>
+        <p class="features-section__paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur consectetur delectus dolores eaque enim expedita harum hic illo iure, iusto natus obcaecati odio recusandae rem, repudiandae sapiente tempora temporibus veritatis!
+        </p>
+    </div>
+
+    <div class="features-section__feature">
+        <div class="features-section__img features-section__img--2"></div>
+        <h2 class="features-section__heading" >Lots of assistance</h2>
+        <p class="features-section__paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur consectetur delectus dolores eaque enim expedita harum hic illo iure, iusto natus obcaecati odio recusandae rem, repudiandae sapiente tempora temporibus veritatis!
+        </p>
+    </div>
+
+    <div class="features-section__feature">
+        <div class="features-section__img features-section__img--3"></div>
+        <h2 class="features-section__heading" >Helpful Community</h2>
+        <p class="features-section__paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur consectetur delectus dolores eaque enim expedita harum hic illo iure, iusto natus obcaecati odio recusandae rem, repudiandae sapiente tempora temporibus veritatis!
+        </p>
+    </div>
+
+    <div class="features-section__feature">
+        <div class="features-section__img features-section__img--4"></div>
+        <h2 class="features-section__heading" >Tech support 24/7</h2>
+        <p class="features-section__paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur consectetur delectus dolores eaque enim expedita harum hic illo iure, iusto natus obcaecati odio recusandae rem, repudiandae sapiente tempora temporibus veritatis!
+        </p>
+    </div>
+
+    <div class="features-section__feature">
+        <div class="features-section__img features-section__img--5"></div>
+        <h2 class="features-section__heading" >Numerous development environments</h2>
+        <p class="features-section__paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur consectetur delectus dolores eaque enim expedita harum hic illo iure, iusto natus obcaecati odio recusandae rem, repudiandae sapiente tempora temporibus veritatis!
+        </p>
+    </div>
+
+    <div class="features-section__feature">
+        <div class="features-section__img features-section__img--6"></div>
+        <h2 class="features-section__heading " >Switch quickly</h2>
+        <p class="features-section__paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur consectetur delectus dolores eaque enim expedita harum hic illo iure, iusto natus obcaecati odio recusandae rem, repudiandae sapiente tempora temporibus veritatis!
+        </p>
+    </div>
+
+</section>
+
+<!-- The Gallery as inline carousel, can be positioned anywhere on the page -->
+<div id="blueimp-gallery-carousel" class="blueimp-gallery blueimp-gallery-carousel">
+    <div class="slides"></div>
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+</div>
+
+<section class="image-gallery">
+    <img src="./img/farzad-nazifi-71686-unsplash.jpg" class="image-gallery__img1 image-gallery__img" alt="">
+    <img src="./img/fancycrave-277756-unsplash.jpg" class="image-gallery__img2 image-gallery__img" alt="">
+    <img src="./img/fabian-irsara-92113-unsplash.jpg" class="image-gallery__img3 image-gallery__img" alt="">
+    <img src="./img/rawpixel-579231-unsplash.jpg" class="image-gallery__img4 image-gallery__img" alt="">
+    <img src="./img/domenico-loia-274200-unsplash.jpg" class="image-gallery__img5 image-gallery__img" alt="">
+    <img src="./img/emile-perron-190221-unsplash.jpg" class="image-gallery__img6 image-gallery__img" alt="">
+</section>
+
+
+</body>
+
+<script src="js/blueimp-gallery.min.js"></script>
+<script>
+
+	let size = window.screen.width;
+
+	if( size <= 700 ) {
+		blueimp.Gallery( [
+				'./img/farzad-nazifi-71686-unsplash.jpg',
+				'./img/fancycrave-277756-unsplash.jpg',
+				'./img/fabian-irsara-92113-unsplash.jpg',
+				'./img/rawpixel-579231-unsplash.jpg',
+				'./img/domenico-loia-274200-unsplash.jpg',
+				'./img/domenico-loia-274200-unsplash.jpg',
+				'./img/emile-perron-190221-unsplash.jpg'
+			], { container: '#blueimp-gallery-carousel', carousel: true }
+		);
+	}
+
+
+</script>

@@ -1,0 +1,135 @@
+.image-gallery {
+  margin: 0 auto;
+  display: block;
+  max-width: 70rem;
+  width: 100%;
+  background-image: linear-gradient(to bottom right, #8080800a, #69696980);
+  height: 50vh;
+  position: relative;
+
+  @media only screen and (max-width: 700px) {
+    display: none;
+  }
+
+  &__img1 {
+    width: 200px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+
+    @media only screen and (max-width: 400px) {
+      top: 50%;
+      left: 5%;
+    }
+  }
+
+  &__img2 {
+    width: 200px;
+    height: auto;
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    @media only screen and (max-width: 400px) {
+      top: 30%;
+      left: 15%;
+    }
+  }
+
+  &__img3 {
+    width: 200px;
+    height: auto;
+    position: absolute;
+    top: 14%;
+    left: 40%;
+
+    @media only screen and (max-width: 400px) {
+      top: 14%;
+      left: 30%;
+    }
+  }
+
+  &__img4 {
+    width: 200px;
+    height: auto;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+
+    @media only screen and (max-width: 700px) {
+      top: 56%;
+      left: 40%;
+    }
+
+    @media only screen and (max-width: 400px) {
+      top: 75%;
+      left: 20%;
+    }
+  }
+
+  &__img5 {
+    width: 200px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 58%;
+
+    @media only screen and (max-width: 700px) {
+      top: 45%;
+      left: 50%;
+    }
+
+    @media only screen and (max-width: 400px) {
+      top: 60%;
+      left: 35%;
+    }
+  }
+
+  &__img6 {
+    width: 200px;
+    height: auto;
+    position: absolute;
+    top: 28%;
+    left: 70%;
+
+    @media only screen and (max-width: 700px) {
+      top: 28%;
+      left: 58%;
+    }
+
+    @media only screen and (max-width: 400px) {
+      top: 45%;
+      left: 45%;
+    }
+  }
+
+  &__img {
+    border: 3px solid white;
+    border-radius: 20px;
+    transition: all .4s ease-in-out;
+    box-shadow: 0 1px 7px 1px black;
+
+    &:hover {
+      z-index: 6;
+      transform: scale(2);
+      box-shadow: 0 2px 9px 2px black;
+    }
+  }
+}
+
+.blueimp-gallery-display {
+  opacity: 01;
+  display: none !important;
+
+  @media only screen and (max-width: 700px) {
+    display: block !important;
+  }
+}
+
+.blueimp-gallery-carousel {
+  box-shadow: 0 0 0px #000;
+}
+
+.blueimp-gallery {
+  background: rgb(245, 239, 239);
+}

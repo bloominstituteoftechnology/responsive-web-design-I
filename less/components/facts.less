@@ -1,0 +1,40 @@
+.facts {
+  margin: 0 auto;
+  max-width: 60rem;
+  display: flex;
+  margin-bottom: 5rem;
+
+  &__text {
+    width: 50%;
+
+    & h2 {
+      font-size: 1.3rem;
+      padding-top: 2rem;
+    }
+
+    & p {
+      line-height: 1.2;
+    }
+
+    & ul {
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+      line-height: 1.4;
+      list-style: square;
+    }
+  }
+
+  &__img {
+    min-width: 50%;
+    min-height: 100%;
+
+    &-img {
+      background: url("../../img/services-info.png");
+      background-size: cover;
+      width: 90%;
+      height: 90%;
+      transform: translate(1rem, 2rem);
+    }
+
+  }
+}
