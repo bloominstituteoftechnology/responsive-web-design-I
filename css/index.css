@@ -86,10 +86,10 @@ section{
 .block{
 
 	margin: 15px;
-	height: 200px;
+	
 }
 .block p{
-	font-size: 22px;
+	
 }
 
 h4{
@@ -137,7 +137,7 @@ header{
 		align-items: center;
 	}
 		#bar1 h1{
-			padding: 100px 0px 0px 5px;
+			padding: 100px 0px 0px 0px;
 			text-align: center;
 			font-size: 75px;
 			width: 75%;
@@ -152,9 +152,8 @@ header{
 		}
 	#bar1 img{
 		margin-top: 30px;
-		height: 400px;
-		width: 400px;
-	
+       
+        height: 80%;
 		
 		
 	}
@@ -165,7 +164,8 @@ header{
 }
 #bar2{
 	display: flex;
-	border-top: 1px solid black;
+    border-top: 1px solid black;
+   
 }
 #bar4{
 	display: flex;
@@ -187,10 +187,67 @@ footer p{
 }
 
 @media( max-width: 500px){
-footer{
-    margin:10%;
+
+body{
+    margin:0px 0px 0px 0px;
+    padding: 0px;
+}
+    header{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-bottom: 0%;
+        width: 100%;
+        height: 40%;
+    }
+
+    header nav{
+        margin-left: 0px;
+        display: flex;
+        flex-direction: column; 
+        width: 100%;
+        margin-right: 50px;
+    }
+
+        header nav a{
+            width: 100%;
+            border-top: 1px solid gray;
+            
+        }
+
+    #bar1 img{
+        display: none;
+    }
+
+#text h1{
+    width: 100%;
+    font-size: 50px;
+}
+#bar2{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+#middle-img{
+    display: flex;
+   
 }
 
+#bar4{
+    display: flex;
+    flex-direction: column;
+}
+.block{
+
+}
+
+footer{
+margin-top: 30%;
+}
+
+#text{
+    height: 30%;
+}
 }
 
 
@@ -199,7 +256,9 @@ footer{
 #bar1 img{
     display: none;
 }
-
+#bar1{
+    height: 20%;
+}
 header {
     display: flex;
     flex-direction: column-reverse;
@@ -211,6 +270,7 @@ header {
 
 #bar1 h1{
     padding-top: 0%;
+    
 }
 nav {
     display: flex;
@@ -223,26 +283,14 @@ nav {
 
 }
 #bar1{
-    height: 25%;
+    height: 30%;
 }
 #bar2, #bar4{
    font: 15%;
-    height: 28%;
+ 
     word-wrap: break-word
    
 } 
 .block{
     height:auto;
-    
 }
-#text{
-    width: 50%;
-
-}
-/* #bar4 p, #bar2 p {
-    font: 10%;
-    word-wrap: break-word;
-    margin-bottom: 2%;
-} */
-}
-
