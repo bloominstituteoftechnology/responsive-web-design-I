@@ -89,6 +89,12 @@ body {
 	margin: 0 auto;
 }
 
+@media (max-width: 600px){
+    body {
+        width: 100%;
+    }
+}
+
 h3, p {
     line-height: 1rem
 }
@@ -132,22 +138,33 @@ nav div {
     nav div {
           flex-direction: column;
           justify-content: space-evenly;
-          align-items: center;   
+          align-items: center; 
+          padding: 0px;
+          border-bottom: 2px solid black;
     }
 }
 
 nav div a {
 	color: gray;
     font-size: 1rem;
-    /* font-weight: bold; */
 }
 
 @media (max-width: 800px) {
     nav div a {
-        padding: 5px;
+        padding: 10px;
     }
 }
 
+@media (max-width: 600px) {
+    nav div a {
+        font-weight: bold;
+        font-size: 1.2rem;
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+        border-top: 1px solid black;
+    }
+}
 
 
 /* =================== Header =================== */
@@ -159,9 +176,23 @@ header {
     border-bottom: 1px solid black;
 }
 
+@media (max-width: 600px) {
+    header {
+        margin-top: 60px;
+        padding: 0 5%;
+        padding-bottom: 60px;
+    }
+}
+
 header img {
     width: 100%;
     height: auto;
+}
+
+@media (max-width: 600px) {
+    header img {
+        display: none;
+    }
 }
 
 header h1 {
@@ -173,7 +204,8 @@ header h1 {
 /* =================== Card Section =================== */
 
 main {
-    margin-top: 30px;
+    margin-top: 60px;
+    margin-bottom: 60px;
 }
 
 .cardPair {
@@ -181,7 +213,12 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
 
+@media (max-width: 600px) {
+    .cardPair {
+        flex-direction: column;
+    }
 }
 
 .card {
@@ -209,10 +246,16 @@ main {
     margin-right: 15px;
 }
 
+
 .cardR {
     margin-left: 15px;
 }
 
+@media (max-width: 600px) {
+    .cardL, .cardR {
+        margin: 2% 5%;
+    }
+}
 /* =================== About Section =================== */
 
 .about {
