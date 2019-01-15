@@ -84,6 +84,7 @@ header {
     header {
         height: 12%;
         flex-flow: column-reverse nowrap;
+        margin-top: 25px;
     }
 }
 
@@ -93,6 +94,10 @@ header {
         flex-flow: column-reverse nowrap;
         margin: 0%;
     }
+
+    header:first-child {
+        margin-bottom: 30px;
+    }
 }
 
 header nav {
@@ -100,13 +105,15 @@ header nav {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
+    margin-top: 40px;
 }
 
 @media (max-width: 800px) {
     header nav {
         width: 100%;
         height: 80%;
-        align-content: space-between;
+        align-content: flex-end;
+        justify-content: space-around;
     }
 }
 
