@@ -121,9 +121,31 @@ header .logo {
         align-items: center;
 
     }
+}
 
-    header .logo{
-    
+@media(max-width:500px){
+    header{
+        justify-content: space-evenly;
+        margin:0;
+    }
+    header nav{
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-evenly;
+        /* align-items: center; */
+        text-align: center;
+        padding:0 0;
+        margin: 0 0;
+    }
+    header nav a{
+        border: 1px solid #b0b0b0;
+        width: 100%;
+        padding: 3%;
+    }
+
+    header img{
+        margin: 2%;
+        padding: 0;
     }
 }
 
@@ -163,11 +185,13 @@ header .logo {
   margin-top: 69px;
 }
 @media(max-width: 800px){
+    .cta .cta-text{
+        margin-top: 50px;
+    }
     .cta img{
-        flex-direction: column;
+        /* flex-direction: column; */
         display:none;
     }
-
 }
 
 /* ------------------------------------------------------------ */
@@ -219,6 +243,25 @@ header .logo {
   margin-right: 0;
 }
 
+@media(max-width:500px){
+    .main-content{
+        margin: 50px 1rem ;
+    }
+    .main-content .top-content, .bottom-content{
+        flex-direction: column;        
+    }
+    .main-content .top-content .text-content{
+        width: 100%;
+        margin: 1rem;
+    }
+    .main-content .bottom-content .text-content{
+        width: 100%;
+        margin: 1rem;
+    }
+}
+
+/* --------------------------------------------------------------------------- */
+
 .contact {
   display:flex;
   flex-direction: column;
@@ -228,8 +271,16 @@ header .logo {
   padding: 39px 0;
 }
 
-.contact p {
+.contact p, h4 {
   margin: 20px 0;
+}
+@media(max-width: 500px){
+    .contact{
+        margin: 50px 1rem;
+    }
+    .contact p, h4{
+        margin: 1rem;
+    }
 }
 
 footer {
