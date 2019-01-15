@@ -1,4 +1,4 @@
-#Responsive Web Design Project 1: Great Idea Web Page#
+<h1>Responsive Web Design Project 1: Great Idea Web Page</h1>
 
 ##Using HTML, CSS, Flexbox. Media Queries##
 
