@@ -1,3 +1,256 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+.container {
+	width: 876px;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+
+@media (max-width: 800px) {
+	.container {
+		background-color:white;
+		margin: 0 auto;
+		width: 85%;
+	}
+}
+
+@media (max-width: 500px) {
+	.container {
+		background-color: white;
+		margin: 0 auto;
+		width: 100%;
+	}
+}
+
+.navigation {
+	display: flex;
+	justify-content: space-around;
+}
+
+@media (max-width: 800px) {
+	.navigation {
+		width: 95%;
+		flex-wrap: wrap;
+	}
+}
+
+@media (max-width: 500px) {
+	.navigation {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 100%;
+	}
+}
+
+@media (max-width: 800px) {
+	.logo {
+		order: -1;
+		width: 183px;
+		height: 36px;
+		
+		
+	}
+}
+
+@media (max-width: 500px) {
+	.logo {
+		display: flex;
+		order: -1;
+		justify-content: center;
+
+	}
+}
 
 
+.navigation a {
+	align-content: stretch;
+	color: grey;
+	text-decoration: none;
+	padding-top: 10px;
+}
+
+@media (max-width: 800px) {
+	.navigation a {
+		align-content: center;
+		justify-content: space-between;
+		
+
+	}
+}
+
+@media (max-width: 500px) {
+	.navigation a {
+		border: 1px solid darkgray;
+		text-align: center;
+		padding: 10px;
+		background: white;
+	}
+}
+
+.invitation {
+	display: flex;
+	justify-content: space-around;
+	padding: 20px;
+	
+}
+
+.invitation h1 {
+	display: flex;
+	font-size: 65px;
+	text-align: center;
+	align-items: center;
+	padding: 60px 0 0 0;
+	flex-direction: column;
+}
+
+@media (max-width: 800px) {
+	.invitation h1 {
+		padding-left: 40px;
+		padding-bottom: 30px;
+	}
+}
+
+.invitation button {
+	height: 35px;
+	width: 180px;
+	margin-top: 40px;
+	background: white;
+	border: 1px solid black;
+	font-size: 18px;
+	
+}
+
+@media (max-width: 800px) {
+	.invitation img {
+		display: none;
+	}
+}
+
+@media (max-width: 800px) {
+	.middle-img {
+		width: 100%;
+	}
+}
+
+.text-layouts {
+	display: flex;
+	padding: 40px 1px 40px 1px;
+	justify-content: space-between;
+	border-bottom: 1px solid black;
+	border-top: 1px solid black;
+}
+
+@media (max-width: 500px) {
+	.text-layouts {
+		display: flex;
+		flex-direction: column;
+	}
+	.text-layouts p {
+		margin: 20px 0 40px 0;
+	}
+}
+
+.second-text {
+	padding: 40px 1px 40px 1px;
+}
+
+@media (max-width: 800px) {
+	.text-layouts p {
+		padding: 5px;
+	}
+}
+
+.text-layouts p strong {
+	font-family: 'Bangers', cursive;
+	font-size: 24px;
+}
+
+.contact {
+	padding: 40px 1px 40px 1px;
+}
+
+.contact h4 {
+	font-size: 24px;
+}
+
+.address {
+	padding: 20px 0 20px 0;
+}
+
+.copyright {
+	display: flex;
+	justify-content: center;
+	padding: 100px;
+}
+
+
+/* media queries*/
+
+/* Tablet Styles */
