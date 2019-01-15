@@ -90,13 +90,18 @@ header {
 
 @media (max-width: 500px) {
     header {
-        height: 40%;
+        height: 370px;
         flex-flow: column-reverse nowrap;
-        margin: 0%;
     }
 
     header:first-child {
         margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 500px) {
+    header h1 {
+        margin: 50px 0px;
     }
 }
 
@@ -122,6 +127,7 @@ header nav {
         flex-flow: column nowrap;
         justify-items: center;
         align-items: center;
+        margin: 30px 0px;
     }
 }
 
