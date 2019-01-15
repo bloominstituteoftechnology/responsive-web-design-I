@@ -207,10 +207,6 @@ a {
   text-decoration: none;
   color: black;
 }
-body {
-  box-sizing: border-box;
-  line-height: 1;
-}
 .logo {
   background-size: cover;
   width: 220px;
@@ -285,6 +281,7 @@ body {
   padding: 2rem 2rem;
   text-align: center;
   margin: 0 auto;
+  width: 100%;
 }
 .hero {
   margin: 0 0% 0 0%;
@@ -352,6 +349,11 @@ body {
   max-width: 25rem;
   border: 1px solid black;
   line-height: 1.5;
+}
+@media only screen and (max-width: 400px) {
+  .info-cards__card {
+    max-width: 100%;
+  }
 }
 .info-cards__title {
   font-size: 1.4rem;
@@ -510,7 +512,7 @@ footer__container {
 }
 @media only screen and (max-width: 700px) {
   .header {
-    height: 10rem;
+    height: 12rem;
   }
 }
 @media only screen and (max-width: 400px) {
@@ -532,6 +534,7 @@ footer__container {
   .header__content {
     display: flex;
     flex-direction: column;
+    padding-top: 2rem;
   }
 }
 @media only screen and (max-width: 400px) {
@@ -701,12 +704,17 @@ footer__container {
   }
 }
 .services {
-  margin: 0 auto;
+  margin: 4rem auto;
   max-width: 65rem;
   padding-top: 6rem;
   display: flex;
   flex-direction: column;
   border-bottom: 1px solid black;
+}
+@media only screen and (max-width: 700px) {
+  .services {
+    padding-top: 10rem;
+  }
 }
 .services-header-img {
   background-image: url("../../img/services-header.jpg");
