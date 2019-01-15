@@ -1,0 +1,312 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    min-height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+/* =================== My site wide resets & variables =================== */
+
+:root {
+
+}
+
+* {
+	/* border: 1px solid tomato !important; */
+}
+
+a {
+	text-decoration: none;
+}
+
+html {
+	width: 100%;
+}
+
+body {
+	max-width: 800px;
+	width: 90%;
+	margin: 0 auto;
+}
+
+@media (max-width: 600px){
+    body {
+        width: 100%;
+    }
+}
+
+h3, p {
+    line-height: 1rem
+}
+
+/* ******* Nav ******* */
+nav {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 20px;
+}
+
+@media (max-width: 800px) {
+    nav {
+        flex-direction: column-reverse;
+    }
+}
+
+
+nav img {
+    margin-left: 60px;
+}
+
+nav div {
+    display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+	padding: 10px 0;
+}
+
+@media (max-width: 800px) {
+    nav div {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    nav div {
+          flex-direction: column;
+          justify-content: space-evenly;
+          align-items: center; 
+          padding: 0px;
+          border-bottom: 2px solid black;
+    }
+}
+
+nav div a {
+	color: gray;
+    font-size: 1rem;
+}
+
+@media (max-width: 800px) {
+    nav div a {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    nav div a {
+        font-weight: bold;
+        font-size: 1.2rem;
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+        border-top: 1px solid black;
+    }
+}
+
+
+/* =================== Header =================== */
+
+header {
+    margin-top: 10px;
+    width: 100%;
+    padding-bottom: 30px;
+    border-bottom: 1px solid black;
+}
+
+@media (max-width: 600px) {
+    header {
+        margin-top: 60px;
+        padding: 0 5%;
+        padding-bottom: 60px;
+    }
+}
+
+header img {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 600px) {
+    header img {
+        display: none;
+    }
+}
+
+header h1 {
+    margin-top: 30px;
+    font-size: 1.3rem;
+}
+
+
+/* =================== Card Section =================== */
+
+main {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.cardPair {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@media (max-width: 600px) {
+    .cardPair {
+        flex-direction: column;
+    }
+}
+
+.card {
+    display: block;
+    border: 1px solid black;
+    padding: 15px;
+    margin-bottom: 30px;
+    background-color: #F4F2F4;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.card a {
+    background-color: white;
+    border: 1px solid black;
+    padding: 5px 20px;
+    border-radius: 4px;
+    margin-top: 10px;
+    color: black;
+    font-size: 1rem;
+}
+
+.cardL {
+    margin-right: 15px;
+}
+
+
+.cardR {
+    margin-left: 15px;
+}
+
+@media (max-width: 600px) {
+    .cardL, .cardR {
+        margin: 2% 5%;
+    }
+}
+/* =================== About Section =================== */
+
+.about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 2px solid black;
+    padding-top: 30px;
+}
+
+.about div  {
+    width: 48%;
+    /* display: flex;
+    flex-direction: column; */
+}
+@media (max-width: 600px){
+
+    .about div  {
+        margin-top: 60px;
+        padding: 0 5%;
+        padding-bottom: 30px;
+        width: 100%;
+    }
+}
+    
+.about2 img {
+    width: 100%;
+}
+
+@media (max-width: 600px){
+    .about2 {
+        display: none;
+    }
+}
+
+.about ul {
+    list-style-type: square;
+    padding-left: 20px;
+    font-size: 1rem;
+    line-height: 1.3rem;
+    margin-top: 20px;
+}
+
+
+
+
+/* =================== footer =================== */
+
+footer {
+	margin-top: 45px;
+	margin-bottom: 80px;
+	text-align: center;
+	font-size: 1rem;
+}
