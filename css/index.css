@@ -195,7 +195,7 @@ footer {
 /* 800px tablet-view */
 @media(max-width: 800px) {
     .container {
-        background: yellow;
+        /* background: yellow; */
         display: flex;
         flex-direction: column;
         width: auto;
@@ -215,13 +215,29 @@ footer {
         align-self: center
     }
 
+    .i-hate-this-image {
+      /* padding: 0 0px */
+    }
+
     .middle-img {
-      display: none;
+    max-width: 100%;
+    max-height: 100%;
+    height:auto;
     }
     
     .container .cta {
         display: flex;
         justify-content: center;
+    }
+
+    .top-content {
+      display: flex;
+      justify-content: center;
+    }
+
+    .bottom-content {
+      display: flex;
+      justify-content: center;
     }
 
     .container .cta img {
@@ -235,7 +251,7 @@ footer {
     }
 
     .container {
-        background: red;
+        /* background: red; */
         width: auto;
     }
 
@@ -243,16 +259,44 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: auto;
+    }
+
+    .container header nav {
+          align-self: center;
+    }
+
+    header nav {
+      /* justify-content: stretch; */
+      height: auto;
+    }
+
+    header nav a:first-child {
+      border-top: 1px solid grey;
+    }
+
+    header nav a {
+      font-size: 18px;
+      justify-content: center; 
+      margin-top: 0px;
+      padding: 12px;
+      border-bottom: 1px solid grey;
+    }
+
+    .i-hate-this-image {
+      padding: 0 10px
     }
 
     .middle-img{
-      display: none;
+    max-width:100%;
+    max-height: 100%;
+    height:auto;
     }
 
     .main-content .bottom-content {
       margin-top: 37px;
-      padding: 0 10px;
+      display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
     
     .main-content .bottom-content .text-content {
@@ -266,7 +310,10 @@ footer {
     }
 
     .text-content {
-     padding: 10px 10px;
+      padding: 10px 10px;
+      max-width: 100%;
+      max-height: 100%;
+      height:auto;
     }
 
     .container header nav a:* {
@@ -277,12 +324,16 @@ footer {
         color: gray; */
     }
 
+    header nav a {
+      margin-right: auto auto;
+      font-size: 14px;
+      color: gray;
+      text-decoration: none;
+    }
+
 
     .container .cta img {
         display: none;
-        }
-
-    .main-content {
-        
     }
+  
 }
