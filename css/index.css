@@ -70,8 +70,6 @@ h1, h2, h3, h4, h5 {
 	margin: 0 auto;
 	border: 1px solid red;
 }
-
-
 header {
 	display: flex;
 	width: 100%; 
@@ -108,8 +106,9 @@ header nav a:hover {
 .innovation {
 	display: flex;
 	width: 880px;
-	padding: 20px;
-	margin: 40px 0 20px 0;
+	padding: 40px;
+	margin-top: 40px;
+	border-bottom: 1px solid black;
 	/* border: 3px solid orange; */
 }
 
@@ -145,7 +144,6 @@ h2 {
 	display: flex;
 	justify-content: space-between;
 	margin: 40px 0 10px 0;
-	border-top: 1px solid black;
 	/* border: 3px solid magenta; */
 }
 .features, .about {
@@ -153,10 +151,11 @@ h2 {
 	margin: 30px 25px 40px 10px;
 	/* border: 3px solid yellow; */
 }
-.middle-image {
-	 display: block;
-	 width: 100%;
-	/*flex-wrap: wrap; */
+.middle-image img {
+	display: block;
+	width: 100%;
+	height: 75%;
+	flex-wrap: wrap;
 	margin: 10px 0px 10px 0px;
 	border:3px solid red;
 }
