@@ -75,7 +75,7 @@ header {
 	width: 100%; 
 	justify-content: space-between; 
 	flex-direction: row-reverse;
-	/* border: 2px dotted purple;  */
+	border: 2px dotted purple; 
 }
 
 header nav {
@@ -83,15 +83,15 @@ header nav {
 	justify-content: space-around;
 	/* align-items: center; */
 	margin-top: 30px; 
-	/* border: 2px dashed green;  */
+	border: 2px dashed yellowgreen; 
 }
 
 header nav a {
 	margin: 0 20px 0 20px;
-	padding: 10px;
-	font-size: 14px;
+	/* padding: 10px; */
+	font-size: 16px;
 	color: gray;
-	/* border: 2px solid magenta;  */
+	border: 2px solid magenta; 
 }
 
 header nav a:hover {
@@ -102,6 +102,7 @@ header nav a:hover {
 
 .logo {
 	margin: 20px 30px 5px 40px;
+	border: 2px solid magenta;
 }
 .innovation {
 	display: flex;
@@ -109,7 +110,7 @@ header nav a:hover {
 	padding: 40px;
 	margin-top: 40px;
 	border-bottom: 1px solid black;
-	/* border: 3px solid orange; */
+	border: 3px solid orange;
 }
 
 .innovation h1{
@@ -119,7 +120,7 @@ header nav a:hover {
 	text-align: center;
 	flex-wrap: wrap;
 	margin: 30px 20px 40px 60px;
-	/* border: 2px dotted cyan; */
+	border: 2px dotted green;
 }
 	
 .innovation button  {
@@ -144,12 +145,17 @@ h2 {
 	display: flex;
 	justify-content: space-between;
 	margin: 40px 0 10px 0;
-	/* border: 3px solid magenta; */
+	border: 3px solid magenta;
 }
 .features, .about {
 	width: 400px;
 	margin: 30px 25px 40px 10px;
 	/* border: 3px solid yellow; */
+}
+.main-content-top p {
+	display: flex;
+	margin: 10px 0;
+	/* border: 3px solid navy; */
 }
 .middle-image img {
 	display: block;
@@ -160,15 +166,21 @@ h2 {
 	border:3px solid red;
 }
 .main-content-bottom {
-	/* border: 3px solid magenta; */
 	display: flex;
 	justify-content: space-between;
+	border: 3px dashed cyan;
 }
-
+.main-content-bottom p {
+	display: flex;
+	margin: 10px 0;
+	/* border: 3px solid navy; */
+}
 .services, .product, .vision {
 	width:250px;
 	margin: 30px 0 40px 0;
+	/* border: 3px solid yellow; */
 }
+
 
 .main-content-bottom {
 	border-bottom: 1px solid black;
@@ -176,14 +188,16 @@ h2 {
 
 footer {
 	margin: 20px 0 20px 350px;
+	border: 2px dashed orchid;
 }
 address {
 	margin: 15px 0 15px 0;
+	border: 3px solid greenyellow;
 }
 .copyright {
-	display: flex;
+	display: block;
 	justify-content: center;
-	margin: 20px 0 20px 0;
+	/* margin: 20px 0 20px 0; */
 }
 
 /* Services*/
@@ -234,13 +248,14 @@ address {
 .facts p {
 	display:flex;
 	width: 375px;
+	/* border: 3px solid navy; */
 }
 
 .facts {
 	display: flex;
 	flex-wrap: wrap;
 }
-@media(max-width:800px) {
+@media(max-width:850px) {
     .container {
 	 	background: lightgray;
 		width: 100%;
@@ -249,24 +264,26 @@ address {
 		display: flex;
 		flex-direction: column;
 		width: 100%;
+		/* border: 2px dotted purple;  */
 	}
 	.logo {
-		border: 2px solid magenta;
 		display: block;
 		margin: 30px auto;
+		border: 2px solid magenta;
 	}
 	
 	header nav a {
 		margin: 0 10px 0 10px;
+		border: 2px solid magenta;
 	}
 	.innovation h1{
-		border: 2px solid green;
-		display: block;
-		margin:10px  auto;
+		display: flex;
+		flex-wrap: wrap;
+		height: 300px;
+		margin:20px auto;
 		flex-direction: column;
-		justify-content: center;
-		align-content: center;
-		/* flex-wrap: wrap; */
+		/* justify-content: center; */
+		border: 2px solid green;
 	}
 	.innovation img {
 		display: none;
@@ -274,6 +291,8 @@ address {
 	.main-content-top, .main-content-bottom {
 		display:flex;
 		margin: 20px;
+		border: 3px dashed cyan;
+
 	}
 	.middle-image {
 		display: flex;
@@ -281,10 +300,13 @@ address {
 		flex-shrink: 1;
 	}
 	p {
-		width: 50%;
+		display: flex;
+		width: 70%;
+		padding: 10px;
+		/* border: 3px solid navy; */
 	}
 }
-@media(max-width:500px) {
+@media(max-width:550px) {
 	.container {
 		background: pink;
 		width: 100%;
@@ -295,12 +317,14 @@ address {
 	header nav {
 		width: 100%;
 		flex-direction: column;
+		border: 2px dashed yellowgreen; 
 	}
 	header nav a {
 		border-top: 1px solid gray;
 		width: 100%;
 		display: block;
 		text-align: center;
+		border: 2px solid magenta; 
 
 	}
 	.innovation {
@@ -312,18 +336,23 @@ address {
 		margin-left: 100px;
 		flex-direction: column;
 		justify-content: center;
+		border: 2px dotted green;
 	} 
-	/* .middle-image {
-		width: 50%
-	} */
 	.main-content-top {
 		display: block;
 		width: 100%;
 		margin: 20px 5px 10px 150px;
+		border: 3px dashed cyan;
+	}
+	.features, .about {
+	width:250px;
+	margin: 30px 0 40px 0;
+	/* border: 3px solid yellow; */
 	}
 	.main-content-bottom {
 		display: block;
 		width: 100%;
 		margin: 20px 5px 10px 150px;
+		border: 3px dashed cyan;
 	}
 }
