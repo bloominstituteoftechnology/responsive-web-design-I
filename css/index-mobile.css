@@ -1,0 +1,332 @@
+/* Use your own code or past solution for Great Idea Web Page CSS here! */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+*{
+    transition: all .55s ease-in-out;
+}
+
+body {
+	margin: 0 auto;
+	width: 880px;
+	font-size: 16px;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+
+nav:first-child{
+	padding-left: 0;
+}
+
+nav a{
+	text-decoration: none;
+	color: gray;  
+	background-position: right bottom;
+	transition: all .25s ease-in-out;
+	box-sizing: content-box;
+	display: inline-block;
+	padding: 25px;
+  }
+  
+nav a:hover{
+	background: linear-gradient(to right, black 50%, white 50%);
+	background-size: 200% 100%;
+	color: white;
+	background-position: left bottom;
+  }
+
+  nav a:last-child:hover{
+	background: white
+  }
+
+.starting-section{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 25px 0;
+	align-items: center;
+}
+
+.starting-section-services{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	height: 350px;
+}
+
+.starting-section button{
+	border: 1px solid black;
+	background-color: white;
+	padding: 0 30px ;
+	font-family: 'Titillium Web', sans-serif;
+	font-weight: 600;
+	font-size: 16px;
+	width: 170px;
+	height: 40px; 
+	background-position: right bottom;
+	transition: all .25s ease-in-out;
+  }
+  
+  .starting-section button:hover{
+	background: linear-gradient(to right, black 50%, white 50%);
+	background-size: 200% 100%;
+	color: white;
+	background-position: left bottom;
+  }
+
+.section-services p{
+	line-height: 1.2em;
+}
+
+.section-services h2{
+	font-size: 24px;
+	font-weight: bolder;
+}
+
+h1{
+	font-size: 72px;
+	text-align: center;
+}
+
+.left-div{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-left: 75px;
+}
+
+.main-section{
+	display: flex;
+	flex-wrap: wrap;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	justify-content: space-between;
+	padding: 20px 0;
+	align-content: space-between;
+}
+
+.main-section-services{
+	display: flex;
+	flex-wrap: wrap;
+	border-top: 1px solid black;
+	border-bottom: 2px solid black;
+	justify-content: space-between;
+	align-content: space-evenly;
+	height: 870px;
+	margin-top: 15px;
+}
+
+.sec4{
+	box-sizing: border-box;
+	width: 48%;
+	background-color:#f4f3f4;
+	border: 1px solid black;
+	padding: 20px;
+}
+
+.sec4 button{
+	border-radius: 5px;
+	background-color: white;
+	padding: 10px 30px;
+	border: 1px solid black;
+	margin-top: 20px;
+	font-size: 10px;
+	background-position: right bottom;
+	transition: all .25s ease-in-out;
+}
+
+.sec4 button:hover{
+	background: linear-gradient(to right, black 50%, white 50%);
+	background-size: 200% 100%;
+	color: white;
+	background-position: left bottom;
+}
+
+.sec1{
+	width: 49%;
+	
+}
+.sec2{
+	width: 32%;
+}
+
+.section{
+	display: flex;
+	align-items: center;
+	height: 250px;
+}
+
+.bottom-section-services{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 45px 0;
+}
+
+.sec5{
+	width: 47%;
+}
+
+.sec5 ul{
+
+	padding-top: 10px;
+	line-height: 1.7em;
+	list-style-type:square;
+	list-style-position: inside;
+}
+
+.footer{
+	padding-top: 40px;
+}
+
+.copyright {
+	padding-top: 40px;
+	text-align: center;
+}
+
+.contact{
+	width: 59%;
+}
+
+.contact form{
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: column;
+}
+
+.contact form input{
+	border: 1px solid black;
+}
+
+.contact form textarea{
+	border: 1px solid black;
+	transition: all .25s ease-in-out;
+	background-color: white;
+	background-position: right bottom;
+}
+
+.contact form textarea:hover{
+	background: linear-gradient(to right, black 50%, white 50%);
+	background-size: 200% 100%;
+	color: white;
+	background-position: left bottom;
+}
+
+.contact form button{
+	border: 1px solid black;
+	background-color: white;
+	padding: 0 30px ;
+	font-family: 'Titillium Web', sans-serif;
+	font-weight: 600;
+	font-size: 16px;
+	width: 170px;
+	height: 40px; 
+	background-position: right bottom;
+	transition: all .25s ease-in-out;
+	margin-top: 20px;
+}
+
+.contact form button:hover{
+	background: linear-gradient(to right, black 50%, white 50%);
+	background-size: 200% 100%;
+	color: white;
+	background-position: left bottom;
+}
+
+.contact2{
+	width: 29%
+}
+
+.contact-main{
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.contact2 ul{
+	list-style-type:square;
+	list-style-position: inside;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.contact2 li{
+	margin: 10px;
+	display: flex;
+	align-items: center;
+}
+.contact2 img{
+	width: 24px;
+	margin-right: 20px;
+}
