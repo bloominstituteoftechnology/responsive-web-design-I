@@ -83,7 +83,7 @@ header nav {
 	justify-content: space-around;
 	/* align-items: center; */
 	margin-top: 30px; 
-	border: 2px dashed yellowgreen; 
+	/* border: 2px dashed yellowgreen;  */
 }
 
 header nav a {
@@ -91,7 +91,7 @@ header nav a {
 	/* padding: 10px; */
 	font-size: 16px;
 	color: gray;
-	border: 2px solid magenta; 
+	/* border: 2px solid magenta;  */
 }
 
 header nav a:hover {
@@ -101,14 +101,16 @@ header nav a:hover {
 }
 
 .logo {
-	margin: 20px 30px 5px 40px;
-	border: 2px solid magenta;
+	display: flex;
+	margin: 10px 30px 5px 40px;
+	/* border: 2px solid magenta; */
 }
 .innovation {
 	display: flex;
-	width: 880px;
+	width: 100%;
 	padding: 40px;
-	margin-top: 40px;
+	margin: 40px 0px 40px 0px;
+
 	border-bottom: 1px solid black;
 	border: 3px solid orange;
 }
@@ -145,7 +147,7 @@ h2 {
 	display: flex;
 	justify-content: space-between;
 	margin: 40px 0 10px 0;
-	border: 3px solid magenta;
+	/* border: 3px solid magenta; */
 }
 .features, .about {
 	width: 400px;
@@ -168,7 +170,8 @@ h2 {
 .main-content-bottom {
 	display: flex;
 	justify-content: space-between;
-	border: 3px dashed cyan;
+	margin: 40px 0 10px 0;
+	/* border: 3px solid magenta; */
 }
 .main-content-bottom p {
 	display: flex;
@@ -255,10 +258,10 @@ address {
 	display: flex;
 	flex-wrap: wrap;
 }
-@media(max-width:850px) {
+@media(max-width:860px) {
     .container {
 	 	background: lightgray;
-		width: 100%;
+		width: 85%;
 	}
 	header {
 		display: flex;
@@ -309,7 +312,7 @@ address {
 @media(max-width:550px) {
 	.container {
 		background: pink;
-		width: 100%;
+		width: 70%;
 	}
 	header .logo {
 		display: flex;
@@ -340,7 +343,7 @@ address {
 	} 
 	.main-content-top {
 		display: block;
-		width: 100%;
+		width: 70%;
 		margin: 20px 5px 10px 150px;
 		border: 3px dashed cyan;
 	}
@@ -351,8 +354,11 @@ address {
 	}
 	.main-content-bottom {
 		display: block;
-		width: 100%;
+		width: 70%;
 		margin: 20px 5px 10px 150px;
 		border: 3px dashed cyan;
+	}
+	.copyright {
+		width: 70%;
 	}
 }
