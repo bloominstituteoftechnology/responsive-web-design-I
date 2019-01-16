@@ -68,34 +68,32 @@ h1, h2, h3, h4, h5 {
 .container, .svc-container {
 	width:880px;
 	margin: 0 auto;
-	/* border: 1px solid red; */
+	border: 1px solid red;
 }
 
 
 header {
-	/* border: 2px dotted purple;  */
 	display: flex;
 	width: 100%; 
 	justify-content: space-between; 
 	flex-direction: row-reverse;
+	/* border: 2px dotted purple;  */
 }
 
 header nav {
-	 display: flex;
-	/* margin: 20px 120px 25px 0px; 
-	border: 2px dashed green; */
-	width: 880px;
-	margin-top: 40px;
-	justify-content: space-between;
-
+	display: flex;
+	justify-content: space-around;
+	/* align-items: center; */
+	margin-top: 30px; 
+	/* border: 2px dashed green;  */
 }
 
 header nav a {
-	/* border: 2px dashed green; */
 	margin: 0 20px 0 20px;
 	padding: 10px;
 	font-size: 14px;
 	color: gray;
+	/* border: 2px solid magenta;  */
 }
 
 header nav a:hover {
@@ -105,19 +103,14 @@ header nav a:hover {
 }
 
 .logo {
-	width: 160px;
-	height: 35px;
-	/* margin-right: 40px; */
-	/* border: 2px solid magenta; */
-	margin: 30px 0 0 90px;
+	margin: 20px 30px 5px 40px;
 }
 .innovation {
 	display: flex;
 	width: 880px;
 	padding: 20px;
-	margin-top: 30px;
-	border-bottom: 1px solid black;
-	/*border: 3px solid orange;*/
+	margin: 40px 0 20px 0;
+	/* border: 3px solid orange; */
 }
 
 .innovation h1{
@@ -126,11 +119,8 @@ header nav a:hover {
 	font-size: 70px;
 	text-align: center;
 	flex-wrap: wrap;
-	margin: 0 70px 0;
-}
-.innovation .header-image {
-	width: 40%;
-	height: 40%;
+	margin: 30px 20px 40px 60px;
+	/* border: 2px dotted cyan; */
 }
 	
 .innovation button  {
@@ -138,6 +128,7 @@ header nav a:hover {
 	width: 150px;
 	height: 30px;
 	margin-left: 75px;
+	font-weight: bold;
 	border: 1px solid black;
 }
 .innovation button:hover {
@@ -145,28 +136,29 @@ header nav a:hover {
 	font-weight: bold;
 	cursor: pointer;
 }
-
-.main-content-top {
-	
-	margin: 40px 0 10px 0;
-	padding: 20px 0 20px 0;
-	display: flex;
-	justify-content: space-between;
-}
 h2 {
 	font-size: 20px;
 	font-weight: bold;
+	/* border: 2px dotted purple; */
 }
-
+.main-content-top {
+	display: flex;
+	justify-content: space-between;
+	margin: 40px 0 10px 0;
+	border-top: 1px solid black;
+	/* border: 3px solid magenta; */
+}
 .features, .about {
 	width: 400px;
-	margin: 30px 0 40px 0;
+	margin: 30px 25px 40px 10px;
+	/* border: 3px solid yellow; */
 }
 .middle-image {
+	 display: block;
+	 width: 100%;
+	/*flex-wrap: wrap; */
+	margin: 10px 0px 10px 0px;
 	border:3px solid red;
-	display: flex;
-	flex-wrap: wrap;
-	margin: 30px auto;
 }
 .main-content-bottom {
 	/* border: 3px solid magenta; */
@@ -271,11 +263,11 @@ address {
 	.innovation h1{
 		border: 2px solid green;
 		display: block;
-		margin:20px  auto;
+		margin:10px  auto;
 		flex-direction: column;
 		justify-content: center;
 		align-content: center;
-		flex-wrap: wrap;
+		/* flex-wrap: wrap; */
 	}
 	.innovation img {
 		display: none;
