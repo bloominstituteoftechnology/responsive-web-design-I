@@ -105,4 +105,52 @@ nav a:last-child:hover {
 	background: white
 }
 
+.starting-section{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 25px 0;
+	align-items: center;
+}
 
+.starting-section-services{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	height: 350px;
+}
+
+.starting-section button{
+	border: 1px solid black;
+	background-color: white;
+	padding: 0 30px ;
+	font-family: 'Titillium Web', sans-serif;
+	font-weight: 600;
+	font-size: 16px;
+	width: 170px;
+	height: 40px; 
+	background-position: right bottom;
+	transition: all .25s ease-in-out;
+  }
+  
+  .starting-section button:hover{
+	background: linear-gradient(to right, black 50%, white 50%);
+	background-size: 200% 100%;
+	color: white;
+	background-position: left bottom;
+  }
+
+.section-services p{
+	line-height: 1.2em;
+}
+
+.section-services h2{
+	font-size: 24px;
+	font-weight: bolder;
+}
+
+h1{
+	font-size: 72px;
+	text-align: center;
+}
