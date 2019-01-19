@@ -125,6 +125,7 @@ h2 {
   display: flex;
   justify-content: space-around;
   align-items: center;
+	margin-bottom: 40px;
 }
 
 
@@ -273,4 +274,92 @@ nav {
 	text-align: center;
 }
 
-@media (max-width: 800px)
+
+
+@media (max-width: 800px) {
+	.round-img {
+		display: none;
+	}
+
+	.nav-container {
+		display: flex;
+		flex-direction: column;
+
+	}
+
+	.logo {
+		order: 1;
+		width: 150px;
+		align-self: center;
+		margin-bottom: 30px;
+		margin-top: 20px;
+ }
+
+
+
+ nav {
+ 	order: 2;
+	align-self: center;
+	justify-content: space-evenly;
+	margin-bottom: 40px;
+ }
+
+
+
+}
+
+@media (max-width: 500px) {
+		.round-img {
+			display: none;
+		}
+
+		.nav-container {
+			display: flex;
+		}
+
+		ul {
+			display: flex;
+			flex-direction: column;
+			align-self: center;
+		}
+
+		li {
+			border-top: 1px solid black;
+			border-bottom: 1px solid black;
+
+		}
+
+		.sec1 {
+		  display: flex;
+			flex-direction: column;
+		}
+		.sec2{
+		  display: flex;
+			flex-direction: column;
+		}
+		.footer {
+		  display: flex;
+		  justify-content: space-between;
+		}
+
+		.features {
+		  width: auto;
+		}
+
+		.about {
+		  width: auto;
+		}
+
+		.services {
+		  width: auto;
+		}
+
+		.product {
+		  width: auto;
+		}
+
+		.vision {
+		  width: auto;
+		}
+
+}
