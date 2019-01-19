@@ -1,3 +1,369 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/*  http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
 
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+
+
+
+
+a {
+  text-decoration: none;
+}
+
+
+a:link {
+  color: black;
+}
+
+a:visited {
+  color: grey;
+}
+
+a:hover {
+  border-bottom: 1px solid;
+  background: #CDFEAA;
+}
+
+nav ul li{
+
+  display: inline-block;
+  margin-right: 50px;
+  margin-top: 5px;
+
+}
+
+.container {
+  max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 10px;
+}
+
+p {
+  margin-bottom: 50px;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  margin-top: 50px;
+}
+
+
+
+
+
+
+.middle-img {
+
+}
+
+.top{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+	margin-bottom: 40px;
+}
+
+
+.big-text {
+  text-align: center;
+
+
+}
+
+.round-img {
+
+}
+
+
+span {
+  border: solid 1px black;
+  padding: 1px 30px 1px 30px;
+}
+
+
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+
+
+}
+
+ .logo {
+}
+
+
+
+nav {
+
+}
+
+.sec1 {
+  display: flex;
+  justifly-content: space-around;
+}
+
+.features {
+  width: 50%;
+
+
+}
+
+.about {
+  width: 50%;
+}
+
+.sec2{
+  display: flex;
+  justifly-content: space-around;
+}
+
+.services {
+  width: 33%;
+}
+
+.product {
+  width: 33%;
+}
+
+.vision {
+  width: 33%;
+}
+
+
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact {
+
+}
+
+.contact p {
+}
+
+
+.copyr {
+  align-self: flex-end;
+
+}
+
+
+
+
+
+
+.button1 {
+
+  border: 1px solid black;
+
+}
+
+.first {
+
+}
+
+
+
+.bio {
+	margin-top: 30px;
+
+}
+
+.major {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+}
+
+.box {
+	border: 2px solid black;
+	width: 43%;
+	padding: 10px 5px 10px 5px;
+	margin: 20px;
+	background-color: #f4f3f4;
+}
+
+.foot {
+	display:flex;
+	flex-direction: row;
+}
+.fun-facts {
+}
+
+
+
+.services-info-img {
+	margin-top: 15px;
+	padding: 25px;
+}
+
+.bottom {
+	width: auto;
+	margin-top: 50px;
+  padding: 25px;
+  margin: 0;
+	text-align: center;
+}
+
+
+
+@media (max-width: 800px) {
+	.round-img {
+		display: none;
+	}
+
+	.nav-container {
+		display: flex;
+		flex-direction: column;
+
+	}
+
+	.logo {
+		order: 1;
+		width: 150px;
+		align-self: center;
+		margin-bottom: 30px;
+		margin-top: 20px;
+ }
+
+
+
+ nav {
+ 	order: 2;
+	align-self: center;
+	justify-content: space-evenly;
+	margin-bottom: 40px;
+ }
+
+
+
+}
+
+@media (max-width: 500px) {
+		.round-img {
+			display: none;
+		}
+
+		.nav-container {
+			display: flex;
+		}
+
+		ul {
+			display: flex;
+			flex-direction: column;
+
+			align-self: center;
+		}
+
+		li {
+				border: 1px solid black;
+				padding: 10px 500px 10px 500px;
+				margin: 0;
+
+
+
+		}
+
+		.sec1 {
+		  display: flex;
+			flex-direction: column;
+		}
+		.sec2{
+		  display: flex;
+			flex-direction: column;
+		}
+		.footer {
+		  display: flex;
+		  justify-content: space-between;
+		}
+
+		.features {
+		  width: auto;
+		}
+
+		.about {
+		  width: auto;
+		}
+
+		.services {
+		  width: auto;
+		}
+
+		.product {
+		  width: auto;
+		}
+
+		.vision {
+		  width: auto;
+		}
+
+}
