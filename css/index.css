@@ -61,36 +61,94 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 .container{
-	width: 900px;
+	width: 880px;
 	margin: auto;
-	border: 1px solid red;;
+
+}
+
+header{
+  width: 100%;
+  display: flex;
 }
 
 header nav{
-	display: inline-block;
-	margin-top: 35px;
+	margin-top: 40px;
+	width: 610px;
+	display: flex;
+	
 }
 
 Header .logo{
 	margin-left: 140px;
 }
+
 header nav a{
+	text-decoration: none;
+	color: #B0B0B0;
 	margin: 0 20px;
+
 } 
 
-h1 {
-	display: inline-block;
-	width: 400px;
-	margin: auto;
-	border: 1px ;
-	padding: 1px;
+header nav a:hover {
+    text-decoration: underline;
+	color: black;
+	
+.cta {
+    display: flex;
+    margin-top: 72px;
+    justify-content: flex-end;
 }
- .top {
-	display: inline-block;
-	width: 400px;
-	margin: auto;
-	border: 1px solid black;
-	padding: 1px;;
+
+.cta .cta-text {
+    font-size: 72px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    margin: 0 60px 0 0;
+}
+
+.cta .cta-text button {
+    border: 1px double black;
+    background: white;
+    width: 170px;
+    height: 32px;
+    margin-top: 10px;
+    
+}
+
+
+
+.main-content{
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	margin: 75 px 0 35px 0;
+	padding: 35px;
+}
+
+.main-content.top-content{
+	display:flex;
+}
+
+.main-content.middle-img{
+	display: block;
+	margin: 30px auto;
+}
+
+main-content .bottom-content {
+    display: flex;
+}
+
+/*Contact*/
+.contact p{
+	margin: 15px;
+}
+
+/*footer*/
+footer {
+	text-align: center;
+	margin: 40px 0 20px;
 }
 
 /* At 800px and below do the following:*/
