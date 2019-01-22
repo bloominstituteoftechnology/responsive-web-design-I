@@ -81,20 +81,27 @@ h1, h2, h3, h4, h5 {
 	
 .main-title {
 	margin: 10px;
+	padding: 0 20px 0 20px;
 }
 
 .main-title .top {
 	display: flex;
 	flex-direction: row;
-	align-items: flex-end;
-	justify-content: space-between;
-	margin-top: 10px;
+	align-items: center;
+	justify-content: space-around;
+	margin: 5px 0 5px 0;
 }	
+
+nav {
+	width: 550px;
+	display: flex;
+	justify-content: space-around;
+}
 
 header nav a {
 	color: darkgrey;
 	text-decoration: none;
-	padding: 10px 50px 0 10px;
+	padding: 0;
 }
   
 header nav a:hover {
@@ -104,21 +111,32 @@ header nav a:hover {
   
 header .logo {
 	width: 180px;
-	padding: 0 0 0 20px;
+	padding: 0;
 }
   
 .text {
+	border: 1px solid green;
 	display: flex;
 	flex-direction: row;
-	margin: 10px;
-	width: 100%;
+	margin: 9px;
+	width: 98%;
 }
   
+.text .title-button {
+	border: 1px solid blue;
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 5px;
+}
+
 .text .title {
+	border: 1px solid blue;
 	font-weight: 550;
 	font-size: 60px;
 	width: 250px;
-	margin:90px 68px 20px 100px;
+	margin:10px;
 	padding: 9px;
 	text-align: center;
 }
@@ -164,5 +182,5 @@ header .logo {
 footer {
 	text-align: center;
 	padding: 20px;
-	margin-bottom: 20%;
+	margin-bottom: 1%;
 }
