@@ -1,374 +1,261 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+@import "base";
+@import "responsive";
 
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
+// Variables
+$light: rgb(241, 239, 239);
+$grey: rgb(148, 137, 137);
+$highlight: rgb(48, 111, 228);
+$border-style: 1px solid black;
+
 body {
-  line-height: 1;
-}
-ol,
-ul {
-  list-style: none;
-}
-blockquote,
-q {
-  quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
+  font-size: 16px;
+  font-family: "Titillium Web", sans-serif;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-html,
-body {
+img {
+  margin: 0 auto;
+  width: 100%;
   height: 100%;
-  font-family: "Roboto", sans-serif;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-size: 18px;
-  margin-bottom: 15px;
-  font-family: "Rubik", sans-serif;
+button {
+  background: white;
+  padding: 2px 20px;
+  border: $border-style;
+  letter-spacing: 1px;
+  font-size: 15px;
 }
 
-p {
-  line-height: 1.4;
+section {
+  padding: 20px 0;
+}
+
+address {
+  * {
+    font-size: 14px;
+  }
+  p:not(.street) {
+    line-height: 2.5;
+  }
+}
+
+.list {
+  list-style-position: inside;
+  list-style-type: disc;
+  li {
+    margin-bottom: 0.25rem;
+    span {
+      color: black;
+    }
+    &:hover {
+      color: $highlight;
+    }
+  }
+}
+
+.bordered {
+  border-top: $border-style;
+  border-bottom: $border-style;
+}
+.m-bottom {
+  margin-bottom: 1rem;
+}
+.m-bottom-sm {
+  margin-bottom: 0.25rem;
+}
+.big-text {
+  font-size: 60px;
 }
 
 .container {
-  width: 800px;
+  width: 80%;
   margin: 0 auto;
 }
 
-.top-content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  margin-bottom: 20px;
-  border-bottom: 1px dashed black;
-}
-
-.top-content .text-container {
-  width: 48%;
-  padding: 0 1%;
-  padding-bottom: 20px;
-}
-
-.middle-content {
-  margin-bottom: 20px;
-  border-bottom: 1px dashed black;
-}
-
-.middle-content h2 {
-  padding: 0 2%;
-  margin-bottom: 0;
-}
-
-.middle-content .boxes {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-
-.middle-content .boxes .box {
-  width: 12.5%;
-  height: 100px;
-  background: black;
-  margin: 20px 2.5%;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.bottom-content {
-  display: flex;
-  margin: 0 2% 20px;
-  justify-content: space-around;
-}
-
-.bottom-content .text-container {
-  padding-right: 4%;
-}
-
-.bottom-content .text-container:last-child {
-  padding-right: 0;
-}
-
-footer {
+.flex {
   width: 100%;
-  background: black;
-}
-
-footer nav {
-  width: 60%;
+  margin: 0 auto;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 2%;
-  font-size: 14px;
 }
 
-footer nav a {
-  color: white;
-  text-decoration: none;
+.center-text {
+  text-align: center;
 }
-
-/* My Styles */
 
 .navbar {
-  width: 100%;
+  width: 85%;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
-  padding: 10px 0;
+  height: 80px;
+  margin-bottom: 20px;
+  a {
+    font-size: 16px;
+    text-decoration: none;
+    color: $grey;
+    &:hover {
+      text-decoration: underline;
+      color: black;
+    }
+  }
 }
 
-.navbar a {
-  text-decoration: none;
-  color: black;
-  font-size: 13px;
+.nav-links {
+  align-self: center;
+  .nav-link {
+    margin-right: 0.5rem;
+  }
 }
 
-.navbar a:hover {
-  text-decoration: underline;
+.logo {
+  align-self: center;
 }
 
-.banner {
-  margin: 20px 0;
+.section-1 {
+  padding: 20px 0;
 }
 
-.boxes .box:nth-child(1) {
-  background: teal;
+.center {
+  justify-content: center;
 }
-.boxes .box:nth-child(2) {
-  background: gold;
-}
-.boxes .box:nth-child(3) {
-  background: cadetblue;
-}
-.boxes .box:nth-child(4) {
-  background: coral;
-}
-.boxes .box:nth-child(5) {
-  background: crimson;
-}
-.boxes .box:nth-child(6) {
-  background: forestgreen;
-}
-.boxes .box:nth-child(7) {
-  background: darkorchid;
-}
-.boxes .box:nth-child(8) {
-  background: hotpink;
-}
-.boxes .box:nth-child(9) {
-  background: indigo;
-}
-.boxes .box:nth-child(10) {
-  background: dodgerblue;
+.space-between {
+  justify-content: space-between;
 }
 
-section.full {
-  padding-bottom: 10px;
-}
-section.full p {
-  margin-bottom: 10px;
+.half {
+  width: 50%;
 }
 
-.border-bottom {
-  border-bottom: 1px dashed black;
+.img-wrapper {
+  display: flex;
+  background: #000;
+  margin: auto;
+}
+
+.verticle {
+  align-self: center;
+}
+
+.circle-img {
+  padding: 20px 0;
+  width: 200px;
+  height: auto;
+}
+
+.underline {
+  border-bottom: 1px solid $grey;
+}
+
+.wrapper {
+  p {
+    padding-right: 1rem;
+  }
+}
+
+.copyright {
+  font-size: 12px;
+  padding: 1rem;
+  margin: 1rem;
 }
 
 .cards {
   width: 100%;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: space-between;
 }
+
 .card {
-  flex-basis: 45%;
-  display: flex;
-  flex-direction: column;
-  border-bottom: 1px dashed black;
-  margin-top: 30px;
-}
-
-.card img {
+  flex-basis: 49%;
+  //   margin: 1rem;
+  padding: 1rem;
   margin-bottom: 10px;
-}
-
-.card-body {
-  padding: 5px;
-  padding-bottom: 30px;
-}
-.card-body p {
-  margin-bottom: 15px;
-}
-
-.card-button {
-  font-size: 18px;
-  color: black;
-  font-weight: 500;
-  background: white;
-  padding: 7px 15px;
-  border: 2px solid black;
-  border-radius: 10px;
-}
-
-$breakpoints: (
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
-  xl: 1140px
-) !default;
-
-// Breakpoints
-@mixin breakpoint($breakpoint) {
-  // If the breakpoint exists in the map.
-  @if map-has-key($breakpoints, $breakpoint) {
-    // Get the breakpoint value.
-    $value: map-get($breakpoints, $breakpoint); // Write the media query.
-    @media (min-width: $value) {
-      @content;
-    } // If the breakpoint doesn't exist in the map.
-  } @else {
-    // Log a warning.
-    @warn 'Invalid breakpoint: #{$breakpoint}.';
+  background: $light;
+  p {
+    line-height: 1.25;
   }
 }
 
-%container {
+.card-btn {
+  margin-top: 20px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.info {
+  line-height: 1.25;
+}
+
+.img-fluid {
   width: 100%;
-  @each $breakpoint, $value in $breakpoints {
-    @include breakpoint($breakpoint) {
-      max-width: $value;
+  img {
+    width: 100%;
+    height: auto;
+    margin: auto 0;
+  }
+}
+.services-info {
+  margin: 0;
+}
+
+@media (max-width: map-get($breakpoints, sm)) {
+  header {
+    margin: 0;
+    padding: 0;
+  }
+  .navbar {
+    height: auto;
+    display: grid;
+    grid-template-rows: 40px 1fr;
+    grid-template-columns: 100%;
+    justify-content: center;
+    width: 100%;
+    .nav-links {
+      display: grid;
+      grid-template-rows: repeat(6, 1fr);
+      grid-template-columns: 100%;
+      justify-content: center;
+      text-align: center;
+      .nav-link {
+        text-align: center;
+        padding-bottom: 8px;
+        margin: 5px 0;
+      }
+      .border-bottom {
+        border-bottom: 1px solid $grey;
+      }
+    }
+    a.logo {
+      grid-row: 1 / 2;
+      width: 50%;
       margin: 0 auto;
+      padding: 10px;
     }
   }
 }
-
-.container {
-  @extend %container;
-  img {
+@media only screen and (max-width: map-get($breakpoints, lg)) and (min-width: map-get($breakpoints, sm)) {
+  .navbar {
+    height: auto;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    justify-content: center;
     width: 100%;
+    a.logo {
+      grid-row: 1 / 2;
+      width: 30%;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .nav-links {
+      min-width: 100%;
+      display: flex;
+      justify-content: space-around;
+      .nav-link {
+        width: 100%;
+        text-align: center;
+      }
+    }
   }
 }
