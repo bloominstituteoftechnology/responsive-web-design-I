@@ -128,7 +128,8 @@ button {
 .main {
 	display: flex;
 	justify-content: center;
-	margin: 20px 0;
+    margin: 20px 0px;
+    margin-right: 20px;
 }
 
 @media(max-width: 500px) {
@@ -138,7 +139,13 @@ button {
 }
 
 .main section {
-	/* max-width: 45%; */
+	max-width: 45%;
+}
+
+@media( max-width: 500px ) {
+    .main section {
+        max-width: 90%;
+    }
 }
 
 #center-photo {
@@ -161,11 +168,15 @@ button {
        flex-direction: column;  
     }
 }
-/* .sub .text {
-	width: 30%;
-	
-} */
+.sub .text {
+    width: 30%;
+}
 
+@media( max-width: 500px ) {
+    .sub .text {
+        width: 90%;
+    }
+}
 
 
 footer {
