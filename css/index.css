@@ -200,6 +200,14 @@ header h1 {
     }
 }
 
+@media ( max-width: 500px ) { /* PHONE */
+    .index-header {
+        width: 90%;
+        justify-content: center;
+        margin:0% 5%;
+        padding: 10% 0%;
+    }
+}
 
 .button {
 	margin-left: 80px;
@@ -231,6 +239,14 @@ section h3 {
 	/* padding: 60px; */
 }
 
+
+@media ( max-width: 500px ) { /* PHONE */
+    .top-text {
+        flex-direction: column;
+        padding: 10% 4%;
+    }
+}
+
 .features {
 	margin-right: 50px; /* increase space between paragraphs */
 }
@@ -239,14 +255,24 @@ section h3 {
 /* For middle image */
 .middle-img {
 	width: 100%;
-	margin-bottom: 20px;
+	margin-bottom: 5%;
 }
 
-@media ( max-width: 800px ) {
+@media ( max-width: 800px ) { /* TABLET */
     .middle-img {
-        margin-bottom: 60px;
+        margin-bottom: 10%;
     }
 }
+
+
+@media ( max-width: 500px ) { /* PHONE */
+    .middle-img {
+        padding: 20% 4%; 
+    }
+}
+
+
+
 
 /* For bottom-text section */
 
