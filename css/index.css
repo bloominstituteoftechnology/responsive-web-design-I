@@ -295,9 +295,45 @@ img.services-header-img {
 
 @media (max-width: 500px) {
     .container {
-		max-width: 500px;
+		width: auto;
 		background: ivory;
 	} 
+
+	.logo {
+		margin-bottom: -30px;
+	}
+
+	.container header nav {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		height: 300px;
+		padding-left: 20px;
+		width: 500px;
+		font-size: 20px
+		
+	}
+
+	header nav a:first-child {
+		border-top: 1px solid grey;
+	  }
+  
+	header nav a {
+		width: 100%;
+		font-size: 18px;
+		padding: 12px;
+		border-bottom: 1px solid grey;
+	  }
+
+	.headingSection {
+		display: flex;
+		flex-direction: column;
+		margin: auto;
+		align-content: center;
+		justify-content: center;
+	}
 
 	.topSection {
 		display: flex; 
