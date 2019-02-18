@@ -67,7 +67,10 @@ h1, h2, h3, h4, h5 {
     width: 880px;
     margin: auto;
 }
-
+img{
+ width: 100%;
+ height: auto;   
+}
 /* Header Styles */
 
 header {
@@ -78,7 +81,7 @@ header {
     header{
     flex-direction: column;
     align-items: center;
-    border:1px solid black;
+    
   }
     }
 
@@ -108,7 +111,7 @@ header nav {
     .nav-2{
         display:flex;
         justify-content:space-between;
-        margin-right:5000px;
+       
     }
 }
 
@@ -188,18 +191,37 @@ header .logo {
    line-height: 18px;
 }
 
+
+
 .main-content .top-content {
     display: flex;
 }
+
+@media(max-width:815px){
+    .main-content .top-content{
+        width:80%;
+        margin:35px;
+    }
 
 .main-content .middle-img {
     display: block;
     margin: 30px auto;
 }
+@media(max-width:815px){
+    .main-content .middle-img{
+        width:80%;
+        margin-right:200px;
+        margin-left:20px;
+    }
 
 .main-content .bottom-content {
     display: flex;
 }
+@media(max-width:815px){
+    .main-content .bottom-content{
+        width:80%;
+        margin:35px;
+    }
 
 .main-content .bottom-content p {
     padding-right: 20px;
