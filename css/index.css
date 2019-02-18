@@ -74,9 +74,10 @@ h1, h2, h3, h4, h5 {
 	display: flex;
 	align-items:baseline;
 	padding-top: 10px;
-	justify-content: space-between;
+	justify-content: space-around;
 	
 }
+
 
 header nav a {
 	margin: 0 20px;
@@ -88,29 +89,41 @@ header nav a {
 .headingSection {
 	margin: 50px;
 	width: 30%;
+	
 }
 
 .headerSection {
 	display: flex;
 	margin-top: 30px;
+	
+
 }
 .logoimg {
 	display: flex;
 }
 
+header .imageSection {
+	display: flex;
+	margin: auto;
+}
+
 h1 { 
 	white-space: pre-line;
 	text-align:center;
-	font-size: 60px;
+	font-size: 70px;
+	display: flex;
+	flex-direction: baseline;
 }
 
 button {
-    margin: 15px;
+    margin: auto;
 	padding: 0px 20px 0px 20px;
 	background-color: white; 
-	font-size: 12px;
-    width: 130px;
-    align-content: baseline;
+	font-size: 14px;
+	width: 180px;
+	display: flex;
+	align-content: baseline;
+	justify-content: center;
 	
 }
 
@@ -136,14 +149,14 @@ img.middle-img {
 .topSection {
 	display: flex;
 	margin-bottom: 30px;
-	border-top: 1px solid black;
+	border-top: 2px solid black;
 	padding: 10px;
 }
 
 
 .bottomSection {
 	display: flex;
-	border-bottom: 1px solid black;
+	border-bottom: 2px solid black;
 	padding: 20px 0 20px 0;
 }
 
@@ -243,9 +256,22 @@ img.services-header-img {
 
 @media (max-width: 800px ) {
 	.container {
-		max-width: 840px;
+		width: auto;
 
     }
+
+	h1 {
+		display: flex;
+		align-content: baseline;
+		justify-content: center;
+		margin-top: auto;
+	}
+
+	h2 {
+		display: flex;
+		align-content: baseline;
+		justify-content: center;
+	}
 
 	.banner {
 		display: flex;
@@ -262,11 +288,6 @@ img.services-header-img {
         width: 100%;
         
     }
-
-    .imageSection {
-        display: none;
-        
-	} 
 
 	.headerSection {
 		text-align: center;
@@ -294,8 +315,16 @@ img.services-header-img {
 		margin-left: 15px;
 		margin-right: 15px;
 	}
-}
 
+	.contact {
+		margin: 20px;
+	}
+
+}
+.imageSection {
+	display: none;
+}
+}
 @media (max-width: 500px) {
     .container {
 		width: auto;
@@ -360,12 +389,12 @@ img.services-header-img {
 		display: flex;
 		flex-direction: column;
 	}
+
+	.middle-img {
+		height: auto;
+		margin-right: 20px;
+	}
 	.imageSection {
 		display: none;
 	}
-
-	.middle-img {
-		max-width: 100%; 
-		height: auto;
 	}
-}
