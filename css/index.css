@@ -1,3 +1,193 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+.container {
+	max-width: 960px;
+	margin: 0 auto;
+}
 
+hr{
+	width: 90%;
+}
+
+.top-header{
+	display: flex;
+	justify-content: space-between;
+}
+
+@media(max-width: 800px) {
+    .top-header {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    
+}
+
+@media(max-width: 500px) {
+    .top-header {
+        flex-direction: column-reverse;
+        
+    }
+    
+}
+
+@media(max-width: 800px) {
+    .logo {
+        width: 200px;
+        margin-bottom: 40px;
+    }
+}
+
+
+.top-header nav a {
+	text-decoration: none;
+	color: grey;
+	margin: 0 20px;
+}
+@media(max-width: 500px) {
+    .top-header nav  {
+        display: flex;
+        flex-direction: column; 
+        width: 100%;
+        
+    }
+}
+
+@media(max-width: 800px) {
+    .top-header nav a {
+        margin: 0 25px;
+    }
+}
+@media(max-width: 500px) {
+    .top-header nav a {
+        width: 100%;
+        text-align: center;
+        margin: 20px 0;
+        font-size: 20px;
+        border-bottom: 1px solid grey;
+    }
+}
+
+
+
+.top-header nav a:hover {
+	text-decoration: none;
+	color: greenyellow;
+	
+}
+
+.bottom-header {
+	display: flex;
+	justify-content: space-between;
+    margin: 40px 20px;
+}
+
+
+
+@media(max-width: 800px) {
+    .bottom-header img {
+        display: none;
+    }
+}
+
+.bottom-header h1 {
+	font-size: 80px;
+	text-align: center;
+}
+
+@media(max-width: 800px) {
+    .bottom-header h1 {
+        margin: 0 auto; 
+    }
+}
+
+button {
+	height: 30px;
+	width: 100px;
+	border-radius: 5%;
+	margin-left: 120px
+}
+
+@media(max-width: 800px) {
+    button {
+        margin-left: 214px;
+        width: 170px;
+        
+    }
+}
+
+@media(max-width: 500px) {
+    button {
+        margin-left: 140px;
+        width: 170px;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+.main {
+	display: flex;
+	justify-content: center;
+    margin: 20px 0px;
+    margin-right: 20px;
+}
+
+@media(max-width: 500px) {
+    .main {
+       flex-direction: column;  
+    }
+}
+
+.main section {
+	max-width: 45%;
+}
+
+@media( max-width: 500px ) {
+    .main section {
+        max-width: 90%;
+    }
+}
+
+#center-photo {
+    text-align: center;
+    max-width: 100%;
+}
+
+#center-photo .picture {
+    max-width: 100%;
+}
+
+.sub {
+	display: flex;
+	justify-content: center;
+	margin: 20px 0;
+}
+
+@media(max-width: 500px) {
+    .sub {
+       flex-direction: column;  
+    }
+}
+.sub .text {
+    width: 30%;
+}
+
+@media( max-width: 500px ) {
+    .sub .text {
+        width: 90%;
+    }
+}
+
+
+footer {
+	text-align: center;
+}
+
+address {
+	margin: 20px 25px;
+}
+
+address p {
+	margin: 10px 0;
+}
 
