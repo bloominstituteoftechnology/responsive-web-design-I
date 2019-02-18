@@ -21,6 +21,14 @@ hr{
     
 }
 
+@media(max-width: 500px) {
+    .top-header {
+        flex-direction: column-reverse;
+        
+    }
+    
+}
+
 @media(max-width: 800px) {
     .logo {
         width: 200px;
@@ -32,7 +40,15 @@ hr{
 .top-header nav a {
 	text-decoration: none;
 	color: grey;
-	padding: 0 10px;
+	margin: 0 20px;
+}
+@media(max-width: 500px) {
+    .top-header nav  {
+        display: flex;
+        flex-direction: column; 
+        width: 100%;
+        
+    }
 }
 
 @media(max-width: 800px) {
@@ -40,6 +56,16 @@ hr{
         margin: 0 25px;
     }
 }
+@media(max-width: 500px) {
+    .top-header nav a {
+        width: 100%;
+        text-align: center;
+        margin: 20px 0;
+        font-size: 20px;
+        border-bottom: 1px solid grey;
+    }
+}
+
 
 
 .top-header nav a:hover {
@@ -82,20 +108,21 @@ button {
 
 @media(max-width: 800px) {
     button {
-        margin-left: 310px;
+        margin-left: 214px;
         width: 170px;
         
     }
 }
 
-
-button:hover {
-	height: 30px;
-	width: 100px;
-	border-radius: 5%;
-	color: greenyellow;
-
+@media(max-width: 500px) {
+    button {
+        margin-left: 140px;
+        width: 170px;
+        margin-bottom: 20px;
+    }
 }
+
+
 
 
 .main {
@@ -103,13 +130,24 @@ button:hover {
 	justify-content: center;
 	margin: 20px 0;
 }
+
+@media(max-width: 500px) {
+    .main {
+       flex-direction: column;  
+    }
+}
+
 .main section {
-	max-width: 45%;
+	/* max-width: 45%; */
 }
 
 #center-photo {
     text-align: center;
-    width: 100%;
+    max-width: 100%;
+}
+
+#center-photo .picture {
+    max-width: 100%;
 }
 
 .sub {
@@ -117,10 +155,18 @@ button:hover {
 	justify-content: center;
 	margin: 20px 0;
 }
-.sub .text {
+
+@media(max-width: 500px) {
+    .sub {
+       flex-direction: column;  
+    }
+}
+/* .sub .text {
 	width: 30%;
 	
-}
+} */
+
+
 
 footer {
 	text-align: center;
