@@ -1,0 +1,85 @@
+$breakpoints: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px
+) !default;
+
+// Breakpoints
+@mixin breakpoint($breakpoint) {
+  // If the breakpoint exists in the map.
+  @if map-has-key($breakpoints, $breakpoint) {
+    // Get the breakpoint value.
+    $value: map-get($breakpoints, $breakpoint); // Write the media query.
+    @media (min-width: $value) {
+      @content;
+    } // If the breakpoint doesn't exist in the map.
+  } @else {
+    // Log a warning.
+    @warn 'Invalid breakpoint: #{$breakpoint}.';
+  }
+}
+
+main {
+  @each $breakpoint, $value in $breakpoints {
+    @include breakpoint($breakpoint) {
+      max-width: $value;
+      margin: 0 auto;
+    }
+  }
+  margin: 1rem 0;
+  padding: 1rem 0;
+}
+
+section {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  @each $breakpoint, $value in $breakpoints {
+    @include breakpoint($breakpoint) {
+      max-width: $value;
+      margin: 0 auto;
+    }
+  }
+  @media (max-width: map-get($breakpoints, sm)) {
+    min-width: 100%;
+    flex-direction: column;
+    justify-content: end;
+    padding: 0 0.25rem;
+
+    .card {
+      flex-basis: 100%;
+    }
+    .half {
+      padding: 1rem 0.25rem;
+      min-width: 100%;
+    }
+    .third {
+      padding: 1rem 0.25rem;
+      min-width: 100%;
+    }
+    .full {
+      padding: 1rem 0.25rem;
+      min-width: 100%;
+    }
+    .circle-img {
+      display: none;
+    }
+  }
+}
+
+%container-fluid {
+  @each $breakpoint, $value in $breakpoints {
+    @include breakpoint($breakpoint) {
+      * {
+        max-width: $value;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+.container-fluid {
+  @extend %container-fluid;
+}
