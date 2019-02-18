@@ -188,6 +188,20 @@ header h1 {
 	text-align: center;
 }
 
+.button {
+	margin-left: 80px;
+	width: 140px;
+	height: 25px;
+	border: 1px solid black;
+	background-color: white;
+	cursor: pointer;
+	
+}
+
+.button:hover {
+	background: black;
+	color: #59E16C;
+}
 @media ( max-width: 800px ){ /* TABLET */
     .index-header {
         width: 100%;
@@ -209,20 +223,7 @@ header h1 {
     }
 }
 
-.button {
-	margin-left: 80px;
-	width: 140px;
-	height: 25px;
-	border: 1px solid black;
-	background-color: white;
-	cursor: pointer;
-	
-}
 
-.button:hover {
-	background: black;
-	color: #59E16C;
-}
 
 /* For top-text section */
 
@@ -243,7 +244,14 @@ section h3 {
 @media ( max-width: 500px ) { /* PHONE */
     .top-text {
         flex-direction: column;
-        padding: 10% 4%;
+        width: 90%;
+        padding: 0% 5%;
+        margin-top: 10%; 
+    }
+
+    .top-text .about {
+        margin-top: 10%;
+        margin-bottom: 10%;
     }
 }
 
@@ -260,14 +268,14 @@ section h3 {
 
 @media ( max-width: 800px ) { /* TABLET */
     .middle-img {
-        margin-bottom: 10%;
+        margin: 10% 0;
     }
 }
 
 
 @media ( max-width: 500px ) { /* PHONE */
     .middle-img {
-        padding: 20% 4%; 
+        padding: 15% 5% 0%; 
     }
 }
 
@@ -280,7 +288,6 @@ section h3 {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	height: 180px;
 	padding-bottom: 60px;
 	border-bottom: 1px solid black;
 }
@@ -289,11 +296,36 @@ section h3 {
 	margin-right: 50px; /* increase space between paragraphs */
 }
 
+@media ( max-width: 500px ) { /* PHONE */
+    .bottom-text {
+        flex-direction: column;
+        width: 90%;
+        padding-bottom: 10%;
+        margin-bottom: 10%;
+        margin-left: 5%;
+    }
+
+    .bottom-text .services, .product {
+        margin-bottom: 10%;
+    }
+
+    /* .top-text .about {
+        margin-top: 10%;
+        margin-bottom: 10%;
+    } */
+}
 
 /* For contact section */
 .contact {
 	margin: 40px 1px;
 }
+
+@media ( max-width: 500px ) { /* PHONE */
+    .contact {
+        margin-left: 5%;
+    }
+}
+
 
 /* For footer */
 footer {
