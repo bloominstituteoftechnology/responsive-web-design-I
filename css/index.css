@@ -88,6 +88,7 @@ margin: 0 auto;
     }
 }
 
+
 nav a{
      margin-left: 20px;
      font-size:18px;
@@ -97,6 +98,18 @@ nav a{
 @media(max-width:800px){
     nav a{
         margin:30px;  
+    }
+}
+
+@media(max-width:500px){
+    nav a{
+        display:flex;
+        border:1px solid  black;
+        margin: 0px;
+        width:498px;
+        justify-content: center;
+        height: 50px;
+        align-items:center;;   
     }
 }
     
@@ -117,7 +130,13 @@ header{
 
     @media(max-width:800px){
         header h1{
-            width: 90%;
+            margin-left:190px;
+        }
+    }
+
+    @media(max-width:500px){
+        header h1{
+            margin-left:110px;
         }
     }
 
@@ -125,15 +144,37 @@ header{
 button{
     display:block;
     margin: 280px auto 0;
+    height: 40px;
+    width: 250px;
+
 }
 @media(max-width:800px){
     button{
-       display:flex;  
+       display:flex; 
+       margin-right:11000px;
+       justify-content: center;
+       border-radius:20px; 
+       cursor: pointer;
     }
 }
 
+@media(max-width:500px){
+    button{
+        display:none;
+        margin-right:800px;
+      
+    }
+}
+
+
 /*header picture*/
 @media(max-width:800px){
+    .header-picture{
+        display:none;
+    }
+}
+
+@media(max-width:500px){
     .header-picture{
         display:none;
     }
@@ -152,6 +193,12 @@ button{
         margin-left:20px;
     }
 }
+@media(max-width: 500px){
+    .middle-content{
+        margin-left:20px;
+        flex-direction:column;
+    }
+}
 
 .top-middle-content {
     margin-left: 20px 0;
@@ -160,6 +207,12 @@ button{
 @media(max-width: 800px){
     .top-middle-content{
         margin-left:5px;
+    }
+}
+
+@media(max-width: 500px){
+    .top-middle-content{
+        margin: 15px 0;
     }
 }
 
@@ -174,8 +227,21 @@ button{
 @media(max-width:800px){
     .bottom-content{
         border-bottom:1px solid black;
+        flex-direction: row;
+        margin:20px 0;
+
     }
 }
+
+@media(max-width:500px){
+    .bottom-content{
+        border-bottom:1px solid black;
+        flex-direction: column;
+        margin:20px 0;
+
+    }
+}
+
 
 .bottom-middle-content{
     margin: 4px 0;
@@ -184,10 +250,17 @@ button{
 
 @media(max-width:800px){
     .bottom-middle-content{
-        margin: 20px;
+        margin: 10px;
     }
-   
 }
+
+@media(max-width:500px){
+    .bottom-middle-content{
+        margin: 20px;
+        
+    }
+}
+
 
 /*style midle picture */
 .middle-img{
@@ -197,6 +270,14 @@ button{
 @media(max-width:800px){
     .middle-img{
         width: 730px;
+        margin: 0 10px;
+
+    }
+}
+
+@media(max-width:500px){
+    .middle-img{
+        width: 450px;
         margin: 0 10px;
 
     }
