@@ -1,6 +1,3 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
-
-
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -77,6 +74,14 @@ header {
     width: 100%;
     display: flex;
 }
+@media(max-width:815px){
+    header{
+    flex-direction: column;
+    align-items: center;
+    border:1px solid black;
+  }
+    }
+
 
 header nav {
     margin-top: 40px; 
@@ -84,10 +89,38 @@ header nav {
     justify-content: space-between;
     display: flex;
 }
+@media(max-width:815px){
+    header nav{
+        display:none
+    }
+}
+@media(max-width:815px){
+    .header-image{
+        
+        margin-right:165px;
+    }
+}
+
+.nav-2{
+    display:none;
+}
+@media(max-width:815px){
+    .nav-2{
+        display:flex;
+        justify-content:space-between;
+        margin-right:5000px;
+    }
+}
 
 header nav a {
     text-decoration: none;
     color: #b0b0b0;
+}
+@media(max-width:815px){
+    
+
+   
+
 }
 
 header nav a:hover {
@@ -105,6 +138,17 @@ header .logo {
     display: flex;
     margin-top: 72px;
     justify-content: flex-end;
+}
+@media(max-width:815px){
+    .cta{
+        
+        justify-content:center;
+    }
+}
+@media(max-width:815px){
+    .cta img{
+        display:none;
+    }
 }
 
 .cta .cta-text {
