@@ -1,3 +1,136 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+.container {
+	max-width: 960px;
+	margin: 0 auto;
+}
 
+hr{
+	width: 90%;
+}
+
+.top-header{
+	display: flex;
+	justify-content: space-between;
+}
+
+@media(max-width: 800px) {
+    .top-header {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    
+}
+
+@media(max-width: 800px) {
+    .logo {
+        width: 200px;
+        margin-bottom: 40px;
+    }
+}
+
+
+.top-header nav a {
+	text-decoration: none;
+	color: grey;
+	padding: 0 10px;
+}
+
+@media(max-width: 800px) {
+    .top-header nav a {
+        margin: 0 25px;
+    }
+}
+
+
+.top-header nav a:hover {
+	text-decoration: none;
+	color: greenyellow;
+	
+}
+
+.bottom-header {
+	display: flex;
+	justify-content: space-between;
+    margin: 40px 20px;
+}
+
+
+
+@media(max-width: 800px) {
+    .bottom-header img {
+        display: none;
+    }
+}
+
+.bottom-header h1 {
+	font-size: 80px;
+	text-align: center;
+}
+
+@media(max-width: 800px) {
+    .bottom-header h1 {
+        margin: 0 auto; 
+    }
+}
+
+button {
+	height: 30px;
+	width: 100px;
+	border-radius: 5%;
+	margin-left: 120px
+}
+
+@media(max-width: 800px) {
+    button {
+        margin-left: 310px;
+        width: 170px;
+        
+    }
+}
+
+
+button:hover {
+	height: 30px;
+	width: 100px;
+	border-radius: 5%;
+	color: greenyellow;
+
+}
+
+
+.main {
+	display: flex;
+	justify-content: center;
+	margin: 20px 0;
+}
+.main section {
+	max-width: 45%;
+}
+
+#center-photo {
+    text-align: center;
+    width: 100%;
+}
+
+.sub {
+	display: flex;
+	justify-content: center;
+	margin: 20px 0;
+}
+.sub .text {
+	width: 30%;
+	
+}
+
+footer {
+	text-align: center;
+}
+
+address {
+	margin: 20px 25px;
+}
+
+address p {
+	margin: 10px 0;
+}
 
