@@ -127,8 +127,10 @@ h6 {
 	
 }
 img.middle-img {
+	display: flex;
 	border: 0px;
-	width: 800px;
+	width: auto;
+	
 }
 
 .topSection {
@@ -288,6 +290,7 @@ img.services-header-img {
 
 	.middle-img {
 		max-width: 100%; 
+		width: auto;
 		margin-left: 15px;
 		margin-right: 15px;
 	}
@@ -296,7 +299,6 @@ img.services-header-img {
 @media (max-width: 500px) {
     .container {
 		width: auto;
-		background: ivory;
 	} 
 
 	.logo {
@@ -314,6 +316,20 @@ img.services-header-img {
 		width: 500px;
 		font-size: 20px
 		
+	}
+
+	h1 {
+		display: flex;
+		align-content: baseline;
+		justify-content: center;
+		margin-top: auto;
+	}
+
+	h2 {
+		display: flex;
+		align-content: baseline;
+		justify-content: center;
+		margin-bottom: 30px;
 	}
 
 	header nav a:first-child {
