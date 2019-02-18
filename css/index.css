@@ -287,6 +287,7 @@ img.services-header-img {
 	}
 
 	.middle-img {
+		max-width: 100%; 
 		margin-left: 15px;
 		margin-right: 15px;
 	}
@@ -296,13 +297,23 @@ img.services-header-img {
     .container {
 		max-width: 500px;
 		background: ivory;
+	} 
+
+	.topSection {
+		display: flex; 
+		flex-direction: column;
 	}
 
+	.bottomSection {
+		display: flex;
+		flex-direction: column;
+	}
 	.imageSection {
 		display: none;
 	}
 
 	.middle-img {
-		display: none;
+		max-width: 100%; 
+		height: auto;
 	}
 }
