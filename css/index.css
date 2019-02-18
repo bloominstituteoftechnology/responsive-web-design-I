@@ -102,11 +102,6 @@ header nav a {
 	display: flex;
 }
 
-header .imageSection {
-	display: flex;
-	margin: auto;
-}
-
 h1 { 
 	white-space: pre-line;
 	text-align:center;
@@ -165,74 +160,6 @@ footer {
 	text-align: center;
 }
 
-/*services css starts here! */
-
-
-span {
-	font-family: 'Bangers';
-	font-size: 30px;
-}
-
-.services {
-border-bottom: 1px solid black;
-padding: 25px;
-}
-
-.house1 {
-	display: flex;    
-}
-
-.house2 {
-	display: flex;
-}
-
-.house3 {
-	display: flex;
-}
-
-.house4 {
-	display: flex;
-}
-
-
-
-.p1 {
-	margin: 20px;
-	border: 1px solid black;
-	padding: 20px;
-	background: #F0F0F0;
-}
-.p2 {
-	margin: 20px;
-	border: 1px solid black;
-	padding: 20px;
-	background: #F0F0F0;
-}
-.p3 {
-	margin: 20px;
-	border: 1px solid black;
-	padding: 20px;
-	background: #F0F0F0;
-}
-.p4 {
-	margin: 20px;
-	border: 1px solid black;
-	padding: 20px;
-	background: #F0F0F0;
-}
-.p5 {
-	margin: 20px;
-	border: 1px solid black;
-	padding: 20px;
-	background: #F0F0F0;
-}
-.p6 {
-	margin: 20px;
-	border: 1px solid black;
-	padding: 20px;
-	background: #F0F0F0;
-}
-
 button {
 	margin: 20px;
 	border: 1px solid black;
@@ -243,23 +170,15 @@ button {
  
 }
 
-.bottomImage {
-	border-top: 3px solid black;
-	padding: 30px;
-}
-
-img.services-header-img {
-	padding: 25px;
-}
-
-/*media queries are here */
-
 @media (max-width: 800px ) {
 	.container {
 		width: auto;
-
     }
 
+		.imageSection {
+			display: none;
+		}
+	
 	h1 {
 		display: flex;
 		align-content: baseline;
@@ -319,12 +238,75 @@ img.services-header-img {
 	.contact {
 		margin: 20px;
 	}
+}
+
+@media (max-width: 800px ) {
+	.container {
+		width: auto;
+    }
+
+	h1 {
+		display: flex;
+		align-content: baseline;
+		justify-content: center;
+		margin-top: auto;
+	}
+
+	h2 {
+		display: flex;
+		align-content: baseline;
+		justify-content: center;
+	}
+
+	.banner {
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
+		
+	}
+
+	.fix {
+		margin-bottom: 30px;
+	}
+
+  body {
+    width: 100%;
+        
+    }
+
+	.headerSection {
+		text-align: center;
+		display: flex;
+		justify-content: space-around;
+		margin-top: 0px;
+	
+	}
+
+	.topSection {
+		border-top: 2px solid black;
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+	
+	.bottomSection {
+		border-bottom: 2px solid black;
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+
+	.middle-img {
+		max-width: 100%; 
+		width: auto;
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+
+	.contact {
+		margin: 20px;
+	}
 
 }
-.imageSection {
-	display: none;
-}
-}
+
 @media (max-width: 500px) {
     .container {
 		width: auto;
@@ -393,8 +375,5 @@ img.services-header-img {
 	.middle-img {
 		height: auto;
 		margin-right: 20px;
-	}
-	.imageSection {
-		display: none;
 	}
 	}
