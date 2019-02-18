@@ -67,26 +67,31 @@ h1, h2, h3, h4, h5 {
 
 .container {
     width: 880px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 /* Header Styles */
 
 header {
-    width: 100%;
+    justify-content: space-between;
     display: flex;
 }
 
+@media( max-width: 515px ) {
+    header {
+        flex-direction: column;
+        align-items: center; 
+    }
+}
+
 header nav {
-    margin-top: 40px; 
-    width: 610px;
-    justify-content: space-between;
-    display: flex;
+    margin-left: 62px;
 }
 
 header nav a {
     text-decoration: none;
     color: #b0b0b0;
+    margin-left: 20px;
 }
 
 header nav a:hover {
@@ -96,6 +101,8 @@ header nav a:hover {
 
 header .logo {
     margin: 28px 0 0 91px;
+    /* width: 100%;
+    height: auto; */
 }
 
 /* Call To Action (CTA) Styles */
@@ -141,6 +148,14 @@ header .logo {
    padding: 35px 0;
    font-size: 16px;
    line-height: 18px;
+}
+
+
+@media( max-width: 500px ) {
+    .main-content {
+        flex-direction: column;
+        background: red;
+    }
 }
 
 .main-content .top-content {
