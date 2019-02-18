@@ -1,0 +1,24 @@
+{
+  "name": "responsive-web-design-I",
+  "version": "1.0.0",
+  "description": "It's time to expand our CSS skills into multiple devices.  You will be creating an adaptive version of the \"Great Idea\" design. You will be working through design mock ups for desktop, tablet, and mobile devices located in the [design-files](design-files) folder.",
+  "main": "index.js",
+  "scripts": {
+    "bs": "browser-sync start --server --files '*.html, css/*.css'",
+    "scss": "sass --watch scss/index.scss:css/index.css",
+    "start": "concurrently \"npm run bs\" \"npm run scss\"",
+    "build": "rm -rf ./build && mkdir ./build/ && cp ./index.html ./build/index.html && cp -R ./css/ ./build/css && cp -R ./img/ ./build/img",
+    "now-build": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/glweems/responsive-web-design-I.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/glweems/responsive-web-design-I/issues"
+  },
+  "homepage": "https://github.com/glweems/responsive-web-design-I#readme"
+}
