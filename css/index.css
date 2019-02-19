@@ -434,9 +434,6 @@ footer {
 
 
 
-
-
-
 /* Service Page Header Image */
 
 .services-header-img {
@@ -457,9 +454,13 @@ footer {
 }
 
 @media ( max-width: 500px) {
+    .services-header-img {
+        display: none;
+    }
+    
     .services-header {
-        padding-left: 5%;
-        padding-right: 5%;
+        padding: 5% 5% 5% 0;
+        margin-left: 5%;
     }
 }
 
@@ -472,11 +473,6 @@ footer {
 	width: 100%;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	
-	/*justify-content: space-between;
-	align-items: center; */
-	/* height: 180px; */
-	/* padding: 30px; */
 	padding-bottom: 20px;
 	border-bottom: 2px solid black;
 }
@@ -510,8 +506,10 @@ footer {
 
 @media ( max-width: 500px ) {
     .services-content {
+        width: 90%;
         flex-direction: column;
         align-items: center;
+
     }
 
     .digital, .ux, .marketing, .web, .ios, .android {
@@ -542,6 +540,10 @@ footer {
 .services-info-img {
 	/* padding-top: 20px; */
 	width: 80%;
+}
+
+.ul-facts {
+    padding-left: 10%;
 }
 
 
