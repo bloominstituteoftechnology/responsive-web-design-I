@@ -126,11 +126,11 @@ header{
     header h1{
         font-size: 70px;
         text-align:center;
-        width:45%;
+        width: 100%;
         padding:40px 0;
     }
 
-    @media(max-width:800px){
+    /* @media(max-width:800px){
         header h1{
             margin-left:190px;
         }
@@ -140,44 +140,53 @@ header{
         header h1{
             margin-left:110px;
         }
-    }
+    } */
 
 /*button css */
-button{
-    display:block;
-    margin: 280px auto 0;
-    height: 40px;
-    width: 250px;
-
+.content-btn{
+    width:70%;
+    margin-left: 80px;
+    text-align: center;
 }
+
+    button{
+        width: 220px;
+        height: 60px;
+        background-color:white;
+        cursor: pointer;
+    }
+   
 @media(max-width:800px){
     button{
-       display:none; 
-       margin-right:11000px;
        justify-content: center;
        border-radius:20px; 
        cursor: pointer;
+    }
+    button:hover{
+        background-color:orange
     }
 }
 
 @media(max-width:500px){
     button{
-        display:none;
-        margin-right:800px;
+       justify-content: center;
       
+    }
+    button:hover{
+        background-color:gray;
     }
 }
 
 
 /*header picture*/
 @media(max-width:800px){
-    .header-picture{
+   .header-picture{
         display:none;
     }
 }
 
 @media(max-width:500px){
-    .header-picture{
+  .header-picture{
         display:none;
     }
 }
@@ -231,7 +240,6 @@ button{
         border-bottom:1px solid black;
         flex-direction: row;
         margin:20px 0;
-
     }
 }
 
