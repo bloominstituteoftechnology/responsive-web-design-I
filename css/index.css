@@ -81,7 +81,7 @@ header {
     header {
         display: flex; 
         flex-wrap: wrap;
-        flex-direction: column-reverse;
+        flex-direction: row;
         align-items: center; 
         width: 100%;
     }  
@@ -115,9 +115,9 @@ header nav {
 @media( max-width: 800px ) {
     header nav {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center; 
-        width: 100%;
+        
         border: 1px solid green;
     }  
 }
@@ -142,11 +142,12 @@ header nav a {
 @media( max-width: 800px ) {
     header nav a {
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap; 
+        flex-direction: row;
         align-items: center; 
         width: 100%;
         padding: 20px 0;
-        border: 1px solid red;
+        border: 1px solid orange;
     }  
 }
 
@@ -206,6 +207,21 @@ header .logo {
    font-size: 16px;
    line-height: 18px;
    flex-direction: column;
+   color: purple; 
+}
+
+
+@media( max-width: 500px ) {
+    .main-content{
+        width: 100%;
+    }
+}
+
+
+@media( max-width: 800px ) {
+    .main-content {
+        flex-direction: column; 
+    }
 }
 
 
@@ -215,7 +231,7 @@ header .logo {
     }
 } */
 
-@media( max-width: 500px ) {
+@media( max-width: 800px ) {
     .cta .circle-pic {
         display: none;
     }
