@@ -1,3 +1,331 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+box-sizing: border-box;
+}
+
+html, body {
+height: 100%;
+font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+font-family: 'Bangers', cursive;
+letter-spacing: 1px;
+margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+.container{
+max-width:900px;
+margin: 0 auto;
+}
+
+/*navigation css */
+.navigation{
+    display:flex;
+    margin:20px 0;
+    padding:20px 0;
+    justify-content: space-between;
+}
 
 
+nav a{
+     margin-left: 20px;
+     font-size:18px;
+     text-decoration: none;
+}
+
+
+    
+/* header css */
+header{
+     display:flex;
+     margin:20px 0;
+     padding:20px 0;
+     justify-content: space-between;
+     border-bottom: 1px solid black;
+}
+
+    header h1{
+        font-size: 70px;
+        text-align:center;
+        width: 100%;
+        padding:40px 0;
+    }
+
+    
+
+/*button css */
+.content-btn{
+    width:70%;
+    margin-left: 80px;
+    text-align: center;
+}
+
+    button{
+        width: 220px;
+        height: 60px;
+        background-color:white;
+        cursor: pointer;
+    }
+   
+/*needed to make sure that picture adjusts automatically to the screen */
+img{
+    width: 100%;
+    height:auto;
+}
+
+/*middle top content */
+.middle-content{
+    display:flex;
+    padding:10px 0;
+    margin: 10px 0; 
+    justify-content: space-between
+}
+
+
+.top-middle-content {
+    margin-left: 20px 0;
+    margin-right: 20px;
+}
+
+
+
+/*bottom-middle content below picture */
+.bottom-content{
+    display:flex;
+    padding:10px 0; 
+    margin: 10px 0; 
+    justify-content: space-between;
+    border-bottom:1px solid black;
+}
+
+
+.bottom-middle-content{
+    margin: 4px 0;
+    padding-bottom: 20px;
+}
+
+
+/*style midle picture */
+.middle-img{
+    width: 800px;
+}
+
+/*address css */
+    address h2{
+        font-weight:bold;
+        margin:5px 0;
+    }
+    
+/*footer css */
+footer{
+    text-align: center;
+    }
+
+
+    /*tablet view*/
+    @media(max-width:800px){
+        .navigation{
+            flex-direction: column-reverse; 
+            align-items: center;
+        }
+        .logo{
+            width:250px;
+            padding-bottom: 40px;
+        }
+    }
+    
+    @media(max-width:800px){
+        nav a{
+            margin:30px;  
+        }
+    }
+
+    @media(max-width:800px){
+        .bottom-content{
+            border-bottom:1px solid black;
+            flex-direction: row;
+            margin:20px 0;
+        }
+    }
+
+    @media(max-width: 800px){
+        .top-middle-content{
+            margin-left:5px;
+        }
+    }
+
+    @media(max-width:800px){
+        button{
+           justify-content: center;
+           border-radius:20px; 
+           cursor: pointer;
+        }
+        button:hover{
+            background-color:orange
+        }
+    }
+
+    @media(max-width:800px){
+        .header-picture{
+             display:none;
+         }
+     }
+
+     @media(max-width: 800px){
+        .middle-content{
+            margin-left:20px;
+        }
+    }
+
+    @media(max-width:800px){
+        .bottom-middle-content{
+            margin: 0 10px;
+        }
+    }
+/*middle image */
+    @media(max-width:800px){
+        .middle-img{
+            width:100%;
+            padding: 0 10px;
+        }
+    }
+    
+
+    @media(max-width:800px){
+        address {
+            margin-left:20px;
+        }
+    }
+
+    @media(max-width:800px){
+        footer {
+            margin-left:30px;
+            padding:50px;
+        }
+    }
+
+    /*cellphone view*/
+
+    @media(max-width:500px){
+        button{
+           justify-content: center;
+          
+        }
+        button:hover{
+            background-color:gray;
+        }
+    }
+
+
+@media(max-width:500px){
+    .header-picture{
+          display:none;
+      }
+  }
+
+  @media(max-width: 500px){
+    .middle-content{
+        margin-left:20px;
+        flex-direction:column;
+    }
+}
+
+@media(max-width:500px){
+    nav a{
+        display:flex;
+        border-top:1px solid  black;
+        border-bottom: 1px solid black;
+        margin: 0px;
+        width: 500px;
+        justify-content: center;
+        height: 50px;
+        align-items:center;   
+    }
+}
+
+@media(max-width: 500px){
+    .top-middle-content{
+        margin: 15px 0;
+    }
+}
+
+@media(max-width:500px){
+    .bottom-content{
+        flex-direction: column;
+        padding: 0 20px;
+
+    }
+}
+
+/*bottom image given %  */
+@media(max-width:500px){
+    .middle-img{
+        width: 100%;
+        padding: 0 10px;
+    }
+}
+
+@media(max-width:500px){
+    address {
+        margin-left:20px;
+    }
+}
+
+@media(max-width:500px){
+    footer {
+        margin-left:30px;
+        padding:40px;
+    }
+}
