@@ -66,7 +66,7 @@ margin-bottom: 15px;
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 .container{
-max-width:800px;
+max-width:900px;
 margin: 0 auto;
 }
 
@@ -77,16 +77,6 @@ margin: 0 auto;
     padding:20px 0;
     justify-content: space-between;
 }
-@media(max-width:800px){
-    .navigation{
-        flex-direction: column-reverse; 
-        align-items: center;
-    }
-    .logo{
-        width:250px;
-        padding-bottom: 40px;
-    }
-}
 
 
 nav a{
@@ -95,24 +85,7 @@ nav a{
      text-decoration: none;
 }
 
-@media(max-width:800px){
-    nav a{
-        margin:30px;  
-    }
-}
 
-@media(max-width:500px){
-    nav a{
-        display:flex;
-        border-top:1px solid  black;
-        border-bottom: 1px solid black;
-        margin: 0px;
-        width: 500px;
-        justify-content: center;
-        height: 50px;
-        align-items:center;   
-    }
-}
     
 /* header css */
 header{
@@ -130,17 +103,7 @@ header{
         padding:40px 0;
     }
 
-    /* @media(max-width:800px){
-        header h1{
-            margin-left:190px;
-        }
-    }
-
-    @media(max-width:500px){
-        header h1{
-            margin-left:110px;
-        }
-    } */
+    
 
 /*button css */
 .content-btn{
@@ -156,39 +119,10 @@ header{
         cursor: pointer;
     }
    
-@media(max-width:800px){
-    button{
-       justify-content: center;
-       border-radius:20px; 
-       cursor: pointer;
-    }
-    button:hover{
-        background-color:orange
-    }
-}
-
-@media(max-width:500px){
-    button{
-       justify-content: center;
-      
-    }
-    button:hover{
-        background-color:gray;
-    }
-}
-
-
-/*header picture*/
-@media(max-width:800px){
-   .header-picture{
-        display:none;
-    }
-}
-
-@media(max-width:500px){
-  .header-picture{
-        display:none;
-    }
+/*needed to make sure that picture adjusts automatically to the screen */
+img{
+    width: 100%;
+    height:auto;
 }
 
 /*middle top content */
@@ -199,57 +133,21 @@ header{
     justify-content: space-between
 }
 
-@media(max-width: 800px){
-    .middle-content{
-        margin-left:20px;
-    }
-}
-@media(max-width: 500px){
-    .middle-content{
-        margin-left:20px;
-        flex-direction:column;
-    }
-}
 
 .top-middle-content {
     margin-left: 20px 0;
     margin-right: 20px;
 }
-@media(max-width: 800px){
-    .top-middle-content{
-        margin-left:5px;
-    }
-}
 
-@media(max-width: 500px){
-    .top-middle-content{
-        margin: 15px 0;
-    }
-}
+
 
 /*bottom-middle content below picture */
 .bottom-content{
     display:flex;
-    padding:10px 0;
+    padding:10px 0; 
     margin: 10px 0; 
     justify-content: space-between;
     border-bottom:1px solid black;
-}
-@media(max-width:800px){
-    .bottom-content{
-        border-bottom:1px solid black;
-        flex-direction: row;
-        margin:20px 0;
-    }
-}
-
-@media(max-width:500px){
-    .bottom-content{
-        border-bottom:1px solid black;
-        flex-direction: column;
-        margin:20px 0;
-
-    }
 }
 
 
@@ -258,39 +156,10 @@ header{
     padding-bottom: 20px;
 }
 
-@media(max-width:800px){
-    .bottom-middle-content{
-        margin: 10px;
-    }
-}
-
-@media(max-width:500px){
-    .bottom-middle-content{
-        margin: 20px;
-        
-    }
-}
-
 
 /*style midle picture */
 .middle-img{
     width: 800px;
-}
-
-@media(max-width:800px){
-    .middle-img{
-        width: 730px;
-        margin: 0 10px;
-
-    }
-}
-
-@media(max-width:500px){
-    .middle-img{
-        width: 450px;
-        margin: 0 10px;
-
-    }
 }
 
 /*address css */
@@ -298,22 +167,86 @@ header{
         font-weight:bold;
         margin:5px 0;
     }
+    
+/*footer css */
+footer{
+    text-align: center;
+    }
+
+
+    /*tablet view*/
+    @media(max-width:800px){
+        .navigation{
+            flex-direction: column-reverse; 
+            align-items: center;
+        }
+        .logo{
+            width:250px;
+            padding-bottom: 40px;
+        }
+    }
+    
+    @media(max-width:800px){
+        nav a{
+            margin:30px;  
+        }
+    }
+
+    @media(max-width:800px){
+        .bottom-content{
+            border-bottom:1px solid black;
+            flex-direction: row;
+            margin:20px 0;
+        }
+    }
+
+    @media(max-width: 800px){
+        .top-middle-content{
+            margin-left:5px;
+        }
+    }
+
+    @media(max-width:800px){
+        button{
+           justify-content: center;
+           border-radius:20px; 
+           cursor: pointer;
+        }
+        button:hover{
+            background-color:orange
+        }
+    }
+
+    @media(max-width:800px){
+        .header-picture{
+             display:none;
+         }
+     }
+
+     @media(max-width: 800px){
+        .middle-content{
+            margin-left:20px;
+        }
+    }
+
+    @media(max-width:800px){
+        .bottom-middle-content{
+            margin: 0 10px;
+        }
+    }
+/*middle image */
+    @media(max-width:800px){
+        .middle-img{
+            width:100%;
+            padding: 0 10px;
+        }
+    }
+    
 
     @media(max-width:800px){
         address {
             margin-left:20px;
         }
-    }
-
-    @media(max-width:500px){
-        address {
-            margin-left:20px;
-        }
-    }
-    
-/*footer css */
-footer{
-    text-align: center;
     }
 
     @media(max-width:800px){
@@ -323,9 +256,76 @@ footer{
         }
     }
 
+    /*cellphone view*/
+
     @media(max-width:500px){
-        footer {
-            margin-left:30px;
-            padding:40px;
+        button{
+           justify-content: center;
+          
+        }
+        button:hover{
+            background-color:gray;
         }
     }
+
+
+@media(max-width:500px){
+    .header-picture{
+          display:none;
+      }
+  }
+
+  @media(max-width: 500px){
+    .middle-content{
+        margin-left:20px;
+        flex-direction:column;
+    }
+}
+
+@media(max-width:500px){
+    nav a{
+        display:flex;
+        border-top:1px solid  black;
+        border-bottom: 1px solid black;
+        margin: 0px;
+        width: 500px;
+        justify-content: center;
+        height: 50px;
+        align-items:center;   
+    }
+}
+
+@media(max-width: 500px){
+    .top-middle-content{
+        margin: 15px 0;
+    }
+}
+
+@media(max-width:500px){
+    .bottom-content{
+        flex-direction: column;
+        padding: 0 20px;
+
+    }
+}
+
+/*bottom image given %  */
+@media(max-width:500px){
+    .middle-img{
+        width: 100%;
+        padding: 0 10px;
+    }
+}
+
+@media(max-width:500px){
+    address {
+        margin-left:20px;
+    }
+}
+
+@media(max-width:500px){
+    footer {
+        margin-left:30px;
+        padding:40px;
+    }
+}
