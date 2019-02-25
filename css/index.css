@@ -1,3 +1,158 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+.container { 
+	width: 880px;
+	margin:  auto;
+}
+
+
+.navigation a {
+	text-decoration: none;
+	color: black;
+}
+
+header {
+	display: flex;
+	justify-content: space-around;
+	border-bottom: 1px solid black;
+}
+
+.navigation {
+	display: flex;
+	justify-content: space-evenly;
+	padding: 30px;
+	
+}
+
+/* header h1 {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+} */
+
+header .top-image {
+	zoom: .8;
+	padding-bottom: 35px;
+}
+
+header h1 {
+	font-size: 65px;
+	align-items: center;
+}
+
+header h1 button {	
+	display: flex;
+	justify-content: center;
+
+}
+
+header button:hover {
+	color: purple;
+	background-color: aquamarine;
+	
+}
+
+.top {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	padding: 30px;
+}
+
+.mid-content {
+	display: flex;
+	justify-content: space-evenly;
+	padding: 30px;
+}
+
+.middle-img {
+	display: flex;
+	justify-content: center;
+	padding: 0 130px;
+}
+
+.bottom-content {
+	display: flex;
+	justify-content: space-evenly;
+	padding: 30px;
+	border-bottom: 1px solid black;
+	margin: 15px;
+}
+
+.end {
+	display: flex;
+	flex-direction: column;
+	padding: 30px;
+
+}
+
+.end .phone {
+	padding-top: 20px;
+}
+footer {
+	display: flex;
+	justify-content: center;
+	padding: 0 0 100px 0;
+}
 
