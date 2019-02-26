@@ -1,3 +1,362 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.container {
+    width: 880px;
+    margin: auto;
+}
+@media (max-width: 800px) {
+
+    .container {
+        width: 100%;
+    }
+
+    header {
+        flex-wrap: wrap;
+    }
+  
+    header nav {
+        width: 768px;
+        padding: 0 25px;
+    }
+
+    header .logo {
+        order: -1;
+        display: block;
+        margin: 30px auto 0;
+    }
+}
+
+@media (max-width: 800px) {
+.top-section {
+        justify-content: center;
+    }
+    
+.top-section .top-text {
+        margin: 0;
+    }
+.top-section img {
+        display: none;
+    }
+
+.main .middle-img {
+       width: 100%;
+    }
+
+}
+header {
+    width: 100%;
+    display: flex;
+}
+
+header nav {
+    margin-top: 40px; 
+    width: 610px;
+    justify-content: space-between;
+    display: flex;
+}
+
+header nav a {
+    text-decoration: none;
+    color: grey;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+header .logo {
+    margin: 28px 0 0 91px;
+}
+.top-section {
+    display: flex;
+    margin-top: 72px;
+    justify-content: flex-end;
+}
+.top-section .top-text {
+    font-size: 72px;
+    text-align: center;
+    letter-spacing: 5px;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    margin: 0 82px 0 0;
+}
+.top-section .top-text button {
+    border: 1px double black;
+    font-size: 16px;
+    background: white;
+    width: 170px;
+    height: 32px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.main {
+   border-top: 2px solid black; 
+   border-bottom: 2px solid black;
+   margin: 75px 0 35px 0;
+   padding: 35px 0;
+   font-size: 16px;
+   line-height: 18px;
+}
+@media (max-width: 800px) {
+    .main {
+        margin: 75px 20px 35px;
+     }
+ 
+     .text-content {
+         margin: 0 10px;
+     }
+ 
+     .contact {
+         margin: 0 30px;
+     }
+
+}
+
+.main .main-content {
+    display: flex;
+}
+
+@media (max-width: 500px) {
+    header {
+        justify-content: center;
+    }
+    header nav {
+        width: 100%;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+    header nav a {
+        width: 100%;
+        display: block;
+        padding: 20px 0;
+        font-size: 20px;
+        border-bottom: 1px solid gray;
+        text-align: center;
+    }
+}
+.main .middle-img {
+    display: block;
+    margin: 30px auto;
+}
+@media (max-width: 500px) {
+    
+    .main .main-content {
+    justify-content: space-around;
+    flex-direction: column;
+    height: 280px;
+}
+
+.main .bottom-content {
+    align-content: space-between;
+    flex-wrap: wrap;
+    height: 430px;
+}
+
+.texts {
+    margin: 0;
+}
+
+.contact {
+    margin: 18px;
+}
+}
 
 
+.main .bottom-content {
+    display: flex;
+}
+
+.main .bottom-content p {
+    padding-right: 20px;
+}
+
+.contact p {
+    margin: 15px 0;
+}
+
+footer {
+    text-align: center;
+    margin: 40px 0 20px;
+}
+
+@media (max-width: 500px) {
+     header nav a:first-child {
+        border-top: 1px solid gray; 
+    }
+
+    header .logo {
+        margin: 18px 0;
+    }
+
+    .top-section {
+        margin-top: 46px;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .top-section img {
+        max-width: 76%;
+    }
+}
+
+/*stretch*/
+header nav a:hover {
+    text-decoration: underline;
+  }
+  .top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .top .top-text {
+    border-bottom: 1px solid black;
+    padding-bottom: 30px;
+  }
+  
+  .top .services-header-img {
+    margin: 15px;
+    border-top: 1px solid black;
+  }
+  
+  .top button {
+    background-color: gray;
+    margin-top: 10px;
+    width: auto;
+  }
+  h1 {
+    margin: 10px 0;
+  }
+  .top .box {
+    padding: 20px 15px;
+    border: 1px solid black;
+    width: 400px;
+    background: whitesmoke;
+    margin: 20px 0;
+  }
+  .top .box button {
+    padding: 10px 30px;
+    border-radius: 5px;
+  }
+  .bottom {
+    display: flex;
+    border-top: 1px solid black;
+  }
+  .bottom .bottom-text,
+  .services-info-img {
+    margin-top: 20px;
+  }
+  
+  ul {
+    margin: 15px;
+  }
+  li {
+    list-style: square;
+  }
+  
+  #pcs {
+    padding: auto;
+  }
+  .comps,
+  .pics1,
+  .pics2 {
+    display: flex;
+  }
+  .pics1,
+  .pics2 {
+    padding-top: 40px;
+    display: flex;
+    border: 1px solid black;
+    margin: 10px;
+    background-color: grey;
+    width: 100%;
+    height: auto;
+  }
+  @media (max-width: 500px) {
+    .pics1,
+    .pics2 {
+        width: 100%;
+        height: auto;
+    }
+  } 
+  @media (max-width: 800px) {
+    .pics1,
+    .pics2 {
+        width: 100%;
+        height: auto;
+    }
+  }
+
+  .copyright {
+    display: block;
+    text-align: center;
+    
+  }
+  
