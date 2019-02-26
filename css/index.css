@@ -1,3 +1,450 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+/* center entire website */
+body {
+    width: 100%;
+    padding: 2% 5%;
+	margin: 0 auto;
+}
+
+
+
+/* For Navigation section */
+
+
+.navigation-section {
+    width: 100%;
+    display: flex;
+}
+
+.navigation-section nav {
+    margin-top: 40px; 
+    width: 90%;
+    justify-content: space-between;
+    display: flex;
+}
+
+.navigation-section  nav a {
+    text-decoration: none;
+    color: #b0b0b0;
+}
+
+.navigation-section  nav a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+.logo {
+    margin: 28px 0 0 91px;
+}
+
+@media ( max-width: 800px ) { /* TABLET */
+
+    /* Body dimensions same as desktop version, so don't add */
+
+    .navigation-section  {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navigation-section .first-logo {
+        order: -1;
+    }
+
+    .logo {
+        margin: 28px 0 0 0;
+    }
+}
+
+@media ( max-width: 500px ) { /* PHONE */
+    /* Body should be 100% of the viewport, no gutters... for now */
+    body { 
+        width: 100%;
+        padding: 0%;
+    } 
+
+   /* Center align logo and nav items */
+    .navigation-section {
+        /* border: 1px solid red; */
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Make nav items into column and center, padding-LR 0 no gutter */
+    .navigation-section nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 10px 0px;
+        margin-top: 0px; /* no space between logo and text */
+    }
+
+    /* Center text in middle of page, no viewport gutter, border-bottom to each each item */
+    .navigation-section nav a {
+        width: 100%;
+        text-align: center;
+        padding: 15px 0px;
+        border-bottom: 1px solid lightgray;
+    }
+
+    /* At top border to first child in nav */
+    nav a:first-child {
+        border-top: 1px solid lightgray;
+    }
+
+    .logo {
+        margin-top: 10px;;
+    }
+
+
+}
+
+
+
+/* For Header section */
+
+.index-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	margin-top: 60px; 
+	padding-bottom: 40px;
+	border-bottom: 1px solid black;
+}
+
+
+header h1 {
+	font-size: 70px;
+	text-align: center;
+}
+
+.button {
+	margin-left: 80px;
+	width: 140px;
+	height: 25px;
+	border: 1px solid black;
+	background-color: white;
+	cursor: pointer;
+	
+}
+
+.button:hover {
+	background: black;
+	color: #59E16C;
+}
+@media ( max-width: 800px ){ /* TABLET */
+    .index-header {
+        width: 100%;
+        justify-content: center;
+        padding-bottom: 70px;
+    }
+
+    header .right {
+        display: none; /* do not display picture */
+    }
+}
+
+@media ( max-width: 500px ) { /* PHONE */
+    .index-header {
+        width: 90%;
+        justify-content: center;
+        margin:0% 5%;
+        padding: 10% 0%;
+    }
+}
+
+
+
+/* For top-text section */
+
+section h3 {
+	font-size: 20px;
+}
+
+
+.top-text {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 180px;
+	/* padding: 60px; */
+}
+
+
+@media ( max-width: 500px ) { /* PHONE */
+    .top-text {
+        flex-direction: column;
+        width: 90%;
+        padding: 0% 5%;
+        margin-top: 10%; 
+    }
+
+    .top-text .about {
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+}
+
+.features {
+	margin-right: 50px; /* increase space between paragraphs */
+}
+
+
+/* For middle image */
+.middle-img {
+	width: 100%;
+	margin-bottom: 5%;
+}
+
+@media ( max-width: 800px ) { /* TABLET */
+    .middle-img {
+        margin: 10% 0;
+    }
+}
+
+
+@media ( max-width: 500px ) { /* PHONE */
+    .middle-img {
+        padding: 15% 5% 0%; 
+    }
+}
+
+
+
+
+/* For bottom-text section */
+
+.bottom-text {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-bottom: 60px;
+	border-bottom: 1px solid black;
+}
+
+.services, .product {
+	margin-right: 50px; /* increase space between paragraphs */
+}
+
+@media ( max-width: 500px ) { /* PHONE */
+    .bottom-text {
+        flex-direction: column;
+        width: 90%;
+        padding-bottom: 10%;
+        margin-bottom: 10%;
+        margin-left: 5%;
+    }
+
+    .bottom-text .services, .product {
+        margin-bottom: 10%;
+    }
+
+    /* .top-text .about {
+        margin-top: 10%;
+        margin-bottom: 10%;
+    } */
+}
+
+/* For contact section */
+.contact {
+	margin: 40px 1px;
+}
+
+@media ( max-width: 500px ) { /* PHONE */
+    .contact {
+        margin-left: 5%;
+    }
+}
+
+
+/* For footer */
+footer {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+
+/* --------------------  SERVICES CSS ---------------------- */
+
+/* For Services Navigation section */
+
+.s-navigation {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	border-top: 20px solid white;
+	padding: 20px 0;
+	background-image: linear-gradient(80deg, #3CB2DC, #59E16C); 
+	position: fixed;
+	top: 0;
+	width: 80%;
+}
+
+ .s-navigation a {
+	/* margin-right: 50px; */
+	/* display: inline-block; */
+	/* text-decoration: none; */
+	color: gray;
+} 
+
+/* Service Page Header Image */
+
+.services-header-img {
+	width: 100%;
+	margin-top: 110px;
+	margin-bottom: 20px;
+}
+
+/* Services Header Text */
+.h2-services {
+	font-size: 25px;
+}
+
+.p-services {
+	padding-bottom: 30px;
+	border-bottom: 1px solid black;
+	margin-bottom: 40px;
+}
+
+
+/* Services Main Content */
+
+.services-content {
+	display: flex;
+	margin: auto; /* KEEP THIS */
+	width: 100%;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	
+	/*justify-content: space-between;
+	align-items: center; */
+	/* height: 180px; */
+	/* padding: 30px; */
+	padding-bottom: 20px;
+	border-bottom: 2px solid black;
+}
+
+.digital, .ux, .marketing, .web, .ios, .android {
+	height: 40%;
+	width: 45%;
+	padding: 20px;
+	background: #EEEFF0;
+	border: 1px solid gray;
+	margin-bottom: 20px;
+}   /* put each section in a box with dimensions */
+
+
+
+.services-button {
+	margin-top: 20px;
+	width: 140px;
+	height: 25px;
+	border: 1px solid black;
+	background-color: white;
+	cursor: pointer;
+	border-radius: 5px;
+	
+}
+
+.services-button:hover {
+	background: black;
+	color: #59E16C;
+}
+
+
+
+/* Fact Section */
+
+.facts {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 30px; 
+}
+
+.facts-text {
+	/* padding-top: 20px; */
+	width: 45%;
+	height: 50%;
+}
+
+.services-info-img {
+	/* padding-top: 20px; */
+	width: 80%;
+}
+
+/*  Services Footer  */
+
+.services-footer {
+	text-align: center;
+	margin-bottom: 40px;
+}
