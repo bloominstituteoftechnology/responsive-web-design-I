@@ -1,5 +1,3 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
-
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -66,13 +64,11 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-  width: 880px;
-  /* TB LR */
+  max-width: 880px;
   margin: 0 auto;
 }
 
-
-
+/* header */
 
 header nav {
   display: inline-block;
@@ -190,7 +186,118 @@ footer {
   font-size: 14px;
 }
 
+@media (max-width: 800px) {
+
+  .container {
+      width: 100%;
+  }
+
+  header {
+      flex-wrap: wrap;
+  }
+
+  header nav {
+      width: 768px;
+      padding: 0 30px;
+  }
+
+  header .logo {
+      order: -1;
+      display: block;
+      margin: 30px auto 0;
+  }
+
+  .cta {
+      justify-content: center;
+  }
+  
+  .cta .cta-text {
+      margin: 0;
+  }
+
+  .cta img {
+      display: none;
+  }
+
+  .main-content .middle-img {
+     width: 100%;
+  }
+
+  .main-content {
+     margin: 75px 20px 35px;
+  }
+
+  .text-content {
+      margin: 0 10px;
+  }
+
+  .contact {
+      margin: 0 30px;
+  }
+}
 
 
+@media (max-width: 500px) {
 
+  header {
+      justify-content: center;
+  }
 
+  header nav {
+      width: 100%;
+      flex-direction: column;
+      margin: 0;
+      padding: 0;
+  }
+
+  header nav a {
+      width: 100%;
+      display: block;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 20px;
+      border-bottom: 1px solid gray;
+  }
+
+  header nav a:first-child {
+      border-top: 1px solid gray;
+  }
+
+  header nav a:hover {
+      background: gray;
+  }
+
+  header .logo {
+      margin: 20px 0;
+  }
+
+  .cta {
+      margin-top: 50px;
+      flex-flow: column;
+      align-items: center;
+  }
+
+  .cta img {
+      max-width: 80%;
+  }
+
+  .main-content .top-content {
+      justify-content: space-around;
+      flex-direction: column;
+      height: 300px;
+  }
+
+  .main-content .bottom-content {
+      flex-wrap: wrap;
+      align-content: space-between;
+      height: 440px;
+  }
+
+  .text-content {
+      margin: 0;
+  }
+
+  .contact {
+      margin: 20px;
+  }
+}
