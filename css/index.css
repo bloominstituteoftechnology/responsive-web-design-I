@@ -1,5 +1,6 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -66,385 +67,437 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+/* index page */ 
+@media only screen and (min-width: 800px){
 
-/* center entire website */
-body {
-    width: 100%;
-    padding: 2% 5%;
-	margin: 0 auto;
+		html, body{
+			position: relative;
+		}
+		.container{
+			max-width: 880px;
+			margin: 0 auto;
+		}
+		.upper-nav{
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			align-content: center;
+			align-items: center;
+			justify-content: space-evenly;
+		}
+		.upper-nav a.first-item{
+			margin-left: 0px;
+			padding-left: 0px;
+		}
+		.upper-nav a{
+			margin: 5px;
+			height: auto;
+			padding: 25px 15px;
+			font-size: 14px;
+			color: silver;
+			display: block;
+			text-decoration: none;
+		}
+		div#started-text.column1{
+			border: 1px solid black;
+			text-align: center;
+			width: 180px;
+			height: 40px; 
+		}
+		h2{
+			font-size: 28px;
+			font-style: bold;
+			padding: 15px;
+		}
+		.services h2{
+			padding: 0px;
+			margin-top: 25px;
+			margin-bottom: 20px;
+		}
+		.services p{
+			padding-bottom: 40px;
+			border-bottom: 1px solid black;
+		}
+
+		.columns{
+			display: flex;
+			width: inherit;
+			margin-top: 30px;
+			margin-bottom: 30px;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			align-content: stretch;
+			align-items: stretch;
+			border-bottom: 2px solid black;
+		}
+		.columns > div {
+			width: 417px;
+			height: 240px;
+			padding: 20px; 
+			margin-bottom: 40px;
+			border: 1px solid black;
+			background-color: #F4F3F4;
+		}
+		.learn {
+			display: flex;
+			justify-content: center;
+			align-content: center;
+			align-items: center;
+			margin-top: 40px;
+			padding: 15px;
+			color: black;
+			background-color: whitesmoke;
+			border: 1px solid black;
+			border-radius: 5px;
+			width: 150px;
+			height: 30px;
+			font-size: 14px;	
+		}
+		h6 a{ 
+			background-color: none;
+			color: black;
+			text-align: center;
+			text-decoration: none;
+			font-size: 12.5px;
+		}
+		.bottom-container{
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-content: space-between;
+			align-items: baseline;
+		}
+		.text h3{
+			font-weight: 700;
+		}
+		.text > p {
+			width: 100%;
+			line-height: 1.3em;
+			font-weight: 400;
+			padding-bottom: 25px;
+			margin-right: 0px;
+		}
+
+		.only-list{
+			list-style: square inside none;
+		}
+		.only-list > li {
+			padding-bottom: 10px;
+		}
+		.info-services{
+			width: 420px;
+			margin: auto;
+		}
+		footer {
+			width: inherit;
+			display: flex;
+			justify-content: center;
+			align-content: center;
+			align-items: center;
+		}
+		/* .container header nav {
+			padding: 20px 10px;
+			margin: 0 20px;
+		}
+		.container header nav div{
+			display: inline-block;
+		}
+		.container header nav a{
+			font-size: 75%;
+			padding: 20px 7px;
+			margin: 15px;
+			display: inline-block;
+			color: gray;
+			text-decoration: none;
+			height: 30px;
+		} */
+		.mid-container{
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			padding: 10px;
+			padding-bottom: 60px;
+			margin: 15px auto;
+			border-collapse: separate;
+			border-spacing: 10px;
+			border-bottom: 1px solid black;
+		}
+		div.lofi{
+			width: 50%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-content: center;
+			align-items: center;
+			vertical-align: middle
+		}
+		img.middle-img{
+			max-width: 100%;
+			padding: 10px;
+			margin-left: 10px;
+			margin-right: 10px;
+		}
+		.column1 h6{
+			margin: 10px;
+			display: inline-block;
+			vertical-align: middle;
+		}
+		.column2{
+			width: 50%;
+		}
+		.column1 {
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+		.column1 h2{
+			text-align: center;
+			display: table-cell;
+			font-size: 64px;
+			vertical-align: middle;
+			
+		}
+		.column2 img{
+			display: table-cell;
+			text-align: right;
+			vertical-align: top;
+			align: top;
+		}
+		.first-text{
+			column-count: 2;
+		}
+		.upper-column{
+			padding: 40px 25px;
+		}
+		.middle-img{
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.second-text{
+			column-count: 3;
+			border-bottom: 1px solid black;
+		}
+		.bottom-column{
+			padding: 40px 25px;
+		}
+		.bottom-container{
+			margin-top: 30px;
+			display: flex;
+			flex-direction: column;
+		}
+		.copyright{
+			margin-top: 15px;
+			width: 100%;
+			margin-bottom: 20px;
+		}
+		.ideas {
+			
+			margin: 0 auto;
+			width: 142px;
+		}
 }
-
-
-
-/* For Navigation section */
-
-
-.navigation-section {
-    width: 100%;
-    display: flex;
-}
-
-.navigation-section nav {
-    margin-top: 40px; 
-    width: 90%;
-    justify-content: space-between;
-    display: flex;
-}
-
-.navigation-section  nav a {
-    text-decoration: none;
-    color: #b0b0b0;
-}
-
-.navigation-section  nav a:hover {
-    text-decoration: underline;
-    color: black;
-}
-
-.logo {
-    margin: 28px 0 0 91px;
-}
-
-@media ( max-width: 800px ) { /* TABLET */
-
-    /* Body dimensions same as desktop version, so don't add */
-
-    .navigation-section  {
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .navigation-section .first-logo {
-        order: -1;
-    }
-
-    .logo {
-        margin: 28px 0 0 0;
-    }
-}
-
-@media ( max-width: 500px ) { /* PHONE */
-    /* Body should be 100% of the viewport, no gutters... for now */
-    body { 
-        width: 100%;
-        padding: 0%;
-    } 
-
-   /* Center align logo and nav items */
-    .navigation-section {
-        /* border: 1px solid red; */
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    /* Make nav items into column and center, padding-LR 0 no gutter */
-    .navigation-section nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        padding: 10px 0px;
-        margin-top: 0px; /* no space between logo and text */
-    }
-
-    /* Center text in middle of page, no viewport gutter, border-bottom to each each item */
-    .navigation-section nav a {
-        width: 100%;
-        text-align: center;
-        padding: 15px 0px;
-        border-bottom: 1px solid lightgray;
-    }
-
-    /* At top border to first child in nav */
-    nav a:first-child {
-        border-top: 1px solid lightgray;
-    }
-
-    .logo {
-        margin-top: 10px;;
-    }
-
-
-}
-
-
-
-/* For Header section */
-
-.index-header {
-	display: flex;
-	align-items: center;
-	justify-content: space-evenly;
-	margin-top: 60px; 
-	padding-bottom: 40px;
-	border-bottom: 1px solid black;
-}
-
-
-header h1 {
-	font-size: 70px;
-	text-align: center;
-}
-
-.button {
-	margin-left: 80px;
-	width: 140px;
-	height: 25px;
-	border: 1px solid black;
-	background-color: white;
-	cursor: pointer;
+/* services page */
+@media only screen and (max-width: 800px) and (min-width: 500px){
+	.container{
+		width: 100%;
+		padding: 25px;
+	}
 	
+	.upper-nav{
+		display: flex;
+		width: 100%;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-content: center;
+		align-items: center;
+		justify-content: space-evenly;
+	}
+	div#logo.item{
+		flex-direction: column-reverse;
+		width: 100%;
+		order: -1;
+		text-align: center;
+		display: inline-flex;
+	}
+	.upper-nav a{
+		margin: 5px;
+		height: auto;
+		padding: 25px 15px;
+		font-size: 14px;
+		color: silver;
+		display: block;
+		text-decoration: none;
+	}
+	h2{
+		font-size: 86px;
+		font-style: bold;
+		padding: 15px;
+		text-align: center;
+	}
+	div#started-text.column1{
+		border: 1px solid black;
+		justify-content: center;
+		align-content: center;
+		text-align: center;
+		width: 180px;
+		height: 40px; 
+	}
+	.column1 h6{
+		margin: 10px;
+		display: inline-block;
+		vertical-align: middle;
+	}
+	div.lofi{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-content: center;
+		align-items: center;
+		vertical-align: middle;
+		padding-bottom: 80px;
+		border-bottom: 2px solid black;
+	}
+	div.column2{
+		display: none;
+	}
+	.first-text{
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		flex-wrap: nowrap;
+	}
+	.upper-column{
+		width: 50%;
+		margin: 20px;
+		margin-top: 40px;
+	}
+	img.middle-img{
+		max-width: 100%;
+		padding: 10px;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	.second-text{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		width: 100%;
+		padding: 15px 10px 20px;
+		border-bottom: 2px solid black;
+	}
+	.bottom-column{
+		width: 33%;
+		padding-right: 5px;
+	}
+	div.address{
+	margin-top: 30px;
+	font-weight: bold;
+	}
+	div.copyright{
+		display: flex;
+		width: 100%;
+		font-weight: bold;
+		justify-content: center;
+		align-content: center;
+		align-items: center;
+	}
 }
-
-.button:hover {
-	background: black;
-	color: #59E16C;
-}
-@media ( max-width: 800px ){ /* TABLET */
-    .index-header {
-        width: 100%;
-        justify-content: center;
-        padding-bottom: 70px;
-    }
-
-    header .right {
-        display: none; /* do not display picture */
-    }
-}
-
-@media ( max-width: 500px ) { /* PHONE */
-    .index-header {
-        width: 90%;
-        justify-content: center;
-        margin:0% 5%;
-        padding: 10% 0%;
-    }
-}
-
-
-
-/* For top-text section */
-
-section h3 {
-	font-size: 20px;
-}
-
-
-.top-text {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	height: 180px;
-	/* padding: 60px; */
-}
-
-
-@media ( max-width: 500px ) { /* PHONE */
-    .top-text {
-        flex-direction: column;
-        width: 90%;
-        padding: 0% 5%;
-        margin-top: 10%; 
-    }
-
-    .top-text .about {
-        margin-top: 10%;
-        margin-bottom: 10%;
-    }
-}
-
-.features {
-	margin-right: 50px; /* increase space between paragraphs */
-}
-
-
-/* For middle image */
-.middle-img {
-	width: 100%;
-	margin-bottom: 5%;
-}
-
-@media ( max-width: 800px ) { /* TABLET */
-    .middle-img {
-        margin: 10% 0;
-    }
-}
-
-
-@media ( max-width: 500px ) { /* PHONE */
-    .middle-img {
-        padding: 15% 5% 0%; 
-    }
-}
-
-
-
-
-/* For bottom-text section */
-
-.bottom-text {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding-bottom: 60px;
-	border-bottom: 1px solid black;
-}
-
-.services, .product {
-	margin-right: 50px; /* increase space between paragraphs */
-}
-
-@media ( max-width: 500px ) { /* PHONE */
-    .bottom-text {
-        flex-direction: column;
-        width: 90%;
-        padding-bottom: 10%;
-        margin-bottom: 10%;
-        margin-left: 5%;
-    }
-
-    .bottom-text .services, .product {
-        margin-bottom: 10%;
-    }
-
-    /* .top-text .about {
-        margin-top: 10%;
-        margin-bottom: 10%;
-    } */
-}
-
-/* For contact section */
-.contact {
-	margin: 40px 1px;
-}
-
-@media ( max-width: 500px ) { /* PHONE */
-    .contact {
-        margin-left: 5%;
-    }
-}
-
-
-/* For footer */
-footer {
-	text-align: center;
-	margin-bottom: 40px;
-}
-
-
-/* --------------------  SERVICES CSS ---------------------- */
-
-/* For Services Navigation section */
-
-.s-navigation {
-	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
-	border-top: 20px solid white;
-	padding: 20px 0;
-	background-image: linear-gradient(80deg, #3CB2DC, #59E16C); 
-	position: fixed;
-	top: 0;
-	width: 80%;
-}
-
- .s-navigation a {
-	/* margin-right: 50px; */
-	/* display: inline-block; */
-	/* text-decoration: none; */
-	color: gray;
-} 
-
-/* Service Page Header Image */
-
-.services-header-img {
-	width: 100%;
-	margin-top: 110px;
-	margin-bottom: 20px;
-}
-
-/* Services Header Text */
-.h2-services {
-	font-size: 25px;
-}
-
-.p-services {
-	padding-bottom: 30px;
-	border-bottom: 1px solid black;
-	margin-bottom: 40px;
-}
-
-
-/* Services Main Content */
-
-.services-content {
-	display: flex;
-	margin: auto; /* KEEP THIS */
-	width: 100%;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	
-	/*justify-content: space-between;
-	align-items: center; */
-	/* height: 180px; */
-	/* padding: 30px; */
-	padding-bottom: 20px;
-	border-bottom: 2px solid black;
-}
-
-.digital, .ux, .marketing, .web, .ios, .android {
-	height: 40%;
-	width: 45%;
-	padding: 20px;
-	background: #EEEFF0;
-	border: 1px solid gray;
-	margin-bottom: 20px;
-}   /* put each section in a box with dimensions */
-
-
-
-.services-button {
-	margin-top: 20px;
-	width: 140px;
-	height: 25px;
-	border: 1px solid black;
-	background-color: white;
-	cursor: pointer;
-	border-radius: 5px;
-	
-}
-
-.services-button:hover {
-	background: black;
-	color: #59E16C;
-}
-
-
-
-/* Fact Section */
-
-.facts {
-	display: flex;
-	justify-content: space-between;
-	padding-top: 30px; 
-}
-
-.facts-text {
-	/* padding-top: 20px; */
-	width: 45%;
-	height: 50%;
-}
-
-.services-info-img {
-	/* padding-top: 20px; */
-	width: 80%;
-}
-
-/*  Services Footer  */
-
-.services-footer {
-	text-align: center;
-	margin-bottom: 40px;
+@media only screen and (max-width: 500px){
+	.container{
+		width: 100%;
+	}
+	.upper-nav{
+		display: flex;
+		width: 100%;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		align-content: center;
+		align-items: center;
+		justify-content: flex-start;
+	}
+	div.item{
+		width:100%;
+		text-align: center;
+		vertical-align: middle;
+	}
+	.upper-nav a{
+		height: auto;
+		padding: 20px 0 20px;
+		width: 100%;
+		font-size: 14px;
+		color: silver;
+		display: block;
+		text-decoration: none;
+		border-bottom: 1px solid black;
+	}
+	div#logo.item{
+		flex-direction: column-reverse;
+		width: 100%;
+		order: -1;
+		text-align: center;
+		display: inline-flex;
+	}
+	div.mid-container{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	h2{
+		font-size: 72px;
+		font-style: bold;
+		padding: 50px;
+		text-align: center;
+	}
+	div#started-text.column1{
+		border: 1px solid black;
+		justify-content: center;
+		align-content: center;
+		text-align: center;
+		width: 140px;
+		height: 25px; 
+	}
+	div.lofi{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-content: center;
+		align-items: center;
+		vertical-align: middle;
+		padding-bottom: 80px;
+		border-bottom: 2px solid black;
+	}
+	div.column2{
+		display: none;
+	}
+	div.first-text{
+		margin: 40px 10px 20px;
+	}
+	div.upper-column{
+		margin: 10px 10px 20px;
+	}
+	img.middle-img{
+		max-width: 100%;
+		padding: 10px;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	div.second-text{
+		margin: 30px 10px 20px;
+		padding: 0px 10px 40px;
+		border-bottom: 2px solid black;
+	}
+	div.address{
+		margin:30px 10px 15px;
+		padding: 0px 10px 0px;
+		font-weight: bold;
+		}
+	div.copyright{
+			display: flex;
+			width: 100%;
+			font-weight: bold;
+			justify-content: center;
+			align-content: center;
+			align-items: center;
+	}
 }
