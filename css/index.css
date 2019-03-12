@@ -71,6 +71,20 @@ h1, h2, h3, h4, h5 {
 	margin: 0 auto;
 }
 
+@media(max-width: 800px){
+  .container {
+    max-width: 90%;
+    margin: 0 auto
+  }
+}
+
+@media(max-width: 500px){
+  .container {
+    max-width: 95%;
+    margin: 0 auto
+  }
+}
+
 .header {
 	display: flex;
 	width: 100%;
@@ -84,6 +98,7 @@ h1, h2, h3, h4, h5 {
   .header {
     display: flex;
     flex-direction: column-reverse;
+    margin-bottom: 0px
   }
 }
 
@@ -92,6 +107,7 @@ h1, h2, h3, h4, h5 {
   .header {
     flex-direction: column-reverse;
     margin-top: 0px;
+    margin-bottom: 0px;
   }
 }
 
@@ -109,7 +125,12 @@ nav a {
 
 @media (max-width: 800px){
   nav {
+    margin-top: 50px;
     width: 100%;
+    justify-content: space-evenly;
+  }
+  .circle {
+    display: none;
   }
 }
 
@@ -117,6 +138,13 @@ nav a {
   nav {
     flex-direction: column;
     align-items: center;
+    margin-top: 10px;
+    justify-content: space-evenly;
+  }
+  nav a {
+    border-bottom: 1px solid black;
+    width: 100%;
+    text-align: center;
   }
 }
 
@@ -130,11 +158,23 @@ nav a {
 	margin-bottom: 100px;
 }
 
+@media(max-width: 800px){
+  .main {
+    margin-top: 0px;
+  }
+}
+
 .title {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	margin-top: 100px;
+}
+
+@media(max-width: 800px){
+  .title {
+    margin-top: 50px;
+  }
 }
 
 h1 {
@@ -148,9 +188,8 @@ h1 {
 
 .button {
 	background-color: white;
-	color: gray;
-	border: 2px solid gray;
-	font-size: 25px;
+  border: 1px solid gray;
+	font-size: 18px;
 }
 
 h1 {
@@ -172,6 +211,13 @@ h1 {
 	width: 100%;
 }
 
+@media(max-width: 500px){
+  .features-and-about {
+    display: flex;
+    flex-direction: column
+  }
+}
+
 .dummy {
 	margin-right: 50px;
 }
@@ -185,6 +231,13 @@ h1 {
 	display: flex;
 	margin-bottom: 50px;
 	margin-top: 50px;
+}
+
+@media(max-width: 500px){
+  .services-product-vision {
+    display: flex;
+    flex-direction: column
+  }
 }
 
 footer {
