@@ -67,7 +67,7 @@ h1, h2, h3, h4, h5 {
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 .container {
-	width: 850px;
+	max-width: 1024px;
 	margin: 0 auto;
 }
 
@@ -75,8 +75,24 @@ h1, h2, h3, h4, h5 {
 	display: flex;
 	width: 100%;
 	align-items: center;
-	justify-content: space-between;
+  justify-content: space-between;
+  margin-top: 25px;
 	margin-bottom: 50px;
+}
+
+@media (max-width: 800px) {
+  .header {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+
+@media(max-width: 500px){
+  .header {
+    flex-direction: column-reverse;
+    margin-top: 0px;
+  }
 }
 
 nav {
@@ -89,6 +105,19 @@ nav a {
 	color: gray;
 	font-size: 18px;
 	text-decoration: none;
+}
+
+@media (max-width: 800px){
+  nav {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px){
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .logo {
@@ -148,7 +177,8 @@ h1 {
 }
 
 .middle-img {
-	width: 100%;
+  width: 100%;
+  height: auto;
 }
 
 .services-product-vision {
