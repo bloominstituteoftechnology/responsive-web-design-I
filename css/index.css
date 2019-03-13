@@ -83,7 +83,7 @@ h1, h2, h3, h4, h5 {
 
 
 a {
-	color: black;
+	color: darkgrey;
 	text-decoration: none;
 	padding-left: 25px;
 	padding-right: 25px;
@@ -99,6 +99,17 @@ links look odd between 890px and 800px */
 		padding-right: 19px;
 	}
 }
+
+@media (max-width: 500px) {
+	a {
+		border-bottom: 1px solid black;
+		height: 60px;
+		width: 100%;
+		padding-top: 20px;
+		text-align: center;
+	}
+}
+
 
 #intro {
 	width: 100%;
@@ -153,6 +164,15 @@ width */
 	}
 }
 
+/* Seeting the direction to column*/
+
+@media(max-width: 500px) {
+	.navigation {
+		border-top: .5px solid black;
+		flex-direction: column;
+		padding: 0px;
+	}
+}
 
 .logo {
 	width: 20%;
@@ -165,8 +185,19 @@ while at 800 and less.*/
 
 @media(max-width: 800px) {
 	.logo {
+		margin-top: 20px;
+		width: 22%;
 		order: 1;
 		align-self: center;
+	}
+}
+
+/* Logo wasnt quite large enough*/
+
+@media(max-width: 500px) {
+	.logo {
+		margin: 20px 0px 0px 25px;
+		width: 40%;
 	}
 }
 
