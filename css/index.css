@@ -55,8 +55,7 @@ table {
 html, body {
     height: 100%;
 	font-family: 'Titillium Web', sans-serif;
-	margin: 0 auto;
-	width: 860px;
+
 }
 
 h1, h2, h3, h4, h5 {
@@ -67,59 +66,127 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
-.logo {
-	border-radius: 10px; 
-	margin: 20px 0 10px 50px;
-	display: flex;
+.container {
+  width: 1024px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+@media(max-width: 800px){
+  .container {
+    max-width: 90%;
+    margin: 0 auto
+  }
+}
+
+@media(max-width: 500px){
+  .container {
+    max-width: 95%;
+    margin: 0 auto
+  }
 }
 
 
-.navigation nav {
+@media(max-width: 500px){
+  .logo {
+    margin-top: 15px;
+  }
+}
+
+
+.navigation {
 	display: flex;
-	flex-direction: row;
+	width: 100%;
+	align-items: center;
+  justify-content: space-between;
+  margin-top: 25px;
+	margin-bottom: 50px;
+}
+
+@media (max-width: 800px) {
+  .navigation {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 0px
+  }
+}
+
+
+@media(max-width: 500px){
+  .navigation {
+    flex-direction: column-reverse;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
+
+
+nav {
+	display: flex;
+	width: 70%;
 	justify-content: space-between;
-
 }
 
-header {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+nav a {
+	color: gray;
+	font-size: 18px;
+	text-decoration: none;
 }
 
-header img {
-	margin: 20px 0 20px 0;
-
+@media (max-width: 800px){
+  nav {
+    margin-top: 50px;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  .header-img {
+    display: none;
+  }
 }
 
-.navigation .nav-bar {
-	margin: 20px 2px 0 2px;
-    border: 1px solid lightgray;
-    padding: 10px;
-    border-radius: 20px;
-    color: grey;
-    text-decoration: none;
-	font-family: 'Titillium Web', sans-serif;
-	
+@media (max-width: 500px){
+  nav {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    justify-content: space-evenly;
+  }
+  nav a {
+    border-bottom: 1px solid black;
+    width: 100%;
+    text-align: center;
+  }
+  .nav-bar {
+    padding: 20px
+  }
 }
+
+
+
+
+.header-img {
+	float: right;
+}
+
+
 
 .top-header {
-	font-size: 50px;
-	margin: 130px 10px 10px 100px;
-	text-align: center;
-	font-family: 'Bangers', sans-serif;
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 100px;
 }
 
 
-.bottom-header {
-    font-size: 15px;
-    margin: 10px 25px 0 25px;
-    border: 1px solid lightgray;
-    padding: 10px 0 10px 0;
-    color: grey;
-    text-decoration: none;
-	display: block;
-	font-family: 'Titillium Web', sans-serif;
+
+
+.header-title {
+	font-size: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	margin-top: 100px;
+	font-family: 'Bangers', sans-serif;
 }
 
 
@@ -230,3 +297,8 @@ header img {
 }
 
 
+.button {
+	background-color: white;
+  border: 1px solid gray;
+	font-size: 18px;
+}
