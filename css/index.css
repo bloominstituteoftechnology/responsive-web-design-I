@@ -75,7 +75,7 @@ h1, h2, h3, h4, h5 {
 
 @media(max-width: 800px) {
 	.navbar {
-		flex-wrap: wrap;
+		flex-direction: column;
 		justify-content: center;
 	}
 }
@@ -107,11 +107,26 @@ links look odd between 890px and 800px */
 	justify-content: center;
 }
 
+/* Gap to big with 50% in Tablet(800px)and 
+needed some bottom margin*/
+
+@media(max-width: 800px) {
+	#intro {
+		height: 40%;
+		margin-bottom: 50px;
+	}
+}
+
 .catchphrase, .codepic {
 	padding: 20px;  
 	align-self: center;
 	text-align: center;
-	
+}
+
+@media(max-width: 800px) {
+	.codepic {
+		display: none;
+	}
 }
 
 .catchphrase {
@@ -119,14 +134,21 @@ links look odd between 890px and 800px */
 }
 
 .navigation {
+	display: flex;
+	justify-content: space-around;
 	padding-top: 10px;
-	vertical-align: center;
 	margin-left: 30px;	
 }
+/* Reordering the navigation and logo elements
+while at 800 and less. Added some margin and
+width */
 
 @media(max-width: 800px) {
 	.navigation {
 		order: 2;
+		margin: 30px 0px 0px 0px;
+		width: 100%;
+
 	}
 }
 
@@ -135,12 +157,15 @@ links look odd between 890px and 800px */
 	width: 20%;
 	height: auto;
 	margin-left: 50px;
-	vertical-align: middle;	
 }
+
+/* Reordering the navigation and logo elements
+while at 800 and less */
 
 @media(max-width: 800px) {
 	.logo {
 		order: 1;
+		align-self: center;
 	}
 }
 
