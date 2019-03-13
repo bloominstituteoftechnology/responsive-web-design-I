@@ -202,6 +202,7 @@ header nav {
     header nav {
         display: flex;
         justify-content: space-between;
+        margin:0 auto;
         width: 100%;
         padding: 0 30px;
     }
@@ -229,49 +230,62 @@ header nav {
     }
 }
 
-/* Phone 
+/* ----------- Mobile View -------------- */
 @media (max-width: 500px) {
 
+    .container{
+        width:100%;
+        margin: 0 auto;
+    }
+
     header {
-        justify-content: center;
+        display:flex;
+        margin:0 auto;
     }
 
     header nav {
+        display: flex;
         width: 100%;
         flex-direction: column;
-        margin: 0;
-        padding: 0;
+        padding:0;
     }
 
     header nav a {
-        width: 100%;
-        display: block;
-        text-align: center;
-        padding: 20px 0;
+        padding: 20px;
         font-size: 20px;
-        border-bottom: 1px solid gray;
-    }
-
-    header nav a:first-child {
-        border-top: 1px solid gray;
+        border: 1px solid gray;
+        width:100%;
+        margin-right:0;
+        text-align: center;
     }
 
     header nav a:hover {
-        background: gray;
+        background: rgb(230, 251, 255);
     }
 
     header .logo {
-        margin: 20px 0;
+        display:flex;
+        align-items: center;
     }
+
+    .top-content .tc-text{
+        margin-top:60px;
+      }
 
     .first-sec {
         margin-top: 50px;
         flex-flow: column;
-        align-items: center;
+        margin:0 auto;
+    }
+
+    .top-content{
+        width:100%;
+        margin: 0 auto;
+        border:1px solid rebeccapurple;
     }
 
     .first-sec img {
-        max-width: 80%;
+        max-width: 100%;
     }
 
     .main-content .first-sec {
@@ -294,4 +308,3 @@ header nav {
         margin: 20px;
     }
 }
-*/
