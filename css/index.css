@@ -100,6 +100,8 @@ links look odd between 890px and 800px */
 	}
 }
 
+/* MAde links to look like full bars for mobile*/
+
 @media (max-width: 500px) {
 	a {
 		border-bottom: 1px solid black;
@@ -134,6 +136,8 @@ needed some bottom margin*/
 	align-self: center;
 	text-align: center;
 }
+
+/* Removed top pic from display below 800px */
 
 @media(max-width: 800px) {
 	.codepic {
@@ -229,6 +233,13 @@ hr {
 	display: flex;
 }
 
+@media (max-width: 500px) {
+	.features {
+		margin: 0px;
+		flex-direction: column;
+		justify-content: center;
+	}
+} 
 
 .feat, .bout {
 	width: 49%;
@@ -236,11 +247,29 @@ hr {
     text-align: left;
 }
 
+@media (max-width: 500px) {
+	.feat {
+		width: 100%;
+	}
+}
+
+@media (max-width: 500px) {
+	.bout {
+		width: 100%;
+	}
+}
+
 .middle-img {
 	margin-top: 20px;
 	margin-bottom: 20px; 
 }
 
+@media (max-width: 500px) {
+	.middle-img {
+		padding-left: 13px;
+		width: 98%;
+	}
+}
 .servicesection {
 	padding-left: 45px;
 	display: flex;
