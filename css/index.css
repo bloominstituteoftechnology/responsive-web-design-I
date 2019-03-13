@@ -1,3 +1,232 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+	font-family: 'Titillium Web', sans-serif;
+	margin: 0 auto;
+	width: 860px;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+.logo {
+	border-radius: 10px; 
+	margin: 20px 0 10px 50px;
+	display: flex;
+}
+
+
+.navigation nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+}
+
+header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+header img {
+	margin: 20px 0 20px 0;
+
+}
+
+.navigation .nav-bar {
+	margin: 20px 2px 0 2px;
+    border: 1px solid lightgray;
+    padding: 10px;
+    border-radius: 20px;
+    color: grey;
+    text-decoration: none;
+	font-family: 'Titillium Web', sans-serif;
+	
+}
+
+.top-header {
+	font-size: 50px;
+	margin: 130px 10px 10px 100px;
+	text-align: center;
+	font-family: 'Bangers', sans-serif;
+}
+
+
+.bottom-header {
+    font-size: 15px;
+    margin: 10px 25px 0 25px;
+    border: 1px solid lightgray;
+    padding: 10px 0 10px 0;
+    color: grey;
+    text-decoration: none;
+	display: block;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+
+
+  
+.main-content section {
+	margin: 0;
+	display: flex;
+    width: 100%;
+	vertical-align: top;
+	flex-direction: row;
+	justify-content: space-between;
+  }
+  
+    
+.main-content .top-content {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+
+.main-content .top-content-p {
+	  display: flex;
+	  margin: 0 5px 0 5px;
+	  flex-direction: row;
+	  justify-content: flex-start;
+  }
+
+
+.middle-img {
+	width: 100%;
+}
+
+.main-content .bottom-content {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+
+.main-content .bottom-content-p {
+	  display: flex;
+	  margin: 0 5px 0 5px;
+	  flex-direction: row;
+	  justify-content: flex-start;
+}
+  
+  footer {
+	  text-align: center;
+	  margin-top:  30px;
+  }
+
+  a:hover {
+	  transform: scale(1.2);
+  }
+
+
+  .content-section-wrapper {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-content: flex-start;
+	margin: 5% 0px;
+}
+
+
+
+.main-services-content {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	border: 1px solid black;
+	background-color: lightgrey;
+	width: 45%;
+	height: 200px;
+	padding: 2%;
+	margin: 2% 0px;
+}
+
+
+.main-services-content button {
+	padding:5px 30px;
+	margin-top: 15px;
+	border: 1px solid black;
+	border-radius: 5px;
+	background-color: linen;
+}
+
+.top-content-wrapper {
+	margin: 3% auto;
+
+}
+
+.footer-section-wrapper {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	margin: 5% auto;
+}
+
+.footer-section-wrapper .bottom-footer-content {
+	width: 45%;
+}
+
+.footer-section-wrapper .bottom-footer-content ul {
+	margin: 3%;
+	list-style: square;
+	line-height: 2;
+}
 
 
