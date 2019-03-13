@@ -73,6 +73,12 @@ h1, h2, h3, h4, h5 {
 	display: flex;
 }
 
+@media(max-width: 800px) {
+	.navbar {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+}
 
 
 a {
@@ -83,6 +89,15 @@ a {
 	
 }
 
+/* Media query at 890px because 
+links look odd between 890px and 800px */
+
+@media (max-width: 890px) {
+	a {
+		padding-left: 19px;
+		padding-right: 19px;
+	}
+}
 
 #intro {
 	width: 100%;
@@ -109,6 +124,12 @@ a {
 	margin-left: 30px;	
 }
 
+@media(max-width: 800px) {
+	.navigation {
+		order: 2;
+	}
+}
+
 
 .logo {
 	width: 20%;
@@ -117,10 +138,9 @@ a {
 	vertical-align: middle;	
 }
 
-@media (max-width: 890px) {
-	a {
-		padding-left: 19px;
-		padding-right: 19px;
+@media(max-width: 800px) {
+	.logo {
+		order: 1;
 	}
 }
 
