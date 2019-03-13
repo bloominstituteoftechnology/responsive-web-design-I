@@ -1,3 +1,254 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+/* Your code starts here! */
+body{
+	width: 875px; 
+	margin: 0 auto;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+hr{
+	width: 875px;
+	margin:0px;
+	border: 1px solid black;
+}
+
+.nav-logo-content {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 20px;
+	
+}
+.nav-logo-content nav {
+	display: flex;
+	justify-content: space-between;
+	width: 600px;
+}
+
+.header-nav a {
+	text-decoration: none;
+	color: grey;
+	
+}
+
+header .logo{
+	 width: 150px;
+	
+}
+
+header h1{
+	font-size: 60px;
+	width: 200px;
+	margin:30px auto;
+	
+}
+
+.header-bottom-wrapper{
+	display: flex;
+	flex-flow: row wrap;
+	margin: 40px auto;
+}
+
+#header-button{
+	width: 400px;
+	text-align: center;
+	margin: 30px auto;
+	
+}
 
 
+#header-button button{
+	padding:4px 30px;
+	font-size: 13px;
+	background-color: white;
+	border: 1px solid black;
+	
+}
+
+#hero-img{
+	width: 390px;
+	padding-left: 80px;
+}
+
+#hero-img img{
+	width: 300px;
+	height:300px;	
+}
+.contnent-section-upper{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+.contnent-section-upper .content{
+	width: 435px;
+}
+
+.middle-img{
+	margin: 10px auto;
+	text-align: center;
+}
+
+.contnent-section-lower{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	margin: 10px auto;
+}
+
+.contnent-section-lower .content{
+	width: 285px;
+	margin: 20px auto;
+	padding-right:10px;
+}
+
+.footer-section {
+	margin: 25px auto;
+}
+
+address{
+	width:150px
+}
+
+.footer-section p{
+	margin:15px 0;
+}
+
+footer{
+	text-align: center
+}
+
+/* Begin Services CSS */
+
+.services-header-img{
+	margin-top: 2%;
+}
+
+.content-section-wrapper{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-content: flex-start;
+	margin: 5% 0px;
+}
+
+.top-content-wrapper h2 {
+	font-size: 25px;
+}
+
+
+.main-services-content{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+
+	border: 1px solid black;
+	background-color: lightgrey;
+	width: 45%;
+	height: 200px;
+	padding:2%;
+	margin: 2% 0px;
+}
+
+
+.main-services-content button{
+	padding:5px 30px;
+	margin-top: 15px;
+	border: 1px solid black;
+	border-radius: 5px;
+	background-color: linen;
+}
+
+.top-content-wrapper{
+	margin: 3% auto;
+
+}
+
+.footer-section-wrapper{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	margin: 5% auto;
+}
+
+.footer-section-wrapper .bottom-footer-content{
+	width: 45%;
+}
+
+.footer-section-wrapper .bottom-footer-content ul{
+	margin: 3%;
+	list-style: square;
+}
+
+.footer-section-wrapper .bottom-footer-content ul{
+line-height: 2;
+}
+
+
+/* End Services CSS */
