@@ -94,7 +94,7 @@ a {
 links look odd between 890px and 800px */
 
 @media (max-width: 890px) {
-	a {
+	.navbar a {
 		padding-left: 19px;
 		padding-right: 19px;
 	}
@@ -103,7 +103,7 @@ links look odd between 890px and 800px */
 /* MAde links to look like full bars for mobile*/
 
 @media (max-width: 500px) {
-	a {
+	.navbar a {
 		border-bottom: 1px solid black;
 		height: 60px;
 		width: 100%;
@@ -140,7 +140,7 @@ needed some bottom margin*/
 /* Removed top pic from display below 800px */
 
 @media(max-width: 800px) {
-	.codepic {
+	#intro .codepic {
 		display: none;
 	}
 }
@@ -188,7 +188,7 @@ width */
 while at 800 and less.*/
 
 @media(max-width: 800px) {
-	.logo {
+	.navbar .logo {
 		margin-top: 20px;
 		width: 22%;
 		order: 1;
@@ -199,7 +199,7 @@ while at 800 and less.*/
 /* Logo wasnt quite large enough*/
 
 @media(max-width: 500px) {
-	.logo {
+	.navbar .logo {
 		margin: 20px 0px 0px 25px;
 		width: 40%;
 	}
@@ -248,13 +248,13 @@ hr {
 }
 
 @media (max-width: 500px) {
-	.feat {
+	.features .feat {
 		width: 100%;
 	}
 }
 
 @media (max-width: 500px) {
-	.bout {
+	.features .bout {
 		width: 100%;
 	}
 }
@@ -263,6 +263,8 @@ hr {
 	margin-top: 20px;
 	margin-bottom: 20px; 
 }
+
+/* Adjusted img width and added a little padding */
 
 @media (max-width: 500px) {
 	.middle-img {
@@ -275,12 +277,42 @@ hr {
 	display: flex;
 }
 
+@media (max-width: 500px) {
+	.servicesection {
+		padding: 0px;
+		flex-direction: column;
+		justify-content: center;
+	}
+}
+
 .service, .product, .vision {
 	width: 31%;
 	padding: 20px;
 	text-align: middle;
 }
 
+/* Set widths and padding for mobile */
+
+@media (max-width: 500px) {
+	.servicesection .service {
+		padding: 15px;
+		width: 100%;
+	}
+}
+
+@media (max-width: 500px) {
+	.servicesection .product {
+		padding: 15px;
+		width: 100%;
+	}
+}
+
+@media (max-width: 500px) {
+	.servicesection .vision {
+		padding: 15px;
+		width: 100%;
+	}
+}
 .contact {
 	margin: 40px 0px 20px 45px;
 }
