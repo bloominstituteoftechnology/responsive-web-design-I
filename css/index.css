@@ -69,12 +69,13 @@ h1, h2, h3, h4, h5 {
 }
 
 .navbar {
-	margin-top: 20px;
+	margin: 20px 0px 0px 30px;
 	display: flex;
 }
 
 @media(max-width: 800px) {
 	.navbar {
+		margin: 0px;
 		flex-direction: column;
 		justify-content: center;
 	}
@@ -107,7 +108,7 @@ links look odd between 890px and 800px */
 	justify-content: center;
 }
 
-/* Gap to big with 50% in Tablet(800px)and 
+/* Gap to big with height 50% in Tablet(800px)and 
 needed some bottom margin*/
 
 @media(max-width: 800px) {
@@ -160,7 +161,7 @@ width */
 }
 
 /* Reordering the navigation and logo elements
-while at 800 and less */
+while at 800 and less.*/
 
 @media(max-width: 800px) {
 	.logo {
@@ -225,6 +226,7 @@ hr {
 }
 
 .copyright {
+	margin-bottom: 20px;
 	width: 100%;
 	text-align: center;
 }
