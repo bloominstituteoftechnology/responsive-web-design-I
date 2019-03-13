@@ -1,3 +1,142 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+.container {
+	width: 850px;
+	margin: auto;
+	border: 1px dotted blue;
+}
+
+.cta {
+	display: flex;
+	justify-content: center;
+}
+
+.cta-text {
+	width: 50%;
+	font-size: 90px;
+	border: 1px solid green;
+}
+
+.cta img {
+	border: 1px solid green;
+}
+
+.contact {
+	margin: auto;
+}
+.text {
+	display:flex;
+	justify-content: space-around;
+}
+
+button {
+	margin-left: 38%;
+	font-size: 20px;
+	display: flex;
+	justify-content: center;
+	border: 1px solid green;
+}
+
+header {
+	display:flex;
+}
+
+header nav {
+	margin-top: 10px;
+	display: flex;
+	justify-content: space-around;
+}
+
+header img {
+	display:flex;
+	justify-content: flex-end;
+}
+header nav a {
+	margin: 0 27px;
+}
+
+header img logo{
+	margin-left: 20px;
+}
+
+p {
+	line-height: 1;
+	margin: 20px 0;
+	display: flex;
+	width: 50%;
+}
+
+.bottom{
+	display:flex;
+	justify-content: space-around;
+}
+contact {
+	margin-left: 20px;
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+}
 
