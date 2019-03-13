@@ -66,15 +66,20 @@ h1, h2, h3, h4, h5 {
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 /* Your code starts here! */
 body{
-	width: 875px; 
+	width: 100%; 
 	margin: 0 auto;
 	display: flex;
 	flex-flow: row wrap;
 }
 
+.mainWrapper{
+    width: 80%;
+    margin: 0 auto;
+}
+
 hr{
-	width: 875px;
-	margin:0px;
+	width: 80%;
+	margin: 0 auto;;
 	border: 1px solid black;
 }
 
@@ -141,16 +146,22 @@ header h1{
 	width: 300px;
 	height:300px;	
 }
+.main-section{
+    width: 100%;
+    margin: 0 auto;
+}
 .contnent-section-upper{
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-between;
 }
 .contnent-section-upper .content{
+    margin: 6% auto 4% auto;
 	width: 435px;
 }
 
 .middle-img{
+    width: 100%;
 	margin: 10px auto;
 	text-align: center;
 }
@@ -195,7 +206,8 @@ footer{
 	flex-flow: row wrap;
 	justify-content: space-between;
 	align-content: flex-start;
-	margin: 5% 0px;
+    margin: 5% 0px;
+    width: 100%;
 }
 
 .top-content-wrapper h2 {
@@ -250,5 +262,52 @@ footer{
 line-height: 2;
 }
 
-
 /* End Services CSS */
+
+/* Begin Media Queries*/
+    @media(max-width: 500px){
+        .mainWrapper{
+            width: 100%;
+        }
+        .nav-logo-content .header-nav {
+            display:flex;
+            flex-flow: column wrap;
+            width:100%;
+        }
+        
+        .nav-logo-content .header-nav a{
+            text-align: center;
+            font-size: 18px;
+            padding: 5%;
+            border-bottom: 1px solid black
+        }
+
+        .nav-logo-content .header-nav:first-child{
+            border-top: 1px solid black;
+        }
+
+        .nav-logo-content .logo {
+            margin: 0 auto;
+            padding-bottom: 4%;
+        }
+
+        .nav-logo-content .header-nav{
+            order:1;
+        }
+
+        #hero-img{
+            display: none;
+        }
+        
+        .main-section .content{
+            width: 90%;
+        }
+
+        .middle-img{
+            width: 90%;
+            margin-left: 20px;
+        }
+    }
+
+
+/* End Media Queries*/
