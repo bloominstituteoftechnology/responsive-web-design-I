@@ -149,17 +149,22 @@ p {
 		align-items: center;
 	}
 }
-contact {
+.contact {
 	margin-left: 20px;
 }
 
-footer {
+.footer {
 	display: flex;
 	justify-content: center;
 	padding: 10px;
 }
+@media (max-width:800px) {
+	.footer {
+		display:flex;
+	}
+}
 @media (max-width:550px) {
-	footer {
+	.footer {
 		display:flex;
 		justify-content: center;
 		paddiing:10px;
@@ -180,5 +185,10 @@ footer {
 	.bottom {
 		display: flex;
 		flex-wrap: wrap;
+	}
+}
+@media(max-width:550px) {
+	.bottom {
+		display:flex;
 	}
 }
