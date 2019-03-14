@@ -1,24 +1,5 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -62,7 +43,8 @@ h1, h2, h3, h4, h5 {
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 .container {
 	width: 850px;
-	margin: 100%;
+	margin: auto;
+	padding: 20px 1.25%;
 }
 
 .cta {
@@ -71,9 +53,16 @@ h1, h2, h3, h4, h5 {
 }
 @media( max-width: 800px) {
 	.cta {
+		display:flex;
 		flex-direction: column;
 		align-items: center;
+		padding:
 	}
+}
+@media(max-width:550px) {
+	.cta {
+		display:none;
+	}	
 }
 
 .cta-text {
@@ -89,7 +78,17 @@ h1, h2, h3, h4, h5 {
 	display:flex;
 	justify-content: space-around;
 }
-
+@media(max-width:800px) {
+	.text {
+		display:flex;
+		justify-content: space-around;
+	}
+}
+@media(max-width:550px) {
+	.text {
+		flex-direction: center;
+		align-content: center;
+}
 button {
 	margin-left: 38%;
 	font-size: 20px;
@@ -115,7 +114,13 @@ header img {
 header nav a {
 	margin: 0 27px;
 }
-
+@media (max-width:550px) {
+	header nav a {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+}
 header img logo{
 	margin-left: 20px;
 }
@@ -146,12 +151,21 @@ footer {
 	justify-content: center;
 	padding: 10px;
 }
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+@media (max-width:550px) {
+	footer {
+		display:flex;
+		justify-content: center;
+		paddiing:10px;
+	}
+}
 
 @media(max-width:800px) {
 	.butter {
 		display: none;
 	}
 }
-
+@media (max-width:550px) {
+	.butter {
+		align-content: flex-end;
+	}
+}
