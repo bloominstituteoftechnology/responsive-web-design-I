@@ -1,3 +1,260 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+.container {
+	max-width: 876px;
+	width: 100%;
+  margin: auto;
+}
 
 
+
+.mainNav {
+	display: inline-block;
+
+    top: 5px;
+}
+
+.mainNav ul {
+	margin:0;
+}
+
+.logoDiv {
+	display: inline-block;
+	padding-top: 12px;
+	top: 5px;
+	margin-left: 620px;
+}
+
+.mainNav
+ a {
+	text-transform: uppercase;
+	display:inline-block;
+		padding: 20px 10px;
+	text-decoration: none;
+	color: gray;
+	margin: 0px 12px;
+	vertical-align:middle;
+}
+
+@keyframes myeffect {
+	0% {
+	   opacity: 1;
+	   transform: translateX(-20);
+	}
+
+	50% {
+		opacity: 0.5;
+		color: red;
+        transform: translateX(30);
+	}
+
+	100% {
+		opacity: 1;
+		color: yellow;
+		transform: translateX(0);
+	}
+}
+
+.logo {
+	display: inline-block;
+	margin-left: 70px;
+}
+
+.container2div {
+	margin: 0 auto;
+	margin-top: 40px;
+	margin-bottom: 30px;
+	border-bottom: solid 2px black;
+	padding-bottom: 50px;
+}
+
+.top_div {
+	display: inline-block;
+	width: 49%;
+	height: auto;
+	text-align: center;
+	vertical-align: middle;
+	margin-top: 50px;
+}
+
+.top_pic {
+	display: inline-block;
+}
+
+h1 {
+	font-size: 72px;
+}
+
+.button_get {
+	margin-top: 15px;
+	width: 200px;
+	height: 45px;
+}
+
+h2 {
+	font-size: 22px;
+}
+
+p {
+	text-justify: auto;
+	font-size: 16px;
+	line-height: 1.5;
+	text-align: justify
+}
+
+.two_column_div {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-content: center;
+
+}
+
+.text_column1 {
+	flex-direction: row;
+	flex-wrap:wrap;
+	width: 400px;
+}
+
+.text_column2 {
+	flex-direction: row;
+	flex-wrap:wrap;
+	width: 400px;
+}
+
+.three_column_container {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-content: center;
+}
+
+.three_column1 {
+	flex-direction: row;
+	flex-wrap:wrap;
+	width: 410px;
+}
+
+.three_column2_3 {
+	flex-direction: row;
+	flex-wrap:wrap;
+	width: 410px;
+}
+
+address {
+	margin: 20px;
+	line-height: 1.5;
+}
+
+.copyright {
+	text-align: center;
+	margin-bottom: 25px;
+}
+
+@media (max-width: 768px) {
+
+  .logoDiv{
+    display: block;
+    margin-left: 25%;
+  }
+
+  #imageOfCircle{
+    display: none;
+  }
+
+  #innov{
+    display: block;
+    margin: auto;
+  }
+}
+
+@media (max-width: 500px) {
+
+  .mainNav a{
+    background-color: red;
+    display: flex;
+    background-color: #d3d3d3;
+    margin: 3px;
+    width: 500px;
+
+
+  }
+
+  .logoDiv{
+    display: block;
+    margin-left: 25%;
+  }
+
+  #imageOfCircle{
+    display: none;
+  }
+
+  #innov{
+    display: block;
+    margin: auto;
+  }
+}
