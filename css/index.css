@@ -56,7 +56,6 @@ h1, h2, h3, h4, h5 {
 		display:flex;
 		flex-direction: column;
 		align-items: center;
-		padding:
 	}
 }
 @media(max-width:550px) {
@@ -68,7 +67,15 @@ h1, h2, h3, h4, h5 {
 .cta-text {
 	width: 50%;
 	font-size: 75px;
-	
+}
+@media(max-width:800px) {
+	.cta-text {
+		widows: 50%;
+		font-size: 50px;
+		justify-content: center;
+		padding: 65px;
+		padding-top:65px;
+	}
 }
 
 .contact {
@@ -118,7 +125,7 @@ header nav a {
 	header nav a {
 		flex-direction: column;
 		align-items: center;
-		justify-content: center;
+		justify-content: space-around;
 	}
 }
 header img logo{
