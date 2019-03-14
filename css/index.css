@@ -69,6 +69,12 @@ h1, h2, h3, h4, h5 {
 	display: flex;
 	justify-content: center;
 }
+@media( max-width: 800px) {
+	.cta {
+		flex-direction: column;
+		align-items: center;
+	}
+}
 
 .cta-text {
 	width: 50%;
@@ -125,6 +131,12 @@ p {
 	display:flex;
 	justify-content: space-around;
 }
+@media(max-width:800px) {
+	.main and .bottom {
+		flex-direction: column;
+		align-items: center;
+	}
+}
 contact {
 	margin-left: 20px;
 }
@@ -142,21 +154,9 @@ footer {
 	width:100%;
 }
 
-@media( max-width: 800px) {
-	.cta {
-		flex-direction: column;
-		align-items: center;
-	}
-}
-
 @media(max-width:800px) {
-	.main and .bottom {
-		flex-direction: column;
-		align-items: center;
-	}
-}
-@media(max-width:800px) {
-	section img {
+	.butter {
 		display: none;
 	}
 }
+
