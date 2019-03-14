@@ -54,6 +54,9 @@ h1, h2, h3, h4, h5 {
 @media( max-width: 800px) {
 	nav {
 		width:100%;
+		flex-direction:column;
+		justify-content: center;
+		margin:0 auto;
 	}
 	.container {
 		width:100%;
@@ -84,37 +87,40 @@ h1, h2, h3, h4, h5 {
 	}
 }
 @media(max-width:550px) {
-	.cta {
+	header nav a {
+		width:100%;
+		border-bottom: 1px solid black;
+	}
+	header nav a:nth-child(1) {
+		border-top: 1px solid black;
+	}
+	}
+	nav a {
+		padding:17px;
+	}
+	nav {
+		width:100%;
+		flex-direction: column;
+		justify-content: center;
+		margin: 0 auto;
+		font-size:22px;
+		text-align:center;
+	}
+	.middle-img {
 		display:none;
-	}	
-	.text {
-		flex-direction: center;
-		align-content: center;
+	}
+	h2 {
+		font-size: 18px;
 	}
 	header {
 		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-	}
-	header nav a {
-		flex-direction: reverse- column;
-		align-items: center;
-		justify-content: space-around;
 	}
 	p {
-		display:flex;
-		width:100%
-	}
-	.footer {
-		display:flex;
-		justify-content: center;
-		padding:10px;
-	}
-	h2 {
 		width:100%;
-		justify-content:center;
+		flex-direction: column;
+		margin:0 auto;
 	}
-}
+	
 
 .cta-text {
 	width: 50%;
