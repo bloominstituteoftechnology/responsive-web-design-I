@@ -1,3 +1,497 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+.container{
+	width:750px;
+	margin-left: 0px;
+	padding:0;
+}
+.container div{
+	width:95%
+}
+ 
+  #topline{
+	width: 700px;;
+
+ 	 display:flex;
+	 flex-direction:row;
+	 justify-content: space-between;
+	 margin:10px; 
+	 margin-left:0px;  
+	 align-items: center;
+	  
+
+  }
+  .top{
+	  height:35%;
+	  width:700px;
+	  margin-left: 0px;
+ 	  display:flex;
+	  flex-direction:row;
+	  justify-content: space-evenly;
+	  align-content: center;
+  }
+  .code-image{
+	  width:150px;
+	  height:100px;
+ 	  	  justify-content: center;
 
 
+  }
+  #code{
+	  height:250px;
+	  width:250px;
+	  justify-content: center;
+  }
+  .buttonLogo{
+ 	  
+  }
+  #button{
+	  background:white;
+	  border:2px solid black;
+	  font-style: bold;
+	  width:60%;
+	  justify-content: center
+   }
+  .INN{
+	  font-size:50px;
+	  text-align:center;
+	  justify-content: space-between;
+  }
+  #pre-img{
+	  width:700px;
+	  height: 160px;
+	  margin-left: 0px;
+	  padding:0px;
+ 	  display:flex;
+ 	  justify-content : space-evenly;
+	  align-content: center;
+	  border-top:2px solid black;
+
+   }
+   #pre-img p {
+	   font-size: 15px;
+	   width:270px;
+	   height:100px;
+	   justify-content: space-between;
+ 	   
+    
+   }
+   .img{
+	display:flex;
+	width:700px;
+	height: 110px;
+	 justify-content: center; 
+	  }
+   .middle-img{
+		display:flex;
+		width:95%;
+		height:110px;
+	   justify-content: space-evenly;
+	   align-content: center;
+
+   }
+   #post-image{
+	   display:flex;
+	   justify-content: space-evenly;
+ 	   width:700px;
+	   height:200px;
+	   border-bottom: 2px solid black;
+    }
+   #post-image p {
+	   width:200px;
+	   
+	   font-size: 15px;
+
+   }
+   #contact{
+ 	   height:150px;
+	   display:flex;
+	   flex-flow: column wrap;
+	   justify-content:space-between ;
+	   margin-left: 20px;
+  
+   }
+   #contact address{
+justify-content: space-evenly;   }
+    
+   
+   #copyright {
+	   display:flex;
+	   justify-content: center;
+   }
+   
+
+   * http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+@media(max-width: 800px){
+	.container {
+		width:100%;
+		margin: 0 auto;
+		background:grey;
+	}
+
+	.topline{
+		margin: 20px;
+	}
+
+	.pre-img p {
+		width: 55%;
+		justify-content: space-between;
+	}
+	#pre-img{
+		width:90%;
+		height: 160px;
+		margin-left: 0px;
+		padding:0px;
+		 display:flex;
+		 justify-content : space-evenly;
+		align-content: center;
+		border-top:2px solid black;}
+		#pre-img p {
+			font-size: 15px;
+			width:270px;
+			height:100px;
+			justify-content: space-between;
+			 
+		 
+		}
+
+	#topline{
+		width: 90%;
+	
+		  display:flex;
+		 flex-direction:row;
+		 justify-content: space-between;
+		 margin:10px; 
+		 margin-left:10px;  
+		 align-items: center;
+		  
+	
+	  } .code-image{
+		width:150px;
+		height:100px;
+			   justify-content: center;
+  
+  
+	}
+	#code{
+		height:250px;
+		width:250px;
+		justify-content: center;
+
+}
+#post-image{
+	display:flex;
+	justify-content: space-evenly;
+	 width:90%;
+	height:200px;
+	border-bottom: 2px solid black;
+ }
+#post-image p {
+	width:200px;
+	
+	font-size: 15px;
+
+}
+#contact{
+	 height:150px;
+	display:flex;
+	flex-flow: column wrap;
+	justify-content:space-between ;
+	margin-left: 20px;
+
+}
+#contact address{
+justify-content: space-evenly;   }
+ 
+
+#copyright {
+	display:flex;
+	justify-content: center;
+}
+
+
+
+
+@media(max-width: 500px){
+
+
+	.container {
+		width:500px;
+		background: orange;
+		display:flex;
+		justify-content:center;
+	}
+	#topline{
+		display:flex;
+		flex-direction:row;
+		flex-wrap: wrap;
+ 		justify-content: space-between;
+	}
+	#logo-container{
+ 		display:inline-flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-content: center;
+		margin-top:10px;
+ 	}
+	 
+
+	  .top{
+ 		  display: flex;
+		  flex-direction: column;
+		  height:45%
+	  }
+	  .code-image{
+		  width:30%;
+		  margin-right: 20px;
+		  display:none;
+	  }
+	  .code{
+		 display: none;
+	  }
+	  #pre-img{
+		  display:inline-flex;
+		  justify-content: center;
+		  height:20%;
+	  }
+	   #pre-img p{
+		   display:flex;
+		   margin: 10px;
+		    
+		   justify-content:center;
+		   width:90%;
+
+	   }
+	   .img{
+		   display:flex;
+		   width:100%;
+		  margin-top:30px;
+		  justify-content: center;
+	   }
+
+	   .post-image{
+		   display:flex;
+		   align-content: center;
+		   margin:10px;
+		   height:80%;
+		   border :none;
+		  
+ 	   }
+	   #post-image p{
+		   display:flex;
+		   flex-direction: row;
+ 		   width:100%;
+		   height:80%;
+		   justify-content: center;
+		   font-size:13px;
+		   align-content: center;
+		   margin:10px;
+	   }
+	   #post-image section{
+		   height: 80%
+	   }
+	   #post-image h4{
+		 display:flex;
+		 margin-left:20px;
+		align-content: center;
+		justify-content: space-between
+	   }
+         #contact   {
+			 display: inline-flex;
+			 flex-direction: column;
+ 			 align-content: center;
+			  height: 15%;
+			  width:100%;
+			  margin:10px;
+		  }
+		  #contact address {
+			  display: flex;
+			  align-content: center;
+		  }
+
+}
+ 
+.container div{
+	width:95%
+}
+ 
+  
+  .top{
+	  height:35%;
+	  width:90%;
+	  margin-left: 0px;
+ 	  display:flex;
+	  flex-direction:row;
+	  justify-content: space-evenly;
+	  align-content: center;
+  }
+  .code-image{
+	  width:150px;
+	  height:100px;
+ 	  	  justify-content: center;
+
+
+  }
+  #code{
+	  height:250px;
+	  width:250px;
+	  justify-content: center;
+  }
+  
+  #button{
+	  background:white;
+	  border:2px solid black;
+	  font-style: bold;
+	  width:60%;
+	  justify-content: center
+   }
+  .INN{
+	  font-size:50px;
+	  text-align:center;
+	  justify-content: space-between;
+  }
+  
+   
+   
+   
+	 
+   
+    
+   .middle-img{
+		display:flex;
+		width:95%;
+		height:110px;
+	   justify-content: space-evenly;
+	   align-content: center;
+
+   } 
+ 
