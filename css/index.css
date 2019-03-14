@@ -42,9 +42,9 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 .container {
-	width: 850px;
-	margin: auto;
-	padding: 20px 1.25%;
+	width:98%;
+	padding:20px 1%;
+	margin:0 auto;
 }
 
 .cta {
@@ -131,7 +131,11 @@ p {
 	display: flex;
 	width: 50%;
 }
-
+@media(max-width:550px) {
+	p {
+		display:flex;
+	}
+}
 .bottom{
 	display:flex;
 	justify-content: space-around;
