@@ -1,0 +1,310 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/*fjdlsjlf*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0px;
+  padding: 0px;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+div {
+  box-sizing: border-box;
+  display: block;
+  height: 200px;
+  width: auto;
+}
+
+h1 {
+  font-size: 30px;
+  height: auto;
+  width: auto;
+  text-align: left;
+  padding-top: 80px;
+}
+
+h2 {
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background: white;
+  margin: 10px;
+  border: 1px solid black;
+  text-decoration: none;
+}
+.wrapper {
+  margin: 0 auto;
+  max-width: 1080px;
+  height: 100%;
+}
+
+.header {
+  justify-content: space-between;
+  height: auto;
+  width: auto;
+}
+
+nav,
+ul,
+a,
+li {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.navbar {
+  height: 85px;
+}
+.topnav {
+  width: auto;
+  margin-left: 0px;
+  background-color: white;
+  position: absolute;
+  top: 0;
+}
+
+.topnav a {
+  text-decoration: none;
+  color: black;
+  padding-top: 20px;
+  padding-left: 31px;
+  padding-right: 31px;
+}
+
+.topnav a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.logo {
+  padding-right: 100px;
+  width: auto;
+  background: white;
+  height: 75px;
+}
+
+.top {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.mid {
+  height: auto;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.mid div {
+  width: 40%;
+  height: 30%;
+  background-color: lightgrey;
+  border: 1px solid black;
+  margin-top: 40px;
+}
+
+.mid div p {
+  margin: 10px;
+}
+
+.mid div h2 {
+  margin-left: 10px;
+}
+
+.mid div button:hover {
+  background: yellow;
+  color: black;
+}
+
+.child-5,
+.child-6 {
+  margin-bottom: 40px;
+}
+
+.bottom {
+  height: 400px;
+}
+.bottom-content {
+  margin: 0;
+  margin-top: 7%;
+  display: inline-block;
+  height: 700px;
+  width: 100%;
+}
+
+.bottom li {
+  height: 100px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+}
+.bottom p {
+  margin: 0;
+  width: 33%;
+}
+.bottom-img {
+  height: 400px;
+  width: 400px;
+  display: inline-block;
+}
+.bottom-content img {
+  display: inline-block;
+
+  height: 400px;
+  width: 400px;
+}
+.bottom li ol {
+  padding: 20px;
+  margin-top: 10px;
+}
