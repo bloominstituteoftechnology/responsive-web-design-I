@@ -52,32 +52,22 @@ h1, h2, h3, h4, h5 {
 	justify-content: center;
 }
 @media( max-width: 800px) {
-	.cta {
-		display:flex;
-		flex-direction: column;
-		align-items: center;
+	.container {
+		width:100%;
+		margin:0 auto;
 	}
-	.cta-text {
-		widows: 50%;
-		font-size: 50px;
+	h1 {
+		font-size: 72px;
+		padding:10px;
+		text-align: center;
+	}
+	button {
 		justify-content: center;
-		padding: 65px;
-		padding-top:65px;
+		font-size: 16px;
+		margin-bottom: 70px;
 	}
-	.text {
-		display:flex;
-		justify-content: space-around;
-	}
-	.main {
-		flex-direction: column;
+	.cta {
 		align-items: center;
-	}
-	.footer {
-		display:flex;
-	}
-	.bottom {
-		display: flex;
-		flex-wrap: wrap;
 	}
 	.cheese {
 		display:none;
@@ -109,6 +99,10 @@ h1, h2, h3, h4, h5 {
 		display:flex;
 		justify-content: center;
 		padding:10px;
+	}
+	h2 {
+		width:100%;
+		justify-content:center;
 	}
 }
 
@@ -172,3 +166,5 @@ p {
 	justify-content: center;
 	padding: 10px;
 }
+
+
