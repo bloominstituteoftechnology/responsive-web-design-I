@@ -1,0 +1,288 @@
+/* Use your own code or past solution for Great Idea Web Page CSS here! */
+
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: 'Titillium Web', sans-serif;
+  line-height: 1.25;
+  margin-top: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  color: #686868;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+.parent-container {
+  width: 876px;
+  margin: 0 auto;
+}
+
+div.brand {
+  display: none;
+}
+
+.navigation {
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.navigation li {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Bangers', sans-serif;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.header-column-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 3em;
+  padding-top: 30px;
+  font-family: 'Bangers', sans-serif;
+  font-weight: bold;
+}
+
+button {
+  margin-top: 5px;
+  padding: 10px 48px;
+  border-radius: 5px;
+  font-size: 0.5em;
+  background: white;
+  cursor: pointer;
+}
+
+button:hover {
+  color: white;
+  background: black;
+  cursor: pointer;
+}
+
+.headerImage {
+  width: 250px;
+  margin: 40px;
+}
+
+.row {
+  display: flex;
+}
+
+.row1 {
+  border-top: 2px solid #000;
+}
+
+.row2 {
+  border-bottom: 2px solid #000;
+}
+
+.para {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  margin: 20px 15px 20px 0px;
+}
+
+.image {
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+.contact-area {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 0px 30px 0px;
+}
+
+.main-footer {
+  display: flex;
+  min-height: 60px;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 801px) and (max-width: 992px) {
+  .parent-container {
+    width: auto;
+    margin: 0px 20px 20px 20px;
+  }
+
+  div.brand {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0px;
+  }
+
+  .navigation li:nth-of-type(7) {
+    display: none;
+  }
+
+  header {
+    margin: 40px 0px;
+  }
+
+  .headerImage {
+    display: none;
+  }
+}
+
+/* Medium devices (tablets, 800px and down) */
+@media (max-width: 800px) {
+  .parent-container {
+    width: auto;
+    margin: 0px 20px 20px 20px;
+  }
+
+  div.brand {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0px;
+  }
+
+  .navigation li:nth-of-type(7) {
+    display: none;
+  }
+
+  header {
+    margin: 40px 0px;
+  }
+
+  .headerImage {
+    display: none;
+  }
+}
+
+/* Small devices (landscape phones, 500px and down) */
+@media all and (max-width: 500px) {
+  .parent-container {
+    width: auto;
+    margin: 0;
+  }
+
+  div.brand {
+    display: none;
+  }
+
+  .navigation {
+    flex-flow: column wrap;
+  }
+
+  .navigation a {
+    color: #000;
+    display: block;
+    padding: 1em;
+    text-align: center;
+  }
+
+  .navigation li {
+    width: 100%;
+    border-top: 1px solid #000;
+  }
+
+  .navigation li:nth-of-type(1) {
+    order: 2;
+  }
+  .navigation li:nth-of-type(2) {
+    order: 3;
+  }
+  .navigation li:nth-of-type(3) {
+    order: 4;
+  }
+  .navigation li:nth-of-type(4) {
+    order: 5;
+  }
+  .navigation li:nth-of-type(5) {
+    order: 6;
+  }
+  .navigation li:nth-of-type(6) {
+    order: 7;
+    border-bottom: 1px solid black;
+  }
+  .navigation li:nth-of-type(7) {
+    order: 1;
+    display: initial;
+    border-top: none;
+  }
+
+  header {
+    margin: 20px 0px 40px 0px;
+  }
+
+  .headerImage {
+    display: none;
+  }
+
+  .image {
+    max-width: 100% !important;
+    height: auto !important;
+    padding: 20px;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+  }
+
+  .rowLast {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .contact-area {
+    margin: 20px;
+  }
+}
+
+
+
+
+
+
+
