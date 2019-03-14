@@ -266,6 +266,7 @@ header nav {
     header .logo {
         display:flex;
         align-items: center;
+        margin-bottom: 16px;
     }
 
     .top-content .tc-text{
@@ -279,19 +280,27 @@ header nav {
     }
 
     .top-content{
-        width:100%;
+        width:95%;
         margin: 0 auto;
-        border:1px solid rebeccapurple;
+        padding-bottom: 30px;
+        border-bottom: 1px solid black;
     }
 
-    .first-sec img {
-        max-width: 100%;
+    .top-content .tc-text{
+        padding:0px;
+    }
+
+    
+    .main-content{
+        width:95%;
+        border:none;
+        padding-top:0px;
+        padding-bottom: 30px;
+        border-bottom:1px solid black;
     }
 
     .main-content .first-sec {
-        justify-content: space-around;
         flex-direction: column;
-        height: 300px;
     }
 
     .main-content .second-sec {
@@ -299,12 +308,17 @@ header nav {
         align-content: space-between;
         height: 440px;
     }
+    .main-content .second-sec .text-content {
+        width:100%;
+    }
 
     .text-content {
         margin: 0;
+        width:100%;
     }
 
     .contact {
         margin: 20px;
+        border:none;
     }
 }
