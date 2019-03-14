@@ -127,10 +127,6 @@ header nav a {
 		align-items: center;
 		justify-content: space-around;
 	}
-}
-header img logo{
-	margin-left: 20px;
-}
 
 p {
 	line-height: 1;
@@ -148,7 +144,7 @@ p {
 	justify-content: space-around;
 }
 @media(max-width:800px) {
-	.main and .bottom {
+	.main {
 		flex-direction: column;
 		align-items: center;
 	}
@@ -170,13 +166,18 @@ footer {
 	}
 }
 
-@media(max-width:800px) {
-	.butter {
-		display: none;
+@media (max-width:550px) {
+	.cheese {
+		align-content: flex-end;
 	}
 }
-@media (max-width:550px) {
-	.butter {
-		align-content: flex-end;
+@media(max-width:800px) {
+	.cheese {
+		display:none;
+	}
+}
+@media(max-width:800px) {
+	h2 {
+		font-size: 20px;
 	}
 }
