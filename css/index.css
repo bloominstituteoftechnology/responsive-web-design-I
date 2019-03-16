@@ -1,5 +1,25 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -42,11 +62,14 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 .container {
-	width:98%;
-	padding:20px 1%;
+	max-width: 900px;
 	margin:0 auto;
+	padding:20px 1.25%;
 }
-
+.main {
+	display:flex;
+	width:100%;
+}
 .cta {
 	justify-content: center;
 }
@@ -118,15 +141,13 @@ h1, h2, h3, h4, h5 {
 		flex-direction: column;
 		margin:0 auto;
 	}
-}
-	
-
+}	
 .cta-text {
 	text-align: center;
 	width: 50%;
-	font-size: 75px;
+	font-size: 90px;
+	display:inline-block;
 }
-
 .contact {
 	margin:0 auto;
 }
@@ -134,7 +155,6 @@ h1, h2, h3, h4, h5 {
 	display:flex;
 	justify-content: space-around;
 }
-
 button {
 	margin-left: 38%;
 	font-size: 20px;
@@ -142,42 +162,31 @@ button {
 	justify-content: center;
 	border: 1px solid green;
 }
-
 header {
 	display:flex;
 }
-
 header nav {
 	margin-top: 10px;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 }
-
-header img {
-	display:flex;
-	justify-content: flex-end;
+header nav img {
+	margin-left:20px;
 }
 header nav a {
 	margin: 0 27px;
 }
-
 p {
 	line-height: 1;
 	margin: 20px 0;
 	display: flex;
 	width: 50%;
 }
-
-.bottom{
-	display:flex;
-	justify-content: space-around;
-}
-
 .contact {
 	margin-left: 20px;
 }
-
 .footer {
+	text-align: center;
 	display: flex;
 	justify-content: center;
 	padding: 10px;
@@ -185,4 +194,7 @@ p {
 .main {
 	display:flex;
 }
-
+.bottom-part {
+	display: flex;
+	margin-top: 20px;
+}
