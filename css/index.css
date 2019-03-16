@@ -48,7 +48,6 @@ h1, h2, h3, h4, h5 {
 }
 
 .cta {
-	display: flex;
 	justify-content: center;
 }
 @media( max-width: 800px) {
@@ -82,8 +81,8 @@ h1, h2, h3, h4, h5 {
 	.cta {
 		align-items: center;
 	}
-	.cheese {
-		display:none;
+	.img {
+		display: none;
 	}
 }
 @media(max-width:550px) {
@@ -93,7 +92,6 @@ h1, h2, h3, h4, h5 {
 	}
 	header nav a:nth-child(1) {
 		border-top: 1px solid black;
-	}
 	}
 	nav a {
 		padding:17px;
@@ -120,15 +118,17 @@ h1, h2, h3, h4, h5 {
 		flex-direction: column;
 		margin:0 auto;
 	}
+}
 	
 
 .cta-text {
+	text-align: center;
 	width: 50%;
 	font-size: 75px;
 }
 
 .contact {
-	margin: auto;
+	margin:0 auto;
 }
 .text {
 	display:flex;
