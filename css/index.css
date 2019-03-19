@@ -66,9 +66,6 @@ h1, h2, h3, h4, h5 {
 	margin:0 auto;
 	padding:20px 1.25%;
 }
-h2 {
-	display:flex;
-}
 .main {
 	display:flex;
 	width:100%;
@@ -137,13 +134,17 @@ p {
 	margin-top: 20px;
 }
 @media( max-width: 800px) {
-	header img {
-	}
 	nav {
 		width:100%;
-
 		justify-content: space-between;
 		margin:0 auto;
+	}
+	.main {
+		margin-top: 25px;
+		margin-bottom:25px;
+	}
+	.bottom {
+		margin-top: 25px;
 	}
 	.container {
 		width:100%;
@@ -168,6 +169,10 @@ p {
 	}
 	.cta {
 		align-items: center;
+	}
+	.cta-text {
+		text-align: center;
+		width:100%''
 	}
 	.code {
 		display: none;
