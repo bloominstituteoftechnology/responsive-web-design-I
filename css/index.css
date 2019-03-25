@@ -1,3 +1,517 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/*fjdlsjlf*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0px;
+  padding: 0px;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
 
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
 
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+body {
+  height: 100%;
+  width: 100%;
+}
+
+div {
+  box-sizing: border-box;
+  display: block;
+  height: 200px;
+  width: auto;
+}
+
+h1 {
+  font-size: 60px;
+  height: auto;
+  width: auto;
+  text-align: center;
+  padding-top: 80px;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1080px;
+  height: 100%;
+}
+
+nav,
+ul,
+a,
+li {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+.top {
+  height: 500px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.top .combo {
+  width: 300px;
+  height: auto;
+  display: flex;
+  flex-flow: column;
+  align-content: center;
+}
+
+.top .circlecode {
+  height: 400px;
+  width: inherit;
+  display: flex;
+  justify-content: flex-end;
+}
+
+body .bottom {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  height: 650px;
+  width: auto;
+}
+
+.logo {
+  margin-top: 30px;
+  width: 200px;
+  display: flex;
+  justify-content: flex-end;
+  width: auto;
+  background: white;
+  height: 50px;
+}
+
+.topnav {
+  padding: 20px;
+  margin-left: 0px;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  width: 800px;
+}
+
+.topnav a {
+  text-decoration: none;
+  color: black;
+  padding: 20px;
+  margin-left: 20px;
+}
+
+.topnav a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.pressme button {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border: 1px solid black;
+  height: auto;
+  width: auto;
+  padding: 20px;
+  padding-left: 60px;
+  padding-right: 60px;
+  margin-left: 15%;
+  margin-top: 25%;
+}
+
+.pressme button a {
+  text-decoration: none;
+}
+
+.pressme button:hover {
+  background-color: lightgrey;
+  opacity: 1;
+}
+
+.topbottom {
+  height: 150px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.features {
+  width: 45%;
+  height: 50%;
+  margin-top: 30px;
+}
+
+.about {
+  width: 45%;
+  height: 50%;
+  margin-top: 30px;
+}
+
+.bottombottom {
+  height: 225px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.middle-img {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 20px;
+  margin-top: 15px;
+}
+
+.services {
+  padding: 20px;
+  width: 33%;
+}
+
+.product {
+  padding: 20px;
+  width: 33%;
+}
+
+.vision {
+  padding: 20px;
+  width: 33%;
+}
+
+.footer {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 25%;
+  margin-right: 100%;
+}
+
+.Copyright {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .wrapper {
+    height: 100%;
+    width: 100%;
+  }
+
+  .navbar {
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 150px;
+  }
+
+  .navbar .topnav {
+    margin-top: 100px;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    align-self: flex-end;
+  }
+
+  .circlecode {
+    display: none;
+  }
+
+  .circlecode img {
+    display: none;
+  }
+
+  .top {
+    display: flex;
+    justify-content: center;
+  }
+
+  body .bottom {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    height: 700px;
+    width: auto;
+  }
+
+  .topbottom {
+    height: 175px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .footer p {
+    display: flex;
+    align-items: flex-end;
+  }
+}
+
+@media (max-width: 500px) {
+  .navbar {
+    width: 100%;
+  }
+
+  .wrapper {
+    height: 100%;
+    width: 100%;
+  }
+
+  .navbar .topnav ul {
+    margin-top: 10px;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navbar .topnav ul li {
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+  }
+
+  .navbar .topnav ul li a {
+    width: 100%;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .top {
+    margin-top: 175px;
+  }
+
+  .bottom {
+    height: 1400px;
+    display: flex;
+    flex-direction: column;
+  }
+  body .bottom {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    height: 1400px;
+    width: auto;
+  }
+  body .bottom .topbottom {
+    padding-top: 100px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .features {
+    padding: 20px;
+    width: 85%;
+    height: 100px;
+    margin-top: 180px;
+  }
+
+  .about {
+    padding: 20px;
+    width: 85%;
+    height: 100px;
+    margin-top: 100px;
+  }
+
+  .bottombottom {
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+  }
+
+  .middle-img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 100px;
+    margin-top: 280px;
+  }
+
+  .services {
+    padding-top: 100px;
+    margin-top: 250px;
+    width: 85%;
+    height: 100px;
+  }
+
+  .product {
+    padding-top: 100px;
+    width: 85%;
+    height: 100px;
+    margin-top: 100px;
+  }
+
+  .vision {
+    padding-top: 100px;
+    width: 85%;
+    height: 100px;
+    margin-top: 80px;
+  }
+  .footer {
+    padding-top: 100px;
+    margin-top: 650px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 25%;
+    margin-right: 100%;
+  }
+
+  .Copyright {
+    padding-top: 200px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+}
