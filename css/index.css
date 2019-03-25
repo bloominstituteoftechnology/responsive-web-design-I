@@ -1,3 +1,498 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.container {
+  max-width: 880px;
+  /* TB LR */
+  margin: 0 auto;
+
+}
+
+/* header */
+header {
+  display:flex;
+}
+
+header nav {
+  display:flex;
+  justify-content: space-between;
+  width: 550px;
+  vertical-align: top;
+  margin-top: 35px;
+}
+
+header nav a {
+  font-size:20px;
+  color: gray;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+header nav a:first-child {
+  margin-left: 0;
+}
+
+header nav a:last-child {
+  margin-right: 0;
+}
+
+header .logo {
+  margin-top: 25px;
+  margin-left: 20%;
+  /* added margin left to adjust the logo away from the nav*/
+}
+
+/* cta */
+.cta {
+    display: flex;
+}
+ 
+ .cta h1 {
+  font-size: 77px;
+  margin-top: 1px;
+  text-align: center;
+  padding: 0px 75px;
+  margin-top: 50px;
+ }
+
+
+
+.cta .cta-text button {
+  background: white;
+  padding: 10px 44px;
+  font-size: 17px;
+  border: 1px solid black;
+  cursor: pointer;
+  display: block;
+  margin-left: 30%;
+  
+
+}
+
+
+.cta .cta-text button:hover {
+  background: black;
+  color: white;
+}
+
+.cta img {
+  display: flex;
+  margin-top: 69px;
+}
+
+.main-content {
+  border-top: 1px solid black;
+  margin-top: 76px;
+  padding-top: 39px;
+  
+}
+
+.main-content .top-content {
+  padding: 0 10px;
+}
+
+.top-content {
+	display: flex;
+}
+
+.main-content .top-content .text-content {
+  width: 410px;
+  margin-right: 34px;
+}
+
+.main-content .top-content .text-content:last-child {
+  margin-right: 0;
+}
+
+.main-content .middle-img {
+    max-width: 100%;
+    margin: 20px 0;
+}
+.main-content .bottom-content {
+  margin-top: 37px;
+  padding: 0 10px;
+}
+
+.bottom-content{
+	display: flex;
+}
+
+.main-content .bottom-content .text-content {
+  width: 275px;
+  margin-right: 12px;
+}
+
+.main-content .bottom-content .text-content:last-child {
+  margin-right: 0;
+}
+
+.contact {
+  margin-top: 57px;
+  border-top: 1px solid black;
+  padding: 39px 10px 0;
+}
+
+.contact p {
+  margin: 20px 0;
+}
+
+footer {
+  margin: 32px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+/*Services hmtl*/
+
+.services-header-img {
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+h1 {
+	font-size: 25px;
+}
+
+
+.first-section {
+  margin-bottom: 20px;
+}
+
+.first-section .first-content {
+  margin: 10px;
+}
+
+.main-services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.main-services .service-section{
+  justify-content: space-between;
+  border: 2px solid black;
+  background: lightgrey;
+  margin: 5px;
+  width: 45%;
+  padding: 15px;
+  margin-bottom: 30px;
+  margin-top: 25px;
+  
+}
+
+.service-section button {
+    background: white;
+    margin: 20px;
+    padding: 8px 30px;
+    font-size: 13px;
+    border: 1px solid black;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .bottom-section {
+    display: flex;
+    margin-top: 30px;
+  }
+
+  .info {
+    margin: 20px;
+  }
+
+  .info .list-items {
+    padding: 20px;
+  }
+
+  .info .list-items li {
+    padding: 10px;
+  }
+
+  footer {
+    margin-top: 50px;
+  }
+
+  @media(max-width: 800px){
+        .container {
+            max-width: 800px;
+        }
+
+        header {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+
+        header a {
+            width: 25%;
+        }
+
+        header .logo {
+            margin: 0 auto;
+        }
+
+        a .logo {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .cta {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            padding-bottom: 6%;
+            justify-content: space-around;
+        }
+
+        .cta .cta-text {
+        display: flex;
+		flex-direction: column;
+		align-content: center;
+        padding:0;
+        }
+
+        .cta-text button {
+        max-width: 50%;
+        margin: 0 auto;
+        }
+
+        .cta img {
+            display: none;
+    }
+
+    .main-content  {
+        display: flex;
+        flex-direction: column;
+        
+     }
+
+     .main-content .middle-img {
+         width: 100%;
+         
+     }
+
+        .top-content {
+            flex-direction: wrap;
+            display: flex;
+        
+        }
+
+        
+  }
+
+  @media(max-width: 500px){
+      .container {
+          max-width: 500px;
+          margin: 0;
+      }
+
+      header{
+          display: flex;
+          flex-direction: column-reverse;
+      }
+
+      header a {
+          width: 40%;
+          margin: 0 auto;
+          margin-bottom: 5%;
+      }
+
+      header .logo {
+          align-items: center;
+          width: 60%;
+          padding: 0 auto;
+          margin-top: 5%;
+          margin-bottom: 5%
+      }
+
+      nav {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+      }
+       nav a {
+        width:100%;
+		text-align: center;
+		border-top:1px solid gray;
+		border-bottom: 1px solid black;
+		margin:0;
+		padding:3%;
+		font-size:22px;
+       }
+
+       .cta {
+           width: 100%;
+           display: flex;
+           flex-wrap: wrap;
+           padding-bottom: 6%;
+           justify-content: space-around;
+
+       }
+       
+    .cta .cta-text {
+        display: flex;
+		flex-direction: column;
+		align-content: center;
+        
+    }
+
+    .cta-text button{
+        max-width: 50%;
+        margin: 0 auto;
+
+    }
+
+    .cta img {
+        display: none;
+
+    }
+
+    .top-content{
+        width: 100%;
+        flex-direction: column;
+        display: flex;
+        margin: 5%;
+    }
+
+    .main-content .middle-img {
+        width: 100%;
+    }
+
+    .bottom-content {
+        width: 100%;
+        flex-direction: column;
+        display: flex;
+        margin: 5%;
+    }
+    .text-content {
+        padding: 5%;
+    }
+  }
