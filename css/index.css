@@ -256,7 +256,6 @@ footer {
     }
 
     header {
-        display:flex;
         flex-direction: column-reverse;
     }
     
@@ -303,17 +302,41 @@ footer {
     header nav{
         display:flex;
         flex-direction:column;
-         
+        justify-content:center; 
     }
 
     header nav a {
         border-bottom:1px solid gray;
         border-top: 1px solid gray;
-        padding:20px;
+        padding:20px 140px;;
     }
 
     header .logo {
         margin:0;
         padding:0;
+    }
+
+    .cta {
+        margin-left:100px;
+    }
+    .main-content {
+        flex-direction:column;
+    }
+
+    .main-content .top-content {
+        flex-direction:column;
+    }
+
+    .main-content .top-content .text-content {
+        padding:20px 0;
+    }
+
+    .main-content .bottom-content {
+        flex-direction:column; 
+    }
+
+    .main-content .bottom-content .text-content {
+        margin-bottom:10px;
+        padding: 10px 0; 
     }
 }
