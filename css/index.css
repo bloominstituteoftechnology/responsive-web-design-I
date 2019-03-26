@@ -61,9 +61,12 @@ h1, h2, h3, h4, h5 {
 
 /* Your code starts here! */
 
+html {
+  font-size: 62.5%;
+}
 nav {
-	margin-top: 15px;
-	margin-left: 20px;
+	margin-top: 0;
+	margin-left: 5%;
 	margin-right: 0;
 }
 
@@ -71,6 +74,7 @@ nav a {
 	margin: 25px;
 	text-decoration: none;
 	color: gray;
+  font-size: 1.6rem;
 }
 
 a:hover {
@@ -79,10 +83,11 @@ a:hover {
 
 p {
 	line-height: 1;
+  font-size: 1.6rem;
 }
 
 h1 {
-	font-size: 80px;
+	font-size: 8rem;
 	text-align: center;
 }
 
@@ -91,8 +96,9 @@ h1 {
 }
 
 .logo {
-	margin-left: 700px;
-	margin-bottom: -40px;
+	margin-left: 85%;
+  margin-top: 20px;
+  margin-bottom: -25px;
 }
 
 .container {
@@ -170,6 +176,39 @@ button {
 	text-align: center;
 }
 
+@media (max-width: 800px) {
+  .container {
+    max-width: 800px;
+    width: 100%;
+  }
+
+  .logo {
+    margin: auto;
+    margin-left: 40%;
+  }
+  .header-image {
+    display: none;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+  }
+  .innovation-button {
+    margin-left: 70%;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  button {
+    margin-left: -5%;
+  }
+
+
+}
+
+
 @media (max-width: 500px) {
   .container {
     max-width: 500px;
@@ -177,9 +216,7 @@ button {
   }
 
   .logo {
-    margin-left: -100;
-    border-bottom: 1px solid black;
-    padding: 30px;
+    margin-left: 30%;
   }
 
   nav {
@@ -192,11 +229,14 @@ button {
 
   nav a {
     border-bottom: 1px solid gray;
-    font-size: 30px;
+    font-size: 3rem;
     padding: 10px 20%;
 
   }
 
+  .innovation-button {
+    margin-left: 0 auto;
+  }
 
   .mid-top {
     flex-direction: column;
@@ -241,31 +281,4 @@ button {
     margin-left: -150px;
   }
 
-}
-
-@media (max-width: 800px) {
-  .logo {
-    margin: auto;
-    margin-left: 300px;
-  }
-  .header-image {
-    display: none;
-  }
-  nav {
-    display: flex;
-    justify-content: center;
-  }
-  .innovation-button {
-    margin-left: 240px;
-  }
-  .on {
-    margin-left: 90px;
-  }
-  button {
-    margin-left: -5px;
-  }
-  .container {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
 }
