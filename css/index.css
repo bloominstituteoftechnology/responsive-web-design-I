@@ -63,127 +63,277 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* Your code starts here! */
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 
-.container{
-    max-width: 1000px;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto ; 
+.services-header-img{
+	margin: 20px 100px 20px 100px;
+	width: 900px;
+}
+.services-info-img{
+	padding: 0px;
+	margin: 0px;
+	border: 1px solid black ;
+}
+.Services{
+ width: 900px;
+ margin: 20px 100px 20px 100px;
 }
 
-nav a{
-	text-decoration-line: none;
-	color :grey;
-	padding : 5px ;
-	margin: 10px 15px 10px 10px;
+.one{
+	width: 900px;
+	height: 1000px;
+	margin: 20px 100px 20px 100px;
+	display:flex;
+	flex-wrap: wrap;
+	border: 2px solid black;
+	justify-content: space-between;
+	align-items: center;
+	border-left: 0px;
+	border-right: 0px;
 }
-h2{
-	text-align: center;
-	margin: 10px;
-	padding: 10px;
 
+.two{
+	background-color: #e6e6e6;
+	margin: 0px;
+	padding: 15px;
+	border: 1px solid black ;
+	width: 400px;
+	height: 225px;
+	
+}
+
+a{
+	text-decoration: none;
+	color: grey ;
+	justify-content: space-between;
+}
+
+
+.learn{
+	margin :50px 10px 10px 10px;
+	padding: 20px 10px 10px 10px;
+	height: 100px;
 	width: 100px;
-}
-header{
-	width: 875px;
-	margin: 40px 35px 10px 10px;
-	padding : 10px;
-}
-.logo{
-	position: relative;
-	top: -30px;
-	left: 650px;
+	border: 1px solid black ;
 }
 
-.im{
-	height: 400px;
-}
-
-h1{
-	font-size: 90px;
-    text-align: center;
-    
-	margin: 0px 0px 0px 40px;
-	width: 350px;
-	text-align: center;
-	height: 300px;
-}
-
-.getting{
-	border: 1px solid black;
-	width: 200px;
-	margin: 10px 10px 10px 110px;
-}
-.code{
-	position: relative;
-	top: -400px;
-	left: 500px;
-	padding:30px ;
-
-}
-
-.two {
-	box-sizing: border-box;
-	display: inline-block;
-	border: 1px solid black;
-	border-width: 1px 0px 0px 0px;
-	margin: 10px 10px 10px 50px;
-	padding: 20px;
-	height: 160px;
-
-}
-
-.twoa{
-	padding: 2px;
-	width: 45%;
-	margin : 0 auto;
-	display: inline-block;
-}
-
-.h2h{
-	text-align: left;
-	margin: 0px 0px 0px 0px;
-	padding: 10px 0px 10px 0px;
-}
-.middle-img{
-	margin: 10px 10px 10px 50px;
-}
-
-.threea{
-	width: 875px;
-	box-sizing: border-box;
-    display: flex;
-	border: 0px solid black;
-	padding: 20px;
-	margin: 10px 10px 10px 50px;
-	border-width: 0px 0px 1px 0px;
-	height: 300px;
-}
-.threeb{
-	padding: 5px;
-	width: 33%;
-	margin: 0 auto;
-
-}
-address{
-	padding: 20px;
-	margin: 100px 50px 50px 10px;
-	width: 200px;
-	height: 200px;
-}
 .copy{
-	width: 875px;
 	text-align: center;
-}
-.con{
-	text-align: left;
-}
-.space{
-	padding: 5px;
+	width: 1000px;
 }
 
+.top{
+display: flex;
+width: 1000px;
+margin: 20px 100px 20px 100px;
+}
+
+.logo{
+	margin-left:0PX ;
+}
+nav{
+	width: 660px;
+	margin: 20px 50px 20px 0px;
+}
+
+.bot{
+	display: flex ;
+	width: 900px;
+	margin: 20px 100px 20px 100px;
+}
+
+.bot-box{
+	padding:  20px;
+}
+.b{
+	background-color: white ;
+	border: 1px solid black ;
+	margin: 20px 0px ;
+	border-radius: 5px;
+	height : 40px;
+	width : 150px;
+	font-size: 20px; 
+}
+ul{
+	padding: 20px;
+	line-height: 2;
+	list-style-type: circle;
+}
+
+/*index.html css */
+
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.container {
+  width: 880px;
+  /* TB LR */
+  margin: 0 auto;
+}
+
+/* header */
+header{
+	display:flex;
+}
+header nav {
+	/* inline was here*/
+	
+  width: 691px;
+  vertical-align: top;
+  margin-top: 35px;
+}
+
+header nav a {
+  margin-right: 65px;
+  font-size: 14px;
+  color: gray;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+header nav a:first-child {
+  margin-left: 0;
+}
+
+header nav a:last-child {
+  margin-right: 0;
+}
+
+header .logo {
+  margin-top: 25px;
+}
+
+/* cta */
+.cta{
+	display:flex;
+}
+.cta .cta-text {
+  vertical-align: top;
+  font-size: 77px;
+  margin-top: 120px;
+  text-align: center;
+  padding: 0px 75px;
+}
+
+.cta .cta-text button {
+  background: white;
+  vertical-align: top;
+  margin-top: 6px;
+  padding: 8px 44px;
+  font-size: 17px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.cta .cta-text button:hover {
+  background: black;
+  color: white;
+}
+
+.cta img {
+	/* inline was here*/
+  margin-top: 69px;
+}
+
+.main-content {
+  border-top: 1px solid black;
+  margin-top: 76px;
+  padding-top: 39px;
+}
+
+.main-content .top-content {
+  padding: 0 10px;
+}
+.top-content{
+	display: flex;
+}
+.main-content .top-content .text-content {
+  width: 410px;
+	/* inline was here*/
+  margin-right: 34px;
+}
+
+.main-content .top-content .text-content:last-child {
+  margin-right: 0;
+}
+
+.main-content .middle-img {
+  margin-top: 45px;
+}
+
+.main-content .bottom-content {
+  margin-top: 37px;
+  padding: 0 10px;
+}
+.bottom-content{
+	display:flex;
+}
+.main-content .bottom-content .text-content {
+  width: 275px;
+	/* inline was here*/
+  margin-right: 12px;
+}
+
+.main-content .bottom-content .text-content:last-child {
+  margin-right: 0;
+}
+
+.contact {
+  margin-top: 57px;
+  border-top: 1px solid black;
+  padding: 39px 10px 0;
+}
+
+.contact p {
+  margin: 20px 0;
+}
+
+footer {
+  margin: 32px 0;
+  text-align: center;
+  font-size: 14px;
+}
 
 @media(max-width: 800px){
 
@@ -194,22 +344,28 @@ address{
     .code{
         display: none;
     }
-    h1{
-        margin: 0px 0px 0px 260px;
-    
-        padding: 0px 0px 0px 0px;
-    }
+
     .im{
         margin: 100 auto;
-        
+
     }
+    h1{
+        margin: 0px 0px 0px 200px;
+    }
+    
+    .getting{
+
+        margin: 10px 10px 10px 260px;
+        padding: 10px 30px 10px 60px;
+    }
+
 }
 
 @media(max-width: 500px){
     .container{
         background: lightblue;
     }
-    nav{
-        display: block;
-    }
+
+    
+
 }
