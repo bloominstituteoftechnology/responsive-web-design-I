@@ -66,101 +66,6 @@ h1, h2, h3, h4, h5 {
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 
-.services-header-img{
-	margin: 20px 100px 20px 100px;
-	width: 900px;
-}
-.services-info-img{
-	padding: 0px;
-	margin: 0px;
-	border: 1px solid black ;
-}
-.Services{
- width: 900px;
- margin: 20px 100px 20px 100px;
-}
-
-.one{
-	width: 900px;
-	height: 1000px;
-	margin: 20px 100px 20px 100px;
-	display:flex;
-	flex-wrap: wrap;
-	border: 2px solid black;
-	justify-content: space-between;
-	align-items: center;
-	border-left: 0px;
-	border-right: 0px;
-}
-
-.two{
-	background-color: #e6e6e6;
-	margin: 0px;
-	padding: 15px;
-	border: 1px solid black ;
-	width: 400px;
-	height: 225px;
-	
-}
-
-a{
-	text-decoration: none;
-	color: grey ;
-	justify-content: space-between;
-}
-
-
-.learn{
-	margin :50px 10px 10px 10px;
-	padding: 20px 10px 10px 10px;
-	height: 100px;
-	width: 100px;
-	border: 1px solid black ;
-}
-
-.copy{
-	text-align: center;
-	width: 1000px;
-}
-
-.top{
-display: flex;
-width: 1000px;
-margin: 20px 100px 20px 100px;
-}
-
-.logo{
-	margin-left:0PX ;
-}
-nav{
-	width: 660px;
-	margin: 20px 50px 20px 0px;
-}
-
-.bot{
-	display: flex ;
-	width: 900px;
-	margin: 20px 100px 20px 100px;
-}
-
-.bot-box{
-	padding:  20px;
-}
-.b{
-	background-color: white ;
-	border: 1px solid black ;
-	margin: 20px 0px ;
-	border-radius: 5px;
-	height : 40px;
-	width : 150px;
-	font-size: 20px; 
-}
-ul{
-	padding: 20px;
-	line-height: 2;
-	list-style-type: circle;
-}
-
 /*index.html css */
 
 
@@ -204,7 +109,8 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-  width: 880px;
+	max-width: 880px; 
+  width: 100%;
   /* TB LR */
   margin: 0 auto;
 }
@@ -216,7 +122,7 @@ header{
 header nav {
 	/* inline was here*/
 	
-  width: 691px;
+  width:100%;
   vertical-align: top;
   margin-top: 35px;
 }
@@ -247,6 +153,7 @@ header .logo {
 /* cta */
 .cta{
 	display:flex;
+	
 }
 .cta .cta-text {
   vertical-align: top;
@@ -328,36 +235,64 @@ header .logo {
 .contact p {
   margin: 20px 0;
 }
+.middle-img{
+	width: 100%;
+	height: auto;
+}
 
 footer {
   margin: 32px 0;
   text-align: center;
   font-size: 14px;
 }
-
 @media(max-width: 800px){
 
     .container{
         background: lightgrey;
-     
+		
     }
     .code{
         display: none;
-    }
-
-    .im{
-        margin: 100 auto;
-
-    }
-    h1{
-        margin: 0px 0px 0px 200px;
-    }
+	}
+	
+	.cta-text{
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+		margin: 20px 15%;
+	}
+	
+	.logo{
+		margin: 0px 0px 0px 40%;
+		width: 183px;
+	}
+	header{
+		display: flex;
+		flex-direction: column-reverse;
+		height: auto;
+	}
+	nav{
+		display: flex;
+		flex-direction: row;
+		margin: 0px 5%;
+		padding: 0px 5%;
+		flex-wrap: wrap;
+	}
+	a{
+		padding-top: 10px;
+		text-size-adjust: 30px;
+	}
     
     .getting{
 
         margin: 10px 10px 10px 260px;
         padding: 10px 30px 10px 60px;
-    }
+	}
+	
+	.cta{
+		display: flex;
+		align-content: center;
+	}
 
 }
 
@@ -365,7 +300,43 @@ footer {
     .container{
         background: lightblue;
     }
+	.code{
+        display: none;
+    }
+	.cta-text{
+		margin-left:  30%;
+	}
+	.logo{
+		margin: 0px 0px 0px 34%;
+		width: 183px;
+	}
+	header{
+		display: flex;
+		flex-direction: column-reverse;
+		height: auto;
 
+	}
+	nav{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin: 0px 25%;
+	}
+	a{
+		padding: 10px 0px 10px 65px;
+		border: 1px solid grey;
+		border-right: 0px;
+		border-left: 0px;
+		font-size: 150px;
+		width: 200px;
+	}
+    
+
+	.main-content{
+		width: 100%;
+		height: auto;
+	
+	}
     
 
 }
