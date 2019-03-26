@@ -64,44 +64,9 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-    max-width: 900px;
+    max-width: 880px;
     margin: 0 auto;
 }
-
-@media(max-width: 800px) {
-    .container {
-      background: slategray;
-    }
-
-    .planet {
-        display: none;
-    }
-    
-    .middle-img {
-        width: 100%;
-        height: auto;
-    }
-
-    .main-content {
-      flex-direction: column;
-    }
-  
-    .main-content section {
-      margin: 20px 5%;
-      width: 90%;
-    }
-  }
-  
-  /* Phone max width */
-  @media(max-width: 500px) {
-    .container {
-      background: powderblue;
-    }
-
-    .main-content {
-        flex-direction: column;
-    }
-  }
 
 /* Header Styles */
 
@@ -147,7 +112,7 @@ header .logo {
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    margin: 0 82px 0 0;
+    margin: 0 80px 0 0;
 }
 
 .cta .cta-text button {
@@ -225,9 +190,9 @@ footer {
 }
 
 .services-content .services-text {
- border-bottom: 1px solid black;
- padding-bottom: 40px;
- margin-bottom: 20px
+    border-bottom: 1px solid black;
+    padding-bottom: 40px;
+    margin-bottom: 20px
 }
 
 .services-content .card {
@@ -282,3 +247,104 @@ footer {
   width: 420px;
   height: 300px;
 }
+
+@media(max-width: 800px) {
+    .container {
+      background: slategray;
+    }
+
+    .cta .cta-text {
+        display: flex;
+    }
+
+    .text-content {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .planet {
+        display: none;
+    }
+    
+    .middle-img {
+        width: 100%;
+        height: auto;
+        display: flex;
+    }
+
+    header nav {
+        display: flex;
+        justify-content: space-around;
+        border: 2px solid grey;
+    }
+
+    header nav a {
+        display: flex;
+        align-content: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .main-content {
+      flex-direction: column;
+    }
+
+    .main-content section {
+      margin: 20px 5%;
+      width: 90%;
+    }
+  }
+  
+  /* Phone max width */
+  @media(max-width: 500px) {
+    .container {
+      background: powderblue;
+    }
+
+    .logo {
+        width: 50%;
+        height: auto;
+        justify-content: center;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    header nav a {
+        /*border: 1px solid green;*/
+        align-items: center;
+    }
+
+    .main-content {
+        flex-direction: column;
+    }
+
+    .top-content {
+        flex-direction: column;
+        margin: 20px 5%;
+        width: 90%;
+    }
+
+    .bottom-content {
+        flex-direction: column;
+        margin: 20px 5%;
+        width: 90%;
+    }
+
+    .top-content .text-content {
+        padding-bottom: 12px;
+    }
+
+    .bottom-content .text-content {
+        padding-bottom: 12px;
+    }
+  }
