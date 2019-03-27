@@ -64,11 +64,31 @@ body {
   margin: 0px auto;
   padding: 0px;
 }
+ 
+/* edited code  */
 .container {
   width: 100%;
   display: flex;
   flex-direction: column;
 }
+
+/* tablet */
+@media (max-width: 800px) {
+    .container {
+        /* width: 100%; */
+        background:  #40ff00; 
+    }
+}
+
+/* phone */
+@media (max-width: 515px) {
+    .container {
+        /* width: 100%; */
+        background:  #4d004d; 
+    }
+}
+
+
 
 .container header{
   display:flex;
