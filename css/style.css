@@ -1,0 +1,181 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.cntnr {
+	max-width: 875px;
+	margin: 0 auto;
+	/* border: 2px solid green; */
+}
+
+nav{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: space-around;
+		align-items: center;
+		align-content: stretch;
+	}
+
+	nav a {
+	text-decoration: none;
+	color:grey;
+}
+	.tp-lg {
+		  border-bottom: 2px solid black;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			justify-content: space-around;
+			align-items: center;
+			align-content: center;
+			margin: 4rem 0 2rem 0;
+			padding-bottom: 2rem;			
+		}
+		.slogan{
+			width: 50%;
+		}
+.lg-txt {
+	font-size: 4.75rem;
+	text-align: center;
+	margin-top: -2rem;
+	
+}
+button {
+	margin-left: 10.0rem;
+	padding: .5rem 4rem;
+	background: white;
+	border: 1px solid black
+}
+.accent{
+	margin: 2rem auto;
+}
+.mn-cntnt{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: flex-start;
+	align-content: baseline;
+	/* border-bottom: 1px solid black;
+	margin: 1rem; */
+}
+.tp{
+	width: 50%;
+	padding: 0;
+	margin: 0;
+}
+.mn-cntnt .bttm{
+	width: 33%;
+}
+.cntct-inf{
+	border-top: 2px solid black;
+	margin: 2rem 0 2rem 0;
+	padding: 2rem 0;
+}
+footer{
+	text-align: center;
+}
+#logo{
+	display: none;
+}
+@media (max-width: 800px){
+	.cntnr {max-width: 700px;
+			/* background-color: red; */
+	}
+	#globe{
+		display: none;
+	}
+	.accent{
+		max-width: 100%;
+	}
+	button {
+		/* overflow: hidden; */
+		display: flex;
+		white-space: nowrap;
+		justify-content: center;
+		align-content: center;
+		margin: 0 auto;
+	}
+	
+	nav a{
+			display: inline-flex;
+			/* margin: 0 1% 0 10%; */
+			justify-content: space-between;
+			align-content: center;
+			
+
+		}
+		#logo{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			 margin: 0 auto;
+			margin-bottom: 1rem;}
+			 
+					#logo1{
+			display: none;
+			/* margin: 0 auto; */
+		}
+} 
