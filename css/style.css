@@ -103,7 +103,8 @@ nav{
 	
 }
 button {
-	margin-left: 10.0rem;
+	display: flex;
+	margin: 0 auto;
 	padding: .5rem 4rem;
 	background: white;
 	border: 1px solid black
@@ -179,3 +180,74 @@ footer{
 			/* margin: 0 auto; */
 		}
 } 
+@media (max-width: 500px){
+	.cntnr {max-width: 450px;
+			/* background-color: red; */
+	}
+	#globe{
+		display: none;
+	}
+	.accent{
+		max-width: 100%;
+	}
+	.slogan{
+		text-align: center;
+	}
+	button {
+		/* overflow: hidden; */
+		display: flex;
+		white-space: nowrap;
+		justify-content: center;
+		align-content: center;
+		margin: 0 auto;
+	}
+	
+	nav, a{
+			display: flex;
+			flex-wrap: wrap;
+			margin-top: 4%;
+			flex-direction: column;
+			border-top: 1px solid black;
+			width:100%;
+			padding-top: 4%;
+			/* justify-content: center; */
+			/* align-content: center; */
+			/* text-align: center; */
+	}
+.mn-cntnt{
+				display: inline-flex;
+				flex-direction: column;
+				flex-wrap: nowrap;
+				width: 100%
+				/* justify-content: space-around; */
+				/* align-items: flex-start; */
+				/* align-content: baseline; */
+				/* border-bottom: 1px solid black;
+				margin: 1rem; */
+			}
+			.tp{
+				width: 100%;
+				padding: 0;
+				margin-top: 2rem;
+			}
+			.mn-cntnt .bttm{
+				width: 100%;
+				margin-top: 2rem;
+			}
+
+		}
+		nav{
+			border: none;
+		}
+				#logo{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			 margin: 0 auto;
+			margin-bottom: 1rem;}
+			 
+					#logo1{
+			display: none;
+			/* margin: 0 auto; */
+		}
+}
