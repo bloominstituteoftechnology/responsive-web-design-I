@@ -69,20 +69,21 @@ body {
 .container {
   width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
 }
 
 /* tablet */
 @media (max-width: 800px) {
     .container {
         background:  #40ff00; 
+
     }
 }
 
 /* phone */
 @media (max-width: 515px) {
     .container {
-        background:  #4d004d; 
+        background:  #4d004d;  
     }
 }
 
@@ -100,24 +101,29 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 70px; 
+  line-height: 70px; 
 }
 
 .container header nav a {
   color: gray;
   text-decoration: none;
+  margin: 0 10px; 
+  line-height: 70px;
 }
 
 @media only screen and (max-width: 515px) {
   
     .container header nav {
+        display: block;
         text-align: center; 
         width: 100%; 
-        border: 1px solid red;
+        border-bottom: 1px solid red;
     }
     .container header nav a {
         display: block; 
         border-bottom: 1px solid blueviolet; 
-        margin: 0; 
+        margin: 0 auto; 
     }
 }
 
@@ -128,6 +134,17 @@ body {
 .container header img {
   width: auto;
   margin-right: 0px;
+  display: block; 
+}
+
+@media only screen and (max-width: 515px) {
+    .container header img {
+        display: block; 
+        text-align: center;  
+        position: relative;
+        right: 200px;
+        bottom: 50px;  
+    }
 }
 
 .container .cta {
@@ -155,9 +172,7 @@ body {
   justify-content: center;
 }
 
-/* phone */
-
-@media (max-width: 515px) {
+@media only screen and (max-width: 515px) {
     .cta .code-snippet {
         display: none; 
     }
@@ -181,7 +196,16 @@ body {
   width: 100%;
   display:flex;
   justify-content: space-between;
-  margin: 30px auto;
+  /* margin: 30px auto; */
+}
+
+@media only screen and (max-width: 515px) {
+    .container .main-content .top-content {
+        display: flex;
+        flex-direction: column; 
+        align-content: flex-start; 
+        margin-left: 100px; 
+    }
 }
 
 .container .main-content .top-content .text-content {
@@ -206,11 +230,26 @@ body {
 
 }
 
+@media only screen and (max-width: 515px) {
+    .container .main-content .bottom-content {
+        display: 
+    }
+}
+
 .container .main-content .bottom-content .text-content {
   display:flex;
   flex-direction: column;
   width: 30%;
   line-height: 1.5;
+}
+
+@media only screen and (max-width: 515px) {
+    .container .main-content .bottom-content .text-content {
+        display: flex;
+        flex-direction: 
+        border: 2px solid yellow;
+        background: teal; 
+    }
 }
 
 .container .contact {
