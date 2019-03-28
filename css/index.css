@@ -75,7 +75,6 @@ body {
 /* tablet */
 @media (max-width: 800px) {
     .container {
-        /* width: 100%; */
         background:  #40ff00; 
     }
 }
@@ -83,11 +82,9 @@ body {
 /* phone */
 @media (max-width: 515px) {
     .container {
-        /* width: 100%; */
         background:  #4d004d; 
     }
 }
-
 
 
 .container header{
@@ -108,6 +105,20 @@ body {
 .container header nav a {
   color: gray;
   text-decoration: none;
+}
+
+@media only screen and (max-width: 515px) {
+  
+    .container header nav {
+        text-align: center; 
+        width: 100%; 
+        border: 1px solid red;
+    }
+    .container header nav a {
+        display: block; 
+        border-bottom: 1px solid blueviolet; 
+        margin: 0; 
+    }
 }
 
 .container header nav a:hover {
@@ -144,6 +155,14 @@ body {
   justify-content: center;
 }
 
+/* phone */
+
+@media (max-width: 515px) {
+    .cta .code-snippet {
+        display: none; 
+    }
+}
+
 .cta .cta-text h1 {
   font-size: 72px;
 }
@@ -164,6 +183,7 @@ body {
   justify-content: space-between;
   margin: 30px auto;
 }
+
 .container .main-content .top-content .text-content {
   display : flex;
   flex-direction: column;
