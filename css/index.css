@@ -1,3 +1,301 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+		font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+body {
+	width: 880px;
+	margin: 0 auto;
+}
+
+/* why doesn't the margin-top property work on header nav to lower the nav bar? */
+header {
+	/* margin-top: 20px; */
+	padding: 20px 30px 30px 30px;
+}
+header {
+	display:flex;
+	justify-content: space-between;
+	font-size: larger;
+	box-shadow: 0 4px 4px lightgray;
+	position: fixed;
+	top: 0;
+	z-index: 1;
+	background-color: white;
+	width: 880px;
+}
+
+header nav a {
+	text-decoration: none;
+	color: lightgray;
+}
+
+header nav a:hover {
+	color: black;
+	font-size: 20px;
+}
+
+header nav {
+	margin-top: 13px;
+	width: 600px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.logo {
+	margin-left: 60px;
+}
+
+section.top-section {
+	margin-top: 160px;
+	margin-bottom: 90px;
+	display: flex;
+	justify-content: space-around;
+}
+
+h1 {
+	text-align: center;
+	font-size: 90px;
+}
+
+div.top-section-text {
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.get-started {
+	border: 1px solid black;
+	padding: 10px;
+	margin-top: 10px;
+	width: 200px;
+	font-size: 20px;
+	background-color: white;
+	box-shadow: 0 10px 10px lightgray;
+}
+
+h2 {
+	font-size: x-large;
+}
+
+.top-columns {	
+
+	display: flex; 
+	justify-content: space-between;
+}
+
+.features, .about {
+	width: 430px;
+	margin: 40px 0;
+}
+
+.middle-img {
+	box-shadow: 0 10px 10px lightgray;
+}
+
+.bottom-columns {
+	display: flex;
+	justify-content: space-between;
+}
+
+.services, .product, .vision {
+	width: 270px;
+	margin: 40px 0;
+}
+
+
+footer {
+	margin-top: 60px;
+}
+
+.street-address {
+	margin-bottom: 20px;
+}
+
+.tel {
+	margin-bottom: 20px;
+}
+
+small {
+	margin: 100px 0;
+	display: block;
+	text-align: center;
+}
+
+/* ////////////// */
+/* SERVICES PAGE */
+/* //////////// */
+
+.services-header-img {
+	margin: 30px 0;
+	box-shadow: 0 10px 10px lightgray;
+}
+
+.services-header {
+	margin-top: 100px;
+	margin-bottom: 30px;
+	line-height: 120%;
+}
+
+main.services-main {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 30px;
+	line-height: 120%;
+}
+
+.services-main-box {
+	border: 1px solid lightgray;
+	box-shadow: 0 10px 10px lightgray;
+	width: 400px;
+	padding: 15px;
+	margin-bottom: 30px;
+	background-color: #f4f3f4;
+}
+
+main.services-main p {
+	font-size: 100%;
+}
+
+button.services-button {
+	background-color: white;
+	margin-top: 18px;
+	padding: 10px 40px;
+	border: 1px solid black;
+	border-radius: 5px;
+}
+
+section.services-bottom-content {
+	display: flex;
+	justify-content: space-between;
+	line-height: 120%;
+	margin-top: 30px;
+}
+
+div.services-bottom-content-text {
+	width: 400px;
+}
+
+ul.services-bottom-content-list {
+	list-style: square inside none;
+	margin-top: 30px;
+}
+
+.services-info-img {
+	box-shadow: 0 10px 10px lightgray;
+}
+
+/* //////////// */
+/* CONTACT PAGE */
+/* //////////// */
+
+img.contact-header-img {
+	margin-top: 128px;
+	box-shadow: 0 10px 10px lightgray;
+}
+
+section.contact-us-top-content {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.contact-section {
+	margin-top: 30px;
+	display: flex;
+	justify-content: space-between;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	border: 1px solid lightgrey;
+	padding: 20px;
+	box-shadow: 0 10px 10px lightgray;
+	width: 400px;
+}
+
+label {
+	display: flex;
+	padding: 5px 0;
+}
+
+input:focus, textarea:focus {
+  border-color: #000;
+}
+
+button.contact-button {
+	padding: 5px;
+	margin-top: 10px;
+	background-color: white;
+}
+
+
+
+
 
