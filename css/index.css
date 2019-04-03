@@ -71,8 +71,15 @@ h1, h2, h3, h4, h5 {
 }
 header {
 	display: flex;
-	justify-content: space-between;
+    justify-content: space-between;
+    margin-top: 30px;
 }
+
+.logo {
+    display:flex;
+    width: 21%;
+}
+
 header nav {
 	display: flex;
 	width: 600px;
@@ -87,49 +94,60 @@ header nav a {
 	
 }
 header img {
-	width: 200px;
-	display: flex;
+	width: 50%;
+    display: flex;
+    
 
 }
 .section1{
-	display: flex;
-	padding-top: 30px;
-
+    display: flex;
+    justify-content: space-between; 
+    margin-top: 40px;
+    margin-bottom: 30px;
 }
+
 .section1 div {
 	display: flex;
 	flex-direction: column;
 	align-self: center;
-	width: 445px;
-	text-align: center;
-	/* border: 2px solid black; */
+	width: 50%;
+    text-align: center;
+    margin-left: 50px;
 }
 section h1 {
-	font-size: 70px;
+    font-size: 75px;
+    margin-bottom: 25px;
 	
 }
-section a {
+section button {
 	padding: 5px;
 	align-self: center;
-	width: 125px;
-	height: 30px;
+	width: 170px;
+    height: 30px;
+    margin-bottom: 20px;
 	text-decoration: none;
 	color: black;
-	font-size: 15px;
-	border: 1px solid black;
+    font-size: 15px;
+    border: 1px solid black;
+    background-color: white;
 }
+
 .header-img {
 	display: flex;
-	width:435px;
-	padding: 30px;
-	margin-bottom: 50px;
+	width: 43%;
+    margin-bottom: 50px;
+    margin-top: 30px;
 }
 
 .features-about {
 	display: flex;
 	flex-wrap: wrap;
-	width: 435px;
-	padding: 30px 0;
+	width: 50%;
+	padding: 20px 0;
+}
+.middle-img {
+    width:100%;
+    margin-top: 20px;
 }
 .below-image {
 	display: flex;
@@ -208,109 +226,31 @@ li {
 @media (max-width: 800px) {
     .contaner {
         display: flex;
-        align-items: center;
-        width: 100vw;
+        width: 100%;
         margin: 0 auto;
     }
     header {
         display: flex;
+        margin: 0 auto;
         flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
+        width:100%;
     }
     .logo {
-        margin: 20px;
-        padding-bottom: 20px;
+        margin: 0 auto;
+        margin-top: 25px;
+        /* margin-left: 35%; */
     }
 
     header nav {
-        display: flex;
-        width: 95vw;
-        height: auto;
-        align-content: space-between;
-        justify-content: space-evenly;
-    }
-    header nav a {
-        display: flex; 
-        font-size: 15px;
-        text-decoration: none;
-        color: darkgray;
-    }
-
-    .header-img {
-        display: none;
-    }
-    .section1 {
-        display: flex;
-        width: 100%;
-        justify-content: center;
-    }
-
-    .section1 div {
-        display: flex;
-        flex-direction: column;
-        align-self: center;
-        text-align: center;
-        margin: 20px 0;
-    }
-
-    .center-section {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        width: 100vw;
-        border-top: 2px solid black;
-        border-bottom: 2px solid black;
-        padding: 10px 0;
+        width: 83%;
+        margin: 0 auto;
         margin-top: 40px;
-    }
-
-    .features-about {
-        display: flex;
-        flex-wrap: wrap;
-        width: 45vw;
-        padding: 30px 0;
-    }
-
-    .middle-img {
-        width: 100vw;
-    }
-
-    .below-image {
-        display: flex;
-        flex-wrap: wrap;
-        width: 30vw;
-        padding: 30px 5px;
-    }
-}
-
-@media (max-width: 500px) {
-    .contaner {
-        display: flex;
-        align-items: center;
-        width: 100%;
-        margin: 5%;
-    }
-    header {
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-    }
-    .logo {
-        margin: 20px;
-        padding-bottom: 20px;
-    }
-
-    header nav {
-        display: flex;
-        flex-direction: column;
-        width: 90%;
-        align-content: space-between;
-        justify-content: center;
+        /* margin-right: 14%; */
     }
     header nav a {
         display: flex; 
-        font-size: 15px;
+        margin: 0 aut0;
+        font-size: 17px;
         text-decoration: none;
         color: darkgray;
     }
@@ -328,7 +268,6 @@ li {
         display: flex;
         flex-direction: column;
         align-self: center;
-        width: 445px;
         text-align: center;
         margin: 20px 0;
     }
@@ -352,7 +291,7 @@ li {
     }
 
     .middle-img {
-        width: 100%;
+        width: 95%;
     }
 
     .below-image {
@@ -360,6 +299,105 @@ li {
         flex-wrap: wrap;
         width: 30%;
         padding: 30px 5px;
+    }
+}
+
+@media (max-width: 500px) {
+    .contaner {
+        display: flex;
+        align-items: center;
+        width: 95vw;
+    }
+    header {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .logo {
+        margin: 20px;
+        padding-bottom: 20px;
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+        align-content: space-between;
+        align-items: center;
+        justify-content: center;
+    }
+    header nav a {
+        display: flex; 
+        width: 100vw;
+        font-size: 15px;
+        text-decoration: none;
+        padding: 15px 50% ;
+        color: darkgray;
+        border-top: 1px solid grey;
+    }
+
+    .header-img {
+        display: none;
+    }
+    .section1 {
+        display: flex;
+        width: 100vw;
+        justify-content: center;
+    }
+
+    .section1 div {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        width: 100vw;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .center-section {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        width: 100vw;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        margin-top: 40px;
+    }
+
+    .features-about {
+        display: flex;
+        flex-wrap: wrap;
+        width: 95vw;
+        padding: 30px 0;
+    }
+
+    .middle-img {
+        width: 98vw;
+    }
+
+    .below-image {
+        display: flex;
+        flex-wrap: wrap;
+        width: 95vw;
+        padding: 30px 5px;
+    }
+
+    footer {
+        margin-top: 30px;
+        width:95vw;
+        padding-left: 4vw;
+    }
+    footer a {
+        text-decoration: none;
+        color: black;
+    }
+    h6 {
+        align-self: center;
+        text-align: center;
+        padding: 30px 0;
+        margin-top: 15px;
     }
 }
 
