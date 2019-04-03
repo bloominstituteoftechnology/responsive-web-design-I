@@ -245,6 +245,29 @@ footer{
 
 /*Services CSS starts here*/
 
+.nav_container{
+    width:100%;
+    height:100px;
+    /* border:2px solid red; */
+    display: flex;
+    justify-content:center;
+}
+
+.nav a {
+    width:300px;
+    padding:0 30px 0 30px;
+    /* border:2px solid blue; */
+    color:grey;
+    text-decoration: none;
+}
+
+nav a.services{
+    margin-left:-100px;
+}
+.nav .logo{
+
+    /* border:2px solid black; */
+}
 
 .img{
 	margin-top:60px;
@@ -376,25 +399,59 @@ li{
 }
 
 @media(max-width:800px){
-nav{
-    background-color:white;
+
+    .nav_container{
+    width:100%;
+    height:420px;
+    /* border:2px solid red; */
+    display:flex;
+    /* border:2px solid blue; */
 
 }
 
-    .nav .logo{
-    /* margin-top:-150px; */
-    margin-left: 250px;
-
-    }
-    .nav{
+nav a.services{
     margin-top:100px;
-    }
+    margin-left:0px;
+}
 
-    .nav a{
-        background-color: #eee; /* Grey background color */
-        color: black; /* Black text color */
-        display: block; /* Make the links appear below each other */
-        padding: 12px; /* Add some padding */
-        text-decoration: none; /* Remove underline from links */
-    }
+.nav .logo{
+    position:relative;
+    margin-left:50px;
+    top:-330px;
+    /* border:2px solid purple; */
+}
+.nav a{
+    border-top:1px solid grey;
+    background-color:white; /* Grey background color */
+    color: grey; /* Black text color */
+    display: block; /* Make the links appear below each other */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove underline from links */
+
+}
+.header_container{
+width:100%;
+/* border:2px solid red; */
+}
+
+.header_container .header_img{
+    display:none;
+
+}
+.content-first{
+    width: 100%;
+    border:2px solid blue;
+    margin-left:0%;
+    display: block;
+}
+
+.content-first div{
+    width:500px;
+    margin-left:150px;
+}
+.middle-img{
+    margin-left:0px;
+width:100%;
+}
+
 }
