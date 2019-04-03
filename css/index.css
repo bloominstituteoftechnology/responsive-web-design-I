@@ -337,5 +337,46 @@
         hr {
             margin-bottom: 20px;
         }
+        /* @tablet */
         
-        services-info-image
+        @media(max-width: 800px) {
+            header {
+                flex-flow: wrap-reverse;
+            }
+            header .logo {
+                margin: 0 1%;
+            }
+            header nav {
+                width: 100%;
+                margin: 35px;
+            }
+            header nav a {
+                margin: 0 auto;
+            }
+            .cta {
+                display: block;
+            }
+            .cta img {
+                display: none;
+            }
+            .cta .cta-text {
+                display: flex;
+                font-size: 77px;
+                text-align: center;
+                padding: 20px 75px;
+                justify-content: center;
+                flex-direction: column;
+            }
+            .cta .cta-text button {
+                background: white;
+                font-size: 20px;
+                border: 1px solid black;
+                cursor: pointer;
+                width: 28%;
+                margin: 0 auto;
+            }
+            .main-content .middle-img {
+                margin-top: 45px;
+                width: 100%;
+            }
+        }
