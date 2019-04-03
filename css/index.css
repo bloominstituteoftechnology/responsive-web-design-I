@@ -161,24 +161,30 @@ h5 {
 }
 
 .content-container {
-  width: 100%
+  width: 100%;
+  margin: 0 auto;
 }
 
-.navbar {
+header {
   display: flex;
+  flex-wrap: nowrap;
   vertical-align: middle;
   margin-top: 15px;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  /* border: 1px solid red */
 }
 
-.navbar a {
+header .navbar a  {
   font-size: 14px;
   color: gray;
   text-decoration: none;
   padding: 0px 10px;
+}
+
+.navbar {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
 }
 
 .navbar a:hover {
@@ -350,6 +356,60 @@ p {
 }
 
 @media (max-width: 800px) {
+    .container {
+      width: 100%;
+    }
+
+    .content-container {
+      width: 90%
+    }
+
+    header {
+      display: flex;
+      flex-flow: column-reverse;
+    }
+
+    .logo {
+      padding-bottom: 15px;
+    }
+
+    .splash .headerimg {
+      display: none;
+    }
+
+    .title {
+      margin: 0 auto;
+    }
+
+    .topcontent {
+      display: flex;
+      justify-content: space-between;
+      line-height: 1.25;
+    }
+
+    .features, .about {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-between;
+      height: 140px;
+      padding: 0px 10px;
+      margin: 0 auto;
+    }
+    .services, .product, .vision {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-between;
+      height: 205px;
+      padding: 0px 10px;
+      margin: 0 auto;
+    }
+
+    .bottomcontent {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-around;
+      line-height: 1.25;
+    }
   }
   
   @media (max-width: 500px) {
@@ -361,53 +421,32 @@ p {
       width: 90%;
     }
 
-    .nav {
+    header {
       display: flex;
-      flex-flow: column nowrap;
-      vertical-align: middle;
-      flex-wrap: wrap;
-      justify-content: space-between;
+      flex-flow: column-reverse;
       align-items: center;
-      margin: 0 auto;
-      border: 1px solid red;
+      margin-top: 0px;
     }
 
-    .navbar a {
+    header .navbar a {
       text-align: center;
       border: 1px solid gray;
       width: 100%;
       height: 50px;
-      font-size: 18px;
+      font-size: 20px;
       color: gray;
       text-decoration: none;
-      vertical-align: center;
-      padding-top: 10px;
+      padding-top: 15px;
     }
 
-    .nav a:last-child {
-      height: 60px;
+    .navbar {
+      flex-wrap: wrap;
     }
 
-    a:nth-child(1) {
-      order: 2;
-    }
-    a:nth-child(2) {
-      order: 3;
-    }
-    a:nth-child(3) {
-      order: 4;
-    }
-    a:nth-child(4) {
-      order: 5;
-    }
-    a:nth-child(5) {
-      order: 6;
-    }
-    a:nth-child(6) {
-      order: 7;
-    }
-    a:nth-child(7) {
-      order: 1;
+    header .logo {
+      display: block;
+      padding-top: 15px;
+      margin-bottom: 15px;
     }
 
     .splash .headerimg {
@@ -415,43 +454,29 @@ p {
     }
 
     .title {
-      /* border: 1px solid red; */
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      font-size: 80px;
-      flex-direction: column;
       margin: 0 auto;
     }
 
 
     .splash button {
-      border: 1px solid black;
-      text-decoration: none;
-      font-size: 20px;
-      background: white;
-      padding: 5px 50px 5px 35px;
-      color: black;
-      margin: 0
+      margin-top: 25px;
     }
 
     .topcontent {
       display: flex;
       flex-direction: column;
       line-height: 1.25;
-      font-size: 17px;
       height: 14em;
     }
 
-    .middle-img {
-      width: 100%;
+    .features, .about, .services, .product, .vision {
+      margin-bottom: 15px;
+
     }
 
     .bottomcontent {
       display: flex;
       flex-direction: column;
-      line-height: 1.25;
-      font-size: 17px;
       height: 25em;
       margin-top: 15px;
     }
