@@ -155,9 +155,13 @@ h5 {
 }
 
 /* Your code starts here! */
-html {
+.container {
   width: 900px;
   margin: 0 auto;
+}
+
+.content-container {
+  width: 100%
 }
 
 .navbar {
@@ -174,6 +178,7 @@ html {
   font-size: 14px;
   color: gray;
   text-decoration: none;
+  padding: 0px 10px;
 }
 
 .navbar a:hover {
@@ -329,11 +334,12 @@ footer {
   line-height: 1.25;
   letter-spacing: 0.1px;
   width: 50%;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   justify-content: space-evenly;
 }
 
-.bottomarticle h2, p {
+.bottomarticle h2,
+p {
   align-self: flex-start;
   margin-bottom: 15px;
 }
@@ -342,3 +348,111 @@ footer {
   list-style-position: inside;
   line-height: 1.5;
 }
+
+@media (max-width: 800px) {
+  }
+  
+  @media (max-width: 500px) {
+    .container {
+      width: 100%;
+    }
+
+    .content-container {
+      width: 90%;
+    }
+
+    .nav {
+      display: flex;
+      flex-flow: column nowrap;
+      vertical-align: middle;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 auto;
+      border: 1px solid red;
+    }
+
+    .navbar a {
+      text-align: center;
+      border: 1px solid gray;
+      width: 100%;
+      height: 50px;
+      font-size: 18px;
+      color: gray;
+      text-decoration: none;
+      vertical-align: center;
+      padding-top: 10px;
+    }
+
+    .nav a:last-child {
+      height: 60px;
+    }
+
+    a:nth-child(1) {
+      order: 2;
+    }
+    a:nth-child(2) {
+      order: 3;
+    }
+    a:nth-child(3) {
+      order: 4;
+    }
+    a:nth-child(4) {
+      order: 5;
+    }
+    a:nth-child(5) {
+      order: 6;
+    }
+    a:nth-child(6) {
+      order: 7;
+    }
+    a:nth-child(7) {
+      order: 1;
+    }
+
+    .splash .headerimg {
+      display: none;
+    }
+
+    .title {
+      /* border: 1px solid red; */
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      font-size: 80px;
+      flex-direction: column;
+      margin: 0 auto;
+    }
+
+
+    .splash button {
+      border: 1px solid black;
+      text-decoration: none;
+      font-size: 20px;
+      background: white;
+      padding: 5px 50px 5px 35px;
+      color: black;
+      margin: 0
+    }
+
+    .topcontent {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.25;
+      font-size: 17px;
+      height: 14em;
+    }
+
+    .middle-img {
+      width: 100%;
+    }
+
+    .bottomcontent {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.25;
+      font-size: 17px;
+      height: 25em;
+      margin-top: 15px;
+    }
+  }
