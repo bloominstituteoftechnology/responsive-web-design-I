@@ -1,3 +1,367 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.container {
+  width: 880px;
+  margin: 0 auto;
+}
+
+@media (max-width: 800px) {
+ .container { 
+  width: 80%;}
+}
+
+@media (max-width: 500px) {
+ .container { 
+  width: 80%;}
+}
+
+/* header */
+header {
+	margin: 40px 0 20px;
+	padding: 20px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header nav {
+	margin-top: 35px;
+	width: 620px;
+	display: flex;
+	justify-content: space-between;
+}
+
+@media (max-width: 500px) {
+header nav {   
+  flex-flow: column wrap;
+}
+}
+
+header nav a {
+  font-size: 14px;
+	color: gray;
+	text-decoration: none;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+header nav a:first-child {
+  margin-left: 0;
+}
+
+header nav a:last-child {
+  margin-right: 0;
+}
+
+header .logo {
+	margin-top: 25px;
+	display: flex;
+	align-items: center;
+}
+
+@media (max-width: 800px) {
+header .logo { 
+  flex-direction: column;
+  order: -1;
+  align-self: flex-start;
+}
+}
+
+@media (max-width: 500px) {
+header .logo { 
+  flex-direction: column;
+  order: -1;}
+}
+
+/* cta */
+.cta {
+	display: flex;
+	justify-content: space-between;
+}
+
+@media (max-width: 800px) {
+ .cta { 
+  justify-content: center;
+}
+}
+
+@media (max-width: 500px) {
+ .cta { 
+  justify-content: center;
+}
+}
+
+.cta .cta-text {
+  vertical-align: top;
+  font-size: 77px;
+  margin-top: 120px;
+  text-align: center;
+  padding: 0px 75px;
+}
+
+@media (max-width: 500px) {
+ .cta .cta-text h1 {  
+  font-size: 72px;
+}
+ }
+
+.cta .cta-text button {
+  background: white;
+  vertical-align: top;
+  margin-top: 6px;
+  padding: 8px 44px;
+  font-size: 17px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+@media (max-width: 500px) {
+ .cta .cta-text button {  
+  font-size: 20px;
+  padding: 6px 32px;
+}
+ }
+
+
+.cta .cta-text button:hover {
+  background: black;
+  color: white;
+}
+
+.cta img {
+	display: flex;
+	justify-content: flex-end;
+}
+
+@media (max-width: 800px) {
+ .cta img { 
+  display: none;
+}
+}
+
+@media (max-width: 500px) {
+ .cta img { 
+  display: none;
+}
+}
+
+.main-content {
+  border-top: 1px solid black;
+  margin-top: 76px;
+  padding-top: 39px;
+}
+
+.main-content .top-content {
+  display: flex;
+	justify-content: space-between;
+}
+
+@media (max-width: 500px) {
+ .main-content .text-content { 
+  flex-direction: column;
+  font-size: 14px;
+  margin-left: 0px;
+}
+
+@media (max-width: 500px) {
+ .main-content .top-content { 
+  flex-direction: column;
+}
+}
+
+@media (max-width: 500px) {
+ .main-content .bottom-content { 
+  flex-direction: column;
+}
+}
+
+.main-content .text-content:last-child {
+  margin-right: 0;
+}
+
+.main-content .middle-img {
+  margin-top: 45px;
+}
+
+@media (max-width: 800px) {
+ .main-content .middle-img { 
+  width: 100%;}
+}
+
+@media (max-width: 500px) {
+ .main-content .middle-img { 
+  width: 100%;}
+}
+
+.main-content .bottom-content {
+	margin-top: 37px;
+	display: flex;
+  justify-content: space-between;
+}
+
+.main-content .text-content {
+  margin: 10px;
+}
+
+.main-content .text-content:first-child {
+  margin-left: 0;
+}
+
+.contact {
+  margin-top: 57px;
+  border-top: 1px solid black;
+  padding: 39px 10px 0;
+}
+
+.contact p {
+  margin: 20px 0;
+}
+
+footer {
+  margin: 32px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+@media (max-width: 500px) {
+.contact p {
+    font-size: 14px;
+}
+}
+
+@media (max-width: 500px) {
+footer {
+    font-size: 14px;
+}
+}
+
+/*Services*/
+
+/* .service-overview { 
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.service-overview h2 {
+  font-size: 25px;
+  
+}
+.service-items {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+.service-items .item {
+  display: flex;
+  justify-content: space-between;
+  background: #F4F3F4;
+  border: 1px solid black;
+  width: 425px;
+  height: 260px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.service-items .item button {
+  background: white;
+  vertical-align: top;
+  margin: 10px;
+  height: 36px;
+  padding: 10px 36px 10px 36px; 
+  font-size: 12px; 
+  border: 1px solid black;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.service-items .item button:hover {
+  background: black;
+  color: white;
+}
+.service-info {
+  display: flex;
+  padding: 50px 10px 50px 0;
+  justify-content: space-around;
+}
+
+.service-info .infotext {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; 
+  flex-direction: column;
+  margin: 0 10px 10px 0;
+  padding-top: 0;
+}
+.service-info .infotext li {
+  list-style-type: square;
+  list-style-position: inside;
+  padding: 5px;
+} */
 
