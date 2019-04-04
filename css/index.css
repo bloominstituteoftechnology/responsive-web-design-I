@@ -72,7 +72,72 @@ img, embed, object, video {
 
 /* Start mobile first */
 
+.logo {
+    width: 200px;
+}
 
+.container header nav a {
+    text-decoration: none;
+    color: gray;
+}
+
+.container header nav a:hover {
+    color: darkgray;
+}
+
+.container .banner .banner-text#b-text {
+    text-align: center;
+}
+
+button {
+    width: 200px;
+    padding: 10px 0;
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 80px;
+}
+
+hr {
+    border-top: 2px solid black;
+    margin: 30px 0;
+}
+
+.container .main .main-content {
+    margin: 30px 0;
+}
+
+.container .content .content-triple {
+    margin: 25px 0;
+}
+
+@media (max-width: 500px) {
+    .container {
+        background: lightgray;
+        max-width: 100%;
+    }
+    .container header {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .banner .banner-text#b-img {
+        display: none;
+    }
+    
+
+}
+
+.contact .address {
+    display: inline-block;
+    padding: 10px 0;
+}
+
+footer {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
 
 
 
