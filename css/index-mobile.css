@@ -82,73 +82,68 @@ h1, h2, h3, h4, h5 {
 	bottom: 10px;
 	left: 490px;
 }
-.container .main-containt1 {
+.main-containt1 .top-content {
 	display: flex;
-	 width: 900px;
-	 
-	 align-content: space-around;
-	 justify-content: first baseline;
-	 padding: 20px;
-	 position: relative;
-	 bottom: 350px;
-	 margin: 0 auto;
+    width: 375px;
+    margin: 10px;
+    justify-content: center;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: relative;
+    left: 300px;
 }
-.container .main-containt2 {
-	display: flex;
-	width: 900px; 
-	position: relative;
-	 bottom: 290px;
-	 margin: 0 auto;
-	
+.upper .header_nav{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+    position: relative;
+    left: 400px;
+    margin: 10px;
 }
-.top-nav{
+
+.top-nav {
+    
+    justify-content: center;
 	text-decoration: none;
 	font-weight: bolder;
 	font-family: 'Anton', sans-serif;
 	font-size: 18px;
 	color: rgb(161, 158, 158);
 	width: 90px;
-	margin: 40px;
-	display: inline-flex;
-	flex-direction: column;
-	align-content: space-between;
+	margin: 30px;
 	padding: 30px;
-	position: relative;
-	left: 200px;
-	bottom: 0px;
-
+	
+}
+#tit{
+    position: relative;
+    left: -80px;
 }
 .top-nav:hover{
 	color: darkcyan;
 	
 }
 
-.circle-img{
-	position: relative;
-	left: 800px;
-	bottom: 420px;
-	
-}
 .circle-img:hover{
 	filter: opacity(50%);
 }
 .middle-img{
 	filter: opacity(90%);
-	border-radius: 10px;
-	position: relative;
-	bottom: 340px;
-	margin: 0 auto;
+    border-radius: 10px;
+    width: 375px;
 
 }
 
 .logo{
 	padding: 10px;
 	position: relative;
-	left: 1100px;
-	bottom: 100px;
+	left: 430px;
+	bottom: 40px;
 }
 
-.footer-nav{
+/* .footer-nav{
 	position: relative;
 	left: 10px;
 	bottom: 350px;
@@ -156,14 +151,14 @@ h1, h2, h3, h4, h5 {
 	margin: 30px;
 	margin-bottom: 90px;
 	display: inline-block;
-}
+} */
 .getstart{
-	font-weight: bold;
+    font-weight: bold;
+    width: 100px;
 	background-color: rgb(209, 207, 207);
-	position: relative;
-	bottom: 10px;
-	right: -550px;
-	border-radius: 10px;
+    border-radius: 1px;
+    position: relative;
+    right: -470px;
 }
 .getstart:hover{
 	background-color: darkcyan;
@@ -183,11 +178,11 @@ h3:hover{
 }
 
 title{
-	color: darkcyan;
+	color: black;
 }
 .Contact{
 	position: relative;
-	bottom: 280px;
+	bottom: 00px;
 	left: 300px;
 	width: 150px;
 	line-height: 1.8;
@@ -196,49 +191,15 @@ title{
 .copy-right{
 	text-align: center;
 	position: relative;
-	bottom: 200px;
+	left: -150px;
+}
+hr{
+    position: relative;
+    left: -100px;
+    widows: 375;
+}
+h1{
+    color: black;
 }
 
-@media(max-width: 375px){
-	.tittle {
-	  display: block;
-	  align-content: center;
-	  position: relative;
-	  left:100px
-	}
-  }
-  @media(max-width: 375px){
-	.on {
-	  display: block;
-	  align-content: center;
-	  position: relative;
-	  left:150px
-	}
-  }
-  
-  @media(max-width: 375px){
-	.main-containt1 {
-	  display:block;
-	}
-  }
-  @media(max-width:375px){
-	.middle-img{
-	  width: 375px
-	}
-  }
-  
-  @media(max-width:375px){
-	.top-content{
-	  width: 375px
-	}
-  }
-  
-  @media(max-width:375px){
-	.main-containt2{
-	  display: block;
-	  
-	  width: 375px
-	}
-  }
-  
 
