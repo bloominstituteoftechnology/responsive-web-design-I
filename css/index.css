@@ -1,3 +1,440 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Begining of styling after reset */
+
+.container{
+    width: 876px;
+    margin: 0 auto;
+}
+header {
+	display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.logo {
+    display:flex;
+    width: 21%;
+}
+
+header nav {
+	display: flex;
+	width: 600px;
+	align-items: center;
+	justify-content: space-between;
+}
+header nav a {
+	display: flex; 
+	font-size: 15px;
+	text-decoration: none;
+	color: darkgray;
+	
+}
+header img {
+	width: 50%;
+    display: flex;
+    
+
+}
+.section1{
+    display: flex;
+    justify-content: space-between; 
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.section1 div {
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+	width: 50%;
+    text-align: center;
+    margin-left: 50px;
+}
+section h1 {
+    font-size: 75px;
+    margin-bottom: 25px;
+	
+}
+section button {
+	padding: 5px;
+	align-self: center;
+	width: 170px;
+    height: 30px;
+    margin-bottom: 20px;
+	text-decoration: none;
+	color: black;
+    font-size: 15px;
+    border: 1px solid black;
+    background-color: white;
+}
+
+.header-img {
+	display: flex;
+	width: 43%;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+.features-about {
+	display: flex;
+	flex-wrap: wrap;
+	width: 50%;
+	padding: 20px 0;
+}
+.middle-img {
+    width:100%;
+    margin-top: 20px;
+}
+.below-image {
+	display: flex;
+	flex-wrap: wrap;
+	width: 275px;
+	padding: 30px 5px;
+}
+.center-section {
+	display: flex;
+	flex-wrap: wrap;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	padding: 15px 0;
+}
+footer {
+	margin-top: 30px;
+}
+footer a {
+	text-decoration: none;
+	color: black;
+}
+h6 {
+	align-self: center;
+	text-align: center;
+	padding: 30px 0;
+	margin-top: 15px;
+}
+.service-upper{
+	display: flex;
+	flex-direction: column;
+	padding: 20px 0;
+}
+.service-upper div {
+	width: 876px;
+	padding: 10px 0;
+}
+.services-middle {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: space-around;
+	padding: 20px 0;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+}
+.services-middle div {
+	display: flex;
+	flex-wrap: wrap;
+	width: 415px;
+	border: 1px solid black;
+	margin: 20px 0;
+	padding: 20px;
+	background-color: gainsboro;
+}
+.services-middle div a {
+	margin-top: 20px;
+	text-align: center;
+	background-color: white;
+}
+.services-footer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.services-footer div {
+	width: 415px;
+}
+ul {
+	margin-top: 30px;
+	list-style-position: inside;
+}
+li {
+	margin: 10px 0;
+}
+
+@media (max-width: 820px) {
+    .container {
+        width: 100%;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        align-content: center;
+        width:100%;
+    }
+
+    .logo {
+        display:flex;
+        align-self: center;
+        width: 185px;
+    }
+
+    header nav {
+        display: flex;
+        justify-content: space-around;
+        width: 95%;
+        margin-top: 40px;
+    }
+
+    header nav a {
+        display: flex; 
+        margin: 0 auto;
+        font-size: 17px;
+        text-decoration: none;
+        color: darkgray;
+    }
+
+    .header-img {
+        display: none;
+    }
+
+    .section1 {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .section1 div {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        text-align: center;
+        margin: 25px 0;
+    }
+
+    .center-section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: center;
+        width: 99%;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        padding: 20px 0;
+        margin-top: 30px;
+    }
+
+    .features-about {
+        display: flex;
+        flex-wrap: wrap;
+        width: 50%;
+        padding: 20px 20px;
+    }
+
+    .middle-img {
+        display: flex;
+        width: 96%;
+    }
+
+    .below-image {
+        display: flex;
+        flex-wrap: wrap;
+        width: 33%;
+        padding: 30px 15px 40px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        margin-left: 4%;
+        margin-top: 35px;
+    }
+
+    footer a {
+        text-decoration: none;
+        color: black;
+    }
+
+    h6 {
+        display: flex; 
+        padding: 30px 0;
+    }
+}
+
+@media (max-width: 515px) {
+    .container {
+        width: 100%;
+    }
+
+    header {
+        width:100%;
+    }
+
+    .logo {
+        display:flex;
+        align-self: center;
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    header nav a {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 21px;
+        text-align: center;
+        font-size: 17px;
+        text-decoration: none;
+        color: darkgray;
+        border-top: 1px solid darkgray;
+        border-bottom: 1px solid darkgray;
+    }
+
+    .header-img {
+        display: none;
+    }
+
+    .section1 {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        width: 100%;
+        padding-top: 20px;
+    }
+
+    section h1 {
+        display: flex;
+        align-self: center;
+        font-size: 75px;
+    }
+
+    .section1 div {
+        display: flex;
+        align-self: center;
+    }
+    .center {
+        display: flex;
+        justify-content: center;
+    }
+    .center-section {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+        align-self: center;
+        /* align-items: center; */
+        width: 95%;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+    }
+
+    .features-about {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    .middle-img {
+        display: flex;
+        align-self: center;
+        width: 92%;
+        padding-top: 15px;
+    }
+
+    .below-image {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 35px 15px 35px; 
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    footer a {
+        text-decoration: none;
+        color: black;
+    }
+
+    h6 {
+        display: flex;
+        padding: 20px 0;
+    }
+}
 
 
