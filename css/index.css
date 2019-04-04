@@ -79,6 +79,7 @@ img, embed, object, video {
 .container header nav a {
     text-decoration: none;
     color: gray;
+    font-size: 18px;
 }
 
 .container header nav a:hover {
@@ -99,6 +100,10 @@ h1 {
     font-size: 80px;
 }
 
+h2 {
+    font-size: 1.1rem;
+}
+
 hr {
     border-top: 2px solid black;
     margin: 30px 0;
@@ -112,20 +117,79 @@ hr {
     margin: 25px 0;
 }
 
-@media (max-width: 500px) {
+@media only screen and (max-width: 500px) {
     .container {
-        background: lightgray;
         max-width: 100%;
+        margin: 0 auto;
     }
     .container header {
         display: flex;
         flex-direction: column-reverse;
     }
+    .logo {
+        margin: 0 auto;
+    }
+    .container header nav {
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .container header nav a {
+        font-size: 24px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid black;
+    }
+    .banner .banner-text#b-text {
+        margin-top: 25px;
+    }
+    .banner .banner-text#b-img {
+        display: none;
+    }  
+}
+
+@media only screen and (max-width: 800px)  and (min-width: 501px) {
+    .container {
+        background: lightblue;
+        margin: 0 auto;
+    }
+    .container header {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .logo {
+        margin: 0 auto;
+        padding-top: 25px;
+    }
+    .container header nav {
+        display: flex;
+        justify-content: space-around;
+        margin: 25px 1%;
+    }
     .banner .banner-text#b-img {
         display: none;
     }
-    
+    .container .main {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 1%;
+    }
+    .container .content {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0 1%;
+    }
 
+}
+
+@media only screen and (min-width: 801px) {
+    .container {
+        background: lightcoral;
+        width: 900px;
+    }
+    .container header {
+        display: flex;
+    }
 }
 
 .contact .address {
