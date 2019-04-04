@@ -68,25 +68,23 @@ h1, h2, h3, h4, h5 {
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 body {
-	width: 880px;
+	max-width: 880px;
 	margin: 0 auto;
 }
 
-/* why doesn't the margin-top property work on header nav to lower the nav bar? */
-header {
-	/* margin-top: 20px; */
-	padding: 20px 30px 30px 30px;
-}
 header {
 	display:flex;
 	justify-content: space-between;
 	font-size: larger;
-	box-shadow: 0 4px 4px lightgray;
-	position: fixed;
-	top: 0;
-	z-index: 1;
-	background-color: white;
-	width: 880px;
+  width: 100%;
+  padding: 20px 30px 30px 30px;
+}
+
+header nav {
+	margin-top: 13px;
+	width: 80%;
+	display: flex;
+	justify-content: space-between;
 }
 
 header nav a {
@@ -94,21 +92,15 @@ header nav a {
 	color: lightgray;
 }
 
+
 header nav a:hover {
 	color: black;
-	font-size: 20px;
-}
-
-header nav {
-	margin-top: 13px;
-	width: 600px;
-	display: flex;
-	justify-content: space-between;
 }
 
 .logo {
 	margin-left: 60px;
 }
+
 
 section.top-section {
 	margin-top: 160px;
@@ -132,7 +124,7 @@ div.top-section-text {
 	border: 1px solid black;
 	padding: 10px;
 	margin-top: 10px;
-	width: 200px;
+	width: 60%;
 	font-size: 20px;
 	background-color: white;
 	box-shadow: 0 10px 10px lightgray;
@@ -149,8 +141,8 @@ h2 {
 }
 
 .features, .about {
-	width: 430px;
-	margin: 40px 0;
+  margin: 40px 0;
+  width: 49%;
 }
 
 .middle-img {
@@ -163,7 +155,7 @@ h2 {
 }
 
 .services, .product, .vision {
-	width: 270px;
+	width: 30%;
 	margin: 40px 0;
 }
 
@@ -295,7 +287,151 @@ button.contact-button {
 	background-color: white;
 }
 
+/* =================== 
+    MEDIA QUERIES 
+======================*/
+
+@media (max-width: 800px) {
+  body {
+    width: 100%
+  }
+
+  img.header-circle {
+    display:none;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  header nav {
+    margin-top: 5%;
+    width: 98%;
+  }
+
+  header nav a {
+    font-size: medium;
+  }
+
+  .logo {
+    margin-left: 0;
+  }
+
+  section.top-section {
+    margin-top: 5%;
+  }
+
+  h1 {
+    font-size: 70px;
+  }
+
+  .get-started {
+    font-size: 15px;
+    padding: 5px;
+  }
+
+  div.top-columns {
+    margin-left: 10px;
+  }
+
+  div.bottom-columns {
+    margin-left: 10px;
+  }
+
+  h2 {
+    font-size: medium;
+  }
+
+  address {
+    margin-left: 10px;
+  }
 
 
+
+}
+
+@media (max-width: 500px) {
+  body {
+    width: 100%;
+  }
+  
+  header {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100%;
+  }
+
+  header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header nav a {
+    border-bottom: 1px solid black;
+    padding: 3%;
+    width: 100%;
+    text-align: center;
+  }
+
+  img.header-circle {
+    display:none;
+  }
+
+  section.top-section {
+    margin-top: 0;
+  }
+
+  div.top-columns {
+    flex-wrap: wrap;
+    margin-left: 10px;
+  }
+
+  div.bottom-columns {
+    flex-wrap: wrap;
+    margin-left: 10px;
+  }
+
+  img.middle-img {
+    width: 100%;
+    height: auto;
+  }
+
+  h2 {
+    font-size: medium;
+  }
+
+  h1 {
+    font-size: 70px;
+  }
+
+  .get-started {
+    padding: 8px;
+    font-size: 15px;
+  }
+
+  .column {
+    margin: 20px 0;
+    width: 90%;
+  }
+
+  .features {
+    margin-top: 50px;
+  }
+
+  .about {
+    margin-bottom: 50px;
+  }
+
+  address {
+    margin-left: 10px;
+  }
+
+
+
+}
 
 
