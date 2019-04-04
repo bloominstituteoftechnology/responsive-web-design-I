@@ -1,3 +1,244 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+	box-sizing: border-box;
+	padding: 10px;
+	display: block;
+	
+	
+}
+html, body {
+	
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+.tittle{
+	font-size: 80px;
+	color: darkcyan;
+	position: relative;
+	bottom: 10px;
+	left: 400px;
+}
+.on{
+	font-size: 80px;
+	color: darkcyan;
+	position: relative;
+	bottom: 10px;
+	left: 490px;
+}
+.container .main-containt1 {
+	display: flex;
+	 width: 900px;
+	 
+	 align-content: space-around;
+	 justify-content: first baseline;
+	 padding: 20px;
+	 position: relative;
+	 bottom: 350px;
+	 margin: 0 auto;
+}
+.container .main-containt2 {
+	display: flex;
+	width: 900px; 
+	position: relative;
+	 bottom: 290px;
+	 margin: 0 auto;
+	
+}
+.top-nav{
+	text-decoration: none;
+	font-weight: bolder;
+	font-family: 'Anton', sans-serif;
+	font-size: 18px;
+	color: rgb(161, 158, 158);
+	width: 90px;
+	margin: 40px;
+	display: inline-flex;
+	flex-direction: column;
+	align-content: space-between;
+	padding: 30px;
+	position: relative;
+	left: 200px;
+	bottom: 0px;
+
+}
+.top-nav:hover{
+	color: darkcyan;
+	
+}
+
+.circle-img{
+	position: relative;
+	left: 800px;
+	bottom: 420px;
+	
+}
+.circle-img:hover{
+	filter: opacity(50%);
+}
+.middle-img{
+	filter: opacity(90%);
+	border-radius: 10px;
+	position: relative;
+	bottom: 340px;
+	margin: 0 auto;
+
+}
+
+.logo{
+	padding: 10px;
+	position: relative;
+	left: 1100px;
+	bottom: 100px;
+}
+
+.footer-nav{
+	position: relative;
+	left: 10px;
+	bottom: 350px;
+	width: 300px;
+	margin: 30px;
+	margin-bottom: 90px;
+	display: inline-block;
+}
+.getstart{
+	font-weight: bold;
+	background-color: rgb(209, 207, 207);
+	position: relative;
+	bottom: 10px;
+	right: -550px;
+	border-radius: 10px;
+}
+.getstart:hover{
+	background-color: darkcyan;
+}
+p{
+line-height: 1.25;
+  margin: 20px 10px;
+  display: inline-block;
+  vertical-align: top;
+}
+h3{
+	color: darkcyan;
+}
+h3:hover{
+	color:tomato;
+	font-size: 20px;
+}
+
+title{
+	color: darkcyan;
+}
+.Contact{
+	position: relative;
+	bottom: 280px;
+	left: 300px;
+	width: 150px;
+	line-height: 1.8;
+}
+
+.copy-right{
+	text-align: center;
+	position: relative;
+	bottom: 200px;
+}
+
+@media(max-width: 375px){
+	.tittle {
+	  display: block;
+	  align-content: center;
+	  position: relative;
+	  left:100px
+	}
+  }
+  @media(max-width: 375px){
+	.on {
+	  display: block;
+	  align-content: center;
+	  position: relative;
+	  left:150px
+	}
+  }
+  
+  @media(max-width: 375px){
+	.main-containt1 {
+	  display:block;
+	}
+  }
+  @media(max-width:375px){
+	.middle-img{
+	  width: 375px
+	}
+  }
+  
+  @media(max-width:375px){
+	.top-content{
+	  width: 375px
+	}
+  }
+  
+  @media(max-width:375px){
+	.main-containt2{
+	  display: block;
+	  
+	  width: 375px
+	}
+  }
+  
 
