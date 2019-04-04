@@ -1,3 +1,230 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+body{
+margin: 5%;
+
+}
+
+nav {
+   
+    display: flex;
+    justify-content: space-evenly;    
+    margin-bottom: 5%;
+    
+}
+
+nav a {
+    text-decoration: none;
+   color: grey;
+   align-self: center;
+}
+
+.logo-hidden{
+    visibility: hidden;
+}
+.cta {
+   
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-evenly;
+}
 
 
+.cta-text {
+    color: red;
+    font-size: 3em;
+   
+}
+
+button.on {
+    margin-left: 20%;
+    margin-bottom: 10%;
+   border: 2px solid black;
+   border-radius: 12%;
+   padding: 10%;
+
+}
+
+.header-img {
+    margin-bottom: 5%;
+}
+
+.p-cta {
+    display: flex;
+    justify-content: center;
+    margin-top: -2%;
+    margin-bottom: -25%;
+    margin-left: -15%;
+}
+
+
+.feat {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: -15%;
+    width: 40%;
+}
+.feat-h4{
+    font-size: 1.5em;
+    margin-bottom: -2%;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    margin-left: -10%;
+}
+
+.about-h4 {
+    font-size: 1.5em;
+    margin-bottom: -2%;
+}
+.top {
+    display: flex;
+    justify-content: space-evenly;
+}
+.hr {
+   border: 3px solid black;
+}
+.hidden-hr {
+    visibility: hidden;
+}
+.middle-img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+
+.bottom-container {
+
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.bottom-content-1 {
+    width: 30%;
+}
+
+.bottom-content-2 {
+    width: 30%;
+}
+
+.bottom-content-3 {
+    width: 30%;
+}
+
+
+.bottom-container h4 {
+    font-size: 1.5em;}
+
+
+ 
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* media quaries */ 
+@media(max-width: 800px) {
+    .header-img {
+        visibility: hidden;
+    }
+   .cta-text {
+        margin-left: 70%;
+   }
+  .logo {
+      display: none;
+   }
+
+   .logo-hidden {
+    
+       
+       visibility: visible;
+   }
+.hidden {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+}
+
+
+@media(max-width: 500px){
+    p {
+        color: red;
+    }
+.cta-text {
+    margin-left: 100%;
+}
+nav {
+    
+    flex-direction: column;
+    width: 100%;
+}
+nav a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.hidden-hr{
+    width: 100%;
+    visibility: visible;
+}
+
+.cta-text{
+    margin-left: 95%;
+}
+
+.bottom-container{
+    flex-direction: column;
+    
+}
+
+
+.bottom-p-1 {
+    color: blue;
+    width: 300%;
+}
+
+.bottom-p-2 {
+    color: blue;
+    width: 300%;
+}
+.bottom-p-3 {
+    color: blue;
+    width: 300%;
+}
+
+.middle-img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 25%;
+}
+   
+.feat {
+    flex-direction: column;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-left:2%;
+
+}
+.about {
+margin-top: 40%;
+margin-left: -97%;
+    flex-direction: column;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.about-p {
+    margin-bottom: 5%;
+}
+
+
+}
