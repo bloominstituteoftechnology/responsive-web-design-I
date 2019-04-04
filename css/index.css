@@ -31,7 +31,8 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
+  width: 880px;
 }
 ol, ul {
 	list-style: none;
@@ -183,12 +184,11 @@ small {
 /* //////////// */
 
 .services-header-img {
-	margin: 30px 0;
+	margin-bottom: 30px;
 	box-shadow: 0 10px 10px lightgray;
 }
 
 .services-header {
-	margin-top: 100px;
 	margin-bottom: 30px;
 	line-height: 120%;
 }
@@ -204,7 +204,7 @@ main.services-main {
 .services-main-box {
 	border: 1px solid lightgray;
 	box-shadow: 0 10px 10px lightgray;
-	width: 400px;
+	width: 47%;
 	padding: 15px;
 	margin-bottom: 30px;
 	background-color: #f4f3f4;
@@ -292,9 +292,9 @@ button.contact-button {
 ======================*/
 
 @media (max-width: 800px) {
-  body {
-    width: 100%
-  }
+  /* body {
+    width: 100%;
+  } */
 
   img.header-circle {
     display:none;
@@ -348,6 +348,30 @@ button.contact-button {
     margin-left: 10px;
   }
 
+  /* Services page media queries max-width 800px */
+
+  .services-header-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .services-header-text {
+    margin-left: 20px;
+  }
+
+  img.services-info-img {
+    display: none;
+  }
+
+  .services-main-box {
+    width: 95%;
+    margin-left: 20px;
+  }
+
+  div.services-bottom-content-text {
+    width: 100%;
+    margin-left: 20px;
+  }
 
 
 }
