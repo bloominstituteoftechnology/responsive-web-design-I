@@ -65,6 +65,11 @@ h1, h2, h3, h4, h5 {
 
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+/* Add to CSS to ensure img etc does not overflow size allowed */
+img, embed, object, video {
+    max-width: 100%;
+}
+
 h2 {
     font-size: 18px;
 }
@@ -112,17 +117,51 @@ hr {
     width: 100%;
 }
 
-@media (max-width: 800px) {
+@media only screen and (max-width: 800px) {
     .container {
         background: green;
+        width: 100%;
     }
+    .container header {
+        flex-direction: column-reverse;
+        height: auto;
+        margin: 0 auto;
+    }
+    .logo {
+        width: 200px;
+        margin-top: 50px;
+    }
+    .container header nav a {
+        font-size: 22px;
+    }
+    .banner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .banner .banner-text#b-img {
+        display: none;
+    }
+
 }
 
-@media (max-width: 500px) {
+@media  only screen and (max-width: 500px) {
     .container {
         background: red;
     }
-}
+    .container header nav {
+        display: flex;
+        flex-direction: column;
+    }
+    .container header nav a {
+        border-bottom: 1px solid black;
+        text-align: center;
+    }
+    .container .main, .content {
+        display: flex;
+        flex-direction: column;
+    }
+
 
 .container .banner {
     display: flex;
@@ -151,6 +190,7 @@ hr {
     width: 160px;
     height: 40px;
     font-size: 1.2em;
+    border: 1px solid black;
 } 
 
 .container .main {
