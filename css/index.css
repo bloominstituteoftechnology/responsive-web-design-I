@@ -67,7 +67,6 @@ h1, h2, h3, h4, h5 {
 
 /* MY CODE STARTS HERE */
 
-
 /***************
 **************** 
 General
@@ -76,8 +75,8 @@ General
 
 
 .container {
-	width: 876px;
-	margin: 0 auto;
+	width:	880px;
+	margin: auto;
 }
 
 h2 {
@@ -85,7 +84,7 @@ h2 {
 }
 
 hr {
-	margin: 85px 0 35px 0;
+	margin: 30px 0;
 	border: 0.5px solid black;
 }
 
@@ -97,129 +96,112 @@ Navigation
 **************** */
 
 .navigation {
-	display: flex;
-	justify-content: space-between;
-	margin-top: 30px;
+    display: flex;
+    width: 100%;
 }
 
-.navigation a {
+.navigation .nav-menu {
+    display: flex;
+    justify-content: space-between;
+    width: 610px;
+    align-self: center;
+    margin-top: 40px;
+}
+
+.navigation .nav-menu a {
+    margin-right: 30px;
+}
+
+.navigation .nav-menu a {
 	text-decoration: none;
 	align-self: center;
-	color: grey;
-    font-size: 16px;
-    margin: 0 25px;
+    color: #b0b0b0;
 }
 
 .navigation a:hover {
-	text-decoration: underline;
-	border-bottom: 2px solid black;
+    text-decoration: underline;
+	color: black;
 }
 
+.navigation .logo {
+    margin: 28px 0 0 91px;
+}
 
 
 
 /***************
 **************** 
-Header
+Top Content
 **************** 
 **************** */
 
-header {
-	display: flex;
-	justify-content: space-between;
-	width: 100%;
-	height: 100%;
-	margin-top: 60px;
+.top-content {
+    display: flex;
+    justify-content: space-between;
 }
 
-header h1 {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	font-size: 66px;
-	margin-top: 60px;
-	margin-left: 135px;
-    width: 33%;
+.top-content .top-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 120px;
+    font-size: 77px;
+    text-align: center;
 }
 
-.header-text-top {
-	margin-bottom: -60px;
-}
-
-.header-text {
-	margin-bottom: -60px;
-}
-
-.header-bottom-text {
-	margin-bottom: -32px;
-}
-
-.flex-item-btn {
+.top-section button {
+    background-color: white;
+    padding: 8px 44px;
+    margin-top: 6px;
+    font-size: 17px;
     border: 1px solid black;
-	padding: 10px 40px;
-    width: 50%;
+    cursor: pointer;
 }
-.header-img {
-	width: 43%;
-    height: 100%;
+
+.top-section button:hover {
+    background-color: black;
+    color: white;
+}
+
+.top-content img {
+    margin-top: 69px;
 }
 
 /***************
 **************** 
-top-content
+middle-content
 **************** 
 **************** */
 
 .middle-content {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    margin: 75px 0 35px 0;
+    padding: 35px 0;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.middle-content .middle-container {
+    display: flex;
+}
+
+.middle-content .features-bottom {
 	display: flex;
-	justify-content: space-between;
-	margin-bottom: 40px;
 }
 
-.left-content {
-	display: flex;
-	flex-direction: column;
+.middle-content .middle-container p {
+    padding-right: 20px;
 }
 
-.right-content h2 {
-	display: flex;
-	flex-direction: column;
+.middle-content .features-bottom p {
+    padding-right: 20px;
 }
 
-
-
-/***************
-**************** 
-banner-image
-**************** 
-**************** */
-
-.middle-img {
-    width: 100%;
+.middle-content img {
+    margin: 30px auto;
 }
 
-
-
-/***************
-**************** 
-features
-**************** 
-**************** */
-
-.features {
-	display: flex;
-	margin-top: 33px;
-	width: 100%;
-}
-
-.bottom-content {
-	width: 33%;
-}
-
-.bottom-hr {
-    margin: 49px 0 35px 0;
-	border: 0.5px solid black;
-}
 
 
 /***************
@@ -228,8 +210,9 @@ Contact
 **************** 
 **************** */
 
-.number {
-	margin: 15px 0;
+
+.contact p {
+    margin: 15px 0;
 }
 
 
@@ -242,9 +225,10 @@ footer
 footer {
 	display: flex;
 	justify-content: center;
-	margin: 40px 0;
-	font-size: 12px;
+	margin: 40px 0 20px;
 }
+
+
 
 
 
@@ -254,10 +238,85 @@ Media Queries
 **************** 
 **************** */
 
+@media (max-width: 940px) {
+    .container {
+        width: 90%;
+    }
+}
+
 @media (max-width: 800px) {
+    .container {
+        margin: 0 auto;
+    }
+
+    .navigation {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .navigation .nav-menu {
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .navigation .logo {
+        margin: 28px auto 0;
+    }
+
+    .top-content img {
+        display: none;
+    }
+
+    .top-section {
+        margin: 0 auto;
+    }
+
+    .middle-content .middle-container p {
+        padding-right: 25px;
+    }
     
+    .middle-content .features-bottom p {
+        padding-right: 25px;
+    }
+
+    .middle-content img {
+        width: 100%;
+    }
+
+
 }
 
 @media (max-width: 500px) {
-    
+    .container {
+        width: 100%;
+    }
+
+    .navigation {
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    .navigation .nav-menu {
+        flex-direction: column;
+        width: 100%;
+        margin: 20px 0 0 0;
+    }
+
+    .navigation .nav-menu a {
+        width: 100%;
+        padding: 20px 0;
+        margin: 0;
+        text-align: center;
+        border-bottom: 1px solid black;
+    }
+
+    .navigation .nav-menu a:first-child {
+        border-top: 1px solid black;
+    }
+
+    .top-content .top-section {
+        margin-top: 50px;
+    }
+
+  
 }
