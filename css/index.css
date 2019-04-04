@@ -67,6 +67,9 @@ h1, h2, h3, h4, h5 {
 }
 
 
+/*===========================
+  BODY & HEADER FOR ALL PAGES 
+============================*/
 body {
 	max-width: 880px;
 	margin: 0 auto;
@@ -101,6 +104,9 @@ header nav a:hover {
 	margin-left: 60px;
 }
 
+/*=====================
+  INDEX.HTML  
+=======================*/
 
 .top-section {
 	margin-top: 160px;
@@ -178,9 +184,9 @@ small {
 	text-align: center;
 }
 
-/* ////////////// */
-/* SERVICES PAGE */
-/* //////////// */
+/*=====================
+  SERVICES.HTML  
+=======================*/
 
 .services-header__img {
 	margin-bottom: 30px;
@@ -241,21 +247,22 @@ main.services-main p {
 	box-shadow: 0 10px 10px lightgray;
 }
 
-/* //////////// */
-/* CONTACT PAGE */
-/* //////////// */
 
-img.contact-header-img {
+/*=====================
+  CONTACT.HTML  
+=======================*/
+
+contact__header-img {
 	margin-top: 128px;
 	box-shadow: 0 10px 10px lightgray;
 }
 
-section.contact-us-top-content {
+.contact__top-content {
 	margin-top: 30px;
 	margin-bottom: 30px;
 }
 
-.contact-section {
+.contact-form {
 	margin-top: 30px;
 	display: flex;
 	justify-content: space-between;
@@ -280,7 +287,7 @@ input:focus, textarea:focus {
   border-color: #000;
 }
 
-button.contact-button {
+.contact-form__btn {
 	padding: 5px;
 	margin-top: 10px;
 	background-color: white;
@@ -290,13 +297,14 @@ button.contact-button {
     MEDIA QUERIES 
 ======================*/
 
+/* Tablet */
 @media (max-width: 800px) {
 
   body {
     width: 100%;
   }
 
-  .header-img {
+  .top-section__header-img {
     display:none;
   }
 
@@ -359,7 +367,7 @@ button.contact-button {
     margin-left: 20px;
   }
 
-  img.services-info-img {
+  .services-info-img {
     display: none;
   }
 
@@ -372,10 +380,9 @@ button.contact-button {
     width: 100%;
     margin-left: 20px;
   }
-
-
 }
 
+/* Phone */
 @media (max-width: 500px) {
   body {
     width: 100%;
@@ -401,7 +408,7 @@ button.contact-button {
     text-align: center;
   }
 
-  .header-img {
+  .top-section__header-img {
     display:none;
   }
 
