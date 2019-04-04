@@ -66,7 +66,6 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 body {
 	max-width: 880px;
@@ -103,7 +102,7 @@ header nav a:hover {
 }
 
 
-section.top-section {
+.top-section {
 	margin-top: 160px;
 	margin-bottom: 90px;
 	display: flex;
@@ -115,13 +114,13 @@ h1 {
 	font-size: 90px;
 }
 
-div.top-section-text {
+.top-section__text {
 	display:flex;
 	flex-direction: column;
 	align-items: center;
 }
 
-.get-started {
+.btn {
 	border: 1px solid black;
 	padding: 10px;
 	margin-top: 10px;
@@ -135,13 +134,13 @@ h2 {
 	font-size: x-large;
 }
 
-.top-columns {	
 
+.top-column {	
 	display: flex; 
 	justify-content: space-between;
 }
 
-.features, .about {
+.top-column__text {
   margin: 40px 0;
   width: 49%;
 }
@@ -150,12 +149,12 @@ h2 {
 	box-shadow: 0 10px 10px lightgray;
 }
 
-.bottom-columns {
+.bottom-column {
 	display: flex;
 	justify-content: space-between;
 }
 
-.services, .product, .vision {
+.bottom-column__text {
 	width: 30%;
 	margin: 40px 0;
 }
@@ -165,11 +164,11 @@ footer {
 	margin-top: 60px;
 }
 
-.street-address {
+.contact__street-address {
 	margin-bottom: 20px;
 }
 
-.tel {
+.contact__tel {
 	margin-bottom: 20px;
 }
 
@@ -297,7 +296,7 @@ button.contact-button {
     width: 100%;
   }
 
-  img.header-circle {
+  .header-img {
     display:none;
   }
 
@@ -320,7 +319,7 @@ button.contact-button {
     margin-left: 0;
   }
 
-  section.top-section {
+ .top-section {
     margin-top: 5%;
   }
 
@@ -328,16 +327,16 @@ button.contact-button {
     font-size: 70px;
   }
 
-  .get-started {
+  .btn {
     font-size: 15px;
     padding: 5px;
   }
 
-  div.top-columns {
+.top-column {
     margin-left: 10px;
   }
 
-  div.bottom-columns {
+ .bottom-column {
     margin-left: 10px;
   }
 
@@ -345,7 +344,7 @@ button.contact-button {
     font-size: medium;
   }
 
-  address {
+  .contact {
     margin-left: 10px;
   }
 
@@ -402,20 +401,20 @@ button.contact-button {
     text-align: center;
   }
 
-  img.header-circle {
+  .header-img {
     display:none;
   }
 
-  section.top-section {
+ .top-section {
     margin-top: 0;
   }
 
-  div.top-columns {
+  .top-column {
     flex-wrap: wrap;
     margin-left: 10px;
   }
 
-  div.bottom-columns {
+ .bottom-column {
     flex-wrap: wrap;
     margin-left: 10px;
   }
@@ -433,25 +432,25 @@ button.contact-button {
     font-size: 70px;
   }
 
-  .get-started {
+  .btn {
     padding: 8px;
     font-size: 15px;
   }
 
-  .column {
+  .bottom-column__text {
     margin: 20px 0;
     width: 90%;
   }
 
-  .features {
+  .top-column__features {
     margin-top: 50px;
   }
 
-  .about {
+  .top-column__about {
     margin-bottom: 50px;
   }
 
-  address {
+  .contact {
     margin-left: 10px;
   }
 
