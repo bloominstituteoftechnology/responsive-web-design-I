@@ -86,9 +86,10 @@ h1, h2, h3, h4, h5 {
 header {
 	margin: 40px 0 20px;
 	padding: 20px 0;
-	display: flex;
+  display: flex;
+  width: 100%;
 	justify-content: space-between;
-	align-items: center;
+  align-items: center;
 }
 
 @media (max-width: 800px) {
@@ -97,23 +98,40 @@ header {
 }
 }
 
+@media (max-width: 800px) {
+header {
+  margin-top: 0;
+}
+}
+
 header nav {
 	margin-top: 35px;
-	width: 90%;
+	width: 620px;
 	display: flex;
-	justify-content: space-between;
+  justify-content: space-between;
 }
 
 @media (max-width: 500px) {
 header nav {   
-  flex-flow: column wrap;
+  flex-direction: column;
+  margin-top: 0;
 }
 }
 
 header nav a {
   font-size: 14px;
-	color: gray;
-	text-decoration: none;
+	color: #B0B2B9;
+  text-decoration: none;
+}
+
+@media (max-width: 500px) {
+header nav a {   
+  width: 100%;
+  font-size: 20px;
+  border-bottom: 1px solid black;
+  text-align: center;
+  padding: 20px 0px 20px 0px;
+}
 }
 
 header nav a:hover {
@@ -122,6 +140,12 @@ header nav a:hover {
 
 header nav a:first-child {
   margin-left: 0;
+}
+
+@media (max-width: 500px) {
+  header nav a:first-child {
+      border-top: 1px solid black;
+  }
 }
 
 header nav a:last-child {
@@ -134,6 +158,13 @@ header .logo {
 	align-items: center;
 }
 
+@media (max-width: 800px) {
+  header .logo {
+    padding-bottom: 20px;
+    margin-top: 0px;
+  }
+}
+
 /* cta */
 .cta {
 	display: flex;
@@ -143,6 +174,7 @@ header .logo {
 @media (max-width: 800px) {
  .cta { 
   justify-content: center;
+  margin-top: 0px;
 }
 }
 
@@ -152,6 +184,12 @@ header .logo {
   margin-top: 120px;
   text-align: center;
   padding: 0px 75px;
+}
+
+@media (max-width: 800px) {
+  .cta .cta-text {
+    margin-top: 20px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -200,9 +238,15 @@ header .logo {
 }
 
 .main-content {
-  border-top: 1px solid black;
+  border-top: 2px solid black;
   margin-top: 76px;
   padding-top: 39px;
+}
+
+@media (max-width: 800px) {
+  .main-content {
+    margin-top: 40px;
+  }
 }
 
 .main-content .top-content {
@@ -266,7 +310,7 @@ header .logo {
 
 .contact {
   margin-top: 57px;
-  border-top: 1px solid black;
+  border-top: 2px solid black;
   padding: 39px 10px 0;
 }
 
