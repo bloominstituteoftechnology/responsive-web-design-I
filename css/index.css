@@ -1,3 +1,458 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
 
 
+.container {
+	margin: auto;
+	width: 800px;
+	font-family: 'Exo 2', sans-serif;
+
+}
+/* At 800px And below do the following: */
+@media (max-width: 800px) {
+	.container {
+		width: 700px;
+	}
+}
+
+/* At 500px And below do the following: */
+@media (max-width: 500px) {
+	.container {
+
+		width: 420px;
+		 
+
+	}
+}
+
+
+
+
+header {
+	box-sizing: border-box;
+	border-bottom: 1px solid black;   
+	padding-bottom: 60px; 
+	text-align: center; 
+
+}
+/* At 800px And below do the following: */
+@media (max-width: 800px) {
+	header {
+		width: 100%;
+		border-bottom: 3px solid black;
+		margin: auto;
+	}
+}
+
+
+
+.logo {
+	background-color: white;
+
+}
+/* At 800px And below do the following: */
+@media (max-width: 800px) {
+	.logo {
+		
+		display: flex; 
+		flex-direction: row-reverse;
+		margin-top: -90px;
+		margin-left: 259px; 
+	}
+}
+
+/* At 500px And below do the following: */
+@media (max-width: 500px) {
+	.logo {
+
+		margin-top: -400px;
+		margin-left: 120px; 
+		 
+
+	}
+}
+
+nav {
+	word-spacing: 40px;  
+	box-sizing: border-box;
+	padding: 10px; 
+	
+}
+/* At 800px And below do the following: */
+@media (max-width: 800px) {
+	nav {
+
+		
+		word-spacing: 40px;
+		margin-top: 90px;
+
+	}
+}
+
+/* At 500px And below do the following: */
+@media (max-width: 500px) {
+	nav {
+
+		margin-top: 100px;
+		
+
+	}
+}
+
+
+
+nav a {
+	text-decoration: none;
+	color: #b3b3b3; 
+
+}
+/* At 500px And below do the following: */
+@media (max-width: 500px) {
+	nav a {
+		display: block ;
+		padding: 20px; 
+		background: white;
+		border-bottom: 1px solid black;
+		 
+
+	}
+}
+
+
+@keyframes example {
+	from {color: red;}
+	to {color: yellow;}
+
+}
+
+
+
+nav a:hover {
+ animation-name: example;
+  animation-duration: 4s;
+}
+
+
+
+.top-section {
+padding-bottom: 10px; 
+box-sizing: border-box;
+}
+
+
+
+.title {
+	box-sizing: border-box;
+	display: inline-block;
+	width: 270px;
+	height: 300px; 
+	text-align: center; 
+}
+
+/* At 500px And below do the following: */
+@media (max-width: 500px) {
+	.title {
+		margin-top: -110px; 
+		margin-left: 0px; 
+		width: 230px; 
+	}
+}
+
+
+
+.title-logo {
+	display: inline-block;
+	margin-left: 88px; 
+	margin-top: 40px; 
+}
+
+/* At 800px And below do the following: */
+@media (max-width: 800px) {
+	.title-logo {
+		display: none;
+	}
+}
+
+.title h1 {
+font-size: 70px; 
+}
+
+/* At 800px And below do the following: */
+@media (max-width: 800px) {
+	.title h1 {
+		margin-top: 90px; 
+		margin-left: 20px;
+		text-align: center;
+		font-size: 75px;
+	}
+}
+
+/* At 500px And below do the following: */
+@media (max-width: 500px) {
+	.title h1 {
+
+		font-size: 75px;  
+		margin-top: 500px; 
+		margin-left: -40px;
+		 
+
+	}
+}
+
+.title-button {
+	width: 180px;
+	box-sizing: border-box;
+	padding: 8px; 
+	border: 1px solid black;
+	font-size: 16px;
+
+}
+
+@media (max-width: 800px) {
+	.title-button {
+		margin-left: 10px;
+		text-align: center;
+	}
+}
+
+@media (max-width: 500px) {
+	.title-button {
+		margin-left: -30px;
+		text-align: center;
+	}
+}
+
+.middle-content {
+	padding-top: 30px; 
+	line-height: 1.6; 
+}
+
+@media (max-width: 800px) {
+	.middle-content { 
+		line-height: 1.6; 
+	}
+}
+
+.middle-content img {
+	width: 100%; 
+}
+
+@media (max-width: 800px) {
+	.middle-content img {
+		width: 100%; 
+	}
+}
+
+
+.features {
+	box-sizing: border-box;
+	display: inline-block;
+	width: 400px;
+	padding: 20px; 
+}
+
+@media (max-width: 800px) {
+	.features {
+		width: 340px; 
+	
+	}
+}
+
+
+@media (max-width: 500px) {
+	.features {
+		width: 430px; 
+	
+	}
+}
+
+
+.about {
+	box-sizing: border-box;
+	display: inline-block;
+	width: 390px;
+	padding: 20px; 
+}
+
+@media (max-width: 800px) {
+	.about {
+		width: 340px; 
+		
+	}
+}
+
+@media (max-width: 500px) {
+	.about {
+		width: 430px; 
+	
+	}
+}
+
+.bottom-content { 
+	border-bottom: 1px solid black;
+	box-sizing: border-box;
+	padding-top: 20px; 
+	padding-bottom: 30px; 
+	line-height: 1.6; 
+}
+.services {
+	box-sizing: border-box;
+	display: inline-block;
+	width: 257px;
+	margin: 3px;
+}
+
+@media (max-width: 800px) {
+	.services {
+		width: 214px; 
+	
+	}
+}
+
+/* At 500px And below do the following: */
+@media (max-width: 500px) {
+	.services {
+
+		width: 410px; 
+		margin-top: 8px;
+		margin-bottom: 8px; 
+		padding: 10px; 
+		box-sizing: border-box; 
+
+	}
+}
+
+
+.product {
+	box-sizing: border-box;
+	display: inline-block;
+	width: 257px;
+	margin: 3px;
+}
+
+@media (max-width: 800px) {
+	.product {
+		width: 214px;   
+	
+	}
+}
+
+@media (max-width: 500px) {
+	.product {
+
+		width: 410px; 
+		margin-top: 8px;
+		margin-bottom: 8px; 
+		padding: 10px; 
+		box-sizing: border-box; 
+
+	}
+}
+
+
+
+.vision {
+	box-sizing: border-box;
+	display: inline-block;
+	width: 257px;  
+	margin: 3px;
+}
+
+@media (max-width: 800px) {
+	.vision {
+		width: 214px;  
+	
+	}
+}
+
+@media (max-width: 500px) {
+	.vision {
+
+		width: 410px; 
+		margin-top: 8px;
+		margin-bottom: 8px; 
+		padding: 10px; 
+		box-sizing: border-box; 
+
+	}
+}
+
+
+
+
+.contact {
+	box-sizing: border-box;
+	display: inline-block;
+	width: 252px; 
+	padding-top: 28px; 
+	line-height: 1.6; 
+}
+
+footer {
+	text-align: center;
+	padding: 50px; 
+}
