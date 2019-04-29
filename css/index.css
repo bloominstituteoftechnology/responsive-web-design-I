@@ -74,17 +74,24 @@ h1, h2, h3, h4, h5 {
 	}
 
 	header {
-		display: flex;
-		border: 3px mediumvioletred;
-		justify-content: space-between;
+        display: flex;
+        justify-content: space-between;
 		align-items: center;
 	}
 
 	nav {
+        width: 100%;
         display: flex;
-        flex-wrap: wrap;
-		text-decoration: none;
-	}
+        justify-content: space-around;
+        align-items: center;
+        margin: auto 0px 0px;
+    }
+    
+    header nav a {
+        color: gray;
+        text-decoration: none;
+        font-weight: bold;
+    }
 
 	.top-sec {
 		display: flex;
@@ -138,12 +145,13 @@ h1, h2, h3, h4, h5 {
 
     .contact {
         display: inline;
-        padding: 20px;
-        line-height: 2;
+        padding: 30px;
     }
 
 	footer {
-		text-align: center;
+        text-align: center;
+        font-weight: 500;
+        padding: 20px;
 	}
 
    
