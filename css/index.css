@@ -1,3 +1,246 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+.container {
+	width: 880px;
+	margin: auto;
+}
+
+header {
+	/* border: 5px dashed orange; */
+	padding: 20px 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+nav a {
+	color: grey;
+	text-decoration: none;
+	padding: 0 25px 0px;	
+}
+
+.intro-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px 0px 40px;
+}
+
+.intro h1 {
+	font-size: 50pt;	
+}  
 
 
+.introimg {
+	width: 30%;
+	/* border: 1px dashed red; */
+	display: inline-block;
+	/* TRBL*/
+	padding: 20px 10px 10px 20px;
+}
+
+.intro button {
+	padding: 5px 40px 5px;
+	border: 2px solid black;
+	font-family: 'Titillium Web';
+    border-radius: 5px;
+}
+
+header p {
+	text-align: center;
+	border: 2px solid black;
+	width: 150px;
+}
+.codeimg {
+	width: 30%;
+	height: 30%;
+	/*TRBL*/
+	padding: 0 20px 20px 100px;
+}
+
+.top-content {
+    border-top: 2px solid black;
+	padding: 30px 0 30px;
+    display: flex;
+}
+
+.middle-img {
+	display: block;
+	width: 100%;
+}
+
+.bottom-content {
+	border-bottom: 2px solid black;
+	padding: 20px 3px 30px;
+    display: flex;  
+}
+
+.contact-content {
+	margin-top: 30px;
+}
+footer p {
+	text-align: center;
+}
+
+/* Tablet */
+@media (max-width: 800px) {
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px 8%;        
+    }
+    header {        
+        display: flex;
+        flex-direction: column; 
+        align-items: center;       
+    }
+
+    .logo {     
+        order: -1;
+        padding-bottom: 5px;
+    }
+
+    .intro h1{
+        text-align: center;
+    }
+    
+    .introimg {
+        display:none;
+    }
+
+    .intro button {
+        margin-left: 50px;
+        padding: 8px 50px 8px;
+        border: 1px solid black;
+        font-family: 'Ariel';
+        font-size: 14px;
+        border-radius: 0px;
+        background-color: white;        
+    }
+
+    .features, .about, .services, .product, .vision {
+        padding: 10px;
+    }
+
+    .middle-img {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    footer {
+        padding-top: 20px;
+    }
+
+}
+/* Mobile */
+@media (max-width: 500px) {
+    .container {
+        max-width: 482px;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    .logo {
+        padding-bottom: 15px;        
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav a {
+        padding: 15px 0;
+        border-bottom: 1px solid black;        
+    }
+    /* give the first a tag a top border */
+    a:first-child {
+        border-top: 1px solid black;
+    }
+
+    .top-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .middle-img {
+        max-width: 100%;
+    }
+
+    .bottom-content {
+        display: flex;
+        flex-direction: column;        
+    }
+
+    footer {
+        padding-top: 20px;
+    }
+} 
