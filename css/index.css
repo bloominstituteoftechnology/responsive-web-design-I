@@ -1,3 +1,288 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+.container {
+	width: 880px;
+	margin: auto;
+}
+
+header {
+	padding: 20px 20px 20px;
+
+}
+
+nav {
+	display: flex; 
+  flex-flow: row nowrap; 
+  align-items: center; 
+	width: 75%;
+}
+nav a {
+	color: grey;
+	text-decoration: none;
+	padding: 0 25px 0px;
+	/* border: 3px solid blue; */
+}
+
+.intro-container {
+	text-align: center;
+  display: flex; 
+  flex-flow: row nowrap; 
+  align-items: center;
+  
+	/* border: 3px solid green; */
+}
+.intro  {
+	/* border: 4px dashed red; */
+	width: 450px;
+	text-align: center;
+	padding: 0px 0px 40px;
+}
+
+ .intro h1 {
+	font-size: 50pt;
+	/* border: 1px dashed red; */
+}  
 
 
+.introimg {
+	width: 30%;
+	/* border: 1px dashed red; */
+	/* TRBL*/
+	padding: 20px 10px 10px 20px;
+}
+
+.intro button {
+    background-color: white; 
+	padding: 5px 40px 5px;
+	border: 1px solid black;
+	font-family: 'Titillium Web';
+}
+
+header p {
+	text-align: center;
+	border: 1px solid black;
+	width: 150px;
+}
+.codeimg {
+	width: 30%;
+	height: 30%;
+	/*TRBL*/
+	padding: 0 20px 20px 100px;
+}
+
+.top-content {
+	border-top: 1px solid black;
+	padding: 30px 0 30px;
+  display: flex; 
+  flex-flow: row nowrap; 
+  align-items: center;
+}
+
+
+.top-content .features {
+	/* border: 1px solid red; */
+	width: 49%;
+	margin-right: 5px;
+}
+
+.top-content .about {
+	/* border: 1px solid red; */
+	width: 49%;
+}
+
+.middle-img {
+	display: flex;
+	width: 100%;
+}
+
+.bottom-content {
+	border-bottom: 1px solid black;
+	padding: 20px 0 30px;
+  display: flex; 
+  flex-flow: row nowrap; 
+  align-items: center;
+}
+
+.bottom-content .services {
+	width: 32%;
+	/* border: 1px solid red; */
+
+}
+
+.bottom-content .product {
+	
+	width: 32%;
+	margin: 0px 10px 0px;
+}
+
+.bottom-content .vision {
+	
+	width: 32%;
+}
+
+.contact-content {
+    margin-top: 30px;
+    color: black;
+    text-decoration: none;  
+}
+footer p {
+    text-align: center;
+}
+
+address {
+    text-decoration: none; 
+}
+@media (max-width: 800px) {
+    .container { 
+        margin: 0 auto;
+        max-width: 100%; 
+        padding: 20px;  
+    }
+    nav {
+        justify-content: space-around;
+        display: flex; 
+    }
+    
+    .logo {
+            order: -1;   
+            flex-direction: column;
+        }
+    .introimg {
+        display: none; 
+    } 
+    .intro {
+        display: block;  
+        width: 100%; 
+        }
+      
+    
+}
+
+@media (max-width: 500px) {
+    
+.logo {
+    order: -1;
+       
+}
+nav {
+    flex-direction: column; 
+    align-items: center; 
+    width: 100%;
+} 
+nav a {
+    padding: 7px 0px 7px 0px;
+    width: 100%;
+    text-align: center; 
+    border-bottom: 1px solid grey;  
+} 
+.logo {
+    padding-bottom: 20px; 
+}
+
+#services {
+    border-top: 1px solid grey; 
+
+}
+.top-content {
+    display: flex; 
+    flex-direction: column;  
+}
+.top-content .features {
+	width: 100%;
+	padding: 20px;
+}
+
+.top-content .about {
+    width: 100%; 
+    padding: 20px;
+}
+.features{
+    width: 100%
+}
+.middle-img {
+    width: 100%; 
+}
+.bottom-content {
+    display: flex; 
+    flex-direction: column; 
+    width: 100%; 
+}
+.bottom-content .services {
+    width: 100%;
+    padding: 20px; 
+}
+
+.bottom-content .product {
+    width: 100%;
+    padding: 20px; 
+}
+
+.bottom-content .vision {
+    width: 100%;
+    padding: 20px; 
+}
+.contact-content {
+    padding: 20px; 
+}
+
+}
