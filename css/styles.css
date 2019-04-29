@@ -272,22 +272,31 @@ h1.title {
 	font-size: 30px;
 }
 
+.services-header-img {
+	width: 100%;
+}
+
+@media(max-width: 500px) {
+	.service-heading{
+		margin: 0 2%;
+	}
+}
+
 div.service-box-row {
 	display: flex;
 	justify-content: space-between;
 }
 
 div.service-box {
-	height: 250px;
-	width: 420px;
+	width: 48%;
 	border: 1px solid #333;
 	background: #f4f3f4;
-	margin-bottom: 30px;
-	padding: 20px;
+	margin-bottom: 2rem;
+	padding: 1rem;
 }
 
 .learn-more-button {
-	padding: 10px 40px;
+	padding: 0.5rem 2rem;
 	background: white;
 	border: 1px solid gray;
 	display: inline-block;
@@ -297,17 +306,24 @@ div.service-box {
 	border-radius: 5px;
 }
 
+/* Services box Media Query*/
+@media(max-width: 500px) {
+	div.service-box-row {
+		flex-direction: column;
+	}
+
+	div.service-box {
+		width: 100%;
+	}
+}
+
 .services-footer {
 	display: flex;
 	justify-content: space-between;
 }
 
-.left-service-column {
-	width: 420px;
-}
-
-.right-service-column {
-	width: 420px;
+.left-service-column, .right-service-column  {
+	width: 48%;
 }
 
 .facts-list li {
@@ -317,6 +333,21 @@ div.service-box {
 
 .facts-item {
 	margin: 15px 0;
+}
+
+/* Media Queries for Services Footer */
+@media(max-width: 800px) {
+	.services-footer {
+		flex-direction: column;
+	}
+
+	.left-service-column, .right-service-column  {
+		width: 100%;
+	}
+
+	.services-info-img {
+		width: 100%;
+	}
 }
 
 p {
