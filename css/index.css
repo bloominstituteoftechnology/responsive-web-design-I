@@ -72,10 +72,20 @@ h1, h2, h3, h4, h5 {
 	font-family: 'Exo 2', sans-serif;
 
 }
-
+/* At 800px And below do the following: */
 @media (max-width: 800px) {
 	.container {
 		width: 700px;
+	}
+}
+
+/* At 500px And below do the following: */
+@media (max-width: 500px) {
+	.container {
+
+		width: 420px;
+		 
+
 	}
 }
 
@@ -89,7 +99,7 @@ header {
 	text-align: center; 
 
 }
-
+/* At 800px And below do the following: */
 @media (max-width: 800px) {
 	header {
 		width: 100%;
@@ -98,18 +108,31 @@ header {
 	}
 }
 
+
+
 .logo {
 	background-color: white;
 
 }
-
+/* At 800px And below do the following: */
 @media (max-width: 800px) {
 	.logo {
 		
 		display: flex; 
 		flex-direction: row-reverse;
-		margin-top: -100px;
+		margin-top: -90px;
 		margin-left: 259px; 
+	}
+}
+
+/* At 500px And below do the following: */
+@media (max-width: 500px) {
+	.logo {
+
+		margin-top: -400px;
+		margin-left: 120px; 
+		 
+
 	}
 }
 
@@ -119,7 +142,7 @@ nav {
 	padding: 10px; 
 	
 }
-
+/* At 800px And below do the following: */
 @media (max-width: 800px) {
 	nav {
 
@@ -129,11 +152,36 @@ nav {
 
 	}
 }
+
+/* At 500px And below do the following: */
+@media (max-width: 500px) {
+	nav {
+
+		margin-top: 100px;
+		
+
+	}
+}
+
+
+
 nav a {
 	text-decoration: none;
 	color: #b3b3b3; 
 
 }
+/* At 500px And below do the following: */
+@media (max-width: 500px) {
+	nav a {
+		display: block ;
+		padding: 20px; 
+		background: white;
+		border-bottom: 1px solid black;
+		 
+
+	}
+}
+
 
 @keyframes example {
 	from {color: red;}
@@ -156,6 +204,7 @@ box-sizing: border-box;
 }
 
 
+
 .title {
 	box-sizing: border-box;
 	display: inline-block;
@@ -164,10 +213,21 @@ box-sizing: border-box;
 	text-align: center; 
 }
 
+/* At 500px And below do the following: */
+@media (max-width: 500px) {
+	.title {
+		margin-top: -110px; 
+		margin-left: -10px; 
+		width: 230px; 
+	}
+}
+
+
+
 .title-logo {
 	display: inline-block;
 	margin-left: 88px; 
-	margin-top: 110px; 
+	margin-top: 20px; 
 }
 
 /* At 800px And below do the following: */
@@ -188,6 +248,18 @@ font-size: 70px;
 		margin-left: 20px;
 		text-align: center;
 		font-size: 75px;
+	}
+}
+
+/* At 500px And below do the following: */
+@media (max-width: 500px) {
+	.title h1 {
+
+		font-size: 75px;  
+		margin-top: 500px; 
+		margin-left: -40px;
+		 
+
 	}
 }
 
@@ -244,6 +316,14 @@ font-size: 70px;
 }
 
 
+@media (max-width: 500px) {
+	.features {
+		width: 430px; 
+	
+	}
+}
+
+
 .about {
 	box-sizing: border-box;
 	display: inline-block;
@@ -255,6 +335,13 @@ font-size: 70px;
 	.about {
 		width: 340px; 
 		
+	}
+}
+
+@media (max-width: 500px) {
+	.about {
+		width: 430px; 
+	
 	}
 }
 
@@ -279,6 +366,19 @@ font-size: 70px;
 	}
 }
 
+/* At 500px And below do the following: */
+@media (max-width: 500px) {
+	.services {
+
+		width: 410px; 
+		margin-top: 8px;
+		margin-bottom: 8px; 
+		padding: 10px; 
+		box-sizing: border-box; 
+
+	}
+}
+
 
 .product {
 	box-sizing: border-box;
@@ -294,6 +394,19 @@ font-size: 70px;
 	}
 }
 
+@media (max-width: 500px) {
+	.product {
+
+		width: 410px; 
+		margin-top: 8px;
+		margin-bottom: 8px; 
+		padding: 10px; 
+		box-sizing: border-box; 
+
+	}
+}
+
+
 
 .vision {
 	box-sizing: border-box;
@@ -308,6 +421,19 @@ font-size: 70px;
 	
 	}
 }
+
+@media (max-width: 500px) {
+	.vision {
+
+		width: 410px; 
+		margin-top: 8px;
+		margin-bottom: 8px; 
+		padding: 10px; 
+		box-sizing: border-box; 
+
+	}
+}
+
 
 
 
