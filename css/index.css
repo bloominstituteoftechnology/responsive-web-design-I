@@ -1,3 +1,208 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
 
 
+.container {
+	margin: auto;
+	width: 800px;
+	font-family: 'Exo 2', sans-serif;
+
+}
+
+header {
+	box-sizing: border-box;
+	border-bottom: 1px solid black;   
+	padding-bottom: 60px; 
+
+}
+
+nav {
+	box-sizing: border-box;
+	word-spacing: 40px; 
+	background-color: black; 
+	padding: 20px; 
+	position: fixed; 
+}
+
+
+nav a {
+	text-decoration: none;
+	color: #b3b3b3; 
+
+}
+
+@keyframes example {
+	from {color: red;}
+	to {color: yellow;}
+
+}
+
+nav a:hover {
+ animation-name: example;
+  animation-duration: 4s;
+}
+
+.logo {
+	background-color: white;
+	display: inline;  
+}
+
+
+.top-section {
+padding-bottom: 10px; 
+box-sizing: border-box;
+}
+
+
+.title {
+	box-sizing: border-box;
+	display: inline-block;
+	width: 270px;
+	height: 300px; 
+	text-align: center; 
+}
+
+.title-logo {
+	display: inline-block;
+	margin-left: 88px; 
+	margin-top: 110px; 
+}
+
+.title h1 {
+font-size: 70px; 
+}
+
+.title-button {
+	width: 180px;
+	box-sizing: border-box;
+	padding: 8px; 
+	border: 1px solid black;
+	font-size: 16px;
+
+}
+
+.middle-content {
+	padding-top: 30px; 
+	line-height: 1.6; 
+}
+
+.middle-content img {
+	width: 100%; 
+}
+
+
+.features {
+	box-sizing: border-box;
+	display: inline-block;
+	width: 400px;
+	padding: 20px; 
+}
+.about {
+	box-sizing: border-box;
+	display: inline-block;
+	width: 390px;
+	padding: 20px; 
+}
+
+.bottom-content { 
+	border-bottom: 1px solid black;
+	box-sizing: border-box;
+	padding-top: 20px; 
+	padding-bottom: 30px; 
+	line-height: 1.6; 
+}
+.services {
+	box-sizing: border-box;
+	display: inline-block;
+	width: 257px;
+	margin: 3px;
+}
+.product {
+	box-sizing: border-box;
+	display: inline-block;
+	width: 257px;
+	margin: 3px;
+}
+.vision {
+	box-sizing: border-box;
+	display: inline-block;
+	width: 257px;  
+	margin: 3px;
+}
+
+.contact {
+	box-sizing: border-box;
+	display: inline-block;
+	width: 252px; 
+	padding-top: 28px; 
+	line-height: 1.6; 
+}
+
+footer {
+	text-align: center;
+	padding: 50px; 
+}
