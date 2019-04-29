@@ -81,7 +81,6 @@ h1, h2, h3, h4, h5 {
 .container {
 	margin: 1rem auto;
 	max-width: 500px;
-	border: 5px solid red;
 }
 
 main {
@@ -130,19 +129,16 @@ h1 {
 	.header {
 		margin: 0 0 2rem 0;
 	}
-
 	.nav-links {
 		flex-direction: row;
 		margin-top: 0.75rem;
-		width: 70%;
+		width: 100%;
 		justify-content: space-between;
 	}
-
 	.nav-item {
 		border-top: none;
 		padding: 0;
 	}
-
 	.container header .nav-item:nth-of-type(6) {
 		border-bottom: none;
 	}
@@ -155,6 +151,9 @@ h1 {
 	}
 	.header {
 		flex-direction: row;
+	}
+	.nav-links {
+		width: 70%;
 	}
 }
 
@@ -273,4 +272,103 @@ hr {
 	margin: 2rem 0.5rem;
 	background-color: black;
 	height: 2px;
+}
+
+/* Media Query HR*/
+@media(min-width: 800px) {
+	hr {
+		margin: 2rem 0;
+	}
+}
+
+/* Services Page */
+
+h1.title {
+	margin-top: 30px;
+	font-size: 30px;
+}
+
+.service-heading, .services-footer {
+	margin: 0 2%;
+}
+
+.services-header-img {
+	width: 100%;
+}
+
+/* Media Query Service Headings */
+@media(min-width: 800px) {
+	.service-heading, .services-footer {
+		margin: 0 0%;
+	}
+
+	hr {
+		margin: 2rem 0;
+	}
+}
+
+div.service-box-row {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+
+div.service-box {
+	width: 100%;
+	border: 1px solid #333;
+	background: #f4f3f4;
+	margin-bottom: 2rem;
+	padding: 1rem;
+}
+
+.learn-more-button {
+	padding: 0.5rem 2rem;
+	background: white;
+	border: 1px solid gray;
+	display: inline-block;
+	color: black;
+	text-decoration: none;
+	text-align: center;
+	border-radius: 5px;
+}
+
+/* Services box Media Query*/
+@media(min-width: 800px) {
+	div.service-box-row {
+		flex-direction: row;
+	}
+
+	div.service-box {
+		width: 48%;
+	}
+}
+
+.services-footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.left-service-column, .right-service-column {
+	width: 100%;
+}
+
+.facts-list li {
+	margin-left: 20px;
+	list-style: square;
+}
+
+.facts-item {
+	margin: 15px 0;
+}
+
+/* Media Queries for Services Footer */
+@media(min-width: 800px) {
+	.services-footer {
+		flex-direction: row;
+	}
+
+	.left-service-column, .right-service-column {
+		width: 48%;
+	}
 }
