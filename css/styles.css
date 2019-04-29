@@ -1,0 +1,374 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: 'Bangers', cursive;
+	font-weight: 900;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+:root {
+	font-size: 16px;
+}
+
+@media(max-width: 800px) {
+	:root {
+		font-size: 18px;
+	}
+}
+
+@media(max-width: 500px) {
+	:root {
+		font-size: 20px;
+	}
+}
+
+/* Mobile-First Page & Header */
+
+.container {
+	margin: 1rem auto;
+	max-width: 500px;
+}
+
+main {
+	margin: 0 0.5rem;
+}
+
+h1 {
+	font-size: 4.375rem;
+	font-family: 'Bangers', cursive;
+}
+
+.header {
+	display: flex;
+	flex-direction: column-reverse;
+	text-align: center;
+	justify-content: space-between;
+	margin: 0 0 2rem 0;
+}
+
+.nav-links {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	flex-direction: column;
+	margin-top: 1rem;
+}
+
+.nav-item {
+	color: grey;
+	text-decoration: none;
+	border-top: solid 1px grey;
+	padding: 0.5rem;
+}
+
+.container header .nav-item:nth-of-type(6) {
+	border-bottom: solid 1px grey;
+}
+
+/* Media Query for Page, Header and Nav elements*/
+
+@media(min-width: 500px) {
+	.container {
+		max-width: 800px;
+		margin: 1rem 1rem;
+	}
+	.header {
+		margin: 0 0 2rem 0;
+	}
+	.nav-links {
+		flex-direction: row;
+		margin-top: 0.75rem;
+		width: 100%;
+		justify-content: space-between;
+	}
+	.nav-item {
+		border-top: none;
+		padding: 0;
+	}
+	.container header .nav-item:nth-of-type(6) {
+		border-bottom: none;
+	}
+}
+
+@media(min-width: 800px) {
+	.container {
+		max-width: 876px;
+		margin: 1rem auto;
+	}
+	.header {
+		flex-direction: row;
+	}
+	.nav-links {
+		width: 70%;
+	}
+}
+
+/* Hero Section */
+
+.hero {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: space-between;
+	margin: 0 0 3rem 0;
+}
+
+.left-hero {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.right-hero {
+	display: none;
+}
+
+.hero-text {
+	margin: 1.5rem 4rem 1.5rem 4rem;
+	text-align: center;
+}
+
+.cta-button {
+	padding: 0.5rem 3rem;
+	background: white;
+	border: 1px solid gray;
+	color: black;
+	text-decoration: none;
+	text-align: center;
+}
+
+@media(min-width: 800px) {
+	.right-hero {
+		display: block;
+	}
+}
+
+/* Top Content and Columns */
+
+.top-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: 1rem 0;
+}
+
+.column-1, .column-2 {
+	width: 100%;
+	margin-top: 1rem;
+}
+
+.middle-img {
+	width: 100%;
+}
+
+/* Media Query for Top Content and Columns */
+
+@media(min-width: 500px) {
+	.top-content {
+		flex-direction: row;
+	}
+	.column-1, .column-2 {
+		width: 48%;
+	}
+}
+
+/* Bottom Content and Columns */
+
+.bottom-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: 1rem 0 0 0;
+}
+
+.column-3, .column-4, .column-5 {
+	width: 100%;
+	margin-top: 1rem;
+}
+
+/* Media Query for Bottom Content and Columns */
+
+@media(min-width: 500px) {
+	.bottom-content {
+		flex-direction: row;
+	}
+	.column-3, .column-4, .column-5 {
+		width: 31%;
+	}
+}
+
+/* Footer area */
+
+.contact {
+	margin: 0 0.5rem;
+	display: flex;
+	flex-direction: column;
+}
+
+footer {
+	margin: 2rem;
+	text-align: center;
+}
+
+p {
+	margin-bottom: 20px;
+	line-height: 130%;
+}
+
+hr {
+	margin: 2rem 0.5rem;
+	background-color: black;
+	height: 2px;
+}
+
+/* Media Query HR*/
+@media(min-width: 800px) {
+	hr {
+		margin: 2rem 0;
+	}
+}
+
+/* Services Page */
+
+h1.title {
+	margin-top: 30px;
+	font-size: 30px;
+}
+
+.service-heading, .services-footer {
+	margin: 0 2%;
+}
+
+.services-header-img {
+	width: 100%;
+}
+
+/* Media Query Service Headings */
+@media(min-width: 800px) {
+	.service-heading, .services-footer {
+		margin: 0 0%;
+	}
+
+	hr {
+		margin: 2rem 0;
+	}
+}
+
+div.service-box-row {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+
+div.service-box {
+	width: 100%;
+	border: 1px solid #333;
+	background: #f4f3f4;
+	margin-bottom: 2rem;
+	padding: 1rem;
+}
+
+.learn-more-button {
+	padding: 0.5rem 2rem;
+	background: white;
+	border: 1px solid gray;
+	display: inline-block;
+	color: black;
+	text-decoration: none;
+	text-align: center;
+	border-radius: 5px;
+}
+
+/* Services box Media Query*/
+@media(min-width: 800px) {
+	div.service-box-row {
+		flex-direction: row;
+	}
+
+	div.service-box {
+		width: 48%;
+	}
+}
+
+.services-footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.left-service-column, .right-service-column {
+	width: 100%;
+}
+
+.facts-list li {
+	margin-left: 20px;
+	list-style: square;
+}
+
+.facts-item {
+	margin: 15px 0;
+}
+
+/* Media Queries for Services Footer */
+@media(min-width: 800px) {
+	.services-footer {
+		flex-direction: row;
+	}
+
+	.left-service-column, .right-service-column {
+		width: 48%;
+	}
+}
