@@ -119,9 +119,14 @@ h1, h2, h3, h4, h5 {
 		padding-right: 4px;
 	}
 
-	.banner {
-		max-width: 100%;
-	}
+	@media (max-width: 800px) {
+        .top-img {
+            width: 500px;
+        }
+        .middle-img {
+            width: 500px;
+        }
+    }
 
 	.bot-sec {
         display: flex;
@@ -132,7 +137,9 @@ h1, h2, h3, h4, h5 {
 	}
 
     .contact {
+        display: inline;
         padding: 20px;
+        line-height: 2;
     }
 
 	footer {
