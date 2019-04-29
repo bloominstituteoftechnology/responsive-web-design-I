@@ -61,27 +61,27 @@ h1, h2, h3, h4, h5 {
 /* Your code starts here! */
 
 :root {
-    font-size: 16px;
+	font-size: 16px;
 }
 
 @media(max-width: 800px) {
-    :root {
-        font-size: 18px;
-    }
+	:root {
+		font-size: 18px;
+	}
 }
 
 @media(max-width: 500px) {
-    :root {
-        font-size: 20px;
-    }
+	:root {
+		font-size: 20px;
+	}
 }
 
 /* Index Page */
 
 .container {
-    margin: 1rem auto;
-    max-width: 876px;
-    border: 5px solid red;
+	margin: 1rem auto;
+	max-width: 876px;
+	border: 5px solid red;
 }
 
 h1 {
@@ -92,8 +92,8 @@ h1 {
 .header {
 	display: flex;
 	text-align: center;
-    justify-content: space-between;
-    margin: 0 0 2rem 0;
+	justify-content: space-between;
+	margin: 0 0 2rem 0;
 }
 
 .nav-links {
@@ -109,12 +109,12 @@ h1 {
 }
 
 /* Media Query for Page, Header and Nav elements*/
+
 @media(max-width: 800px) {
 	.container {
 		margin: 1rem;
 	}
-
-    .header {
+	.header {
 		flex-direction: column-reverse;
 	}
 	.nav-links {
@@ -127,24 +127,18 @@ h1 {
 	.container {
 		margin: 0.5rem 0;
 	}
-
 	.nav-links {
 		flex-direction: column;
 		margin-top: 1rem;
 	}
-
 	.nav-item {
 		border-top: solid 1px grey;
 		padding: 0.5rem;
 	}
-
 	.container header .nav-item:nth-of-type(6) {
 		border-bottom: solid 1px grey;
 	}
 }
-
-
-
 
 .hero {
 	display: flex;
@@ -181,22 +175,34 @@ h1 {
 	}
 }
 
-
 .top-content {
 	display: flex;
 	justify-content: space-between;
-	margin: 2.5rem 0;
+	margin: 1rem 0;
 }
 
-.column-1 {
-	padding: 0 1rem 0 0;
-	width: 50%;
+.column-1, .column-2 {
+	width: 48%;
+	margin-top: 1rem;
+
 }
 
-.column-2 {
-	padding: 0 0 0 1rem;
-	width: 50%;
+/* Media query for top content and columns */
+
+@media(max-width: 500px) {
+	main {
+		margin: 0 0.5rem;
+	}
+
+	.top-content {
+		flex-direction: column;
+	}
+
+	.column-1, .column-2 {
+		width: 100%;
+	}
 }
+
 
 .middle-img {
 	width: 100%;
@@ -205,22 +211,26 @@ h1 {
 .bottom-content {
 	display: flex;
 	justify-content: space-between;
-	margin: 2rem 0 0 0;
+	margin: 1rem 0 0 0;
 }
 
-.column-3 {
-	padding: 0 1rem 0 0;
-	width: 33%;
+.column-3, .column-4, .column-5 {
+	width: 31%;
+	margin-top: 1rem;
 }
 
-.column-4 {
-	padding: 0 0.5rem 0 0.5rem;
-	width: 33%;
-}
+/* Media query for bottom content and columns */
 
-.column-5 {
-	padding: 0 0 0 1rem;
-	width: 33%;
+@media(max-width: 500px) {
+
+
+	.bottom-content {
+		flex-direction: column;
+	}
+
+	.column-3, .column-4, .column-5 {
+		width: 100%;
+	}
 }
 
 .contact {
@@ -233,16 +243,27 @@ footer {
 	text-align: center;
 }
 
+/* Media query for contact and footer */
+
+@media(max-width: 500px) {
+	.contact {
+		margin: 2rem 0.5rem;
+	}
+}
+
 hr {
 	margin: 2rem 0;
 	background-color: black;
 	height: 2px;
 }
 
-@media(max-width: 500px) {
-	
-}
+/* Media Query for HR */
 
+@media(max-width: 500px) {
+	hr {
+		margin: 1rem 0.5rem;
+	}
+}
 
 /* Services Page */
 
