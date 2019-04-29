@@ -73,23 +73,62 @@ h1, h2, h3, h4, h5 {
 
 }
 
+@media (max-width: 800px) {
+	.container {
+		width: 700px;
+	}
+}
+
+
+
+
 header {
 	box-sizing: border-box;
 	border-bottom: 1px solid black;   
 	padding-bottom: 60px; 
+	text-align: center; 
 
+}
+
+@media (max-width: 800px) {
+	header {
+		width: 100%;
+		border-bottom: 3px solid black;
+		margin: auto;
+	}
+}
+
+.logo {
+	background-color: white;
+
+}
+
+@media (max-width: 800px) {
+	.logo {
+		
+		display: flex; 
+		flex-direction: row-reverse;
+		margin-top: -100px;
+		margin-left: 259px; 
+	}
 }
 
 nav {
+	word-spacing: 40px;  
 	box-sizing: border-box;
-	word-spacing: 40px; 
-	background-color: black; 
-	padding: 20px; 
-	position: fixed; 
+	padding: 10px; 
+	
 }
 
+@media (max-width: 800px) {
+	nav {
 
+		
+		word-spacing: 40px;
+		margin-top: 90px;
 
+	}
+}
 nav a {
 	text-decoration: none;
 	color: #b3b3b3; 
@@ -102,15 +141,13 @@ nav a {
 
 }
 
+
+
 nav a:hover {
  animation-name: example;
   animation-duration: 4s;
 }
 
-.logo {
-	background-color: white;
-	display: inline;  
-}
 
 
 .top-section {
@@ -133,8 +170,25 @@ box-sizing: border-box;
 	margin-top: 110px; 
 }
 
+/* At 800px And below do the following: */
+@media (max-width: 800px) {
+	.title-logo {
+		display: none;
+	}
+}
+
 .title h1 {
 font-size: 70px; 
+}
+
+/* At 800px And below do the following: */
+@media (max-width: 800px) {
+	.title h1 {
+		margin-top: 90px; 
+		margin-left: 20px;
+		text-align: center;
+		font-size: 75px;
+	}
 }
 
 .title-button {
@@ -146,13 +200,32 @@ font-size: 70px;
 
 }
 
+@media (max-width: 800px) {
+	.title-button {
+		margin-left: 10px;
+		text-align: center;
+	}
+}
+
 .middle-content {
 	padding-top: 30px; 
 	line-height: 1.6; 
 }
 
+@media (max-width: 800px) {
+	.middle-content { 
+		line-height: 1.6; 
+	}
+}
+
 .middle-content img {
 	width: 100%; 
+}
+
+@media (max-width: 800px) {
+	.middle-content img {
+		width: 100%; 
+	}
 }
 
 
@@ -162,11 +235,27 @@ font-size: 70px;
 	width: 400px;
 	padding: 20px; 
 }
+
+@media (max-width: 800px) {
+	.features {
+		width: 340px; 
+	
+	}
+}
+
+
 .about {
 	box-sizing: border-box;
 	display: inline-block;
 	width: 390px;
 	padding: 20px; 
+}
+
+@media (max-width: 800px) {
+	.about {
+		width: 340px; 
+		
+	}
 }
 
 .bottom-content { 
@@ -182,18 +271,45 @@ font-size: 70px;
 	width: 257px;
 	margin: 3px;
 }
+
+@media (max-width: 800px) {
+	.services {
+		width: 214px; 
+	
+	}
+}
+
+
 .product {
 	box-sizing: border-box;
 	display: inline-block;
 	width: 257px;
 	margin: 3px;
 }
+
+@media (max-width: 800px) {
+	.product {
+		width: 214px;   
+	
+	}
+}
+
+
 .vision {
 	box-sizing: border-box;
 	display: inline-block;
 	width: 257px;  
 	margin: 3px;
 }
+
+@media (max-width: 800px) {
+	.vision {
+		width: 214px;  
+	
+	}
+}
+
+
 
 .contact {
 	box-sizing: border-box;
