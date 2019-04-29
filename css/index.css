@@ -1,3 +1,313 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
 
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: 'Bangers', cursive;
+	font-weight: 900;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+:root {
+    font-size: 16px;
+}
+
+@media(max-width: 800px) {
+    :root {
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 500px) {
+    :root {
+        font-size: 24px;
+    }
+}
+
+/* Index Page */
+
+.container {
+    margin: 0 auto;
+    width: 876px;
+    border: 5px solid red;
+}
+
+h1 {
+	font-size: 4.375rem;
+	font-family: 'Bangers', cursive;
+}
+
+.header {
+	display: flex;
+	text-align: center;
+    justify-content: space-between;
+    margin: 0 0 2rem 0;
+}
+
+.nav-links {
+	display: flex;
+}
+
+.nav-item {
+	padding-right: 3rem;
+	color: grey;
+	text-decoration: none;
+}
+
+.logo {
+	margin: -0.5rem 0 0 0;
+}
+
+.hero {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: space-between;
+	margin: 0 0 3rem 0;
+}
+
+.left-hero {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.hero-text {
+	margin: 3rem 4rem 2rem 4rem;
+	text-align: center;
+}
+
+.cta-button {
+	padding: 1rem 3rem;
+	background: white;
+	border: 1px solid gray;
+	color: black;
+	text-decoration: none;
+	text-align: center;
+}
+
+.top-content {
+	display: flex;
+	justify-content: space-between;
+	margin: 2.5rem 0;
+}
+
+.column-1 {
+	padding: 0 1rem 0 0;
+	width: 50%;
+}
+
+.column-2 {
+	padding: 0 0 0 1rem;
+	width: 50%;
+}
+
+.middle-img {
+	width: 100%;
+}
+
+.bottom-content {
+	display: flex;
+	justify-content: space-between;
+	margin: 2rem 0 0 0;
+}
+
+.column-3 {
+	padding: 0 1rem 0 0;
+	width: 33%;
+}
+
+.column-4 {
+	padding: 0 0.5rem 0 0.5rem;
+	width: 33%;
+}
+
+.column-5 {
+	padding: 0 0 0 1rem;
+	width: 33%;
+}
+
+.contact {
+	display: flex;
+	flex-direction: column;
+}
+
+footer {
+	margin: 2rem;
+	text-align: center;
+}
+
+hr {
+	margin: 2rem 0;
+	background-color: #333;
+	height: 1px;
+}
+
+/* Services Page */
+
+h1.title {
+	margin-top: 30px;
+	font-size: 30px;
+}
+
+div.service-box-row {
+	display: flex;
+	justify-content: space-between;
+}
+
+div.service-box {
+	height: 250px;
+	width: 420px;
+	border: 1px solid #333;
+	background: #f4f3f4;
+	margin-bottom: 30px;
+	padding: 20px;
+}
+
+.learn-more-button {
+	padding: 10px 40px;
+	background: white;
+	border: 1px solid gray;
+	display: inline-block;
+	color: black;
+	text-decoration: none;
+	text-align: center;
+	border-radius: 5px;
+}
+
+.services-footer {
+	display: flex;
+	justify-content: space-between;
+}
+
+.left-service-column {
+	width: 420px;
+}
+
+.right-service-column {
+	width: 420px;
+}
+
+.facts-list li {
+	margin-left: 20px;
+	list-style: square;
+}
+
+.facts-item {
+	margin: 15px 0;
+}
+
+p {
+	margin-bottom: 20px;
+	line-height: 130%;
+}
+
+/* About Page */
+
+.bg-image {
+	margin: 40px 0;
+	background-image: url("../img/smokebg.jpg");
+	background-repeat: no-repeat;
+	height: 200px;
+	background-position: -700px;
+}
+
+.hero-about {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+
+.about-text-container p {
+	width: 400px;
+}
+
+div.about-box-row {
+	display: flex;
+	justify-content: space-between;
+}
+
+div.about-box {
+	height: 230px;
+	width: 210px;
+	border: 1px solid #333;
+	background: #2d3436;
+	margin-bottom: 30px;
+	padding: 20px;
+	color: lightgrey;
+}
+
+@media (max-width: 800px) {
+	.about-box-row {
+	  flex-direction: column;
+	  justify-content: center;
+	  align-items: center;
+	}
+  }
+
+.about-footer {
+	display: flex;
+	justify-content: space-evenly;
+	text-align: center;
+}
+
+h2.about-highlight {
+	font-size: 50px;
+}
+
+.middle-about-column {
+	border-left: thin solid black;
+	border-right: thin solid black;
+	width: 300px;
+}
