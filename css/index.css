@@ -251,9 +251,32 @@ p {
     background-color: white;
     box-sizing: border-box;
     width: 50%;
+  }
 
-.c {
+.b {
         background-color: white;
         box-sizing: border-box;
-        width: 33%;
+        width: 33.3%;
+}
 
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    border: 1px solid red;
+    padding: 20px 1.25%;
+  }
+  
+  @media(max-width: 500px) {
+    .container {
+      background: gray;
+    }
+  
+    .container nav {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .container header nav a {
+      margin-bottom: 20px;
+    }
+  }
