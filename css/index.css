@@ -71,6 +71,7 @@ h1, h2, h3, h4, h5 {
 	body {
 		max-width: 100%;
 		margin: 0 auto;
+		
 	}
 
 	header {
@@ -96,24 +97,36 @@ h1, h2, h3, h4, h5 {
 
 	.top-sec {
 		display: flex;
-		align-items: center;
-        justify-content: space-around;
-		padding: 30px;
-		border: teal;
+		justify-content: space-between;
+		padding: 20px;
+		border: 2px solid teal;
 	}
 
 	.top-sec .cta {
 		align-content: center;
 		text-align: center;
+		display: flex;
+		flex-direction: column;
+		
 	}
 
-	h1 {
+	.top-sec .cta h1 {
 		font-size: 4rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
 	}
 
-	button {
-		width: 60%;
-        height: 2rem;
+	.top-sec .cta h1 button {
+		background-color: white;
+		color: black;
+		text-align: center;
+		font-size: 15px;
+		font-weight: bold;
+		border: 2px solid black;
+		height: auto;
+		width: 50%;
 	}
 
 	.mid-top {
@@ -123,7 +136,7 @@ h1, h2, h3, h4, h5 {
 	}
 
 	pr {
-		padding-right: 4px;
+		padding-right: 10px;
 	}
 
 @media (max-width: 800px) {
@@ -169,6 +182,11 @@ h1, h2, h3, h4, h5 {
 			padding: 10px;
 		}
 
+		.top-sec {
+			border: 3px dashed purple;
+			display: flex;
+			flex-direction: column;
+		}
 
 
 		.top-sec .cta {
