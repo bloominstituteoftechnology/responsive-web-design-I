@@ -1,0 +1,257 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+    max-width: 1300px;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: space-around;  
+}
+
+header {
+	padding: 20px 20px 20px;
+
+}
+
+nav {	
+	display: inline-block;
+	width: 75%;
+}
+nav a {
+	color: grey;
+	text-decoration: none;
+	padding: 0 25px;
+}
+
+.intro-container {
+	text-align: center;	
+}
+.intro  {
+	display: block; 
+    margin: 0 10%;
+}
+
+.services {
+    max-width: auto;
+    margin: 30px;
+}
+
+.services p{
+    width: 990px;
+}
+
+.LearnMore {
+    margin: 10px;
+    padding: 5px 40px 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-family: 'Titillium Web';
+    text-align: center;
+} 
+
+.codeimg {
+    width: 30%;
+    height: 30%;
+    /*TRBL*/
+    padding: 0 20px 20px 100px;
+}
+
+
+.parent-container {
+    border-top: 2px solid black;  
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-between;
+}
+
+.child-item {
+    border: 2px solid black;
+    width: 40%; 
+    margin: 30px;
+    padding: 20px;
+}
+
+.footer {
+    display: flex; 
+    border-top: 2px solid black;
+    margin-left: 50px;
+    padding-top: 30px;
+} 
+
+footer li {
+    list-style-type: square;
+    list-style-position: inside;
+    padding: 5px;
+    margin-top: 20px;
+}
+
+footer p{
+	text-align: center;
+}
+
+/* Tablet Version */
+@media(max-width: 800px) {
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px 8%;        
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    .logo {     
+        order: -1;
+        padding-bottom: 5px;        
+    }
+
+    .intro img {
+        max-width: 100%; 
+    }
+
+    .services h2, p {
+        max-width: 80%;
+        margin: 0 auto;
+        padding: 10px;        
+    }
+
+    .parent-container {
+        margin: 0 auto;
+    }
+
+    .footer img  {
+        max-width: 50%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+    .body {
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    .logo {
+        padding-bottom: 15px;        
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        width: 100%;
+        text-align: center;        
+    }
+
+    nav a {
+        padding: 15px 0;
+        border-bottom: 1px solid black;        
+    }
+    /* give the first a tag a top border */
+    a:first-child {
+        border-top: 1px solid black;
+    }
+
+    .services {
+        border-bottom: 2px solid black;
+        padding-bottom: 10px;
+    }
+    .parent-container, .child-item {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        border: none; 
+        width:100%;
+    }    
+
+    .LearnMore{
+        text-align: center;
+        padding: 0;
+        margin: 0 auto;
+        width: 100px;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .footer {
+        margin: 0 auto;
+        width: 70%;
+    }
+
+    footer img {
+        display: none;
+    }
+} 
