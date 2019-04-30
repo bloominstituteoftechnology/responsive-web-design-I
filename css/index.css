@@ -143,22 +143,30 @@ h1, h2, h3, h4, h5 {
 
 	.mid-top {
 		display: flex;
-		flex-flow: column;
+		flex-direction: column;
 		flex-wrap: wrap;
         border-top: 2px solid black;
-		align-content: space-between;
+		justify-content: space-evenly;
 		padding: 30px;
 	
 	}
 
-	.mid-top h2 {
+	.mid-top .mid-right h2 {
 		display: flex;
 		flex-direction: column;
 		padding: 20px;
 		flex-wrap: wrap;
 	}
 
-	.mid-top .middle-img {
+	.mid-top .mid-left h2 {
+		display: flex;
+		flex-direction: column;
+		padding: 20px;
+		flex-wrap: wrap;
+	}
+
+	.mid-top .mid-img {
+		display: flex;
 		padding: 20px;
 		display: flex;
 		flex-wrap: wrap;
