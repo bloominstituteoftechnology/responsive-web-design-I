@@ -1,5 +1,3 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
-
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -49,234 +47,106 @@ table {
 	border-spacing: 0;
 }
 
+/* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: 'Roboto Mono', monospace;
 }
 
 html, body {
     height: 100%;
-    font-family: 'Roboto', sans-serif;
+	font-family: 'Titillium Web', sans-serif;
+	line-height: 1.6;
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
     margin-bottom: 15px;
-    font-family: 'Rubik', sans-serif;
 }
 
-p {
-    line-height: 1.4;
-}
-
-.container {
-    width: 800px;
+/* Your code starts here! */
+.container{
+    max-width: 1000px;
     margin: 0 auto;
 }
-
-.top-content {
+.navigation{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
+    padding: 30px;
 }
 
-.top-content .text-container {
-    width: 48%;
-    padding: 0 1%;
-    padding-bottom: 20px;  
+.navigation ul{
+    padding-right: 50px;
 }
 
-.middle-content {
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
+.navigation ul a {
+    padding: 15px;
+    text-decoration: none;
+    color: black;
 }
 
-.middle-content h2 {
-    padding: 0 2%;
-    margin-bottom: 0;
+.navigation img{
+    padding: 0 10px;
 }
 
-.middle-content .boxes {
+.parent{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-.middle-content .boxes .box1 {
-    width: 12.5%;
-    height: 100px;
-    background: black;
-    margin: 20px 2.5%;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-
-.middle-content .boxes .box2 {
-    width: 12.5%;
-    height: 100px;
-    background: gold;
-    margin: 20px 2.5%;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.middle-content .boxes .box3 {
-    width: 12.5%;
-    height: 100px;
-    background: red;
-    margin: 20px 2.5%;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.middle-content .boxes .box4 {
-    width: 12.5%;
-    height: 100px;
-    background: coral;
-    margin: 20px 2.5%;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.middle-content .boxes .box5 {
-    width: 12.5%;
-    height: 100px;
-    background: crimson;
-    margin: 20px 2.5%;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.middle-content .boxes .box6 {
-    width: 12.5%;
-    height: 100px;
-    background: forestgreen;
-    margin: 20px 2.5%;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.middle-content .boxes .box7 {
-    width: 12.5%;
-    height: 100px;
-    background: darkorchid;
-    margin: 20px 2.5%;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.middle-content .boxes .box8 {
-    width: 12.5%;
-    height: 100px;
-    background: hotpink;
-    margin: 20px 2.5%;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.middle-content .boxes .box9 {
-    width: 12.5%;
-    height: 100px;
-    background: indigo;
-    margin: 20px 2.5%;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.middle-content .boxes .box10 {
-    width: 12.5%;
-    height: 100px;
-    background: dodgerblue;
-    margin: 20px 2.5%;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-.bottom-content {
-    display: flex;
-    margin: 0 2% 20px;
+    padding: 30px 10px;
+    align-content: center;
     justify-content: space-around;
 }
 
-.bottom-content .text-container {
-    padding-right: 4%;
+.innovation{
+    text-align: center;
+    font-size: 3.5rem;
 }
 
-.bottom-content .text-container:last-child {
-    padding-right: 0;
+.innovation button{
+    padding: 20px;
+    font-size: 1.2rem;
 }
 
-
-
-.navigation {
-    width: 100%;
+.mid .parent {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 20px 2%;
-    font-size: 14px;
- }
-
- .parent {
-    background-color: red;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .a {
-    background-color: white;
-    box-sizing: border-box;
-    width: 50%;
-  }
-
-.b {
-        background-color: white;
-        box-sizing: border-box;
-        width: 33.3%;
 }
 
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    border: 1px solid red;
-    padding: 20px 1.25%;
-  }
-  
-  @media(max-width: 500px) {
-    .container {
-      background: gray;
+.features, .about{
+    width: 49%;
+}
+
+.services, .product, .vision{
+    width: 30%;
+}
+
+@media (max-width: 500px){
+
+    body{
+        max-width: 100%;
+        padding: 10px;
     }
-  
-    .container nav {
-      display: flex;
-      flex-direction: column;
+    .navigation{
+        flex-direction: column-reverse;
     }
-  
-    .container header nav a {
-      margin-bottom: 20px;
+    .navigation ul{
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-  }
+
+    .navigation ul a{
+        border-top: 1px solid grey;
+    }
+    .navigation img{
+        width: 150px;
+        height: auto;
+        margin: 0 auto;
+    }
+    .round-image{
+        display: none;
+    }
+    .rect-image img{
+        width: 100%;
+    }
+}
