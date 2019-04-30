@@ -81,23 +81,34 @@ h1, h2, h3, h4, h5 {
 		border: teal;
 	}
 
-	nav {
+	header nav {
         width: 100%;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
         align-items: center;
-        margin: auto 0px 0px;
+		margin: auto 0px 0px;
+		padding: 10px;
     }
     
     header nav a {
+		display: flex;
         color: gray;
         text-decoration: none;
-        font-weight: bold;
-    }
+		padding: 10px;
+		font-weight: bold;
+		font-size: 15px;
+		justify-content: space-evenly;
+	}
+	
+	header .logo {
+		padding: 20px;
+	}
+
+
 
 	.top-sec {
 		display: flex;
-		justify-content: space-between;
+		justify-content: space-around;
 		padding: 20px;
 		border: 2px solid teal;
 	}
@@ -116,27 +127,48 @@ h1, h2, h3, h4, h5 {
 		flex-direction: column;
 		align-items: center;
 		justify-content: space-around;
+		padding: 10px;
 	}
 
 	.top-sec .cta h1 button {
 		background-color: white;
 		color: black;
 		text-align: center;
-		font-size: 15px;
+		font-size: 13px;
 		font-weight: bold;
-		border: 2px solid black;
-		height: auto;
+		border: 1px solid black;
 		width: 50%;
 	}
 
+
 	.mid-top {
-        display: flex;
-        padding: 30px;
-        border-top: solid black;
+		display: flex;
+		flex-flow: column;
+		flex-wrap: wrap;
+        border-top: 2px solid black;
+		align-content: space-between;
+		padding: 30px;
+	
 	}
 
+	.mid-top h2 {
+		display: flex;
+		flex-direction: column;
+		padding: 20px;
+		flex-wrap: wrap;
+	}
+
+	.mid-top .middle-img {
+		padding: 20px;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+
+
+
 	pr {
-		padding-right: 10px;
+		padding-left: 10px;
 	}
 
 @media (max-width: 800px) {
@@ -213,7 +245,7 @@ h1, h2, h3, h4, h5 {
 	.bot-sec {
         display: flex;
         padding: 30px;
-        border-bottom: solid black;
+        border-bottom: 2px solid black;
         align-content: space-between;
 
 	}
