@@ -55,6 +55,7 @@ table {
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
+    max-width: 1300px;
 }
 
 h1, h2, h3, h4, h5 {
@@ -66,141 +67,137 @@ h1, h2, h3, h4, h5 {
 /* Your code starts here! */
 
 .container {
-	width: 880px;
-	margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: space-around;  
 }
 
 header {
-	/* border: 5px dashed orange; */
 	padding: 20px 20px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+
 }
 
+nav {	
+	display: inline-block;
+	width: 75%;
+}
 nav a {
 	color: grey;
 	text-decoration: none;
-	padding: 0 25px 0px;	
+	padding: 0 25px;
 }
 
 .intro-container {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 20px 0px 40px;
+	text-align: center;	
+}
+.intro  {
+	display: block; 
+    margin: 0 10%;
 }
 
-.intro h1 {
-	font-size: 50pt;	
-}  
-
-
-.introimg {
-	width: 30%;
-	/* border: 1px dashed red; */
-	display: inline-block;
-	/* TRBL*/
-	padding: 20px 10px 10px 20px;
+.services {
+    max-width: auto;
+    margin: 30px;
 }
 
-.intro button {
-	padding: 5px 40px 5px;
-	border: 2px solid black;
-	font-family: 'Titillium Web';
+.services p{
+    width: 990px;
+}
+
+.LearnMore {
+    margin: 10px;
+    padding: 5px 40px 5px;
+    border: 1px solid black;
     border-radius: 5px;
-}
+    font-family: 'Titillium Web';
+    text-align: center;
+} 
 
-header p {
-	text-align: center;
-	border: 2px solid black;
-	width: 150px;
-}
 .codeimg {
-	width: 30%;
-	height: 30%;
-	/*TRBL*/
-	padding: 0 20px 20px 100px;
+    width: 30%;
+    height: 30%;
+    /*TRBL*/
+    padding: 0 20px 20px 100px;
 }
 
-.top-content {
-    border-top: 2px solid black;
-	padding: 30px 0 30px;
+
+.parent-container {
+    border-top: 2px solid black;  
+    width: 80%;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-between;
 }
 
-.middle-img {
-	display: block;
-	width: 100%;
+.child-item {
+    border: 2px solid black;
+    width: 40%; 
+    margin: 30px;
+    padding: 20px;
 }
 
-.bottom-content {
-	border-bottom: 2px solid black;
-	padding: 20px 3px 30px;
-    display: flex;  
+.footer {
+    display: flex; 
+    border-top: 2px solid black;
+    margin-left: 50px;
+    padding-top: 30px;
+} 
+
+footer li {
+    list-style-type: square;
+    list-style-position: inside;
+    padding: 5px;
+    margin-top: 20px;
 }
 
-.contact-content {
-	margin-top: 30px;
-}
-footer p {
+footer p{
 	text-align: center;
 }
 
-/* Tablet */
-@media (max-width: 800px) {
+/* Tablet Version */
+@media(max-width: 800px) {
     .container {
         max-width: 800px;
         margin: 0 auto;
         padding: 20px 8%;        
     }
-    header {        
+
+    header {
         display: flex;
-        flex-direction: column; 
-        align-items: center;       
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
     }
 
     .logo {     
         order: -1;
-        padding-bottom: 5px;
+        padding-bottom: 5px;        
     }
 
-    .intro h1{
-        text-align: center;
-    }
-    
-    .introimg {
-        display:none;
+    .intro img {
+        max-width: 100%; 
     }
 
-    .intro button {
-        margin-left: 50px;
-        padding: 8px 50px 8px;
-        border: 1px solid black;
-        font-family: 'Ariel';
-        font-size: 14px;
-        border-radius: 0px;
-        background-color: white;        
+    .services h2, p {
+        max-width: 80%;
+        margin: 0 auto;
+        padding: 10px;        
     }
 
-    .features, .about, .services, .product, .vision {
-        padding: 10px;
+    .parent-container {
+        margin: 0 auto;
     }
 
-    .middle-img {
-        max-width: 100%;
-        width: 100%;
+    .footer img  {
+        max-width: 50%;
     }
-
-    footer {
-        padding-top: 20px;
-    }
-
 }
+
 /* Mobile */
 @media (max-width: 500px) {
-    .container {
-        max-width: 482px;
+    .body {
+        max-width: 500px;
         margin: 0 auto;
         padding: 10px;
     }
@@ -214,7 +211,7 @@ footer p {
         flex-direction: column;
         max-width: 100%;
         width: 100%;
-        text-align: center;
+        text-align: center;        
     }
 
     nav a {
@@ -226,21 +223,35 @@ footer p {
         border-top: 1px solid black;
     }
 
-    .top-content {
+    .services {
+        border-bottom: 2px solid black;
+        padding-bottom: 10px;
+    }
+    .parent-container, .child-item {
         display: flex;
         flex-direction: column;
+        margin: 0 auto;
+        border: none; 
+        width:100%;
+    }    
+
+    .LearnMore{
+        text-align: center;
+        padding: 0;
+        margin: 0 auto;
+        width: 100px;
     }
 
-    .middle-img {
-        max-width: 100%;
+    h2 {
+        text-align: center;
     }
 
-    .bottom-content {
-        display: flex;
-        flex-direction: column;        
+    .footer {
+        margin: 0 auto;
+        width: 70%;
     }
 
-    footer {
-        padding-top: 20px;
+    footer img {
+        display: none;
     }
 } 
