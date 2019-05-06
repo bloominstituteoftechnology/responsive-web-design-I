@@ -1,3 +1,208 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+    /* margin: 40px; */
+	/* padding: 100px; */
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+   font-family: 'Dokdo', cursive;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+body{
+	width: 878.1px;
+	margin: 0 auto;
+}
+
+header{
+	display: flex;
+	align-items: baseline;
+}
+.nav a:after {
+  color: grey;
+  content:'';
+  display: inline-block;
+  width:30px;
+}
+
+nav {
+	display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+address {
+  margin-top:30px;
+  border-top: 1px solid black;
+  padding-top: 20px;
+  width: 100%;
+}
+span{
+  text-align: center;
+}
+h1 {
+  font-size:80px;
+  text-align: center;
+}
+.top-content{
+  border-bottom:1px solid black;
+  padding-bottom:30px;
+  padding-top:50px;
+  margin-bottom:30px;
+  text-align: center;
+  display:inline-block;
+}
+
+.button{
+  
+}
+.img-top {
+  float: right;
+  margin-left: 100px;
+  padding-top: 50px;
+}
+.top-content-h {
+  width:25%;
+  display: inline-block;
+}
+.top-content-innovation {
+  display: inline-block;
+  
+}
+
+h2{
+  font-weight: bold;
+}
+.container {
+  margin: 0 auto;
+  width: 900px;
+}
+.middle-content-p {
+	width: 100%;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 20px;
+}
+ 
+.middle-content-p div{
+width: 49%;
+margin-right: 5px;
+}
+.middle-img {
+  float: right;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+}
+
+.bottom-content-p {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.bottom-content-p div{
+
+}
+
+.address{
+  display: inline-block;
+}
+.copyright{
+  margin-left: 400px;
+}
+
+main{
+	display: flex;
+	flex-flow: wrap;
+	background-color: gray;
+}
+   .top-row {
+	width: 45%;
+	padding: 20px;
+	border: 1px solid black;
+	margin: 2.5%;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	background-color: fuchsia;
+   }
+	
+
+	ul{
+	list-style-type: disc;
+	}
+	
+.footer-content{
+	display: flex;
+
+}
+
+.ul{
+	width: 50%;
+	margin-left: 20px;
+}
 
