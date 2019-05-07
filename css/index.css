@@ -61,25 +61,48 @@ h1, h2, h3, h4, h5 {
 /* Your code starts here! */
 
 .container {
-  max-width: 800px;
   margin: 0 auto;
   border: 1px solid green;
   padding: 20px 1.25%;
 }
 
-@media(max-width: 500px) {
-  .container {
-    background: gray;
-  }
+@media(max-width: 800px) {
+    img.logo {
+        float:center;
+        align-content: middle;
+        position: relative;
+    }
+     img.introimg {
+        display: none;
+    }
+    
+}
 
+@media(max-width: 500px) {
+    header {
+        align: center;
+    }
+    nav {
+        border: 1px solid gray;
+    }
   .container header nav {
     display: flex;
     flex-direction: column;
+      float: center;
+      border: 1px solid gray;
   }
 
   .container header nav a {
     margin-bottom: 20px;
   }
+    
+    img.introimg {
+        display: none;
+    }
+    .top-content {
+        margin: 20px;
+        width: 100%;
+    }
 }
 header {
 	/* border: 5px dashed orange; */
@@ -193,6 +216,7 @@ header p {
 .contact-content {
 	margin-top: 30px;
 }
+
 footer p {
 	text-align: center;
 }
