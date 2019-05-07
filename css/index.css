@@ -100,6 +100,15 @@ a {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
+		width: 800px;
+	}
+
+	.nav1 .navItem {
+
+		width: 100px;
+		height:	25px;
+		margin-top: 10px;
+		margin-bottom: 10px;
 
 	}
 	
@@ -110,7 +119,7 @@ a {
 	margin: 0 auto;
 	width: 300px;
 	height: auto;
-	vertical-align: center;
+ 
 }
 
  /* Great idea logo */
@@ -325,6 +334,7 @@ footer {
 	box-sizing: border-box;
 	margin: 0px auto;
 	align-content: center;
+	padding: 0px;
 
 }
 
@@ -363,25 +373,7 @@ footer {
 
 	}
 
-	 nav ul li a {
-
-		width: 800px;
-		text-align: center;
-		border-top-color: black;
-		border-bottom-color: white;
-		border-width: 1px;
-	 }
-
-	 nav ul li a img {
-
-		width: 150px;
-		text-align: center;
-		border-top-color: black;
-		border-bottom-color: white;
-		border-width: 1px;
-		vertical-align: center;
-	 }
-  
+	    
 }
 
 /* @media query */
@@ -407,17 +399,7 @@ footer {
 
 	}
 
-	nav ul li a {
-
-		width: 500px;
-		text-align: center;
-		border-top-color: white;
-		border-bottom-color: black;
-		border-width: 1px;
-		font-size: 16px;
-		
-	 }
-
+	
 	 .logo {
 
 		width: 150px;
@@ -433,14 +415,26 @@ footer {
 	 
 	}
 
-	.img {
-
-		display:block;
-		width: 80%;
-		height: auto;  
-		margin: 0 auto;
 	 
+	.nav1 {
+		
+		display: flex;
+		flex-direction: column;
+		width: 500px;
+		text-align: center;
 	}
+
+	.navItem {
+
+		border: black;
+		border-width: 1px;
+		text-align: center;
+		width: 500px;
+		margin: 0 auto;
+		font-size: 16px;
+		align-self: center;
+	}
+
   
 }
 
