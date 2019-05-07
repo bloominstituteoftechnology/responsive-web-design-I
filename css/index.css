@@ -1,4 +1,4 @@
-* http://meyerweb.com/eric/tools/css/reset/ 
+   * http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -76,7 +76,7 @@ body{
 body{
     max-width:500px;
     margin:auto;
-    
+
     }
 }
 
@@ -98,7 +98,9 @@ body{
 }
 @media(max-width:500px){
     .container{
+        display:flex;
         align-items:center;
+        flex-direction: column-reverse;
         max-width: 500px;  
     }
 }
@@ -109,9 +111,8 @@ body{
     display:flex;
     justify-content: center;
     align-items: center;
-    
-    
 }
+
 @media(max-width:500px){
      .navigation{
         flex-direction: column;
@@ -126,6 +127,7 @@ body{
     width:100%;
     text-align:center;
 }
+
 @media(max-width:500px){
     .navigation a{
         border-bottom:1px solid black; 
@@ -140,23 +142,23 @@ body{
     margin: 30px;
     padding:0px;
 }
+
 @media(max-width:800px){
     .logo{
         width: 40%;
-    
     }
 }
+
 .hero{
     display:flex;
     justify-content: center;
-    
 }
 
 .leftside{
     justify-content:center;
     padding:50px 50px;
-    
 }
+
 @media(max-width:800){
     .leftside{
         padding-top: 0px;
@@ -188,18 +190,18 @@ body{
     padding-left: 60px;
     padding-top: 40px;
 }
+
 @media(max-width:800px) {
     .rightside {
         display: none;   
-       
    }
 } 
 
 hr{
     max-width:100%;
     border: 1px solid black;
-    
 }
+
 @media(max-width:800px){
     hr{
         max-width:95%;
@@ -216,13 +218,12 @@ hr{
     display:flex;
     justify-content: center;
     align-items: center;
-    
 }
+
 @media(max-width:500px){
     .boxes{
         flex-direction: column;
     }
-    
 }
 
 @media(max-width:500px){
@@ -235,18 +236,16 @@ hr{
     padding: 8px;
     margin: 0;
 }
+
 @media(max-width:500px){
 .cards {  
     width: 90%;
     padding: 20px;
-    
     }
-
 }
 
 .cards h1{
     font-size: 20px;
-   
 }
 
 .cards p{
@@ -278,3 +277,185 @@ hr{
     text-align: center;
 }
 
+        padding-top: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+     }
+}
+@media(max-width:500px){
+    .container{
+        align-items:center;
+        max-width: 500px;  
+    }
+}
+
+
+/*Navigation*/
+.navigation{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+@media(max-width:500px){
+     .navigation{
+        flex-direction: column;
+        width:100%;     
+    }
+}
+
+.navigation a{
+    color: gray;
+    text-decoration: none;
+    margin:40px;
+    width:100%;
+    text-align:center;
+}
+
+@media(max-width:500px){
+    .navigation a{
+        border-bottom:1px solid black; 
+        margin:0px;
+        padding: 20px 0px; 
+   }
+}
+
+.logo{
+    margin: 30px;
+    padding:0px;
+}
+@media(max-width:800px){
+    .logo{
+        width: 40%;
+
+    }
+}
+
+.hero{
+    display:flex;
+    justify-content: center;
+}
+
+.leftside{
+    justify-content:center;
+    padding:50px 50px;
+}
+
+@media(max-width:800){
+    .leftside{
+        padding-top: 0px;
+    }
+}
+
+@media(max-width:500){
+    .leftside{
+        padding-top: 0px;
+    }
+}
+
+.leftside h1{
+    font-size: 60px;
+    text-align:center;
+}   
+
+.leftside button{
+    border: 1px solid black;
+    margin: 30px 70px 70px 70px;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.rightside{
+    padding-bottom: 60px;
+    padding-left: 60px;
+    padding-top: 40px;
+}
+
+@media(max-width:800px) {
+    .rightside {
+        display: none;   
+   }
+} 
+
+hr{
+    max-width:100%;
+    border: 1px solid black;
+}
+
+@media(max-width:800px){
+    hr{
+        max-width:95%;
+    }
+}
+
+@media(max-width:500px){
+    hr{
+        max-width:95%;
+    }
+}
+
+.boxes{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(max-width:500px){
+    .boxes{
+        flex-direction: column;
+    }
+}
+
+@media(max-width:500px){
+    .boxes h1{
+        font-size: 15px;
+    }
+}
+
+.boxes .cards{
+    padding: 8px;
+    margin: 0;
+}
+
+@media(max-width:500px){
+.cards {  
+    width: 90%;
+    padding: 20px;
+    }
+}
+
+.cards h1{
+    font-size: 20px;
+}
+
+.cards p{
+    flex-wrap: wrap;
+}
+
+.middle-img{
+    padding:40px 0px 40px 0px;
+    width:auto;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(max-width:800px){
+    .middle-img{
+        padding: 40px 20px 40px 20px;
+        width: 100%;
+        }
+}
+
+@media(max-width:500px){
+    .middle-img{
+        padding: 40px 20px 40px 20px;
+        width: 98%;
+        }
+}
+
+.footer p{
+    text-align: center;
+}
