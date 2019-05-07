@@ -1,3 +1,337 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+	margin-top: 15px;
+	border-width: 5px 5px 5px 5px;
+}
+
+/* Your code starts here! */
+/*___________________________________________________________________________________________________________________*/
+
+/* Top NAV bar list items*/
+
+/* Using body tag text align */
+html, body {
+	height: 100%;
+}
+
+html {
+	display: table;
+	margin: auto;
+}
+body {
+	display: table-cell;
+	text-align: left;
+	align-content: center;
+	vertical-align: middle;
+}
+
+/* Put top nav in a list to force top row, and alignment */
+
+ul li {
+
+	display: inline;
+	margin: 5px;
+}
+
+/* Top NAV bar */
+nav ul a {
+
+  padding: 20px 20px 20px 20px;
+  background: white;
+  border: 1px solid white;
+  margin: 8px;
+  border-radius: 5px;
+  display: inline-block;
+  color: lightgray;
+	text-decoration: none;	
+	font-size: 12px;
+}
+
+/* Top NAV bar on hover */
+nav ul a:hover {
+
+	background: #7a97f5;
+	
+  }
+
+ /* Great idea logo */
+ .logo {
+
+	display: inline-block;
+	align-items: baseline;
+	width: 150px;
+	height: auto;
+		
+}
+/* Get Started Link */
+
+.gStarted {
+
+	padding: 5px 25px 5px 25px;
+	background: white;
+	border: 1px solid black;
+	margin: 0px;
+	border-radius: 1px;
+	display: inline-block;
+	color: black;
+	text-decoration: none;	
+	font-size: 16px;
+	color: gray;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+	
+}
+
+/* Get Started Link */
+
+.gStarted:hover {
+
+	background: #7a97f5;	
+
+}
+	
+
+/* Inv on Demand Heading */
+
+h2 {
+	font-size: 60px;
+	display: inline;
+
+  }
+
+
+ /* All header parapraphs */
+h1 {
+
+	display: block;
+	text-align: left;
+
+}
+/* Code snippet circle image */
+.img1 {
+
+	display:inline-block;
+	width: 80%;
+	height: auto;  
+   
+}
+
+/* Code Snippet rectangular image*/
+.middle-img {
+
+	display: block;
+	width: 800px;
+	height: 150px; 
+	 
+	
+}
+
+/* Spans Man*/ 
+
+/* Inv On Demand */
+span.a {
+	display: inline-block;
+	width: 400px;
+	height: Auto;
+	padding: 0px;
+	border: 90px solid white; 
+	text-align: center;  
+		
+}
+
+/* Cicular logo*/
+
+span.b {
+	display: inline-block;
+	width: 400px;
+	height: auto;
+	padding: 0px;
+	border: 25px  solid white; 
+	text-align: center;    
+		
+}
+
+/* Text in span bottom Paragraphs */
+span.c {
+	display: inline-block;
+	width: 380px;
+	height: auto;
+	padding: 0px;
+	border: 1px solid white; 
+	text-align: left; 
+	font-size: 14px; 
+	
+}
+/* Text in span Paragraphs */
+span.d {
+	display: inline-block;
+	width: 380px;
+	height: auto;
+	padding: 5px 0px 5px 20px;
+	border: 0px  solid white; 
+	text-align: left;    
+	font-size: 14px; 	
+}
+
+/* Text in span bottom Paragraphs */
+span.e {
+	display: inline-block;
+	width: 250px;
+	height: auto;
+	padding: 0px;
+	border: 1px solid white; 
+	text-align: left; 
+	font-size: 14px; 
+}
+/* Text in span Paragraphs */
+span.f {
+	display: inline-block;
+	width: 250px;
+	height: auto;
+	padding: 0px;
+	border: 1px  solid white; 
+	text-align: left;    
+	font-size: 14px; 	
+}
+
+span.g {
+	display: inline-block;
+	width: 500px;
+	height: auto;
+	padding: 0px;
+	border: 0px solid white; 
+	text-align: left; 
+	font-size: 14px; 
+	margin: 0px;
+	box-sizing: border-box;
+	
+}
+
+
+p {
+
+	text-align: left;
+   
+  
+}
+
+.p1 {
+
+	text-align: left;
+   
+
+}
+
+
+footer {
+
+	font-size: 12px;
+	text-align: center;
+	
+	
+
+}
+
+/* bottom DIV with all P and text */
+
+.divMiddle {
+	
+  display: inline-block;
+	border-width:2px;
+	border-style:solid;
+	border-color:black;
+	border-left-color: white;
+	border-right-color: white;
+	box-sizing: border-box;
+	margin: 0px;
+}
+
+/* The Div with the INV text and round blob of code */
+
+.divTop {
+	
+	
+  display: inline-block;
+	border-width:0px;
+	border-style:solid;
+	border-color:white;
+	border-left-color: white;
+	border-right-color: white;   
+	box-sizing: border-box;
+	margin: 0px;
+
+}
+
+.divBottom {
+	
+	display: inline-block;
+  text-align: left;
+	box-sizing: border-box;	
+	margin: 0px;
+}
+
+footer {
+
+	text-align: center;
+
+}
 
