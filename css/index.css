@@ -357,7 +357,8 @@ footer {
 	.divTop {
 	
 		width: 800px;
-
+		display: flex;
+		flex-direction: column;
 	}
 
 	.divBottom {
@@ -378,9 +379,25 @@ footer {
 
 	}
 
+	.a {
+
+		width: 800px;
+	}
+	.b {
+
+		display: none;
+	}
+
 	.logo {
 
 		display: none;
+		width: 0%;
+
+	}
+
+	.navItem {
+
+		transition: .7s;
 
 	}
 	    
@@ -389,22 +406,38 @@ footer {
 /* @media query */
 @media (max-width: 500px) {
 
+	.a {
 
+		width: 500px;
+	}
+
+	.middle-img {
+
+		width: 500px;
+		height: auto;
+
+	}
 
 	.divTop {
 	
 		width: 500px;
+		display: flex;
+		flex-direction: column;
 
 	}
 
 	.divBottom {
-	
+
+		display: flex;
+		flex-direction: column;
 		width: 500px;
 
 	}
 
 	.divMiddle {
-	
+		
+		display: flex;
+		flex-direction: column;
 		width: 500px;
 
 	}
@@ -417,36 +450,27 @@ footer {
 	 
 	 }
 
-	 .img1 {
-
-		display:block;
-		width: 80%;
-		height: auto;  
-		margin: 0 auto;
-	  
-	}
-
-
-	 
+	 	 
 	.nav1 {
 		
 		display: flex;
-		flex-direction: column;
+		flex-direction: column;		
 		width: 500px;
 		text-align: center;
 		align-content: center;
-		
-
+		vertical-align: center;
+	
 	}
 
 	.navItem {
-
 	
 		text-align: center;
 		width: 500px;
-		margin: 0 auto;
-		font-size: 16px;
+		margin: 0 auto;		
 		align-self: center;
+		transition: .7s;
+    display: flex;
+    
     		 
 	}
 
@@ -454,6 +478,11 @@ footer {
 
 		display: none;
 
+	}
+
+	.b {
+
+		display: none;
 	}
 
 /* Reorder Items */	
