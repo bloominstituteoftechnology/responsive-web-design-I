@@ -1,3 +1,488 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+  line-height: 1;
+  width: 880px;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+		font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+
+/*===========================
+  BODY & HEADER FOR ALL PAGES 
+============================*/
+body {
+	max-width: 880px;
+	margin: 0 auto;
+}
+
+header {
+	display:flex;
+	justify-content: space-between;
+	font-size: larger;
+  width: 100%;
+  padding: 20px 30px 30px 30px;
+}
+
+header nav {
+	margin-top: 13px;
+	width: 80%;
+	display: flex;
+	justify-content: space-between;
+}
+
+header nav a {
+	text-decoration: none;
+	color: lightgray;
+}
+
+
+header nav a:hover {
+	color: black;
+}
+
+.logo {
+	margin-left: 60px;
+}
+
+/*=====================
+  INDEX.HTML  
+=======================*/
+
+.top-section {
+	margin-top: 160px;
+	margin-bottom: 90px;
+	display: flex;
+	justify-content: space-around;
+}
+
+h1 {
+	text-align: center;
+	font-size: 90px;
+}
+
+.top-section__text {
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.btn {
+	border: 1px solid black;
+	padding: 10px;
+	margin-top: 10px;
+	width: 60%;
+	font-size: 20px;
+	background-color: white;
+	box-shadow: 0 10px 10px lightgray;
+}
+
+h2 {
+	font-size: x-large;
+}
+
+
+.top-column {	
+	display: flex; 
+	justify-content: space-between;
+}
+
+.top-column__text {
+  margin: 40px 0;
+  width: 49%;
+}
+
+.middle-img {
+	box-shadow: 0 10px 10px lightgray;
+}
+
+.bottom-column {
+	display: flex;
+	justify-content: space-between;
+}
+
+.bottom-column__text {
+	width: 30%;
+	margin: 40px 0;
+}
+
+
+footer {
+	margin-top: 60px;
+}
+
+.contact__street-address {
+	margin-bottom: 20px;
+}
+
+.contact__tel {
+	margin-bottom: 20px;
+}
+
+small {
+	margin: 100px 0;
+	display: block;
+	text-align: center;
+}
+
+/*=====================
+  SERVICES.HTML  
+=======================*/
+
+.services-header__img {
+	margin-bottom: 30px;
+	box-shadow: 0 10px 10px lightgray;
+}
+
+.services-header {
+	margin-bottom: 30px;
+	line-height: 120%;
+}
+
+main.services-main {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 30px;
+	line-height: 120%;
+}
+
+.services-main__box {
+	border: 1px solid lightgray;
+	box-shadow: 0 10px 10px lightgray;
+	width: 47%;
+	padding: 15px;
+	margin-bottom: 30px;
+	background-color: #f4f3f4;
+}
+
+main.services-main p {
+	font-size: 100%;
+}
+
+.services-main__btn {
+	background-color: white;
+	margin-top: 18px;
+	padding: 10px 40px;
+	border: 1px solid black;
+	border-radius: 5px;
+}
+
+.services-bottom {
+	display: flex;
+	justify-content: space-between;
+	line-height: 120%;
+	margin-top: 30px;
+}
+
+.services-bottom__text {
+	width: 400px;
+}
+
+.services-bottom__list {
+	list-style: square inside none;
+	margin-top: 30px;
+}
+
+.services-bottom__img {
+	box-shadow: 0 10px 10px lightgray;
+}
+
+
+/*=====================
+  CONTACT.HTML  
+=======================*/
+
+contact__header-img {
+	margin-top: 128px;
+	box-shadow: 0 10px 10px lightgray;
+}
+
+.contact__top-content {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.contact {
+	margin-top: 30px;
+	display: flex;
+	justify-content: space-between;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	border: 1px solid lightgrey;
+	padding: 20px;
+	box-shadow: 0 10px 10px lightgray;
+	width: 400px;
+}
+
+label {
+	display: flex;
+	padding: 5px 0;
+}
+
+input:focus, textarea:focus {
+  border-color: #000;
+}
+
+.contact-form__btn {
+	padding: 5px;
+	margin-top: 10px;
+	background-color: white;
+}
+
+/* =================== 
+    MEDIA QUERIES 
+======================*/
+
+/* Tablet */
+@media (max-width: 800px) {
+
+  body {
+    width: 100%;
+  }
+
+  .top-section__header-img {
+    display:none;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  header nav {
+    margin-top: 5%;
+    width: 98%;
+  }
+
+  header nav a {
+    font-size: medium;
+  }
+
+  .logo {
+    margin-left: 0;
+  }
+
+ .top-section {
+    margin-top: 5%;
+  }
+
+  h1 {
+    font-size: 70px;
+  }
+
+  .btn {
+    font-size: 15px;
+    padding: 5px;
+  }
+
+.top-column {
+    margin-left: 10px;
+  }
+
+ .bottom-column {
+    margin-left: 10px;
+  }
+
+  h2 {
+    font-size: medium;
+  }
+
+  .contact {
+    margin-left: 10px;
+  }
+
+  /* Services page tablet */
+
+  .header-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .services-header__text {
+    margin-left: 20px;
+  }
+
+  .services-bottom__ {
+    display: none;
+  }
+
+  .services-main__box {
+    width: 95%;
+    margin-left: 20px;
+  }
+
+  .services-bottom__text {
+    width: 100%;
+    margin-left: 20px;
+  }
+
+  /* Contact page tablet */
+
+  .contact__top-content {
+    margin-left: 20px;
+  }
+
+  .contact-form__img {
+    display: none;
+  }
+
+  .contact-form {
+    width: 93%;
+    margin-left: 20px;
+  }
+
+  #msg {
+    width: 98%;
+  }
+
+}
+
+/* Phone */
+@media (max-width: 500px) {
+  body {
+    width: 100%;
+  }
+  
+  header {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100%;
+  }
+
+  header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header nav a {
+    border-bottom: 1px solid black;
+    padding: 3%;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* .top-section__header-img {
+    display:none;
+  } */
+
+ .top-section {
+    margin-top: 0;
+  }
+
+  .top-column {
+    flex-wrap: wrap;
+    margin-left: 10px;
+  }
+
+ .bottom-column {
+    flex-wrap: wrap;
+    margin-left: 10px;
+  }
+
+  img.middle-img {
+    width: 100%;
+    height: auto;
+  }
+
+  h2 {
+    font-size: medium;
+  }
+
+  h1 {
+    font-size: 70px;
+  }
+
+  .btn {
+    padding: 8px;
+    font-size: 15px;
+  }
+
+  .bottom-column__text {
+    margin: 20px 0;
+    width: 90%;
+  }
+
+  .top-column__features {
+    margin-top: 50px;
+  }
+
+  .top-column__about {
+    margin-bottom: 50px;
+  }
+
+  .contact {
+    margin-left: 10px;
+  }
+
+
+
+}
+
 
