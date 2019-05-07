@@ -70,6 +70,7 @@ h1, h2, h3, h4, h5 {
 /* Top NAV bar list items*/
 
 /* Using body tag text align */
+
 html, body {
 	height: 100%;
 }
@@ -85,33 +86,21 @@ body {
 	vertical-align: middle;
 }
 
-/* Put top nav in a list to force top row, and alignment */
-
-ul li {
-
-	display: inline;
-	margin: 5px;
-}
-
 /* Top NAV bar */
-nav ul a {
 
-  padding: 20px 20px 20px 20px;
-  background: white;
-  border: 1px solid white;
-  margin: 8px;
-  border-radius: 5px;
-  display: inline-block;
-  color: lightgray;
-	text-decoration: none;	
-	font-size: 12px;
-}
+a {
 
-/* Top NAV bar on hover */
-nav ul a:hover {
-
-	background: #7a97f5;
+	text-decoration: none;
+	color: gray;
 	
+	}
+
+	.nav1 {
+
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+
 	}
 	
 	/* Inv on Demand jpg */
@@ -137,19 +126,17 @@ nav ul a:hover {
 
 .gStarted {
 
-	padding: 5px 25px 5px 25px;
+	padding: 5px 40px 5px 40px;
 	background: white;
 	border: 1px solid black;
-	border-radius: 15px;
+	border-radius: 2px;
 	margin: 0px auto;
-	border-radius: 1px;
 	display: inline-block;
 	color: black;
-	text-decoration: none;	
 	font-size: 16px;
 	color: gray;
-	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
-	
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  width: 200px;
 }
 
 /* Get Started Link */
@@ -196,33 +183,38 @@ h1 {
 	
 }
 
-/* Spans Man*/ 
+/* Divs */ 
 
 /* Inv On Demand */
-span.a {
+div.a {
+
 	display: inline-block;
 	width: 400px;
 	height: Auto;
 	padding: 0px;
 	border: 90px solid white; 
 	text-align: center;  
-		
+	margin: 0 auto; 
+
 }
 
 /* Cicular logo*/
 
-span.b {
+div.b {
+
 	display: inline-block;
 	width: 400px;
 	height: auto;
 	padding: 0px;
 	border: 25px  solid white; 
-	text-align: center;    
+	text-align: center; 
+	margin: 0 auto;   
 		
 }
 
 /* Text in span bottom Paragraphs */
-span.c {
+div.c {
+
 	display: inline-block;
 	width: 380px;
 	height: auto;
@@ -233,7 +225,8 @@ span.c {
 	
 }
 /* Text in span Paragraphs */
-span.d {
+div.d {
+
 	display: inline-block;
 	width: 380px;
 	height: auto;
@@ -241,10 +234,12 @@ span.d {
 	border: 0px  solid white; 
 	text-align: left;    
 	font-size: 14px; 	
+
 }
 
 /* Text in span bottom Paragraphs */
-span.e {
+div.e {
+
 	display: inline-block;
 	width: 250px;
 	height: auto;
@@ -252,9 +247,11 @@ span.e {
 	border: 1px solid white; 
 	text-align: left; 
 	font-size: 14px; 
+
 }
 /* Text in span Paragraphs */
-span.f {
+div.f {
+
 	display: inline-block;
 	width: 250px;
 	height: auto;
@@ -264,7 +261,8 @@ span.f {
 	font-size: 14px; 	
 }
 
-span.g {
+div.g {
+
 	display: inline-block;
 	width: 500px;
 	height: auto;
@@ -287,8 +285,7 @@ p {
 
 .p1 {
 
-	text-align: left;
-   
+	text-align: left;   
 
 }
 
@@ -297,7 +294,6 @@ footer {
 
 	font-size: 12px;
 	text-align: center;
-	
 	
 
 }
@@ -327,7 +323,8 @@ footer {
 	border-left-color: white;
 	border-right-color: white;   
 	box-sizing: border-box;
-	margin: 0px;
+	margin: 0px auto;
+	align-content: center;
 
 }
 
