@@ -6,6 +6,15 @@
    License: none (public domain)
 */
 
+
+
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -66,47 +75,6 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
-
-
-
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-/* Set every element's box-sizing to border-box */
-* {
-    box-sizing: border-box;
-}
-
-html, body {
-    height: 100%;
-    font-family: 'Titillium Web', sans-serif;
-}
-
-h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
-}
-
 .container {
   width: 880px;
   /* TB LR */
@@ -116,7 +84,7 @@ h1, h2, h3, h4, h5 {
 /* header */
 
 header nav {
-  display: inline-flex;
+  display: inline-block;
   width: 691px;
   vertical-align: top;
   margin-top: 35px;
@@ -143,21 +111,17 @@ header nav a:last-child {
 
 header .logo {
   margin-top: 25px;
-  padding-left: 250px;
-
 }
-
 
 /* cta */
 
 .cta .cta-text {
-  display: inline-flex;
-  flex-direction: column;
+  display: inline-block;
   vertical-align: top;
   font-size: 77px;
   margin-top: 120px;
   text-align: center;
-  padding-right: 140px
+  padding: 0px 75px;
 }
 
 .cta .cta-text button {
@@ -176,7 +140,7 @@ header .logo {
 }
 
 .cta img {
-  display: inline-flex;
+  display: inline-block;
   margin-top: 69px;
 }
 
@@ -184,16 +148,16 @@ header .logo {
   border-top: 1px solid black;
   margin-top: 76px;
   padding-top: 39px;
-
 }
 
 .main-content .top-content {
   padding: 0 10px;
-  display: flex;
 }
 
 .main-content .top-content .text-content {
-  
+  width: 410px;
+  display: inline-block;
+  margin-right: 34px;
 }
 
 .main-content .top-content .text-content:last-child {
@@ -205,15 +169,18 @@ header .logo {
 }
 
 .main-content .bottom-content {
-  display: flex;
+  margin-top: 37px;
+  padding: 0 10px;
 }
 
 .main-content .bottom-content .text-content {
-  
+  width: 275px;
+  display: inline-block;
+  margin-right: 12px;
 }
 
 .main-content .bottom-content .text-content:last-child {
-  
+  margin-right: 0;
 }
 
 .contact {
@@ -237,12 +204,10 @@ footer {
 
 /* START OF REPSONSIVE SITE CSS TABLET */
 @media(max-width: 800px) {
-
   .logo{
-    position: relative;
     margin: 0 auto;
     display: block;
-    padding-right: 250px;
+    /* ASK */
   }
   .container{
     max-width: 750px;
@@ -272,28 +237,30 @@ footer {
 }
  .cta .cta-text{
     text-align: center;
-    padding-right: 10px;
+  
   }
   .cta img{
     display: none;
   }
 .main-content{
-  max-width: 800px;
+  max-width: 750px;
   border-top: 2px solid black;
-  
 }
 .bottom-content .text-content h4{
   padding-top: 20px;
 }
-
-.text-content p{
-  width: 95%;
+.top-content{
+  display: flex;
+  flex-direction: row;
+}
+.bottom-content{
+  display: flex;
+  flex-direction: row;
 }
   .middle-img{
     max-width: 750px;
     margin: 0 auto;
     display: block;
-    
   }
   .contact{
     border-top: 2px solid black;
@@ -303,18 +270,22 @@ footer {
 }
 /* RESPONSIVE CSS FOR PHONE */
 @media(max-width: 500px) {
+  .container {
+    max-width: 450px;
+    margin: 0 auto;
+   }
  .logo{
    padding-top: 10px;
+   margin: 0 auto;
+   display: block;
  }
-  .container {
-   max-width: 450px;
-  }
+ 
   /* ADJUST THIS TO CHANGE FIRST CHILD IN NAV - OVERRIDE FROM MAIN CSS? */
   header nav a:first-child{
     margin-left: 40px;
   }
 .container nav {
-  border: 1px solid green;
+ 
   padding-top: 40px;
   min-width: 450px;;
   display: flex;
@@ -324,24 +295,44 @@ footer {
 
 }
 .container nav a{
-  border: 1px solid green;
+  max-width: 350px;
   border-top: 1px solid black;
   margin-left: 40px;
   margin-right: 40px;
 }
 .container nav a:nth-last-child(1){
   border-bottom: 1px solid black;
-  margin-left: 40px;
-  margin-right: 40px;
+
 }
 .cta{
-  margin-top: 00px;
-  border: 3px solid green;
+  max-width: 450px;
+  margin-top: 300px;
+ 
 }
+.cta-text{
+  max-width: 450px;
 
- .cta .cta-text{
-   
+  }
+  button{
+    padding-left: 100px; 
+    padding-right: 100px; 
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+  .top-content{
+    display: flex;
+    flex-direction: column;
     
+  }
+  .top-content h4{
+    padding-top: 20px
+  }
+  .bottom-content{
+    display: flex;
+    flex-direction: column;
+  }
+  .bottom-content p{
+    width: 450px;
   }
   .middle-img{
     max-width: 450px;
