@@ -5,7 +5,7 @@ It's time to expand our CSS skills into multiple devices.  You will be creating 
 ## Task 1: Set Up The Project With Git
 
 Follow these steps to set up and work on your project:
-
+  
 - [ ] Create a forked copy of this project.
 - [ ] Add your project manager as collaborator on Github.
 - [ ] Clone your OWN version of the repository (Not Lambda's by mistake!).
