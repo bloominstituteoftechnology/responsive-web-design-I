@@ -143,6 +143,7 @@ header nav a:last-child {
 
 header .logo {
   margin-top: 25px;
+  padding-left: 250px;
 
 }
 
@@ -241,6 +242,7 @@ footer {
     position: relative;
     margin: 0 auto;
     display: block;
+    padding-right: 250px;
   }
   .container{
     max-width: 750px;
@@ -283,9 +285,7 @@ footer {
 .bottom-content .text-content h4{
   padding-top: 20px;
 }
-.bottom-content{
- 
-}
+
 .text-content p{
   width: 95%;
 }
@@ -303,8 +303,53 @@ footer {
 }
 /* RESPONSIVE CSS FOR PHONE */
 @media(max-width: 500px) {
+ .logo{
+   padding-top: 10px;
+ }
   .container {
-   
+   max-width: 450px;
   }
+  /* ADJUST THIS TO CHANGE FIRST CHILD IN NAV - OVERRIDE FROM MAIN CSS? */
+  header nav a:first-child{
+    margin-left: 40px;
+  }
+.container nav {
+  border: 1px solid green;
+  padding-top: 40px;
+  min-width: 450px;;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 
+
+}
+.container nav a{
+  border: 1px solid green;
+  border-top: 1px solid black;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.container nav a:nth-last-child(1){
+  border-bottom: 1px solid black;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.cta{
+  margin-top: 00px;
+  border: 3px solid green;
+}
+
+ .cta .cta-text{
+   
+    
+  }
+  .middle-img{
+    max-width: 450px;
+    margin: 0 auto;
+    display: block;
+    
+  }
+  .main-content{
+    display: block;
+  }
 }
