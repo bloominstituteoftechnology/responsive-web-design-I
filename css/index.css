@@ -75,12 +75,13 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-	max-width: 1000px;
+	width: 100%;
+	max-width: 2000px;
 }
 
 @media (max-width: 500px) {
 	.container {
-       width: 100%;
+	   width: 100%;
 	   height: auto;
 	   margin: 10px 10px 10px 10px;
 	}
@@ -88,6 +89,7 @@ h1, h2, h3, h4, h5 {
 
 
 .top-header {
+	width:100%;
 	display: flex;
 	Justify-content: space-around;
 	align-items: center;
@@ -101,6 +103,10 @@ h1, h2, h3, h4, h5 {
 		justify-content: center;
 		align-items: center;
 	}
+}
+
+.left-nav{
+	width: 100%;
 }
 
 @media (max-width: 500px) {
@@ -123,14 +129,17 @@ h1, h2, h3, h4, h5 {
 		margin: 0;
 		
 		
+		
 	}
 }
 
 .top-header nav a {
+	display: flex
 	padding-right: 50px;
 	color: grey;
 	text-decoration: none;
 	margin: 0;
+	width: 100%;
 }
 
 
@@ -141,7 +150,10 @@ h1, h2, h3, h4, h5 {
 @media (max-width: 500px) {
 	.top-header nav a {
 		padding: 10px 0 10px 0;
-		
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	   border: 1px 0 1px 0 solid black;
 	}
 }
 
