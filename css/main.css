@@ -161,14 +161,14 @@ h5 {
 /* ====================================== Home Section (index.html) ====================================== */
 
 .container {
-  width: 880px;
+  max-width: 880px;
   margin: 0 auto;
 }
 
 header {
   width: 100%;
   display: flex;
-}
+  }
 
 header nav {
   display: flex;
@@ -191,6 +191,7 @@ header nav a:hover {
 header .logo {
   margin: 0px 0 0 91px;
 }
+
 
 /* End of Menu Section */
 
@@ -281,3 +282,57 @@ footer h5 {
 }
 
 /*  End of Footer Section  */
+
+
+@media (max-width: 800px) {
+  .container {
+    width: 100%;
+    background: blue;
+  }
+
+  header nav{
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+ 
+  header nav a{
+    /* flex-direction: column; */
+  }
+  header .logo {
+
+  }
+
+.jumbotron-container  {
+  justify-content: center;
+}
+
+  .jumbotron-container .logo1 {
+    display: none
+  }
+
+  .figure-main-container .middle-img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+  }
+  header nav {
+    width: 100%;
+    flex-direction: column;
+    /* justify-content: center; */
+  }
+
+  header nav a {
+
+  }
+  .container .top-main-container {
+    /* flex-direction: row; */
+    /* flex-wrap: wrap; */
+    /* flex-flow: row wrap; */
+    background: blue;
+  }
+}
