@@ -169,13 +169,13 @@ header {
   /* width: 100%; */
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
+  align-items: center;
 }
 
 header nav {
   display: flex;
   justify-content: space-between;
-  margin-top: 40px;
+  margin: 35px 0 20px;
   width: 100%;
 }
 
@@ -191,7 +191,7 @@ header nav a:hover {
 }
 
 header .logo {
-  margin: 0px 0 0 91px;
+  margin: 30px 0 0 91px;
 }
 
 
@@ -202,8 +202,8 @@ header .logo {
 .jumbotron-container {
   margin: 0 auto;
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
+  /* flex-flow: row nowrap; */
+  /* justify-content: space-between; */
   border-bottom: 1px solid black;
   padding-bottom: 20px;
 }
@@ -293,29 +293,29 @@ footer h5 {
   }
 
   header {
-    width: 90%;
-    /* flex-wrap: wrap; */
     flex-direction: column-reverse;
   }
 
+  header .logo {
+    /* background-image: center; */
+    margin: 40px 0 0 0;
+  }
   header nav {
-    /* width: 90%; */
-    /* flex-direction: column-reverse; */
-    /* justify-content: center; */
-
+    margin-top: 20px;
+    width: 90%;
   }
 
   header nav a {
-    /* flex-direction: column; */
-
-  }
-
-  header .logo {
-    /* background-size: 120px 80px; */
+    display: flex;
+    align-self: center;
   }
 
   .jumbotron-container {
     justify-content: center;
+  }
+
+  .jumbotron-container .jumbotron-text {
+    margin-top: 50px;
   }
 
   .jumbotron-container .logo1 {
@@ -350,8 +350,8 @@ footer h5 {
     border-bottom: 1px solid black;
   }
 
-  header nav .logo {
-    margin: 0 auto;
+  header .logo {
+    margin: 40px 0 gti 0;
   }
 
   .jumbotron-container .jumbotron-text {
