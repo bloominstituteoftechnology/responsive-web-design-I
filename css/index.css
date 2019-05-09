@@ -71,13 +71,6 @@ h1, h2, h3, h4, h5 {
 	margin:auto;
 }
 
-@media(max-width:500px){
-	.container{
-		display:flex;
-		flex-direction: column;
-	}
-}
-
 header{
 	display:flex;
 	flex-wrap: nowrap;
@@ -85,6 +78,11 @@ header{
 	text-align: auto;
 	margin-top:35px;
 	
+}
+
+.logo{
+	height: auto;
+	width:100%;
 }
 
 
@@ -95,18 +93,8 @@ header nav a{
 	color:gray;
 }
 
-@media{
-
-}
-
 .top-con-img{
 	margin-bottom:40px
-}
-
-@media(max-width:800px){
-    .top-con-img{
-        display:none;
-    }
 }
 
 .words{
@@ -154,6 +142,7 @@ header nav a{
 .main-section .bottom {
 	display:flex;
 	justify-content: space-evenly;
+	margin:20px 0px 0px 0px;
 }
 
  .main-section div{
@@ -163,27 +152,96 @@ header nav a{
 
 
 .main-section img{
-	margin:12px;
-	height:auto;
 	width:100%;
 
 }
 
-@media(max-width:500px){
-	.main-section img{
-		widows: 100%;
-		height:auto;
-	}
-}
-
 .bottom-content{
-	margin:40px;
+	margin-top:20px;
 }
 
 .bottom-content address{
-	margin-top:40px;
+	margin-top:20px;
 }
 
 footer{
-margin-left:365px;
+text-align: center;
+}
+
+@media(max-width:800px){
+    .top-con-img{
+        display:none;
+    }
+}
+
+@media(max-width:500px){
+
+	.container{
+		display:flex;
+		flex-direction: column;
+		max-width: 500px;
+		padding:30px;
+	}
+
+	header{
+		text-align: center;
+	}
+
+	h3{
+		margin: 20px 0px 20px 0px;
+	}
+
+	.middle-img{
+		margin:20px 0px;
+	}
+
+	nav{
+		display:flex;
+		flex:wrap;
+		flex-direction: column;
+		width:100%
+	}
+	
+	nav a{
+		border-bottom: 1px solid gray;
+		text-align: center;
+		max-width: 900px;
+	}
+
+	.logo{
+		height: auto;
+		width:100%;
+	}
+
+	.top-main{
+		display:flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.top-main button{
+		margin: 22px 0px 60px 110px;
+	}
+
+	.main-section{
+		margin: 20px;
+	}
+
+	.main-section .top{
+		display:flex;
+		flex-flow: column wrap;
+	}
+	.main-section .bottom{
+		display:flex;
+		flex-flow: column wrap;
+		margin:-12px 0px 0px;
+	}
+
+	.last{
+		margin-bottom:20px;
+	}
+	.main-section div{
+		width:100%;
+		height:auto;
+	}
 }
