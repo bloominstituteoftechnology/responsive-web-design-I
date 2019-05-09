@@ -207,7 +207,7 @@ footer {
   .logo{
     margin: 0 auto;
     display: block;
-    /* ASK */
+    
   }
   .container{
     max-width: 750px;
@@ -273,24 +273,28 @@ footer {
   .container {
     max-width: 450px;
     margin: 0 auto;
+    
    }
  .logo{
    padding-top: 10px;
    margin: 0 auto;
    display: block;
  }
+ header nav{
+   width: 450px;
+ }
  
-  /* ADJUST THIS TO CHANGE FIRST CHILD IN NAV - OVERRIDE FROM MAIN CSS? */
   header nav a:first-child{
     margin-left: 40px;
   }
 .container nav {
  
   padding-top: 40px;
-  min-width: 450px;;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   text-align: center;
+  min-width: 100%;
 
 
 }
