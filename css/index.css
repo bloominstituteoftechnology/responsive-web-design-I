@@ -1,3 +1,552 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+	margin-top: 15px;
+	border-width: 5px 5px 5px 5px;
+}
+
+/* Your code starts here! */
+/*___________________________________________________________________________________________________________________*/
+
+/* Top NAV bar list items*/
+
+/* Using body tag text align */
+
+
+
+html {
+	display: table;
+	margin: auto;
+}
+
+/*
+body {
+
+	display: table-cell;
+	text-align: left;
+	align-content: center;
+	vertical-align: middle;
+
+} */
+
+/* Top NAV bar */
+
+a {
+
+	text-decoration: none;
+	color: gray;
+	
+	}
+
+	.nav1 {
+
+		align-content: space-between;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		width: 800px;
+		height: auto;
+	}
+
+	.nav1 .navItem {
+
+		width: 100px;
+		height:	25px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+
+	}
+	
+	/* Inv on Demand jpg */
+
+.imgInv {
+
+	margin: 0 auto;
+	width: 300px;
+	height: auto;
+	align-self: center;
+	 
+}
+
+ /* Great idea logo */
+ .logo {
+
+	display: inline-block;
+	align-items: baseline;
+	width: 150px;
+	height: auto;
+		
+}
+/* Get Started Link */
+
+.gStarted {
+
+	padding: 5px 40px 5px 40px;
+	background: white;
+	border: 1px solid black;
+	border-radius: 2px;
+	margin: 0px auto;
+	display: inline-block;
+	font-size: 16px;
+	color: gray;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	width: 200px;
+	
+
+}
+
+
+
+/* Inv on Demand Heading */
+
+h2 {
+	font-size: 60px;
+	display: inline;
+
+  }
+
+
+ /* All header parapraphs */
+h1 {
+
+	display: block;
+	text-align: left;
+
+}
+/* Code snippet circle image */
+.img1 {
+
+	display:inline-block;
+	width: 80%;
+	height: auto;  
+   
+}
+
+/* Code Snippet rectangular image*/
+.middle-img {
+
+	display: block;
+	width: 800px;
+	height: 150px; 
+	 
+	
+}
+
+/* Divs */ 
+
+/* Inv On Demand */
+div.a {
+
+	display: inline-block;
+	width: 400px;
+	height: Auto;
+	padding: 0px;
+	border: 0px solid white; 
+	text-align: center;  
+	margin: 0 auto; 
+	padding-bottom: 40px;
+}
+
+/* Cicular logo*/
+
+div.b {
+
+	display: inline-block;
+	width: auto;
+	height: auto;
+	padding: 0px;
+	border: 0px  solid white; 
+	text-align: center; 
+	margin: 0 auto;   
+		
+}
+
+/* Text in span bottom Paragraphs */
+div.c {
+
+	display: inline-block;
+	width: 380px;
+	height: auto;
+	padding: 0px;
+	border: 1px solid white; 
+	text-align: left; 
+	font-size: 14px; 
+	
+}
+/* Text in span Paragraphs */
+div.d {
+
+	display: inline-block;
+	width: 380px;
+	height: auto;
+	padding: 0px;
+	border: 0px  solid white; 
+	text-align: left;    
+	font-size: 14px; 	
+
+}
+
+/* Text in span bottom Paragraphs */
+div.e {
+
+	display: inline-block;
+	width: 250px;
+	height: auto;
+	padding: 0px;
+	border: 1px solid white; 
+	text-align: left; 
+	font-size: 14px; 
+
+}
+/* Text in span Paragraphs */
+div.f {
+
+	display: inline-block;
+	width: 250px;
+	height: auto;
+	padding: 0px;
+	border: 1px  solid white; 
+	text-align: left;    
+	font-size: 14px; 	
+}
+
+div.g {
+
+	display: inline-block;
+	width: 500px;
+	height: auto;
+	padding: 0px;
+	border: 0px solid white; 
+	text-align: left; 
+	font-size: 14px; 
+	margin: 0px;
+	box-sizing: border-box;
+	
+}
+
+
+p {
+
+	text-align: left;
+   
+  
+}
+
+.p1 {
+
+	text-align: left;   
+
+}
+
+
+footer {
+
+	font-size: 12px;
+	text-align: center;
+	
+
+}
+
+/* bottom DIV with all P and text */
+
+.divMiddle {
+	
+  display: inline-block;
+	border-width:2px;
+	border-style:solid;
+	border-color:black;
+	border-left-color: white;
+	border-right-color: white;
+	box-sizing: border-box;
+	margin: 0px;
+}
+
+/* The Div with the INV text and round blob of code */
+
+.divTop {
+		
+  display: inline-block;
+	border-width:0px;
+	border-style:solid;
+	border-color:white;
+	border-left-color: white;
+	border-right-color: white;   
+	box-sizing: border-box;
+	margin: 0px auto;
+	align-content: center;
+	padding: 0px;
+
+}
+
+.divBottom {
+	
+	display: inline-block;
+  text-align: left;
+	box-sizing: border-box;	
+	margin: 0px;
+}
+
+footer {
+
+	text-align: center;
+
+}
+
+.navItem1 {
+
+	display: none;
+
+}
+
+/* @media query */
+@media (max-width: 800px) {
+
+	.divTop {
+	
+		width: 800px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.divBottom {
+	
+		width: 800px;
+
+	}
+
+	.divMiddle {
+	
+		width: 800px;
+
+	}
+
+	.img1 {
+
+		display: none;
+
+	}
+
+	.a {
+
+		width: 800px;
+	}
+	.b {
+
+		display: none;
+	}
+
+	
+	.navItem2 {
+
+		display: none;
+		width: 0%;
+
+	}
+ 
+	.navItem {
+
+		transition: .7s;
+		
+	}
+
+	.nav1 .navItem {
+		
+		width: 15%;
+		margin: 0 auto;
+	
+	}
+
+	.navItem1 {
+
+		width: 800px;
+
+		display: inline-block;
+	
+	}
+
+	.SpanLogo {
+	 
+		width: 800px;
+		text-align: center;
+	}
+
+	 
+	
+	    
+}
+
+/* @media query 500px */
+@media (max-width: 500px) {
+
+
+	.a {
+
+		width: 500px;
+
+	}
+
+	.middle-img {
+
+		width: 500px;
+		height: auto;
+
+	}
+
+	.divTop {
+	
+		width: 500px;
+		display: flex;
+		flex-direction: column;
+
+	}
+
+	.divBottom {
+
+		display: flex;
+		flex-direction: column;
+		width: 500px;
+
+	}
+
+	.divMiddle {
+		
+		display: flex;
+		flex-direction: column;
+		width: 500px;
+
+	}
+
+		.nav1 {
+		
+		display: flex;
+		flex-direction: column;		
+		width: 500px;
+		text-align: center;
+		align-content: center;
+		vertical-align: center;
+		height: 400px;
+		
+	}
+
+	.nav1 .navItem {
+	
+		text-align: center;
+		width: 500px;		
+		margin: 0 auto;		
+		align-content: center;
+		transition: .7s;
+		display: flex;
+		padding: 0px 200px 0px 200px;
+		cursor: pointer;    
+		height: 66px;		 
+		border:1px solid black;
+		font-size: 18px;
+	  align-items: center;
+	}
+
+	.gStarted {
+
+		color: black;
+
+	}
+
+	.img1 {
+
+		display: none;
+
+	}
+
+	.b {
+
+		display: none;
+	}
+
+.navItem1 {
+
+		width: 500px;
+		
+		display: inline-block;
+		
+		text-align: center;
+
+		box-sizing: border-box;
+
+		box-shadow: inset 0 0 0 1px #8c8c8c;
+	}
+
+	.SpanLogo {
+	 
+		width: 500px;
+		text-align: center;
+		 
+	}
+
+  
+}
+
+
+
+
+
+
 
 
