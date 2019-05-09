@@ -1,3 +1,266 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+.container{
+	max-width: 900px;
+	margin:auto;
+}
+
+header{
+	display:flex;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
+	text-align: auto;
+	margin-top:35px;
+	
+}
 
 
+
+
+header nav a{
+	text-decoration: none;
+	margin:28px;
+	color:gray;
+}
+
+.top-con-img{
+	margin-bottom:40px
+}
+
+.words{
+	display: flex;
+	flex-direction: column;
+}
+
+.top-main{
+	margin-top:40px;
+	display:flex;
+	justify-content: space-evenly;
+	border-bottom: 1px solid black;
+
+}
+.top-main h1{
+	font-size:70px;
+	margin: 61px 0px 0px 55px;
+    text-align: center;
+
+}
+
+
+.top-main button{
+    border: 1px solid black;
+    width: 156px;
+    height: 35px;
+	font-size: 17px;
+	margin: 22px 0px 0px 110px;
+
+	
+}
+
+.main-section{
+	margin-top:40px;
+	border-bottom:1px solid black;
+
+}
+
+
+.main-section .top {
+	display:flex;
+	justify-content: space-evenly;
+}
+
+.main-section .bottom {
+	display:flex;
+	justify-content: space-evenly;
+	margin:20px 0px 0px 0px;
+}
+
+ .main-section div{
+	height:135px;
+	width:423px;
+}
+
+
+.main-section img{
+	width:100%;
+
+}
+
+.bottom-content{
+	margin-top:40px;
+}
+
+
+footer{
+text-align: center;
+}
+
+@media(max-width:800px){
+    .top-con-img{
+        display:none;
+    }
+}
+
+@media(max-width:500px){
+
+	.container{
+		display:flex;
+		flex-direction: column;
+		max-width: 500px;
+	}
+
+	header{
+		text-align: center;
+		margin:0px 0px -30px;
+		display:flex;
+		flex-wrap: wrap-reverse;
+	}
+
+
+	h3{
+		margin: 20px 0px 20px 0px;
+	}
+
+	.middle-img{
+		margin:20px 0px;
+	}
+
+	nav{
+		display:flex;
+		flex-direction: column;
+		width:100%;
+		margin-bottom:10px;
+	}
+
+
+	
+	header nav a{
+		border-bottom: 1px solid gray;
+		text-align: center;
+		max-width: 900px;
+		margin:0px;
+		padding:15px;
+	}
+
+	.link1{
+		border-top:1px solid gray;
+		;
+	}
+
+	.logo{
+		padding:15px;
+	}
+
+
+	.top-main{
+		margin-top:0px;
+		display:flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.top-main h1{
+		font-size:70px;
+		margin: 61px 0px 0px 0px;
+		text-align: center;
+	
+	}
+	.top-main button{
+		margin: 22px 0px 60px 110px;
+	}
+
+	.main-section{
+		margin: 20px;
+	}
+
+	.main-section .top{
+		display:flex;
+		flex-flow: column wrap;
+	}
+	.main-section .bottom{
+		display:flex;
+		flex-flow: column wrap;
+		margin:-12px 0px 0px;
+	}
+
+	.last{
+		margin-bottom:20px;
+	}
+	.main-section div{
+		width:100%;
+		height:auto;
+	}
+
+	.bottom-content{
+		margin:-10px 0px -10px 20px;
+		display: flex;
+		justify-content: flex-start;
+	}
+
+}
