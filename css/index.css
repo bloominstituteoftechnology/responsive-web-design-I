@@ -1,3 +1,480 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* Use your own /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+h1 {
+  font-size: 50px;
+  display: inline-block;
+}
+
+header {
+  margin: 0;
+  padding: 20px 0;
+}
+
+header nav {
+  margin: 20px 0;
+  display: inline-block;
+  margin-left: 92px;
+}
+
+header nav a {
+  margin-left: 45px;
+  font-size: 15px;
+  color: grey;
+  text-decoration: none;
+}
+
+header nav .first-anchor {
+  margin-left: 0;
+}
+
+.logo {
+  margin-left: 40px;
+}
+.title-content {
+  width: 100%;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.title {
+  display: inline-block;
+}
+
+.title h1 {
+  left: 151px;
+  text-align: center;
+  position: relative;
+  bottom: 60px;
+  font-size: 75px;
+}
+
+.titleimg {
+  display: inline-block;
+  width: 50%;
+  margin-left: 250px;
+}
+
+button {
+  display: block;
+  position: relative;
+  bottom: 60px;
+  left: 262px;
+}
+
+.above-image {
+  border-top: 2px solid black;
+  display: inline-block;
+  margin-left: 90px;
+  margin-top: 50px;
+  padding-top: 50px;
+}
+
+.features {
+  margin: 12px 0;
+  display: inline-block;
+  width: 453px;
+}
+
+.about {
+  margin: 20px 0;
+  display: inline-block;
+  width: 418px;
+}
+
+.middle-img {
+  margin-left: 85px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.below-image {
+  margin-top: 20px;
+  margin-left: 90px;
+  margin-bottom: 60px;
+  border-bottom: 2px solid black;
+  padding-bottom: 50px;
+  display: inline-block;
+}
+
+.services {
+  display: inline-block;
+  width: 290px;
+}
+
+.products {
+  display: inline-block;
+  width: 290px;
+}
+
+.vision {
+  display: inline-block;
+  width: 290px;
+}
+
+.footer {
+  margin-left: 90px;
+}
+
+.address {
+  display: inline-block;
+}
+
+.number {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.copyright {
+  margin-top: 20px;
+  margin-left: 450px;
+}
+
+.container {
+  width: 1146px;
+  margin: 0 auto;
+}
+
+@media (max-width: 800px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Tablet Size */
+
+@media (max-width: 800px) {
+  .titleimg {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .logo {
+    margin-bottom: 50px;
+    position: relative;
+    right: 380px;
+  }
+}
+
+@media (max-width: 800px) {
+  .title {
+    margin-top: 60px;
+    margin-left: 100px;
+  }
+}
+
+@media (max-width: 800px) {
+  .above-image {
+    width: 600px;
+    margin-left: 100px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 800px) {
+  .features {
+    margin-right: 40px;
+  }
+}
+
+@media (max-width: 800px) {
+  .middle-img {
+    width: 600px;
+  }
+}
+
+@media (max-width: 800px) {
+  .below-image {
+    width: 600px;
+    margin-left: 100px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  .services {
+    width: 200px;
+    padding-right: 30px;
+  }
+}
+
+@media (max-width: 800px) {
+  .products {
+    width: 200px;
+    padding-right: 30px;
+  }
+}
+
+@media (max-width: 800px) {
+  .vision {
+    width: 200px;
+  }
+}
+
+@media (max-width: 800px) {
+  .copyright {
+    margin-bottom: 30px;
+    margin-left: 330px;
+  }
+}
+
+@media (max-width: 800px) {
+  .footer {
+    margin-left: 100px;
+  }
+}
+
+/* Mobile Size */
+
+@media (max-width: 500px) {
+  nav a {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    padding-left: 100px;
+    padding-right: 100px;
+    border-top: 1px solid grey;
+  }
+}
+
+@media (max-width: 500px) {
+  .contact {
+    border-bottom: 1px solid grey;
+  }
+}
+
+@media (max-width: 500px) {
+  header {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 500px) {
+  .logo {
+    position: relative;
+    right: 250px;
+    margin-bottom: 400px;
+  }
+}
+
+@media (max-width: 500px) {
+  .title {
+    margin-top: 60px;
+    margin-left: 0px;
+    position: relative;
+    right: 40px;
+  }
+}
+
+@media (max-width: 500px) {
+  .above-image {
+    width: 400px;
+    margin-left: 50px;
+    display: block;
+  }
+}
+
+@media (max-width: 500px) {
+  .middle-img {
+    width: 400px;
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 500px) {
+  .below-image {
+    width: 400px;
+    margin-left: 50px;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .services {
+    width: 400px;
+    padding-bottom: 50px;
+  }
+}
+
+@media (max-width: 500px) {
+  .products {
+    width: 400px;
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  .vision {
+    width: 400px;
+  }
+}
+
+@media (max-width: 500px) {
+  .footer {
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 500px) {
+  .copyright {
+    margin-left: 160px;
+  }
+}
