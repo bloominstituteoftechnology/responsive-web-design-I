@@ -65,7 +65,8 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-  width: 880px;
+  max-width: 800px;
+  width: 95%;
   /* TB LR */
   margin: 0 auto;
 }
@@ -77,7 +78,8 @@ header {
 }
 
 header nav {
-  width: 610px;
+  max-width: 610px;
+  width: 100%;
   margin-top: 40px;
   display: flex;
   justify-content: space-between;
@@ -105,7 +107,7 @@ header .logo {
 }
 
 .cta .cta-text {
-  width: 505px;
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -114,7 +116,7 @@ header .logo {
 
 .cta .cta-text h1 {
   text-align: center;
-  font-size: 77px;
+  font-size: 4.8rem;
 }
 
 .cta .cta-text button {
@@ -146,7 +148,7 @@ header .logo {
 }
 
 .main-content .top-content .text-content {
-  width: 50%;
+  width: 48%;
 }
 
 .main-content .middle-img {
@@ -252,18 +254,10 @@ footer {
 
 /* Tablet */
 @media (max-width: 800px) {
-  .container {
-    width: 758px;
-  }
-
   /* Header */
   header {
     flex-direction: column-reverse;
     align-items: center;
-  }
-
-  header nav {
-    width: 758px;
   }
 
   header .logo {
@@ -313,10 +307,6 @@ footer {
 
 /* Mobile */
 @media (max-width: 500px) {
-  .container {
-    width: 465px;
-  }
-
   /* Header */
   header nav {
     width: 100%;
@@ -337,6 +327,10 @@ footer {
     text-decoration: none;
     background: #2b2b2b;
     color: #fff;
+  }
+
+  .cta .cta-text h1 {
+    font-size: 3.8rem;
   }
 
   /* Main content */
