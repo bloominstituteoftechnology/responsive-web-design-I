@@ -157,12 +157,9 @@ header nav a{
 }
 
 .bottom-content{
-	margin-top:20px;
+	margin-top:40px;
 }
 
-.bottom-content address{
-	margin-top:20px;
-}
 
 footer{
 text-align: center;
@@ -180,11 +177,11 @@ text-align: center;
 		display:flex;
 		flex-direction: column;
 		max-width: 500px;
-		padding:30px;
 	}
 
 	header{
 		text-align: center;
+		margin:0px 0px -30px;
 	}
 
 	h3{
@@ -199,13 +196,17 @@ text-align: center;
 		display:flex;
 		flex:wrap;
 		flex-direction: column;
-		width:100%
+		width:100%;
+		margin-bottom:10px;
 	}
 	
-	nav a{
+	header nav a{
 		border-bottom: 1px solid gray;
 		text-align: center;
 		max-width: 900px;
+		margin:0px;
+		padding:15px;
+		justify-content: center;
 	}
 
 	.logo{
@@ -214,11 +215,18 @@ text-align: center;
 	}
 
 	.top-main{
+		margin-top:0px;
 		display:flex;
 		flex-direction: column;
 		justify-content: center;
 	}
 
+	.top-main h1{
+		font-size:70px;
+		margin: 61px 0px 0px 0px;
+		text-align: center;
+	
+	}
 	.top-main button{
 		margin: 22px 0px 60px 110px;
 	}
@@ -243,5 +251,11 @@ text-align: center;
 	.main-section div{
 		width:100%;
 		height:auto;
+	}
+
+	.bottom-content{
+		margin:-10px 0px -10px 20px;
+		display: flex;
+		justify-content: flex-start;
 	}
 }
