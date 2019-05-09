@@ -142,19 +142,22 @@ ul li {
 
 
 .top-content{
-	width:1500px;
-	height:175px;
-	text-align:center;
-	
+    height:350px;
 }
-.top-content .features{
-	width:500px;
-	height:250px;
-	padding:20px;
-	margin:40px;
-	display:inline-block;
-	text-size:auto;
-	text-align:left;
+
+.top-content .features {
+    width:200px;
+    border:1 px solid green;
+    margin-left:-200px;
+
+
+}
+
+.top-content .about {
+    width:200px;
+    border: 1px soild red;
+    margin-left: 15px;
+    margin-right:auto
 }
 .middle-img{
 	margin:0 210px;;
@@ -386,9 +389,10 @@ ul li {
             display:inline;
             width: 75%;
             margin:auto;
+            flex-direction: column-reverse;
         }
         .top-navigation li{
-            display:inline;
+            display:inline-block;
             width: 75%;
             margin:auto;
             border: 1px solid red; 
@@ -416,28 +420,27 @@ ul li {
         }
         
         .top-content {
-            width: 50%;
-            margin:auto;
+            width:799px;
+            display:flex;
+            height:250px;
+            border:1px solid blue;
+            
         }
-        .features {
-            width:150px;
-            margin:auto;
+        .top-content .features p{
+            width:200px;
+            border:1 px solid green;
         }
-        .features h3 p{
-            width:100%;
-            margin:auto;
+
+        .top-content .about p {
+            width:200px;
+            border: 1px soild red;
         }
-        .about{
-            width:150%;
-            margin:auto;
-        }
-        .about h3 p{
-            width:100%;
-            margin:auto;
-        }
+        
         .middle-img{
-            width:100%;
-            margin:auto;
+            /* width:100%; */
+            /* margin:auto; */
+            display:none;
+            
         }
         .bottom-content{
             width:100%;
@@ -473,7 +476,7 @@ ul li {
         
     }
     /* mobile */
-    @media(max-width:500px){
+    @media(min-width:500px){
         .container{
             width:800px;
         }
