@@ -71,6 +71,13 @@ h1, h2, h3, h4, h5 {
 	margin:auto;
 }
 
+@media(max-width:500px){
+	.container{
+		display:flex;
+		flex-direction: column;
+	}
+}
+
 header{
 	display:flex;
 	flex-wrap: nowrap;
@@ -86,6 +93,10 @@ header nav a{
 	text-decoration: none;
 	margin:28px;
 	color:gray;
+}
+
+@media{
+
 }
 
 .top-con-img{
@@ -153,7 +164,16 @@ header nav a{
 
 .main-section img{
 	margin:12px;
+	height:auto;
+	width:100%;
 
+}
+
+@media(max-width:500px){
+	.main-section img{
+		widows: 100%;
+		height:auto;
+	}
 }
 
 .bottom-content{
