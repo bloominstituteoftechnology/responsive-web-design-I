@@ -383,25 +383,23 @@ ul li {
     /* tablet */
     @media(max-width:800px){
         .container{
-            width:85%;
+			max-width:800px;
+			width:100%
         }
+	   
+		
         .top-navigation{
-            display:inline;
-            width: 75%;
-            margin:auto;
-            flex-direction: column-reverse;
-        }
-        .top-navigation li{
-            display:inline-block;
-            width: 75%;
-            margin:auto;
-            border: 1px solid red; 
-        }
-        
-        .header{
-            width:100%;
-            margin:auto;
-        }
+			max-width:800px;
+			width:100%;
+			display:flex;
+
+		}
+
+        .logo-nav{
+			display:flex;
+			flex-direction: column-reverse;
+
+		}
 
         .header-img{
             display:none;
@@ -414,62 +412,55 @@ ul li {
             justify-content: center;
             align:center;
         }
-        ul li{
-            width:100%;
-            margin:auto;
-        }
         
         .top-content {
-            width:799px;
+			max-width:800px;
+            width:45%;
             display:flex;
             height:250px;
             border:1px solid blue;
             
         }
-        .top-content .features p{
-            width:200px;
-            border:1 px solid green;
-        }
-
-        .top-content .about p {
-            width:200px;
-            border: 1px soild red;
-        }
-        
-        .middle-img{
-            /* width:100%; */
-            /* margin:auto; */
-            display:none;
+       .middle-img{
+            width:100%;
             
         }
         .bottom-content{
+			max-width:800px;
             width:100%;
-            margin:auto;
+            
         }
         .servies{
-            width:23%;
-            margin:auto;
-        }
-        .services h3 p{
-            width:100%;
-            margin:auto;
+			max-width:800px;
+			width:15%;
+			margin:0;
+			padding:0;
+            
         }
        
         .product{
-            width:23%;
-            margin:auto;
+			max-width:800px;
+			width:15%;
+			margin:0;
+			padding:0;
+            
         }
         .vision{
-            width:23%;
-            margin:auto;
+			max-width:800px;
+			width:15%;
+			margin:0;
+			padding:0;
+        
         }
 
         .contact{
+			max-width:800px;
             width:100%;
             margin:auto;
         }
 
         .copyright{
+			max-width:800px;
             width:100%;
             margin:auto;
         }
