@@ -1,3 +1,480 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+/* Desktop General */
+
+p {
+  line-height: 1.15;
+}
+
+.container {
+  width: 880px;
+  margin: 0 auto;
+}
+
+header {
+  border-bottom: 0.5px solid black;
+}
+
+/* Tablet General */
+@media (max-width: 800px) {
+  .container {
+    width: 800px;
+  }
+
+  header {
+    border-bottom: none;
+  }
+}
+
+/* Phone General */
+@media (max-width: 500px) {
+  .container {
+    width: 500px;
+    border: 1px solid blue;
+  }
+}
+
+/* Desktop Navbar */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #6195ed;
+  padding: 5px 0;
+  padding-left: 10px;
+  margin: 25px 0 15px 0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  vertical-align: 100%;
+}
+
+nav a {
+  margin-right: 64px;
+  text-decoration: none;
+  color: white;
+}
+
+/* Tablet Navbar */
+@media (max-width: 800px) {
+  .top-bar {
+    flex-direction: column-reverse;
+    align-items: center;
+    background-color: white;
+    padding-left: 0px;
+    margin: 25px 0;
+  }
+
+  nav {
+    align-self: flex-start;
+    font-size: 15px;
+    margin-top: 40px;
+    margin-left: 3%;
+  }
+
+  nav a {
+    margin-right: 30%;
+    color: black;
+  }
+}
+
+/* Mobile Navbar */
+@media (max-width: 500px) {
+  .top-bar {
+    margin: 15px 0;
+  }
+
+  nav {
+    /* border: 2px solid red; */
+    width: 100%;
+    flex-direction: column;
+    align-self: center;
+    font-size: 19px;
+    margin-top: 20px;
+    margin-left: 0%;
+  }
+
+  nav a {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    margin-right: 0;
+    padding-right: 0;
+    padding: 20px 0%;
+  }
+}
+
+/* Desktop Call to Action */
+.cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 45px 0;
+  margin-top: 68px;
+  padding-bottom: 30px;
+}
+
+.cta-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  vertical-align: 170%;
+  margin-left: 14%;
+  font-size: 69px;
+  text-align: center;
+}
+
+h1 {
+  letter-spacing: 3.5px;
+  line-height: 70px;
+  margin-bottom: 30px;
+}
+
+button {
+  display: flex;
+  font-size: 18px;
+  padding: 5px 39.5px;
+}
+/* Tablet Call to Action */
+@media (max-width: 800px) {
+  .cta {
+    justify-content: center;
+    width: 95%;
+    border-bottom: 1px solid black;
+    margin: 70px 2.4%;
+    padding-bottom: 0px;
+    margin-bottom: 35px;
+  }
+
+  .cta-text {
+    vertical-align: 0;
+    margin: 0;
+    margin-right: 0;
+    padding-bottom: 70px;
+  }
+
+  .cta-img {
+    display: none;
+  }
+
+  button {
+    display: flex;
+    font-size: 18px;
+    padding: 5px 39.5px;
+  }
+}
+
+/* Mobile Call to Action */
+@media (max-width: 500px) {
+  .cta {
+    margin: 50px 2.4%;
+  }
+}
+
+/* Desktop Top Description */
+.top-descriptions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 35px;
+}
+
+.top-describe {
+  width: 48.5%;
+  margin-bottom: 35px;
+}
+
+/* Tablet Top Descriptions */
+@media (max-width: 800px) {
+  .top-descriptions {
+    margin: 15px 4%;
+    margin-top: 0;
+  }
+
+  .top-describe {
+    margin-bottom: 20px;
+  }
+
+  .middle-img {
+    margin: 0 2.5%;
+    width: 95%;
+    margin-bottom: 0;
+  }
+}
+
+/* Mobile Top Descriptions */
+@media (max-width: 500px) {
+  .top-descriptions {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+  }
+
+  .top-describe {
+    width: 95%;
+    margin-bottom: 45px;
+  }
+
+  .middle-img {
+    width: 92%;
+    margin: 0 4%;
+    margin-bottom: 0;
+  }
+}
+
+/* Desktop Bottom Descriptions */
+.bottom-descriptions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 25px 0;
+  border-bottom: 1px solid black;
+}
+
+.bottom-describe {
+  width: 32%;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+}
+
+/* Tablet Bottom Descriptions */
+@media (max-width: 800px) {
+  .bottom-descriptions {
+    margin: 0px 2.5%;
+    width: 95%;
+    padding-top: 25px;
+    padding-left: 1%;
+    padding-bottom: 35px;
+  }
+
+  .bottom-describe {
+    margin-bottom: 15px;
+  }
+}
+
+/* Mobile Bottom Descriptions */
+@media (max-width: 500px) {
+  .bottom-descriptions {
+    display: flex;
+    flex-direction: column;
+    padding: 25px 0;
+    padding-bottom: 0;
+    border-bottom: 1px solid black;
+  }
+
+  .bottom-describe {
+    width: 97%;
+    margin: 0 1.5%;
+    margin-bottom: 60px;
+    padding-bottom: 5px;
+  }
+}
+
+/* Desktop Footer */
+footer {
+  margin-top: 40px;
+}
+
+address {
+  margin-bottom: 15px;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
+  font-size: 16px;
+  letter-spacing: -0.25px;
+}
+
+/* Tablet Footer */
+@media (max-width: 800px) {
+  footer {
+    margin: 0px 4%;
+    margin-top: 35px;
+    width: 92%;
+  }
+
+  address {
+    margin-bottom: 15px;
+  }
+
+  footer p {
+    margin-bottom: 15px;
+  }
+
+  .copyright {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+    font-size: 16px;
+    letter-spacing: -0.25px;
+  }
+}
+
+/* Mobile Footer */
+@media (max-width: 500px) {
+  footer {
+    margin: 0px 4%;
+    margin-top: 25px;
+    width: 92%;
+  }
+}
