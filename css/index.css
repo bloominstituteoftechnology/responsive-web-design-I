@@ -1,3 +1,454 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
 
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.container {
+  width: 885px;
+  margin: 0 auto;
+  border: 3px blue;
+}
+
+header {
+  width: 100%;
+  display: flex;
+}
+
+.image-wrapper {
+  display: none;
+}
+
+header nav {
+  width: 800px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+header nav a {
+  margin-right: 0 auto;
+  font-size: 18px;
+  color: grey;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+header nav a:first-child {
+  margin-left: 0;
+}
+
+header nav a:last-child {
+  margin-right: 10px;
+}
+.gateway {
+  display: flex;
+  flex-direction: row;
+}
+
+.gateway-text {
+  display: flex;
+  flex-direction: column;
+  vertical-align: center;
+  font-size: 55px;
+  margin-top: 100px;
+  text-align: center;
+  padding: 0px 75px;
+}
+
+.gateway .gateway-text button {
+  background: white;
+  vertical-align: top;
+  margin-top: 8px;
+  padding: 8px 50px;
+  font-size: 18px;
+  border: 3px solid blue;
+  cursor: pointer;
+}
+
+.gateway .gateway-text button:hover {
+  background: blue;
+  color: yellow;
+}
+
+/* media query mobile phone begin */
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header nav a {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid blue;
+  }
+
+  .image-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid blue;
+  }
+
+  .logo1 {
+    width: 150px;
+    margin-bottom: 20px;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  header nav {
+    flex-direction: column;
+  }
+
+  .gateway img {
+    display: none;
+  }
+
+  .mainpage-content .middle-img {
+    width: 100%;
+  }
+
+  h1 {
+    margin: 25px 50px 20px 50px;
+  }
+  .mid-content {
+    flex-direction: column;
+  }
+  p {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  .lowermid-content {
+    margin: 0 auto;
+    display: block;
+    flex-direction: column;
+  }
+
+  .lowermid-content .text-content p {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  footer p {
+    text-align: center;
+    font-size: 18px;
+  }
+}
+/* media query mobile phone end */
+
+/* media query tablet begin  */
+
+@media (min-width: 501px) and (max-width: 800px) {
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: orange;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-wrapper {
+    display: block;
+  align-items: center;
+  }
+
+  .logo1 {
+    width: auto;
+    margin-bottom: 10px;
+  }
+
+  header nav a {
+    flex-direction: row;
+    width: 100%;
+    text-align: center;
+    margin: 10px 20px 10px 0;
+    padding-top: 10%;
+  }
+  .logo {
+    display: none;
+  }
+
+  .gateway {
+    display: flex;
+    padding: 10%;
+  }
+
+  .gateway-text {
+    margin: auto;
+    width: auto;
+  }
+
+  h1 {
+    display: flex;
+    align-content: center;
+    margin: auto;
+    width: auto;
+  }
+
+  .gateway img {
+    display: none;
+  }
+
+  .mainpage-content .middle-img {
+    width: 100%;
+  }
+  h4 {
+    margin: 10px 15px 10px 10px;
+  }
+  p {
+    text-align: left;
+    margin: 10px 15px 10px 10px;
+  }
+
+  footer p {
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .lowermid-content {
+    width: 100%;
+    text-align: left;
+    margin: 10px 25px 10px 10px;
+  }
+}
+/* media query tablet end */
+
+header .logo {
+  margin: 40px 0 0 50px;
+}
+
+.gateway img {
+  margin-top: 59px;
+}
+
+.mainpage-content {
+  border-top: 3px solid blue;
+  margin-top: 56px;
+  padding-top: 30px;
+}
+
+.mainpage-content .mid-content {
+  padding: 5px 15px;
+}
+
+.mid-content {
+  display: flex;
+}
+.text-content {
+  width: 100%;
+  flex-direction: row;
+  margin-right: 15px;
+  margin-top: 15px;
+}
+
+.mainpage-content .middle-img {
+  margin-top: 40px;
+}
+
+.lowermid-content {
+  display: flex;
+}
+
+.text-content {
+  width: 100%;
+  flex-direction: row;
+  margin-right: 15px;
+  margin-top: 15px;
+}
+
+p {
+  display: block;
+}
+
+.text-content:last-child {
+  margin-right: 0;
+}
+
+.bottom-contact {
+  margin-top: 57px;
+  border-top: 3px solid blue;
+  padding: 39px 10px 0;
+}
+
+.bottom-contact p {
+  margin: 25px 0;
+}
+
+footer {
+  margin: 32px 0;
+  text-align: center;
+  font-size: 12px;
+}
