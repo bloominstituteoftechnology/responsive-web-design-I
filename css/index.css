@@ -180,36 +180,47 @@ h1 {
 } 
 
 nav {
+    width: 800px
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    margin: 0 auto;
-    margin-top: 20px;
+    margin: 25px 25px 25px 25px;
+    /* margin-top: 20px; */
 }
 
-.menu {
+
+.menu  {
     border: 2px red solid;
-       
-}
-
-.menu a {
     color: #777;
     text-decoration: none;
-    padding-right: 40px;
-    
+    padding-right: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+       width: 80%;
+}
+
+
+
+@media(max-width: 800px) {
+    .menu {
+        width: 500px;
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center 
+    }
 }
 
 @media(max-width: 500px) {
-   .menu a {
+   .menu {
        
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center
-        
-       
-        
+        align-items: center    
     }
 }
 
