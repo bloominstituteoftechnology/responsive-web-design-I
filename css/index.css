@@ -71,8 +71,20 @@ h1, h2, h3, h4, h5 {
 @media (max-width: 800px){
     .container{
         display: flex;
+        max-width: 100%;
         flex-direction: column;
-        padding: 20px;
+    }
+    html {
+        margin: 5%;
+    }
+}
+
+@media (max-width: 500px){
+    .container{
+        display: flex;
+        max-width: 100%;
+        flex-direction: column;
+        margin: 20px;
     }
 }
 /* Header Styles */
@@ -83,6 +95,14 @@ header {
 }
 
 @media (max-width: 800px) {
+    header {
+      flex-direction: column-reverse;
+      align-items: center;
+      display: flex;
+    }
+  }
+
+  @media (max-width: 500px) {
     header {
       flex-direction: column-reverse;
       align-items: center;
@@ -105,10 +125,19 @@ header nav {
     }
   }
 
+
 header nav a {
     text-decoration: none;
     color: #b0b0b0;
 }
+
+@media (max-width: 500px) {
+    header nav a {
+        flex-direction: column;
+        justify-content: space-between;  
+        width: 100%;
+    }
+  }
 
 header nav a:hover {
     text-decoration: underline;
@@ -189,9 +218,42 @@ header .logo {
    line-height: 18px;
 }
 
+@media (max-width: 800px){
+    .main-content{
+        display: flex;
+        flex-flow: column;
+        max-width: 800px;
+    }
+    .middle-img{
+            width: 100%;
+            height: auto;
+    }
+}
+
+@media (max-width: 500px){
+    .main-content{
+        display: flex;
+        flex-flow: column;
+        max-width: 100%;
+    }
+    .middle-img{
+            width: 100%;
+            height: auto;
+    }
+}
+
 .main-content .top-content {
     display: flex;
 }
+
+@media (max-width: 500px){
+    .main-content .top-content{
+        display: flex;
+        flex-flow: column;
+        max-width: 100%;
+    }
+}
+
 
 .main-content .middle-img {
     display: block;
@@ -200,6 +262,14 @@ header .logo {
 
 .main-content .bottom-content {
     display: flex;
+}
+
+@media (max-width: 500px){
+    .main-content .bottom-content{
+        display: flex;
+        flex-flow: column;
+        max-width: 100%;
+    }
 }
 
 .main-content .bottom-content p {
@@ -211,6 +281,14 @@ header .logo {
 .contact p {
     margin: 15px 0;
 }
+
+@media (max-width: 500px){
+    .text-content{
+      margin-top: 5%;
+      margin-bottom: 5%;
+    }
+}
+
 
 /* Footer Styles */
 
