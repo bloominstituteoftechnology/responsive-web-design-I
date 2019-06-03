@@ -77,7 +77,7 @@ h1, h2, h3, h4, h5 {
 /* header */
 
 header nav {
-  display: inline-block;
+  display: flex;
   width: 691px;
   vertical-align: top;
   margin-top: 35px;
@@ -105,6 +105,121 @@ header nav a:last-child {
 header .logo {
   margin-top: 25px;
 }
+
+@media (max-width: 800px) {
+    header nav a {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 500px;
+        order: 1;
+        margin: auto;
+        
+        
+
+    }
+
+    .cta {
+        display: flex;
+        flex-wrap: wrap;
+        width: 800px;
+
+
+
+    }
+
+    .main-content {
+        
+
+    }
+
+    .contact {
+        
+
+    }
+
+    footer {
+        
+
+    }
+    
+}
+
+@media (max-width: 800px) {
+    header .logo {
+        order: -1;
+        display: flex;
+        margin: auto;
+        
+        
+
+        
+        
+    }
+}
+
+
+@media (max-width: 500px) {
+    header nav {
+        display: flex;
+        flex-direction: column;                
+        order: 1;
+        margin: auto;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+        width: 500px;
+               
+
+    }
+
+    header nav a {
+        
+        margin-top: 30px;
+        flex-wrap: wrap;
+        align-items: center;
+        border-bottom: 1px solid black;
+        text-align: center;
+        font-size: 25px;
+        width: 500px;
+
+
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .cta {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        width: 500px;
+    }
+
+    .cta-text {
+        flex-direction: column;
+        align-content: center;
+
+
+    }
+
+    .middle-img {
+        width: 500px;
+    }
+
+}
+
+
+
+
 
 /* cta */
 
@@ -136,6 +251,21 @@ header .logo {
   display: inline-block;
   margin-top: 69px;
 }
+
+@media (max-width: 800px) {
+    .cta img {
+        display: none;
+
+    }
+}
+
+@media (max-width: 500px){
+    .cta img {
+        display: none;
+    }
+
+}
+
 
 .main-content {
   border-top: 1px solid black;
