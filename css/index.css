@@ -155,7 +155,8 @@ section img {
 }
 
 footer {
-	padding-top: 15px;
+    padding-top: 15px 0px;
+    margin-bottom: 10px;
 	font-family: 'Montserrat', sans-serif;
 }
 
@@ -261,28 +262,60 @@ li {
 }
 
 @media (max-width: 800px){
+  html, body {
+      padding: 0px 15px;
+  }  
+
   nav {
-      max-width: 100%;
+      max-width: 90%;
       display:flex;
       flex-wrap:wrap-reverse;
   }
 
   header {
 	padding:50px 0px;
-	height:300px;
+	height:260px;
 	width:100%;
 }
 
     header nav #nav-links {
     display:flex;
     flex-wrap: nowrap;
-    margin:20px 0px 20px -120px;
+    margin:20px 0px 20px -60px;
     justify-content: space-between;
 }
 
     nav .logo {
-        margin-left: 225px;
-       margin-bottom: 20px;
+    margin-left: 280px;
+    margin-bottom: 20px;
+    }
+
+    #topTitle {
+        text-align: center;
+        display: flex;
+        margin-left: 215px;
+        margin-top: -70px;
+        margin-bottom: 10px;
+    }
+
+    button {
+        margin-left: 290px;
+        padding: 5px 37px;
+        background-color: white;
+        border: 1px solid black;
+    }
+    
+    #codeimg {
+        display: none;
+    }
+
+    #content {
+        padding: 10px 0;
+    }
+
+    .bottomRow {
+        width: 30%;
+        margin-right: 24px;
     }
 
   
