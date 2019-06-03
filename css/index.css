@@ -85,13 +85,16 @@ h1 {
 
 nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   width: 100%;
   margin: 0 auto;
   margin-top: 20px;
 }
 a {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     text-decoration: none;
     color: gray
 }
@@ -228,11 +231,14 @@ hr {
     
 }
 
+
 .bottom {
     margin-top: 60px;
     border: 1px black solid;
    
 }
+
+
 
 .cta-text {
     display:inline-block;
@@ -286,8 +292,97 @@ footer {
     margin-left: 38%;
 } 
 
+hr .media {
+    display: none}
 
-/* Media */
+
+/* Tablet Media View */
+
+    @media (max-width: 7670px) {
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            width: 900px;
+            justify-content:center;
+            background-color: yellow;
+    
+            
+        }
+
+        hr {
+            display: none;
+        }
+
+
+
+    .logo {
+        justify-content:flex-start;
+        margin: 22px
+    }
+
+    a {
+        margin: 12px
+    }
+
+    nav {
+        width: 500px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
+        margin-bottom: 100px;
+        flex-direction: row
+    }
+
+
+    hr { 
+        width: 100%
+        
+    }
+    .circle {
+        display:none
+    }
+
+        .text-content {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+        .text-content2 {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+
+        .middle-img{
+        width:100%;
+        }
+
+        
+         .contact {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content:flex-start;
+            width: 90%;
+            margin-right:60px;
+            height: 120px;
+            margin-bottom: 40px;
+            border: green 1px solid
+            
+        }
+        footer {
+            display: flex;  
+            flex-wrap: wrap;
+            margin-right:60px;
+        }
+}
+
+
+
+
+
+/* Mobile Media View */
 
 @media (max-width: 800px) {
     .container {
@@ -314,16 +409,18 @@ footer {
         flex-wrap: wrap;
         flex-direction: column;
         align-content: center;
-        margin-bottom: 20px;
+        margin-bottom: 100px;
         flex-direction: column-reverse
     }
 
+
+    hr { 
+        width: 100%
+        
+    }
     .circle {
         display:none
     }
-}
-
-@media (max-width: 800px) {
 
         .text-content {
             display: flex;
@@ -340,15 +437,28 @@ footer {
         width:100%;
         }
 
-        hr { 
-            width: 100%
-
-        }
-  
-        footer {
+        
+         .contact {
             display: flex;
             flex-wrap: wrap;
-            justify-content:center
+            justify-content:flex-start;
+            width: 90%;
+            margin-right:60px;
+            height: 120px;
+            margin-bottom: 40px;
+            border: green 1px solid
+            
         }
+        footer {
+            display: flex;  
+            flex-wrap: wrap;
+            margin-right:60px;
+        }
+}
+
+
+
+
+
 }
 
