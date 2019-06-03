@@ -1,3 +1,436 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+/******************** GENERAL ******************/
+
+body {
+	margin: 25px 50px;
+}
+
+hr {
+	color: gray;
+    margin: 0;
+    width: 100%;
+}
+
+hr.phone {
+    display: none;
+}
+
+    /*--- phone ---*/
+    @media (max-width: 500px) {
+        hr.phone {
+            display: flex;
+            width: 100%;
+        }
+    }
+
+.container {
+    max-width: 880px;
+    margin: 0 auto;
+}
+
+/******************** NAV ******************/
+
+nav {
+	display: flex;
+	justify-content: space-between;
+}
+
+    /*--- phone ---*/
+    @media (max-width: 500px) {
+        nav {
+            flex-direction: column;
+        }
+    }
+
+nav a {
+	color: gray;
+	margin-right: 65px;
+}
+
+    /*--- phone ---*/
+    @media (max-width: 500px) {
+        nav a {
+            align-self: center;
+            margin: 6% 0;
+            font-size: 1.25em;
+        }
+    }
+
+nav a:hover {
+	color: #00e600;
+}
+
+.logo-desktop {
+	margin-top: -10px;
+}
+
+    /*--- mobile ---*/
+    @media (max-width: 800px) {
+        .logo-desktop {
+            display: none;
+        }
+    }
+
+.logo-mobile-container {
+    display: none;
+}
+
+    /*--- mobile ---*/
+    @media (max-width: 800px) {
+        .logo-mobile-container {
+            display: flex;
+            justify-content: center;
+            margin: 6% 0 5% 0;
+        }
+    }
+
+/******************** HEADER ******************/
+
+/* -- Index.html header -- */
+
+header {
+	height: 529px; 
+	display: flex;
+	justify-content: space-between;	
+}
+
+    /*--- mobile ---*/
+    @media (max-width: 800px) {
+        header {
+            height: 400px;    
+        }
+    }
+
+header.services {
+    display: flex;
+    flex-flow: row wrap;
+    height: 50%;
+}
+
+h1 {
+	text-align: center;
+	font-size: 70px;
+}
+
+button.index-btn {
+	align-self: center;
+	margin-top: 15px;
+	background: none;
+	border: 1px solid black;
+	padding: 5px 25px;
+	text-align: center;
+	width: 150px;
+	box-shadow: 0 4px lightgray;
+}
+
+button.index-btn:hover {
+	background-color: lightgreen;
+}
+
+button.index-btn:active {
+	background-color: lightgreen;
+	box-shadow: 0 2px lightslategray;
+	transform: translateY(4px); 
+}
+
+.header-container1 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	width: 50%;
+}
+
+    /*--- tablet ---*/
+    @media (max-width: 800px) {
+        .header-container1 {
+            width: 100%;
+        }
+    }
+
+.header-container2{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	width: 50%;
+}
+
+    /*--- mobile ---*/
+    @media (max-width: 800px) {
+        .header-container2 {
+            display: none;
+        }
+    }
+
+.header-img {
+	align-self: center;
+}
+
+/* -- Services header -- */
+
+header.services {
+	width: 880px;
+	margin: 25px 0;
+}
+
+h2 {
+	margin-top: 25px;
+}
+
+
+/******************** MAIN ******************/
+
+/* -- Index main -- */
+
+/* Top content */
+.top-content {
+    display: flex;
+	justify-content: space-between;	
+}
+
+    /*--- phone ---*/
+    @media (max-width: 500px) {
+        .top-content {
+            flex-direction: column;
+            }
+    }
+
+.top-left {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	margin: 3% 1%;
+}
+
+    /*--- phone ---*/
+    @media (max-width: 500px) {
+        .top-left {
+            width: 100%;
+            margin: 15% 0 0 0;
+        }
+    }
+
+.top-right {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	margin: 3% 1%;
+}
+
+    /*--- phone ---*/
+    @media (max-width: 500px) {
+        .top-right {
+            width: 100%;
+            margin: 15% 0;
+        }
+    }
+
+/* middle image */
+.middle-img {
+    width: 100%;
+}
+
+/* Bottom content */
+.btm-content {
+	display: flex;
+	justify-content: space-between;
+}
+
+    /*--- phone ---*/
+    @media (max-width: 500px) {
+        .btm-content {
+            flex-direction: column;
+            }
+    }
+
+.btm-left {
+	display: flex;
+	flex-direction: column;
+	margin: 3% 1%;
+	padding: 10px 0;	
+}
+
+    /*--- phone ---*/
+    @media (max-width: 500px) {
+        .btm-left {
+            width: 100%;
+            margin: 10% 0 15% 0;
+            padding: 0;
+            }
+    }
+
+.btm-center {
+	display: flex;
+	flex-direction: column;
+	margin: 3% 1%;
+	padding: 10px;
+}
+
+    /*--- phone ---*/
+    @media (max-width: 500px) {
+        .btm-center {
+            width: 100%;
+            margin: 0 0 15% 0;
+            padding: 0;
+            }
+    }
+
+.btm-right {
+	display: flex;
+	flex-direction: column;
+	margin: 3% 1%;
+	padding: 10px;
+}
+
+    /*--- phone ---*/
+    @media (max-width: 500px) {
+        .btm-right {
+            width: 100%;
+            margin: 0 0 15% 0;
+            padding: 0;
+            }
+    }
+
+/* -- Services.html main -- */
+
+div.row {
+	width: 880px;
+	display: flex;
+	justify-content: space-between;
+}
+
+div.box {
+	display: flex;
+	flex-direction: column;
+	background-color: #f4f3f4;
+	padding: 15px;
+	border: 1px solid black;
+	margin: 25px 0;
+	width: 420px;
+}
+
+button.service-btn {
+	background-color: #fff;
+	border: 1px solid black;
+	height: 30px;
+	width: 125px;
+	margin-top: 15px;
+	border-radius: 5px;
+}
+
+div.btm-box {
+	display: flex;
+	flex-direction: column;
+	margin: 25px 0;
+	width: 50%;
+}
+
+ul {
+	margin-top: 25px;
+	list-style: disc inside;
+}
+
+.services-info-img {
+	margin: 25px 0;
+}
+/******************** CONTACT ******************/
+
+.contact {
+	display: flex;
+    flex-direction: column;
+    margin: 3% 0 2% 1%;
+}
+
+    /*--- phone ---*/
+    @media (max-width: 500px) {
+        .contact {
+            width: 100%;
+            margin: 10% 0;
+            padding: 0;
+            }
+    }
+
+/******************** FOOTER ******************/
+
+footer {
+	display: flex;
+	justify-content: center;
+}
+
+    /*--- phone ---*/
+    @media (max-width: 500px) {
+        footer {
+            margin: 10% 0;
+            }
+    }
+
+footer p {
+	margin: 3% 1%;
+}
 
