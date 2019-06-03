@@ -1,3 +1,305 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
 
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
 
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+section {
+    position: relative;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+.container {
+    margin: 0 auto;
+    width: 900px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.menu a {
+    color: #777;
+    text-decoration: none;
+    padding-right: 40px;
+}
+
+.hero {
+    display: flex;
+    margin: 0 auto;
+    border-bottom: 2px solid #c9c9c9;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hero p {
+    text-align: center;
+}
+
+.cta {
+    width: 140px;
+    margin: 0 auto;
+    border: 2px solid #c9c9c9;
+    padding: 10px 26px;
+}
+
+.hero img {
+    max-width: 300px;
+    margin: 40px 0;
+}
+
+.inner1 {
+    max-width: 50%;
+}
+
+.top-row {
+    display: flex;
+}
+
+.bottom-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.inner2 {
+    max-width: 30%;
+}
+
+.inner1 h2 {
+    margin-top: 20px;
+}
+
+.middle-img {
+    margin: 40px 0;
+}
+
+.bottom-row {
+    padding-bottom: 40px;
+    border-bottom: 2px solid #c9c9c9;
+}
+
+address {
+    margin-top: 40px;
+}
+
+.phone {
+    padding: 20px 0;
+}
+
+.copyright {
+    text-align: center;
+    margin: 80px 0;
+}
+
+/* Services Page-specific CSS */
+.services-header {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #c9c9c9;
+}
+
+.services-header h1 {
+    font-size: 28px;
+    padding-top: 20px;
+}
+
+.desc-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #c9c9c9;
+}
+
+.service-desc {
+    max-width: 48%;
+    background-color: #F4F3F4;
+    border: 1px solid #c9c9c9;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.service-desc h2 {
+    font-size: 20px;
+}
+
+button {
+    display: block;
+    margin-top: 15px;
+    padding: 8px 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.services-bottom-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 40px;
+}
+
+.services-bottom-row p {
+    padding-bottom: 20px;
+}
