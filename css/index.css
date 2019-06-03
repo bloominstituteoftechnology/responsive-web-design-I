@@ -1,3 +1,461 @@
+   * http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+body{
+    max-width: 1000px;
+    margin: auto;
+}
+
+@media(max-width:500px){
+body{
+    max-width:500px;
+    margin:auto;
+
+    }
+}
+
+/*Global*/
+.container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(max-width:800px){
+    .container{
+        display:flex;
+        flex-direction: column-reverse;
+        padding-top: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+     }
+}
+@media(max-width:500px){
+    .container{
+        display:flex;
+        align-items:center;
+        flex-direction: column-reverse;
+        max-width: 500px;  
+    }
+}
 
 
+/*Navigation*/
+.navigation{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(max-width:500px){
+     .navigation{
+        flex-direction: column;
+        width:100%;     
+    }
+}
+
+.navigation a{
+    color: gray;
+    text-decoration: none;
+    margin:40px;
+    width:100%;
+    text-align:center;
+}
+
+@media(max-width:500px){
+    .navigation a{
+        border-bottom:1px solid black; 
+        margin:0px;
+        padding: 20px 0px; 
+   }
+}
+
+
+
+.logo{
+    margin: 30px;
+    padding:0px;
+}
+
+@media(max-width:800px){
+    .logo{
+        width: 40%;
+    }
+}
+
+.hero{
+    display:flex;
+    justify-content: center;
+}
+
+.leftside{
+    justify-content:center;
+    padding:50px 50px;
+}
+
+@media(max-width:800){
+    .leftside{
+        padding-top: 0px;
+    }
+}
+
+@media(max-width:500){
+    .leftside{
+        padding-top: 0px;
+    }
+}
+
+.leftside h1{
+    font-size: 60px;
+    text-align:center;
+}   
+
+.leftside button{
+    border: 1px solid black;
+    margin: 30px 70px 70px 70px;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.rightside{
+    padding-bottom: 60px;
+    padding-left: 60px;
+    padding-top: 40px;
+}
+
+@media(max-width:800px) {
+    .rightside {
+        display: none;   
+   }
+} 
+
+hr{
+    max-width:100%;
+    border: 1px solid black;
+}
+
+@media(max-width:800px){
+    hr{
+        max-width:95%;
+    }
+}
+
+@media(max-width:500px){
+    hr{
+        max-width:95%;
+    }
+}
+
+.boxes{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(max-width:500px){
+    .boxes{
+        flex-direction: column;
+    }
+}
+
+@media(max-width:500px){
+    .boxes h1{
+        font-size: 15px;
+    }
+}
+
+.boxes .cards{
+    padding: 8px;
+    margin: 0;
+}
+
+@media(max-width:500px){
+.cards {  
+    width: 90%;
+    padding: 20px;
+    }
+}
+
+.cards h1{
+    font-size: 20px;
+}
+
+.cards p{
+    flex-wrap: wrap;
+}
+
+.middle-img{
+    padding:40px 0px 40px 0px;
+    width:auto;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(max-width:800px){
+    .middle-img{
+        padding: 40px 20px 40px 20px;
+        width: 100%;
+        }
+}
+
+@media(max-width:500px){
+    .middle-img{
+        padding: 40px 20px 40px 20px;
+        width: 98%;
+        }
+}
+
+.footer p{
+    text-align: center;
+}
+
+        padding-top: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+     }
+}
+@media(max-width:500px){
+    .container{
+        align-items:center;
+        max-width: 500px;  
+    }
+}
+
+
+/*Navigation*/
+.navigation{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+@media(max-width:500px){
+     .navigation{
+        flex-direction: column;
+        width:100%;     
+    }
+}
+
+.navigation a{
+    color: gray;
+    text-decoration: none;
+    margin:40px;
+    width:100%;
+    text-align:center;
+}
+
+@media(max-width:500px){
+    .navigation a{
+        border-bottom:1px solid black; 
+        margin:0px;
+        padding: 20px 0px; 
+   }
+}
+
+.logo{
+    margin: 30px;
+    padding:0px;
+}
+@media(max-width:800px){
+    .logo{
+        width: 40%;
+
+    }
+}
+
+.hero{
+    display:flex;
+    justify-content: center;
+}
+
+.leftside{
+    justify-content:center;
+    padding:50px 50px;
+}
+
+@media(max-width:800){
+    .leftside{
+        padding-top: 0px;
+    }
+}
+
+@media(max-width:500){
+    .leftside{
+        padding-top: 0px;
+    }
+}
+
+.leftside h1{
+    font-size: 60px;
+    text-align:center;
+}   
+
+.leftside button{
+    border: 1px solid black;
+    margin: 30px 70px 70px 70px;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.rightside{
+    padding-bottom: 60px;
+    padding-left: 60px;
+    padding-top: 40px;
+}
+
+@media(max-width:800px) {
+    .rightside {
+        display: none;   
+   }
+} 
+
+hr{
+    max-width:100%;
+    border: 1px solid black;
+}
+
+@media(max-width:800px){
+    hr{
+        max-width:95%;
+    }
+}
+
+@media(max-width:500px){
+    hr{
+        max-width:95%;
+    }
+}
+
+.boxes{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(max-width:500px){
+    .boxes{
+        flex-direction: column;
+    }
+}
+
+@media(max-width:500px){
+    .boxes h1{
+        font-size: 15px;
+    }
+}
+
+.boxes .cards{
+    padding: 8px;
+    margin: 0;
+}
+
+@media(max-width:500px){
+.cards {  
+    width: 90%;
+    padding: 20px;
+    }
+}
+
+.cards h1{
+    font-size: 20px;
+}
+
+.cards p{
+    flex-wrap: wrap;
+}
+
+.middle-img{
+    padding:40px 0px 40px 0px;
+    width:auto;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(max-width:800px){
+    .middle-img{
+        padding: 40px 20px 40px 20px;
+        width: 100%;
+        }
+}
+
+@media(max-width:500px){
+    .middle-img{
+        padding: 40px 20px 40px 20px;
+        width: 98%;
+        }
+}
+
+.footer p{
+    text-align: center;
+}
