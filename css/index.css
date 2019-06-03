@@ -115,7 +115,7 @@ button {
 	margin-left: 377px;
 	padding: 5px 35px;
 	background-color: white;
-	border: 1px solid black;
+	border: 2px solid black;
 }
 
 h1 {
@@ -129,7 +129,8 @@ h1 {
 }
 
 #content {
-	padding: 40px 0;
+	border-top: 2px solid black;
+	padding: 40px 0px 10px 0px;
 	font-family: 'Montserrat', sans-serif;
 	display: flex;
 	flex-wrap: wrap;
@@ -155,9 +156,11 @@ section img {
 }
 
 footer {
-    padding-top: 15px 0px;
+	margin-top: 35px;
+    padding: 25px 0px;
     margin-bottom: 10px;
 	font-family: 'Montserrat', sans-serif;
+	border-top: 2px solid black;
 }
 
 footer a {
@@ -225,7 +228,7 @@ hr {
 	padding: 40px;
 	height: 300px;
 	width: 48%;
-	border: 1px solid black;
+	border: 2px solid black;
 	margin-bottom: 20px;
 	background-color: #F6F2F1;
 }
@@ -302,7 +305,7 @@ li {
         margin-left: 290px;
         padding: 5px 37px;
         background-color: white;
-        border: 1px solid black;
+        border: 2px solid black;
     }
     
     #codeimg {
@@ -310,18 +313,83 @@ li {
     }
 
     #content {
-        padding: 10px 0;
+		max-width: 100%;
+		padding: 20px 0;
+		margin-top: 45px;
     }
 
     .bottomRow {
         width: 30%;
-        margin-right: 24px;
-    }
+        margin-right: 3.2%;
+	}
 
-  
 }
 
 @media (max-width: 500px){
 
+header nav #nav-links {
+	display:flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	text-align: center;
+}
+
+header nav #nav-links a {
+	width: 500px;
+	justify-content: space-around;
+	border-bottom: 2px solid lightslategray;
+	margin-top: 5px;
+	margin-left: 30px;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+}
+
+nav .logo {
+    margin-left: -35px;
+	margin-bottom: 10px;
+	margin-top: -30px;
+	border-bottom: 2px solid lightslategray;
+	padding: 0px 160px 15px 170px;
+    }
+
+#topTitle {
+	text-align: center;
+	display: flex;
+	margin-left: 75px;
+	margin-top: 250px;
+	margin-bottom: 10px;
+}
+
+button {
+	margin-left: 150px;
+	padding: 5px 37px;
+	background-color: white;
+	border: 2px solid black;
+	margin-bottom: 20px;
+}
+
+#content {
+	max-width: 100%;
+	padding: 40px 0px 5px 0px;
+	margin-top: 45px;
+}
+
+#topRow1 {
+	width: 100%;
+	margin-bottom: 40px;
+}
+
+#topRow2 {
+	width:100%;
+}
+
+.bottomRow {
+	width: 100%;
+	margin-bottom: 40px;
+}
+
+.bottomRow:last-child {
+	margin-bottom: -15px;
+}
 }
 
