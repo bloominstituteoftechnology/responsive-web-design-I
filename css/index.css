@@ -124,6 +124,20 @@ header .logo {
     justify-content: flex-end;
 }
 
+@media(max-width:800px){
+    .cta{
+        justify-content: space-around;
+        margin-top: 35px;
+        margin-left: 60px;
+        padding-left: 30px;
+        
+    }
+}
+@media(max-width: 800px){
+    .cta img{
+        display: none;
+    }
+}
 .cta .cta-text {
     font-size: 72px;
     text-align: center;
@@ -169,7 +183,12 @@ header .logo {
     display: block;
     margin: 30px auto;
 }
-
+@media(max-width:800px){
+    .main-content .middle-img{
+        display: flex;
+        width: 80%;
+    }
+}
 .main-content .bottom-content {
     display: flex;
 }
