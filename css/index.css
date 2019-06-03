@@ -206,8 +206,7 @@ footer {
         justify-content: center;
         flex-direction: column;
     }
-    header .logo {
-        flex-wrap: nowrap;
+    header .logo {        
         margin: auto;
         padding-top: 30px;
         padding-bottom: 40px;
@@ -266,5 +265,90 @@ footer {
     }
     .contact h4 {
         padding-left: 8px;
+    }
+}
+/*----------------MOBILE VIEW------------------------  */
+
+@media (max-width: 500px) {
+    .container {
+        width: 500px;
+        /* TB LR */
+        margin: 0 auto;
+    }
+    header .logo {        
+        margin: auto;
+        padding-top: 21px;
+        padding-bottom: 10px;
+        order: 1;
+    }
+    header nav {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        order: 2;
+    }
+    header nav a {
+        font-size: 20px;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        padding: 20px 200px;
+        width: 98%;
+        border-top: 1px solid gray;     
+    }
+    header nav a:last-child {
+        margin: 10px auto;
+        border-bottom: 1px solid gray; 
+    }
+    header nav a:first-child {
+        margin: 10px auto;        
+    }
+/* ----------TOP CONTENT------- */
+    .cta {
+        display: flex;
+        justify-content: center;
+    }
+    .cta .cta-text {
+        margin-top: 30px;
+    }
+    .main-content .top-content{
+        display: flex;
+        flex-direction: column;
+        padding-right: 30px;
+    }
+    .main-content .top-content .text-content {
+        margin: 20px;
+    }    
+    .main-content .middle-img {
+        width: 100%;
+        margin-top: 22px;
+        padding: 0px 0px 8px 49px;
+    }
+/* ---------BOTTOM CONTENT------- */
+    .main-content .bottom-content {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0 0 50px;
+        margin: 9px auto;
+    }
+    .main-content .bottom-content .text-content p {
+        padding-bottom: 24px;
+        width: 155%;
+    }
+    /* --------CONTACT--------- */
+    .contact {
+        display: flex;
+        flex-direction: column;
+        padding: 38px;
+    }
+    /* ---------FOOTER---------- */
+    footer {
+        display: flex;
+        justify-content: center;
     }
 }
