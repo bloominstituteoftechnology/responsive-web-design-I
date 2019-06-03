@@ -104,6 +104,7 @@ header .logo {
   margin-top: 25px;
 }
 
+
 /* cta */
 
 .cta .cta-text {
@@ -188,4 +189,45 @@ footer {
   margin: 32px 0;
   text-align: center;
   font-size: 14px;
+}
+
+
+/* ----------TABLET VIEW---------------- */
+
+@media (max-width: 800px) {
+    .container {
+        width: 800px;
+        /* TB LR */
+        margin: 0 auto;
+      }
+    header {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    header .logo {
+        flex-wrap: nowrap;
+        margin: auto;
+        padding-top: 30px;
+        padding-bottom: 40px;
+        order: 1;
+    }
+    header nav {
+        justify-content: center;
+        margin: auto;
+        order: 2;
+    }
+    header nav a {
+        justify-content: center;
+        margin: 37px;
+        font-size: 16px;
+    }
+    
+
+    #header-img {
+        display: none;
+    }
+    .middle-img {
+        width: 50%;
+    }
 }
