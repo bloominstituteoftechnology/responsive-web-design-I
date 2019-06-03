@@ -70,10 +70,10 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-  width: 880px;
-  /* TB LR */
-  margin: 0 auto;
-}
+    width: 880px;
+    /* TB LR */
+    margin: 0 auto;
+  }
 
 /* header */
 
@@ -191,4 +191,27 @@ footer {
   margin: 32px 0;
   text-align: center;
   font-size: 14px;
+}
+  
+@media (max-width: 800px){
+    .container {
+        width: 800px;
+        /* TB LR */
+        margin: 0 auto;
+      }
+       
+}
+@media (max-width: 500px){
+    .container {
+        width: 500px;
+        /* TB LR */
+        margin: 0 auto;
+      }
+      header nav {
+        display: inline-block;
+        width: 500px;
+        vertical-align: top;
+        margin-top: 35px;
+      }
+             
 }
