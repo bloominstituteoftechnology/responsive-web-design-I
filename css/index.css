@@ -1,3 +1,294 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+html, body {
+    height: 100%;
+	font-family: 'Titillium Web', sans-serif;
+	padding: 0 70px;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+nav {
+	padding-bottom: 20px;
+	padding-right:20px;
+    background-color: rgba(255,255,255,0.9);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header {
+	padding:50px 50px;
+	height:200px;
+	width:100%;
+}
+
+header nav #nav-links a {
+	margin-left:80px;
+	color:lightslategray;
+	text-decoration: none;
+}
+
+.logo {
+    margin-left: 80px;
+    margin-top: -10px;
+}
+
+#topTitle {
+	text-align: center;
+	display: flex;
+	margin-left: 300px;
+	margin-top: 30px;
+}
+
+button {
+	margin-left: 377px;
+	padding: 5px 35px;
+	background-color: white;
+	border: 1px solid black;
+}
+
+h1 {
+	font-size: 450%;
+}
+
+#codeimg {
+	margin-left: 620px;
+	margin-top: -320px;
+	margin-bottom: 60px;
+}
+
+#content {
+	padding: 40px 0;
+	font-family: 'Montserrat', sans-serif;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#topRow1 {
+	width: 45%;
+	margin-right: 40px;
+}
+
+#topRow2 {
+	width: 47%;
+}
+
+section img {
+	margin: 30px 0;
+	width:100%;
+}
+
+.bottomRow {
+	width: 30%;
+	margin-right: 35px;
+}
+
+footer {
+	padding-top: 15px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+footer a {
+	color:#000;
+	text-decoration: none;
+}
+
+#copyright {
+	margin-top: 10px;
+	text-align: center;
+}
+
+#serviceNav nav {
+	position: static;
+	padding-right:20px;
+	background-color: white;
+	display:flex;
+}
+
+#serviceNav a {
+	margin-left:90px;
+	color:lightslategray;
+	text-decoration: none;
+	padding-left: -80px;
+	width: 90%;
+	padding-top: 20px;
+}
+
+#serviceNav a:first-child {
+	margin-left: -50px;
+}
+
+#serviceNav .logo {
+	padding-left: 30px;
+	width: 200px;
+}
+
+#servicesTopBanner {
+	width: 100%;
+	margin-top: -60px;
+	margin-bottom: 20px;
+}
+
+#serv {
+	font-weight: 600;
+	font-size: 20px;
+}
+
+hr {
+	margin: 30px 0;
+}
+
+#middleSect {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	text-align:left;
+}
+
+#middleSect button {
+	margin-left:2px;
+}
+
+.sectionBox {
+	padding: 40px;
+	height: 300px;
+	width: 48%;
+	border: 1px solid black;
+	margin-bottom: 20px;
+	background-color: #F6F2F1;
+}
+
+.sectionBox p {
+	padding-bottom: 50px;
+	font-size: 18px;
+}
+
+#servFooter {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+#servText {
+	width: 50%;
+}
+
+#servFooter img {
+	width: 40%;
+}
+
+#servFooter ul {
+	padding: 20px;
+}
+
+li {
+	padding: 5px;
+}
+
+#footerCopy {
+	margin: 50px auto 10px auto;
+}
+
+@media (max-width: 800px){
+  nav {
+      max-width: 100%;
+      display:flex;
+      flex-wrap:wrap-reverse;
+  }
+
+  header {
+	padding:50px 0px;
+	height:300px;
+	width:100%;
+}
+
+    header nav #nav-links {
+    display:flex;
+    flex-wrap: nowrap;
+    margin:20px 0px 20px -120px;
+    justify-content: space-between;
+}
+
+    nav .logo {
+        margin-left: 225px;
+       margin-bottom: 20px;
+    }
+
+  
+}
+
+@media (max-width: 500px){
+
+}
 
