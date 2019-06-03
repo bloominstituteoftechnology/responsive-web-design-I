@@ -77,7 +77,7 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* Your code starts here! */
+/* Your code starts here! viewport width: 1690px */
 
 nav {
 	padding-bottom: 20px;
@@ -93,7 +93,7 @@ header {
 	width:100%;
 }
 
-header nav #nav-links a {
+header nav .nav-links a {
 	margin-left:80px;
 	color:lightslategray;
 	text-decoration: none;
@@ -173,88 +173,6 @@ footer a {
 	text-align: center;
 }
 
-#serviceNav {
-	width:100%;
-	display: flex;
-}
-
-#serviceNav a{
-	margin-right: 30px;
-	text-decoration: none;
-	color: lightslategray;
-}
-
-#serviceNav .logo {
-	margin-left: -5px;
-	height:40px;
-}
-
-#servicesTopBanner {
-	width: 100%;
-	margin-top: -60px;
-	margin-bottom: 20px;
-}
-
-#serv {
-	font-weight: 600;
-	font-size: 20px;
-}
-
-hr {
-	margin: 30px 0;
-}
-
-#middleSect {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	text-align:left;
-}
-
-#middleSect button {
-	margin-left:2px;
-}
-
-.sectionBox {
-	padding: 40px;
-	height: 300px;
-	width: 48%;
-	border: 2px solid black;
-	margin-bottom: 20px;
-	background-color: #F6F2F1;
-}
-
-.sectionBox p {
-	padding-bottom: 50px;
-	font-size: 18px;
-}
-
-#servFooter {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-}
-
-#servText {
-	width: 50%;
-}
-
-#servFooter img {
-	width: 40%;
-}
-
-#servFooter ul {
-	padding: 20px;
-}
-
-li {
-	padding: 5px;
-}
-
-#footerCopy {
-	margin: 50px auto 10px auto;
-}
-
 @media (max-width: 800px){
   html, body {
       padding: 0px 15px;
@@ -263,7 +181,7 @@ li {
   nav {
       max-width: 90%;
       display:flex;
-      flex-wrap:wrap-reverse;
+      flex-wrap: wrap-reverse;
   }
 
   header {
@@ -272,7 +190,7 @@ li {
 	width:100%;
 }
 
-    header nav #nav-links {
+    header nav .nav-links {
     display:flex;
     flex-wrap: nowrap;
     margin:20px 0px 20px -60px;
@@ -318,14 +236,14 @@ li {
 
 @media (max-width: 500px){
 
-header nav #nav-links {
+header nav .nav-links {
 	display:flex;
 	flex-direction: column;
 	flex-wrap: wrap;
 	text-align: center;
 }
 
-header nav #nav-links a {
+header nav .nav-links a {
 	width: 500px;
 	justify-content: space-around;
 	border-bottom: 2px solid lightslategray;
