@@ -1,3 +1,222 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+.container {
+  margin: 0 auto;
+  border: 1px solid green;
+  padding: 20px 1.25%;
+}
+
+@media(max-width: 800px) {
+    img.logo {
+        float:center;
+        align-content: middle;
+        position: relative;
+    }
+     img.introimg {
+        display: none;
+    }
+    
+}
+
+@media(max-width: 500px) {
+    header {
+        align: center;
+    }
+    nav {
+        border: 1px solid gray;
+    }
+  .container header nav {
+    display: flex;
+    flex-direction: column;
+      float: center;
+      border: 1px solid gray;
+  }
+
+  .container header nav a {
+    margin-bottom: 20px;
+  }
+    
+    img.introimg {
+        display: none;
+    }
+    .top-content {
+        margin: 20px;
+        width: 100%;
+    }
+}
+header {
+	/* border: 5px dashed orange; */
+	padding: 20px 20px 20px;
+
+}
+
+nav {
+	/* border: 3px solid red; */
+	display: inline-block;
+	width: 75%;
+}
+nav a {
+	color: grey;
+	text-decoration: none;
+	padding: 0 25px 0px;
+	/* border: 3px solid blue; */
+}
+
+.intro-container {
+	text-align: center;
+	/* border: 3px solid green; */
+}
+.intro  {
+	/* border: 4px dashed red; */
+	display: inline-block;
+	width: 450px;
+	text-align: center;
+	padding: 0px 0px 40px;
+}
+
+ .intro h1 {
+	font-size: 50pt;
+	/* border: 1px dashed red; */
+}  
 
 
+.introimg {
+	width: 30%;
+	/* border: 1px dashed red; */
+	display: inline-block;
+	/* TRBL*/
+	padding: 20px 10px 10px 20px;
+}
+
+.intro button {
+	padding: 5px 40px 5px;
+	border: 1px solid black;
+	font-family: 'Titillium Web';
+}
+
+header p {
+	text-align: center;
+	border: 1px solid black;
+	width: 150px;
+}
+.codeimg {
+	width: 30%;
+	height: 30%;
+	/*TRBL*/
+	padding: 0 20px 20px 100px;
+}
+
+.top-content {
+	border-top: 1px solid black;
+	padding: 30px 0 30px;
+}
+
+
+.top-content .features {
+	display: inline-block;
+	/* border: 1px solid red; */
+	width: 49%;
+	margin-right: 5px;
+}
+
+.top-content .about {
+	display: inline-block;
+	/* border: 1px solid red; */
+	width: 49%;
+}
+
+.middle-img {
+	display: block;
+	width: 100%;
+}
+
+.bottom-content {
+	border-bottom: 1px solid black;
+	padding: 20px 0 30px;
+}
+
+.bottom-content .services {
+	display: inline-block;
+	width: 32%;
+	/* border: 1px solid red; */
+
+}
+
+.bottom-content .product {
+	display: inline-block;
+	width: 32%;
+	margin: 0px 10px 0px;
+}
+
+.bottom-content .vision {
+	display: inline-block;
+	width: 32%;
+}
+
+.contact-content {
+	margin-top: 30px;
+}
+
+footer p {
+	text-align: center;
+}
