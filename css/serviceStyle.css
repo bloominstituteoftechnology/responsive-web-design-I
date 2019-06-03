@@ -79,19 +79,19 @@ header {
     display: flex;
 }
 
-header nav {
+header nav #links {
     margin-top: 40px; 
     width: 610px;
     justify-content: space-between;
     display: flex;
 }
 
-header nav a {
+header nav #links a {
     text-decoration: none;
     color: #b0b0b0;
 }
 
-header nav a:hover {
+header nav #links a:hover {
     text-decoration: underline;
     color: black;
 }
@@ -250,4 +250,44 @@ footer {
 .services-content .services-info .services-info-img {
   width: 420px;
   height: 300px;
+}
+
+@media (max-width: 800px) {
+
+   .container {
+       width: 600px;
+   }
+
+   .services-header-img {
+    margin: 20px 0;
+    width: 610px;
+    }
+
+    header {
+        display:flex;
+        flex-wrap: wrap-reverse;
+        align-content: center;
+    }
+
+    header img {
+        padding-left: 120px;
+    }
+
+    .services-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        line-height: 1.3;
+    }
+
+    .services-content .services-info .facts {
+        width: 300px;
+        margin: 0 30px 20px 0;
+      }
+
+      .services-content .services-info .services-info-img {
+        width: 200px;
+        height: 150px;
+      }
+
 }
