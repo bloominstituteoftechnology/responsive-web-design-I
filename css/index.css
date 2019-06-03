@@ -167,6 +167,20 @@ h1 {
     width: 900px;
 }
 
+@media(max-width: 800px) {
+    .container {
+        width: 800px
+        
+    }
+}
+ 
+@media(max-width: 500px) {
+    .container {
+        width: 500px 
+        
+    }
+}
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -180,6 +194,14 @@ nav {
     color: #777;
     text-decoration: none;
     padding-right: 40px;
+}
+
+ @media(max-width: 500px) {
+    .menu a {
+        display: flex;
+        flex-direction: column;
+        padding-right: none;
+    }
 }
 
 .hero {
@@ -202,13 +224,27 @@ nav {
     padding: 10px 26px;
 }
 
-.hero img {
+.hero-img {
     max-width: 300px;
     margin: 40px 0;
 }
 
 .inner1 {
     max-width: 50%;
+}
+
+/* Tablet view */
+@media(max-width: 800px) {
+    .hero-img {
+        display: none;
+    }
+}
+
+/*Phone view */
+@media(max-width: 500px) {
+    .hero-img {
+        display: none;
+    }
 }
 
 .top-row {
