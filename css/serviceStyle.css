@@ -295,3 +295,66 @@ footer {
     }
 
 }
+
+@media (min-width: 300px) and (max-width: 500px) {
+
+    .container {
+        width: 500px;
+        margin-left: 110px;
+        align-content: center;
+    }
+
+   .services-header-img {
+        display: none;
+    }
+
+    header {
+        display:flex;
+        flex-wrap: wrap;
+        text-align: center;
+        flex-direction: column-reverse;
+    }
+
+    nav #links {
+        display:flex;
+        flex-wrap: wrap;
+        margin-left: 25px;
+    }
+
+    #links a {
+        width: 550px;
+        padding: 20px 0px 20px 0px;
+        border-bottom: 1px solid lightslategray;
+    }
+
+    #logoImg {
+        width: 400px;
+        margin-left: 10px;
+        margin-bottom: 0px;
+    }
+
+    .services-content {
+        margin-top: 20px;
+        margin-right: 35px;
+    }
+
+    .services-content .services-info .facts {
+        width: 400px;
+        margin: auto;
+        text-align: center;
+      }
+
+      .services-content .services-info .facts ul {
+        display: none;
+      }
+
+      .services-content .services-info .services-info-img {
+        width: 320px;
+        height: 170px;
+        margin: auto;
+      }
+
+      footer p {
+          margin-right: 50px;
+      }
+}
