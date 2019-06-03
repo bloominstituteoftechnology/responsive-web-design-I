@@ -110,6 +110,16 @@ header {
     }
   }
 
+  @media (max-width: 500px) {
+    header nav {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;  
+        width: 100%;
+    }
+  }
+
 header nav {
     margin-top: 40px; 
     width: 610px;
@@ -125,6 +135,13 @@ header nav {
     }
   }
 
+  @media (max-width: 500px) {
+    header nav {
+        flex-direction: column;
+        justify-content: center;  
+        width: 100%;
+    }
+  }
 
 header nav a {
     text-decoration: none;
@@ -133,9 +150,13 @@ header nav a {
 
 @media (max-width: 500px) {
     header nav a {
+        display: flex;
+        align-items: center;
         flex-direction: column;
-        justify-content: space-between;  
+        justify-content: center;  
         width: 100%;
+        padding: 25px;
+        border-top: 1px solid grey;
     }
   }
 
