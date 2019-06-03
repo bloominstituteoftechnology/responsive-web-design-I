@@ -1,4 +1,4 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+
 
 
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -66,141 +66,169 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
-body {
-	width: 800px;
-	margin-left: 60px;
-	margin-top: 20px;
+.container {
+  width: 880px;
+  /* TB LR */
+  margin: 0 auto;
+}
+
+@media (max-width: 800px) {
+    .container {
+        width: 800px;
+    }
+}
+/* header */
+
+header nav {
+  display: inline-block;
+  width: 691px;
+  vertical-align: top;
+  margin-top: 35px;
+}
+
+header nav a {
+  margin-right: 65px;
+  font-size: 14px;
+  color: gray;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+header nav a:first-child {
+  margin-left: 0;
+}
+
+header nav a:last-child {
+  margin-right: 0;
+}
+
+header .logo {
+  margin-top: 25px;
 }
 
 @media (max-width: 800px) {
     header {
-        border: 1px solid black;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
     }
-    div .codeimg {
+    header .logo {
+        width: 20%;
+        text-align: center;
+    }
+    header nav {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+}
+
+/* cta */
+
+.cta .cta-text {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 77px;
+  margin-top: 120px;
+  text-align: center;
+  padding: 0px 75px;
+}
+
+.cta .cta-text button {
+  background: white;
+  vertical-align: top;
+  margin-top: 6px;
+  padding: 8px 44px;
+  font-size: 17px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.cta .cta-text button:hover {
+  background: black;
+  color: white;
+}
+
+.cta img {
+  display: inline-block;
+  margin-top: 69px;
+}
+
+@media (max-width: 800px) {
+    .cta img {
         display: none;
     }
-}
-
-.nav ul {
-    display: flex;
-    justify-content: space-between;
-}
-
-.nav a {
-    text-decoration: none;
-    color: grey;
-}
-
-.logo {
-    margin-bottom: 10px;
-    margin-top: -10px;
-    margin-left: 20px;
-}
-
-h2 {
-	font-weight: bold;
-}
-
-.middle {
-	text-align: left;
-	display: flex;
-	width: 800px;
-	margin-bottom: 25px;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: ;
-}
-@media (max-width: 800px) {
-    .middle {
+    .cta {
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
     }
 }
 
-.tagline {
-	font-size: 60px;
-	font-family: 'Bangers';
-	letter-spacing: 2.5px;
-    text-align: center;
+.main-content {
+  border-top: 1px solid black;
+  margin-top: 76px;
+  padding-top: 39px;
 }
 
-.codeimg {
-	display: inline;
-	margin-left: 90px;
-	margin-top: 60px;
-	height: 40%;
-	width: 40%;
+@media (max-width: 800px) {
+    .main-content .top-content {
+        display: flex;
+        flex-wrap: wrap;
+        border: 1px solid black;
+
+
+    }
 }
 
-.get-started {
-    border: 0;
-    font-family: 'Titillium Web', sans-serif;
-    background: white;
-    font-size: 35%;
-    cursor: pointer;
-    font-style: normal;
-    border: 1px solid black;
-    padding: 2px 25px 2px 25px;
+.main-content .top-content {
+  padding: 0 10px;
 }
 
-.line {
-	border-top: 1px solid #black;
+.main-content .top-content .text-content {
+  width: 410px;
+  display: inline-block;
+  margin-right: 34px;
 }
 
-.top {
-	display: flex;
-	width: 800px;
-	margin-bottom: 25px;
+.main-content .top-content .text-content:last-child {
+  margin-right: 0;
 }
 
-.flex-row1 {
-    display: flex;
-    margin-bottom: 20px;
+.main-content .middle-img {
+  margin-top: 45px;
 }
 
-.features {
-    width: 50%;
-    margin-right: 25px;
+.main-content .bottom-content {
+  margin-top: 37px;
+  padding: 0 10px;
 }
 
-.about {
-    width: 50%;
-    margin-left: 25px;
+.main-content .bottom-content .text-content {
+  width: 275px;
+  display: inline-block;
+  margin-right: 12px;
 }
 
-.flex-row2 {
-    display: flex;
+.main-content .bottom-content .text-content:last-child {
+  margin-right: 0;
 }
 
-.bottom {
-	text-align: left;
-	display: flex;
-	width: 800px;
+.contact {
+  margin-top: 57px;
+  border-top: 1px solid black;
+  padding: 39px 10px 0;
 }
 
-.services {
-	display: inline;
-	margin-right: 10px;
+
+.contact p {
+  margin: 20px 0;
 }
 
-.product {
-	display: inline;
-	margin-right: 10px;
-}
-
-.vision {
-	display: inline;
-	margin-right: 10px;
-}
-
-.middle-img {
-	width: 800px;
-	margin-bottom: 25px;
-}
-
-.copyright {
-	text-align: center;
-	margin-top: 50px;
+footer {
+  margin: 32px 0;
+  text-align: center;
+  font-size: 14px;
 }
