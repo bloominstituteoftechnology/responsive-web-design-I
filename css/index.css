@@ -80,6 +80,7 @@ h1 {
 .container {
   margin: 0 auto;
   width: 900px;
+  border: 1px solid red;
 }
 
 nav {
@@ -222,14 +223,25 @@ button {
 
 hr {
     margin-bottom: 60px;
+    border: 1px black solid;
+
     
+}
+
+.bottom {
+    margin-top: 60px;
+    border: 1px black solid;
+   
 }
 
 .cta-text {
     display:inline-block;
     width: 300px;
     text-align: center;
-    margin: 70px   
+    margin: 70px   ;
+    position:relative;
+    bottom: 60px;
+    font-size: 100px;
 
 }
 
@@ -241,7 +253,6 @@ hr {
 button {
     margin-left: 100px 
 }
-
 
 
 .main-content{ 
@@ -274,3 +285,70 @@ footer {
     
     margin-left: 38%;
 } 
+
+
+/* Media */
+
+@media (max-width: 800px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 500px;
+        justify-content:center;
+        background-color: orange;
+        
+    }
+
+    .logo {
+        justify-content:flex-start;
+        margin: 22px
+    }
+
+    a {
+        margin: 12px
+    }
+
+    nav {
+        width: 500px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
+        margin-bottom: 20px;
+        flex-direction: column-reverse
+    }
+
+    .circle {
+        display:none
+    }
+}
+
+@media (max-width: 800px) {
+
+        .text-content {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+        .text-content2 {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+
+        .middle-img{
+        width:100%;
+        }
+
+        hr { 
+            width: 100%
+
+        }
+  
+        footer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content:center
+        }
+}
+
