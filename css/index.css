@@ -175,18 +175,32 @@ header .logo {
    line-height: 18px;
 }
 
+
 .main-content .top-content {
     display: flex;
 }
-
+@media(max-width:800px){
+    .top-content p{
+        width: 350px;
+        padding-left: 20px
+    }
+}
+@media(max-width:800px){
+    .top-content h4{
+        width: 350px;
+        padding-left: 20px
+    }
+}
 .main-content .middle-img {
     display: block;
     margin: 30px auto;
 }
 @media(max-width:800px){
-    .main-content .middle-img{
+    img.middle-img{
         display: flex;
-        width: 80%;
+        width: 750px;
+        justify: center;
+        margin: 30px 0;
     }
 }
 .main-content .bottom-content {
