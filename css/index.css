@@ -72,6 +72,12 @@ h1, h2, h3, h4, h5 {
   margin: 0 auto;
 }
 
+@media (max-width: 800px) {
+    .container {
+        width: 800px;
+    }
+}
+
 @media (max-width: 500px) {
     .container {
         width: 500px;
@@ -145,7 +151,7 @@ header .logo {
         border-bottom: 1px solid black;
         width: 100%;
         font-size: 20px;
-        padding: 15px 0 15px 0;
+        padding: 18px 0 18px 0;
         text-align: center;
     }
 }
@@ -191,20 +197,12 @@ header .logo {
     }
 }
 
+
 .main-content {
   border-top: 1px solid black;
   margin-top: 76px;
   padding-top: 39px;
 }
-
-@media (max-width: 800px) {
-    .main-content .top-content {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-    }
-}
-
 
 .main-content .top-content {
   padding: 0 10px;
@@ -222,19 +220,6 @@ header .logo {
 
 .main-content .middle-img {
   margin-top: 45px;
-}
-
-@media (max-width: 800px) {
-    .main-content .middle-img {
-        max-width: 800px;
-    }
-}
-
-@media (max-width: 500px) {
-    .main-content .middle-img {
-        max-width: 450px;
-        margin-left: 15px;
-    }
 }
 
 .main-content .bottom-content {
@@ -258,7 +243,6 @@ header .logo {
   padding: 39px 10px 0;
 }
 
-
 .contact p {
   margin: 20px 0;
 }
@@ -267,4 +251,67 @@ footer {
   margin: 32px 0;
   text-align: center;
   font-size: 14px;
+}
+
+
+/* 284 */
+@media (max-width: 500px) {
+    .main-content .top-content .text-content {
+        width: 410px;
+        margin: 10px;
+    }
+}
+@media (max-width: 500px) {
+    .main-content .bottom-content .text-content {
+        width: 410px;
+        margin: 10px;
+    }
+}
+
+
+/* 255 */
+@media (max-width: 800px) {
+    .main-content .middle-img {
+        max-width: 750px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+}
+@media (max-width: 500px) {
+    .main-content .middle-img {
+        max-width: 450px;
+        margin-left: 15px;
+        margin-top: 10px;
+    }
+}
+
+/* 205 */
+@media (max-width: 800px) {
+    .main-content .top-content {
+        display: flex;
+        flex-direction: row;
+    }
+}
+@media (max-width: 800px) {
+    .main-content .top-content .text-content {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 5px 10px 10px 15px;
+    }
+@media (max-width: 800px) {
+    .main-content .bottom-content {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+}
+@media (max-width: 500px) {
+    .main-content {
+        margin-left: 5px;
+    }
+    .text-content {
+        padding-bottom: 20px;
+    }
 }
