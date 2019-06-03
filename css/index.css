@@ -72,11 +72,12 @@ h1, h2, h3, h4, h5 {
   margin: 0 auto;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 500px) {
     .container {
-        width: 800px;
+        width: 500px;
     }
 }
+
 /* header */
 
 header nav {
@@ -123,6 +124,25 @@ header .logo {
         display: flex;
         justify-content: space-evenly;
         width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    header {
+        display: flex;
+        flex-direction: column-reverse;
+
+    }
+    header nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    header nav a {
+        margin: 0;
+        border-bottom: 1px solid black;
+
     }
 }
 
@@ -177,9 +197,7 @@ header .logo {
     .main-content .top-content {
         display: flex;
         flex-wrap: wrap;
-        border: 1px solid black;
-
-
+        flex-direction: row;
     }
 }
 
@@ -199,6 +217,19 @@ header .logo {
 
 .main-content .middle-img {
   margin-top: 45px;
+}
+
+@media (max-width: 800px) {
+    .main-content .middle-img {
+        max-width: 800px;
+    }
+}
+
+@media (max-width: 500px) {
+    .main-content .middle-img {
+        max-width: 450px;
+        
+    }
 }
 
 .main-content .bottom-content {
