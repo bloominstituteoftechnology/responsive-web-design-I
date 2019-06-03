@@ -107,10 +107,25 @@ header .logo {
         flex-direction: column-reverse; 
         justify-content: center;
         background: red;
-        align-items: center;
-        
+        align-items: center; 
     }
+}
 
+@media (max-width: 500px) {
+    header {
+        background: lavender;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    header nav {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    header nav a {
+        margin: 10px 0 0 0;
+    }
 }
 
 /* cta */
