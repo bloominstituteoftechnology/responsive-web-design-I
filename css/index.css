@@ -1,6 +1,3 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
-
-
 
 
 
@@ -70,16 +67,16 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-    width: 880px;
-    /* TB LR */
-    margin: 0 auto;
-  }
+  width: 880px;
+  /* TB LR */
+  margin: 0 auto;
+}
 
 /* header */
 
 header nav {
   display: inline-block;
-  width: 691px;
+  width: 100%;
   vertical-align: top;
   margin-top: 35px;
 }
@@ -103,7 +100,11 @@ header nav a:last-child {
   margin-right: 0;
 }
 
-header .logo {
+ .logo1 {
+  visibility: hidden
+}
+ .logo2 {
+  visibility: visible;
   margin-top: 25px;
 }
 
@@ -192,26 +193,75 @@ footer {
   text-align: center;
   font-size: 14px;
 }
-  
-@media (max-width: 800px){
-    .container {
-        width: 800px;
-        /* TB LR */
-        margin: 0 auto;
-      }
-       
+.testme{text-decoration: none;
+    font-size: xx-large;
 }
-@media (max-width: 500px){
-    .container {
-        width: 500px;
-        /* TB LR */
-        margin: 0 auto;
-      }
-      header nav {
-        display: inline-block;
-        width: 500px;
-        vertical-align: top;
-        margin-top: 35px;
-      }
-             
+@media (max-width: 500px) {
+  .container {
+    width: 500px;
+    /* TB LR */
+    margin: 0 auto;
+  }
+   .logo1 {
+    margin-top: 25px;
+    visibility: visible;
+  }
+  .logo2 {
+    visibility: hidden
+    }
+    
+  /* header */
+  
+  header nav {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100px;
+    vertical-align: top;
+    margin-top: 35px;
+  }
+  
+  header nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column nowrap;
+    width: 100%;
+    text-align: center;
+    margin: 10% 0;
+    margin-left: 20%;
+    min-height: 10px;
+    background-color: white(33, 33, 33, .3);
+    align-items: center; 
+    border-bottom:1px solid black;
+  }
+  header nav a:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    margin: 10% 0;
+    margin-left: 20%;
+    min-height: 10px;
+    background-color: white(33, 33, 33, .3);
+    align-items: center; 
+    border-bottom:1px solid black;
+ }
+  
+  header nav a:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    margin: 10% 0;
+    margin-left: 20%;
+    min-height: 10px;
+    background-color: white(33, 33, 33, .3);
+    align-items: center; 
+    border-bottom:1px solid black;
+  }
+    
 }
