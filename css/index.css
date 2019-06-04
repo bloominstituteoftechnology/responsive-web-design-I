@@ -61,27 +61,25 @@ html, body {
 
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1.5rem;
 }
 
 /* Your code starts here! */
 
 .container{
-    width: 880px;
+    width: 88rem;
     margin: auto;
-    border: 1px solid olive;
 }
 
 /* header code is here */
 header{
     width:100%;
     display: flex;
-    justify-content: baseline;
-    border: 1px solid black;
+    align-items: baseline;
 }
 header nav{
-    margin-top: 50px;
+    margin-top: 5rem;
 }
 header nav a{
     font-size: 1.75rem;
@@ -98,14 +96,13 @@ header .logo{
 
 /* section class cta code starts here */
 .cta {
-    border: 1px solid black;
-    margin-top: 30px;
+    margin-top: 3rem;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    padding-top: 2rem;
 }
 .cta .cta-text{
-    border: 1px solid black;
     font-size: 7rem;
     display: flex;
     flex-flow: column wrap;
@@ -113,24 +110,33 @@ header .logo{
 }
 .cta .cta-text button{
     font-size: 2rem;
-    border: 1px solid black;
+    border: 0.1rem solid black;
 }
 .cta .cta-text img{
-    width: 100px;
+    width: 100%;
     border: 1px solid black;
 }
 
 /* main-content top-content class code start here */
 
 .main-content{
-    border: 1px solid black;
-    margin-top: 30px;
+    border-top: 0.2rem solid black;
+    border-bottom: 0.2rem solid black;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 .main-content .top-content{
     display: flex;
-    margin: 0 40px 20px 50px;
+    margin-bottom: 2rem;
     justify-content: space-evenly;
 
+}
+.main-content .top-content .text-content h4{
+    font-size: 2rem;
+}
+.main-content .top-content .text-content p{
+    font-size: 1.5rem;
 }
 .main-content .middle-img{
     width: 100%;
@@ -140,5 +146,35 @@ header .logo{
 
 .main-content .bottom-content{
     display: flex;
-    margin: 30px 40px 20px 50px;
+    margin-top: 2rem;
+    justify-content: flex-end;
 }
+.main-content .bottom-content .text-content{
+    display: flex;
+    flex-flow: column wrap;
+}
+.main-content .bottom-content .text-content h4{
+    font-size: 2rem;
+}
+.main-content .bottom-content .text-content p{
+    font-size: 1.5rem;
+}
+
+/* section contact code starts here */
+
+.contact{
+    margin-top: 2rem;
+}
+.contact h4{
+    font-size: 2rem;
+}
+.contact p{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+footer{
+    margin: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
