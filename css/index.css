@@ -108,6 +108,9 @@ section {
 
 body {
     line-height: 1;
+    max-width: 1000px;
+    margin: 0 auto;
+
 }
 
 ol,
@@ -319,38 +322,38 @@ nav {
 
 
 .middle-img {
-    margin: 40px 0;
+    /* margin: 25px 25px 25px 25px; */
+    max-width: 98%;
+    height: auto;
+    margin: 0 auto;
+    padding: 25px 25px 25px 25px;
+    /* border: 2px red solid; */
+    
 }
 
 @media (max-width: 800px) {
     .middle-img {
         display: flex;
-        width: 80%;
+        max-width: 98%;
+        height: auto;
         justify-content: center;
         align-items: center;
-        padding: 0px 0px 25px 25px;
-        margin: 0px;
-
+        padding: 25px 25px 25px 25px;
+        object-fit: contain
     }
 }
 
 @media (max-width: 500px) {
     .middle-img {
         display: flex;
-        width: 80%;
+        max-width: 98%;
+        height: auto;
         justify-content: center;
         align-items: center;
-        padding: 0px 0px 25px 25px;
-        margin: 0px;
-
+        padding: 25px 25px 25px 25px;
+        object-fit: contain
     }
 }
-
-
-
-  
-
-
 
 .bottom-row {
     padding-bottom: 40px;
