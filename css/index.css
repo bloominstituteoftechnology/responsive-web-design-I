@@ -3,87 +3,19 @@
    License: none (public domain)
 */
 
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -91,44 +23,25 @@ video {
 	font: inherit;
 	vertical-align: baseline;
 }
-
 /* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-
 body {
 	line-height: 1;
 }
-
-ol,
-ul {
+ol, ul {
 	list-style: none;
 }
-
-blockquote,
-q {
+blockquote, q {
 	quotes: none;
 }
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
+blockquote:before, blockquote:after,
+q:before, q:after {
 	content: '';
 	content: none;
 }
-
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -136,253 +49,241 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-html,
-body {
-	height: 100%;
-	font-family: 'Titillium Web', sans-serif;
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
-	font-family: 'Bangers', cursive;
-	letter-spacing: 1px;
-	margin-bottom: 15px;
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
 }
 
 .main-container {
-	width: 1200px;
+    width: 880px;
+    margin: auto;
 }
 
-.menu-header {
-	display: flex;
-	justify-content: space-around;
-	width: 100%;
+/* Header Styles */
+
+header {
+    width: 100%;
+    display: flex;
 }
 
-.main-nav {
-	margin: 0px;
-	padding: 0px;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	list-style-type: none;
+header nav {
+    margin-top: 40px; 
+    width: 610px;
+    justify-content: space-between;
+    display: flex;
 }
 
-.menu {
-	padding: 30px;
-	font-size: 20px;
-	color: darkgray;
-	text-decoration: none;
+header nav a {
+    text-decoration: none;
+    color: #b0b0b0;
 }
 
-.menu:hover {
-	color: black;
+header nav a:hover {
+    text-decoration: underline;
+    color: black;
 }
 
-.logo {
-	align-self: center;
+header .logo {
+    margin: 28px 0 0 91px;
 }
 
-.h1-splash {
-	display: flex;
-	justify-content: space-evenly;
-	font-size: 450%;
-	align-items: center;
-	margin: 30px;
-	border-bottom: 1px solid black;
-	padding-top: 3%;
-	padding-bottom: 8%;
+/* Call To Action (CTA) Styles */
+
+.cta {
+    display: flex;
+    margin-top: 72px;
+    justify-content: flex-end;
 }
 
-.main-heading {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+.cta .cta-text {
+    font-size: 72px;
+    text-align: center;
+    letter-spacing: 5px;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    margin: 0 82px 0 0;
 }
 
-.h1-main {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-content: center;
-	margin-bottom: 10%;
+.cta .cta-text button {
+    border: 1px double black;
+    font-size: 16px;
+    background: white;
+    width: 170px;
+    height: 32px;
+    margin-top: 10px;
+    cursor: pointer;
 }
 
-.get-started-btn {
-	border: 1px solid black;
-	font-size: 25%;
-	margin: 2%;
-	padding: 3% 18%;
+.cta .cta-text button:hover {
+    background: black;
+    color: white;
 }
 
-.h1-services {
-	font-size: 20px;
+/* Main Content Styles */
+
+.main-content {
+   border-top: 2px solid black; 
+   border-bottom: 2px solid black;
+   margin: 75px 0 35px 0;
+   padding: 35px 0;
+   font-size: 16px;
+   line-height: 18px;
 }
 
-.h1-vision {
-	font-size: 20px;
+.main-content .top-content {
+    display: flex;
 }
 
-.top-content {
-	display: flex;
-	width: 100%;
-	justify-content: space-evenly;
-	margin: 30px 20px;
+.main-content .middle-img {
+    display: block;
+    margin: 30px auto;
 }
 
-.features {
-	width: 40%;
+.main-content .bottom-content {
+    display: flex;
 }
 
-.about {
-	width: 40%;
+.main-content .bottom-content p {
+    padding-right: 20px;
 }
 
-.middle-img {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 85%;
+/* Contact Styles */
+
+.contact p {
+    margin: 15px 0;
 }
 
-.services-header-img {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 85%;
-}
-
-.bottom-content {
-	display: flex;
-	width: 100%;
-	justify-content: space-evenly;
-	margin: 30px 20px;
-}
-
-.services {
-	width: 25%;
-}
-
-.product {
-	width: 25%;
-}
-
-.vision {
-	width: 25%;
-}
-
-.contact {
-	margin: 20px;
-}
+/* Footer Styles */
 
 footer {
-	text-align: center;
+    text-align: center;
+    margin: 40px 0 20px;
 }
 
+/* Tablet */
 @media (max-width: 800px) {
-	/* 800 - 0 */
-	.main-container {
-		width: 800px;
-	}
 
-	.menu-header {
-		margin-top: 3%;
-		flex-wrap: wrap-reverse;
-	}
+    .main-container {
+        width: 100%;
+    }
 
-	.title-img {
-		display: none;
-	}
+    header {
+        flex-wrap: wrap;
+    }
+  
+    header nav {
+        width: 768px;
+        padding: 0 30px;
+    }
 
-	.h1-splash {
-		margin: 0;
-		justify-content: center;
-		align-items: center;
-	}
+    header .logo {
+        order: -1;
+        display: block;
+        margin: 30px auto 0;
+    }
+
+    .cta {
+        justify-content: center;
+    }
+    
+    .cta .cta-text {
+        margin: 0;
+    }
+
+    .cta img {
+        display: none;
+    }
+
+    .main-content .middle-img {
+       width: 100%;
+    }
+
+    .main-content {
+       margin: 75px 20px 35px;
+    }
+
+    .text-content {
+        margin: 0 10px;
+    }
+
+    .contact {
+        margin: 0 30px;
+    }
 }
 
+/* Phone */
 @media (max-width: 500px) {
-	/* 500 - 0 */
-	.main-container {
-		width: 500px;
-	}
 
-	.logo {
-		padding-bottom: 15px;
-	}
+    header {
+        justify-content: center;
+    }
 
-	.main-nav {
-		width: 100%;
-		flex-direction: column;
-		justify-content: center;
-		border-top: 1px solid grey;
-	}
-	
-	.menu {
-		width: 100%;
-		border-bottom: 1px solid grey;
-		text-align: center;
-		padding: 20px;
-	}
+    header nav {
+        width: 100%;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
 
-	.h1-splash {
-		margin: 30px;
-}
+    header nav a {
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding: 20px 0;
+        font-size: 20px;
+        border-bottom: 1px solid gray;
+    }
 
-.top-content {
-	width: 100%;
-	flex-direction: column;
-	margin: 30px;
-}
+    header nav a:first-child {
+        border-top: 1px solid gray;
+    }
 
-.features {
-	width: 90%;
-	margin-bottom: 30px;
-}
+    header nav a:hover {
+        background: gray;
+    }
 
-.about {
-	width: 90%;
-	margin-bottom: 30px;
-}
+    header .logo {
+        margin: 20px 0;
+    }
 
-.middle-img {
-	width: 90%;
-}
+    .cta {
+        margin-top: 50px;
+        flex-flow: column;
+        align-items: center;
+    }
 
-.bottom-content {
-	width: 100%;
-	flex-direction: column;
-	margin: 30px;
-}
+    .cta img {
+        max-width: 80%;
+    }
 
-.services {
-	width: 90%;
-	margin-bottom: 30px;
-}
+    .main-content .top-content {
+        justify-content: space-around;
+        flex-direction: column;
+        height: 300px;
+    }
 
-.product {
-	width: 90%;
-	margin-bottom: 30px;
-}
+    .main-content .bottom-content {
+        flex-wrap: wrap;
+        align-content: space-between;
+        height: 440px;
+    }
 
-.vision {
-	width: 90%;
-	border-bottom: 2px solid black;
-	padding-bottom: 30px;
-}
+    .text-content {
+        margin: 0;
+    }
 
-hr {
-   display: none;
-}
-
-.contact {
-	width: 40%;
-	margin-left: 30px;
-}
+    .contact {
+        margin: 20px;
+    }
 }
