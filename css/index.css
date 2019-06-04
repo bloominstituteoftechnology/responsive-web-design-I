@@ -29,7 +29,9 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
+    max-width: 900px;
+    margin: 0 auto;
 }
 ol, ul {
 	list-style: none;
@@ -69,7 +71,15 @@ h1, h2, h3, h4, h5 {
   margin: 0 auto;
 }
 
+/* @media (max-width: 500px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+} */
+
 /* header */
+
 
 header nav {
   display: inline-block;
@@ -117,6 +127,7 @@ header .logo {
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
+        margin: 0 auto;
     }
     header nav {
         display: flex;
