@@ -30,9 +30,11 @@ footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
+    
 body {
-  line-height: 1;
-}
+    line-height: 1;
+  }
+  
 
 ol, ul {
   list-style: none;
@@ -79,24 +81,20 @@ h1 {
 
 .container {
   margin: 0 auto;
-  width: 900px;
-  border: 1px solid red;
+  width: 61%;
+  border: 1px solid YELLOW;
 }
 
 nav {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
-  align-items: center;
-  width: 100%;
-  margin: 0 auto;
+  align-content: center;
   margin-top: 20px;
+  
 }
-a {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    text-decoration: none;
-    color: gray
+nav hr {
+    display: none;
 }
 
 .menu a {
@@ -224,20 +222,31 @@ button {
 
 /* Start of code */
 
-hr {
-    margin-bottom: 60px;
-    border: 1px black solid;
-
+a {
     
-}
-
-
-.bottom {
-    margin-top: 60px;
-    border: 1px black solid;
+    text-decoration: none;
+    color: gray;
    
 }
 
+hr {
+    margin-bottom: 60px;
+    border: 1px black solid;
+    
+}
+
+.bottom {
+    margin-top: 60px;
+   
+}
+
+.logo {
+    display: flex;
+    flex-wrap: wrap;
+    width: 130px;
+    align-content: center;    
+    
+}
 
 
 .cta-text {
@@ -275,10 +284,11 @@ button {
     
  }
 .text-content{
+    display: flex;
+    flex-wrap: wrap;
     display:inline-block;
-    width: 48.6%;
-    margin-right: 10px;
-   
+    width: 48.3%;
+    margin-right: 12px;   
 }
 
 .text-content2{
@@ -293,21 +303,50 @@ footer {
 } 
 
 hr .media {
-    display: none}
+    display: none
+}
+
 
 
 /* Tablet Media View */
 
-    @media (max-width: 7670px) {
+    @media (max-width: 900px) {
 
+   
         .container {
             display: flex;
             flex-wrap: wrap;
-            width: 900px;
+            width:100%;
             justify-content:center;
             background-color: yellow;
     
             
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            width: 100%;
+            border: red solid 1px;
+            height: 250px
+        }
+
+        .text-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: row;
+            width: 46%;
+            border: red solid 1px
+        }
+    
+
+        .logo {
+            display: flex;
+            flex-wrap; wrap;
+            justify-content: center;
+            width: 100%;
+            margin-bottom: 70px
         }
 
         hr {
@@ -315,26 +354,12 @@ hr .media {
         }
 
 
-
-    .logo {
-        justify-content:flex-start;
-        margin: 22px
-    }
-
     a {
-        margin: 12px
-    }
-
-    nav {
-        width: 500px;
         display: flex;
         flex-wrap: wrap;
-        flex-direction: column;
-        align-content: center;
-        margin-bottom: 100px;
-        flex-direction: row
-    }
+        margin: 12px
 
+    }
 
     hr { 
         width: 100%
@@ -344,54 +369,27 @@ hr .media {
         display:none
     }
 
-        .text-content {
-            display: flex;
-            flex-wrap: wrap;
-            width: 100%;
-        }
-        .text-content2 {
-            display: flex;
-            flex-wrap: wrap;
-            width: 100%;
-        }
-
-        .middle-img{
-        width:100%;
-        }
-
-        
-         .contact {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content:flex-start;
-            width: 90%;
-            margin-right:60px;
-            height: 120px;
-            margin-bottom: 40px;
-            border: green 1px solid
-            
-        }
-        footer {
-            display: flex;  
-            flex-wrap: wrap;
-            margin-right:60px;
-        }
+   
+    .contact {
+        margin-right: 470px;
+        margin-top: 60px
+    }
+ 
+footer {
+    border: black 1px solid;
+    margin-left: 2  00px;
+    ALIGN: flex-end;
 }
-
-
-
-
 
 /* Mobile Media View */
 
-@media (max-width: 800px) {
+@media (max-width: 766px) {
     .container {
         display: flex;
         flex-wrap: wrap;
         width: 500px;
         justify-content:center;
-        background-color: orange;
-        
+        background-color: orange;                                       
     }
 
     .logo {
@@ -399,19 +397,16 @@ hr .media {
         margin: 22px
     }
 
-    a {
-        margin: 12px
-    }
-
-    nav {
+   
+     nav {
         width: 500px;
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
         align-content: center;
         margin-bottom: 100px;
-        flex-direction: column-reverse
-    }
+        flex-direction: column-reverse;
+    } 
 
 
     hr { 
@@ -449,14 +444,6 @@ hr .media {
             border: green 1px solid
             
         }
-        footer {
-            display: flex;  
-            flex-wrap: wrap;
-            margin-right:60px;
-        }
-}
-
-
 
 
 
