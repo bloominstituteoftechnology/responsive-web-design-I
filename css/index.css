@@ -156,6 +156,14 @@ h5 {
 @media (max-width: 800px) {
   .container {
     padding: 20px;
+    
+  }
+}
+@media(max-width: 500px){
+  .container {
+    margin: 0px;
+    padding: 0px;
+    width:100%;
   }
 }
 /* Header Styles */
@@ -173,6 +181,12 @@ header {
     align-content: space-between;
   }
 }
+@media (max-width: 500px){
+  header {
+    display: flex;
+    justify-content: center;
+  }
+}
 header nav {
   margin-top: 40px;
   width: 610px;
@@ -180,10 +194,6 @@ header nav {
   display: flex;
 }
 
-header nav a {
-  text-decoration: none;
-  color: #b0b0b0;
-}
 @media (max-width: 800px) {
   header nav {
     display: flex;
@@ -192,11 +202,47 @@ header nav a {
     margin: 40px 0px;
   }
 }
+@media(max-width: 500px){
+  header nav {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 10px;
+    align-items: center;
+    
+  }
+}
+header nav a {
+  text-decoration: none;
+  color: #b0b0b0;
+  
+}
+@media(max-width:500px){
+  header nav a{
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid gray;
+    font-size: 20px;
+    justify-content: center;
+    padding: 20px 0px;
+    margin: 0px;
+}
+
+@media(max-width:500px){
+  header nav a:first-child {
+    border-top: 1px solid gray;
+}
+}
 header nav a:hover {
   text-decoration: underline;
   color: black;
 }
+@media(max-width:500px){
+  header nav a:hover{
+    text-decoration: none;
+    background: gray;
 
+}
 header .logo {
   margin: 28px 0 0 91px;
 }
