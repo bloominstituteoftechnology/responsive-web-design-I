@@ -1,3 +1,277 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   license: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* Html5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: flex;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* set every element's box-sizing to border-box */
+/* * {
+  box-sizing: border-box; */
 
 
+
+body {
+  margin-right: 20%;
+  margin-left: 20%;
+   font-family: "titillium web", sans-serif;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+
+h2 {
+  font-family: "Anton", sans-serif;
+  margin-bottom: 2%;
+}
+/* Your code starts here! */
+
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5%;
+  width: 100%;
+   
+}
+
+nav a {
+  text-decoration: none;
+  color: darkgray;
+  margin-top: 1%;
+  margin-right: 5%;
+  font-size: medium;
+  justify-content: flex-start;
+ 
+ }
+
+nav a:hover {
+  color: black;
+}
+
+
+.logo {
+ 
+  margin-top:2%;
+  margin-left: 50%
+  
+}
+
+header {
+  width: 100%;
+  display: inline-flex;
+  
+  margin-top: 10%;
+  align-content: center;
+  }
+ 
+  h1 {
+    flex-direction: column;
+    margin-right: 20%;
+    font-size: 350%
+    
+  }
+  
+.header-img{
+justify-content: flex-end;
+padding: 5%;
+
+}
+
+.section-one {
+  border-top: 1px solid black;
+  margin-top: 39px;
+  display: inline-flex;
+}
+
+.section-one div {
+  margin-top: 5%;
+ 
+}
+
+.section-one div p {
+  line-height: 1.16;
+}
+
+.section-one div:first-child {
+  margin-right: 10px;
+}
+
+.middle-img {
+  margin-top: 38px;
+}
+
+.section-two {
+  width: 100%;
+  margin-top: 5%;
+  border-bottom: 1px solid black;
+  display: inline-flex;
+}
+
+.section-two div {
+  width: 33% ;
+  margin-right: 10px;
+  margin-bottom: 5%;
+}
+
+.section-two div p {
+  line-height: 1.16;
+}
+
+address {
+  margin-top: 38px;
+}
+
+address div {
+  line-height: 1.16;
+}
+
+address div span {
+  display: inline-block;
+  margin: 17px 0 18px 0;
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+footer p {
+  margin-top: 54px;
+  font-size: 14px;
+
+}
