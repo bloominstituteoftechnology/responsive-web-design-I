@@ -101,46 +101,6 @@ header .logo {
  margin-top: 25px;
 }
 
-/* Mobile View */
-@media (max-width: 500px) {
-    .container {
-        width: 100%; 
-        margin: 50px; 
-    
-    }
-
-    header {
-        display: flex; 
-        flex-direction: column-reverse; 
-        align-items: center; 
-    }
-
-    header nav {
-        display: flex; 
-        flex-direction: column; 
-        align-items: center; 
-        
-    }
-
-    header nav a {
-        margin: 20px 0px 20px 0px; 
-
-    }
-
-    .cta img {
-        display: none; 
-    }
-
-    header img {
-        max-width: 33%; 
-        margin: 0 auto; 
-    }
-
-    .main-content img {
-        width: 100%; 
-    }
-}
-
 /* Tablet View  */
 @media (max-width: 800px) {
     .container {
@@ -148,30 +108,15 @@ header .logo {
         
     }
 
-    header nav { 
- display: inline-block;
- width: 691px;
- vertical-align: top;
- margin-top: 35px;
-}
-
-    header nav {
+    header {
         display: flex; 
-        flex-direction: row; 
-        align-items: center;  
-        
+        flex-direction: column-reverse; 
     }
 
-    header nav a {
-        display: flex; 
-        align-items: center; 
-        
-
-    }
-
-    .cta img {
-        display: none; 
-    }
+     header nav { 
+       display: flex; 
+       flex-direction: row; 
+     } 
 
     header img {
         max-width: 33%; 
@@ -194,6 +139,55 @@ header .logo {
         display: flex; 
     }
 }
+
+/* Mobile View */
+@media (max-width: 500px) {
+    .container {
+        margin: 50px; 
+    
+    }
+
+     header { 
+        display: flex; 
+        flex-direction: column-reverse; 
+        align-items: center; 
+    }
+
+    header nav {
+        display: flex; 
+        flex-direction: column;
+    }
+
+    header nav a { 
+        margin: 20px 0px 20px 0px;  
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+     }
+
+    header img {
+        max-width: 33%; 
+        margin: 0 auto; 
+    }
+
+    .main-content img {
+        width: 100%; 
+    }
+
+    .top-content {
+        display: flex; 
+        flex-direction: column; 
+    }
+
+    .bottom-content {
+        display: flex; 
+        flex-direction: column; 
+    }
+}
+
+
+
+
 
 
 /* cta */
@@ -225,6 +219,12 @@ header .logo {
 .cta img {
  display: inline-block;
  margin-top: 69px;
+}
+
+@media (max-width: 800px) {
+    .cta img {
+        display: none; 
+    }
 }
 
 .main-content {
