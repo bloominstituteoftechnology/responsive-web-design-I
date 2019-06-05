@@ -68,7 +68,7 @@ h1, h2, h3, h4, h5 {
 /* Your code starts here! */
 
 .container{
-    width: 88rem;
+    max-width: 880px;
     margin: auto;
 }
 
@@ -77,15 +77,28 @@ header{
     width:100%;
     display: flex;
     align-items: baseline;
+    justify-content: space-between;
+}
+@media (max-width:800px){
+    header{
+        flex-direction: column-reverse;
+    }
 }
 header nav{
+    width: 100%;
     margin-top: 5rem;
+    display:flex;
+    justify-content: space-evenly;
+}
+@media (max-width: 800px){
+    header nav{
+        justify-content: space-around;
+    }
 }
 header nav a{
     font-size: 1.75rem;
     text-decoration: none;
     color: grey;
-    margin-left: 50px;
 }
 header nav a:hover{
     color: black;
@@ -112,9 +125,11 @@ header .logo{
     font-size: 2rem;
     border: 0.1rem solid black;
 }
-.cta .cta-text img{
-    width: 100%;
-    border: 1px solid black;
+
+@media(max-width: 800px){
+    #pic{
+        display: none;
+    }
 }
 
 /* main-content top-content class code start here */
@@ -177,4 +192,3 @@ footer{
     font-size: 1.5rem;
     text-align: center;
 }
-
