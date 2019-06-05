@@ -95,10 +95,30 @@ header nav{
         justify-content: space-around;
     }
 }
+@media (max-width: 500px){
+    header nav{
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
 header nav a{
     font-size: 1.75rem;
     text-decoration: none;
     color: grey;
+}
+@media (max-width: 500px){
+    header nav a{
+        width: 100%;
+        border-bottom: 0.1rem solid black; 
+        border-top: 0.1rem solid black; 
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+    }
+    header nav a:hover{
+        background-color: lightgrey;
+    }
 }
 header nav a:hover{
     color: black;
@@ -147,8 +167,18 @@ header .logo{
     justify-content: space-evenly;
 
 }
+@media (max-width:500px){
+    .main-content .top-content{
+        flex-direction: column;
+    }
+}
 .main-content .top-content .text-content h4{
     font-size: 2rem;
+}
+@media (max-width:500px){
+    .main-content .top-content .text-content h4{
+        padding-top: 1rem;
+    }
 }
 .main-content .top-content .text-content p{
     font-size: 1.5rem;
@@ -164,9 +194,15 @@ header .logo{
     margin-top: 2rem;
     justify-content: flex-end;
 }
+@media (max-width:500px){
+    .main-content .bottom-content{
+        flex-direction: column;
+    }
+}
 .main-content .bottom-content .text-content{
     display: flex;
     flex-flow: column wrap;
+
 }
 .main-content .bottom-content .text-content h4{
     font-size: 2rem;
