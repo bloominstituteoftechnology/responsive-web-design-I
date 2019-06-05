@@ -226,3 +226,35 @@ footer {
 /* Phone */
 
 @media (max-width: 500px) {
+	header {
+		justify-content: center;
+	}
+	header nav {
+		flex-direction: column;
+		text-align: center;
+		margin: 0;
+	}
+	header nav a {
+		font-size: 20px;
+		padding: 12px 0 12px 0;
+		border-bottom: 1px solid grey;
+	}
+	header nav a:first-child{
+		border-top: 1px solid grey;
+	}
+	header .logo {
+		margin: 10px;
+	}
+	.main-content {
+		flex-direction: column;
+
+	}
+	.top-content {
+		height: 300px;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+	.bottom-content {
+		flex-wrap: wrap;
+		height: 400px;
+	}
