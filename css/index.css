@@ -1,3 +1,335 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+
+* {
+	box-sizing: border-box;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: 'Bangers', cursive;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+.container{
+	width:94%;
+	margin:0 auto;
+}
+.headercss {
+	position: fixed;
+	left: 0;
+	right: 0;
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	
+}
 
 
+
+
+.heading-nav-bar {
+	display: inline-block;
+}
+
+.nav-item-h {
+	position: relative;
+	bottom: 15px;
+	margin: 20px;
+	padding: 10px;
+	box-sizing: border-box;
+	text-decoration: none;
+	color: grey;
+}
+
+.nav-item-h:hover {
+	cursor: pointer;
+}
+
+.logo {
+	margin-left: 40px;
+	padding: 5px;
+	box-sizing: border-box;
+}
+
+.innovation-img {
+	display: inline-block;
+	padding: 20px, 100px, 100px, 100px;
+	box-sizing: border-box;
+	width: 400px;
+	margin: 50px auto;
+}
+
+.i-text {
+	display: block;
+	text-align: center;
+	font-size: 76px;
+}
+
+.innovation {
+	position: relative;
+	bottom: 150px;
+	display: inline-block;
+	width: 460px;
+	padding: 0 100px;
+	margin: 0 auto;
+	
+}
+
+
+button {
+	position: relative;
+	left:20px;
+	width: 220px;
+	height: 30px;
+	background: white;
+	color: grey;
+	border: 1px solid grey;
+	padding: 5px;
+	box-sizing: border-box;
+	margin: 0 auto;
+}
+
+.main-text {
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+footer {
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 250px;
+}
+
+@media(max-width:800px){
+	.logo{
+		position:relative;
+		left:230px;
+		bottom:20px;
+	}
+	.heading-nav-bar{
+		position:relative;
+		top: 80px;
+		left: 20px;
+	}
+	.innovation-img{
+		display: none;
+	}
+	.innovation{
+		position: relative;
+		top:50px;
+		left:110px;
+		padding:24px;
+
+	}
+	button{
+		width:180px;
+		left:110px;
+	}
+	.main-text{
+		position: relative;
+		top:80px;
+	}	
+	.contact{
+		position: relative;
+		top: 80px;
+	}
+	footer{
+		position:relative;
+		top:50px;
+	}
+}
+
+
+@media(max-width:500px){
+
+	.nav-item-h{
+		padding:0px 200px;
+		height:20px;
+		border-bottom: 1px solid lightgrey;
+	}
+	.innovation{
+		top: 400px;
+
+	}
+
+	
+}
+
+header{
+	padding-top: 50px;
+	box-sizing: border-box;
+}
+
+
+
+
+.text-area {
+	display: inline-block;
+	width: 45%;
+	margin: 10px;
+}
+
+
+.text-area2 {
+	display: inline-block;
+	width: 30%;
+	margin: 10px;
+}
+
+.middle-img {
+	width: 100%;
+	display: block;
+}
+
+html, body {
+	height: 100%;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: 'Bangers', cursive;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
+}
+h3,p,h4{
+	text-align: left;
+}
+h3 {
+	
+	margin-top: 40px;
+}
+
+h4 {
+	margin-top: 10px;
+}
+
+.phone {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.h1-vision{
+	margin-top: 50px;
+	text-align: center;
+}
+.h3-vision{
+	margin-top: 50px;
+	text-align: left;
+	font-size: 24px;
+}
+.text-area-vision{
+	display:inline-block;
+	width: 45%;
+	height: 30px;
+	padding:10px;
+	box-sizing: border-box;
+	margin: 10px;
+
+}
+.body2{
+	width:95%;
+	padding:10px;
+	padding-bottom: 100px;
+	box-sizing: border-box;
+	margin-top:50px;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
