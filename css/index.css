@@ -100,12 +100,15 @@ header nav a:last-child {
 
 header .logo {
     margin-top: 25px;
+    
 }
 
 /* cta */
 
 .cta {
     display: flex;
+    flex-direction: row;
+    width: 100%;
 }
 
 .cta .cta-text {
@@ -130,10 +133,12 @@ header .logo {
     background: black;
     color: white;
 }
+
 /* cta image */
+
 .cta-img {
     margin-top: 69px;
-    width: 100%;
+    width: 70%;
 }
 
 /* main */
@@ -157,7 +162,9 @@ header .logo {
 .main-content .top-content .text-content:last-child {
     margin-right: 0;
 }
+
 /* middle image */
+
 .main-content .middle-img {
     margin-top: 45px;
     width: 100%;
@@ -307,20 +314,57 @@ footer {
 
 @media screen and (max-width: 800px) {
     .container {
-        background: grey;
-        width: 90%;
+        background: rgb(203, 196, 233);
+        width: 100%;
+        /* display: flex;
+        flex-direction: column;
+        justify-content: space-between; */
+        margin: 0;
     }
 
-    .logo {
+        header{
+            flex-direction: column-reverse;
+        }
+        .cta {
+            width: 100%;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+        .cta-img {
+            display: none;
+        }
+        header nav{
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        header nav a{
+            margin-right: 0;
+            justify-content: space-between;
+            
+        }
+    
+
+
+        
+    }
+    /* mobile style */
+    @media screen and (max-width: 500px) {
+        .container {
+            background: rgb(220, 233, 196);
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+        }
+        header{
+            flex-direction: column-reverse;
+        }
+
+        .main-content {
+        
+            flex-direction: column;
+        }
+
 
     }
-}
-
-/* mobile style */
-
-@media screen and (max-width: 500px) {
-    .container {
-        background: yellow;
-        width: 80%;
-    }
-}
