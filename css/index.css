@@ -75,7 +75,7 @@ header {
 
 header nav {
     width: 100%;
-    vertical-align: top;
+    /* vertical-align: top; */
     margin-top: 35px;
 }
 
@@ -147,6 +147,7 @@ header .logo {
     border-top: 1px solid black;
     margin-top: 76px;
     padding-top: 39px;
+
 }
 
 .main-content .top-content {
@@ -324,18 +325,24 @@ footer {
 
         header{
             flex-direction: column-reverse;
+            align-items: center;
         }
+
+       
         .cta {
             width: 100%;
             flex-direction: column;
             justify-content: flex-start;
+            
+
         }
         .cta-img {
             display: none;
         }
         header nav{
-            flex-direction: column;
+            display: flex;
             justify-content: space-between;
+            
         }
 
         header nav a{
@@ -343,7 +350,15 @@ footer {
             justify-content: space-between;
             
         }
+
+        header .logo{
+            margin: 0 auto;
+           
+        }
     
+        .main-content .top-content{
+           
+        }
 
 
         
@@ -361,10 +376,37 @@ footer {
             flex-direction: column-reverse;
         }
 
-        .main-content {
-        
+        header nav {
             flex-direction: column;
         }
+        header nav a{
+            text-align: center;
+            padding: 20px;
+            border-bottom: 1px solid black;
+        }
 
+        .main-content .top-content{
+           
+            flex-direction: column;
+            justify-content: center;
+        }
 
-    }
+        .main-content .top-content .text-content {
+            width: 100%;
+            margin: 20px;
+        }
+
+        .main-content .bottom-content{
+           
+            flex-direction: column;
+            justify-content: center;
+        }
+        .main-content .bottom-content .text-content{
+            width: 100%;
+            margin: 20px;
+        }
+
+        .main-content h4{
+            margin-top: 10px;
+        }
+        }
