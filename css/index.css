@@ -65,7 +65,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-    width: 880px;
+    width: 80%;
     margin: auto;
 }
 
@@ -78,8 +78,8 @@ header {
 
 header nav {
     margin-top: 40px; 
-    width: 610px;
-    justify-content: space-between;
+    width: 100%;
+    justify-content: space-around;
     display: flex;
 }
 
@@ -94,7 +94,7 @@ header nav a:hover {
 }
 
 header .logo {
-    margin: 28px 0 0 91px;
+    margin-top: 28px;
 }
 
 /* Call To Action (CTA) Styles */
@@ -102,7 +102,7 @@ header .logo {
 .cta {
     display: flex;
     margin-top: 72px;
-    justify-content: flex-end;
+    justify-content: space-around;
 }
 
 .cta .cta-text {
@@ -113,7 +113,7 @@ header .logo {
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    margin: 0 82px 0 0;
+   
 }
 
 .cta .cta-text button {
@@ -149,6 +149,7 @@ header .logo {
 .main-content .middle-img {
     display: block;
     margin: 30px auto;
+    width: 100%;
 }
 
 .main-content .bottom-content {
@@ -156,7 +157,7 @@ header .logo {
 }
 
 .main-content .bottom-content p {
-    padding-right: 20px;
+    
 }
 
 /* Contact Styles */
@@ -248,9 +249,10 @@ footer {
   width: 420px;
   height: 300px;
 }
+/* tablet*/
 @media screen and (max-width: 800px){
    .container{
-       width: 800px;
+      
        padding: 2%;
     }
     header{
@@ -259,7 +261,7 @@ footer {
   
     }
     header nav{
-        margin-left: 100px;
+     
 
     }
     header .logo{
@@ -271,29 +273,42 @@ footer {
         display: none;
     }
     .cta{
-        margin-left: 100px;
-        margin-right: 100px;
+       
     }
     .middle-img{
-        width: 700px;
+        
     }
-    @media screen and(max-width: 500px) {
-        container{
-          width:500px;  
+}
+    /* mobile*/
+    @media screen and (max-width: 500px) {
+        .container{
+           width:100%;
         }
         header{
-            width: 500px;
-            align-content: center;
-            justify-content: center;
+            
+            
         }
         header nav{
+            display: flex;
             flex-direction:column;
+            align-items: center;
         }
         header nav a{
          border-bottom: 1px solid black;
-         width:550px;
-         text-align: center; 
+         width: 100%;
+         text-align: center;
+    
+        
+        }
+        .top-content, .bottom-content{
+            display:flex;
+            flex-direction: column;
+            margin-right: 5%;
+            margin-left: 5%;
+        }
+        .contact{
+            margin-right: 5%;
+            margin-left: 5%;
         }
     }
 
-}
