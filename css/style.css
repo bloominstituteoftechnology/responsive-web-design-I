@@ -136,10 +136,9 @@ body {
 nav ul li a {
   font-size: 1.5em;
   color: #000;
-  transition: all .2s; }
+  text-decoration: none; }
   nav ul li a:hover {
-    color: #f0f;
-    animation: hue-rotate 10s infinite; }
+    text-decoration: underline; }
 
 .header__container h1.title {
   vertical-align: top;
@@ -188,8 +187,8 @@ h1, h2, h3, h4, h5, a {
   margin: 1em; }
 
 .u-margin-top-2 {
-  margin-top: 2em; }
-  @media screen and (max-width: 1000px) {
+  margin-top: 1.5em; }
+  @media screen and (max-width: 900px) {
     .u-margin-top-2 {
       margin-top: 18em; } }
 
@@ -248,8 +247,9 @@ h1, h2, h3, h4, h5, a {
   background: #eee;
   border-radius: 3px; }
 
-nav img {
-  cursor: pointer; }
+nav .flex {
+  margin: 0 auto;
+  padding: 0; }
 
 nav li {
   display: inline-block;
@@ -262,11 +262,14 @@ nav li {
     nav li a {
       width: 100%; } }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 900px) {
+  nav ul.u-width-80 {
+    width: 100%; }
   nav li {
-    border-bottom: 1px solid gray;
     width: 100%;
     text-align: center; }
+    nav li:not(:nth-of-type(6)) {
+      border-bottom: 1px solid gray; }
     nav li:last-child {
       order: -1; } }
 
@@ -293,18 +296,22 @@ header img[src="img/header-img.png"]:hover {
 
 .flex {
   display: flex; }
+  @media (max-width: 56.25em) {
+    .flex {
+      flex-direction: column; } }
+  @media (max-width: tab-port) {
+    .flex {
+      flex-direction: column; } }
   .flex > * {
     padding: .5em; }
   .flex-inline {
     display: inline-flex; }
-  .flex-row {
-    flex-direction: row; }
   .flex-column {
     flex-direction: column; }
+    .flex-column-reverse {
+      flex-direction: column-reverse; }
   .flex-row-reverse {
     flex-direction: row-reverse; }
-  .flex-column-reverse {
-    flex-direction: column-reverse; }
   .flex-wrap {
     flex-wrap: wrap; }
     .flex-wrap-reverse {
@@ -319,52 +326,45 @@ header img[src="img/header-img.png"]:hover {
     justify-content: space-between; }
   .flex-justify-around {
     justify-content: space-around; }
-  .flex-justify-evenly {
+  .flex-justify-even {
     justify-content: space-evenly; }
-  .flex-items-stretch {
-    align-items: stretch; }
+  .flex-content-start {
+    align-content: flex-start; }
+  .flex-content-end {
+    align-content: flex-end; }
+  .flex-content-center {
+    align-content: center; }
+  .flex-content-stretch {
+    align-content: stretch; }
+  .flex-content-around {
+    align-content: space-around; }
+  .flex-content-between {
+    align-content: space-between; }
   .flex-items-start {
     align-items: flex-start; }
   .flex-items-end {
     align-items: flex-end; }
   .flex-items-center {
     align-items: center; }
+  .flex-items-stretch {
+    align-items: stretch; }
   .flex-items-baseline {
     align-items: baseline; }
-  .flex-w-100 {
-    width: 100%; }
-  .flex-w-75 {
-    width: 75%; }
-  .flex-w-66 {
-    width: 66%; }
-  .flex-w-50 {
-    width: 50%; }
-  .flex-w-33 {
-    width: 33%; }
-  .flex-w-25 {
-    width: 25%; }
-  .flex-default {
-    flex-flow: row row-reverse; }
-  @media only screen and (max-width: 999px) {
-    .flex {
-      flex-direction: column; }
-      .flex-w-75 {
-        width: 100%; }
-      .flex-w-66 {
-        width: 100%; }
-      .flex-w-50 {
-        width: 100%; }
-      .flex-w-33 {
-        width: 100%; }
-      .flex-w-25 {
-        width: 100%; } }
+  .flex-shrink {
+    flex-shrink: 2; }
+    .flex-shrink-more {
+      flex-shrink: 3; }
+  .flex-grow {
+    flex-grow: 2; }
+    .flex-grow-more {
+      flex-grow: 3; }
+  .flex-self-start {
+    align-self: flex-start; }
+  .flex-self-end {
+    align-self: flex-end; }
 
-nav {
-  margin: 0;
-  padding: 0; }
-
-.header__container img {
-  cursor: pointer; }
+header > * {
+  margin: 0 auto; }
 
 .flex {
   margin-bottom: 1em;
@@ -374,9 +374,6 @@ hr {
   margin-bottom: 3em;
   margin-top: 1em;
   border-color: #000; }
-
-header img {
-  margin: 0 10%; }
 
 html, body {
   font-family: 'Titillium Web', sans-serif; }
@@ -388,24 +385,3 @@ nav {
   background: linear-gradient(white, rgba(255, 255, 255, 0.75));
   box-shadow: 0 1em 90px #000;
   z-index: 1000; }
-  nav a {
-    text-decoration: none;
-    color: #271a6d; }
-    nav a:hover {
-      text-decoration: underline; }
-
-.flex-w-50.u-margin-1.u-padding-1 ul {
-  list-style: square;
-  margin: 1.2rem; }
-
-@media only screen and (max-width: 767px) {
-  .u-margin-1.u-padding-1.u-border-1.bg-grey {
-    margin: -0.1em;
-    margin-bottom: 1em; } }
-
-.bg-grey {
-  box-shadow: 1px 1px 1em black; }
-  .bg-grey button {
-    margin-top: 1.51em;
-    float: right;
-    border-radius: 3px; }
