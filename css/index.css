@@ -277,5 +277,23 @@ footer {
     .middle-img{
         width: 700px;
     }
+    @media screen and(max-width: 500px) {
+        container{
+          width:500px;  
+        }
+        header{
+            width: 500px;
+            align-content: center;
+            justify-content: center;
+        }
+        header nav{
+            flex-direction:column;
+        }
+        header nav a{
+         border-bottom: 1px solid black;
+         width:550px;
+         text-align: center; 
+        }
+    }
 
 }
