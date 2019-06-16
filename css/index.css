@@ -178,11 +178,16 @@ nav {
 }
 
 @media (max-width: 500px) {
-    header {
+    nav {
         display: flex;
         flex-direction: column-reverse;
+        order: -1;
+        align-items: center; 
+        margin-top:  1px black solid;  
     }
 }
+
+
 
 .section1 {
     display: flex;
@@ -191,7 +196,14 @@ nav {
     margin-top: 50px;
 }
 
-
+@media (max-width: 500px) {
+    .section1 {
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+}
 
 .image-box {
     display: flex;
@@ -199,6 +211,12 @@ nav {
     width: auto;
     height: auto;
     font-size: 100px;
+}
+
+@media (max-width: 500px) {
+    .image-box {
+        display: none;
+    }
 }
 
 .banner {
@@ -240,6 +258,13 @@ nav .anchors {
     color: rgb(82, 79, 79);
 }
 
+@media (max-width: 500px) {
+    nav .anchors {
+        border-top: ;
+
+    }
+}
+
 .line1 {
     margin-top: 50px;
     margin-bottom: 30PX;
@@ -261,11 +286,22 @@ nav .anchors {
     font-size: 25px;
 }
 
+@media (max-width: 500px) {
+    .section2 {
+        margin-top: 20px;
+    }
+}
 
 .middle-img {
     width: 100%;
     margin-bottom: 30px;
     margin-top: 30px;
+}
+
+@media (max-width: 500px) {
+    .middle-img {
+        margin-top: 200px;
+    }
 }
 
 .section-prime {
@@ -299,10 +335,22 @@ nav .anchors {
     box-sizing: content-box;
 }
 
+@media (max-width: 500px) {
+    .ex .ex .ex {
+        flex-direction: column;
+
+    }
+}
 
 .line2 {
     margin-top: 80px;
     margin-bottom: 50px;
+}
+
+@media (max-width: 500px) {
+    .line2 {
+        margin : 400px 0 30px 0;
+    }
 }
 
 .address-container {
@@ -328,4 +376,10 @@ nav .anchors {
     margin-top: 150px;
     margin-bottom: 150px;
     text-align: center;
+}
+
+@media (max-width: 500px) {
+    .copyright {
+        margin-top: 100px;
+    }
 }
