@@ -1,3 +1,422 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+.container {
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+@media (max-width: 800px) {
+  .container {
+    width: 800px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    width: 500px;
+    margin: 0 auto;
+  }
+}
+
+header nav {
+  display: inline-block;
+  width: 691px;
+  vertical-align: top;
+  margin-top: 35px;
+}
+
+@media (max-width: 800px) {
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+  }
+}
+
+header nav a {
+  margin-right: 65px;
+  color: gray;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+header nav a:first-child {
+  margin-left: 0;
+}
+
+header nav a:last-child {
+  margin-right: 0;
+}
+
+header .logo {
+  margin-top: 25px;
+}
+
+@media (max-width: 800px) {
+  header {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .logo {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  header nav {
+    display: flex;
+    flex-direction: column;
+    margin-left: 210px;
+  }
+  header nav a {
+    margin-bottom: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 1px solid grey;
+  }
+
+  .logo {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.import .import-text {
+  display: inline-block;
+  font-size: 77px;
+  padding: 0px 75px;
+  text-align: center;
+  margin-top: 120px;
+  vertical-align: top;
+}
+
+.import .import-text button {
+  background-color: white;
+  border: 1px solid black;
+  vertical-align: top;
+  margin-top: 6px;
+  font-size: 17px;
+  padding: 8px 44px;
+  cursor: pointer;
+}
+
+.import .import-text button:hover {
+  background: black;
+  color: white;
+}
+
+@media (max-width: 800px) {
+  .import {
+    display: flex;
+    margin-left: 155px;
+  }
+
+  .import .import-text {
+    margin-top: 60px;
+  }
+
+  .import .import-text button {
+    padding: 6px 44px;
+    font-size: 14px;
+    border: 1px solid black;
+  }
+}
+
+@media (max-width: 500px) {
+  .import {
+    display: flex;
+    margin-left: 33px;
+    height: 350px;
+  }
+
+  .import .import-text {
+    font-size: 60px;
+    margin-top: 20px;
+  }
+}
+
+.import img {
+  display: inline-block;
+  margin-top: 69px;
+}
+
+@media (max-width: 800px) {
+  .import img {
+    visibility: hidden;
+  }
+}
+
+.main-block {
+  border-top: 1px solid black;
+  margin-top: 76px;
+  padding-top: 39px;
+}
+
+@media (max-width: 800px) {
+  .main-block {
+    border-top: 3px solid black;
+    margin-top: -50px;
+    padding-top: 39px;
+  }
+}
+
+.main-block .text-top {
+  padding: 0 10px;
+}
+
+.main-block .text-top .top-text {
+  width: 410px;
+  display: inline-block;
+  margin-right: 34px;
+}
+
+.main-block .text-top .top-text:last-child {
+  margin-right: 0;
+}
+
+@media (max-width: 800px) {
+  .text-top {
+    display: flex;
+    align-content: space-evenly;
+  }
+}
+
+@media (max-width: 500px) {
+  .text-top {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .top-text {
+    margin-bottom: 40px;
+  }
+}
+
+.main-block .middle-img {
+  margin-top: 45px;
+}
+
+@media (max-width: 800px) {
+  .main-block .middle-img {
+    display: flex;
+    margin-top: 35px;
+  }
+}
+
+@media (max-width: 500px) {
+  .main-block .middle-img {
+    display: flex;
+    margin-top: 0;
+    width: 500px;
+  }
+}
+.main-block .bottom-block {
+  margin-top: 37px;
+  padding: 0 10px;
+}
+
+.main-block .bottom-block .top-text {
+  width: 275px;
+  display: inline-block;
+  margin-right: 12px;
+}
+
+.main-block .bottom-block .top-text:last-child {
+  margin-right: 0;
+}
+
+@media (max-width: 800px) {
+  .bottom-block {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 500px) {
+  .bottom-block {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-block .bottom-block .top-text {
+    width: 400px;
+  }
+}
+.contact {
+  margin-top: 57px;
+  border-top: 1px solid black;
+  padding: 39px 10px 0;
+}
+
+@media (max-width: 500px) {
+  .contact {
+    margin-top: 0;
+    border-top: 3px solid black;
+  }
+}
+
+.contact p {
+  margin: 20px 0;
+}
+footer {
+  text-align: center;
+  margin: 32px 0;
+  font-size: 14px;
+}
