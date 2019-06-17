@@ -306,9 +306,13 @@ hr .media {
     display: none
 }
 
+footer {
+    margin-top: 80px;
+}
 
 
-Tablet Media View
+
+/* Tablet Media View */
 
     @media (max-width: 900px) {
 
@@ -319,39 +323,76 @@ Tablet Media View
             width:100%;
             justify-content:center;
             background-color: yellow;
-    
-            
+            border: green 1px solid
+      
         }
 
         nav {
             display: flex;
             flex-wrap: wrap;
-            align-items: flex-start;
+            justify-content: center;
+            justify-content: space-evenly;
             width: 100%;
-            border: red solid 1px;
-            height: 250px
+            height: 250px;
+            margin-left: 0px;
+            border: purple 1px solid;
         }
 
+        .navigate {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          border: 1px solid tan;
+          margin-top: 90px;
+          
+        }
 
         .text-content {
             display: inline-block;
-            margin-left: 20px;
-            width: 46%;
+            flex-wrap: wrap;
+            justify-content: right;
+            width: 46%; 
+            font-size: 0.9rem
         }
+
+        .about-content {
+          margin-left: 33px
+        }
+        
     
         .logo {
             display: flex;
             flex-wrap: wrap;
             align-items:center;
+            align-items: flex-start;
             width: 80%;
+            border: pink solid 1px;
+            
+          
+        }
+
+        .logo-box {
           
         }
        
         hr {
-            display: none;
+          margin-bottom: 60px;
+          border: 1px black solid;
+          
+      }
+        
+        .middle-img {
+          display: flex;
+          flex-wrap: wrap;
+          margin-right: 200px;
+          width: 773px;
         }
 
+        .top-content {
+          width: 100%;
+        }
 
+      
     a {
         display: flex;
         flex-wrap: wrap;
@@ -366,31 +407,36 @@ Tablet Media View
         display:none
     }
 
-   
     .contact {
         
         float:right;
         margin-bottom: 30px;
         padding-top: 90px;
-        margin-right: 650px
+        margin-right: 600px
+    }
+
+    .phone-number {
+      padding-top: 20px;
+      padding-bottom: 20px;
     }
  
     footer {
+        margin-right: 120px;
+        width: 100%;
+        padding-bottom: 100px
 
-        padding-bottom: 900px;
-        padding-right:300px;
-        
         }
 
 }
 
-/* Mobile Media View */
+
+/*Mobile Media View */
 
 @media (max-width: 766px) {
     .container {
         display: flex;
         flex-wrap: wrap;
-        width: 500px;
+        width: 100%;
         justify-content:center;
         background-color: orange;                                       
     }
@@ -448,4 +494,4 @@ Tablet Media View
 
     }
 
-    sss
+    
