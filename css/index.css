@@ -187,8 +187,9 @@ nav {
     }
 }
 
-
-
+.section1-container {
+    display: flex;
+}
 .section1 {
     display: flex;
     margin: 30px;
@@ -200,7 +201,8 @@ nav {
     .section1 {
         height: 300px;
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
+        flex-direction: row;
         margin-bottom: 20px;
     }
 }
@@ -277,6 +279,13 @@ nav .anchors {
     height: 250px;
 }
 
+@media (max-width: 500px) {
+    .section2-container {
+        flex-direction: column;
+        height: 600px;
+    }
+}
+
 .section2 {
     margin: 5px;
     border: none;
@@ -289,6 +298,9 @@ nav .anchors {
 @media (max-width: 500px) {
     .section2 {
         margin-top: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: column;
     }
 }
 
@@ -325,6 +337,14 @@ nav .anchors {
     font-size: 25px;
     margin: 0 0 0 0;
     justify-content: space-between;
+    height: 600px;
+}
+
+@media (max-width: 500px) {
+    .ex-container {
+        flex-direction: column;
+        height: 600px;
+    }
 }
 
 .ex .ex .ex {
@@ -338,6 +358,8 @@ nav .anchors {
 @media (max-width: 500px) {
     .ex .ex .ex {
         flex-direction: column;
+        margin-top: 50px;
+        margin-bottom: 50px;
 
     }
 }
