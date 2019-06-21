@@ -227,6 +227,13 @@ nav {
     width: auto;
 }
 
+@media (max-width: 500px) {
+    .banner {
+        display: flex;
+        align-items: center;
+    }
+}
+
 .banner:hover {
     color: cadetblue;
 }
@@ -282,14 +289,16 @@ nav .anchors {
 @media (max-width: 500px) {
     .section2-container {
         flex-direction: column;
-        height: 600px;
+        height: 200px;
+        width: 100%;
+        font-size: 25px;
     }
 }
 
 .section2 {
     margin: 5px;
     border: none;
-    width: 500px;
+    width: 400px;
     height: 100px;
     box-sizing: border-box;
     font-size: 25px;
@@ -298,9 +307,15 @@ nav .anchors {
 @media (max-width: 500px) {
     .section2 {
         margin-top: 20px;
-        margin-bottom: 20px;
+        margin-bottom: 70px;
         display: flex;
         justify-content: column;
+    }
+}
+
+@media (max-width: 500px) {
+    .middle-section {
+        margin-top: 200px;
     }
 }
 
@@ -313,6 +328,8 @@ nav .anchors {
 @media (max-width: 500px) {
     .middle-img {
         margin-top: 200px;
+        margin-bottom: 100px;
+
     }
 }
 
@@ -343,7 +360,7 @@ nav .anchors {
 @media (max-width: 500px) {
     .ex-container {
         flex-direction: column;
-        height: 600px;
+        height: 450px;
     }
 }
 
