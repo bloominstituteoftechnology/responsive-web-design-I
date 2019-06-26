@@ -173,6 +173,14 @@ h5 {
     }
 }
 
+@media (max-width: 800px) {
+    .container {
+        width: 800px;
+        margin: auto;
+        height: 1500px;;
+    }
+}
+
 nav {
     margin-top: 30px;
 }
@@ -187,14 +195,56 @@ nav {
     }
 }
 
+@media (max-width: 800px) {
+    nav  {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        flex-flow: row wrap;
+    }
+
+}
+
+@media (max-width: 800px) {
+    .logo {
+        order: 1;
+        width: 500px;
+        height: 100px;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .anchors {
+        order: 2;
+    }
+}
+
+@media all and (min-width: 800px) {
+    .logo   { flex: 3 0px; }
+    .anchors { 
+        order: 1; 
+    } 
+}
+
 .section1-container {
     display: flex;
 }
+
+@media (max-width: 800px) {
+    .section1-container {
+        margin-left: 130px;
+        width: 300px;
+    }
+}
+
 .section1 {
     display: flex;
     margin: 30px;
     justify-content: space-around;
     margin-top: 50px;
+    font-size: 25px;
 }
 
 @media (max-width: 500px) {
@@ -221,6 +271,12 @@ nav {
     }
 }
 
+@media (max-width: 800px) {
+    .image-box {
+        display: none;
+    }
+}
+
 .banner {
     font-size: 100px;
     height: auto;
@@ -233,6 +289,8 @@ nav {
         align-items: center;
     }
 }
+
+
 
 .banner:hover {
     color: cadetblue;
@@ -290,7 +348,9 @@ nav .anchors {
 @media (max-width: 800px) {
     .line1 {
      margin: 80px 0 30px 0;
-     width: 400px;
+     width: 800px;
+     color: black;
+     background: black;
     }
 }
 
@@ -315,6 +375,7 @@ nav .anchors {
         margin-left: 30px;
     }
 }
+
 
 .section2 {
     margin: 5px;
@@ -360,6 +421,7 @@ nav .anchors {
     .middle-img {
         width: 700px;
         position: center;
+        margin-left: 40px;
         
     }
 }
@@ -367,7 +429,6 @@ nav .anchors {
 .section-prime {
     display: flex;
     margin-top: 20px;
-    ;
     margin: 1px;
     border: 0;
     width: 350px;
@@ -425,7 +486,7 @@ nav .anchors {
 
 @media (max-width: 800px) {
     .line2 {
-        margin: 800px 0 30px 0;
+        margin: 0 auto;
     }
 }
 
@@ -457,5 +518,11 @@ nav .anchors {
 @media (max-width: 500px) {
     .copyright {
         margin-top: 100px;
+    }
+}
+
+@media (max-width: 800px) {
+    .copyright {
+
     }
 }
