@@ -1,3 +1,304 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+*{
+	box-sizing: border-box;
+}
+
+.wrapper{
+	width: 90%;
+	margin: 0 auto;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+nav{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+a{
+	text-decoration: none;
+	font-size: 13px;
+	color: gray;
+}
+
+.heading{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 40px;
+}
+
+h1{
+	display: inline-block;
+	font-size: 60px;
+	text-align: center;
+}
+
+.innerHead{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+hr{
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.topRow{
+	display: flex;
+	justify-content: space-around;
+	margin-top: 45px;
+}
+
+.topCol{
+	width: 45%;
+}
 
 
+.getStarted{
+	border: 1px solid black;
+	padding: 3px 10px 3px 10px;
+}
+
+.middle-img{
+	width: 100%;
+	height: auto;
+	padding-top: 45px;
+	padding-bottom: 45px;
+}
+
+.botRow{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.botCol{
+	width: 32%;
+}
+
+footer{
+	margin-top: 40px;
+	text-align: center;
+}
+
+.services-header-img{
+    border-radius: 20px;
+}
+
+a:hover{
+    font-size: 18px;
+    background-color: lightgrey;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@media (max-width: 800px) {
+	
+	.wrapper{
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	nav{
+		margin-top: 40px;
+		width: 100%;
+		margin-left: 10%;
+		margin-right: auto;
+	}
+	
+	.topNav{
+		display: flex;
+		justify-content: space-around;
+	}
+	
+
+	.logo{
+		position: relative;
+		right: 48%;
+		bottom: 30px;
+		height: auto;
+		width: 120px;
+	}
+
+	.bigLogo{
+		display: none;
+	}
+
+	h1{
+		width: 100%;
+		font-size: 45px;
+		position: relative;
+		top: 34px;
+		right: 12%;
+	}
+
+	.getStarted{
+		position: relative;
+		top: 36px;
+		right: 12%;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.middle-img{
+		width: 100%;
+		height: auto;
+	}
+
+	hr{
+		width: 100%;
+		margin-top: 10%;
+		margin-bottom: 10%;
+	}
+
+}
+
+@media (max-width: 400px){
+
+	.wrapper{
+		width: 100%;
+		margin: 0 auto;
+	}
+
+
+
+	nav{
+		margin-top: 40px;
+		width: 100%;
+		margin-left: 10%;
+		margin-right: auto;
+	}
+	
+	.topNav{
+		display: flex;
+		justify-content: space-around;
+	}
+	
+
+	.logo{
+		position: relative;
+		right: 48%;
+		bottom: 30px;
+		height: auto;
+		width: 120px;
+	}
+
+	.bigLogo{
+		display: none;
+	}
+
+	h1{
+		width: 100%;
+		font-size: 45px;
+		position: relative;
+		top: 34px;
+		right: 12%;
+	}
+
+	.getStarted{
+		position: relative;
+		top: 36px;
+		right: 12%;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.middle-img{
+		width: 100%;
+		height: auto;
+	}
+
+	hr{
+		margin-top: 10%;
+		margin-bottom: 10%;
+	}
+
+
+	.topRow{
+		display: inline;
+	}
+
+	.topCol{
+		margin: 0 auto;
+		padding-bottom: 7%
+	}
+
+	.botRow{
+		display: inline;
+	}
+
+	.botCol{
+		margin: 0 auto;
+		padding-bottom: 7%;
+	}
+}
