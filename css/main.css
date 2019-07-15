@@ -166,3 +166,46 @@ ul {
 footer {
     margin: 5% auto;
 }
+
+@media only screen and (max-width: 800px){
+    .container {
+        width: 100%;
+      }
+      header {
+        flex-direction: column-reverse;
+      }
+      nav {
+        width: 100%;
+        margin: 5% auto;
+      }
+}
+
+@media only screen and (max-width: 500px){
+    nav {
+        flex-direction: column;
+        align-items: center;
+        margin: 5% auto;
+      }
+      a {
+        width: 100%;
+        padding: 3% 0%;
+        border-top: 1px solid gray;
+        border-bottom: 1px solid black;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+      }
+      .sectionBorder{
+          widows: 100%;
+          flex-direction: column;
+      }
+      .facts{
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-around;
+      }
+      .services-info-img{
+          width: 100%;
+          margin-top: 7%;
+      }
+}
