@@ -67,7 +67,7 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Header Styles */
-@media(min-width: 768px){
+
 header {
     width: 100%;
     display: flex;
@@ -245,3 +245,32 @@ footer {
   width: 420px;
   height: 300px;
 }
+
+@media(max-width: 800px){
+header{
+    flex-wrap: wrap-reverse;
+    border: 2px solid black;
+    
+
+    }
+header .logoContainer {
+    width:100%;
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+   
+}
+header .logo{
+    margin:0;
+}    
+header nav {
+    border: 2px solid black;
+    width: 100%;
+}
+
+.img/header-img.png {
+    display: none;
+}
+}
+
+
