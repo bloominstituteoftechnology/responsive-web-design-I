@@ -164,7 +164,7 @@ header div {
 }
 
 .main-content .top-content .text-content {
-    width: 410px;
+    width: 50%;
     display: flex;
 }
 
@@ -307,7 +307,7 @@ ul {
         height: auto;
     }
     .cta img {
-        display:none;
+        display: none;
     }
     .cta{
         justify-content: center;
@@ -335,6 +335,9 @@ ul {
     img{
         max-width: 100%;
         height: auto;
+    }
+    header {
+        width: 100%;
     }
     header nav{
         order: 2;
@@ -364,27 +367,55 @@ ul {
     header nav a:last-child{
         margin: auto;
     }*/
-
+    .main-content{
+        padding: 2%;
+    }
     .top-content{
         order: 3;
+        flex-direction: column;
+        /*text-align: center;*/
     }
 
     .features{
         order: 4;
+        /*margin: auto;*/
+        /*text-align: center;*/
+        width: 100%;
     }
     .about{
         order: 5;
+        /*margin: auto;*/
+        /*text-align: center;*/
+        width: 100%;
     }
     .middle-img{
         order: 6;
+        /*margin: auto;*/
+        width: 100%;
+    }
+    .bottom-content {
+        order: 7;
+        flex-direction: column;
+        /*text-align: center;*/
     }
     .services{
-        order: 7;
+        order: 8;
+        /*margin: auto;*/
+        /*text-align: center;*/
+        width: 100%;
     }
     .product{
-        order: 8;
+        order: 9;
+        /*margin: auto;*/
+        /*text-align: center;*/
+        width: 100%;
     }
     .vision{
-        order: 9;
+        order: 10;
+        /*margin: auto;*/
+        /*text-align: center;*/
+        width: 100%;
     }
+    
+    
 }
