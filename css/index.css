@@ -61,6 +61,10 @@ h1, h2, h3, h4, h5, h6, h7 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+button{
+    background: none;
+    border: solid black;
+}
 .top{
 	padding: 10px 20px 20px;
 
@@ -84,9 +88,9 @@ h1{
 section{
 	display: flex;
 	flex-wrap: wrap;
-	width: 500px;
-	height: 150px;
-	padding:30px;
+	width: 100%;
+	height: 10%;
+	padding:3%;
 }
 h2, h3, h4, h5, h6, h7{
 font-size: 30px;
@@ -118,7 +122,7 @@ font-size: 30px;
 	flex-direction: column;
 }
 .mid-img{
-	margin:0 0 0 64px;
+	margin:auto;
 }
 .boxes{
 	width: 411px;
@@ -166,6 +170,29 @@ h1{
 }
 .big{
     margin: 0px 20% 0px;
+}
+.button-div{
+    display:flex;
+    justify-content: center;
+}
+.mid{
+    flex-direction:column;
+}
+.middle-img{
+    width: 80%
+}
+body{
+    width: 80%
+}
+.three{
+    flex-direction: column;
+}
+#contact{
+    display: flex;
+    margin: 0 0 5% 0;
+}
+.logo{
+    font-size: 20px;
 }
 }
 /* pad device*/
