@@ -73,7 +73,6 @@ h1, h2, h3, h4, h5 {
 	margin:0;
 	max-width: 100%;
 }
-
 .container {
 	width: 60%;
 	margin: 0% auto;
@@ -158,4 +157,27 @@ button {
 	display: flex;
 	flex-direction: column;
 	margin: 3% auto;
+}
+
+@media screen and (max-width: 800px){
+    header{
+        flex-direction: column-reverse;
+    }
+    nav{
+        width: 100%;
+        margin: 5% auto;
+    }
+    .headerImg{
+        display: none;
+    }
+    .cta-text{
+        width: 100%;
+        align-items: center;
+        margin: 5% auto;
+    }
+
+}
+
+@media screen and (max-width: 500px){
+
 }
