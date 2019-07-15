@@ -63,8 +63,6 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
-
 /* Your code starts here! */
 .gcontainer{
 	margin: 100px;
@@ -75,11 +73,18 @@ div{
 p{
 font-size: 20px;	
 }
-nav{
+
+nav {
+	display: flex;
+}
+
+.links {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+	flex-grow: 1;
 }
+
 .main-header{
 	display: flex;
 	justify-content: space-around;
@@ -211,5 +216,25 @@ ul{
 .footer-text{
 	padding: 70px;
 }
-@media screen(max-width: 800px)
 
+* {
+	border: 1px dotted red !important;
+}
+
+@media (max-width: 800px) {
+	.gcontainer nav {
+		flex-direction: column;
+
+	}
+
+	.logo {
+		display: flex;
+		justify-content: center;
+		order: -1;
+	}
+
+	.header-right {
+		display: none;
+	}
+
+}
