@@ -273,6 +273,48 @@ ul {
 	flex-wrap: wrap;
 }
 
+/* tablet view starts here */
+@media screen and (max-width: 800px) {
+	.entirepage {
+		width: 100%;
+	}
+
+	.navbar {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		padding: 2%;
+	}
+
+	.navbar :nth-child(1) {order: 2;}
+	.navbar :nth-child(2) {order: 3;}
+	.navbar :nth-child(3) {order: 4;}
+	.navbar :nth-child(4) {order: 5;}
+	.navbar :nth-child(5) {order: 6;}
+	.navbar :nth-child(6) {order: 7;}
+	.navbar :nth-child(7) {
+		order: 1;
+		width: 100%;
+		justify-content: center;
+		margin-bottom: 5%;
+	}
+	
+
+	.banner img{
+		display: none;
+	}
+
+	.banner {
+		display: flex;
+		margin: 0 auto;
+		margin-bottom: 8%; 
+	}
+
+	.gsbutton {
+		width: 60%;
+		padding: 2% 8%;
+	}
+}
 /* MOBILE STYLE STARTS HERE */
 
 @media screen and (max-width: 500px){
@@ -293,7 +335,8 @@ ul {
         width: 100%;
         display: flex;
         justify-content: center;
-        padding: 4%;
+		padding: 4%;
+		
     }
 
     .navbar :nth-child(1) {order: 2;}
@@ -302,7 +345,10 @@ ul {
     .navbar :nth-child(4) {order: 5;}
     .navbar :nth-child(5) {order: 6;}
     .navbar :nth-child(6) {order: 7;}
-    .navbar :nth-child(7) {order: 1;}
+    .navbar :nth-child(7) {
+		order: 1;
+		margin: 0;
+	}
 
     .banner{
         margin: 2% auto;
@@ -346,48 +392,4 @@ ul {
         width: 100%;
     }
 
-}
-
-/* tablet view starts here */
-
-@media screen and (max-width: 800px) {
-    .entirepage {
-        width: 100%;
-    }
-
-    .navbar {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        padding: 2%;
-    }
-
-    .navbar :nth-child(1) {order: 2;}
-    .navbar :nth-child(2) {order: 3;}
-    .navbar :nth-child(3) {order: 4;}
-    .navbar :nth-child(4) {order: 5;}
-    .navbar :nth-child(5) {order: 6;}
-    .navbar :nth-child(6) {order: 7;}
-    .navbar :nth-child(7) {
-        order: 1;
-        width: 100%;
-        justify-content: center;
-        margin-bottom: 5%;
-    }
-    
-
-    .banner img{
-        display: none;
-    }
-
-    .banner {
-        display: flex;
-        margin: 0 auto;
-        margin-bottom: 8%; 
-    }
-
-    .gsbutton {
-        width: 60%;
-        padding: 2% 8%;
-    }
 }
