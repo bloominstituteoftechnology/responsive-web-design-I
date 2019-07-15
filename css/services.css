@@ -154,20 +154,26 @@ h5 {
 
 
 body {
-  width: 886px;
+  width: 876px;
   margin: auto;
 }
 header {
   display: flex;
   margin: 20px 0;
   justify-content: space-between;
+  margin: 30px 0;
   align-items: center;
 }
 
 header nav {
   display: flex;
-  width: 70%;
+  width: 65%;
   justify-content: space-between;
+}
+
+header nav a {
+  text-decoration: none;
+  color: grey;
 }
 
 .services-header-img {
@@ -184,8 +190,12 @@ h2{
 }
 
 p {
-    margin: 20px 20 px;
+    margin: 20px 20px;
     padding: 20px 20px;
+}
+
+li{
+  margin: 0 40px;
 }
 
 .services {
@@ -227,7 +237,113 @@ button {
     
 }
 
+.bottom-section img{
+  width: 50%;
+  height: auto;
+}
+
 footer{
     
     text-align: center;
+    margin: 40px 0;
+}
+
+/* Media query for tablets */
+
+@media only screen and (max-width: 800px) {
+  body {
+    background-color: azure;
+    width: 800px;
+  }
+
+  .container {
+    width: 700px;
+  }
+
+  header {
+    flex-direction: column-reverse;
+    justify-content: center
+  }
+
+  header nav {
+    width: 90%;
+    margin: 30px 0;
+  }
+
+  .services{
+    margin: 30px 30px;
+    justify-content: center
+  }
+
+.services img{
+  width: 100%;
+  height: auto;
+}
+
+.box-section{
+  justify-content: center;
+}
+
+.box-section .box-content {
+  width: 85%;
+
+}
+
+.bottom-section img{
+  width: 45%;
+  height: auto;
+}
+}
+
+/* Media Query for phones */
+
+@media only screen and (max-width: 500px) {
+  body {
+    background-color: antiquewhite;
+    width: 500px;
+  }
+
+  .container {
+    width: 400px;
+  }
+
+  header {
+    flex-direction: column-reverse;
+  }
+
+  header nav {
+    flex-direction: column;
+    text-align: center;
+    width: 90%;
+    margin: 30px 0;
+  }
+
+  header nav a {
+    border-top: 1px solid black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .services{
+    margin: 30px 30px;
+    justify-content: center
+  }
+
+.services img{
+ display: none;
+}
+
+.box-section{
+  justify-content: center;
+}
+
+.box-section .box-content {
+  width: 85%;
+  justify-content: center;
+
+}
+
+.bottom-section img{
+  display: none;
+}
 }
