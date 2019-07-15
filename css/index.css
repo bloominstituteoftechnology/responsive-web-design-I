@@ -1,3 +1,209 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+    
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+/* body{margin: 0 auto;
+        width: 865px;} */
+
+.container {margin: 0 auto;
+	width: 865px;}
+
+
+nav{ display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+border: 6px groove yellow;}
+
+a{ color: yellow;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;}
+
+
+.MidSection{ display: flex;
+		align-items: center;
+		justify-content: center;
+		padding:20px}
+
+.startbutton{ margin-left: 40%}
+
+.title{ display: flex;
+flex-direction: column;
+font-size: 60px;
+text-align: center;}
+
+.TopClass{display: flex;
+			padding: 20px;}
+
+h2{font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	}
+
+.middle-img{border-radius: 10px;
+                }
+
+.BottomClass{display: flex;
+             padding-top: 50px;}
+
+.Contact{ display: flex;
+			padding-right: 20px;
+			margin-top: 20px;
+			margin-bottom: 20px;
+		 }
+
+footer{ text-align: center;}
+
+.Heading{ display: flex;
+		flex-direction: column;
+		}
+
+.Body{ display: flex;
+		flex-flow: wrap;
+		 }
+
+
+.Seperator{ border: 2px solid black;
+			background-color: grey;
+			width: 45%;
+			text-align: left;
+			margin: 20px;
+			}
+
+.Bottom1{ display: flex;
+			flex-direction: column;}
+
+.PictureWith{ display: flex;}
+
+li{list-style-type: circle;
+	list-style-position: inside;}
+
+.Label{  border-radius: 25px;
+	background: darkgoldenrod;
+	padding: 20px; 
+	width: 200px;
+	height: 60px; 
+	text-align: center;
+	margin-left: 40%;}
+
+	.startbutton{ height: 20%;
+		width: 20%;
+		border-radius: 30px;
+		border: 1px solid black;}
+
+    .services-info-img{border-radius: 50%;}
+    
+
+    /* Responsive Styles */
+
+    @media (max-width: 800px){
+        .container{ width: 500px;}
+        header{ display: flex;
+        flex-direction: column-reverse;
+        align-items: center;}
+
+        .circle{ display:none;}
+
+        .middle-img{ object-fit: contain;
+                    width: 500px;}
+
+
+
+        } 
+
+
+
+@media ( max-width: 500px){
+    .container{width: 300px;}
+
+    .title{ display: flex;
+        justify-content: center;}
+
+    header nav{ display: flex;
+                flex-direction: column;
+                align-items: center;}
+
+    header nav a{ width: 300px;
+                border-bottom: 1px solid gray;
+                padding: 5px;
+                display: flex;
+                justify-content: center;}
+
+    .TopClass{ display: flex;
+                flex-direction: column;}
+
+    .BottomClass{display: flex; flex-direction: column;}
+
+    .middle-img{ object-fit: contain;
+        width: 300px;}
+
+    }
+
+    
+
+
+
 
