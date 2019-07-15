@@ -1,3 +1,362 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+.container {
+    max-width: 880px;
+    width: 100%;
+	margin: 0 auto;
+	/* border: 1px solid red; */
+}
+
+header nav {
+    max-width: 880px;
+	width: 100%;
+	vertical-align: top;
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+a:hover {
+  color: black;
+}
+
+header nav a {
+  text-decoration: none;
+  color: white;
+}
+
+header {
+  background-color: rgb(74, 122, 255);
+	display: flex;
+	justify-content: space-evenly;
+	margin-top: 20px;
+}
+
+header .logo {
+	margin-top: 1%;
+	margin-left: 3em;
+	margin-right: 5%;
+}
+  
+  /* code-snippet */
+  .code-snippet {
+    font-size: 72px;
+    margin-top: 8%;
+    border-bottom: 1px solid black;
+    text-align: center;
+    display: flex;
+    }
+
+  .snippet-text {
+    margin-left: 12%;
+    margin-top: 5%;
+  }
+  button:hover {
+    color: black;
+  }
+
+  .snippet-text button {
+    height: 30px;
+    width: 160px;
+    background: white;
+    vertical-align: top;
+    margin-left: 22%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .code-snippet .headimg {
+    margin-left: 10%;
+    margin-bottom:6%;
+    vertical-align: top;
+  }
+
+  /* main-content */
+  .main-content {
+    margin-top: 10px;
+    padding-top: 39px;
+  }
+  
+  .main-content .top-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+  }
+  
+  .main-content .top-content .text-content {
+    width: 500px;
+    margin-left: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-content: center;
+ 
+  }
+  
+  .main-content .middle-img {
+    margin: 2%;
+    display: flex;
+    justify-content: stretch;
+  }
+  /* bottom-content */
+  .main-content .bottom-content {
+    width: 900px;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .main-content .bottom-content .text-content {
+    width: 275px;
+    margin-left: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-items: stretch;
+  }
+
+  .bottom-content .text-content {
+    display: flex;
+    flex-direction: row;
+
+  }
+  
+  .main-content .bottom-content .text-content:last-child {
+    margin-bottom: 4%;
+    margin-right: 0;
+  }
+
+  /* contact */
+  .contact {
+    padding: 39px 10px 0;
+    }
+    
+    .contact p {
+    margin: 20px 0;
+    }
+    
+    footer {
+    margin: 32px 0;
+    text-align: center;
+    font-size: 14px;
+    }
 
 
+  /* services css */
+
+  .container {
+    width: 880px;
+    margin: auto;
+    /* border: 1px solid red; */
+  }
+  
+  header nav {
+    width: 700px;
+    vertical-align: top;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  a:hover {
+    color: black;
+  }
+  
+  header nav a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  header {
+    background-color: rgb(74, 122, 255);
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+  }
+  
+  header .logo {
+    margin-top: 1%;
+    margin-left: 3em;
+    margin-right: 5%;
+  }
+
+  .services-header-img {
+    margin-top: 2%;
+    margin-bottom: 3%;
+    display: flex;
+    align-items: stretch;
+  }
+
+.services h2 {
+  font-size: 23px;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.bottom-content {
+  border-top: 1px solid black;
+  padding: 2%;
+}
+
+  .box {
+    width: 46%;
+    margin: 20px 0;
+    padding: 15px;
+    background: rgb(247, 247, 247);
+    border: 1px solid black;
+  }
+
+  button {
+    width: 140px;
+    height: 30px;
+    margin-top:7%;
+    background: white;
+  }
+
+  .web-design {
+    display: flex;
+    justify-content: space-between; 
+  }
+
+  .webdev {
+    display: flex;
+    justify-content: space-between; 
+  }
+
+  .mobile {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .middle-boxes {
+    border-bottom: 1px solid black;
+  }
+
+  .bottom-area {
+    display: flex;
+  }
+
+  .text {
+    width: 45%;
+    margin-top: 5%;
+    margin-right: 3%;
+    flex-direction: row;
+  }
+
+  ul {
+    padding: 2%;
+    list-style-type: circle;
+  }
+
+  .services-info-img {
+    margin-top: 5%;
+  }
+
+  .text h2 {
+    font-size: 12px;
+    text-align: left;
+  }
+
+  /* media queries */
+  @media screen and (max-width: 800px) {
+    header {
+        margin: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+    }
+    header nav {
+
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+    }
+    .logo {
+        display: none;
+    }
+     .code-snippet{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    } 
+    img.headimg {
+        display: none;
+    }
+
+    .main-content {
+        margin: auto;
+        width: 100%;
+        
+    }
+  }
+
+ @media screen and (max-width: 500px) {
+      
+  }
