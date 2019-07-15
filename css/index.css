@@ -266,11 +266,11 @@ footer {
 @media only screen and (max-width: 500px) {
   body {
     background-color: antiquewhite;
-    width: 500p;
+    width: 500px;
   }
 
   .container {
-    width: 500px;
+    width: 400px;
   }
 
   header {
@@ -279,10 +279,43 @@ footer {
 
   header nav {
     flex-direction: column;
-    align-content: center;
+    text-align: center;
+  }
+
+  header nav a {
+    border-top: 1px solid black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  header nav #contact {
+    border-bottom: 1px solid black;
   }
 
   .cta .round {
     display: none;
+  }
+
+  .cta .cta-text {
+    font-size: 3.5rem;
+  }
+
+  .main-content h4 {
+    padding-top: 20px;
+  }
+
+  .main-content .top-content {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .main-content img {
+    width: 100%;
+    height: auto;
+  }
+
+  .main-content .bottom-content {
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
