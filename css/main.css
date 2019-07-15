@@ -216,10 +216,12 @@ ul{
 .footer-text{
 	padding: 70px;
 }
-
+/*
 * {
 	border: 1px dotted red !important;
+
 }
+*/
 
 @media (max-width: 800px) {
 	.gcontainer nav {
@@ -236,5 +238,30 @@ ul{
 	.header-right {
 		display: none;
 	}
+
+}
+
+@media (max-width: 500px) {
+.gcontainer {
+	margin: 0 30px;
+}
+
+.links{
+	display: flex;
+	flex-wrap: wrap;
+	align-content: stretch;
+
+	
+
+
+}
+.links a{
+    border-top:black 1px solid;
+	border-bottom:black 1px solid;
+	padding: 10px 0px; 
+	width: 100%;
+	text-align: center;
+	
+}
 
 }
