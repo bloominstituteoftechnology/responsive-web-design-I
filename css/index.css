@@ -71,6 +71,7 @@ h1, h2, h3, h4, h5 {
 	display: flex;
 	flex-direction: column;
 }
+
 /*navigation */
 nav{
 	display: flex;
@@ -88,6 +89,7 @@ nav a{
 	display: flex;
 	margin-top: 10px;
 }
+
 /*header */
 .header div h1{
 	font-size: 60px;
@@ -95,7 +97,6 @@ nav a{
 	margin: 80px 30px 0;
 	display: flex;
 	/* background-color: aqua; */
-	
 }
 
 .header img{
@@ -134,7 +135,7 @@ button{
 	margin-left: 3%;
 	flex-direction: column;
 }
-/*sections */
+
 section{
 	margin: 0;
 	padding: 10px 0;
@@ -208,3 +209,81 @@ section div{
 footer{
 	text-align: center;
 }
+
+/* Responsive Styles */
+/* Tablet-view */
+@media screen and (max-width: 800px){
+    #container{
+        width: 90%;
+    }
+
+    /* navigation */
+    nav{
+        justify-content:center;
+        align-items:center;
+        /* background-color: aquamarine; */
+    }
+
+    .logo{
+        display: flex;
+        flex-flow: column nowrap;
+        flex-direction: column-reverse;
+    }
+
+    /* header */
+    #top{
+        justify-content:center;
+        align-items:center;
+    }
+
+    .col2{
+        display: none;
+    }
+
+    /*sections */
+    section{
+        display: flex;
+        flex-direction: column;
+    }    
+}
+
+
+/* Mobile-view */
+@media screen and (max-width: 500px){
+    #container{
+        display: flex;
+        width: 90%;
+    }
+
+    /* navigation */
+    nav{
+        flex-flow: column nowrap;
+        flex-direction: column-reverse;
+        justify-content:center;
+        align-items:center;
+    }
+
+    nav a{
+        align-content: center;
+        align-items: center;
+    }
+
+    /* header */
+    #top{
+        display: flex;
+        flex-direction: column;
+        padding-right: 40%;
+        /* background-color: aqua; */
+    }
+
+    .col2{
+        display: none;
+    }
+
+    /* sections */
+    section{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
