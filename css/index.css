@@ -1,3 +1,349 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+/* My Code Starts Here */
+
+.container {
+  width: 876px;
+  margin: auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+  align-items: center;
+}
+
+header nav {
+  display: flex;
+  width: 65%;
+  justify-content: space-between;
+}
+
+header nav a {
+  text-decoration: none;
+  color: grey;
+}
+
+.cta {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding: 15px 0 45px 0;
+  border-bottom: 2px solid black;
+}
+
+.cta .cta-text {
+  margin: auto;
+  font-size: 4.5rem;
+}
+
+.cta .cta-text a {
+  font-size: 16px;
+  border: 1px solid black;
+  padding: 5px 20px;
+  text-decoration: none;
+  color: black;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2px solid black;
+}
+
+.main-content .top-content {
+  display: flex;
+  margin: 30px 0;
+}
+
+.main-content .top-content #features {
+  padding-right: 30px;
+}
+
+.main-content .bottom-content {
+  display: flex;
+  margin: 30px 0;
+}
+
+.main-content .bottom-content #services {
+  padding-right: 20px;
+}
+
+.main-content .bottom-content #product {
+  padding-right: 20px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 0;
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Media query for tablets */
+
+@media only screen and (max-width: 800px) {
+    .container {
+        width: 800px;
+        margin: auto;
+      }
+ 
+      header{
+
+      }
+      
+      header nav {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+      }
+      
+      header nav a {
+        text-decoration: none;
+        color: grey;
+      }
+      
+      .cta {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        flex-direction: column;
+        padding: 15px 0 45px 0;
+        border-bottom: 2px solid black;
+      }
+      
+      .cta .cta-text {
+        margin: auto;
+        font-size: 4.5rem;
+      }
+
+      .cta .round{
+          display: none;
+      }
+      
+      .cta .cta-text a {
+        font-size: 16px;
+        border: 1px solid black;
+        padding: 5px 20px;
+        text-decoration: none;
+        color: black;
+      }
+      
+      .main-content {
+        display: flex;
+        flex-direction: column;
+        border-bottom: 2px solid black;
+      }
+      
+      .main-content .top-content {
+        display: flex;
+        margin: 30px 0;
+      }
+      
+      .main-content .top-content #features {
+        padding-right: 30px;
+      }
+      
+      .main-content .bottom-content {
+        display: flex;
+        margin: 30px 0;
+      }
+      
+      .main-content .bottom-content #services {
+        padding-right: 20px;
+      }
+      
+      .main-content .bottom-content #product {
+        padding-right: 20px;
+      }
+      
+      .contact {
+        display: flex;
+        flex-direction: column;
+        margin: 30px 0;
+      }
+      
+      footer {
+        text-align: center;
+        margin-bottom: 30px;
+      }
 
 
+}
+
+@media only screen and (max-width: 500px) {
+  body {
+    background-color: antiquewhite;
+  }
+
+  header{
+      display: flex;
+      flex-direction: column;
+  }
+
+  header nav{
+      display: flex;
+      width: 100%;
+
+  }
+
+  header .logo{
+      display: flex;
+      justify-content: center;
+  }
+}
