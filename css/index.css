@@ -238,112 +238,51 @@ footer {
 /* Media query for tablets */
 
 @media only screen and (max-width: 800px) {
-    .container {
-        width: 800px;
-        margin: auto;
-      }
- 
-      header{
+  body {
+    background-color: azure;
+    width: 800px;
+  }
 
-      }
-      
-      header nav {
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
-      }
-      
-      header nav a {
-        text-decoration: none;
-        color: grey;
-      }
-      
-      .cta {
-        display: flex;
-        justify-content: space-between;
-        text-align: center;
-        flex-direction: column;
-        padding: 15px 0 45px 0;
-        border-bottom: 2px solid black;
-      }
-      
-      .cta .cta-text {
-        margin: auto;
-        font-size: 4.5rem;
-      }
+  .container {
+    width: 700px;
+  }
 
-      .cta .round{
-          display: none;
-      }
-      
-      .cta .cta-text a {
-        font-size: 16px;
-        border: 1px solid black;
-        padding: 5px 20px;
-        text-decoration: none;
-        color: black;
-      }
-      
-      .main-content {
-        display: flex;
-        flex-direction: column;
-        border-bottom: 2px solid black;
-      }
-      
-      .main-content .top-content {
-        display: flex;
-        margin: 30px 0;
-      }
-      
-      .main-content .top-content #features {
-        padding-right: 30px;
-      }
-      
-      .main-content .bottom-content {
-        display: flex;
-        margin: 30px 0;
-      }
-      
-      .main-content .bottom-content #services {
-        padding-right: 20px;
-      }
-      
-      .main-content .bottom-content #product {
-        padding-right: 20px;
-      }
-      
-      .contact {
-        display: flex;
-        flex-direction: column;
-        margin: 30px 0;
-      }
-      
-      footer {
-        text-align: center;
-        margin-bottom: 30px;
-      }
+  header {
+    flex-direction: column-reverse;
+  }
 
+  header nav {
+    width: 90%;
+    margin: 30px 0;
+  }
 
+  .cta .round {
+    display: none;
+  }
 }
+
+/* Media Query for phones */
 
 @media only screen and (max-width: 500px) {
   body {
     background-color: antiquewhite;
+    width: 500p;
   }
 
-  header{
-      display: flex;
-      flex-direction: column;
+  .container {
+    width: 500px;
   }
 
-  header nav{
-      display: flex;
-      width: 100%;
-
+  header {
+    flex-direction: column-reverse;
   }
 
-  header .logo{
-      display: flex;
-      justify-content: center;
+  header nav {
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .cta .round {
+    display: none;
   }
 }
