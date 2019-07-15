@@ -159,7 +159,10 @@ button {
 	margin: 3% auto;
 }
 
-@media screen and (max-width: 800px){
+@media only screen and (max-width: 800px){
+    .container{
+        width: 100%;
+    }
     header{
         flex-direction: column-reverse;
     }
@@ -177,7 +180,31 @@ button {
     }
 
 }
-
-@media screen and (max-width: 500px){
-
+@media only screen and (max-width: 500px){
+    h1{
+        font-size: 50px;
+    }
+    nav{
+        flex-direction: column;
+        align-items: center;
+        margin: 5% auto;
+    }
+    a{
+        width: 100%;
+        padding: 3% 0%;
+        border-top: 1px solid gray;
+        border-bottom: 1px solid black;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    .top-content, .bottom-content{
+        flex-direction: column;
+    }
+    .text-content{
+        width: 100%;
+    }
+    .text-content, .text-content-top{
+        margin: 3% auto;
+    }
 }
