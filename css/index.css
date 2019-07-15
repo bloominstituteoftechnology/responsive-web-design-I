@@ -1,3 +1,236 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, h7 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+button{
+    background: none;
+    border: solid black;
+}
+.top{
+    padding: 10px 20px 20px;
+    display:flex;
+    justify-content: space-around;
+
+}
+nav a{
+    text-decoration: none;
+    color: grey;
+    padding: 0 6%;
+}
+nav {
+	display: flex;
+	justify-content: space-between;
+}
+h1{
+	text-align: center;
+	font-size: 100px;
+	width: 300px;
+}
+.logo{
+	margin: 0px
+}
+section{
+    display: flex;
+    flex-direction: column;
+	width: 100%;
+	height: 10%;
+	padding:3%;
+}
+h2, h3, h4, h5, h6, h7{
+font-size: 30px;
+}
+.pic{
+	display: inline;
+}
+.iod{
+	display: flex;
+    justify-content: center;
+    margin: 4%
+}
+.big{
+	margin: 0px 200px 0px 0px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.mid{
+	display: flex;
+	justify-content: space-evenly;
+}
+.three{
+	display: flex;
+	justify-content: space-between;
+}
+.all{
+	display: flex;
+	justify-content: center;
+    flex-direction: column;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+}
+.mid-img{
+	margin:auto;
+}
+.boxes{
+	width: 411px;
+	height: 250px;
+	border: 3px solid black;
+	margin: 50px;
+	background: lightgrey;
+}
+.all-boxes{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.last{
+	display:flex;
+	justify-content: center;
+}
+ul{
+	margin: 20px;
+}
+li{
+    padding:5px;
+}
+#contact{
+    width: 23%;
+    margin: 7% 0;
+}
+.copy{
+    margin: auto;
+}
+
+/* mobile device*/
+@media only screen and (max-width: 400px){
+
+    nav{
+    flex-direction: column-reverse;
+    justify-content: center;
+    border-bottom: 1px solid black;
+    padding: 0 0 6% 0
+}
+nav a{
+    display:flex;
+    justify-content: center;
+    border-top:1px solid black;
+    padding: 5% 0px 0px 0px;
+    margin: 6% 0px 0px 0px
+}
+#oneimg{
+    display: none;
+}
+h1{
+    font-size: 50px;
+}
+.big{
+    margin: 0px 20% 0px;
+}
+.button-div{
+    display:flex;
+    justify-content: center;
+}
+.mid{
+    flex-direction:column;
+}
+.middle-img{
+    width: 80%
+}
+body{
+    width: 80%
+}
+.three{
+    flex-direction: column;
+}
+#contact{
+    display: flex;
+    margin: 0 0 5% 0;
+}
+.logo{
+    margin: 0 auto;
+    width: 150px;
+}
+}
+/* pad device*/
+
+@media only screen and (max-width: 800px){
+    #oneimg{
+        display: none;
+    }
+    .button-div{
+        display:flex;
+        justify-content: center;
+    }
+    .top{
+        flex-direction: column-reverse;
+    }
+    .logo{
+        margin: 0 auto;
+        width: 150px;
+    }
+    h1{
+        font-size: 80px;
+    }
+    .big{
+        margin: 0px;
+    }
+}
