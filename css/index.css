@@ -66,120 +66,222 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
+.container {
+	width: 900px;
+	margin: 0 auto;
+}
+
 header {
-  
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  margin: 20px 0;
-  padding: 20px 0;
+    width: 100%;
+    display: flex;
 }
 
-/* Tablet */
-@media (max-width: 800px){
-    header{
-        flex-direction: column-reverse;
-        align-items: center;
-        justify-content: center;
-    }
-}
-
-/*Mobile */
-@media (max-width: 500px){
-    header{
-        flex-direction: column-reverse;
-        align-items: center;
-        justify-content: center;
-    }
+header nav {
+    margin-top: 40px; 
+    width: 610px;
+    justify-content: space-between;
+    display: flex;
 }
 
 header nav a {
-	margin: 0 20px;
-	text-decoration: none;
-	color: gray;
-}
-/* Tablet */
-@media (max-width: 800px){
-    header nav{
-        display: flex;
-        flex-direction: row;
-    }
-}
-/* Mobile */
-@media (max-width: 500px){
-    header nav{
-        display: flex;
-        flex-direction: column;
-        font-size: 30px;
-    }
-}
-.container {
-	width: 900px;
-	margin: auto;
-	border: 1px solid black;
+    text-decoration: none;
+    color: gray;
 }
 
+header .logo {
+    margin: 28px 0 0 91px;
+}
 
-
-
-.main  {
-	margin: auto;
-	padding: 60px 60px;
+.cta {
 	display: flex;
-}
-
-@media (max-width: 800px){
-    .main{
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-.text {
-	font-size: 80px;
-	text-align: center;
-}
-
-.text button {
-    
-	width: 160px;
-	height: 30px;
-}
-
-.top-content {
-	margin-top: 57px;
-	border-top: 1px solid black;
-	display: flex;
-	width: 80%
-}
-
-.text-content {
-	padding: 10px;
-}
-
-.middle-img {
-	width: 80%;
-	padding: 10px;
-	
-}
-
-.middle-content {
-	margin-top: 27px;
-	border-top: 1px solid black;
-	display: flex;
-	justify-content: center;
-	width: 80%
-}
-
-.main-content {
+	align-items: center;
 	justify-content: space-around;
 }
 
-.contact-section{
-	line-height: 1.6;
+.cta-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 70px;
+  margin-top: 25px;
+}
+.cta-text-button {
+	display: flex;
+	width: 150px;	
 }
 
-footer {
-	text-align: center;
+.cta button {
+  background: white;
+  vertical-align: top;
+  margin-top: 6px;
+  padding: 8px 44px;
+  font-size: 17px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.cta img {
+  display: flex;
+  margin-top: 70px;
+}
+
+.main-content {
+  border-top: 1px solid black;
+  margin-top: 76px;
+  padding-top: 39px;
+}
+
+.main-content .top-content {
+  display: flex;
+}
+
+.main-content .top-content .text-content:last-child {
+  margin-right: 0;
+}
+
+.main-content .middle-img {
+  margin-top: 45px;
+}
+
+.main-content .bottom-content {
+	display: flex;
+	justify-content: space-evenly;
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+
+.main-content .bottom-content .text-content {
+  width: 275px;
+  margin-right: 12px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-top: 2px solid black;
+  padding: 20px 10px 0;
+}
+
+.contact p {
+  margin: 10px 0;
+}
+
+footer {    
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+/* Tablet View */
+
+@media(max-width: 800px) {
+
+    .container {
+        width: 800px;
+}
+
+    header {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
  }
+
+    header nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      width: 100%;
+ }
+
+    .cta {
+        margin: 50px 0px 75px 0px;
+        line-height: 375%;
+ }
+
+    .cta img {
+        display: none;
+ }
+
+    .main-content{
+        margin: 0px 20px;
+ }
+
+    .main-content .text-content{
+        margin: 0px 10px;
+ }
+
+    .contact {
+        margin: 0px 20px;
+ }
+    .contact p {
+        margin: 5px;
+ }
+}
+
+@media(max-width: 500px) {
+
+    .container {
+        width: 500px;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    header nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 20px;
+      width: 100%;
+      margin-top: 17px;
+    }
+
+    header nav a{
+        width: 100%;
+        text-align: center;
+        padding: 20px 0px;
+    }
+
+    .main-content{
+        border-top: 2px solid black;
+    }
+
+    .main-content .top-content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-content .text-content {
+        margin: 0px;
+        padding-bottom: 30px;
+    }
+
+    .main-content .bottom-content{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
+
+    .main-content img {
+        width: 100%;
+        height: auto;
+    }
+
+    .contact {
+        margin: 20px 20px;
+        padding: 0px;
+        padding-top: 35px;
+    }
+
+    .contact p {
+        margin-bottom: 10px;
+      }
+    footer {
+        font-size: 16px;
+    }
+}
 
