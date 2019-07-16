@@ -129,8 +129,7 @@ header .logo {
 
   .snippet-text button {
     border-radius: 2px;
-    max-width: 160px;
-    width: 100%;
+    width: 160px;
     height: 30px;
     background: white;
     vertical-align: top;
@@ -230,19 +229,29 @@ footer {
     }
 
     header .logo {
-        margin-left: 15%;
+        margin-left: 1%;
     }
 }
 /* mobile */
 @media screen and (max-width: 500px) {
+    body {
+        display: flex;
+        justify-content: center;
+    }
     .container{
-        margin-left: 2%;
+        width: 100%;
     }
 
-    header {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap-reverse;
+    .code-snippet {
+        margin: auto;
+    }
+
+    header { 
+        margin: 3%;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
     }
 
     header nav {
@@ -250,17 +259,15 @@ footer {
         display: flex;
         flex-direction: column;
         text-align: center;
-        border-top: 1px solid black;
+        border-top: 1px solid silver;
     }
-
-
 
     nav a {
         margin: 0 auto;
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid silver;
         height: 100%;
         width: 100%;
-        padding: 2%;
+        padding: 1%;
     }
 
     .main-content .top-content {
@@ -277,9 +284,5 @@ footer {
     .main-content .bottom-content {
         display: flex;
         flex-direction: column;
-    }
-
-    button {
-        margin: 0 auto;
     }
 }
