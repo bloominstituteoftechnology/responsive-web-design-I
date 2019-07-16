@@ -109,12 +109,20 @@ h1, h2, h3, h4, h5 {
   /* ----Content Control Section----- */
   
   /*Navigation Bar*/
-  nav{
+  #nav{
 	display: flex;
-	align-items: center;
+	width: 100%;
+	height: 100%;
+	justify-content: space-evenly; 
+	align-content: center; 
+  }
+
+  .nav_items{
+	display: flex;
 	width: 70%;
-	justify-content: space-evenly;  
-  } 
+	justify-content: space-between;  
+  }
+  
   #nav a{
 	padding:1%;
 	text-decoration: none;
@@ -122,8 +130,8 @@ h1, h2, h3, h4, h5 {
 	margin-left: 1.5%;
 	padding-bottom: 2%;
   }
-  #nav a img{
-	width: 15%;
+  #nav img{
+	width: 20%;
 	margin-left: 13%;
 	padding-top: 3.5%;
 	align-self: flex-end;
