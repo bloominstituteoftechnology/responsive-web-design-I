@@ -1,3 +1,155 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+.container{
+	background-color:#E0FFFF;
+	z-index:-1;
+	width: 880px;
+	margin:auto
+}
+header nav{
+	display: inline-block;
+	margin-top:35px
+}
+header nav a{
+    margin: 0 10px;
+	border: 1px solid lightgray;
+	padding: 5px;
+	display: inline-block;
+	border-radius: 10px;
+	color: white;
+	text-decoration: none;
+	margin-bottom: 20px;
+	background:#00ace6;;
+	transition: 1s;
+}
+.container header nav a:hover {
+	background: white;
+	color:black;
+}
+
+.logo{
+	margin-left: 30px
+}
+.cta div img{
+	display: inline-block;
+	margin-top: 40px;
+	padding: 15px;
+	max-width: 125px;
+	margin: 5px
+}
+.cta div {
+	display: inline-block;
+	text-align: center;
+}
+.cta img{
+	padding:20px;
+	margin-top: 15px
+}
+.cta-text{
+	font-size: 70px;
+    padding: 70px;
+}
+button{
+	background-color: #00ace6;
+    padding-left: 30px;
+	padding-right: 30px;
+	font-size:20px
+}
+
+	.ana {
+	width: 49%;
+	height: 20%;
+	text-align: left;
+	box-sizing: border-box;
+	display: inline-block;
+	padding: 20px 0px;
+  }
+  .ana3 .ana{
+	width: 33%;
+	height: 20%;
+	text-align: left;
+	box-sizing: border-box;
+	display: inline-block;
+	padding: 20px 0px;
+  }
+  .text-content .ana{
+	  display: inline-block;
+	  
+  }
+  footer{
+	  text-align: center;
+	  padding-bottom:40px
+  }
+  .ana h4{
+	font-family: 'Russo One', sans-serif;
+  }
+  .ana p{
+	font-family: 'Josefin Sans', sans-serif;
+  }
+ 
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
