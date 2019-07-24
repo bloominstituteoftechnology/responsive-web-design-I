@@ -86,7 +86,8 @@ nav {
 }
 
 .logo {
-	margin-left: 150px;
+	height: 20px;
+	width:90px;
 }
 
 nav a {
@@ -99,10 +100,17 @@ nav a:last-child {
 
 .middle-content {
 	display: flex;
-	align-content: flex-start;
-	justify-content: center;
-}
+	flex-direction: row;
+	justify-content: space-around;
+	padding-left: 20px;
+	padding-right: 20px;
 
+}
+.code{
+	display:flex;
+	justify-content: flex-end;
+	width:300px;
+}
 .middle-content img {
 	align-self: baseline auto;
 	padding-left: 325px;
@@ -114,7 +122,7 @@ a {
 }
 
 .middle-content h1 {
-	font-size: 100px;
+	font-size: 75px;
 	justify-content: center;
 	margin-right: 35px;
 }
@@ -157,6 +165,7 @@ h3 {
 	display: flex;
 	align-content: stretch;
 	margin: 0 auto;
+	width: 800px;
 }
 
 .bottom-box {
@@ -243,4 +252,43 @@ h3 {
 	Border-bottom: 1px solid black;
 	margin-bottom: 30px;
 	margin-top: 30px;
+}
+/* Media tablet at 800px */
+
+@media(max-width:800px){
+	.container{
+		width:100%;
+		margin: 0 auto;
+	}
+	header{
+		display:flex;
+		justify-content:center;
+		flex-direction: column;
+	}
+
+	.logo{
+	display:flex;
+	order:-1;
+	Justify-content:center;
+	padding-left:25px;
+	
+	}
+	nav{
+		display:flex;
+		justify-content:center;
+		padding-left:25px;	
+	}
+	.middle-content{
+		display:flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		align-items: center;
+		margin:0 auto;
+	}
+	.code{
+		visibility: hidden;
+	}
+	.middle-img{
+		width: 100%;
+	}
 }
