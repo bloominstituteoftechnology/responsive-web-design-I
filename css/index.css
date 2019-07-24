@@ -215,8 +215,9 @@ button {
 	font-size: 20px
 }
 
-.cta {
+.main-content {
 	border-bottom: 1px solid black;
+	border-top: 1px solid black;
 }
 
 .text-before {
@@ -262,9 +263,63 @@ footer {
 }
 
 .contact {
-	border-top: 1px solid black;
 	padding-top: 20px;
 }
+
+@media screen and (max-width: 800px) {
+	header {
+		margin: 0px auto;
+		display: flex;
+		flex-direction: column-reverse;
+		width: 50%
+	}
+
+	.logo {
+		width: 45%;
+		margin: 0px auto;
+	}
+
+	header nav {
+		display: flex;
+		flex-direction: row;
+		text-align: center;
+		font-size: 11px;
+		margin-top: 20px;
+	}
+
+	#round-img {
+		display: none;
+	}
+
+	.cta {
+		margin: 0px auto;
+		display: flex;
+		justify-content: center;
+		width: 50%;
+	}
+
+	.cta-text {
+		font-size: 50px;
+		padding: 50px;
+
+	}
+
+	.main-content {
+		width: 800px;
+		margin: 0px auto;
+		border-top: 1px solid black;
+	}
+
+	.top-content {
+		border-bottom: 1px solid black;
+	}
+
+	.contact {
+		width: 800px;
+		margin: 0px auto;
+	}
+}
+
 
 @media screen and (max-width: 500px) {
 	header {
@@ -300,12 +355,18 @@ footer {
 		margin: 0px auto;
 		display: flex;
 		justify-content: center;
-		width: 50%;
+		width: 500px;
+	}
+
+	.main-content {
+		width: 500px;
+		margin: 0px auto;
 	}
 
 	.text-content {
 		display: flex;
 		flex-flow: column;
+
 	}
 
 	.after-img {
@@ -317,12 +378,11 @@ footer {
 		display: flex;
 		margin: 0px auto;
 		justify-content: center;
-		width: 50%
-
+		width: 500px
 	}
 
 	.after-img .text-before {
-		width: 49%;
+		width: 500px;
 		height: 20%;
 		text-align: left;
 		box-sizing: border-box;
@@ -333,7 +393,7 @@ footer {
 	.contact {
 		display: flex;
 		flex-direction: column;
-		width: 50%;
+		width: 500px;
 		margin: 0px auto;
 		text-align: left;
 		border-top: 1px solid black;
@@ -351,10 +411,13 @@ footer {
 
 	.middle-img {
 		margin: 0px auto;
-		width: 50%;
+		width: 500px;
 	}
 
+
 }
+
+
 
 
 
