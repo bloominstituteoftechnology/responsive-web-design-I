@@ -80,6 +80,8 @@ width:70%;
 }
 header nav a{
 	padding-right:20px;
+	text-decoration: none;
+	color: grey;
 }
 
 header img{
@@ -327,3 +329,60 @@ ul{
 	list-style: circle;
 }
 
+/* media for mobile*/
+@media screen and (max-width:500px){
+	.container{
+		width: 500px;
+		height: auto;
+	}
+	header nav{
+		display: flex;
+		flex-direction:column;
+		align-items: flex-start;
+		justify-content: space-between;
+		margin-top:20px;
+		height: auto;
+		max-width:100%;	
+		border-bottom: 1px solid grey;
+		}
+		header nav a{ /*TRBL*/
+			padding: 10px 60% 10px 60%;
+			margin: 0px;
+			border: 1px soild black;
+			max-width:100%;
+		}
+		.logo{
+			border-bottom: 1px solid grey;
+			display:flex;
+			align-items: center;
+			justify-content: flex-start;
+			flex-direction: column;
+		}
+		.header-img{
+			visibility: hidden;
+		}
+		.main{
+			display:flex;
+			flex-direction: column;
+		}
+		.above{
+		display:flex;
+		flex-direction: column;
+		max-width:100%;
+		}
+		.middle-img{
+			width: 450px;
+			margin-bottom: 20px;
+			padding: 10px;
+		}
+		.under{
+			display:flex;
+			flex-direction: column;
+			max-width:100%;
+		}
+		footer{
+			display:flex;
+			flex-direction:column;
+			justify-content: center;
+		}
+}
