@@ -64,8 +64,6 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 .container{
-	background-color:#E0FFFF;
-	z-index:-1;
 	width: 880px;
 	margin:auto
 }
@@ -75,15 +73,12 @@ header nav{
 }
 header nav a{
     margin: 0 10px;
-	border: 1px solid lightgray;
+	color:gray;
 	padding: 5px;
 	display: inline-block;
-	border-radius: 10px;
-	color: white;
+	
 	text-decoration: none;
-	margin-bottom: 20px;
-	background:#00ace6;;
-	transition: 1s;
+	
 }
 .container header nav a:hover {
 	background: white;
@@ -113,13 +108,15 @@ header nav a{
     padding: 70px;
 }
 button{
-	background-color: #00ace6;
+	background-color: white;
     padding-left: 30px;
 	padding-right: 30px;
 	font-size:20px
 }
-
-	.ana {
+.cta{
+	border-bottom: 1px solid black;
+}
+	.text-before {
 	width: 49%;
 	height: 20%;
 	text-align: left;
@@ -127,7 +124,7 @@ button{
 	display: inline-block;
 	padding: 20px 0px;
   }
-  .ana3 .ana{
+  .after-img .text-before{
 	width: 33%;
 	height: 20%;
 	text-align: left;
@@ -135,20 +132,115 @@ button{
 	display: inline-block;
 	padding: 20px 0px;
   }
-  .text-content .ana{
+  .text-content .text-before{
 	  display: inline-block;
 	  
+  }
+   .middle-img{
+	margin: 0px auto;
+	width:100%;
   }
   footer{
 	  text-align: center;
 	  padding-bottom:40px
   }
-  .ana h4{
-	font-family: 'Russo One', sans-serif;
-  }
-  .ana p{
+  .text-before h4{
+	font-family: 'Bangers', cursive;
+}
+  .text-before p{
 	font-family: 'Josefin Sans', sans-serif;
   }
+  .contact{
+	border-top: 1px solid black;
+	padding-top: 20px;
+  }
+
+  @media screen and (max-width: 479px) {
+	header{
+	 	margin:0px auto;
+		display:flex;
+		flex-direction: column-reverse;
+		width: 50%
+	  	}
+	header nav{
+		display:flex;
+		flex-direction: column;
+		text-align: center;
+		font-size: 35px;
+		border-top: 1px solid black;
+		}
+	header nav a{
+		border-bottom: 1px solid black;  
+		padding:20px 0px 20px 0px;
+		}
+	.logo{
+		width: 45%;
+		margin: 0px auto;
+		}
+	#round-img{
+		display:none;
+		}
+	.cta {
+		margin: 0px auto;
+		display: flex;
+		justify-content: center;
+		width: 50%;
+		}
+	.text-content {
+		display: flex;
+		flex-flow: column;
+		}
+	
+	.after-img{
+		display: flex;
+		flex-flow: column;
+		}
+	.text-before{
+		display: flex;
+		margin: 0px auto;
+		justify-content: center;
+		
+		}
+	.after-img .text-before{
+		width: 49%;
+		height: 20%;
+		text-align: left;
+		box-sizing: border-box;	
+		display: inline-block;
+		padding: 20px 0px;
+		}
+	.contact { 
+		display: flex;
+		flex-direction: column;
+		width:50%;
+		margin: 0px auto;
+		text-align: left;
+		border-top: 1px solid black;
+		padding-top: 20px;
+		}
+	.contact div{
+		display: flex;
+		flex-direction: column;
+		}
+	.text-before h4{
+		font-family: 'Bangers', cursive;
+	}
+	
+	}
+
+/*
+	.middle-img{
+		margin: 0px auto;
+		width:50%;
+	}   
+	
+	If I add this it affects the
+	 size of the image for the desctop version.
+	*/
+	
+	
+	
+
  
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
