@@ -1,3 +1,329 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+/* new code here */
+
+.container{
+	width:800px;
+	margin: 0 auto;
+
+}
+
+header nav{
+display: inline-block;
+margin:20px;
+height: 100%;
+width:70%;	
+}
+header nav a{
+	padding-right:20px;
+}
+
+header img{
+	display:inline-block;
+	width:20%;
+	
+}
+
+.title{
+	border-bottom: 1px solid grey;
+	margin:20px;
+	font-weight:bold;
+}
+.title section{
+	width: 40%;
+	display: inline-block;
+	vertical-align: middle;
+}
+.main{
+	height: 100px;
+	width: 50px;
+	text-align: center;
+	margin-left: 35px;
+	padding-top: 20px;
+	font-size: 50px;
+	font-family: 'Bangers';
+	margin-bottom: 200px;
+}
+
+button {  
+	  cursor: pointer;
+	  display: inline-block;  
+	  position: relative;  
+	  display: inline-block;  
+	  border-radius: 4px;  
+	  background-color: grey;  
+	  border: none;  
+	  color: #FFFFFF;  
+	  text-align: center;  
+	  font-size: 28px;  
+	  padding: 20px;  
+	  width: 200px;  
+	  transition: all 0.5s;   
+	  margin: 5px;
+	}
+
+button:after {
+		content: '\00bb';  /* CSS Entities. To use HTML Entities, use →*/
+		position: absolute;  
+		opacity: 0;
+		top: 0;
+		right: 20px; 
+		transition: 0.5s;
+	}
+		
+
+button:hover  { 
+	 padding-right: 25px;
+    }
+
+button:hover:after {  
+	opacity: 1;
+	right: 0;
+	}
+
+.above section{
+	display:inline-block;
+	width:45%;
+	margin:20px 2%;
+}
+.middle-img{
+	width:800px; 
+}
+
+.under{
+	border-bottom:1px solid grey;
+	margin: 20px;
+}
+.under section{
+	display:inline-block;
+	width:30%;
+	margin:20px 1%;
+}
+
+.contact{
+	margin: 20px;
+	padding-bottom:20px;
+}
+
+address{
+text-align:left;
+}
+
+footer{
+	text-align:center;
+	font-size:10px;
+	margin:20px;
+} 
+
+.service-img{
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: center;
+	margin-bottom: 10px;
+
+}
+
+.service-header-img{
+	display:flex;
+	flex-grow: inherit;
+	margin:98%;
+
+}
+
+
+
+.body{
+	display:flex;
+	flex-direction: row;
+	border-top: solid grey;
+	border-bottom: solid grey;
+	border-width: 1px;
+	justify-content: space-around;
+
+}
+
+.digital-desgin{
+	background-color: lightgrey;
+	border-top: solid grey;
+	border-left: solid grey;
+	border-right:solid grey;
+	border-bottom: solid grey;
+	border-width: 1px;
+	margin-bottom: 20px;
+	padding: 50px 50px 50px 50px;
+	width: 300px;
+	height: 300px;
+}
+
+.ui-ux{
+	background-color: lightgrey;
+	border-top: solid grey;
+	border-bottom: solid grey;
+	border-left: solid grey;
+	border-right:solid grey;
+	border-width: 1px;
+	margin-bottom: 20px;
+	padding: 50px 50px 50px 50px;
+	width: 300px;
+	height: 300px;
+}
+
+.digital-marketing{
+	background-color: lightgrey;
+	border-top: solid grey;
+	border-bottom: solid grey;
+	border-left: solid grey;
+	border-right:solid grey;
+	border-width: 1px;
+	margin-bottom: 20px;
+	padding: 50px 50px 50px 50px;
+	width: 300px;
+	height: 300px;
+}
+
+.web-dev{
+	background-color: lightgrey;
+	border-top: solid grey;
+	border-bottom: solid grey;
+	border-left: solid grey;
+	border-right:solid grey;
+	border-width: 1px;
+	margin-bottom:20px;
+	padding: 50px 50px 50px 50px;
+	width: 300px;
+	height: 300px;
+}
+
+.ios-dev{
+	background-color: lightgrey;
+	border-top: solid grey;
+	border-bottom: solid grey;
+	border-left: solid grey;
+	border-right:solid grey;
+	border-width: 1px;
+	margin-bottom:20px;
+	padding: 50px 50px 50px 50px;
+	width: 300px;
+	height: 300px;
+}
+
+.an-dev{
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	background-color: lightgrey;
+	border-top: solid grey;
+	border-bottom: solid grey;
+	border-left: solid grey;
+	border-right:solid grey;
+	border-width: 1px;
+	padding: 50px;
+	width: 300px;
+	height: 300px;
+}
+.serv-body1{
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	border: 1px grey;
+	padding:20px 20px 20px 20px;
+	flex-wrap: wrap;
+	margin: 0;
+
+}
+
+.serv-body2{
+	box-sizing: border-box;
+	display: flex;
+	align-content: center;
+	flex-direction: column;
+	border: 1px grey;
+	padding:20px;
+	flex-wrap: wrap;
+	margin:0;
+}
+
+.services-list{
+	box-sizing: border-box;
+	display: flex;
+	justify-content: flex-start;
+	justify-content: space-between;
+	margin-top: 50px;
+}
+
+.services-info-img{
+	display: flex;
+	justify-content: flex-end;
+	padding-left: 50px;
+}
+
+ul{
+	padding: 10px 10px 10px 10px;
+	list-style: circle;
+}
 
