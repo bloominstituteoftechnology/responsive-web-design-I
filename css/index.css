@@ -1,3 +1,498 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+.main-container {
+	display:flex;      
+	flex-flow: column;
+	width: 980px;
+	margin: auto;
+	
+}
+
+/*stetch 1 begin */
+header {
+	
+	display: flex;
+	width:980px;
+	justify-content: space-evenly;
+    margin: 0;
+    /*position: fixed;
+    z-index: 9999;*/
+    background-color: white;
+	
+
+}
 
 
+/*stretch1 End */
+
+header nav {
+	display: flex;
+	margin-top: 50px;
+	background-color:whitesmoke        /*stretch ***/
+}
+
+header nav a {
+	margin:0 20px;
+	color:grey;
+	text-decoration:none;
+	
+}
+
+header nav a:hover {
+	background: green;
+	color: white;
+  }
+
+header img.logo {
+	margin-left: 130px;
+	margin-top: 37px;
+}
+
+.heading {
+	width:98%;
+	margin: 10%;
+	display: flex;
+}
+.heading h1{
+	text-align:center;
+    width: 300px;
+	font-size: 60px;
+	
+	
+}
+
+.heading button {
+	
+	border: 1px solid black;
+    width: 140px;
+	height: 32px;
+	margin-left:70px;
+	padding: 10px;
+	text-align:center;
+	background-color: white;
+}
+.heading button:hover {
+	background: green;
+	color: white;
+  }
+.heading2 {
+	display: flex;
+	flex-direction: column;
+	margin-right: 50px;
+	margin-left:0px;
+	vertical-align:top;
+	
+}
+
+.imgHeading {
+	
+	margin-left:118px;
+
+}
+
+.heading2 h1 {
+	font-size:80px;
+	padding:20px;
+	margin-left:0px;
+}
+
+.main-content .firstsection {
+	display:flex;
+}
+
+.main-content .firstsection .two-column{
+	width: 420px;
+    margin-right:65px;
+
+}
+
+
+footer p {
+	
+	text-align:center;
+}
+
+.main-content .secondsection {
+	display:flex;
+}
+
+.main-content .secondsection .three-column{
+	width:280px;
+	margin-right:30px;
+	
+}
+
+.middle-img {
+	width: 980px;
+    margin-top: 6%;
+    margin-bottom: 6%;
+}
+
+
+
+hr {
+    width:100%;
+}
+@media (max-width: 800px) 
+{
+        .main-container {
+        display:flex;      
+        flex-flow: column;
+        width: 800px;
+        margin: auto 10%;
+        
+    }
+    header {
+	
+        display: flex;
+        flex-direction: column-reverse;
+        width:98%;
+        margin: auto;  
+    }header nav {
+        display: flex;
+        width: 45%;
+        margin: 1% 0;
+        background-color:whitesmoke        /*stretch ***/
+    }
+    
+    header nav a  {
+       font-size: 70%;
+       margin:auto;
+    } 
+
+    header img.logo {
+        width:13%;
+    
+    }
+    .heading {
+    
+        margin:0px 10%;
+    }
+    .heading h1 {
+        margin:0%;
+        width:90%;
+        font-size:40px;    
+    }
+
+    .heading button {
+    margin:0% 12%;
+
+    }
+    .imgHeading {
+       display:none;
+    } 
+
+    .main-content {
+    width:800px;
+    }
+    .main-content .firstsection{
+        width: 800px;;
+        margin-right:0px;;
+    
+    }
+    .main-content .firstsection .two-column{
+        width: 21%;
+        margin: 0% 1%;
+        font-size: 79%;    
+    }
+    .middle-img {
+        width: 51%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+
+    .main-content .secondsection{
+        width: 800px;;
+        margin-right:0px;;
+    
+    }
+    .main-content .secondsection .three-column{
+        width: 14%;
+        margin: 0% 1%;
+        font-size: 79%;
+    
+    }
+    hr {
+        width: 47%;
+     margin: 1% 1%;
+    }
+    .contact {
+        width:800px;
+        margin: 0% 1%;
+    }
+
+    footer p{
+        width:50%;
+        font-size:79%;
+
+    }
+}
+@media (max-width: 500px) {
+
+    .main-container {
+        display:flex;      
+        flex-flow: column;
+        width: 98%;
+        
+    }
+    .main-content {
+        width:98%;
+        }
+        header {
+        
+            display: flex;
+            flex-direction: column-reverse;
+            width:98%;
+            margin: auto;  
+        }
+
+        header nav {
+            display: flex;
+            flex-direction: column-reverse;
+            
+            width: 58%;
+            margin-left:11%;
+            background-color:white;       /*stretch ***/
+
+        }
+        
+        header nav a  {
+            margin: auto;
+            border-bottom: 1px solid grey;
+            font-size: larger;
+            width: 200px;
+            padding: 2%;
+            text-align: center;
+           
+        } 
+    
+        header img.logo {
+            width: 30%;
+            margin-left: 25%;
+            
+        }
+        .heading {
+        
+            margin:0px 18%;
+        }
+        .heading h1 {
+            margin:0%;
+            width:90%;
+            font-size:40px;    
+        }
+    
+        .heading button {
+        margin:0% 12%;
+    
+        }
+        .imgHeading {
+           display:none;
+        } 
+    
+        
+        .main-content .firstsection{
+            display: flex;
+            flex-flow: column wrap;
+            width: 95%;
+            margin-right: 0px;
+        
+        }
+        .main-content .firstsection .two-column{
+            width: 78%;
+            margin: 2% 1%;
+            
+        }
+        .middle-img {
+            width: 80%;
+            margin-top: 2%;
+            margin-bottom: 2%;
+        }
+    
+        .main-content .secondsection{
+            display: flex;
+            flex-flow: column wrap;
+            width: 95%;
+            margin-right: 0px;
+        
+        }
+        .main-content .secondsection .three-column{
+            width: 78%;
+            margin: 2% 1%;
+            
+        
+        }
+        hr {
+            width: 98%;
+         margin: 4% 0%;
+        }
+        .contact {
+            width:500px;
+            margin: 0% 1%;
+        }
+    
+        footer p {
+            width:80%;
+            font-size:80%;
+    
+        }
+        
+    }
+  
+   /**@media (max-width: 1024px) and (min-width:768px) {
+        .main-container {
+            display:flex;      
+            flex-flow: column;
+            width: 1024px;
+            margin: auto 10%;
+            
+        }
+        header {
+        
+            display: flex;
+            flex-direction: column-reverse;
+            width:98%;
+            margin: auto;  
+        }header nav {
+            display: flex;
+            width: 45%;
+            margin: 1% 0;
+            background-color:whitesmoke        
+        }
+        
+        header nav a  {
+           font-size: 70%;
+           margin:auto;
+        } 
+    
+        header img.logo {
+            width:13%;
+        
+        }
+        .heading {
+        
+            margin:0px 10%;
+        }
+        .heading h1 {
+            margin:0%;
+            width:90%;
+            font-size:40px;    
+        }
+    
+        .heading button {
+        margin:0% 12%;
+    
+        }
+        .imgHeading {
+           display:none;
+        } 
+    
+        .main-content {
+        width:1024px;
+        }
+        .main-content .firstsection{
+            width: 1024px;;
+            margin-right:0px;;
+        
+        }
+        .main-content .firstsection .two-column{
+            width: 21%;
+            margin: 0% 1%;
+            font-size: 79%;    
+        }
+        .middle-img {
+            width: 51%;
+            margin-top: 2%;
+            margin-bottom: 2%;
+        }
+    
+        .main-content .secondsection{
+            width: 1024px;;
+            margin-right:0px;;
+        
+        }
+        .main-content .secondsection .three-column{
+            width: 14%;
+            margin: 0% 1%;
+            font-size: 79%;
+        
+        }
+        hr {
+            width: 47%;
+         margin: 1% 1%;
+        }
+        .contact {
+            width:1024px;
+            margin: 0% 1%;
+        }
+    
+        footer{
+            width:50%;
+            font-size:79%;
+    
+        }
+    }*/
