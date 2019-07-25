@@ -59,7 +59,7 @@ h1 {
 
 
 body {
-    width: 880px;
+    max-width: 880px;
     margin: auto;
 }
 
@@ -245,6 +245,13 @@ hr {
   }
 
 @media(max-width: 800px){
+
+    .container {
+        max-width: 100%;      
+        margin-left: 2%;
+        margin-right: 2%; 
+    }
+
     .content-2-img {
         display: none;
     }
@@ -284,8 +291,11 @@ hr {
   @media(max-width: 500px) {
     .container {
       max-width: 100%;
+      margin-left: 2%;
+      margin-right: 2%; 
     }
-  
+
+      
     .container .content-1 {
       display: flex;
       flex-direction: column;
