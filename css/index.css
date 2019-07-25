@@ -264,13 +264,19 @@ h3 {
 		display:flex;
 		justify-content:center;
 		flex-direction: column;
+		width:100%;
 	}
 
 	.logo{
 	display:flex;
 	order:-1;
-	Justify-content:center;
-	padding-left:25px;
+	Justify-items:center;
+	align-content: center;
+	padding-left:10px;
+	margin:0 auto;
+
+	
+	
 	
 	}
 	nav{
@@ -279,16 +285,61 @@ h3 {
 		padding-left:25px;	
 	}
 	.middle-content{
+		margin: 0 auto;
+		width:90%;
+		padding-left:20px;
+		padding-bottom:5px;
+	}
+	.bottom{
 		display:flex;
-		flex-direction: column;
-		justify-content: flex-end;
-		align-items: center;
-		margin:0 auto;
+		flex-direction: row;
+		justify-items: center;
+		border-bottom: 1px solid black;
 	}
 	.code{
 		visibility: hidden;
+		width:1%;
 	}
 	.middle-img{
 		width: 100%;
+	}
+	.bottom-box{
+		display:flex;
+		flex-wrap: nowrap;
+	}
+}
+
+@media(max-width:500px){
+	.container{
+		width:500px;
+		margin: 0 auto;
+	}
+	nav{
+		display:flex;
+		flex-direction: column;
+		align-items:center;
+	}
+	nav a{
+		display:flex;
+		justify-content: center;
+		border-bottom: 1px solid black;
+		font-size: 25px;
+		width:100%;
+	}
+	nav a:last-child{
+		margin:0;
+	}
+	.top h2{
+		margin: 0 auto;
+	}
+	.bottom{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.contact{
+		display:flex;
+		flex-direction: column;
+		align-items:center;
 	}
 }
