@@ -67,64 +67,87 @@ h1, h2, h3, h4, h5 {
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 * {
     display: flexbox;
-	text-decoration: none;
-} 
-a {
-	margin-top: 50px;
+     text-decoration: none;
+ }
+ a {
+     margin-top: 50px;
     flex-direction: column;
     margin-left: 50px;
-
-}
-
-@ media (max-width: 800px) {
+    color: gray;
+ 
+ }
+ 
+ @media (max-width: 800px) {
     a {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         width: 40%;
     }
-    .code-snippet .logo1 {
+    .logo-container1 {
+        display: flex;
+        justify-content: center;
+    }
+    .code-snippet {
         display: none;
     }
-}
+    .button1 {
+        position: absolute;
+        bottom: 140px;
+        align-content: center;
+    }
+    .bottom-main {
+        display: flex;
+        width: 800px;
+    }
+    .bottom-container .bottom-main p {
+        display: flex;
+        font-size: 15.5px;
+        height: 200px;
+        
+    }
+ }
 
-/*
-@ media (max-width: 500px) {
-
-
-
-
-
-
-}
-
-
-
-
-
-
-
-*/
-/*
-@media ( max-width: 800px ) {
+ /*
+ @ media (max-width: 500px) {
+     .code-snippet {
+         display: none;
+     }
+ 
+ 
+ 
+ 
+ 
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ */
+ 
+ /*
+ @media ( max-width: 800px ) {
     .container a {
         display: flex;
         justify-content: wrap;
         justify-content: space-between;
         align-items: center;
-
+ 
     }
     .code-snippet {
-        
-                
+       
+               
     }
     .logo-container {
         display: flex;
         margin-left: 0 auto;
         justify-content: center;
     }
-}
-@media (max-width: 800px) {
-    .container .nav { 
+ }
+ @media (max-width: 800px) {
+    .container .nav {
         display: flex;
         align-items: center;
         margin-bottom: 30px;
@@ -138,27 +161,27 @@ a {
             display: flex;
             justify-content: center;
         }
-        
+       
     }
-} */
-.container a {
-	font-size: 15px;
+ } */
+ .container a {
+     font-size: 15px;
     color: gray;
     padding: 20px;
-}
-.header {
+ }
+ .header {
     display: flex;
-}
-/*
-.great-idea .logo {
+ }
+ /*
+ .great-idea .logo {
     display: inline-block;
     margin-bottom: 10px;
     margin-left: 600px;
-} */
-.logo-container {
-	display: flex;
-}
-.logo-container1 {
+ */
+ .logo-container {
+     display: flex;
+ }
+ .logo-container1 {
     display: flex;
     width: 500px;
     padding: auto;
@@ -166,118 +189,119 @@ a {
     position: relative;
     margin-bottom: 100px;
     margin-left: 3%;
-}
-.logo-container1 h1 {
+ }
+ .logo-container1 h1 {
     font-size: 75px;
     margin-left: 145px;
     margin-bottom: 100px;
     position: absolute;
     bottom: 0px;
-}
-.code-snippet .logo1 {
-	width: 110%;
-	display: flexbox;
-	margin-bottom: 40px;
+ }
+ .code-snippet .logo1 {
+     width: 110%;
+     display: flexbox;
+     margin-bottom: 40px;
     margin-left: 10px;
     margin-top: 30px;
-	position: inherit;
-}
-.button1 {
-	display: flex;
-	background: white;
-	border: 1px solid black;
-	width: 175px;
-	height: 50px;
-	text-align: center;
+     position: inherit;
+ }
+ .button1 {
+     display: flex;
+     background: white;
+     border: 1px solid black;
+     width: 175px;
+     height: 50px;
+     text-align: center;
     position: absolute;
-	margin-top: 360px;
-	padding: 5px 40px;
+     margin-top: 360px;
+     padding: 5px 40px;
     margin-left: 200px;
-}
-.main-container {
-	display: flex;
-}
-.main-container .top-main {
+ }
+ .main-container {
+     display: flex;
+ }
+ .main-container .top-main {
     display: flex;
     width: 40%;
     font-size: 20px;
     text-align: center;
     margin-left: 3%;
-	margin-bottom: 20px;
-	margin-top: 30px;
-}
-p {
+     margin-bottom: 20px;
+     margin-top: 30px;
+ }
+ p {
     font-size: 18px;
     text-decoration: none;
-}
-.main-container {
+ }
+ .main-container {
     border-top: 1px solid black;
     margin-left: 40px;
     margin-right: 40px;
     width: 100%;
-}
-.main-container h2 {
+ }
+ .main-container h2 {
     display: flex;
     font-size: 20px;
     margin-left: 20px;
-}
-/* come back to this */
-.main-container .next-main {
+ }
+ /* come back to this */
+ .main-container .next-main {
     display: flex;
     margin-left: 40px;
     width: 40%;
     margin-bottom: 50px;
-}
-figure img {
+ }
+ figure img {
     width: 90%;
     display: flex;
     margin-left: 50px;
     height: 250px;
     margin-right: 65px;
-}
-section logo-container {
+ }
+ section logo-container {
     display: flex;
     width: 900px;
-}
-.bottom-container {
-	display: flex;
-	width: 98%;
-}
-
-.bottom-main {
+ }
+ .bottom-container {
+     display: flex;
+     width: 98%;
+ }
+ 
+ .bottom-main {
     display: flex;
     margin-left: 50px;
     width: 28%;
     font-size: 20px;
     margin-top: 50px;
     margin-bottom: 40px;
-}
-.bottom-container .bottom-main h3 {
+ }
+ .bottom-container .bottom-main h3 {
     margin-right: 30px;
-}
-.contact-container {
+ }
+ .contact-container {
     display: flex;
     width: 100%;
     margin-left: 40px;
     border-top: 1px solid black;
-}
-.contact-container address {
+ }
+ .contact-container address {
     display: flexbox;
     text-align: left;
     width: 900px;
     margin-bottom: 50px;
     margin-left: 40px;
     margin-top: 40px;
-}
-.contact-container h4 {
+ }
+ .contact-container h4 {
     text-decoration: none;
     margin-left: 50px;
     position: absolute;
     margin-top: 20px;
-
-}
-footer h6 {
+ 
+ }
+ footer h6 {
     width: 1000px;
     margin-left: 210px;
     text-align: center;
-}
+ }
+ 
