@@ -106,13 +106,85 @@ h1, h2, h3, h4, h5 {
         height: 200px;
         
     }
+   
  }
 
- /*
- @ media (max-width: 500px) {
+ 
+ @media (max-width: 500px) {
+     .container {
+         margin: 0px;
+         padding: 0px;
+     }
+      a {
+         background: red;
+     }
      .code-snippet {
          display: none;
      }
+     .logo-container1 {
+        display: flex;
+        justify-content: center;
+    }
+    .main-container {
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+    }
+    .top-main1 {
+        display: flex;
+        position: absolute;
+         bottom: -120px;
+        flex-direction: column;
+        margin-left: 5px;
+    }
+    .top-main2 {
+        display: flex;
+        position: absolute;
+        bottom: -250px;
+        flex-direction: column;
+        margin-top: 30px;
+        margin-left: 5px;
+    }
+    .bottom-container .p1 {
+        width: 1000px;
+        font-size: 15px;
+    }
+    
+    .bottom-main1 {
+        display: flex;
+        bottom: -650px;
+        position: absolute;
+        flex-direction: column;
+        margin-left: 55px;
+    }
+    .bottom-main2 {
+        display: flex;
+        position: absolute;
+        bottom: -790px;
+        flex-direction: column;
+        margin-left: 55px;
+    }
+    .bottom-main3 {
+        display: flex;
+        position: absolute;
+        bottom: -910px;
+        flex-direction: column;
+        margin-left: 55px;
+    }
+    .middle-img {
+        width: 475px;
+        margin-bottom: 30px;
+        margin-top: 275px;
+        margin-right: 100px;
+    }
+    .contact-container {
+        display: flex;
+        margin-top: 400px;
+    }
+    footer h6 {
+        display: flex;
+        width: 100px;
+    }
  
  
  
@@ -125,7 +197,7 @@ h1, h2, h3, h4, h5 {
  
  
  
- */
+ 
  
  /*
  @media ( max-width: 800px ) {
@@ -229,7 +301,7 @@ h1, h2, h3, h4, h5 {
      margin-bottom: 20px;
      margin-top: 30px;
  }
- p {
+ p, p1 {
     font-size: 18px;
     text-decoration: none;
  }
