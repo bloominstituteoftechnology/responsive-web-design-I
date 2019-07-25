@@ -53,6 +53,7 @@ table {
 }
 
 html, body {
+    height: 100%;
     font-family: 'Titillium Web', sans-serif;
 }
 
@@ -65,43 +66,42 @@ h1, h2, h3, h4, h5 {
 .container {
 	width: 880px;
 	/* TB LR */
-	margin: 0 auto;
+    margin: auto;
   }
   
   /* header */
 
   header {
 	display: flex;
-	flex-direction: row;
+    flex-direction: row;
+    justify-content: space-evenly;
   }
   
   header nav {
-	width: 691px;
 	vertical-align: top;
-	margin-top: 35px;
+    width: 75%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
   }
   
   header nav a {
-	margin-right: 65px;
 	font-size: 14px;
 	color: gray;
-	text-decoration: none;
+    text-decoration: none;
+    margin: 35px 9% 0 0;
   }
   
   header nav a:hover {
 	text-decoration: underline;
   }
   
-  header nav a:first-child {
-	margin-left: 0;
-  }
-  
-  header nav a:last-child {
-	margin-right: 0;
-  }
-  
   header .logo {
-	margin-top: 25px;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 187px;
+
   }
   
   /* cta */
@@ -136,7 +136,7 @@ h1, h2, h3, h4, h5 {
   }
   
   .cta img {
-	display: inline-block;
+	display: flex;
 	margin-top: 69px;
   }
   
@@ -246,4 +246,40 @@ h1, h2, h3, h4, h5 {
 	  list-style: circle;
   }
 
+@media screen and (max-width: 1200px) {
+    /* start of tablet styles */
+        .container {
+            width: 95%;
+        }
 
+        .cta img{
+            display: none;
+            margin: auto;
+        }
+
+        header{
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-content: center;
+            flex-wrap: wrap;
+        }
+
+        .cta{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+@media screen and (max-width: 400px) {
+    /* start of phone styles */
+    .container {
+        width: 95%;
+    }
+
+    .cta img{
+        display: none;
+        margin: auto;
+    }
+
+
+}
