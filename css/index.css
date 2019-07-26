@@ -1,3 +1,344 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.container {
+	width: 880px;
+	/* TB LR */
+    margin: auto;
+  }
+  
+  /* header */
+
+  header {
+	display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  
+  header nav {
+	vertical-align: top;
+    width: 75%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  header nav a {
+	font-size: 14px;
+	color: gray;
+    text-decoration: none;
+    margin: 35px 9% 0 0;
+  }
+  
+  header nav a:hover {
+	text-decoration: underline;
+  }
+  
+  header .logo {
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 187px;
+
+  }
+  
+  /* cta */
+
+  .cta {
+	display: flex;
+	flex-direction: row;
+  }
+  
+  .cta .cta-text {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 77px;
+	margin-top: 120px;
+	text-align: center;
+	padding: 0px 75px;
+  }
+  
+  .cta .cta-text button {
+	background: white;
+	vertical-align: top;
+	margin-top: 6px;
+	padding: 8px 44px;
+	font-size: 17px;
+	border: 1px solid black;
+	cursor: pointer;
+  }
+  
+  .cta .cta-text button:hover {
+	background: black;
+	color: white;
+  }
+  
+  .cta img {
+	display: flex;
+	margin-top: 69px;
+  }
+  
+  .top-content{
+	display: flex;
+	flex-direction: row;
+  }
+
+  .main-content {
+	border-top: 1px solid black;
+	margin-top: 76px;
+	padding-top: 39px;
+  }
+  
+  .main-content .top-content {
+	padding: 0 10px;
+  }
+  
+  .main-content .top-content .text-content {
+	width: 410px;
+	display: inline-block;
+	margin-right: 34px;
+  }
+  
+  .main-content .top-content .text-content:last-child {
+	margin-right: 0;
+  }
+  
+  .main-content .middle-img {
+	margin-top: 45px;
+  }
+
+  .bottom-content{
+	display: flex;
+	flex-direction: row;
+  }
+  
+  .main-content .bottom-content {
+	margin-top: 37px;
+	padding: 0 10px;
+  }
+  
+  .main-content .bottom-content .text-content {
+	width: 275px;
+	display: inline-block;
+	margin-right: 12px;
+  }
+  
+  .main-content .bottom-content .text-content:last-child {
+	margin-right: 0;
+  }
+  
+  .contact {
+	margin-top: 57px;
+	border-top: 1px solid black;
+	padding: 39px 10px 0;
+  }
+  
+  .contact p {
+	margin: 20px 0;
+  }
+  
+  footer {
+	margin: 32px 0;
+	text-align: center;
+	font-size: 14px;
+  }
+
+  .top {
+	  display: flex;
+	  flex-direction: column;
+	  margin: 15px;
+  }
+
+  .services{
+	display: flex;
+	flex-direction: inherit;
+	flex-wrap: wrap;
+	border-top: 1px solid black;
+	padding: 15px 0;
+}
+
+  .service-info{
+	  margin: 13px 13px;
+	  width: 400px;
+	  padding: 20px;
+	  background-color: lightgray;
+	  border-style: solid;
+	  border-width: 2px;
+  }
+
+  .service-info button{
+	background: white;
+	vertical-align: top;
+	margin-top: 6px;
+	padding: 8px 22px;
+	font-size: 15px;
+	border: 1px solid black;
+	cursor: pointer;
+  }
+
+  .bottom{
+	  display: flex;
+  }
+
+  .bottom ul{
+	  list-style: circle;
+  }
+
+@media screen and (max-width: 880px) {
+    /* start of tablet styles */
+        .container{
+            width: 98%;
+        }
+
+        header{
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-content: center;
+            flex-wrap: wrap;
+        }
+
+        .cta img{
+            display: none;
+            margin: auto;
+        }
+
+        .main-content .middle-img {
+            width: 100%
+        }
+
+        .cta{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+@media screen and (max-width: 600px) {
+        /* start of phone styles */
+        .container {
+            width: 98%;
+        }
+
+        header nav{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;         
+        }
+
+        header nav a{
+            width: 100%;  
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 15px;
+            border-bottom: 1px solid black;
+            margin-top: 0;
+        }
+
+        header nav :first-child {
+            border-top: 1px solid black;
+        }
+
+        .cta img{
+            display: none;
+            margin: 15px auto;
+        }
+
+        header img{
+            margin: 15px auto;
+        }
+
+        .cta .cta-text{
+            margin-top: 30px;
+        }
+
+        .main-content{
+            margin-top: 0;
+        }
+
+        .top-content{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .main-content .top-content .text-content{
+            margin-top: 15px;
+            width: 100%;
+        }
+
+        .main-content .bottom-content .text-content{
+            margin-top: 15px;
+            width: 100%;
+        }
+
+        .bottom-content{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
 
 
+}
