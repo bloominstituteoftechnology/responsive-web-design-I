@@ -26,7 +26,7 @@ time, mark, audio, video {
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-	display: flex;
+	display: block;
 }
 body {
 	line-height: 1;
@@ -66,41 +66,34 @@ h1, h2, h3, h4, h5 {
 /* Your code starts here! */
 html {
 	width: 750px;
-    margin: auto;
-    display: flex;
+	margin: auto;
 }
 .top-nav {
-    margin: 5px;
-	padding: 15px;
+	padding: 10px;
 }
 header nav {
+	display: inline-block;
 	padding-bottom: 45px;
-}
-header nav:last-child {
-    margin-left: 30px;
-}
-.top {
-    padding: 20px;    
 }
 .left-top {
 	font-family: bangers;
     font-size: 66px;
+	display: inline-block;
 	padding-right: 10px;
 	align-content: center;
+
 }
 .circular-img {
+	display: inline-block;
 	width: 50%;
 	height: 50%;
 }
 .button {
-    font-size: 20px;
-    margin: 36px; 
-    text-align: center;
-    background: transparent;
-    border: solid black 2px;
-
-
+	font-size: 10px;
+	text-align: center;
+	float: center;
 }
+
 .middle-img {
 	padding-top: 30px;
 	padding-bottom: 30px;
@@ -108,8 +101,8 @@ header nav:last-child {
 }
 .content1 {
 	padding-top: 20px;
-    width: 49%;
-    padding: 5px;
+	display: inline-block;
+	width: 49%;
 }
 .top-content {
 	padding: 20px;
@@ -120,8 +113,8 @@ header nav:last-child {
 	padding-bottom: 25px;
 }
 .content2 {
-    width: 32%;
-    padding: 5px;
+	display: inline-block;
+	width: 32%;
 }
 .contact {
 	padding-top: 40px;
@@ -129,8 +122,9 @@ header nav:last-child {
 }
 .copyright {
 	margin: 35px;
-    text-align: center;
-    padding-bottom: 20px;
+	text-align: center;
 }
-
+.top {
+	padding: 20px;
+}
 
