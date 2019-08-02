@@ -136,12 +136,6 @@ nav .navigation {
     html {
       width: 100%;
     }
-    .navigation {
-      display: flex;
-      flex-flow: row wrap;
-      align-content: space-between;
-      justify-content: space-between;
-    }
     .navigation :nth-child(1) {order:2 }
     .navigation :nth-child(2) {order:3 }
     .navigation :nth-child(3) {order:4 }
@@ -149,13 +143,11 @@ nav .navigation {
     .navigation :nth-child(5) {order:6 }
     .navigation :nth-child(6) {order:7 }
     .navigation :nth-child(7) {order:1 }
+    .logo {
+      break-after: always
+    }
     .top-content {
       justify-content: center;
-    }
-    .logo {
-      flex: 1 100%;
-      margin-left: 35%;
-      margin-right: 35%;
     }
     .top.circular-img {
       display:none;
@@ -167,8 +159,7 @@ nav .navigation {
       width: 100%;
     }
     .flex-wrapper {
-        display: flex; 
-        display: column;       
+        display: flex;        
     }
     .navigation {
       flex-direction: column;
