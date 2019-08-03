@@ -70,21 +70,25 @@ html {
   margin: auto;
   display: flex;
 }
+.flex-wrapper {
+    display: flex;
+}
 .top-nav {
   margin: 5px;
   padding: 10px; 
 }
-nav .navigation {
-  padding-bottom: 45px;
-  display: flex;
-  flex-wrap: row wrap;
-  width: 100%;
+nav {
+	padding-bottom: 45px;
 }
 
+.top {
+    padding: 20px;    
+}
 .left-top {
 	font-family: bangers;
   font-size: 66px;
-	justify-content: center;
+	padding-right: 10px;
+	align-content: center;
 }
 .circular-img {
 	width: 50%;
@@ -98,8 +102,6 @@ nav .navigation {
     border: solid black 2px;
     font-family: sans-serif;
     padding:0.2rem;
-    margin: 4rem;
-    margin-top: 1rem;
 }
 .middle-img {
 	padding-top: 30px;
@@ -134,13 +136,7 @@ nav .navigation {
 }
 @media(max-width: 800px) {
     html {
-      width: 100%;
-    }
-    .navigation {
-      display: flex;
-      flex-flow: row wrap;
-      align-content: space-between;
-      justify-content: space-between;
+      width: auto;
     }
     .navigation :nth-child(1) {order:2 }
     .navigation :nth-child(2) {order:3 }
@@ -149,13 +145,11 @@ nav .navigation {
     .navigation :nth-child(5) {order:6 }
     .navigation :nth-child(6) {order:7 }
     .navigation :nth-child(7) {order:1 }
+    .logo {
+      flex: 0 1 100%;
+    }
     .top-content {
       justify-content: center;
-    }
-    .logo {
-      flex: 1 100%;
-      margin-left: 35%;
-      margin-right: 35%;
     }
     .top.circular-img {
       display:none;
@@ -164,11 +158,10 @@ nav .navigation {
   }
   @media(max-width: 500px) {
     html {
-      width: 100%;
+      width: auto;
     }
     .flex-wrapper {
-        display: flex; 
-        display: column;       
+        display: flex;        
     }
     .navigation {
       flex-direction: column;
@@ -177,7 +170,6 @@ nav .navigation {
       margin: auto;
       padding-top: 3rem;
       }
-    
     .navigation :nth-child(1) {order:2 }
     .navigation :nth-child(2) {order:3 }
     .navigation :nth-child(3) {order:4 }
@@ -208,8 +200,5 @@ nav .navigation {
 @media (min-width:801px){
   nav:last-child {
   margin-left: 30px;
-  }
-  .top .left-top p{
-    padding: 20px;    
   }
 }
