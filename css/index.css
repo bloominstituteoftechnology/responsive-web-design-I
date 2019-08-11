@@ -129,58 +129,63 @@ table {
   border-spacing: 0;
 }
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/*------------------Desktop View------------------*/
 body {
-  width: 800px;
-  margin: auto;
+  width: 1100px;
+  margin: 0 auto;
 }
-
 p {
-  padding: 9px;
+  font-size: 1.25rem;
+  padding: 10px;
 }
-
 h1 {
-  font-size: 50px;
+  font-size: 5rem;
   font-family: "bangers", cursive;
   justify-content: center;
 }
 h2 {
   font-size: 25px;
   font-family: "bangers", cursive;
+  padding: 10px;
 }
-
 nav {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   background: white;
 }
-
 nav a {
-  /*display: flex;*/
-  padding: 10px;
+  padding: 20px;
   margin-top: 5px;
   color: grey;
   text-decoration: none;
 }
-
-footer {
+.intro {
+  padding: 100px;
+}
+.started {
+  justify-content: center;
+  font-size: 1.5rem;
+  height: 25px;
+  width: 190px;
+  border: 1px solid black;
+  background-color: white;
   text-align: center;
 }
-
+img.introimg {
+  padding: 50px;
+}
+.intro-container {
+  display: flex;
+  direction: row;
+}
 .picture-box {
   width: 100%;
 }
 
 .middle-img {
   width: 100%;
-}
-
-.button {
-  margin: 0 auto;
-  width: 200px;
-  padding: 10px 0px;
-  text-align: center;
-  border: 2px solid black;
+  padding: 10px;
 }
 
 .top-content {
@@ -191,67 +196,63 @@ footer {
 .bottom-content {
   display: flex;
   direction: row;
-  font-family: "";
 }
-
-.intro-container {
+.contact-content h2,
+a {
   display: flex;
-  direction: row;
-  justify-content: space-between;
+  text-decoration: none;
+  color: black;
 }
-
-.container {
-  max-width: 100vw;
-  overflow: hidden;
+footer {
+  text-align: center;
 }
-
-/* Tablets */
+/*------------------Tablet View------------------*/
 @media (max-width: 800px) {
+  body {
+    width: 800px;
+    margin: 0 auto;
+  }
   .intro-container {
+    justify-content: center;
+  }
+  img.introimg {
+    display: none;
+  }
+  .top-content {
+    display: flex;
+    flex-direction: row;
+  }
+  .bottom-content {
+    display: flex;
+    flex-direction: row;
   }
 }
 
+/*------------------Mobile View------------------*/
 @media (max-width: 500px) {
   body {
-    max-width: 500px;
+    width: 500px;
+    margin: 0 auto;
   }
-
   nav {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .container nav a {
-    border-bottom: 1px solid grey;
-    padding: 15px 500px;
-
-    max-width: 100vw;
-    overflow-x: hidden;
-  }
-
-  .container header nav {
     display: flex;
     flex-direction: column-reverse;
+  }
+  nav a {
+    justify-content: center;
+    width: 100vw;
+    border-bottom: 1px solid black;
   }
   .top-content {
     display: flex;
     flex-direction: column;
   }
-
   .bottom-content {
     display: flex;
     flex-direction: column;
   }
-
   .intro-container .introimg {
     display: none;
-  }
-  .intro-container .intro {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    justify-content: center;
   }
   .intro .started {
     margin: auto;
