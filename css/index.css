@@ -176,18 +176,15 @@ button{
 	
 }
 
-.featuresText{
 
-	width: 45%;
-	
-}
 
 .aboutText{
-	width: 45%;
-}
+	margin-left: 2%;
+    
+} 
 
 .imagecontent{
-	display: block;
+	display: flex;
 	width: 100%;
 	
 
@@ -237,11 +234,28 @@ button{
 
 /**************** Media Query Section *************************/
 
+
+/****************** Tablet *****************************/
+
 @media(max-width: 768px) {
     .container {
       width: 768px;
-    
-      
+    }
+
+    header{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        
+       
+    }
+
+    nav{
+        align-content: center;
+    }
+
+    .logo{
+        align-content: center;
     }
 /*********************  Mobile **************************/
     @media(max-width: 500px) {
@@ -250,6 +264,8 @@ button{
           
           
         }
+
+    
 
 
         header{
@@ -277,7 +293,7 @@ button{
         nav a{
             padding-top: 5%;
             padding-bottom:7%;
-            border-bottom: solid black 1px;
+            border-bottom: solid grey 1px;
             width: 128%;
             text-align: center;
             
@@ -285,7 +301,7 @@ button{
 
     
         #sbox{
-            border-top: solid black 1px;
+            border-top: solid grey 1px;
             padding-top: 9%;
             
         }
@@ -340,10 +356,19 @@ button{
         }
 
         content{
-            align-content: center;
+            align-items: center;
             width: 90%;
         }
+        
+        .aboutText{
+            margin-left: 0%;
             
+        } 
+
+        .imagecontent{
+            width: 90%;
+            margin-left: 11%;
+        }
 
        
 
