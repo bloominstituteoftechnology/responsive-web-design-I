@@ -68,7 +68,7 @@ h1, h2, h3, h4, h5 {
 	display: flex;
 	padding-top: 20px;
     padding-left: 15px;
-    max-width: 100%;
+	max-width: 100%;
 }
 
 .logo{
@@ -78,7 +78,8 @@ h1, h2, h3, h4, h5 {
 nav a{
 	padding: 10px 38px;
 	text-decoration: none;
-    color: black;
+	color: black;
+	
 }
 
 h1 {
@@ -200,7 +201,8 @@ h2{
         display: none;
     }
     .logo{
-        padding-bottom: 20px;
+		padding-bottom: 50px;
+		
     }
    
     .navLayout{
@@ -211,12 +213,58 @@ h2{
     nav a{
         padding: 30px 30px;
 	}
+
 	.topPage{
 		padding-left: 260px;
 	}
+	
 	.container{
 		padding: 20px
 	}
+	}
 
-}
+	@media screen and (max-width: 500px){
+	nav a{
+		display: flex;
+		flex-direction: column-reverse;
+		font-size: 1.5rem;
+		border-bottom: 1px solid black;
+		padding: 30px 150px;
+	}
+
+	.logo{
+		border-bottom: 1px solid black;
+		padding: 20px 100px;
+	}
+
+	.navLayout, .logo{
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+
+	.topPage{
+		padding: 0 0 40px 0;
+	}
+	.title{
+		display: block;
+		margin: 0 auto;
+	}
+
+	.midText{
+		flex-direction: column;
+	}
+	.text{
+		padding: 20px 10px;
+	}
+	.bottomText{
+		flex-direction: column;
+	}
+
+	.text2{
+		padding: 20px 10px;
+		width: 450px;
+	}
+	
+	}
+
 
