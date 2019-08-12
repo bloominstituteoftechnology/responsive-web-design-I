@@ -336,4 +336,93 @@ header {
 	text-align: center;
 }
 
+/*****************MEDIA QUERIES - MOBILE VIEW*******************/
+
+@media screen and (max-width: 500px) {
+	.container {
+		width: 500px;
+		height: 100%;
+	}
+	
+	.navigation {
+		display: flex;
+		flex-direction: column-reverse;
+		width: 100%
+	}
+	
+	.navigation img {
+		border-bottom: 1px solid gray;
+		justify-content: center; 
+		width: 100%;
+		padding: 0 150px 20px 150px ;
+	}
+
+	.navigation a {
+		display:flex;
+		flex-direction: column; 
+		align-items: center;
+		padding: 20px;
+		border-bottom: 1px solid gray;
+		width: 500px;
+	}
+	
+	.logo {
+		width: 500px;
+	}
+
+	.titleButton {
+		width: 500px;
+		font-size: 70px; 
+		
+	}
+
+	
+	.picHeader {
+		display: none;	
+	}
+
+	.button a {
+		border: 1px solid black;
+	}
+
+	.topContent {
+		display: flex;
+		flex-direction: column;
+		margin: 5%;
+	}
+
+	.boxesTop {
+		
+	}
+
+	.middle-img {
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+
+	.middle-img img {
+		width: 500px; 
+	}
+
+	.bottomContent {
+		margin: 5%;
+		display: flex;
+		flex-direction: column;
+		border-bottom: 1px solid black;
+		padding: none;
+	}
+
+	.boxes {
+		border: none;
+		padding: none;
+	}
+
+	.contact {
+		margin: 0 5% 0;
+	}
+
+	.sectionFooter {
+		padding-bottom: 20px;
+	}
+}
 
