@@ -194,7 +194,40 @@ a{
   }
 
   @media only screen and (max-width: 500px) {
-	body {
-	  background-color: blue;
+	body{
+
 	}
+	
+	.navigation{
+		
+	}
+	
+	.navlinks{
+		display: flex;
+		flex-direction: column;
+			
+	}
+	.navlinks a{
+		display: flex;
+		justify-content: center;
+		border-top: 1px black solid;
+		padding: 1%;
+			
+	}
+	.intro{
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 80%;
+		margin-left: 1%;
+	}
+
+	.textOne, .textTwo{
+		display: flex;
+		flex-direction: column;
+	}
+	.features, .about, .services, .product, .vision{
+		width: 100%;
+		margin-bottom: 2%;
+	}
+	
   }
