@@ -81,7 +81,6 @@ header nav {
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    margin-bottom: 500px;
     background:white;
 	z-index: 1;
 	transition-property:padding;
@@ -89,6 +88,7 @@ header nav {
     font-size: 14px;
 
 }
+nav{width: 50%;}
 
 	header nav a{
 		color: grey;
@@ -101,7 +101,9 @@ header nav {
 	header nav a:hover{
 		border: 1px solid black;
 	}
-
+    .tab_logo{
+        display: none;
+    }
 .logo{
 	margin-left:100px;
 	vertical-align: middle;
@@ -199,20 +201,65 @@ footer{
 
 	text-align: center;
 }
+.logo-tab{
+    display: none;
+}
 
 /* max-width media queries for 800px Screen starts here i.e tablets  */
 
 @media screen and (max-width: 800px){
-    header nav {
+    header nav  {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 500px;
-        background:black;
+        background:white;
         z-index: 1;
         transition-property:padding;
         transition-duration:0.5s;
         font-size: 14px;
+        position: unset;
+        
     
     }
+   .header-tab{
+position: fixed;
+background-color: white;
+width: 100%;
+margin-bottom: 30px;
+   }
+    .logo{display: none;}
+    header .logo-tab{display:inline;
+        justify-content: center;
+    margin-top: 20px;
+    background: white;
+    }
+   
+    nav{width: 100%;}
+    .img_header{
+display: none;
+    }
+    .innovation_banner{
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 75px;
+        text-align:center;
+        vertical-align: middle;
+        margin-top:110px;
+        margin-right:60px;
+    }
+    .ino{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
 
+    }
+    .button{
+	
+        font-size:15px;
+        border: 1px solid black;
+        padding:5px 20px;
+        margin:0 auto;
+        background: white;
+        margin-bottom:50px;}
+    
 }
