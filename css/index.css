@@ -197,7 +197,7 @@ footer p {
     
     header{
         
-         border:solid black;
+         
          display:flex;
          flex-direction: column;
          width:100%;
@@ -249,58 +249,41 @@ footer p {
 /******************MEDIA QUERY TABLET****************/
 
 @media screen and (max-width:800px) {
+    .introimg{
+        visibility: hidden;
+    }
+
     .container{
-        border:solid green;
-        margin:0;
+        padding:15px;
     }
-    
-    header{
-        
-         border:solid black;
-         display:flex;
-         flex-direction: column;
-         width:100%;
-        
-     }
-     
-     header a{
-        width:100%;
+
+    .logo{
+        width:25%;
+        margin-left:35%;
+    }
+
+    header nav{
         display:flex;
-        flex-direction: column;
-        border-bottom:gray solid;
+        justify-content: space-around;
+        align-content: center;
+        width:100%;
+        padding-top:15px;
+       
+    }
+
+     .intro {
+        
+        display:flex;
+        flex-direction:column;
+        align-content: center;
         align-items: center;
-        justify-content: center;
-        padding:15px;
-     }
-     .logo{
-         display:flex;
-         
-         border-bottom:solid gray;
-         width:50%;
-     }
-     .introimg{
-         visibility: hidden;
-     }
-
+        width:100%;
+        justify-content: space-evenly;
+        
+    }
     .intro-container{
-        border-bottom:solid black;
+        
+        margin-bottom: -25%;
     }
-
-    .top-content{
-        padding:15px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .middle-img{
-        padding:15px;
-    }
-
-.bottom-content{
-    padding:15px;
-    display: flex;
-    flex-direction: column;
-    }
-
-
+  
 }
