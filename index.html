@@ -18,6 +18,117 @@
   </head>
 
   <body>
-    <!-- Use past code you created here for Great Idea Web Page or past solution for Great Idea Web Page HTML here! -->
+    <!-- Header -->
+    <header>
+      <nav class="container row jc-fs ai-c __75">
+        <div class="nav-links">
+          <a href="services.html">Services</a>
+          <a href="#">Product</a>
+          <a href="#">Vision</a>
+          <a href="#">Features</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="logo">
+          <a href="index.html">
+            <h1>Great Idea! Company</h1>
+          </a>
+        </div>
+      </nav>
+      <section class="header-introduction">
+        <h2>Innovation On Demand</h2>
+        <button>Get Started</button>
+        <img src="img/header-img.png" alt="Image of a code snippet." />
+      </section>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <article class="services">
+        <section>
+          <h3>Features</h3>
+          <p>
+            Aliquam elementum magna eros, ac posuere elvit tempus et.
+            Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu
+            ornare nisl. Nullam convallis augue justo, at imperdiet metus
+            scelerisque quis.
+          </p>
+        </section>
+
+        <section>
+          <h3>About</h3>
+          <p>
+            Aliquam elementum magna eros, ac posuere elvit tempus et.
+            Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu
+            ornare nisl. Nullam convallis augue justo, at imperdiet metus
+            scelerisque quis.
+          </p>
+        </section>
+        <div>
+          <img
+            src="img/mid-page-accent.jpg"
+            alt="Image of code snippets across the screen"
+          />
+        </div>
+        <section>
+          <h3>Services</h3>
+          <p>
+            Aliquam elementum magna eros, ac posuere elvit tempus et.
+            Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu
+            ornare nisl. Nullam convallis augue justo, at imperdiet metus
+            scelerisque quis.
+          </p>
+        </section>
+
+        <section>
+          <h3>Product</h3>
+          <p>
+            Aliquam elementum magna eros, ac posuere elvit tempus et.
+            Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu
+            ornare nisl. Nullam convallis augue justo, at imperdiet metus
+            scelerisque quis.
+          </p>
+        </section>
+
+        <section>
+          <h3>Vision</h3>
+          <p>
+            Aliquam elementum magna eros, ac posuere elvit tempus et.
+            Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu
+            ornare nisl. Nullam convallis augue justo, at imperdiet metus
+            scelerisque quis.
+          </p>
+        </section>
+      </article>
+    </main>
+    <footer>
+      <section class="contact">
+        <h3>Contact</h3>
+        <address>
+          <div>123 Way 456 Street</div>
+          <div>Somewhere, USA</div>
+          <div>
+            <a href="tel:18888888888" class="phone">
+              1 (888) 888-8888
+            </a>
+          </div>
+          <div>
+            <a href="mailto:sales@greatidea.io" class="email">
+              sales@greatidea.io
+            </a>
+          </div>
+        </address>
+      </section>
+      <p class="copyright">
+        &copy; Great Idea!
+        <span id="copyrightDate"></span>
+      </p>
+    </footer>
   </body>
+  <script>
+    let d = new Date();
+    let year = d.getFullYear();
+    let el = document.getElementById("copyrightDate");
+    el.textContent = year;
+  </script>
 </html>
