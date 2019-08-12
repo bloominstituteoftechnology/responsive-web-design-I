@@ -149,7 +149,10 @@ h5 {
   margin-bottom: 15px;
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+* {
+  /* border: solid 1px black; */
+}
+
 p {
   font-family: "Dosis", sans-serif;
 }
@@ -206,145 +209,132 @@ header nav a:hover {
   left: -13px;
   height: 42px;
 }
-/* ======= FIRST SECTOIN ============ */
-.top-section {
-  /* border: yellow solid; */
-  /* background-color: aqua; */
-  /* margin-top: 50px;
-	text-align: center; */
-  height: 500px;
-}
 
-.top-container {
-  max-width: 1140px;
-  height: 555px;
-  position: relative;
+.top {
+  /* border: 5px solid lime; */
+  width: 1140px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
   align-items: center;
-  /* border: 3px solid yellow; */
-  /* border-bottom: 1px solid gray;
-  padding: 30px;
-  box-sizing: border-box;
-  position: relative;
-  display: block;
-  margin: 0 auto; */
 }
 
-.top-div {
-  /* border: 2px solid green; */
-  /* display: inline-block;
-
-  position: relative;
-  box-sizing: border-box;
-  padding: 20px;
-  
-	width: 40%; */
-  /* border: solid blue; */
-  text-align: center;
-  width: 50%;
+.top img {
+  width: 980px;
 }
 
-.top-div-left {
-  position: relative;
-  top: -20px;
+.top .top-paragraph {
+  /* background-color: green; */
+
+  border-bottom: 1px solid black;
+  margin-top: 40px;
+  height: 150px;
+  width: 980px;
+}
+
+.top .top-paragraph div h1 {
+  font-size: 30px;
+}
+
+.top .top-paragraph div p {
+  font-size: 18px;
+}
+
+.middle-section {
+  /* border: 5px solid magenta; */
+  width: 1140px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
 }
 
-.top-div-left h1 {
-  font-size: 85px;
-  position: relative;
-  left: 75px;
+.middle-group {
+  /* border: 1px solid lime; */
+  display: flex;
+  margin: 0px auto;
 }
 
-.get-started {
-  border: 1px black solid;
-  position: relative;
-  text-decoration: none;
-  padding: 8px;
-  display: block;
-  width: 193px;
-  height: 36px;
+.middle-group div {
+  /* border: 3px solid lime; */
+  border: 1px solid black;
+  width: 465px;
+  height: 276px;
+
+  background-color: #f4f3f4;
+  margin-top: 45px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 20px;
   font-size: 20px;
-  margin: 0 auto;
-  left: 63px;
-  top: 3px;
-  box-sizing: border-box;
 }
 
-.get-started:hover {
+.middle-section .middle-group div p {
+  /* background-color: hotpink; */
+  display: inline-block;
+}
+
+.middle-section .middle-group div a {
+  border: solid black 1px;
+  border-radius: 8px;
+  color: black;
+  margin-top: 30px;
+  height: 38px;
+  width: 155px;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.middle-section .middle-group div a:hover {
   background-color: black;
   color: white;
 }
 
-.top-div img {
-  height: 420px;
-  position: relative;
-  top: -30px;
-  left: -10px;
-
-  /* border: 2px solid yellow; */
-}
 .bottom-section {
-  /* border: 1px solid yellow; */
-  height: 650px;
-}
-.bottom-container {
-  /* border: 3px solid blue; */
-
-  padding: 50px;
-  box-sizing: border-box;
-  max-width: 1140px;
-  height: 100%;
-  position: relative;
+  /* border: 5px solid orangered; */
+  width: 980px;
+  margin: 50px auto;
   display: flex;
-  flex-direction: column;
-  margin: 0 auto;
+  justify-content: space-between;
+  border-top: 2px solid black;
 }
 
-.bottom-top-div {
-  /* position: relative;
-	
-  display: inline-bloc*/
-  border-top: 1px solid black;
-
-  display: flex;
+.bottom-group {
+  /* border: 3px solid hotpink; */
+  margin: 40px 0;
 }
 
-.bottom-top-div div {
-  margin: 30px;
-  font-size: 20px;
-}
-
-.bottom-bottom-div {
-  display: flex;
-  border-bottom: 1px solid black;
-}
-
-.bottom-bottom-div div {
-  margin: 30px;
-  width: 30%;
-  font-size: 20px;
-}
-
-.footer-div {
-  display: block;
-  position: relative;
+.bottom-group h1 {
   font-size: 18px;
-  width: 48%;
-  /* border: 3px solid yellow; */
-  margin: 20px auto;
+  font-weight: bolder;
 }
 
-.footer-div p {
-  display: block;
-  width: 200px;
+.bottom-group p {
+  width: 436px;
+  font-size: 18px;
 }
 
-.copyright {
-  position: relative;
+.bottom-group ul {
+  list-style: circle;
+  margin-top: 30px;
+  margin-left: 10px;
+}
+
+.bottom-group ul li {
+  margin: 20px;
+  list-style-type: square;
+}
+
+.bottom-group img {
+  width: 460px;
+}
+
+footer {
+  width: 980px;
+
+  text-align: center;
   margin: 20px auto;
-  width: 500px;
+  font-size: 18px;
 }
