@@ -318,57 +318,65 @@ display: flex;
            display:flex;
            justify-content: center;
            justify-content: space-evenly;
-           position: relative;
-           right: 35px;
+           
+           
            
            
        }.gilogo {
         display:flex;
         justify-content: center;
-        margin-bottom: 25px;
+        align-items: center;
+        
       
        }.titlecode {
-           justify-content: center;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         position: relative;
+         left: 4%;
        }img.logo {
          position: relative;
-         right: 50px;
+         right: 2%;
        }.title{
          position: relative;
-         right: 90px;
+         right: 11%;
        }.top-content{
-         width: 92%;
+         width: 100%;
        }.middle-img {
-         width: 92%;
+         width: 100%;
        }.bottom-content {
-         width: 92%;
+         width: 100%;
        }
     }
     
     @media screen and (max-width:500px){
           img.logo {
-            position: relative;
-            right: 209px;
+            
           }.navI {
             display:flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            position: relative;
-            right: 175px;
+            
           }.titlecode{
             display: flex;
-            position: relative;
-            right: 160px;
+            
           }.top-content {
             display: flex;
+            justify-content: center;
+            align-items: center;
             flex-flow:column;
-            width: 116%;
+            
+            
           }.middle-img{
-            width: 57%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
           }.bottom-content{
             display: flex;
             flex-flow: column;
-            width:171%; 
+            align-items: center;
           }a {
             border-bottom:1px solid black;
             width: 51%;
@@ -378,8 +386,8 @@ display: flex;
             justify-content: center; 
           }footer{
             display: flex;
-            position: relative;
-            left: 150px;
+            align-items:center;
+            justify-content: center;
           }
       }
 
