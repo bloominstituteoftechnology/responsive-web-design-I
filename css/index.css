@@ -150,10 +150,16 @@ h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
 
 nav {
-	margin: auto;
-	width: 876px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
 nav a {
@@ -167,14 +173,15 @@ nav .logo {
 }
 
 header {
-	line-height: 0.75;
-	margin: 50px 0px 50px 100px;
-	width: 876px;
+	margin: 50px auto;
+	width: 100%;
 	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 header .title {
-	font-size: 68px;
+	font-size: 72px;
 	text-align: center;
 	margin: 0px 15px;
 	margin-right: 100px;
@@ -182,16 +189,16 @@ header .title {
 
 header .title button {
 	border: 1px solid black;
-	margin-top: 0px;
+	margin-top: 20px;
 	padding: 6px 40px;
+	background: white;
 }
 
 header img {
-	width: 35%;
 }
 
 .top-content {
-	width: 876px;
+	width: 100%;
 	display: flex;
 }
 
@@ -203,10 +210,11 @@ header img {
 
 .middle-img {
 	margin: 30px 0px;
+	width: 100%;
 }
 
 .bottom-content {
-	width: 876px;
+	width: 100%;
 	display: flex;
 }
 
@@ -220,114 +228,35 @@ header img {
 	margin-top: 30px;
 }
 
-body {
-	/* centers the website */
-	width: 876px;
-	margin: 0 auto;
-}
-
 footer {
 	margin-top: 50px;
 	text-align: center;
 }
 
-.services-nav {
-	margin: 20px;
-}
+/*******Media Queries***********/
 
-.services-header-content {
-	display: flex;
-	flex-direction: column;
-	margin: 0;
-	padding: 10px 0 20px 0;
-}
+@media (max-width: 800px) {
+	.logo {
+		display: flex;
+		order: -1;
+		justify-content: center;
+		margin: 0 50%;
+	}
 
-.services-content {
-	display: flex;
-	flex-direction: column;
-}
+	nav a {
+		flex-wrap: nowrap;
+	}
 
-.child1 {
-	display: flex;
-	justify-content: space-between;
-}
+	nav {
+		justify-content: center;
+		flex-wrap: wrap;
+	}
 
-.child2 {
-	display: flex;
-	justify-content: space-between;
-}
-
-.child3 {
-	display: flex;
-	justify-content: space-between;
-}
-
-.digital-design {
-	border: 1px solid black;
-	background-color: rgb(224, 224, 224);
-	display: flex;
-	flex-direction: column;
-	padding: 10px;
-	margin: 30px 10px 30px 0;
-}
-
-.ux-ui {
-	border: 1px solid black;
-	background-color: rgb(224, 224, 224);
-	display: flex;
-	flex-direction: column;
-	padding: 10px;
-	margin: 30px 0px 30px 10px;
-}
-
-.digital-marketing {
-	border: 1px solid black;
-	background-color: rgb(224, 224, 224);
-	display: flex;
-	flex-direction: column;
-	padding: 10px;
-	margin: 30px 10px 30px 0;
-}
-
-.web-development {
-	border: 1px solid black;
-	background-color: rgb(224, 224, 224);
-	display: flex;
-	flex-direction: column;
-	padding: 10px;
-	margin: 30px 0px 30px 10px;
-}
-
-.ios-development {
-	border: 1px solid black;
-	background-color: rgb(224, 224, 224);
-	display: flex;
-	flex-direction: column;
-	padding: 10px;
-	margin: 30px 10px 30px 0;
-}
-
-.android-development {
-	border: 1px solid black;
-	background-color: rgb(224, 224, 224);
-	display: flex;
-	flex-direction: column;
-	padding: 10px;
-	margin: 30px 0px 30px 10px;
-}
-
-button {
-	height: 40px;
-	width: 40%;
-	margin: 20px 0;
-}
-
-.services-bottom-content {
-	display: flex;
-	margin: 20px;
-}
-
-.things {
-	list-style-type: disc;
-	margin: 20px;
+	header img {
+		display: none;
+	}
+	header {
+		justify-content: center;
+		margin: 5% 5% 10% 5%;
+	}
 }
