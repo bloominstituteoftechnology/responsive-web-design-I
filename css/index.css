@@ -67,10 +67,305 @@ h1, h2, h3, h4, h5 {
 
 body {
 	margin: 2% 4%;
-}]
-
+}
 
 .container {
     max-width: 880px;
     margin: auto;
 }
+
+/****** Nav styles ******/
+
+nav {
+	display: flex;
+	justify-content: space-between;
+}
+
+    /**** phone ****/
+    @media (max-width: 500px) {
+        nav {
+            flex-direction: column;
+        }
+    }
+
+nav a {
+    color: gray;
+    text-decoration:none;
+    margin-right: 2%;
+}
+
+    /**** phone style ****/
+    @media (max-width: 500px) {
+        nav a {
+            align-self: center;
+            margin: 6% 0;
+            font-size: 1.25em;
+        }
+    }
+
+nav a:hover {
+	color: rgb(226, 53, 9);
+}
+
+.logo-desktop {
+	margin-top: -10px;
+}
+
+    /**** mobile ****/
+    @media (max-width: 800px) {
+        .logo-desktop {
+            display: none;
+        }
+    }
+
+.logo-mobile-box {
+    display: none;
+}
+
+    /**** mobile ****/
+    @media (max-width: 800px) {
+        .logo-mobile-box {
+            display: flex;
+            justify-content: center;
+            margin: 6% 0 5% 0;
+        }
+    }
+
+/****** HEADER ******/
+
+header {
+	height: 60vh; 
+	display: flex;
+	justify-content: space-between;	
+}
+
+    /**** mobile ****/
+    @media (max-width: 800px) {
+        header {
+            height: 400px;    
+        }
+    }
+
+header.services {
+    display: flex;
+    flex-flow: row wrap;
+    height: 50%;
+}
+
+h1 {
+	text-align: center;
+	font-size: 70px;
+}
+
+button.header-btn {
+	align-self: center;
+	margin-top: 15px;
+	background: none;
+	border: 1px solid black;
+	padding: 5px 25px;
+	text-align: center;
+	width: 150px;
+	box-shadow: 0 4px lightgray;
+}
+
+button.header-btn:hover {
+	background-color: rgb(226, 53, 9);
+}
+
+button.header-btn:active {
+	background-color: rgb(226, 53, 9);
+	box-shadow: 0 2px rgb(240, 242, 245);
+	transform: translateY(4px); 
+}
+
+.header-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	width: 50%;
+}
+
+    /**** tablet ****/
+    @media (max-width: 800px) {
+        .header-content {
+            width: 100%;
+        }
+    }
+
+.header-img{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	width: 50%;
+}
+
+    /**** mobile ****/
+    @media (max-width: 800px) {
+        .header-img {
+            display: none;
+        }
+    }
+
+.header-img {
+	align-self: center;
+}
+
+/**** Services header ****/
+
+header.services {
+	width: 880px;
+	margin: 25px 0;
+}
+
+h2 {
+	margin-top: 25px;
+}
+
+
+/****** Main styles ******/
+
+/* Top content */
+.top-content {
+    display: flex;
+	justify-content: space-between;	
+}
+
+    /**** phone ****/
+    @media (max-width: 500px) {
+        .top-content {
+            flex-direction: column;
+            }
+    }
+
+.top-left {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	margin: 3% 1%;
+}
+
+    /**** phone ****/
+    @media (max-width: 500px) {
+        .top-left {
+            width: 100%;
+            margin: 15% 0 0 0;
+        }
+    }
+
+.top-right {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	margin: 3% 1%;
+}
+
+    /**** phone ****/
+    @media (max-width: 500px) {
+        .top-right {
+            width: 100%;
+            margin: 15% 0;
+        }
+    }
+
+/* middle image */
+.middle-img {
+    width: 100%;
+}
+
+/* Bottom content */
+.btm-content {
+	display: flex;
+	justify-content: space-between;
+}
+
+    /**** phone ****/
+    @media (max-width: 500px) {
+        .btm-content {
+            flex-direction: column;
+            }
+    }
+
+.btm-left {
+	display: flex;
+	flex-direction: column;
+	margin: 3% 1%;
+	padding: 10px 0;	
+}
+
+    /**** phone ****/
+    @media (max-width: 500px) {
+        .btm-left {
+            width: 100%;
+            margin: 10% 0 15% 0;
+            padding: 0;
+            }
+    }
+
+.btm-center {
+	display: flex;
+	flex-direction: column;
+	margin: 3% 1%;
+	padding: 10px;
+}
+
+    /**** phone ****/
+    @media (max-width: 500px) {
+        .btm-center {
+            width: 100%;
+            margin: 0 0 15% 0;
+            padding: 0;
+            }
+    }
+
+.btm-right {
+	display: flex;
+	flex-direction: column;
+	margin: 3% 1%;
+	padding: 10px;
+}
+
+    /**** phone ****/
+    @media (max-width: 500px) {
+        .btm-right {
+            width: 100%;
+            margin: 0 0 15% 0;
+            padding: 0;
+            }
+    }
+
+/****** CONTACT ******/
+
+.contact {
+	display: flex;
+    flex-direction: column;
+    margin: 3% 0 2% 1%;
+}
+
+    /**** phone ****/
+    @media (max-width: 500px) {
+        .contact {
+            width: 100%;
+            margin: 10% 0;
+            padding: 0;
+            }
+    }
+
+/****** FOOTER ******/
+
+footer {
+	display: flex;
+	justify-content: center;
+}
+
+    /**** phone ****/
+    @media (max-width: 500px) {
+        footer {
+            margin: 10% 0;
+            }
+    }
+
+footer p {
+	margin: 3% 1%;
+}
+
