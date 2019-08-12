@@ -241,17 +241,18 @@ header nav a:hover {
 }
 
 .middle-section {
-  /* border: 5px solid magenta; */
-  width: 1140px;
+  border: 5px solid magenta;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
 }
 
 .middle-group {
-  /* border: 1px solid lime; */
+  border: 3px solid lime;
   display: flex;
   margin: 0px auto;
+  display: flex;
 }
 
 .middle-group div {
@@ -293,17 +294,20 @@ header nav a:hover {
 }
 
 .bottom-section {
-  /* border: 5px solid orangered; */
-  width: 980px;
+  border: 5px solid yellow;
+  width: 100%;
   margin: 50px auto;
   display: flex;
   justify-content: space-between;
-  border-top: 2px solid black;
 }
 
 .bottom-group {
-  /* border: 3px solid hotpink; */
-  margin: 40px 0;
+  border: 3px solid hotpink;
+  margin: 40px auto;
+  width: 60%;
+  border-top: 2px solid black;
+  display: flex;
+  justify-content: space-around;
 }
 
 .bottom-group h1 {
@@ -337,4 +341,7 @@ footer {
   text-align: center;
   margin: 20px auto;
   font-size: 18px;
+}
+
+@media screen and (max-width: 800px) {
 }
