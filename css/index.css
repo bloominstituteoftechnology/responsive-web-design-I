@@ -74,6 +74,25 @@ body {
     margin: auto;
 }
 
+hr {
+	color: gray;
+    margin: 0;
+    width: 100%;
+}
+
+hr.phoneOnly {
+    display: none;
+}
+
+    /*--- phone ---*/
+    @media (max-width: 500px) {
+        hr.phoneOnly {
+            display: flex;
+            width: 100%;
+        }
+    }
+
+
 /****** Nav styles ******/
 
 nav {
@@ -97,7 +116,8 @@ nav a {
     /**** phone style ****/
     @media (max-width: 500px) {
         nav a {
-            align-self: center;
+            width: 100%;
+            text-align: center;
             margin: 6% 0;
             font-size: 1.25em;
         }
