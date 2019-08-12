@@ -114,4 +114,37 @@ nav .logo {
   text-align: center;
   padding: 35px 0 0 0;
 }
-/* ========== MEDIA QUERIES ========== */
+/* ========== TABLET MEDIA QUERIES ========== */
+@media screen and (min-width: 768px) {
+  /* ========== HEADER ========== */
+  nav .logo {
+    background-size: 170px;
+  }
+  .logo h1 {
+    height: 85px;
+  }
+  .nav-links {
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+  }
+  .nav-links a {
+    border: none;
+  }
+  .nav-links a:first-child {
+    border: none;
+  }
+  .top-content h2 {
+    padding: 0 270px;
+  }
+
+  /* ========== MAIN ========== */
+  .middle-content .services {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+  .services section {
+    flex: 1 0 33.3333%;
+    padding: 25px 3%;
+  }
+}
