@@ -155,7 +155,7 @@ p {
 }
 
 header {
-  border: solid yellow;
+  /* border: solid yellow; */
   position: relative;
   height: 20vh;
   margin: 0 auto;
@@ -168,7 +168,7 @@ header {
 }
 
 header nav {
-  border: solid blue;
+  /* border: solid blue; */
   width: 700px;
   height: 50%;
   position: relative;
@@ -199,7 +199,7 @@ header nav a:hover {
 }
 
 .logo {
-  border: solid blue;
+  /* border: solid blue; */
 
   position: relative;
   top: 20px;
@@ -209,7 +209,7 @@ header nav a:hover {
 }
 /* ======= FIRST SECTOIN ============ */
 .top-section {
-  border: 6px yellow solid;
+  /* border: 6px yellow solid; */
   /* background-color: aqua; */
   /* margin-top: 50px;
 	text-align: center; */
@@ -224,7 +224,7 @@ header nav a:hover {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  border: 3px solid blue;
+  /* border: 3px solid blue; */
   /* border-bottom: 1px solid gray;
   padding: 30px;
   box-sizing: border-box;
@@ -248,7 +248,7 @@ header nav a:hover {
 }
 
 .top-div-left {
-  border: 2px solid hotpink;
+  /* border: 2px solid hotpink; */
   position: relative;
   top: -20px;
   display: flex;
@@ -290,11 +290,11 @@ header nav a:hover {
   /* border: 2px solid yellow; */
 }
 .bottom-section {
-  border: 5px solid yellow;
-  height: 80vh;
+  /* border: 5px solid yellow; */
+  height: 90vh;
 }
 .bottom-container {
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
 
   padding: 50px;
   box-sizing: border-box;
@@ -332,15 +332,16 @@ header nav a:hover {
 }
 
 footer {
-  border: 2px solid yellow;
+  /* border: 2px solid yellow; */
+  width: 100%;
 }
 
 .footer-div {
   display: block;
   position: relative;
   font-size: 18px;
-  width: 48%;
-  border: 3px solid blue;
+  width: 60%;
+  /* border: 3px solid blue; */
   margin: 20px auto;
 }
 
@@ -359,10 +360,6 @@ footer {
 
 /* ========== SCREEN 800px ============ */
 @media screen and (max-width: 800px) {
-  body {
-    /* background-color: green; */
-  }
-
   .top-div-right {
     display: none;
   }
@@ -382,7 +379,7 @@ footer {
   }
 
   .top-container {
-    border: 5px hotpink solid;
+    /* border: 5px hotpink solid; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -403,6 +400,7 @@ footer {
   .bottom-section {
     width: 100%;
     height: 100vh;
+    /* border: 3px blue solid; */
   }
 
   .bottom-container {
@@ -413,13 +411,25 @@ footer {
     font-size: 16px;
   }
 
+  .bottom-bottom-div div p {
+    font-size: 16px;
+  }
+
+  footer {
+    /* border: 3px solid yellow; */
+  }
   .footer-div {
-    width: 100%;
+    /* border: 3px solid yellow; */
+    width: 85%;
   }
 }
 
 /* ====== MEDIA QUERY 500px ======  */
 @media screen and (max-width: 500px) {
+  p {
+    font-size: 16px;
+  }
+
   header {
     height: 50vh;
   }
@@ -443,13 +453,35 @@ footer {
     top: -3px;
   }
 
+  .top-section {
+    height: 50vh;
+  }
+
+  .top-div-left {
+    /* background-color: green; */
+    width: 100%;
+    margin: 0px;
+    top: -20px;
+  }
+
+  .top-section .top-container .top-div-left h1 {
+    font-size: 65px;
+    margin: 30px auto;
+    /* border: 3px solid blue; */
+  }
   .bottom-section {
-    border: 5px solid lime;
-    height: 150vh;
+    /* border: 5px solid lime; */
+    height: 120vh;
   }
 
   .bottom-top-div {
     flex-direction: column;
+  }
+
+  .bottom-top-div div {
+    /* border: 1px hotpink solid; */
+    width: 100%;
+    margin: 20px auto;
   }
 
   .bottom-bottom-div {
@@ -457,7 +489,7 @@ footer {
   }
 
   .bottom-bottom-div div {
-    border: 1px hotpink solid;
+    /* border: 1px hotpink solid; */
     width: 100%;
     margin: 20px auto;
   }
