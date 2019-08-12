@@ -283,9 +283,65 @@ button {
 	}
   }
   /* **********@media Tablet view********** */
-  @media only screen and (max-width: 800) {
+  @media only screen and (max-width: 800px) {
 	body {
 		width: 800px;
 		margin: 0 auto;
+	}
+	nav {
+		display: flex;
+	    flex-direction: column-reverse;
+		
+	}
+	.sort{
+		display: flex;
+		flex-direction: column;
+	}
+	 a{
+		color: gray;
+		text-decoration: none;
+		border-bottom: 1px solid black;
+		width:100vw;
+		text-align: center;
+		font-size: 2rem;
+
+	}
+	.wrapper {
+	  display: flex;
+	  flex-direction: column;
+	  align-content: center;
+	}
+	.image2{
+		display:none;
+	}
+	#wrap2 {
+	  display: flex;
+	  flex-direction: column;
+	  align-content: center;
+	}
+	#wrap3 {
+	  display: flex;
+	  flex-direction: column;
+	  align-content: center;
+	}
+	.image3 {
+	  display: flex;
+	  flex-direction: column;
+	  align-content: center;
+	}
+	hr {
+	  display: flex;
+	  align-content: flex-start;
+	}
+	section {
+	  display: flex;
+	  flex-direction: column;
+	  align-content: center;
+	  margin: 2px;
+	}
+	#copy1 {
+	  display: flex;
+	  flex-direction: column;
+	  align-content: center;
 	}
   }
