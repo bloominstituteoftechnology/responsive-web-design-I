@@ -72,7 +72,7 @@ nav .logo {
 .top-content h2 {
   font-size: 3.4em;
   text-align: center;
-  padding: 0 75px;
+  width: 228px;
   margin: 0 0 25px 0;
 }
 .top-content button {
@@ -95,10 +95,15 @@ nav .logo {
 .services section {
   padding: 25px 0;
 }
-
+.services div,
+.services div img {
+  width: 100%;
+}
 /* ========== FOOTER ========== */
 .bottom-content {
-  padding: 25px 4vw;
+  padding: 25px 0;
+  margin: 0 auto;
+  width: 92vw;
 }
 .bottom-content address div:not(:last-child) {
   margin: 0 0 15px 0;
@@ -133,18 +138,80 @@ nav .logo {
   .nav-links a:first-child {
     border: none;
   }
-  .top-content h2 {
-    padding: 0 270px;
-  }
 
   /* ========== MAIN ========== */
   .middle-content .services {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: space-between;
   }
   .services section {
     flex: 1 0 33.3333%;
-    padding: 25px 3%;
+  }
+  .services section {
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+  .services section:first-child,
+  .services section:nth-of-type(3) {
+    padding-right: 2%;
+    padding-left: 0;
+  }
+  .services section:nth-of-type(2),
+  .services section:last-child {
+    padding-left: 2%;
+    padding-right: 0;
+  }
+}
+/* ========== DESKTOP MEDIA QUERIES ========== */
+@media screen and (min-width: 1024px) {
+  /* ========== HEADER ========== */
+  nav {
+    display: flex;
+    flex-flow: row-reverse wrap;
+    height: 85px;
+  }
+  nav .logo {
+    width: 30%;
+  }
+  .logo h1 {
+    height: auto;
+  }
+  .nav-links {
+    width: 70%;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .nav-links a {
+    border: none;
+  }
+  .nav-links a:first-child {
+    border: none;
+  }
+  .top-content {
+    flex-flow: row wrap;
+  }
+  .top-content div {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    width: 50%;
+  }
+  .top-content h2 {
+    font-size: 4em;
+    width: 266px;
+  }
+  .top-content img {
+    visibility: visible;
+  }
+  /* ========== MAIN ========== */
+  .middle-content .services {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  .services section {
+    flex: 1 0 33.3333%;
   }
 }
