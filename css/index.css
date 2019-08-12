@@ -32,6 +32,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
     line-height: 1;
+    font-family: 'Titillium Web', sans-serif;
 }
 ol, ul {
     list-style: none;
@@ -199,10 +200,17 @@ button{
     body{
         max-width:96%;
     }
-    header{
+    header {
         flex-direction: column-reverse;
         align-content: center;
         align-items: center;
+        width: 100%;
+        
+    }
+     header nav {
+        padding-top: 4%;
+        padding-bottom:7%;
+        width:100%;
     }
 
     header img{
@@ -211,6 +219,12 @@ button{
     }
     section.intro .intro-content{
         margin:auto;
+    }
+    .first{
+        padding-bottom: 3%;
+    }
+    .last{
+        padding-top: 3%;
     }
     section.intro img{
         display:none;
@@ -234,8 +248,11 @@ button{
     }
 
     header nav a{
+        display: flex;
+        justify-content: space-evenly;
         border-bottom:2px solid gray;
         padding:15px;
+        width: 100%;
     }
 
     section.intro .intro-content{
