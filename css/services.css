@@ -63,10 +63,6 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-.mobLogo{
-    display:none;
-}
-
 .container {
   width: 880px;
   /* TB LR */
@@ -87,6 +83,7 @@ header nav {
   width: 691px;
   vertical-align: top;
   margin-top: 35px;
+  margin-bottom:35px;
 }
 
 header nav a {
@@ -109,109 +106,117 @@ header nav a:last-child {
   margin-right: 0;
 }
 
-
 header .logo {
 	margin-top: 25px;
 	margin-left:25px;
 }
 
-/* cta */
-
 .cta{
 	display:flex;
 }
 
-.cta .cta-text {
-  
-  vertical-align: top;
-  font-size: 77px;
-  margin-top: 120px;
-  text-align: center;
-  padding: 0px 75px;
+.cta .cta-text{
+    width: 800px;
+    margin-right: 34px;
 }
 
-.cta .cta-text button {
-  
-  background: white;
-  vertical-align: top;
-  margin-top: 6px;
-  padding: 8px 44px;
-  font-size: 17px;
-  border: 1px solid black;
-  cursor: pointer;
-}
-
-.cta .cta-text button:hover {
-  background: black;
-  color: white;
-}
-
-.cta img {
-  display: flex;
-  margin-top: 69px;
-}
-
-.main-content {
+.top-row{
   border-top: 1px solid black;
   margin-top: 76px;
   padding-top: 39px;
   display:flex;
-  justify-content:space-between;
-  flex-wrap:wrap;
-}
-
-.main-content .top-content {
-  padding: 0 10px;
-  display:flex;
-}
-
-.main-content .top-content .text-content {
-  width: 410px;
-  margin-right: 34px;
-}
-
-.main-content .top-content .text-content:last-child {
-  margin-right: 0;
-}
-
-.main-content .middle-img {
-  margin-top: 45px;
-  display:flex;
+  justify-content: space-evenly;
   
 }
 
-.main-content .bottom-content {
-  margin-top: 37px;
-  padding: 0 10px;
-  display:flex;
+.top-row .boxes{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    border: 1px solid gray;
+    height: 400px;
+    width: 300px;
+    background-color: wheat;
+    margin: 50px, 200px, 50px, 200px;
+    padding: 50px;
 }
 
-.main-content .bottom-content .text-content {
-  width: 275px;
-  
-  margin-right: 12px;
+.middle-row{
+    margin-top: 76px;
+    padding-top: 39px;
+    display:flex;
+    justify-content: space-evenly;
+    
+  }
+
+.middle-row .boxes{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    border: 1px solid gray;
+    height: 400px;
+    width: 300px;
+    background-color: wheat;
+    margin: 50px, 200px, 50px, 200px;
+    padding: 50px;
 }
 
-.main-content .bottom-content .text-content:last-child {
-  margin-right: 0;
+.bottom-row{
+    margin-top: 76px;
+    padding-top: 39px;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    display:flex;
+    justify-content: space-evenly;
+    border-bottom: 1px solid black;
+    
+  }
+
+.bottom-row .boxes{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:space-between;
+        border: 1px solid gray;
+        height: 400px;
+        width: 300px;
+        background-color: wheat;
+        margin: 50px, 200px, 50px, 200px;
+        padding: 50px;
 }
 
-.contact {
-  margin-top: 57px;
-  border-top: 1px solid black;
-  padding: 39px 10px 0;
+button{
+    border-radius:25px;
+    margin: 50px;
 }
 
-.contact p {
-  margin: 20px 0;
+.bottom-page{
+    margin-top: 30px;
+    padding-top: 15px;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    display: flex;
 }
 
-footer {
-  margin: 32px 0;
-  text-align: center;
-  font-size: 14px;
+.bottom-page .bottom-page-txt{
+    width: 800px;
+    margin-right: 34px;
 }
 
+.bottom-page-txt ul{
+    margin-top:50px;
+    padding-top:25px;
+}
+.bottom-page img{
+    display:flex;
+}
+
+footer{
+    text-align:center;
+}
+
+.mobLogo{
+    display:none;
+}
 
 /*Tablet  View*/
 
@@ -237,45 +242,36 @@ footer {
         align-items:center;
     }
 
-    .cta{
-        align-items: center;
+    .imgContainer{
+        display: flex;
         justify-content: center;
-        padding: 0;
-        margin: 0;
-    }
-    
-    #headerImg{
-        display: none;
+        align-items:center;
     }
 
-    .main-content{
-        align-items: center;
-        justify-content: center;
-        border: none;
+    .imgContainer .services-header-img{
+        width: 150%;
     }
 
-    .main-content .top-content{
-        width: 175%;
-        border-top: 1px solid black;
-        padding-top: 10px;
+    .top-row .boxes{
+        height:450px;
     }
 
-    .main-content .middle-img{
-        width: 175%;
+    .middle-row .boxes{
+        height: 450px;
     }
 
-    .main-content .bottom-content{
-        width: 175%;
-        border-bottom: 1px solid black;
-        padding-bottom: 10px;
+    .bottom-row .boxes{
+        height: 450px;
     }
 
-    .contact{
-        border: none;
+    .bottom-page{
+        flex-wrap: wrap;
     }
-   
+
+    .bottom-page img{
+        display: block;
+    }
 }
-
 
 /*Mobile View*/
 
@@ -312,57 +308,64 @@ footer {
         border-bottom: 1px solid gray;
     }
 
-    .cta{
-        align-items: center;
-        justify-content: center;
-        padding: 0;
-        margin: 0;
-    }
-    
-    #headerImg{
-        display: none;
-    }
-
-    .main-content{
-        align-items: center;
-        justify-content: center;
-        border-top: 1px solid gray;
-        border-bottom: 1px solid gray;
-    }
-
-    .main-content .top-content{
-        display: flex;
-        width: 175%;
-        flex-wrap: wrap;
-        border-top: none;
-        padding-top: 10px;
-    }
-
-    .top-content .text-content{
-        margin-bottom: 10px;
-    }
-
-    .main-content .middle-img{
+    .imgContainer .services-header-img{
         width: 100%;
     }
 
+    
+    .cta .cta-text{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+        margin:0;
+       
+        
+    }
+    .top-row{
+       flex-wrap:wrap;
+    }
 
-    .main-content .bottom-content{
+    .middle-row{
+        flex-wrap:wrap;
+     }
+
+     .bottom-row{
+        flex-wrap:wrap;
+     }
+
+    .top-row .boxes{
+        height: 450px;
+    }
+
+    .middle-row .boxes{
+        height: 450px;
+    }
+
+    .bottom-row .boxes{
+        height: 450px;
+    }
+
+    .bottom-page{
+        display:flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .bottom-page .bottom-page-text{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content: center;
+        align-content: center;
+        
+    }
+
+
+    .bottom-page img{
         display: flex;
-        width: 175%;
-        flex-wrap: wrap;
-        border-bottom: none;
-        padding-bottom: 10px;
-    }
-
-    .bottom-content .text-content{
-        margin-bottom: 10px;
-    }
-
-    .contact{
-        border: none;
+        width: 70%;
+        margin-top:10px;
     }
 
 }
-
-
