@@ -1,0 +1,262 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+.head {
+	display: flex;
+}
+
+.nav {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+
+.nav a{
+	color: grey;
+	text-decoration: none;
+}
+
+.nav a:hover {
+	color: blue;
+	text-decoration: underline;
+}
+
+
+h1{
+	display: flex;
+	width: 50%;
+	flex-direction: column;
+	align-items: center;
+}
+
+.code1 {
+	display: flex;
+	justify-content: end; 
+	flex-direction: column;
+	align-items: center;
+}
+
+.container-1 {
+	display: flex;
+	
+	
+}
+
+.middle-img {
+	height: 150px;
+	width: 95%;
+	margin-top: 15px;
+	margin-left: 50px;
+	margin-bottom: 15px;
+}
+
+
+.container-2 {
+	display: flex;
+	align-items: center;
+	margin-left: 50px;
+}
+
+.container-3 {
+	display: flex;
+	justify-content: center;
+	padding: 20px;
+	margin-right: 50px;
+}
+
+.container-3 div{
+	display: flex;
+	justify-content: center;
+	height: 250px;
+	flex-direction: column;
+	background-color:lightgrey;
+}
+
+.container-4 {
+	display: flex;
+	justify-content: center;
+}
+
+.container-4 div {
+	margin-left: 50px;
+
+}
+
+.services1 {
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+li {
+	padding: 10px;
+}
+button {
+	margin-top: 15px;
+	width: 200px;
+	padding: 10px;
+	border-radius: 5px;
+	font-size: 15px;
+	cursor: pointer;
+}
+
+button p:hover {
+	color: blue;
+	text-decoration: underline;
+}
+
+
+
+.copyright {
+	display: flex;
+	justify-content: center;
+}
+
+.services-info-img {
+	margin-right: 50px;
+}
+
+@media (min-width: 560px) {
+	
+	.nav {
+		display: flex;
+		position: relative;
+		margin-top: 80px;
+
+	}
+
+	.nav a:hover {
+		color: blue;
+	}
+
+
+	.logo  {
+		position: absolute;
+		top: -70px;
+	}
+
+
+	.code {
+		display: none;
+	}
+
+	.head {
+		display: flex;
+		justify-content: center;
+	}
+
+	@media (min-width: 800px) {
+
+		.nav {
+			font-size: 25px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			position: relative;
+			margin-top: 80px;
+			border-bottom: 1px solid black;
+		}
+
+		.nav a {
+			width: 100%;
+			padding: 20px;
+			text-align: center;
+			border-top: 1px solid black;
+		}
+	
+		.nav a:hover {
+			color: blue;
+		}
+
+		.logo  {
+			width: 40%;
+			position: absolute;
+			top: -70px;
+		}
+
+
+		.container-1 {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.container-1 #about {
+			position: relative;
+			margin-left: 50px;
+			padding-top: 25px;
+		}
+
+		.container-2 {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.container-2 #product, #vision{
+			padding-top: 25px;
+		}
+		
+	}
+
