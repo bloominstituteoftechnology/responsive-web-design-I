@@ -79,6 +79,13 @@ h1, h2, h3, h4, h5 {
     }
 }
 
+@media (max-width:500px){
+    .bigcontainer{
+        width: 90%;
+        background-color: aquamarine;
+    }
+}
+
 .innovationbox{
 	padding:20px;
     display:flex;
@@ -109,13 +116,37 @@ p {
 
 }
 
-.featurebox {
-	width:32%;
-	height:10%;
-	/*background-color: red;*/
-	
+@media (max-width:500px){
+    .featurecontainer{
+        height: 100%;
+        width:100%;
+        background-color:indigo;
+        display:flex;
+        flex-wrap:wrap;
+        flex-direction:column;
 
+    }
 }
+
+@media (max-width:500px){
+    .featurecontainer .box{
+        width: 10000px;
+        display:flex;
+        flex-wrap: wrap;
+        background-color: brown;
+        padding:0px;
+        margin: 5px;
+    }
+}
+
+@media (max-width:500px){
+    .featurecontainer .box p{
+        width: 100%;
+        background-color: yellow;
+        margin:10px;
+    }
+}
+
 
 .footer{
 	/*background-color: brown;*/
@@ -249,6 +280,16 @@ h1{
     }
 }
 
+@media (max-width:500px){
+    .bodybag{
+        width: 100%;
+        background-color:green;
+        display:flex;
+        flex-direction:column;
+        margin:0 auto;
+    }
+}
+
 .navigation{
 	display:flex;
 	flex-direction:row;
@@ -262,6 +303,7 @@ h1{
 @media (max-width:800px){
     .navigation{
         width:100%;
+        padding:30px;
     }
 }
 
@@ -269,7 +311,7 @@ h1{
     text-decoration:none;
     color: grey;
     font-weight: bold;
-    padding:30px;
+
 }
 
 
