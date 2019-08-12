@@ -71,7 +71,7 @@ h1, h2, h3, h4, h5 {
     width: 878px;
     height: 100%;
 	margin: auto;
-	border: 1px solid red;
+	/* border: 1px solid red; */
 }
 
 .navigation {
@@ -90,7 +90,7 @@ nav a {
 header {
 	display: flex;
 	justify-content: space-around;
-	border: 1px solid black;
+	border-bottom: 1px solid black;
 }
 
 .boxHeader {
@@ -98,16 +98,34 @@ header {
 	display: flex;
 }
 
-.titleButton {
-    display: column;
-    justify-content: center;
-    padding: 100px; 
-    
+.title {
+	display: flex;
+	flex-direction: column;
+	align-items: center; 
 }
 
-.picHeader {
-    max-width: 100%;
-    
+.titleButton {
+    justify-content: center;
+    padding: 100px; 
+	font-size: 70px; 
+}
+
+.button {
+	font-size: 15px; 
+}
+
+.button a {
+	display: flex; 
+	align-items: center;
+	float: center; 
+	text-decoration: none;
+	color: black; 
+	padding: 2px 20px 2px 20px; 
+}
+
+.picHeader img {
+	max-width: 100%;
+	padding-top: 50px; 	
 }
 
 .titleButton h1 p {
@@ -115,18 +133,13 @@ header {
     font-size: 100px; 
 }
 
-.button {
-    
-    text-decoration: none;
-}
-
 .topContent {
 	/* border: 1px solid black; */
 	display: flex;
+	padding-top: 20px; 
 	/* justify-content: space-between; */
 	
 }
-
 
 .boxesTop {
 	width: 50%;
