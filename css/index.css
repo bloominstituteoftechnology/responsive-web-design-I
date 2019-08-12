@@ -119,7 +119,7 @@ a{
 	padding-bottom: 3.5%;
 	display: inline-block;
 	border-top: 1px solid black;
-	font-size: 1.5em;
+	font-size: 1em;
 	display:flex;
   	flex-direction:row;
 	}
@@ -142,7 +142,7 @@ a{
 	padding-bottom: 3.5%;
 	display: inline-block;
 	border-bottom: 1px solid black;
-	font-size: 1.2em;
+	font-size: 1em;
 	display:flex;
 	flex-direction:row;
 	}
@@ -169,8 +169,27 @@ a{
 /* @media */
 
 @media only screen and (max-width: 800px) {
-	body {
-	  background-color: lightblue;
+	.navigation{
+		display: flex;
+		flex-direction:column-reverse;
+	}
+	#logo{
+		margin-left: 30%;
+		margin-bottom: 1%;
+	}.navlinks{
+		width: 100%;
+	}
+	.intro{
+		margin-bottom: 50%;
+		margin-left: 5%;
+		text-align: center;
+	}
+	#title{
+		font-size: 4em;
+	}
+
+	.headimg{
+		display:none;
 	}
   }
 
