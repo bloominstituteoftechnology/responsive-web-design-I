@@ -1,4 +1,8 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -75,9 +79,8 @@ header {
 
 nav {
 	/* border: 3px solid red; */
-	display:flex;
+	display: inline-block;
 	width: 75%;
-	text-align:center;
 }
 nav a {
 	color: grey;
@@ -131,31 +134,26 @@ header p {
 }
 
 .top-content {
-	display:flex;
-	justify-content:center;
 	border-top: 1px solid black;
 	padding: 30px 0 30px;
 }
 
 
 .top-content .features {
-	display: flex;
-	flex-direction:column;
+	display: inline-block;
 	/* border: 1px solid red; */
 	width: 49%;
 	margin-right: 5px;
 }
 
 .top-content .about {
-	display: flex;
-	flex-direction:column;
+	display: inline-block;
 	/* border: 1px solid red; */
 	width: 49%;
 }
 
 .middle-img {
-	display:flex;
-	justify-content:center;
+	display: block;
 	width: 100%;
 }
 
@@ -187,41 +185,4 @@ header p {
 }
 footer p {
 	text-align: center;
-}
-
-/* Media Queries*/
-@media screen and (max-width: 800px) {
-	.logo{
-		display:flex;
-		justify-content:center;
-		margin-left:42%;
-		margin-top:5%;
-	}
-
-	.intro-container{
-		display:flex;
-		flex-direction:column;
-		align-items:center;
-		margin-right:25%;
-		margin-top:3%;
-	}
-
-	.container{
-		margin-left:10%;
-		margin-top:5%;
-		
-	}
-		
-	.top-content{
-		display:flex;
-		justify-content: center;
-	}
-
-	.middle-img{
-		
-	}
-	footer p{
-		justify-content: center;
-	}
-
 }
