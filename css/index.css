@@ -6,7 +6,20 @@
   margin: 0;
   padding: 0;
   max-width: 100%;
-  outline: 1px solid rgba(200, 200, 200, 1);
+  /* outline: 1px solid rgba(200, 200, 200, 1); */
+}
+body {
+  font-family: serif;
+  font-family: "Titillium Web", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
 }
 .wrapper {
   max-width: 1024px;
@@ -16,13 +29,58 @@
 nav .logo {
   background-image: url("../img/logo.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 150px;
   background-position: center;
+  display: flex;
+  flex-flow: column wrap;
 }
 .logo h1 {
   visibility: collapse;
+  height: 55px;
   margin: 0;
 }
+.nav-links {
+  display: flex;
+  flex-flow: column wrap;
+}
+.nav-links a {
+  text-align: center;
+  color: grey;
+  text-decoration: none;
+  padding: 12px 0;
+  border-bottom: 1px solid grey;
+}
+.nav-links a:first-child {
+  border-top: 1px solid grey;
+}
+.header-introduction {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 35px 0;
+  margin: 0 0 25px 0;
+}
+.header-introduction h2 {
+  font-size: 3.4em;
+  text-align: center;
+  padding: 0 75px;
+  margin: 0 0 25px 0;
+}
+.header-introduction button {
+  background-color: transparent;
+  outline: none;
+  border: 1px solid black;
+  height: 30px;
+  width: 164px;
+}
+.header-introduction img {
+  visibility: collapse;
+}
 /* ========== MAIN ========== */
+.middle-content {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
 /* ========== FOOTER ========== */
 /* ========== MEDIA QUERIES ========== */
