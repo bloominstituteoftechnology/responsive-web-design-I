@@ -209,19 +209,70 @@ footer p {
 	.container{
 		margin-left:10%;
 		margin-top:5%;
-		
-	}
+		}
 		
 	.top-content{
 		display:flex;
 		justify-content: center;
+		width:75%;
+	}
+
+	.bottom-content{
+		display:flex;
+		justify-content: center;
+		width:75%;
 	}
 
 	.middle-img{
+		width:75%;
 		
 	}
 	footer p{
 		justify-content: center;
+		width:75%;
+		margin-top:5%;
+	}
+}
+
+@media screen and (max-width:500px) {
+
+
+
+	.top-content{
+		display:flex;
+		flex-direction:column;
+		align-content:space-around;
+		width:175%;
 	}
 
+	.about{
+		margin-top:10px;
+	}
+
+	.product{
+		display:flex;
+		padding-top:20px;
+	}
+
+	.vision{
+		margin-top:20px;
+	}
+
+	.bottom-content{
+		display:flex;
+		flex-direction:column;
+		width:250%;
+	}
+	
+	nav{
+		display:flex;
+		flex-direction:column;
+		border-top:1px gray;
+	}
+	
+	.container, .features, .about{
+		display:flex;
+		flex-direction:column;
+		width:100%;
+	}
 }
