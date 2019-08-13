@@ -31,7 +31,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-ol, ul {
+ol {
 	list-style: none;
 }
 blockquote, q {
@@ -98,17 +98,18 @@ header .services-header-img {
     /* align-content: space-between; */
     flex-wrap: wrap;
     /* padding: 3em 0; */
-    padding-top: 2em;
+    padding-top: 1em;
     border-bottom: 1px solid black;
-    height: 50em;
+    /* height: 50em; */
 }
 
 #section1 div {
-    width: 48%;
-    height: 29%;
+    width: 49%;
+    /* height: 29%; */
     border: 1px black solid;
     background-color: rgba(211, 211, 211, 0.61);
     padding: 1em;
+    margin-bottom: 1em;
 }
 
 #section1 div button {
@@ -138,59 +139,55 @@ footer p {
     width: 100%;
 }
 
-@media (max-width: 600px) {
-    #section1 div{
-        font-size: 0.8em;
-        width: 100%;
-        /* margin-bottom: 1em; */
-        height: 15%;
-    }
+#section2 ul {
+    margin-top: 1em;
+    margin-left: 1em;
+}
 
-    #section1 {
-        height: 70em;
-        /* justify-content: space-around; */
-        /* align-content: space-between; */
-        /* padding: 0; */
-        /* padding: 1em 0 0 0; */
-        padding-top: 1em;
-    } 
-
-    #section2 {
-        /* margin-top: 35em; */
+@media (max-width: 800px) and (min-width: 501px) {
+    nav .index-link {
         padding: 1em 0;
     }
+}
 
-    #section2 div {
-        font-size: 0.8em;
+@media (max-width: 800px) {
+    nav .index-link {
         width: 100%;
-        padding: 0;
+        text-align: center;
+        order: -1;
     }
 
-    #section2 .services-info-img {
-        width: 50%;
-        padding-top: 1em;
+    nav {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+
+    /* #section1 {
+        height: 63em;
+    } */
+
+    /* #section1 div {
+        font-size: 15px;
+        height: 19em;
+    } */
+
+}
+
+@media (max-width: 500px) {
+    nav .logo {
+        width: 10em;
     }
 
     nav a {
-        font-size: 0.5em;
+        padding: 5px;
+        border-bottom: 1px solid black;
+        width: 100%;
+        text-align: center;
     }
 
-    nav .logo {
-        width: 5em;
+    #section1 div {
+        width: 100%;
     }
 }
 
-@media (max-width: 900px) {
-     #section1 div, #section1 div {
-        /* margin-bottom: 20px; */
-        font-size: 0.8em;
-    }
-
-    nav a {
-        font-size: 0.8em;
-    }
-
-    nav .logo {
-        width: 7em;
-    }
-}
