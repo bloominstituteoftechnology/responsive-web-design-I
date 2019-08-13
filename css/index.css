@@ -184,7 +184,7 @@ header .title {
 	font-size: 72px;
 	text-align: center;
 	margin: 0px 15px;
-	margin-right: 100px;
+	justify-content: center;
 }
 
 header .title button {
@@ -204,7 +204,6 @@ header img {
 
 .top-content div {
 	width: 49%;
-	text-align: justify;
 	padding: 10px;
 }
 
@@ -220,7 +219,6 @@ header img {
 
 .bottom-content div {
 	width: 33%;
-	text-align: justify;
 	padding: 10px;
 }
 
@@ -229,7 +227,7 @@ header img {
 }
 
 footer {
-	margin-top: 50px;
+	margin: 50px 0 25px 0;
 	text-align: center;
 }
 
@@ -240,23 +238,62 @@ footer {
 		display: flex;
 		order: -1;
 		justify-content: center;
-		margin: 0 50%;
-	}
-
-	nav a {
-		flex-wrap: nowrap;
+		margin: 5% 50%;
 	}
 
 	nav {
-		justify-content: center;
 		flex-wrap: wrap;
+		justify-content: center;
 	}
 
 	header img {
 		display: none;
 	}
 	header {
+		display: flex;
 		justify-content: center;
-		margin: 5% 5% 10% 5%;
+	}
+
+	.bottom-content div {
+		padding: 20px;
+	}
+}
+
+@media (max-width: 500px) {
+	nav .logo {
+		margin: 5% 0 5% 0;
+		padding-left: 0;
+	}
+
+	nav {
+		flex-direction: column;
+	}
+
+	a {
+		border-bottom: 1px solid gray;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+
+	nav .logo {
+		border-bottom: 1px solid gray;
+		width: 100%;
+	}
+
+	.top-content {
+		flex-direction: column;
+	}
+
+	.top-content div {
+		width: 100%;
+	}
+
+	.bottom-content {
+		flex-direction: column;
+	}
+
+	.bottom-content div {
+		width: 100%;
 	}
 }
