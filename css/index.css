@@ -32,6 +32,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
     line-height: 1;
+    font-family: 'Titillium Web', sans-serif;
 }
 ol, ul {
     list-style: none;
@@ -52,6 +53,16 @@ table {
 html{
     font-size:62.5%;
 }
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+	margin-bottom: 15px;
+	
+}
+
+
+
 
 h2{
     font-size:2rem;
@@ -84,22 +95,29 @@ body{
     margin:auto;
 }
 
-header{
-    display: flex;
-    justify-content: space-between;
-    margin:30px 0;
+header {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+	padding-bottom: 3%;
+	padding-top: 3%;
+		
+	
 }
 
-header nav{
-    display:flex;
-    width:70%;
-    justify-content:space-between;
+header nav {
+	display: flex;
+	justify-content: space-between;
+	width: 70%;
 }
 
-header nav a{
-    text-decoration: none;
-    color:Gray;
+header nav > a {
+	text-decoration: none;
+	color: grey;
+	
 }
+
 
 header img{
     max-width:20%;
@@ -113,6 +131,7 @@ section{
 section.intro{
     justify-content: space-between;
     align-items:center;
+    padding-bottom: 7%;
 } 
 section.intro .intro-content{
     display:flex;
@@ -129,8 +148,9 @@ section.intro .intro-content button{
 
 section.intro .intro-content h1{
     margin:auto;
-    font-size:4.5rem;
+    font-size:7rem;
     text-align: center;
+    margin-bottom: 5%;
 }
 
 section.intro img{
@@ -143,6 +163,8 @@ flex-direction: column;
 
 section.main .first{
     display: flex;
+    border-top: 2px solid black;
+    padding-top: 3%;
 }
 
 section.main .first div{
@@ -151,6 +173,8 @@ section.main .first div{
 
 section.main .last{
     display:flex;
+    border-bottom: 2px solid black;
+    padding-bottom: 3%;
 }
 
 section.main{
@@ -160,6 +184,16 @@ section.main{
 
 footer{
     text-align:center;
+    margin-top: 10%;
+}
+button{
+	width: 35%;
+	border: 1px solid black;
+	margin-top: 25%;
+    height: 2.5rem;
+    font-size: 13px;
+    
+
 }
 
 
@@ -168,10 +202,17 @@ footer{
     body{
         max-width:96%;
     }
-    header{
+    header {
         flex-direction: column-reverse;
         align-content: center;
         align-items: center;
+        width: 100%;
+        
+    }
+     header nav {
+        padding-top: 4%;
+        padding-bottom:7%;
+        width:100%;
     }
 
     header img{
@@ -180,6 +221,12 @@ footer{
     }
     section.intro .intro-content{
         margin:auto;
+    }
+    .first{
+        padding-bottom: 3%;
+    }
+    .last{
+        padding-top: 3%;
     }
     section.intro img{
         display:none;
@@ -203,8 +250,11 @@ footer{
     }
 
     header nav a{
+        display: flex;
+        justify-content: space-evenly;
         border-bottom:2px solid gray;
         padding:15px;
+        width: 100%;
     }
 
     section.intro .intro-content{
