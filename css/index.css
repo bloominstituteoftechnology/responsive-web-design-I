@@ -223,13 +223,14 @@ h5 {
   align-content: flex-end;
 }
 button {
+  display:flex;
   background: #fff;
   color: black;
   margin-left: 25%;
   flex-grow: 1;
   padding: 1%;
   font-size: 16px;
-  margin-bottom: 15px;
+  margin-bottom: 15%;
 }
 
 .above {
@@ -321,14 +322,25 @@ button {
   flex-wrap: wrap;
   justify-content: center;
   align-self: center;
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 
 /* Media Styles for Responsive Design */
 
 @media screen and (max-width: 800px) {
-    
+    .head2{ display:none;
+      }
+
+      .logo{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .rb{
+      float: right;
+      margin-bottom:10%;
+      width: 20%;
     }
     
 
@@ -344,6 +356,10 @@ button {
         flex-direction:column;
         align-items:center;
         
+        .lb .cb .rb{
+          width:10%;
+          margin:0 auto;
+        }
     }
       
 
@@ -352,23 +368,19 @@ button {
 
       .above{
           flex-direction:column;
-          flex-wrap:wrap;
+         
           width:100%;
-          margin-top: 0%;
-          margin-bottom:0%;
-          align-content:flex-start;
-          
       }
 
       .bottom{
         flex-direction:column;
         width:100%;
-        margin-top: 0%;
-        margin-bottom:0%;
+        
       }
     .left .right .para1 .para2 .lb .cb .rb{
-          align-content: flex-start;
           width: 100%;
+          
+          
       }
       
 
