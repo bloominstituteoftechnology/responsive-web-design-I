@@ -69,18 +69,28 @@ br{
     line-height: 1.5;
 }
 nav{
-    width:900px;
+    width:100%;
     padding:20px 0;
     background-color:white;
-    top:0;
     display:flex;
     justify-content:space-between;
     align-items:center;
-    position:fixed;
-    z-index:999;
+
 }
-nav a, img{
+nav .links{
+    width:65%;
+    display:flex;
+    justify-content:space-between;
+    margin-right:5%;
+
+}
+nav img{
+    width:25%;
+}
+
+nav a{
     text-decoration:none;
+    color:grey
 }
 header{
     margin:12% 0 0;
@@ -149,8 +159,6 @@ footer{
         padding:5px 0;
         margin:0;
         flex-direction:column-reverse;
-        position:fixed;
-        z-index:999;
     }
 
     nav .links{
@@ -222,8 +230,6 @@ footer{
         width:90vw;
         padding:10px auto 0;
         flex-direction:column-reverse;
-        position:relative;
-        z-index:1;
     }
 
     nav .links{
