@@ -77,35 +77,36 @@ h1, h2, h3, h4, h5 {
 nav a {
 	text-decoration: none;
 	color: lightgray; 
-	vertical-align: top;
+	/* vertical-align: top; */
 	margin: 10px;
 	vertical-align: top;
     display: flex;
-    justify-content: space-between;
 	text-align: center;
 	padding-top: 10px;
     width: 11%;
-    margin-right: 50px;
-    margin-left: 60px;
+    /* margin-right: 50px;
+    margin-left: 60px; */
 	
 }
 
 nav {
     text-align: center;
     display: flex;
+    width: 100%;
+    justify-content: space-between;
 }
 
 .logo {
 	display: flex;
-	vertical-align: middle;
-	padding: 10px;
-	text-align: center;
+	/* vertical-align: middle; */
+	padding: 10px; 
+    text-align: center;
 }
 
 h1 {
-	text-align: center;
+    text-align: center;
 	font-size: 80px;
-	position: relative; 
+	/* position: relative;  */
 	display: flex; 
 	/* padding: 70px 70px;
 	margin-bottom: -50px; */
@@ -181,8 +182,9 @@ body {
 .about {
     display: flex;
     flex-wrap: wrap;
-	width: 49%;
-    padding: 30px;
+    margin: 2%;
+	/* width: 49%;
+    padding: 30px; */
 }
 
 .services, 
@@ -190,8 +192,9 @@ body {
 .vision {
     display: flex;
     flex-wrap: wrap;
-	width: 33%;
-	padding: 30px;
+    margin: 2%;
+	/* width: 33%;
+	padding: 30px; */
 	/* border-bottom: 1px solid black; */
 	
 }
@@ -206,15 +209,17 @@ body {
 }
 
 .top-content {
-    border-top: 1px solid black;
+    border-top: 2px solid black;
     display: flex;
-    /* flex-wrap: wrap; */
-    flex-flow: row nowrap;
+    /* flex-wrap: wrap;
+    flex-flow: row nowrap;  */
+    flex-direction: row;
+    width: 100%
 
 }
 
 .bottom-content {
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid black;
     display: flex;
     flex-flow: row nowrap;
 }
@@ -226,6 +231,7 @@ body {
     body {
         width: 100%;
         margin: 0 auto;
+        overflow-x: hidden;
     }
 
     .headerImage {
@@ -238,11 +244,115 @@ body {
         margin-bottom: 5%;
     }
 
-
-    .logo {
-        display: fixed;
+    .topsection-text {
+        display: flex;
+        justify-content: center;
+        margin-top: 10%;
     }
 
+    h1 {
+        margin-left: -30%; 
+    }
+
+    .top-content {
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo {
+        position: absolute; 
+        padding-left: 38%;
+    }
+
+    nav a {
+        margin-top: 10%
+    }
+}
+
+    /* MOBILE DISPLAY */
+
+    @media screen and (max-width: 500px) {
+        body {
+            width: 100%;
+            margin: 0 auto;
+            overflow-x: hidden;
+        }
+
+        nav {
+            display: flex;
+            flex-direction: column;
+            /* margin-left: 50%; */
+            margin-top: 20%;
+        }
+
+        nav a {
+            display: flex;
+            flex-direction: column;
+            margin-left: 50%;
+            margin-top: 5%;
+            /* border-top: 1px solid black; */
+            font-size: 20px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: flex-start;
+            margin-top: -15%;
+
+        }
+
+        .middle-img {
+            margin-left: 10%;
+        }
+
+        .topsection-text {
+            margin-left: 20%;
+        }
+
+        .top-content {
+            display: flex; 
+            flex-flow: column;
+            margin-left: 10%;
+            /* border: 1px solid black; */
+            
+        }
+
+        .bottom-content {
+            display: flex;
+            flex-flow: column;
+            margin-left: 10%;
+            /* border: 1px solid black; */
+        }
+
+        .features p {
+            width: 200%;
+            /* border: 1px solid black; */
+        }
+
+        h2 {
+            margin-top: 5%;
+        }
+
+        .vision p {
+            margin-bottom: 5%;
+        }
+
+        .copyright {
+            margin-right: -20%;
+            margin-top: 5%;
+            margin-bottom: 5%;
+        }
+
+        button {
+            margin-bottom: 10%;
+        }
+
+        .contact {
+            margin-left: 10%;
+        }
+
+
+    }
 
 
 
