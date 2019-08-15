@@ -123,7 +123,6 @@ q:after {
   content: "";
   content: none;
 }
-
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -131,7 +130,6 @@ table {
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 /*------------------Desktop View------------------*/
 body {
-  width: 1100px;
   margin: 0 auto;
 }
 p {
@@ -139,9 +137,10 @@ p {
   padding: 10px;
 }
 h1 {
-  font-size: 5rem;
+  font-size: 4rem;
   font-family: "bangers", cursive;
   justify-content: center;
+  margin:20px;
 }
 h2 {
   font-size: 25px;
@@ -150,27 +149,22 @@ h2 {
 }
 nav {
   display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
-  align-items: center;
-  background: white;
 }
-nav a {
-  padding: 20px;
-  margin-top: 5px;
-  color: grey;
+a {
   text-decoration: none;
+  color: black;
 }
 .intro {
   padding: 100px;
 }
-.started {
-  justify-content: center;
-  font-size: 1.5rem;
-  height: 25px;
-  width: 190px;
+.started  {  
   border: 1px solid black;
-  background-color: white;
-  text-align: center;
+  padding: 8px 44px;
+}
+.started:hover{
+  background: rgb(45, 255, 26);
 }
 img.introimg {
   padding: 50px;
@@ -178,16 +172,15 @@ img.introimg {
 .intro-container {
   display: flex;
   direction: row;
+  justify-content: center;
+  text-align: center;
 }
 .picture-box {
-  width: 100%;
+  width: 100vw;
 }
-
 .middle-img {
-  width: 100%;
-  padding: 10px;
+  width: 100vw;
 }
-
 .top-content {
   display: flex;
   direction: row;
@@ -197,11 +190,8 @@ img.introimg {
   display: flex;
   direction: row;
 }
-.contact-content h2,
-a {
+.contact-content a {
   display: flex;
-  text-decoration: none;
-  color: black;
 }
 footer {
   text-align: center;
@@ -209,7 +199,6 @@ footer {
 /*------------------Tablet View------------------*/
 @media (max-width: 800px) {
   body {
-    width: 800px;
     margin: 0 auto;
   }
   .intro-container {
@@ -230,18 +219,20 @@ footer {
 
 /*------------------Mobile View------------------*/
 @media (max-width: 500px) {
-  body {
-    width: 500px;
-    margin: 0 auto;
-  }
   nav {
     display: flex;
     flex-direction: column-reverse;
+    text-align: center;
   }
   nav a {
-    justify-content: center;
-    width: 100vw;
+    font-size: 1.2rem;
+    color: grey;
     border-bottom: 1px solid black;
+    padding: 20px;
+  }
+  img.logo {
+    align-self: center;
+    width: 50%;
   }
   .top-content {
     display: flex;
@@ -253,9 +244,5 @@ footer {
   }
   .intro-container .introimg {
     display: none;
-  }
-  .intro .started {
-    margin: auto;
-    width: 200px;
   }
 }
