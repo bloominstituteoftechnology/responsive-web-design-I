@@ -1,3 +1,345 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+.container {
+	width: 90%;
+	margin: 0 auto;
+	
+	/*I used this to center all the Html*/	
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	
+}
+
+nav {
+	width: 90%;
+	position: fixed;
+	background-color: rgb(2, 127, 209);
+	z-index: 3;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	margin-top: 38px;
+}
+.nav-items {
+	display: flex;
+	justify-content: flex-start;
+	width: 100%;
+
+}
+
+.nav-item {
+	text-decoration: none;
+	padding: 30px 50px;
+	vertical-align: middle;
+	color: rgba(175, 172, 172, 0.8);
+	text-shadow: 1px 1px 1px #111;
+	font-weight: bold;
+	transition: color 0.3s ease-in, text-shadow 0.3s ease-in;
+	/*I spent too long trying to use vertical-align: center because I though I knew what I was doing*/
+}
+
+.nav-item:hover {
+	color: #111;
+	text-shadow: 2px 2px 1px rgb(175, 172, 172);
+}
 
 
+.showcase {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	border-bottom: 1px solid black;
+	margin-bottom: 20px;
+	padding-bottom: 50px;
+	padding-top: 100px;
+	
+}
+
+.snippet {
+	margin-left: 150px;
+	width: 35%;
+	padding-top: 25px;
+	
+}
+
+.innovation {
+	
+	font-size: 6rem;
+	width: 40%;	
+	text-align: center;
+	z-index: 1;
+	vertical-align: top;
+	padding-top: 5%;
+}
+
+.showcase button {
+	background: none;
+	border: 1px solid black;
+	padding: 5px 60px;
+	vertical-align: top;
+
+}
+/*SHOWCASE STYLING ENDS*/
+
+/*MAIN CONTENT STYLING BEGINS*/
+
+main {
+	padding-top: 50px;
+}
+
+.main-content {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	padding: 3% 0%;
+}
+
+main img {
+	width: 100%;
+	padding-bottom: 20px;
+}
+
+
+
+main p {
+	font-size: 20px;
+	font-family: 'Exo', sans-serif;
+}
+
+.triplets {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	border-bottom: 1px solid black;
+	margin-bottom: 20px;
+	padding-bottom: 50px;
+}
+
+.contact {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	
+	margin-bottom: 20px;
+	padding-bottom: 50px;
+}
+
+.contact .phone {
+	padding: 20px 0px;
+
+}
+
+footer p {
+	text-align: center;
+	vertical-align: top;
+	padding-bottom: 100px;
+	font-family: 'Saira Stencil One', cursive;
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 760px) {
+
+	.container {
+		width: 80%;
+	}
+
+	nav {
+		flex-direction: column;
+		position: relative;
+		margin-top: 20px;
+		background: none;
+	}
+
+	.nav-items {
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+		order: 2;
+		
+	}
+
+	.nav-items:first-child{
+		border-top: 1px solid black;
+	}
+
+	.nav-item {
+		padding: 20px 20px;
+		border-bottom: 1px solid black;
+		width: 100%;
+		text-align: center;
+	}
+
+	.logo {
+		order: 1;
+	}
+
+	.showcase {
+		padding-top: 0px;
+	}
+	.snippet {
+		display: none;
+	}
+
+	.innovation {
+		width: 100%;
+		text-align: center;
+	}
+
+	.main-content { 
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	 h3 {
+		text-align: center;
+		font-size: 22px;
+		padding-top: 10px;
+	}
+
+	.triplets {
+		flex-direction: column;
+	}
+
+	.contact {
+		text-align: center;
+	}
+
+	
+}

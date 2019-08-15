@@ -1,0 +1,142 @@
+.service-showcase {
+    border-bottom: 1px solid #111;
+    margin-bottom: 30px;
+    padding-top: 80px;
+}
+
+.service-showcase h1{
+    font-size: 29px;
+    padding-top: 15px;
+
+}
+
+.service-showcase p {
+    padding-bottom: 30px;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.services-header-img {
+    width: 100%;
+
+}
+
+.services {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    border-bottom: 2px solid black;
+
+}
+
+.services-col {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.services-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-right: 20px;
+    
+}
+
+.services-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-left: 20px;
+}
+
+
+.service {
+    padding: 4%;
+    line-height: 2em;
+    border: 1px solid black;
+    background-color: #dce3f2;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.service button {
+    background: #f4f4f4;
+	border: 1px solid black;
+	padding: 10px 40px;
+    vertical-align: top;
+    border-radius: 5px;
+    font-weight: 100;
+}
+
+.service-facts {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    font-weight: bold;
+
+}
+
+.facts {
+    width: 40%;
+    line-height: 2em;
+    font-size: 18px;
+}
+
+.facts ul {
+    padding-top: 20px;
+    list-style: inside;
+    list-style-type: square;
+}
+
+.service-facts img {
+   width: 665px;
+   height: 355px;
+}
+.service-footer {
+    padding-top: 200px;
+}
+
+
+/* MEDIA QUERIES */
+
+ @media screen and (max-width: 760px) {
+    .services {
+        flex-direction: column;
+    }
+    
+    .service-col {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin: 0px;
+    }
+
+    .service {
+        width: 100%;
+    }
+
+    .service-facts {
+        flex-direction: column;
+    }
+
+    .facts {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .service-facts img {
+        width: 100%;
+    }
+} 

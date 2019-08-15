@@ -1,0 +1,92 @@
+
+.showcase {
+	display: flex;
+	justify-content: space-between;
+}
+.glasses {
+	width: 45%;
+	padding-top: 30px;
+	vertical-align: top;
+}
+
+.vision-text {
+	width: 45%;
+	padding: 20px;
+
+}
+
+.about-vision {
+	border-bottom: 1px solid black;
+	padding-bottom: 30px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.vision-text p {
+	
+	width: 100%;
+	vertical-align: top;
+
+}
+
+.vision-text h3 {
+	padding: 10px;
+}
+
+.eye-doc {
+	width: 45%;
+	vertical-align: top;
+}
+
+.vision-text2 {
+	width: 50%;
+}
+
+.vision-text2 p {
+	
+	width: 100%;
+	vertical-align: top;
+
+}
+
+.vision-text2 h3 {
+	padding: 10px;
+}
+
+footer p {
+	padding-top: 60px;
+	text-align: center;
+	vertical-align: top;
+	padding-bottom: 100px;
+	font-family: 'Saira Stencil One', cursive;
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 760px) {
+	.glasses {
+		display: none;
+	}
+
+	.vision-text {
+		width: 100%;
+	}
+
+	.showcase {
+		justify-content: center;
+		align-items: center;
+	}
+
+	.about-vision  {
+		flex-direction: column;
+	}
+
+	.eye-doc {
+		width: 100%;
+	}
+
+	.vision-text2 {
+		width: 100%;
+	}
+}
