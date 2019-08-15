@@ -253,7 +253,6 @@ main p {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
-	
 	margin-bottom: 20px;
 	padding-bottom: 50px;
 }
@@ -272,8 +271,8 @@ footer p {
 
 
 /* MEDIA QUERIES */
-
-@media screen and (max-width: 760px) {
+/* MOBILE STYLING */
+@media(max-width: 500px) {
 
 	.container {
 		width: 80%;
@@ -282,12 +281,13 @@ footer p {
 	nav {
 		flex-direction: column;
 		position: relative;
-		margin-top: 20px;
+		margin-top: 10px;
 		background: none;
 	}
 
 	.nav-items {
-		flex-direction: column;
+		flex-direction: row;
+		flex-wrap: wrap;
 		justify-content: space-evenly;
 		align-items: center;
 		order: 2;
@@ -296,11 +296,106 @@ footer p {
 
 	.nav-items:first-child{
 		border-top: 1px solid black;
+		padding: 0px 20px;
 	}
 
 	.nav-item {
 		padding: 20px 20px;
 		border-bottom: 1px solid black;
+		width: 100%;
+		text-align: center;
+	}
+
+	.logo {
+		order: 1;
+	}
+
+	.showcase {
+		padding-top: 0px;
+	}
+
+	.showcase button {
+		width:40%;
+	}
+	.snippet {
+		display: none;
+	}
+
+	.innovation {
+		width: 100%;
+		text-align: center;
+	}
+
+	.main-content { 
+		width: 100%;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		align-items: center;
+		padding: 3%;
+	}
+	
+
+	 h3 {
+		text-align: center;
+		font-size: 22px;
+		padding-top: 10px;
+	}
+
+	.triplets {
+		width: 100%;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		align-items: center;
+		
+	}
+
+	.main-content2 {
+		padding: 3%;
+	}
+
+
+	.contact {
+		text-align: center;
+	}
+
+	
+}
+
+/* MOBILE STYLING */
+
+/* TABLET STYLING */
+
+@media(max-width: 800px) {
+
+	.container {
+		width: 100%;
+	}
+
+	nav {
+		width: 100%;
+		flex-direction: column;
+		position: relative;
+		margin-top: 1.2rem;
+		background: none;
+	}
+
+	.nav-items {
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: center;
+		padding-top: 2em;
+		order: 2;
+		
+	}
+
+	.nav-items:first-child{
+		
+	}
+
+	.nav-item {
+		padding: 20px 20px;
 		width: 100%;
 		text-align: center;
 	}
@@ -321,20 +416,29 @@ footer p {
 		text-align: center;
 	}
 
+	button {
+		border: 2px solid black;
+		font-weight: bold;
+		font-size: 15px;
+		padding: 15px 0px;
+		width: 30%;
+		margin-top: 3%;
+	}
+
 	.main-content { 
-		flex-direction: column;
-		justify-content: center;
+		flex-direction: row;
+		justify-content: flex-start;
 		align-items: center;
 	}
 
 	 h3 {
-		text-align: center;
+		
 		font-size: 22px;
 		padding-top: 10px;
 	}
 
 	.triplets {
-		flex-direction: column;
+		flex-direction: row;
 	}
 
 	.contact {
@@ -343,3 +447,4 @@ footer p {
 
 	
 }
+/* TABLET STYLING */
