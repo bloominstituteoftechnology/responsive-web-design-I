@@ -130,156 +130,25 @@ h1, h2, h3, h4, h5 {
 
 /* Your code starts here! */
 
-.container {
-	width: 90%;
-	margin: 0 auto;
-	
-	/*I used this to center all the Html*/	
-}
-
-header {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	
-}
-
-nav {
-	width: 90%;
-	position: fixed;
-	background-color: rgb(2, 127, 209);
-	z-index: 3;
-	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
-	margin-top: 38px;
-}
-.nav-items {
-	display: flex;
-	justify-content: flex-start;
-	width: 100%;
-
-}
-
-.nav-item {
-	text-decoration: none;
-	padding: 30px 50px;
-	vertical-align: middle;
-	color: rgba(175, 172, 172, 0.8);
-	text-shadow: 1px 1px 1px #111;
-	font-weight: bold;
-	transition: color 0.3s ease-in, text-shadow 0.3s ease-in;
-	/*I spent too long trying to use vertical-align: center because I though I knew what I was doing*/
-}
-
-.nav-item:hover {
-	color: #111;
-	text-shadow: 2px 2px 1px rgb(175, 172, 172);
-}
-
-
-.showcase {
-	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
-	border-bottom: 1px solid black;
-	margin-bottom: 20px;
-	padding-bottom: 50px;
-	padding-top: 100px;
-	
-}
-
-.snippet {
-	margin-left: 150px;
-	width: 35%;
-	padding-top: 25px;
-	
-}
-
-.innovation {
-	
-	font-size: 6rem;
-	width: 40%;	
-	text-align: center;
-	z-index: 1;
-	vertical-align: top;
-	padding-top: 5%;
-}
-
-.showcase button {
-	background: none;
-	border: 1px solid black;
-	padding: 5px 60px;
-	vertical-align: top;
-
-}
-/*SHOWCASE STYLING ENDS*/
-
-/*MAIN CONTENT STYLING BEGINS*/
-
-main {
-	padding-top: 50px;
-}
-
-.main-content {
-	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
-	padding: 3% 3% 3% 0%;
-}
-
-main img {
-	width: 100%;
-	padding-bottom: 20px;
-}
-
-
-
-main p {
-	font-size: 20px;
-	width: 99%;
-	font-family: 'Exo', sans-serif;
-}
-
-.triplets {
-	display: flex;
-	align-items: center;
-	justify-content: space-evenly;
-	border-bottom: 1px solid black;
-	margin-bottom: 20px;
-	padding-bottom: 50px;
-}
-
-.contact {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-evenly;
-	margin-bottom: 20px;
-	padding-bottom: 50px;
-}
-
-.contact .phone {
-	padding: 20px 0px;
-
-}
-
-footer p {
-	text-align: center;
-	vertical-align: top;
-	padding-bottom: 100px;
-	font-family: 'Saira Stencil One', cursive;
-}
-
-
-/* MEDIA QUERIES */
 /* MOBILE STYLING */
-@media(max-width: 500px) {
+
 
 	.container {
 		width: 80%;
+		margin: 0 auto;
+	}
+
+	header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		
 	}
 
 	nav {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
 		flex-direction: column;
 		position: relative;
 		margin-top: 10px;
@@ -287,6 +156,7 @@ footer p {
 	}
 
 	.nav-items {
+		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: space-evenly;
@@ -301,6 +171,8 @@ footer p {
 	}
 
 	.nav-item {
+		text-decoration: none;
+		color: rgba(175, 172, 172, 0.8);
 		padding: 20px 20px;
 		border-bottom: 1px solid black;
 		width: 100%;
@@ -317,7 +189,12 @@ footer p {
 	}
 
 	.showcase button {
-		width:60%;
+		background: none;
+		border: 1px solid black;
+		padding: 5px 60px;
+		vertical-align: top;
+		width: 60%;
+	
 	}
 	.snippet {
 		display: none;
@@ -328,11 +205,15 @@ footer p {
 		text-align: center;
 	}
 	.innovation h1 {
-		font-size: .8em;
+		font-size: 4em;
 	}
 
 	main {
 		padding-top: 25px;
+	}
+	main img {
+		width: 100%;
+		padding-bottom: 20px;
 	}
 
 	.main-content { 
@@ -368,33 +249,60 @@ footer p {
 
 
 	.contact {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 20px;
+		padding-bottom: 50px;
+	}
+	
+	.contact .phone {
+		padding: 20px 0px;
+	
+	}
+	
+	footer p {
 		text-align: center;
+		vertical-align: top;
+		padding-bottom: 100px;
+		font-family: 'Saira Stencil One', cursive;
 	}
 
 	
-}
+
 
 /* MOBILE STYLING */
 
+
+
+
+/* MEDIA QUERIES */
+
+
 /* TABLET STYLING */
 
-@media(max-width: 800px) {
+@media(min-width: 767px) {
 
 	.container {
 		width: 100%;
 	}
 
 	nav {
-		width: 100%;
+		width: 80%;
 		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 		position: relative;
 		margin-top: 1.2rem;
+		margin-bottom: 1.2rem;
 		background: none;
 	}
 
 	.nav-items {
 		flex-direction: row;
-		justify-content: space-evenly;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
 		align-items: center;
 		padding-top: 2em;
 		order: 2;
@@ -406,9 +314,13 @@ footer p {
 	}
 
 	.nav-item {
-		padding: 20px 20px;
-		width: 100%;
-		text-align: center;
+		text-decoration: none;
+		padding: 30px 50px;
+		vertical-align: middle;
+		color: rgba(175, 172, 172, 0.8);
+		text-shadow: 1px 1px 1px #111;
+		font-weight: bold;
+		transition: color 0.3s ease-in, text-shadow 0.3s ease-in;
 	}
 
 	.logo {
@@ -458,4 +370,157 @@ footer p {
 
 	
 }
-/* TABLET STYLING */
+
+/* DESKTOP STYLING */
+
+@media(min-width: 1000px) {
+	.container {
+		width: 90%;
+		margin: 0 auto;
+		
+		/*I used this to center all the Html*/	
+	}
+	
+	header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		
+	}
+	
+	nav {
+		width: 90%;
+		position: fixed;
+		background-color: rgb(2, 127, 209);
+		z-index: 3;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: center;
+		margin-top: 38px;
+	}
+	.nav-items {
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+		width: 100%;
+		order: 1;
+	
+	}
+	
+	.nav-item {
+		text-decoration: none;
+		padding: 30px 50px;
+		vertical-align: middle;
+		color: rgba(175, 172, 172, 0.8);
+		text-shadow: 1px 1px 1px #111;
+		font-weight: bold;
+		transition: color 0.3s ease-in, text-shadow 0.3s ease-in;
+		/*I spent too long trying to use vertical-align: center because I though I knew what I was doing*/
+	}
+	
+	.nav-item:hover {
+		color: #111;
+		text-shadow: 2px 2px 1px rgb(175, 172, 172);
+	}
+
+	.logo {
+		order: 2;
+	}
+	
+	
+	.showcase {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		border-bottom: 1px solid black;
+		margin-bottom: 20px;
+		padding-bottom: 50px;
+		padding-top: 100px;
+		
+	}
+	
+	.snippet {
+		display: inline-block;
+		margin-left: 150px;
+		width: 35%;
+		padding-top: 25px;
+		
+	}
+	
+	.innovation {
+		
+		font-size: 6rem;
+		width: 40%;	
+		text-align: center;
+		z-index: 1;
+		vertical-align: top;
+		padding-top: 5%;
+	}
+	
+	.showcase button {
+		background: none;
+		border: 1px solid black;
+		padding: 5px 60px;
+		vertical-align: top;
+	
+	}
+	/*SHOWCASE STYLING ENDS*/
+	
+	/*MAIN CONTENT STYLING BEGINS*/
+	
+	main {
+		padding-top: 50px;
+	}
+	
+	.main-content {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		padding: 3% 3% 3% 0%;
+	}
+	
+	main img {
+		width: 100%;
+		padding-bottom: 20px;
+	}
+	
+	
+	
+	main p {
+		font-size: 20px;
+		width: 99%;
+		font-family: 'Exo', sans-serif;
+	}
+	
+	.triplets {
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+		border-bottom: 1px solid black;
+		margin-bottom: 20px;
+		padding-bottom: 50px;
+	}
+	
+	.contact {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		margin-bottom: 20px;
+		padding-bottom: 50px;
+	}
+	
+	.contact .phone {
+		padding: 20px 0px;
+	
+	}
+	
+	footer p {
+		text-align: center;
+		vertical-align: top;
+		padding-bottom: 100px;
+		font-family: 'Saira Stencil One', cursive;
+	}
+}
+
+/* DESKTOP STYLING */
