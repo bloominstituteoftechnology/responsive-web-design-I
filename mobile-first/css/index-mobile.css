@@ -288,8 +288,12 @@ h1, h2, h3, h4, h5 {
 		width: 100%;
 	}
 
+	h3 {
+		text-align: initial;
+	}
+
 	nav {
-		width: 80%;
+		width: 100%;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
@@ -300,22 +304,23 @@ h1, h2, h3, h4, h5 {
 	}
 
 	.nav-items {
+		
 		flex-direction: row;
 		flex-wrap: nowrap;
 		justify-content: flex-start;
 		align-items: center;
-		padding-top: 2em;
 		order: 2;
 		
 	}
 
 	.nav-items:first-child{
-		
+		border: none;
 	}
 
 	.nav-item {
 		text-decoration: none;
-		padding: 30px 50px;
+		padding: 30px 40px;
+		border: none;
 		vertical-align: middle;
 		color: rgba(175, 172, 172, 0.8);
 		text-shadow: 1px 1px 1px #111;
@@ -325,6 +330,7 @@ h1, h2, h3, h4, h5 {
 
 	.logo {
 		order: 1;
+		
 	}
 
 	.showcase {
@@ -348,10 +354,17 @@ h1, h2, h3, h4, h5 {
 		margin-top: 3%;
 	}
 
-	.main-content { 
-		flex-direction: row;
-		justify-content: flex-start;
+	.main-content {
+		display: flex;
+		justify-content: space-between;
 		align-items: center;
+		padding: 3% 3% 3% 0%;
+	}
+
+	.main-content section {
+		width: 50%;
+		padding: 3%;
+
 	}
 
 	 h3 {
@@ -361,11 +374,21 @@ h1, h2, h3, h4, h5 {
 	}
 
 	.triplets {
-		flex-direction: row;
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+		border-bottom: 1px solid black;
+		margin-bottom: 20px;
+		padding-bottom: 50px;
+	}
+	.main-content2 {
+		padding: 3%;
+		width: 33%;
 	}
 
 	.contact {
-		text-align: center;
+		align-items: flex-start;
+		padding-left: 10px;
 	}
 
 	
@@ -378,7 +401,6 @@ h1, h2, h3, h4, h5 {
 		width: 90%;
 		margin: 0 auto;
 		
-		/*I used this to center all the Html*/	
 	}
 	
 	header {
@@ -450,7 +472,7 @@ h1, h2, h3, h4, h5 {
 	
 	.innovation {
 		
-		font-size: 6rem;
+		font-size: 2.25rem;
 		width: 40%;	
 		text-align: center;
 		z-index: 1;
@@ -472,13 +494,21 @@ h1, h2, h3, h4, h5 {
 	main {
 		padding-top: 50px;
 	}
+
+	
 	
 	.main-content {
 		display: flex;
-		justify-content: space-evenly;
+		justify-content: space-between;
 		align-items: center;
 		padding: 3% 3% 3% 0%;
 	}
+
+	.main-content section {
+		width: 50%;
+
+	}
+	
 	
 	main img {
 		width: 100%;
@@ -489,7 +519,6 @@ h1, h2, h3, h4, h5 {
 	
 	main p {
 		font-size: 20px;
-		width: 99%;
 		font-family: 'Exo', sans-serif;
 	}
 	
@@ -501,11 +530,17 @@ h1, h2, h3, h4, h5 {
 		margin-bottom: 20px;
 		padding-bottom: 50px;
 	}
+
+	.main-content2 {
+		padding: 3%;
+		width: 33%;
+	}
 	
 	.contact {
 		display: flex;
 		flex-direction: column;
-		justify-content: space-evenly;
+		justify-content: center;
+		align-items: flex-start;
 		margin-bottom: 20px;
 		padding-bottom: 50px;
 	}
