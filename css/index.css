@@ -1,3 +1,731 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+/* ############################################################################## */
+/* .main {
+	width: 99%;
+    height: 1500px;
+    margin-left: 1%;
+    display: flex;
+    flex-direction: column;
+align-items: center;
+align-content: center;
+border-bottom: 2%;
+  } */
+
+.main { 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10%;
+  /* border: 5px solid blue; */
+  align-items: center;
+}
+
+
+
+
+ nav {
+	width: 90%;
+	height: 80px;
+    width: 90%; 
+    display: flex;
+justify-content: space-between;
+margin-top: 1%;
+  } 
+
+  .menu-item {
+    display:flex;
+    justify-content: center;
+    color: gray;
+
+  }
+  .logo {
+    text-decoration: none;
+    width: 140px;
+    height: 40px;
+  }
+  a {
+    text-decoration: none;
+    margin-top: 1%;
+    font-weight: bold;
+  }
+  /*------------ a:hover ----------- a:hover ----------- a:hover } */
+  
+/* a:hover {
+	color: white;
+	width: 80px;
+	height: 30px;
+	background: gray;
+    border-radius: 8px;
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
+} */
+
+
+/* a:hover {
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  } */
+a:hover { 
+  color: cyan;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  font-size: 16px;
+  /* border: 1px solid gray; */
+  border-radius: 8px;
+}
+
+/* ----------- a:hover ----------- a:hover ----------- a:hover   */
+
+
+  header {
+	width: 90%;
+	height: 400px;
+	/* margin-top: 70px; */
+    padding-bottom: 80px;
+    display: flex;
+    
+  }
+  h1 {
+	font-size: 70px;
+  }
+  .innovation-text-and-button {
+	/* border: 5px dashed white; */
+	width: 310px;
+	height: 300px;
+	/* background: gray; */
+	/* display: inline-block; */
+	margin-left: 120px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  /* ROUND IMAGE ------------ROUND IMAGE ------------ROUND IMAGE ------------ROUND IMAGE ------------ */
+  .round-image {
+	width: 380px;
+    height: 380px;
+    /* border: 2px dashed red; */
+    margin-left: 100px;
+	/* display: inline; */
+    /* margin-left: 320px; */
+    }
+/* ---------------------------------------------------------------------------------------------------- */
+  
+  
+  button {
+	width: 130px;
+	height: 30px;
+    margin-left: 50px;
+    border-radius: 4px;
+  }
+
+    /* First variation for hover----------irst variation for hover---------- */
+  /* button:hover {
+	  color: white;
+	  background: gray;
+      border-radius: 8px;
+      font-weight: bold;
+  } */
+
+  button:hover {
+    color: cyan;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    font-size: 16px;
+
+  }
+
+
+/* ==========features-about-container =======features-about-container ========features-about-container == */
+.features-about-container {
+	width: 90%;
+	height: auto;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }   
+
+
+ 
+
+
+
+  .features-heading {
+	  width: 45%;
+	  height: auto; 
+      margin-top: 10px;
+  } 
+
+  .features-heading:hover {
+    background: black;
+    color: white;
+    border: 1px solid cyan;
+    border-radius: 10px;
+    padding: 7px;  
+
+  }
+   .about-heading {
+	/* border: 2px solid cyan; */
+	/* background: lightcoral; */
+	width: 45%;
+    height: auto; 
+    margin-top: 10px;
+	/* display: inline-block; */
+    margin-left: 9%;
+  } 
+  .about-heading:hover {
+    background: black;
+    color: white;
+    border-radius: 10px;
+    padding: 7px;
+    border: 2px solid cyan;
+
+  }
+  /* ---- LONG PHOTO ------------LONG PHOTO ------------LONG PHOTO ------------LONG PHOTO ------ */
+  
+  .photo {
+    background: url(/Users/TimGrey/UI-III-Flexbox/great-idea/img/mid-page-accent.jpg);
+    /* width: relative; */
+    width: 80vw;
+    /* border: 3px dashed hotpink; */
+    /* margin-left: 5%; */
+  }
+
+/* srvc-prod-vis-container --------------srvc-prod-vis-container --------------srvc-prod-vis-container -------------- */
+.srvc-prod-vis-container {
+	width: 90%;
+    height: auto; 
+	/* border: 2px solid green; */
+	/* margin-left: 5%; */
+	margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.services-heading{
+	/* border: 2px solid cyan; */
+	/* background: lightcoral; */
+	width: 300px;
+    height: auto; 
+    padding:7px;
+
+    display: inline-block;
+	/* margin-left: 5%; */
+}
+.services-heading:hover {
+    background: black;
+    color: white;
+    border-radius: 10px;
+    padding: 7px;
+    border: 2px solid cyan;
+
+}
+.products-heading {
+	/* border: 2px solid cyan; */
+	/* background: lightcoral; */
+	width: 300px;
+    height: auto; 
+    padding:7px;
+
+	/* display: inline-block; */
+	/* margin-left: 5%; */
+}
+.products-heading:hover {
+    background: black;
+    color: white;
+    border-radius: 10px;
+    padding: 7px;
+    border: 2px solid cyan;
+
+}
+.vision-heading {
+	/* border: 2px solid cyan; */
+	/* background: lightcoral; */
+	width: 300px;
+    height: auto; 
+    padding:7px;
+
+	/* display: inline-block; */
+	/* margin-left: 5%; */
+}
+.vision-heading:hover {
+    background: black;
+    color: white;
+    border-radius: 10px;
+    padding: 7px;
+    border: 2px solid cyan;
+
+}
+
+  footer {
+	width: 90%;
+	height: 220px;
+	/* border: 2px solid fuchsia; */
+	/* margin-left: 5%;  */
+	margin-top: 30px;
+  }
+  .copyright{ 
+	  margin-left: 40%;
+	  padding-top: 5%;
+  }
+
+  p	{
+	font-family: 'Indie Flower', cursive;
+  } 
+  /* ============================================================================ */
+  /* =========== SERVICES PAGE=========== SERVICES PAGE=========== SERVICES PAGE */
+
+  .services-main-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 10%;
+      /* border: 2px solid blue; */
+      align-items: center;
+  }
+ 
+
+  .header-services {
+      height: auto;
+      width: 68vw;
+      display: flex; 
+      flex-direction: column;
+      /* border: 2px solid red; */
+      padding: 5px;
+      margin-top: 30px;
+  }
+
+.header-services:hover {
+color: white;
+background: black;
+border-radius: 10px;
+border: 2px solid cyan;
+
+
+}
+.services-heading2 {
+    font-size: 26px;
+}
+section {
+    /* border: 2px solid cyan;ß */
+    width: 30%;
+    height: 200px;
+    display:flex;
+}
+
+.topTwoBoxes {
+    /* border: 4px solid blueviolet; */
+    width: 79vw;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1% 0 1% 0;
+
+}
+.middleTwoBoxes {
+    /* border: 4px solid blueviolet; */
+    width: 79vw;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 0 1% 0;
+
+}
+.lowerTwoBoxes {
+    /* border: 4px solid blueviolet; */
+    width: 79vw;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+/* ---------------------------------------------------------------------- */
+
+.services-page-btn {
+    margin-right: 50px;
+    border: 3px solid red;
+}
+
+/* ----------------------------------------------- */
+.digital-design {
+    background: lightgray;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    border: 1px solid black;
+    height: auto;
+}
+.cyan-accent  h2:hover {
+    color: cyan;
+    
+}
+.digital-design:hover {
+    background: black;
+    color: white;
+    border-radius: 10px;
+    border: 2px solid cyan;
+
+    
+    }
+.digital-design h2:hover{
+    color: cyan;
+
+}
+/* ----------------------------------------------- */
+.ux-ui {
+    background: lightgray;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    width: 40%;
+    border: 1px solid black;
+    height: auto;
+
+}
+.ux-ui:hover {
+    background: black;
+    color: white;
+    border-radius: 10px;
+    border: 2px solid cyan;
+
+
+}
+/* ---------------------------------------------- */
+.digital-marketing {
+    background: lightgray;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    width: 40%;
+    border: 1px solid black;
+    height: auto;
+
+}
+.digital-marketing:hover {
+    background: black;
+    color: white;
+    border-radius: 10px;
+    border: 2px solid cyan;
+
+}
+/* ---------------------------------------------- */
+.web-dev {
+    background: lightgray;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    width: 40%;
+    border: 1px solid black;
+    height: auto;
+
+}
+.web-dev:hover {
+    background: black;
+    color: white;
+    border-radius: 10px;
+    border: 2px solid cyan;
+
+}
+/* ----------------------------------------------- */
+.ios-dev {
+    background: lightgray;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    width: 40%;
+    border: 1px solid black;
+    height: auto;
+
+}
+.ios-dev:hover {
+    background: black;
+    color: white;
+    border-radius: 10px;
+    border: 2px solid cyan;
+
+}
+/* ----------------------------------------------- */
+.android-dev {
+    background: lightgray;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    width: 40%;
+    border: 1px solid black;
+    height: auto;
+
+}
+.android-dev:hover {
+    background: black;
+    color: white;
+    border-radius: 10px;
+    border: 2px solid cyan;
+
+}
+/*  */
+.border {
+    width: 68vw;
+    border: 1px solid gray;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+.lower-container {
+    display: flex;
+    margin-bottom: 100px;
+    /* border: 2px solid cyan; */
+    margin-top: 15px;
+}
+/* ------------------------------------------------------- */
+.services-footer {
+    width: 33vw;
+    height: auto;
+    /* border: 2px solid red; */
+    margin-right: 45px;
+    padding: 5px;
+}
+.services-footer:hover{
+    background: black;
+    color: white;
+    border-radius: 10px;
+    border: 2px solid cyan;
+
+}
+li:hover{
+    color: cyan;
+    
+}
+/* ------------------------------------------------------- */
+
+.things {
+    margin-top: 30px;
+}
+.things ul li {
+    list-style-type: square; 
+margin-left: 20px;
+margin-bottom: 12px;
+} 
+
+
+/* ////////   PHOTO FLIPPER  ///////////HOTO FLIPPER  ///////////HOTO FLIPPER  /////////// */
+.card-container2 {
+    height: 300px;
+    width: 420px;
+    perspective: 600;
+    position: relative;
+    border: 1px solid black;
+    background: gray;
+    text-align: center;
+    margin-top: 50px;
+   /* margin: 20px; */
+    font-size: 18px;
+    color: white;
+  }
+  .card-container2:hover {
+    background: black;
+    border-radius: 20px;
+    border: 2px solid cyan;
+
+  }
+  .card {
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: all 1s ease-in-out;
+    width: 100%;
+  }
+  .card:hover {
+    transform: rotateY(180deg);
+  }
+  .card .side {
+    backface-visibility: hidden;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+  }
+  .card .back {
+    transform: rotateY(180deg);
+  }
+  
+   .chat {
+      margin-right: 50px;
+  } 
+
+
+  
+  /* CHAT -------CHAT -------CHAT ------- */
+  
+
+  div#content {
+    display: none;
+  }
+  button:hover + div#content {
+    display: block;
+  }
+  
+
+.closed {
+    color: red;
+    width: 120px;
+    height: 35x;
+}
+/* ================================ */
+div #content{
+ 
+    position: relative;
+    animation: mymove 5s infinite;
+  }
+  @keyframes mymove {
+    from {left: -120px;}
+    to {left: 130px;}
+  }
+
+
+
+/* =================================== */
+/*  Onload gives logo animation */
+#logo {
+    /* margin-top: 50px; */
+    margin-right: 7vw;
+    /* width: 120px; */
+    height: 40px;
+    background-color: cyan;
+    border-radius: 20px;
+    transition: 8s;
+    line-height: 40px;
+    text-align: center;
+    padding: 5px;
+    
+  }
+  
+
+
+
+  
+/* ============== MEDIA============== MEDIA============== MEDIA============== MEDIA  */
+
+
+/
+  @media only screen and (max-width: 900px) { 
+    .photo {
+      display: none;
+    }
+  }
+  @media only screen and (max-width: 900px) {
+    .innovation-text-and-button  {
+        align-items: center;
+        margin-right: 70px;
+    }
+  } 
+  @media only screen and (max-width: 900px) {
+    .services-footer {
+       display: none;
+    }
+  } 
+ 
+  @media only screen and (max-width: 900px) {
+    .services-header-img {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .round-image{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    button{
+        margin-right: 60px;
+        width: 80px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    button:hover{
+        color: cyan;
+        text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+        font-size: 16px;
+        width: 120px;
+        height: 35px;
+    }
+}
+
+
+@media only screen and (max-width: 700px) {
+    .navbar{
+display:flex;
+flex-direction: column;
+    }
+}
+
 
