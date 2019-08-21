@@ -1,3 +1,395 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:  'Titillium Web';
+}
+
+
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+body {
+    width: 995px;
+    margin: 0 auto;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    
+}
+
+nav a {
+    text-decoration: none;
+    color: grey;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 30px;
+    align-items: center;
+}
+
+ h1  {
+    font-family: 'Bangers';
+    font-size: 90px;
+    text-align: center;
+    width: 55%;
+    margin-left: 100px; 
+    margin-top: 50px;
+}
+
+
+.header-info {
+   display: flex;
+   justify-content: space-between;
+   margin-top: 100px;
+   border-bottom: 1px groove black;
+   height: 500px;
+   width: 100%;
+}
+
+.get-started {
+    color: black;
+    background-color: white;
+    font-family:  'Titillium Web'; 
+    font-size: 20px;
+    height: 35px;
+    width: 180px;
+	border: 1px solid black;
+	margin-left: 180px;
+    margin-top: 5px;
+     
+}
+
+
+.main-one {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+
+.features, .about {
+    width: 45%;
+    margin-top: 35px;
+   
+}
+
+.middle-img {
+    width: 100%;
+    margin: 30px 0;
+}
+
+#services, #product, #vision {
+    width: 275px;
+}
+
+
+#services, #product {
+    margin-right: 30px;
+}
+
+.main-two {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+footer {
+    border-top: 1px solid black;
+    margin-top: 50px;
+    
+}
+
+footer h2 {
+    margin-top: 40px;
+}
+
+ footer p {
+    text-align: center;
+    margin-top: 40px;
+}
+ 
+
+@media (max-width:800px) {
+   body {
+    width: 80%;
+    
+   }
+
+   
+
+   
+    .image2 {
+       display: none;
+   }
+
+   .nav-links {
+    margin-top: 10%;
+    width: 100%;
+    
+}
+
+.logo {
+    margin-top: 10%;
+}
+
+nav {
+    
+      flex-direction: column-reverse;
+}
+
+
+
+.header-info {
+    border-bottom: 2px groove black;
+    margin-top: 10%;
+    
+}
+
+footer {
+    border-top: 2px solid black;
+   
+    
+}
+}
+
+
+@media (max-width:500px) {
+   body {
+       width: 85%;
+   }
+
+   .logo {
+    margin-top: 5%;
+}
+
+   .nav-links {
+    flex-direction: column;
+   text-align: center;
+   justify-content: center;
+    line-height: 400%;
+    margin-top: 5%;  
+    }
+
+
+ 
+nav li {
+    font-size: 130%;
+    justify-content: center;
+    border-bottom: 1px solid gray;
+}
+
+.services-nav {
+    border-top: 1px solid gray;
+}
+
+h1  {
+   
+    font-size: 70px;
+    text-align: center;
+   margin-left: 15%;
+    margin-top: 10%;
+    width: 65%;
+   
+}
+
+.get-started {
+    font-size: 100%;
+    font-family: sans-serif;
+    height: 9%;
+    margin-left: 27%;
+    width: 165px;
+   
+     
+}
+
+.header-info {
+    margin-top: 5%;
+    border-bottom: 2px solid black;
+    height: 23em;
+    width: 100%;
+ }
+
+ .main-one {
+    display: flex;
+   flex-direction: column;
+
+}
+
+.features, .about {
+    width: 100%;
+    margin-top: 10%;
+   
+}
+
+.main-two {
+    flex-direction: column;
+}
+
+
+#services, #product, #vision {
+    width: 100%;
+    margin-top: 10%;
+}
+
+#services, #product {
+    margin-right: 0px;
+}
+
+#services {
+    margin-top: 0;
+}
+
+.middle-img {
+    height: 13%;
+    margin-top: 10%;
+}
+
+
+
+}
 
