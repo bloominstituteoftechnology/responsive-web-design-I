@@ -1,3 +1,232 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');  /* Import Google Font Rubik*/ 
+
+.container {
+margin: 0 auto;
+width: 1100px;
+}
+
+nav {
+margin-top: 30px;
+display: inline-block;
+}
+
+.anchors:hover {
+	color: pink;
+}
+
+.image-box {
+display: inline-block;
+margin-left: 10px;
+margin-right: 100px;
+padding: 10px;
+margin-bottom: 70px;
+border: none;
+width: 20px;
+height: 379px;
+font-size: 100px;
+}
+
+.banner {
+font-size: 100px;	
+height: 40px;
+width: 170px; 
+margin-top: 80px ;
+margin-bottom: 200px;
+margin-left: 50px;
+margin-right: 50px;
+box-sizing: border-box;
+}
+
+.banner:hover {
+color: cadetblue;
+}
+
+.get-started-button {
+margin-top: 80px;
+margin-bottom: 70px;
+margin-left: 150px;
+border: solid 1px;
+background: transparent;
+width: 120px;
+height: 30px;
+margin-bottom: 300px;
+}
+
+img .logo {
+margin-left: 1270px;
+margin-bottom: auto;
+}
+
+nav .anchors {
+margin: 40px;
+text-decoration: none;
+color: rgb(82, 79, 79);
+}
+
+.line1 {
+margin-top: 50px;
+margin-bottom: 30PX;
+}
+.section1{
+display: inline-block;
+margin: 5px;
+border: none;
+width: 700px;
+height: 100px;
+box-sizing: border-box;
+}
+
+.section2 {
+display: inline-block;
+margin: 5px;
+border: none;
+width: 500px;
+height: 100px;
+box-sizing: border-box;
+font-size: 25px;
+}
+
+.middle-img {
+width: 100%;
+margin-bottom: 30px;
+margin-top: 30px;
+}
+
+.section-prime {
+display: inline-block;
+margin-top: 20px;;
+margin: 1px;
+border: 0;
+width: 350px;
+height: 90px;
+box-sizing: border-box;
+}
+
+div.ex1{
+width:30%;
+height: 30px ;
+display:inline-block;
+margin: 150;
+padding: 0;
+font-size: 25px;
+}
+	
+div.ex2{
+width:30%;
+height:200px;
+display:inline-block;
+margin: 150;
+padding: 0;
+font-size: 25px;
+
+}
+	
+	
+div.ex3{
+width:30%;
+height:200px;
+display:inline-block;
+margin: 150;
+padding: 0;
+font-size: 25px;
+
+}
+
+.line2 {
+margin-top: 80px;
+margin-bottom: 50px;
+}
+
+.address-box {
+box-sizing: border-box;
+display: inline-block;
+width: 190px;
+height: 50px;
+background-color: transparent;
+}
+
+.email {
+margin-top: 30px;
+margin-bottom: 30px;
+}
+
+.phone-number {
+margin-top: 40px;
+margin-bottom: 40px;
+width: 200px;
+}
+
+.copyright {
+margin-top: 150px;
+margin-bottom: 150px;
+text-align: center;
+}
 
