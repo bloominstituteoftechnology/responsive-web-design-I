@@ -73,6 +73,12 @@ margin: 0 auto;
 width: 1100px;
 }
 
+@media(min-width: 500px) {
+    .container {
+        width: 500px;
+    }
+}
+
 nav {
 margin-top: 30px;
 display: inline-block;
@@ -134,6 +140,13 @@ margin-right: 50px;
 box-sizing: border-box;
 }
 
+/*Mobile View*/
+@media(min-width: 500px) {
+    .banner {
+        margin-bottom: 0px;
+    }
+}
+
 .banner:hover {
 color: cadetblue;
 }
@@ -149,9 +162,28 @@ height: 30px;
 margin-bottom: 300px;
 }
 
+/*Mobile View*/
+@media(min-width: 500px) {
+    .get-started-button {
+    width: 150px;
+    height: 900px;
+    }
+}
+
+
 img .logo {
 margin-left: 1270px;
 margin-bottom: auto;
+}
+
+/*Mobile View*/
+@media(min-width: 500px) {
+    img .logo {
+       height: 36px;
+       width: 350px;
+       margin-right: 30px;
+       order: -1;
+    }
 }
 
 nav .anchors {
@@ -173,6 +205,17 @@ height: 100px;
 box-sizing: border-box;
 }
 
+/*Mobile View*/
+@media(min-width: 500px) {
+    .section1 {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 300px;
+        margin-top: 0px;
+        padding: 50px 50px 50px 50px ;
+    }
+}
+
 .section2 {
 display: inline-block;
 margin: 5px;
@@ -183,10 +226,29 @@ box-sizing: border-box;
 font-size: 25px;
 }
 
+/*Mobile View*/
+@media(min-width: 500px) {
+    .section2 {
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+        margin-bottom: 20px;
+        padding: 20px 20px 20px 20px;
+    }
+}
+
 .middle-img {
 width: 100%;
 margin-bottom: 30px;
 margin-top: 30px;
+}
+
+/*Mobile View*/
+@media(min-width: 500px) {
+    .middle-img {
+        padding: 20px 20px 20px 20px;
+        margin-top: 70px;
+    }
 }
 
 .section-prime {
@@ -199,6 +261,14 @@ height: 90px;
 box-sizing: border-box;
 }
 
+/*Mobile View*/
+@media(min-width: 500px) {
+    .section-prime {
+        display: flex;
+        flex-direction: column;
+    }
+}	
+
 div.ex1{
 width:30%;
 height: 30px ;
@@ -207,7 +277,15 @@ margin: 150;
 padding: 0;
 font-size: 25px;
 }
-	
+
+/*Mobile View*/
+@media(min-width: 500px) {
+    .ex1 {
+        display: flex;
+        flex-direction: column;
+    }
+}	
+
 div.ex2{
 width:30%;
 height:200px;
@@ -218,7 +296,14 @@ font-size: 25px;
 
 }
 	
-	
+ /*Mobile View*/
+@media(min-width: 500px) {
+    .ex2 {
+        display: flex;
+        flex-direction: column;
+    }
+}	   
+
 div.ex3{
 width:30%;
 height:200px;
@@ -228,6 +313,15 @@ padding: 0;
 font-size: 25px;
 
 }
+
+ /*Mobile View*/
+ @media(min-width: 500px) {
+    .ex3 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}	
 
 .line2 {
 margin-top: 80px;
