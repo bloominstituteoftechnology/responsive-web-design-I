@@ -84,8 +84,7 @@ border-bottom: 2%;
   flex-direction: column;
   align-items: center;
   margin: 10%;
-  /* border: 5px solid blue; */
-  align-items: center;
+  border: 5px solid blue;
 }
 
 
@@ -96,6 +95,7 @@ border-bottom: 2%;
 	height: 80px;
     width: 90%; 
     display: flex;
+    border: 4px solid seagreen;
 justify-content: space-between;
 margin-top: 1%;
   } 
@@ -104,12 +104,15 @@ margin-top: 1%;
     display:flex;
     justify-content: center;
     color: gray;
+    border: 4px dashed fuchsia;
 
   }
   .logo {
     text-decoration: none;
     width: 140px;
     height: 40px;
+    border: 4px solid orangered;
+    
   }
   a {
     text-decoration: none;
@@ -170,9 +173,12 @@ a:hover {
   }
   /* ROUND IMAGE ------------ROUND IMAGE ------------ROUND IMAGE ------------ROUND IMAGE ------------ */
   .round-image {
-	width: 380px;
-    height: 380px;
-    /* border: 2px dashed red; */
+
+width: 100%;
+height: auto;
+	/* width: 380px;
+    height: 380px; */
+    border: 2px dashed red;
     margin-left: 100px;
 	/* display: inline; */
     /* margin-left: 320px; */
@@ -250,14 +256,24 @@ a:hover {
   }
   /* ---- LONG PHOTO ------------LONG PHOTO ------------LONG PHOTO ------------LONG PHOTO ------ */
   
-  .photo {
-    background: url(/Users/TimGrey/UI-III-Flexbox/great-idea/img/mid-page-accent.jpg);
-    /* width: relative; */
-    width: 80vw;
-    /* border: 3px dashed hotpink; */
-    /* margin-left: 5%; */
-  }
+img{
+  /* width: relative;  */
+    /* width: 69vw; */
+  border: 3px dashed hotpink;
+  width: 100%;
+  height: auto;
 
+}
+
+  /* background: url(img/mid-page-accent-80pct.jpg); */
+
+
+
+
+
+
+
+  
 /* srvc-prod-vis-container --------------srvc-prod-vis-container --------------srvc-prod-vis-container -------------- */
 .srvc-prod-vis-container {
 	width: 90%;
@@ -331,15 +347,17 @@ a:hover {
 	margin-top: 30px;
   }
   .copyright{ 
-	  margin-left: 40%;
-	  padding-top: 5%;
+  margin-left: 40%;
+  padding-top: 5%;
   }
 
   p	{
 	font-family: 'Indie Flower', cursive;
   } 
-  /* ============================================================================ */
   /* =========== SERVICES PAGE=========== SERVICES PAGE=========== SERVICES PAGE */
+  /* =========== SERVICES PAGE=========== SERVICES PAGE=========== SERVICES PAGE */
+    /* =========== SERVICES PAGE=========== SERVICES PAGE=========== SERVICES PAGE */
+
 
   .services-main-container {
       display: flex;
@@ -673,44 +691,46 @@ div #content{
 /* ============== MEDIA============== MEDIA============== MEDIA============== MEDIA  */
 
 
-/
-  @media only screen and (max-width: 900px) { 
+/* When the screen goes below the max-width of 900px */
+  /* @media only screen and (max-width: 900px) { @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
     .photo {
       display: none;
     }
-  }
-  @media only screen and (max-width: 900px) {
+  } */
+  @media only screen and (max-width: 800px) {
     .innovation-text-and-button  {
         align-items: center;
         margin-right: 70px;
+        border: 4px dashed red;
+        padding: 0px 3px 0px 6px;
     }
   } 
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 800px) {
     .services-footer {
        display: none;
     }
   } 
  
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 800px) {
     .services-header-img {
         display: none;
     }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 800px) {
     .round-image{
         display: none;
     }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 800px) {
     button{
         margin-right: 60px;
         width: 80px;
     }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 800px) {
     button:hover{
         color: cyan;
         text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
@@ -720,12 +740,80 @@ div #content{
     }
 }
 
-
+/* When the screen goes below the max-width of 500px */
 @media only screen and (max-width: 700px) {
     .navbar{
 display:flex;
 flex-direction: column;
+
+align-items: center;
+    }
+}
+/* ====== Trying to get this logo style to fit on small screen ===== */
+@media only screen and (max-width: 800px) {
+    .logo {
+        display: none;
     }
 }
 
 
+@media only screen and (max-width: 800px) {
+    .navbar{
+display:flex;
+flex-direction: column;
+border: 4px solid turquoise;
+margin-bottom: 60px;
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .innovation-text-and-button  {
+        align-items: center;
+        /* margin-right: 90px; */
+        border: 4px dashed red;
+        background: pink;
+        margin-left: 0;
+    }
+  } 
+  @media only screen and (max-width: 735px) {
+    .innovation-text-and-button  {
+        align-items: center;
+        margin-left: 20%;
+        border: 4px dashed red;
+        background: pink;
+    }
+  } 
+  @media only screen and (max-width: 580px) {
+    .innovation-text-and-button  {
+        align-items: center;
+        margin-left: 15%;
+        border: 4px dashed red;
+        background: pink;
+        padding: 
+    }
+  } 
+  @media only screen and (max-width: 450px) {
+    .innovation-text-and-button  {
+        align-items: center;
+        margin-left: 0;       
+         border: 4px dashed red;
+        background: pink;
+        padding: 0px 3px 0px 6px;
+
+    }
+  } 
+  @media only screen and (max-width: 735px) {
+      .menu-item {
+          margin-bottom: 0px;
+          font-size: 15px;
+      }
+  }
+  /* @media only screen and (max-width: 735px) {
+    .services-heading2  {
+        margin: 0px;
+        font-size: 12px;
+        margin-left: 80px;
+    }
+} */
+
+  
