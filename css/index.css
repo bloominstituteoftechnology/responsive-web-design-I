@@ -1,3 +1,398 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 
+body {
+	margin: 0 auto;
+	width: 880px;
+}
+
+h1 {
+	font-size: 70px;
+}
+
+.content-title {
+	font-size: 20px;
+	font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+/*Navigation bar*/
+
+.navigation {
+	margin-bottom: 25px;
+	z-index: 100;
+	position: sticky;
+	top: 0;
+	background-color: white;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+
+nav {
+	text-align: left;
+	display: inline-block;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.links {
+	display: inline;
+}
+
+a {
+	color: #a7a7a7;
+	text-decoration: none;
+	text-align: left;
+	padding: 0 53px 0 0;
+}
+
+a:hover {
+	color: black;
+}
+
+.logo {
+	top: 50%;
+	transform: translateY(30%);
+	transform: translateX(30%);
+}
+
+/*Welcome Content*/
+
+header {
+	height: 400px;
+	border-bottom: 1px solid black;
+    margin-bottom: 30px;
+    
+}
+
+.header-text {
+	width: 49%;
+	text-align: center;
+	display: inline-block;
+	top: 50%;
+	transform: translateY(-30%);
+}
+
+button {
+	border: 1px solid black;
+	color: black;
+	background-color: white;
+	font-family: 'Titillium Web', sans-serif;
+    padding: 1px 40px 1px 40px;
+    
+}
+
+.header-img{
+    display: inline-block;
+}
+
+/*Features+About Content*/
+
+.top-content {
+	width: 100%;
+    margin: 10px 0;
+}
+
+.content-text-top {
+	width: 100%;
+	display: inline-block;
+}
+
+.block1 {
+	width: 49%;
+	padding: 0 10px 40px 10px;	
+	display: inline-block;
+}
+
+/*Middle Pic Content*/
+
+.middle-img {
+	width: 100%;
+	margin: 10px 0;
+}
+
+/*Services+Product+Vision Content*/
+
+.bottom-content {
+	width: 100%;
+}
+
+.content-text-bottom {
+	width: 100%;
+	display: inline-block;
+}
+
+.block2 {
+	width: 33%;
+	padding: 20px 10px 20px 10px;	
+	display: inline-block;
+}
+
+/*Contact*/
+
+.contact {
+	border-top: 1px solid black;
+	padding-top: 30px;
+	margin-top: 30px;
+}
+
+/*Footer*/
+
+footer {
+	padding: 100px 0 110px 0;
+	text-align: center;
+}
+
+
+/* FLEX BOX PROJECT */
+
+.services-header-img {
+	width: 100%;
+	padding-bottom: 35px;
+}
+
+.services-top-content h2 {
+	font-size: 30px;
+}
+
+.services-top-content {
+	padding-bottom: 40px;
+	border-bottom: 1px solid black;
+}
+
+.all-containers {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	border-bottom: 2px solid black;
+	padding-bottom: 40px;
+}
+
+.container {
+	display: flex;
+	background: #f4f3f4;
+	border: 1px solid black;
+	margin: 40px 0px 10px 0px;
+	height: 250px;
+	width: 420px;
+}
+
+.container-title h3 {
+	font-size: 20px;
+	margin: 20px 20px ;
+}
+
+.container-title p {
+	margin: 20px 20px;
+}
+
+.container button {
+	border-radius: 5px;
+	padding: 5px 35px;
+	margin: 10px 20px;
+}
+
+.container-bottom {
+	display: inline-block;
+	height: 250px;
+	width: 400px;
+	transform: translateY(-60px);
+}
+
+.services-info-img {
+	display: inline-block;
+	margin: 0 0 0 56px;
+	padding-top: 40px;
+}
+
+.lower-containers {
+	padding-top: 0px;
+	display: inline-block;
+}
+
+ul {
+	list-style: square;
+	margin: 0 0 0 20px;
+	line-height: 30px;
+
+}
+
+@media (max-width: 800px) {
+
+    .top-content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex-flow: column;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex-flow: column;
+    }
+
+    .header-img{
+        display: none;
+    }
+
+} 
+
+@media (max-width: 400px) {
+
+    .top-content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex-flow: column;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex-flow: column;
+    }
+
+} 
+
+
+
+
+
+    /*
+    .all-containers {
+		display: flex;
+		justify-content: space-between;
+		border-bottom: 2px solid black;
+		padding-bottom: 40px;
+	}
+	
+	.all-containers .container {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		flex-flow: column;
+		background: #f4f3f4;
+		border: 1px solid black;
+		margin: 40px 0px 10px 0px;
+		height: 450px;
+		width: 100% !important;
+	}
+
+	.container-title h3 {
+		font-size: 50px;
+		margin: 30px 30px ;
+	}
+	
+	.container-title p {
+		margin: 30px 30px;
+		font-size: 36px;
+	}
+	
+	.container button {
+		border-radius: 5px;
+		padding: 5px 35px;
+		margin: 10px 30px;
+		font-size: 25px;
+	}
+
+	.container-bottom {
+		display: inline-block;
+		height: 450px;
+		width: 100%;
+		transform: translateY(60px);
+	}
+	
+	.services-info-img {
+		display: inline-block;
+		margin: 0 0 0 0;
+		padding-top: 80px;
+		width: 100%;
+	}
+	
+	.lower-containers {
+		padding-top: 0px;
+		display: inline-block;
+	}
+
+	.bottom-container-title h4 {
+		font-size: 50px;
+	}
+
+	.bottom-container-title p {
+		font-size: 36px;
+	}
+
+	.bottom-container-title li {
+		font-size: 30px;
+		margin: 0 0 0 20px;
+    }
+*/
