@@ -78,8 +78,27 @@ margin-top: 30px;
 display: inline-block;
 }
 
+/*Mobile View*/
+
+@media(min-width: 500px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        margin-left: 180px;
+    }
+}
+
 .anchors:hover {
 	color: pink;
+}
+
+/*Mobile View*/
+@media(min-width: 500px) {
+    .anchors {
+        display: flex;
+        flex-direction: column;
+        margin-left: 70px;
+    }
 }
 
 .image-box {
@@ -92,6 +111,16 @@ border: none;
 width: 20px;
 height: 379px;
 font-size: 100px;
+}
+
+
+
+/*Mobile View*/
+@media(min-width: 500px) {
+    .image-box {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .banner {
