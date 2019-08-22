@@ -1,0 +1,281 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+
+body {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+header{
+    display: flex;
+}
+header .logo{
+    align-self:center;
+}
+header nav {
+    display: flex;
+}
+
+header nav a {
+    margin: 10px;
+    padding: 30px;
+    text-decoration: none;
+    color: gray;
+
+}
+.service{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 20px;
+    line-height: 20px;
+}
+.learn-more {
+    text-align: center;
+    width: 140px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: white;
+}
+
+.middle-section{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.middle-section .boxes{
+    width: 40%;
+    height: auto;
+    /* height: 200px; */
+    border: 1px solid black;
+    padding: 20px;
+    margin: 10px;
+    background-color: rgb(240, 166, 166);
+    border-radius: 10px;
+}
+
+.container footer {
+    
+    display: flex;
+    margin-left: 20px;
+    padding: 40px;
+    justify-content: space-around;
+}
+
+.container footer ul li {
+    list-style-type: square;
+    margin-left: 20px;
+    line-height: 30px;
+}
+
+.copyright {
+    text-align: center;
+}
+
+@media (max-width: 800px){
+    body{
+        width: 800px;
+    }
+    header{
+        flex-direction: column-reverse;
+    }
+    header .logo{
+        margin-top: 30px;
+    }
+    .middle-section{
+       
+    }
+}
+@media (max-width: 500px){
+    body{
+        width: 500px;
+        margin: 10px auto;
+    }
+    header nav{
+        flex-direction: column;
+    }
+    header nav a {
+        border-bottom: 1px solid black;
+        text-align: center;
+        margin: 0;
+    }
+    header .logo{
+        border-bottom: 1px solid black;
+        padding: 25px 155px;
+    }
+    .service{
+        /* width: 95%; */
+    }
+    .middle-section{
+        flex-direction: column;
+        
+    }
+    .middle-section .boxes{
+        width: 90%;
+        margin: 10px auto;
+    }
+    footer {
+        flex-direction: column;
+    }
+}
