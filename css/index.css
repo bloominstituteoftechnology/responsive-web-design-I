@@ -64,123 +64,143 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* Your code starts here! */
-body{
-	background-color: white;
-	margin: 0 auto;
+.container {
+  width: 880px;
+  /* TB LR */
+  margin: 0 auto;
 }
 
-h1, h2, nav, p, address{
-	color:black;
+/* header */
+
+header nav {
+  display: inline-block;
+  width: 691px;
+  vertical-align: top;
+  margin-top: 35px;
 }
 
-button{
-	color:black;
+header nav a {
+  margin-right: 65px;
+  font-size: 14px;
+  color: gray;
+  text-decoration: none;
 }
 
-h1{
-	font-size: 70px;
-	display: inline-block;
+header nav a:hover {
+  text-decoration: underline;
 }
 
-footer{
-	display: inline-block;
-
+header nav a:first-child {
+  margin-left: 0;
 }
 
-.logo{
-top: 0;
-right: 0;
-float:right;
+header nav a:last-child {
+  margin-right: 0;
 }
 
-.middle-img{
-	width:100%;
+header .logo {
+  margin-top: 25px;
 }
 
-.top{
-	display: inline-block;
+/* cta */
+
+.cta .cta-text {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 77px;
+  margin-top: 120px;
+  text-align: center;
+  padding: 0px 75px;
 }
 
-.bottom{
-	margin: 0 auto;
-	width: 100%;
+.cta .cta-text button {
+  background: white;
+  vertical-align: top;
+  margin-top: 6px;
+  padding: 8px 44px;
+  font-size: 17px;
+  border: 1px solid black;
+  cursor: pointer;
 }
 
-.features, .about, .contact{
-	display: inline-block;
-	box-sizing: border-box;
-	padding-left: 0px;
-	padding-bottom: 0px;
-	width: 40%;
-	border: 1 px solid white;
+.cta .cta-text button:hover {
+  background: black;
+  color: white;
 }
 
-.services, .product, .vision{
-	display: inline-block;
-	box-sizing: border-box;
-	padding-left: 0px;
-	padding-bottom: 0px;
-	border: 1 px solid white;
-	margin: 0 auto;
-	width: 30%;
-}
-.services{
-	float: left;
-}
-.vision{
-	float: right;
+.cta img {
+  display: inline-block;
+  margin-top: 69px;
 }
 
-h2{
-	font-size: 60px;
+.main-content {
+  border-top: 1px solid black;
+  margin-top: 76px;
+  padding-top: 39px;
 }
 
-p{
-	font-size: 25px;
+.main-content .top-content {
+  padding: 0 10px;
 }
 
-address{
-	font-size: 25px;
-	text-align: center;
-}
-.contact{
-	display: inline-block;
-}
-footer{
-	display: inline-block;
-	font-size:20px;
-	text-align: center;
-	width:100%;
-}
-.IoD{
-    display: inline-block;
-	box-sizing: border-box;
-	padding-left: 200px;
-	padding-bottom: 0px;
-	width: 200px;
-	border: 1 px solid white;
-}
-.code {
-    display: inline-block;
-    float: right;
-    padding-top: 20px;
+.main-content .top-content .text-content {
+  width: 410px;
+  display: inline-block;
+  margin-right: 34px;
 }
 
-nav{
-    list-style-type: none;
-    text-align: center;
-    padding: 0;
-    margin: 0;
+.main-content .top-content .text-content:last-child {
+  margin-right: 0;
 }
 
-nav, li{
-    display: inline-block;
-    font-size: 20px;
-    padding: 20px;
+.main-content .middle-img {
+  margin-top: 45px;
 }
 
-.product{
-	width: 20%;
+.main-content .bottom-content {
+  margin-top: 37px;
+  padding: 0 10px;
 }
+
+.main-content .bottom-content .text-content {
+  width: 275px;
+  display: inline-block;
+  margin-right: 12px;
+}
+
+.main-content .bottom-content .text-content:last-child {
+  margin-right: 0;
+}
+
+.contact {
+  margin-top: 57px;
+  border-top: 1px solid black;
+  padding: 39px 10px 0;
+}
+
+.contact p {
+  margin: 20px 0;
+}
+
+footer {
+  margin: 32px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+@media (max-width:800px){
+    body{
+        width:100%
+    }
+    .cta img{
+        display:none;
+    }
+    .logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+}
+
 
