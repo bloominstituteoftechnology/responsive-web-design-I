@@ -1,4 +1,3 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -160,15 +159,12 @@ h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
-/* set width for desktop screen */
+
 body {
-    margin: 0 auto;
     width: 1024px;
+    margin: 0 auto;
 }
 
-.container {
-    
-}
 header{
     display: flex;
 }
@@ -186,56 +182,58 @@ header nav a {
     color: gray;
 
 }
-
-
-
-.first-sec{
+.service{
     display: flex;
-    justify-content: space-evenly;
-    text-align: center;
+    flex-direction: column;
     padding: 20px;
+    margin: 20px;
+    line-height: 20px;
 }
-.first-sec .col-1{
-    width: 45%;
-    padding: 50px;
-    margin-left: -90px;
-}
-h1{
-    font-size: 60px;
-}
-.col-1 p{
-    border: 1px solid black;
-    padding: 5px;
-    width: 150px;
+.learn-more {
     text-align: center;
-    margin-left: 110px;
-    font-weight: bold;
-}
-
-.big-container{
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-    padding-top: 30px;
-    padding-bottom: 40px;
-    margin: 40px;
-}
-.big-container .big-container-col1-2{
-    display: flex;
+    width: 140px;
+    height: 40px;
     padding: 10px;
-    margin-left: -10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: white;
 }
 
-.middle-img{
-    width: 100%;
+.middle-section{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.middle-section .boxes{
+    width: 40%;
+    height: auto;
+    /* height: 200px; */
+    border: 1px solid black;
+    padding: 20px;
+    margin: 10px;
+    background-color: rgb(240, 166, 166);
+    border-radius: 10px;
 }
 
-footer .copyright{
+.container footer {
+    
+    display: flex;
+    margin-left: 20px;
+    padding: 40px;
+    justify-content: space-around;
+}
+
+.container footer ul li {
+    list-style-type: square;
+    margin-left: 20px;
+    line-height: 30px;
+}
+
+.copyright {
     text-align: center;
 }
-footer .footer-content{
-    margin-left: 40px;
-}
-@media (max-width:800px){
+
+@media (max-width: 800px){
     body{
         width: 800px;
     }
@@ -245,24 +243,14 @@ footer .footer-content{
     header .logo{
         margin-top: 30px;
     }
-    .round{
-        display: none;
+    .middle-section{
+       
     }
-    section .col-1 p{
-        margin-left: 50px;
-    }
-    .first-sec .col-1 {
-        margin-left: 5px;
-    }
-    footer .footer-content p{
-        padding: 30px;
-    }
-    
-    
 }
 @media (max-width: 500px){
     body{
         width: 500px;
+        margin: 10px auto;
     }
     header nav{
         flex-direction: column;
@@ -276,27 +264,18 @@ footer .footer-content{
         border-bottom: 1px solid black;
         padding: 25px 155px;
     }
-    
-    .first-sec .col-1 {
-        width: 100%;
-        margin-left: 5px;
+    .service{
+        /* width: 95%; */
     }
-    section .col-1 p{
-        margin-left: 110px;
-    }
-    .big-container .big-container-col1-2{
-        width: 100%;
+    .middle-section{
         flex-direction: column;
-        padding : 10px;
+        
     }
-    .big-container .big-container-col1-2 .minion{
-        padding: 10px;
+    .middle-section .boxes{
+        width: 90%;
+        margin: 10px auto;
     }
-    footer .footer-content p{
-        padding: 30px;
+    footer {
+        flex-direction: column;
     }
-    footer{
-        margin-left: 10px;
-    }
-
 }
