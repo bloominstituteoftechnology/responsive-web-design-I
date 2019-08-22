@@ -72,6 +72,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .top-nav {
+	max-width: 90%;
 	display: flex;
 	justify-content: space-around;
 	margin-top: 20px;
@@ -84,6 +85,7 @@ h1, h2, h3, h4, h5 {
 	width: 80%;
 	margin: 0 auto;
 	padding-bottom: 20px;
+	margin-bottom: 20px;
 }
 
 .title {
@@ -100,6 +102,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
+	max-width: 90%;
 	display: flex;
 	justify-content: space-around;
 	margin: 0 auto;
@@ -112,8 +115,10 @@ h1, h2, h3, h4, h5 {
 }
 
 .middle-img {
+	max-width: 90%;
 	/* width: 1130px; */
 	margin: 0 auto; 
+	display: flex;
 }
 
 .heading {
@@ -121,6 +126,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .container2 {
+	max-width: 90%;
 	display: flex;
 	justify-content: space-around;
 	margin: 0 auto;
@@ -142,16 +148,9 @@ p {
 	margin-bottom: 25px;
 }
 
-.contact {
-	margin-left: 195px;
-}
-
-.copyright{
-	margin-left: 700px;
-}
 
 .content-width {
-	width: 910px;
+	max-width: 910px;
 	margin: 0 auto;
 	height: 100%
 }
@@ -238,17 +237,26 @@ p {
 	display: none;
 }
 
+.footer_section{
+	padding-left: 7.2%;
+	padding-top: 5%;
+}
+
+.copyright {
+	padding-left: 40%;
+}
+
 
 /* Tablet CSS */
 
 @media(max-width: 800px){
 
 	.content-width{
-		width: 750px;
+		max-width: 750px;
 	}
 	
 	.middle-img{
-		width: 750px;
+		max-width: 95%;
 		margin-left: 20px;
 	}
 
@@ -270,7 +278,7 @@ p {
 @media(max-width: 500px){
 	
 	.content-width{
-		width: 450px;
+		max-width: 450px;
 	}
 
 	.bottom-a-link{
