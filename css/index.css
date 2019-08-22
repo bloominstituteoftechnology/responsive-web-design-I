@@ -169,7 +169,12 @@ body {
 .container {
     
 }
-
+header{
+    display: flex;
+}
+header .logo{
+    align-self:center;
+}
 header nav {
     display: flex;
 }
@@ -181,10 +186,9 @@ header nav a {
     color: gray;
 
 }
-header nav .logo {
-    align-self: center;
 
-}
+
+
 .first-sec{
     display: flex;
     justify-content: space-evenly;
@@ -235,14 +239,11 @@ footer .footer-content{
     body{
         width: 800px;
     }
-    
-    header nav .logo{
-        position: absolute;
-        margin-left:320px;
-        margin-top:-30px;
+    header{
+        flex-direction: column-reverse;
     }
-    header nav a{
-        margin-top: 80px;
+    header .logo{
+        margin-top: 30px;
     }
     .round{
         display: none;
@@ -253,34 +254,35 @@ footer .footer-content{
     .first-sec .col-1 {
         margin-left: 5px;
     }
+    footer .footer-content p{
+        padding: 30px;
+    }
     
     
 }
-@media (max-width: 400px){
+@media (max-width: 500px){
     body{
-        width: 400px;
+        width: 500px;
     }
     header nav{
-        /* display: flex; */
         flex-direction: column;
-        justify-content: center;
-        margin-top: 100px;
-
     }
     header nav a {
         border-bottom: 1px solid black;
         text-align: center;
+        margin: 0;
+    }
+    header .logo{
+        border-bottom: 1px solid black;
+        padding: 25px 155px;
     }
     
-    header nav .logo{
-        position: absolute;
-        top: 60px;
-        align-self: center;
-        border-bottom: 1px solid black;
-        margin-left: 10px;
-    }
     .first-sec .col-1 {
         width: 100%;
+        margin-left: 5px;
+    }
+    section .col-1 p{
+        margin-left: 110px;
     }
     .big-container .big-container-col1-2{
         width: 100%;
@@ -290,6 +292,11 @@ footer .footer-content{
     .big-container .big-container-col1-2 .minion{
         padding: 10px;
     }
-
+    footer .footer-content p{
+        padding: 30px;
+    }
+    footer{
+        margin-left: 10px;
+    }
 
 }
