@@ -65,7 +65,6 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-  width: 880px;
   /* TB LR */
   margin: 0 auto;
 }
@@ -74,7 +73,6 @@ h1, h2, h3, h4, h5 {
 
 header nav {
   display: inline-block;
-  width: 691px;
   vertical-align: top;
   margin-top: 35px;
 }
@@ -144,7 +142,6 @@ header .logo {
 }
 
 .main-content .top-content .text-content {
-  width: 410px;
   display: inline-block;
   margin-right: 34px;
 }
@@ -163,7 +160,6 @@ header .logo {
 }
 
 .main-content .bottom-content .text-content {
-  width: 275px;
   display: inline-block;
   margin-right: 12px;
 }
@@ -189,18 +185,36 @@ footer {
 }
 
 @media (max-width:800px){
-    body{
-        width:100%
-    }
     .cta img{
         display:none;
     }
     .logo{
-        display: flex;
         align-items: center;
         justify-content: center;
         margin-bottom: 40px;
     }
+    header{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+    }
+    nav{order: 2;}
+    .logo{order: 1}
+
+}
+
+@media(max-width:500px){
+    nav{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 15px;
+        border-top: 1px solid black;
+        flex-direction: column;
+    }
+    nav{order: 2;}
+    .logo{order: 1}
 }
 
 
