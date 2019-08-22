@@ -212,27 +212,84 @@ h1{
     border-top: 2px solid black;
     border-bottom: 2px solid black;
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
     margin: 40px;
 }
-.big-container .big-container-col1{
+.big-container .big-container-col1-2{
     display: flex;
     padding: 10px;
     margin-left: -10px;
 }
-.big-container .big-container-col1 .test{
-    /* width: 45%; */
-}
+
 .middle-img{
     width: 100%;
 }
-.big-container .big-container-col2{
-    display: flex;
 
-}
 footer .copyright{
     text-align: center;
 }
 footer .footer-content{
     margin-left: 40px;
+}
+@media (max-width:800px){
+    body{
+        width: 800px;
+    }
+    
+    header nav .logo{
+        position: absolute;
+        margin-left:320px;
+        margin-top:-30px;
+    }
+    header nav a{
+        margin-top: 80px;
+    }
+    .round{
+        display: none;
+    }
+    section .col-1 p{
+        margin-left: 50px;
+    }
+    .first-sec .col-1 {
+        margin-left: 5px;
+    }
+    
+    
+}
+@media (max-width: 400px){
+    body{
+        width: 400px;
+    }
+    header nav{
+        /* display: flex; */
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 100px;
+
+    }
+    header nav a {
+        border-bottom: 1px solid black;
+        text-align: center;
+    }
+    
+    header nav .logo{
+        position: absolute;
+        top: 60px;
+        align-self: center;
+        border-bottom: 1px solid black;
+        margin-left: 10px;
+    }
+    .first-sec .col-1 {
+        width: 100%;
+    }
+    .big-container .big-container-col1-2{
+        width: 100%;
+        flex-direction: column;
+        padding : 10px;
+    }
+    .big-container .big-container-col1-2 .minion{
+        padding: 10px;
+    }
+
+
 }
