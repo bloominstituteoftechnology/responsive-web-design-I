@@ -431,7 +431,7 @@ header nav a {
 	display: flex;
 	flex-flow: row wrap;
 	margin-left: 32%;
-	margin-top: 18%
+	margin-top: 20%
 	line-height: 12px;
 	margin-bottom: 4%;
 }
@@ -439,16 +439,15 @@ header nav a {
 .top-third button {
 	font-size: 15px;
 	justify-items: space-evenly;
-	width: 200px;
-	height: 8vh;
+	width: 25vw;
+	height: 6vh;
 	padding-left: 8%;
 	padding-right: 8%;
-	margin-left: 40%;
+	margin-left: 41%;
 	margin-right: 40%;
-	margin-bottom: 4%;
+	margin-bottom: 5%;
 	line-height: 15px;
-	align-content: 
-	display: inline-block;
+	display: inline;
 }   
 
 .middle-third {
@@ -465,10 +464,45 @@ header nav a {
 }
 
 .middle-img {
-	width: 90vw;
-	height: 170px;
-	margin-top: 5%;
+	width: 95vw;
+	height: 27vh;
+	margin-top: 6%;
 	margin-right: 12%;
+	margin-left: 3%;
 }
+
+.middle-third-2 {
+	width: 100vw;
+	justify-content: flex-start;
+	margin-bottom: 3%;
+}
+
+.flex-item-2 {
+margin-top: 1%;
+margin-left: 0%;
+margin-right: 6%;
+width: 24%;
+
+}
+
+.bottom-third {
+	margin-top: 9%;
+	margin-left: 3%;
+}
+
+/* End break-point for 800px max-width */
+
+/* Begin break-point for 500px max-width */ 
+
+@media (max-width: 500px) {
+   
+	header nav {
+		display: flex;
+		flex-flow: column;
+	}
+
+
+
+
 
 }
