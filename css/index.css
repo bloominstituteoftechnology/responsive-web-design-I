@@ -75,9 +75,10 @@ header nav {
   display: inline-block;
   vertical-align: top;
   margin-top: 35px;
+  width: 100%;
 }
 
-header nav a {
+header nav a{
   margin-right: 65px;
   font-size: 14px;
   color: gray;
@@ -152,6 +153,7 @@ header .logo {
 
 .main-content .middle-img {
   margin-top: 45px;
+  width: 100%;
 }
 
 .main-content .bottom-content {
@@ -191,7 +193,8 @@ footer {
     .logo{
         align-items: center;
         justify-content: center;
-        margin-bottom: 40px;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
     }
     header{
         display: flex;
@@ -207,14 +210,34 @@ footer {
 @media(max-width:500px){
     nav{
         display: flex;
-        flex-wrap: wrap;
         justify-content: center;
-        padding: 15px;
-        border-top: 1px solid black;
+        border-bottom: 1px solid black;
         flex-direction: column;
+        border-top: 1px solid black;
+    }
+    header .logo{
+        padding-bottom: 5px;
+        margin-top: 70px;
+    }
+    ul{
+        width: 100%;
+    }
+    li{
+        display: flex;
+        justify-content: center;
+        border-bottom: 1px solid black;
+        flex-direction: column;
+        width: 100%;  
+        text-align: center;
+        padding-bottom: 10%;
+        padding-top: 10%;
     }
     nav{order: 2;}
     .logo{order: 1}
+    
+    header nav a{
+        font-size: 30px;
+    }
 }
 
 
