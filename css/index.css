@@ -101,6 +101,7 @@ header nav a {
 	text-decoration: none;
 	height: 30px;
 	margin-top: 40px;
+	order: 1;
 }
 
 .logo {
@@ -110,6 +111,7 @@ header nav a {
 	margin-top: 25px;
 	margin-bottom: 20px;
 	margin-left: 15px;
+	order: 2;
 
 }
 
@@ -125,22 +127,22 @@ header nav a {
 .logo-alt {
 	font-family: 'Bangers', cursive;
 	width: 300px;
-	height: 200px;
-	margin-top: 110px;
-	margin-left: 190px;
+	height: 210px;
+	margin-top: 105px;
+	margin-left: 195px;
 }
 
 .logo-alt * {
 	text-align: center;
-	font-size: 78px;
+	font-size: 75px;
 	line-height: 75px;
 }
 
 .codesnippet {
-	width: 350px;
-	height: 350px;
-	margin-top: 60px;
-	margin-right: 150px;
+	width: 380px;
+	height: 380px;
+	margin-top: 57px;
+	margin-right: 77px;
 }
 
 .top-third button {
@@ -148,15 +150,15 @@ header nav a {
 	background-color: white;
 	border: 1px solid black;
 	font-size: 17px;
-	padding-top: 6px;
-	padding-bottom: 6px;
-	padding-left: 45px;
-	padding-right: 45px;
-	margin-top: 50px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 41px;
+	padding-right: 41px;
+	margin-top: 5px;
 	margin-right: 480px;
 	margin-left: 260px;
-	margin-bottom: 6%;
-	align-self: flex-end;
+	display: inline;
+
 }
 
 button:hover {
@@ -169,10 +171,10 @@ button:hover {
 
 .middle-third {
 	border-top: 2px solid black;
-	margin-left: 80px;
-	margin-top: 65px;
+	margin-left: 75px;
+	margin-top: 38px;
 	margin-right: 80px;
-	padding-top: 25px;
+	padding-top: 23px;
 	display: flex;
 	justify-content: space-around;
 	flex-flow: row wrap;
@@ -180,8 +182,9 @@ button:hover {
 
 .middle-third-2{
 	border-bottom: 2px solid black;
-	width: 900px;
-	margin-left: 60px;
+	height: 200px;
+	width: 880px;
+	margin-left: 68px;
 	margin-right: 30px;
 
 	display: flex;
@@ -191,14 +194,14 @@ button:hover {
 
 .middle-third h3 {
 	margin-top: 10px;
-	margin-bottom: 20px;
+	margin-bottom: 18px;
 	width: 300px;
 	font-family: 'Bangers', cursive;
 }
 
 .middle-third-2 h3 {
 	margin-top: 10px;
-	margin-bottom: 20px;
+	margin-bottom: 14px;
 	font-family: 'Bangers', cursive;
 }
 
@@ -215,10 +218,12 @@ button:hover {
 }
 
 .flex-item-2 {
-	height: 150px;
+	height: 180px;
 	width: 280px;
 	margin-top: 10px;
-	margin-bottom: 40px;
+	margin-bottom: 10px;
+	line-height: 18px;
+	align-self: center;
 
 }
 
@@ -230,8 +235,8 @@ button:hover {
 	flex-flow: row wrap;
 	height: 160px;
 	width: 885px;
-	margin-left: 70px;
-	margin-top: 35px;
+	margin-left:73px;
+	margin-top: 33px;
 	justify-content: flex-start;
 	}
 	
@@ -243,9 +248,6 @@ address {
 
 .contact-section h3 {
 	font-family: 'Bangers', cursive;
-	margin-top: 20px;
-	margin-bottom: 10px;
-	margin-left: 10px;
 }
 
 address p{
@@ -255,21 +257,22 @@ address p{
 
 address a {
 
-	margin-top: 10px;
-	margin-bottom: 18px;
-	margin-left: 7px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	margin-left: 1px;
 }
 
 /* End bottom-third CSS */
 /* Begin footer CSS */
 
 footer {
-    text-align: center;
+	padding-top: 3px;
+	text-align: center;
+	height: 40px;
 }
 
 #copyright {
-	font-size: 20px;
-	font-weight: 0px;
+	font-size: 19px;
 }
 
 /* End footer CSS */
@@ -386,8 +389,42 @@ footer {
 
 /* add media query break- point CSS to this area */
 
+@media (max-width: 1000px) {
+	
+
+	.codesnippet {
+		display: none;
+	}
+
+}
+
 @media (max-width: 800px) {
-	.wrapper-main {
-		margin: 15%;
-	}	
+
+header {
+	height: 10%;
+
+}
+
+header nav {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	}
+
+header nav a {
+	order: 2;
+	width: auto;
+	height: auto;
+	align-self: center;
+	margin-top: 3%;
+
+}
+
+.logo {
+	width: 100%;
+	padding-left: 35%;
+	padding-right: 35%;
+	order: 1;
+	}
+
 }
