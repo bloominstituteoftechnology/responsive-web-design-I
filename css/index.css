@@ -360,9 +360,14 @@ footer {
   font-size: 26px;
 }
 
-.full-content {
-  display: flex;
-  flex-wrap: wrap;
+
+  .full-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+  }
 }
 .container-content {
   display: flex;
@@ -398,6 +403,7 @@ footer {
   border-top: 2px black solid;
   padding-top: 50px;
   justify-content: space-between;
+  width: 100%;
 }
 
 .footercontainer h2 {
@@ -421,6 +427,7 @@ footer {
 .copyright {
   text-align: center;
   padding: 40px;
+  width: 100%;
 }
 
 @media (max-width: 500px) {
