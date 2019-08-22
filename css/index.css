@@ -285,14 +285,12 @@ ul {
 @media (max-width: 800px) {
 
     .top-content {
-        display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         flex-flow: column;
     }
 
     header {
-        display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         flex-flow: column;
@@ -304,7 +302,7 @@ ul {
 
     nav {
         display: flex;
-		flex-flow: column-reverse;
+        flex-direction: column-reverse;
     }
     .links {
         text-align: center;
@@ -392,22 +390,127 @@ ul {
 
 } 
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
 
     .top-content {
-        display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         flex-flow: column;
     }
 
     header {
-        display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         flex-flow: column;
     }
 
+    .header-img{
+        display: none;
+    }
 
+    .navigation {
+        margin: 0 auto;
+        margin-bottom: 25px;
+        z-index: unset;
+        position: static;
+        top: 0;
+        background-color: white;
+        padding: 20px 0;
+    }
 
-} 
+    .logo {
+        padding-bottom: 20px;
+        margin: 0 auto;
+        height: 90px;
+        width: 300px;
+        transform: translateX(-10%);
+    }
+
+    a {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 0px 15px 100px;
+        margin: 0 auto;
+        font-size: 32px;
+        border: 1px solid lightgrey;
+        }
+
+    header {
+        height: 450px;
+        margin: 80px auto 30px;
+        width: 92%;
+    }
+
+    .header-text {
+        margin: 0 200px;
+        text-align: center;
+        padding-top: 0px;
+        margin-top: 80px;
+    }
+
+    .header-text h1 {
+        font-size: 120px;
+    }
+
+    button {
+        font-size: 24px;
+    }
+
+    .top-content {
+        width: 94%;
+        margin: 10px 0 20px;
+        display: block;
+        padding-top: 20px;
+        padding-bottom: 50px;
+        
+    }
+
+    .content-text-top {
+        width: 94%;
+        display: block;
+        
+        
+    }
+    
+    .block1 {
+        width: 95%;
+        padding: 0 10px 10px 10px;	
+        display: block;
+        margin-left: 20px;
+    }
+
+    .content-title {
+        padding-bottom: 5px;
+    }
+
+    .middle-img {
+        width: 86%;
+        margin: 0px auto 10px;
+        margin-left: 20px;
+        display: flex;
+    }
+
+    .bottom-content {
+        width: 86%;
+        margin-left: 20px;
+        display: inline-block;
+    }
+
+    .block2 {
+        width: 33%;
+        padding: 20px 10px 20px 10px;	
+        display: inline-block;
+    }
+
+    .contact {
+        width: 86%;
+        margin: 0 20px;
+    }
+
+    footer {
+        padding: 40px 0 20px 0;
+        text-align: center;
+    }
+}
