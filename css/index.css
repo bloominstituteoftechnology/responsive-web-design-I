@@ -1,3 +1,366 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+	/* background-color: rgb(209, 209, 209); */ 
+	text-align: center;
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, h7 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+.container1 {
+	display: flex;
+	width: 100%;
+	margin: 0 auto;
+	padding-bottom: 50px;
+	/* background: rgb(156, 155, 155); */
+	color: red;
+	justify-content: space-between;
+}
+
+header::after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.logo {
+	/*float: right; */
+	margin-right: 3px;
+	padding-top: 30px;
+	color: red;
+}
+
+nav {
+	float: left;
+	padding-bottom: 32px;
+	display: flex;
+}
+
+nav ul {
+margin: 0;
+padding: 0;
+list-style: none;
+}
+
+nav li{
+	display: inline-block;
+	margin-left: 50px;
+	padding-top: 33px;
+}
+
+nav a {
+	color: #444;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 17px;
+}
+
+nav a:hover {
+	color: red;
+}
+
+.container2 {
+width: 100%;
+padding: 35px;
+display: flex;
+padding-bottom: 50px;
+}
+
+h1 {
+	font-size: 120px;
+	/* display: inline-block; */
+	float: left;
+	padding-top:50px;
+}
+
+.button a {
+	/* background-color: rgb(175, 175, 175); */
+	border: 1px solid black;
+	color: rgb(10, 10, 10);
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+  }
+  
+
+img {
+float: right;
+}
+
+.container3 {
+/*margin: 20px 0;*/
+width: 100%;
+height: auto;
+background:white;
+display: flex;
+flex-direction: row;
+padding-bottom: 40px;
+/*padding-right: auto; */
+/* border: 1px solid black; */
+margin: auto;
+line-height: 1.25;
+/* background: rgb(156, 155, 155); */
+}
+
+h2 {
+	padding-top: 60px;
+font-size: 47px;
+margin-left: 1px;
+/* float: left; */
+padding-bottom: 10px;
+/* border: 1px solid black;*/
+line-height: 1.25;
+/*line-color: black;*/
+}
+
+.p2 {
+/* border: 1px solid  black; */
+/* text-align: left*/
+padding-left: 30px;
+font-size: 20px;
+text-align: left;
+margin-left: 40px;
+margin-right: 40px;
+}
+
+h3 {
+	padding-top: 60px;
+font-size: 47px;
+margin: left;
+/* float: right; */
+padding-bottom: 10px;
+padding-left:100px;
+/* border: 1px solid black; */
+}
+
+.p3 {
+	/* border: 1px solid  black; */
+	font-size: 20px;
+	text-align: left;
+	margin-left: 40px;
+	margin-right: 40px;
+	}
+
+.middle-img {
+	image-resolution: auto;
+	width: 100%;
+}
+
+.container4 {
+width: 100%;
+/*font-size: 24px;*/
+height: auto;
+background:white;
+display: flex;
+flex-direction: row;
+padding-top: 40px;
+padding-bottom: 40px;
+padding-right: auto;
+border: 1px solid black;
+/* background: rgb(156, 155, 155); */
+}
+
+h4 {
+font-size: 35px;
+padding-top: 15px;
+padding-bottom: 7px;
+}
+
+h5 {
+	font-size: 35px;
+	padding-top: 15px;
+	padding-bottom: 7px;
+}
+
+h6 {
+	font-size: 35px;
+	padding-top: 15px;
+	padding-bottom: 7px;
+}
+
+.p4 {
+font-size: 19px;
+text-align: left;
+margin-right: 30px;
+margin-left: 30px;
+}
+
+.p5 {
+	font-size: 19px;
+	text-align: left;
+margin-right: 30px;
+margin-left: 30px;
+}
+
+.p6 {
+	font-size: 19px;
+	text-align: left;
+margin-right: 30px;
+margin-left: 30px;
+}
+
+.container5 {
+	width: 100%;
+	/*font-size: 24px;*/
+	height: auto;
+	background:white;
+	display: flex;
+	flex-direction: column;
+	padding-top: 50px;
+	padding-bottom: 40px;
+	padding-right: auto;
+	border: 1px solid black;
+	text-align: left;
+	/* background-color: rgb(209, 209, 209); */
+	}
+	
+	h7{
+		margin-left: 40px;
+	}
+
+.bottom-nav {
+	display: flex;
+	flex-direction: column;
+	/* border: 1px solid red; */
+	width: 150px;
+	align-items: center;
+	justify-content: center;
+}
+
+.ul-bottom {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: left;
+}
+
+.bottom-container {
+	display:flex;
+	flex-direction: column;
+}
+
+@media (max-width: 500px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        font-size: 40px;
+        justify-content: center;
+        display: inline-block;
+		width: 100%; 
+		margin: 300px;
+		border: 2px solid black;
+    }
+}
+
+@media (max-width: 500px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        font-size: 40px;
+        justify-content: center;
+        display: inline-block;
+        }   
+    }  
+
+@media (max-width: 500px) {
+    nav a { 
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        font-size: 40px;
+        border: 1px solid black;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 500px) {
+	.container2 {
+		display: flex;
+        flex-direction: column;
+        font-size: 40px;
+        justify-content: center;
+        width: 100%;
+	}
+}
+
+@media (max-width: 500px) {
+	h1 {
+		font-size: 100px;
+		display: flex;
+		justify-content: center;
+		border: 2px solid black;
+		margin:-10px;
+	}
+}
+
+@media (max-width: 500px) {
+	.img2 {
+		display: none;
+	}
+}
 
