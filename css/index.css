@@ -194,11 +194,6 @@ footer {
 
 @media (max-width: 800px) {
 
-  * {
-    background: lightyellow;
-    max-width: 100%;
-  }
-
   header nav {
     display: flex;
     justify-content: center;
@@ -237,13 +232,47 @@ footer {
   }
 
 }
+/* End of media query for 800 px */
 
 /* Media query for 500 px */
 
 @media (max-width: 500px) {
 
-  * {
-    background: lightblue;
+  header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  header nav ul li {
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid grey;
+    width: 500px;
+    color: lightgrey;
+    font-size: 16px;
+  }
+
+  header .logo {
+    margin-top: -270px;
+  }
+
+  .cta .cta-text {
+    margin-top: 270px; 
+  }
+
+  .main-content .top-content .text-content {
+    max-width: 100%;
+    width: 100%;
+    margin: 10px 0px;
+  }
+
+  .main-content .bottom-content .text-content {
+    max-width: 100%;
+    width: 100%;
+    margin: 10px 0px;
   }
 
 }
+/* End of media query for 500 px */
