@@ -99,14 +99,32 @@ border-bottom: 2%;
 justify-content: space-between;
 margin-top: 1%;
   } 
+  @media (max-width: 500px) {
+    nav {
+      /* display: block; */
+    }
+  }
 
   .menu-item {
     display:flex;
     justify-content: center;
     color: gray;
-    border: 4px dashed fuchsia;
-
+    /* border: 4px dashed fuchsia; */
   }
+.border-between-aTags {
+  /* border: 4px solid black; */
+  display: none;
+}
+@media (max-width: 600px) {
+  .border-between-aTags{ 
+    border: 1px solid gray;
+    display: block;
+    margin: 4px 0px 4px 0px;
+  }
+}
+
+
+
   .logo {
     text-decoration: none;
     width: 140px;
@@ -114,6 +132,12 @@ margin-top: 1%;
     border: 4px solid orangered;
     
   }
+  @media (max-width: 500px) {
+    .logo {
+      display: block;
+    }
+  }
+   
   a {
     text-decoration: none;
     margin-top: 1%;
@@ -163,19 +187,40 @@ a:hover {
 	/* border: 5px dashed white; */
 	width: 310px;
 	height: 300px;
-	/* background: gray; */
+	background: gray;
 	/* display: inline-block; */
-	margin-left: 120px;
-    margin-top: 50px;
+	margin-left: 45px;
+    margin-top: 70px;
     display: flex;
+    padding: 15px;
     flex-direction: column;
     
   }
+@media (max-width: 550px) {
+  .innovation-text-and-button {
+    margin-right: 30%;
+  }
+}
+
+
+
   /* ROUND IMAGE ------------ROUND IMAGE ------------ROUND IMAGE ------------ROUND IMAGE ------------ */
+
+  img{
+    /* border: 3px solid red; */
+    max-width: 100%;
+    height: auto;
+   display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+
   .round-image {
 
 width: 100%;
 height: auto;
+
 	/* width: 380px;
     height: 380px; */
     border: 2px dashed red;
@@ -215,8 +260,16 @@ height: auto;
 	height: auto;
     margin-bottom: 20px;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    border: 5px solid green;
+    justify-content: space-evenly;
   }   
+  @media (max-width: 500px) {
+    .features-about-container {
+      display: flex;
+      flex-direction: column;
+    }
+  }
 
 
  
@@ -228,6 +281,12 @@ height: auto;
 	  height: auto; 
       margin-top: 10px;
   } 
+  @media (max-width: 500px) {
+    .features-heading {
+      width: 90%; 
+      height: auto;
+    }
+  }
 
   .features-heading:hover {
     background: black;
@@ -244,8 +303,15 @@ height: auto;
     height: auto; 
     margin-top: 10px;
 	/* display: inline-block; */
-    margin-left: 9%;
+    /* margin-left: 9%; */
   } 
+  @media (max-width: 500px) {
+    .about-heading{
+      width: 90%; 
+      height: auto;
+    }
+  }
+
   .about-heading:hover {
     background: black;
     color: white;
@@ -256,7 +322,7 @@ height: auto;
   }
   /* ---- LONG PHOTO ------------LONG PHOTO ------------LONG PHOTO ------------LONG PHOTO ------ */
   
-img{
+.photo {
   /* width: relative;  */
     /* width: 69vw; */
   border: 3px dashed hotpink;
@@ -283,6 +349,12 @@ img{
 	margin-top: 30px;
     display: flex;
     justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .srvc-prod-vis-container  {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .services-heading{
 	/* border: 2px solid cyan; */
@@ -741,19 +813,20 @@ div #content{
 }
 
 /* When the screen goes below the max-width of 500px */
-@media only screen and (max-width: 700px) {
+/* @media only screen and (max-width: 500px) {
     .navbar{
 display:flex;
 flex-direction: column;
 
 align-items: center;
     }
-}
+} */
 /* ====== Trying to get this logo style to fit on small screen ===== */
 @media only screen and (max-width: 800px) {
     .logo {
-        display: none;
-    }
+        /* display: none; */
+margin-left: 25vw;
+  }
 }
 
 
@@ -766,19 +839,10 @@ margin-bottom: 60px;
     }
 }
 
-@media only screen and (max-width: 735px) {
-    .innovation-text-and-button  {
-        align-items: center;
-        /* margin-right: 90px; */
-        border: 4px dashed red;
-        background: pink;
-        margin-left: 0;
-    }
-  } 
   @media only screen and (max-width: 735px) {
     .innovation-text-and-button  {
         align-items: center;
-        margin-left: 20%;
+        /* margin-left: 20%; */
         border: 4px dashed red;
         background: pink;
     }
@@ -786,13 +850,13 @@ margin-bottom: 60px;
   @media only screen and (max-width: 580px) {
     .innovation-text-and-button  {
         align-items: center;
-        margin-left: 15%;
+        /* margin-left: 15%; */
         border: 4px dashed red;
         background: pink;
         padding: 
     }
   } 
-  @media only screen and (max-width: 450px) {
+  /* @media only screen and (max-width: 450px) {
     .innovation-text-and-button  {
         align-items: center;
         margin-left: 0;       
@@ -801,13 +865,13 @@ margin-bottom: 60px;
         padding: 0px 3px 0px 6px;
 
     }
-  } 
-  @media only screen and (max-width: 735px) {
+  }  */
+  /* @media only screen and (max-width: 735px) {
       .menu-item {
           margin-bottom: 0px;
           font-size: 15px;
       }
-  }
+  } */
   /* @media only screen and (max-width: 735px) {
     .services-heading2  {
         margin: 0px;
