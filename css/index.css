@@ -1,3 +1,497 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+.logo{
+	position: absolute;
+  top: 0px;
+  right: 15px;
+  width: 150px;
+  height: 30px;
+	
+}
+
+.head-text{
+	position: absolute;
+	top: 150px;
+	left: 800px;
+	font-size: 60px;
+	text-align: center;
+	
+}
+
+.box {
+	position: absolute;
+	top:350px;
+	left: 850px;
+	border: solid black 2px;
+	width: 150px;
+	height: 30px;
+	text-align: center;
+	padding: 5px;
+}
 
 
+.box a:link{
+	text-decoration: none;
+	color: black;
+}
+
+.header-img{
+	position: absolute;
+	top: 50px;
+	right: 50px;
+	padding: 10px;
+	margin: 10px;
+	height: 300px;
+	
+}
+
+header {
+	border-bottom: 1px solid black;
+	margin: 250px 0;
+	padding: 200px 0;
+	width: 80%;
+	margin: auto;
+	}
+	
+
+
+.header-nav a:link{
+	color: gray;
+	/* Overwriting color to white for visibility */
+	color: white;
+	text-decoration: none;
+	padding: 50px;
+	/* added background color to the links instead of bar for styling */
+	background-color: black;
+	/* Added font family to nav bar and paragraph text for styling */
+	font-family: 'Satisfy', cursive;
+}
+
+
+.header-nav a:hover{
+	animation-duration: 10s;
+	animation-name: colorcycle;
+}
+
+/* adding visited color for visibility */
+.header-nav a:visited{
+	color: greenyellow;
+}
+
+.header-nav{
+	/* Position fixed to make nav bar follow while scrolling */
+	position: fixed;   
+	top: 30px;
+	/* Centered Nav bar for aesthetic */
+	left: 500px;
+	overflow: hidden;
+	animation-duration: 3s;
+	animation-name: slidein;
+	z-index: 1;
+}
+
+/* Keyframe for sliding animation */
+@keyframes slidein{ 
+	from{
+	  margin-left: 100%;
+	 width: 100%;
+	}
+	
+	to{
+	  margin-left: 0%;
+	width: 100%;
+	}
+  }
+
+/* Rainbow color cycle for hovering nav bar */
+  @keyframes colorcycle {
+	0%   {background-color:red; left:0px; top:0px;}
+	15%  {background-color: orange; left: 0px; top:0px;}
+	25%  {background-color:yellow; left:200px; top:0px;}
+	35%  {background-color: blue; left:200px; top:0px;}
+	50%  {background-color: blueviolet; left:200px; top:200px;}
+	65%  {background-color: purple; left:200px; top:200px;}
+	75%  {background-color:green; left:0px; top:200px;}
+	95%  {background-color: greenyellow; left:0px; top:150px;}
+	100% {background-color:black; left:0px; top:0px;}
+  }
+
+
+
+.main-content{
+	text-align: center;
+
+}
+
+
+	.container-1{
+	display: flex;
+	margin: 0 auto;
+	justify-content: flex-end;
+	align-content: space-around;
+	width: 50%;
+	padding: 20px;
+	font-family: 'Satisfy', cursive;
+}
+
+		.features{
+		text-align: left;
+		height: 50px;
+		width: 500px;
+		padding: 50px;
+		
+		
+	}
+
+		.about{
+		text-align: left;
+		height: 50px;
+		width: 500px;
+		padding: 50px;
+		
+	
+	}
+
+		.middle-img{
+		
+		margin: 30px;
+		padding: 30px;
+		width: 50%
+	}
+
+	.container-2{
+		display: flex;
+		justify-content: center;
+		align-content: space-around;
+		width: 80%;
+		border-bottom: 1px solid black;
+		margin: 0 auto;
+		font-family: 'Satisfy', cursive;
+	}
+
+		.services{
+
+		margin: 20px;
+		height: 200px;
+		width: 240px;
+		text-align: left;
+	}
+
+		.product{
+		margin: 20px;
+		height: 200px;
+		width: 240px;
+	
+		text-align: left;
+	}
+
+		.vision{
+		margin: 20px;
+		height: 200px;
+		width: 240px;
+	
+		text-align: left;
+		
+	}
+
+	.contact{
+		margin: 70px;
+		padding: 30px;
+		position: relative;
+		left: 450px;
+	}
+
+	footer{
+		text-align: center;
+		margin: 60px;
+		padding: 30px;
+	}
+
+
+/* Beginning Tablet media query here */
+
+@media(max-width: 800px){
+	.header-img{
+		display:none;
+	}
+
+	header{
+		border-bottom: 2px solid black;
+		width: 90%;
+	}
+
+
+	.logo{
+		position: absolute;
+		left: 350px;
+		top: 20px;
+	}
+	
+	.head-text{
+		position: absolute;
+		left: 300px;
+	}
+	
+
+	.box{
+		position: absolute;
+		left: 350px;
+	}
+
+	.header-nav{
+	width: 90%;
+	position: fixed;
+	left: 50px;
+	top: 80px;
+	padding: 5px;
+	}
+
+	.header-nav a:link{
+		padding: 27px;
+
+	}
+
+	.container-1{
+		width:100%;
+		margin: 0 auto;
+		padding: 40px;
+		
+	}
+
+
+	.features{
+		width: 90%;
+		padding-left: 0px;
+	}
+
+	.about{
+		width: 90%;
+		padding-left: 0px;
+	}
+
+
+.middle-img{
+	width: 95%;
+	margin: 0 auto;
+	padding: 50px;
+	padding-left: 10px;
+
+	
+}
+
+
+.container-2{
+	position: relative;
+	bottom: 50px;
+	width: 90%;
+	border-bottom: 2px solid black;
+}
+
+.contact{
+	position: relative;
+	left: 30px;
+	margin: 0 auto;
+}
+
+}
+
+
+/* Beginning Mobile media query here */
+
+@media(max-width: 500px){
+
+	.header-img{
+		display:none;
+	}
+
+
+	.logo{
+		position: absolute;
+		left: 180px;
+		
+	}
+
+
+
+	header{
+		display: flex;
+		flex-direction: column;
+		border-bottom: 2px solid black;
+		width: 100%;
+		height: 700px;
+		
+	}
+
+
+
+	.head-text{
+		position: absolute;
+		top: 400px;
+		left: 130px;
+
+	}
+
+
+
+	.box{
+		position: absolute;
+		top: 600px;
+		left: 180px;
+	}
+
+	.header-nav{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	position: absolute;
+	padding: 5px;
+	top: 50px;
+	left: 0px;
+	}
+
+	.header-nav a:link{
+		padding: 15px;
+		color: gray;
+		background-color: white;
+		padding: 50px;
+		font-family: 'Satisfy', cursive;
+		height: 10px;
+		padding: 25px;
+		border-bottom: 1px solid gray;
+		border-top: 1px solid gray;
+		width: 100%;
+		text-align: center;
+	}
+
+	.header-nav a:visited{
+		color: gray;
+	
+	}
+
+
+
+	.container-1{
+		display: flex;
+		flex-direction: column;
+		padding-bottom: 30px;
+		width:100%;
+		padding-left: 15px;
+		
+	}
+
+
+		.features{
+			float: left;
+			text-align: left;
+			padding-bottom: 70px;
+			padding-left: 0px;
+		
+		}
+
+
+
+
+		.about{
+			float: left;
+			padding-left: 0px;
+		}
+
+
+	.middle-img{
+		padding-left: 0px;
+	}
+
+
+	.container-2{
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		height: 550px;
+	}
+
+	.services{
+		width: 80%;
+	}
+
+
+	.product{
+		width: 80%;
+	}
+
+
+	.vision{
+		width: 80%;
+	}
+
+
+	.contact{
+		padding-left: 0px;
+		position: relative;
+		left: 20px;
+	}
+}
