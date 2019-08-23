@@ -80,6 +80,11 @@ body {
 
 /* Begin header CSS */
 
+.wrapper-main {
+	height: 1500px;
+}
+
+
 header {
 	background-color: white;
 	position: fixed;
@@ -417,37 +422,39 @@ header nav a {
 	height: auto;
 	align-self: center;
 	margin-top: 3%;
+	margin-right: 17%;
 
 }
 
 .logo {
 	width: 100%;
-	padding-left: 35%;
-	padding-right: 35%;
+	padding-left: 38%;
+	padding-right: 38%;
+	margin-top: 1%
 	order: 1;
 	}
 
 .logo-alt {
 	display: flex;
 	flex-flow: row wrap;
-	margin-left: 32%;
+	margin-right: 25%;
 	margin-top: 20%
 	line-height: 12px;
 	margin-bottom: 4%;
 }
 
 .top-third button {
-	font-size: 15px;
-	justify-items: space-evenly;
-	width: 25vw;
-	height: 6vh;
+	font-size: 16px;
+	padding-top: 2%;
+	padding-bottom: 2%;
 	padding-left: 8%;
 	padding-right: 8%;
-	margin-left: 41%;
-	margin-right: 40%;
-	margin-bottom: 5%;
-	line-height: 15px;
-	display: inline;
+	margin-left: 30%;
+	margin-right: 20%;
+	margin-bottom: 8%;
+	margin-top: 7%;
+	line-height: 12px;
+	display: inline-block;
 }   
 
 .middle-third {
@@ -465,7 +472,7 @@ header nav a {
 
 .middle-img {
 	width: 95vw;
-	height: 27vh;
+	height: 15vh;
 	margin-top: 6%;
 	margin-right: 12%;
 	margin-left: 3%;
@@ -496,13 +503,103 @@ width: 24%;
 
 @media (max-width: 500px) {
    
+
+	body {
+		margin-top:60vh;
+	}
+    header {
+		height: auto;
+		position: absolute;
+	}
+
 	header nav {
 		display: flex;
 		flex-flow: column;
 	}
 
+	header nav a {
+		width: 100%;
+		height: 60px;
+		border-top: 2px solid black;
+		margin-top: 0%;
+		padding-left: 19%;
+		padding-top: 4%;
+		padding-bottom: 4%;
+		text-align: center;
+		font-size: 130%;
+		
+	}
 
+    .logo {
+		order: 1;
+		margin-top: 4%;
+		margin-bottom: 5%;%;
+		line-=height: 110%;
+		padding-left: 35%;
+		padding-right: 25%;
+	}
 
+	.top-third {
+		height: 350px;
+		margin-bottom: 10%;
+		justify-content: center;
+		align-content: center;
+	}
 
+	.top-third ul {
+		margin-top: 3%;
+		margin-left: 4%;
+	}
 
+	.logo-alt {
+		margin-top: 14%;
+		margin-left: 25%;
+		line-height: 45%;
+
+	}
+
+	.top-third button {
+		margin-top: 4%;
+		margin-bottom: 4%;
+	}
+
+    .flex-item {
+		margin-top: 8%;
+		width: 100%;
+	}
+
+	.middle-third {
+		margin-top: 2%;
+	}
+
+	.flex-item-2 {
+		margin-top: 3%;
+		margin-left: 0%;
+		width: auto;
+		height: 130px;
+		justify-items: flex-start;
+		margin-bottom: 0;
+	}
+
+	.middle-third-2 {
+		height: 450px;
+		border-bottom: none;
+		margin-left: 4%;
+	
+	}
+
+	.middle-third-2 p {
+		height: 55px;
+		justify-content: center;
+
+	}
+
+	.middle-img {
+		margin-top: 5%;
+		margin-bottom: 2%;
+	}
+	.bottom-third {
+		height: 100px;
+		margin-bottom: 10%;	
+	}
 }
