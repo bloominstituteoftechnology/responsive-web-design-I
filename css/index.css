@@ -323,10 +323,23 @@ header {
 		
 	}
 
+
+	.features{
+		width: 90%;
+		padding-left: 0px;
+	}
+
+	.about{
+		width: 90%;
+		padding-left: 0px;
+	}
+
+
 .middle-img{
 	width: 95%;
 	margin: 0 auto;
 	padding: 50px;
+	padding-left: 10px;
 
 	
 }
@@ -351,79 +364,134 @@ header {
 /* Beginning Mobile media query here */
 
 @media(max-width: 500px){
+
 	.header-img{
 		display:none;
-	}
-
-	header{
-		border-bottom: 2px solid black;
-		width: 90%;
 	}
 
 
 	.logo{
 		position: absolute;
-		left: 350px;
-		top: 20px;
-	}
-	
-	.head-text{
-		position: absolute;
-		left: 300px;
-	}
-	
-
-	.box{
-		position: absolute;
-		left: 350px;
-	}
-
-	.header-nav{
-	
-	flex-direction: column;
-	width: 80%;
-	position: fixed;
-	left: 50px;
-	top: 80px;
-	padding: 5px;
-	}
-
-	.header-nav a:link{
-		padding: 27px;
-		color: gray;
-	
-	padding: 50px;
-	
-	font-family: 'Satisfy', cursive;
-
-	}
-
-	.container-1{
-		width:100%;
-		margin: 0 auto;
-		padding: 40px;
+		left: 180px;
 		
 	}
 
-.middle-img{
-	width: 95%;
-	margin: 0 auto;
-	padding: 50px;
 
+
+	header{
+		display: flex;
+		flex-direction: column;
+		border-bottom: 2px solid black;
+		width: 100%;
+		height: 700px;
+		
+	}
+
+
+
+	.head-text{
+		position: absolute;
+		top: 400px;
+		left: 130px;
+
+	}
+
+
+
+	.box{
+		position: absolute;
+		top: 600px;
+		left: 180px;
+	}
+
+	.header-nav{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	position: absolute;
+	padding: 5px;
+	top: 50px;
+	left: 0px;
+	}
+
+	.header-nav a:link{
+		padding: 15px;
+		color: gray;
+		background-color: white;
+		padding: 50px;
+		font-family: 'Satisfy', cursive;
+		height: 10px;
+		padding: 25px;
+		border-bottom: 1px solid gray;
+		border-top: 1px solid gray;
+		width: 100%;
+		text-align: center;
+	}
+
+	.header-nav a:visited{
+		color: gray;
 	
-}
+	}
 
 
-.container-2{
-	position: relative;
-	bottom: 50px;
-	width: 90%;
-	border-bottom: 2px solid black;
-}
 
-.contact{
-	position: relative;
-	left: 30px;
-	margin: 0 auto;
-}
+	.container-1{
+		display: flex;
+		flex-direction: column;
+		padding-bottom: 30px;
+		width:100%;
+		padding-left: 15px;
+		
+	}
+
+
+		.features{
+			float: left;
+			text-align: left;
+			padding-bottom: 70px;
+			padding-left: 0px;
+		
+		}
+
+
+
+
+		.about{
+			float: left;
+			padding-left: 0px;
+		}
+
+
+	.middle-img{
+		padding-left: 0px;
+	}
+
+
+	.container-2{
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		height: 550px;
+	}
+
+	.services{
+		width: 80%;
+	}
+
+
+	.product{
+		width: 80%;
+	}
+
+
+	.vision{
+		width: 80%;
+	}
+
+
+	.contact{
+		padding-left: 0px;
+		position: relative;
+		left: 20px;
+	}
 }
