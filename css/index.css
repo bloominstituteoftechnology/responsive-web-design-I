@@ -137,14 +137,14 @@ h2{
 
 .featuresbox{
 	display: inline-block;
-	width: 400px;
+	width: 45%;
 	margin: auto;
 	padding: 20px;
 }
 
 .aboutbox{
 	display: inline-block;
-	width: 400px;
+	width: 45%;
 	margin: auto;
 	padding: 20px;
 }
@@ -159,21 +159,21 @@ h2{
 
 .productbox{
 	display: inline-block;
-	width: 290px;
+	width: 30%;
 	margin: auto;
 	padding: 20px;
 }
 
 .visionbox{
 	display: inline-block;
-	width: 290px;
+	width: 30%;
 	margin: auto;
 	padding: 20px;
 }
 
 .servicebox{
 	display: inline-block;
-	width:290px;
+	width:30%;
 	margin: auto;
 	padding: 20px;
 }
@@ -187,8 +187,12 @@ address{
 address p {
 	margin: 10px 0px;
 }
+
 #cont{
-	margin-top: 50px;
+    margin-top: 50px;
+    width: 12%;
+    display: flex;
+    justify-content: center;
 }
 footer a {
 	display:inline-block;
@@ -216,7 +220,10 @@ footer a {
         display: flex;
         justify-content: space-around;
         width: 95%;
+        margin: auto;
     }
+
+   
     
     .header_img{
         display:none;
@@ -259,4 +266,71 @@ footer a {
         justify-content: center;
     }
 
+}
+
+@media(max-width: 500px){
+   
+   .logo{
+       display:flex;
+       align-content: center;
+       margin:20px auto;
+   }
+    nav{
+        flex-direction: column;
+        align-items: center;
+        border-top: 1px solid lightslategrey;
+    }
+    nav a{
+        width: 100%;
+        height: 50px;
+        display:flex;
+        justify-content:center;
+        align-items: center;
+        border-bottom: 1px solid lightslategrey;
+    }
+        
+    
+    .titlecontent{
+        width: 100%;
+        height: 10%;
+    }
+    
+    .top_content{
+        flex-direction: column;
+    }
+    .featuresbox{
+        width: 90%;
+        margin: 0;
+        padding: 0;
+        display:flex;
+        flex-direction: column;
+        justify-content: left;
+    }
+    .aboutbox{
+        width:90%
+    }
+
+    .bottom_content{
+        flex-direction: column;
+    }
+    .servicebox{
+        width:90%
+    }
+    .productbox{
+        width:90%
+    }
+    .visionbox{
+        width:90%
+    }
+    footer a{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .contactinfo #cont{
+        margin-top: 50px;
+        width: 20%;
+        display: flex;
+        justify-content: center;
+    }
 }
