@@ -92,11 +92,14 @@ header {
 	left: 0;
 	right: 0;
 	height: 80px;
+	display: flex;
+	justify-content: space-between;
 }
 
 header nav {
+	width: 80%;
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-around;
 	align-content: center;
 
 }
@@ -112,11 +115,9 @@ header nav a {
 .logo {
 	height: 40px;
 	width: 200px;
-	align-self: center;
 	margin-top: 25px;
 	margin-bottom: 20px;
 	margin-left: 15px;
-	order: 2;
 
 }
 
@@ -407,7 +408,8 @@ footer {
 
 header {
 	height: auto;
-	
+	display: flex;
+	flex-flow: column-reverse;
 }
 
 header nav {
@@ -418,11 +420,10 @@ header nav {
 
 header nav a {
 	order: 2;
-	width: auto;
+	width: 10%;
 	height: auto;
 	align-self: center;
 	margin-top: 3%;
-	margin-right: 17%;
 
 }
 
