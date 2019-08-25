@@ -1,3 +1,177 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+.container{
+	width: 900px;
+	margin:0 auto;
+	display: flex;
+	flex-direction: column;
+}
+@media (max-width: 768px){
+	.container{
+	display: flex;
+	width: 10rem;
+}
+}
+
+p{
+	display:flex;
+	padding:5px;
+	width:200px;
+	text-align: center;
+
+	
+}
+.header-img{
+	text-align:center;
+   display: flex;
+   margin-bottom: 10px;
+   width: 10rem;
+
+  
+   
+}
+.nav{
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	float: right;
+}
 
 
+.button{
+	display:button;
+}
+*{
+	
+	background-color:white;
+}
+/*.header-2{
+	text-align: center;
+	font-size: 20px;
+	height:20px
+}*/
+
+
+.header-2{
+  display: block;
+  border-bottom: 1px solid black;
+ 
+}
+
+.header-3{
+	margin-left:600px;
+	font-size:60px;
+	display: inline-block;
+	
+}
+.middle-img {
+	text-align:center;
+	
+
+}
+
+.button {
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 46px;
+
+  }
+  
+.logo{
+display: inline-flex;
+float: right;
+padding-top:5rem;
+}
+@media(max-width: 768px){
+	.logo{
+		 justify-content: center;
+		 align-items: center;
+		 
+	}
+}
+.maincontent{
+text-align: center;
+border-bottom:1px solid black;
+}
+@media(max-width: 768px){
+	.maincontent{
+		align-content: center;
+		flex-direction: column;
+	}
+}
+
+.footer{
+display: inline-block;
+	margin:10px 0 0 0;
+}
+.closing{
+	text-align: center;
+}
