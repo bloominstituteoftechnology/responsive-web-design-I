@@ -1,3 +1,296 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+/* container */
+.container {
+  width: 880px;
+  margin: 0 auto;
+  padding: 20px 1.25%;
+}
+/* tablet */
+@media (max-width: 768px) {
+    .container {
+        width: 600px;
+     }
+}  
+/* mobile */ 
+@media (max-width: 500px) {
+    .container {
+        width: 350px;
+     }
+} 
+
+/* h4 */
+@media (max-width: 500px) {
+    h4 {
+        margin: 10px 10px 10px 0px;
+    }
+}
+    
+
+/* header */
+header {
+    width: 100%;
+    display: flex;
+}
+
+header nav {
+	margin-top: 40px; 
+    width: 610px;
+    justify-content: space-between;
+    display: flex;
+   
+}
+/*tablet*/
+@media (max-width: 768px) {
+    header nav {
+        margin-top: 75px;
+    }  
+}
+/* mobile */
+@media (max-width: 500px) {
+    header nav {
+        flex-direction: column;
+        align-items: center;
+    }  
+}
+header nav a {
+	text-decoration: none;
+    color: #b0b0b0;
+}
+/* mobile */
+@media (max-width: 500px) {
+    header nav a {
+        margin: 0px;
+        border-top: 1px solid grey;
+        border-bottom: 1px solid grey;
+        width: 300px;
+        padding-left: 120px;
+        padding-bottom: 15px;
+        padding-top: 15px;
+        
+    }  
+}
+header nav a:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+
+header .logo {
+   margin: 28px 0 0 91px;
+  
+   
+}
+/* tablet */
+@media (max-width: 768px) {
+    header .logo {
+        position: absolute;
+        margin: 0 auto;
+        padding-left: 210px;
+        
+    }  
+}
+/* mobile */
+@media (max-width: 500px) {
+    header .logo {
+        margin: 10px;
+        right: 132px;
+    }  
+}
+/* cta */
+
+.cta {
+    display: flex;
+    margin-top: 72px;
+    justify-content: flex-end;
+}
+
+.cta .cta-text {
+    font-size: 72px;
+    text-align: center;
+    letter-spacing: 5px;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    margin: 0 82px 0 0;
+    
+}
+/* tablet */
+@media (max-width: 768px) {
+    .cta .cta-text {
+        flex-flow: column;
+        align-items: center;
+        padding-right: 80px;
+        font-size: 65px;
+        
+       
+    }  
+}
+/* mobile */
+@media (max-width: 500px) {
+    .cta .cta-text {
+        font-size: 50px;
+        margin: 0 auto;
+        padding: 10px;
+        
+    }  
+}
+/* tablet */
+@media (max-width: 768px) {
+    .cta .circle-img {
+        display: none;
+        
+       
+    }  
+}
+/* mobile */
+.cta .cta-text button {
+    border: 1px double black;
+    font-size: 16px;
+    background: white;
+    width: 170px;
+    height: 32px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.cta .cta-text button:hover {
+    background: #1E90FF;
+    color: white;
+}
+
+/* main-content */
+.main-content {
+	border-top: 2px solid black; 
+	border-bottom: 2px solid black;
+	margin: 75px 0 35px 0;
+	padding: 35px 0;
+	font-size: 16px;
+	line-height: 18px;
+ }
+ 
+ .main-content .top-content {
+	 display: flex;
+ }
+ 
+ /* mobile */
+ @media (max-width: 500px) {
+    .main-content .top-content {
+        flex-flow: column;
+    }  
+}
+ .main-content .middle-img {
+     display: block;
+     width: 850px;
+     margin: 30px auto;
+}
+/* tablet */
+@media (max-width: 768px) {
+    .main-content .middle-img {
+        max-width: 100%;
+        height: auto; 
+        
+       }  
+}
+
+ .main-content .bottom-content {
+     display: flex;
+     
+ }
+
+ /* mobile */
+ @media (max-width: 500px) {
+    .main-content .bottom-content {
+        flex-flow: column;
+    }  
+}
+ .main-content .bottom-content p {
+	 padding-right: 20px;
+ }
+ 
+ .contact p {
+    margin: 15px 0;
+}
+
+footer {
+    text-align: center;
+    margin: 40px 0 20px;
+}
 
