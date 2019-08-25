@@ -60,28 +60,43 @@ html, body {
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
-    margin-bottom: 15px;
+	margin-bottom: 15px;
+
 }
 
 /* Your code starts here! */
 .container{
 	width: 900px;
 	margin:0 auto;
-	display: flex;
-	flex-direction: column;
+	justify-content: center;
 }
 @media (max-width: 768px){
 	.container{
 	display: flex;
-	width: 10rem;
+	width: 35rem;
+	margin-left: 25rem;
+
 }
 }
+@media (max-width: 667px){
+	.container{
+	display: flex;
+	width: 1rem;
+	justify-content: center;
+	align-content: center;
+	text-align: center;
+
+}
+}
+
+
 
 p{
 	display:flex;
 	padding:5px;
 	width:200px;
 	text-align: center;
+	margin-left: 25rem;
 
 	
 }
@@ -90,15 +105,23 @@ p{
    display: flex;
    margin-bottom: 10px;
    width: 10rem;
+   margin-left: 25rem;
+   margin-top: 5rem;
 
   
    
+}
+@media(max-width:700px){
+	.header-img{
+	display: none;
+}
 }
 .nav{
 	text-align: center;
 	justify-content: center;
 	align-items: center;
 	float: right;
+    width: 100rem;
 }
 
 
@@ -147,7 +170,7 @@ p{
   
 .logo{
 display: inline-flex;
-float: right;
+
 padding-top:5rem;
 }
 @media(max-width: 768px){
@@ -160,11 +183,13 @@ padding-top:5rem;
 .maincontent{
 text-align: center;
 border-bottom:1px solid black;
+width: 1000rem;
+
 }
 @media(max-width: 768px){
 	.maincontent{
 		align-content: center;
-		flex-direction: column;
+		
 	}
 }
 
