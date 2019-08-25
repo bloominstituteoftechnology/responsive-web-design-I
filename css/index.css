@@ -1,202 +1,395 @@
+/* Use your own code or past solution for Great Idea Web Page CSS here! */
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
-/* Set every element's box-sizing to border-box */
+
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+html,
+body {
+  height: 100%;
+  font-family: "Ubuntu", sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-	margin-bottom: 15px;
-
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Ubuntu", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
 }
 
-/* Your code starts here! */
-.container{
-	width: 900px;
-	margin:0 auto;
-	justify-content: center;
-}
-@media (max-width: 768px){
-	.container{
-	display: flex;
-	width: 35rem;
-	margin-left: 25rem;
-
-}
-}
-@media (max-width: 667px){
-	.container{
-	display: flex;
-	width: 1rem;
-	justify-content: center;
-	align-content: center;
-	text-align: center;
-
-}
+.container {
+  width: 880px;
+  /* TB LR */
+  margin: 0 auto;
 }
 
-
-
-p{
-	display:flex;
-	padding:5px;
-	width:200px;
-	text-align: center;
-	margin-left: 25rem;
-
-	
-}
-.header-img{
-	text-align:center;
-   display: flex;
-   margin-bottom: 10px;
-   width: 10rem;
-   margin-left: 25rem;
-   margin-top: 5rem;
-
-  
-   
-}
-@media(max-width:700px){
-	.header-img{
-	display: none;
-}
-}
-.nav{
-	text-align: center;
-	justify-content: center;
-	align-items: center;
-	float: right;
-    width: 100rem;
-}
-
-
-.button{
-	display:button;
-}
-*{
-	
-	background-color:white;
-}
-/*.header-2{
-	text-align: center;
-	font-size: 20px;
-	height:20px
-}*/
-
-
-.header-2{
-  display: block;
-  border-bottom: 1px solid black;
- 
-}
-
-.header-3{
-	margin-left:600px;
-	font-size:60px;
-	display: inline-block;
-	
-}
-.middle-img {
-	text-align:center;
-	
-
-}
-
-.button {
-	border: none;
-	color: white;
-	padding: 15px 32px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 46px;
-
+@media (max-width: 800px) {
+  .container {
+    width: 75%;
   }
-  
-.logo{
-display: inline-flex;
-
-padding-top:5rem;
 }
-@media(max-width: 768px){
-	.logo{
-		 justify-content: center;
-		 align-items: center;
-		 
+
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+  }
+}
+
+/* header */
+
+
+@media (max-width: 800px) {
+  header {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+
+header {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+header nav {
+  display: flex;
+  width: 600px;
+  vertical-align: top;
+  margin-top: 35px;
+  justify-content: space-between;
+}
+
+@media (max-width: 800px) {
+  header nav {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  header nav {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+header nav a {
+  font-size: 14px;
+  color: gray;
+  text-decoration: none;
+}
+
+@media (max-width: 500px) {
+  header nav a {
+    font-size: 20px;
+    padding: 20px;
+    border-bottom: 1px solid black;
+    width: 100%;
+    text-align: center;
+  }
+  header nav a:first-child {
+    border-top: 1px solid black;
+  }
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+header nav a:first-child {
+  margin-left: 0;
+}
+
+header nav a:last-child {
+  margin-right: 0;
+}
+
+@media (max-width: 800px) {
+  .logo {
+    width: 25%;
+  }
+}
+
+@media (max-width: 500px) {
+  .logo {
+    width: 50%;
+  }
+}
+
+header .logo {
+  margin-top: 25px;
+  display: flex;
+}
+
+
+
+.cta {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.cta .cta-text {
+  vertical-align: top;
+  font-size: 77px;
+  margin-top: 120px;
+  text-align: center;
+  padding: 0px 75px 0px 75px;
+  width: 475px;
+}
+
+
+
+
+
+.cta .cta-text button {
+  display: flex;
+  margin: 0 auto;
+}
+.cta .cta-text button {
+  background: white;
+  vertical-align: top;
+  margin-top: 6px;
+  padding: 8px 44px;
+  font-size: 17px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.cta .cta-text button:hover {
+  background: black;
+  color: white;
+}
+
+
+
+.cta img {
+  display: flex;
+}
+
+.cta img {
+  margin-top: 69px;
+}
+
+@media (max-width: 800px) {
+  .cta img {
+    display: none;
+  }
+}
+.main-content {
+  border-top: 1px solid black;
+  margin-top: 76px;
+  padding-top: 39px;
+}
+
+.main-content .top-content {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .main-content .top-content {
+    flex-direction: column;
+  }
+}
+
+
+.main-content .top-content .text-content {
+  width: 45%;
+}
+
+@media (max-width: 500px) {
+  .main-content .top-content .text-content {
+    width: 100%;
+    margin: 10px;
+  }
+}
+.main-content .top-content .text-content:last-child {
+  margin-right: 0;
+}
+
+.main-content .middle-img {
+  margin-top: 45px;
+  width: 100%;
+}
+
+.main-content .bottom-content {
+  margin-top: 37px;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .main-content .bottom-content {
+    flex-direction: column;
+  }
+}
+
+
+
+.main-content .bottom-content .text-content {
+  width: 30%;
+}
+@media (max-width: 500px) {
+  .main-content .bottom-content .text-content {
+    width: 100%;
+    margin: 10px;
+  }
+}
+.main-content .bottom-content .text-content:last-child {
+  margin-right: 0;
+}
+
+.contact {
+  margin-top: 57px;
+  border-top: 1px solid grey;
+  padding: 39px 10px 0;
+}
+
+.contact p {
+  margin: 20px 0;
+}
+
+footer {
+  margin: 32px 0;
+  text-align: center;
+  font-size: 14px;
+}
+body {
+  background-color:lightgreen;
+}
+
+@media(max-width 850px){
+	header-img{
+display:none;
 	}
-}
-.maincontent{
-text-align: center;
-border-bottom:1px solid black;
-width: 1000rem;
-
-}
-@media(max-width: 768px){
-	.maincontent{
-		align-content: center;
-		
-	}
-}
-
-.footer{
-display: inline-block;
-	margin:10px 0 0 0;
-}
-.closing{
-	text-align: center;
 }
