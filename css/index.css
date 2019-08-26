@@ -82,12 +82,12 @@ h1, h2, h3, h4, h5 {
 	
 }
 
-.top-text .square{
+.square{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 }
-.top-text .square img{
+.square img{
 	margin-top: 60px;
 	margin-bottom: 60px;
 }
@@ -146,3 +146,67 @@ justify-content: center;
 	text-align: center;
 	margin-top: 80px;
 }
+@media(max-width: 800px){
+	.container{
+		width:80%;
+		margin: 0 auto;
+		box-sizing:border-box;
+	}
+	.square img{
+		display: none;
+	}
+	.mac{
+		margin-left: 10px;
+		width: 725px;
+		margin-top: 20px;
+	}
+	.border{
+		margin: 0 2%;
+	}
+	.contact{
+		margin: 0;
+		margin-right:80px;
+	}
+}
+	@media(max-width: 500px){
+		.container{
+		width: 100%;
+		}
+		.top-text nav{
+			display:flex;
+			flex-direction: column;
+			justify-content: center;
+			margin-left: 200px;
+			
+		  }
+		  .top-text a{
+			 border-bottom: 1px solid #ddd;	
+			 margin: 20px;
+			 }
+	
+		  .top-text img{
+			 display: flex;
+			 justify-content: flex-start;
+		  }
+		.main-content{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+		.bottom-content{
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				}
+				.bottom-content .bottom-text{
+					width: 450px;
+					padding: 20px;
+					margin-right: 15px;
+				}
+				.contact{
+					margin-right: 20px;
+				}
+			}	
+
+	
