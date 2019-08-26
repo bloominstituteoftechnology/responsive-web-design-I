@@ -1,3 +1,417 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+	/* http://meyerweb.com/eric/tools/css/reset/ 
+	   v2.0 | 20110126
+	   License: none (public domain)
+	*/
+	
+	html, body, div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, img, ins, kbd, q, s, samp,
+	small, strike, strong, sub, sup, tt, var,
+	b, u, i, center,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td,
+	article, aside, canvas, details, embed, 
+	figure, figcaption, footer, header, hgroup, 
+	menu, nav, output, ruby, section, summary,
+	time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+	}
+	/* HTML5 display-role reset for older browsers */
+	article, aside, details, figcaption, figure, 
+	footer, header, hgroup, menu, nav, section {
+		display: block;
+	}
+	body {
+		line-height: 1;
+	}
+	ol, ul {
+		list-style: none;
+	}
+	blockquote, q {
+		quotes: none;
+	}
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+		content: '';
+		content: none;
+	}
+	table {
+		border-collapse: collapse;
+		border-spacing: 0;
+	}
+	
+	/* Set every element's box-sizing to border-box */
+	* {
+	    box-sizing: border-box;
+	}
+	
+	html, body {
+	    height: 100%;
+	    font-family: 'Titillium Web', sans-serif;
+	}
+	
+	h1, h2, h3, h4, h5 {
+	    font-family: 'Bangers', cursive;
+	    letter-spacing: 1px;
+	    margin-bottom: 15px;
+	}
+	
+	/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+	
+	.container {
+		width: 876px;
+		margin: auto;
+	
+	}
+	/*header elements styling*/
+	
+	
+	header {
+		display: flex;
+		justify-content: space-between;
+		position: fixed;
+		align-items: center;
+		background-color: rgba(0,0,0,0.9);
+		border: 3px solid green;
+	}
+	
+	header nav a {
+		margin: 20px;
+		text-decoration: none;
+		color: white;
+		font-size: 14px;
+		padding: 5px;
+	}
+	
+	header nav a:hover {
+		background-color: green;
+		border: 3px solid black;
+		padding: 10px;
+	}
+	
+	.logo {
+		background-color: white;
+	}
+	
+	.cta-text {
+		display: inline-block;
+		font-size: 70px;
+		text-align: center;
+		height: 300px; 
+		width: 400px;
+	}
+	
+	.cta {
+		border-bottom: 2px solid black;
+		margin-top: 50px;
+		margin-bottom: 40px;
+	}
+	
+	
+	.cta-image {
+		display: inline-block;
+		margin-left: 90px;
+		margin-top: 100px;
+		}
+	
+	.cta-text button {
+		background-color: white;
+		height: 30px;
+		width: 170px;
+		margin-left: 120px;
+		display: block;
+		border: 1px solid black;
+	
+	}
+	
+	.cta-text button:hover {
+		background-color: green;
+		border: 3px solid black;
+		height: 40px;
+		width: 190px;
+	}
+	
+		/*end of header elements styling*/
+	
+		/*main content styling*/
+	
+	.main-content {
+		border-bottom: 2px solid black;
+		display: flex;
+		flex-wrap: wrap;
+		padding: 20px;
+		width: 950px;
+	
+	}
+	
+	
+	.content {
+		width: 270px;
+		flex-grow: 1;
+		padding: 5px;
+	}
+	
+	.middle-img {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	/*end of main content styling*/
+	
+	.footer {
+		padding: 40px;
+		margin-left: 300px;
+	}
+	
+	.copyright {
+		text-align: center;
+		padding: 40px;
+		margin-right: 200px;
+	}
+	
+	.flex-container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-content: space-evenly;
+		height: 970px;
+		border-bottom: 2px solid black;
+		border-top: 2px solid black;
+		margin-top: 15px;
+	}
+	
+	.flex-content {
+		background-color: grey;
+		width: 400px;
+		height: 230px;
+		padding: 10px;
+	}
+	
+	.flex-container button {
+		background-color: white;
+		height: 30px;
+		width: 170px;
+		margin-top: 55px;
+		display: block;
+		border: 1px solid black;
+	
+	}
+	
+	.footer {
+		padding-top: 40px;
+	}
+	
+	.copyright {
+		padding-top: 40px;
+		text-align: center;
+	}
+	
+	li {
+		list-style-type: square;
+		margin: 20px;
+	}
+	
+	
+	/*styling for mobile devices*/
+	
+	@media (max-width: 800px) {
+		.cta-image {
+			display: none;
+		}
+	
+		.container {
+			width: 100%;
+		}
+	
+	
+		header {
+			width: 100%;
+			display: flex;
+			flex-direction: column-reverse;
+			background: none;
+			border: none;
+		}
+	
+		header nav a {
+			color: lightgray;
+		}
+	
+		.main-content {
+			width: 100%;
+		}
+	
+		.content {
+			width: 33.3%;
+		}
+	
+		.footer {
+			width: 100%;
+		}
+	
+		.logo {
+			margin-bottom: 2%;
+		}
+	
+		.cta {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	
+		.cta-text {
+			margin-top: 15%;
+		}
+	
+		.copyright {
+		margin-left: 200px;
+		}
+	
+		.footer {
+		margin: auto;
+		}  
+	}
+	
+	@media (max-width: 500px) {
+		header nav a {
+			display: flex;
+			border-bottom: 1px black;
+			align-items: center;
+			justify-content: center;
+			border-bottom: 1px solid lightgray;
+			border-top: 1px solid lightgray;
+		}
+	
+		header nav {
+			width: 50%;
+		}
+	
+		.container {
+			width: 100%;
+		}
+	
+		.main-content {
+		flex-direction: column;
+		}
+	
+		.content {
+			width: 100%;
+		}
+	
+		.footer {
+			width: 100%;
+			margin: auto;
+		}
+	
+		footer {
+			width: 100%;
+			margin: auto;
+		}
+	
+		img.middle-img {
+			width: 100%;
+		}
+	
+		.cta-text {
+			margin-top: 350px;
+		}
+	
+		.copyright {
+			width: 100%;
+			margin: auto;
+		}
+	
+	}
+  73  index.html 
 
+ @@ -3,14 +3,79 @@
+	<html lang="en">
+	<head>
+	  <meta charset="utf-8">
+	  <title>Great Idea - Responsive I</title>
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	  <title>Great Idea!</title>
+	
+	  <link href="https://fonts.googleapis.com/css?family=Bangers|Titillium+Web" rel="stylesheet">
+	  <link rel="stylesheet" href="css/index.css">
+	
+	  <!--[if lt IE 9]>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+	  <![endif]-->
+	</head>
+	
+	<body>
+	<!-- Use past code you created here for Great Idea Web Page or past solution for Great Idea Web Page HTML here! -->
+	</body>
+	  <body>
+	      <div class="container">
+	      <header>
+	       <nav>
+	        <a href="#>Services</a>
+	        <a href="#>Product</a>
+	        <a href="#>">vision</a>
+	        <a href="#>Features</a>
+	        <a href="#>>About</a>
+	        <a href="#>Contact</a>
+	       </nav>
+	       <img class="logo" src="img/logo.png" alt="Great Idea! Company logo.">
+	
+	      </header>
+	
+	      <section class="cta">
+	          <div class="cta-text">
+	         <h1>Innovation<br>On<br>Demand</h1>
+	        <button>Get Started</button>
+	        </div>
+	        <div class="cta-image">
+	        <img src="img/header-img.png" alt="Image of a code snippet.">
+	        </div>
+	        </section>
+	
+	<section class="main-content">
+	     <div class="content">
+	
+	      <h2>Features</h2>
+	      <p>Aliquam elementum magna eros, ac posuere elvet tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.</p>
+	      </div>
+	
+	      <div class="content">
+	      <h2>About</h2>
+	      <p>Aliquam elementum nagna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.</p>
+	    </div>
+	     <img class="middle-img" src="img/mid-page-accent.jpg" alt="Image of code snippets across the screen">
+	      <div class="content">
+	      <h2>Services</h2>
+	      <p>Aliquam elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.</p>
+	      </div>
+	      <div class="content">
+	      <h2>Product</h2>
+	      <p>Aliquam elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.</p>
+	      </div>
+	      <div class="content"> 
+	      <h2>Vision</h2>
+	      <p>Aliquam elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.</p>
+	    </div>
+	    </section>
+	</div>
+	      <footer>
+	        <div class="footer">
+	      <h2>Contact</h2>
+	      <address>123 Way 456 Street<br>
+	      Somewhere, USA</address> <br> <br>
+	      1 (888) 888-8888 <br> <br>
+	      sales@greatidea.io<br><br>
+	      <div class="copyright"> Copyright Great Idea! 2018</div>
+	      </div>
+	      </footer>
+	      </div>
+	      </body>
+	</html> 
 
