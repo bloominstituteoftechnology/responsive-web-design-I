@@ -1,3 +1,97 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* * {
+    border: 1px solid red;
+} */
 
+.container {
+    margin: 2% 10%;
+}
 
+html, body {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+p {
+    margin: 0 5px 5px 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header nav a {
+    font-size: 14px;
+    color: gray;
+    text-decoration: none;
+}
+
+.cta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-bottom: 2px solid black;
+    padding: 5%;
+}
+
+.cta .cta-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 50px;
+  }
+
+.cta .cta-text button {
+    width: 150px;
+    background: white;
+    vertical-align: top;
+    font-size: 14px;
+    border: 1px solid black;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .cta .cta-text button:hover {
+    background: black;
+    color: white;
+  }
+
+.cta img {
+    object-fit: contain;
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.main-content img {
+    object-fit: contain;
+    margin: 20px 0;
+}
+
+.top-content {
+    display: flex;
+}
+
+.bottom-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    text-align: center;
+}
