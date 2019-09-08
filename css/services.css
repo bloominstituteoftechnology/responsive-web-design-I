@@ -1,9 +1,10 @@
-.container {
-    margin: 2% 10%;
-}
-
 html, body {
     font-family: 'Titillium Web', sans-serif;
+}
+
+.container {
+    margin: 2% 15%;
+    font-weight: bold;
 }
 
 h1, h2, h3, h4, h5 {
@@ -23,7 +24,7 @@ header nav {
 }
 
 header nav a {
-    font-size: 14px;
+    font-size: 15px;
     color: gray;
     text-decoration: none;
 }
@@ -31,17 +32,18 @@ header nav a {
     display: flex;
     flex-direction: column;
     border-bottom: 1px solid black;
-    margin-bottom: 30px;
-    padding-bottom: 30px;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
   }
-
-.top-content h1 {
-  font-size: 30px;
-}
 
 .top-content img {
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+  }
+
+  .top-content h1 {
+    font-size: 30px;
+    margin: 20px 0;
   }
 
 .middle-content {
@@ -49,18 +51,26 @@ header nav a {
     flex-wrap: wrap;
     justify-content: space-between;
     border-bottom: 1px solid black;
-    margin-bottom: 40px;
-    padding-bottom: 30px;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
   }
 
 .middle-content .text-content {
-    width: 400px;
+    width: 43%;
     display: flex;
     flex-direction: column;
-    margin: 10px 0;
-    padding: 10px;
+    margin: 20px 0;
+    padding: 20px;
     border: 1px solid black;
-    background: lightgray;
+    background: whitesmoke;
+}
+
+.middle-content h4 {
+    margin: 0;
+}
+
+.middle-content p {
+    margin: 10px 0;
 }
 
 .middle-content .text-content button {
@@ -84,7 +94,7 @@ header nav a {
 }
 
 .bottom-content .text-content {
-    width: 420px;
+    width: 43%;
     display: flex;
     flex-direction: column;
 }
