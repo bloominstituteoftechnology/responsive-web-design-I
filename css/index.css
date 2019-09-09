@@ -72,6 +72,8 @@ h1, h2, h3, h4, h5 {
   margin: 0 auto;
 }
 
+/* ****************** Desktop View ******************* */
+
 /* header */
 
 header {
@@ -200,4 +202,29 @@ footer {
   margin: 32px 0;
   text-align: center;
   font-size: 14px;
+}
+
+/* ************** Tablet View *************** */
+
+@media only screen and (max-width: 800px) {
+
+    header {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    header nav a {
+        display: flex;
+    }
+
+    .logo {
+        width: 25%;
+    }
+}
+
+/* ***************** Mobile View ***************** */
+
+@media only screen and (max-width: 500px) {
+
 }
