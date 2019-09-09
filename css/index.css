@@ -152,6 +152,7 @@ h5 {
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 * {
   /* border: 1px solid red !important; */
+  max-width: 100%;
 }
 
 .container {
@@ -166,12 +167,18 @@ header {
 
 header nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+}
+
+header a {
+  display: flex;
 }
 
 .navigation-links {
+  order: -1;
   width: 90%;
   display: flex;
+  justify-content: flex-start;
   justify-content: space-evenly;
   align-items: center;
 }
@@ -181,12 +188,12 @@ header nav {
   color: gray;
   line-height: 16px;
   letter-spacing: 3px;
+  padding: 10px 0;
 }
 
 .navigation-links a:hover {
   border-bottom: 2px solid #000;
   border-top: 2px solid #000;
-  padding: 10px 0px;
 }
 
 .logo {
@@ -366,7 +373,32 @@ footer {
 }
 
 /* MEDIA QUERIES */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
+  .container {
+    width: 90%;
+  }
+  /* HEADER STYLES */
+  header {
+    flex-direction: column-reverse;
+  }
+
+  header .logo {
+    order: -1;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 4% 0;
+  }
+
+  a.logoLink {
+    margin: 0 auto;
+  }
+
+  .navigation-links {
+    padding: 4% 0;
+  }
+
+  /* CTA STYLES */
   .cta {
     display: flex;
     justify-content: space-between;
@@ -383,5 +415,39 @@ footer {
 
   .cta img {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  /* HEADER */
+  .navigation-links {
+    flex-direction: column;
+    justify-content: center;
+    display: inline-block;
+    width: 100%;
+  }
+
+  .navigation-links a {
+    justify-content: center;
+  }
+
+  /* TOP CONTENT */
+  .top-content {
+    flex-direction: column;
+  }
+
+  .top-content .text-content {
+    width: 100%;
+    padding: 4% 0;
+  }
+
+  /* BOTTOM CONTENT */
+  .bottom-content {
+    flex-direction: column;
+  }
+
+  .bottom-content .text-content {
+    width: 100%;
+    padding: 4% 0;
   }
 }
