@@ -27,7 +27,7 @@ Follow these steps for completing your project.
 * [x] Do your best to make your styles match the design files at each breakpoint 
 
 ## Stretch Goals: 
-* [ ] Create a tablet and mobile version of the services page from previous projects
+* [x] Create a tablet and mobile version of the services page from previous projects
 * [ ] Once you have completed the project with max-width media queries, start over with min-width media queries to get a feel for how a mobile first approach would be like.  I recommend making a copy of all your contents in a new folder named "mobile-first" to keep it separate
 
 
