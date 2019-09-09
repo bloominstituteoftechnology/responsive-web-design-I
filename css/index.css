@@ -67,7 +67,7 @@ h1, h2, h3, h4, h5 {
 /* project one */
 
 .container2 {
-	width: 880px;
+	max-width: 880px;
 	/* TB LR */
 	margin: 0 auto;
   }
@@ -140,7 +140,7 @@ h1, h2, h3, h4, h5 {
 	margin-top: 69px;
   }
   
-  .main-content {
+  .main-content {  
 	border-top: 1px solid black;
 	margin-top: 76px;
 	padding-top: 39px;
@@ -157,7 +157,7 @@ h1, h2, h3, h4, h5 {
   }
   
   .main-content .top-content .text-content:last-child {
-	margin-right: 0;
+	margin-right: 34px;
   }
   
   .main-content .middle-img {
@@ -357,6 +357,89 @@ h1, h2, h3, h4, h5 {
    .cta img {
        display: none;
    }
+   .bottom-content {
+       justify-content: space-between;
+    }
+    .main-content .image2 {
+        display: flex;
+        justify-content: center;
+    }
+    .main-content .middle-img {
+        max-width: 100vh;
+        overflow: hidden;
+    }
+   .main-content .bottom-content .text-content {
+       max-width: 30%;
+   }
+
+
+  /*.top-content .text-content p{
+    width: 60%;
+    font-size: 15px;
+   } */
 
    
+} 
+
+/*smartphones */ 
+
+@media(max-width: 500px) {
+    .nav-2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-2 a {
+        padding: 1rem 0;
+        border: 1px solid black;
+        width:100%;
+        text-align: center;
+    }
+
+    .header .logo2 {
+        border-bottom: 1px solid black;
+        padding-bottom: 1rem;
+    }
+    .cta .cta-text {
+     padding: 0;
+     text-align: center;
+ }
+    .main-content .top-content {
+        flex-direction: column;
+        align-content: flex-start;
+        align-items: flex-start;
+        margin: 37px 0px 0px 24px; 
+    }
+
+    .main-content .top-content p {
+        margin-bottom: 1.8rem;
+        max-width: 60%;
+    }
+
+    .main-content .bottom-content {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin-left: 1.5rem;
+    }
+    .main-content .image2 {
+        display: flex;
+        justify-content: center;
+    }
+    .main-content .middle-img {
+        max-width: 100vh;
+    }
+
+    .main-content .bottom-content .text-content {
+        max-width: none;
+    
+    }
+    .main-content .bottom-content .text-content p {
+        margin-bottom: 1.8rem;
+    }
+    
+    header img {
+        max-width:50%;
+    }
+        
 }
