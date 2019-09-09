@@ -1,22 +1,29 @@
-html, body {
-    font-family: 'Titillium Web', sans-serif;
-}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+  border: 1px solid grey;
 
+/*****GENERAL STYLES*****/
 .container {
-    margin: 2% 15%;
-    font-weight: bold;
+  margin: 2% 10%;
+  font-family: 'Titillium Web', sans-serif;
+  line-height: 2;
 }
 
 h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
+  font-family: 'Bangers', cursive;
+  text-align: center;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
 }
 
 p {
-    margin: 0 5px 5px 0;
+  margin: 0 5px 5px 0;
 }
 
+/*****HEADER STYLES*****/
 header nav {
     display: flex;
     justify-content: space-between;
@@ -28,6 +35,8 @@ header nav a {
     color: gray;
     text-decoration: none;
 }
+
+/*****TOP CONTENT STYLES*****/
 .top-content {
     display: flex;
     flex-direction: column;
@@ -41,11 +50,12 @@ header nav a {
     margin-bottom: 10px;
   }
 
-  .top-content h1 {
+.top-content h1 {
     font-size: 30px;
     margin: 20px 0;
   }
 
+  /*****MIDDLE CONTENT STYLES*****/
 .middle-content {
     display: flex;
     flex-wrap: wrap;
@@ -87,6 +97,7 @@ header nav a {
   color: white;
 }
 
+/*****BOTTOM CONTENT STYLES*****/
 .bottom-content {
   display: flex;
   justify-content: space-between;
@@ -99,6 +110,7 @@ header nav a {
     flex-direction: column;
 }
 
+/*****FOOTER STYLES*****/
 footer {
   text-align: center;
 }
