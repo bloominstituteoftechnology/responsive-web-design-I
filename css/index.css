@@ -76,7 +76,6 @@ h1, h2, h3, h4, h5 {
   
   header .nav-2 {
 	width: 691px;
-	vertical-align: top;
 	margin-top: 35px;
   }
   
@@ -323,4 +322,41 @@ h1, h2, h3, h4, h5 {
 	padding: 1rem;
 	line-height: 2.1;
 	font-weight: bold;
+}
+
+/* tablet */
+
+@media (max-width:800px) { 
+   header {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+     
+    header .nav-2 a {
+        font-size: 19px;
+        margin: 0;
+    }
+    header img {
+        max-width:20%;
+    }
+    .cta {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .cta .cta-text {
+        margin-top: 80px;
+    }
+   .cta img {
+       display: none;
+   }
+
+   
 }
