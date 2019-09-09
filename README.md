@@ -15,9 +15,9 @@ Follow these steps to set up and work on your project:
 
 Follow these steps for completing your project.
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's Repo). **Please don't merge your own pull request**
-- [ ] Add your project manager as a reviewer on the pull-request
-- [ ] Your project manager will count the project as complete by merging the branch back into master.
+- [x] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's Repo). **Please don't merge your own pull request**
+- [x] Add your project manager as a reviewer on the pull-request
+- [x] Your project manager will count the project as complete by merging the branch back into master.
 
 ## Task 2: Minimum Viable Product
 
@@ -28,5 +28,5 @@ Follow these steps for completing your project.
 
 ## Stretch Goals:
 
-- [ ] Create a tablet and mobile version of the services page from previous projects
+- [x] Create a tablet and mobile version of the services page from previous projects
 - [ ] Once you have completed the project with max-width media queries, start over with min-width media queries to get a feel for how a mobile first approach would be like. I recommend making a copy of all your contents in a new folder named "mobile-first" to keep it separate
