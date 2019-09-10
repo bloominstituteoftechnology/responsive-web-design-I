@@ -198,15 +198,131 @@ h1, h2, h3, h4, h5 {
   }
 
 /***MEDIA QUERIES***/
-@media screen and (max-width: 800){
-    .top-content{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-    }
-    .top-content div{
-        width: 80%;
-    }
+@media (max-width: 800px){
+	.container{
+		width: 100%;
+		margin: 0 auto;
+		border: 1px solid grey;
+	}
+	header{
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+	
+	a{
+		display: flex;
+		justify-content: center;
+		
+	}
+	.cta{
+		display: flex;
+		justify-content: center;
+		text-align: center;
+		
+	}
+
+	.cta img{
+		display: none;
+	}
+
+	.main-content .middle-img{
+		width: 98%;
+		margin-left: 1%;
+		margin-right: 1%;
+		padding-bottom: 5px;
+	}
 }
+
+
+
+
+
+@media screen and (max-width: 500px){
+	/*header section style*/
+	.container{
+		width: 100%;
+		margin: 0 auto;
+		
+	}
+	
+	header nav {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		vertical-align: top;
+		margin-top: 1%;
+		font-size: 16px;
+	  }
+	  header nav a{
+		  margin: 0;
+		
+	  }
+	 a {
+			justify-content: center;
+			text-align: center;
+			padding: 20px;
+			border-bottom: 1px solid black;
+			border-top: 1px solid black;
+			width: 100%;
+			
+	  }
+	  header {
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
+	  	
+	}
+
+	.logo{
+		padding-bottom: 10px;
+		
+	}
+	
+	.cta{
+		display: flex;
+		justify-content: center;
+		text-align: center;
+		
+	}
+
+	.cta img{
+		display: none;
+	}
+
+	.main-content .top-content {
+        display: flex;
+        flex-direction: column;
+		align-items: center;
+		flex-wrap: wrap;	
+		width: 100%;
+    }
+    .main-content .top-content .text-content {
+		width: 100%;
+		margin: 0;
+    } 
+	.main-content .middle-img{
+		width: 91%;
+		margin-left: 5%;
+		margin-right: 5%;
+		padding-bottom: 5px;
+	}
+
+	.main-content .bottom-content{
+		display: flex;
+    	flex-direction: column;
+		align-items: center;
+		flex-wrap: wrap;
+
+	}
+
+	.main-content .bottom-content .text-content{
+		width: 100%;
+		margin: 0 auto;
+	}
+}
+
 
 
