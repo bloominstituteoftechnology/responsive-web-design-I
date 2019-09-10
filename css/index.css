@@ -331,3 +331,91 @@ footer {
   justify-content: center;
 }
 
+@media screen and (max-width: 800px) {
+  
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4%;
+
+}
+
+button{
+  margin-bottom: 10%;
+}
+
+header nav {
+  padding: 10%;
+  size: 16px;
+}
+.container {
+    width: 700px;
+   
+}
+  .cta, .cta-text{
+    display: flex;
+    justify-content: center;
+    size: 10px;
+  }
+  .codeImage{
+    display: none;
+  }
+
+  .middle-img{
+    width: 98%;
+  
+  }
+
+  .main-content {
+    display: flex;
+    margin: 5%;
+    padding: 5%;
+  }
+  .contact, footer{
+    display: flex;
+    margin-left: 10%;
+    size: 10px;
+
+  }
+}
+  
+
+@media screen and (max-width: 500px) {
+
+  .container {
+    width: 500px;
+    margin: 0%;
+    padding:20%
+
+  } 
+  header {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+    header nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    vertical-align: top;
+
+}
+    header nav a {
+    font-size: 16px;
+    color: gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2%;
+    line-height: 4%;
+    padding: 3%;
+
+}
+.main-content div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+  }
