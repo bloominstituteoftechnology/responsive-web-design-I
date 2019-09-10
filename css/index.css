@@ -251,12 +251,18 @@ footer {
 /* ***************** Mobile View ***************** */
 
 @media only screen and (max-width: 500px) {
+    div {
+        border: 1px solid red;
+    }
+    .container {
+        width: 100%;
+    }
 
    .container header nav {
         display: flex;
         flex-direction: column;
         width: 100vw;
-        margin-left: -40%;
+        margin: 0 auto;
     }
 
     .container header nav a {
@@ -265,22 +271,22 @@ footer {
         align-items: center;
         vertical-align: top;
         border-bottom: 1px solid gray;
-        /* border-width: 100%; */
+        width: 90%;
         font-size: 1.7em;
-        padding: 2%;
+        padding: 2% 0%;
         margin: 0;
         
     }
 
     .logo {
         width: 80vw;
-        margin-left: -45%;
+        /* margin-left: -50%; */
         border-bottom: 1px solid gray;
     }
 
     .cta {
-        width: 200px;
-        margin-left: -2%;
+        width: 50%;
+        margin-left: -8%;
     }
 
     /* .main-content {
@@ -292,6 +298,10 @@ footer {
         flex-direction: column;
     }
 
+    #middle-img {
+        width: 100%;
+        margin: 0 auto;
+    }
     .bottom-content {
         display: flex;
         flex-direction: column;
