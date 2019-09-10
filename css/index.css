@@ -358,7 +358,7 @@ header nav {
 }
 .container {
     width: 700px;
-    overflow-x: hidden;
+    overflow-x: hidden; 
 }
   .cta, .cta-text{
     display: flex;
@@ -400,8 +400,8 @@ header nav {
 @media screen and (max-width: 500px) {
 
   .container {
-    width: 500px;
-    overflow-x: hidden;
+    width: 450px;
+   overflow-x: hidden;
 
   } 
   header {
@@ -449,7 +449,11 @@ header nav a {
   flex-direction: column;
   text-align: left
 
-  /* margin: 20%; */
+}
+
+.top-content, .bottom-content {
+  line-height: 20px;
+
 
 }
 
@@ -457,18 +461,14 @@ header nav a {
   display: flex;
   flex-direction: column;
   text-align: left;
-  margin: 0%
+  margin-top: 2%;
+
 }
 
-.bottom-content {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    margin: 0%;
-    
-  
-}
+.bottom-content{
+  width: 68%;
 
+}
 button{
   display:flex;
   justify-content: center;
@@ -487,6 +487,10 @@ button{
   margin: 0%;
   padding-top: 2%;
   padding-left: 0%;
+}
+
+.middle-img {
+  width: 100%;
 }
 
   }
