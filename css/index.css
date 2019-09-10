@@ -129,6 +129,102 @@ table {
   border-spacing: 0;
 }
 
+
+
+
+@media (max-width: 800px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width:100%;
+    }
+
+    .container header {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+    }
+
+    .container header nav {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .logo {
+        width: 20%;
+        align-self: center;
+    }
+
+    
+    .cta .code-1 {
+        display: none;
+    }
+
+    .cta {
+        display: flex;
+        justify-content: center;
+
+    }
+
+}
+
+@media (max-width: 500px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-content .top-content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .bottom-content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .text-content h4 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .container header nav {
+        display: flex;
+        flex-direction: column;
+        border-top: 2px solid gray;
+        /* align-items: space-evenly; */
+        margin: 20px 0;
+        
+    }
+
+    .middle-img {
+        display: flex;
+
+        width: 100%;
+    }
+
+    .container header nav a {
+        display: flex;
+        width: 100%;
+        border-bottom: 2px solid gray;
+        justify-content: center;
+        font-size: 30px;
+        margin: 10px 0;
+        padding: 0;
+
+    }
+
+    .cta img {
+        display: none;
+    }
+}
 /* Set every element's box-sizing to border-box */
 * {
   box-sizing: border-box;
@@ -155,6 +251,7 @@ h5 {
   /* TB LR */
   margin: 0 auto;
 }
+
 
 /* header */
 header {
@@ -194,9 +291,10 @@ header .logo {
 /* cta */
 .cta {
   display: flex;
+  width: 880px;
 }
 
-.cta .cta-text {
+.cta-text {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -236,7 +334,7 @@ header .logo {
   padding-top: 39px;
 }
 
-.main-content .top-content {
+.top-content {
   display: flex;
   justify-content: center;
   padding: 0 10px;
@@ -347,8 +445,6 @@ hr {
   
 }
 
-
-
 .footer {
   display:flex;
   margin-top: 20px;
@@ -367,24 +463,7 @@ br {
   border: 1px solid red;
 } */
 
-/*********MEDIA QUERIES ************/
+/***********MEDIA QUERIES**************/
 
-@media screen and (max-width: 800px) {
-  .container {
-    background: blue;
-  }
 
-  .cta img {
-    display: none;
-  }
-}
 
-@media screen and (max-width: 500px;) {
-  .container {
-    background: yellowgreen;
-  }
-
-  .cta img {
-    display: none;
-  }
-}
