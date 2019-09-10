@@ -219,6 +219,51 @@ margin-bottom:50px
   padding: 20px 1.25%;
 }
 
+@media(max-width: 800px){
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        Padding: 5%;
+    }
+    header{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+      
+    }
+    header .logo{
+        margin-bottom: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 35%;
+        padding-right:35%;
+        margin-right: 0%;
+        
+      }
+    .container header nav {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+      }
+      .cta{
+          display: flex;
+          justify-content: center;
+      }
+    .cta img{
+        display: none;
+    }
+    .main-content .middle-img{
+        width: 100%;
+    }
+footer{
+    font-size: 100%;
+}
+
+}
+
 @media(max-width: 500px) {
   .container {
     display: flex;
@@ -283,6 +328,13 @@ margin-bottom:50px
   }
   .cta img{
       display: none;
+  }
+  .cta .cta-text {
+    vertical-align: top;
+    font-size: 350%;
+    margin-top: 14%;
+    text-align: center;
+    padding: 0px 8%;
   }
   .main-content .bottom-content{
       display: flex;
