@@ -31,6 +31,9 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	width :100%;
+	margin: 10%;
+	padding: 10%;
 }
 ol, ul {
 	list-style: none;
@@ -70,10 +73,10 @@ h1, h2, h3, h4, h5 {
 /* Your code starts here! */
 
 nav {
-	margin: auto;
-	width: 900px;
+
+	width: 100%;
 	display: flex;
-	justify-content: space-evenly;
+	
 }
 
 nav a {
@@ -84,13 +87,14 @@ nav a {
 
 nav .logo {
 	padding-left: 50px;
-	margin-top: 20px;
+	
+	width : 100%;
 }
 
 header {
 	line-height: 1;
-	margin: 50px 0px 50px 100px;
-	width: 900px;
+	margin: 50px 0px 50px 0px;
+	width: 100%;
 	display:flex;
 	flex-wrap:wrap;
 }
@@ -115,7 +119,7 @@ header img {
 }
 
 .top-content {
-	width: 900px;
+	width: 100%;
 	display:flex;
 	justify-content:center;
 	align-content:center;
@@ -123,7 +127,7 @@ header img {
 
 .top-content div {
 	
-	width: 50%;
+	width: 100%;
 	text-align: justify;
 	padding: 10px;
 }
@@ -133,14 +137,14 @@ header img {
 }
 
 .bottom-content {
-	width: 900px;
+	width: 100%;
 	display:flex;
 	justify-content:center;
 	align-content:center;
 }
 
 .bottom-content div {
-	width:35%;
+	width:100%;
 	padding: 10px;
 	text-align: left;
 	
@@ -230,6 +234,7 @@ button{
 
 .product-img{
 	display: flex;
+	
 	width:100%;
 
 }
@@ -250,17 +255,21 @@ button{
 
     
    header{
-      display: flex;
-      flex-direction: column-reverse;
+      flex-flow: center;
       width:100%;
-        
+        margin: 10%;
     }
 
+	.nav{
+		margin: 10%;
+		flex-flow: inherit;
+		text-align: center;
+		padding-right: 10%;
+	}
     nav{
-        display: flex;
-        flex-direction: column-reverse;
-       justify-content: center;
-       width: 100%;
+      flex-flow: row-reverse;
+	   width: 100%;
+	   margin:10%;
     }
 
     .body-content{
@@ -300,7 +309,7 @@ button{
 
     header{
         align-items:center;
-        margin:20%;
+       
     }
 
     .top-content{
