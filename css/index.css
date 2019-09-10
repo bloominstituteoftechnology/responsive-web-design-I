@@ -144,8 +144,7 @@ header .logo {
 }
 
 .main-content .top-content .text-content {
-  width: 410px;
-  margin-right: 34px;
+  width: 100%;
 }
 
 .main-content .top-content .text-content:last-child {
@@ -285,19 +284,41 @@ flex-direction: column;
 /***** Media Queries: ******/
 
 @media screen and (max-width: 800px) {
+  .container{
+    width: 100% !important;
+   margin: 0 auto;
+   
+  }
+  
+nav{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+.allcontentbelowheader{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
 
 header{
   display: flex;
+  align-items: center;
   flex-direction: column-reverse;
-  width: 30%;
+  
+
 }
+
 
 .logo{
-  margin-left: 150px;
+  padding: 0px 300px 30px 0px; 
 }
 
-.text{
-  width: 5%;
+.img1{
+  display: none;
 }
 
 
@@ -334,8 +355,9 @@ a{
 }
 
 .logo{
-    width: 80%;
-    margin-left: 140px;
+    width: 100%;
+    margin: 0;
+    padding: 10% 25% 10% 25%;
 }
 
 .text{
@@ -393,8 +415,8 @@ button{
 
 .text-content{
    font-size: 20px;
-   padding: 20px 0px;
-   text-align: center;
+   padding: 10px 10px;
+   flex-flow: column wrap;
    
 }
 
