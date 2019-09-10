@@ -331,6 +331,8 @@ footer {
   justify-content: center;
 }
 
+/*******MEDIA QUERIE 800PX*******/
+
 @media screen and (max-width: 800px) {
   
   header {
@@ -340,6 +342,7 @@ footer {
     margin-bottom: 4%;
 
 }
+
 
 button{
   margin-bottom: 10%;
@@ -351,7 +354,6 @@ header nav {
 }
 .container {
     width: 700px;
-   
 }
   .cta, .cta-text{
     display: flex;
@@ -381,41 +383,51 @@ header nav {
 }
   
 
+/*****MEDIA QUERIE 500PX****/
+
 @media screen and (max-width: 500px) {
 
   .container {
-    width: 500px;
-    margin: 0%;
-    padding:20%
+    width: 450px;
 
   } 
   header {
     display: flex;
     flex-direction: column;
     align-content: center;
+    
 }
-    header nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    vertical-align: top;
+header nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
 }
     header nav a {
-    font-size: 16px;
+    font-size: 18px;
     color: gray;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 2%;
-    line-height: 4%;
+    margin: 0% 0% 0% 0%;
+    line-height: 6%;
     padding: 3%;
+    border-bottom-style: solid;
+    border-bottom-color: gray;
+    border-bottom-width: 100%;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
 }
 .main-content div {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 20%;
 
 }
   }
