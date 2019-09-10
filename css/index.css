@@ -104,7 +104,7 @@ header .logo {
 	position: absolute;
     left: 900px;
     top: 125px;
-	width: 120px;
+	  width: 120px;
   }
 
 .container-services {
@@ -147,6 +147,10 @@ header .logo {
 
 .header img {
 	display: flex;
+}
+
+section .codeImage {
+  display:flex;
 }
 
 .main-content {
@@ -339,10 +343,10 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 4%;
+    margin: 0%;
+    /* margin-bottom: 4%; */
 
 }
-
 
 button{
   margin-bottom: 10%;
@@ -354,29 +358,37 @@ header nav {
 }
 .container {
     width: 700px;
+    overflow-x: hidden;
 }
   .cta, .cta-text{
     display: flex;
     justify-content: center;
     size: 10px;
   }
-  .codeImage{
+  #codeImage {
     display: none;
   }
 
   .middle-img{
-    width: 98%;
+    width: 100%;
+    /* margin-top: 20%; */
   
   }
 
   .main-content {
     display: flex;
-    margin: 5%;
-    padding: 5%;
+    justify-content: space-evenly;
+
+    /* margin: 5%; */
+    /* padding: 5%;  */
+  }
+
+  .text-content {
+    margin-bottom: 2%;
   }
   .contact, footer{
     display: flex;
-    margin-left: 10%;
+    /* margin-left: 10%; */
     size: 10px;
 
   }
@@ -388,13 +400,16 @@ header nav {
 @media screen and (max-width: 500px) {
 
   .container {
-    width: 450px;
+    width: 500px;
+    overflow-x: hidden;
 
   } 
   header {
     display: flex;
     flex-direction: column;
     align-content: center;
+    margin:0%;
+    padding: 0%
     
 }
 header nav {
@@ -403,7 +418,7 @@ header nav {
   align-items: center;
 
 }
-    header nav a {
+header nav a {
     font-size: 18px;
     color: gray;
     display: flex;
@@ -412,22 +427,66 @@ header nav {
     margin: 0% 0% 0% 0%;
     line-height: 6%;
     padding: 3%;
-    border-bottom-style: solid;
-    border-bottom-color: gray;
-    border-bottom-width: 100%;
+    border-bottom: 1px solid gray;
+}
+
+.cta, .cta-text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  size:5px;
 }
 
 .main-content {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  text-align: left;
+  margin: 0%
 
 }
 .main-content div {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin: 20%;
+  text-align: left
+
+  /* margin: 20%; */
 
 }
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: 0%
+}
+
+.bottom-content {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 0%;
+    
+  
+}
+
+button{
+  display:flex;
+  justify-content: center;
+  padding: 3%;
+  margin: 23%;
+
+}
+
+.contact {
+  size: 10px;
+  margin: 0%;
+  padding-top: 3%;
+}
+
+.contact p {
+  margin: 0%;
+  padding-top: 2%;
+  padding-left: 0%;
+}
+
   }
