@@ -108,7 +108,6 @@ header .logo {
   font-size: 77px;
   margin-top: 120px;
   text-align: center;
-  padding: 0px 75px;
 
 }
 
@@ -120,12 +119,14 @@ header .logo {
   font-size: 17px;
   border: 1px solid black;
   cursor: pointer;
+
 }
 
 .cta .cta-text button:hover {
   background: black;
   color: white;
 }
+
 
 .cta img {
   margin-top: 69px;
@@ -284,14 +285,21 @@ flex-direction: column;
 /***** Media Queries: ******/
 
 @media screen and (max-width: 800px) {
-body {
-    width: 100%;
+
+header{
+  display: flex;
+  flex-direction: column-reverse;
+  width: 30%;
 }
 
 .logo{
-    display: flex;
-    
+  margin-left: 150px;
 }
+
+.text{
+  width: 5%;
+}
+
 
 }
 @media screen and (max-width: 500px){
@@ -341,7 +349,6 @@ a{
     display:flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
     
 }
 
@@ -355,7 +362,6 @@ a{
 }
 
 .cta-text{
-    display: flex;
     flex-direction: row;
     justify-content: center;
     text-align: center;
@@ -367,7 +373,6 @@ button{
     width: 50%;
     text-align: center;
     justify-content: center;
-    margin-left: 100px;
     height: 30px;
     border: 1px solid black;
     background: white;
@@ -389,11 +394,12 @@ button{
 .text-content{
    font-size: 20px;
    padding: 20px 0px;
+   text-align: center;
    
 }
 
 .middle-img{
-    width: 110%;
+    width: 90%;
     padding: 5px;
 }
 
