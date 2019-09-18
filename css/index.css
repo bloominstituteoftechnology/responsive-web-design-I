@@ -1,3 +1,260 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+a {
+  text-decoration: none;
+}
+/* END RESET */
+
+/*
+- set the width of the whole page
+- ensure content is displayed vertically
+*/
+
+body {
+  max-width: 880px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0 auto;
+}
+
+/*
+- space links and picture evenly and horizontally
+- give nav some space above and below
+
+*/
+body nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 80px;
+  margin: 30px 0;
+}
+body nav a {
+  color: grey;
+  width: 14%;
+  text-align: center;
+}
+
+/*
+- align header so that it's horizontal
+
+Note: You may notice I don't adjust the width sometimes. That's because I looked to see if that's necessary first by adding "border: 1px solid red;" to the element. If it naturally takes the full width, it's not necessary to tell it to.
+*/
+header {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+/* - Adjust the spacing around the "Innovation on Demand" and "Get Started" elements. */
+header section {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* - Style the "Innovation On Demand" text */
+header section h1 {
+  font-size: 48px;
+}
+
+/* - Style the "Get Started" button */
+header section button {
+  background: white;
+  width: 50%;
+  height: 32px;
+  font-size: 18px;
+  border: 1px solid black;
+}
+
+/* - Style the round code picture */
+header img {
+  width: 50%;
+}
+
+/* - Style the dividing bar */
+hr {
+  border: 1px solid black;
+  width: 100%;
+}
+
+/*
+- Make sure the content text sections are displayed horizontally
+- give containers space from code image bar
+*/
+.content-sections {
+  display: flex;
+}
+/* - Give content sub-sections space from one another */
+.sub-section {
+  margin: 20px 1%;
+}
+/* - Give space in between the content section, the contact section, and the footer */
+address {
+  margin: 20px 0;
+}
+/* - Space out the items in the contact section */
+address p {
+  padding: 5px 0;
+}
+
+/* - Center the footer */
+footer {
+  text-align: center;
+}
 
 
