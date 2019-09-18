@@ -108,6 +108,17 @@ a:hover{
 	display: flex;
 }
 
+@media only screen and (max-width:500px){
+    .header{
+        position: relative;
+        width:100%;
+    }
+
+    .main{
+        margin-top:0px;
+    }
+}
+
 .text-main, .img{
 	display: flex;
 	width:100%;
@@ -142,14 +153,24 @@ a:hover{
 	background-image: url("../img/header-img.png");
 	background-size:auto;
 	background-repeat:no-repeat;
-	background-position:center;
+    background-position:center;
 }
 
-@media only screen and(max-width:800px){
-    .middle-text{
-        display: flex;
-        flex-direction: column;
+@media only screen and (max-width:865px){
+    .img {
+        display: none;
     }
+}
+
+.middle-text{
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    width: 100%;
+    font-size: 1.3rem;
+    margin: 2% 0 2% 0;
+    padding: 0 0 2% 0;
+    border-bottom: 2px solid black;
 }
 
 .info-top{
@@ -275,6 +296,37 @@ ul{
 
 ul li {
 	margin: 2% 0 0 0;
+}
+
+@media only screen and (max-width: 800px){
+    .middle-text{
+        display: flex;
+        flex-direction: column;
+    }
+    .middle-text div{
+        margin: 2% 0 2% 0;
+    }
+    .features{
+        width:100%;
+    }
+    .about{
+        width: 100%;
+    }
+    .services{
+        width: 100%;
+    }
+    .product{
+        width: 100%;
+    }
+    .vision{
+        width: 100%;
+    }
+    body{
+        margin:0;
+    }
+    .header{
+        width: 100%;
+    }
 }
 
 
