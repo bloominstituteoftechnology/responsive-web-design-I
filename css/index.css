@@ -267,11 +267,8 @@ footer .copyright {
     width: 49%;
     padding: 45px 0;
 }
-.content-accent span {
-    background-image: url("https://raw.githubusercontent.com/LambdaSchool/User-Interface/master/great-idea-website/img/mid-page-accent.jpg");
-    height: 182px;
-    width: 872px;
-    display: block;
+.content-accent span img {
+    width: 100%;
 }
 .content-cta {
     border-bottom: 1px solid black;
@@ -371,7 +368,6 @@ footer .copyright {
     height: 300px;
 }
 
-
 @media(max-width: 800px) {
     .container {
         width: 800px;
@@ -416,26 +412,16 @@ footer .copyright {
     .hero-right span {
         display: none;
     }
-    .content-info {
-        padding-top: 45px;
-    }
+    .content-info {}
     .content-info .info-left,
     .content-info .info-right { }
-    .content-accent span {
-        height: auto;
-        width: 100%;
-    }
+    .content-accent span {}
     .content-info,
-    .content-cta {
-
-    }
+    .content-cta {}
     .content-info .info-left,
-    .content-info .info-right,
     .content-cta .cta-left,
-    .content-cta .cta-center,
-    .content-cta .cta-right{
-        width: 100%;
-        padding: 0 0 50px;
+    .content-cta .cta-center {
+        padding-right: 15px;
     }
 }
 
@@ -488,18 +474,18 @@ footer .copyright {
     }
     .content-info .info-left,
     .content-info .info-right { }
-    .content-accent span {
-        height: auto;
-        width: 100%;
-    }
+    .content-accent span {}
     .content-info,
     .content-cta {
         flex-direction: column;
     }
+}
+
+@media (max-width: 800px) and (max-width: 400px) {
     .content-info .info-left,
     .content-info .info-right,
-    .content-cta .cta-left,
     .content-accent,
+    .content-cta .cta-left,
     .content-cta .cta-center,
     .content-cta .cta-right{
         width: 100%;
