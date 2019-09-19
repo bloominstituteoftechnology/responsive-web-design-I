@@ -65,7 +65,7 @@ h1, h2, h3, h4, h5 {
 }
 
 html{
-    font-size: 62.5%
+    font-size: 65%;
 }
 .container {
 	max-width: 880px;
@@ -75,121 +75,127 @@ html{
 
   /* header */
 
-  header nav {
+header nav {
 	display: flex;
 	width: 78%;
 	margin-top: 35px;
 	justify-content: space-between;
   }
 
-  header nav a {
-	font-size: 1.4rem;
+header nav a {
+	font-size: 22px;
 	color: gray;
 	text-decoration: none;
   }
 
-  header nav a:hover {
+header nav a:hover {
 	text-decoration: underline;
   }
-  header {
+
+header {
 	  display:flex;
 	  justify-content: space-between;
 	  width: 100%;
-
   }
-  header .logo {
+
+header .logo {
 	display: inline-block;
     margin-top: 25px;
     margin-left: 5%;
   }
 
   /*innovation on demand block*/
-  .innovation {
+.innovation {
 	  width: 100%;
 	  display: flex;
 	  justify-content: space-around;
   }
-  .innovation .inntext {
+
+.innovation .inntext {
 	display: inline-block;
 	vertical-align: top;
-	font-size: 7.7rem;
+	font-size: 80px;
 	margin-top: 120px;
 	text-align: center;
 	padding: 0px 75px;
   }
 
-  .innovation .inntext button {
+.innovation .inntext button {
 	background: white;
 	vertical-align: top;
 	margin-top: 6px;
 	padding: 8px 44px;
-	font-size: 1.7rem;
+	font-size: 28px;
 	border: 1px solid black;
 	cursor: pointer;
   }
 
-  .innovation .inntext button:hover {
+.innovation .inntext button:hover {
 	background: black;
 	color: white;
   }
 
-  .innovation img {
+.innovation img {
 	display: inline-block;
 	margin-top: 69px;
   }
 
-  .maincontent {
+.maincontent {
 	margin-top: 76px;
 	padding-top: 39px;
   }
 
-  .maincontent .topcontent {
+.maincontent .topcontent {
     padding-top: 40px;
     border-top: 1px solid black;
-	  display:flex;
+	  display: flex;
 	  justify-content: space-between;
   }
-  .main-content h4{
-     font-size: 2.4rem;
+
+.main-content h4{
+     font-size: 30px;
   }
-  .main-content p{
-     font-size: 1.4rem;
+
+.main-content p{
+     font-size: 28px;
   }
-  .maincontent .topcontent .textcontent {
+
+.maincontent .topcontent .textcontent {
 	    width: 46%;
-
   }
 
-  .maincontent .middleimg {
+.maincontent .middleimg {
     width: 100%;
-    height:auto;
+    height: auto;
 	  margin-top: 45px;
   }
 
-  .maincontent .bottomcontent {
+.maincontent .bottomcontent {
 	  margin-top: 37px;
 	  display:flex;
     justify-content: space-between;
   }
 
-  .maincontent .bottomcontent .textcontent {
+.maincontent .bottomcontent .textcontent {
 	width: 31%;
   }
 
-  .contact {
+.contact {
 	margin-top: 57px;
 	border-top: 1px solid black;
 	padding: 39px 10px 0;
   }
 
-  .contact p {
+.contact p {
     margin: 20px 0;
     font-size: 1.4rem;
   }
-  .contact h4{
-      font-size: 2.4rem;
+
+.contact h4{
+      font-size: 21px;
   }
-  footer {
+
+footer {
 	margin: 32px 0;
 	text-align: center;
 	font-size: 14px;
@@ -198,7 +204,7 @@ html{
 /*tablet view*/
 @media only screen and (max-width: 800px) {
 
-    .innovation img {
+		.innovation img {
         display: none;
       }
 
@@ -214,58 +220,56 @@ html{
         flex-wrap: wrap;
         width: 100%;
         justify-content: center;
-
     }
 
     header .logo{
         order: -1;
         align-self: center;
-
     }
+
     .maincontent .topcontent .textcontent {
         width: 41%;
-
       }
+
     .maincontent{
         width: 100%;
-
     }
+
     .maincontent .topcontent{
         justify-content: space-around;
         max-width: 95%;
         margin-right: 2.5%;
         margin-left:2.5%;
     }
-    /* tablet view */
+
     .middleimg{
         width: 86%;
         height: auto;
         padding-right: 2.5%;
         padding-left:2.5%;
-
     }
+
     .container{
         width: 100%;
-
     }
+
     .maincontent .bottomcontent .textcontent {
         width: 24%;
-
-
     }
+
     .maincontent .bottomcontent{
         width: 100%;
         justify-content: space-around;
-
     }
+
     .contact{
         max-width: 90%;
         margin-left: 5%;
         margin-right: 5%;
         padding-left: 0%;
-
     }
 }
+
 /* mobile view*/
 
 @media only screen and (max-width: 500px) {
@@ -274,6 +278,7 @@ html{
             max-width: 100%;
             flex-direction: column;
         }
+
         header{
             display: flex;
             flex-direction: column;
@@ -283,44 +288,51 @@ html{
         header nav a{
             border-top: solid 1px;
             max-width: 100%;
-            font-size: 2.4rem;
+            font-size: 38px;
             text-align: center;
             padding-top: 20px;
             padding-bottom: 20px;
         }
+
         header .logo{
             order: -1;
             align-self: center;
         }
+
         .acontact{
             border-bottom: 1px solid;
         }
+
         .innovation{
             max-width: 100%;
         }
+
         .container{
            max-width: 100%;
             margin: 0 auto;
         }
+
         .maincontent{
             max-width: 100%;
             display: flex;
             flex-direction: column;
         }
+
         .contact{
             max-width: 90%;
             margin-left: 5%;
             margin-right: 5%;
             padding-left: 0%;
         }
+
         footer{
             max-width: 100%;
         }
+
         .middleimg{
             width: 80%;
             height: auto;
             padding-right: 4%;
-
             margin-left: 0%;
         }
 
@@ -331,12 +343,12 @@ html{
             margin-right: 5%;
             margin-left:5%;
         }
+
         .maincontent .topcontent .textcontent{
             width: 90%;
             margin-bottom: 20px;
-
-
         }
+
         .maincontent .bottomcontent{
             display: flex;
             flex-direction: column;
@@ -344,12 +356,13 @@ html{
             margin-right: 5%;
             margin-left:5%;
         }
+
         .maincontent .bottomcontent .textcontent{
             width: 90%;
             margin-bottom: 20px;
-
         }
+
         .innovation{
             max-width:100%;
         }
-} 
+}
