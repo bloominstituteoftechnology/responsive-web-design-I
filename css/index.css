@@ -244,14 +244,14 @@ footer {
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
+    margin-top: 60px;
   }
   
   body nav div {
-    display: flex;
-    flex-direction: column-reverse;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    position: absolute;
+    top: 0px;
+    padding: 10px;
+    margin: 15px;
   }
 
   header section {
@@ -272,26 +272,23 @@ footer {
 @media (max-width: 500px) {
 
   body nav {
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-content: center;
     height: 50%;
-    margin-top: 50px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    border-top: 1px solid black;
   }
 
   body nav a {
     border-bottom: 1px solid black;
     padding: 10px;
+    margin-top: 20px;
   }
 
   body nav div {
-    flex-direction: column;
-    flex-wrap: wrap-reverse;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    border-bottom: 1px solid black;
-    width: 100%;
-    padding: 10px;
+    position: absolute;
+    margin: 10px;
   }
 
   .content-sections {
