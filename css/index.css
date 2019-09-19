@@ -176,8 +176,6 @@ a:hover {
 /* end of navigation bar and logo */
 
 /* header, button and image */
-
-
 .header-content {
 	/* border: 2px solid black; used for debugging */
 	display: flex;	
@@ -208,32 +206,31 @@ a:hover {
 	font-weight: bold;
 	cursor: pointer;
 }
+/* end of header, button and image */
+/* end of header */
 
 hr {
 	border: .04em solid black;
 }
 
-/* end of header, button and image */
-.site-content {
-	padding-top: 4%;
+.cards {
+	display: flex;
+	padding: 2% 0;
+	;
 }
-
-.site-content_row1 {
-	display: inline-block;
+.card-row1 {
+	/* border: 2px solid blue; for debugging */
 	width: 49%;
 }
 
 .middle-img {
 	padding-top: 3%;
-	height: 300px;
-	width: 98%;
+	height: 100%;
+	width: 100%;
 }
 
-.section-content_row3 {
-	display: inline-block;
-	padding-top: 5%;
-	width: 33%;
-	padding-bottom: 5%;
+.card-row3 {
+	width: 35%;
 }
 
 .section-contact {
@@ -243,11 +240,12 @@ hr {
 footer {
 	padding-top: 5%;
 	text-align: center;
+	padding-bottom: 10%;
 }
 
 /* Responsive  Design*/
 
-/* tablet */
+/* tablet view */
 @media only screen and  (max-width: 800px) {
 
 
