@@ -1,3 +1,227 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
 
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+.top-bar{display: flex;
+flex-wrap: wrap;
+padding: 1%;
+margin-left: 1%;}
+html, body {
+    height: 100%;
+    font-family: sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.container {
+  width: 90%;
+  /* TB LR */
+  margin: 0 auto;
+}
+@media(max-width: 1000px){.container .top-bar{display: flex;
+flex-wrap: wrap;
+padding: 1%;
+margin-left: 1%;}}
+@media(max-width: 700px){.container .top-bar {display: flex;
+  flex-direction: column-reverse;
+justify-content:center;
+align-items: center;
+  margin-top: 20px;}
+.container.logo {align items: center;
+  margin-bottom: 0 auto;
+width: 100%;}
+.container nav{ padding-top: 10px;}
+.container nav a {padding: 1px;
+color: black;
+text-decoration: none;
+font-size: 16px;}
+
+.container .cta-text { position: relative;
+  ?background: grey;
+ /* margin-left: 100px;*/
+  height:350px;
+  font-size:75px;
+  font-family:"Bangers";
+  text-align: center;
+   width: 100%;
+  margin: 0 auto}
+.container .code-image{display: none;}
+  .top-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+  .head1 {width:47%;
+  padding: 2%}
+} 
+
+@media(max-width: 400px){ .container .top-bar{width: 100%;
+ background:grey;
+  /*text-align: center;*/
+  /*justify-content: center;*/}
+  .container nav a {display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 2%;
+  width: 100%;}
+ nav a {
+        border-top: 1px solid silver;
+    }
+    nav a:last-child {
+      border-bottom: 1px solid silver;}
+  .head1{width: 100%;}
+  .container .top-content{display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;}
+  .middle-img{width: 100%}
+  .bottom-content{display:flex;
+  flex-direction: column;
+  padding: 5%;
+  margin-bottom: 5%;}}
+/* header */
+
+header nav {
+
+  width: 650px;
+  vertical-align: top;
+  margin-top: 30px;
+}
+
+header nav a {
+  margin-right: 40px;
+  font-size: 16px;
+  color: gray;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+
+header .logo {
+  margin-top: 15px;
+}
+
+/* cta */
+
+ .cta-text {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 77px;
+  font-family: Bangers;
+  margin-top: 70px;
+  text-align: center;
+  padding: 20px 75px;
+}
+
+ .cta-text button {
+  background: white;
+  vertical-align: top;
+  margin-top: 15px;
+  padding: 8px 44px;
+  font-size: 17px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+ .cta-text button:hover {
+  background: black;
+  color: white;
+}
+
+.code-image {
+  display: inline-block;
+  margin-top: 40px;
+  
+}
+
+.top-content{display:flex;
+  justify-content: center;
+  margin-top: 20px;
+  padding-top:20px;
+  border-top: solid black;
+}
+.bottom-content{display:flex;
+justify-content: space-evenly;
+margin-top: 20px;}
+
+.middle-img {
+  margin-left: 25px;
+  margin-top: 45px;
+}
+
+.contact {
+  margin-top: 57px;
+  border-top: 1px solid black;
+  padding: 39px 10px 0;
+}
+
+.contact p {
+  margin: 20px 0;
+}
+
+footer {
+  margin: 32px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
