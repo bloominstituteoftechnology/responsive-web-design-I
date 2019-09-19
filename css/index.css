@@ -176,9 +176,6 @@ header {
 .ojt{
 	display: flex;
 	flex-wrap: wrap;
-	
-	
-	
 }
 .ojt div{
 	width: 47%;
@@ -220,9 +217,25 @@ padding: 5%;
 		
 	}
 	@media (max-width:500px){
-		.theer div{
-			background: red;
+		.container{
+			margin: 0 ;
+
 		}
+		.ojt div{
+			width:500px;
+			background: red;
+			color:white;
+			
+		}
+
+	}
+	@media(min-width:1000px){
+		.ojt div{
+		 width:	80%;
+		}
+		.container{
+			width: 300px;
+			margin: 0 ;
 
 	}
    
