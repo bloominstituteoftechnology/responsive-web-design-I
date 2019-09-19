@@ -1,3 +1,351 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: 'Bangers', cursive;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+.container {
+	width: 50%;
+	margin:  0 auto;
+}
+
+.nav-bar {
+	margin: 1%;
+	padding: 1%;
+	padding-bottom: 5%;
+}
+
+.nav-bar a {
+	color: lightgray;
+	text-decoration: none;
+}
+
+.links {
+	margin-left: 7%;
+}
+
+.logo {
+	margin-left: 9.6%;
+}
+
+/* hover effect for navigation links */
+a:hover {
+	font-weight: bolder;
+	color: black;
+}
+
+/* end of navigation bar and logo */
+
+/* header, button and image */
+
+header {
+	display: flex;
+}
+.header-content h1 {
+	font-size: 6em;
+}
+
+.header-content {
+	/* display: inline-block; */
+	vertical-align: middle;
+	/* width: 48%; */
+	text-align: center;
+}
+
+.header-content img {
+	vertical-align: top;
+	padding-bottom: 10%;
+}
+
+.header-content button {
+	border: 1px solid black;
+	background-color: white;
+	width: 45%;
+	padding: 1.5%;
+}
+
+.header-content button:hover {
+	color: white;
+	background-color: blue;
+	/* font-weight: bold; */
+	cursor: pointer;
+
+}
+
+hr {
+	border: .04em solid black;
+}
+
+/* end of header, button and image */
+.site-content {
+	padding-top: 4%;
+}
+
+.site-content_row1 {
+	display: inline-block;
+	width: 49%;
+}
+
+.middle-img {
+	padding-top: 3%;
+	height: 300px;
+	width: 98%;
+}
+
+.section-content_row3 {
+	display: inline-block;
+	padding-top: 5%;
+	width: 33%;
+	padding-bottom: 5%;
+}
+
+.section-contact {
+	padding-top: 3%;
+}
+
+footer {
+	padding-top: 5%;
+	text-align: center;
+}
+
+/* Responsive  Design*/
+
+/* tablet */
+@media only screen and  (max-width: 800px) {
 
 
+
+}
+
+/* mobile  */
+@media only screen and (max-width: 500px) {
+/* Header */
+	nav {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		align-items: center;
+	}
+
+	.logo {
+		order: 1;
+		padding: 0 0 4%;
+		width: 60%;
+	}
+
+	.links {
+		order: 2;
+		border-top: 1px solid black;
+		padding: 2% 35%;
+	}
+
+	a:last-of-type {
+		border-bottom: 1px solid black;
+	}
+
+	.header-content {
+		padding: 0 15%;
+	}
+
+	.header-content img{
+		display: none;
+		
+	}
+
+	.header-content h1 {
+		font-size: 2rem;
+		
+	}
+
+	.header-content button {
+		width: 100%;
+		margin: 0 0 0 11%;
+		
+
+	}
+	
+	/* end of header */
+
+	/* content section */
+	.site-content {
+	display: flex;
+	flex-direction: column;	
+	}
+	.card-space {
+		padding-bottom: 2%;
+	}
+
+	.middle-img {
+		height: 80%;
+		padding: 15% 0;
+	}
+
+	footer {
+		padding: 20% 0;
+	}
+/* end of content section */
+
+  
+}
+/* end of mobile design */
+
+
+
+
+
+/* end of responsive design */
+
+/* navigation bar and logo */
