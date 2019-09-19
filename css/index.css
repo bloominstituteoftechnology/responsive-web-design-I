@@ -48,7 +48,7 @@ table {
 	border-spacing: 0;
 }
 
-/* Set every element's box-sizing to border-box */
+/* *every element */
 * {
     box-sizing: border-box;
 }
@@ -64,125 +64,292 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* Your code starts here! */
-
-#wrap {
-  width: 900px;
-  margin: 0 auto;
+html{
+    font-size: 62.5%
 }
+.container {
+	max-width: 880px;
+	/* TB LR */
+	margin: 0 auto;
+  }
 
-nav {
-  font-color: #A9A9A9;
-  background-color: #ffffff;
-  padding: 0px 10px 0px 50px;
-  font-size: 20px;
-  position: fixed;
-  font-family: 'Titillium Web', sans-serif;
-}
+  /* header */
 
-a {
-  color: #A9A9A9;
-  display: inline-block;
-  padding: 45px 55px 40px 0px;
-  font-size: 16px;
-  text-decoration: none;
-}
+  header nav {
+	display: flex;
+	width: 78%;
+	margin-top: 35px;
+	justify-content: space-between;
+  }
 
-a:hover {
-  background-color: #f2f2f2;
-  color: #333333;
-}
+  header nav a {
+	font-size: 1.4rem;
+	color: gray;
+	text-decoration: none;
+  }
 
-.innovation {
-  display: inline-block;
-  padding: 0px 150px 0px 80px;
-  text-align: center;
-  margin: 20% -7% 0% 5%;
-}
+  header nav a:hover {
+	text-decoration: underline;
+  }
+  header {
+	  display:flex;
+	  justify-content: space-between;
+	  width: 100%;
 
-.innocontent {
-  font-size: 70px;
-  margin: 0% 0% 6% 0%;
-}
+  }
+  header .logo {
+	display: inline-block;
+    margin-top: 25px;
+    margin-left: 5%;
+  }
 
-button {
-  background-color: transparent;
-  padding: 10px 35px 10px 35px;
-  margin: 0px 0px 150px 0px;
-  border-color: #000000;
-}
+  /*innovation on demand block*/
+  .innovation {
+	  width: 100%;
+	  display: flex;
+	  justify-content: space-around;
+  }
+  .innovation .inntext {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 7.7rem;
+	margin-top: 120px;
+	text-align: center;
+	padding: 0px 75px;
+  }
 
-hr {
-  width: 99%;
-  border: solid 1px black;
-}
+  .innovation .inntext button {
+	background: white;
+	vertical-align: top;
+	margin-top: 6px;
+	padding: 8px 44px;
+	font-size: 1.7rem;
+	border: 1px solid black;
+	cursor: pointer;
+  }
 
-.great {
-  margin: 0px 0px 0px 25px;
-}
+  .innovation .inntext button:hover {
+	background: black;
+	color: white;
+  }
 
-.innovation {
-  display: inline-block;
-  padding: 0px 150px 0px 60px;
-  text-align: center;
-  margin: 20% -9% 0% 3%;
-}
+  .innovation img {
+	display: inline-block;
+	margin-top: 69px;
+  }
 
-.snippet {
-  margin: 0% 0% -5% 0%;
-}
+  .maincontent {
+	margin-top: 76px;
+	padding-top: 39px;
+  }
 
-.topbox {
-  text-align: left;
-}
+  .maincontent .topcontent {
+    padding-top: 40px;
+    border-top: 1px solid black;
+	  display:flex;
+	  justify-content: space-between;
+  }
+  .main-content h4{
+     font-size: 2.4rem;
+  }
+  .main-content p{
+     font-size: 1.4rem;
+  }
+  .maincontent .topcontent .textcontent {
+	    width: 46%;
 
-.features {
-  display: inline-block;
-  width: 49%;
-  padding: 5% 0% 5% 0%;
-  margin: 0px 5px 0px 0px;
-}
+  }
 
-.about {
-  display: inline-block;
-  width: 50%;
-  padding: 5% 0% 5% 0%;
-}
+  .maincontent .middleimg {
+    width: 100%;
+    height:auto;
+	  margin-top: 45px;
+  }
 
-.midaccent{
-  width: 900px;
-  margin: 0% 0% 3% 0%;
-}
+  .maincontent .bottomcontent {
+	  margin-top: 37px;
+	  display:flex;
+    justify-content: space-between;
+  }
 
-.bottom {
-  text-align: left;
-}
+  .maincontent .bottomcontent .textcontent {
+	width: 31%;
+  }
 
-.services {
-  display: inline-block;
-  width: 33%;
-  padding: 3% 3% 3% 0%;
-}
+  .contact {
+	margin-top: 57px;
+	border-top: 1px solid black;
+	padding: 39px 10px 0;
+  }
 
-.products {
-  display: inline-block;
-  width: 33%;
-  padding: 3% 3% 3% 0%
-}
+  .contact p {
+    margin: 20px 0;
+    font-size: 1.4rem;
+  }
+  .contact h4{
+      font-size: 2.4rem;
+  }
+  footer {
+	margin: 32px 0;
+	text-align: center;
+	font-size: 14px;
+  }
 
-.vision {
-  display: inline-block;
-  width: 33%;
-  padding: 3% 1% 0% 0%
-}
+/*tablet view*/
+@media only screen and (max-width: 800px) {
 
-.contact {
-  text-align: left;
-  margin: 5% 0% 5% 0%;
-}
+    .innovation img {
+        display: none;
+      }
 
-footer {
-  text-align: center;
-  margin: 0% 0% 12% 0%;
-  font-size: 15px;
+    header nav{
+        width: 100%;
+        justify-content: space-around;
+        margin-left:0;
+        margin-right:0;
+    }
+
+    header{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+
+    }
+
+    header .logo{
+        order: -1;
+        align-self: center;
+
+    }
+    .maincontent .topcontent .textcontent {
+        width: 41%;
+
+      }
+    .maincontent{
+        width: 100%;
+
+    }
+    .maincontent .topcontent{
+        justify-content: space-around;
+        max-width: 95%;
+        margin-right: 2.5%;
+        margin-left:2.5%;
+    }
+    /* tablet view */
+    .middleimg{
+        width: 86%;
+        height: auto;
+        padding-right: 2.5%;
+        padding-left:2.5%;
+
+    }
+    .container{
+        width: 100%;
+
+    }
+    .maincontent .bottomcontent .textcontent {
+        width: 24%;
+
+
+    }
+    .maincontent .bottomcontent{
+        width: 100%;
+        justify-content: space-around;
+
+    }
+    .contact{
+        max-width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding-left: 0%;
+
+    }
 }
+/* mobile view*/
+
+@media only screen and (max-width: 500px) {
+
+        header nav{
+            max-width: 100%;
+            flex-direction: column;
+        }
+        header{
+            display: flex;
+            flex-direction: column;
+            max-width: 100%;
+        }
+
+        header nav a{
+            border-top: solid 1px;
+            max-width: 100%;
+            font-size: 2.4rem;
+            text-align: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        header .logo{
+            order: -1;
+            align-self: center;
+        }
+        .acontact{
+            border-bottom: 1px solid;
+        }
+        .innovation{
+            max-width: 100%;
+        }
+        .container{
+           max-width: 100%;
+            margin: 0 auto;
+        }
+        .maincontent{
+            max-width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .contact{
+            max-width: 90%;
+            margin-left: 5%;
+            margin-right: 5%;
+            padding-left: 0%;
+        }
+        footer{
+            max-width: 100%;
+        }
+        .middleimg{
+            width: 80%;
+            height: auto;
+            padding-right: 4%;
+
+            margin-left: 0%;
+        }
+
+        .maincontent .topcontent{
+            display: flex;
+            flex-direction: column;
+            max-width: 90%;
+            margin-right: 5%;
+            margin-left:5%;
+        }
+        .maincontent .topcontent .textcontent{
+            width: 90%;
+            margin-bottom: 20px;
+
+
+        }
+        .maincontent .bottomcontent{
+            display: flex;
+            flex-direction: column;
+            max-width: 90%;
+            margin-right: 5%;
+            margin-left:5%;
+        }
+        .maincontent .bottomcontent .textcontent{
+            width: 90%;
+            margin-bottom: 20px;
+
+        }
+        .innovation{
+            max-width:100%;
+        }
+} 
