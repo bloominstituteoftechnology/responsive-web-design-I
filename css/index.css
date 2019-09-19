@@ -55,11 +55,11 @@ table {
 
 html, body {
     height: 100%;
-    font-family: 'Barlow Condensed', 'Titillium Web', sans-serif;
+    font-family: 'Titillium Web', 'Barlow Condensed', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
-    font-family: 'Montserrat', 'Bangers', cursive;
+    font-family: 'Bangers', 'Montserrat', cursive;
     letter-spacing: 1px;
     margin-bottom: 15px;
 }
@@ -72,12 +72,12 @@ h1, h2, h3, h4, h5 {
 }
 
 header {
-    background-color: #efefef;
-    position: fixed;
-    top: 0;
+    /*background-color: #efefef;*/
+    /*position: fixed;*/
+    /*top: 0;*/
     width: 100%;
     z-index: 10000;
-    box-shadow: 0 0 10px 0 #a9a9a9;
+    /*box-shadow: 0 0 10px 0 #a9a9a9;*/
 }
 header .container {
     display: flex;
@@ -91,7 +91,15 @@ header .container {
     color: #6f6f6f;
     text-decoration: none;
     width: 16%;
-    /*display: inline-block;*/
+    position: relative;
+    padding: 40px 0;
+    text-align: center;
+}
+/*
+.header-nav a {
+    color: #6f6f6f;
+    text-decoration: none;
+    width: 16%;
     position: relative;
     padding: 40px 0;
     text-align: center;
@@ -123,6 +131,7 @@ header .container {
     background-color: #dfdfdf;
     color: transparent;
 }
+ */
 .header-logo {
     vertical-align: middle;
     display: flex;
@@ -151,18 +160,19 @@ footer .copyright {
     margin-top: 45px;
 }
 .content-section {
-    margin-top: 105px;
+    /*margin-top: 105px;*/
     width: 100%;
 }
 .content-section .container {
     display: flex;
     flex-direction: column;
 }
+
+/*
 .bttn {
     font-size:20px;
     padding: 8px 30px 9px;
     text-transform:uppercase;
-    /*display:inline-block;*/
     text-align:center;
     border:2px solid gray;
     position:relative;
@@ -189,6 +199,7 @@ footer .copyright {
     right:0;
     opacity:1;
 }
+*/
 
 /* Home Page */
 .content-hero {
@@ -203,6 +214,8 @@ footer .copyright {
     width: 56%;
 }
 .content-hero .hero-left .hero-text {
+    display: flex;
+    flex-direction: column;
 }
 .content-hero .hero-left .hero-text h1 {
     font-size: 70px;
@@ -211,8 +224,13 @@ footer .copyright {
     line-height: 90%;
 }
 .content-hero .hero-left .hero-text .hero-button {
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
 }
+.hero-button span.bttn {
+    border: 1px solid black;
+    padding: 4px 45px;
+}
+/*
 .hero-button span.bttn {
     color: #000;
     text-decoration:none;
@@ -223,6 +241,7 @@ footer .copyright {
 .hero-button span.bttn:focus {
     color: #fff;
 }
+ */
 .content-hero .hero-right {
     width: 379px;
 }
@@ -231,6 +250,7 @@ footer .copyright {
     min-width: 250px;
     vertical-align: middle;
     display: flex;
+    flex-direction: column;
 }
 .hero-right span {
     background-image: url("https://raw.githubusercontent.com/LambdaSchool/User-Interface/master/great-idea-website/img/header-img.png");
@@ -297,10 +317,15 @@ footer .copyright {
     align-items: baseline;
 }
 .services-list .more {
+    background: #ffffff;
+    padding: 8px 9px;
+    border:2px solid gray;
+    border-radius: 4px;
     text-align: center;
     margin-top: 20px;
     font-size: 12px;
 }
+/*
 .services-list span.bttn {
     color: #000;
     background-color: #fff;
@@ -313,6 +338,7 @@ footer .copyright {
 .services-list span.bttn:focus {
     color: #fff;
 }
+ */
 .services-list,
 .services-facts {
     border-top: 1px solid #000;
@@ -343,4 +369,140 @@ footer .copyright {
     background-image: url("../img/services-info.png");
     width: 420px;
     height: 300px;
+}
+
+
+@media(max-width: 800px) {
+    .container {
+        width: 800px;
+        padding: 0 6%;
+    }
+    .header {
+
+    }
+    .header .container {
+        flex-direction: column;
+    }
+    .header .header-nav {
+
+    }
+    .header .container,
+    .header .header-nav {
+        padding: 0;
+    }
+    .header .header-nav a {}
+    .header .header-logo {
+        order: -5;
+    }
+    .header .header-logo a {
+        flex-direction: column;
+        width: 100%;
+    }
+    .header .header-nav,
+    .header .header-logo {
+        width: 100%;
+    }
+    .header .header-nav a,
+    .header .header-logo a {
+        padding: 20px 0;
+    }
+    .content-hero {
+        flex-direction: column;
+    }
+    .content-hero .hero-left {
+        max-width: 100%;
+        width: 100%;
+    }
+    .hero-right span {
+        display: none;
+    }
+    .content-info {
+        padding-top: 45px;
+    }
+    .content-info .info-left,
+    .content-info .info-right { }
+    .content-accent span {
+        height: auto;
+        width: 100%;
+    }
+    .content-info,
+    .content-cta {
+
+    }
+    .content-info .info-left,
+    .content-info .info-right,
+    .content-cta .cta-left,
+    .content-cta .cta-center,
+    .content-cta .cta-right{
+        width: 100%;
+        padding: 0 0 50px;
+    }
+}
+
+@media(max-width: 400px) {
+    .container {
+        width: 400px;
+        padding: 0 6%;
+    }
+    .header {
+
+    }
+    .header .container {}
+    .header .container,
+    .header .header-nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+    .header .header-nav {
+
+    }
+    .header .header-nav a {}
+    .header .header-logo {
+        order: -5;
+    }
+    .header .header-logo a {}
+    .header .header-nav,
+    .header .header-logo {
+        width: 100%;
+    }
+    .header .header-nav a,
+    .header .header-logo a {
+        padding: 20px 0;
+        border-bottom: 1px solid gray;
+        width: 100%;
+        flex-direction: column;
+    }
+    .content-hero {
+        flex-direction: column;
+    }
+    .content-hero .hero-left {
+        max-width: 100%;
+        width: 100%;
+    }
+    .hero-right span {
+        display: none;
+    }
+    .content-info {
+        padding-top: 45px;
+    }
+    .content-info .info-left,
+    .content-info .info-right { }
+    .content-accent span {
+        height: auto;
+        width: 100%;
+    }
+    .content-info,
+    .content-cta {
+        flex-direction: column;
+    }
+    .content-info .info-left,
+    .content-info .info-right,
+    .content-cta .cta-left,
+    .content-accent,
+    .content-cta .cta-center,
+    .content-cta .cta-right{
+        width: 100%;
+        padding: 0 0 50px;
+    }
 }
