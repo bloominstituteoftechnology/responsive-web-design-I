@@ -1,3 +1,500 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed|Montserrat|Bangers|Titillium+Web&display=swap');
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', 'Barlow Condensed', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', 'Montserrat', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+.container {
+    width: 876px;
+    margin: 0 auto;
+}
+
+header {
+    /*background-color: #efefef;*/
+    /*position: fixed;*/
+    /*top: 0;*/
+    width: 100%;
+    z-index: 10000;
+    /*box-shadow: 0 0 10px 0 #a9a9a9;*/
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+}
+.header-nav {
+    width: 78%;
+    display: flex;
+}
+.header-nav a {
+    color: #6f6f6f;
+    text-decoration: none;
+    width: 16%;
+    position: relative;
+    padding: 40px 0;
+    text-align: center;
+}
+/*
+.header-nav a {
+    color: #6f6f6f;
+    text-decoration: none;
+    width: 16%;
+    position: relative;
+    padding: 40px 0;
+    text-align: center;
+}
+.header-nav a:before {
+    position: absolute;
+    width: 100%;
+    height: 0px;
+    left: 0px;
+    bottom: 0px;
+    content: '';
+    background: #cfcfcf;
+    opacity: 0.3;
+    transition: all 0.5s;
+}
+.header-nav a:hover {
+    color: #000;
+}
+.header-nav a:hover:before {
+    height: 100%;
+}
+.header-nav a.active,
+.header-nav a.active:active {
+    background-color: #afafaf;
+    color: #fff;
+}
+.header-nav a.active::before,
+.header-nav a.active:active:before {
+    background-color: #dfdfdf;
+    color: transparent;
+}
+ */
+.header-logo {
+    vertical-align: middle;
+    display: flex;
+}
+.header-logo a {
+    display: flex;
+    align-items: center;
+}
+.header-logo a span {
+    background-image: url("https://raw.githubusercontent.com/LambdaSchool/User-Interface/master/great-idea-website/img/logo.png");
+    height: 36px;
+    width: 183px;
+}
+footer {
+    padding: 45px 0;
+}
+footer p {
+    padding-bottom: 15px;
+    margin-right: 15px;
+}
+footer .office-info {
+    display: flex;
+}
+footer .copyright {
+    text-align: center;
+    margin-top: 45px;
+}
+.content-section {
+    /*margin-top: 105px;*/
+    width: 100%;
+}
+.content-section .container {
+    display: flex;
+    flex-direction: column;
+}
+
+/*
+.bttn {
+    font-size:20px;
+    padding: 8px 30px 9px;
+    text-transform:uppercase;
+    text-align:center;
+    border:2px solid gray;
+    position:relative;
+}
+.bttn:before {
+    transition:0.5s all ease;
+    position:absolute;
+    top:0;
+    left:50%;
+    right:50%;
+    bottom:0;
+    opacity:0;
+    content:'';
+    background-color:red;
+    z-index:-2;
+}
+.bttn:hover,
+.bttn:hover:before,
+.bttn:focus,
+.bttn:focus:before {
+    border: 2px solid red;
+    transition:0.5s all ease;
+    left:0;
+    right:0;
+    opacity:1;
+}
+*/
+
+/* Home Page */
+.content-hero {
+    margin-top: 55px;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+.content-hero .hero-left {
+    text-align: center;
+    width: 56%;
+}
+.content-hero .hero-left .hero-text {
+    display: flex;
+    flex-direction: column;
+}
+.content-hero .hero-left .hero-text h1 {
+    font-size: 70px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    line-height: 90%;
+}
+.content-hero .hero-left .hero-text .hero-button {
+    /*text-transform: uppercase;*/
+}
+.hero-button span.bttn {
+    border: 1px solid black;
+    padding: 4px 45px;
+}
+/*
+.hero-button span.bttn {
+    color: #000;
+    text-decoration:none;
+    transition: 0.5s ease all;
+    border-radius: 4px;
+}
+.hero-button span.bttn:hover,
+.hero-button span.bttn:focus {
+    color: #fff;
+}
+ */
+.content-hero .hero-right {
+    width: 379px;
+}
+.content-hero .hero-left,
+.content-hero .hero-right {
+    min-width: 250px;
+    vertical-align: middle;
+    display: flex;
+    flex-direction: column;
+}
+.hero-right span {
+    background-image: url("https://raw.githubusercontent.com/LambdaSchool/User-Interface/master/great-idea-website/img/header-img.png");
+    height: 379px;
+    width: 379px;
+}
+.content-info {
+    border-top: 1px solid black;
+    margin-top: 80px;
+    display: flex;
+}
+.content-info .info-left,
+.content-info .info-right {
+    width: 49%;
+    padding: 45px 0;
+}
+.content-accent span img {
+    width: 100%;
+}
+.content-cta {
+    border-bottom: 1px solid black;
+    display: flex;
+}
+.content-cta .cta-left,
+.content-cta .cta-center,
+.content-cta .cta-right {
+    width: 33%;
+    padding: 45px 0;
+}
+
+/* Services Page*/
+.services-leading .services-header {
+    display: flex;
+}
+.services-header-img {
+    background-image: url("../img/services-header.jpg");
+    width: 880px;
+    height: 200px;
+    display: flex;
+}
+.services-header-info {
+    padding: 45px 0;
+}
+.services-header-info,
+.services-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.services-list {
+    padding: 45px 0 14px;
+}
+.services-list .card {
+    background-color: #efefef;
+    border: 2px solid #7f7f7f;
+    padding: 20px;
+    width: 48%;
+    margin-bottom: 34px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+.services-list .more {
+    background: #ffffff;
+    padding: 8px 9px;
+    border:2px solid gray;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+}
+/*
+.services-list span.bttn {
+    color: #000;
+    background-color: #fff;
+    text-decoration:none;
+    transition: 0.5s ease all;
+    border-radius: 4px;
+    z-index: 0;
+}
+.services-list span.bttn:hover,
+.services-list span.bttn:focus {
+    color: #fff;
+}
+ */
+.services-list,
+.services-facts {
+    border-top: 1px solid #000;
+}
+.services-facts {
+    padding: 45px 0 0;
+}
+.facts-info {
+    display: flex;
+}
+.facts-info p {
+    padding-right: 30px;
+    margin-bottom: 15px;
+}
+.facts-info ul {
+    padding-left: 20px;
+}
+.facts-info ul li {
+    list-style-type: square;
+}
+.facts-info-left,
+.facts-info-right {
+}
+.facts-info-right {
+    display: flex;
+}
+.facts-info-right .services-info-img {
+    background-image: url("../img/services-info.png");
+    width: 420px;
+    height: 300px;
+}
+
+@media(max-width: 1000px) {
+    .container {
+        width: 1000px;
+        padding: 0 2%;
+    }
+}
+@media(max-width: 800px) {
+    .container {
+        width: 800px;
+        padding: 0 6%;
+    }
+    .header {
+
+    }
+    .header .container {
+        flex-direction: column;
+    }
+    .header .header-nav {
+
+    }
+    .header .container,
+    .header .header-nav {
+        padding: 0;
+    }
+    .header .header-nav a {}
+    .header .header-logo {
+        order: -5;
+    }
+    .header .header-logo a {
+        flex-direction: column;
+        width: 100%;
+    }
+    .header .header-nav,
+    .header .header-logo {
+        width: 100%;
+    }
+    .header .header-nav a,
+    .header .header-logo a {
+        padding: 20px 0;
+    }
+    .content-hero {
+        flex-direction: column;
+    }
+    .content-hero .hero-left {
+        max-width: 100%;
+        width: 100%;
+    }
+    .hero-right span {
+        display: none;
+    }
+    .content-info {}
+    .content-info .info-left,
+    .content-info .info-right { }
+    .content-accent span {}
+    .content-info,
+    .content-cta {}
+    .content-info .info-left,
+    .content-cta .cta-left,
+    .content-cta .cta-center {
+        padding-right: 15px;
+    }
+}
+
+@media(max-width: 400px) {
+    .container {
+        width: 400px;
+        padding: 0 6%;
+    }
+    .header {
+
+    }
+    .header .container {}
+    .header .container,
+    .header .header-nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+    .header .header-nav {
+
+    }
+    .header .header-nav a {}
+    .header .header-logo {
+        order: -5;
+    }
+    .header .header-logo a {}
+    .header .header-nav,
+    .header .header-logo {
+        width: 100%;
+    }
+    .header .header-nav a,
+    .header .header-logo a {
+        padding: 20px 0;
+        border-bottom: 1px solid gray;
+        width: 100%;
+        flex-direction: column;
+    }
+    .content-hero {
+        flex-direction: column;
+    }
+    .content-hero .hero-left {
+        max-width: 100%;
+        width: 100%;
+    }
+    .hero-right span {
+        display: none;
+    }
+    .content-info {
+        padding-top: 45px;
+    }
+    .content-info .info-left,
+    .content-info .info-right { }
+    .content-accent span {}
+    .content-info,
+    .content-cta {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 800px) and (max-width: 400px) {
+    .content-info .info-left,
+    .content-info .info-right,
+    .content-accent,
+    .content-cta .cta-left,
+    .content-cta .cta-center,
+    .content-cta .cta-right{
+        width: 100%;
+        padding: 0 0 50px;
+    }
+}
