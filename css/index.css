@@ -1,3 +1,263 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+img{
+	background:aqua;
+	border-radius: 18px;
+}
+.container{
+	width: 90%;
+	margin: 5rem;
+}
+.navigation{
+	background: lightblue;
+}
+.navigation a{
+	margin: 20px;
+	display: inline;
+	padding: 40px;
+	text-decoration: none;
+	font-size: 16px;
+	
+	border-radius: 2px;
+}
+.navigation a:hover{
+	background: white;
+	color:red;
+}
+.nav2{
+	
+	display: flex;
+	justify-content: space-around;
+	font-size: 16px;
+
+}
+.nav2 a{
+	text-decoration: none;
+}
+header {
+	display: flex;
+	justify-content: center;
+
+}
+.services-header-img{
+	width: 90%;
+}
+.second{
+	margin: 2%;
+	
+}
+.second .left{
+	
+	font-size: 50px;
+	display: inline-block;
+	padding: 40px;
+	margin-bottom: 5px;
+	width: 43%;
+}
+.second .left button{
+	margin: 60px;
+	border: 1px solid black;
+	vertical-align: center;
+	width: 43%;
+
+}
+.innovation{
+	font-size: 50px;
+	padding:1%;
+	margin-top: 5%;
+	vertical-align: center;
+}
+	.second .rigth {
+	vertical-align: center;
+	display: inline-block;	
+	width: 43%;
+	padding: 30px;
+	
+	
+}
+.theer{
+	display: inline;
+	
+
+}
+.theer div{
+	width: 450px;
+	height: 90px;
+	margin: 10px;
+	padding: 40px;
+	display:inline-block;
+	
+}
+.middle-img{
+ margin: 20px;
+ padding: 30px;
+}
+.for{
+	width: 80%;
+}
+.for div{
+	width: 250px;
+	height: 2px;
+	margin-left:30px; 
+	padding: 20px;
+	display:inline-block;
+}
+.five{
+	width: 80%;
+	margin: 20px;
+	padding: 20px;
+}
+.five  span h4{
+	color: red;
+	
+	
+}
+.ojt{
+	display: flex;
+	flex-wrap: wrap;
+}
+.ojt div{
+	width: 47%;
+	height: 250px;
+	margin: 10px;
+	border: 1px solid black;
+	flex-direction: row;
+	background: gainsboro;
+
+}
+.final{
+		display: flex;
+	
+}
+.all{
+	display:flex;
+	justify-content:space-around;
+}
+services-info-img{
+padding: 5%;
+
+	
+}
+
+@media  (max-width: 800px){
+        .nav2{
+            display: flex;
+            flex-direction: column;
+            
+		}
+		body{
+			background:salmon;
+		}
+		.logo{
+			display: flex;
+			
+			
+			
+		}
+		
+	}
+	@media (max-width:500px){
+		.container{
+			margin: 0 ;
+
+		}
+		.ojt div{
+			width:500px;
+			background: red;
+			color:white;
+			
+		}
+
+	}
+	@media(min-max: 1000px){
+		.ojt div{
+		 width:	80%;
+		}
+		.container{
+			width: 100%;
+			margin: 0 ;
+
+	}
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    
+    
+
+
+
+
 
