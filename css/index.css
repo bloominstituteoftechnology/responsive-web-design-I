@@ -78,7 +78,11 @@ body {
 	margin: auto;
 }
 
-/* index************************************** */
+/* desktop view */
+
+
+/* index */
+
 
 /* header */
 
@@ -89,31 +93,32 @@ body {
 	padding: 10px 0px 10px 0px;
 }
 
-/* mess with padding of links */
-
-nav a {
+.header nav a {
 	text-decoration: none;
 	color: black;
 	margin: 0px 60px 0px 60px;
-	margin-left: 0px;
-	font-size: 18px;
+    font-size: 18px;
 }
 
-nav a:hover{
+.header nav a:first-child {
+    margin-left: 0px;
+}
+
+.header nav a:last-child {
+    margin-right: 0px;
+}
+
+.header nav a:hover{
 	border-bottom: 2px solid black;
 	border-bottom-right-radius: 2px;
 	border-bottom-left-radius: 2px;
 }
-
-/* click logo to take back to index? */
 
 .logo img {
 	width: 225px;
 }
 
 /* first section */
-
-/* play with padding of first section */
 
 .firstSection {
 	display: flex;
@@ -196,96 +201,58 @@ footer p {
 	padding: 75px 0px 75px 0px;
 }
 
-/* service**************************************** */
+/* tablet view */
 
-/* top image */
+@media (max-width: 800px) {
+    
+    .header {
+        flex-direction: column-reverse;
+        padding: 15px 0px 15px 0px;
+    }
 
-.services-header-img {
-	margin: 25px 0px 25px 0px;
-}
-.services-header-image {
-	width: 100%;
-}
+    .header nav {
+        margin-top: 15px;
+    }
 
-/* first section */
+    .header nav a {
+        font-size: 16px;
+        margin: 0px 30px;
+    }
 
-.serviceFirstSection {
-	padding: 25px 0px 50px 0px;
-	border-bottom: 2px solid black;
-}
+    .firstSection img {
+         display: none;
+    }
 
-.serviceFirstSection h1 {
-	font-size: 30px;
-}
+    .secondSection div {
+        font-size: 16px;
+    }
 
-.serviceFirstSection p {
-	font-size: 28px;
-}
+    .thirdSection div {
+        font-size: 16px;
+    }
 
-/* second section */
-
-.serviceSecondSection {
-	padding-top: 50px;
-	border-bottom: 2px solid black;
-	font-size: 28px;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
+    footer {
+        font-size: 16px;
+    }
 }
 
-.serviceSecondSection div {
-	width: 48%;
-	border: 2px solid black;
-	background-color: lightgray;
-	margin-bottom: 50px;
-	box-sizing: border-box;
-	padding: 50px 50px 62px 50px;
-}
+/* mobile view */
 
-/* does border add to height or is it inside and takes away some padding? */
+@media (max-width: 500px) {
+    
+    .header nav {
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+    }
 
-.serviceSecondSection a {
-	text-decoration: none;
-	color: black;
-	background-color: white;
-	border: 2px solid black;
-	font-size: 18px;
-	padding: 10px 30px 10px 30px;
-	border-radius: 10px;
-}
+    .header nav a {
+        margin: 0px;
+        padding: 20px 0px;
+        border-top: 1px solid black;
+    }
 
-.serviceSecondSection a:hover {
-	color: dimgray;
-	border: 2px solid dimgray;
-}
-
-/* why is button padding on left respected but not on bottom? */
-/* why won't box-sizing: border-box; work to get the 'learn more xbutton' padding inside box? */
-
-/* third section */
-
-.serviceThirdSection {
-	font-size: 28px;
-	display: flex;
-	justify-content: space-between;
-	padding-top: 50px;
-}
-
-.serviceThirdSection div {
-	width: 45%;
-}
-
-.services-info-img {
-	width: 100%
-}
-
-ul {
-	list-style-type: disc;
-	list-style-position: inside;
-}
-
-/* footer */
-
-.serviceFooter {
-	padding: 0px 50px 0px 50px;
+    .header nav a:last-child {
+        border-bottom: 1px solid black;
+    }
 }
