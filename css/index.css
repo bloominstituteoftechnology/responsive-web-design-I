@@ -43,7 +43,6 @@ table {
 	border-spacing: 0;
 }
 * {
-    /* max-width: 100%; */
     box-sizing: border-box;
 }
 
@@ -58,13 +57,11 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 .container {
-	/* border: 1px solid red; */
 	max-width: 900px;
 	margin: 0 auto;
 }
 
 .header {
-	/* border: 1px solid red; */
 	display: flex;
 	justify-content: space-between;
 	margin-top: 20px
@@ -72,7 +69,6 @@ h1, h2, h3, h4, h5 {
 }
 
 nav {
-	/* border: 1px solid red; */
 	display: flex;
 	justify-content: space-between;
 	align-content: center;
@@ -80,7 +76,6 @@ nav {
 }
 
 a {
-	/* border: 1px solid red; */
 	display: flex;
 	justify-content: space-between;
 	color: grey;
@@ -88,19 +83,13 @@ a {
 	padding: 20px;
 }
 
-.logo {
-    /* border: 1px solid red; */
-}
-
 .getStarted {
-	/* border: 1px solid red; */
 	display: flex;
 	justify-content: flex-end;
 	margin-top: 7%
 }
 
 .left {
-	/* border: 1px solid red; */
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -120,9 +109,6 @@ button {
 	background-color: white;
 }
 
-.circle {
-	border: 1px solid red;
-}
 
 .middle-section {
 	border-top: 1px solid black;
@@ -130,21 +116,16 @@ button {
 }
 
 .middleDiv {
-	/* border: 1px solid red; */
 	display: flex;
 	margin: 20px;
 }
 
 .features {
-	/* border: 1px solid red; */
-	/* padding: 20px; */
 	font-size: 18px;
 	margin: 20px;
 }
 
 .about {
-	/* border: 1px solid red; */
-	/* padding: 20px; */
 	font-size: 18px;
 	margin: 20px;
 }
@@ -155,25 +136,21 @@ button {
 }
 
 .services {
-	/* border: 1px solid red; */
 	padding: 20px;
 	font-size: 18px;
 }
 
 .product {
-	/* border: 1px solid red; */
 	padding: 20px;
 	font-size: 18px;
 }
 
 .vision {
-	/* border: 1px solid red; */
 	padding: 20px;
 	font-size: 18px;
 }
 
 .bottomDiv {
-	/* border: 1px solid red; */
 	display: flex;
 	margin-left: 20px;
 }
@@ -211,17 +188,12 @@ footer {
     .container {
         max-width: 100%;
         margin: 0 auto;
-        /* background-color: yellow; */
     }
 
     header {
         flex-flow: column-reverse;
+        justify-content: center;
         align-items: center;
-        padding: 2%
-    }
-
-    header a {
-        padding: 30px
     }
 
     .logo {
@@ -252,7 +224,6 @@ footer {
 
 @media (max-width: 500px) {
     .container {
-        /* background-color: blue; */
         max-width: 100%;
         margin: 0 auto;
     }
@@ -267,17 +238,23 @@ footer {
     
         header nav {
         display: inline-block;
-        width: 100%;
         }
 
     header nav a {
+        display: inline-block;
         text-align: center;
+        width: 100%;
         border-top: 1px solid black;
         border-bottom: 1px solid black;
     }
 
+    .logo {
+        margin-left: 5%;
+    }
+
     .middleDiv {
         flex-direction: column;
+
     }
 
     .bottomDiv {
