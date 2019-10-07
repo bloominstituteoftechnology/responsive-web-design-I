@@ -1,3 +1,305 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
 
+body {
+    line-height: 1;
+}
 
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* <----- INDEX PAGE STYLING ------>*/
+
+/* Body Margin Styling */
+body {
+    margin: 0 5% 10% 5%;
+}
+
+/* Horizontal Line Stylings */
+hr {
+    border: 1px solid black;
+}
+
+/* Header Nav And Logo Stylings */
+#headpiece {
+    width: 100%;
+    padding-top: 3%;
+    display: flex;
+}
+
+nav {
+    width: 75%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav a {
+    font-size: 16px;
+    color: #bbbbbb;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: black;
+}
+
+#logocontainer {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Showcase Section Slogan and Image Stylings */
+#showcase {
+    width: 100%;
+    padding-top: 3%;
+    margin: 3% 0 7% 0;
+    display: flex;
+    justify-content: center;
+}
+
+#showcaseleft {
+    bottom: 15%;
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    width: 47%;
+}
+
+#showcaseleft h1 {
+    font-size: 64px;
+    text-align: center;
+}
+
+#showcaseleft h2 {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;
+    padding: 2px 0;
+    border: 1px black solid;
+}
+
+#showcaseright {
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    width: 47%;
+}
+
+#showcaseright img {
+    max-width: 100%;
+}
+
+/* Content Block And Image Spanner Stylings */
+#contentblock1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#contentblock1 div {
+    width: 48%;
+    padding: 3% 0;
+}
+
+.middle-img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+#contentblock2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#contentblock2 div {
+    width: 32%;
+    padding: 3% 0;
+}
+
+/* Contact Section Stylings */
+#contactinfo h3 {
+    margin-top: 5%;
+}
+
+#contactinfo h4 {
+    font-family: 'Titillium Web', sans-serif;
+    letter-spacing: 2px;
+}
+
+/* Footer Stylings */
+footer {
+    width: 100%;
+    text-align: center;
+    margin: 5% 0 10% 0;
+}
+
+/* TABLET 800PX STYLES */
+@media (max-width: 800px) {
+    body {
+        margin: 0 2%;
+    }
+    #headpiece {
+        margin: 1% 0;
+        flex-flow: column-reverse nowrap;
+        justify-content: space-around;
+
+    }
+    #logocontainer {
+        width: 100%;
+        padding-bottom: 2%;
+    }
+    nav {
+        display: flex;
+        justify-content: space-between;
+        width: 99%;
+        padding: 2% 0 2% 2%;
+    }
+    #showcaseright {
+        display: none;
+    }
+}
+
+/* MOBILE 500PX STYLES */
+@media (max-width: 500px) {
+    html {
+        padding: 0;
+        margin: 0;
+    }
+    body {
+        font-weight: 500;
+        margin: 0;
+        padding: 0;
+    }
+    #headpiece {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    #logocontainer {
+        margin: 5% 0 2% 0;
+    }
+    nav {
+        flex-flow: column nowrap;
+        padding: 0;
+        width: 100%;
+    }
+    nav a {
+        letter-spacing: 0.5px;
+        font-weight: 600;
+        margin: 0;
+        width: 100%;
+        padding: 4% 0;
+        font-size: 20px;
+        text-align: center;
+        z-index: 1;
+        border-bottom: 0.5px black solid;
+    }
+    nav a:first-child {
+        border-top: 0.5px black solid;
+    }
+    #showcaseleft {
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 5%;
+    }
+    #showcaseleft h1{
+        font-size: 72px;
+    }
+    #showcaseleft h2 {
+        width: 35%;
+        padding: 1% 1%;
+        font-size: 18px;
+        margin: 0 auto;
+    }
+    #mobcontainer {
+        padding-top: 5%;
+        margin: 0 4%;
+    }
+    footer {
+        margin-bottom: 5%;
+    }
+    #contentblock1 {
+        margin-top: 7%;
+        flex-flow: column nowrap;
+    }
+    #contentblock1 div {
+        width: 100%;
+        padding: 5% 0; 
+    }
+    #contentblock2 {
+        margin-top: 3%;
+        flex-flow: column nowrap;
+    }
+    #contentblock2 div {
+        width: 100%;
+        padding: 7% 0; 
+    }
+}
