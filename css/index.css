@@ -227,4 +227,79 @@ footer {
     }
 }
 
-
+/* MOBILE 500PX STYLES */
+@media (max-width: 500px) {
+    html {
+        padding: 0;
+        margin: 0;
+    }
+    body {
+        font-weight: 500;
+        margin: 0;
+        padding: 0;
+    }
+    #headpiece {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    #logocontainer {
+        margin: 5% 0 2% 0;
+    }
+    nav {
+        flex-flow: column nowrap;
+        padding: 0;
+        width: 100%;
+    }
+    nav a {
+        letter-spacing: 0.5px;
+        font-weight: 600;
+        margin: 0;
+        width: 100%;
+        padding: 4% 0;
+        font-size: 20px;
+        text-align: center;
+        z-index: 1;
+        border-bottom: 0.5px black solid;
+    }
+    nav a:first-child {
+        border-top: 0.5px black solid;
+    }
+    #showcaseleft {
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 5%;
+    }
+    #showcaseleft h1{
+        font-size: 72px;
+    }
+    #showcaseleft h2 {
+        width: 35%;
+        padding: 1% 1%;
+        font-size: 18px;
+        margin: 0 auto;
+    }
+    #mobcontainer {
+        padding-top: 5%;
+        margin: 0 4%;
+    }
+    footer {
+        margin-bottom: 5%;
+    }
+    #contentblock1 {
+        margin-top: 7%;
+        flex-flow: column nowrap;
+    }
+    #contentblock1 div {
+        width: 100%;
+        padding: 5% 0; 
+    }
+    #contentblock2 {
+        margin-top: 3%;
+        flex-flow: column nowrap;
+    }
+    #contentblock2 div {
+        width: 100%;
+        padding: 7% 0; 
+    }
+}
