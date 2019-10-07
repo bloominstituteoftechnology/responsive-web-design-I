@@ -24,7 +24,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+	line-height: 2;
 }
 ol, ul {
 	list-style: none;
@@ -63,11 +63,12 @@ h1, h2, h3, h4, h5 {
 
 
 .top{
-	padding: 20px;
+	padding-top: 20px;
 	width: 100%;
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	flex-direction: row-reverse;
+	justify-content: space-evenly;
+	align-items: flex-end;
 	margin: 0 auto;
 
 
@@ -75,7 +76,7 @@ h1, h2, h3, h4, h5 {
 
 nav{
 	width: 50%;
-
+	margin-right: -50px;
 	margin-bottom: 10px;
 	display: flex;
 	justify-content: space-between;
@@ -89,7 +90,6 @@ nav a{
 }
 
 .logo{
-	margin-right: 25px;
 	margin-top: 10px;
 }
 
@@ -140,7 +140,6 @@ align-items: center;
 section{
 	width: 90%;
 	border-top: 3px solid black;
-	border-bottom: 3px solid black;
 	margin: 50px auto;
 	padding: 20px;
 }
@@ -154,14 +153,14 @@ section div{
 
 .row1{
 	display: flex;
-	width: 90%;
+	width: 100%;
 	justify-content: space-between;
 	}
 
 
 
 .row2{
-	width: 90%;
+	width: 100%;
 	overflow: hidden;
 }
 
@@ -171,7 +170,7 @@ section div{
 
 .row3{
 	display: flex;
-	width: 90%;
+	width: 100%;
 
 
 }
@@ -182,13 +181,10 @@ section div{
 
 
 footer {
-
 	display: flex;
-	width: 80%;
-	margin: 40px auto;
-	justify-content: flex-start;
-
-
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
 }
 
 address{
@@ -198,10 +194,12 @@ address{
 
 }
 
-.copyRight{
-	flex-basis: 60%;
-	align-self: flex-end;
-
+.contact {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	border-top: 3px solid black;
+	padding-top: 50px;
 }
 
 
@@ -210,12 +208,26 @@ address{
 @media (max-width: 1024px) {
 
 	.top{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
 
-		flex-direction: column-reverse;
-		justify-content: space-between;
 	}
 
+	h1 {
+		max-height: 6rem;
+	}
+
+	.mainHeading {
+		margin-top: -10rem;
+	}
+
+	.mainButton {
+		margin-top: 4rem;
+	}
 	.logo{
+		display: flex;
 		margin: 10px 0 20px;
 	}
 
@@ -239,10 +251,14 @@ address{
 		text-align: center;
 		margin: 0 auto;
 		margin-left: 10px;
-
-
-
 	}
+	.top {
+		display: flex; 
+		flex-direction: column;
+		align-items: center;
+	}
+
+
 	nav a{
 		display: inline-block;
 		width: 90%;
@@ -259,8 +275,5 @@ address{
 		flex-direction: column;
 
 	}
-	footer .copyRight{
-		margin-top: 30px;
-		align-self: center;
-	}
+
 } 
