@@ -1,3 +1,218 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+
+.navigation{
+	display: flex;
+	background: white;
+	justify-content: space-evenly;
+	margin-top: 10px;
+}  
+.logo{
+    display: flex;
+}
+header{
+	display: flex;
+	justify-content: center;
+}
+
+.big-word {
+	font-size: 100px;
+	font-family: "Bangers";
+	text-align: center;
+	
+} 
+
+.started {
+	border: solid;
+	font-family: 'Titillium Web', sans-serif;
+	text-align: center;
+}
+.top-content {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+.box1 {
+	order: 1;
+	width: 45%;
+}
+.box2 {
+	order: 3;
+	width: 45%;
+}
+.box3 {
+	order: 2;
+	width: 45%;
+}
+.box4 {
+	order: 4;
+	width: 45%;
+}
+.middle-img {
+	margin-left: 10%;
+}
+.bottom-content {
+	display: flex;
+	justify-content: center;
+	text-align: left; 
+	margin: 10%;
+}
+.contact{
+	text-align: left;
+	width: 300px;
+	margin-left: 10%;
+}
+.footer{
+	text-align: center;
+}
+.middle-img {
+    width: 90%;
+    height: auto;
+}
+
+
+/* tablet view */
+@media(max-width: 800px) {
+    .circle {
+        display: none;
+    }
+    .logo {
+        margin-left: 150%;
+    }
+
+    .word1{
+        order: 2;
+        display: flex;
+        background: white;
+        margin-top: 10%;
+        }
+    .middle-img {
+        width: 90%;
+        height: auto;
+    }
+
+}
+
+/* mobile view  */
+@media(max-width: 500px) {
+.navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    color: gray;
+    }
+    .navigation {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top:30%;
+        justify-content: flex-end;
+    }
+
+  .logo {
+    margin-left: 10%;
+  }
+  .circle {
+      display: none;
+  }
+  .word1 {
+      order: 2;
+      margin-top:10%;
+      border: 1px solid black;
+      text-align: center;
+  }
+  .top-content {
+	display: flex;
+    flex-direction: column;
+  }
+  .bottom-content {
+    display: flex;
+    flex-direction: column;
+  }
+    .box1 {
+        order: 1;
+    }
+    .box2 {
+        order: 2;
+    }
+    .box3 {
+        order: 3;
+    }
+    .box4 {
+        order: 4;
+    }
+.middle-img {
+    width: 90%;
+    height: auto;
+}
+}
