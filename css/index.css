@@ -66,19 +66,19 @@ h1, h2, h3, h4, h5 {
 
 h1 {
 	text-align: center;
-	font-size: 75px;
+	font-size: 15vw;
 	padding: 0px 20px;
 	margin-bottom: 24px;
 }
 
 h2 {
-	font-size: 16px;
+	font-size: 5vw;
 	text-align: left;
 }
 
 p {
 	line-height: 1.1;
-	font-size: 16px;
+	font-size: 4vw;
 	text-align: left;
 }
 
@@ -94,6 +94,13 @@ p {
     }
 }
 
+@media (max-width: 500px) {
+    .container {
+        width: 450px;
+        margin: 0px auto;
+    }
+}
+
 header{
 	display: flex;
 	align-items: center;
@@ -102,10 +109,12 @@ header{
 
 @media (max-width: 800px) {
     header {
-        width: 100vw;
+        width: 90vw;
         flex-direction: column-reverse;
     }
 }
+
+
 
 nav {
 	width: 65%;
@@ -115,10 +124,20 @@ nav {
 }
 
 @media (max-width: 800px) {
-    .nav {
+    nav {
         width: 90vw;
         display: flex;
-		flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 500px) {
+    nav {
+        width: 90vw;
+        margin: unset;
+        flex-direction: column;
+        align-content: center;
+        text-align: center;
     }
 }
 
@@ -130,9 +149,22 @@ nav a {
 	padding: 0px, 5px;
 }
 
+@media (max-width: 500px) {
+    nav a {
+        width: 70vw;
+        border-bottom: 1px solid black;
+        padding: 5px;
+    }
+    nav a:first-of-type{
+        border-top: 1px solid black;
+    }
+}
+
 .logo {
 	padding: 20px 40px 20px 20px;;
 }
+
+
 
 .top-content {
 	border-bottom: 1px solid black;
@@ -140,6 +172,14 @@ nav a {
 	display: flex;
 	justify-content: space-evenly;
 }
+
+@media (max-width: 500px) {
+    .top-content {
+        margin: 0 auto;
+        width: 90vw;
+    }
+}
+
 
 .top-content-text {
 	margin: 70px;
@@ -175,12 +215,24 @@ nav a {
 	padding: 10px;
 }
 
+@media (max-width: 500px) {
+    .second-content {
+        flex-direction: column;
+    }
+}
+
 .features, .about {
 	width: calc(50% - 48px);
 }
 
+@media (max-width: 500px) {
+    .features, .about {
+        width: 90vw;
+    }
+}
+
 .middle-img {
-    width: 85vw;
+    width: 90vw;
     margin-left: 3vw;
 }
 .third-content {
@@ -190,9 +242,23 @@ nav a {
 	padding: 2px 10px 35px 20px;
 }
 
+@media (max-width: 500px) {
+    .third-content {
+        flex-direction: column;
+        width: 95vw;
+    }
+}
+
 .services, .product, .vision {
 	width: calc(33%- 40px);
 	margin: 15px;
+}
+
+@media (max-width: 500px) {
+    .services, .product, .vision {
+        width: 90vw;
+        margin: unset;
+    }
 }
 
 .bottom-content {
