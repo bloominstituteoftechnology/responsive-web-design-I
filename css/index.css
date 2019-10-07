@@ -1,3 +1,384 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
 
 
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+body{
+	margin: 0 10% 0 10%;
+  }
+  
+  nav{
+    display: flex;
+    justify-content: space-around;
+    top: 0px;
+    padding-top: 18px;
+    padding-bottom: 5px;
+    background-color: white;
+  }
+  
+  .nav div a{
+	font-family: 'Titillium Web', sans-serif;
+	text-decoration: none;
+	color: darkgray; 
+    font-size: 13px;
+    padding: 5%;
+  }
+  
+  .nav div{
+    display: flex;
+    align-items: center;
+	justify-content: space-between;
+    
+  }
+  
+  .logo{
+	padding-left: 0%;
+  }
+  
+  .top{
+	display: flex;
+	justify-content: space-between;
+	padding-top: 10%; 
+	padding-bottom: 6%; 
+  }
+  h1{
+	font-size: 70px;
+	text-align: center;
+	
+  }
+  
+  .header-img{
+	display: flex;
+	padding-top: 5%;
+  }
+  
+  button{
+	border: 1px solid black;
+	border-radius: 0;
+	width: 130px;
+	height: 25px;
+  }
+  
+  .tag-and-button{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+  }
+  
+  .main{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+  }
+  
+  #features{
+	width: 49%;
+  }
+  
+  #about{
+	width: 49%;
+   
+  }
+  
+.middle-img{
+    width: 100%;
+    margin: 40px 0 40px 0;
+}
+  
+  #services{
+	width: 33%;
+	display: inline-block;
+	padding-right:5px;
+  }
+  
+  #product{
+	width: 33%;
+  
+  }
+  
+  #vision{
+	width: 33%;
+  }
+  
+  .address p{
+	padding: 7px 0;
+	width: 200px;
+  }
+  
+  .copyright{
+	display: flex;
+	justify-content: center;
+	padding: 100px 0 40px 0;
+  }
+
+  /* Services Page Styles */
+
+.services-header-img{
+	margin-top: 60px;
+	margin-bottom: 35px;
+	display: flex;
+}
+
+.main-content{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: space-around;
+	height: 90%;
+	margin-top: 0px;
+}
+
+.main-content div{
+	width: 48%;
+	background-color: #F4F3F4;
+	border: 1px solid black;
+	padding: 17px;
+}
+
+button{
+	border-radius: 5px;
+}
+
+.bottom{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 47%;
+}
+.list{
+	margin-left: 20px;
+	line-height: 1.5;
+	
+}
+
+ul{
+	list-style-type: square;
+}
+
+.image-flex img{
+	width: 48%;
+	
+}
+
+.image-flex{
+	display: flex;
+	justify-content: space-between;
+}
+
+/* Tablet Responsive */
+
+@media (max-width: 800px){
+    
+
+    body{
+        margin: 0 5% 0 5%;
+      }
+
+    /* Navigation */
+
+      .nav{
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: column-reverse;
+          justify-content: center;
+          
+      }
+
+      .nav div a{
+        font-family: 'Titillium Web', sans-serif;
+        text-decoration: none;
+        color: darkgray; 
+        font-size: 13px;
+        padding: 15px;
+      }
+      
+      .nav div{
+        display: flex;
+        align-content: space-around;
+        justify-content: space-around; 
+        
+      }
+
+    
+    }
+    
+    @media (max-width: 800px){
+
+      /* Header */
+
+      .header-img{
+        display: none;
+        padding-top: 15%;
+      }
+
+      .top{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 14%; 
+        padding-bottom: 6%; 
+      }
+
+      .top{
+        display: flex;
+        justify-content: center;
+        padding-top: 14%; 
+        padding-bottom: 6%; 
+      }
+
+      /* Center */
+
+      .middle-img{
+        display: flex;
+        width: 100%;
+    }
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 500px){
+    
+
+    body{
+        margin: 0 0 0 0;
+      }
+
+    /* Navigation */
+
+      .nav{
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: column-reverse;
+          justify-content: center;
+          
+      }
+
+      .nav div a{
+        font-family: 'Titillium Web', sans-serif;
+        text-decoration: none;
+        color: darkgray; 
+        font-size: 13px;
+        padding: 15px;
+        border-bottom: 1px solid gray;
+        width: 100%;
+        text-align: center;
+      }
+
+      nav .logo-cont{
+        padding-bottom: 10px;  
+        border-bottom: 1px solid gray;
+       
+      }
+      
+      .nav div{
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+        justify-content: space-around; 
+        
+        
+      }
+
+    
+    }
+
+@media (max-width: 500px){
+
+    /* Header */
+
+    .not-nav{
+        margin: 0 2% 0 2%;
+    }
+
+    .main{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      
+      #features{
+        width: 100%;
+        padding-bottom: 10px;
+      }
+      
+      #about{
+        width: 100%;
+      }
+      
+      #services{
+        width: 100%;
+        padding-bottom: 10px;
+      }
+      
+      #product{
+        width: 100%;
+        padding-bottom: 10px;
+      }
+      
+      #vision{
+        width: 100%;
+      }
+}
