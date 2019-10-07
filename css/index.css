@@ -43,6 +43,7 @@ table {
 	border-spacing: 0;
 }
 * {
+    /* max-width: 100%; */
     box-sizing: border-box;
 }
 
@@ -149,8 +150,8 @@ button {
 }
 
 .middle-img {
-    width: 75%;
-	margin-left: 30px;
+    width: 100%;
+    margin-left: 30px;
 }
 
 .services {
@@ -231,7 +232,7 @@ footer {
     }
 
     .left {
-        margin-right: 25%;
+        margin-right: 30%;
     }
 
     .getStarted {
@@ -239,7 +240,8 @@ footer {
     }
 
     .middle-img {
-        max-width: 80%;
+    margin: 0;
+    padding: 2%;
     }
 
 }
@@ -258,10 +260,15 @@ footer {
     nav {
         flex-direction: column;
         }
-
-    header nav a {
+    
+        a  {
         border-top: 1px solid black;
         border-bottom: 1px solid black;
+    }
+
+    .left {
+        margin: 0;
+        margin-right: 15%;
     }
 
     .middleDiv {
