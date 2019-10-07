@@ -105,6 +105,8 @@ button {
     height: 10%;
     background-color: white;
     border: 1px solid black;
+    font-weight: bold;
+    font-size: 15px;
     
 }
 
@@ -175,15 +177,35 @@ h4 {
     font-weight: bold;
 }
 
+.address {
+    margin: auto 0;
+}
+
+hr {
+    margin: 5%;
+}
+
 @media only screen and (max-width: 800px) {
     body {
-      background-color: lightblue;
-      display: flex;
+        display: flex;
     }
     .nav{
         display: flex;
         flex-direction: column-reverse; 
-        flex-wrap: wrap;   
+        
+    }
+
+    .links1 {
+        display: flex;
+        width: 100%;
+        align-content: space-around;
+        justify-content: space-evenly;
+        margin-top: 4%;
+    }
+
+    .links1 a {
+        color:gray;
+        font-weight: 00;
     }
 
     .header {
@@ -198,23 +220,39 @@ h4 {
 
     button {
         margin: 0 auto;
+        width: 170px;
+        padding: 10px;
+        margin-top: 2%;
     }
 
     .header img {
         display: none;
     }
 
+    a {
+        color: gray;
+    }
+
+    hr {
+        margin-left: 20px;
+        margin-right: 20px;
+        text-decoration: black;
+        border: 1px solid black;
+
+    }
+
     }
 
     @media only screen and (max-width: 500px) {
         body {
-          background-color: pink;
+          background-color:white;
         }
 
         .nav{
             display: flex;
             flex-direction: column-reverse; 
             flex-wrap: wrap;   
+            margin-top: 22px;
         }
 
         .header {
@@ -239,5 +277,40 @@ h4 {
 
         .header h1 {
             font-size: 3em;
+        }
+
+        a {
+            border-bottom: 1px solid black;
+            padding: 17px;
+            width: 100s%;
+            text-align: center;
+        }
+
+        .links1 {
+            display: flex;
+            flex-direction: column-reverse;
+            min-width: 70%;
+        }
+
+        .contact {
+            margin-top: 10px;
+            min-width: 70%;
+        }
+
+        h4 {
+            font-family: 'Titillium Web', sans-serif;
+            font-weight: bold;
+            font-size: 11px;
+        }
+
+        .one {
+            border-top: 1px solid black;
+        }
+
+        hr {
+            margin-left: 20px;
+            margin-right: 20px;
+            text-decoration: black;
+            border: 1px solid black;
         }
       }
