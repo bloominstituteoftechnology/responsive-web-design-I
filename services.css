@@ -1,0 +1,118 @@
+@import url("index.css");
+
+
+.services-header-img {
+	margin-left: 30px;
+}
+
+.services-top-content {
+	padding: 20px 20px 45px 20px;
+	border-bottom: 1px solid black;
+}
+
+.services-top-content h2 {
+	font-size: 28px;
+}
+.services-top-content  {
+	line-height: 1.2;
+}
+
+.service-content-container {
+	padding: 18px 19px 25px 0px;
+	border-bottom: 2px solid black;
+}
+
+.services-content, .service-bottom-content {
+	display: flex;
+	justify-content: space-between;
+}
+
+.services-content-boxes {
+	height: 250px;
+	width: calc(50%-40px);
+	border: 1px solid black;
+	background: rgb(241, 240, 241);
+	margin: 20px;
+	padding: 20px;
+}
+
+.services-content p {
+	padding: 5px;
+	line-height: 1.2;
+}
+
+.services-btn {
+	background: white;
+	border: 1px solid black;
+	border-radius: 5px;
+	padding: 10px 40px;
+	margin-top: 21px
+}
+
+.service-bottom-content {
+	height: 400px;
+}
+
+.service-bottom-text {
+	padding: 40px 20px 20px 20px;
+	width: 48%;
+}
+
+.service-bottom-text p {
+	line-height: 1.4;
+	padding-top: 4px;
+}
+
+.service-bottom-text li {
+	margin-left: 20px;
+	line-height: 1.8;
+	list-style-type: square;
+}
+
+.services-info-img {
+	height: 300px;
+	margin: 40px 45px 40px 35px;
+}
+
+@media (max-width: 600px) {
+	.container {
+		width: 600px;
+		margin: 0px;
+	}
+
+	header{
+		width: 100vw;
+		display: flex;
+		flex-direction: column-reverse;
+		justify-content: space-between;
+	}
+
+	nav {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.services-header-img, .services-top-content, .service-bottom-content, .service-content-container, footer {
+		width: 90vw;
+		margin-left: 5vw;
+	}
+
+	.service-bottom-content {
+		flex-wrap: wrap;
+		height: 900px;
+	}
+
+	.services-content {
+		width: 90vw;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.services-content-boxes {
+		height: 250px;
+		border: 1px solid black;
+		background: rgb(241, 240, 241);
+		padding: 20px;
+	}
+
+}
