@@ -1,3 +1,5 @@
+/************* Services Page****************************************
+*********************************************************************/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -54,7 +56,9 @@ table {
 
 html, body {
     height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+	font-family: 'Titillium Web', sans-serif;
+	margin: 30px 20px;
+	width: 90%;
 }
 
 h1, h2, h3, h4, h5 {
@@ -63,7 +67,8 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+/* Navigation **********************/
+
 .top{
 	padding: 20px;
 
@@ -73,7 +78,6 @@ h1, h2, h3, h4, h5 {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin: 0 auto;
 
 
 }
@@ -113,199 +117,189 @@ nav a:first-child{
 	
 	
 }
-
-
-
-header{
-padding-top: 80px;
-width: 100%;
-height: 600px;
-display: flex;
-justify-content: space-evenly;
-align-items: center;
-}
-
-
-.mainHeading{
-	
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items:center;
-	
-	/*display: inline-block;
-	margin: 130px;
-	*/
-}
-
-/* headings in header */
-.mainHeading h1{
-	font-size: 80px;
-	/* width: 250px;*/
-	/*text-align: center;*/
-	
-}
-
-/* 'Get Started' button */
-.mainButton{
-	font-size: 20px;
-	margin: 20px auto;
-	text-align: center;
-	width: 150px;
-	padding: 5px 10px;
-	border: 1px solid black;
-
-
-}
-/* image in header */
-.headerImg{
-
-	margin-left: 60px;
-	padding-bottom: 15px;
-	
-
-}
-
-/* section starts here */
-section{
-	width: 90%;
-	border-top: 1px solid black;
-	border-bottom: 1px solid black;
-	margin: 50px auto;
-	padding: 20px;
-}
-
-section div{
-	margin: 40px auto;
-	
-
-}
-
-/* section low 1 content */
-.row1{
-	
-	display: flex;
-	width: 90%;
-
-	
-	justify-content: space-between;
-	}
-
-
-.row1 div:not(:last-child){
-	margin-right: 20px;
-}
-
-
-.row2{
-	width: 90%;
-	overflow: hidden;
-	imag
-}
-
-.middle-img{
-	width: 100%;
-}
-/* section content after section image */	
-.row3{
-	display: flex;
-	width: 90%;
-	
-	
-}
-
-.row3 div:not(:last-child){
-	margin-right: 20px;
-}
-
-/* footer starts here */
-
-footer {
-	
-	display: flex;
-	width: 80%;
-	margin: 40px auto;
-	justify-content: flex-start;
-
-	
-}
-
-address{
-	flex-basis: 40%;
-	display: flex;
-	/* margin: 40px 100px; */
-	flex-direction: column;
-
-}
-/* copyRight */
-.copyRight{/*	
-	margin: 100px;
-	padding-top: 50px;
-	position: relative;
-	top: 30px;
-	*/
-	flex-basis: 60%;
-	align-self: flex-end;
-
-}
-
-/* Navigation **********************/
 /*
-.ser-nav{
+
+.top{
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	align-items: flex-end;
-	margin-top: 310px;
+	margin-top: 30px;
+
 
 }
 
-.ser-nav__bars{
+nav{
 	width: 50%;
 	margin-left: 20px;
+	display: flex;
+	justify-content: space-between;
+
 }
 
-.ser-nav__logo{
+.logo{
 	width: 30%;
 
 }
 
-.header{
+
+.ser-nav__bars a{
+	color: gray;
+	text-decoration: none;
+	font-size: 18px;
+	
+	}
+*/
+
+.service-header {
+	
 	display: flex;
 	flex-direction: column;
-	margin-top: 0;
+	margin-bottom: 80px;
+	padding-bottom: 50px;
+	border-bottom: 2px solid black;
+	margin-left: 50px;
+	
 
 }
-.ser-nav__bars a{
-    text-decoration: none;
-    
+.service-header__imgDiv{
+	width: 80%;
+	margin: 0 auto;
 }
-*/
-/* Media Queries Here */
+
+.service-header div{
+	margin: 40px 40px;
+
+	
+}
+h2{
+	font-size: 23px;
+}
+h3{
+	font-size: 19px;
+}
+
+section{
+	border-bottom: 2px solid black;
+	padding-bottom: 60px;
+	margin-bottom: 40px;
+
+}
+.section__row{
+	display: flex;
+	justify-content: space-around;
+
+}
+
+.section__row-container{
+	background-color: #eee;
+	width: 40%;
+	margin: 40px;
+	padding: 30px;
+	border: 1px solid black;
+	
+}
+
+.section__btn{
+	margin: 35px 10px;
+	padding: 5px;
+	border: 1px solid black;
+	width: 30%;
+	border-radius: 5px;
+	text-align: center;
+	font-size: 15px;
+	font-weight: 300;
+}
+
+.footer__row1{
+	display: flex;
+	justify-content: space-around;
+
+
+
+}
+.footer__row1--left{
+	width: 45%;
+
+}
+
+ul{
+	margin-top: 30px;
+}
+ ul li{
+	 margin: 10px;
+ }
+
+ .footer__row2{
+	 margin: 50px;
+	 text-align: center;
+	
+
+ }
+
+ .product-header{
+	 display: flex;
+	 flex-direction: row;
+	
+ }
+ .product-header .product-headerDiv{
+	 width: 45%;
+	 align-self: center;
+	 overflow: hidden;
+
+ }
+
+ .product-headerDiv .services-header-img {
+
+	 width: 100%;
+	
+
+ }
+ .section__productDiv{
+
+	overflow: hidden;
+	 margin-top: 20px;
+	 height: 300px;
+
+ }
+
+ 
+.product-img{
+    
+	transition: transform 0.5s;
+	width: 100%;
+ 
+}
+
+.product-img:hover{
+    transform: scale(2.0);
+}
+
+
+.product-footer{
+	overflow: hidden;
+	width: 40%;
+	height: 300px;
+}
 
 @media (max-width: 800px) {
 
-	.top{
-		
+	.ser-nav{
+		width: 100%;
 		flex-direction: column-reverse;
-		justify-content: space-between;
+		align-items: space-evenly;
 	}
 
 	.logo{
 		margin: 10px 0 20px;
 	}
 
-	nav{
+	ser-nav__bars{
 		width: 100%;
-	}
-	nav a{
-		
 		justify-content: space-evenly;
 	}
-
 	
-	.headerImg{
-		display: none;
-	}
+	
+	
 }
 
 @media (max-width: 500px) {
