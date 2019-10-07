@@ -1,9 +1,7 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
 /* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
+	v2.0 | 20110126
+	License: none (public domain)
+	*/
 html,
 body,
 div,
@@ -85,13 +83,14 @@ time,
 mark,
 audio,
 video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
+  margin        : 0;
+  padding       : 0;
+  border        : 0;
+  font-size     : 100%;
+  font          : inherit;
   vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -106,38 +105,38 @@ nav,
 section {
   display: block;
 }
+
 body {
   line-height: 1;
 }
+
 ol,
 ul {
   list-style: none;
 }
+
 blockquote,
 q {
   quotes: none;
 }
+
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: "";
+  content: '';
   content: none;
 }
+
 table {
   border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/* Set every element's box-sizing to border-box */
-* {
-  box-sizing: border-box;
+  border-spacing : 0;
 }
 
 html,
 body {
-  height: 100%;
-  font-family: "Titillium Web", sans-serif;
+  height     : 100%;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 h1,
@@ -145,70 +144,449 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "Bangers", cursive;
+  font-family   : 'Bangers', cursive;
   letter-spacing: 1px;
-  margin-bottom: 15px;
-}
-/* beginning css styling here */
-
-header {
-display: flex;
-justify-content: center;
+  margin-bottom : 15px;
 }
 
-nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
+/* Body 990 width for perfect pixel */
+* {
+  margin    : 0;
+  padding   : 0;
+  box-sizing: border-box;
 }
 
-nav a {
-text-decoration: none;
-color: grey;
+.container-home {
+  margin   : 0 auto;
+  padding  : 30px;
+  max-width: 990px;
 }
 
-.logo {
-    margin: 20px 80px;
+.container-home .navigation-bar {
+  display        : flex;
+  flex-direction : row;
+  justify-content: space-between;
+  align-items    : center;
+  margin         : 0px 0px 55px 0px;
 }
 
-/* END OF HEADER, BEGIN MAIN CONTENT */
-
-.container {
-  max-width: 885px;
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-
+.container-home .navigation-bar nav {
+  display        : flex;
+  justify-content: space-around;
+  width          : 73%;
+  padding        : 0px 0px 0px 10px;
 }
 
-.head {
-    display: flex;
-    justify-content: space-around;
+.container-home .navigation-bar a {
+  margin         : 0 10px;
+  font-size      : 14px;
+  color          : grey;
+  font-weight    : bold;
+  text-decoration: none;
+  letter-spacing : 1px;
+  /* padding     : 5px 60.5px 0px 0px; */
 }
 
-.head-text {
-    display: flex;
-    flex-direction: column;
+.container-home .navigation-bar a:hover {
+  color      : mediumseagreen;
+  font-weight: bold;
+}
+
+.container-home .navigation-bar img {
+  width : 180px;
+  height: auto;
+  margin: 0px 12px 0px 0px;
+}
+
+.container-home .navigation-bar img:hover {
+  width           : 20%;
+  height          : auto;
+  background-image: linear-gradient(to right, white 90%, yellow 10%);
+}
+
+.container-home .headline {
+  display        : flex;
+  justify-content: space-between;
+  margin         : 70px 0px 0px 0px;
+  width          : 100%;
+}
+
+.container-home .headline .h1-and-button {
+  display        : flex;
+  flex-direction : column;
+  justify-content: center;
+  margin-top     : 10px;
+  padding-left   : 170px;
+}
+
+.container-home .headline .h1-and-button h1 {
+  font-size    : 72px;
+  text-align   : center;
+  margin-bottom: 25px;
+}
+
+.get-started {
+  margin       : 0px 61px 5px 60px;
+  padding      : 5px 0px 6px 0px;
+  border-radius: 3%;
+  font-size    : 1rem;
+  border       : 2px solid black;
+}
+
+.get-started:hover {
+  border          : 1px solid mediumseagreen;
+  color           : white;
+  background-color: mediumseagreen;
+}
+
+.circle-img {
+  max-width : 100%;
+  max-height: auto;
+}
+
+.columns-2 {
+  border-top     : 1px solid black;
+  margin         : 76px 20px 20px 42px;
+  padding        : 35px 0px 5px 0px;
+  line-height    : 1.15rem;
+  display        : flex;
+  justify-content: space-around;
+}
+
+.topic-features {}
+
+.topic-about {
+  margin-left: 12px;
+}
+
+.middle-img {
+  width  : 100%;
+  height : auto;
+  margin : 5px 0px -5px 43px;
+  padding: 0px 52px 0px 0px;
+}
+
+.columns-3 {
+  margin         : 34px 7px 20px 42px;
+  padding-right  : 4px;
+  line-height    : 1.15;
+  display        : flex;
+  justify-content: space-between;
+}
+
+.columns-3 p {
+  margin : 0px 19px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+.contact {
+  margin    : 35px 50px 20px 44px;
+  border-top: 2px solid black;
+}
+
+.contact h2 {
+  padding-top: 35px;
+  margin-left: -3px;
+}
+
+.contact address {
+  margin-left: -3px;
+}
+
+.after-break {
+  margin: -1px 0px 0px 0px;
+}
+
+footer {
+  text-align : center;
+  padding-top: 20px;
+}
+
+/* tablet */
+@media (max-width:800px) {
+  .container-home {
+    max-width: 800px;
+    margin   : 0 auto;
+  }
+
+  /* Spacing Nav Bar & Logo on the same line using wrap.
+	If Nav Bar should be 600px and screen size is 880px
+	(child width / parent width) * 100
+	(600px / 880px ) * 100
+	*/
+  .container-home .navigation-bar {
+    width          : 100%;
+    flex-direction : row;
+    flex-wrap      : wrap;
     justify-content: center;
-    align-items: center;
+    align-content  : flex-start;
+    margin         : 0px 0px 0px 0px;
+    padding        : 0px 0px 0px 0px;
+    align-items    : center;
+  }
+
+  .container-home .navigation-bar img {
+    width : 182.5px;
+    height: auto;
+    order : -1;
+  }
+
+  .container-home .navigation-bar img:hover {
+    width           : 182.5px;
+    height          : auto;
+    order           : -1;
+    background-image: linear-gradient(to right, white 90%, yellow 10%);
+  }
+
+  .container-home .navigation-bar nav {
+    width  : 100%;
+    margin : 38px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+  }
+
+  .container-home .navigation-bar nav a {
+    letter-spacing: 0.5px;
+    margin        : 0px 0px 0px 0px;
+    padding       : 0px 0px 0px 0px;
+    font-size     : 15px;
+  }
+
+  .circle-img {
+    display: none;
+  }
+
+  .container-home .headline {
+    margin        : 72px 0px 0px 0px;
+    flex-direction: column;
+  }
+
+  .container-home .headline .h1-and-button {
+    margin : 0px;
+    padding: 0px;
+  }
+
+  .container-home .headline .h1-and-button h1 {
+    margin : 0px;
+    padding: 0px;
+  }
+
+  .get-started {
+    margin : 24px 38.5%;
+    padding: 5px 0px;
+  }
+
+  .get-started:hover {
+    border          : 1px solid mediumseagreen;
+    color           : white;
+    background-color: mediumseagreen;
+  }
+
+  .columns-2 {
+    border-top     : 2px solid black;
+    margin         : 50px -5px 0px 0px;
+    padding        : 35px 0px 0px 0px;
+    justify-content: space-between;
+  }
+
+  .topic-features {
+    margin : 0px -35px 0px 0px;
+    padding: 0px 0px 0px 0px;
+  }
+
+  .topic-about {
+    margin : 0px 0px 0px 50px;
+    padding: 0px 0px 0px 0px;
+  }
+
+  .columns-2 p {
+    padding    : 0px 16px 0px 0px;
+    font-size  : 1.0rem;
+    line-height: 1.15rem;
+  }
+
+  .middle-img {
+    width  : 100%;
+    margin : 30px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+  }
+
+  .columns-3 {
+    margin     : 32px -18px 0px 0px;
+    padding    : 0px 0px 0px 0px;
+    line-height: 1.15;
+  }
+
+  .columns-3 p {
+    padding-right: 21px;
+  }
+
+  .topic-services {
+    margin : 0px .25px 0px 0px;
+    padding: 0px 0px 0px 0px;
+  }
+
+  .topic-product {
+    margin : 0px -7px 0px 0px;
+    padding: 0px 0px 0px 0px;
+  }
+
+  .topic-vision {
+    margin: 0px 0px 0px 8px;
+  }
+
+  .contact {
+    margin    : 35px 20px 20px -10px;
+    border-top: 2px solid black;
+  }
+
+  .contact h2 {
+    padding-top: 35px;
+    margin-left: 10px;
+  }
+
+  .contact address {
+    font-size: 1.0rem;
+    margin   : 10px;
+    padding  : 0px 0px;
+  }
 }
 
-.head-text h1 {
-  font-size: 58px;
-  text-align: center;
-}
+/* mobile */
+@media (max-width:500px) {
+  .container-home {
+    max-width: 500px;
+  }
 
-.head-text button {
-    border: 1px solid black;
-    padding: 7px;
-    width: 65%;
-    background-color: white;
-    font-size: 0.9rem;
-}
+  .container-home .navigation-bar {
+    flex-direction : column;
+    justify-content: space-between;
+    margin         : -7px 0px 0px 0px;
+    padding        : 0px 0px 0px 0px;
+    width          : 100%;
+  }
 
-.head-text button:hover {
-    color: white;
-    background-color: black;
-    cursor: pointer;
+  .container-home .navigation-bar img {
+    margin: 0px;
+    width : 185px;
+    height: auto;
+    order : -1;
+  }
+
+  .container-home .navigation-bar nav {
+    width          : 100%;
+    margin         : 12px 0px 0px 0px;
+    padding        : 0px 0px 0px 0px;
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items    : center;
+    border-bottom  : 1px solid black;
+  }
+
+  .container-home .navigation-bar nav a {
+    width         : 100%;
+    margin        : 0px 0px 0px 0px;
+    padding       : 20px 0px 20px 0px;
+    font-size     : 19.5px;
+    letter-spacing: 0px;
+    border-top    : 1px solid black;
+    line-height   : 1.25rem;
+    text-align    : center;
+  }
+
+  .circle-img {
+    display: none;
+  }
+
+  .container-home .headline {
+    margin: 50px 0px 0px 0px;
+  }
+
+  .container-home .headline .h1-and-button {
+    margin : 0px;
+    padding: 0px;
+  }
+
+  .container-home .headline .h1-and-button h1 {
+    margin : 0px;
+    margin : 0px;
+    padding: 0px;
+  }
+
+  .get-started {
+    margin : 30px 30%;
+    padding: 5px 0px;
+  }
+
+  .columns-2 {
+    border-top: 2px solid black;
+    margin    : 43px 20px 0px 0px;
+    padding   : 58px 0px 0px 0px;
+    display   : block;
+  }
+
+  .columns-2 h2 {
+    margin : 0px 0px 0px 2px;
+    padding: 0px 0px 0px 0px;
+  }
+
+  .columns-2 p {
+    padding    : 15px 20px 45px 2px;
+    font-size  : 1.0rem;
+    line-height: 1.15rem;
+  }
+
+  .topic-about {
+    margin-left: -2px;
+  }
+
+  .middle-img {
+    width  : 95%;
+    margin : 7px 0px 0px 20px;
+    padding: 0px 14px 0px 0px;
+  }
+
+  .columns-3 {
+    margin     : 20px 0px 0px 0px;
+    padding    : 20px 0px 0px 0px;
+    line-height: 1.15;
+    display    : block;
+  }
+
+  .columns-3 p {
+    padding-bottom: 60px;
+  }
+
+  .topic-services {
+    margin: -2px 0px 0px 0px;
+  }
+
+  .topic-product {
+    margin: 2px 0px 0px 0px;
+  }
+
+  .topic-vision {
+    margin : -1px 0px 0px -0.5px;
+    padding: 4px 0px 0px 0px;
+  }
+
+  .contact {
+    margin    : -25px 20px 0px 0px;
+    padding   : 0px;
+    border-top: 1px solid black;
+  }
+
+  .contact address {
+    margin : 0px;
+    padding: 0px 0px;
+  }
+
+  .contact h2 {
+    padding-top: 35px;
+    margin-left: 0px;
+  }
+
+  footer {
+    margin-top: 20px;
+  }
 }
