@@ -1,3 +1,250 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+body {
+	width: 1000px;
+}
+
+
+.nav {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	height: 100px;
+}
+
+a {
+	font-size: 16px;
+	text-decoration: none;
+	color: grey;
+}
+
+.header {
+	display: flex;
+	justify-content: space-around;
+}
+
+h1 {
+	font-size: 85px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+button {
+	width: 200px;
+	height: 55px;
+	background-color: white;
+	margin-top: 30px;
+}
+
+.firstset {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.secondset {
+	display: flex;
+	justify-content: space-evenly;
+	margin: 15px;
+}
+
+.onecolumn {
+	display: flex;
+	flex-direction: column;
+	width: 45%;
+}
+
+.twocolumn {
+	display: flex;
+	flex-direction: column;
+	width: 45%;
+}
+
+.middle-img {
+	width: 90%;
+	display: flex;
+	justify-content: center;
+	margin: 50px;
+}
+
+hr {
+	margin: 50px;
+}
+
+p {
+	font-size: 20px;
+}
+
+h2 {
+	font-size: 30px;
+}
+
+h3 {
+	text-size: 20px;
+}
+
+.footer {
+	display: flex;
+	justify-content: center;
+	margin: 10px;
+}
+
+.services-header-img {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	margin: 10px;
+}
+
+.intro {
+	display: flex;
+	flex-direction: column;
+	margin: 10px;
+}
+
+.box1 {
+	display: flex;
+	flex-direction: column;
+	width: 40%;
+	margin: 5px;
+	padding: 5px;
+	border: 1px solid black;
+	background-color: lightgrey;
+}
+
+.box2 {
+	display: flex;
+	flex-direction: column;
+	width: 40%;
+	margin: 5px;
+	padding: 5px;
+	border: 1px solid black;
+	background-color: lightgrey;
+}
+
+.box3 {
+	display: flex;
+	flex-direction: column;
+	width: 40%;
+	margin: 5px;
+	padding: 5px;
+	border: 1px solid black;
+	background-color: lightgrey;
+}
+
+.box4 {
+	display: flex;
+	flex-direction: column;
+	width: 40%;
+	margin: 5px;
+	padding: 5px;
+	border: 1px solid black;
+	background-color: lightgrey;
+}
+
+.box5 {
+	display: flex;
+	flex-direction: column;
+	width: 40%;
+	margin: 5px;
+	padding: 5px;
+	border: 1px solid black;
+	background-color: lightgrey;
+}
+
+.box6 {
+	display: flex;
+	flex-direction: column;
+	width: 40%;
+	margin: 5px;
+	padding: 5px;
+	border: 1px solid black;
+	background-color: lightgrey;
+}
+
+.mainbox {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+.facts {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin: 25px;
+	
+}
+
+.factbox{
+	width: 40%
+}
+
+ul {
+	list-style-type: disc;
+	margin-left: 15px;
+}
