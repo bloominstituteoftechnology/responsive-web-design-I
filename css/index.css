@@ -195,3 +195,155 @@ h1, h2, h3, h4, h5 {
 	font-size: 14px;
   }  
 
+
+  @media (max-width: 800px){
+      body{
+          padding-right: 15%;
+          padding-left: 15%;
+      }
+
+      header {
+          display: flex;
+          flex-direction: row-reverse;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap-reverse;
+
+      }
+      header nav {
+
+        display: flex;
+
+      }
+      header nav a[href= "#contact"]{
+          display: none;
+      }
+
+      .cta .cta-text{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      }
+
+      .cta .cta-text button {
+          display:flex;
+          justify-content: center;
+          align-items: center;
+            width: 200px;
+            margin-left: 27%;
+      }
+
+
+      .cta img{
+          display: none;
+      }
+
+      .main-content .top-content{
+          display: flex;   
+          margin: 0 auto;
+          
+      }
+
+      .main-content .middle-img{
+          display: flex;
+          margin-left: 0 auto;
+          width: 98%;
+
+      }
+
+
+      .main-content .bottom-content{
+          display: flex;
+
+      }
+
+    
+
+  }
+
+
+  @media (max-width: 500px){
+    body{
+        padding-right: 20%;
+        padding-left: 20%;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row-reverse;
+          justify-content: center;
+          align-items: flex-start;
+          flex-wrap: wrap-reverse;
+          
+
+    }
+    header nav {
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+    }
+
+    header nav a{
+        margin-top: 30px;
+        font-size: 13px;
+        text-decoration: underline gray;
+    }
+    header nav a[href= "#contact"]{
+        display: none;
+    }
+
+    .cta .cta-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 55px;
+
+    }
+
+    .cta .cta-text button {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+          width: 170px;
+          margin-left: 18%;
+          font-size: 13px;
+    }
+
+
+    .cta img{
+        display: none;
+    }
+
+   
+
+    .main-content .top-content{
+        display: flex;
+        flex-direction: column;
+       
+
+    }
+
+    .main-content .middle-img{
+        display: flex;
+        margin-left: 0 auto;
+        width: 300px;
+
+    }
+
+
+    .main-content .bottom-content{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .main-content .bottom-content .text-content{
+        margin-top: 30px;
+    }
+
+
+}
+
