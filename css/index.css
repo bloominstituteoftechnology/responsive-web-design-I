@@ -1,3 +1,314 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
 
 
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+html, body {
+    height: 100%;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+h1 {
+	font-family: 'Bangers', cursive;
+	padding: 20px;
+	font-size: 6rem;
+	text-align: center;
+}
+
+h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/*Navigation and header contents*/
+
+nav {
+    margin: 2rem auto;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+
+nav a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: grey;
+}
+
+#section-one {
+    margin: 5% auto;
+}
+
+.iod {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+
+}
+
+.iod button {
+    width: 60%;
+    margin: 0 auto;
+}
+
+
+#section-one, .imgtwo {
+    display: flex;
+    justify-content: space-evenly;
+    height: 75%;
+}
+
+button {
+    font-size: 1rem;
+    padding: 3%;
+    text-align: center;
+    border-radius: 5%;
+    background-color: white;
+}
+
+/*body contents*/
+
+.hr1 {margin-top: -10rem;}
+
+#bigbox1 {
+    display:flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+#bigbox2 {
+    display:flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+
+.box1 {
+    display:flex;
+    flex-direction: column;
+    width: 48%;
+    font-size: 1.8rem;
+}
+
+.box2 {
+    display:flex;
+    flex-direction: column;
+    width: 48%;
+    font-size: 1.8rem;
+}
+
+.box5 {
+    display:flex;
+    flex-direction: column;
+    width: 33%;
+    font-size: 1.8rem;
+}
+
+.box4 {
+    display:flex;
+    flex-direction: column;
+    width: 33%;
+    font-size: 1.8rem;
+}
+
+.box3 {
+    display:flex;
+    flex-direction: column;
+    width: 33%;
+    font-size: 1.8rem;
+}
+
+.img3 {
+    display: flex;
+    justify-content: center;
+}
+.middle-img {
+    width: 100%;
+}
+
+
+
+
+/*phone contents*/
+
+@media (max-width: 500px){ 
+
+    .container{
+        width: 100%;
+    }
+
+    .hr1{
+    margin-top: -18rem; 
+}
+
+    .box1 {
+        width: 100%;
+        padding: 2rem;
+    }
+    .box2 {
+        width: 100%;
+        padding: 2rem;
+    }
+    .box3 {
+        width: 100%;
+        padding: 2rem;
+    }
+    .box4 {
+        width: 100%;
+        padding: 2rem;
+    }
+    .box5 {
+        width: 100%;
+        padding: 2rem; 
+    }
+    #bigbox2{
+        display: flex; 
+        justify-content: center; 
+        flex-direction: column; 
+    }
+    #bigbox1 {
+    display:flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-content: center; 
+
+    }
+    .iod{
+        margin: 0 auto;
+    }
+    .imgtwo{
+        display: none; 
+    }
+    nav {
+    margin: 0 auto;
+    display: flex; 
+    flex-direction: column; 
+    width: 100%;
+    }
+    a {
+    width: 100%;
+    text-align: center; 
+    padding: 2rem;
+    border-top: 1px solid black;
+}    
+    .logo {
+margin-bottom: 2rem;
+    }
+    .footernav, ul, li{
+padding: 1rem;
+    }
+    .middle-img{
+        height: 6rem;
+        width: 90%;
+        margin: 0 auto; 
+    }
+}
+
+/*Tablet design*/
+
+@media (max-width: 800px)
+{ 
+.imgtwo
+{
+    display: none; 
+}
+
+nav, a, .logo {
+    margin-top: 1rem;
+}
+
+nav, a {
+    padding: 1.5rem;
+}
+.iod {
+  margin: -2rem auto;
+}
+
+.box1{
+
+    font-size: 1rem;
+}
+.box2{
+
+    font-size: 1rem;
+}
+.box3{
+ 
+    font-size: 1rem;
+}
+.box4{
+
+    font-size: 1rem;
+}
+.box5{
+
+    font-size: 1rem;
+}
+.footernav, ul, li{
+    padding: .5rem;
+}
+.hr1{
+    margin-top: -18rem; 
+}
+}
