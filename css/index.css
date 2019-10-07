@@ -87,18 +87,41 @@ p {
 	margin: 0 auto;
 }
 
+@media (max-width: 800px) {
+    .container {
+        width: 90vw;
+        margin: 0 auto;
+    }
+}
+
 header{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 }
 
+@media (max-width: 800px) {
+    header {
+        width: 100vw;
+        flex-direction: column-reverse;
+    }
+}
+
 nav {
 	width: 65%;
 	margin: 40px;
 	display: flex;
-	justify-content: space-between;
+    justify-content: space-between;
 }
+
+@media (max-width: 800px) {
+    .nav {
+        width: 90vw;
+        display: flex;
+		flex-wrap: wrap;
+    }
+}
+
 
 nav a {
 	text-decoration: none;
@@ -120,7 +143,9 @@ nav a {
 
 .top-content-text {
 	margin: 70px;
-	text-align: center;
+    text-align: center;
+    position: relative;
+    bottom: 60px;
 }
 
 .top-content-text a{
@@ -129,12 +154,18 @@ nav a {
 	text-decoration: none;
 	color: rgb(173, 172, 173);
 	border: 1px solid black;
-	padding: 5px 45px;
+    padding: 5px 45px;
 }
 
-.circleImg {
+.circle-img {
 	height: 400px;
-	margin-bottom: 65px;
+    position: relative;
+}
+
+@media (max-width: 800px) {
+    .circle-img {
+        display: none;
+    }
 }
 
 .second-content {
@@ -149,8 +180,8 @@ nav a {
 }
 
 .middle-img {
-	padding: 25px; 
-	margin-left: 10px;
+    width: 85vw;
+    margin-left: 3vw;
 }
 .third-content {
 	border-bottom: 1px solid black;
