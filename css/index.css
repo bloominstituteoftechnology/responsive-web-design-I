@@ -66,19 +66,19 @@ h1, h2, h3, h4, h5 {
 
 h1 {
 	text-align: center;
-	font-size: 15vw;
+	font-size: 75px;
 	padding: 0px 20px;
 	margin-bottom: 24px;
 }
 
 h2 {
-	font-size: 5vw;
+	font-size: 16px;
 	text-align: left;
 }
 
 p {
 	line-height: 1.1;
-	font-size: 4vw;
+	font-size: 16px;;
 	text-align: left;
 }
 
@@ -96,8 +96,9 @@ p {
 
 @media (max-width: 500px) {
     .container {
-        width: 450px;
+        width: 90vw;
         margin: 0px auto;
+        align-content: center;
     }
 }
 
@@ -168,15 +169,15 @@ nav a {
 
 .top-content {
 	border-bottom: 1px solid black;
-	margin: 30px;;
+	margin: 30px;
 	display: flex;
 	justify-content: space-evenly;
 }
 
 @media (max-width: 500px) {
     .top-content {
-        margin: 0 auto;
-        width: 90vw;
+        margin: unset;
+        width: 85vw;
     }
 }
 
@@ -218,6 +219,7 @@ nav a {
 @media (max-width: 500px) {
     .second-content {
         flex-direction: column;
+        width: 85vw;
     }
 }
 
@@ -227,14 +229,15 @@ nav a {
 
 @media (max-width: 500px) {
     .features, .about {
-        width: 90vw;
+        width: 85vw;
     }
 }
 
 .middle-img {
     width: 90vw;
-    margin-left: 3vw;
+    margin: 0px auto;
 }
+
 .third-content {
 	border-bottom: 1px solid black;
 	display: flex;
@@ -245,7 +248,7 @@ nav a {
 @media (max-width: 500px) {
     .third-content {
         flex-direction: column;
-        width: 95vw;
+        width: 85vw;
     }
 }
 
@@ -256,7 +259,7 @@ nav a {
 
 @media (max-width: 500px) {
     .services, .product, .vision {
-        width: 90vw;
+        width: 85vw;
         margin: unset;
     }
 }
