@@ -76,8 +76,8 @@ h1, h2, h3, h4, h5 {
 
 .navigation-bar {
 	width: 100%;
-    background: #fff;
-    position:fixed;
+	background: #fff;
+	position:fixed;
 	top: 0;
 	z-index: 2;
 }
@@ -131,12 +131,12 @@ header {
 	display: flex;
 }
 
-header .sixtypercent {
+header .iod {
 	width: 500px;
 	height: 390px;
 }
 
-header .sixtypercent .main-heading {
+header .iod .main-heading {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -144,24 +144,24 @@ header .sixtypercent .main-heading {
 	height: 100%;
 }
 
-header .sixtypercent .main-heading .heading-container {
+header .iod .main-heading .heading-container {
     position: relative;
     display: flex;
     flex-direction: column;
 }
 
-header .sixtypercent .main-heading .heading-container h1 {
+header .iod .main-heading .heading-container h1 {
 	font-size: 56px;
 	text-align: center;
 }
 
-header .sixtypercent .main-heading .heading-container button {
+header .iod .main-heading .heading-container button {
     padding: 10px 20px;
 	background: none;
 	border: 1px solid black;
 }
 
-header .fortypercent {
+header .headerPic {
 	width: 390px;
 	height: 390px;
 	background-image: url('../img/header-img.png');
@@ -214,6 +214,7 @@ section.details .about {
 	height: 250px;
 	flex-grow: 1;
 }
+/*what we offer*/
 
 section.offerings {
 	display: flex;
@@ -243,6 +244,7 @@ section.offerings div:nth-child(3) {
 	background: black;
 	margin: 30px 0 10px;
 }
+/*contact*/
 
 section.contact {
 	display: block;
@@ -261,6 +263,7 @@ section.contact a {
 	color: black;
 	padding: 10px 0;
 }
+/*footer*/
 
 footer {
 	display: flex;
@@ -308,6 +311,7 @@ footer {
 	background: black;
 	margin: 30px 0 20px;
 }
+/*facts styling*/
 
 .section-facts {
 	display: flex;
@@ -346,7 +350,7 @@ footer {
 }
 
 
-@media screen and (max-width: 800px) {
+@media (max-width: 800px) {
     .nav-container {
         display: flex;
         flex-direction: column-reverse;
@@ -360,12 +364,11 @@ footer {
     .navigation-bar .nav-container nav {
         padding-top: 20px;
     }
-
-    .fortypercent {
+    .headerPic {
         display: none;
     }
 
-    .sixtypercent {
+    .iod {
         align-self: center;
         align-content: center;
         width: 100% !important;
@@ -373,7 +376,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 500px) {
+@media (max-width: 500px) {
     .nav-container {
         display: flex;
         flex-direction: column-reverse;
@@ -394,7 +397,7 @@ footer {
     }
 
     .navigation-bar .nav-container div {
-        border-bottom: 1px solid rgb(185, 186, 187);
+        border-bottom: 1px solid grey;
         width: 100%;
     }
 
@@ -406,11 +409,7 @@ footer {
         border-bottom: 1px solid rgb(185, 186, 187);
     }
 
-    .fortypercent {
-        display: none;
-    }
-
-    .sixtypercent {
+    .iod {
         align-self: center;
         align-content: center;
         width: 100% !important;
@@ -425,25 +424,5 @@ footer {
     .details .features, .details .about, .offerings div {
         width: 100% !important;
         padding: 20px 0;
-    }
-
-    .service-header {
-        display: none;
-    }
-
-    .services-heading-section {
-        padding-top: 250px;
-    }
-
-    .services-section .service {
-        width: 100%;
-    }
-
-    .section-facts {
-        flex-direction: column;
-    }
-
-    .section-facts div, .section-facts img {
-        width: 100%;
     }
 }
