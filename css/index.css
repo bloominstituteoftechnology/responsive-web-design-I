@@ -275,11 +275,50 @@ header{
     }
 
 .bottomSection{
-height: 400px;
-align-items: baseline;
+    height: 400px;
+    align-items: baseline;
 }    
 }
 
 @media(max-width: 500px){
+.container{
+    height: 400px 
+}
+nav{
+    flex-direction: column;
+    justify-content: space-evenly;
+ height: 350px;
+}
+nav a {
+    height: 50px;
+    width: 100%;
+    border-top: 1px solid grey; 
+    border-bottom: 1px solid grey 
+}
+.topSection{
+flex-direction: column;
+height: 400px;
+width: 100%;
+}
+.content-one{
+    width:100%;
+}
+.content-two{
+    width: 100%;
+}
+.bottomSection{
+    flex-direction: column;
+    height: 600px;
+    width: 100%;
+}
+.content-three{
+    width: 100%;
+}
+.content-four{
+    width: 100%;
+}
+.content-five{
+    width: 100%;
+}
 
 }
