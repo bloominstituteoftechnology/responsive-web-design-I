@@ -68,7 +68,8 @@ h1, h2, h3, h4, h5 {
 /* Refactor to responsive design */
 
 .container {
-	width: 1000px;
+    width: 100%;
+	max-width: 1000px;
 	margin: auto;
 	display: flex;
 	flex-direction: column;
@@ -76,18 +77,21 @@ h1, h2, h3, h4, h5 {
 
 header {
     display: flex;
-    justify-content: space-between;
+    width: 100%;
+    padding: 3% 0;
+    
 }
 
 header nav{
     display: flex;
-    justify-content: space-around;
     width: 70%;
+    justify-content: space-around;
+    align-items: center;
+    
 }
 
 header nav a {
     text-decoration: none;
-    margin: 20px;
     color: grey;
     
 }
@@ -97,7 +101,9 @@ header nav a:hover {
 }
 
 header .logo {
-	margin: 0 50px;
+    height: 100%;
+    width: 22%;
+    margin-left: 5%;
 }
 
 .top-content-left h1 {
@@ -108,7 +114,6 @@ header .logo {
 .top-content {
 	display: flex;
     justify-content: space-between;
-    padding: 0 40px;
 }
 
 .top-content-left {
@@ -128,7 +133,8 @@ header .logo {
 }
 
 .top-content-right img {
-	margin-top: 50px;
+    margin-top: 50px;
+    width: 100%
 }
 
 .top-content-left button {
@@ -198,5 +204,100 @@ footer {
     text-align: center;
     margin: 30px;
 }
+
+/* Media break point 800px (tablet) */
+
+@media(max-width: 800px) {
+    
+    header {
+    flex-direction: column-reverse;
+    align-items: center;
+    }
+
+    header nav {
+        margin: 7%;
+        width: 100%;
+    }
+
+    header .logo {
+        width: 30%;
+    }
+
+    .top-content-right {
+        display: none;
+    }
+
+    .top-content {
+        justify-content: center;
+        padding-bottom: 5%;
+    }
+
+    .top-content-left button {
+        width: 60%;
+    }
+
+    .middle-img {
+        width: 91.5%;
+    }
+
+}
+
+/* Media break point 500px (mobile) */
+
+@media(max-width: 500px) {
+    
+    header nav {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav a {
+        border-bottom: 1px solid grey;
+        padding: 5% 0;
+        width: 100%;
+        
+    }
+
+    header nav a:first-child {
+        border-top: 1px solid grey;
+    }
+
+    .middle-content-top {
+        flex-wrap: wrap;
+    
+    }
+    
+    .features {
+        width: 100%;
+        padding-top: 5%;
+    }
+    
+    .about {
+        width: 100%;
+        padding-top: 15%;
+    }   
+    
+    .middle-content-bottom {
+        flex-wrap: wrap;
+    
+    }
+
+    .services {
+        width: 100%;
+    }
+    
+    .product {
+        width: 100%;
+        padding-top: 15%;
+    }
+    
+    .vision {
+        width: 100%;
+        padding-top: 15%;
+    }
+    
+}
+
 
 
