@@ -57,8 +57,9 @@ table {
 html, body {
     height: 100%;
 	font-family: 'Titillium Web', sans-serif;
-	margin: 30px 20px;
+
 	width: 90%;
+	margin: 0 auto;
 }
 
 h1, h2, h3, h4, h5 {
@@ -68,26 +69,44 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Navigation **********************/
-
-.top{
-	padding: 20px;
-
-	background-color: pink;
+.service-header {
 	
-	width: 100%;
 	display: flex;
+	flex-direction: column;
+
+	
+	margin-bottom: 80px;
+	padding-bottom: 50px;
+	border-bottom: 2px solid black;
+	margin: 0 auto;
+
+	
+	
+
+}
+.top{
+	padding: 5px;
+
+    width: 100%;
+	display: flex;
+
 	justify-content: space-between;
 	align-items: center;
+
 
 
 }
 
 nav{
-	width: 50%;
+	width: 60%;
 	
+	margin-bottom: 5px;
+	margin-top: 10px;
 	margin-bottom: 10px;
+
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-evenly;
+
 
 }
 /* navigation */
@@ -150,27 +169,23 @@ nav{
 	}
 */
 
-.service-header {
-	
-	display: flex;
-	flex-direction: column;
-	margin-bottom: 80px;
-	padding-bottom: 50px;
-	border-bottom: 2px solid black;
-	margin-left: 50px;
-	
+
+.service-header__imgDiv{
+	width: 80&%;
+	margin: 20px auto;
+	overflow: hidden;
 
 }
-.service-header__imgDiv{
+.services-header-img{
+	width: 100%;
+}
+
+.service-header__main{
 	width: 80%;
 	margin: 0 auto;
+
 }
 
-.service-header div{
-	margin: 40px 40px;
-
-	
-}
 h2{
 	font-size: 23px;
 }
@@ -180,6 +195,7 @@ h3{
 
 section{
 	border-bottom: 2px solid black;
+
 	padding-bottom: 60px;
 	margin-bottom: 40px;
 
@@ -239,6 +255,7 @@ ul{
  .product-header{
 	 display: flex;
 	 flex-direction: row;
+	 width: 90%;
 	
  }
  .product-header .product-headerDiv{
@@ -283,12 +300,17 @@ ul{
 
 @media (max-width: 800px) {
 
-	.ser-nav{
+	.top{
 		width: 100%;
+		display: flex;
 		flex-direction: column-reverse;
 		align-items: space-evenly;
 	}
 
+	nav{
+		width: 100%;
+
+	}
 	.logo{
 		margin: 10px 0 20px;
 	}
@@ -298,9 +320,44 @@ ul{
 		justify-content: space-evenly;
 	}
 	
-	
+	.section__row{
+		
+		flex-direction: column;
+	}
+
+	.row1 .section__row-container{
+		width: 80%;
+		
+	}
+	.footer__row1{
+		display: flex;
+		flex-direction: column;
+		
+		
+	}
+	.footer__row1--left{
+		margin-bottom: 20px;
+	}
+	.footer__row{
+		width: 70%;
+	}
+
+	.section__row-container{
+		width: 80%;
+		
+	}
+
+	.footer__row1{
+		flex-direction: column;
+		align-items: center;
+	}
+	.footer__row1 div{
+		width: 80%;
+	}
 	
 }
+
+
 
 @media (max-width: 500px) {
 	nav{
@@ -320,16 +377,31 @@ ul{
 		border-bottom:  1px solid  black;
 	}
 
-	.row1, .row3{
+	.product-header{
 		flex-direction: column;
+		
 	}
+	.product-header .product-headerDiv{
+		width: 70%;
+	}
+
+
 
 	footer{
 		flex-direction: column;
 		
 	}
+
+	.footer__row1--right .services-info-img {
+		 width: 100%;
+	}
 	footer .copyRight{
 		margin-top: 30px;
 		align-self: center;
+	}
+
+	
+	.product__footer{
+		height: 400px;
 	}
 }
