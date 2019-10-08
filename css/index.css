@@ -50,6 +50,7 @@ table {
 /* Set every element's box-sizing to border-box */
 * {
     box-sizing: border-box;
+    max-width: 100%;
 }
 
 html, body {
@@ -64,7 +65,13 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
-nav { 
+
+.container{
+    display:flex;
+    justify-content: space-around;
+    width: 95%;
+}
+nav{ 
 	display: flex;
 	background : white;
 	height: 30px; 
@@ -73,11 +80,11 @@ nav {
 	width:100%;
 	justify-content: space-evenly;
 	}
-	
-		nav a{
-			color: grey;
-			text-decoration: none;
-			padding-top: 3mm;
+
+	nav a{
+	    color: grey;
+		text-decoration: none;
+		padding-top: 3mm;
 		}
     header{
 			
@@ -216,8 +223,8 @@ nav {
 
 .main-item button{
 	border: 3px solid black; 
-		   color:black;
-		   font-size: 12px; 
+	color:black;
+	font-size: 12px; 
 	}
 
 .services-footer{
@@ -238,11 +245,41 @@ nav {
 }	
 
 .services-info-img{
-height: 400px;
-width: 48%;
+    height: 400px;
+    width: 48%;
 }
 ul{
 	list-style-type: square;
 }
+/*-----------media adjusters-------*/
 
+@media(max-width: 800px){
+body{
+    width: 80%;
+    padding-left: 10%;
+ }
+.container{
+    display: flex;
+    flex-direction: column-reverse;
+    }
+.logo{
+    align-self: flex start;
+    justify-content: center; 
+    }
+.codeCircle{
+    display: none;
+    }
 
+header{
+    justify-content: center;
+    }
+
+.bottomSection{
+height: 400px;
+align-items: baseline;
+}    
+}
+
+@media(max-width: 500px){
+
+}
