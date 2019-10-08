@@ -63,9 +63,9 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
-
-/* Your code starts here! */
+/* code starts here */
+/* Add max-width(desktop-first) media queries @800px and @500px */
+/* Refactor to responsive design */
 
 .container {
 	width: 1000px;
@@ -75,16 +75,21 @@ h1, h2, h3, h4, h5 {
 }
 
 header {
-	display: flex;
+    display: flex;
+    justify-content: space-between;
 }
 
 header nav{
-	margin: 25px;
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
 }
 
 header nav a {
+    text-decoration: none;
     margin: 20px;
     color: grey;
+    
 }
 
 header nav a:hover {
@@ -92,8 +97,7 @@ header nav a:hover {
 }
 
 header .logo {
-	margin-left: 100px;
-	margin-top: 20px;
+	margin: 0 50px;
 }
 
 .top-content-left h1 {
@@ -103,7 +107,8 @@ header .logo {
 
 .top-content {
 	display: flex;
-	align-content: center;
+    justify-content: space-between;
+    padding: 0 40px;
 }
 
 .top-content-left {
@@ -144,7 +149,7 @@ header .logo {
 }
 
 .middle-img {
-	margin-left: 30px;
+    margin: 0 30px;
 }
 
 .middle-content-top {
@@ -168,10 +173,8 @@ header .logo {
 .middle-content-bottom {
 	display: flex;
 	justify-content: space-evenly;
-	border-top: 2px solid black;
 	border-bottom: 2px solid black;
 	margin: 30px;
-	padding-top: 30px;
 	padding-bottom: 30px;
 }
 
@@ -188,11 +191,12 @@ header .logo {
 }
 
 .contact {
-	margin: 30px;
+	margin: 0 30px 30px 30px;
 }
 
 footer {
-	text-align: center;
+    text-align: center;
+    margin: 30px;
 }
 
 
