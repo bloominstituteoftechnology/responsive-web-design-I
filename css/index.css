@@ -298,6 +298,12 @@ ul li{
 
 
 @media screen and (max-width: 500px){
+    .container {
+        width: 500px;
+        /* TB LR */
+        margin: 0 auto;
+      }
+   
     body{
         max-width: 100%;
     }
@@ -490,6 +496,12 @@ ul li{
 }
 
 @media screen and (max-width: 800px){
+    .container {
+        width: 800px;
+        /* TB LR */
+        margin: 0 auto;
+      }
+    
     header{
         display: flex;
         flex-direction: column-reverse;
@@ -504,10 +516,12 @@ ul li{
     nav{
     display: flex;
     justify-content: center;
+    margin-right: 0;
+    align-items: center;
     }
 
     nav a{
-        padding: 0 3%;
+        padding: 0 1%;
     }
 
     .cta{
