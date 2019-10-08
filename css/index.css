@@ -1,3 +1,303 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* code starts here */
+/* Add max-width(desktop-first) media queries @800px and @500px */
+/* Refactor to responsive design */
+
+.container {
+    width: 100%;
+	max-width: 1000px;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    padding: 3% 0;
+    
+}
+
+header nav{
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+header nav a {
+    text-decoration: none;
+    color: grey;
+    
+}
+
+header nav a:hover {
+	color: black;
+}
+
+header .logo {
+    height: 100%;
+    width: 22%;
+    margin-left: 5%;
+}
+
+.top-content-left h1 {
+	font-size: 90px;
+	
+}
+
+.top-content {
+	display: flex;
+    justify-content: space-between;
+}
+
+.top-content-left {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	text-align: center;
+	margin: 20px;
+	
+}
+
+.top-content-right {
+	margin: 20px
+	
+}
+
+.top-content-right img {
+    margin-top: 50px;
+    width: 100%
+}
+
+.top-content-left button {
+	padding: 10px 0px;
+	width: 40%;
+	background: white;
+}
+
+.top-content-left button:hover {
+	color: white;
+	background: grey;
+	cursor: pointer;
+}
+
+.middle-content {
+	display: flex;
+	flex-direction: column;
+}
+
+.middle-img {
+    margin: 0 30px;
+}
+
+.middle-content-top {
+	display: flex;
+	justify-content: space-between;
+	border-top: 2px solid black;
+	margin: 30px;
+	padding-top: 30px;
+
+}
+
+.features {
+	width: 50%;
+	
+}
+
+.about {
+	width: 50%;
+}
+
+.middle-content-bottom {
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 2px solid black;
+	margin: 30px;
+	padding-bottom: 30px;
+}
+
+.services {
+	width: 33%;
+}
+
+.product {
+	width: 33%;
+}
+
+.vision {
+	width: 33%;
+}
+
+.contact {
+	margin: 0 30px 30px 30px;
+}
+
+footer {
+    text-align: center;
+    margin: 30px;
+}
+
+/* Media break point 800px (tablet) */
+
+@media(max-width: 800px) {
+    
+    header {
+    flex-direction: column-reverse;
+    align-items: center;
+    }
+
+    header nav {
+        margin: 7%;
+        width: 100%;
+    }
+
+    header .logo {
+        width: 30%;
+    }
+
+    .top-content-right {
+        display: none;
+    }
+
+    .top-content {
+        justify-content: center;
+        padding-bottom: 5%;
+    }
+
+    .top-content-left button {
+        width: 60%;
+    }
+
+    .middle-img {
+        width: 91.5%;
+    }
+
+}
+
+/* Media break point 500px (mobile) */
+
+@media(max-width: 500px) {
+    
+    header nav {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav a {
+        border-bottom: 1px solid grey;
+        padding: 5% 0;
+        width: 100%;
+        
+    }
+
+    header nav a:first-child {
+        border-top: 1px solid grey;
+    }
+
+    .middle-content-top {
+        flex-wrap: wrap;
+    
+    }
+    
+    .features {
+        width: 100%;
+        padding-top: 5%;
+    }
+    
+    .about {
+        width: 100%;
+        padding-top: 15%;
+    }   
+    
+    .middle-content-bottom {
+        flex-wrap: wrap;
+    
+    }
+
+    .services {
+        width: 100%;
+    }
+    
+    .product {
+        width: 100%;
+        padding-top: 15%;
+    }
+    
+    .vision {
+        width: 100%;
+        padding-top: 15%;
+    }
+    
+}
+
 
 
