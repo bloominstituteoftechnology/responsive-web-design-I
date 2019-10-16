@@ -60,16 +60,16 @@ h1, h2, h3, h4, h5 {
 }
 .container {
 	width: 880px;
-	/* TB LR */
 	margin: 0 auto;
   }
   
-  /* header */
+
   
   header nav {
-	display: inline-block;
+	display: flex;
 	width: 691px;
-	vertical-align: top;
+    vertical-align: top;
+    justify-content: center;
 	margin-top: 35px;
   }
   
@@ -96,7 +96,7 @@ h1, h2, h3, h4, h5 {
 	margin-top: 25px;
   }
   
-  /* cta */
+
   
   .cta .cta-text {
 	display: inline-block;
@@ -123,7 +123,7 @@ h1, h2, h3, h4, h5 {
   }
   
   .cta img {
-	display: inline-block;
+	display: flex;
 	margin-top: 69px;
   }
   
@@ -182,4 +182,23 @@ h1, h2, h3, h4, h5 {
 	font-size: 14px;
   }
 
-
+@media(max-width: 800px){
+ header .logo {
+   display:flex;
+    width: 200px;
+    text-align: center;
+    justify-content: flex-end; 
+    
+ }   
+}
+.cta img{
+  display: none;  
+}
+ 
+@media (max-width:500px){
+    header nav{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+}
