@@ -269,6 +269,10 @@ li {
 	margin-top: 45px;
 }
 
+.logo-mobile{
+    display: none;
+}
+
 
 /* TABLET VIEW */
 @media (max-width: 800px) {
@@ -303,12 +307,12 @@ li {
     nav{
         flex-direction: column;
         flex-wrap: wrap-reverse;
-
     }
     nav a{
         text-align: center;
         border-bottom: solid 1px black;
         width: 100%;
+        padding: 2%;
     }
 
     .upper{
@@ -332,6 +336,13 @@ li {
     }
 
     .logo{
+        display: none;   
+    }
+
+    .logo-mobile{
+        display: inline-block;
         border-bottom: solid 1px black;
     }
+
+
 }
