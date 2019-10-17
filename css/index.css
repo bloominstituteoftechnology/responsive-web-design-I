@@ -79,10 +79,12 @@ h1, h2, h3, h4, h5 {
 	color: black;
 }
 
+
+
 .container {
-width:  1024px;
-margin:  0 auto;
-}
+    width: 1024px;
+    margin: 0 auto;
+    }
 
 
 .container header nav {
@@ -171,3 +173,49 @@ padding-bottom: 40px;
 .middle-img {
 	width: 100%;
 }
+
+/* tablet view */
+
+@media(max-width: 800px) {
+    
+    header nav {
+      display:  flex;
+      flex-direction:  column-reverse; 
+    }
+
+    .nav-links {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 20px;     
+    }
+
+    .container-innovation img {
+        display: none;
+    }
+
+
+}
+
+
+/*mobile view*/
+
+@media(max-width: 500px) {
+
+    header nav {
+        display:  flex;
+        flex-direction:  column-reverse;
+        align-content: center; 
+        justify-content: center;
+      }
+
+      .nav-links {
+        display: flex;
+        flex-direction: column;            
+        }
+
+
+        
+}
+
+
