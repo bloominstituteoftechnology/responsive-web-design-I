@@ -32,5 +32,5 @@ Follow these steps for completing your project.
 * [ ] Create a tablet and mobile version of the services page from previous projects
 * [ ] Once you have completed the project with max-width media queries, start over with min-width media queries to get a feel for how a mobile first approach would be like.  I recommend making a copy of all your contents in a new folder named "mobile-first" to keep it separate
 
-
+NOTE: I am still studying and taking notes on all the great material that you have provided me with. It is a lot to go through. I'll have this completed tonight but I want to be thorough.
 
