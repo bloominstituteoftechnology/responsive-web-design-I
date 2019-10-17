@@ -1,3 +1,259 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+body{
+	width: 875px;
+	margin: auto;
+}
+.navi{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: baseline;
+}
+nav {
+	display: flex;
+	flex-wrap: wrap;
+    margin: 30px;
+	align-items: baseline;
+}
+nav a{
+	display: flex;
+	margin: 20px;
+}
+.logo{
+	height: 40px;
+	size: 20px;
+}
+.title{
+    display: flex;
+	justify-content:space-evenly ;
+	padding-bottom: 50px;
+}
+
+
+.title .iod{
+	font-size: 70px;
+	text-align: center;
+	flex-wrap: wrap;
+	margin-top: 60px;
+
+
+}
+button{
+    background: white;
+	font-size: 15px;
+	border: 1px solid black;
+	padding:5px 30px;
+	cursor: pointer;
+}
+button:hover{
+	background: black;
+	color: white;
+}
+a{
+	display: flex;
+	justify-content: space-around;
+	color: grey;
+	text-decoration: none;
+}
+a:hover{
+	color: red;
+	text-decoration: underline;
+}
+main{
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+}
+.top{
+	display: flex;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.bottom{
+	display: flex;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+footer{
+	text-align: left;
+	margin-top: 30px;
+}
+.copyright{
+	text-align: center;
+	padding: 30px;
+}
+/* Services CSS */
+
+
+.info{
+	display: flex;
+	flex-wrap: wrap;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-top: 1px solid black;
+	border-bottom: 2px solid black;
+}
+.info div{
+	background-color: whitesmoke;
+	width: 46%;
+	margin: 2%;
+	border: 1px  solid black;
+	padding: 30px;
+	justify-content: space-between;
+}
+
+@media (max-width: 500px){
+	.container{
+		width: 450px;
+		margin: auto;
+	}
+	.navi{
+		margin: auto;
+		flex-direction: column-reverse;
+		align-items: center;
+		border-bottom: 1px solid black;
+		justify-items: center;
+		justify-content: center;
+		padding-top: 30px;
+	}
+	nav{
+		flex-direction: column;
+		width: 100%;
+		/* justify-content: center; */
+		align-content: center;
+	}
+	nav a{
+		display: flex;
+		text-align: center;
+		border-top: 1px solid black;
+		width:110%;
+		padding-top: 20px;
+	}
+	
+	.title{
+		flex-direction: column;
+	}
+	.code{
+		display: none;
+	}
+	.top{
+		flex-direction: column;
+		padding-top: 50px;
+	}
+	.about{
+		padding-top: 50px;
+	}
+	.middle-img{
+		width: 100%;
+	}
+	.bottom{
+		flex-direction: column;
+	}
+	.services{
+		padding-top: 50px;
+	}
+	.product{
+		padding-top: 50px;
+	}
+	.vision{
+		padding-top: 50px;
+	}
+	.info{
+		flex-direction: column;
+	}
+}
+@media (max-width: 800px){
+	.container{
+		width: 750px;
+		margin: auto;
+	}
+	.navi{
+		padding-top: 30px;
+		flex-direction: column-reverse;
+		justify-content: center;
+		align-items: center;
+	}
+	nav{
+		flex-wrap: nowrap;
+		justify-content: space-between;
+		width: 100%;
+	}
+	.iod{
+		text-align: center;
+		justify-content: center;
+		margin: auto;
+	}
+	.code{
+		display: none;
+	}
+	.middle-img{
+		width: 100%;
+	}
+}
