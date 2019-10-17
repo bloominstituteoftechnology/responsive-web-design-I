@@ -293,25 +293,6 @@ li {
         padding-bottom: 25px;
     }
 
-    /* header{
-        display: flex;
-        width: 100%;
-        flex-direction: column-reverse;
-        text-align: center; */
-        /* justify-content: center; */
-        /* align-items: center; */
-    /* }
-    .top-logo{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-    }
-
-    header .logo {
-        width:14%;
-    } */ */
-
 }
 
 /* MOBILE VIEW */
@@ -319,5 +300,38 @@ li {
     *{
         background-color: turquoise;
     }
+    nav{
+        flex-direction: column;
+        flex-wrap: wrap-reverse;
 
+    }
+    nav a{
+        text-align: center;
+        border-bottom: solid 1px black;
+        width: 100%;
+    }
+
+    .upper{
+        flex-direction: column;
+    }
+
+    .upper-content{
+        width: 97%;
+    }
+
+    .index-bottom{
+        flex-direction: column;
+    }
+
+    .index-bottom-content{
+        width: 97%;
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    .logo{
+        border-bottom: solid 1px black;
+    }
 }
