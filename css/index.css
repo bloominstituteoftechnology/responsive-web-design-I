@@ -82,7 +82,7 @@ h1, h2, h3, h4, h5 {
 
 
 .container {
-    width: 1024px;
+    width: 100%;
     margin: 0 auto;
     }
 
@@ -145,7 +145,7 @@ header nav a:hover {
 }
 
 .container-content {
-	height:  600px;
+	height:  100%;
 	margin-top: 50px;
 	margin-bottom: 20px;
 	border-top: 1px solid black;
@@ -202,20 +202,43 @@ padding-bottom: 40px;
 
 @media(max-width: 500px) {
 
+    .container {
+        direction: flex;
+        flex-direction:  column;
+    }
+
     header nav {
         display:  flex;
         flex-direction:  column-reverse;
-        align-content: center; 
         justify-content: center;
       }
 
+
       .nav-links {
         display: flex;
-        flex-direction: column;            
+        flex-direction: column;
+        width: 100%; 
+        text-align: center;
+        border-bottom: 1px solid black;         
+        }
+
+        header nav a {
+            border-top: 1px solid black;
+            padding: 20px 0;
+        }
+
+        .content-features-about {
+            display: flex;
+            flex-direction: column;            
+        }
+
+        .content-service-product-vison {
+            display: flex;
+            flex-direction: column;            
         }
 
 
-        
+
 }
 
 
