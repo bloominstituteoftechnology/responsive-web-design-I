@@ -1,3 +1,185 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 2%;
+}
 
 
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-top:0%;
+
+}
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        
+        
+    }
+
+        nav a {
+           text-decoration: none;
+
+        }
+
+#group1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+
+    
+    
+    
+}
+
+    #top {
+        text-align: center;
+        font-size: 300%;
+        padding-left: 20%;
+        
+    }
+
+    #button {
+        border: 2px solid black;
+    }
+
+
+    #horizontal-line-top {
+        border: 2px solid black;
+    }
+
+
+#group2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.middle-img {
+    width: 100%;
+}
+
+#group3 {
+    display: flex;
+    flex-direction: row;
+}
+
+#horizontal-line-bottom {
+    border: 2px solid black;
+    }
+}
+
+
+
+
+
+footer div {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#copyright {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+@media (max-width:1000px) {
+    #code {
+        display: none;
+    }
+    header {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+       
+    }
+
+        
+
+    #top {
+        padding-left:0%;
+    }
+    
+}
+
+
+@media (max-width:500px) {
+    header a  {
+        border-bottom: 2px solid black;
+        padding-bottom: 5%;
+        padding-top: 5%;
+        width: 150%;
+        text-align: center;
+       
+    }
+
+
+        nav {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            
+            
+        }
+
+
+    #group1 {
+        padding: 5% 0%;
+    }
+    #group2 {
+        display: flex;
+        flex-direction: column;
+        padding: 5% 0%;
+    }
+
+        #features {
+            padding: 5% 0%;
+        }
+
+        #about {
+            padding: 5% 0%;
+        }
+
+    #group3 {
+        display: flex;
+        flex-direction: column;
+        padding: 5% 0%;
+    }
+
+        #services {
+            padding: 5% 0%;
+        }
+
+        #product {
+            padding: 5% 0%;
+        }
+
+        #vision {
+            padding: 5% 0%;
+        }
+
+
+    * {
+        margin: 0%;
+        
+    }
+
+    footer {
+        padding: 5% 0%;
+    }
+
+
+
+
+    
+    
+}
