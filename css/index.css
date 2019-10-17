@@ -70,10 +70,16 @@ body {
 	margin: 0% 5% 5% 5%;
 }
 
-nav {
+.nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+}
+
+.nav_anchors {
+    display: flex;
+    justify-content: space-around;
+    width: 75%;
 }
 
 nav a {
@@ -81,6 +87,10 @@ nav a {
 	padding-top: 3%;
 	color: grey;
 	font-weight: bold;
+}
+
+.logo {
+    padding-top: 3%;
 }
 
 h1 {
@@ -112,6 +122,8 @@ header p:hover {
 	background-color: black;
 	color: white;
 }
+
+/* Services styling */
 
 .services-header-img {
 	width: 100%;
@@ -193,3 +205,39 @@ ul {
 	list-style-position: inside;
 }
 
+@media (max-width: 800px) {
+    .header-img {
+        display: none;
+    }
+
+    .nav-anchors {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .nav {
+        flex-wrap: wrap-reverse;
+    }
+
+    .logo {
+        margin: 3% auto;
+    }
+}
+
+@media (max-width: 500px) {
+    .nav {
+        flex-direction: column-reverse;
+    }
+
+    .nav_anchors {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav_anchors a {
+        border-bottom: solid 1px black;
+        width: 100%;
+        text-align: center;
+        padding: 3% 0%;
+    }
+}
