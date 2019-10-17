@@ -1,7 +1,6 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
 
-
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -67,126 +66,232 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
 .container {
-  width: 880px;
-  /* TB LR */
-  margin: 0 auto;
+	width: 90%;
+	margin: 0 auto;
+	padding-top: 120px;
 }
 
-/* header */
-
-header nav {
-  display: inline-block;
-  width: 691px;
-  vertical-align: top;
-  margin-top: 35px;
+.navigation-bar .nav-container {
+	display: flex;
+	flex-direction: column-reverse;
 }
 
-header nav a {
-  margin-right: 65px;
-  font-size: 14px;
-  color: gray;
-  text-decoration: none;
+.navigation-bar .nav-container div {
+	justify-content: center;
+	width: 100%;
+	height: 36px;
+	background-image: url('../img/logo.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	margin: 20px 0;
+	border-bottom: 1px solid rgb(185, 186, 187);
 }
 
-header nav a:hover {
-  text-decoration: underline;
+.navigation-bar .nav-container .navigation a {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px 0;
+	font-size: 20px;
+	text-decoration: none;
+	border-bottom: 1px solid rgb(185, 186, 187);
+	color: rgb(185, 186, 187);
 }
 
-header nav a:first-child {
-  margin-left: 0;
+header .sixtypercent {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	align-items: center;
+	text-align: center;
+	margin: -70px 0 70px 0;
 }
 
-header nav a:last-child {
-  margin-right: 0;
+header .fortypercent {
+	display: none;
 }
 
-header .logo {
-  margin-top: 25px;
+header .sixtypercent h1 {
+	font-size: 72px;
 }
 
-/* cta */
-
-.cta .cta-text {
-  display: inline-block;
-  vertical-align: top;
-  font-size: 77px;
-  margin-top: 120px;
-  text-align: center;
-  padding: 0px 75px;
+header .sixtypercent button {
+	margin-top: 10px;
+	padding: 10px 40px;
+	font-size: 16px;
+	border: 1px solid rgb(185, 186, 187);
 }
 
-.cta .cta-text button {
-  background: white;
-  vertical-align: top;
-  margin-top: 6px;
-  padding: 8px 44px;
-  font-size: 17px;
-  border: 1px solid black;
-  cursor: pointer;
+.details {
+	margin-top: 35px;
+	display: flex;
+	flex-direction: column;
 }
 
-.cta .cta-text button:hover {
-  background: black;
-  color: white;
+.details .features {
+	margin: 25px 0;
 }
 
-.cta img {
-  display: inline-block;
-  margin-top: 69px;
+.details .about {
+	margin: 30px 0 10px;
 }
 
-.main-content {
-  border-top: 1px solid black;
-  margin-top: 76px;
-  padding-top: 39px;
+.full-width-image {
+	width: 100%;
+	height: 186px;
+	background-image: url('../img/mid-page-accent.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
 }
 
-.main-content .top-content {
-  padding: 0 10px;
+.offerings {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin-top: -10px;
 }
 
-.main-content .top-content .text-content {
-  width: 410px;
-  display: inline-block;
-  margin-right: 34px;
+.offerings div p {
+	margin-top: 15px;
 }
 
-.main-content .top-content .text-content:last-child {
-  margin-right: 0;
+.offerings div:not(:last-child) {
+	margin-bottom: 72px;
 }
 
-.main-content .middle-img {
-  margin-top: 45px;
-}
-
-.main-content .bottom-content {
-  margin-top: 37px;
-  padding: 0 10px;
-}
-
-.main-content .bottom-content .text-content {
-  width: 275px;
-  display: inline-block;
-  margin-right: 12px;
-}
-
-.main-content .bottom-content .text-content:last-child {
-  margin-right: 0;
+.offerings div:last-child {
+	margin-bottom: 16px;
 }
 
 .contact {
-  margin-top: 57px;
-  border-top: 1px solid black;
-  padding: 39px 10px 0;
+	margin: 32px 0;
 }
 
-.contact p {
-  margin: 20px 0;
+section.contact address {
+	padding-bottom: 10px;
+	display: block;
+	width: 200px;
+}
+
+section.contact a {
+	display: flex;
+	justify-content: flex-start;
+	text-decoration: none;
+	color: black;
+	margin: 10px 0;
 }
 
 footer {
-  margin: 32px 0;
-  text-align: center;
-  font-size: 14px;
+	display: flex;
+	justify-content: center;
+	margin-top: 42px;
+}
+
+.line {
+	width: 100%;
+	height: 1px;
+	background: black;
+	margin: 30px 0 10px;
+}
+
+@media screen and (min-width: 500px) {
+	.navigation-bar {
+		max-width: 800px;
+		margin: 0 auto;
+	}
+	.navigation-bar .nav-container div {
+		margin-top: 30px;
+		border: none;
+	}
+
+	.navigation-bar .nav-container .navigation {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.navigation-bar .nav-container .navigation a {
+		flex-direction: row;
+		border: none;
+		margin: 0;
+	}
+
+	.details {
+		flex-direction: row;
+		margin: 0;
+	}
+	
+	.details .features {
+		margin-right: 5px;
+	}
+
+	.details .about {
+		margin-left: 5px;
+	}
+	
+	.offerings {
+		margin: 16px 0 -30px;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+}
+
+@media screen and (min-width: 800px) {
+	.container {
+		max-width: 800px;
+	}
+
+	.navigation-bar .nav-container {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.navigation-bar .nav-container div {
+		width: 40%;
+	}
+
+	.navigation-bar .nav-container .navigation {
+		width: 60%;
+		flex-direction: row;
+		justify-content: space-evenly;
+	}
+
+	header {
+		display: flex;
+		flex-direction: row;
+		margin-bottom: 54px;
+	}
+
+	header .sixtypercent {
+		width: 60%;
+		margin: -16px 0 0 40px;
+	}
+
+	header .fortypercent {
+		display: block !important;
+		width: 420px;
+		height: 420px;
+		margin: -90px 0 0;
+		background-image: url('../img/header-img.png');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+
+	.offerings {
+		margin-top: 42px;
+		margin-bottom: -54px;
+	}
+
+	.contact {
+		margin-top: 36px;
+	}
+
+	.contact address {
+		margin-top: 16px;
+	}
 }
