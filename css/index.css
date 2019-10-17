@@ -71,11 +71,25 @@ body{
 	width: 875px;
 	margin: auto;
 }
+.navi{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: baseline;
+}
 nav {
 	display: flex;
-	justify-content: space-between;
+	flex-wrap: wrap;
     margin: 30px;
-    align-items: baseline;
+	align-items: baseline;
+}
+nav a{
+	display: flex;
+	margin: 20px;
+}
+.logo{
+	height: 40px;
+	size: 20px;
 }
 .title{
     display: flex;
@@ -104,6 +118,8 @@ button:hover{
 	color: white;
 }
 a{
+	display: flex;
+	justify-content: space-around;
 	color: grey;
 	text-decoration: none;
 }
@@ -158,15 +174,27 @@ footer{
 		width: 450px;
 		margin: auto;
 	}
-	nav{
+	.navi{
+		margin: auto;
 		flex-direction: column-reverse;
 		align-items: center;
+		border-bottom: 1px solid black;
+		justify-items: center;
+		justify-content: center;
+		padding-top: 30px;
+	}
+	nav{
+		flex-direction: column;
+		width: 100%;
+		/* justify-content: center; */
+		align-content: center;
 	}
 	nav a{
+		display: flex;
 		text-align: center;
-		border-bottom: 1px solid black;
-		width:100%;
-		padding: 20px;
+		border-top: 1px solid black;
+		width:110%;
+		padding-top: 20px;
 	}
 	
 	.title{
@@ -207,7 +235,15 @@ footer{
 		margin: auto;
 	}
 	.navi{
-		flex-direction: column;
+		padding-top: 30px;
+		flex-direction: column-reverse;
+		justify-content: center;
+		align-items: center;
+	}
+	nav{
+		flex-wrap: nowrap;
+		justify-content: space-between;
+		width: 100%;
 	}
 	.iod{
 		text-align: center;
