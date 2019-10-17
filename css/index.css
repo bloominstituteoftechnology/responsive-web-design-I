@@ -276,9 +276,7 @@ li {
 
 /* TABLET VIEW */
 @media (max-width: 800px) {
-    *{
-        background-color: orange;
-    }
+  
     .header-right{
         display: none;
     }
@@ -301,12 +299,11 @@ li {
 
 /* MOBILE VIEW */
 @media (max-width: 500px) {
-    *{
-        background-color: turquoise;
-    }
+   
     nav{
         flex-direction: column;
         flex-wrap: wrap-reverse;
+        width: 100%;
     }
     nav a{
         text-align: center;
@@ -341,8 +338,9 @@ li {
 
     .logo-mobile{
         display: inline-block;
-        border-bottom: solid 1px black;
+        border-bottom: solid 1px  black;
     }
+
 
 
 }
