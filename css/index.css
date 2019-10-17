@@ -15,7 +15,7 @@ header {
 
     nav {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
         width: 80%;
         
         
@@ -73,13 +73,18 @@ header {
     }
 }
 
+
+
+
+
+footer div {
+    width: 100%;
+    box-sizing: border-box;
+}
+
 #copyright {
     display: flex;
-    text-align: center;
-    
-    
-    
-   
+    justify-content: center;
 }
 
 
@@ -111,13 +116,13 @@ header {
 @media (max-width:500px) {
     header a  {
         border-bottom: 2px solid black;
-        padding-bottom: 2%;
+        padding-bottom: 5%;
+        padding-top: 5%;
         width: 150%;
         text-align: center;
        
     }
 
- 
 
         nav {
             display: flex;
@@ -128,15 +133,55 @@ header {
             
         }
 
+
+    #group1 {
+        padding: 5% 0%;
+    }
     #group2 {
         display: flex;
         flex-direction: column;
+        padding: 5% 0%;
     }
+
+        #features {
+            padding: 5% 0%;
+        }
+
+        #about {
+            padding: 5% 0%;
+        }
 
     #group3 {
         display: flex;
         flex-direction: column;
+        padding: 5% 0%;
     }
 
+        #services {
+            padding: 5% 0%;
+        }
+
+        #product {
+            padding: 5% 0%;
+        }
+
+        #vision {
+            padding: 5% 0%;
+        }
+
+
+    * {
+        margin: 0%;
+        
+    }
+
+    footer {
+        padding: 5% 0%;
+    }
+
+
+
+
+    
     
 }
