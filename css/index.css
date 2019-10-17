@@ -1,9 +1,4 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
-
-
-
-
-
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -69,152 +64,254 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-.container {
-  width: 880px;
-  /* TB LR */
-  margin: 0 auto;
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+
+a {
+	color:gray;
+	text-decoration: none;
+	width: 14%;
 }
 
-/* header */
-
-header nav {
-  display: inline-block;
-  width: 691px;
-  vertical-align: top;
-  margin-top: 35px;
+.button{
+	height: 20px;
+	width: 45px;
 }
 
-header nav a {
-  margin-right: 65px;
-  font-size: 14px;
-  color: gray;
-  text-decoration: none;
+h1{
+	font-size: 64px;
+	text-align: center;
 }
 
-header nav a:hover {
-  text-decoration: underline;
+h3{
+	font-size: 16px;
 }
 
-header nav a:first-child {
-  margin-left: 0;
+footer{
+	text-align: center;
+	margin-bottom: 50px;
 }
 
-header nav a:last-child {
-  margin-right: 0;
+.header-left{
+	display:inline-block;
+	width: 48%;
+	text-align: center;
 }
 
-header .logo {
-  margin-top: 25px;
+.header-right{
+	display:inline-block;
+	width: 48%;
 }
 
-/* cta */
-
-.cta .cta-text {
-  display: inline-block;
-  vertical-align: top;
-  font-size: 77px;
-  margin-top: 120px;
-  text-align: center;
-  padding: 0px 75px;
+#header{
+	margin-top: 25px;
+	margin-bottom: 25px;
 }
 
-.cta .cta-text button {
-  background: white;
-  vertical-align: top;
-  margin-top: 6px;
-  padding: 8px 44px;
-  font-size: 17px;
-  border: 1px solid black;
-  cursor: pointer;
+#get-started{
+	display: inline-block;
+	height: 25px;
+	width: 125px;
+	border: solid 1px black
 }
 
-.cta .cta-text button:hover {
-  background: black;
-  color: white;
+.upper-content{
+	width: 45%;
+	margin: 1%;
 }
 
-.cta img {
-  display: inline-block;
-  margin-top: 69px;
+.middle-img{	
+	display: block;
+	align-content: center;
+	margin-right: auto;
+	margin-left: auto;
+	width: 95%;
 }
 
-.main-content {
-  border-top: 1px solid black;
-  margin-top: 76px;
-  padding-top: 39px;
+.middle-picture{
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+	align-content: center;
+	width: 95%;
+	margin-bottom: 45px;
 }
 
-.main-content .top-content {
-  padding: 0 10px;
+.contact p{
+	margin-top: 15px;
+	margin-bottom: 15px;
 }
 
-.main-content .top-content .text-content {
-  width: 410px;
-  display: inline-block;
-  margin-right: 34px;
+.upper {
+	display: flex;
+
+	margin-top: 50px;
+	margin-bottom: 50px;
 }
 
-.main-content .top-content .text-content:last-child {
-  margin-right: 0;
+.bottom {
+	display: flex;
+	margin-top: 50px;
+	margin-bottom: 50px;
 }
 
-.main-content .middle-img {
-  margin-top: 45px;
+.logo{
+	display: inline-block;
 }
 
-.main-content .bottom-content {
-  margin-top: 37px;
-  padding: 0 10px;
+html {
+	margin: 35px;
 }
 
-.main-content .bottom-content .text-content {
-  width: 275px;
-  display: inline-block;
-  margin-right: 12px;
+.code-circle-img {
+	display: block;
+	align-content: center;
+	margin-right: auto;
+	margin-left: auto;
+	width: 43%;
 }
 
-.main-content .bottom-content .text-content:last-child {
-  margin-right: 0;
+nav{
+	margin-bottom: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.contact {
-  margin-top: 57px;
-  border-top: 1px solid black;
-  padding: 39px 10px 0;
+.header-img{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 25px;
 }
 
-.contact p {
-  margin: 20px 0;
+header{
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+h2 {
+	font-size: 20px;
+}
+
+.button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid black;
+	height: 38px;
+	width: 125px;
+	border-radius: 5px;
+	margin: 25px;
+	background-color: white;
+}
+
+.content {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: stretch;
+}
+
+.content-box {
+	display: inline-block;
+	border: 1px solid black;
+	width: 45%;
+	margin: 2%;
+	padding: 2%;
+	background-color: lightgray;
+}
+
+.bottom-content{
+	display: flex;
+	flex-direction: row;
+	align-content: flex-start;
+}
+
+.bottom-content-box{
+	width: 45%;
+	margin: 1%;
 }
 
 footer {
-  margin: 32px 0;
-  text-align: center;
-  font-size: 14px;
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
 }
+
+ul {
+	list-style-type: square;
+}
+
+li {
+	margin-top:15px;
+	margin-bottom:15px;
+	margin-left:5%;
+}
+
+.index-bottom{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	margin-bottom: 45px;
+}
+
+.index-bottom-content {
+	width: 32%;
+	margin:1%;
+}
+
+.container {
+	max-width: 1000px;
+	margin: auto;
+}
+
+.contact {
+	margin-top: 45px;
+}
+
 
 /* TABLET VIEW */
 @media (max-width: 800px) {
     *{
         background-color: orange;
     }
-    header{
+    .header-right{
+        display: none;
+    }
+    #header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+   
+    nav{
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+
+    nav .logo {
+        padding-bottom: 25px;
+    }
+
+    /* header{
         display: flex;
         width: 100%;
         flex-direction: column-reverse;
-        text-align: center;
+        text-align: center; */
         /* justify-content: center; */
         /* align-items: center; */
-    }
+    /* }
     .top-logo{
         display: flex;
         align-items: center;
         justify-content: center;
+
     }
 
     header .logo {
         width:14%;
-    }
+    } */ */
+
 }
 
 /* MOBILE VIEW */
