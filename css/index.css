@@ -71,21 +71,22 @@ h1, h2, h3, h4, h5 {
 }
 .top-text nav{
   display:flex;
-  justify-content: space-between;
   margin-top: 40px;
- 
 }
 .top-text a{
-	text-decoration: none;
+	text-decoration: none;	
 	color: lightgray;
-	
-	
+	margin: 0 40px;			
+}
+.top-text img{
+	display: flex;
+	flex-direction: row;
 }
 
 .square{
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: space-evenly;
 }
 .square img{
 	margin-top: 60px;
@@ -150,7 +151,9 @@ justify-content: center;
 	.container{
 		width:80%;
 		margin: 0 auto;
-		box-sizing:border-box;
+	}
+	.top-text img{
+		position: absolute;
 	}
 	.square img{
 		display: none;
@@ -171,28 +174,40 @@ justify-content: center;
 	@media(max-width: 500px){
 		.container{
 		width: 100%;
+		margin: 0 auto;
 		}
+			html{
+				max-width:100%;
+				overflow-x: hidden;
+			}	
 		.top-text nav{
 			display:flex;
 			flex-direction: column;
 			justify-content: center;
-			margin-left: 200px;
+			text-align: center;
 			
 		  }
-		  .top-text a{
-			 border-bottom: 1px solid #ddd;	
-			 margin: 20px;
+		  .top-text a {
+			 border-top: 1px solid #ddd;	
+			 justify-content:center;
+			 align-content: center;
+			 padding: 20px 0;
+
 			 }
-	
-		  .top-text img{
-			 display: flex;
-			 justify-content: flex-start;
-		  }
+		 .top-text img{
+			 position: absolute;
+			 top: 0;
+			 margin-left: 130px;
+			 margin-bottom: 20px;
+		 }
 		.main-content{
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
+		}
+		.mac{
+			width: 95%
 		}
 		.bottom-content{
 				display: flex;
@@ -207,6 +222,7 @@ justify-content: center;
 				.contact{
 					margin-right: 20px;
 				}
-			}	
+			}
+			
 
 	
