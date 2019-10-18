@@ -68,7 +68,7 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 body{
-	width: 875px;
+	width: 900px;
 	margin: auto;
 }
 .navi{
@@ -79,7 +79,7 @@ body{
 }
 nav {
 	display: flex;
-	flex-wrap: wrap;
+	justify-content: space-around ;
     margin: 30px;
 	align-items: baseline;
 }
@@ -151,7 +151,10 @@ footer{
 }
 /* Services CSS */
 
-
+.intro{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
 .info{
 	display: flex;
 	flex-wrap: wrap;
@@ -168,34 +171,96 @@ footer{
 	padding: 30px;
 	justify-content: space-between;
 }
+.facts {
+	width: 400px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+.ending{
+	padding-top: 30px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: space-between;
+	position: relative;
+}
+.services-info-img{
+	position: absolute;
+	right: 0;
+}
+.list {
+	/* display: flex;
+	align-self: flex-start; */
+	margin-left: 20px;
+	margin-top: 20px;
+}
 
-@media (max-width: 500px){
+@media (max-width: 800px){
 	.container{
-		width: 450px;
+		width: 750px;
+		margin: auto;
+	}
+	.navi{
+		padding-top: 30px;
+		flex-direction: column-reverse;
+		justify-content: center;
+		align-items: center;
+	}
+	nav{
+		flex-wrap: nowrap;
+		justify-content: space-between;
+		width: 100%;
+	}
+	.iod{
+		text-align: center;
+		justify-content: center;
+		margin: auto;
+	}
+	.code{
+		display: none;
+	}
+	.middle-img{
+		width: 100%;
+	}
+	/* services */
+	.services-header-img{
+		width: 100%;
+	}
+	.facts{
+		width: 40%;
+	}
+
+}
+@media (max-width: 500px){
+
+	.container{
+		width: 50%;
 		margin: auto;
 	}
 	.navi{
 		margin: auto;
 		flex-direction: column-reverse;
-		align-items: center;
 		border-bottom: 1px solid black;
-		justify-items: center;
-		justify-content: center;
+		/* justify-items: center; */
+		/* justify-content: center; */
 		padding-top: 30px;
 	}
 	nav{
+		display: flex;
 		flex-direction: column;
-		width: 100%;
-		/* justify-content: center; */
-		align-content: center;
+		align-items: center;
+
 	}
 	nav a{
-		display: flex;
-		text-align: center;
 		border-top: 1px solid black;
-		width:110%;
 		padding-top: 20px;
+		align-content: center;
+		justify-content: center;
+		width: 100%;
 	}
+
 	
 	.title{
 		flex-direction: column;
@@ -225,35 +290,18 @@ footer{
 	.vision{
 		padding-top: 50px;
 	}
+	/* Services */
 	.info{
-		flex-direction: column;
-	}
-}
-@media (max-width: 800px){
-	.container{
-		width: 750px;
-		margin: auto;
-	}
-	.navi{
-		padding-top: 30px;
-		flex-direction: column-reverse;
-		justify-content: center;
+		display: flex;
 		align-items: center;
 	}
-	nav{
-		flex-wrap: nowrap;
-		justify-content: space-between;
+	.info div{
 		width: 100%;
 	}
-	.iod{
-		text-align: center;
-		justify-content: center;
-		margin: auto;
-	}
-	.code{
+	.services-info-img{
 		display: none;
 	}
-	.middle-img{
+	.facts{
 		width: 100%;
 	}
 }
