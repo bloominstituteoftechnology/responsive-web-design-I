@@ -58,106 +58,241 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* Your code starts here! */
-
 .container {
-	width: 900px;
-	margin: auto;
+    width: 880px;
+    margin: auto;
+}
+
+/* Header Styles */
+
+header {
+    width: 100%;
+    display: flex;
 }
 
 header nav {
-	display: inline-block;
-	margin-top: 50px;
-
-@media (max-width: 800px) {
-   
+    margin-top: 40px; 
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
 }
 
 header nav a {
-	margin: 0 20px;
-    color: black;
     text-decoration: none;
+    color: #b0b0b0;
 }
 
-header img.logo {
-	margin-left: 135px;
+header nav a:hover {
+    text-decoration: underline;
+    color: black;
 }
+
+header .logo {
+    margin: 28px 0 0 91px;
+}
+
+/* Call To Action (CTA) Styles */
 
 .cta {
-	display: inline-block;
-	width: 900px;
-	margin-bottom: 0px;
+    display: flex;
+    margin-top: 72px;
+    justify-content: flex-end;
 }
 
-.cta-content-snip {
-	display: inline-block;
-	margin-top: 40px;
-	margin-left: -69px;
-    height: fit-content;
+.cta .cta-text {
+    font-size: 72px;
+    text-align: center;
+    letter-spacing: 5px;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    margin: 0 82px 0 0;
 }
 
-.cta-content-title {
-	display: inline-block;
-	margin-left: 50px;
-	text-align: center;
-	font-size: 45px;
+.cta .cta-text button {
+    border: 1px double black;
+    font-size: 16px;
+    background: white;
+    width: 170px;
+    height: 32px;
+    margin-top: 10px;
+    cursor: pointer;
 }
 
-h1 {
-	margin-bottom: 80px;
-    font-size: 85px;
-    margin-left: 0px;
+.cta .cta-text button:hover {
+    background: black;
+    color: white;
 }
 
-.snip {
-	margin-left: 120px
+/* Main Content Styles */
+
+.main-content {
+   border-top: 2px solid black; 
+   border-bottom: 2px solid black;
+   margin: 75px 0 35px 0;
+   padding: 35px 0;
+   font-size: 16px;
+   line-height: 18px;
 }
 
-button {
-	border: 1px solid black;
-    font: inherit;
-    font-size: 17px;
-    background-color: white;
+.main-content .top-content {
+    display: flex;
 }
 
-hr {
-	border-color: black;
-	margin-top: 50px;
-	margin-bottom: 50px;
+.main-content .middle-img {
+    display: block;
+    margin: 30px auto;
 }
 
-.top-middle-content {
-	display: inline-block;
-	width: 900px;
-	margin-bottom: 25px;
+.main-content .bottom-content {
+    display: flex;
 }
 
-h2 {
-	display: inline-block;
-	font-size: 20px;
+.main-content .bottom-content p {
+    padding-right: 20px;
 }
 
-.top-middle-text {
-	margin: 5px;
-	padding: 5px;
-	width: 48%;
-	display: inline-block;
+/* Contact Styles */
+
+.contact p {
+    margin: 15px 0;
 }
 
-.bottom-middle-text {
-	margin: 5px;
-	padding: 5px;
-	width: 31%;
-	display: inline-block;
+/* Footer Styles */
+
+footer {
+    text-align: center;
+    margin: 40px 0 20px;
 }
 
-.middle-img {
-	margin-bottom: 20px;
+/* Services Styles */
+
+.services-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    line-height: 1.3;
 }
 
-.copyright p {
-	text-align: center;
-	margin-top: 40px;
+.services-content .services-header-img {
+    margin: 20px 0;
 }
 
+.services-content h1 {
+    font-size: 26px;
+    margin: 10px 0;
+}
 
+.services-content .services-text {
+ border-bottom: 1px solid black;
+ padding-bottom: 40px;
+ margin-bottom: 20px
+}
+
+.services-content .card {
+    padding: 20px;
+    border: 1px solid black;
+    width: 420px;
+    background: whitesmoke;
+    margin: 20px 0;
+}
+
+.services-content .card button {
+    padding: 10px 40px;
+    margin-top: 20px;
+    cursor: pointer;
+    background: white;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.services-content .card button:hover {
+    background: black;
+    color: white;
+} 
+
+.services-content .services-info ul {
+    margin: 20px;
+}
+
+.services-content .services-info ul li{
+    list-style: square;
+    padding: 5px;
+}
+
+.services-content .services-info {
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 2px solid black; 
+    margin: 20px 0 35px 0;
+    padding-top: 40px; 
+}
+
+.services-content .services-info .facts {
+  width: 400px;
+  margin: 0 60px 20px 0;
+}
+
+.services-content .services-info .facts p {
+  margin-bottom: 20px;
+}
+
+.services-content .services-info .services-info-img {
+  width: 420px;
+  height: 300px;
+}
+
+@media (max-width: 800px) {
+	header {
+		display: flex;
+		flex-direction: column-reverse;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	header nav {
+		justify-content: space-between;
+		width: 90%;
+	}
+
+	.circle {
+		position: relative;
+		display: none;
+	}
+	
+	.cta {
+		justify-content: center;
+		align-items: center;
+	}
+
+	.cta .cta-text {
+		margin: 0 0 0 0;
+
+	}
+
+	header .logo {
+		justify-content: center;
+		align-items: center;
+		margin: 0 0 0 0;
+	}
+
+	.main-content {
+		padding: 5%;
+	}
+
+	.middle-img {
+		display: flex;
+		justify-content: center;
+		align-items: center; 
+		width: 100%;
+	}
+
+	.contact {
+		padding: 5%;
+	}
+
+	footer {
+		padding: 5%;
+	}
+}
