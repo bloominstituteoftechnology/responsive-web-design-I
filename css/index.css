@@ -74,15 +74,14 @@ h1, h2, h3, h4, h5 {
 /* Your code starts here! */
 
 
+/* desktop view */
 
 *{
 	color: black;
 }
 
-
-
 .container {
-    width: 100%;
+    width: 50%;
     margin: 0 auto;
     }
 
@@ -93,18 +92,27 @@ h1, h2, h3, h4, h5 {
 	justify-content: space-between;
 	margin: 20px 20px;
 	padding: 10px;
-	margin-bottom: 10px;
-	
-	
-}
-header nav a {
+	margin-bottom: 20px;
+	}
+
+
+.container nav a {
 	text-decoration: none;
 	color:  rgb(180, 179, 179);
+	width: 100%; 
+	text-align: center;
+}
+
+.nav-links {
+	display: flex;
+	width: 100%; 
+	text-align: center;
 }
 
 header nav a:hover {
-	color: bl  ueviolet;
+	color: blueviolet;
   }
+
 
 .container-innovation {
 	display: flex;	
@@ -185,11 +193,16 @@ padding-bottom: 40px;
     }
 
     .nav-links {
-        display: flex;
-        justify-content: space-between;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
         width: 100%;
-        margin-top: 20px;     
+		margin-top: 10%;    
     }
+
+	header nav a {
+		padding: 3%;
+	}
 
     .container-innovation img {
         display: none;
