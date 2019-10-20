@@ -128,12 +128,12 @@ header .logo {
 /* Main Content Styles */
 
 .main-content {
-   border-top: 2px solid black; 
-   border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
-   padding: 35px 0;
-   font-size: 16px;
-   line-height: 18px;
+	border-top: 2px solid black; 
+	border-bottom: 2px solid black;
+	margin: 75px 0 35px 0;
+	padding: 35px 0;
+	font-size: 16px;
+	line-height: 18px;
 }
 
 .main-content .top-content {
@@ -185,9 +185,9 @@ footer {
 }
 
 .services-content .services-text {
- border-bottom: 1px solid black;
- padding-bottom: 40px;
- margin-bottom: 20px
+	border-bottom: 1px solid black;
+	padding-bottom: 40px;
+	margin-bottom: 20px
 }
 
 .services-content .card {
@@ -230,17 +230,17 @@ footer {
 }
 
 .services-content .services-info .facts {
-  width: 400px;
-  margin: 0 60px 20px 0;
+	width: 400px;
+	margin: 0 60px 20px 0;
 }
 
 .services-content .services-info .facts p {
-  margin-bottom: 20px;
+	margin-bottom: 20px;
 }
 
 .services-content .services-info .services-info-img {
-  width: 420px;
-  height: 300px;
+	width: 420px;
+	height: 300px;
 }
 
 .container2 {
@@ -255,6 +255,14 @@ footer {
 
 .servicelist {
 	list-style-type: disc;
+	display: flex;
+	flex-direction: column;
+	border: 3px solid black;
+	background-color: lightgrey;
+	padding: 1%;
+	justify-content: center;
+	align-items: center;
+	margin-top: 3%;
 }
 
 .service-items {
@@ -269,7 +277,8 @@ footer {
 }
 
 .services-info-img {
-	margin-left: 53%;
+	margin: auto;
+	padding-top: 3%;
 }
 
 .servicep {
@@ -279,6 +288,10 @@ footer {
 	height: 200px;
 	padding: 20px;
 	margin-top: 50px;
+}
+
+.servicep button {
+	margin-top: 5%;
 }
 
 @media (max-width: 800px) {
@@ -319,10 +332,7 @@ footer {
 		padding: 5%;
 	}
 
-	.middle-img {
-		display: flex;
-		justify-content: center;
-		align-items: center; 
+	.middle-img { 
 		width: 100%;
 	}
 
@@ -333,22 +343,43 @@ footer {
 	footer {
 		padding: 5%;
 	}
+
+	.servicep button {
+		margin-top: 5%;
+	}
+
+	.services-p {
+		padding-left: 3%;
+		padding-right: 3%;
+	}
+
+	.services-h2 {
+		padding-left: 3%;
+		padding-right: 3%;
+	}
+
 }
 
 @media (max-width: 500px) {
 
 	.container {
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+
+	.container2 {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
 	}
 
 	header nav {
-	display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+		display: flex;
+    	flex-direction: column;
+    	justify-content: center;
+    	align-items: center;
 	}
 
 	header nav a {
@@ -376,4 +407,24 @@ footer {
 		flex-direction: column;
 	}
 
+	.services-header-img {
+		width: 100%;
+	}
+
+	.services-h2 {
+		padding-left: 10%;
+	}
+
+	.services-p {
+		padding-left: 10%;
+	}
+
+	.servicep {
+		margin: 10%;
+		height: 225px;
+	}
+
+	.servicep button {
+		margin-top: 5%;
+	}
 }
