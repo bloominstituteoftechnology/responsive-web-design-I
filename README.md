@@ -1,3 +1,5 @@
+Taylor Olson
+
 # Responsive Web Design I: Adaptive Website
 
 It's time to expand our CSS skills into multiple devices.  You will be creating an adaptive version of the "Great Idea" design. You will be working through design mock ups for desktop, tablet, and mobile devices located in the [design-files](design-files) folder. 
@@ -29,6 +31,3 @@ Follow these steps for completing your project.
 ## Stretch Goals: 
 * [ ] Create a tablet and mobile version of the services page from previous projects
 * [ ] Once you have completed the project with max-width media queries, start over with min-width media queries to get a feel for how a mobile first approach would be like.  I recommend making a copy of all your contents in a new folder named "mobile-first" to keep it separate
-
-
-
