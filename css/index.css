@@ -1,3 +1,290 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+/* Tags! */
+
+body {
+    width: 800px;
+    margin: 0 auto;
+
+}
+
+header {
+	align-items: center;
+	margin-top: 3%;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	width: 70%;
+}
+
+footer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+address {
+	margin-top: 5%;
+}
+
+p {
+	font-size: 1rem;
+}
+
+h1 {
+	font-size: 500%;
+	margin-top: 0.5%;
+	margin-bottom: 0.5%;
+}
+
+h3 {
+	font-size: 1rem;
+}
+
+
+/* Classes! */
+
+.FlexMe {
+	display: flex;
+	justify-content: space-between;
+}
+
+.headline {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+.underline {
+	box-sizing: border-box;
+	padding-bottom: 5%;
+	border-bottom: 1px solid black;
+}
+
+.logo {
+	display: inline-block;
+}
+
+.Tagline {
+	text-align: center;
+	margin-left: 5%;
+}
+
+.StartButton {
+	background: white;
+	border: solid black 1.5px;
+	color: black;
+	height: 50%;
+	width: 55%;
+	padding-top: 1%;
+	padding-bottom: 1%;;
+	margin-top: 2%;
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 1rem;
+}
+
+.Inline {
+	height:30%;
+	width: 45%;
+}
+
+.SpaceMe {
+	margin-top: 1.5%;
+	margin-bottom: 1.5%;
+}
+
+/* ID's! */
+#CircleImg {
+	width: 50%
+}
+#middle-img {
+	margin-top: 5%;
+	margin-bottom: 5%;
+	width: 100%;
+}
+
+/* Tags + Tags */
+nav a {
+	text-align: center;
+	color: gray;
+	text-decoration: none;
+}
+
+/* Tags + Classes */
+
+/* Classes + Classes */
+.Inline.Thirds {
+	width: 28%;
+}
+
+/*MEDIA QUERY 800 PX MAX, TABLET */
+
+
+
+@media(max-width: 800px) {
+	body {
+		width: 80%
+	}
+	
+    header {
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	nav {
+		width: 100%;	
+	}
+	
+	.logo {
+		order: -1;
+		box-sizing: border-box;
+		padding-bottom: 5%;
+	}
+
+	#CircleImg {
+		display: none;
+	}
+
+	.Tagline {
+		margin: 0 auto;
+		padding-bottom: 10%;
+	}
+
+ 
+}
+
+@media(max-width:500px) {
+	body {
+		width: 100%
+	}
+
+	.Body2 {
+		width: 80%;
+		margin: 0 auto;
+	}
+	
+	nav {
+		flex-direction: column;
+		width: 100%;
+		margin-left: 0%;
+		margin-right: 0%;
+	}
+
+	nav a {
+		box-sizing: border-box;
+		padding: 5%;
+		border-bottom: 1px solid darkgray;
+		border-top: 1px solid darkgray;
+		width: 100%;
+		
+	}
+
+	.headline {
+		margin-bottom: 10%;
+	}
+
+	.FlexMe {
+		flex-wrap: wrap;
+	}
+
+	.Inline {
+		width: 100%;
+		margin-bottom: 10%;
+	}
+
+	.Inline.Thirds {
+		width: 100%;
+	}
+
+	.Last {
+		margin-bottom: 5%;
+	}
+
+	address {
+		margin-top: 10%;
+	}
+
+	.SpaceMe {
+		margin-top: 5%;
+		margin-bottom: 5%;
+	}
+
+	footer {
+		margin-top: 10%;
+	}
+}
 
