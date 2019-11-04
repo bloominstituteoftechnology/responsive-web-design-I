@@ -299,11 +299,6 @@ footer p {
 /*Services page styles*/
 
 /*service hero area styles*/
-.service-hero-area,
-.services,
-.specialties {
-  border: 1px solid black;
-}
 
 .service-hero-area {
   height: 65vh;
@@ -327,12 +322,9 @@ footer p {
 }
 
 /*specialties styles here*/
-.specialties {
-  border: 1px solid black;
-}
 
 .specialties {
-  height: 130vh;
+  height: 160vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -343,6 +335,7 @@ footer p {
 .specialties div {
   border: 3px solid black;
   width: 48%;
+  height: 50vh;
   padding: 2%;
   font-size: 1.1rem;
 }
@@ -387,7 +380,6 @@ footer p {
 }
 
 .facts div ul {
-  border: 1px solid black;
   list-style-type: square;
   list-style-position: inside;
   font-size: 1rem;
@@ -471,7 +463,7 @@ footer p {
 
   /* service-hero-area styles */
   .service-hero-area {
-    height: 80vh;
+    height: 55vh;
   }
 
   .services h1 {
@@ -483,12 +475,13 @@ footer p {
   }
 
   /* specialties section styles */
+
   .specialties {
-    height: 130vh;
+    height: 100vh;
   }
 
   .specialties div {
-    height: 40vh;
+    height: 30vh;
   }
 
   .specialties h2 {
@@ -504,9 +497,6 @@ footer p {
   }
 
   /*facts section styles*/
-  .facts {
-    border: 1px solid black;
-  }
 
   .facts h2 {
     font-size: 1rem;
@@ -588,5 +578,72 @@ footer p {
   /*FOOTER STYLES*/
   footer p {
     width: 100%;
+  }
+
+  /*SERVICES PAGE STYLES*/
+
+  /* SERVICE-HERO-AREA STYLES */
+  .service-hero-area {
+    height: 40vh;
+  }
+  .services h1 {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .services p {
+    font-size: 0.7rem;
+  }
+
+  /* SPECIALTIES SECTION STYLES */
+
+  .specialties {
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    height: 140vh;
+  }
+
+  .specialties div {
+    width: 100%;
+    height: 23vh;
+  }
+
+  .specialties h2 {
+    font-size: 0.6rem;
+  }
+
+  .specialties p {
+    font-size: 0.5rem;
+  }
+
+  .specialties button {
+    width: 20%;
+  }
+
+  /*FACTS SECTION*/
+  .facts {
+    flex-direction: column;
+  }
+
+  .facts div,
+  .facts ul,
+  .facts figure {
+    width: 100%;
+  }
+
+  .facts div {
+    height: 40vh;
+  }
+
+  .facts div h2 {
+    text-align: center;
+  }
+
+  .facts div ul {
+    height: 20vh;
+  }
+
+  .facts div {
+    flex-direction: ;
   }
 }
