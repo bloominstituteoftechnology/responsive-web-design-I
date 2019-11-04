@@ -1,3 +1,259 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+	font-family: 'Titillium Web', sans-serif;
+	background: #ddd;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+.header{
+    max-width: 800px;
+    margin: 0 auto;
+    border: 1px;
+
+}
+
+@media(max-width: 500px){
+    .header{
+        flex-direction: column;
+    }
+}
+
+div {
+	display: inline-block;
+	width: 49.5%;
+	height: calc(auto + 3em);
+	margin-bottom: 0;
+	text-align: center;
+	padding: 2em;
+}
+
+nav {
+	display: inline-block;
+	margin: 0 auto;
+	background: rgba(200,200,200, 1)
+}
+
+h1 {
+	display: inline-block; 
+	font-size: 6em;
+	text-align: center;
+	text-shadow: 1px 1px white;
+}
+
+h2 {
+	text-shadow: 1px 1px white;
+	width: 33%;
+	display: inline-block;
+}
+
+p {
+	background: rgba(255,255,255,0.4);
+	padding: .5em 1em;
+	box-shadow: 1px 1px 5px black;
+}
+
+div:not(.main-header) {
+	text-align: initial;
+}
+
+div.main-header {
+	margin-left: 4em;
+}
+
+nav ul li a {
+	font-weight: bold;
+	text-shadow: .5px .5px black;
+}
+
+div span {
+	display: inline-block;
+	width: 100%;
+	padding: 0;
+}
+
+div a {
+	display: inline-block;
+	height: calc(auto + 3em);
+	width: calc(auto + 3em);
+	border: 1px solid black;
+	padding: 1em 2em;
+	vertical-align: bottom;
+	text-align: center;
+}
+
+div a:hover {
+	/* transform: scale(1.3); */
+	color: black;
+	background: white;
+	animation: 1.2s infinite pulse;
+
+}
+
+li a {
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	text-shadow: .5px .5px gray;
+}
+
+nav li {
+	flex-basis: 80%;
+	padding: 1.75em;
+	display: inline-block;
+	border-right: 2px double black;
+	border-bottom: 2px double black;
+	box-shadow: 1px 2px 1px rgba(50,50,50,0.7);
+}
+
+
+
+nav li:first-child {
+	margin-left: 1em;
+}
+
+nav li:hover {
+	background: white;
+	transform: scale(1.1);
+}
+
+footer {
+	padding: 1em;
+
+}
+
+footer span {
+	padding: .5em 0;
+}
+
+address {
+	padding: .5em 0;
+}
+
+span {
+	display: block;
+	padding: .5em 0;
+}
+
+
+.logo {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 1em;
+	padding-top: 1em;
+
+}
+
+.img-right {
+	display: inline-block;
+	width: 30.5%;
+	padding: 40px;
+	vertical-align: top;
+}
+
+.middle-img {
+	display: block;
+	width: 80%;
+	margin: 2em auto;
+	border: 2px solid black;
+	box-shadow: 2px 2px 5px rgba(50,50,50, .8)
+}
+
+.two-x-two {
+	display: inline-block;
+	width: 49.5%;
+	padding: 1em;
+}
+
+.three-x-three {
+	display: inline-block;
+	width: 30%;
+	padding: 1em;
+}
+
+#contactInfo {
+	display: block;
+	width: 30%;
+	padding: .5em 1em;
+	background: rgba(255,255,255,0.4);
+	box-shadow: 1px 2px 5px rgba(50,50,50,0.7);
+}
+
+#copyright {
+	display: block;
+	text-align: center;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.3);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+
+}
+
+
 
 
