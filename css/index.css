@@ -234,8 +234,9 @@ nav a {
 
 .title h1 {
   font-family: Bangers;
-  font-size: 100px;
-  margin-bottom: 50px;
+  font-size: 6rem;
+  margin-bottom: 4%;
+  text-align: center;
 }
 
 .title button {
@@ -265,11 +266,12 @@ nav a {
 .top-section,
 .bottom-section {
   display: flex;
-  font-size: 1.5em;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
 }
 
 .top-section {
-  margin-bottom: 50px;
+  margin-bottom: 4%;
   justify-content: space-between;
 }
 
@@ -283,7 +285,7 @@ nav a {
 
 .bottom-section {
   justify-content: space-between;
-  margin-top: 50px;
+  margin-top: 4%;
 }
 
 .bottom-section div {
@@ -293,10 +295,10 @@ nav a {
 .contact-section {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  font-size: 1.5em;
-  text-align: center;
-  margin-bottom: 150px;
+  align-items: flex-start;
+  font-size: 1.5rem;
+  text-align: left;
+  margin-bottom: 10%;
 }
 
 /*footer styles*/
@@ -401,7 +403,7 @@ footer p {
 
 /*Media Queries*/
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (max-width: 800px) {
   /*GENERAL STYLES*/
   .main-container {
     width: 90%;
@@ -411,12 +413,14 @@ footer p {
 
   header {
     flex-direction: column-reverse;
-    height: 100px;
+    height: 20vh;
     justify-content: space-evenly;
+    margin-bottom: 5%;
   }
 
   nav {
-    width: 80%;
+    width: 100%;
+    justify-content: space-around;
   }
 
   /*HERO AREA STYLES*/
@@ -424,31 +428,33 @@ footer p {
   .hero-area {
     flex-direction: column;
     align-items: center;
-    height: 1000px;
+    justify-content: center;
+    height: 80vh;
   }
 
   .title h1 {
-    margin-bottom: 100px;
+    font-size: 4rem;
+    margin-bottom: 10%;
+  }
+
+  .hero-image {
+    display: none;
   }
 
   /*DETAILS SECTION STYLES*/
-  .top-section {
-    flex-direction: column;
-    justify-content: space-between;
-    height: 250px;
-  }
-
-  .top-section div {
-    width: 100%;
-  }
-
+  .top-section,
   .bottom-section {
-    flex-direction: column;
-    height: 400px;
+    font-size: 0.75rem;
   }
 
-  .bottom-section div {
-    width: 100%;
+  /*CONTACT-SECTION STYLES*/
+  .contact-section {
+    font-size: 0.75rem;
+  }
+
+  /*FOOTER STYLES*/
+  footer p {
+    font-size: 0.5rem;
   }
 
   /*SERVICES PAGE STYLES*/
