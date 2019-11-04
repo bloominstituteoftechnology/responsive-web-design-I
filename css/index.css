@@ -1,13 +1,14 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
-/*
+
 *{
     box-sizing:border-box;
     padding:0;
     margin:0;
     max-width:100%;
-    border:1px solid grey;
+
+   
 }
-*/
+
 body{
     line-height:1.3;
 }
@@ -41,6 +42,9 @@ nav a{
     text-decoration: none;
     color:grey;
     font-size: 15px;
+    border-bottom:1px solid black;
+    width:80%;
+    text-align: center;
 }
 
 .title-container{
@@ -62,7 +66,7 @@ align-items: center;
     width: 30%;
     height:6%;
     background:none;
-    border:1px solid black;ß
+    border:1px solid black;
     
 }
 
@@ -104,4 +108,78 @@ footer{
 }
 
 
+/* media */
 
+@media (max-width:500px){
+    header nav{
+        display:flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-items: center;
+       
+
+    }
+    
+    .links{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        line-height: 3;
+        
+        
+    }
+
+    .title-container{
+        display:flex;
+        justify-content: space-around;
+    }
+
+
+    .innovation{
+        line-height:1;
+        padding:10%;
+        text-align: center;
+        justify-content: space-around;
+    }
+
+    #button{
+        width: 80%;
+        height: 40%;
+        background:none;
+        border:1px solid black;ß
+    }
+    .first-section{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .first-section div{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+    
+    }
+    .image{
+        display:none;
+    }
+
+    .second-section{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .second-section div{
+        display:flex;
+        flex-direction: column;
+    }
+    
+    
+}
+
+
+
+
+
+@media(max-width:800px){
+    
+}
