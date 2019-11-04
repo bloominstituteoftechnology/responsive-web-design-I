@@ -151,24 +151,54 @@ button{
 	  margin: 2%;
   }
   /*Media starts here */
-  @media(max-width: 800px){
-    header .logo {
-      display:block;
-    margin: 10px auto; }   
-   
-   .main-box img{
-     display: none;  
-   }
-   .main-box{
-       display: flex;
-       justify-content: center;
-   }
-   .top-content{
-       display: flex;
-       flex-direction: row;
-     }
-     .bottom-content{
-       display:flex;
-     }
+  @media (max-width:500px){
+    header nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        }
+    
+    header nav a{
+        display:flex;
+        border-bottom:1px solid gray;
+        padding:2%;
+        justify-content: center;
+
     }
+    .main-box{
+        display:flex;
+        justify-content: center;
+    }
+    .middle-box img{
+        display: flex;
+        justify-content: center;
+    }
+    .top-content{
+      display:flex;
+      flex-flow: column;
+      align-items: center;
+  }
+    .bottom-content{
+        display:flex;
+        flex-flow:column;
+        align-items: center;
+    }
+    
+    .top-content div{
+        border-bottom:1px solid gray;
+        padding: 2%;
+        justify-content: center;
+    }
+    .bottom-content div{
+        border-bottom:1px solid gray;
+        padding:2%;
+        justify-content: center;
+      }
+      address{
+          display: flex;
+          align-items: center;
+          flex-flow: column;
+      }
+}
+
    
