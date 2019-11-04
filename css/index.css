@@ -272,33 +272,34 @@ footer p{
 
 @media screen and (max-width: 800px) {
 
-    .container {
+.container {
         width:800px;
         margin:0 auto;
     }
 
-    header {
+header {
       display:flex;
       flex-direction:column-reverse;
       align-items:center;
     }
 
-    header nav{
+header nav{
+        width:100%;
         display:flex;
         justify-content:space-between;
     }
 
-    .cta img{
+.cta img{
         display:none;
     }
 
-    .cta{
+.cta{
        display:flex;
        justify-content: center; 
        margin:-5%;
     }
 
-    .middle-img{
+.middle-img{
         width:800px;
         }
 
@@ -306,44 +307,50 @@ footer p{
 
 @media screen and (max-width: 500px) {
 
-    .container{
+.container{
         width:500px;
         margin:0 auto;
     }
 
-    .cta .cta-text {
-        margin-top:10%;
-        margin-bottom:-3%;
+.cta .cta-text {
+        margin-top:12%;
+        margin-bottom:-6%;
     }
 
-    nav {
+nav {
         display:flex;
         flex-direction:column;
         align-items:center;
     }
 
-    header nav a{
-        padding:1%;
+header nav a{
+        padding:2.5%;
         margin:0%;
         border-bottom:1px solid black;
+        border-top:1px solid black;
     }
 
-    .top-content, .bottom-content {
+.top-content, .bottom-content {
     display:flex;
     flex-direction:column;
     }
 
-    .main-content .top-content .text-content {
-        width:100%;
+.main-content .top-content .text-content {
+        width:90%;
         padding:2% 0%;
     }
 
-    .main-content .bottom-content .text-content {
-        width:100%;
+.main-content .bottom-content .text-content {
+        width:90%;
         padding:2% 0%;
     }
 
-    .middle-img{
+.middle-img{
     width:500px;
     }
+}
+
+.container header nav a{
+    text-align:center;
+    width:100%;
 }
