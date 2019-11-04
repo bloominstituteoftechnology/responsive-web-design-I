@@ -1,3 +1,246 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+/* Navigation */
+
+nav {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.nav-div {
+	display: flex;
+	justify-content: space-evenly;
+	width: 75%;
+}
+
+/* Top section */
+
+h1 {
+	font-size: 50px;
+}
+
+.top-div {
+	text-align: center;
+}
+
+.top-button {
+	border-radius: 10px;
+	padding: 10px;
+}
+
+.top-section {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: 20px;
+	border-bottom: 1px solid black;
+	padding-bottom: 5px;
+}
+
+/* Middle section */
+
+.middle-section {
+	display: flex;
+	text-align: left;
+	margin: 20px;
+}
+
+.middle-img {
+	width: calc(100% - 40px);
+	margin: 20px;
+}
+
+/* Bottom Section */
+
+.bottom-section {
+	display: flex;
+	justify-content: space-between;
+	margin: 20px;
+}
+
+.bottom-section div {
+	width: 250px;
+}
+
+/* Contact Section */
+
+.contact-section {
+	text-align: left;
+	margin: 20px;
+}
+
+.contact-section h4 {
+	padding-top: 55px;
+}
+
+footer {
+	text-align: center;
+	margin: 20px;
+}
+
+/* Services Page Styles */
+.services {
+	width: 80%;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+.services-header-img {
+
+	width: 80%;
+	display: block;
+	margin: 0 auto;
+
+}
+
+.services-container {
+	display: flex;
+	justify-content: space-around;
+	margin: 20px;
+}
+
+.services-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	width: 40%;
+	border: 1px solid black;
+	background-color: lightgrey;
+}
+
+.section-button {
+	width: 150px;
+	margin: 10px;;
+}
+
+ul li {
+	padding-top: 20px;
+	list-style-type: disc;
+}
+
+.bottom-service-section {
+	display: flex;
+	margin: 20px;
+}
+
+footer {
+	padding-top: 40px;
+	margin: 20px;
+}
+
+/* Media Queries */
+
+@media (max-width: 800px) {
+	 nav {
+		 flex-direction: column-reverse;
+	 }
+	.head-img {
+		display:none;
+	}
+
+	nav, nav div { padding-top: 20px; }
+
+	.bottom-service-section{
+		flex-direction: column;
+	}
+}
+
+@media (max-width: 500px) {
+		nav {
+			flex-direction: column-reverse;
+			width: 100%;
+		}
+
+		h4 {
+			padding-top: 10px;
+		}
+
+		a {
+			width: 100%;
+			padding: 15px;
+			border: 1px solid black;
+		}
+		.nav-div {
+			flex-direction: column;
+			text-align: center;
+			align-items: center;
+			width: 100%;
+		}
+		.top-section, .middle-section, .bottom-section {
+			display: flex;
+			flex-direction: column;
+			text-align: left;
+			padding: 15px;
+		}
+		.services-header-img{
+			padding-top: 15px;
+		}
+		.bottom-service-section {
+			flex-direction: column;
+		}
+}
