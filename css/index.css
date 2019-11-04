@@ -1,3 +1,408 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+*{
+	box-sizing:border-box;
+	padding:0;
+	margin: 0;
+ 	max-width: 100%;
+	/* border: 1px solid grey !important; */
+}
+
+.nav {
+	width: 100% !important;
+	/* position: fixed;	 */
+	display: flex;
+	line-height: 1.5rem;
+	justify-content: space-around; 
+	background-color: dodgerblue;
+}
+
+.navbar {
+	padding: .3rem 0;
+}
+
+.container {
+	margin: 5%;
+}
+
+.parent {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	width:50%;
+}
+
+.main h1 {
+	font-size: 40px;
+	text-align: center;
+	margin: 0 auto;
+	}
+
+.main img{
+	max-width: 60%;
+	margin: 0 auto;
+}
+
+button{
+	display: block;
+	width: 20%;
+	margin: 0% 0% 0% 40%;
+}
+
+hr {
+	display: block;
+	height: 1px;
+	border-top: 1px solid black;
+	margin: 2em 0;
+}
+.top{
+	display: flex;
+	justify-content: space-around;
+	margin: 0 auto;
+}
+
+.top div{
+	margin:0 1%;
+}
+
+.middle-img{
+	width: 100%;
+}
+
+.bottom {
+	display: flex;
+	justify-content: space-around;
+}
+
+.copyright {
+	text-align: center;
+}
+
+.contact {
+	margin: 2% 0;
+}
+
+/* Services Page CSS */
+
+.services_header {
+	width: 100%;
+}
+
+h1 {
+	font-size: 40px;
+}
+
+.intro {
+	margin: 2%;
+}
+
+.hr2 {
+	display: block;
+	height: 1px;
+	border-top: 1px solid black;
+	margin: 0 auto;
+}
+
+.service_grid {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	margin: 0 5 2% 5%;
+}
+
+.gridbox{
+	display: flex;
+	border: 1px solid black;
+	background-color: rgb(140, 174, 207);
+	flex-wrap: wrap;
+	max-width: 42%;
+	margin: 2% 3% 2% 3%;
+	padding: 2%;
+}
+
+.gridbox p {
+	margin: 4% 0;
+}
+
+.learnmore {
+	line-height: 1.5em;
+	width: 40%;
+	margin: 0 0;
+}
+
+.learnmore:hover{
+		box-shadow: 0 14px 28px
+	 rgba(0,0,0,0.25), 
+	 0 10px 10px 
+	 rgba(0,0,0,0.22);
+}
 
 
+.facts{
+	display: flex;
+	padding: 5%;
+}
+
+.facts img {
+	width: 40%;
+	margin:0 0 0 5%;
+}
+
+.facts ul {
+	padding-left: 5%;
+	list-style-type: square;
+}
+
+
+/* MEDIA QUIERIES */
+/* service page */
+
+/* mobiles */
+ @media (max-width: 450px)  { 
+
+	.nav {
+		overflow: hidden;
+		padding: 10px 10px; /* Large padding which will shrink on scroll (using JS) */
+		flex-flow: row wrap;
+		transition: 0.4s; /* Adds a transition effect when the padding is decreased */
+		width: 100%;
+		top: 0; /* At the top */
+		z-index: 99;
+	}
+
+	.intro {
+		margin: 45% 0 5% 0;
+		text-align: center;
+	}
+
+	.logo {
+		width: 100%;
+	}
+	
+	.navbar {
+		width: 30%;
+		order: 1;
+		text-align: center;
+		font-size: .8rem;
+		margin: 0 auto;
+		color: white;
+	}
+
+	.services_header{
+		display: none;
+	}
+
+	hr {
+		display: none;
+	}
+
+	.service_grid {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.gridbox{
+		max-width: 80%;
+		background-color: rgb(140, 174, 207);
+
+	}
+
+	.facts {
+		flex-direction: column;
+		align-items: center;
+		background-image: url("/great-idea/img/services-info.png");
+		opacity: .3;
+	}
+	.facts div {
+		color:dodgerblue;
+		font-weight: bold;
+	}
+	.services_facts {
+		display: none;
+	}
+	
+	.copyright {
+		background-color: dodgerblue;
+	}
+
+}
+
+
+/* tablets */
+@media (min-width: 750px) and (max-width: 1079px) { 
+
+	.nav {
+		overflow: hidden;
+		padding: 10px 10px; /* Large padding which will shrink on scroll (using JS) */
+		flex-flow: row wrap;
+		transition: 0.4s; /* Adds a transition effect when the padding is decreased */
+		width: 100%;
+		top: 0; /* At the top */
+		z-index: 99;
+	}
+
+	.intro {
+		margin: 0% 0 5% 0;
+		text-align: center;
+	}
+
+	.navbar {
+		text-align: center;
+		font-size: .8rem;
+		margin: 0 auto;
+		color: white;
+	}
+
+	.service_grid {
+		justify-content: space-evenly;
+		margin: 2% 2%;
+	}
+
+	.gridbox{
+		max-width: 42%;
+		background-color: rgb(140, 174, 207);
+		margin: 2% 0%;
+
+	}
+
+	.facts {
+		
+	}
+	.facts div {
+		font-weight: bold;
+	}
+	
+	.copyright {
+		background-color: dodgerblue;
+	}
+
+}
+
+/* computers */
+/* @media (min-width: 1080px) { 
+
+	.intro {
+		margin: % 0 5% 0;
+		text-align: center;
+		font-size: 2em;
+	}
+
+	.logo {
+		width: 100%;
+	}
+	
+	.navbar {
+		width: 30%;
+		order: 1;
+		text-align: center;
+		font-size: .8rem;
+		margin: 0 auto;
+		color: white;
+	}
+
+	
+
+	hr {
+		display: none;
+	}
+
+	.service_grid {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.gridbox{
+		max-width: 80%;
+		background-color: rgb(140, 174, 207);
+
+	}
+
+	.facts {
+		flex-direction: column;
+		align-items: center;
+		background-image: url("/great-idea/img/services-info.png");
+		opacity: .3;
+	}
+	.facts div {
+		color:dodgerblue;
+		font-weight: bold;
+	}
+	.services_facts {
+		display: none;
+	}
+	
+	.copyright {
+		background-color: dodgerblue;
+	}
+
+} */
