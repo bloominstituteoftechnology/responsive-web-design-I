@@ -379,3 +379,127 @@ border:1px solid red;
      margin-bottom:5%;
  }
 }
+
+/* Mobile Design */
+
+@media (max-width: 500px){
+    body{
+        padding:10px 50px;
+    }
+    nav{
+        border:1px solid green;
+        width:100%;
+        display:flex;
+        height:70vh;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column-reverse;
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+        border:2px solid blue;
+        height:60vh;
+        width: 100%;
+    }
+
+    .menu a{
+        width: 100%;
+        text-align: center;
+        border-top:0.1px solid grey;
+        margin:0;
+        padding: 6%;
+
+    }
+    
+   
+    .firstImage{
+        display: none;
+    }
+    .title h1{
+        border:2px solid green;
+        font-size:60px;
+        width:100%;
+        text-align: center;
+
+    }
+    .title{
+        border:2px solid red;
+    }
+    .main{
+        border:2px solid pink;
+display: flex;
+align-items: flex-start;
+margin-top:5%;
+margin-bottom:10%;
+
+height: 45vh;
+    }
+    h6{
+        font-size: 15px;
+        font-weight:bold;
+    }
+    .info-one{
+        width:100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .info-one div{
+        padding-top:5%;
+    }
+    #features{
+        border:2px solid brown;
+        width:100%;
+    }
+    #about{
+        border:2px solid brown;
+        width:100%;
+    }
+    p{
+        font-size:15px;
+        padding-bottom:3%;
+    }
+    .info-one h3{
+        text-align: left;
+        padding-bottom:3%;
+    }
+    .middle-img{
+        width:98%;
+        margin-top:5%;
+    }
+    
+    .info-two{
+        display: flex;
+        flex-direction: column;
+    }
+    .info-two div{
+        border:2px solid orange;
+        width:100%;
+    }
+
+    .info-two h3{
+        text-align: left;
+        padding-bottom:3%;
+        border
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin-top:4%;
+    }
+    footer h3{
+        text-align: left;
+        margin-bottom:5%;
+    }
+  
+ .copy{
+     border:1px solid blue;
+     align-self: center;
+     width:70%;
+     padding:0;
+     margin-top:5%;
+ }
+
+}
