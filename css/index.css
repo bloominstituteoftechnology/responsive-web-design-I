@@ -296,6 +296,112 @@ footer p {
   font-weight: 700;
 }
 
+/*Services page styles*/
+
+/*service hero area styles*/
+.service-hero-area,
+.services,
+.specialties {
+  border: 1px solid black;
+}
+
+.service-hero-area {
+  height: 65vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.service-hero-area figure img {
+  width: 100%;
+}
+
+.services h1 {
+  font-size: 2rem;
+}
+
+.services p {
+  letter-spacing: 1px;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+/*specialties styles here*/
+.specialties {
+  border: 1px solid black;
+}
+
+.specialties {
+  height: 130vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4%;
+}
+
+.specialties div {
+  border: 3px solid black;
+  width: 48%;
+  padding: 2%;
+  font-size: 1.1rem;
+}
+
+.specialties div p {
+  margin-bottom: 3%;
+  letter-spacing: 1px;
+}
+
+.specialties button {
+  padding: 1.5%;
+  border-radius: 5px;
+  width: 30%;
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+/*facts-section styles here*/
+.facts {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10%;
+}
+
+.facts div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.facts div,
+.facts figure {
+  width: 48%;
+}
+
+.facts h2 {
+  font-size: 1.1rem;
+}
+
+.facts p {
+  font-size: 0.7rem;
+}
+
+.facts div ul {
+  border: 1px solid black;
+  list-style-type: square;
+  list-style-position: inside;
+  font-size: 1rem;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.facts figure img {
+  width: 100%;
+}
+
 /*Media Queries*/
 
 @media screen and (max-width: 800px) {
@@ -359,6 +465,61 @@ footer p {
   /*FOOTER STYLES*/
   footer p {
     font-size: 0.5rem;
+  }
+
+  /*SERVICES PAGE STYLES*/
+
+  /* service-hero-area styles */
+  .service-hero-area {
+    height: 80vh;
+  }
+
+  .services h1 {
+    font-size: 1.5rem;
+  }
+
+  .services p {
+    font-size: 1rem;
+  }
+
+  /* specialties section styles */
+  .specialties {
+    height: 130vh;
+  }
+
+  .specialties div {
+    height: 40vh;
+  }
+
+  .specialties h2 {
+    font-size: 0.8rem;
+  }
+
+  .specialties p {
+    font-size: 0.5rem;
+  }
+
+  .specialties button {
+    font-size: 0.4rem;
+  }
+
+  /*facts section styles*/
+  .facts {
+    border: 1px solid black;
+  }
+
+  .facts h2 {
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+
+  .facts p {
+    font-size: 0.7rem;
+  }
+
+  .facts div ul {
+    font-size: 0.6rem;
+    height: 25vh;
   }
 }
 
