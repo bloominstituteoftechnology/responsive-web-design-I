@@ -163,12 +163,6 @@ body {
 }
 
 /*Header Styles*/
-header,
-nav,
-.logo-container {
-  border: 1px solid black;
-}
-
 header {
   display: flex;
   justify-content: space-between;
@@ -204,12 +198,6 @@ nav a {
 }
 
 /*Hero Area styles*/
-.hero-area,
-.title,
-.hero-image {
-  border: 1px solid black;
-}
-
 .hero-area {
   display: flex;
   justify-content: space-between;
@@ -258,11 +246,6 @@ nav a {
 }
 
 /* details styles begins here*/
-.top-section,
-.bottom-section {
-  border: 1px solid black;
-}
-
 .top-section,
 .bottom-section {
   display: flex;
@@ -314,93 +297,6 @@ footer p {
   font-weight: 700;
 }
 
-/*Services page styles*/
-
-/*service hero area styles*/
-.service-hero-area {
-  height: 400px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.service-hero-area figure img {
-  width: 100%;
-}
-
-.services h1 {
-  font-size: 2rem;
-}
-
-.services p {
-  letter-spacing: 1px;
-  font-size: 1.25rem;
-  font-weight: 500;
-}
-
-/*specialties styles here*/
-.specialties {
-  height: 850px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 50px;
-}
-
-.specialties div {
-  border: 3px solid black;
-  width: 48%;
-  padding: 2%;
-  font-size: 1.1rem;
-}
-
-.specialties div p {
-  margin-bottom: 30px;
-  letter-spacing: 1px;
-}
-
-.specialties button {
-  padding: 5px;
-  border-radius: 5px;
-  width: 30%;
-  font-size: 0.7rem;
-  font-weight: 600;
-}
-
-/*facts-section styles here*/
-.facts {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 150px;
-}
-
-.facts div,
-.facts figure {
-  width: 48%;
-  font-size: 1.1rem;
-}
-
-.facts div h2,
-.facts div p {
-  margin-bottom: 20px;
-}
-
-.facts div ul {
-  list-style-type: square;
-  list-style-position: inside;
-  font-size: 1rem;
-  height: 150px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: flex-start;
-}
-
-.facts figure img {
-  width: 100%;
-}
-
 /*Media Queries*/
 
 @media screen and (max-width: 800px) {
@@ -423,6 +319,10 @@ footer p {
     justify-content: space-around;
   }
 
+  nav a {
+    font-size: 0.8rem;
+  }
+
   /*HERO AREA STYLES*/
 
   .hero-area {
@@ -435,6 +335,11 @@ footer p {
   .title h1 {
     font-size: 4rem;
     margin-bottom: 10%;
+  }
+
+  .title button {
+    width: 40%;
+    font-size: 0.65rem;
   }
 
   .hero-image {
@@ -456,36 +361,72 @@ footer p {
   footer p {
     font-size: 0.5rem;
   }
+}
 
-  /*SERVICES PAGE STYLES*/
-
-  /*SPECIALTIES STYLES*/
-  .specialties {
-    height: 1300px;
+@media screen and (max-width: 500px) {
+  .main-container {
+    width: 90%;
+  }
+  header {
+    height: 50vh;
   }
 
-  .specialties div {
-    width: 100%;
-  }
-
-  .facts {
+  nav {
     flex-direction: column;
-    height: 950px;
-    justify-content: space-between;
-  }
-
-  .facts .full-width {
-    width: 100%;
-  }
-
-  .facts div {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    height: 30vh;
     align-items: center;
   }
 
-  .facts div ul {
-    width: 20%;
+  nav a:first-child {
+    border-top: 1px solid gray;
+  }
+
+  nav a {
+    font-size: 0.5rem;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid gray;
+    height: 5vh;
+    padding: 1%;
+  }
+
+  .logo-container {
+    width: 30%;
+  }
+
+  /*HERO AREA STYLES*/
+
+  .title h1 {
+    font-size: 3rem;
+  }
+
+  .title button {
+    width: 50%;
+    padding: 2%;
+    font-size: 0.5rem;
+  }
+
+  /*DETAILS SECTION STYLES*/
+  .top-section,
+  .bottom-section {
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.7rem;
+  }
+
+  .top-section div,
+  .bottom-section div {
+    width: 100%;
+    height: 30vh;
+  }
+
+  /*CONTACT-SECTION STYLES*/
+  .contact-section {
+    font-size: 0.7rem;
+  }
+
+  /*FOOTER STYLES*/
+  footer p {
+    width: 100%;
   }
 }
