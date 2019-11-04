@@ -205,6 +205,9 @@ footer {
 
 	nav, nav div { padding-top: 20px; }
 
+	.bottom-service-section{
+		flex-direction: column;
+	}
 }
 
 @media (max-width: 500px) {
@@ -213,7 +216,9 @@ footer {
 			width: 100%;
 		}
 
-		
+		h4 {
+			padding-top: 10px;
+		}
 
 		a {
 			width: 100%;
@@ -231,5 +236,11 @@ footer {
 			flex-direction: column;
 			text-align: left;
 			padding: 15px;
+		}
+		.services-header-img{
+			padding-top: 15px;
+		}
+		.bottom-service-section {
+			flex-direction: column;
 		}
 }
