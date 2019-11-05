@@ -1,0 +1,243 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+/* Your code starts here! */
+body {
+	margin-left: 20%;
+	margin-right: 20%;
+}
+header {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px 0;
+}
+.nav-link {
+	text-align: center;
+	opacity: 0.5;
+	top: 1em;
+	font-size: 18px;
+	padding: 10px;
+	left: 40%;
+	right: 40%;
+	text-decoration: none;
+	color: black;
+	-webkit-transition: opacity 0.25s ease-in-out;
+    -moz-transition: opacity 0.25s ease-in-out;
+    -ms-transition: opacity 0.25s ease-in-out;
+    -o-transition: opacity 0.25s ease-in-out;
+}
+.nav-link:hover {
+	color: black;
+	opacity: 1;
+	-webkit-transition: opacity 0.25s ease-in-out;
+    -moz-transition: opacity 0.25s ease-in-out;
+    -ms-transition: opacity 0.25s ease-in-out;
+    -o-transition: opacity 0.25s ease-in-out;
+}
+.services-header-img {
+	width: 100%;
+	margin-top: 3%;
+}
+.heading1 {
+	margin-bottom:2%;
+	margin-top: 2%;
+}
+.x {
+	border-top: 1px solid black;
+}
+h1 {
+	font-size: 55px;
+}
+h2 {
+	font-size: 35px;
+}
+.middle-img {
+	margin-left: 10%;
+}
+.number {
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+.copy {
+	text-align: center;
+}
+.serv1, .serv2{
+	display: flex;
+	flex-direction: row;
+}
+.serv3 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+    border-bottom: 1px solid black;
+}
+.serv1 div{
+	width: 50%;
+	height: 10%;
+	padding: 3%;
+	margin: 1%;
+	border: 1 px solid black;
+	background: lightgray;
+}
+.serv2 div {
+    width: 50%;
+	height: 10%;
+	padding: 3%;
+	margin: 1%;
+	border: 1 px solid black;
+	background: lightgray;
+}
+.serv3 div {
+    width: 50%;
+	height: 10%;
+	padding: 3%;
+	margin: 1%;
+	border: 1 px solid black;
+    background: lightgray;
+}
+button {
+	margin-top: 5%;
+}
+.bottom {
+	margin-top: 3%;
+	display: flex;
+	flex-direction: row;
+	background: white;
+}
+.facts {
+	background: white;
+	height: 100%;
+	width: 50%;
+}
+ul {
+	list-style: circle ;
+}
+  /* Below is the code for phone view. */
+  @media (min-width: 500px) {
+    .head {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: space-around;
+      width: 100%;
+    }
+    .nav {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        /* padding-top: -10%; */
+    }
+    .serv1, .serv2{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .serv1 div {
+        width: 100%;
+    }
+    .serv2 div {
+        width: 100%;
+    }
+    .serv3{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5%;
+    }
+    .serv3 div {
+        width: 100%;
+    }
+    .bottom {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 5%;
+        margin-bottom: 10%;
+        width: 100%;
+        align-items: center;
+    }
+    .facts img{
+      display: none;
+    }
+}
+/* Below is the code for tablet view. */
+@media (min-width: 800px) {
+    .head {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: space-around;
+      width: 100%;
+    }
+  nav, nav div {
+      padding-top: 20px;
+    }
+  .head .logo {
+      margin-bottom: 20%;
+    }
+  .bottom {
+    width: 100%;
+    padding: 5%;
+    }
+.facts img{
+    width: 95%;
+    margin-left: 10%;
+    }
+}
