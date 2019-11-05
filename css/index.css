@@ -187,7 +187,7 @@ button{
     }
     header nav{
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         justify-content: center;
         }
     
@@ -198,7 +198,7 @@ button{
         justify-content: center;
 
     }
-    header img{
+    header .logo{
       display: flex;
       align-items: flex-start;
       
@@ -224,13 +224,18 @@ button{
     .top-content{
       display:flex;
       flex-flow: column;
-      align-items: center;
-  }
+    }
+    .top-content p{
+      float:left;
+    }
   
     .bottom-content{
         display:flex;
         flex-flow:column;
-        align-items: center;
+        
+    }
+    .bottom-content p{
+      float:left;
     }
     
     .top-content div{
