@@ -1,3 +1,322 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+/* Your code starts here! */
+body {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+header {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  padding: 30px 0;
+}
+.nav-link {
+  text-align: center;
+  opacity: 0.5;
+  top: 1em;
+  font-size: 18px;
+  padding: 10px;
+  left: 40%;
+  right: 40%;
+  text-decoration: none;
+  color: black;
+  -webkit-transition: opacity 0.25s ease-in-out;
+  -moz-transition: opacity 0.25s ease-in-out;
+  -ms-transition: opacity 0.25s ease-in-out;
+  -o-transition: opacity 0.25s ease-in-out;
+}
+.nav-link:hover {
+  color: black;
+  opacity: 1;
+  -webkit-transition: opacity 0.25s ease-in-out;
+  -moz-transition: opacity 0.25s ease-in-out;
+  -ms-transition: opacity 0.25s ease-in-out;
+  -o-transition: opacity 0.25s ease-in-out;
+}
+.services-header-img {
+  width: 100%;
+  margin-top: 10%;
+}
+.heading1 {
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+.x {
+  border-top: 1px solid black;
+}
+h1 {
+  font-size: 55px;
+}
+h2 {
+  font-size: 35px;
+}
+.sect1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.innovate {
+  text-align: center;
+}
+.sect2 {
+    border-top: 2px solid black; 
+    margin: 75px 0 35px 0;
+    padding: 35px 0;
+    font-size: 16px;
+    line-height: 18px;
+ }
+ .sect2 .div-class {
+     display: flex;
+ }
+.middle-img {
+  width: 100%;
+}
+.sect3 {
+  margin: 75px 0 35px 0;
+  padding: 35px 0;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  border-bottom: 2px solid black;
+}
+.sect3 .div-class {
+  display: flex;
+  flex-direction: row;
+  width: 30%;
+  padding: 2%;
+}
+.contact {
+  text-align: left;
+  padding: 2%;
+}
+.number {
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+.copy {
+  text-align: center;
+}
+section {
+  display: flex;
+  flex-direction: row;
+}
+section div {
+  width: 50%;
+  height: 10%;
+  padding: 3%;
+  margin: 1%;
+}
+button {
+  margin-top: 5%;
+}
 
+/* Below is the code for tablet view. */
+@media (max-width: 800px) {
+  .head {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+nav, nav div {
+    padding-top: 20px;
+}
+.head .logo {
+    margin-bottom: 20%;
+}
+  .himg {
+    display: none;
+  }
+  .sect1 {
+      width: 100%;
+  }
+  .sect1 div {
+      width: 50%
+  }
+  .middle-img {
+    width: 100%;
+  }
+  .sect3 div {
+    width: 33%;
+  }
+}
 
+/* Below is the code for phone view. */
+
+@media (max-width: 500px) {
+    .nav {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        /* padding-top: -10%; */
+    }
+    .sect1{
+        width: 100%;
+        padding-right: 10%;
+    }
+    .sect2 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .sect2 div {
+        width: 100%;
+    }
+    .sect3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .sect3 div {
+        width: 100%;
+    }
+}
