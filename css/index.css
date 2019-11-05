@@ -1,3 +1,372 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+@media(min-width: 801px){
+    .container{
+        margin-left: 5%;
+        margin-right: 5%;
+
+    }
+}
+
+.logo{
+    margin-top:-1%;
+    padding-right: 5%;
+}
+header{
+	padding-bottom: 2%;
+	padding-top: 5%;
+	display: flex;
+	justify-content: space-between;
+}
+nav{
+	
+	width: 70%;
+	border-color: gray;
+	border-width: 1px;
+	display: flex;
+    justify-content: space-around;
+    align-items: center;
+	
+}
+nav a{
+	
+	color: gray;
+	text-decoration: none;
+}
+.call-to-action{
+	border-bottom: 2px solid black;
+    display:flex;
+	padding-bottom: 5%;
+}
+.left-cta{
+	width:50%;
+	width: 60%;
+	padding-top:5%;
+}
+.right-cta{
+	width:50%;
+	padding-top:3%;
+}
+.left-cta h1{
+	font-size: 5em;
+	text-align: center;
+}
+.get-started{
+	border-width: 5px;
+	border: 1px solid black;
+	text-align: center;
+	width:20%;
+	padding: 1% 5%;
+	margin:auto;
+}
+/*Home page content sections*/
+.first-section{
+	display:flex;
+	padding-top:5%;
+	padding-bottom:5%;
+}
+.two-box-content h2{
+	font-size: 2em;
+}
+
+.two-box-content p{
+	font-size: 22pt;
+	overflow-wrap: break-word;
+	padding-right: 5%;
+}
+.middle-img{
+	width:100%;
+}
+.second-section{
+	display:flex;
+	padding-top:5%;
+	padding-bottom:5%;
+	border-bottom: 2px solid black;
+}
+.three-box-content h2{
+	font-size: 2em;
+}
+
+.three-box-content p{
+	font-size: 22pt;
+	overflow-wrap: break-word;
+	padding-right: 5%;
+}
+
+/*Home page footer content*/
+.contact{
+	padding-top:5%;
+	padding-bottom:5%;
+}
+.contact h2{
+	font-size: 2em;
+}
+
+.info p{
+	padding-bottom: 2%;
+	font-size: 16pt;
+}
+address{
+	padding-bottom: 2%;
+	font-size: 16pt;
+}
+footer{
+	margin: auto;
+	text-align: center;
+	padding-bottom: 5%;
+}
+
+@media(max-width: 800px){
+    header{
+        flex-direction: column-reverse;
+    }
+    .logo{
+        max-width: 30%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 5%;
+    }
+    nav{
+        justify-content: space-around;
+        min-width: 100%;
+
+    }
+    .call-to-action{
+        flex-direction: column;
+    }
+    .left-cta{
+        min-width: 100%;
+    }
+    .left-cta h1{
+        font-size: 3em;
+        text-align: center;
+    }
+    .get-started{
+        border: 1px solid black;
+        text-align: center;
+        min-width: 30%;
+        padding: 1% 5%;
+        margin:auto;
+    }
+    .right-cta img{
+        display: none;
+    }
+    .two-box-content p{
+        font-size: medium;
+    }
+    .two-box-content h2{
+        font-size: medium;
+    }
+    .three-box-content p{
+        font-size: medium;
+    }
+    .three-box-content h2{
+        font-size: medium;
+    }
+    section{
+        margin: 0 8% 0 8%;
+    }
+    .second-section{
+        padding-bottom: 10%;
+        border-bottom: 2px solid black;
+        
+    }
+    .middle-img-cont{
+        margin: 0 8% 0 8%;
+    }
+    footer{
+        text-align: center;
+        padding-bottom: 2%;
+        
+    }
+    .info p{
+        font-size: medium;
+
+    }
+    .contact p{
+        font-size: medium;
+    }
+    .contact h2{
+        font-size: medium;
+    }
+    
+
+}
+
+
+/* Mobile Design*/
+@media(max-width: 500px) {
+    .container{
+        margin: 0;
+    }
+    header{
+        flex-direction: column-reverse;
+        align-content: center;
+        min-width: 100%;
+        justify-content: space-around;
+    }
+
+    nav{
+        flex-direction: column;
+        min-width: 100%;
+        border-top: 1px gray solid;
+    }
+    nav a{
+        padding: 5%;
+        border-bottom: 1px gray solid;
+        min-width: 100%;
+        text-align: center;
+    }
+    .two-box-content p{
+        font-size: medium;
+    }
+    .two-box-content h2{
+        font-size: medium;
+    }
+    .three-box-content p{
+        font-size: medium;
+    }
+    .three-box-content h2{
+        font-size: medium;
+    }
+    .logo{
+        
+        padding-left: 30%;
+        padding-right: 30%;
+        margin-bottom: 5%;
+        min-width: 100%;
+        
+    }
+    .call-to-action{
+        flex-direction: column;
+    }
+    .left-cta{
+        min-width: 100%;
+        margin-bottom: 10%;
+    }
+    .left-cta h1{
+        font-size: 3em;
+        text-align: center;
+    }
+    .get-started{
+        border: 2px solid gray;
+        text-align: center;
+        min-width: 50%;
+        padding: 1% 5%;
+        margin:auto;
+    }
+    .right-cta img{
+        display: none;
+    }
+    section{
+        margin: 0 8% 0 8%;
+        display: flex;
+        flex-direction: column;
+    }
+    section div{
+        padding-top:15%;
+    }
+   
+    .middle-img{
+        max-width: 90%;
+        padding-top: 10%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .second-section{
+        padding-bottom: 10%;
+        border-bottom: 2px solid black;
+        
+    }
+    .contact{
+        padding-top: 10%;
+        padding-bottom: 10%;
+        
+    }
+    footer{
+        text-align: center;
+        padding-bottom: 2%;
+        
+    }
+    .info p{
+        padding-bottom: 5%;
+        font-size: medium;
+
+    }
+    .contact p{
+        font-size: medium;
+    }
+    .contact h2{
+        font-size: medium;
+    }
+    
+
+}
 
 
