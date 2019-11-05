@@ -243,9 +243,15 @@ footer {
     .cta .cta-text {
         margin-right: 270px;
         margin-left: 270px;
-        margin-top: 80px;
-        margin-bottom: 10px;
+        margin-top: 75px;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
     }
+
+    .middle-img {
+        width: 100%;
+    }
+
     .cta img {
         display: none;
     }
@@ -256,10 +262,77 @@ footer {
         margin-left: 37px;
     }
     footer {
-        margin-left: 15px;
+        margin-left: 30px;
     }
 }
 
 @media(max-width: 500px) {
-
+    .container {
+        width: 500px;
+        margin: 0 auto;
 }
+
+.top {
+    flex-wrap: wrap-reverse;
+}
+
+header nav a {
+    align-content: center;
+    padding-right: 400px;
+    padding-left: 180px;
+    border-bottom: 1px solid gray;
+    line-height: 300%;
+    align-items: center;
+    font-size: 20px;
+    color: gray;
+}
+
+header .logo {
+    margin-left: 50px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid gray;
+    padding-right: 400px;
+    padding-left: 120px;
+}
+
+.cta .cta-text {
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-top: 45px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.top-content {
+    flex-wrap: wrap;
+    display: box;
+}
+    
+.bottom-content {
+    flex-wrap: wrap;
+    display: box;
+}
+
+.text-content {
+    padding-bottom: 60px;
+}
+
+.main-content .bottom-content .text-content {
+    width: 420px;
+    margin-right: 0px;
+  }
+  .middle-img {
+      width: 100%;
+      padding-top: 0px;
+      margin-top: 0px;
+  }
+
+  .contact {
+      margin-top: 0px;
+      padding-top: 10px:
+  }
+
+  footer {
+      margin-left: 60px;
+  }
