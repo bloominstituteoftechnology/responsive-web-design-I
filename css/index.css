@@ -46,6 +46,7 @@ table {
 /* Set every element's box-sizing to border-box */
 * {
     box-sizing: border-box;
+
 }
 
 html, body {
@@ -150,7 +151,29 @@ button{
 	  text-align: center;
 	  margin: 2%;
   }
-  /*Media starts here */
+  /*Media 800px starts here*/
+  @media(max-width: 800px){
+    header .logo {
+      display:block;
+    margin: 10px auto; }   
+   
+   .main-box img{
+     display: none;  
+   }
+   .main-box{
+       display: flex;
+       justify-content: center;
+   }
+   .top-content{
+       display: flex;
+       flex-direction: row;
+     }
+     .bottom-content{
+       display:flex;
+     }
+    }
+   
+  /*Media 500pxstarts here */
   
   @media (max-width: 500px){
     header nav{
