@@ -1,3 +1,246 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
-
-
+tml,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-family: 'Titillium Web', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Bangers', cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  header nav .logooff {
+    display: none;
+  }
+}
+header nav a {
+  text-decoration: none;
+  color: gray;
+}
+.services-header-img {
+  width: 100%;
+  padding: 2% 0;
+}
+.services-text {
+  padding-bottom: 3%;
+  border-bottom: 1px solid black;
+}
+/* middle-section*/
+.services-content {
+  padding-top: 2%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.services-content .card {
+  padding: 2%;
+  width: 49%;
+  background: whitesmoke;
+  border: 1px solid black;
+}
+.services-content .card:nth-child(even) {
+  margin-bottom: 2%;
+}
+.services-content .card:nth-child(odd) {
+  margin-right: 2%;
+  margin-bottom: 2%;
+}
+.services-content button {
+  background: white;
+  border: 1px solid black;
+  padding: 1% 4%;
+  margin-top: 2%;
+  border-radius: 20%;
+}
+.services-content button:hover {
+  color: white;
+  background-color: black;
+  transition-duration: 0.5s;
+}
+/* end of middle-section*/
+/* bottom part*/
+.services-info {
+  border-top: 2px solid black;
+  padding-top: 3%;
+  display: flex;
+}
+.services-info .facts {
+  width: 60%;
+}
+@media (max-width: 500px) {
+  .services-info .facts {
+    line-height: 20px;
+  }
+}
+.services-info .services-info-img {
+  flex: auto;
+  align-self: flex-end;
+}
+@media (max-width: 800px) {
+  .services-info .services-info-img {
+    width: 100%;
+    height: 300px;
+    padding-left: 5%;
+  }
+}
+ul {
+  display: flex;
+  flex-direction: column;
+}
+li {
+  padding-top: 5%;
+  height: 3.5vh;
+}
+footer {
+  text-align: center;
+  padding: 3% 0;
+}
+@media (max-width: 500px) {
+  .lastpic {
+    display: none;
+  }
+  .services-info {
+    justify-content: center;
+    align-items: center;
+  }
+}
