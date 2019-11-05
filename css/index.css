@@ -1,3 +1,247 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+.container {
+	max-width: 900px;
+	margin: 0 auto;
+
+	/* Header */
+}
+header nav{
+    display: inline-block;
+    margin-top: 5%;
+
+}
+header nav a {
+	color:gray;
+	margin: 0 20px;
+	text-decoration: none;
+
+  }
+  header .logo{
+	  margin-left: 17%;
+  }
+  /* Top Content */
+.Top{
+	margin-top: 10%;
+	border-bottom: 1px solid black;
+}
+.Top div{
+display: inline-block;
+margin-left: 75px;
+margin-top: 50px;
+text-align: center;
+vertical-align: top;
+}
+.Top div h1{
+	font-size: 75px;
+}
+.Top div button{
+	text-decoration: none;
+	color:black;
+	padding: 7px 30px;
+
+}
+.Top img{
+	margin-left: 100px;
+	margin-bottom: 50px;
+}
+/* Body Content */
+
+.body div{
+	display: inline-block;
+	width: 46%;
+	margin: 35px 15px;
+	
+}
+.middle-img{
+width: 100%;
+margin-right: 10px;
+}
+.body2{
+	border-bottom: 1px solid black;
+}
+.body2 div{
+	display: inline-block;
+	width: 31%;
+	margin: 35px 5px;
+}
+/* Info */
+.info{
+	margin-top: 40px;
+	margin-bottom: 35px;
+}
+footer{
+	text-align: center;
+	margin-bottom: 75px;
+}
+
+@media (max-width: 800px){
+   
+   
+    header{
+    display: flex;
+    flex-direction: column-reverse;
+        
+    }
+    header .logo{
+    margin-left:40%;
+    width: 20%;
+    margin-top: 3%;
+    }
+    header nav{
+    display: flex;
+    justify-content: space-evenly
+    }
+    .Top img{
+        display: none;
+    }
+    .Top div{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 9%;
+    }
+    .Top div button{
+        text-align: center;
+        width: 20%;
+    }
+
+    .body{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .body2{
+        display:flex;
+        justify-content: space-evenly;
+    }
+}
+@media screen and (max-width: 500px) {
+   
+    header{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+     }
+     header nav{
+         display: flex;
+         flex-direction: column;
+         width: 100%;
+         margin: 3% auto;
+         border-top: 1px solid black;
+     }
+    header nav a{
+        width: 100%;
+        padding: 3%;
+        margin: auto;
+        text-align: center;
+        font-size: 20px;
+        border-bottom: 1px solid black;
+    }
+
+    .Top{
+        display: flex;
+        margin-left: 20px;
+        
+    }
+    .Top div button{
+        text-decoration: none;
+        color:black;
+        width: 200px;
+        text-align: center;
+        font-size: 16px;
+        border: 1px solid black;
+    }
+    .body{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+    }
+    .body div{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+       margin: 8% auto;
+        
+    }
+    .body2{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly; 
+    }
+     
+    .body2 div{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+       margin: 8% auto;
+    }
+
+ 
+}
