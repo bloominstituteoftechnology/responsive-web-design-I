@@ -289,6 +289,9 @@ footer {
     #image {
         display: none;
     }
+    .boxTwo div {
+        padding: 1%;
+    }
 
     .logo {
         display: flex;
@@ -298,8 +301,6 @@ footer {
     }
     .tagsPic {
         width: 20%;
-        margin-right: 0;
-        margin-left: 2%;
         margin-top: 2%;
     }
     .tagsPic a {
@@ -316,30 +317,56 @@ footer {
         border: 1px solid gray;
     }
     h1 {
-
+line-height: 1;
     }
     
 }
 @media (max-width: 500px) {
-    #image {
+    
+   
+        #image {
         display:none;
     }
     .logo {
-        margin-right: 66%;
-        margin-left: -21%;
+        margin-left: -42%;
+    }
+    .tagsPic {
+        width: 100%;
+
     }
     nav .tagsPic {
         display: flex;
-      margin-left: 50%;
         justify-content: center;
         flex-direction: column;
-        margin-top: 5%;
-       
-
+        margin-top: 15%;
+        margin-left: 23%;
     }
     .container a {
         padding: 0;
+        width: 275px;
+        margin-top: 7%;
         display: flex;
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid grey;
     }
-
+    .columnOne {
+        flex-direction: column;
+        width: 100%;
+    }
+    #boxOne h2 {
+        text-align: left;
+    }
+    .boxTwo {
+        flex-direction: column-reverse;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .boxTwo h2 {
+text-align: left;
+    }
+    .columnOne p {
+        width: 100%;
+    }
+    .boxTwo p {
+        margin-bottom: 10px;
+    }
+}
