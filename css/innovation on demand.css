@@ -1,0 +1,266 @@
+/* Use your own code or past solution for Great Idea Web Page CSS here! */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+    
+    
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-family: 'Rubik', sans-serif;
+}
+
+p{
+    line-height: 1.4;
+}
+
+
+
+body{
+    font-size:10px;
+}
+
+.container{
+    width:80%;
+    margin:0 auto;
+    	
+}
+.tablet{
+    display:none;
+}
+/* Navbar and pic section*/
+
+.navbar nav{
+    padding-top:5%;
+    font-size:1.5rem;
+    display: flex;
+    justify-content: space-between;
+    
+	
+}
+.navbar nav a{
+    text-decoration: none;
+    color: gray;
+}
+h1{
+    font-size:4rem;
+    font-family: 'Bangers', cursive;
+    
+}
+
+/* Innovation and img*/
+
+.mid-container{
+    padding-top:5%;
+    padding-bottom:5%;
+    
+    
+}
+
+.h1button{
+     display: flex;
+    justify-content: flex-end;
+    text-align: center;
+}
+
+.otro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 15%;
+}
+
+.otro button{
+    
+    font-size:1rem;
+    background:none;
+    border: 1px solid black;
+}
+
+/* middle section 5 paragraphs & 1 img */
+
+.main{
+    padding: 4% 0;
+    border-top:2px solid black;
+    border-bottom: 2px solid black;
+
+}
+ p{
+    font-size:1rem;
+    
+}
+h3{
+    font-size:1.5rem;
+    font-family: 'Bangers', cursive;
+}
+
+.bigbox{
+   display: flex;
+   justify-content: space-between;
+}
+.box1{
+    
+    width: 48%;
+}
+.jumboimg{
+    padding: 3% 0;
+    width:100%;
+    
+}
+.bigbox2{
+    display: flex;
+    justify-content: space-between;
+}
+.box2{
+    width: 32%;
+}
+/* bottom section */
+.bottom{
+    padding-top:5%;
+    padding-bottom: 3%;
+}
+
+footer{
+    padding-bottom:4%;
+    font-size: 1.2rem;
+    text-align: center;
+}
+/* Tablet mode media querie*/
+
+@media (max-width:800px){
+    .container{
+        width:90%;
+    }
+
+.tablet{
+    display: unset;
+    
+}
+.tablet-pic{
+    text-align: center;
+    padding-top:5%;
+    padding-bottom:5%;
+}
+
+.logo{
+    display: none;
+}
+
+
+
+.h1button img{
+    display: none;
+}
+.h1button{
+    display: flex;
+    justify-content: center;
+   
+    
+}
+div .otro{
+    padding:0;
+    
+}
+footer{
+    padding-bottom:5%;
+}
+
+}
+/* End of Tablet-mode */
+
+/* Mobile-mode media querie */
+
+@media (max-width:500px){
+    /* changing the nav bar to vertical and aligning it */
+.navbar nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.navbar nav a{
+    width:100%;
+    padding: 2% 0;
+    border-top: 1px solid black;
+    text-align: center;
+}
+
+.mid-container{
+    border-top: 1px solid black;
+    padding-bottom:15%;
+}
+.main br {
+    content: " ";  
+    float:right; 
+ }
+.main p{
+    padding-bottom:8%;
+}
+
+.bigbox{
+    
+    flex-direction: column;
+    
+}
+.box1{
+    width:100%;
+}
+
+.bigbox2{
+    flex-direction: column;
+}
+.box2{
+    width:100%;
+}
+
+}
