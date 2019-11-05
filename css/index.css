@@ -1,3 +1,311 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	max-width:100%;
+}
+
+body {
+	width:90%;
+	margin: 0 auto;		
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 10vh;
+    
+}
 
 
+.nav a{
+	color: grey;
+	font-size:14px;
+	width:70%;
+
+}
+
+.nav a:hover {
+	color:green;
+}
+
+
+
+.head {
+	display: flex;
+	justify-content: space-evenly; 
+	align-content: center;
+}
+
+
+.head h1 {
+	font-size: 100px;
+	padding: 10px;
+	}
+
+	.head a {
+        margin-left:100px;
+		border:1px solid black;
+		}
+
+	.head a:hover {
+		color:black;
+		background-color:green;
+	}
+	
+.top-box {
+	display:flex;
+	justify-content: space-evenly;
+	border-top:2px solid black;
+	padding-top:20px;
+}
+
+.header {
+	display: flex;
+	justify-content: space-around;
+	justify-items: center;
+	height: 40vh;
+	margin-top:60px;
+	width:100%;
+
+}
+
+.middle-img {
+	display:block;
+	margin:0 auto;
+	width:100%;
+	height: 25vh;
+	padding:20px 0;
+}
+
+.bottom-box {
+	display:flex;
+	border-bottom:2px solid black;
+	justify-content: space-evenly;
+	padding-bottom:20px;
+}
+
+.contact-info {
+	padding: 30px 0;
+}
+
+footer {
+	padding: 30px 0;
+	margin: 0 auto;
+	text-align: center;
+}
+
+
+a {
+	text-decoration: none;
+}
+
+}
+
+
+ /* Content for services */
+
+.services-header-img {
+	display: block;
+	width: 100%;
+}
+
+.services-h1 {
+	font-size: 50px;
+}
+
+.top2 {
+	display: flex;
+	justify-content: space-between;
+	border-top:2px solid black;
+}
+.top2-box {
+	width:50%;
+	margin:20px;
+	padding: 10px;
+	border: 2px solid black;
+	
+}
+
+.middle2 {
+	display: flex;
+	justify-content: space-between;
+}
+
+.middle2-box {
+	width:50%;
+	margin:20px;
+	padding: 10px;
+	border: 2px solid black;
+}
+
+.bottom2 {
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 2px solid black;
+}
+
+.bottom2-box {
+	width:50%;
+	margin:20px;
+	padding: 10px;
+	border: 2px solid black;
+}
+
+section div a {
+	border: 2px solid black;
+text-align: center;
+padding:3px;
+}
+
+section div a:hover {
+	background-color: green;
+}
+
+.facts-box {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.facts-boxinfo {
+	width:50%;
+	margin:20px;
+}
+
+.facts-boxinfo img{
+	width:100%;
+	height:500px;
+}
+
+.image-top {
+
+   width:100%;
+   height:4vh;
+   margin:0 33%;
+   margin-top:30px;
+  
+   
+}
+
+/* Tablet View */
+
+@media (max-width: 800px){
+	.header div img{
+		display:none;
+	}
+        
+	
+	.nav div img {
+		display: none;
+	}
+
+	.nav {
+		justify-content: space-between;
+		margin-left:30px;
+	}
+}
+
+@media (min-width: 800px){
+	.image-top {
+		display:none;
+	}
+}
+
+/* Mobile view */
+
+@media (max-width: 400px) {
+    .nav {
+		flex-direction: column;
+		height:25vh;
+		justify-items: center;
+		text-align: center;
+	}
+
+	.nav .mobile-nav {
+		padding:20px 100%;
+		border:1px solid black;
+		
+	}
+
+	.mobile-nav a:hover {
+		color:red;
+		background:black;
+	}
+
+	.head div h1 {
+		font-size:65px;
+		margin-top: 40px;
+	}
+
+	.header {
+		height:30vh;
+	}
+}
