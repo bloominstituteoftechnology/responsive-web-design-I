@@ -1,3 +1,270 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
 
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+header nav {
+	display:flex;
+	justify-content: flex-start;
+}
+  
+nav a {
+	margin: 5%;
+	font-size: 14px;
+	color: gray;
+	text-decoration: none;
+  }
+.logo {
+	 display:flex;
+	 justify-content: flex-end;
+	 /*width:75%;*/
+	 height: 50px;
+	 margin:3%;
+  }
+  
+  h1{
+	  font-size: 50px;
+  }
+  .main-box{
+	display:flex;
+	align-items:center;
+	justify-content: space-around;
+	  
+}
+.title{
+	text-align:left;
+
+}
+button{
+	justify-content: center;
+	width: 50%;
+}
+
+.circle-pic{
+	  display:flex;
+	  justify-content: flex-end;
+	  margin:3%;
+
+	}
+ 
+   .top-content {
+	border-top: 1px solid black;
+	margin: 2px;
+	width:100%;
+	display:flex;
+	justify-content: center;
+
+  }
+	.features{
+		width: 20%;
+		margin: 5%;
+	}
+	.about{
+		width: 20%;
+		margin: 5%;
+	}
+
+  .middle-box{
+		display:flex;
+		justify-content: center;
+   }
+
+   .middle-box img{
+	   max-width:100%;
+   }
+
+.bottom-content{
+	border-bottom: 1px solid black;
+	width:100%;
+	margin:2px;
+	display:flex;
+	justify-content: space-around;
+	
+}
+.text-content{
+	width: 25%;
+	margin: 3%;
+}
+
+	
+	address{
+	  margin:5%;
+	  padding: 2%;
+  }
+  footer .copy-right{
+	  text-align: center;
+	  margin: 2%;
+  }
+  /*Media 800px starts here*/
+  @media (max-width: 800px){
+    header{
+      width: 70%;
+    }
+    header nav{
+      display:flex;
+      flex-flow: column-reverse;
+      justify-content: center;
+      flex-direction: row;
+    }
+    .logo {
+    display:flex;
+    margin: 10px auto;
+
+  }   
+   
+   .main-box img{
+     display: none;  
+   }
+   .main-box{
+       display: flex;
+       justify-content: center;
+       margin:5%;
+   }
+   .top-content{
+       display: flex;
+       flex-direction: row;
+     }
+     .bottom-content{
+       display:flex;
+     }
+  }
+    
+   
+   
+  /*Media 500pxstarts here */
+  
+  @media (max-width: 500px){
+    header{
+      width:98%;
+    }
+    header nav{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        }
+    
+    header nav a{
+        display:flex;
+        border-bottom:1px solid gray;
+        padding:2%;
+        justify-content: center;
+
+    }
+     .logo{
+      display: flex;
+      align-items: flex-start;
+      
+
+    }
+    .main-box{
+        display:flex;
+        justify-content: center;
+        
+        
+    }
+    .title{
+      text-align: center;
+      margin:10px;
+    }
+    .main-box img{
+      display:none;
+    }
+    .middle-box img{
+        display: flex;
+        justify-content: center;
+    }
+    
+     
+      .top-content {
+        border-top: 1px solid black;
+        margin: 2px;
+        width:100%;
+        display:flex;
+        flex-direction: column;
+        
+        }
+        .top-content .features{
+          width:90%;
+          margin: 5%;
+        }
+        .top-content .about{
+          width:90%;
+          margin: 5%;
+        
+        }
+    .top-content p{
+      float:left;
+    }
+  
+    
+.bottom-content {
+  border-top: 1px solid black;
+  margin: 2px;
+  width:100%;
+  display:flex;
+  flex-direction: column;
+  
+  }
+  .bottom-content div{
+    width: 90%;
+    margin: 5%;
+  }
+
+}
+   
