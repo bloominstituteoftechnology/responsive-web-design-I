@@ -73,7 +73,7 @@ nav a {
 .logo {
 	 display:flex;
 	 justify-content: flex-end;
-	 width: 25%;
+	 /*width:75%;*/
 	 height: 50px;
 	 margin:3%;
   }
@@ -152,9 +152,15 @@ button{
 	  margin: 2%;
   }
   /*Media 800px starts here*/
-  @media(max-width: 800px){
+  @media (max-width: 800px){
     header{
       width: 70%;
+    }
+    header nav{
+      display:flex;
+      flex-flow: column-reverse;
+      justify-content: center;
+      flex-direction: row;
     }
     .logo {
     display:flex;
@@ -177,7 +183,9 @@ button{
      .bottom-content{
        display:flex;
      }
-    }
+  }
+    
+   
    
   /*Media 500pxstarts here */
   
