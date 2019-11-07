@@ -102,8 +102,6 @@ nav > a
 	margin: 1% 3% 1% 4%;
 	padding: 10px 10px;
 	height:10%;
-
-	
 }
 #button { 
 	border: 1px solid black;
@@ -191,9 +189,54 @@ footer{
 
 @media (max-width: 480px) {
     nav {
-        flex-wrap: wrap;
+		display: flex;
+		flex-wrap: wrap;
+		max-width: 100%;
+		flex-direction: column-reverse;
 	}
 	.image {
 		display: none;
 	}
+	.logo{
+		width: 30%;
+		margin-left: 35%;
+		display: flex;
+	}
+	#innovation h1 {
+		margin-right: 10% ;
+		text-align: center;
+		margin-left: 68%;
+		display: flex;
+	}
+	#button{
+	border: 1px solid black;
+	width: 100%;
+	height: 30px;
+	text-align:center;
+    font-size:18px;
+    justify-content: space-evenly;
+	}
+	
+	div .first-section {
+		display: flex;
+		flex-direction: column;
+		width: 90%;
+	}
+
+	div .first-section .features {
+		display: flex;
+		width: 100%;
+	}
+
+	.div .second-section {
+		display: flex;
+		flex-direction: column;
+		
+	}
+
+	.contact{
+		
+		flex-direction: column;
+	}
+	
 }
