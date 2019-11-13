@@ -72,13 +72,15 @@ body {
 	
 }
 
+
+
 nav {
 	display:flex;
 	justify-content: space-around;
 	
 	background: linear-gradient(#eee, #ccc);
 	opacity: 0.9;
-	width: 1024px;
+	width: 100%;
 	margin-bottom: 100px;
 	}
 
@@ -190,3 +192,64 @@ h4 {
 	margin-top: 20px;
 	border-radius: 5px;
 }
+
+.altlogo {
+    display: hidden;
+}
+
+
+@media (max-width: 800px) {
+.bigpic {
+display: none;
+    }
+    .basicinfolower {
+        max-width: 60%;
+    }
+    .basicinfoupper {
+        max-width: 60%;
+    }
+    nav {
+        max-width: 60%;
+        margin-top: 100px;
+        background: none;
+        display: flex;    
+    }
+    .middle-img {
+        max-width: 60%;
+    }
+    .altlogo {
+        height: 40px;
+        width: 150px;
+        margin-left: 250px;
+        margin-bottom: -80px;
+        display:flex;
+        align-self: center;    
+    }
+    .logo {
+        display: none;
+    }
+    
+
+    }
+    
+    
+
+
+    @media (max-width: 500px) {
+nav {
+   display: flex; 
+   flex-direction: column; 
+   align-items: center;
+   font-size: 20px;
+   border-bottom: 2px solid grey;
+
+}
+a {
+    border-bottom: 2px solid red;
+}
+
+
+    }
+
+
+   
