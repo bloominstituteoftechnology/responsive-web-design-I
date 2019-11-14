@@ -128,20 +128,21 @@ h1, h2, h3, h4, h5 {
 	display: inline-block;
 }
 
+.features-about {
+    height: 100px;
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .features {
 	width: 450px;
 	height: 50px;
-	box-sizing: border-box;
-	display: inline-block;
 }
 
 .about {
 	width: 450px;
 	height: 50px;
-	padding-top: 40px;
-	padding-right: 20px;
-	box-sizing: border-box;
-	display: inline-block;
 }
 
 .middle-img {
@@ -150,8 +151,10 @@ h1, h2, h3, h4, h5 {
 }
 
 .content-bottom {
-	width: 900px;
-	padding-bottom: 40px;
+	height: 150px;
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .services {
@@ -175,7 +178,8 @@ h1, h2, h3, h4, h5 {
 }
 
 hr {
-	margin-right: 120px;
+    display: inline-block;
+    width: 900px;
 	background-color: black;
 }
 
@@ -190,3 +194,92 @@ footer {
 	text-align: center;
 }
 
+/* Beginning of max-width media queries CSS ~800px */
+
+@media (max-width: 1000px) {
+    .container {
+        align-content: center;
+    }
+
+    .logo {
+        
+    }
+
+    .container header nav a {
+        padding: none;
+    }
+
+    .circle-image {
+        display: none;
+    }
+
+    .top-container {
+        justify-content: center;
+        align-content: center;
+    }
+
+    hr {
+        width: 200%;
+        margin-left: -50%;
+    }
+    
+    .features-about {
+        justify-content: center;
+    }
+    
+    .features {
+        width: 385px;
+        height: 70px;
+        padding: 15px;
+    }
+    
+    .about {
+        width: 385px;
+        height: 70px;
+        padding: 15px;
+    }
+
+    .middle-img {
+        display: block;
+        width: 800px;
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+
+    .content-bottom {
+        justify-content: center;
+    }
+
+    .services {
+        width: 250px;
+    }
+    
+    .product {
+        width: 270px;
+        padding-left: none;
+    }
+    
+    .vision {
+        width: 270px;
+        padding-left: none;
+    }
+
+    .address {
+        padding: none;
+        display: flex;
+        justify-content: flex-start;
+        margin-left: auto;
+        margin-right: auto;
+        width: 800px;
+
+    }
+}
+
+/* Beginning of max-width media queries CSS ~400px */
+
+@media (max-width: 800px) {
+    
+    }
+}
