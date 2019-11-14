@@ -72,7 +72,15 @@ body {
 	
 }
 
-
+nav {
+	display:flex;
+	justify-content: space-around;
+	
+	background: linear-gradient(#eee, #ccc);
+	opacity: 0.9;
+	width: 100%;
+	margin-bottom: 100px;
+}
 
 .home {
 	display:flex;
@@ -152,6 +160,18 @@ font-size: 20px;
 footer {
 	text-align: center;
 margin-top: 100px;
+}
+
+/* begin services page */
+
+.Servicenav {
+	display:flex;
+	justify-content: space-around;
+	
+	background: linear-gradient(#eee, #ccc);
+	opacity: 0.9;
+	width: 100%;
+	margin-bottom: 100px;
 }
 
 
@@ -248,7 +268,7 @@ h4 {
 }
 
 
-/* beginning of index.html refactor */
+/* beginning of responsive design */
 
 .altlogo {
     display: hidden;
@@ -288,6 +308,13 @@ display: none;
 	
 	/* services page */
 
+	.Servicenav {
+		max-width: 65%;
+		display: flex;
+		text-align: center;
+		padding: 10px;
+        
+	}
 	.services-header-img {
 		max-width: 60%;
 		margin-left: 50px;
@@ -308,9 +335,8 @@ display: none;
 	.Things {
 		margin-left: 115px;
 		text-align: center;
-
 	}
-	}
+}
 	
     
     
@@ -360,12 +386,60 @@ margin-left: -100px;
 footer {
 	max-width: 50%;
 }
+
+/* beginning of services page responsive design */
+
+.Servicenav {
+	display: flex; 
+   flex-direction: column; 
+   align-items: center;
+   justify-content: center;
+   font-size: 20px;
+}
+.Servicenav a {
+	width: 100%;
+border-bottom: 2px solid grey;
+text-align: center;
+padding: 15px;
+margin-left: -100px;
+margin-bottom: -10px;
+margin-right: 50px;
+}
+.service {
+    border-top: 2px solid grey;
+margin-top: -10px;
+   
+}
+.services-header-img {
+	max-width: 40%;
+	margin-left: 50px;
+}
+.Services {
+	max-width: 40%;
+	margin-left: 50px;
+	text-align: center;
+}
+.box {
+	max-height: 100%;
+	max-width: 70%;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	margin-left: -80px;
+	
+}
+.services-info-img {
+	display: none;
+}
+.Things {
+	margin-left: 50px;
+	text-align: center;
+	
+
+}
+
+
     }
 
-
-   
-
-
-	/* beginning of services markup */
 
 	
