@@ -68,7 +68,6 @@ h1, h2, h3, h4, h5 {
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 body {
-    width: auto;
 	margin: 5% 15%;
 	padding:0;
 }
@@ -208,8 +207,9 @@ nav a {
 	font-size: 18px;
 }
 
-@media(max-width: 800px) {
+@media (max-width: 800px) {
     body {
+        width: 800px;
         margin: 5% 15%;
         padding:0;
     }
@@ -265,11 +265,7 @@ nav a {
         margin: 2% 25%;
         padding: 2% 0%;
     }
-    
-    /*#header-img {
-        box-sizing: border-box;
-        width: 360px;
-    }*/
+
     
     .middle-section {
         box-sizing: border-box;
