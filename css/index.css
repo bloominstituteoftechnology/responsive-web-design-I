@@ -1,3 +1,596 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: flex;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+body {
+	margin: 5% 15%;
+}
+
+.header {
+    display: flex;
+    flex-direction: row-reverse;
+	justify-content: space-between;
+	align-items: center;
+
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	width: 75%;
+}
+
+nav a {
+	box-sizing: border-box;
+	text-decoration: none;
+	color: gray;
+}
+
+.top-section {
+	box-sizing: border-box;
+	display: flex;
+	justify-content: flex-end;
+	justify-content: space-between;
+	align-items: center;
+	margin: 6% 0%;
+}
+
+.container {
+	box-sizing: border-box;
+	margin: 0% 0% 0% 15%; 
+}
+
+.h1 {
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 90px;
+	width: 100%;
+
+}
+
+.getstarted {
+	box-sizing: border-box;
+	border: 1px solid black;
+	display: flex;
+	justify-content: center;
+	margin: 2% 25%;
+	padding: 2% 0%;
+}
+
+#header-img {
+	box-sizing: border-box;
+	width: 360px;
+}
+
+hr {
+    height: 3px;
+    background: black;
+}
+
+.middle-section {
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-between;
+}
+
+.features {
+	box-sizing: border-box;
+	font-size: 18px;
+	margin: 0% 1% 0% 0%;
+}
+
+.about {
+	box-sizing: border-box;
+	font-size: 18px;
+	margin: 0% 0% 0% 1%;
+}
+
+.middle-img {
+	box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+	margin: 5% 0%;
+}
+
+#middle-img {
+    width: 100%;
+}
+
+.bottom-section {
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-around;
+}
+
+.services {
+	box-sizing: border-box;
+	font-size: 18px;
+
+}
+
+.product {
+	box-sizing: border-box;
+	font-size: 18px;
+}
+
+.vision {
+	box-sizing: border-box;
+	font-size: 18px;
+}
+
+.address {
+	box-sizing: border-box;
+	margin: 0% 0% 15% 0%;
+	font-size: 18px;
+}
+
+.number {
+	box-sizing: border-box;
+	margin: 0% 0% 15% 0%;
+	font-size: 18px;
+}
+
+.email {
+	box-sizing: border-box;
+	margin: 0% 0% 15% 0%;
+	font-size: 18px;
+}
+
+.copyright {
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	margin: 3% 0% 0% 0%;
+	font-size: 18px;
+}
+
+/*CSS for 800px starts here!*/
+
+@media (max-width: 800px) {
+    body {
+        margin: 4% 2%;
+    }
+    
+    .header {
+        display: flex;
+        flex-direction: row;
+        flex-flow: wrap;
+        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
+
+    
+    }
+    
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin: 5% 0% 0% 0%;
+    }
+    
+    nav a {
+        box-sizing: border-box;
+        text-decoration: none;
+        color: gray;
+    }
+    
+    .top-section {
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 6% 0%;
+    }
+    
+    .container {
+        box-sizing: border-box;
+        margin: 0% 0% 0% 0%;
+    }
+    
+    .h1 {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 90px;
+    
+    }
+    
+    .getstarted {
+        box-sizing: border-box;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        margin: 2% 25%;
+        padding: 2% 0%;
+    }
+
+    #header-img {
+        display: none;
+        box-sizing: border-box;
+        width: 360px;
+    }
+
+    
+    .middle-section {
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .features {
+        box-sizing: border-box;
+        font-size: 18px;
+        margin: 0% 1% 0% 0%;
+    }
+    
+    .about {
+        box-sizing: border-box;
+        font-size: 18px;
+        margin: 0% 0% 0% 1%;
+    }
+    
+    .middle-img {
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        margin: 5% 0%;
+    }
+    
+    #middle-img {
+        width: 100%;
+    }
+    
+    .bottom-section {
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .services {
+        box-sizing: border-box;
+        font-size: 18px;
+    
+    }
+    
+    .product {
+        box-sizing: border-box;
+        font-size: 18px;
+    }
+    
+    .vision {
+        box-sizing: border-box;
+        font-size: 18px;
+    }
+    
+    .address {
+        box-sizing: border-box;
+        margin: 0% 0% 15% 0%;
+        font-size: 18px;
+    }
+    
+    .number {
+        box-sizing: border-box;
+        margin: 0% 0% 15% 0%;
+        font-size: 18px;
+    }
+    
+    .email {
+        box-sizing: border-box;
+        margin: 0% 0% 15% 0%;
+        font-size: 18px;
+    }
+    
+    .copyright {
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 3% 0% 0% 0%;
+        font-size: 18px;
+    }
+
+}
+
+/*CSS for 500px starts here!*/
+
+@media (max-width: 500px) {
+    body {
+        margin: 4% 2%;
+    }
+    
+    .header {
+        display: flex;
+        flex-direction: row;
+        flex-flow: wrap;
+        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
+
+    
+    }
+    
+    .nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 5% 0% 0% 0%;
+    }
+    
+    nav hr {
+        width: 100%;
+        height: 1px;
+    }
+
+    nav a {
+        box-sizing: border-box;
+        text-decoration: none;
+        color: gray;
+        padding: 2.5% 0%;
+    }
+    
+    .top-section {
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 6% 0%;
+    }
+    
+    .container {
+        box-sizing: border-box;
+        margin: 0% 0% 0% 0%;
+    }
+    
+    .h1 {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 90px;
+    
+    }
+    
+    .getstarted {
+        box-sizing: border-box;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        margin: 2% 25%;
+        padding: 2% 0%;
+    }
+
+    #header-img {
+        display: none;
+        box-sizing: border-box;
+        width: 360px;
+    }
+
+    
+    .middle-section {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .features {
+        box-sizing: border-box;
+        font-size: 18px;
+        margin: 10% 0% 5% 0%;
+    }
+    
+    .about {
+        box-sizing: border-box;
+        font-size: 18px;
+        margin: 5% 0% 5% 0%;
+    }
+    
+    .middle-img {
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        margin: 10% 0% 5%;
+    }
+    
+    #middle-img {
+        width: 100%;
+    }
+    
+    .bottom-section {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact {
+        margin: 10% 0% 0%;
+    }
+    
+    .services {
+        box-sizing: border-box;
+        font-size: 18px;
+        margin: 2% 0% 5%;
+    
+    }
+    
+    .product {
+        box-sizing: border-box;
+        font-size: 18px;
+        margin: 5% 0%;
+    }
+    
+    .vision {
+        box-sizing: border-box;
+        font-size: 18px;
+        margin: 5% 0%;
+    }
+    
+    .address {
+        box-sizing: border-box;
+        margin: 0% 0% 15% 0%;
+        font-size: 18px;
+    }
+    
+    .number {
+        box-sizing: border-box;
+        margin: 0% 0% 15% 0%;
+        font-size: 18px;
+    }
+    
+    .email {
+        box-sizing: border-box;
+        margin: 0% 0% 15% 0%;
+        font-size: 18px;
+    }
+    
+    .copyright {
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 3% 0% 0% 0%;
+        font-size: 18px;
+    }
+
+}
+/* css for services.html begins here*/
+
+.services-header-img {
+	box-sizing: border-box;
+	display: flex;
+	width: 100%;
+	margin: 5% 0%;
+}
+
+.services-section {
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-between;
+	margin: 2% 0%;
+
+}
+
+.services-container {
+	box-sizing: border-box;
+	border: 1px solid black;
+	background-color: lightgray;
+	padding: 1%;
+	display: flex;
+	flex-direction: column;
+	width: 49%;
+	font-size: 18px;
+}
+
+.learn {
+	box-sizing: border-box;
+	border: 1px solid black;
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	width: 35%;
+	padding: 7px 30px;
+	margin: 5% 0%;
+}
+
+.services-bottom-section {
+	box-sizing: border-box;
+	display: flex;
+	margin: 2% 0;
+}
+
+.services-bottom-img {
+	box-sizing: border-box; 
+	width: 2100px;
+}
+
+.services-info-img {
+	width: 100%;
+}
+
+.container-facts {
+	box-sizing: border-box;
+	margin: 0% 6% 0% 0%;
+}
+
+.list {
+	box-sizing: border-box;
+	margin: 0% 5%;
+
+}
+
+li {
+	box-sizing: border-box;
+	list-style-type: square;
+	margin: 3% 0%;
+}
 
