@@ -1,3 +1,192 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+.container {
+	margin: 0 auto;
+	max-width: 1000px;
+}
+
+.container header nav {
+	display: block;
+	padding-top: 10px;
+}
+		
+.container header nav a {
+	padding: 0px 60px 0px 0px;
+	text-decoration: none;
+	color: gray;
+}
+
+.logo {
+	display: inline-block;
+}
+
+.top-container {
+    padding-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.innovation {
+    font-size: 100%;
+    font: inherit;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.innovation h1 {
+	font-size: 5rem;
+}
+
+.button {
+    height: 30%;
+}
+
+.button {
+	width: 200px;
+	height: 40px;
+	padding: 10px;
+	text-align: center;
+	border: 1px solid black;
+	text-decoration: none;
+	color: black;
+	display: inline-block;
+}
+.circle-image {
+    font-size: 100%;
+    font: inherit;
+	vertical-align: baseline;
+	display: inline-block;
+}
+
+.features {
+	width: 450px;
+	height: 50px;
+	box-sizing: border-box;
+	display: inline-block;
+}
+
+.about {
+	width: 450px;
+	height: 50px;
+	padding-top: 40px;
+	padding-right: 20px;
+	box-sizing: border-box;
+	display: inline-block;
+}
+
+.middle-img {
+	width: 900px;
+	padding: 40px 0px 40px 0px;
+}
+
+.content-bottom {
+	width: 900px;
+	padding-bottom: 40px;
+}
+
+.services {
+	width: 275px;
+	box-sizing: border-box;
+	display: inline-block;
+}
+
+.product {
+	width: 300px;
+	padding-left: 20px;
+	box-sizing: border-box;
+	display: inline-block;
+}
+
+.vision {
+	width: 300px;
+	padding-left: 20px;
+	box-sizing: border-box;
+	display: inline-block;
+}
+
+hr {
+	margin-right: 120px;
+	background-color: black;
+}
+
+address {
+	display: block;
+	padding-top: 40px;
+}
+
+footer {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	text-align: center;
+}
 
