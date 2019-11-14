@@ -64,34 +64,42 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Your code starts here! */
 .container {
-	margin-left: 3%;
-	margin-right: 3%;
+	margin-left: 2%;
+	margin-right: 2%;
+	padding: 1%;
+	width: 1000px;
+	margin-bottom: 35px;
 }
 
 .logo {
-	margin-left: 70%;
-	padding-top: 2%;
-	position: relative;
+	/* margin-left: 55%; */
+	padding-top: .5%;
+
+}
+
+nav {
+	display: flex;
 }
 
 nav ul {
+	display: flex;	
 	margin: 0;
 	padding:0;
 	list-style: none;
+	justify-content: space-evenly;
+	width: 75%;
 }
 nav li {
-	display: flex;
-	margin-right: 7%;
+
 	padding-top: 3%;
-    justify-content: flex-start;
-   
+       
 
 }
 
 nav a {
 	color: gray;
 	text-decoration: none;
-	position: fixed;
+	/* position: fixed; */
     z-index: 500;
     
 }
@@ -102,39 +110,52 @@ nav a:hover {
 
 
 header img {
-	margin-left: 650px;
-	z-index: 10;
-	position: absolute;
-	top: 200px;
-	left:1px;
 	
+	z-index: 10;
+	top: 3%;
+	
+	
+}
+
+.top-header {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 3%;
 }
 
 .mainheader {
 	text-align: center;
 	display: flex;
+	flex-flow: column;
 	font-size: 5em;
-	font-family: bangers, cursive;
-	
+	font-family: bangers, cursive;	
 	width: 300px;
 	height:100px;
 	margin-left: 10%;
 	margin-top: 15%;
 	z-index:20;
-	position: relative;
-
+	
 }
+
+.top-header .mainheader1 {
+margin-right: 5%;
+margin-top: 10%;
+}
+
 header button {
 	margin-left: 15%;
-	margin-top: 11%;
-	
+	margin-top: 11%;	
 	box-sizing: border-box;
-	width: 150px;
 	height: 30px;
-	padding: 2px ;
-	
+	padding: 2px ;	
 	text-align: center;
 	
+}
+
+.top-img {
+	margin-left: 60%;
+	position: relative;
+
 }
 
 header button:hover {
@@ -143,31 +164,36 @@ color: darkred;
 }
 
 .section1 {
-	width: 100%;
+	width: 90%;
 	margin: 1%;
+	display: flex;
+	justify-content: space-between;
+	
 
 }
 
 .section1 .p1 {
-	width:40%;
-	
+	width:60%;	
 	display: flex;
 	margin: 1%;
-    min-width: 150px;
-
+	min-width: 150px;
+	flex-flow: column;
+	
 }
 
 
 .section2 {
-	width: 100%;
+	width: 90%;
 	margin: 1%;
+	display: flex;
 
 }
 
 .section2 .p2 {
-	width:30%;
-	
+	width:50%;	
 	display: flex;
+	flex-flow: column;
+	justify-content: space-evenly;
 	margin: 1%;
 	min-width: 200px;
 	
@@ -175,4 +201,92 @@ color: darkred;
 
 footer {
 	text-align: center;
+}
+
+hr {
+	width: 95%;
+	border: 2px solid black;
+	
+	
+}
+
+@media(max-width: 800px){
+	.container {
+		
+		margin: 2%;
+		padding: 2%;
+
+	}
+
+	.logo2 {
+		display: none;
+	}
+	
+	nav ul {
+		flex-flow: row-reverse wrap;
+		align-content: flex-start;
+		width: 90%;
+	}
+
+	nav {
+		flex-direction: column-reverse;
+		justify-content: space-evenly;
+		align-items: center;
+
+		
+	}
+
+	.logo {
+		width: 20%;
+
+		
+	}
+
+	.mainheader {
+		text-align: center;
+		margin-bottom: 20%;
+		margin-left: 35%;
+	}
+}
+
+@media(max-width: 500px){
+	.container {
+		margin: 5%;
+		padding: 5%;
+	}
+	
+	nav ul {
+		flex-flow: column;
+		align-items: center;
+		margin-left: 7%;
+		margin-right: 7%;
+		width: 90%;
+
+	}
+
+	nav ul a {
+		border-top: 1px solid grey;
+		border-top-width: 100%;
+		
+	}
+	.mainheader {
+		text-align: center;
+		margin-bottom: 25%;
+		margin-left: 30%;
+	}
+
+	.section1 {
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.section2 {
+		flex-direction: column;
+	}
+
+	.middle-img {
+		width: 100%;
+	}
+
+
 }
