@@ -1,3 +1,206 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+.container {
+	width: 880px;
+	margin: 74px;
+}
+
+@media(max-width: 1000px) {
+  .container {
+    width: 1000px;
+  }
+}
+
+@media(max-width: 500px) {
+  .container {
+    width: 500px;
+  }
+  .logo {
+    display: flex;
+    justify-content: center;
+  }
+  a {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 20px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    padding: 15px 100px;
+  }
+}
+
+/* Header Section*/
+h1 {
+	display: inline-block;
+	font-size: 65px;
+	text-align: center;
+	padding-right: 130px;
+	vertical-align: inherit;
+}
+
+.logo {
+	vertical-align: middle;
+	display: inline-block;
+}
+img {
+	vertical-align: middle;
+}
+
+.iod {
+	text-align: center;
+	vertical-align: middle;
+	margin: 50px 0 5px 0;
+	
+}
+
+.button {
+	display: inline-block;
+	border: solid 1px black;
+    color: black;
+	margin: 0 0 50px 116px;
+	padding: 5px 30px;
+}
+
+/* Navigation Section*/
+nav {
+	display: inline-block;
+}
+a {
+	color: lightgray;
+	text-decoration: none;
+	margin-right: 60px;
+}
+
+
+.upper {
+	display: inline-block;
+	margin-bottom: 40px;
+}
+
+/* Top Left Section*/
+.features {
+	display: inline-block;
+	width: 48%;
+	margin-top: 20px;
+}
+
+
+/* Top Right Section*/
+.about {
+	display: inline-block;
+	width: 48%;	
+	margin-left: 3%;
+	margin-top: 20px;
+}
+
+.middle-img
+{
+	width: 100%;
+}
+
+
+/* Bottom Left Section*/
+.services {
+	display: inline-block;
+	width: 33%;
+	margin-top: 30px;
+}
+
+
+/* Bottom Middle Section*/
+.product {
+	display: inline-block;
+	width: 33%;
+	margin-top: 30px;
+}
+
+
+/* Bottom Right Section*/
+.vision {
+display: inline-block;
+width: 33%;
+margin-top: 30px;
+}
+
+
+/* Contact Section*/
+.contact {
+	margin: 40px 0;
+}
+
+
+/* footer section */
+footer {
+	text-align: center;
+	padding-bottom: 40px;
+    margin: 40px 0;
+}
