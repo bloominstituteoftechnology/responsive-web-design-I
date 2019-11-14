@@ -69,7 +69,6 @@ h1, h2, h3, h4, h5 {
 
 body {
 	margin: 5% 15%;
-	padding:0;
 }
 
 .header {
@@ -128,6 +127,11 @@ nav a {
 #header-img {
 	box-sizing: border-box;
 	width: 360px;
+}
+
+hr {
+    height: 3px;
+    background: black;
 }
 
 .middle-section {
@@ -208,10 +212,11 @@ nav a {
 	font-size: 18px;
 }
 
+/*CSS for 800px starts here!*/
+
 @media (max-width: 800px) {
     body {
         margin: 4% 2%;
-        padding:0;
     }
     
     .header {
@@ -356,6 +361,168 @@ nav a {
 
 }
 
+/*CSS for 500px starts here!*/
+
+@media (max-width: 500px) {
+    body {
+        margin: 4% 2%;
+    }
+    
+    .header {
+        display: flex;
+        flex-direction: row;
+        flex-flow: wrap;
+        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
+
+    
+    }
+    
+    .nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 5% 0% 0% 0%;
+    }
+    
+    nav hr {
+        width: 100%;
+        height: 1px;
+    }
+
+    nav a {
+        box-sizing: border-box;
+        text-decoration: none;
+        color: gray;
+        padding: 2.5% 0%;
+    }
+    
+    .top-section {
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 6% 0%;
+    }
+    
+    .container {
+        box-sizing: border-box;
+        margin: 0% 0% 0% 0%;
+    }
+    
+    .h1 {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 90px;
+    
+    }
+    
+    .getstarted {
+        box-sizing: border-box;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        margin: 2% 25%;
+        padding: 2% 0%;
+    }
+
+    #header-img {
+        display: none;
+        box-sizing: border-box;
+        width: 360px;
+    }
+
+    
+    .middle-section {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .features {
+        box-sizing: border-box;
+        font-size: 18px;
+        margin: 10% 0% 5% 0%;
+    }
+    
+    .about {
+        box-sizing: border-box;
+        font-size: 18px;
+        margin: 5% 0% 5% 0%;
+    }
+    
+    .middle-img {
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        margin: 10% 0% 5%;
+    }
+    
+    #middle-img {
+        width: 100%;
+    }
+    
+    .bottom-section {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact {
+        margin: 10% 0% 0%;
+    }
+    
+    .services {
+        box-sizing: border-box;
+        font-size: 18px;
+        margin: 2% 0% 5%;
+    
+    }
+    
+    .product {
+        box-sizing: border-box;
+        font-size: 18px;
+        margin: 5% 0%;
+    }
+    
+    .vision {
+        box-sizing: border-box;
+        font-size: 18px;
+        margin: 5% 0%;
+    }
+    
+    .address {
+        box-sizing: border-box;
+        margin: 0% 0% 15% 0%;
+        font-size: 18px;
+    }
+    
+    .number {
+        box-sizing: border-box;
+        margin: 0% 0% 15% 0%;
+        font-size: 18px;
+    }
+    
+    .email {
+        box-sizing: border-box;
+        margin: 0% 0% 15% 0%;
+        font-size: 18px;
+    }
+    
+    .copyright {
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 3% 0% 0% 0%;
+        font-size: 18px;
+    }
+
+}
 /* css for services.html begins here*/
 
 .services-header-img {
