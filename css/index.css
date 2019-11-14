@@ -1,3 +1,464 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+header  {
+	overflow: hidden;
+	position: fixed; 
+	top: 0; 
+	width: 100%; 
+	background: rgba(255, 255, 255, 0.92);
+	margin-bottom: 500px;
+}
+.row {
+    margin: 20px;
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    justify-content: space-between;
+    
+    
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+
+.main-nav li a {
+    text-decoration: none;
+    color: rgb(129, 129, 129);
+    padding: 0 20px;
+    display: flex;
+    align-self: flex-start;
+    
+}
+
+.logo-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 10% 0 0;
+}
+
+.title-text-box {
+	display: flex;
+	width: 90%;
+	max-width: 1140px;
+	margin: 0 auto 75px;
+}
+
+.title-text-box p {
+	line-height: 18px;
+	letter-spacing: 1px;
+	
+}
+.left-box {
+	display: flex;
+	width: 50%;
+	height: auto;
+	flex-flow: column nowrap;
+	align-items: center;
+    justify-content: center;
+    padding-bottom: 15px;
+    box-sizing: border-box
+}
+
+.left-box h1 {
+	font-size: 4.7rem;
+	text-align: center;
+	padding: 90px 10px 10px 0;
+}
+
+.get-started-button {
+	display: flex;
+	width: 50%;
+    padding: 10px 10px;
+    font-weight: 600;
+    color: black;
+	text-decoration: none;
+	border: 1px solid black;
+	justify-content: center;
+	transition: background 1s;
+	margin: 0 135.5px;
+}
 
 
+.get-started-button:hover {
+	color: white;
+	background: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+
+
+
+.right-box {
+	width: 410;
+	height: 400px;
+    padding: 50px 0 0;
+    box-sizing: border-box;
+
+}
+
+.features-section {
+	width: 90%;
+	margin: 0 auto;
+}
+/* sections 2 columns in one row */
+
+.row-block {
+	display: flex;
+	margin: 50px 0;
+	justify-content: space-between;
+}
+
+.line-divide {
+	margin-bottom: 30px;
+	width: auto;
+}
+
+.line-divide-two {
+	border: 2px solid rgb(99, 99, 99);
+}
+
+.left-block, 
+.right-block {
+	
+	width: 48%;
+	margin: 0 1%;
+	align-content: center;
+	
+}
+
+
+
+.row-block h2 {
+	font-size: 125%;
+}
+
+.middle-img {
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+.three-row {
+	margin: 10px 0 30px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.three-row h2 {
+	font-size: 115%;
+}
+
+
+
+.one-of-three-block {
+	width: 31%;
+	margin: 5px;
+	
+}
+
+footer {
+	margin: 0 auto 50px;
+	width: 90%;
+	padding-left: 10px;
+}
+
+footer nav address {
+	font-style: italic;
+	font-size: 95%;
+}
+
+.copyright {
+	text-align: center;
+	margin-top: 20px;
+}
+/* MEDIA QUEREIES */
+
+@media (max-width: 800px) {
+    header  {
+        overflow: hidden;
+        position: fixed; 
+        top: 0; 
+        width: 100%; 
+        background: rgba(255, 255, 255, 0.92);
+        margin-bottom: 500px;
+    }
+    .row {
+        margin: 20px 0;
+        display: flex;
+        flex-flow: column-reverse nowrap;
+        
+        
+    }
+    
+    .main-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 0;
+    
+    }
+    
+    .main-nav li a {
+        text-decoration: none;
+        color: rgb(129, 129, 129);
+        display: flex;
+        align-self: flex-start;
+        padding-bottom: 10px;
+        
+    }
+
+   .logo-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0 0;
+   }
+    
+    .main-nav li a:hover {
+        color: black;
+        border-bottom: 2px solid black;
+    }
+
+    .right-box {
+        display: none;
+    }
+
+    .title-text-box {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 600px /* my browser doesn't shrink beyond 555 pixels wide so i set to 600 for testing*/) {
+    header {
+        overflow: auto;
+        position: absolute;
+    }
+    .row {
+        margin: 20px 20px 20px 0;
+        display: flex;
+        flex-flow: column-reverse wrap;
+        width: 90%;
+        
+        
+    }
+    
+    .main-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-flow: column wrap;
+        padding-left: 0;
+    }
+    
+    .main-nav li a {
+        text-decoration: none;
+        color: rgb(129, 129, 129);
+        text-align: center;
+        padding: 15px 200px;
+        border-bottom: 1px solid black;
+        font-size: 120%;
+
+        
+    }
+
+   .logo-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0 0;
+   }
+    
+    .main-nav li a:hover {
+        color: black;
+        border-bottom: 2px solid black;
+    }
+
+    .right-box {
+        display: none;
+    }
+
+    .title-text-box {
+        display: flex;
+        justify-content: center;
+    }
+
+    .title-text-box {
+        display: flex;
+        width: 90%;
+        max-width: 1140px;
+        margin: 170px auto 75px;
+    }
+    
+    .title-text-box p {
+        line-height: 18px;
+        letter-spacing: 1px;
+        
+    }
+    .left-box {
+        display: flex;
+        width: 50%;
+        height: auto;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 15px;
+        box-sizing: border-box
+    }
+    
+    .left-box h1 {
+        font-size: 4.7rem;
+        text-align: center;
+        padding: 90px 10px 10px 0;
+    }
+    
+    .get-started-button {
+        display: flex;
+        width: 80%;
+        padding: 10px 10px;
+        font-weight: 600;
+        color: black;
+        text-decoration: none;
+        border: 1px solid black;
+        justify-content: center;
+        transition: background 1s;
+        margin: 0 135.5px;
+    }
+    
+    
+    .get-started-button:hover {
+        color: white;
+        background: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+    
+    
+    
+    .right-box {
+        width: 410;
+        height: 400px;
+        padding: 50px 0 0;
+        box-sizing: border-box;
+    
+    }
+    
+    .features-section {
+        width: 90%;
+        margin: 0 auto;
+    }
+    /* sections 2 columns in one row */
+    
+    .row-block {
+        flex-flow: column nowrap;
+    }
+    
+    
+    
+    .left-block, 
+    .right-block {
+        
+        width: 100%;
+        
+    }
+    
+    
+    
+    .row-block h2 {
+        font-size: 105%;
+    }
+    
+    
+    
+    .three-row {
+        margin: 10px 0 30px;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+    }
+    
+    .three-row h2 {
+        font-size: 105%;
+    }
+    
+    
+    
+    .one-of-three-block {
+        width: 100%;
+        margin: 5px;
+        
+    }
+
+    footer h2 {
+        font-size: 105%;
+    }
+}
