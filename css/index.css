@@ -83,6 +83,11 @@ h1, h2, h3, h4, h5 {
   .container {
     width: 500px;
   }
+  nav {
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
   .logo {
     display: flex;
     justify-content: center;
@@ -96,11 +101,20 @@ h1, h2, h3, h4, h5 {
     border-bottom: 1px solid gray;
     padding: 15px 100px;
   }
+  img {
+    display: none;
+  }
+  .upper {
+
+  }
+  .about {
+    margin-left: 0;
+  }
 }
 
 /* Header Section*/
 h1 {
-	display: inline-block;
+	display: flex;
 	font-size: 65px;
 	text-align: center;
 	padding-right: 130px;
@@ -123,7 +137,7 @@ img {
 }
 
 .button {
-	display: inline-block;
+	display: flex;
 	border: solid 1px black;
     color: black;
 	margin: 0 0 50px 116px;
@@ -132,7 +146,7 @@ img {
 
 /* Navigation Section*/
 nav {
-	display: inline-block;
+	display: flex;
 }
 a {
 	color: lightgray;
@@ -142,13 +156,15 @@ a {
 
 
 .upper {
-	display: inline-block;
+  display: flex;
+  justify-content: space-between;
 	margin-bottom: 40px;
 }
 
 /* Top Left Section*/
 .features {
-	display: inline-block;
+  display: flex;
+  flex-direction: column;
 	width: 48%;
 	margin-top: 20px;
 }
@@ -156,9 +172,9 @@ a {
 
 /* Top Right Section*/
 .about {
-	display: inline-block;
+  display: flex;
+  flex-direction: column;
 	width: 48%;	
-	margin-left: 3%;
 	margin-top: 20px;
 }
 
@@ -168,9 +184,17 @@ a {
 }
 
 
+
+.bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 /* Bottom Left Section*/
 .services {
-	display: inline-block;
+  display: flex;
+  flex-direction: column;
 	width: 33%;
 	margin-top: 30px;
 }
@@ -178,7 +202,8 @@ a {
 
 /* Bottom Middle Section*/
 .product {
-	display: inline-block;
+  display: flex;
+  flex-direction: column;
 	width: 33%;
 	margin-top: 30px;
 }
@@ -186,7 +211,8 @@ a {
 
 /* Bottom Right Section*/
 .vision {
-display: inline-block;
+display: flex;
+flex-direction: column;
 width: 33%;
 margin-top: 30px;
 }
