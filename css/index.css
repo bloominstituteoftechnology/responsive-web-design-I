@@ -1,3 +1,453 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+article,
+aside,
+canvas,
+details,
+embed,
+b,
+u,
+i,
+center,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+blockquote,
+pre,
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+body {
+  width: 1350px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav-block {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px auto;
+  margin-bottom: 10px;
+  width: 90%;
+}
+.nav-block :nth-child(1) {
+  order: 1;
+}
+
+.nav-block :nth-child(2) {
+  order: 2;
+}
+
+.nav-block :nth-child(3) {
+  order: 3;
+}
+.nav-block :nth-child(4) {
+  order: 4;
+}
+.nav-block :nth-child(5) {
+  order: 5;
+}
+.nav-block :nth-child(6) {
+  order: 6;
+}
+.nav-block :nth-child(7) {
+  order: 7;
+}
+
+.nav-block a {
+  color: grey;
+  padding: 10px;
+  text-align: center;
+}
+
+.nav-block .nav-logo {
+  padding: 0;
+}
+
+.header-block {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5%;
+  padding: 80px 0;
+}
+
+.innovation-div {
+  display: flex;
+  flex-direction: column;
+  font-family: "Bangers" cursive;
+  font-size: 80px;
+  height: 280px;
+  max-width: 300px;
+  text-align: center;
+}
+
+.innovation-div a {
+  background-color: white;
+  border-radius: 2px;
+  border: 1px solid black;
+  color: black;
+  font-size: 20px;
+  margin: 0 auto;
+  padding: 5px 0;
+  width: 55%;
+}
+
+.body-block {
+  border-top: 1px solid black;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 6% 6% 0 6%;
+}
+
+.body-child {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0;
+}
+
+.body-block2 {
+  border-bottom: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.body-child2 {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0;
+}
+
+.paragraph-block {
+  align-content: flex-end;
+  display: flex;
+  flex-direction: column;
+}
+
+.paragraph-block2 {
+  width: 32%;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  font-family: "Bangers" cursive;
+  padding: 40px 0 80px 0;
+}
+
+.copyright-block {
+  margin: 0 0 20px 45%;
+}
+
+/*////////////////////////////////////////////////////////////////////////////*/
+
+.w65 {
+  width: 65%;
+  margin: 0 auto;
+}
+
+.nav-block.w65 {
+  margin-top: 30px;
+}
+
+.service-header-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.service-header-block h2 {
+  font-size: 1.5em;
+}
+
+hr.w65 {
+  margin: 40px auto;
+  height: 1px;
+  background: black;
+  border: black;
+}
+
+.services-body-block {
+  align-items: center;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.service-header-block img {
+  margin: 30px 0;
+}
+
+.s-body-child {
+  align-content: space-between;
+  background: rgb(244, 243, 244);
+  border: thin solid black;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+  padding: 20px;
+  width: 410px;
+}
+
+.s-body-child a {
+  background-color: white;
+  border-radius: 5px;
+  border: thin solid black;
+  color: black;
+  font-size: 12px;
+  margin-top: 20px;
+  padding: 10px 0;
+  text-align: center;
+  width: 35%;
+}
+
+hr.hr2 {
+  margin-top: 0;
+  height: 2px;
+}
+
+.section-facts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.facts-content {
+  width: 45%;
+}
+
+.facts-content ul {
+  margin: 20px 0 0 20px;
+  list-style-type: square;
+}
+
+.facts-content ul li {
+  margin-top: 10px;
+}
+
+@media (max-width: 800px) {
+  body {
+    width: 100%;
+  }
+  .w65 {
+    width: 90%;
+  }
+  .nav-block.w65 {
+    flex-wrap: wrap-reverse;
+    width: 75%;
+  }
+  .nav-block.w65 a {
+    padding-left: 35px;
+  }
+  .nav-block.w65 a img {
+    margin-left: 170px;
+  }
+  .header-block.w65 img {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .header-block.w65 img {
+    display: none;
+  }
+  .nav-block.w65 {
+    flex-direction: column;
+    align-content: space;
+    margin-top: 0;
+    width: 100%;
+  }
+  .nav-block.w65 a {
+    border: 1px solid grey;
+    padding-right: 20px;
+  }
+
+  .nav-block :nth-child(1) {
+    order: 2;
+  }
+  .nav-block :nth-child(2) {
+    order: 3;
+  }
+  .nav-block :nth-child(3) {
+    order: 4;
+  }
+  .nav-block :nth-child(4) {
+    order: 5;
+  }
+  .nav-block :nth-child(5) {
+    order: 6;
+  }
+  .nav-block :nth-child(6) {
+    order: 7;
+  }
+  .nav-block :nth-child(7) {
+    order: 1;
+  }
+
+  .nav-block.w65 a img {
+    margin-left: 0;
+  }
+  .body-block {
+    width: 90%;
+  }
+  .body-block .body-child {
+    flex-direction: column;
+    width: 100%;
+  }
+  .body-block .body-child .paragraph-block {
+    margin: 15px auto;
+    width: 100%;
+  }
+  .body-block2 {
+    width: 90%;
+  }
+  .body-block2 .body-child2 {
+    flex-direction: column;
+    width: 90%;
+  }
+  .body-block2 .body-child2 .paragraph-block2 {
+    margin: 15px auto;
+    width: 100%;
+  }
+}
