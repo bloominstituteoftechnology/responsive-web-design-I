@@ -1,5 +1,3 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
-
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -56,7 +54,7 @@ table {
 
 html, body {
     height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+	font-family: 'Titillium Web', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
@@ -65,173 +63,286 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* Your code starts here! */
 
-h1{
-  font-size: 5em;
+.container {
+	width: 100%;
+	padding: 0 65px;
 }
 
-h3{
-  font-size: 3em;
+header {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding: 25px 0;
+}
+nav {
+	width: 70%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+nav a {
+	text-decoration: none;
+	opacity: 0.9;
+  color:grey;
 }
 
-p{
-  font-size: 1.25em;
-}
-
-button{
-	background-color: #f1f1f1;
-  border: #808080 solid 2px;
-  border-radius: 5px;
-  margin: 15px 0;
-  padding: 10px;
-	width: 30%;
-}
-
-.container{
-	width: full;
-	margin:auto;
-}
-
-nav{
-	display:inline-block;
-  margin-top: 20px;
-  margin-left: 25px;
-
-}
-
-nav a{
-	margin-right: 15px;
-	text-decoration:none;
-	color: #c2bebe;
-  font-size: 1.5em;
-  border-right: #e1e1e1 2px solid;
-  padding-right: 22px;
-}
-
-.logo{
-	justify-content: flex-end;
-  margin-left:300px;
-}
-
-.page-wrapper {
-  margin: 15px;
-  padding-top: 100px;
-  border-top: grey 2px solid;
-}
-
-.row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
-.column {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
-  margin:10px;
-}
-
-.column-1 {
-  height: auto;
-  text-align: center;
-}
-
-.column-1 h1{
-  font-size: 5em;
-  text-align: center;
-}
-
-.column-1 button{
-  font-size: 1.25em;
-  text-align: center
-}
-
-.column-2 {
-  height: auto;
-  text-align: center;
-}
-
-.column-2 img{
-  height:250px;
-  text-align: center;
-}
-
-.middle-img{
-  width: 100%;
-  padding-top: 50px;
-}
-
-.row-2{
-  display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-}
-
-footer{
-  padding-top: 50px;
-  padding-left: 30px;
-  border-top: grey 2px solid;
-}
-
-footer p{
-	line-height: 2.2em;
-}
-.copyright{
+.under-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 	text-align: center;
-    padding-top: 25px;
-		padding-bottom: 35px;
+	margin-top: 70px;
+	padding-bottom: 70px;
+	border-bottom: 2px solid;
+}
+.left {
+	width: 50%;
+	display: flex;
+	justify-content: center
+}
+.left h1 {
+	font-size: 80px;
+}
+button {
+  background-color: #f1f1f1;
+    border: #808080 solid 2px;
+    border-radius: 5px;
+    margin: 15px 0;
+    padding: 10px;
+  	width: 30%;
 }
 
+.top-content {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding: 30px 0;
+}
+.top-content div {
+	width: 50%;
+}
+.middle-img {
+	width: 100%;
+}
 
+.bottom-content {
+	display: flex;
+	justify-content: space-between;
+	padding: 30px 0 40px 0;
+	border-bottom: 2px solid;
+}
+.bottom-content div {
+	width: 32.5%;
+}
+footer {
+	display: flex;
+	flex-direction: column;
+	line-height: 20px;
+	padding-top: 40px;
+}
+#copyright {
+	align-self: center;
+	margin: 30px 0 30px 0;
+}
 
+/* Services page */
 
-@media (max-width: 425px) {
+.services-header-img {
+	width: 100%;
+}
+.introduction {
+	border-bottom: 1px solid;
+	padding: 25px 0 35px 0;
+}
+.introduction h1 {
+	font-size: 25px;
+}
 
-	.container{
+.main-content h2 {
+	color: black;
+}
+.main-content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	height: 830px;
+	align-content: space-between;
+	padding: 35px 0;
+	border-bottom: 5px solid rgb(23, 25, 26);
+	opacity: 0.8;
+}
+.main-content div {
+	border: 1px solid;
+	height: 230px;
+	width: 48%;
+	padding: 20px 15px;
+}
+.btn {
+	font-size: 10px;
+	padding: 8px 32px;
+	border-radius: 5px;
+	border: 1px solid;
+	margin-top: 25px;
+}
+
+section {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 35px;
+}
+section div {
+	width: 48%;
+}
+section p {
+	line-height: 20px;
+}
+section ol {
+	margin: 20px 0 0 20px;
+	line-height: 30px;
+	list-style-type: square;
+}
+.services-info-img {
+	width: 48%;
+	border-radius: 10px;
+	opacity: 0.9;
+	width: 100%;
+}
+#copyright2 {
+	padding: 80px 0 25px 0;
+	text-align: center;
+}
+
+/* Great idea page For Tablet */
+
+@media (max-width: 800px) {
+	.container {
+		padding: 0 25px;
+	}
+	header {
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+	header nav {
 		width: 100%;
+		padding-top: 30px;
 	}
-
-
-	.row {
-	    margin-bottom: 25px;
-	    display: flex;
-	    flex-direction: column;
-	    align-items: center;
+	.under-header img {
+		display: none;
 	}
-
-
-
-@media (max-width: 767px) {
-
-	.container{
+	.under-header .left  {
 		width: 100%;
+		justify-content: center;
+	}
+	.top-content {
+		padding: 30px 10px;
+	}
+	.top-content div {
+		width: 49%;
+	}
+	.bottom-content {
+		padding: 30px 10px;
+	}
+	.bottom-content div {
+		width: 30%;
 	}
 
-	.logo{
-		width:175px;
-		order: -6;
-		margin: 0 auto;
-		padding-bottom: 10px;
-	}
-	nav{
-		display: flex;
-    flex-direction: column;
-    text-align: center;
-    font-size: 1.5em;
-	}
+	/* Services page Query */
 
-	nav a{
-		padding: 10px;
-		border-bottom: grey dotted 1px;
-
+	.introduction {
+		text-align: center;
+	}
+	.introduction h1 {
+		color: rgb(53, 36, 54);
+	}
 
 }
 
-@media (max-width: 1024px) {
+/* Great idea page For Mobile  */
 
+@media (max-width: 500px) {
+	.container {
+		padding: 0;
+	}
+	.bottom-container {
+		padding: 0 20px;
+	}
+	header nav {
+		flex-direction: column;
+		padding-top: 0px;
+		margin-top: 15px;
+		border-bottom: 1px solid white;
+	}
+	header nav a {
+		border-top: 1px solid;
+		width: 100%;
+		text-align: center;
+		padding: 15px 0;
+	}
+	.under-header {
+		margin-top: 20px;
+	}
+	.under-header h1 {
+		font-size: 55px;
+	}
+	.top-content {
+		flex-direction: column;
+	}
+	.top-content div {
+		width: 100%;
+		padding: 20px 0;
+	}
+	.bottom-content {
+		flex-direction: column;
+	}
+	.bottom-content div {
+		width: 100%;
+	}
+	.padding {
+		padding-bottom: 60px;
+	}
+	footer {
+		padding-top: 30px;
+		line-height: 15px;
+	}
+
+	/* Services page Query */
+
+	.introduction {
+		text-align: center;
+		border-bottom: 10px solid rgb(128, 163, 64);
+	}
+	.introduction h1 {
+		color: rgb(68, 23, 68);
+	}
+	.main-content {
+		flex-direction: column;
+		padding: 35px 15px;
+		border-bottom: none;
+		height: 100%;
+	}
+	.main-content div {
+		width: 100%;
+		color: black;
+		margin: 10px 0;
+		text-align: center;
+	}
+	section {
+		flex-direction: column;
+	}
+	section h2 {
+		font-size: 25px;
+	}
+	section ol {
+		display: none;
+	}
+	section div {
+		width: 100%;
+		text-align: center;
+	}
+	.services-info-img {
+		width: 80%;
+		margin-top: 40px;
+	}
 }
