@@ -165,7 +165,7 @@ header {
 	text-align: center;
 	border-bottom: 1px solid #000;
 	padding-top: 60px;
-	display: flex;
+  display: flex;
 }
 
 header nav {
@@ -180,7 +180,7 @@ header nav {
 	transition-duration: 0.5s;
 	padding: 0px 0;
 	display: flex;
-	justify-content: center;
+  justify-content: center;
 }
 
 nav:hover {
@@ -207,7 +207,7 @@ nav a:hover {
 .logo {
 	position: relative;
 	top: 20px;
-	background: url("https://i.imgur.com/RoKbjZH.png");
+	/* background: url("https://i.imgur.com/RoKbjZH.png"); */
 	width: 183px;
 	height: 36px;
 	margin-left: 100px;
@@ -230,12 +230,12 @@ header .iov {
 
 .header-image {
 	/* display: inline-block; */
-	background: url("https://i.imgur.com/Hw8avII.png");
+	 /* background: url("https://i.imgur.com/Hw8avII.png"); *
 	/* vertical-align: middle;  */
 	width: 379px;
 	height: 379px;
 	margin-left: 60px;
-	margin-top: 50px;
+  margin-top: 60px;
 }
 
 .button {
@@ -276,7 +276,7 @@ header .iov {
 }
 
 .middle-img {
-	background: url("https://i.imgur.com/FGkeFT2.jpg");
+	/* background: url("https://i.imgur.com/FGkeFT2.jpg"); */
 	height: 182px;
 	width: 100%;
 }
@@ -312,8 +312,81 @@ footer h6 {
 	text-align: center;
 }
 
-@media (max-width: 760px){
- 
+@media (max-width: 500px){
+  #wrapper{
+    width: 90%
+  }
+
+  header{
+    display: flex;
+    flex-direction:column;
+  }
+
+  header nav{
+    background: none;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  header nav a{
+  
+  }
+
+  .logo{
+    left: 20%;
+  }
+
+  .iov{
+    position: relative;
+    right: 10%;
+  }
 }
+
+@media (max-width: 800px){
+
+  #wrapper{
+    width: 90%;
+  }
+
+  header nav {
+    height: 15%;
+  }
+
+  header nav a {
+    position: relative;
+    left: 20%;
+    top: 35%;
+  }
+
+  header nav .logo{
+    position: relative;
+    right: 50%;
+  }
+
+  header .iov{
+    font-size: 3rem;
+    margin-left: 30%;
+    margin-right: 0;
+    margin-top: 11%;
+  }
+
+  .header-image{
+   display: none;
+  }
+
+  .top-section div{
+    border: 2px solid black;
+    background: #cccfff;
+    padding: 3%;
+  }
+
+  .bottom-section div{
+    border: 2px solid black;
+    background: #cccfff;
+    padding: 2%;
+  }
+}
+
 
 
