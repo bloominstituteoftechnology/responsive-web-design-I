@@ -325,11 +325,12 @@ footer h6 {
     position: relative;
     left: 20%;
     top: 35%;
-  }
+	}
 
   header nav .logo{
-    position: relative;
+		position: relative;
     right: 50%;
+    top: 20%;
   }
 
   header .iov{
@@ -337,10 +338,6 @@ footer h6 {
     margin-left: 30%;
     margin-right: 0;
     margin-top: 11%;
-  }
-
-  .header-image{
-   display: none;
   }
 
   .top-section div{
@@ -353,7 +350,11 @@ footer h6 {
     border: 2px solid black;
     background: #cccfff;
     padding: 2%;
-  }
+	}
+	
+	.header-image{
+		display: none;
+	}
 }
 
 @media (max-width: 500px){
@@ -415,8 +416,9 @@ footer h6 {
 	header nav{
 		position: relative;
 		flex-direction: column-reverse;
-		background: none;
 		margin-top: 180px;
+		background: none;
+		border: none;
 	}
 
 	header nav .logo{
@@ -426,12 +428,15 @@ footer h6 {
 		margin-top: 50px;
 	}
 
-	header{
-		background: none;
-	}
-
 	.contact{
 		line-height: 20px;
+	}
+
+	nav a:hover{
+		transition-property: color, font-weight;
+	transition-duration: 0.5s, 0.5s;
+	color: black;
+	font-weight: bold;
 	}
 	
 }
