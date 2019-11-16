@@ -105,8 +105,11 @@ h1, h2, h3, h4, h5 {
   .iod img {
     display: none;
   }
+  .features {
+    width: 100%;
+  }
   .middle-img {
-    display: none;
+    display: flex;
   }
   .upper {
     display: flex;
@@ -130,7 +133,6 @@ h1 {
 	display: inline-block;
 	font-size: 65px;
 	text-align: center;
-	padding-right: 130px;
 	vertical-align: inherit;
 }
 
@@ -147,6 +149,7 @@ img {
 	vertical-align: middle;
   margin: 50px 0 5px 0;
   justify-content: space-around;
+  width: 100%;
 }
 
 .button {
@@ -160,12 +163,13 @@ img {
 
 /* Navigation Section*/
 nav {
-	display: flex;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
 }
 a {
 	color: lightgray;
 	text-decoration: none;
-	margin-right: 60px;
 }
 
 
@@ -179,7 +183,7 @@ a {
 .features {
   display: flex;
   flex-direction: column;
-	width: 48%;
+	width: 100%;
 	margin-top: 20px;
 }
 
@@ -188,7 +192,7 @@ a {
 .about {
   display: flex;
   flex-direction: column;
-	width: 48%;	
+	width: 100%;	
 	margin-top: 20px;
 }
 
@@ -210,7 +214,7 @@ a {
 .services {
   display: flex;
   flex-direction: column;
-  width: 48%;
+  width: 100%;
   margin-bottom: 20px;
 }
 
@@ -219,7 +223,7 @@ a {
 .product {
   display: flex;
   flex-direction: column;
-  width: 48%;
+  width: 100%;
   margin-bottom: 20px;
 }
 
@@ -228,7 +232,7 @@ a {
 .vision{
   display: flex;
   flex-direction: column;
-  width: 48%;
+  width: 100%;
 }
 
 
