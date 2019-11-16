@@ -211,7 +211,6 @@ nav a:hover {
 	width: 183px;
 	height: 36px;
 	margin-left: 100px;
-	
 }
 
 header .iov {
@@ -312,37 +311,6 @@ footer h6 {
 	text-align: center;
 }
 
-@media (max-width: 500px){
-  #wrapper{
-    width: 90%
-  }
-
-  header{
-    display: flex;
-    flex-direction:column;
-  }
-
-  header nav{
-    background: none;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-  }
-
-  header nav a{
-  
-  }
-
-  .logo{
-    left: 20%;
-  }
-
-  .iov{
-    position: relative;
-    right: 10%;
-  }
-}
-
 @media (max-width: 800px){
 
   #wrapper{
@@ -388,5 +356,84 @@ footer h6 {
   }
 }
 
+@media (max-width: 500px){
+  #wrapper{
+    max-width:70%;
+  }
+  .top-section {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .top-section div{
+    margin-top: 10%;
+  }
+
+  #features{
+    width: 100%;
+  }
+
+  .bottom-section{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bottom-section div{
+    margin-top: 10%;
+    width: 100%;
+  }
+
+  .middle-img img{
+		position: relative; 
+		top: 40%;
+		height: 50%;
+		border: 2px solid black;
+	}
+	
+	.contact{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	header .iov{
+		position: relative;
+		right: 100%;
+		top: 315px;
+		right: 115%;
+		margin-top: 0%;
+	}
+
+	header nav a{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-right: 30%;
+	}
+
+	header nav{
+		position: relative;
+		flex-direction: column-reverse;
+		background: none;
+		margin-top: 180px;
+	}
+
+	header nav .logo{
+		position: relative;
+		right: 30px;
+		margin-bottom: 50px;
+		margin-top: 50px;
+	}
+
+	header{
+		background: none;
+	}
+
+	.contact{
+		line-height: 20px;
+	}
+	
+}
 
 
