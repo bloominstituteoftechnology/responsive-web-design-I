@@ -76,7 +76,8 @@ h1, h2, h3, h4, h5 {
 
 @media(max-width: 500px) {
   .container {
-    width: 500px;
+    width: 100%;
+    margin: 0 auto;
   }
   nav {
     display: flex;
@@ -95,12 +96,27 @@ h1, h2, h3, h4, h5 {
     border-top: 1px solid gray;
     border-bottom: 1px solid gray;
     padding: 15px 100px;
+    width: 100%;
+  }
+  h1 {
+    display: flex;
+    justify-content: center;
+  }
+  .iod img {
+    display: none;
   }
   .middle-img {
     display: none;
   }
   .upper {
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .about {
     margin-left: 0;
@@ -111,7 +127,7 @@ h1, h2, h3, h4, h5 {
 
 /* Header Section*/
 h1 {
-	display: flex;
+	display: inline-block;
 	font-size: 65px;
 	text-align: center;
 	padding-right: 130px;
@@ -120,7 +136,7 @@ h1 {
 
 .logo {
 	vertical-align: middle;
-	display: inline-block;
+	display: flex;
 }
 img {
 	vertical-align: middle;
@@ -129,16 +145,17 @@ img {
 .iod {
 	text-align: center;
 	vertical-align: middle;
-	margin: 50px 0 5px 0;
-	
+  margin: 50px 0 5px 0;
+  justify-content: space-around;
 }
 
 .button {
 	display: flex;
 	border: solid 1px black;
-    color: black;
+  color: black;
 	margin: 0 0 50px 116px;
-	padding: 5px 30px;
+  padding: 5px 30px;
+  width: fit-content;
 }
 
 /* Navigation Section*/
@@ -177,23 +194,24 @@ a {
 
 .middle-img
 {
-	width: 100%;
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 
 
 .bottom {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
+	margin-bottom: 40px;
 }
 
 /* Bottom Left Section*/
 .services {
   display: flex;
   flex-direction: column;
-	width: 33%;
-	margin-top: 30px;
+  width: 48%;
+  margin-bottom: 20px;
 }
 
 
@@ -201,17 +219,16 @@ a {
 .product {
   display: flex;
   flex-direction: column;
-	width: 33%;
-	margin-top: 30px;
+  width: 48%;
+  margin-bottom: 20px;
 }
 
 
 /* Bottom Right Section*/
-.vision {
-display: flex;
-flex-direction: column;
-width: 33%;
-margin-top: 30px;
+.vision{
+  display: flex;
+  flex-direction: column;
+  width: 48%;
 }
 
 
