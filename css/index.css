@@ -66,18 +66,29 @@ h1, h2, h3, h4, h5 {
 
 /* Your code starts here! */
 
-.container {
-	margin: 0 auto;
-	max-width: 1000px;
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
 
-.container header nav {
-	display: block;
-	padding-top: 10px;
+.container {
+    margin: auto;
+	max-width: 1024px;
+}
+
+.nav-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 100%;
+    height: 10em;
 }
 		
 .container header nav a {
-	padding: 0px 60px 0px 0px;
 	text-decoration: none;
 	color: gray;
 }
@@ -86,6 +97,10 @@ h1, h2, h3, h4, h5 {
 	display: inline-block;
 }
 
+h1 {
+    font-size: 6rem;
+  }
+
 .top-container {
     padding-top: 40px;
     display: flex;
@@ -93,9 +108,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .innovation {
-    font-size: 100%;
     font: inherit;
-    height: 400px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -108,10 +121,6 @@ h1, h2, h3, h4, h5 {
 }
 
 .button {
-    height: 30%;
-}
-
-.button {
 	width: 200px;
 	height: 40px;
 	padding: 10px;
@@ -121,60 +130,59 @@ h1, h2, h3, h4, h5 {
 	color: black;
 	display: inline-block;
 }
+
 .circle-image {
-    font-size: 100%;
-    font: inherit;
-	vertical-align: baseline;
-	display: inline-block;
+    float: right;
+}
+
+.features, .about, .services, .product, .vision {
+    display: inline-block;
+    box-sizing: border-box;
 }
 
 .features-about {
-    height: 100px;
-    padding-top: 20px;
     display: flex;
-    flex-wrap: wrap;
+    width: 100%;
+    padding-top: 20px;
 }
 
 .features {
-	width: 450px;
-	height: 50px;
+    width: 48%;
+    padding: 10px;
 }
 
 .about {
-	width: 450px;
+    width: 48%;
+    padding: 10px;
 	height: 50px;
 }
 
 .middle-img {
-	width: 900px;
+	width: 100%;
 	padding: 40px 0px 40px 0px;
 }
 
 .content-bottom {
-	height: 150px;
-    padding-top: 20px;
+    padding: 20px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .services {
-	width: 275px;
-	box-sizing: border-box;
-	display: inline-block;
+	width: 33%;
 }
 
 .product {
-	width: 300px;
-	padding-left: 20px;
-	box-sizing: border-box;
-	display: inline-block;
+	width: 33%;
+}
+
+.services, .product {
+    padding-right: 40px;
 }
 
 .vision {
-	width: 300px;
-	padding-left: 20px;
-	box-sizing: border-box;
-	display: inline-block;
+	width: 33%;
 }
 
 hr {
@@ -185,7 +193,8 @@ hr {
 
 address {
 	display: block;
-	padding-top: 40px;
+    padding-top: 40px;
+    margin: 20px;
 }
 
 footer {
@@ -196,17 +205,31 @@ footer {
 
 /* Beginning of max-width media queries CSS ~800px */
 
-@media (max-width: 1000px) {
+@media (max-width: 800px) {
     .container {
-        align-content: center;
+        max-width: 800px;
+        margin: 0 auto;
     }
 
-    .logo {
-        
-    }
+.nav-wrap {
+    width: 100%;
+    height: 5em;
+    margin: 50px 0;
+    display: flex;
+    flex-flow: column-reverse wrap-reverse;
+    align-content: center;
+}
+
+.nav-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 25px;
+}
 
     .container header nav a {
-        padding: none;
+        font-size: 14px;
     }
 
     .circle-image {
@@ -228,42 +251,27 @@ footer {
     }
     
     .features {
-        width: 385px;
-        height: 70px;
-        padding: 15px;
+        width: 48%;
+        padding: 10px;
     }
     
     .about {
-        width: 385px;
-        height: 70px;
-        padding: 15px;
+        width: 48%;
+        padding: 10px;
     }
 
     .middle-img {
         display: block;
-        width: 800px;
+        width: 100%;
         margin-top: 30px;
         margin-left: auto;
         margin-right: auto;
-        
     }
 
     .content-bottom {
-        justify-content: center;
-    }
-
-    .services {
-        width: 250px;
-    }
-    
-    .product {
-        width: 270px;
-        padding-left: none;
-    }
-    
-    .vision {
-        width: 270px;
-        padding-left: none;
+        width: 100%;
+        padding: 20px;
+        margin: auto;
     }
 
     .address {
@@ -279,7 +287,61 @@ footer {
 
 /* Beginning of max-width media queries CSS ~400px */
 
-@media (max-width: 800px) {
-    
+@media (max-width: 500px) {
+    .container {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .container header nav a {
+        text-align: center;
+        border-top: 1px solid black;
+        width: 80%;
+        padding: 5px;
+    }
+
+    .container header nav {
+        display: flex;
+        flex-flow: wrap-reverse;
+        align-content: center;
+        width: 80%;
+    }
+
+    .nav-wrap {
+        display: flex;
+        flex-flow: column-reverse;
+        justify-content: center;
+        height: 10em;
+        padding: none;
+    }
+
+    .logo {
+        padding-bottom: 20px;
+    }
+
+    .features-about {
+        flex-flow: column wrap;
+        width: 95%;
+        margin: auto;
+        padding-bottom: 40px,
+    }
+
+    .features, .about {
+        width: 100%;
+    }
+
+    .content-bottom {
+        flex-flow: column wrap;
+        width: 95%;
+        margin: auto;
+        padding: 0px;
+        padding-top: 10px;
+    }
+
+    .content-bottom .services,
+    .product, .vision {
+        width: 100%;
+        margin-bottom: 20px;
+        padding-right: 30px;
     }
 }
