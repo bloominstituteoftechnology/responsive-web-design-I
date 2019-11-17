@@ -132,10 +132,16 @@ h1, h2, h3, h4, h5 {
     width: 100%;
     margin: 0 auto;
   }
- 
+  header {
+    flex-wrap: wrap;
+  }
+  nav {
+   
+  }
   .logo {
     display: flex;
     justify-content: center;
+    width: 100%;
   }
   .iod img {
     display: none;
@@ -146,6 +152,10 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Header Section*/
+header {
+  display: flex;
+  flex-direction: row-reverse;
+}
 h1 {
 	display: inline-block;
 	font-size: 65px;
@@ -176,6 +186,9 @@ img {
   margin: 0 auto;
   padding: 5px 30px;
   width: fit-content;
+  font-size: 16px;
+  margin-top: 25px;
+}
 }
 
 /* Navigation Section*/
@@ -186,7 +199,9 @@ nav {
 }
 a {
 	color: lightgray;
-	text-decoration: none;
+  text-decoration: none;
+  justify-content: space-evenly;
+  width: 100%;
 }
 
 
