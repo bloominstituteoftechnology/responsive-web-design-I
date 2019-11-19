@@ -1,3 +1,304 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Permanent+Marker&display=swap");
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol,
+ul {
+	list-style: none;
+}
+blockquote,
+q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+	/* font-family: 'Titillium Web', sans-serif; */
+	font-family: "Open Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	/* font-family: 'Bangers', cursive; */
+	font-family: "Permanent Marker", cursive;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+#wrapper {
+	width: 1024px;
+	margin: 0 auto;
+}
+
+header {
+	width: 100%;
+	padding: 10px 20px 60px 20px;
+	text-align: center;
+	border-bottom: 1px solid #000;
+	padding-top: 60px;
+}
+
+header nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: linear-gradient(#eee, #ccc);
+	width: 100%;
+	z-index: 1;
+	border-bottom: 1px solid #ccc;
+	transition-property: padding;
+	transition-duration: 0.5s;
+	padding: 0px 0;
+}
+
+nav:hover {
+	transition-property: padding;
+	transition-duration: 0.5s;
+	padding: 10px 0;
+}
+
+header nav a {
+	display: inline-block;
+	color: #888;
+	text-decoration: none;
+	font-weight: 400;
+	padding: 30px;
+}
+
+nav a:hover {
+	transition-property: color, font-weight;
+	transition-duration: 0.5s, 0.5s;
+	color: #fff;
+	font-weight: bold;
+}
+
+.logo {
+	display: inline-block;
+	background: url("https://i.imgur.com/RoKbjZH.png");
+	width: 183px;
+	height: 36px;
+	margin-left: 100px;
+	vertical-align: middle;
+}
+
+header .iov {
+	display: inline-block;
+	font-size: 75px;
+	text-align: center;
+	vertical-align: middle;
+	margin-top: 50px;
+	margin-right: 60px;
+}
+
+.header-image {
+	display: inline-block;
+	background: url("https://i.imgur.com/Hw8avII.png");
+	vertical-align: middle;
+	width: 379px;
+	height: 379px;
+	margin-left: 60px;
+	margin-top: 50px;
+}
+
+.button {
+	display: block;
+	width: 180px;
+	height: 30px;
+	font-size: 20px;
+	border: 1px solid black;
+	padding: 5px 20px;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+.button:hover {
+	cursor: pointer;
+}
+
+.top-section {
+	padding: 40px 0;
+	font-size: 18px;
+}
+
+.top-section div {
+	display: inline-block;
+	width: 500px;
+	margin: 0 auto;
+	margin-right: 10px;
+}
+
+.top-section div:last-child {
+	margin-right: 0;
+}
+
+.middle-section img {
+	width: 100%;
+}
+
+.middle-img {
+	background: url("https://i.imgur.com/FGkeFT2.jpg");
+	height: 182px;
+	width: 100%;
+}
+
+.bottom-section {
+	padding: 40px 0;
+	font-size: 18px;
+	border-bottom: 1px solid black;
+}
+
+.bottom-section div {
+	display: inline-block;
+	width: 330px;
+	margin: 0 auto;
+	margin-right: 10px;
+}
+
+.bottom-section div:last-child {
+	margin-right: 0;
+}
+
+.contact {
+	padding: 40px 0;
+}
+
+footer {
+	padding: 40px 0;
+	height: 150px;
+}
+
+footer h6 {
+	text-align: center;
+}
 
 
