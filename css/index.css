@@ -169,7 +169,10 @@ header {
 }
 
 header nav {
-	position: fixed;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: space-around;
 	top: 0;
 	left: 0;
 	background: linear-gradient(#eee, #ccc);
@@ -208,7 +211,8 @@ nav a:hover {
 	width: 183px;
 	height: 36px;
 	margin-left: 100px;
-	vertical-align: middle;
+    vertical-align: middle;
+    background-repeat: no-repeat;
 }
 
 header .iov {
@@ -301,4 +305,37 @@ footer h6 {
 	text-align: center;
 }
 
+@media(max-width: 800px) {
+    nav {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-items: center;
+        align-items: center;
+    }
+    h2 {
+        color: purple;
+}
+    .logo {
+        margin-left: 0px;
+        width: 100%;
+    }
+}
+@media(max-width: 500px) {
+    h2 {
+        color: orange;
+}
+    .navMenu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    a {
+        border-bottom: solid black 1px;
+    }
 
+    .logo {
+        border-bottom: solid black 1px;
+        justify-content: center;
+    }
+    
+}
