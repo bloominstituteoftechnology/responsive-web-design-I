@@ -1,7 +1,90 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 * {
-    margin: 2px;
     box-sizing: content-box;
-    margin: 5px auto;   
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
 }
-.page-mare
+
+.page-container nav {
+    margin: 0 auto;
+    border: 2px solid brown;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: space-between;
+    width: 800px;
+}
+@media (max-width: 800px) {
+    .page-container {
+        display: flex;
+        justify-content: center;
+        align-content: space-around;
+        
+    }
+    .CRights {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    .onecontainer {
+        display: flex;
+        align-content: space-between;
+    }
+    .headcontainer {
+        margin: 0px auto;
+        display: flex;
+        flex-direction: column;
+    }
+}
+.headcontainer {
+    display: flex;
+    flex-direction: column;
+    
+}
+.onecontainer {
+display: flex;
+justify-content: center;
+align-content: center;
+flex-direction: column;
+
+}
+.sercontainer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    
+}
+.footcontainer {
+    display: flex;
+    
+    
+}
+.CRights p h5 {
+        display: flex;
+        justify-content: flex-start;
+        align-content: center;
+}
+@media (max-width: 500px) {
+    .page-container nav {
+    margin: 0 auto;
+    border: 2px solid brown;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 200px;
+    }
+    .footcontainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-content: flex-start;
+    }
+    .CRights {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
