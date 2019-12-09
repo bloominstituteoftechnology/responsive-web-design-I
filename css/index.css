@@ -1,3 +1,333 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+    /* border: 1px solid blue !important; */
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 62.5%;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+.links {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 75%;
+    font-size: 2rem;
+    
+}
+a {
+    text-decoration: none;
+    color: gray;
+}
+.top-section {
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 5% 2% 1%;
+    border-bottom: 1px solid black;
+    padding-bottom: 60px;
+}
+.left-side {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    font-size: 8rem;
+    margin-left: 20%;
+    text-align: center;
+}
+button {
+    margin-left: 25%;
+    margin-top: 5%;
+    width: 50%;
+    background: none;
+    border: 1px solid black;
+    padding: 1%; 
+}
+.top-middle {
+    display: flex;
+    width: 88%;
+    margin-left: 13%;
+    padding-top: 7%;
+    padding-right: 2%;
+    font-size: 1.5rem;
+    
+}
+.middle-img {
+    margin-left: 17%;
+    width: 75%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
+.bottom-middle {
+    border-bottom: 1px solid black;
+    display: flex;
+    width: 90%;
+    margin-left: 13%;
+    justify-content: space-between;
+    padding-bottom: 5%;
+    font-size: 1.5rem;
+    padding-right: 2%;
+
+}
+.bottom {
+    display: flex;
+    flex-direction: column;
+    height: 10%;
+    justify-content: space-evenly;
+    margin-left: 10%;
+    font-size: 1.3rem;
+
+}
+footer {
+    padding-top: 5%;
+    text-align: center;
+    font-size: 1rem;
+}
+
+@media (max-width: 800px) {
+    nav {
+        flex-direction: column-reverse;
+        
+    }
+    .links {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    .logo {
+        width: 25%;
+        margin-left: 37%;
+        margin-bottom: 5%;
+        margin-top: 2%;
+    }
+
+.top-image {
+    display: none;
+}
+.services-header-img {
+    display: none;
+}
+}
+@media (max-width: 500px) {
+.links {
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid gray;
+}
+.links a {
+    padding-bottom: 10px;
+    border-bottom: 1px solid gray;
+    margin: 2%;
+    width: 100%;
+    text-align: center;   
+}
+.services-header-img {
+    display: none;
+}
+.left-side {
+    font-size: 3rem;
+}
+button {
+    font-size: 1.5rem;
+}
+.top-middle {
+    flex-direction: column;
+}
+#about {
+    padding-top: 5%;
+}
+.bottom-middle {
+    flex-direction: column;
+}
+#product {
+    padding-top: 5%;
+}
+#vision {
+    padding-top: 5%;
+    padding-bottom: 7%;
+}
+.middle-section {
+    display: flex;
+    flex-flow: column wrap;
+}
+.top-middle-services {
+    display: flex;
+    flex-direction: column;
+}
+.middle-middle {
+    display: flex;
+    flex-direction: column;
+}
+.bottom-middle-services {
+    display: flex;
+    flex-direction: column;
+}
+#digital-design {
+    margin-bottom: 5%;
+}
+#digital-marketing {
+    margin-bottom: 5%;
+}
+#ios {
+    margin-bottom: 5%;
+}
+.bottom-section {
+    display: flex;
+    flex-flow: column wrap;
+}
+.service-info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 25%;
+    
+    
+}
+}
+/* service styling starts here */
+.header {
+    margin: 2% 11% 1% 13%;
+    font-size: 1.5rem;
+}
+.services-header-img {
+    margin-bottom: 2%;
+}
+.middle-section {
+    margin: 2% 11% 1% 13%;
+    font-size: 1.5rem; 
+}
+.top-middle-services {
+    display: flex;
+    
+    margin: 2%;
+}
+.middle-middle {
+    display: flex;
+    
+    font-size: 1.5rem;
+    margin: 2%;
+}
+.bottom-middle-services {
+    display: flex;
+    
+    margin: 2%;
+}
+.top-middle-services div {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 2%;
+    justify-content: space-between;
+    
+}
+
+.middle-middle div {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 2%;
+    justify-content: space-between;
+    
+}
+
+.bottom-middle-services div {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 2%;
+    justify-content: space-between;
+    
+}
+.middle-section button {
+    margin-left: 3%;
+    border: 1px solid black;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-radius: 4%;
+
+}
+#digital-design {
+    margin-right: 5%;
+}
+#digital-marketing {
+    margin-right: 5%;
+}
+#ios {
+    margin-right: 5%;
+}
+
+.bottom-section {
+    display: flex;
+    font-size: 1.5rem;
+    margin: 2% 11% 1% 13%;
+}
+.service-info {
+    width: 50%;
+    margin-right: 5%;
+}
+.list {
+    margin: 5%;
+}
