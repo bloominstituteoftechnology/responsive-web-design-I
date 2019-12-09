@@ -32,13 +32,17 @@ h1, h2, h3, h4, h5 {
 /* Nav bar */
 .navbar{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     margin-bottom: 3%;
+}
+.navbar .headLinks{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
 }
 .navbar a{
     text-decoration: none;
-    color: grey;
+    color: rgb(170, 170, 170);
 }
 .navbar a:hover{
     color: blue;
@@ -69,12 +73,81 @@ h1, h2, h3, h4, h5 {
 /* Intro, info, & footer */
 .intro{
     display: flex;
-    margin-bottom: 3%;
+    margin: 3% 3%;
 }
 .info{
-    margin: 3% 0;
+    margin: 3% 3%;
     display: flex;
+}
+.contact{
+    margin: 0 3%;
 }
 footer{
     text-align: center;
+}
+
+/* Tablet Media Styling */
+@media(max-width: 800px){
+    /* Header and nav */
+    .navbar{
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+    .navbar .headLinks{
+        width: 100%;
+        margin-bottom: 2%;
+    }
+    .headLogo{
+        text-align: center;
+        width: 100%;
+        margin-top: 1%;
+        margin-bottom: 3%;
+    }
+    
+
+    /* Title */
+    .title{
+        justify-content: center;
+    }
+    .title #leftTitle{
+        margin-left: 0%;
+    }
+    #rightTitle img{
+        display: none;
+    }
+}
+
+/* Mobile Media Styling */
+@media(max-width: 500px){
+    /* Nav */
+    .navbar .headLinks{
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .navbar .headLinks a{
+        border-top: 1px solid rgb(202, 202, 202);
+        width: 100%;
+        margin-top: 1vh;
+        padding-top: 1vh;
+    }
+    .headLogo{
+        margin-bottom: 1%;
+    }
+    .navContact{
+        border-bottom: 1px solid rgb(202, 202, 202);
+        padding-bottom: 1vh;
+    }
+
+    /* General formatting of paragraphs */
+    .intro, .info, .contact{
+        display: inline-block;
+        margin: 0;
+    }
+    .intro, .info, .contact, div{
+        margin-bottom: 5%;
+    }
+    .line{
+        border: 1px solid black;
+        margin-bottom: 10%;
+    }
 }
