@@ -133,7 +133,7 @@ header section {
 	padding-top: 30px;
 	border-top: 1px solid black;
 	padding-left: 20px;
-
+    width: 100%;
 }
 .bottom-content{
 	display: flex;
@@ -165,7 +165,8 @@ header section {
 	padding-left: 20px;
 	padding-bottom: 20px;
 	line-height: 20px;
-	font-size: 14px;
+    font-size: 14px;
+    width: 100%;
 }
 .contact h2 {
 	max-width: 100%;
@@ -199,6 +200,7 @@ footer {
 @media (max-width: 800px) {
     * {
         max-width: 800px;
+        width: 95%;
     }
     h1 {
         position: relative; 
@@ -212,14 +214,14 @@ footer {
     header {
         position: relative;
         bottom: 50px;
-        right: 50px;
+        right: 0px;
     }
     header section {
         display: none;
     }
     header button {
         position: relative;
-        right: 78px;
+        right: 235px;
         border: 2px solid black;
     }
     .navigation {
@@ -227,25 +229,32 @@ footer {
         bottom: 15px;
         top: 60px;
         left: 100px;
-        
     }
     .navigation section {
         position: relative;
         bottom: 70px;
-        right: 420px;
+        right: 350px;
+        transform: scale(2);
     }
-
+    .navigation a {
+        color: gray;
+        display: flex;
+        flex-direction: space-between;
+    }
     .top-content {
         position: relative;
         top: 160px;
     }
     .bottom-content {
         position: relative;
-        top: 190px;
+        top: 150px;
+        right: 160px;
+        width: 100%;
     }
     .contact {
         position: relative;
         top: 190px;
+        width: 100%;
     }
     footer {
         position: relative;
@@ -257,18 +266,65 @@ footer {
         justify-content: center;
         align-items: center;
         justify-items: center;
-        margin-left: 20px;
+        margin-left: 50px;
         width: 100%;
+    }
+    .serv1 {
+        position: relative; 
+    }
+    .prod1 {
+        position: relative; 
+    }
+    .vis1 {
+        position: relative; 
+    }
+    .feat1 {
+        position: relative; 
+    }
+    .about1 {
+        position: relative; 
+    }
+    .cont1 {
+        position: relative; 
+    }
+    #fix1 {
+        position: relative;
+
+    }
+    #fix2 {
+        position: relative;
+        left: 50px;
+    }
+    #fix3 {
+        position: relative;
+        right: 8px;
+        bottom: 20px;
+    }
+    #fix4 {
+        position: relative;
+        left: 90px;
+        bottom: 20px;
+    }
+    #fix5 {
+        position: relative;
+        left: 180px;
+        bottom: 20px;
     }
 }
 
 @media (max-width: 500px) {
     h1 {
         position: relative; 
+        right: 500px;
     }
     header {
         position: relative; 
         top: 0px;
+        right: 20px;
+    }
+    header button {
+        position: relative;
+        right: 110px;
     }
     .middle-img {
         position: relative; 
@@ -297,10 +353,10 @@ footer {
         align-items: center;
         justify-items: center;
         position: relative;
-        padding-right: 270px;
-        width: 100%;
-        max-width: 100%;
+        padding-right: 237px;
+        max-width: 79%;
         top: 100px;
+        margin-left: 1px;
     }
     .navigation section {
         display: flex;
@@ -310,14 +366,17 @@ footer {
         align-items: center;
         justify-items: center;
         margin-left: 440px;
-        bottom: 510px;
-        right: 215px;
+        bottom: 520px;
+        right: 150px;
     }
     .navigation a {
         border-bottom: 1px solid black;
         line-height: 75px;
         opacity: .5;
         color: gray;
+        position: relative;
+        left: 65px;
+        width: 505px;
     }
     .serv1 {
         display: flex;
@@ -328,6 +387,7 @@ footer {
         align-items: center;
         justify-items: center;
         border-top: 1px solid black;
+        left: 18px;
     }
     .prod1 {
         display: flex;
@@ -337,6 +397,7 @@ footer {
         justify-content: center;
         align-items: center;
         justify-items: center;
+        left: 18px;
     }
     .vis1 {
         display: flex;
@@ -345,7 +406,7 @@ footer {
         align-content: center;
         justify-content: center;
         align-items: center;
-        justify-items: center;
+        left: 18px;
     }
     .feat1 {
         display: flex;
@@ -355,6 +416,7 @@ footer {
         justify-content: center;
         align-items: center;
         justify-items: center;
+        left: 18px;
     }
     .about1 {
         display: flex;
@@ -364,6 +426,7 @@ footer {
         justify-content: center;
         align-items: center;
         justify-items: center;
+        left: 18px;
     }
     .cont1 {
         display: flex;
@@ -373,10 +436,42 @@ footer {
         justify-content: center;
         align-items: center;
         justify-items: center;
+        left: 18px;
     }
     footer {
         display: flex;
         position: relative;
         top: 200px;
+        left: 50px;
+    }
+    #fix1 {
+        position: relative;
+        left: 50px;
+    }
+    #fix2 {
+        position: relative;
+    }
+    #fix3 {
+        position: relative;
+        left: 210px;
+        top: 15px;
+
+    }
+    #fix4 {
+        position: relative;
+        left: 210px;
+        top: 15px;
+    }
+    #fix5 {
+        position: relative;
+        left: 210px;
+        top: 15px;
+    }
+    #fix6 {
+        position: relative;
+        left: 50px;
+    }
+    .contact {
+        position: relative;
     }
 }

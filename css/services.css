@@ -1,0 +1,238 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    vertical-align: baseline;
+    width: 100%;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	max-width: 100%;
+	border: 3px solid black; 
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* CODE BELOW THIS LINE */
+
+.navigation {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 30px;
+	max-width: 880px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+h1 {
+    font-size: 30px;
+}
+.firstpara {
+    border-bottom: 1px solid black;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+.row1 {
+    display: flex;
+}
+.row1 div{
+    display: flex;
+    border: 1px solid black;
+    flex-wrap: wrap;
+    max-width: 440px;
+    flex-direction: row;
+    padding: 15px;
+    margin: 10px;
+    background-color: lightgrey;
+}
+.row2 {
+    display: flex;
+}
+.row2 div {
+    display: flex;
+    border: 1px solid black;
+    flex-wrap: wrap;
+    max-width: 440px;
+    flex-direction: row;
+    padding: 15px;
+    margin: 10px;
+    background-color: lightgrey;
+}
+.row3 {
+    display:flex;
+}
+.row3 div{
+    display: flex;
+    border: 1px solid black;
+    flex-wrap: wrap;
+    max-width: 440px;
+    flex-direction: row;
+    padding: 15px;
+    margin: 10px;
+    background-color: lightgrey;
+    margin-bottom: 30px;
+}
+.logo {
+    position: relative;
+    transform: scale(1.3);
+    bottom: 8px;
+    right: 15px;
+}
+.services-header-img {
+    position: relative;
+}
+button {
+    background-color: white;
+    color: black;
+    position: relative;
+    width: 120px;
+    height: 30px;
+    margin-top:10px;
+    top: 5px;
+}
+.lastpara {
+    margin: 10px;
+    position: relative;
+    border-top: 1px solid black;
+    padding-top: 30px;
+    max-width: 880px;
+    display:flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+.lastpara p {
+    width: 400px;
+    padding-top: 20px;
+}
+h3 {
+    font-size: 20px;
+    padding-top: 20px;
+}
+footer {
+	display:flex;
+	justify-content: center;
+    max-width: 880px;
+    padding-bottom: 30px;
+    position: relative;
+    bottom: 300px;
+}
+.computerlady {
+    width: 440px;
+    height: 50%;
+    position: relative;
+    left: 470px;
+    bottom: 300px;
+}
+.backdrop {
+    position: relative;
+    left: 10px;
+}
+ul {
+    color: black; 
+    position: relative;
+    list-style-type: disc;
+    left: 20px;
+    padding-top: 20px;
+    line-height: 30px;
+}
+@media only screen and (max-width: 800px){
+.services-header-img{
+    padding: 0 2.5% 0 0;
+}  
+.logo{
+    transform: scale(1.1);
+    position: relative;
+    bottom: .1rem;
+}
+}
+@media only screen and (max-width: 500px){
+.logo{
+    display: none;
+}
+.navigation{
+    margin-left: 2rem;
+}
+.services-header-img {
+    padding-right: 1.5rem;
+}
+.services-info-img {
+    display: none;
+}
+.lastpara {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 10% 0;
+}
+h3 {
+    display: flex;
+    justify-content: center;
+}
+ul {
+    display: flex;
+    font-size: .9rem;
+    margin: 3% 0 0 3%;
+}
+footer {
+    font-size: .7rem;
+}
+h1 {
+    display: flex;
+    justify-content: center;
+}
+}
