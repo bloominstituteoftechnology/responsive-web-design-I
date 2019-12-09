@@ -155,18 +155,50 @@ h5 {
   width: 65%;
   margin: 0 auto;
 }
+
+@media (max-width: 800px) {
+	.container {
+		width: 90%;
+		margin: 0 auto;
+	  }
+}
+
 nav {
   padding: 30px;
   display: flex;
+  flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
 }
-.bronav a {
+
+@media (max-width: 800px) {
+	.nav-button {
+		display:flex;
+		order: 0;
+		justify-content: space-between;
+		padding: 30px;
+	}
+
+	.nav-logo {
+		order: -1;
+	}
+
+	nav {
+		flex-flow: column nowrap;
+	}
+
+  
+}
+
+.top-nav a {
   margin: 0px 40px 0 0;
   text-decoration: none;
   color: gray;
+  
   /* align-self: center; */
 }
+
+
 
 a:hover {
   color: red;
@@ -208,11 +240,36 @@ h1 {
   color: black;
   background-color: white;
 }
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+@media (max-width: 800px) {
+
+    header {
+		justify-content: center;
+	}
+
+	.container {
+		width: 90%;
+		margin: 0 auto;
+	  }
+	
+	.header-img {
+		display: none;
+	}
+
+	
+}
+
 header .header-img {
   width: 380px;
   height: 380px;
   margin: 0 0 0 0;
-  display: inline-block;
+  
 }
 
 .sec-header {
@@ -304,17 +361,25 @@ header .header-img {
 .bottom-section p {
 	font-size: 18px;
 } */
+
 .contact {
   text-align: left;
   padding: 0 0 0 10%;
 }
+
 .contact h2 {
   font-size: 20px;
 }
+
 .contact p {
   font-size: 18px;
 }
+
 footer {
   text-align: center;
   padding: 10%;
+}
+
+@media (max-width: 500px) {
+ 
 }
