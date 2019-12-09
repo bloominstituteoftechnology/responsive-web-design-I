@@ -79,23 +79,25 @@ h1, h2, h3, h4, h5 {
 /* Beginning of header section */
 
 header {
-	display:flex;
-	justify-content: space-between;
+ 	display:flex;
+  justify-content:space-between;
+  width: 100%;
 	margin-bottom: 45px;
-	width: 100%;
-	float: right;
 }
 
+
 .navTop{
-	display:flex;
-	margin-left:2%;
+  width: 100%;
+  display:flex;
+  justify-content: flex-end;
+  margin-right: 3%;
 }
 
 a{
-	margin: 5px 6%;
+	margin: 5px 3%;
 	text-decoration: none;
 	color: lightgray;
-	padding: 1% 0;
+  padding: 1% 0;
 }
 
 
@@ -112,20 +114,20 @@ a{
 
 
 .boxSlogan{
-	display: flex;
-	flex-direction: column;
-	width: 30%;
-	margin-top: 7%;
-	justify-content: center;
+  border: 1px solid red;
+  display: flex;
+  align-self: center;	
+  flex-direction: column;
+  width: 200px;
 }
 
 .sloganTop{
-	display: flex;
-	font-size: 55px;
-	height: 175px;
-	width: fit-content;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  font-size: 55px;
+  font-family: 'Bangers', cursive;
   text-align: center;
-  flex-wrap: nowrap;
 }
 
 .sloganBottom{
@@ -194,19 +196,8 @@ display: none;
       justify-content: center;
     }
 
-   .boxSlogan{
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-   }
-
-   .sloganBottom{
-     padding: 10px 35px;
-     width: 175px;
-
-   }
-
     header {
+
       display: flex;
       flex-direction: column-reverse;
    
@@ -223,11 +214,7 @@ display: none;
   }
 
   @media(max-width: 400px){
-    .container {
-      display: flex;
-      flex-direction: column;
 
-    }
 
     .navTop {
       display: flex;
@@ -242,18 +229,7 @@ display: none;
       border-bottom: 1px solid lightgray;
       text-align: center;
     }
-
-    .boxSlogan {
-      margin-top: -40px;
-    }
-
-    .sloganTop {
-      align-self: center;
-    }
-    .sloganBottom {
-      width: 150px;
-      padding: 10px 0;
-    }
+ 
 
     .midSection {
       display: flex;
