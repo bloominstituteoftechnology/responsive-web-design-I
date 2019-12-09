@@ -1,3 +1,291 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+/ Use your own code or past solution for Great Idea Web Page CSS here! /
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/ HTML5 display-role reset for older browsers /
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/ Set every element's box-sizing to border-box /
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/ Your code starts here! /
+
+
+.main_container{
+	width: 80%;
+    margin: auto;
+    height: auto;
+}
+
+header{
+	height: 80px;
+    display: flex;
+}
+
+.navbar{
+	width: 70%;
+	padding-top: 30px;
+}
+
+.navbar ul{
+	display: flex;
+    color: #aaa;
+}
+
+.navbar ul li{
+	margin-right: 12%;
+	cursor: pointer;
+}
+
+.logo_area{
+	padding-top: 20px;
+	width: 30%;
+}
+
+.logo{
+	background-image: url(../img/logo.png);
+    background-size: contain;
+    background-repeat: unset;
+    width: 200px;
+    height: 40px;
+    float: right;
+	display: block;
+	
+}
+
+.banner{
+	height: 500px;
+    display: flex;
+    border-bottom: 1px solid #000;
+}
+
+.get_started{
+	width: 50%;
+}
+
+.banner_text{
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: fantasy;
+    font-style: italic;
+    margin: 100px auto 30px;
+}
+
+.start_btn_area{
+	text-align: center;
+}
+
+.start_btn{
+    font-size: 1rem;
+    width: 38%;
+    height: 40px;
+    background: none;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+.banner_img{
+    width: 50%;
+    text-align: center;
+}
+
+.banner_img img{
+	margin-top: 50px;
+}
+
+.content1{
+    display: flex;
+    height: 200px;
+    padding: 50px 0 10px;
+}
+
+.features{
+    width: 45%;
+    margin-right: 5%;
+    overflow: hidden;
+}
+
+.about{
+    width: 50%;
+    overflow: hidden;
+}
+
+.features_txt, .about_txt, .services_txt, .product_txt, .vision_txt{
+    font-style: italic;
+    font-weight: bold;
+    font-family: fantasy;
+}
+
+.content_img{
+	background-image: url(../img/mid-page-accent.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 300px;
+}
+
+.content2{
+	padding: 50px 0;
+	display: flex;
+	height: 200px;
+}
+
+.services, .product{
+	padding-right: 3%;
+}
+
+.main_content{
+	border-bottom: 1px solid #000;
+}
+
+footer{
+	padding: 50px 0;
+}
+
+.contact_title{
+    font-family: fantasy;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.phone{
+	margin: 1.5rem 0;
+}
+
+.copyirght_area{
+	text-align: center;
+}
+
+
+/* Responsive web design*/
+  @media screen and (max-width: 900px) {
+    
+    .main_container {
+        width: 80%;
+    }
+
+    .start_btn_area {
+        text-align: inherit;
+    }
+
+    .start_btn_area {
+        position: absolute;
+        font-size: 2.5rem;
+        width: 80vh;
+        height: 5rem;
+        margin-top: 3rem;
+
+    }
+
+    .banner_text {
+        text-align: inherit;
+        font-size: 8vw;
+    }
+
+    .banner_img img {
+        width: 20vh;
+        float: right;
+        margin-top: 7rem;
+
+    }
+
+    content1 {
+        display: grid;
+        height: auto;
+    }
+
+    .features, .about {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 5rem;
+
+
+    }
+
+    .features, .about {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 5rem;
+    }
+
+    .content_img {
+        height: 10rem;
+    }
+
+
+    .content2 {
+        display: grid;
+        height: auto;
+        padding: 0;
+
+    }
+    .services, .product, .vision {
+        padding: 0;
+        margin-bottom: 5rem;
+    }
+
+    .copyirght_area{
+        text-align: inherit;
+    }
