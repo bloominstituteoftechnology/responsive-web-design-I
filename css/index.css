@@ -1,3 +1,102 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+{
+	margin: 0; 
+	box-sizing: border-box;
+}
+.page-container {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	width: 900px;
 
+}
+.page-container img {
+	margin: 0;
+	margin-top: -40px;
+}
+.info {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	color: gray;
+}
+.info a {
+	width: 150px;
+	color: gray;
+	margin: 0px;
+}
 
+.contain {
+	width: 100%;
+	margin: 0 auto;
+
+}
+.head-container {
+	display: inline-block;
+	width: 200px;
+	font-size: 30px;  
+
+	margin-left: 250px;
+}
+
+.gtBtn {
+	display: inline-block;
+	margin-left: 50px; 
+
+}
+
+.logo {
+	margin-left: 1050px;
+	display: inline-block;
+
+}
+.contain-two {
+	margin: 0 auto;
+	width: 100%;
+	display: inline-block;
+	column-count: 2;
+
+	padding: 5px; 
+}
+.contain .middle-img {
+	margin: 0 auto;
+	width: 100%;
+}
+.contain-three {
+	margin: 0 auto;
+	display: inline-block;
+	width: 100%;
+	column-count: 3;
+
+	padding: 5px;
+}
+.head-contain {
+	width: 100%;
+	margin: 0;
+	display: inline-block;
+
+}
+.head-contain img {
+	display: inline-block;
+	margin-left: 350px;
+	margin-top: -160px;
+}
+
+.footnote p h5 {
+	margin: 0 ;
+	margin-left: 20px;
+	display: block; 
+}
+.footnote .Rights {
+	text-align:center;
+} 
+@media (max-width: 800px){
+   
+
+@media (max-width: 500px){
+    .page-container {
+        display: flex;
+        flex-direction:column;
+        align-items:center;
+}
+}
