@@ -1,3 +1,320 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+.container {
+  width: 65%;
+  margin: 0 auto;
+}
+nav {
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bronav a {
+  margin: 0px 40px 0 0;
+  text-decoration: none;
+  color: gray;
+  /* align-self: center; */
+}
+
+a:hover {
+  color: red;
+}
+
+/* nav .logo {
+	display: inline-block;
+	/* margin: 30px 0 0 40px; 
+} */
+
+header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 25px 0 7% 0;
+  border-bottom: 1px solid black;
+}
+header .div-index {
+  /* margin: 0 150px 0 0px;
+	height: 200px;
+	width: 360px;
+	display: inline-block; */
+  text-align: center;
+}
+header div h1 {
+  font-size: 100px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+.button {
+  /* display: inline-block; */
+  padding: 5px 15px;
+  border: solid black 1px;
+  text-decoration: none;
+  color: black;
+  background-color: white;
+}
+header .header-img {
+  width: 380px;
+  height: 380px;
+  margin: 0 0 0 0;
+  display: inline-block;
+}
+
+.sec-header {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-start;
+}
+
+.top-section {
+  display: flex;
+  padding: 20px 0;
+  font-size: 20px;
+}
+
+.top-sec-services {
+  border-bottom: 1px solid black;
+  display: flex;
+  flex-flow: row wrap;
+  /* justify-content: space-between;
+	align-items: flex-start;  */
+}
+
+.top-sec-div {
+  margin: 10px 15px;
+  border: 1px solid black;
+  background: ghostwhite;
+  padding: 20px;
+  width: calc(50% - 30px);
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+}
+
+.sec2 {
+  padding: 20px;
+  margin: 30px;
+}
+
+.top-sec-div p {
+  margin: 10px;
+}
+
+/* .top-section h2 {
+	font-size: 20px;
+}
+.top-section p {
+	font-size: 18px;
+	text-align: left;
+}
+.top-section .top-content {
+	display: flex;
+	align-content: flex-end;
+	width: 49%;
+	margin: 50px 0 50px 0;
+	padding: 5px;
+} */
+.middle-img {
+  display: inline-block;
+  width: 100%;
+}
+
+.bottom-section {
+  display: flex;
+  padding: 20px 3px;
+  border-bottom: 1px solid black;
+}
+
+.bottom-sec-services {
+  display: flex;
+}
+
+.span-flex li,
+.span-flex p {
+  padding: 10px;
+}
+
+/* .bottom-section {
+	border-bottom: ;
+}
+.bottom-section .bottom-content {
+	display: inline-block;
+	width: 33%;
+	margin: 50px 0 50px 0;
+	padding: 5px;
+}
+.bottom-section h2 {
+	font-size: 20px;
+}
+.bottom-section p {
+	font-size: 18px;
+} */
+.contact {
+  text-align: left;
+  padding: 0 0 0 10%;
+}
+.contact h2 {
+  font-size: 20px;
+}
+.contact p {
+  font-size: 18px;
+}
+footer {
+  text-align: center;
+  padding: 10%;
+}
