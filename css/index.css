@@ -1,3 +1,80 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    font-size: 100%;
+	font: inherit;
+    vertical-align: baseline;
+    /*border: 1px solid grey;*/
+}
+body{
+    width: 876px;
+}
+html, body{
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+    margin: auto;
+}
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+.line{
+	border: 1px solid black;
+	margin-bottom: 5%; 
+}
 
 
+
+/* Home Page Styling */
+/* Nav bar */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3%;
+}
+.navbar a{
+    text-decoration: none;
+    color: grey;
+}
+.navbar a:hover{
+    color: blue;
+}
+
+
+/* Title */
+.title{
+    display: flex; 
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 5%;
+}
+.title #leftTitle{
+    margin-left: 7%;
+}
+#leftTitle h1{
+    font-size: 70px;
+}
+#leftTitle button{
+    padding: 3px 10%;
+    background-color: white; 
+    
+}
+
+
+/* Intro, info, & footer */
+.intro{
+    display: flex;
+    margin-bottom: 3%;
+}
+.info{
+    margin: 3% 0;
+    display: flex;
+}
+footer{
+    text-align: center;
+}
