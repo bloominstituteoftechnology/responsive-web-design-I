@@ -1,3 +1,324 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ /* ul {
+  list-style: none;
+} */
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+/* My Code starts here */
+.container {
+  width: 90%;
+  margin: 40px auto 0 auto;
+}
+.head {
+    display: flex;
+    justify-content: space-between;
+}
+.links {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  
+  
+}
+.logo {
+    display: flex;
+    justify-content: flex-end;
+}
+nav a {
+  text-decoration: none;
+  color: rgb(155, 155, 155);
+  }
+nav a:visited {
+  text-decoration: none;
+}
+
+.h1 {
+  font-size: 72px;
+  display: flex;
+  align-items: center; 
+  
+}
+h2 {
+  height: 2vh;
+  margin-top: 4%;
+}
+
+.innovation {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+    
+}
+.button {
+  text-decoration: none;
+  border: 1px solid black;
+  width: 40%;
+  margin: 0 auto;
+  padding: 5px;
+  font-size: 1.1rem;
+  color: rgb(8, 112, 197);
+  border-radius: 5px;
+  
+}
+.button:hover {
+  background-color: rgb(108, 177, 233);
+  color: white;
+  transition: 0.6s;
+  border: 3px solid rgb(120, 95, 235);
+}
+.imgtwo {
+  width: 40%;
+  padding-bottom: 5%;
+  margin-top: 3%;
+}
+.middle {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.first {
+  border-top: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  word-spacing: 2px;
+  margin-bottom: 40px;
+  padding-top: 40px;
+}
+.one {
+  padding-right: 20px;
+}
+.middle-img {
+  width: 100%;
+}
+
+.second {
+  border-bottom: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  word-spacing: 2px;
+  margin-top: 30px;
+  padding-bottom: 40px;
+}
+
+.three {
+  padding-right: 20px;
+}
+.four {
+  padding-right: 20px;
+}
+
+.contact {
+  margin-top: 20px;
+  font-size: 15px;
+  word-spacing: 1px;
+  width: 40%;
+}
+footer {
+  padding: 30px;
+  text-align: center;
+  font-size: 12px;
+  word-spacing: 1px;
+}
+@media (max-width: 800px) {
+  .head {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .links {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 20px;
+      width: 100%;
+  }
+  .innovation {
+      padding-bottom: 20px;
+      padding-top: 20px;
+  }
+  .imgtwo {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;  
+    column-rule-style: solid 1px black;
+  }
+  .title {
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+    width: 10%;
+    padding: 10%;
+  }
+  .imgtwo {
+    display: none;
+  }
+  .first {
+    border-top: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    word-spacing: 2px;
+    margin-bottom: 40px;
+    padding-top: 40px;
+    margin-top: 40px;
+  }
+  .second {
+    border-bottom: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    word-spacing: 2px;
+    margin-top: 30px;
+    padding-bottom: 40px;
+  }
+}
