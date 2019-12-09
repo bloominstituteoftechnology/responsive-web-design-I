@@ -70,15 +70,27 @@ body {
 	width:60%;
 }
 nav {
-    display:flex;
-    justify-content:space-between;
+	display:flex;
+	justify-content:space-between;
+	margin-top:2%;
 }
 .links {
-    border:solid 1px grey;
-    display:flex;
-    flex-direction:row;
-    justify-content:space-around;
+	display:flex;
+	justify-content:space-between;
+	width:70%;
 }
+nav a {
+	text-decoration:none;
+	color:grey;
+}
+nav a:hover {
+	color:black;
+}
+.logo {
+	padding-left:13%;
+}
+
+
 .container {
 	display:flex;
 	width:100%;
@@ -181,4 +193,69 @@ nav {
 	text-align:center;
 	font-size:15pt;
 	margin-top:2%;
+}
+@media (max-width:800px){
+	body {
+		width:95%;
+	}
+	nav{
+		flex-direction:column-reverse;
+	}	
+	.links {
+		margin:5% auto;
+		display:flex;
+		justify-content:space-between;
+		width:100%;
+	}
+	.logo {
+		width:30%;
+		margin:0 auto;
+		padding:0;
+	}
+	.title-image {
+		display:none;
+	}
+	.container {
+		top-margin:30%;
+	}
+	.boxes .button {
+		width:50%;
+		margin-bottom:25%;
+		font-size:20pt;
+	}
+	.wrapper {
+		margin:2% 0;
+	}
+	.wrapper h2 {
+		font-size:12pt;
+	}
+	#features, #about {
+		height:18vh;
+	}
+	.wrapper p {
+		font-size:10pt;
+	}
+	.section-c {
+		padding:5% 0;
+	}
+	#services p, #product p, #vision p {
+		font-size:10pt;
+	}
+	#services h2, #product h2, #vision h2{
+		font-size:12pt;
+	}
+	#contact {
+		line-height:12px;
+		margin:5% 0;
+	}
+	#contact h2 {
+		font-size:12pt;
+	}
+	#contact p {
+		font-size:10pt;
+	}
+	.copyright {
+		font-size:11pt;
+	}
+
 }
