@@ -64,9 +64,10 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+body {
+	margin: 0 10%;
+}
 .container {
-	/*used to keep objects on correct axis */
-	border: 1px solid lightgray;
 	display:flex;
 	flex-direction: column;
 	flex-wrap:nowrap;
@@ -130,17 +131,17 @@ h1 {
 
 .learn {
 	margin-top: 5%;
-	margin-left: 33%;
-	margin-right: 33%;
+	margin-left: 35%;
+	margin-right: 35%;
 	margin-bottom: 2%;
 	border:1px solid black;
-	padding: 2.25% 9.5%;
+	padding: 3% 4%;
 	text-align: center;
 	font-size: 12px;
 	background-color: white;
 	border-radius: 5px;
 	width: 100%;
-	display: flex;
+	
 }
 
 #servicesBottomSec {
@@ -169,7 +170,7 @@ li {
 }
 
 .services-info-img {
-	width: 100%;
+height: fit-content;
 }
 
 .copyright {
