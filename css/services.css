@@ -1,0 +1,483 @@
+ /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+body{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	display:flex;
+	flex-direction:column;
+	padding:5%;
+	flex-wrap:nowrap;
+}
+
+h2{
+
+	font-weight:bolder;
+}
+
+p{
+
+	font-weight:bold;
+}
+
+/*STYLE FOR EVERYTHING IN THE HEADER [nav,a,figure,img]*/
+header{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+}
+
+header nav{
+	flex:5;
+	display:flex;
+	flex-direction:row;
+	justify-content:space-around;
+}header nav a{
+	flex:1;
+	font-weight:bolder;
+	-webkit-text-fill-color:rgba(0,0,0,.4);
+	font-family: 'Titillium Web', sans-serif;
+	cursor:pointer;
+}
+
+
+header figure{
+	flex:1;
+}
+/*STYLE FOR EVERYTHING IN THE HEADER [nav,a,figure,img]*/
+
+
+
+/*BIG PHOTO AT THE TOP
+*/
+
+.headImg{
+	display:flex;
+}.headImg img{
+	flex:1;
+}
+
+/*BIG PHOTO AT THE TOP
+*/
+
+
+/*SERVICE SECTION*/
+h1{
+	font-weight:bolder;
+	font-size:1.5rem;
+}
+.serv{
+	display:flex;
+	border-bottom:solid 1.5px;
+	padding:5% 0%;
+}.serv section{
+	flex:1;
+	display:flex;
+	flex-direction:column;
+	justify-content:space-around;
+	word-break:keep-all;
+}.serv section p,.serv section h1,{
+	flex:1;
+}
+
+
+
+
+
+/*SERVICE SECTION*/
+
+
+/*CENTER OF THE PAGE WITH FLEX GRID*/
+.cen{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-around;
+	grid-gap:200px;
+	padding:5% 0%;
+	border-bottom:solid 2px;
+}.sec1,.sec2{
+	
+	display:flex;
+	flex-direction:column;
+	justify-content:space-around;
+	grid-gap:50px;
+
+
+}.sec1 section,.sec2 section{
+	flex:1;
+	background-color:#efefef;
+	display:flex;
+	flex-direction:column;
+	padding:5%;
+	border:solid 2px;
+	grid-gap:20px;
+}button{
+	width:150px;
+	height:35px;
+	display:flex;
+	flex-wrap:wrap;
+	text-align:center;
+	justify-content:center;
+	align-items:center;
+	border:solid 2px;
+	background-color:#fff;
+	border-radius:5px;
+	font-weight:bold;
+}
+
+
+
+/*CENTER OF THE PAGE WITH FLEX GRID*/
+
+
+/*MY FOOTER STYLES*/
+footer{
+	display:flex;
+	flex-direction:column;
+	grid-gap:10px;
+	padding:5% 0%;
+
+}.foot_t{
+		flex:1;
+		display:flex;
+		flex-direction:row;
+		grid-gap:200px;
+		justify-content:space-between;
+		padding-bottom:5%;
+}footer address{
+	text-align:center;
+	font-weight:bolder;
+	flex:1;
+}
+
+.foot_l,.foot_r{
+	flex:1;
+	display:flex;
+
+}.foot_l{
+	grid-gap:30px;
+	flex-direction:column;
+}.foot_l ul {
+	flex:1;
+	list-style-type:square;
+	display:flex;
+	flex-direction:column;
+	justify-content:space-around;
+}.foot_r img{
+	flex:1;
+}
+
+
+
+/*MY FOOTER STYLES*/
+
+
+
+
+
+
+/*MOBLE ONLY*/
+
+@media screen and (max-width:500px){
+	html{
+		width:100%;
+		overflow-x:hidden;
+	}
+
+.bod{
+		padding:0% 1%;
+	}
+	/*HEADER*/
+	header{
+		flex-direction:column-reverse;
+		grid-gap:10px;
+	} header nav{
+		flex-direction:column;
+	}header nav a{
+		flex:1;
+		width:100%;
+		text-align:center;
+		border-top:solid 1px;
+	}header nav a:nth-child(6){
+			border-bottom:solid 1px;
+	} header figure{
+		justify-content:center;
+		align-items:center;
+		text-align:center;
+	}
+
+/*HEADER*/
+
+
+/*	SERVICES SPOT
+*/
+
+.serv{
+	justify-content:center;
+	align-items:center;
+	text-align:center;
+}
+
+/*	SERVICES SPOT
+*/
+
+
+
+/*MID SECS
+*/	
+
+.cen{
+	display:flex;
+	flex-direction:column;
+	justify-content:space-around;
+	grid-gap:100px;
+	padding:5% 0%;
+	border-bottom:solid 2px;
+}
+
+
+
+/*MID SECS
+*/	
+
+
+footer{
+	text-align:center;
+}
+
+
+footer .foot_t{
+	flex-direction:column;
+	grid-gap:100px;
+}
+
+
+}
+
+
+
+@media screen and (max-width:900px) and (max-height:500px) and (min-width:501px){
+	html{
+		width:100%;
+		overflow-x:hidden;
+	}
+
+.bod{
+		padding:0% 1%;
+	}
+	/*HEADER*/
+	header{
+		flex-direction:column-reverse;
+		grid-gap:10px;
+	} header nav{
+		flex-direction:column;
+	}header nav a{
+		flex:1;
+		width:100%;
+		text-align:center;
+		border-top:solid 1px;
+	}header nav a:nth-child(6){
+			border-bottom:solid 1px;
+	} header figure{
+		justify-content:center;
+		align-items:center;
+		text-align:center;
+	}
+
+/*HEADER*/
+
+
+/*	SERVICES SPOT
+*/
+
+.serv{
+	justify-content:center;
+	align-items:center;
+	text-align:center;
+}
+
+/*	SERVICES SPOT
+*/
+
+
+
+/*MID SECS
+*/	
+
+.cen{
+	display:flex;
+	flex-direction:column;
+	justify-content:space-around;
+	grid-gap:100px;
+	padding:5% 0%;
+	border-bottom:solid 2px;
+}
+
+
+
+/*MID SECS
+*/	
+
+
+footer{
+	text-align:center;
+}
+
+
+footer .foot_t{
+	flex-direction:column;
+	grid-gap:100px;
+}
+
+
+}
+/*MOBLE ONLY*/
+
+
+
+
+/*TABZ*/
+
+@media screen and (min-width:700px) and (max-width:1300px)
+and (min-height:700px) and (max-height:1300px ){
+		html{
+		width:100%;
+		overflow-x:hidden;
+	}
+
+.bod{
+		padding:0% 1%;
+	}
+	/*HEADER*/
+	header{
+		flex-direction:column-reverse;
+		grid-gap:10px;
+	} header nav{
+		flex-direction:column;
+	}header nav a{
+		flex:1;
+		width:100%;
+		text-align:center;
+		border-top:solid 1px;
+	}header nav a:nth-child(6){
+			border-bottom:solid 1px;
+	} header figure{
+		justify-content:center;
+		align-items:center;
+		text-align:center;
+	}
+
+/*HEADER*/
+
+
+/*	SERVICES SPOT
+*/
+
+.serv{
+	justify-content:center;
+	align-items:center;
+	text-align:center;
+}
+
+/*	SERVICES SPOT
+*/
+
+
+
+/*MID SECS
+*/	
+
+.cen{
+	display:flex;
+	flex-direction:column;
+	justify-content:space-around;
+	grid-gap:100px;
+	padding:5% 0%;
+	border-bottom:solid 2px;
+}
+
+
+
+/*MID SECS
+*/	
+
+
+footer{
+	text-align:center;
+}
+
+
+footer .foot_t{
+	flex-direction:column;
+	grid-gap:100px;
+}
+
+}
+/*TABZ*/

@@ -1,3 +1,346 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+	width:100%;
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+body{
+	
+	height:100%;
+	width:100%;
+	
+}
+
+.bod{
+	position:absolute;
+	top:0;
+	left:0;
+	height:100%;
+	width:100%;
+	display:flex;
+	flex-direction:column;
+	padding:0% 5%;
+}
+/* header  */
+header{
+	flex:1;
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	grid-gap:100px;
+
+}
+header nav{
+	flex:4;
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	align-items:center;
+	-webkit-text-fill-color:rgba(0,0,0,.5);
+	font-weight:bolder;
+}header nav a{
+	cursor:pointer;
+}
+
+header figure{
+	flex:1;
+	display:flex;
+}
+
+header figure img{
+	flex:1;
+	width:100%;
+	height:100%;
+}
 
 
+
+/* header  */
+
+
+/* divs in between header and footer  */
+.topp{
+	flex:2;
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	border-bottom: solid 2px;
+	padding:5%;
+}
+.topp address{
+	flex:1;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+
+}
+.topp address span{
+	font-weight:bolder;
+	font-size:5rem;
+	font-family: 'Bangers', cursive;
+	text-align:center;
+}
+
+.topp address button{
+			border:solid 1.5px;
+			padding:5px 40px;
+			cursor:pointer;
+			background-color:#fff;
+			font-weight:bolder;
+}
+
+.topp figure{
+	flex:1;
+	border-radius:100%;
+
+}
+ .topp figure img{
+ 	width:100%;
+ 	height:100%;
+ 	border-radius:100%;
+ }
+
+/* divs in between header and footer  */
+
+.cenDivz{
+	flex:1;
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	grid-gap:50px;
+	padding:30px 0px;
+	font-weight:bolder;
+}
+
+.cenDivz[data='img']{
+	justify-content:center;
+	align-items:center;
+}
+
+.cenDivz[data='btm3']{
+	border-bottom:solid 2px;
+}
+
+/* footer  */
+.btm{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:flex-start;
+	font-weight:bolder;
+}
+
+footer{
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+	align-items:center;
+	font-weight:bolder;
+}
+/*  footer  */
+
+
+
+
+
+
+
+/*MOBILE ONLINE*/
+
+@media screen and (max-width:500px){
+	html{
+		overflow-x:hidden;
+
+	}
+	.bod{
+		padding:0% 1%;
+	}
+	/*HEADER*/
+	header{
+		flex-direction:column-reverse;
+		grid-gap:10px;
+	} header nav{
+		flex-direction:column;
+	}header nav a{
+		flex:1;
+		width:100%;
+		text-align:center;
+		border-top:solid 1px;
+	}header nav a:nth-child(6){
+			border-bottom:solid 1px;
+	}
+
+/*HEADER*/
+
+
+/*	GET STARTED
+*/
+
+.topp{
+	flex:1;
+	padding:3% 0%;
+}
+
+.topp address span{
+	font-size:2rem;
+}
+
+.topp figure{
+	display:none;
+}
+
+
+/*	GET STARTED
+*/
+
+
+
+/*MID SECS
+*/	
+
+
+
+.cenDivz{
+	flex-direction:column;
+	padding:0;
+}
+
+
+
+.cenDivz[data='img']{
+	
+	padding:2%;
+}.cenDivz[data='img'] img{
+	width:100%;
+	height:100%;
+}
+/*MID SECS
+*/	
+
+	}
+
+
+
+
+
+
+	@media screen and (max-width:900px) and (max-height:500px) and (min-width:501px){
+		html{
+		overflow-x:hidden;
+
+	}
+	.bod{
+		padding:0% 1%;
+	}
+	/*HEADER*/
+	header{
+		flex-direction:column-reverse;
+		grid-gap:10px;
+	} header nav{
+		flex-direction:column;
+	}header nav a{
+		flex:1;
+		width:100%;
+		text-align:center;
+		border-top:solid 1px;
+	}header nav a:nth-child(6){
+			border-bottom:solid 1px;
+	}header figure{
+		justify-content: center;
+		align-content:center;
+		text-align:center;
+	}
+	header figure img{
+			flex:.5;
+	}
+
+/*HEADER*/
+
+
+/*	GET STARTED
+*/
+
+.topp{
+	flex:1;
+	padding:3% 0%;
+}
+
+.topp address span{
+	font-size:2rem;
+}
+
+.topp figure{
+	display:none;
+}
+
+
+/*	GET STARTED
+*/
+
+
+
+/*MID SECS
+*/	
+
+
+
+.cenDivz{
+	flex-direction:column;
+	padding:0;
+}
+
+
+
+.cenDivz[data='img']{
+	
+	padding:2%;
+}.cenDivz[data='img'] img{
+	width:100%;
+	height:100%;
+}
+/*MID SECS
+*/	
+
+	}
+/*MOBILE ONLINE*/
+
+
+
+
+/*TABLET*/
+
+@media screen and (min-width:700px) and (max-height:1300px) and (max-width:1300px ) and (min-height: 700px){
+	header{
+		flex-direction:column-reverse;
+	}
+	header nav{
+		flex-direction:row;
+	}
+	header figure{
+		text-align:center;
+		justify-content:center;
+		align-items:center;
+	}
+	header figure img{
+		flex:.5;
+	}
+
+
+	.topp figure{
+		display:none;
+	}
+}
+/*TABLET*/
