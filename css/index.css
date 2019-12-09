@@ -51,6 +51,10 @@ table {
 /* Set every element's box-sizing to border-box */
 * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    border: 1px solid red;
 }
 
 html, body {
@@ -65,9 +69,6 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
-* {
-    box-sizing: border-box;
-}
 
 html, body {
     height: 100%;
@@ -85,7 +86,7 @@ h1, h2, h3, h4, h5 {
   /* TB LR */
   margin: 0 auto;
 }
-@media(max-width: 850px) {
+@media(max-width: 800px) {
     .container {
         background-color: aqua;
     }
@@ -110,24 +111,34 @@ h1, h2, h3, h4, h5 {
         display: none;
     }
 }
-@media(max-width: 600px) {
-    
+@media(max-width: 500px) {
     .container {
       background-color: yellow;
     }
-    header{
+    header nav{
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        align-self: center;
         }
-   
     .links{
-        margin-left: 0;
-        font-size: 25px;
-        margin-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        height: 50vh;
+        font-size: 22px;
+        justify-content: space-between;
+        }
+    
+    header nav a:last-child {
+        display: flex;
+        flex-direction: column;
+        /* align-items: center;  */
     }
+    .top .top-text{
+        vertical-align: top;
+        font-size: 10px;
+        text-align: center;
+    }   
     .main-content .top-content{
         display: flex;
         flex-direction: column;
@@ -137,39 +148,45 @@ h1, h2, h3, h4, h5 {
         margin-bottom: 3%;
 
         }
-        .text-content{
+        
+    .text-content{
             margin-bottom: 2%;
         }
-        .bottom-content{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-content: flex-start;
-    align-items: flex-start;
+    .bottom-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-content: flex-start;
+        align-items: flex-start;
         }
-        .main-content .middle-img {
-            margin-top: 10px;
-            margin-left: 5%;
-            width: 90%;
+    .main-content .middle-img {
+            margin-top: 3px; 
         }
-        img{
-            animation-duration: 8s;
-            animation-delay: 0s;
-            animation-name: middle-img;
-            animation-timing-function: ease-in;
-            animation-direction: alternate;
+    img{
+        margin-left: 2%;
+        margin-top: -1%;
+        animation-duration: 8s;
+        animation-delay: 0s;
+        animation-name: middle-img;
+        animation-timing-function: ease-in;
+        animation-direction: alternate;
         }
-        .top{
-            animation-duration: 7s;
-            animation-delay: 0s;
-            animation-name: top;
-            animation-timing-function: ease-in;
-            animation-direction: alternate;
+    .top{
+        height:350px;
+        animation-duration: 7s;
+        animation-delay: 0s;
+        animation-name: top;
+        animation-timing-function: ease-in;            
+        animation-direction: alternate;
+        }
+        .top .top-text {
+            font-size: 50px;
+            margin-top: 5px;
         }
 }        
-/* header */
+    /* header */
 header{
-	display: flex;
+ display: flex;
 }
 header nav {
   width: 691px;
