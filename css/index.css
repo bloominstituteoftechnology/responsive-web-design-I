@@ -10,52 +10,81 @@
     border: 1px solid red;
     width: 800px; 
     margin: 0 auto;
-}
-.page-container {
-    width: 800px;
-    margin: 0 auto;
-    flex-direction: column;
-    justify-content: center;
-}
-.logo {
-    margin: 0 auto;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-content: center;
 }
-.firstcontain {
-    background-color: red;
+.page-container {
+    width: 800px; 
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
 }
-.imagecontain {
-
+.page-container a {
+    margin: 0 auto;
+    width: 800px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  color: gray;
+  text-decoration: none;
+  
+}
+.firstcontain {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 400px;
+}
+.firstcontain button {
+    width: 200px; 
+    display: inline-block;
 }
 .contain-two {
-
-}
-.middle-img {
-
-}
-.contain-three {
-
-}
-.footnote {
-
-}
-.footaddress {
-
-}
-.CRights {
-
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 @media (max-width: 800px) {
-    .page-container {
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+    .wholecontain {
+    width: 600px; 
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
     }
-    .firstcontain {
-       display: flex;
-       flex-direction: row;
+    .page-container {
+    width: 600px; 
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    }
+}
+@media (max-width: 500px) {
+    .wholecontain {
+    width: 450px; 
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    }
+    .page-container {
+    width: 450px; 
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
     }
 }
