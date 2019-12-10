@@ -77,12 +77,27 @@ header {
 	align-items: center;
 	margin: 45px;
 }
+@media (max-width: 800px) {
+	header {
+		display: flex;
+		flex-direction: column-reverse;
+		margin-left: 0;
 
+	}
+}
 header nav {
 	display: flex;
 	justify-content: space-around;
 	width: 100%; 
 	margin-right: 75px;
+}
+
+@media (max-width: 800px) {
+	header nav {
+		display: flex;
+	justify-content: space-between;
+	width: 82%;
+	}
 }
 
 header nav a {
@@ -92,6 +107,12 @@ header nav a {
 
 .logo {
 	margin-right: 15px;
+}
+
+@media (max-width: 800px) {
+	.logo {
+		margin-bottom: 50px;
+	}
 }
 /* ***************************header************************** */
 /* ***************************banner************************** */
@@ -111,10 +132,25 @@ header nav a {
     margin-left: 90px;
 }
 
+@media (max-width: 800px) {
+	.banner-text#b-text {
+		display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 180px 0 0;
+	}
+}
+
 .banner-text {
 	text-align: center;
 	font-size: 80px;
 
+}
+
+@media (max-width: 800px) {
+	.banner-text {
+		display: none;
+	}
 }
 
 .banner .banner-text button {
@@ -136,6 +172,12 @@ header nav a {
 	width: 100%;
 }
 
+@media (max-width: 800px) {
+	.main {
+		width: 90%;
+	}
+}
+
 .main-content {
 	
 	width: 42%
@@ -145,12 +187,30 @@ header nav a {
 	margin: 30px 30px 30px 50px;
 }
 
+@media (max-width: 800px) {
+	.pic-content {
+		margin: 30px 30px 30px 4px;
+	}
+}
+
 .content {
 	display: flex;
 	justify-content: space-evenly;
 	margin-bottom: 25px;
 	padding-bottom: 25px;
 	border-bottom: 1px solid black;
+}
+
+@media (max-width: 800px) {
+	.content {
+		display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid black;
+    width: 93%;
+    padding-right: 32px;
+	}
 }
 
 .content-triple {
@@ -164,6 +224,12 @@ header nav a {
 
 }
 
+@media (max-width: 800px) {
+	.contact {
+		margin: 25px 54px
+	}
+}
+
 .address {
 	margin-top: 16px;
 	display: flex;
@@ -175,5 +241,11 @@ footer {
 	text-align: center;
 	margin: 20px 0;
 	padding: 25px 0;
+}
+
+@media (max-width: 800px) {
+	footer {
+		width: 97%;
+	}
 }
 
