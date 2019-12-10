@@ -172,7 +172,7 @@ footer p{
     
     body{
         box-sizing: border-box;
-     width: 500px;
+    
         background-color: white;
         width: 100%;
      }
@@ -248,8 +248,36 @@ footer p{
      }
  }  
  
- ?
+
  /*For Tablet view*/
  @query (max-width: 800px){
-     
+
+    body{
+        box-sizing: border-box;
+        background-color: pink;
+        width: 100%;
+     }
+        div.logo {
+        margin-left: 5%;
+     }
+     header{
+        width: 50%;
+        flex-direction; row;
+
+    }
+    div .mainNav{
+        display: flex;
+    align-items: center;
+    width: 2%;
+    margin: 16px;
+    font-size: 74%;
+
+    }
+    nav.links{
+        font-size: small;
+        display: flex;
+    align-items: center;
+    width: 2%;
+    margin: 16px;
+    }
  }
