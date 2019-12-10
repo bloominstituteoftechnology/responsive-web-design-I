@@ -93,7 +93,7 @@ nav{
 	  margin-right: 10%;
   }
 h1{
-	font-size: 50px;
+    font-size: 50px;
 }
 
 .started{
@@ -156,4 +156,42 @@ footer{
 	margin-bottom: 5%;
 }
 
+@media screen and (max-width: 500px){
+  nav{
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      margin-left: 100px;
+  }
+  a{
+    border-bottom: solid 1px;
+	margin-top: 5%;
+    width: 1000px;
+    padding-bottom: 5%;
+  }
+  .logo{
+      width:100px;
+      border-bottom: solid;
+      padding-bottom: 5%;
+  }
+  .code{
+      display:none;
+  }
+  h1{
+      margin: 0 auto;
+  }
+  .top{
+      display: flex;
+      flex-direction: column;
+  }
+  .bottom {
+      display: flex;
+      flex-direction: column;
+  }
+  .middle-img{
+      width: 350px;
+      margin-left: 10%;
+  }
 
+  
+}
