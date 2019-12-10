@@ -68,7 +68,6 @@ h1, h2, h3, h4, h5 {
 .container {
 	width: 1000px;
 	box-sizing: border-box;
-	border: 1px solid red;
 	margin: 0 auto;
 }
 /* ***************************header************************** */
@@ -98,9 +97,9 @@ header nav a {
 /* ***************************banner************************** */
 .banner {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-evenly;
 	align-items: center;
-	margin: 72px 0 0px 90px;
+	margin-top: 72px;
     padding-bottom: 65px;
     border-bottom: 1px solid black;
 }
@@ -108,7 +107,8 @@ header nav a {
 .banner .banner-text#b-text {
 	display: flex;
     flex-direction: column;
-    align-items: center;
+	align-items: center;
+    margin-left: 90px;
 }
 
 .banner-text {
@@ -123,18 +123,57 @@ header nav a {
 	font-size: 16px;
 	background: white;
 }
+
+.banner .banner-text {
+	margin-left: 10px;
+}
 /* ***************************banner************************** */
 /* ***************************main************************** */
 .main {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-evenly;
+	margin-top: 25px;
+	width: 100%;
 }
 
 .main-content {
+	
+	width: 42%
+}
+
+.pic-content {
+	margin: 30px 30px 30px 50px;
+}
+
+.content {
 	display: flex;
-	flex-direction: column;
-	align-items: center
-	width: 49.5%
+	justify-content: space-evenly;
+	margin-bottom: 25px;
+	padding-bottom: 25px;
+	border-bottom: 1px solid black;
+}
+
+.content-triple {
+	
+	width: 25%;
+	
 }
 /* ***************************main************************** */
+.contact {
+	margin: 25px 65px;
+
+}
+
+.address {
+	margin-top: 16px;
+	display: flex;
+	align-items: flex-start;
+
+}
+
+footer {
+	text-align: center;
+	margin: 20px 0;
+	padding: 25px 0;
+}
 
