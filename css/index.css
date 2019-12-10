@@ -36,22 +36,22 @@
 }
 /*  */
 .firstcontain {
-    margin: 0 auto;
     display: flex;
-    flex-direction: column;
+    margin: 0 auto;
+    margin-left: 25px;
     align-content: center;
-    width: 400px;
+    flex-direction: column;
+    width: 200px;
+    font-size: 30px;
 }
 .firstcontain button {
     width: 200px; 
-    display: inline-block;
+    margin: 0 auto;
 }
 .imagecontain {
-    margin: 0 auto;
     display: flex;
-    justify-content: center;
-    align-content: space-between;
-    width: 600px;
+    justify-content: flex-end;
+    margin-top: -180px;
 }
 .middle-image {
     display: flex;
@@ -126,6 +126,19 @@
     justify-content: center;
     align-content: center;
     }
+    .firstcontain {
+        display: flex;
+        margin: 0 auto;
+        align-content: center;
+        flex-direction: column;
+        width: 200px;
+        font-size: 30px;
+    }
+    .firstcontain button {
+        width: 200px; 
+        margin: 0 auto;
+        
+    }
     .contain-two {
         width: 600px;
         margin: 0 auto;
@@ -137,7 +150,11 @@
     .imagecontain {
         margin: 0 auto;
         display: flex;
-        width: 800px;
+        justify-content: end;
+        align-content: flex-end;
+        width: 300px;
+        border: 2px solid green;
+        display: none;
     }
     .footnote h5 {
         display: inline-block;
@@ -179,6 +196,15 @@
         flex-direction: column;
         justify-content: left;
         align-content: flex-start;
+    }
+    .imagecontain {
+        margin: 0 auto;
+        display: flex;
+        justify-content: end;
+        align-content: flex-end;
+        width: 300px;
+        border: 2px solid green;
+        display: none;
     }
     .footnote h5 {
         display: inline-block;
