@@ -31,8 +31,7 @@
   align-items: center;
   justify-content: space-evenly;
   color: gray;
-  text-decoration: none;
-  
+  text-decoration: none; 
 }
 .firstcontain {
     margin: 0 auto;
@@ -54,8 +53,27 @@
     margin:0 auto;
 }
 .contain-two p {
-    display: inline-block;
-    margin: 0 auto;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+}
+.footnote h5 {
+    margin: 5px;
+}
+.footnote p {
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+}
+.footaddress p {
+    margin: 5px;
+    
+}
+.CRights {
+    text-align: center;
 }
 @media (max-width: 800px) {
     .wholecontain {
