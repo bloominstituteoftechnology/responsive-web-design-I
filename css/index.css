@@ -65,11 +65,29 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Your code starts here! */
+*{
+	box-sizing:border-box;
+	padding:0;
+	margin:0;
+	max-width:100%;
+  }
+  html{
+	font-size:62.5%;
+  }
+  
 .container {
 	width: 1000px;
 	box-sizing: border-box;
 	margin: 0 auto;
 }
+
+@media (max-width: 800px) {
+	.container {
+		width: 800px;
+    box-sizing: border-box;
+    margin: 0 auto;
+
+	}
 /* ***************************header************************** */
 header {
 	display: flex;
@@ -81,7 +99,7 @@ header {
 	header {
 		display: flex;
 		flex-direction: column-reverse;
-		margin-left: 0;
+		margin: 45px 0;
 
 	}
 }
@@ -136,8 +154,8 @@ header nav a {
 	.banner-text#b-text {
 		display: flex;
     flex-direction: column;
-    align-items: center;
-    margin: 0 180px 0 0;
+	align-items: center;
+    margin:0 100px 0 0;
 	}
 }
 
@@ -184,7 +202,9 @@ header nav a {
 }
 
 .pic-content {
-	margin: 30px 30px 30px 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 @media (max-width: 800px) {
