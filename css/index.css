@@ -1,3 +1,429 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+nav .links{
+	
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	
+}
+
+.links a {
+	color:;
+}
+
+
+
+/* .head {
+	display:flex;
+	align-items: center;
+	justify-content: space-around;
+	
+} */
+
+#flex-column1 {
+	display:flex;
+	align-items: center;
+	flex-direction: row;
+	justify-content: space-evenly;
+	margin: 8%;
+}
+
+h1{
+	text-transform: uppercase;
+	
+
+}
+.headtitle{
+display: flex;
+	font-size:75px;
+	text-align: center;
+	align-items: center;
+	flex-direction: column;
+	
+	
+	
+}
+
+.headtitle button{
+	text-align: center;
+	width: 70%;
+	border: 1px solid grey;
+	background-color: white;
+	font-size: 20px;
+	padding: 3%;
+}
+
+
+
+
+	
+	
+	
+
+.section1 {
+	display:flex;
+	flex-direction: row;
+	margin: 3%;
+}
+
+.features{
+	
+	width:50%;
+	
+	font-size: 20px;
+	
+
+
+}
+
+.about {
+	
+	width:50%;
+		font-size: 20px;
+	
+}
+
+#middleimg{
+	display: flex;
+	 justify-content: space-evenly;
+}
+
+.middle-img{
+	width: 80%;
+	
+}
+
+.section2{
+	display:flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	margin: 3%;
+}
+
+.services {
+	
+	width:32%;
+	
+	font-size: 20px
+}
+
+
+.product{
+	
+	width:32%;
+	
+	font-size: 20px
+}
+
+.vision{
+	
+	width:32%;
+	
+	font-size: 20px
+}
+
+.address {
+	display: flex;
+	font-size: 20px;
+	margin-top: 3%;
+}
+
+.address h3 {
+	font-style: bold;
+}
+
+footer{
+	text-align: center;
+}
+
+/* services css begins*/
+
+#header-img{
+	display: flex;
+	justify-content: space-around;
+}
+
+.services-header-img {
+	width: 90%;
+	margin: 3%;
+}
+
+
+#services-section1{
+	display: flex;
+	flex-direction:column;
+	margin: 2%;
+}
+
+#services-section1 h2{
+	font-size: 20px;
+}
+
+#services-section1 p{
+	font-size: 20px
+}
+
+#services-section2 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.row1{
+	display: flex;
+	flex-direction: row;
+	margin: 2%;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.row2{
+	display: flex;
+	flex-direction: row;
+	margin: 2%;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.row3{
+	display: flex;
+	flex-direction: row;
+	margin: 2%;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.design{
+	border: 1px solid black;
+	background-color: lightgrey;
+	width: 40%;
+	padding: 2%;
+	
+}
+
+.ux-ui{
+	border: 1px solid black;
+	background-color: lightgrey;
+	width: 40%;
+	padding: 2%;
+}
+
+.marketing{
+	border: 1px solid black;
+	background-color: lightgrey;
+	width:40%;
+	padding: 2%;
+
+}
+
+.web{
+	border: 1px solid black;
+	background-color: lightgrey;
+	width:40%;
+	padding: 2%;
+}
+
+.ios{
+	border: 1px solid black;
+	background-color: lightgrey;
+	width:40%;
+	padding: 2%;
+}
+
+.android{
+	border: 1px solid black;
+	background-color: lightgrey;
+	width:40%;
+	padding: 2%;
+}
+
+button {
+	padding: 2%;
+	width: 25%;
+	margin: 3%;
+	border: 1px solid black;
+	background-color: white;
+}
+
+hr{
+	width:90%
+}
+
+#services-section3{
+	display: flex;
+}
+
+#services-section3 img{
+	margin: 3%
+}
+
+.facts{
+	display:flex;
+	flex-direction: column;
+	margin: 3%;
+}
+
+.facts h1 p{
+	padding: 2%;
+}
+
+@media (max-width: 800px){
+    nav .links{
+	
+        display: flex;
+        align-items: center;
+        
+       
+    }
+
+    
+    #flex-column1 img{
+        display: flex;
+        visibility: collapse;
+        height: 0%;
+        width: 0%;
+    }
+
+    #flex-column1 .headtitle {
+        justify-content: space-around;
+        justify-items: center;
+
+    }
+
+}
+
+@media (max-width: 500px){
+    nav {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    nav .links{
+	
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+        width: 100%;
+       
+
+    }
+
+    
+    
+
+    nav .links a {
+       
+        /* flex-wrap:nowrap; */
+        text-align: center;
+        border-bottom: 1px solid grey;
+        border-top: 1px solid grey;
+        padding-top: 4%;
+        padding-bottom: 4%;
+        width:100%;
+    }
+
+    /* .links .img-tag{
+        flex-direction: column-reverse;
+    } */
+
+   
+
+    
+
+    #flex-column1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #flex-column1 img{
+        visibility: hidden;
+    }
+
+    .section1 {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .section1 div{
+        width:100%;
+        margin-bottom: 4%;
+        justify-items: center;
+    }
+
+    .section2{
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-evenly;
+        align-content: center; */
+    }
+
+    .section2 div {
+        align-content: center;
+        width: auto;
+        margin-bottom: 4%;
+    }
+}
