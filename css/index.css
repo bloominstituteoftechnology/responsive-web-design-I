@@ -74,7 +74,8 @@ body {
   flex-direction: column;
   align-items: center;	
   padding: 2% 2%;
-  margin: 0 5%;
+  margin: 0 auto;
+  width: 1024px;
 }
 
 /* Beginning of header section */
@@ -105,7 +106,6 @@ a{
 /*Beginning of top 'slogan' section*/
 
 .topSection {
-  border: 1px solid red;
   display: flex;
   margin-bottom: 3%;
   width:100%;
@@ -113,7 +113,6 @@ a{
 }
 
 .boxSlogan {
-  border: 1px solid red;
   display: flex;
   align-self: center;	
   flex-direction: column;
@@ -142,6 +141,7 @@ a{
 .sloganImg{
   padding-left: 5%;
 }
+
 
 /*Mid section begins */
 .middle-img {
@@ -195,19 +195,16 @@ copyright {
 
 
 @media (max-width: 768px) {
-  body {
-    margin: auto;
-  }
+
   .container {
     border: none;
-  }
+width: 100%;  
+}
   .sloganImg {
     display: none;
-
   }
 
   header {
-    border: 1px solid red;
     width: 100%;
     display: flex;
     flex-direction: column-reverse;
@@ -217,7 +214,7 @@ copyright {
 
   .navTop {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
   }
   .topSection {
     display: flex;
@@ -227,6 +224,9 @@ copyright {
 }
 
 @media(max-width: 400px){
+  .container{
+    width:100%;    
+  }
   .sloganTop {
     font-size: 65px;
   }

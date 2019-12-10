@@ -64,16 +64,13 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
-body {
-	margin: 0 2%;
-}
+
 .container {
 	display:flex;
 	flex-direction: column;
-	flex-wrap:nowrap;
-	width:90%;
-	padding: 2% 2%;
-	margin: 0 5%;
+	width: 1024px;
+	margin: 0 auto;
+	padding: 2%;
 }
 /*Head starts here */
 
@@ -88,7 +85,7 @@ header {
 	margin: 5px 3%;
 	text-decoration: none;
 	color: lightgray;
-  padding: 1% 0;
+  	padding: 1% 0;
 }
 
 
@@ -100,7 +97,7 @@ header {
 }
 
 .services-header-img {
-	width: 100%;
+	width: fit-content;
 	height: 225px;
 
 }
@@ -144,7 +141,7 @@ h1 {
 	font-size: 12px;
 	background-color: white;
 	border-radius: 5px;
-	width: 100%;
+	width: 35%;
 	
 }
 /* Bottom content */
@@ -158,7 +155,10 @@ h1 {
 	display:flex;
 	flex-direction: column;
 	line-height: 22px;
-	
+}
+
+.someFactsBox div {
+	width: 85%;
 }
 
 
@@ -186,12 +186,14 @@ height: fit-content;
 @media(max-width: 768px) {
 	.container {
 		border: none;
+		width: 100%;
+		padding: 35px;
 	  }
 
 	  .serviceHeader {
 		  display: none;
-
 	  }
+	  
 
 
 	.mainContent{	
@@ -205,12 +207,14 @@ height: fit-content;
 	display: none;
 
 
-
 		}
 }
 
 @media(max-width: 400px){
+	.container {
 
+	width: 100%;	
+}
 	header{
 		display: flex;
 		flex-direction: column-reverse;
@@ -221,14 +225,19 @@ height: fit-content;
 		display: flex;
 		flex-direction: column;
 		margin-top: 10px;
-		font-size: 30px;
 	  } 
 	  .topNav a {
 		padding:10px 0%;
-		width:100%;
 		border-bottom: 1px solid lightgray;
 		text-align: center;
+		font-size: 30px;
+
 	  }
+	  .learn {
+		  width: 100%;
+	  }
+
+
 
 
 }
