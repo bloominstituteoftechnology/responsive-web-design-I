@@ -1,3 +1,367 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+	box-sizing: border-box;
+	padding: 5px;
+}
+
+html, body {
+    height: 100%;
+	font-family: 'Titillium Web', sans-serif;
+	box-sizing: border-box;
+	padding: 5px;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+	margin-bottom: 15px;
+	box-sizing: border-box;
+	padding: 5px;
+}
+
+/* Your code starts here! */
+body {
+	width: 1000;
+	margin: 0 auto;
+}
+.logo {
+	display: inline-block;
+	width: 10%;
+    margin-left: 80%;
+    order: 0;
+}
+
+nav 
+    {
+    width: 50%;
+    height: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+    color: gray;
+    }
+    #Services {
+        order: 1;
+        width: 20%;
+        padding-bottom: 3%; 
+    }
+    #Product {
+        width: 20%;
+    }
+    #Vision {
+        width: 20%;
+    }
+    #Features {
+        width: 20%;
+    }
+    #About {
+        width: 20%;
+    }
+    #Contact {   
+       width: 20%;
+    }
+
+}
+
+
+.header {
+   display: inline-block;
+}
+
+.middle-img {
+	display: block;
+	margin-left: 10%;
+}
+
+button {
+  border-color: solid black 2px;
+  background-color: white;
+  width: 150px;
+  margin-left: 20%;
+  display: block;
+}
+
+h1 {
+	font-size: 100px;
+	padding: 5%;
+	width: 50%;
+	height: 90%;
+	display: inline-block;
+	text-align: center;
+}
+
+.col1 {
+	margin-left: 10%;
+	width: 30%;
+	display: inline-block;
+	margin-top: 5%;
+}
+
+.col2 {
+	margin-left: 2%;
+	width: 30%;
+	display: inline-block;
+	margin-bottom: 5%;
+}
+
+.col3 {
+	margin-left: 10%;
+	width: 17%;
+	display: inline-block;
+	margin-bottom: 5%;
+}
+
+.col4 {
+	margin-left: 2%;
+	width: 17%;
+	display: inline-block;
+	margin-bottom: 5%;
+}
+
+.col5 {
+	margin-left: 2%;
+	width: 17%;
+	display: inline-block;
+	margin-bottom: 5%;
+}
+
+#copyright {
+	text-align: center;
+}
+
+/*responsiveness goes here */
+
+@media screen and (max-width: 500px) {
+    .logo {
+        width: 30%;
+        display: flex;
+        margin-left: 35%;
+    }
+    nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+    font-size: 2em;
+    height: 40%;
+    }
+        #Product {
+        width: 20%;
+        margin-bottom: 5%;
+        border-bottom: 2px solid black;
+        }
+        #Vision {
+        width: 20%;
+        border-bottom: 2px solid black;
+        }
+        #Features {
+        width: 20%;
+        border-bottom: 2px solid black;
+        }
+        #About {
+        width: 20%;
+        border-bottom: 2px solid black;
+        }
+        #Contact {   
+        width: 20%;
+        border-bottom: 2px solid black;
+        }
+    h1 {
+        display: flex;
+        margin: 10%;
+        height: 30%;
+        width: 20%;
+        font-size: 5em;
+    }
+    .header {
+        display: none;
+    }
+    button {
+        display: flex;
+        margin-left: 35%;
+        padding-left: 6%;
+        margin-bottom: 5%;
+    }
+    .topcolumn {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+    .col1 {
+        margin-left: 5%;
+        margin-bottom: 2s%;
+        width: 80%;
+    }
+    .col2 {
+        margin-left: 5%;
+        width: 80%;
+    }
+    .middle-img {
+        width: 90%;
+        margin-left: 5%;
+    }
+    .bottomcolumn {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+    .col3 {        
+        margin-left: 5%;
+        margin-bottom: 2s%;
+        width: 80%;
+    }
+    .col4 {
+        margin-left: 5%;
+        width: 80%;
+    }
+    .col5 {
+        margin-left: 5%;
+        width: 80%;
+    }
+    footer {
+        margin-left: 5%;
+    }
+}
+    @media screen and (max-width: 800px) {
+        .logo {
+            display: flex;
+            align-content: center;
+            margin: 5% 35%;
+            height: 5%;
+            width: 25%;
+        }
+        
+        nav 
+            {
+            width: 100%;
+            height: 5%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            flex-direction: row;
+            color: gray;
+            }
+        
+        .header {
+            display: none;
+        }
+
+
+        .middle-img {
+            display: block;
+            width: 96%;
+            margin-left: 2%;
+            margin-right: 2%;
+            }
+            
+        button {
+            border-color: solid black 2px;
+            background-color: white;
+            width: 150px;
+            margin-left: 40%;
+            display: block;
+            }
+            
+        h1 {
+            font-size: 4em;
+            padding: 5%;
+            width: 50%;
+            height: 30%;
+            text-align: center;
+            margin-left: 25%;
+            }
+            
+        .col1 {
+            margin-left: 2%;
+            width: 45%;
+            display: inline-block;
+            margin-top: 5%;
+            }
+            
+        .col2 {
+             margin-left: 5%;
+             width: 45%;
+             display: inline-block;
+             margin-bottom: 5%;
+            }
+            
+        .col3 {
+             margin-left: 2%;
+             width: 30%;
+             display: inline-block;
+             margin-bottom: 5%;
+             margin-top: 5%;
+            }
+            
+        .col4 {
+             margin-left: 2%;
+             width: 30%;
+             display: inline-block;
+             margin-bottom: 5%;
+            }
+            
+        .col5 {
+             margin-left: 2%;
+             width: 30%;
+             display: inline-block;
+             margin-bottom: 5%;
+            }
+            
+            #copyright {
+                text-align: center;
+            }
+    }
