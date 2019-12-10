@@ -1,3 +1,477 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	max-width: 100%;
+	border: 3px solid black; 
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+body {
+    max-width: 100%;
+}
+.navigation {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 30px;
+	max-width: 100%;
+	padding-left: 20px;
+}
+.navigation section {
+	position: relative;
+	bottom: 10px;
+	max-width: 100%;
+	color:black;
+}
+header {
+	display:flex;
+	justify-content: center;
+	padding-top: 50px;
+}
+
+h1{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	font-size: 75px;
+	position: relative;
+	left: 100px;
+	top: 40px;
+}
+button {
+	position: relative;
+	height: 35px;
+	width: 150px;
+	top: 280px;
+	right: 130px;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	padding-top: 5px;
+	color: black;
+	background-color:white;
+}
+header section {
+	display: flex;
+	justify-content: flex-end;
+	margin-right: 100px;
+	margin-bottom: 50px;
+	padding-bottom: 0px;
+	max-width: 100%;
+	position: relative;
+	bottom: 20px;
+	left: 50px;
+}
+.top-content {
+	display: flex;
+	justify-content: center;
+	max-width: 100%;
+	padding-bottom: 100px;
+	padding-top: 30px;
+	border-top: 1px solid black;
+	padding-left: 20px;
+    width: 100%;
+}
+.bottom-content{
+	display: flex;
+	justify-content: center;
+	padding-top: 50px;
+    max-width: 100%;
+	padding-left: 20px;
+}
+.features {
+
+}
+.about {
+
+}
+.services {
+
+}
+.product {
+
+}
+.vision {
+
+}
+.contact {
+	border-top: 1px solid black;
+	margin-top: 10px;
+	padding-top: 30px;
+	max-width: 100%;
+	padding-left: 20px;
+	padding-bottom: 20px;
+	line-height: 20px;
+    font-size: 14px;
+    width: 100%;
+}
+.contact h2 {
+	max-width: 100%;
+	font-size: 16px;
+}
+.contact section {
+	display:flex;
+	align-content: column;
+	padding-bottom: 4px;
+	line-height: 15px;
+}
+footer {
+	display:flex;
+	justify-content: center;
+	max-width: 100%;
+	padding-bottom: 100px;
+	padding-top: 50px;
+}
+.middle-img {
+	position: relative;
+	right: 220px;
+	top: 50px;
+	transform: scale(2)
+}
+
+
+/* MEDIA QEURIES BELOW */
+
+
+
+@media (max-width: 800px) {
+    * {
+        max-width: 800px;
+        width: 95%;
+    }
+    h1 {
+        position: relative; 
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        font-size: 50px;
+        top: 100px;
+    }
+    header {
+        position: relative;
+        bottom: 50px;
+        right: 0px;
+    }
+    header section {
+        display: none;
+    }
+    header button {
+        position: relative;
+        right: 235px;
+        border: 2px solid black;
+    }
+    .navigation {
+        position: relative;
+        bottom: 15px;
+        top: 60px;
+        left: 100px;
+    }
+    .navigation section {
+        position: relative;
+        bottom: 70px;
+        right: 350px;
+        transform: scale(2);
+    }
+    .navigation a {
+        color: gray;
+        display: flex;
+        flex-direction: space-between;
+    }
+    .top-content {
+        position: relative;
+        top: 160px;
+    }
+    .bottom-content {
+        position: relative;
+        top: 150px;
+        right: 160px;
+        width: 100%;
+    }
+    .contact {
+        position: relative;
+        top: 190px;
+        width: 100%;
+    }
+    footer {
+        position: relative;
+        top: 160px;
+    }
+    .middle-img {
+        position: relative; 
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        margin-left: 50px;
+        width: 100%;
+    }
+    .serv1 {
+        position: relative; 
+    }
+    .prod1 {
+        position: relative; 
+    }
+    .vis1 {
+        position: relative; 
+    }
+    .feat1 {
+        position: relative; 
+    }
+    .about1 {
+        position: relative; 
+    }
+    .cont1 {
+        position: relative; 
+    }
+    #fix1 {
+        position: relative;
+
+    }
+    #fix2 {
+        position: relative;
+        left: 50px;
+    }
+    #fix3 {
+        position: relative;
+        right: 8px;
+        bottom: 20px;
+    }
+    #fix4 {
+        position: relative;
+        left: 90px;
+        bottom: 20px;
+    }
+    #fix5 {
+        position: relative;
+        left: 180px;
+        bottom: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    h1 {
+        position: relative; 
+        right: 500px;
+    }
+    header {
+        position: relative; 
+        top: 0px;
+        right: 20px;
+    }
+    header button {
+        position: relative;
+        right: 110px;
+    }
+    .middle-img {
+        position: relative; 
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        width: 250px;
+        padding-left: 50px;
+        left: 10px;
+    }
+    .top-content {
+        display: flex;
+        flex-direction: column;
+        top: 230px;
+    }
+    .bottom-content {
+        display: flex;
+        flex-direction: column; 
+    }
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        position: relative;
+        padding-right: 237px;
+        max-width: 79%;
+        top: 100px;
+        margin-left: 1px;
+    }
+    .navigation section {
+        display: flex;
+        position: relative; 
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        margin-left: 440px;
+        bottom: 520px;
+        right: 150px;
+    }
+    .navigation a {
+        border-bottom: 1px solid black;
+        line-height: 75px;
+        opacity: .5;
+        color: gray;
+        position: relative;
+        left: 65px;
+        width: 505px;
+    }
+    .serv1 {
+        display: flex;
+        position: relative;
+        width: 600px;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        border-top: 1px solid black;
+        left: 18px;
+    }
+    .prod1 {
+        display: flex;
+        position: relative;
+        width: 600px;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        left: 18px;
+    }
+    .vis1 {
+        display: flex;
+        position: relative;
+        width: 600px;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        left: 18px;
+    }
+    .feat1 {
+        display: flex;
+        position: relative;
+        width: 600px;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        left: 18px;
+    }
+    .about1 {
+        display: flex;
+        position: relative;
+        width: 600px;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        left: 18px;
+    }
+    .cont1 {
+        display: flex;
+        position: relative;
+        width: 600px;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        left: 18px;
+    }
+    footer {
+        display: flex;
+        position: relative;
+        top: 200px;
+        left: 50px;
+    }
+    #fix1 {
+        position: relative;
+        left: 50px;
+    }
+    #fix2 {
+        position: relative;
+    }
+    #fix3 {
+        position: relative;
+        left: 210px;
+        top: 15px;
+
+    }
+    #fix4 {
+        position: relative;
+        left: 210px;
+        top: 15px;
+    }
+    #fix5 {
+        position: relative;
+        left: 210px;
+        top: 15px;
+    }
+    #fix6 {
+        position: relative;
+        left: 50px;
+    }
+    .contact {
+        position: relative;
+    }
+}
