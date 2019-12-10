@@ -1,3 +1,163 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+*{
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+    max-width:100%;
+  }
 
+/* Body conainer */
+body {
+    width: 80%;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/** header *****/
+
+nav, .logo-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+#header-image{
+    width: 25%;
+}
+
+/** Section One*********/
+.section-one {
+    display: flex;
+    justify-content: space-around;
+
+    padding: 2%;
+}
+
+/** Mid Page Accent*********/
+.mid-page-accent {
+    display: flex;
+    width: 85%;
+    align-items: center;
+    padding: 2%;
+}
+
+/** Section Two********/
+
+.container-two {
+    display: flex;
+    justify-content: space-around;
+    padding: 2%;
+}
+
+
+/*** 800px and 500px *****/
+
+@media (max-width: 800px){
+    /* Body conainer */
+    body {
+        width: 90%;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+
+    /** header *****/
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row-reverse;
+        box-flex: wrap;
+
+    }
+
+    .logo-nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        box-flex: wrap;
+    }
+    
+    .words {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #header-image {
+        width: 25%;
+    }
+
+    /** Section One*********/
+    .section-one {
+        display: flex;
+        justify-content: space-around;
+        padding: 2%;
+    }
+
+    /** Mid Page Accent*********/
+    .mid-page-accent {
+        display: flex;
+        width: 85%;
+        align-items: center;
+        padding 2%;
+    }
+
+    /** Section Two********/
+
+    .container-two {
+        display: flex;
+        justify-content: space-around;
+        padding: 2%;
+    }
+}
+
+@media (max-width: 500px) {
+/* Body conainer */
+    body {
+        width: 80%;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+
+    /** header *****/
+
+    nav, .logo-nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    /** Section One*********/
+    .section-one {
+        display: flex;
+        justify-content: space-around;
+        padding: 2%;
+    }
+
+    /** Mid Page Accent*********/
+    .mid-page-accent {
+        display: flex;
+        width: 85%;
+        align-items: center;
+        padding 2%;
+    }
+
+    /** Section Two********/
+
+    .container-two {
+        display: flex;
+        justify-content: space-around;
+        padding: 2%;
+    }
+}
