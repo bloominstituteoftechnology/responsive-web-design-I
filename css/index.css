@@ -101,9 +101,7 @@
 .footnote p {
     display: block;
 }
-.footaddress p {
-    
-}
+
 /*  */
 .CRights {
     text-align: center;
@@ -129,8 +127,10 @@
     .firstcontain {
         display: flex;
         margin: 0 auto;
+        text-align: center;
         align-content: center;
-        flex-direction: column;
+        /* flex-direction: column;
+        justify-items: center; */
         width: 200px;
         font-size: 30px;
     }
@@ -206,6 +206,19 @@
         border: 2px solid green;
         display: none;
     }
+    .contain-three {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .contain-three h3 {
+        display: flex;
+        flex-direction: row;
+
+      }
+      .contain-three p {
+        display: flex;
+      }
     .footnote h5 {
         display: inline-block;
         
