@@ -99,6 +99,16 @@ header{
 	cursor: pointer;
 }
 
+.navbar ul li:hover{
+    background: gold;
+    color: red;
+    border: green;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    padding: 7px 10px;
+}
+
+
 .logo_area{
 	padding-top: 20px;
 	width: 30%;
@@ -122,9 +132,26 @@ header{
 }
 
 .get_started{
-	width: 50%;
+    width: 50%;
+    
 }
 
+.start_btn_area .start_btn {
+    padding: 9px 10px;
+    background-color: grey;
+    color: white;
+    border-radius: 10px;
+
+}
+
+.start_btn_area .start_btn:hover {
+    border: 2px solid golg;
+    padding: 11px 11px;
+    background-color: red;
+    color: green;
+    
+
+}
 .banner_text{
     text-align: center;
     font-size: 4rem;
@@ -139,7 +166,7 @@ header{
 }
 
 .start_btn{
-    font-size: 1rem;
+      font-size: 1rem;
     width: 38%;
     height: 40px;
     background: none;
@@ -186,6 +213,10 @@ header{
     height: 300px;
 }
 
+.content_img:hover {
+
+}
+
 .content2{
 	padding: 50px 0;
 	display: flex;
@@ -203,7 +234,9 @@ header{
 footer{
 	padding: 50px 0;
 }
-
+footer .contact_area {
+    padding: 20px 150px;
+}
 .contact_title{
     font-family: fantasy;
     font-style: italic;
@@ -220,7 +253,7 @@ footer{
 
 
 /* Responsive web design*/
-/*  @media screen and (max-width: 900px) {
+@media screen and (max-width: 900px) {
     
     .main_container {
         width: 80%;
@@ -260,8 +293,6 @@ footer{
         width: 100%;
         margin: 0;
         margin-bottom: 5rem;
-
-
     }
 
     .features, .about {
@@ -289,7 +320,7 @@ footer{
     .copyirght_area{
         text-align: inherit;
     }
-*/
+
 
 /*Responsive design for mobile first*/
 
@@ -305,12 +336,6 @@ footer{
         }
     
 
-    .main_container header navbar {
-
-
-
-        }
-
     .container header nav a{
 
         margin-bottom: 20px;
@@ -325,13 +350,6 @@ footer{
     
     }
     
-
-.main_container header navbar {
-
-
-
-}
-
 .container header nav a{
 
     margin-bottom: 20px;
@@ -344,13 +362,7 @@ footer{
     .main_container {
         background: gold;
     
-}
-
-.main_container header navbar {
- 
-
-
-}
+    }
 
 .container header nav a{
 
