@@ -142,44 +142,76 @@ h5 {
 }
 /* Your code starts here! */
 @import url("https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz");
-
+@media (max-width: 800px) {
+  body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+}
 .container {
-    width: 800px;
-    margin: 0 auto;
+  width: 800px;
+  margin: 0 auto;
+}
+.contain-service {
+  width: 800px;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  .container {
+    width: 500px;
   }
   .contain-service {
-    width: 800px;
-    margin: 0 auto;
+    width: 500px;
   }
-  
+}
+nav {
+  margin: 10px;
+  text-align: center;
+  background: white;
+  padding-bottom: 5px;
+  z-index: 1;
+  width: 800px;
+}
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+nav a {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  color: black;
+  text-decoration: none;
+  padding: 4px 20px;
+  text-align: center;
+  border-radius: 50px;
+  transition: background 1s ease, color 0.5s ease, border-radius 0.5s ease;
+}
+nav a:hover {
+  color: white;
+  background: black;
+  border-radius: 0;
+  box-shadow: 0 8px 6px -6px gray;
+  cursor: pointer;
+}
+@media (max-width: 800px) {
   nav {
-    margin: 10px;
-    text-align: center;
-    background: white;
-    padding-bottom: 5px;
-    z-index: 1;
-    width: 800px;
-  }
-  nav ul {
+    margin-top: 110px;
     display: flex;
-    justify-content: space-evenly;
+    text-align: center;
+    width: 800px;
   }
   nav a {
-    font-family: "Yanone Kaffeesatz", sans-serif;
-    color: black;
-    text-decoration: none;
-    padding: 4px 20px;
-    text-align: center;
-    border-radius: 50px;
-    transition: background 1s ease, color 0.5s ease, border-radius 0.5s ease;
+    padding: 5px 37px;
   }
   nav a:hover {
-    color: white;
-    background: black;
-    border-radius: 0;
-    box-shadow: 0 8px 6px -6px gray;
-    cursor: pointer;
+    color: inherit;
+    background: inherit;
+    box-shadow: 0 0px 0px 0px transparent;
   }
+}
 /* mobile menu */
 @media (max-width: 500px) {
   nav {
@@ -205,132 +237,12 @@ h5 {
     border-top: 1px solid black;
   }
 }
-
-
-@media (max-width: 500px) {
-    body {
-      overflow-y: scroll;
-      overflow-x: hidden;
-    }
-    .container {
-      width: 500px;
-    }
-    .contain-service {
-      width: 500px;
-    }
-  }
-
-  @media (max-width: 500px) {
-}
-header {
-  text-align: center;
-  padding-top: 60px;
-  padding-bottom: 40px;
-  display: flex;
-  justify-content: space-evenly;
-}
-header img {
-  width: 300px;
-  height: 300px;
-}
-
-
-
-
-
-@media (max-width: 500px) {
-
-
-    
-    media (max-width: 500px) {
-        .box-rows {
-          display: inline-block;
-          width: 500px;
-        }
-        .boxtop {
-          width: 500px;
-        }
-        .boxbottom {
-          width: 500px;
-          padding: 30px;
-        }
-      }
-
-
-@media (max-width: 800px) {
-    #contact {
-      padding-left: 50px;
-    }
-  }
-  
-@media (max-width: 500px) {
-}
-.card-rows {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-@media (max-width: 500px) {
-    .card-rows {
-      width: 500px;
-      display: inline-block;
-    }
-    .cards {
-      width: 470px;
-    }
-    .cards a {
-      float: right;
-      font-size: 20px;
-    }
-  }
-/* Media query at 500PX */
-@media (max-width: 500px) {
-    .facts {
-      width: 500px;
-      display: inline-block;
-    }
-    .facts-rows {
-      width: 470px;
-    }
-    .facts img {
-      visibility: hidden;
-    }
-  }
-
 .logo {
   vertical-align: text-bottom;
   width: 150px;
   padding-left: 10px;
 }
-
-
-/* iPad responsive design*/
-
-@media (max-width: 800px) {
-    body {
-      overflow-y: scroll;
-      overflow-x: hidden;
-    }
-  }
-  @media (max-width: 800px) {
-    nav {
-      margin-top: 110px;
-      display: flex;
-      text-align: center;
-      width: 800px;
-    }
-    nav a {
-      padding: 5px 37px;
-    }
-    nav a:hover {
-      color: inherit;
-      background: inherit;
-      box-shadow: 0 0px 0px 0px transparent;
-    }
-  }
-  
-/* logo visibility in tablets */
+/* logo visibility */
 @media (max-width: 800px) {
     .logo {
       position: relative;
@@ -339,7 +251,19 @@ header img {
       width: 195px;
     }
   }
-
+  @media (max-width: 500px) {
+  }
+  header {
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  header img {
+    width: 300px;
+    height: 300px;
+  }
   /* circle image */
   @media (max-width: 800px) {
     header {
@@ -462,9 +386,19 @@ header H1 A:hover {
     padding: 10px;
   }
 }
-
-
-
+@media (max-width: 500px) {
+  .box-rows {
+    display: inline-block;
+    width: 500px;
+  }
+  .boxtop {
+    width: 500px;
+  }
+  .boxbottom {
+    width: 500px;
+    padding: 30px;
+  }
+}
 hr {
   border-top: 1px solid black;
 }
@@ -477,7 +411,18 @@ hr {
   padding-top: 30px;
   margin-bottom: 80px;
 }
-
+@media (max-width: 800px) {
+  #contact {
+    padding-left: 50px;
+  }
+}
+@media (max-width: 500px) {
+}
+.card-rows {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 .cards {
   flex: 0 45%;
   margin: 10px;
@@ -501,8 +446,19 @@ hr {
 .cards p {
   padding: 10px 10px;
 }
-
-
+@media (max-width: 500px) {
+  .card-rows {
+    width: 500px;
+    display: inline-block;
+  }
+  .cards {
+    width: 470px;
+  }
+  .cards a {
+    float: right;
+    font-size: 20px;
+  }
+}
 .facts {
   margin-top: 20px;
   display: flex;
@@ -515,9 +471,19 @@ hr {
 .facts-rows {
   margin: 20px;
 }
-
-
-
+/* Media query at 500PX */
+@media (max-width: 500px) {
+  .facts {
+    width: 500px;
+    display: inline-block;
+  }
+  .facts-rows {
+    width: 470px;
+  }
+  .facts img {
+    visibility: hidden;
+  }
+}
 footer {
   text-align: center;
 }
