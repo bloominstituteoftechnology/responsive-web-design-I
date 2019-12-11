@@ -1,3 +1,312 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+* {
+    box-sizing: content-box;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    
+}
+.wholecontain {
+    
+    width: 800px; 
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+/*  */
+nav {
+    display:flex;
+    max-width: 800px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.page-container {
+    width: 600px; 
+    margin: 0 auto;
+    display: flex;
+    padding: 2%;
+    }
+.page-container a {
+    color: gray;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 600px;
+  text-decoration: none; 
+}
+/*  */
+.firstcontain {
+    display: flex;
+    margin: 0 auto;
+    margin-left: 120px;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 200px;
+    font-size: 30px;
+}
+.firstcontain button {
+    width: 200px; 
+    margin: 0 auto;
+    width: 150px;
+}
+.imagecontain {
+    
+    display: flex;
+    justify-content: flex-end;
+    align-content: flex-end;
+    margin-top: -170px;
+    margin-left: 450px;
+    width: 300px;
+}
+.middle-image {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    align-content: center;
+}
+/*  */
+/* .contain-two {
+    display: inline-block;
+    
+    column-count: 3;
+  }
+  .contain-two h3 {
+    display: inline-block;
+    margin: 0;
+  }
+  .contain-two p {
+    display: flex;
+    flex-direction: column;
 
+  } */
+/*  */
+.contain-two {
+    display:flex;
+    width: 100%;
+}
+.contain-three {
+  display: inline-block;
+  margin: 0px; 
+  column-count: 3;
+}
+.contain-three h3 {
+  display: inline-block;
+  margin: 0;
+  width: 800px;
+}
+.contain-three p {
+  display: inline-block;
+  margin: 0 auto;
+}
+/*  */
+.footnote {
+    width: 800px;
+    display: inline-block;
+}
+.footnote h5 {
+    
+    display: inline-block;
+}
+.footnote p {
+    display: block;
+}
 
+/*  */
+.CRights {
+    text-align: center;
+}
+/*  */
+@media (max-width: 800px) {
+    .wholecontain {
+    width: 500px; 
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    }
+    nav  {
+        width: 500px;
+        display: flex;
+        flex-direction:column;
+        flex-wrap: nowrap;
+        margin: 2% auto;
+    }
+    .page-container {
+    width: 600px; 
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    }
+    .page-container a {
+    width: 600px; 
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    }
+    .firstcontain {
+        display: flex;
+        margin: 0 auto;
+        text-align: center;
+        align-content: center;
+        /* flex-direction: column;
+        justify-items: center; */
+        width: 200px;
+        font-size: 30px;
+    }
+    .firstcontain button {
+        width: 200px; 
+        margin: 0 auto;
+        
+    }
+    .contain-two {
+        width: 600px;
+        margin: 0 auto;
+        display: flex;
+        
+    }
+    .innercontain-one {
+        display: inline-block;
+    }
+    .innercontain-two {
+        display: inline;
+    }
+    
+    .imagecontain {
+        margin: 0 auto;
+        display: flex;
+        justify-content: end;
+        align-content: flex-end;
+        width: 300px;
+        border: 2px solid green;
+        display: none;
+    }
+    .footnote h5 {
+        display: inline-block;
+    }
+    .footnote p {
+        display: block;
+    }
+    .footaddress p {
+        display: block;
+    }
+    .CRights {
+        text-align: center;
+        width: 600px;
+    }
+}
+/*  */
+@media (max-width: 500px) {
+    .wholecontain {
+        
+        width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    }
+    .page-container {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    }
+    .page-container a {
+    margin: 2% ;
+    padding: 2%;
+    width: 400px;
+    border-bottom: 1px solid gray;
+    }
+    nav {
+        margin: 0 auto;
+        display: flex;
+        width: 250px;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+    }
+    .contain-two {
+        width: 600px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-content: flex-start;
+        padding: 2%;
+    }
+    .innercontain-one {
+        width: 600px;
+        display: inline-block;
+        padding: 5%;
+    }
+    .innercontain-two {
+        width: 600px;
+        display: inline-block;
+        padding: 5%;
+    }
+    
+    .innercontain-four {
+        width: 600px;
+        display: inline-block;
+        padding: 5%;
+    }
+    .contain-four {
+        width: 600px;
+        display: inline-block;
+        padding: 5%;
+    }
+    .contain-five {
+        width: 600px;
+        display: inline-block;
+        padding: 5%;
+    }
+    .imagecontain {
+        margin: 0 auto;
+        display: flex;
+        justify-content: end;
+        align-content: flex-end;
+        width: 300px;
+        border: 2px solid green;
+        display: none;
+    }
+    .contain-three {
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-content: flex-start;
+        
+      }
+      .contain-three h3 {
+        display: flex;
+        flex-direction: row;
+
+      }
+      .contain-three p {
+        display: flex;
+      }
+      .footnote {
+         display: inline-block;
+         
+      }
+    .footnote h5 {
+        display: inline-block; 
+    }
+    .footnote p {
+        display: block;
+    }
+    .footaddress p {
+        display: block;
+    }
+    .CRights {
+        text-align: center;
+        width: 450px;
+    }
+}
