@@ -1,328 +1,474 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
-
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-
-    margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers*/
-
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
-
-
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
-
 /* Set every element's box-sizing to border-box */
-
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
-
-html, body {
-    height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
 }
-
-h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
 }
-
 /* Your code starts here! */
-
-
-.main_container{
-	width: 80%;
-    margin: auto;
-    height: auto;
+@import url("https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz");
+@media (max-width: 800px) {
+  body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
 }
-
-header{
-	height: 80px;
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+.contain-service {
+  width: 800px;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  .container {
+    width: 500px;
+  }
+  .contain-service {
+    width: 500px;
+  }
+}
+nav {
+  margin: 10px;
+  text-align: center;
+  background: white;
+  padding-bottom: 5px;
+  z-index: 1;
+  width: 800px;
+}
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+nav a {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  color: black;
+  text-decoration: none;
+  padding: 4px 20px;
+  text-align: center;
+  border-radius: 50px;
+  transition: background 1s ease, color 0.5s ease, border-radius 0.5s ease;
+}
+nav a:hover {
+  color: white;
+  background: black;
+  border-radius: 0;
+  box-shadow: 0 8px 6px -6px gray;
+  cursor: pointer;
+}
+@media (max-width: 800px) {
+  nav {
+    margin-top: 110px;
     display: flex;
-}
-
-.navbar{
-	width: 70%;
-	padding-top: 30px;
-}
-
-.navbar ul{
-	display: flex;
-    color: #aaa;
-}
-
-.navbar ul li{
-	margin-right: 12%;
-	cursor: pointer;
-}
-
-.navbar ul li:hover{
-    background: gold;
-    color: red;
-    border: green;
-    font-size: 1.5rem;
-    border-radius: 5px;
-    padding: 7px 10px;
-}
-
-
-.logo_area{
-	padding-top: 20px;
-	width: 30%;
-}
-
-.logo{
-	background-image: url(../img/logo.png);
-    background-size: contain;
-    background-repeat: unset;
-    width: 200px;
-    height: 40px;
-    float: right;
-	display: block;
-	
-}
-
-.banner{
-	height: 500px;
-    display: flex;
-    border-bottom: 1px solid #000;
-}
-
-.get_started{
-    width: 50%;
-    
-}
-
-.start_btn_area .start_btn {
-    padding: 9px 10px;
-    background-color: grey;
-    color: white;
-    border-radius: 10px;
-
-}
-
-.start_btn_area .start_btn:hover {
-    border: 2px solid golg;
-    padding: 11px 11px;
-    background-color: red;
-    color: green;
-    
-
-}
-.banner_text{
     text-align: center;
-    font-size: 4rem;
-    font-weight: bold;
-    font-family: fantasy;
-    font-style: italic;
-    margin: 100px auto 30px;
+    width: 800px;
+  }
+  nav a {
+    padding: 5px 37px;
+  }
+  nav a:hover {
+    color: inherit;
+    background: inherit;
+    box-shadow: 0 0px 0px 0px transparent;
+  }
 }
-
-.start_btn_area{
-	text-align: center;
+/* mobile menu */
+@media (max-width: 500px) {
+  nav {
+  }
+  nav ul {
+  }
+  nav a {
+  }
+  nav li {
+  }
 }
-
-.start_btn{
-      font-size: 1rem;
-    width: 38%;
-    height: 40px;
-    background: none;
-    border: 1px solid #000;
-    cursor: pointer;
+.logo {
+  vertical-align: text-bottom;
+  width: 150px;
+  padding-left: 10px;
 }
-
-.banner_img{
-    width: 50%;
+/* logo visibility */
+@media (max-width: 800px) {
+    .logo {
+      position: relative;
+      top: -78px;
+      left: -476px;
+      width: 195px;
+    }
+  }
+  @media (max-width: 500px) {
+  }
+  header {
     text-align: center;
-}
-
-.banner_img img{
-	margin-top: 50px;
-}
-
-.content1{
+    padding-top: 60px;
+    padding-bottom: 40px;
     display: flex;
-    height: 200px;
-    padding: 50px 0 10px;
-}
-
-.features{
-    width: 45%;
-    margin-right: 5%;
-    overflow: hidden;
-}
-
-.about{
-    width: 50%;
-    overflow: hidden;
-}
-
-.features_txt, .about_txt, .services_txt, .product_txt, .vision_txt{
-    font-style: italic;
-    font-weight: bold;
-    font-family: fantasy;
-}
-
-.content_img{
-	background-image: url(../img/mid-page-accent.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
+    justify-content: space-evenly;
+  }
+  header img {
+    width: 300px;
     height: 300px;
+  }
+  /* circle image */
+  @media (max-width: 800px) {
+    img {
+    }
+  }
+  header H1 {
+    font-size: 45px;
+    padding: 20px;
+    align-content: center;
+    margin-top: 60px;
+  }
+  @media (max-width: 800px) {
+    header h1 {
+      font-size: 80px;
+      padding: 0;
+      position: relative;
+      top: -80px;
+      width: 300px;
+      left: -10px;
+    height: 250px;
+  }
 }
-
-
-
-.content2{
-	padding: 25px 0;
-	display: flex;
-	height: 200px;
+@media (max-width: 500px) {
+  header h1 {
+    position: relative;
+    top: -40px;
+  }
 }
-
-.product, .services, .vision{
-	
-	padding-top: 20px;
+header H1 A {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 20px;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 5px 20px;
+  margin: 20px;
+  text-decoration: none;
+  color: black;
+  transition: background 1s ease, color 0.5s ease;
+  box-shadow: 0 8px 6px -6px gray;
+  font-family: "Yanone Kaffeesatz", sans-serif;
 }
-
-.services, .product{
-	padding-right: 3%;
+header H1 A:hover {
+  background-image: linear-gradient(to bottom, rgb(105, 105, 105), black);
+  color: white;
+  cursor: pointer;
 }
-
-.main_content{
-	border-bottom: 1px solid #000;
+.services-header-img {
+  width: 100%;
 }
-
-footer{
-	padding: 50px 0;
+@media (max-width: 800px) {
+  .services-header-img {
+    width: 90%;
+  }
 }
-footer .contact_area {
-    padding: 20px 150px;
+.imgserv {
+  text-align: center;
 }
-.contact_title{
-    font-family: fantasy;
-    font-style: italic;
-    font-weight: bold;
+@media (max-width: 500px) {
+  .imgserv {
+    text-align: center;
+  }
+  .services-header-img {
+    visibility: hidden;
+  }
 }
-
-.phone{
-	margin: 1.5rem 0;
+.top-services {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: justify;
+  text-justify: inter-word;
+  padding: 20px;
 }
-
-.copyirght_area{
-	text-align: center;
+.top-services H1 {
+  font-size: 25px;
 }
-
-
-/* Responsive web design*/
-@media screen and (max-width: 900px) {
-    
-    .main_container {
-        width: 80%;
-    }
-
-    .start_btn_area {
-        text-align: inherit;
-    }
-
-    .start_btn_area {
-        position: absolute;
-        font-size: 2.5rem;
-        width: 80vh;
-        height: 5rem;
-        margin-top: 3rem;
-
-    }
-
-    .banner_text {
-        text-align: inherit;
-        font-size: 8vw;
-    }
-
-    .banner_img img {
-        width: 20vh;
-        float: right;
-        margin-top: 7rem;
-
-    }
-
-    content1 {
-        display: grid;
-        height: auto;
-    }
-
-    .features, .about {
-        width: 100%;
-        margin: 0;
-        margin-bottom: 5rem;
-    }
-
-    .features, .about {
-        width: 100%;
-        margin: 0;
-        margin-bottom: 5rem;
-    }
-
-    .content_img {
-        height: 10rem;
-    }
-
-
-    .content2 {
-        display: grid;
-        height: auto;
-        padding: 0;
-
-    }
-    .services, .product, .vision {
-        padding: 0;
-        margin-bottom: 5rem;
-    }
-
-    .copyirght_area{
-        text-align: inherit;
-    }
-
-
+@media (max-width: 500px) {
+  .top-services {
+    margin-top: -40px;
+    font-size: 18px;
+  }
+}
+.box-rows {
+  width: 850px;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.boxtop {
+  width: 400px;
+  padding: 20px;
+}
+.mid-box {
+  text-align: center;
+}
+.middle-img {
+  width: 100%;
+}
+@media (max-width: 800px) {
+  .middle-img {
+    width: 90%;
+  }
+}
+.boxbottom {
+  width: 270px;
+  padding: 20px;
+}
+@media (max-width: 800px) {
+  .box-rows {
+    width: 800px;
+    justify-content: space-around;
+  }
+  .boxtop {
+    width: 350px;
+    padding: 30px;
+  }
+  .boxbottom {
+    width: 200px;
+    padding: 10px;
+  }
+}
+@media (max-width: 500px) {
+  .box-rows {
+    display: inline-block;
+    width: 500px;
+  }
+  .boxtop {
+    width: 500px;
+  }
+  .boxbottom {
+    width: 500px;
+    padding: 30px;
+  }
+}
+hr {
+  border-top: 1px solid black;
+}
+@media (max-width: 800px) {
+  hr {
+    width: 90%;
+  }
+}
+#contact {
+  padding-top: 30px;
+  margin-bottom: 80px;
+}
+@media (max-width: 800px) {
+  #contact {
+    padding-left: 50px;
+  }
+}
+@media (max-width: 500px) {
+}
+.card-rows {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.cards {
+  flex: 0 45%;
+  margin: 10px;
+  height: 220px;
+  background-color: rgb(236, 236, 236);
+  border: 1px solid black;
+}
+.cards a {
+  text-decoration: none;
+  margin: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px 20px;
+  font-size: 12px;
+  background: white;
+  color: black;
+}
+.cards h1 {
+  margin: 10px;
+}
+.cards p {
+  padding: 10px 10px;
+}
+@media (max-width: 500px) {
+  .card-rows {
+    width: 500px;
+    display: inline-block;
+  }
+  .cards {
+    width: 470px;
+  }
+  .cards a {
+    float: right;
+    font-size: 20px;
+  }
+}
+.facts {
+  margin-top: 20px;
+  display: flex;
+}
+.facts ul {
+  list-style-type: square;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+.facts-rows {
+  margin: 20px;
+}
+/* Media query at 500PX */
+@media (max-width: 500px) {
+  .facts {
+    width: 500px;
+    display: inline-block;
+  }
+  .facts-rows {
+    width: 470px;
+  }
+  .facts img {
+    visibility: hidden;
+  }
+}
+footer {
+  text-align: center;
 }
