@@ -1,3 +1,329 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 900%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+body{
+	width: 800px;
+	margin: auto;
+   
+}
+
+header nav {
+	display: flex;
+    align-items: center;
+	width: 50px;
+	margin: 20px;
+}
+header nav a{
+	margin: 0 20px;
+}
+header img.logo{
+	margin-left: 100px;
+}
+#innovation-on-demand{
+	display: inline-block;
+    margin: 0 102px;
+}
+#iod-left{
+	display: inline-block;
+	font-size: 60px;
+}
+#iod-left a {
+	font-size: 20px;
+    -webkit-appearance: push-button;
+    padding: 4px;
+    text-decoration-line: none;
+    margin-bottom: 160px;
+}
+#iod-right{
+	display: inline-block;
+    margin-left: 60px;
+    padding-top: 35px;
+}
+
+#feature-about{
+	display: flex;
+    margin: 20px;
+    justify-content: space-evenly;
+	width: 96%;
+	padding-right: 15px;
+	line-height: 1.2;
+}
+#fa-left #fa-right{
+	padding-right: 9px;
+   
+}
+img.middle-img{
+	margin: 0 auto;
+    padding: 20px 0px;
+}
+#service-product-vision{
+	display: inline-flex;
+    margin-bottom: 6px;
+	justify-content: center;
+    width: 97%;
+}
+
+#spv-left {
+	display: block;
+    justify-content: space-evenly;
+    width: max-content;
+    padding-right: 10px;
+}
+
+#spv-middle{
+	display: block;
+    justify-content: space-evenly;
+    width: max-content;
+    padding-right: 10px;
+} 
+#spv-right{
+	display: block;
+    justify-content: space-evenly;
+    width: max-content;
+    padding-right: 10px;
+}
 
 
+
+
+footer #contact{
+	display: block;
+	margin: 3% 76% 0% 0;
+}
+
+footer #contact address p{
+	display: inline-block;
+    margin: 0%;
+	justify-content: flex-start;
+	line-height: 1.1;
+}
+footer p{
+	display: flex;
+    justify-content: center;
+    margin: 0%;
+}
+/*Query for Mobile*/
+ @media (max-width: 500px){
+    
+    
+    body{
+        box-sizing: border-box;
+    
+        background-color: white;
+        width: 100%;
+     }
+     header{
+         width: 50%;
+         flex-direction: column;
+     }
+     div.logo img{
+     padding-left: 8%;
+     margin-top: 4%;
+     width: 100%;
+     }
+ 
+    nav.links{
+     display: block;
+     margin: auto;
+     width: 100%;
+     padding-left: 60%;
+     align-items: center;
+     line-height: 2;
+     font-size: x-large;
+      }
+      nav hr{
+          width: 100%;
+      }
+      nav.links a{
+          text-decoration: none;
+      }
+      nav a{
+          color: grey;
+      }
+     
+     div#content{
+         padding: 0 auto;
+         width: 100%;
+     }
+     section#iod-left{
+         padding-top: 58%;
+     }
+     hr{
+         width: 90%;
+     }
+     div#feature-about{
+         display: block;
+     margin: auto;
+     }
+     section#fa-left{
+         padding: 5% 3%;
+     }
+     section#fa-right{
+         padding: 5% 3%;
+     }
+     div#service-product-vision{
+         flex-direction: column;
+     }
+     section#spv-left{
+     width: 100%;
+     padding: 5% 2%;
+     }
+     section#spv-middle{
+         width: 100%;
+         padding: 5% 2%;
+         }
+     section#spv-right{
+     width: 100%;
+     padding: 5% 2%;
+     }
+     footer{
+         padding: 2%;
+     }
+     footer p{
+         line-height: 2%;
+     }
+ }  
+ 
+
+ /*For Tablet view*/
+ @media (max-width: 800px){
+
+    body{
+        box-sizing: border-box;
+        background-color: white;
+        width: 100%;
+     }
+        div.logo img {
+        
+        margin: 5%;
+        padding-left: 60%;
+     }
+     header{
+        width: 50%;
+        flex-direction; row;
+
+    }
+    div .mainNav{
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-evenly;
+        padding-right: 35%;
+        width: 100%;
+        padding-left: 30%;
+        margin: 0 auto;
+
+    }
+    nav.links{
+        font-size: small;
+        display: flex;
+    align-items: center;
+    width: 2%;
+    margin: 16px;
+    padding-left: 10%;
+    font-size: 126%;
+    padding-bottom: 16%;
+    }
+    nav a{
+        text-decoration: none;
+        padding-bottom: 20%;
+        color: grey;
+        
+    }
+    div#innovation-on-demand{
+        padding-left: 14%;
+        font-size: larger;
+        margin: 0 16%;
+    }
+
+    #iod-left a{
+        width: 78%;
+        padding: 0 19%;
+    }
+    #iod-left h1{
+        text-align: center;
+    }
+    
+    section#fa-left{
+        padding-right: 2%;
+    }
+    section#fa-right{
+        padding-right: 2%;
+    }
+    div .middle-img{
+        width: 97%;
+        padding-left: 2%;
+    }
+    div#service-product-vision{
+        padding: 2%;
+    }
+    section#spv-left, #spv-middle #spv-right{
+        padding-right: 2%;
+    }
+    footer{
+        padding: 2%;
+    }
+ }
