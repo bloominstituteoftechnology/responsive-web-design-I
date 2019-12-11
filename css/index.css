@@ -250,15 +250,17 @@ footer p{
  
 
  /*For Tablet view*/
- @query (max-width: 800px){
+ @media (max-width: 800px){
 
     body{
         box-sizing: border-box;
-        background-color: pink;
+        background-color: white;
         width: 100%;
      }
-        div.logo {
-        margin-left: 5%;
+        div.logo img {
+        
+        margin: 4%;
+        padding-left: 60%;
      }
      header{
         width: 50%;
@@ -266,11 +268,13 @@ footer p{
 
     }
     div .mainNav{
+        box-sizing: border-box;
         display: flex;
-    align-items: center;
-    width: 2%;
-    margin: 16px;
-    font-size: 74%;
+        justify-content: space-evenly;
+        padding-right: 35%;
+        width: 100%;
+        padding-left: 30%;
+        margin: 0 auto;
 
     }
     nav.links{
@@ -279,5 +283,47 @@ footer p{
     align-items: center;
     width: 2%;
     margin: 16px;
+    padding-left: 10%;
+    font-size: 126%;
+    padding-bottom: 16%;
+    }
+    nav a{
+        text-decoration: none;
+        padding-bottom: 20%;
+        color: grey;
+        
+    }
+    div#innovation-on-demand{
+        padding-left: 14%;
+        font-size: larger;
+        margin: 0 16%;
+    }
+
+    #iod-left a{
+        width: 78%;
+        padding: 0 19%;
+    }
+    #iod-left h1{
+        text-align: center;
+    }
+    
+    section#fa-left{
+        padding-right: 2%;
+    }
+    section#fa-right{
+        padding-right: 2%;
+    }
+    div .middle-img{
+        width: 97%;
+        padding-left: 2%;
+    }
+    div#service-product-vision{
+        padding: 2%;
+    }
+    section#spv-left, #spv-middle #spv-right{
+        padding-right: 2%;
+    }
+    footer{
+        padding: 2%;
     }
  }
