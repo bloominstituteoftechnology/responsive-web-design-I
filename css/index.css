@@ -1,3 +1,133 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+.nav, logo  {
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  }
+h1 {
+  font-size:36px
+}
+
+.container {
+  display:flex;
+  justify-content: space-between;
+  width:20%;
+  padding:2%;
+  margin:1%
+}
+.container2 {
+        display:flex;
+        flex-direction:row;
+        justify-content:space-between;
+        margin:1%
+      }
+      .container2 div {
+        width: 40%;
+      }
+.container3 {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-bewtween;
+}
 
 
+  }
+  section {
+    padding: 50px 20px;
+    background-color: #2A363B; 
+  }
+  
+  section .about-text {
+    width: 50%;
+    background-color: #99B898;
+    padding: 30px;
+  }
+  
+  h3 {
+    text-align: center;
+    font-size: 25px;
+    margin: 20px;
+  }
+  
+
+@media (max-width:800px) {
+    .container {
+        flex-direction:column;
+        align-items:center;
+    }
+@media (max-width:500px) {
+    .nav {
+        flex-direction:column;
+    align-items:center;
+    }
+    .nav logo,.container,.container2,.container3 {
+        flex-direction:column;
+        align-content:center;
+    }
+}
