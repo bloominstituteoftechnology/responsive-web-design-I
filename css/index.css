@@ -1,3 +1,500 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 62.5%;
+	/* margin: 0 2%;	 */
+}
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+.bg-wrapper {
+	background-image: url("../img/background.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.wrapper {
+	margin: 0 4%;
+}
+
+header {
+    display: flex;
+    align-content: center;
+	padding: 3% 3% 3% 3%;
+}
+
+header nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 70%;
+}
+
+header nav a {
+	text-decoration: none;
+	color: whitesmoke;
+	font-size: 1.4rem;
+	border: 2px solid white;
+	padding: 1% 2%;
+	border-radius: 10px;
+	background-color: black;
+}
+
+header nav a:hover {
+	animation-name: toggle;
+	animation-duration: 2s;
+	animation-fill-mode: backwards;
+}
+
+.logo {
+	margin-left: 60%;
+}
+
+.innovation {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.innovation-text h1{
+	font-size: 6.0rem;
+	text-align: center;
+	margin-top: 55%;
+	margin-bottom: 15%;
+	color: whitesmoke;
+}
+
+.innovation-img {
+	margin-top: 5%;
+}
+
+.gsbutton {
+	margin: 40% 0 0 22%;
+	font-size: 1.6rem;
+	border: 2px solid white;
+	padding: 1% 10%;
+	text-decoration: none;
+	color: whitesmoke;
+	border-radius: 10px;
+	background-color: black;
+}
+
+.gsbutton:hover {
+	animation-name: toggle;
+	animation-duration: 2s;
+	animation-fill-mode: backwards;
+}
+
+.top-content {
+	display: flex;
+	justify-content: space-between;
+	border-top: 2px solid black;
+	margin-top: 5%;
+}
+
+.top-content h4 {
+	font-size: 2.2rem;
+	margin-top: 7%;
+	color: whitesmoke;
+}
+
+.text-content {
+	width: 45%;
+	margin-bottom: 5%;
+}
+
+.top-content p {
+	font-size: 1.8rem;
+}
+
+.middle-img {
+	width: 100%;
+}
+
+.bottom-content {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 5%;
+}
+
+.bottom-content h4 {
+	font-size: 2.2rem;
+	color: whitesmoke;
+}
+
+.bottom-content .text-content {
+	width: 30%;
+}
+
+.bottom-content p {
+	font-size: 1.8rem;
+}
+
+.contact {
+	border-top: 2px solid black;
+}
+
+.contact h4 {
+	margin-top: 5%;
+	font-size: 2.2rem;
+	color: whitesmoke;
+}
+
+.contact p {
+	font-size: 1.6rem;
+}
+
+footer {
+	font-size: 1.4rem;
+	text-align: center;
+	margin-top: 5%;
+	padding-bottom: 2%;
+}
+
+.services-header-img {
+	width: 100%;
+	margin-top: 2%;
+}
+
+.about {
+	border-bottom: 2px solid black;
+}
+
+.about h2 {
+	font-size: 2.8rem;
+	color: whitesmoke;
+	margin-top: 3%;
+}
+
+.about p {
+	font-size: 1.8rem;
+	margin-bottom: 2.5%;
+}
+
+.services-main-content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 3%;
+}
+
+.smc-child {
+	border: 2px solid black;
+	width: 45%;
+	padding: 2%;
+	margin-bottom: 3%;
+	background-color: #4d94ff;
+}
+
+.services-main-content h4 {
+	font-size: 2.2rem;
+	color: whitesmoke;
+}
+
+.services-main-content p {
+	font-size: 1.8rem;
+	margin-bottom: 5%;
+}
+
+.lm-button {
+	border: 2px solid white;
+	border-radius: 10px;
+	font-size: 1.6rem;
+	padding: 1% 5%;
+	color: whitesmoke;
+	background-color: black;
+}
+
+.lm-button:hover {
+	animation-name: toggle;
+	animation-duration: 2s;
+	animation-fill-mode: backwards;
+	cursor: pointer;
+}
+
+.services-bottom-content {
+	display: flex;
+	justify-content: space-between;
+	border-top: 2px solid black;
+}
+
+.smc-text {
+	margin-top: 5%;
+	width: 45%;
+}
+.smc-text h4 {
+	font-size: 2.2rem;
+	color: whitesmoke;
+}
+
+.smc-text p {
+	font-size: 1.8rem;
+}
+
+.smc-text ul li {
+	font-size: 1.8rem;
+	margin-top: 5%;
+	list-style-type: square;
+	list-style-position: inside;
+}
+
+.smc-img {
+	margin-top: 5%;
+	width: 45%;
+}
+
+.vision-header-img {
+	display: flex;
+	justify-content: center;
+	background-color: #4d94ff;
+	margin-top: 2%;
+}
+
+.vision-about-section {
+	border-bottom: 2px solid black;
+}
+.vision-about-section h2 {
+	font-size: 2.8rem;
+	color: whitesmoke;
+	margin-top: 5%;
+}
+
+.vision-about-section p {
+	font-size: 1.8rem;
+	margin-bottom: 3%;
+}
+
+.main-vision-text {
+	display: flex;
+	flex-wrap: wrap; 
+	justify-content: space-between;
+	border-bottom: 2px solid black;
+}
+
+.main-vision-text .mvt {
+	width: 45%;
+	margin-top: 3%;
+	border: 2px solid black;
+	background-color: #4d94ff;
+	padding: 2%;
+	margin-bottom: 3%;
+}
+
+.main-vision-text .mvt h4 {
+	font-size: 1.8rem;
+	margin-bottom: 2.5%;
+	color: white;
+}
+
+.main-vision-text .mvt p {
+	font-size: 1.8rem;
+	margin-bottom: 5%;
+}
+
+.main-vision-text .mvt .vlm-button {
+	border: 2px solid white;
+	border-radius: 10px;
+	font-size: 1.6rem;
+	padding: 1% 5%;
+	color: whitesmoke;
+	background-color: black;
+	margin-top: 5%;
+}
+
+.main-vision-text .mvt .vlm-button:hover {
+	animation-name: toggle;
+	animation-duration: 2s;
+	animation-fill-mode: backwards;
+	cursor: pointer;
+}
+
+@keyframes toggle {
+	from {background: black;}
+	to {background:darkblue;}
+  }
+
+  @media(max-width: 800px) {
+    .innovation-img {
+        display: none;
+    }
+
+    header {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    
+    header nav {
+        width: 100%;
+    }
+
+    header nav a {
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .logo {
+        margin: 2% 0 17% 0;
+        align-items: center;
+    } 
+
+    .innovation-text h1 {
+        margin-top: 15%;
+    }
+
+    .services-header-img {
+        display: none;
+    }
+
+    .about h2 {
+        font-size: 2.4rem;
+    }
+
+    .about p {
+        font-size: 1.6rem;
+    }
+
+    .services-main-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .services-main-content p {
+        font-size: 1.4rem;
+    }
+
+    .lm-button {
+        font-size: 1.2rem;
+        padding: 0 4%;
+    }
+
+    .smc-text h4 {
+        font-size: 1.8rem;
+    }
+
+    .smc-text p {
+        font-size: 1.4rem;
+    }
+
+    .smc-text ul li {
+        font-size: 1.4rem;
+    }
+}
+
+@media(max-width: 500px) {
+    header nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header {
+        padding: 0;
+        padding-top: 3%;
+    }
+
+    header nav a {
+        border: none;
+        border-top: 1px white solid;
+        width: 100%;
+        padding: 3% 0;
+        text-align: center;
+        border-radius: 0;
+    }
+
+    header nav a:last-child {
+        border-bottom: 1px white solid;
+    }
+
+    .innovation-text {
+        margin-bottom: 15%;
+        margin-top: 10%;
+    }
+
+    .top-content {
+        display: inline-block;
+    }
+
+    .top-content .text-content {
+        width: 100%;
+    }
+
+    .bottom-content {
+        display: inline-block;
+    }
+
+    .bottom-content .text-content {
+        width: 100%;
+    }
+
+    .services-main-content {
+        display: block;
+    }
+
+    .services-main-content .smc-child {
+        width: 100%;
+    }
+
+    .services-bottom-content .smc-text {
+        display: block;
+        width: 100%;
+    }
+    .services-bottom-content .smc-img {
+        display: none;
+    }
+}
