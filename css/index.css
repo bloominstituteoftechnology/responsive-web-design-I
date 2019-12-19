@@ -86,7 +86,7 @@ nav {
 }
 
 .topBar{
-	margin: 2%;
+	margin: 2% 0% 2% 0%;
 	box-sizing: border-box;
 }
 
@@ -344,7 +344,29 @@ ul li{
         width: 100%;
         justify-content: center;
     }
+}
 
 
+@media (max-width: 600px){
+    #navBarID{
+        display: flex;
+        flex-direction: column;
+    }
 
+    .navBar{
+        width: 100%;
+        box-sizing: border-box;
+        height: 10%;
+        border: 1px solid grey;
+        padding: 5% 0% 5% 0%;
+    }
+
+    .topBar{
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+
+    nav{
+        margin: 0%;
+    }
 }
