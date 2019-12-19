@@ -48,4 +48,303 @@ table {
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
 
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+*{
+	box-sizing: border-box;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0% 2.5% 0% 2.5%;
+}
+
+.navItems{
+	display: flex;
+	justify-content: space-between;
+	width: 60%;
+
+}
+
+.navImg{
+	display: flex;
+	width: 25%;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.topBar{
+	margin: 2%;
+	box-sizing: border-box;
+}
+
+.navBar{
+	box-sizing: border-box;
+	display: flex;
+	width: 100px;
+	height: 30px;
+	align-items: center;
+	justify-content: center;
+}
+
+.navBarLink{
+	text-decoration: none;
+	color: darkslategrey;
+
+}
+
+.navBarLink:hover{
+	text-decoration: none;
+	color: lightslategrey;
+}
+
+hr{
+	margin: 5%;
+}
+
+h1{
+	font-size: 72px;
+	display: flex;
+	flex-wrap: wrap;
+	width: 300px;
+	text-align: center;
+}
+
+.sectionOne{
+	display: flex;
+
+}
+
+.innovation{
+	display: flex;
+	width: 45%;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.getStarted{
+	text-decoration: none;
+}
+
+.imageOne{
+	display: flex;
+	width: 45%;
+	align-self: center;
+}
+
+#getStartedLink{
+	width: 182px;
+	height: 40px;
+	border: 2px solid lightslategray;
+	display: flex;
+	box-sizing: border-box;
+	justify-content: center;
+	align-items: center;
+	background: lightgray;
+}
+
+.getStarted{
+	color: black;
+}
+
+.getStarted:hover{
+	color: grey;
+}
+
+#getStartedLink:hover{
+	border: 2px solid lightslategrey;
+	background: white;
+}
+
+
+.firstText{
+	display: flex;
+	margin: 0% 5% 2% 5%;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.features{
+	width: 45%;
+}
+
+.about{
+	width: 45%;
+}
+
+.middleImg{
+	display: flex;
+	justify-content: center;
+}
+
+.secondText{
+	display: flex;
+	margin: 2% 5% 2% 5%;
+	justify-content: space-between;
+    align-items: flex-start;
+}
+
+.product , .services , .vision{
+    padding: 2%;
+}
+
+footer{
+	display: flex;
+	flex-direction: column;
+	margin: 30px;
+}
+
+h3{
+	margin: 1px;
+	padding: 1px;
+}
+
+.copyright{
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.servicesHeader{
+	display: flex;
+	margin: 2% 5% 2% 5%;
+	flex-direction: column;
+}
+
+.services-header-img{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: auto;
+	border: 2px solid lightslategray;
+}
+
+.servicesHeaderText{
+	font-size: 36px;
+}
+
+.button{
+	width: 182px;
+	height: 40px;
+	border: 2px solid lightslategray;
+	display: flex;
+	box-sizing: border-box;
+	justify-content: center;
+	align-items: center;
+	background: white;	
+}
+
+.button:hover{
+	border: 2px solid lightslategrey;
+	background: lightsalmon;
+	color: white;
+	border-color: white;
+}
+
+.servicesSectionTwo{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	flex-basis:calc(50% - 10px);
+	margin: 0% 3% 0% 3%;
+}
+
+.servicesFeatureBox{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	border: 2px solid black;
+	width: 500px;
+	height: 250px;
+	margin: 2% 1% 2% 1%;
+	padding: 3%;
+	background: lightgrey;
+}
+
+.sectionTwoContent{
+	width: 90%;
+}
+
+h4 {
+	font-size: 18px;
+}
+
+footer{
+	display: flex;
+	justify-content: center;
+}
+
+.factSection{
+	display: flex;
+	margin: 2% 5% 2% 5%;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	flex-basis:calc(50% - 10px);
+	align-items: center;
+}
+
+#factsImg{
+	width: 45%;
+	justify-content: right;
+	
+}
+
+.factSectionCopy{
+	width: 45%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+ul{
+	list-style-type: disc;
+}
+
+ul li{
+	margin: 5% 0% 5% 7%;
+}
+
+@media(max-width: 800px){
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+
+    .navItems{
+        width: 100%;
+        justify-content: center;
+        margin-top: 3%;
+
+    }
+
+    .innovation{
+        justify-content: center;
+        width: 100%;
+        margin: 10vh 0%;
+    }
+
+    .imageOne{
+        display: none;
+    }
+
+    .navImg{
+        width: 100%;
+        justify-content: center;
+    }
+
+
+
+}
