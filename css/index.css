@@ -1,3 +1,43 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+* {
+    box-sizing: border-box;
+}
+  .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 100%;
+      padding: 10px;
+  }
+  .navbar {
+      display: flex;
+      flex-direction: row;
+      flex-flow: row;
+      justify-content: space-between;
 
+      border: 2px solid blue;
+      width: 100%;
+  }
+     .nav {
+         display: flex;
+         text-align: center;
+         justify-content: space-between;
+         width: 60%;
+     }
+  .header-text {
+      display: flex;
+  }
+  /* At 800px Do the following */
+   @media (max-width: 800px) {
+       .container {
+           width: 50%;
+
+       }
+   }
+      /* At 500px Do the following */
+      @media (max-width: 500px) {
+          .container {
+              width: 30%;
+          }
+      }
 
