@@ -1,3 +1,303 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+	
+    height: 100%;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 0px;
+	margin-bottom: 1px;
+	font-size: 100px;
+}
+h6 {
+	font-family: 'Bangers', cursive;
+    letter-spacing: 5px;
+	margin-bottom: 15px;
+	font-size: 30px;
+}
+
+h7 {
+	font-family: 'Bangers', cursive;
+    letter-spacing: 5px;
+	margin-bottom: 15px;
+	font-size: 20px;
+}
+
+
+
+header nav{
+    flex-wrap: wrap;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	width:89%;
+	background-color: white;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	padding: 10px;
+  }
+  
+  nav .logo {
+    flex-wrap: wrap;
+	display: flex;
+	justify-content: flex-end;
+	width: 25%;
+	padding: 10px;
+	
+  }
+  
+  nav .links {
+    flex-wrap: wrap;
+	width: 70%;
+	display: flex;
+	justify-content: space-around;
+  }	
+  
+
+  nav a{
+    flex-wrap: wrap;
+	color: grey;
+	text-decoration:none;
+	letter-spacing:1px;
+	padding: 0 2%;
+  }
+
+  nav a:hover{
+    flex-wrap: wrap;
+	color: black;
+	text-decoration: none;
+  }
+
+
+  .button:hover{
+	border: none	;
+	background-color: grey;
+	color: white;
+
+  }
+
+.main-titles {	
+	margin: 0 10px;	
+	display: flex;
+	text-align: center;
+	flex-direction: column;
+}
+
+.title-container {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin: 60px;
+	top: 10px;
+	padding-top: 0px;
+}
+
+nav button {
+	border: none;
+	border-radius: 8px;
+
+}
+
+  /* header style ends here */
+
+  /* middle section style starts here */
+
+
+
+
+.lowersection {
+  margin: 10px;
+  padding-bottom: 30px;
+  margin-top: 20px; 
+  margin-bottom:30px;
+  display:flex;
+  align-items:center;
+}
+
+.Services {
+    width: 40%;
+    margin-right: 6%;
+}
+
+.Product {
+    width: 40%;
+    margin-right: 6%;
+}
+
+.Vision {
+    width: 40%;
+}
+
+.mid-content{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+
+}
+
+.features {
+    width: 49%;
+}
+.About {
+    width: 49%;
+    margin-left:35px;
+}
+
+
+.middle-img {
+    
+    padding: 1px;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+
+.bigcontainer {
+	padding: 100px;
+	margin: 1px;
+	width: 100%;
+  }
+
+  /* footer section  */
+
+ .copyright {
+		display: flex;
+		align-items: center;
+        justify-content: center;
+        margin: 0;
+        bottom: 10;
+		
+ }
+
+ /* SERVICES Style starts here! */
+
+
+.services-header-img {
+	padding: 1px;
+	width: 100%;
+	margin-bottom: 40px;
+}
+
+.ServicesPage-Top{
+	text-align: justify;
+}
+
+ /* BUTTONS  */
+
+ 
+  button:hover {
+	background: white;
+	color: black;
+  }
+
+
+  
+  /* BUTTONS  */
+
+.button-box {
+    margin: auto;
+    border: 1px solid black;
+    width: 60%;
+    padding: 10px;
+
+    }
+
+.main-content-services {
+    
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px;
+  }
+
+  
+  .content-container {
+	display: flex;
+	flex-wrap: wrap;
+	width: 500px;
+	height: 250px;
+	background-color: whitesmoke;
+	border: 1px solid black;
+	margin: 30px;
+	padding: 20px;
+	box-sizing: border-box;
+
+  }
+
+  .bottom-content {
+	display: flex;
+
+	padding: 120px;
+	margin: 30px;
+	
+  }
+
+  ul {
+	padding-top: 20px;
+	list-style-type: circle;
+	list-style-type: square;
+	padding-left: 20px;
+	line-height: 2;
+  }
+
