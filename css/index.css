@@ -73,36 +73,36 @@ h1, h2, h3, h4, h5 {
 h1 {
   font-size:36px
 }
-button {
-  height:10%;
-  width:20%;
-  align:center;
-}
-.underheader {
+
+.container {
   display:flex;
-  flex-direction:row;
-  justify-content:space-between;
+  justify-content: space-between;
+  width:20%;
+  padding:2%;
 }
+.container2 {
+        display:flex;
+        flex-direction:row;
+        justify-content:space-between;
+        
+      }
+      .container2 div {
+        width: 50%;
+      }
+.container3 {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-bewtween;
+}
+
 h3 {
   display:inline-block;
-  width:100%;
+  width:20%;
   height:5%;
   }
-.top-paragraph {
-  display:flex;
-  flex-direction:row;
-  padding:5%
-  width:80%;
-  height:20%
-}
-.middle-img {
-  padding:5%;
-  
-}
-.bottom-paragraph {
-  
-  display:flex;
-  flex-direction:row;
-  padding:2%;
-  
-}
+
+@media (max-width:800px) {
+    .nav, logo {
+        flex-direction:column;
+    align-items:center;
+    }
