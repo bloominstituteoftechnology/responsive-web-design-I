@@ -124,7 +124,7 @@ h1{
 
 .sectionOne{
 	display: flex;
-
+    justify-content: center;
 }
 
 .innovation{
@@ -187,7 +187,11 @@ h1{
 
 .middleImg{
 	display: flex;
-	justify-content: center;
+    justify-content: center;
+}
+
+.middle-img{
+    width: 100%;
 }
 
 .secondText{
@@ -316,6 +320,19 @@ ul li{
 	margin: 5% 0% 5% 7%;
 }
 
+address{
+    margin-bottom: 5%;
+    line-height: 150%;
+}
+
+.services , .product , .vision , .features , .about{
+    line-height: 150%;
+}
+
+.contactHeader{
+    font-size: 20px;
+}
+
 @media(max-width: 800px){
     nav {
         display: flex;
@@ -344,6 +361,18 @@ ul li{
         width: 100%;
         justify-content: center;
     }
+
+    .middle-img{
+        width: 750px;
+        height: auto;
+        margin-top: 5vh 0%;
+        margin-bottom: 5vh 0%;
+    }
+
+    address{
+        margin-bottom: 5%;
+        line-height: 150%;
+    }
 }
 
 
@@ -369,4 +398,42 @@ ul li{
     nav{
         margin: 0%;
     }
+
+    #middle-imgID{
+        max-width: 575px;
+        height: auto;
+    }
+
+    .firstText{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .features , .about{
+        width: 100%;
+        margin-bottom: 6%;
+        line-height: 150%;
+    }
+
+    .secondText{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .services , .product , .vision{
+        width: 100%;
+        margin-bottom: 4%;
+        line-height: 150%;
+    }
+
+    address{
+        margin-bottom: 7%;
+        text-align: center;
+        line-height: 150%;
+    }
+
+    .contactHeader{
+        font-size: 24px;
+    }
 }
+
