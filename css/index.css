@@ -1,3 +1,326 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+  font-family: 'Titillium Web', sans-serif;
+  width: 1500px; margin: 0 auto;
+
+  
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+.nav{
+  display:flex;
+  display:space-around;
+  width:100%;
+  margin:30px;
+}
+
+nav{
+  margin:20px 0 40px 0;
+  display:flex;
+  justify-content:space-around;
+  width:45%;
+  font-size:13px;
+  margin:10px 100px;
+}
+
+nav a{
+  display:flex;
+  text-decoration:none;
+  color:#C0C3C6;
+  align-items:center;
+}
+
+.start{
+  display:flex;
+  margin:6% 0 4% 0;
+
+}
+
+.heading{
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+  margin-left:270px;
+  /* flex-wrap: nowrap; */
+
+}
+
+.h1{
+  display:inline-block;
+  font-size:70px;
+  flex-direction:column;
+  flex-wrap: nowrap;
+  align-items:center;
+  float:left;
+}
+
+.header-image{
+  float:right;
+  margin-left:10%;
+}
+
+.button{
+  /* display:inline; */
+  /* float:left; */
+  text-align:center;
+  font-size:16px;
+  color:black;
+  border:1px solid black;
+  padding: 7px 10px;
+  text-decoration:none;
+  width:49%;
+}
 
 
+.middle-img{
+  display:flex;
+  align-items: stretch;
+  width:79%;
+  margin-left:70px;
+}
+
+
+hr{
+  display:block;
+  width:78%;
+  color:#F000;
+  float:left;
+  margin: 0 0 15px 70px;
+}
+
+.row-1{
+  display:flex;
+  justify-content:space-between;
+  width:75%;
+  margin:20px 0 0 50px;
+  align-items:flex-start;
+
+}
+
+.column-1{
+  padding:20px;
+  width:48%;
+  margin: 0 0 20px 10px;
+}
+
+.row-2{
+  display:flex;
+  justify-content:flex-start;
+  /* margin:50px; */
+  width:95%;
+  margin:20px 0 30px 40px;
+}
+
+.column-2{
+  padding:20px;
+  width:29%;
+}
+
+address{
+  /* display:flex; 
+justify-content:flex-end;  */
+display:block;
+margin:20px 10px 50px 80px;
+    }
+
+.contact-h3{
+  display:flex;
+  flex-direction:row;
+  justify-content:flex-start;
+  display:block;
+  font-size:18px;
+  font-family: 'Bangers', cursive;
+  letter-spacing: 1px;
+  width:30%;
+
+}
+  
+footer{
+  display:flex;
+  justify-content:center;
+  text-align:center;
+  margin-bottom:80px;
+  width:80%;
+} 
+
+@media(max-width:800px){
+    .nav, .start {
+    display:flex;
+    flex-direction:column-reverse;
+  }
+  
+  .heading{
+    margin-top:0;
+    padding:0;
+  }
+
+  .button{
+    width:17%;
+  }
+  .header-image{
+    display:none;gi
+  }
+  .nav{
+    display:flex;
+    justify-content: space-evenly;
+    width:80%;
+    margin-bottom:0;
+  }
+  .logo-img{
+    display:flex;
+    justify-content:center;
+    align-items:center; 
+    width:17%;
+    margin:0 0 2% 23%;
+
+  }
+
+  .row-1{
+    width:50%
+  }
+
+   .row-2{
+    width:57%;
+  }
+  .middle-imge{
+    display:flex;
+    align-items:flex-start;p
+    width:10%;
+  }
+  hr{
+    width:46%;  
+  }
+
+  footer{
+    display:flex;
+    justify-content:center;
+    width:60%;
+
+  }
+} 
+
+@media(max-width:500px){
+  .nav, .start {
+    display:flex;
+    flex-direction:column-reverse;
+    /* margin:1% 1% 1% 0%; */
+  }
+
+  .logo-img{
+    width:15%;
+    margin-left:15%;
+  }
+  
+
+  nav{
+    display:flex;
+    flex-direction:column;
+  }
+  nav  a{
+    display:flex;
+    margin-left:22%;
+    font-size:16px;
+    padding:10px;
+    width:
+  }
+
+  .heading{
+    margin:0 0 0 14%; 
+  }
+  
+  .h1{
+    font-size:45px;
+    text-align:center;
+    width:14%;
+  }
+
+  button{
+    width:14%;
+    height:20px;
+    padding:4px 8px;
+  }
+
+  hr{
+    width:46%;
+  }
+
+  .row-1, .row-2{
+    display:flex;
+    flex-direction:column;
+  }
+
+  .column-1{
+    float:left;
+    width:55%;
+  }
+
+  .column-2{
+    float:left;
+    width:50%;
+  }
+
+  footer{
+    display:flex;
+  justify-content:center;
+  text-align:center;
+  margin-bottom:80px;
+  width:40%;
+  }
+
+}
