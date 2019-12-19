@@ -79,15 +79,16 @@ h1 {
   justify-content: space-between;
   width:20%;
   padding:2%;
+  margin:1%
 }
 .container2 {
         display:flex;
         flex-direction:row;
         justify-content:space-between;
-        
+        margin:1%
       }
       .container2 div {
-        width: 50%;
+        width: 40%;
       }
 .container3 {
     display:flex;
@@ -102,7 +103,17 @@ h3 {
   }
 
 @media (max-width:800px) {
-    .nav, logo {
+    .container {
+        flex-direction:column;
+        align-items:center;
+    }
+@media (max-width:500px) {
+    .nav {
         flex-direction:column;
     align-items:center;
     }
+    .nav logo,.container,.container2,.container3 {
+        flex-direction:column;
+        align-content:center;
+    }
+}
