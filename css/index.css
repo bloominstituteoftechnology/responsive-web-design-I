@@ -1,3 +1,94 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+* {
+    box-sizing: border-box;
+}
 
+html {
+	margin: 20px 100px;
+}
+
+.nav-container {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	margin: 10px;
+}
+
+.links a {
+	text-decoration: none;
+	color: cadetblue;
+	margin: 4%;
+}
+
+.title-container {
+	display: flex;
+	justify-content: space-evenly;
+	margin: 30px;
+}
+
+.title {
+	font: 2em sans-serif;
+	text-align: center;
+}
+
+button {
+	width: 150px;
+	height: 40px;
+}
+
+.text-area2 {
+	display: flex;
+}
+
+.column2 {
+	width: 48%;
+	justify-content: space-around;
+	margin: 5px;
+
+}
+
+.text-area3 {
+	display: flex;
+}
+
+.column3 {
+	margin:5px;
+	width: 32%;
+	justify-content: space-around;
+}
+
+.middle-img {
+	margin: 15px;
+	width: 1050px;
+}
+
+.contact p {
+	margin: 10px 0;
+	line-height: 2;
+}
+
+.copyright {
+	text-align: center;
+    margin: 30px;
+}
+
+hr {
+    margin: 10px 0;
+}
+
+@media (max-width: 800px) {
+    .nav-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+  }
+    .links a {
+	text-decoration: none;
+	color: cadetblue;
+	
+    }
+}
+@media (max-width: 500px) {
+    
+}
