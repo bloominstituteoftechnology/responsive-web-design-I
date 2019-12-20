@@ -1,3 +1,132 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+* {
+    box-sizing: border-box;
+}
 
+html {
+	margin: 20px 100px;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: Bangers;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.links {
+    flex: 1 0 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(73, 112, 112);
+}
+
+.logo {
+    flex: 0 1 15%;
+}
+
+.title-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 3em;
+}
+
+.title {
+    text-align: center;
+    font-size: 2rem;
+    flex: 1 0 50%;
+}
+
+.title-img {
+    flex: 1 0 50%;
+    text-align: center;
+}
+
+button {
+    width: 9em;
+    height: 3em;
+    background-color: rgb(248, 244, 244);
+    border-radius: 0.5em;
+}
+
+.text-area2 {
+    display: flex;
+}
+
+.column2 {
+    margin: 1em;
+}
+
+.text-area3 {
+    display: flex;
+}
+
+.column3 {
+    margin: 1em;
+}
+
+.middle-img {
+    text-align: center;
+}
+
+.copyright {
+    text-align: center;
+    margin: 1.5em;
+}
+
+@media (max-width: 800px) {
+    div.title-img {
+        display: none;
+    }
+
+    html {
+        margin: 0 auto;
+    }
+
+    .nav-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+
+    .logo {
+        flex: 1 0 100%;
+        text-align: center;
+        margin: 2em;
+    }
+}
+
+@media (max-width: 500px) {
+    .nav-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+
+    .links {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    a {
+        text-align: center;
+        border-top: 0.25px solid grey;
+        border-bottom: 0.25px solid grey;
+        padding: 1em;
+        
+    }
+
+    .text-area2, .text-area3 {
+        display: flex;
+        flex-direction: column;
+    }
+}
