@@ -1,3 +1,302 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+display: block;
+}
+body {
+line-height: 1;
+}
+ol, ul {
+list-style: none;
+}
+blockquote, q {
+quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: '';
+content: none;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+box-sizing: border-box;
+}
+
+html, body {
+
+height: 100%;
+font-family: 'Titillium Web', sans-serif;
+padding-bottom: 1px;
+}
+
+h1, h2, h3, h4, h5 {
+font-family: 'Bangers', cursive;
+letter-spacing: 1px;
+padding-bottom: 1px;
+}
+/* Your code starts here! */
+
+.container{
+max-width:1000px;
+margin: 0 auto;
+}
+
+button {
+background-color: white;
+width: 135px;
+height: 30px;
+border: 1px solid black;
+}
+
+.top_nav_head{
+height:60px;
+margin-top: 10px;
+display:flex;
+justify-content: space-between;
+align-items:center;
+}
+.Nav_Header a {
+margin-right: 60px;
+font-size: 16px;
+font-weight: bold;
+text-decoration: none;
+color: grey;
+}
+
+.Top_header {
+display:flex;
+justify-content: space-between;
+align-items:center;
+margin-top:30px;
+border-bottom: solid 2px black; 
+}
+
+.Header {
+width:49%;
+text-align:center;
+vertical-align: middle;
+}
+
+.first_picture {
+width:49%;
+text-align:center;
+vertical-align: middle;
+margin-left:13.96px;
+margin-bottom:30px;
+}
+
+.features_about {
+margin-top: 30px;
+margin-bottom: 30px;
+display:flex;
+justify-content:space-evenly;
+align-items:center;
+}
+
+.features {
+width: 49%;
+}
+.about {
+width: 50%;
+margin-left:5.23px;
+}
+
+.middle-img {
+margin-bottom:30px;
+}
+
+.body2 {
+margin: 0 auto;
+padding-bottom: 30px;
+margin-bottom:30px;
+border-bottom: solid 2px black;
+display:flex;
+align-items:center;
+}
+.Services{
+width:250px;
+}
+
+.Product {
+width:250px;
+margin-left:57.9px;
+}
+
+.Vision {
+width:250px;
+margin-left:57.9px;
+}
+.copyright
+{
+text-align:center;
+margin-bottom: 30px;
+}
+
+h1 {
+font-size: 60px;}
+
+img, h1, h2, p, nav {
+width:100%;
+height:auto;
+}
+
+header {
+align-items:center;
+}
+@media(max-width:900px){
+.container{
+	margin-left:5%;
+	width:100%;
+	
+}}
+
+/* FOR TABLETS MODE WITH 800PX  */
+
+@media(max-width: 800px) {
+.second_picture {
+display:none;
+}
+
+body {
+	margin-right: 50px;
+}
+
+.Nav_Header a {
+margin-right: 10;
+flex-wrap: wrap;
+margin-left: 1px;
+align-items:center;
+margin-bottom:1px;
+}
+
+h1 {
+justify-content:Center;
+margin-left: 50%;
+}
+.Top_header button {
+width: 175px;
+margin-left: 75%;
+margin-top: 20px;
+}
+.Header{
+text-align: center;
+margin-top:60px;
+margin-bottom: 80px;
+}
+.top_nav_head{
+flex-direction: column-reverse;
+height:auto;
+margin-top:0;
+}
+.Nav_Header{
+display: flex;
+justify-content:space-between;
+}
+.logo_top{
+margin-top:30px;
+margin-bottom: 30px;
+}}
+
+/* FOR MOBILE PHONE MODE WITH 500PX  */
+
+@media(max-width: 500px) {
+body {
+width: 90%;
+}
+
+button {
+max-width: 120px;
+}
+
+.features_about{
+flex-direction: column;
+margin-top:60px;
+}
+
+.features{
+width:100%;
+margin-bottom:60px;
+margin-left:0;
+}
+
+.about{
+width:100%;
+margin-left:0;
+}
+
+p{
+width:100%;
+}
+
+.body2{
+flex-direction: column;
+}
 
 
+.Services, .Product, .Vision{
+width:100%;
+margin-bottom:60px;
+}
+
+.Product, .Vision{
+margin-left:0;
+}
+
+.top_nav_head {
+flex-direction: column-reverse;
+margin-top:0;
+
+}
+
+nav {
+display: flex;
+flex-direction: column;
+text-align: center;
+
+}
+.Nav_Header a{
+font-size: 20px;
+margin-bottom:0;
+margin-left:-0;
+}
+
+nav a {
+border: 1px solid grey;
+border-left: 0px;
+border-right: 0px;
+width: 100%;
+padding-top: 20px;
+padding-bottom: 20px;
+}
+
+.copyright{
+	padding-bottom:1px;
+}
+.Vision{
+	margin-bottom:20px;
+}}
