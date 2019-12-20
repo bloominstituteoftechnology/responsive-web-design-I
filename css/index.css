@@ -1,3 +1,95 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+.Top-Left {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+nav a {
+  color: gray;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-bottom: thick solid;
+  padding-bottom: 30px;
+  justify-content: space-evenly;
+}
+header h1 {
+  font-size: 60px;
+  text-align: center;
+}
+header button {
+  border: thin solid;
+  width: 200px;
+  height: 20px;
+}
+.top-section {
+  display: flex;
+}
 
+.top-section-text {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.middle-image {
+  display: flex;
+  justify-content: flex-start;
+}
+.middle-img {
+  height: 100px;
+  width: 1500px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: flex-start;
+}
+.lower-container {
+  display: flex;
+  justify-content: space-between;
+}
+.lower-section {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding-right: 10px;
+}
+@media (max-width: 500px) {
+}
+
+nav a {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  border-bottom: solid gray;
+}
+.Top-Left {
+  box-sizing: border-box;
+  width: 100%;
+  border-bottom: gray solid;
+  font-size: medium;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+.innovation {
+  display: none;
+}
+
+.top-section {
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 800px) {
+  nav a {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+  }
+}
