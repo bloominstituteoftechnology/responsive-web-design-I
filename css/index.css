@@ -1,11 +1,3 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
-
-
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -19,285 +11,297 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-	display: block;
+display: block;
 }
 body {
-	line-height: 1;
+line-height: 1;
 }
 ol, ul {
-	list-style: none;
+list-style: none;
 }
 blockquote, q {
-	quotes: none;
+quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+content: '';
+content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+border-collapse: collapse;
+border-spacing: 0;
 }
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+box-sizing: border-box;
 }
 
 html, body {
-	
-    height: 100%;
-	font-family: 'Titillium Web', sans-serif;
+
+height: 100%;
+font-family: 'Titillium Web', sans-serif;
+padding-bottom: 1px;
 }
 
 h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 0px;
-	margin-bottom: 1px;
-	font-size: 100px;
+font-family: 'Bangers', cursive;
+letter-spacing: 1px;
+padding-bottom: 1px;
 }
-h6 {
-	font-family: 'Bangers', cursive;
-    letter-spacing: 5px;
-	margin-bottom: 15px;
-	font-size: 30px;
-}
+/* Your code starts here! */
 
-h7 {
-	font-family: 'Bangers', cursive;
-    letter-spacing: 5px;
-	margin-bottom: 15px;
-	font-size: 20px;
+.container{
+max-width:1000px;
+margin: 0 auto;
 }
 
-
-
-header nav{
-    flex-wrap: wrap;
-	overflow: hidden;
-	position: fixed;
-	top: 0;
-	width:89%;
-	background-color: white;
-	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
-	padding: 10px;
-  }
-  
-  nav .logo {
-    flex-wrap: wrap;
-	display: flex;
-	justify-content: flex-end;
-	width: 25%;
-	padding: 10px;
-	
-  }
-  
-  nav .links {
-    flex-wrap: wrap;
-	width: 70%;
-	display: flex;
-	justify-content: space-around;
-  }	
-  
-
-  nav a{
-    flex-wrap: wrap;
-	color: grey;
-	text-decoration:none;
-	letter-spacing:1px;
-	padding: 0 2%;
-  }
-
-  nav a:hover{
-    flex-wrap: wrap;
-	color: black;
-	text-decoration: none;
-  }
-
-
-  .button:hover{
-	border: none	;
-	background-color: grey;
-	color: white;
-
-  }
-
-.main-titles {	
-	margin: 0 10px;	
-	display: flex;
-	text-align: center;
-	flex-direction: column;
+button {
+background-color: white;
+width: 135px;
+height: 30px;
+border: 1px solid black;
 }
 
-.title-container {
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-	margin: 60px;
-	top: 10px;
-	padding-top: 0px;
+.top_nav_head{
+height:60px;
+margin-top: 10px;
+display:flex;
+justify-content: space-between;
+align-items:center;
+}
+.Nav_Header a {
+margin-right: 60px;
+font-size: 16px;
+font-weight: bold;
+text-decoration: none;
+color: grey;
 }
 
-nav button {
-	border: none;
-	border-radius: 8px;
-
+.Top_header {
+display:flex;
+justify-content: space-between;
+align-items:center;
+margin-top:30px;
+border-bottom: solid 2px black; 
 }
 
-  /* header style ends here */
-
-  /* middle section style starts here */
-
-
-
-
-.lowersection {
-  margin: 10px;
-  padding-bottom: 30px;
-  margin-top: 20px; 
-  margin-bottom:30px;
-  display:flex;
-  align-items:center;
+.Header {
+width:49%;
+text-align:center;
+vertical-align: middle;
 }
 
-.Services {
-    width: 40%;
-    margin-right: 6%;
+.first_picture {
+width:49%;
+text-align:center;
+vertical-align: middle;
+margin-left:13.96px;
+margin-bottom:30px;
 }
 
-.Product {
-    width: 40%;
-    margin-right: 6%;
-}
-
-.Vision {
-    width: 40%;
-}
-
-.mid-content{
-    margin-top: 30px;
-    margin-bottom: 30px;
-    display:flex;
-    justify-content:space-evenly;
-    align-items:center;
-
+.features_about {
+margin-top: 30px;
+margin-bottom: 30px;
+display:flex;
+justify-content:space-evenly;
+align-items:center;
 }
 
 .features {
-    width: 49%;
+width: 49%;
 }
-.About {
-    width: 49%;
-    margin-left:35px;
+.about {
+width: 50%;
+margin-left:5.23px;
 }
-
 
 .middle-img {
-    
-    padding: 1px;
-	width: 100%;
-	margin-bottom: 10px;
+margin-bottom:30px;
 }
 
-
-.bigcontainer {
-	padding: 100px;
-	margin: 1px;
-	width: 100%;
-  }
-
-  /* footer section  */
-
- .copyright {
-		display: flex;
-		align-items: center;
-        justify-content: center;
-        margin: 0;
-        bottom: 10;
-		
- }
-
- /* SERVICES Style starts here! */
-
-
-.services-header-img {
-	padding: 1px;
-	width: 100%;
-	margin-bottom: 40px;
+.body2 {
+margin: 0 auto;
+padding-bottom: 30px;
+margin-bottom:30px;
+border-bottom: solid 2px black;
+display:flex;
+align-items:center;
+}
+.Services{
+width:250px;
 }
 
-.ServicesPage-Top{
-	text-align: justify;
+.Product {
+width:250px;
+margin-left:57.9px;
 }
 
- /* BUTTONS  */
+.Vision {
+width:250px;
+margin-left:57.9px;
+}
+.copyright
+{
+text-align:center;
+margin-bottom: 30px;
+}
 
- 
-  button:hover {
-	background: white;
-	color: black;
-  }
+h1 {
+font-size: 60px;}
 
+img, h1, h2, p, nav {
+width:100%;
+height:auto;
+}
 
-  
-  /* BUTTONS  */
-
-.button-box {
-    margin: auto;
-    border: 1px solid black;
-    width: 60%;
-    padding: 10px;
-
-    }
-
-.main-content-services {
-    
-	display: flex;
-	flex-wrap: wrap;
-    justify-content: center;
-    padding: 50px;
-  }
-
-  
-  .content-container {
-	display: flex;
-	flex-wrap: wrap;
-	width: 500px;
-	height: 250px;
-	background-color: whitesmoke;
-	border: 1px solid black;
-	margin: 30px;
-	padding: 20px;
-	box-sizing: border-box;
-
-  }
-
-  .bottom-content {
-	display: flex;
-
-	padding: 120px;
-	margin: 30px;
+header {
+align-items:center;
+}
+@media(max-width:900px){
+.container{
+	margin-left:5%;
+	width:100%;
 	
-  }
+}}
 
-  ul {
-	padding-top: 20px;
-	list-style-type: circle;
-	list-style-type: square;
-	padding-left: 20px;
-	line-height: 2;
-  }
+/* FOR TABLETS MODE WITH 800PX  */
 
+@media(max-width: 800px) {
+.second_picture {
+display:none;
+}
+
+body {
+	margin-right: 50px;
+}
+
+.Nav_Header a {
+margin-right: 10;
+flex-wrap: wrap;
+margin-left: 1px;
+align-items:center;
+margin-bottom:1px;
+}
+
+h1 {
+justify-content:Center;
+margin-left: 50%;
+}
+.Top_header button {
+width: 175px;
+margin-left: 75%;
+margin-top: 20px;
+}
+.Header{
+text-align: center;
+margin-top:60px;
+margin-bottom: 80px;
+}
+.top_nav_head{
+flex-direction: column-reverse;
+height:auto;
+margin-top:0;
+}
+.Nav_Header{
+display: flex;
+justify-content:space-between;
+}
+.logo_top{
+margin-top:30px;
+margin-bottom: 30px;
+}}
+
+/* FOR MOBILE PHONE MODE WITH 500PX  */
+
+@media(max-width: 500px) {
+body {
+width: 90%;
+}
+
+button {
+max-width: 120px;
+}
+
+.features_about{
+flex-direction: column;
+margin-top:60px;
+}
+
+.features{
+width:100%;
+margin-bottom:60px;
+}
+
+.about{
+width:100%;
+}
+
+p{
+width:100%;
+}
+
+.body2{
+flex-direction: column;
+}
+
+
+.Services, .Product, .Vision{
+width:100%;
+margin-bottom:60px;
+}
+
+.Product, .Vision{
+margin-left:0;
+}
+
+.top_nav_head {
+flex-direction: column-reverse;
+margin-top:0;
+
+}
+
+nav {
+display: flex;
+flex-direction: column;
+text-align: center;
+
+
+}
+.Nav_Header a{
+font-size: 20px;
+margin-bottom:0;
+margin-left:0;
+}
+
+nav a {
+border: 1px solid grey;
+border-left: 0px;
+border-right: 0px;
+width: 100%;
+padding-top: 20px;
+padding-bottom: 20px;
+/* border-bottom: 1px solid grey;
+border-top: 1px solid grey; */
+
+}
+
+h2{
+	font-size: 20px;
+}
+.copyright{
+	padding-bottom:1px;
+}
+.Vision{
+	margin-bottom:20px;
+}}
