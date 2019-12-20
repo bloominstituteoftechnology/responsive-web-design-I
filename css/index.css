@@ -171,64 +171,81 @@ footer {
 }
 
 @media (max-width: 480px) {
-  
-  nav {
-    flex-direction: column;
+
+#page-wrap {
+  width: 480px;
+  margin: 5px;
+}  
+
+nav {
+    flex-direction: column-reverse;
     justify-content: right;
     text-align: center;
-    font-size: 40px;
+    font-size: 35px;
     width: 100%;
   }
-
-  nav a {
+    
+nav a {
     border-bottom: 3px solid lightgray;
     width: 100%;
     padding: 15px;
   }
 
-  .codesnippet {
+.codesnippet {
     display: none;
   }
   
-  .middle-img {
-    width: 70%;
-    text-align: center;
-  }
-  
-  .innovation {
-    display: block;
-    width: 100vh;
+.middle-img {
+    width: 100%;
+    justify-content: center;
+    margin: 0;
   }
 
-  .features, .about, .services, .product, .vision, .contact {
+.features, .about, .services, .product, .vision, .contact {
     width: 80%;
     margin: 5px;
     font-size: 25px;
-    ;
-    }
-   
-    .firstbox, .secondbox {
-     flex-direction: column;
-     line-height: 10px;
-     width: 75%;
-   }
+  } 
 
-  h3 {
-  font-size: larger;  
+h1, button {
+  display: flex;
   }
 
-.logo {
-  order: -1;
-  padding: 20px;
-  width: 35vh;
+h1 {
+    display: block;
+    text-align: center;
+    width: 100px;
+    margin: auto;
+  }
+   
+.firstbox, .secondbox {
+     flex-direction: column;
+     font-size: 15px;
+     width: 100%;
+     align-content: space-between;
+   }
+
+h3 {
+  font-size: larger;  
   }
 }
 
 @media (max-width: 800px) {
 
-  .codesnippet {
-    display: none;
-  }
+#page-wrap {
+  width: 800px;
+  margin: 5px;
+}  
+
+nav a {
+  flex-direction: column-reverse;
+  text-align: center;
+  font-size: 100%;
+}
+
+.codesnippet {
+  display: none;
+}
 
 .middle-img {
   display: block;  
@@ -236,7 +253,8 @@ footer {
 }
 
 .firstbox {
-  font-size: 15px;
+  display: flex;
+  font-size: 12px;
   line-height: 20px;
   text-align: left;
 }
@@ -249,8 +267,7 @@ footer {
 
 h3 {
   text-align: left;
-}
-
+  }
 }
 
   
