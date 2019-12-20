@@ -11,8 +11,7 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video 
-{
+time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -52,8 +51,7 @@ table {
 html, body {
     height: 100%;
   font-family: 'Titillium Web', sans-serif;
-  width: 1500px; margin: 0 auto;
-
+  width: 100%; margin: 0 auto;
   
 }
 
@@ -149,7 +147,7 @@ hr{
   display:flex;
   justify-content:space-between;
   width:75%;
-  margin:20px 0 0 50px;
+  margin:5% 0 0 50px;
   align-items:flex-start;
 
 }
@@ -165,7 +163,7 @@ hr{
   justify-content:flex-start;
   /* margin:50px; */
   width:95%;
-  margin:20px 0 30px 40px;
+  margin:5% 0 30px 40px;
 }
 
 .column-2{
@@ -177,7 +175,7 @@ address{
   /* display:flex; 
 justify-content:flex-end;  */
 display:block;
-margin:20px 10px 50px 80px;
+margin:5% 10px 50px 80px;
     }
 
 .contact-h3{
@@ -201,43 +199,62 @@ footer{
 } 
 
 @media(max-width:800px){
-    .nav, .start {
+    .nav {
     display:flex;
     flex-direction:column-reverse;
+    justify-content:space-around;
   }
   
-  .heading{
-    margin-top:0;
-    padding:0;
-  }
-
-  .button{
-    width:17%;
-  }
-  .header-image{
-    display:none;gi
-  }
-  .nav{
-    display:flex;
-    justify-content: space-evenly;
-    width:80%;
-    margin-bottom:0;
-  }
   .logo-img{
     display:flex;
     justify-content:center;
     align-items:center; 
-    width:17%;
-    margin:0 0 2% 23%;
-
+    width:27%;
+    margin:3% 0 2% 25%;
   }
 
+  .heading{
+    display:flex;
+    justify-content:center;
+    margin-top: 0;
+    padding: 0;
+  }
+
+  .h1{
+    /* display:flex;
+    justify-content:center; */
+    font-size:2.5em;
+    text-align:center;
+    width:100%;
+  }
+
+  .button{
+    display:flex;
+    justify-content:center; 
+    width: 90%;
+  }
+  .header-image{
+    display:none;
+  }
+
+  .nav{
+    display:flex;
+    justify-content: space-evenly;
+    width:100%;
+    margin:0 0 0 15%;
+  }
+  
+  .nav a{
+    width:100%;
+    padding:0 10% 0 10%;
+    }
+
   .row-1{
-    width:50%
+    width:90%
   }
 
    .row-2{
-    width:57%;
+    width:100%;
   }
   .middle-imge{
     display:flex;
@@ -245,13 +262,13 @@ footer{
     width:10%;
   }
   hr{
-    width:46%;  
+    width:85%;  
   }
 
   footer{
     display:flex;
     justify-content:center;
-    width:60%;
+    width:100%;
 
   }
 } 
@@ -264,8 +281,8 @@ footer{
   }
 
   .logo-img{
-    width:15%;
-    margin-left:15%;
+    width:35%;
+    margin-left:25%;
   }
   
 
@@ -273,55 +290,64 @@ footer{
     display:flex;
     flex-direction:column;
   }
-  nav  a{
+  .nav  a{
     display:flex;
-    margin-left:22%;
-    font-size:16px;
-    padding:10px;
-    width:
+    justify-content: center;
+    font-size:1.5em;
+    padding:5%;
   }
 
   .heading{
-    margin:0 0 0 14%; 
+    font-size:1.2em;
+    text-align:center;
+    width:100%;
+    margin:5% 0 15% 10%;  
+
   }
   
-  .h1{
-    font-size:45px;
-    text-align:center;
-    width:14%;
-  }
 
-  button{
-    width:14%;
-    height:20px;
-    padding:4px 8px;
+  .button{
+    display:flex;
+    justify-content:center;
+    padding:5px 5px;
+    width:100%;
   }
 
   hr{
-    width:46%;
+    margin-left:2%;
+    width:95%;
+  }
+  
+  .middle-img{
+    width: 92%;
+    margin-left:5%;
   }
 
   .row-1, .row-2{
     display:flex;
     flex-direction:column;
+    margin-left: 2%;
   }
 
   .column-1{
     float:left;
-    width:55%;
+    width:95%;
   }
 
   .column-2{
     float:left;
-    width:50%;
+    width:90%;
+  }
+
+  address{
+    margin: 9% 0 15% 8%;
   }
 
   footer{
     display:flex;
   justify-content:center;
   text-align:center;
-  margin-bottom:80px;
-  width:40%;
+  width:100%;
   }
 
 }
