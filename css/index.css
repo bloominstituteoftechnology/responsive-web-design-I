@@ -1,3 +1,334 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol,
+ul {
+	list-style: none;
+}
+blockquote,
+q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+	font-family: "Titillium Web", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: "Bangers", cursive;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
+}
+
+/*       */
+
+html {
+	margin: 5%;
+	width: 95%;
+}
+
+.nav-bar {
+	display: flex;
+	align-items: baseline;
+	justify-content: space-around;
+}
+
+nav {
+	display: flex;
+	justify-content: space-evenly;
+
+	/*align-items: flex-start;*/
+}
+
+nav a {
+	display: flex;
+	align-items: stretch;
+	justify-content: space-around;
+	/*align-items: flex-start;*/
+	color: lightgray;
+	margin: 8% 4%;
+	text-decoration: none;
+}
+
+.logo {
+	padding: 4%;
+	align-self: flex-end;
+}
+
+.nav-bar {
+	display: flex;
+	align-items: stretch;
+}
+
+header {
+	display: flex;
+	align-items: stretch;
+	justify-content: center;
+}
+
+.container1 {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	padding: 5% 8% 5% 0%;
+}
+
+.container1 h1 {
+	font-size: 70px;
+	text-align: center;
+}
+
+.button {
+	display: flex;
+	align-self: center;
+	width: 40%;
+	border: 1px solid gray;
+	padding: 5px 7px;
+	text-align: center;
+}
+
+.container2 {
+	display: flex;
+}
+
+.side-image {
+	display: flex;
+	margin-left: 4%;
+}
+
+.top-content {
+	display: flex;
+	padding: 3%;
+	margin: 5%;
+	border-top: 1px solid black;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+
+.center-image {
+	display: flex;
+	justify-content: center;
+}
+
+.bottom-content {
+	display: flex;
+	padding: 40px;
+	margin: 2%;
+	align-items: flex-start;
+	justify-content: space-between;
+	border-bottom: 1px solid black;
+}
+
+.contact {
+	display: flex;
+	margin: 5%;
+	align-items: flex-start;
+	flex-direction: column;
+}
+
+footer {
+	width: 100%;
+	text-align: center;
+	margin: 0 0 10% 0;
+	display: block;
+}
+
+.middle-content {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	display: flex;
+	justify-content: center;
+}
+
+.middle-content div {
+	border: 1px solid black;
+	height: 220px;
+	width: 400px;
+	padding: 2%;
+	margin: 2%;
+	justify-content: stretch;
+	background: whitesmoke;
+}
+
+.learn-more-button {
+	width: 40%;
+	border: 1px solid gray;
+	text-align: center;
+	border-radius: 8px;
+	padding: 2% 4%;
+	margin: 5%;
+}
+
+.services-container {
+	border-top: 1px solid black;
+	padding: 3% 0;
+	display: flex;
+	justify-content: center;
+}
+
+.services-container ul li {
+	list-style-type: square;
+	margin: 5%;
+}
+
+@media (max-width: 800px) {
+	.nav-bar {
+		flex-direction: column-reverse;
+		justify-content: center;
+	}
+
+	.logo {
+		align-self: center;
+	}
+	.container2 {
+		display: none;
+	}
+}
+
+@media (max-width: 500px) {
+	nav {
+		flex-direction: column;
+		align-items: center;
+		border-bottom: solid black 1px;
+		font-size: 25px;
+	}
+	nav a {
+		border-bottom: solid black 1px;
+		width: 100%;
+		justify-content: center;
+	}
+
+	.logo {
+	}
+}
