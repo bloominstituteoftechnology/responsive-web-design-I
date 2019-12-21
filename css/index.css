@@ -174,15 +174,13 @@ nav a {
 	display: flex;
 	align-items: stretch;
 	justify-content: space-around;
-	/*align-items: flex-start;*/
 	color: lightgray;
 	margin: 8% 4%;
 	text-decoration: none;
 }
 
 .logo {
-	padding: 4%;
-	align-self: flex-end;
+	margin-bottom: 5%;
 }
 
 .nav-bar {
@@ -209,11 +207,10 @@ header {
 }
 
 .button {
-	display: flex;
 	align-self: center;
 	width: 40%;
 	border: 1px solid gray;
-	padding: 5px 7px;
+	padding: 5px 10px;
 	text-align: center;
 }
 
@@ -231,13 +228,14 @@ header {
 	padding: 3%;
 	margin: 5%;
 	border-top: 1px solid black;
-	align-items: flex-start;
 	justify-content: space-between;
 }
 
 .center-image {
 	display: flex;
 	justify-content: center;
+	padding: 5%;
+	max-width: 100%;
 }
 
 .bottom-content {
@@ -310,6 +308,7 @@ footer {
 
 	.logo {
 		align-self: center;
+		margin-bottom: 0;
 	}
 	.container2 {
 		display: none;
@@ -320,15 +319,30 @@ footer {
 	nav {
 		flex-direction: column;
 		align-items: center;
-		border-bottom: solid black 1px;
+		border-top: solid darkgray 1px;
 		font-size: 25px;
 	}
 	nav a {
-		border-bottom: solid black 1px;
 		width: 100%;
 		justify-content: center;
+		padding: 0 0 2% 0;
+		border-bottom: solid darkgray 1px;
 	}
 
-	.logo {
+	.top-content {
+		flex-direction: column;
+		padding: 5%;
+	}
+
+	.top-content div {
+		margin-top: 5%;
+	}
+
+	.bottom-content {
+		flex-direction: column;
+	}
+
+	.bottom-content div {
+		margin-top: 5%;
 	}
 }
