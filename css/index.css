@@ -130,10 +130,6 @@ h2 {
 	font-size: 20px;
 }
 
-.Border1 {
-	border: 10px solid black;
-}
-
 .Column1 {
 	display: flex;
 	column-count: 2;
@@ -218,11 +214,21 @@ footer {
 }
 /* 500 px max width media querie*/
 @media(max-width: 500px) {
+	
 	nav {
 		display: flex;
 		flex-direction: column;
+		align-items: center;
+		margin-top: 10%;
 		
 			
+	}
+
+	.header {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column-reverse;
 	}
 	
 	a {
@@ -232,15 +238,30 @@ footer {
 		padding-top: 2%;
 		display: flex;
 		flex-direction: column;
+		align-content: center;
+		margin-top: 10%;
+		border-bottom: 1px solid black;
 	}
 
 	.Circle {
 		display: none;
 	}
 	
+	.GreatIdea a {
+		display: flex;
+		justify-content: center;
+		text-decoration: none;
+	} 
+
+	.Column1 {
+		display: flex;
+		border-top: 1px solid black;
+		margin-top: 80px;
+		/* border: 10px solid red; */
+	}
 }
 /* 800 px max width media querie */
-@media(max-width: 800ox) {
+@media(max-width: 800px) {
 
 }
 
