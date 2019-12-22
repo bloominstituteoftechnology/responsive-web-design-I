@@ -1,3 +1,68 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 body {
 	margin: 5% 10% 10% 10%;
@@ -7,62 +72,59 @@ body {
 
 nav {
 	display: flex;
-	flex-direction: row;
 	justify-content: space-between;
-	align-content: flex-start;
+	width: 70%;
+	
+		
 }
 
 a {
 	font-size: 20px; 
 	color: gray;
 	text-decoration: none;
+	padding-top: 2%;
 }
 
-.GreatIdea {
+.header {
 	display: flex;
-	flex-direction: row-reverse;
 	justify-content: space-between;
-	margin-top: -10px;
 }
 
-.Header {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	margin-top: 50px;
-	/* border: 10px solid red; */
-
-}
-
-.HeaderText {
+.InnovationStart {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	margin-right: 15%;
+	margin-top: 5%;
+	text-align: center;
 	align-items: center;
-	/* border: 10px solid red; */
 }
+
 
 h1 {
 	font-size: 80px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	/* border: 10px solid red; */
 }
 
 .Circle {
-	width: 100%;
+	
 }
 
 .GetStarted {
 	font-size: 20px;
-	display: flex;
-	justify-content: center;
-	border: 2px solid black;
-	padding: 10px 15px 10px 15px;
-	width: 190px;
+	border: .75px solid black;
+	padding: 5%;
+	width: 50%;
+	text-align: center;
 	/* border: 10px solid red; */
 }	
+
+.TextCircle {
+	display: flex;
+	flex-direction: row;
+	margin-top: 3%;
+}
 
 h2 {
 	font-size: 20px;
@@ -153,5 +215,32 @@ footer {
 	margin-top: 50px;
 	margin-bottom: 50px;
 	/* border: 10px solid red; */
+}
+/* 500 px max width media querie*/
+@media(max-width: 500px) {
+	nav {
+		display: flex;
+		flex-direction: column;
+		
+			
+	}
+	
+	a {
+		font-size: 20px; 
+		color: gray;
+		text-decoration: none;
+		padding-top: 2%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.Circle {
+		display: none;
+	}
+	
+}
+/* 800 px max width media querie */
+@media(max-width: 800ox) {
+
 }
 
