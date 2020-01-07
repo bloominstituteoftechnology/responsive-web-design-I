@@ -3,354 +3,451 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+html,
+body {
+  height: 100%;
+  font-family: 'Titillium Web', sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Bangers', cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
 }
 
 #body {
-	max-width: 1000px;
-	margin: 0 auto;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .navbar {
-	margin: 20px 0px 0px 30px;
-	display: flex;
+  margin: 20px 0px 0px 30px;
+  display: flex;
 }
 
-@media(max-width: 800px) {
-	.navbar {
-		margin: 0px;
-		flex-direction: column;
-		justify-content: center;
-	}
+@media (max-width: 800px) {
+  .navbar {
+    margin: 0px;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
-
 
 a {
-	color: darkgrey;
-	text-decoration: none;
-	padding-left: 25px;
-	padding-right: 25px;
-	
+  color: darkgrey;
+  text-decoration: none;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 /* Media query at 890px because 
 links look odd between 890px and 800px */
 
 @media (max-width: 890px) {
-	.navbar a {
-		padding-left: 19px;
-		padding-right: 19px;
-	}
+  .navbar a {
+    padding-left: 19px;
+    padding-right: 19px;
+  }
 }
 
 /* MAde links to look like full bars for mobile*/
 
 @media (max-width: 500px) {
-	.navbar a {
-		border-bottom: 1px solid black;
-		height: 60px;
-		width: 100%;
-		padding-top: 20px;
-		text-align: center;
-	}
+  .navbar a {
+    border-bottom: 1px solid black;
+    height: 60px;
+    width: 100%;
+    padding-top: 20px;
+    text-align: center;
+  }
 }
 
-
 #intro {
-	width: 100%;
-	height: 50%;
-	display: flex;
-	align-content: center;
-	justify-content: center;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
 }
 
 /* Gap to big with height 50% in Tablet(800px)and 
 needed some bottom margin*/
 
-@media(max-width: 800px) {
-	#intro {
-		height: 40%;
-		margin-bottom: 50px;
-	}
+@media (max-width: 800px) {
+  #intro {
+    height: 40%;
+    margin-bottom: 50px;
+  }
 }
 
-.catchphrase, .codepic {
-	padding: 20px;  
-	align-self: center;
-	text-align: center;
+@media (max-height: 550px) {
+  #intro {
+    height: 40%;
+    margin: 50px 0 90px 0;
+  }
+}
+
+.catchphrase,
+.codepic {
+  padding: 20px;
+  align-self: center;
+  text-align: center;
 }
 
 /* Removed top pic from display below 800px */
 
-@media(max-width: 800px) {
-	#intro .codepic {
-		display: none;
-	}
+@media (max-width: 800px) {
+  #intro .codepic {
+    display: none;
+  }
 }
 
 .catchphrase {
-	padding-top: 65px;
+  padding-top: 65px;
 }
 
 .navigation {
-	display: flex;
-	justify-content: space-around;
-	padding-top: 10px;
-	margin-left: 30px;	
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10px;
+  margin-left: 30px;
 }
 /* Reordering the navigation and logo elements
 while at 800 and less. Added some margin and
 width */
 
-@media(max-width: 800px) {
-	.navigation {
-		order: 2;
-		margin: 30px 0px 0px 0px;
-		width: 100%;
-
-	}
+@media (max-width: 800px) {
+  .navigation {
+    order: 2;
+    margin: 30px 0px 0px 0px;
+    width: 100%;
+  }
 }
 
 /* Seeting the direction to column*/
 
-@media(max-width: 500px) {
-	.navigation {
-		border-top: .5px solid black;
-		flex-direction: column;
-		padding: 0px;
-	}
+@media (max-width: 500px) {
+  .navigation {
+    border-top: 0.5px solid black;
+    flex-direction: column;
+    padding: 0px;
+  }
 }
 
 .logo {
-	width: 20%;
-	height: auto;
-	margin-left: 50px;
+  width: 20%;
+  height: auto;
+  margin-left: 50px;
 }
 
 /* Reordering the navigation and logo elements
 while at 800 and less.*/
 
-@media(max-width: 800px) {
-	.navbar .logo {
-		margin-top: 20px;
-		width: 22%;
-		order: 1;
-		align-self: center;
-	}
+@media (max-width: 800px) {
+  .navbar .logo {
+    margin-top: 20px;
+    width: 22%;
+    order: 1;
+    align-self: center;
+  }
 }
 
 /* Logo wasnt quite large enough*/
 
-@media(max-width: 500px) {
-	.navbar .logo {
-		margin: 20px 0px 0px 25px;
-		width: 40%;
-	}
+@media (max-width: 500px) {
+  .navbar .logo {
+    margin: 20px 0px 0px 25px;
+    width: 40%;
+  }
+}
+
+.code-pic {
+  width: 70%;
+  height: auto;
 }
 
 .megabig {
-	margin-bottom: 25px;
-	font-size: 75px;
+  margin-bottom: 25px;
+  font-size: 50px;
 }
 
-
 button {
-	background: white;
-	border: 2px solid black;
-	font-weight: bold;
-	margin: 0px;
-	padding: 10px 40px
+  background: white;
+  border: 2px solid black;
+  font-weight: bold;
+  margin: 0px;
+  padding: 10px 40px;
 }
 
 h2 {
-	font-weight: bold; 
+  font-weight: bold;
 }
 
 hr {
-	width: 100%;
-	border: 1px solid black;
+  width: 100%;
+  border: 1px solid black;
 }
 
 @media (max-width: 800px) {
-	hr {
-		width: 96%;
-	}
+  hr {
+    width: 96%;
+  }
 }
 
 @media (max-width: 500px) {
-	hr {
-		width: 95%;
-	}
+  hr {
+    width: 95%;
+  }
 }
 
 .features {
-	margin-top: 20px;
-	margin-left: 30px; 
-	display: flex;
+  margin-top: 20px;
+  margin-left: 30px;
+  display: flex;
 }
 
 @media (max-width: 500px) {
-	.features {
-		margin: 0px;
-		flex-direction: column;
-		justify-content: center;
-	}
-} 
+  .features {
+    margin: 0px;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
 
-.feat, .bout {
-	width: 49%;
-  	padding: 15px;
-    text-align: left;
+.feat,
+.bout {
+  width: 49%;
+  padding: 15px;
+  text-align: left;
 }
 
 @media (max-width: 500px) {
-	.features .feat {
-		width: 100%;
-	}
+  .features .feat {
+    width: 100%;
+  }
 }
 
 @media (max-width: 500px) {
-	.features .bout {
-		width: 100%;
-	}
+  .features .bout {
+    width: 100%;
+  }
 }
 
 .middle-img {
-	margin-top: 20px;
-	margin-bottom: 20px; 
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 /* Adjusted img width and added a little padding */
 
 @media (max-width: 800px) {
-	.middle-img {
-		padding-left: 13px;
-		width: 98%;
-	}
+  .middle-img {
+    padding-left: 13px;
+    width: 98%;
+  }
 }
 
 @media (max-width: 500px) {
-	.middle-img {
-		padding-left: 13px;
-		width: 98%;
-	}
+  .middle-img {
+    padding-left: 13px;
+    width: 98%;
+  }
 }
 .servicesection {
-	padding-left: 45px;
-	display: flex;
+  padding-left: 45px;
+  display: flex;
 }
 
 @media (max-width: 500px) {
-	.servicesection {
-		padding: 0px;
-		flex-direction: column;
-		justify-content: center;
-	}
+  .servicesection {
+    padding: 0px;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
-.service, .product, .vision {
-	width: 31%;
-	padding: 20px;
-	text-align: middle;
+.service,
+.product,
+.vision {
+  width: 31%;
+  padding: 20px;
+  text-align: middle;
 }
 
 /* Set widths and padding for mobile */
 
 @media (max-width: 500px) {
-	.servicesection .service {
-		padding: 15px;
-		width: 100%;
-	}
+  .servicesection .service {
+    padding: 15px;
+    width: 100%;
+  }
 }
 
 @media (max-width: 500px) {
-	.servicesection .product {
-		padding: 15px;
-		width: 100%;
-	}
+  .servicesection .product {
+    padding: 15px;
+    width: 100%;
+  }
 }
 
 @media (max-width: 500px) {
-	.servicesection .vision {
-		padding: 15px;
-		width: 100%;
-	}
+  .servicesection .vision {
+    padding: 15px;
+    width: 100%;
+  }
 }
 .contact {
-	margin: 40px 0px 20px 45px;
+  margin: 40px 0px 20px 45px;
 }
 
 @media (max-width: 500px) {
-	.contact {
-		margin: 0px;
-		padding: 15px;
-	}
+  .contact {
+    margin: 0px;
+    padding: 15px;
+  }
 }
 
 .copyright {
-	margin-bottom: 20px;
-	width: 100%;
-	text-align: center;
+  margin-bottom: 20px;
+  width: 100%;
+  text-align: center;
 }
 
 img {
-	width: 100%;
-	height: auto;
+  width: 100%;
+  height: auto;
 }
