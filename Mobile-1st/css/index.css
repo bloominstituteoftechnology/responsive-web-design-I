@@ -92,10 +92,6 @@ nav {
     align-items: baseline;
 }
 
-
-
-
-
 .links{
     display: flex;
     flex-direction: column;
@@ -172,7 +168,8 @@ nav {
 
 #home-content-1 div{
     width: 100%;
-    margin: 4% 0;
+    margin: 4% 0 ;
+    
 }
 
 #home-content-2 {
@@ -271,9 +268,11 @@ footer p {
 
 /****** Media Queries */
 @media (min-width: 500px) {
+
+    
    .facts-img {
        display: inline;
-       width: 50%;
+       
        padding-right: 4%;
    }
 
@@ -282,7 +281,112 @@ footer p {
        padding-right: 4%;
    
    }
+
+   .links {
+       flex-direction: row; 
+       margin-top: 2%; 
+   }
+
+   .links a{
+        border:none;
+       padding: 0;
+   }
+
+   .links:first-child {
+       border:none;
+   }
+
+   .logo-container {
+    margin: 4% auto 2%;
 }
 
+#services-content {
+    flex-direction: row;
+}
+
+#services-content div {
+    width: 48%;
+    
+}
+
+button.lm-btn {
+    margin:2% 0;
+}
+
+.facts-info {
+    line-height: 1;
+}
+
+header.home-header {
+    margin-bottom: 2%;
+}
+
+#home-content-1 {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 4% 0;
+    margin-top: 0;
+}
+
+#home-content-1 div {
+    width: 45%;
+}
+
+
+
+#home-content-2 {
+    flex-direction: row;
+    justify-content: space-between;
+    margin:4% 0;
+    padding-bottom: 0;
+   
+}
+
+#home-content-2 div {
+    width: 25%;
+    margin-bottom: 4%;
+}
+
+.contact-info{
+    margin: 0;
+}
+
+}
+
+
+@media (min-width: 800px) {
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    /** Home page **/
+#home-content-1 {
+    margin: 0;
+    color:red;
+}
+
+    /** Services Page **/
+
+    .services-header-img-container{
+        display: block;
+        margin-top: 5%;
+    }
+
+.links {
+    width: 50%;
+    margin:2% 0  ;
+}
+
+.logo-container {
+    margin-right: 0;
+}
+
+.header-img-container {
+    display:block;
+}
+ 
+}
+   
 
 
