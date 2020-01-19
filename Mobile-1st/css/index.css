@@ -205,9 +205,9 @@ footer p {
 }
 
 
-/***** Services styles *****/
+/***** Services oage styles *****/
 .services-header-img-container{
-    margin-top: 5%;
+    display:none;
 }
 
 .services-header-img {
@@ -228,22 +228,24 @@ footer p {
     border-bottom: 2px solid grey;
  }
 
- .content-info {
-     width: 48%;
-     margin-bottom: 2.7%;
-     padding: 1.8%;
-     background: ghostwhite;
-     border:1px solid black;
-     line-height: 1.5;
- }
+  #services-content div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 2.7%;
+    padding: 1.8%;
+    background: ghostwhite;
+    border:1px solid black;
+    line-height: 2;
+  }
 
- .lm-btn {
+ button.lm-btn {
      background: aliceblue;
      border:1px solid black;
-     border-radius:4px;
+     border-radius: 4px;
      width: 34%;
-     height: 20%;
-     margin: 12px 0 24px 0;
+     height: 36px;
+     margin:4% auto;
  }
 
 
@@ -254,13 +256,17 @@ footer p {
  }
 
 .facts-info {
-    width: 50%;
-    padding-right: 4%;
+    width: 100%;
+    line-height: 2;
 }
 
 .facts-info ul {
     list-style-type: disc;
     padding: 6%;
+}
+
+.facts-img {
+    display: none;
 }
 
 /****** Media Queries */
