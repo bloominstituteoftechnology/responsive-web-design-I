@@ -74,7 +74,7 @@ h1, h2, h3, h4, h5 {
 body {
     max-width: 960px;
     margin: auto;
-    
+    padding: 2%;
 }
 
 /* Header */
@@ -124,7 +124,6 @@ nav {
 	transform: scale(1.5);
 }
 
-
 .header-info {
     display:flex;
     justify-content: space-evenly;
@@ -137,7 +136,6 @@ nav {
     font-size: 4.5em;
     margin: auto;
 }
-
 
 /* Content */
 #home-content-1 {
@@ -166,12 +164,10 @@ nav {
     width: 25%;
 }
 
-
-
 /* Contact section */
 .contact-info {
     line-height: 1.25;
-    margin-bottom: 4%;
+    margin-bottom: 4%;  
 }
 
 /* Footer */
@@ -179,14 +175,41 @@ footer {
     text-align: center;
 }
 
+footer p {
+    margin: 5%;
+}
+
 /****** Media Queries */
 
 @media (max-width: 800px) {
+   .header-img-container {
+       display: none;
+   }
 
+    nav {
+        flex-direction: column-reverse; 
+    }
+
+.links{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
+    .links a{
+       margin: 0;
+    }
+
+    .logo-container {
+        margin:4% auto;
+    }
+}
+
+
 @media (max-width: 500px) {
-    
+    body {
+        background-color: yellowgreen;
+    }
 }
 
 
