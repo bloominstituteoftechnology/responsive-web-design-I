@@ -75,6 +75,7 @@ body {
     max-width: 960px;
     margin: auto;
     padding: 2%;
+   
 }
 
 /* Header */
@@ -109,12 +110,12 @@ nav {
 }
 
 .header-cta {
-    font-size: 1.2em;
-    color: gray;
+    
     background:transparent;
     border:1px solid black;
     width: 60%;
-    margin: 10% auto;
+    margin: 10% auto 14%   auto;
+    padding: 2%;
 }
 
 .header-cta:hover {
@@ -179,6 +180,64 @@ footer p {
     margin: 5%;
 }
 
+
+/***** Services styles *****/
+.services-header-img-container{
+    margin-top: 5%;
+}
+
+.services-header-img {
+    width: 100%;
+}
+
+.services-header-info {
+    margin: 4% 0;
+    line-height: 1.8;
+}
+
+#services-content{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    margin: 5% 0;
+    border-bottom: 2px solid grey;
+ }
+
+ .content-info {
+     width: 48%;
+     margin-bottom: 2.7%;
+     padding: 1.8%;
+     background: ghostwhite;
+     border:1px solid black;
+     line-height: 1.5;
+ }
+
+ .lm-btn {
+     background: aliceblue;
+     border:1px solid black;
+     border-radius:4px;
+     width: 34%;
+     height: 20%;
+     margin: 12px 0 24px 0;
+ }
+
+
+ .facts {
+     display:flex;
+     justify-content: space-between;
+     margin: 2.8%;
+ }
+
+.facts-info {
+    width: 50%;
+    padding-right: 4%;
+}
+
+.facts-info ul {
+    list-style-type: disc;
+    padding: 6%;
+}
+
 /****** Media Queries */
 
 @media (max-width: 800px) {
@@ -216,6 +275,42 @@ footer p {
         border-bottom: 1px solid grey;  
          padding: 4%; 
          text-align: center;
+    }
+
+    .links:first-child {
+        border-top: 1px solid grey;
+    }
+
+    .tagline-container {
+        margin-top: 8%;
+    }
+
+    #home-content-1
+     {
+        margin-top: 14%;
+    }
+
+    #home-content-2{
+        margin-top: 8%;
+    }
+
+    #home-content-1,
+    #home-content-2 {
+        flex-direction: column;
+    }
+
+    #home-content-1 div,
+    #home-content-2 div {
+        width: 100%;
+        margin-bottom: 12%;
+    }
+   
+    div#vision-info{
+        margin-bottom: 5%;
+    }
+
+    .contact-info {
+        margin-top: 8%;
     }
 
     
