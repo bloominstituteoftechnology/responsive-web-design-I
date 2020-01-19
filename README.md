@@ -15,16 +15,16 @@ Follow these steps to set up and work on your project:
  
 Follow these steps for completing your project.
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
+- [X] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
 - [ ] Add your project manager as a reviewer on the pull-request
-- [ ] Your project manager will count the project as complete by merging the branch back into master.
+- [X] Your project manager will count the project as complete by merging the branch back into master.
 
 ## Task 2: Minimum Viable Product
 
 * [X] Review each [design file](design-files).  Notice the subtle differences between them all. 
 * [X] Insert a `viewport` meta tag into the head of the project with these html attributes: `content="width=device-width, initial-scale=1"`
-* [ ] Introduce max-width media queries into your project at 800px and 500px  
-* [ ] Do your best to make your styles match the design files at each breakpoint 
+* [X] Introduce max-width media queries into your project at 800px and 500px  
+* [X] Do your best to make your styles match the design files at each breakpoint 
 
 ## Stretch Goals: 
 * [ ] Create a tablet and mobile version of the services page from previous projects
