@@ -1,3 +1,384 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+.boxy {
+	margin-left: 10%;
+	margin-right: 10%;
+	min-height: 100vh;
+}
+.navbar  {
+	/* background: rgba(110, 110, 110, 0.6); */
+	min-width: 100%;
+}
+.navbar-nav {
+display: flex;
+justify-content: space-evenly;
+width: 100%;
+}
+.nav-item {
+	display: flex;
+	padding: 2%;
+}
+.nav-link {
+	color: rgb(145, 145, 145);
+	font-weight: 600;	
+}
 
+.blocky {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+}
+.middleSection {	
+	padding: 2%;
+	width: 100%;
+	border-top: 4px black double;
+	border-bottom: 4px black double;
+	border-right: 0px black solid;
+	border-left: 0px black solid;
+	border-radius: 2%;
+	transition-property: border, border-radius;
+	transition-duration: 0.25s;
+	transition-timing-function: linear;
+}
+.middleSection:hover {
+	border-top: 4px rgb(4, 4, 118) double;	
+	border-bottom: 4px rgb(4, 4, 118) double;
+	border-right: 4px rgb(122, 6, 6) double;
+	border-left: 4px rgb(122, 6, 6) double;
+border-radius: 2%;
+
+}
+.topSec {
+	display: flex;
+	width: 100%;
+}
+.topSec .blocky {
+width: 50%;
+}
+.midSec {
+	display: flex;
+	width: 100%;
+}
+.middle-img {
+	max-width: 100%;
+}
+.midSec .blocky {
+
+margin: 0 auto;
+}
+.botSec {
+	display: flex;
+	width: 100%;
+}
+.botSec .blocky {
+	width: 33%;
+	margin: 0 auto;
+}
+.carousel {
+	padding: 3%;
+}
+.carousel-indicators {
+	padding-bottom: 2%;
+}
+.carousel-control-prev-icon {
+	background-color: rgba(130, 130, 130, 0.7);
+}
+.carousel-control-next-icon {
+	background-color: rgba(130, 130, 130, 0.7);
+}
+.services-header-img {
+	padding-top: 3%;
+	padding-bottom:3%;
+}
+.services-info {
+	display: flex;
+	flex-wrap: wrap;
+	padding-bottom: 1%;
+
+	margin: 1%;
+}
+.service-section {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	border-bottom: 4px black double;
+	border-top: 4px black double;
+	border-radius: 5%;
+	justify-content: space-evenly;
+	margin-bottom: 2%;
+}
+.service-box {
+	width: 40%;
+	padding: 1%;
+	background: rgba(210, 210, 190, 0.7);
+	margin: 1%;
+	border: 2px black solid;
+}
+.facts {
+	display: flex;
+	width: 100%;
+	justify-content: space-evenly;
+	flex-wrap: nowrap;
+
+}
+.subfacts {
+	width: 40%;
+}
+.form-group {
+	display: flex;
+	width: 80%;
+	justify-content: space-between;
+	margin: 2% 0;
+}
+.form-flex-box {
+	justify-content: space-evenly;
+	display: flex;
+	flex-wrap: wrap;
+}
+.contact-head {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+form {
+	margin-top: 5%;
+}
+label {
+	font-weight: bold;
+	text-decoration: underline;
+	width: 20%;
+}
+.form-control {
+	min-width: 60%;
+	max-width: 60%;
+}
+body {
+	min-height: 100vh;
+}
+h1 {
+	margin-top: 5%;
+	font-weight: bold;
+}
+h2 {
+	text-align: center;
+
+	font-size: 3em;
+	color: black;
+	font-weight: 600;
+	background-color: rgba(207, 207, 207, 0.3);
+}
+h3 {
+	font-weight: bold;
+	font-size: larger;
+}
+button {
+	margin-top: 8%;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+form button {
+	margin-top: 0%;
+	margin-left: auto;
+}
+.hideme {
+	display: none;
+}
+.alert button {
+	margin: 0%;
+}
+footer {
+	margin-top: 3%;
+}
+#slideimg {
+	width: 100%;
+	max-height: 280px;
+}
+#x {
+	margin-bottom: 8%;
+}
+
+/* Smartphoens */
+@media only screen and (max-device-width : 500px) {
+	/* Styles */
+
+	.hide-sm {
+		display: none;
+	}
+	.navbar  {
+		background: none;
+		border-radius: 0;
+	}
+	.navbar-nav {
+	display: flex;
+	justify-content: space-evenly;
+	width: 100%;
+	}
+	.nav-item {
+		display: flex;
+		justify-content: center;
+		padding: 2%;
+	}
+	.nav-item .hide-sm {
+		border-top: none;
+	}
+	.nav-link {
+		color: rgb(146, 146, 146);
+		font-weight: 600;	
+	}
+	.nav-border {
+		border-top: 1px solid gray;
+	}
+	.middleSection {
+		border: none;
+
+	}
+	.middleSection:hover {
+		border-top: none;	
+		border-bottom: none;
+		border-right: none;
+		border-left: none;
+		border-radius: 2%;
+	
+	}
+	.carousel {
+		min-height: 281px;
+	}
+	.topSec {
+		flex-wrap: wrap;
+	}
+	.topSec .blocky {
+		min-width: 100%;
+		justify-content: left;
+	}
+	.midSec {
+		margin-top: 20%;
+	}
+	.midSec .blocky {
+		margin-left: 0%;
+	}
+	.middle-img {
+		max-width: 100%;
+	}
+	.botSec {
+		margin-top: 20%;
+		flex-wrap: wrap;
+	}
+	.botSec .blocky {
+		min-width: 100%;
+		margin: 0 auto;
+		justify-content: left;
+	}
+	#show-md {
+		display: none;
+	}
+	#show-lg {
+		display: none;
+	}
+
+	.service-section {
+		min-width: 100%;
+		border: none;
+		border-radius: none;
+	}
+	.service-box {
+		min-width: 45%;
+	}
+	}
+	.facts {
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+	.services-info-img {
+		max-width: 100%;
+	}
+	.form-control {
+		max-width: 30%;
+	}
+
+	
+/* Tablets */
+@media only screen and (min-device-width : 501px) and (max-device-width : 800px) {
+	/* Styles */
+	
+	.carousel {
+		min-height: 320px;
+	}
+	.carousel-caption h2 {
+		font-size: larger;
+	}
+	.middleSection {
+		border: none;
+
+	}
+	.middleSection:hover {
+		border-top: none;	
+		border-bottom: none;
+		border-right: none;
+		border-left: none;
+		border-radius: 2%;
+	
+	}
+	.topSec {
+		margin-top: 15%;
+	}
+	.topSec .blocky {
+		justify-content: left;
+		margin-left: 2%;
+		margin-right: 2%;
+	}
+	.midSec .blocky {
+		margin-left: 0%;
+	}
+	.middle-img {
+		max-width: 100%;
+	}
+	.botSec {
+		margin-top: 15%;
+	}
+	.botSec .blocky {
+		justify-content: left;
+		margin-left: 2%;
+		margin-right: 2%;
+	}
+
+	.service-section {
+		min-width: 100%;
+		border: none;
+		border-radius: none;
+	}
+	.service-box {
+		min-width: 45%;
+	}
+	.facts {
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+	.form-control {
+		max-width: 40%;
+	}
+	#show-md {
+		justify-content: center;
+	}
+
+	}
+
+	/* xs */
+@media only screen and (max-device-width : 390px) {
+	.service-box {
+		min-width: 100%;
+	}
+	.service-section {
+		flex-wrap: wrap;
+	}
+	.form-group {
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+	.form-group button {
+		margin-right: auto;
+		margin-left: 0;
+	}
+	
+	}

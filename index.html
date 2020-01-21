@@ -3,14 +3,153 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Great Idea - Responsive I</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Great Idea! - Home</title>
 
   <link href="https://fonts.googleapis.com/css?family=Bangers|Titillium+Web" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="css/index.css">
 
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+ 
+  <script src="js/script.js"></script>
 </head>
 
-<body>
-<!-- Use past code you created here for Great Idea Web Page or past solution for Great Idea Web Page HTML here! -->
-</body>
+  <body>
+    <div class="boxy">
+<li class="nav-item" id="show-md"><a class="navbar-brand" href="#"><img src="img/logo.png" alt="Great Idea! Company logo."></a></li>
+<nav class="navbar sticky-top" id="jshelper">
+  <ul class="navbar-nav">
+  <li class="nav-item" id="show-sm"><a class="navbar-brand" href="#"><img src="img/logo.png" alt="Great Idea! Company logo."></a></li>
+ <li class="nav-item nav-border"><a class="nav-link" href="#services">Product</a></li>
+ <li class="nav-item nav-border"><a class="nav-link" href="#vision">Vision</a></li>
+ <li class="nav-item nav-border"><a class="nav-link" href="#features">Features</a></li>
+ <li class="nav-item nav-border"><a class="nav-link" href="#about">About</a></li>
+ <li class="nav-item nav-border"><a class="nav-link" href="contact.html">Contact</a></li>
+ <li class="nav-item nav-border" id="navservice"><a class="nav-link" href="services.html">Services</a></li>
+ </ul>
+ <li class="nav-item ml-auto" id="show-lg"><a class="navbar-brand" href="#"><img src="img/logo.png" alt="Great Idea! Company logo."></a></li>
+
+</nav>
+
+
+
+
+<div id="c1" class="carousel slide" data-ride="carousel">
+
+
+  <ul class="carousel-indicators">
+    <li data-target="#c1" data-slide-to="0" class="active"></li>
+    <li data-target="#c1" data-slide-to="1"></li>
+    <li data-target="#c1" data-slide-to="2"></li>
+  </ul>
+
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img id="slideimg" src="img/slider1.jpg" alt="Slider Image 1">
+      <div class="carousel-caption">
+        <h2 class="hide-sm">Innovation On Demand</h2>
+        <a href="services.html"><button type="button" class="btn btn-primary btn-lg">Learn More</button></a>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img id="slideimg" src="img/slider2.webp" alt="Slider Image 2">
+      <div class="carousel-caption">
+        <h2 class="hide-sm">Responsive Design</h2>
+        <a href="services.html"><button type="button" class="btn btn-primary btn-lg">Learn More</button></a>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img id="slideimg" src="img/slider3.png" alt="Slider Image 3">
+      <div class="carousel-caption">
+        <h2 class="hide-sm">Customizable</h2>
+        <a href="services.html"><button type="button" class="btn btn-primary btn-lg">Learn More</button></a>
+      </div>
+    </div>
+  </div>
+
+  <a class="carousel-control-prev" href="#c1" data-slide="prev">
+    <span class="carousel-control-prev-icon mr-auto"></span>
+  </a>
+  <a class="carousel-control-next" href="#c1" data-slide="next">
+    <span class="carousel-control-next-icon ml-auto"></span>
+  </a>
+
+</div>
+
+
+
+ 
+<div class="middleSection">
+
+<div class="topSec"> <!-- Top -->
+
+  <div id="features" class="blocky mr-auto">
+    <h3>Features</h3>
+      <p>
+        Aliquam elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.
+      </p>
+  </div>
+
+  <div id="about" class="blocky ml-auto">
+    <h3>About</h3>
+      <p>
+        Aliquam elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.
+      </p>
+  </div>
+
+</div>
+
+<div class="midSec"> <!-- middle -->
+
+  <div class="blocky">
+      
+        <img class="middle-img" src="img/mid-page-accent.jpg" alt="Image of code snippets across the screen">
+      
+  </div>
+
+</div>
+
+<div class="botSec"> <!-- bottom -->
+
+  <div class="blocky">
+    <h3>Services</h3>
+      <p>
+        Aliquam elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.
+      </p>
+  </div>
+
+  <div class="blocky">
+    <h3>Product</h3>
+      <p>
+        Aliquam elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.
+      </p>
+  </div>
+
+  <div class="blocky">
+    <h3>Vision</h3>
+      <p>
+        Aliquam elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.
+      </p>
+  </div>
+
+</div>
+
+
+</div> <!-- / middle section -->
+
+  </div> <!-- / boxy -->
+
+
+<footer class="page-footer font-small">
+  <div class="footer-copyright text-center py-3 backdrop">
+    © 2020 Copyright: <a href="#">GreatIdea!</a>
+  </div>
+</footer>
+
+  </body>
+
+
 </html>
