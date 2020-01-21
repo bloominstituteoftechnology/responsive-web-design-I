@@ -1,3 +1,312 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  padding: 50px;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: 'Titillium Web', sans-serif;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Bangers', cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+.navigation {
+  display: flex;
+}
+
+.navigation a {
+  color: grey;
+  text-decoration: none;
+  margin-right: 60px;
+}
+header {
+  font-size: 300%;
+  margin-bottom: 40px;
+  display: flex;
+  padding: 30px;
+}
+.titlebox,
+.img-container {
+}
+.img-container {
+  margin-left: 100px;
+}
+
+.titlebox {
+  margin-left: 50px;
+}
+
+.top-content {
+  color: black;
+  margin: 10px 0;
+  display: flex;
+}
+
+.header-text {
+  font-size: 92px;
+  width: 320px;
+  margin: auto;
+  text-align: center;
+}
+.button1 {
+  background-color: white;
+  border: 1px solid black;
+  font-size: 20px;
+  padding: 6px 50px;
+  margin-left: 58px;
+}
+hr {
+  width: 100%;
+  height: 1px;
+}
+
+.top-content,
+.middle-content {
+  display: flex;
+}
+.features {
+  text-align: left;
+}
+#para {
+  padding: 5px;
+}
+.lower-content {
+  margin: 30px 0;
+  margin-right: 12px;
+  width: 282px;
+}
+
+.lower-content.small-width {
+  width: 430px;
+}
+p {
+  margin: 20px 0;
+}
+footer {
+  margin: 50px 0;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 800px) {
+  /* tablet view */
+
+  .navigation {
+    align-items: center;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .logo {
+    margin-bottom: 25px;
+  }
+  .img-container {
+    display: none;
+  }
+  .middle-img {
+    max-width: 100%;
+    height: auto;
+  }
+  .titlebox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 125px;
+    margin-top: 25px;
+  }
+  .button1 {
+    position: none;
+    margin: 0;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  /* mobile view */
+  .top-content {
+    flex-direction: column;
+  }
+  .navigation {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .navigation a {
+    color: grey;
+    text-decoration: none;
+    padding: 20px;
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+  .links {
+    display: flex;
+    flex-direction: column;
+  }
+  .img-container {
+    display: none;
+  }
+
+  .middle-content {
+    flex-direction: column;
+  }
+
+  .middle-img {
+    max-width: 110%;
+    height: auto;
+  }
+  .titlebox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: none;
+    margin: 0;
+  }
+  .button1 {
+    position: none;
+    margin: 0;
+    margin-top: 10px;
+  }
+}
