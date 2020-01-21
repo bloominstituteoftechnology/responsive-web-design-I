@@ -1,3 +1,701 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+/* Your code starts here! */
 
 
+/* new code starts here */
+
+.flex-header {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.flex-header .navbar {
+	display: flex;
+	align-items: center;
+}
+
+.flex-header .navbar .left {
+	display: flex;
+	justify-content: space-between;
+	width: 70%;
+}
+
+.flex-header .navbar .right {
+	display: flex;
+	flex: 1;
+	justify-content: flex-end;
+	width: 30%;
+}
+
+
+.navbar .link {
+	display: block;
+	text-align: left;
+	padding: 1em;
+	text-decoration: none;
+	color: grey;
+}
+
+.navbar .link:hover,
+.navbar .link:active {
+	box-sizing: border-box;
+	color: black;
+	margin-bottom: -3px !important;
+	border-bottom: 3px solid black;
+}
+
+.navbar .brand {
+	width: 10em;
+	text-align: center;
+	padding: 1em;
+	color: white;
+}
+
+.navbar .toggle {
+	padding: 1em;
+	color: black;
+}
+
+
+.feature-block p {
+	display: block;
+}
+
+
+/*main-CTA stuff*/
+
+.main-CTA {
+	display: flex;
+	align-items: center;
+	padding: 3em 0 5em 0;
+	margin-bottom: 3em;
+	border-bottom: 1px solid black;
+}
+
+.main-CTA .left {
+	
+	text-align: center;
+	align-items: center;
+	width: 50%;
+
+}
+
+.main-CTA .left h1 {
+	font-size: 4em;
+}
+
+.main-CTA .right {
+
+	text-align: right;
+	justify-content: flex-start;
+	align-items: flex-end;
+	width: 50%;
+}
+
+
+
+.main-CTA button {
+	border: 1px solid black;
+}
+
+button a {
+	display: block;
+	padding: 10px 60px;
+}
+
+.main-CTA button:hover {
+	border: 1px solid red;
+	background-color: black;
+	color: white;
+}
+
+.main-CTA button a {
+	text-decoration: none;
+	font-size: 1.3em;
+	color: black;
+	width: 100%;
+	height: 100%;
+}
+
+.main-CTA button a:hover {
+	text-decoration: none;
+	font-size: 1.3em;
+	color: white;
+}
+
+
+
+
+
+/*features section*/
+
+
+
+
+.main-features {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 3em;
+}
+
+.main-features h2 {
+	font-size: 1.5em;
+}
+
+
+.main-features div.left {
+	
+	text-align: left;
+	width: 48%;
+}
+
+.main-features div.right {
+	
+	text-align: left;
+	width: 48%;
+	
+}
+
+.main-features .right {
+	
+	text-align: left;
+	align-items: center;
+	width: 30%;
+	
+}
+
+
+/*code feature image starts here */
+
+.code-feature img {
+	width: 100%;
+}
+
+/*services section starts here*/
+
+
+.main-services {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 3em;
+	margin-bottom: 3em;
+	padding-bottom: 3em;
+	border-bottom: 1px solid black;
+}
+
+.main-services h3 {
+	font-size: 1.5em;
+}
+
+
+.main-services div.left {
+	
+	text-align: left;
+	width: 31%;
+}
+
+.main-services div.mid {
+	
+	text-align: left;
+	width: 31%;
+	
+}
+
+.main-services div.right {
+	
+	text-align: left;
+	align-items: center;
+	width: 31%;
+	
+}
+
+
+
+
+/* body styles */
+
+
+
+.body, .bodycontent {
+	max-width: 1200px;
+	padding: 0%;
+	margin: 0 auto;
+}
+
+@media only screen and (max-width: 1200px) {
+	body {
+	  padding: 0% 3%;
+	}
+  }
+  
+
+  footer {
+	  padding-bottom: 200px;
+  }
+
+
+
+  /*sevices page */
+
+.deskfeature {
+	overflow: hidden;
+	height: 200px;
+}
+	.feature {
+		margin: 3em 0;
+		padding-bottom: 2em;
+		margin-bottom: 0em;
+		border-bottom: 1px solid black;
+	}
+
+
+
+	
+.feature h1 {
+	font-size: 1.5em;
+	
+}
+
+.feature-block-parent{
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 5% 0;
+	border-bottom: 2px solid black;
+	padding-bottom: 0 !important;
+	margin-bottom: 2em;
+}
+
+.feature-block {
+	width: 48%;
+	display: inline-block;
+	background: lightgrey;
+	border: 1px solid black;
+	padding: 15px;
+	margin-bottom: 4%
+}
+
+.feature-block h2 {
+	text-decoration: capitalize;
+}
+
+.feature-block button {
+	margin-top: 20px;
+	border-radius: 5px;
+	text-decoration: none;
+}
+
+.feature-block button:hover {
+	background-color: block;
+	color: white;
+}
+
+.feature-block button a {
+	text-decoration: none;
+	color: black;
+}
+
+#hello {
+
+}
+
+div.deskfeature {
+	max-width: 80vw;
+	margin: auto;
+}
+
+button {
+	max-width: 100% !important;
+}
+
+img.middle-img {
+	max-width: 100% !important;
+}
+
+#aboutme {
+	margin-top: -125px !important;
+	margin-bottom: 125px !important;
+	font-size: 3em !important;
+	color: white;
+	text-shadow: 3px 3px 10px black;
+}
+
+
+.leftCTA {
+    max-width: 49%;
+}
+
+.rightCTA {
+    max-width: 49%;
+}
+
+/* tablet styling */
+
+@media (max-width: 800px) {
+    .right {
+        display: none;
+    }
+
+    .left {
+        min-width: 100%;
+        display: inine-block;
+    }
+
+    div.left h1 {
+        font-size: 4.5em !important;
+    }
+
+    .main-CTA {
+        border-bottom: 2px solid black;
+    }
+
+    .main-CTA button {
+        padding: 0px !important;
+        line-height: 1em;
+    }
+    
+    .main-features {
+        display: flex;
+        align-content: space-between;
+    }
+
+    .leftCTA {
+        max-width: 48%;
+    }
+
+    .rightCTA {
+        max-width: 48%;
+    }
+
+    .main-services .left {
+        display: inline-block;
+        min-width: 0px;
+    }
+
+    .main-services .mid {
+        display: inline-block;
+        width: 30%;
+    }
+
+    .main-services .right {
+        display: inline-block;
+        width: 30%;
+
+    }
+
+    .main-services {
+        border-bottom: 2px solid black;
+    }
+
+    /*header mods*/
+
+
+    .navbar .right {
+        display: inline-block !important;
+    }
+
+    .navbar {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        
+    }
+
+    .brand {
+        padding: 0px !important;
+    }
+
+    .main-features h2 {
+        font-size: 1em;
+    }
+}
+
+
+/* mobile styling */
+
+@media (max-width: 500px) {
+    .right {
+        display: none;
+    }
+
+    .left {
+        min-width: 100%;
+        display: inine-block;
+    }
+
+    div.left h1 {
+        font-size: 4.5em !important;
+    }
+
+    .main-CTA {
+        border-bottom: 2px solid black;
+    }
+
+    .main-CTA button {
+        padding: 0px !important;
+        line-height: 1em;
+    }
+    
+    .main-features {
+        display: flex;
+        align-content: space-between;
+    }
+
+    .leftCTA {
+        max-width: 48%;
+    }
+
+    .rightCTA {
+        max-width: 48%;
+    }
+
+    .main-services .left {
+        display: inline-block;
+        min-width: 0px;
+    }
+
+    .main-services .mid {
+        display: inline-block;
+        width: 30%;
+    }
+
+    .main-services .right {
+        display: inline-block;
+        width: 30%;
+
+    }
+
+    .main-services {
+        border-bottom: 2px solid black;
+    }
+
+    /*header mods*/
+
+
+    .navbar .right {
+        display: inline-block !important;
+    }
+
+    .navbar {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        
+    }
+
+    .brand {
+        padding: 0px !important;
+    }
+
+    .main-features h2 {
+        font-size: 1em;
+    }
+
+    .main-services h3 {
+        font-size: 1em;
+    }
+
+
+    .navbar .left {
+        flex-direction: column;
+    }
+
+    .navbar .link {
+        text-align: center;
+        font-size: 1.2em;
+        border-bottom: 1px solid black;
+    }
+
+    .flex-header .navbar .right {
+        width: 100%;
+    }
+
+    .main-features {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
+
+    .main-services {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2em;
+    }
+
+    .main-services .left {
+        min-width: 100%;
+        margin-bottom: 3em;
+    }
+
+    .main-services .mid {
+        min-width: 100%;
+        margin-bottom: 3em;
+    }
+
+    .main-services .right {
+        min-width: 100%;
+    }
+
+
+
+    div.leftCTA {
+        min-width: 100%;
+        margin-bottom: 3em;
+        display: inline-block;
+    }
+
+    div.rightCTA {
+        min-width: 100%;
+        display: inline-block;
+        margin-bottom: 3em;
+    }
+
+
+
+}
