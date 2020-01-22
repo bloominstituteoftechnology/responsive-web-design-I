@@ -170,6 +170,11 @@ h6{
 }
 
 @media (max-width: 800px) {
+
+    h2 {
+        font-size: 1.1rem;
+    }
+
     header .circle {
         display: none;
     }
@@ -184,22 +189,18 @@ h6{
     }
 
     header .firstGroup #leftSide{
-        border: 1px solid black;
-        width:60%;
+        width: 100%;
         font-size: 1.0rem;
     }
 
-    #leftSide{
-        width: 100%;
-    }
-
     #leftSide nav {
-        
-        justify-content: center;
+        display: flex;
+        justify-content: space-between;
     }
 
     #leftSide nav a {
         padding: 0;
+        margin: 0 4%;
     }
 
     header .firstGroup .logoImage{
@@ -210,8 +211,17 @@ h6{
         margin: 4% 0;
     }
 
+    header  #secondGroup {
+        justify-content: center;
+    }
+
     header  #secondGroup .InnovationAndButton h1{
-        font-size: 6rem;
+        font-size: 4rem;
+    }
+
+    header  #secondGroup .InnovationAndButton button{
+        
+	padding:1.5% 4.5%;
     }
 
     .codeImage .middle-img{
@@ -220,6 +230,15 @@ h6{
     }
 
     #thirdGroup .FeaturesAndAbout, .ServicesProducesVision {
+        padding: 1%;
+        
+        font-size: 1rem;
+    }
+
+    #thirdGroup .ServicesProducesVision div {
+        padding: 2%;
+    }
+    footer {
         font-size: 0.9rem;
     }
 }
