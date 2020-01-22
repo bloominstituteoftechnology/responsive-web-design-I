@@ -1,3 +1,225 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 62.5%;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+body {
+	margin: 0 auto;
+	width: 46%;
+	padding-top: 2%;
+}
+
+.firstGroup {
+	display: flex;
+	flex-direction: row;
+}
+
+.firstGroup div{
+	display: flex;
+	align-items:center;
+}
+
+header {
+	border-bottom:  black 1px solid;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+}
+
+nav a {
+	font-size: 13px;
+	color: rgb(196, 185, 201);
+	padding-right: 13%;
+}
+
+#secondGroup {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	margin: 5%;
+}
+
+#secondGroup div{
+	display: flex;
+	align-content:center;
+	justify-content: space-around;
+}
+
+.InnovationAndButton {
+	display: flex;
+	flex-flow: column;
+	align-content: center;
+}
+
+button{
+	padding: 2%;
+	padding-left: 10.5%;
+	padding-right: 10.5%;
+}
+
+h1 {
+	font-size: 77px;
+	text-align: center;
+}
+
+#thirdGroup {
+	border-bottom:  black 1px solid;
+	margin: 4% 0;
+}
+
+#thirdGroup div {
+	margin-bottom: 2.5%;
+	display:flex;
+}
+
+.codeImage{
+	display:flex;
+	flex-wrap: nowrap
+}
+
+.FeaturesAndAbout{
+	display: flex;
+	justify-content: space-between;
+}
+
+.FeaturesAndAbout div {
+	display:flex;
+	flex-flow: column;
+	width:50%;
+}
+.ServicesProducesVision div{
+	display:flex;
+    justify-content: space-between;
+}
+
+.ServicesProducesVision div{
+	display:flex;
+	flex-flow: column;
+	width:33%;
+}
+
+address div a{
+	display: flex;
+	flex-flow:column;
+	padding-top: .2%;
+	padding-bottom: 1.5%;
+}
+
+h6{
+	text-align: center;
+}
+
+@media (max-width: 800px) {
+    header .circle {
+        display: none;
+    }
+
+    header .firstGroup{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    header .firstGroup{
+        align-content: unset;
+    }
+
+    header .firstGroup #leftSide{
+        border: 1px solid black;
+        width:60%;
+        font-size: 1.0rem;
+    }
+
+    #leftSide{
+        width: 100%;
+    }
+
+    #leftSide nav {
+        
+        justify-content: center;
+    }
+
+    #leftSide nav a {
+        padding: 0;
+    }
+
+    header .firstGroup .logoImage{
+        justify-content: center;
+    }
+
+    header .firstGroup div{
+        margin: 4% 0;
+    }
+
+    header  #secondGroup .InnovationAndButton h1{
+        font-size: 6rem;
+    }
+
+    .codeImage .middle-img{
+        height: 12vh;
+        width: 46vw;
+    }
+
+    #thirdGroup .FeaturesAndAbout, .ServicesProducesVision {
+        font-size: 0.9rem;
+    }
+}
