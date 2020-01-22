@@ -69,12 +69,14 @@ body {
 
 .firstGroup {
 	display: flex;
-	flex-direction: row;
+    flex-direction: row;
+    
+	align-content: stretch;
 }
 
 .firstGroup div{
 	display: flex;
-	align-items:center;
+    align-items:center;
 }
 
 header {
@@ -83,13 +85,15 @@ header {
 
 nav {
 	display: flex;
-	justify-content: space-between;
+    justify-content: space-between;
+    padding-right: 8%;
 }
 
 nav a {
 	font-size: 13px;
-	color: rgb(196, 185, 201);
-	padding-right: 13%;
+    color: rgb(196, 185, 201);
+    
+    padding-right: 9%;
 }
 
 #secondGroup {
@@ -128,6 +132,8 @@ h1 {
 }
 
 #thirdGroup div {
+    
+    font-size: 1.5rem;
 	margin-bottom: 2.5%;
 	display:flex;
 }
@@ -138,13 +144,15 @@ h1 {
 }
 
 .FeaturesAndAbout{
+    
+    font-size: 1.5rem;
 	display: flex;
 	justify-content: space-between;
 }
 
 .FeaturesAndAbout div {
 	display:flex;
-	flex-flow: column;
+    flex-flow: column;
 	width:50%;
 }
 .ServicesProducesVision div{
@@ -155,7 +163,12 @@ h1 {
 .ServicesProducesVision div{
 	display:flex;
 	flex-flow: column;
-	width:33%;
+    width: 33%;
+    padding-right: 3.5%;
+}
+
+footer{
+    font-size: 1.6rem;
 }
 
 address div a{
@@ -169,6 +182,8 @@ h6{
 	text-align: center;
 }
 
+
+/*Adaptive settings for tablet*/
 @media (max-width: 800px) {
 
     h2 {
@@ -240,5 +255,34 @@ h6{
     }
     footer {
         font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .firstGroup #leftSide nav {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .firstGroup #leftSide nav a{
+        border-top: 1px solid rgb(145, 141, 146);
+        padding: 4% 0;
+        margin: 1% 0;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    .FeaturesAndAbout, .ServicesProducesVision{
+        flex-direction: column;
+    }
+
+    .FeaturesAndAbout div {
+        width:100%;
+        margin-bottom: 10%;
+    }
+    
+    .ServicesProducesVision div{
+        width: 100%;
     }
 }
