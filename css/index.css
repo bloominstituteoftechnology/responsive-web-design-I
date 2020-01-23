@@ -1,3 +1,300 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 62.5%;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/*Main part*/
+body {
+	margin: 0 auto;
+	width: 46%;
+	padding-top: 2%;
+}
+
+header {
+	border-bottom:  black 1px solid;
+}
+
+.firstGroup {
+	display: flex;
+    flex-direction: row;
+}
+
+.firstGroup div{
+	display: flex;
+    align-items:center;
+}
+
+#leftSide{
+    padding-right: 8%;
+}
+
+nav {
+	display: flex;
+    justify-content: space-between;
+    padding-right: 8%;
+}
+
+nav a {
+	font-size: 13px;
+    color: rgb(196, 185, 201);
+    padding-right: 9%;
+}
+
+#secondGroup {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	margin: 5%;
+}
+
+#secondGroup div{
+	display: flex;
+	align-content:center;
+	justify-content: space-around;
+}
+
+.InnovationAndButton {
+	display: flex;
+	flex-flow: column;
+	align-content: center;
+}
+
+button{
+	padding: 2%;
+	padding-left: 10.5%;
+	padding-right: 10.5%;
+}
+
+h1 {
+	font-size: 77px;
+	text-align: center;
+}
+
+#thirdGroup {
+	border-bottom:  black 1px solid;
+	margin: 4% 0;
+}
+
+#thirdGroup div {
+    
+    font-size: 1.5rem;
+	margin-bottom: 2.5%;
+	display:flex;
+}
+
+.codeImage{
+	display:flex;
+	flex-wrap: nowrap
+}
+
+.FeaturesAndAbout{
+    font-size: 1.5rem;
+	display: flex;
+	justify-content: space-between;
+}
+
+.FeaturesAndAbout div {
+	display:flex;
+    flex-flow: column;
+	width:50%;
+}
+
+.ServicesProducesVision div{
+	display:flex;
+    justify-content: space-between;
+	flex-flow: column;
+    width: 33%;
+    padding: 1%;
+}
+
+
+footer{
+    font-size: 1.6rem;
+}
+
+address div a{
+	display: flex;
+	flex-flow:column;
+	padding-top: .2%;
+	padding-bottom: 1.5%;
+}
+
+h6{
+	text-align: center;
+}
+
+
+/*Adaptive settings for tablet*/
+@media (max-width: 800px) {
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    header .circle {
+        display: none;
+    }
+
+    header .firstGroup{
+        display: flex;
+        flex-direction: column-reverse;
+        align-content: unset;
+    }
+
+    header .firstGroup #leftSide{
+        width: 100%;
+        font-size: 1.0rem;
+    }
+
+    #leftSide nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #leftSide nav a {
+        padding: 0;
+        margin: 0 4%;
+    }
+
+    header .firstGroup .logoImage{
+        justify-content: center;
+    }
+
+    header .firstGroup div{
+        margin: 4% 0;
+    }
+
+    header  #secondGroup {
+        justify-content: center;
+    }
+
+    header  #secondGroup .InnovationAndButton h1{
+        font-size: 4rem;
+    }
+
+    header  #secondGroup .InnovationAndButton button{
+	    padding:1.5% 4.5%;
+    }
+
+    .codeImage .middle-img{
+        height: 12vh;
+        width: 46vw;
+    }
+
+    #thirdGroup div {
+    
+        font-size: 0.9rem;
+
+    }
+    .FeaturesAndAbout div {
+        padding: 1%;
+    }
+    .ServicesProducesVision div{
+        padding:0.8%;
+    }
+
+    footer {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 500px) {
+
+    #leftSide{
+        padding-right: 0%;
+    }
+
+    nav {
+        padding-right: 0%;
+    }
+
+    #leftSide nav a {
+        margin: 0;
+    }
+
+    .firstGroup #leftSide nav {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .firstGroup #leftSide nav a{
+        border-top: 1px solid rgb(145, 141, 146);
+        padding: 4% 0;
+        margin: 1% 0;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    .FeaturesAndAbout, .ServicesProducesVision{
+        flex-direction: column;
+    }
+
+    .FeaturesAndAbout div {
+        width:100%;
+        padding: 6% 0;
+    }
+    
+    .ServicesProducesVision div{
+        width: 100%;
+        padding: 4% 0;
+    }
+}
