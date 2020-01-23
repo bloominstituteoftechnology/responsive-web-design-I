@@ -105,6 +105,7 @@ h3{
 section{
   padding:4% 0;
 }
+
 /*Header styles here */
 nav{
   display:flex;
@@ -119,6 +120,11 @@ nav{
 .logo{
   width:20%;
   margin-top: 20px;
+}
+
+.links a{
+  text-decoration: none;
+  color: grey;
 }
 
 /*CTA section title */ 
@@ -136,6 +142,11 @@ h1{
     flex-direction: column;
     align-items: center;
     margin-right: 10px;
+}
+
+.full img{
+  align-items: center;
+  width:100%
 }
 
 button{
@@ -163,6 +174,17 @@ button{
   margin-top:4%;
 }
 
+/* Section breaks */
+.break1 hr{
+  width:100%;
+  border-top:5px black;
+}
+
+#contact a{
+  text-decoration: none;
+  color:black
+}
+
 /*media queries here*/
 @media (max-width: 800px){
   nav{
@@ -184,6 +206,9 @@ button{
   footer{
     text-align:center;
   }
+
+
+
 }
 @media (max-width: 500px){
   h1{
@@ -192,6 +217,7 @@ button{
   nav{
     flex-direction:column-reverse;
     align-items:center;
+
   }
   .links{
     flex-direction:column;
@@ -212,4 +238,15 @@ button{
   footer{
     text-align:center;
   }
+  button{
+    margin-right: 85px;
+  }
+  .links a{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    border-top:1px solid black;
+    width:100%;
+  }
+
 }
