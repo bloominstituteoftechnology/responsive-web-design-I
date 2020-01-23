@@ -72,7 +72,9 @@ h1, h2, h3, h4, h5 {
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 /* {border:2px solid black;}*/
 
-
+body {
+    max-width: 100%;
+}
 .parent {
 	display: flex;
 	
@@ -370,4 +372,141 @@ p {
 }
 #learnt {
 	margin-top: 1.5%;
+}
+hr {
+    visibility: hidden;
+}
+
+@media (max-width:500px) {
+    .parent, .navigation {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}
+
+@media (max-width:500px) {
+    .navigation {
+        
+        line-height: 200%;
+        text-align: center;
+    }
+}
+
+@media (max-width:500px) {
+    .logo1 {height: 20%;
+        width:50%;
+    }
+}
+@media (max-width:500px) {
+    #piccircle {
+        display: flex;
+        visibility: hidden;
+    } 
+}
+@media (max-width:500px) {
+    .innovator {
+        display: flex;
+        text-align: center;
+        margin-left: 20%;
+    }
+}
+@media (max-width:500px) {
+    hr {visibility: visible;
+        width: 110%;
+    margin:0;}
+}
+@media (max-width:500px) {
+    #started {
+        width: 70% ;
+    }
+}
+@media (max-width:500px) {
+    .top-section, .bottom-content{
+        display: flex;
+        flex-direction: column;
+        
+    }
+}
+@media (max-width:500px) {
+    #features, #about, #services, #product, #vision {
+        width: 100%;
+        line-height: 150%;
+        font-size: 50%;
+        word-spacing: normal;
+    }
+}
+@media (max-width:500px) {
+    .contact {
+        text-align: left;
+        font-size: 70%;
+    }
+}
+@media (max-width:800px) {
+    .logo1{
+        width: 30%;
+        margin: 0 auto;
+        
+        justify-content: center;
+    }
+}
+@media (max-width:800px) {
+    .parent {
+        
+        display:flex;
+        flex-direction: column-reverse;
+       margin: 10% auto;
+    }
+}
+
+@media (max-width:800px) {
+    .navigation, a { display: flex;
+        width: 100%;
+        font-size: 100%;
+        justify-content: center;
+        margin-top: 2.5%;
+    }
+}
+@media (max-width:800px) {
+    .innovator {
+        display: flex;
+        text-align: center;
+        margin-left: 20%;
+    }
+}
+@media (max-width:800px) {
+    #started {
+        width: 60% ;
+    }
+}
+@media (max-width:800px) {
+    #piccircle {
+        display: flex;
+        visibility: hidden;
+    } 
+}
+
+
+@media (max-width:800px) {
+    #features, #about, #services, #product, #vision {
+        
+        line-height: 150%;
+        font-size: 50%;
+        word-spacing: normal;
+    }
+}
+@media (max-width:800px) {
+    .contact {
+        text-align: left;
+        font-size: 70%;
+    }
+}
+@media (max-width:800px){
+    #to {
+        visibility: visible;
+    }
+} 
+
+body {
+    max-width: 100%;
 }
