@@ -91,6 +91,10 @@ h1, h2, h3, h4, h5, button {
 	padding: 10px 20px 36px 20px;
 }
 
+/* .navline {
+	display: none;
+} */
+
 nav a:hover {
 	background-color: rgb(72, 99, 112);
 	color: white;
@@ -227,13 +231,30 @@ footer{
 	header .index-img {
 		display: none;		
 	}
-
-	.navline {
+	
+	nav .navline1 { order: 2; }
+	nav .navserv { order: 3; }
+	nav .navline2 { order: 4; }
+	nav .navpro { order: 5; }
+	nav .navline3 { order: 6; }
+	nav .navvis { order: 7; }
+	nav .navline4 { order: 8; }
+	nav .navfeat { order: 9; }
+	nav .navline5 { order: 10; }
+	nav .navabout { order: 11; }
+	nav .navline6 { order: 12; }
+	nav .navcont { order: 13; }
+	nav .navline7 { order: 14; }
+	nav .navlogo { order: 1; } 
+	nav .navline8 { display: none; }
+	
+	nav hr {
 		margin: 10px;
-
+		width: 95%;
+		border: 1px solid black;
 	}
-
-	header h1 {
+        
+    header h1 {
 		margin: auto;
 		width: 100%;
 		justify-content: center;
@@ -251,15 +272,25 @@ footer{
 		font-size: 12px;
 	}
 
+	.section1 div{
+		margin: 10px 20px 10px 20px;
+	}
+
 	.section2 {
 		flex-direction: column;
 		font-size: 12px;
+	}
+
+	.section2 div{
+		margin: 10px 20px 10px 20px;
 	}
 
 	address {
 		font-size: 12px;
 	}
 
-	
+	h3 {
+		font-size: 16px;
+	}
 
 }
