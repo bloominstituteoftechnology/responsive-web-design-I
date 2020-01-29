@@ -1,3 +1,166 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+body {
+	background-color: black;
+	margin: 0 auto;
+}
+
+.container {
+	width: 900px;
+	margin: 0 auto;
+	background-color: grey;
+}
+
+nav {
+	position: static;
+	height: 45px;
+	margin: 35px;
+	display: flex;
+	flex-direction: row;
+}
+
+.navbar a {
+	padding-left: 30px;
+	color: white;
+	text-decoration: none;
+}
+
+.navbar a:hover {
+	background-color: black;
+}
+
+.logo {
+	float: right;
+	vertical-align: middle;
+	margin-left: 30px;
+}
+
+.header-img {
+	display: inline;
+	position: absolute;
+	top: 15%;
+  right: 25%;
+}
+
+h1 {
+	display: inline-block;
+	text-align: center;
+	font-size: 70px;
+	margin-left: 30px;
+}
+
+
+button {
+	padding: 10px 40px;
+  background-color: red;
+	color: white;
+	margin: 5% 0;
+}
+
+.hard {
+	display: inline-block;
+	width: 45%;
+	padding-bottom: 40px;
+}
+
+.notbad {
+	display: inline-block;
+	width: 30%;
+	padding-top: 40px;
+}
+
+.copyright {
+	text-align: center;
+}
+
+@media (max-width: 800px) {
+  .navbar {
+    flex-flow: column-reverse wrap;
+  }
+
+  .logo {
+    margin-top: 50px;
+  }
+
+  .navbar a {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  a {
+    
+    font-size: 16px;
+  }
+
+  .header-img {
+    display: none;
+  }
+
+}
