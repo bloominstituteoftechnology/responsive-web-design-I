@@ -1,3 +1,215 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+	/* font-family: 'Titillium Web', sans-serif; */
+	font-family: 'Roboto Mono', monospace;
+}
+
+h1, h2, h3, h4, h5, button {
+	/* font-family: 'Bangers', cursive; */
+	font-family: 'Roboto Mono', monospace;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+* {
+	background: #EEEEEE;
+}
+
+.navflex {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	background: transparent;
+	position: fixed;
+	color: black;
+	width: 95%;
+}
+
+.navflex a {
+	color: black;	
+	border-radius: 22px;
+	background-color:  #EEEEEE;
+	font-size: 24px;
+	text-align: center;
+	text-decoration: none;
+	margin: auto;
+	height: 10px;
+	padding: 10px 20px 40px 20px;
+}
+
+nav a:hover {
+	background-color: rgb(72, 99, 112);
+	color: white;
+}
+
+header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	padding: 50px;
+}
+
+header h1 {
+  	/* display: inline-block; */
+  	text-align: center;
+  	color: black;
+ 	margin: 150px 0px 0px 60px;
+  	width: 45%;
+	font-size: 80px;
+}
+
+header button a {
+	  text-decoration: none;
+	  color: black;
+}
+
+header img {
+	/* display: inline-block; */ 
+	margin: auto;	
+	height: 25%;
+ 	width: 25%;
+}
+
+h3 {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+hr {
+	margin: 30px;
+	width: 95%;
+	border: 2px solid black;
+}
+
+button {
+    color: black;	
+    border: none;
+	border-radius: 22px;
+	background-color: transparent;
+	font-size: 16px;
+	text-align: center;
+	text-decoration: none;
+	margin: auto;
+	height: 10px;
+	padding: 10px 20px 30px 20px;
+
+}
+
+button a:hover {
+    background-color: rgb(72, 99, 112);
+    color: white;
+    border-radius: 22px;
+    margin: auto;
+    height: 10px;
+	padding: 10px 30px 10px 30px;
+    
+}
+
+.section1 {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+.section1 div {
+	/* display: inline-block; */
+	/* margin: auto; */
+	/* width: 45%; */
+	color: black;
+	text-align: justified;
+	padding: 10px;
+	margin: 50px;
+}
+
+.middle-img {
+	display: inline-block;
+	margin: 30px;
+	width: 95%;
+}
+
+.section2 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.section2 div {
+	/* display: inline-block; */
+	/* margin: auto; */
+	/* width: 28%; */
+	color: black;
+	text-align: justified;
+	padding: 10px;
+	margin: 50px;
+}
+
+address{
+	display: inline-block;
+	margin: 0px 0px 0px 30px;
+}
+
+address a {
+	text-decoration: none;
+}
+
+footer{
+	text-align: center;
+	font-size: 12px;
+	margin: 20px 0px 0px 0px;
+}
 
 
