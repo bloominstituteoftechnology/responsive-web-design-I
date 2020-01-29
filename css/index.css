@@ -117,7 +117,7 @@ header button a {
 	  color: black;
 }
 
-header img {
+header .index-img {
 	/* display: inline-block; */ 
 	margin: auto;	
 	height: 25%;
@@ -206,10 +206,60 @@ address a {
 	text-decoration: none;
 }
 
+h4 {
+	font-weight: bold;
+}
+
 footer{
 	text-align: center;
 	font-size: 12px;
 	margin: 20px 0px 0px 0px;
 }
 
+@media (max-width: 800px) {
+	header .index-img {
+		display: none;
+	}
 
+}
+
+@media (max-width: 500px) {
+	header .index-img {
+		display: none;		
+	}
+
+	.navline {
+		margin: 10px;
+
+	}
+
+	header h1 {
+		margin: auto;
+		width: 100%;
+		justify-content: center;
+		font-size: 60px;
+	}
+
+	.navflex {
+		flex-direction: column;
+		position: static;
+		justify-content: center;
+	}
+
+	.section1 {
+		flex-direction: column;
+		font-size: 12px;
+	}
+
+	.section2 {
+		flex-direction: column;
+		font-size: 12px;
+	}
+
+	address {
+		font-size: 12px;
+	}
+
+	
+
+}
