@@ -1,0 +1,407 @@
+/************* Services Page****************************************
+*********************************************************************/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+	font-family: 'Titillium Web', sans-serif;
+
+	width: 90%;
+	margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Navigation **********************/
+.service-header {
+	
+	display: flex;
+	flex-direction: column;
+
+	
+	margin-bottom: 80px;
+	padding-bottom: 50px;
+	border-bottom: 2px solid black;
+	margin: 0 auto;
+
+	
+	
+
+}
+.top{
+	padding: 5px;
+
+    width: 100%;
+	display: flex;
+
+	justify-content: space-between;
+	align-items: center;
+
+
+
+}
+
+nav{
+	width: 60%;
+	
+	margin-bottom: 5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+
+	display: flex;
+	justify-content: space-evenly;
+
+
+}
+/* navigation */
+nav a{
+	color: gray;
+	text-decoration: none;
+	font-size: 18px;
+	
+	
+	/*margin: 15px;*/
+	
+
+	
+
+}
+/*
+nav a:first-child{
+	margin-left: 100px;
+}
+*/
+/* logo next to navigation */
+.logo{
+	
+	margin-right: 25px;
+	margin-top: 10px;
+	
+	
+	
+}
+/*
+
+.top{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: flex-end;
+	margin-top: 30px;
+
+
+}
+
+nav{
+	width: 50%;
+	margin-left: 20px;
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.logo{
+	width: 30%;
+
+}
+
+
+.ser-nav__bars a{
+	color: gray;
+	text-decoration: none;
+	font-size: 18px;
+	
+	}
+*/
+
+
+.service-header__imgDiv{
+	width: 80&%;
+	margin: 20px auto;
+	overflow: hidden;
+
+}
+.services-header-img{
+	width: 100%;
+}
+
+.service-header__main{
+	width: 80%;
+	margin: 0 auto;
+
+}
+
+h2{
+	font-size: 23px;
+}
+h3{
+	font-size: 19px;
+}
+
+section{
+	border-bottom: 2px solid black;
+
+	padding-bottom: 60px;
+	margin-bottom: 40px;
+
+}
+.section__row{
+	display: flex;
+	justify-content: space-around;
+
+}
+
+.section__row-container{
+	background-color: #eee;
+	width: 40%;
+	margin: 40px;
+	padding: 30px;
+	border: 1px solid black;
+	
+}
+
+.section__btn{
+	margin: 35px 10px;
+	padding: 5px;
+	border: 1px solid black;
+	width: 30%;
+	border-radius: 5px;
+	text-align: center;
+	font-size: 15px;
+	font-weight: 300;
+}
+
+.footer__row1{
+	display: flex;
+	justify-content: space-around;
+
+
+
+}
+.footer__row1--left{
+	width: 45%;
+
+}
+
+ul{
+	margin-top: 30px;
+}
+ ul li{
+	 margin: 10px;
+ }
+
+ .footer__row2{
+	 margin: 50px;
+	 text-align: center;
+	
+
+ }
+
+ .product-header{
+	 display: flex;
+	 flex-direction: row;
+	 width: 90%;
+	
+ }
+ .product-header .product-headerDiv{
+	 width: 45%;
+	 align-self: center;
+	 overflow: hidden;
+
+ }
+
+ .product-headerDiv .services-header-img {
+
+	 width: 100%;
+	
+
+ }
+ .section__productDiv{
+
+	overflow: hidden;
+	 margin-top: 20px;
+	 height: 300px;
+
+ }
+
+ 
+.product-img{
+    
+	transition: transform 0.5s;
+	width: 100%;
+ 
+}
+
+.product-img:hover{
+    transform: scale(2.0);
+}
+
+
+.product-footer{
+	overflow: hidden;
+	width: 40%;
+	height: 300px;
+}
+
+@media (max-width: 800px) {
+
+	.top{
+		width: 100%;
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: space-evenly;
+	}
+
+	nav{
+		width: 100%;
+
+	}
+	.logo{
+		margin: 10px 0 20px;
+	}
+
+	ser-nav__bars{
+		width: 100%;
+		justify-content: space-evenly;
+	}
+	
+	.section__row{
+		
+		flex-direction: column;
+	}
+
+	.row1 .section__row-container{
+		width: 80%;
+		
+	}
+	.footer__row1{
+		display: flex;
+		flex-direction: column;
+		
+		
+	}
+	.footer__row1--left{
+		margin-bottom: 20px;
+	}
+	.footer__row{
+		width: 70%;
+	}
+
+	.section__row-container{
+		width: 80%;
+		
+	}
+
+	.footer__row1{
+		flex-direction: column;
+		align-items: center;
+	}
+	.footer__row1 div{
+		width: 80%;
+	}
+	
+}
+
+
+
+@media (max-width: 500px) {
+	nav{
+		flex-direction: column;
+		text-align: center;
+		margin: 0 auto;
+		margin-left: 10px;
+		
+
+
+	}
+	nav a{
+		display: inline-block;
+		width: 90%;
+		padding: 8px;
+		margin:  10px;
+		border-bottom:  1px solid  black;
+	}
+
+	.product-header{
+		flex-direction: column;
+		
+	}
+	.product-header .product-headerDiv{
+		width: 70%;
+	}
+
+
+
+	footer{
+		flex-direction: column;
+		
+	}
+
+	.footer__row1--right .services-info-img {
+		 width: 100%;
+	}
+	footer .copyRight{
+		margin-top: 30px;
+		align-self: center;
+	}
+
+	
+	.product__footer{
+		height: 400px;
+	}
+}
