@@ -1,3 +1,400 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
 
 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Set every element's box-sizing to border-box */
+
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: 'Bangers', cursive;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
+}
+
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+#page {
+	width: 800px;
+	margin: 0 auto;
+}
+
+nav {
+	margin: 0 auto;
+	margin-left: -25px;
+	width: 1000px;
+	padding: 25px;
+	height: 75px;
+	position: relative;
+	right: 75px;
+}
+
+nav a {
+	color: grey;
+	padding: 15px;
+	text-decoration: none;
+	margin-left: 25px;
+	height: 50px;
+}
+
+nav a:hover {
+	text-decoration: underline;
+	color: black;
+}
+
+nav img {
+	float: right;
+	height: 25px;
+}
+
+#started {
+	width: 400px;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	float: left;
+}
+
+.services-header-img {
+	width: 800px;
+}
+
+header {
+	width: 800px;
+	border-bottom: 1px solid black;
+	;
+	padding-bottom: 50px;
+	padding-top: 50px;
+}
+
+header img {
+	margin: 0;
+	padding: 0;
+	display: block;
+	width: 300px;
+	height: 300px;
+}
+
+header button {
+	background-color: white;
+	border-radius: 5px;
+	border: 2px solid black;
+	padding: 5px;
+	width: 150px;
+}
+
+header button:hover {
+	background-color: #000;
+	color: #FFF;
+	cursor: pointer;
+}
+
+header button:active {
+	text-decoration: none;
+}
+
+#started h1 {
+	font-size: 75px;
+}
+
+#content {
+	margin: 0 auto;
+	border-bottom: 1px solid black;
+	padding: 0;
+	margin: 0;
+	padding-bottom: 25px;
+}
+
+#content img {
+	padding: 0;
+	margin-top: 35px;
+	margin-bottom: 35px;
+	width: 800px;
+}
+
+.item {
+	margin-top: 25px;
+	width: 375px;
+	display: inline-block;
+	margin-left: 25px;
+}
+
+.itemv2 {
+	width: 225px;
+	display: inline-block;
+	margin-left: 25px;
+}
+
+#flexbox-one {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 800px;
+}
+
+.fbitem {
+	border: 1px solid #000;
+	padding: 15px;
+	width: 47.5%;
+	margin-top: 50px;
+	background-color: lightgrey;
+	padding-bottom: 25px;
+}
+
+.fbitem p {
+	margin-bottom: 20px;
+}
+
+.fbitem a {
+	border: 1px solid #000;
+	border-radius: 5px;
+	width: 200px;
+	background-color: #FFF;
+	color: black;
+	padding: 5px 25px 5px 25px;
+	text-decoration: none;
+	font-size: 12px;
+}
+
+#flexbox-two {
+	margin-top: 50px;
+	display: flex;
+	width: 800px;
+	border-top: 1px solid #000;
+	padding-top: 25px;
+}
+
+#flexbox-two #img-text {
+	margin: 25px;
+	margin-left: 0;
+}
+
+#flexbox-two ul {
+	list-style: circle;
+	margin-top: 25px;
+	margin-left: 25px;
+}
+
+#flexbox-two img {
+	width: 400px;
+	height: 300px;
+}
+
+#contact {
+	margin-top: 25px;
+}
+
+#copyright {
+	text-align: center;
+	width: 100%;
+	padding: 30px;
+}
+
+@media (max-width: 800px) {
+	nav {
+		width: 100vw;
+	}
+	#page {
+		width: 97%;
+	}
+	#started {
+		float: none;
+		margin: 0 auto;
+		width: 100vw;
+	}
+	#content {
+		width: 100vw;
+	}
+	#content img {
+		width: 100vw;
+		margin: 25px auto;
+	}
+	.item {
+		margin-top: 25px;
+		width: 45%;
+		display: inline-block;
+	}
+	.itemv2 {
+		width: 27%;
+		display: inline-block;
+	}
+	header {
+		width: 100%;
+	}
+	header img {
+		display: none;
+	}
+}
+
+@media (max-width: 500px) {
+	#page {
+		width: 100vw;
+	}
+	nav {
+		display: inline-block;
+	}
+	nav a {
+		display: block;
+		width: 120vw;
+		text-align: center;
+	}
+	nav img {
+		float: none;
+		display: block;
+		margin: 0 0 auto auto;
+	}
+	.item,
+	.itemv2 {
+		width: 100%;
+		display: block;
+		margin: 0 auto;
+		margin-top: 15px;
+		text-align: center;
+	}
+}
