@@ -1,4 +1,3 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -32,9 +31,9 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-ol, ul {
+/* ol, ul {
 	list-style: none;
-}
+} */
 blockquote, q {
 	quotes: none;
 }
@@ -64,18 +63,18 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* Your code starts here! */
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
 #page-conent {
-	position: relative;
 	width: 100%;
-	padding: 25px 75px 0 75px;
-	box-sizing: border-box;
-	text-align: center;
+	padding: 0;
 }
 
 .nav-bar {
 	/*border: 2px solid red;*/
-	display: inline-block;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	background-image: radial-gradient(circle, #20bf55, #01baef);
 	height: 45px;
 	width: 100%;
@@ -84,62 +83,60 @@ h1, h2, h3, h4, h5 {
 }
 
 nav {
-    width: 65%;
-	/*width: 1080px; */
-	margin: auto;
+	text-align: center;
+	width: 100%;
 }
 
 nav a {
+	align-items: center;
+	justify-content: center;
 	text-decoration: none;
-	display: inline-block;
 	margin-right: 5%;
 	padding: 20px;
 	color: #000000;
 	font-weight: bold;
-	vertical-align: bottom;
 }
 
 nav a:hover {
-	color: white;
+	color: gray;
 	font-weight: bold;
 }
 
-.logo {
-	vertical-align: top;
-	padding: 5px;
-}
-
 .header {
-	/*border: 2px solid blue;*/
+	/*border: 2px solid blue; */
+	display: flex;
+	justify-content: center;
 	margin: auto;
 	width: 70%;
 }
 
 h1 {
-	display: inline-block;
-	/*border: 2px solid red;*/
-	margin: 8%;
-	width: 30%;
+	/*border: 2px solid red; */
 	font-size: 72px;
 	text-align: center;
 }
 
-#header-image {
-	display: inline-block;
-	/*border: 2px solid red;*/
+.h1-button {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 700px;
+	height: 500px;
+}
+
+.header-image {
+	/*border: 2px solid red; */
 	margin: auto;
-	vertical-align: bottom;
 	padding: 4%;
 }
 
 button{
-	/*border: 2px solid black;*/
-	position: relative;
-	top: 35px;
-	right: 385px;
-	width: 150px;
-	padding: 7px;
+	border: 2px solid black;
 	color: black;
+	width: 150px;
+	height: 35px;
+	background-color: white;
 }
 
 button:hover{
@@ -148,7 +145,6 @@ button:hover{
 }
 
 hr {
-	display: block;
 	border-top: 5px solid lightgray;
 	border-radius: 5px;
     margin: auto;
@@ -169,43 +165,40 @@ p {
 }
 
 #content {
-	/*border: 2px solid blue;*/
-	display: block;
+	/*border: 2px solid blue; */
 	width: 70%;
 	margin: auto;
 	padding: 40px;
 }
 
 .top-content {
-	/*border: 2px solid red;*/
-	display: block;
+	/*border: 2px solid red; */
+	display: flex;
 	width: 100%;
 	margin: auto;
 	padding-bottom: 30px;
 }
 
 .top-content article{
-	display: inline-block;
 	width: 49%;
 }
 
 .middle-img {
-	display: block;
+	display: flex;
 	margin-left: auto;
 	margin-right: auto;
 	width: 100%;
 }
 
 .bottom-content {
-	/*border: 2px solid red; */
-	display: block;
+	/*border: 2px solid red;*/
+	display: flex;
 	width: 100%;
 	margin: auto;
 	padding-top: 30px;
 }
 
 .bottom-content article{
-	display: inline-block;
 	width: 33%;
 }
 
@@ -219,13 +212,81 @@ p {
 
 footer {
 	text-align: center;
-	padding-bottom: 10px;
+	padding-bottom: 20px;
+}
+
+#tablet-nav {
+	display: none;
+}
+
+#tablet-image {
+	display: none;
 }
 
 @media (max-width: 800px) {
-    #header-image {
+	.nav-bar, nav, nav a, nav a:hover {
+		display: none;
+	}
+
+	#page-conent {
+		display: flex;
+		position: relative;
+		width: 100%;
+		padding: 25px 75px 0 75px;
+		text-align: center;
+	}
+	
+	.header-image {
         display: none;
-    }
+	}
+
+	#content {
+		/*border: 2px solid blue; */
+		width: 100%;
+		margin: auto;
+		padding: 40px;
+	}
+
+	.contact {
+		/*border: 2px solid blue; */
+		width:90%;
+		margin: auto;
+		padding-top: 30px;
+		padding-bottom: 50px;
+	}
+
+	#tablet-nav {
+		display: flex;
+		width: 100%;
+	}
+
+	#tablet-nav a{
+		align-items: center;
+		justify-content: center;
+		text-decoration: none;
+		margin-right: 5%;
+		padding: 20px;
+		color: gray;
+		font-weight: bold;
+	}
+
+	#tablet-nav a:hover {
+		color: black;
+		font-weight: bold;
+	}
+
+	#tablet-image {
+		display: flex;
+		justify-content: center;
+	}
+
+	hr {
+		border-top: 5px solid lightgray;
+		border-radius: 5px;
+		margin: auto;
+		padding: 0;
+		width: 100%;
+	}
 }
 
 @media (max-width: 500px) {
