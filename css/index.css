@@ -65,23 +65,31 @@ h1, h2, h3, h4, h5 {
 
 
 
+nav {
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
 nav a {
 	color: gray;
-	box-sizing: content-box;
-	padding: 10pt;
-
+	box-sizing: border-box;
+    padding: 10pt;
+    justify-content: space-evenly;
+    
 }
 
-@media (max-width: 500px) {
 
-}
 
 .logo {
-	float: right;
+    float: right;
+    
 }
 
 .header-left {
-	display: inline-block;
+	display: flex;
 	padding: 75px;
 	text-align: center;
 	width: 49%;
@@ -101,13 +109,11 @@ nav a {
 }
 
 .header-right {
-	float: right;
-	position: relative;
+    float: right;
+	
 }
 
-@media (max-width: 768px) {
 
-}
 
 button {
 	box-sizing: content-box;
@@ -117,11 +123,12 @@ button {
 
 
 .middle-img {
-	position: relative;
-	center: -70px;
+	display: flex;
+	center: 80px;
 	left: 200px;
 
 }
+
 
 
 
@@ -129,7 +136,7 @@ button {
 	border: 25px;
 	padding: 75px;
 	margin: 25px;
-	display: inline-flex;
+	display: flex;
 	text-align: start;
 	
 }
@@ -140,10 +147,9 @@ h2 {
 }
 
 .other-content {
-	border: 25px;
-	padding: 75px;
-	margin: 25px;
-	display: inline-flex;
+	padding: 50px;
+	margin-top: 50px;
+    display: flex;
 	text-align: start;
 
 }
@@ -154,15 +160,27 @@ body {
 
 
 
-footer {
-	text-align: center;
-}
+
 
 .contact {
 	padding: 10px;
-	display: inline-block;
 	margin: 25px;
 	width: 180px;
 
+}
+
+.footer {
+
+    text-align: center;
+}
+
+
+@media (max-width: 500px) {
+
+    nav  {
+        text-align: center;
+        font-size: x-large;
+        flex-direction: column;
+    }
 }
 
