@@ -97,7 +97,52 @@ h1, h2, h3, h4, h5 {
   
   @media (max-width: 500px) {
     nav {display:flex;
-      flex-direction: column;
+      flex-direction: column-reverse;
+    }
+    
+    nav a {
+       border-bottom: 2px solid lightgrey; 
+       border-top: 2px solid lightgrey; 
+       width: 100%;
+       height: 3rem;
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: -1.1rem;
+    }
+
+    
+
+    nav .links {
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .middle-top {
+        display:flex;
+        flex-direction: column;   
+    }
+    .About {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+    .Features {
+        padding-top: 4rem;
+    }
+    .middle-lower {
+        display:flex;
+        flex-direction: column;         
+    }
+    .services {
+        padding-top: 4rem;
+    }
+    .product {
+        padding-top: 4rem;
+    }
+    .vision {
+        padding-top: 4rem;
+
     }
     .innovation-image {
         display: none;
@@ -135,7 +180,7 @@ nav {
 .innovation {
 	/* padding-top: 10rem;
 	margin-top: -3rem; */
-  border-bottom: 2px dotted grey;
+  border-bottom: 2px solid grey;
   /* display: flex;
   justify-content: space-around; */
 }
@@ -151,7 +196,9 @@ nav {
 }
 
 .innovation h4{
-	border: 3px solid grey;
+    border: 3px solid grey;
+    border-radius: 4px;
+    width: 100%;
 	text-align: center;
 	font-size: 2rem;
 
@@ -189,7 +236,7 @@ width: 100%;
 }
 
 .middle-lower {
-	border-bottom: 1px dotted grey;
+	border-bottom: 2px solid grey;
 	padding-top: 2rem;
   padding-bottom: 4rem;
   display:flex;
