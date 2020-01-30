@@ -259,9 +259,6 @@ footer{
 		padding: 6px 10px 24px 10px;
 	}
 
-	nav hr {
-		visibility: hidden;
-	}
 
 	header h1 {
 		margin: 20px 10px 10px 10px;
@@ -479,7 +476,7 @@ footer{
 	justify-content: space-around;
 	border: 1px solid black;
 	height: 250px;
-	width: 600px;
+	width: 500px;
 	margin: 5px;
 	padding: 5px;
 	background-color: #e6e6e6
@@ -515,4 +512,195 @@ ul {
 .services-info-img {
 	width: 45%;
 	height: 45%
+}
+
+@media(max-width: 800px) {
+	
+	.services-header-img {
+		display: none;
+	}
+
+	nav {
+		display: flex;
+		flex-direction: column-reverse;
+		flex-wrap: wrap;
+		position: static;
+		margin-bottom: 20px;
+		padding-bottom: 20px;
+	}
+
+	.servnavimg {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 25%;
+		margin-bottom: 20px;
+	}
+
+	.servicenav {
+		flex-direction: row;
+		justify-content: space-around;
+		position: static;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.servicenav a {
+		color: black;	
+		border-radius: 22px;
+		background-color:  #BCBCBC;
+		font-size: 18px;
+		text-align: center;
+		text-decoration: none;
+		margin: auto;
+		height: 2px;
+		padding: 6px 10px 24px 10px;
+	}
+}
+
+@media(max-width: 500px) {
+	
+	.services-header-img {
+		display: none;		
+	}
+
+	.serviceshr {
+		margin-left: auto;
+		margin-right: auto;
+		width: 90%;
+	}
+	
+	nav {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	.servnavimg {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 35%;
+	}
+	
+	.servicesnav {
+		display: flex;
+		flex-direction: column;
+		position: static;
+		justify-content: center;
+		width: 100%;
+	}
+
+	.servicesnav a {
+		color: black;	
+		border-radius: 22px;
+		background-color:  #BCBCBC;
+		font-size: 18px;
+		text-align: center;
+		text-decoration: none;
+		margin: 2px;
+		height: 10px;
+		padding: 6px 2px 24px 2px;
+		border-bottom: 2px solid black;
+	}
+
+	.info {
+		flex-direction: column;
+		font-size: 12px;
+		width: 100%;
+		margin: 10px 2px 10px 2px;
+	}
+
+	h3 {
+		font-size: 16px;
+	}
+
+	.design {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		border: 1px solid black;
+		height: 250px;
+		width: 95%;
+		margin: 20px;
+		padding: 2px;
+		background-color: #e6e6e6
+	}
+
+	.ux {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		border: 1px solid black;
+		height: 250px;
+		width: 95%;
+		margin: 20px;
+		padding: 2px;
+		background-color: #e6e6e6
+	}
+
+	.marketing {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		border: 1px solid black;
+		height: 250px;
+		width: 95%;
+		margin: 20px;
+		padding: 2px;
+		background-color: #e6e6e6
+	}
+
+	.webdev {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		border: 1px solid black;
+		height: 250px;
+		width: 95%;
+		margin: 20px;
+		padding: 2px;
+		background-color: #e6e6e6
+	}
+
+	.ios {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		border: 1px solid black;
+		height: 250px;
+		width: 95%;
+		margin: 20px;
+		padding: 2px;
+		background-color: #e6e6e6
+	}
+
+	.droid {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		border: 1px solid black;
+		height: 250px;
+		width: 95%;
+		margin: 20px;
+		padding: 2px;
+		background-color: #e6e6e6
+	}
+
+	.servefact {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		border: 1px solid black;
+		height: 250px;
+		width: 95%;
+		margin: 20px;
+		padding: 2px;
+		background-color: #e6e6e6
+	}
+
+	.services-info-img {
+		display: none;		
+	}
+
 }
