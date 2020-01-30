@@ -69,31 +69,32 @@ h1, h2, h3, h4, h5, button {
 	background: #EEEEEE;
 }
 
-.navflex {
+nav {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
 	background: transparent;
 	position: fixed;
-	color: black;
-	width: 95%;
+	width: 90%;
+	margin: 20px;
+}
+
+.navflex {
+	background: transparent;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
 }
 
 .navflex a {
 	color: black;	
 	border-radius: 22px;
-	background-color:  #EEEEEE;
+	background:  #BCBCBC;
 	font-size: 24px;
 	text-align: center;
 	text-decoration: none;
 	margin: auto;
 	height: 10px;
-	padding: 10px 20px 36px 20px;
-}
-
-nav {
-	display: flex;
-	flex-direction: row;
+	padding: 10px;
 }
 
 nav a:hover {
@@ -223,6 +224,8 @@ footer{
 	nav {
 		display: flex;
 		flex-direction: column-reverse;
+		position: static;
+		margin-bottom: 20px;
 	}
 
 	.navimg {
@@ -230,13 +233,12 @@ footer{
 		margin-left: auto;
 		margin-right: auto;
 		width: 25%;
+		margin-bottom: 20px;
 	}
 
 	.navflex {
 		flex-direction: row;
-		justify-content: spave-evenly;
-		background: transparent;
-		position: static;
+		justify-content: space-around;
 		width: 100%;
 		margin-left: auto;
 		margin-right: auto;
@@ -245,13 +247,13 @@ footer{
 	.navflex a {
 		color: black;	
 		border-radius: 22px;
-		background-color:  #EEEEEE;
+		background-color:  #BCBCBC;
 		font-size: 18px;
 		text-align: center;
 		text-decoration: none;
-		margin: 2px;
+		margin: 12px;
 		height: 10px;
-		padding: 6px 2px 24px 2px;
+		padding: 10px 2px 10px 2px;
 	}
 
 	nav hr {
@@ -305,7 +307,7 @@ footer{
 	.navflex a {
 		color: black;	
 		border-radius: 22px;
-		background-color:  #EEEEEE;
+		background-color:  #BCBCBC;
 		font-size: 18px;
 		text-align: center;
 		text-decoration: none;
