@@ -64,22 +64,30 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Your code starts here! */
-.topnav a {
+
+.topnav {
+	display: flex;
+	justify-content: space-between;
+	margin: 2%;
+	width: auto;
+}
+
+.top-menu {
+	width: 70%;
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	font-size: 15px;
+	color: gray;
+}
+
+.top-menu a{
 	font-size: 15px;
 	color: gray;
 	text-decoration: none;
-	width: 100%;
-	margin: 5px;
-	padding: 1px;
-	box-sizing: border-box;
-}
-.topnav {
-	display: flex;
-	margin: 2%;
-
 }
 .logo{
-	width: 100px;
+	width: 150px;
 		
 }
 .topheader {
@@ -94,6 +102,7 @@ h1, h2, h3, h4, h5 {
 	width: auto;
 	border-bottom: 1px solid black;
 	display: flex;
+	justify-content: space-between;
 	align-items: center;
 	margin: 2%;
 	
@@ -214,4 +223,53 @@ footer {
   }
   .padding1{
 	  padding: 1%;
+  }
+
+  @media (max-width:800px){
+	  .topnav{
+		  flex-direction: column-reverse;
+		  align-items: center;
+	 }
+	 .top-menu{
+		 width: 100%;
+	 }
+	 .logo{
+		 margin: 20px 0;
+	 }
+	 .innovationimg{
+		 display: none;
+	 }
+	 .topsection{
+		 justify-content: center;
+	 }
+  }
+
+  @media (max-width:500px){
+		.top-menu{
+			width: 100%;
+			margin: 0 2%;
+			flex-direction: column;
+			border-top: 1px solid gray;
+			
+		}
+
+		.top-menu a{
+			width: 100%;
+			margin: 0;
+			padding: 2%;
+			text-align: center;
+			border-bottom: 1px solid gray;
+		}
+
+		.middlesection1, .middlesection3{
+			flex-direction: column;
+			
+		}
+
+		.box1, .box2, .box3, .box4, .box5 {
+			width: 100%;
+			margin: 1% 0;
+		}
+
+
   }
