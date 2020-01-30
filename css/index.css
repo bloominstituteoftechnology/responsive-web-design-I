@@ -80,6 +80,7 @@ nav {
 }
 
 .navflex {
+	display: flex;
 	background: transparent;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
@@ -90,11 +91,12 @@ nav {
 	border-radius: 22px;
 	background:  #BCBCBC;
 	font-size: 24px;
+	font-weight: bold;
 	text-align: center;
 	text-decoration: none;
 	margin: auto;
-	height: 10px;
-	padding: 10px;
+	height: 2px;
+	padding: 8px 10px 32px 10px;
 }
 
 nav a:hover {
@@ -105,7 +107,7 @@ nav a:hover {
 header {
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
+	justify-content: space-evenly;
 	padding: 60px;
 	width: 100%;
 }
@@ -116,12 +118,10 @@ header h1 {
  	margin: 150px 0px 0px 60px;
   	width: 45%;
 	font-size: 80px;
+	font-weight: bold;
 }
 
-header button a {
-	  text-decoration: none;
-	  color: black;
-}
+
 
 header .index-img {
 	margin: auto;	
@@ -140,27 +140,27 @@ hr {
 	border: 2px solid black;
 }
 
-button {
+.button a{
     color: black;	
-    border: 1px solid black;
 	border-radius: 22px;
-	background: transparent;
-	font-size: 16px;
+	background:  #BCBCBC;
+	font-size: 18px;
+	font-weight: normal;
 	text-align: center;
 	text-decoration: none;
 	margin: auto;
-	height: 10px;
-	padding: 10px 10px 30px 10px;
+	height: 2px;
+	padding: 8px 8px 8px 8px;
 
 }
 
-button a:hover {
+.button a:hover {
     background-color: rgb(72, 99, 112);
     color: white;
     border-radius: 22px;
     margin: auto;
-    height: 10px;
-	padding: 10px 10px 10px 10px;
+    height: 2px;
+	padding: 8px 8px 8px 8px;
     
 }
 
@@ -224,6 +224,7 @@ footer{
 	nav {
 		display: flex;
 		flex-direction: column-reverse;
+		flex-wrap: wrap;
 		position: static;
 		margin-bottom: 20px;
 		padding-bottom: 20px;
@@ -253,9 +254,9 @@ footer{
 		font-size: 18px;
 		text-align: center;
 		text-decoration: none;
-		margin: 12px;
-		height: 10px;
-		padding: 10px 2px 10px 2px;
+		margin: auto;
+		height: 2px;
+		padding: 6px 10px 24px 10px;
 	}
 
 	nav hr {
@@ -263,10 +264,15 @@ footer{
 	}
 
 	header h1 {
-		margin: 40px 10px 10px 10px;
+		margin: 20px 10px 10px 10px;
 		width: 100%;
 		justify-content: center;
 		font-size: 60px;
+		font-weight: bold;
+	}
+
+	header {
+		padding: 20px;
 	}
 
 	.section1 div{
