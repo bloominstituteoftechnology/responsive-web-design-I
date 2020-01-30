@@ -79,7 +79,6 @@ body {
 }
 
 nav {
-	position: static;
 	height: 45px;
 	margin: 35px;
 	display: flex;
@@ -94,12 +93,6 @@ nav {
 
 .navbar a:hover {
 	background-color: black;
-}
-
-.logo {
-	float: right;
-	vertical-align: middle;
-	margin-left: 30px;
 }
 
 .header-img {
@@ -122,6 +115,7 @@ button {
   background-color: red;
 	color: white;
 	margin: 5% 0;
+	align-self: center;
 }
 
 .hard {
@@ -140,27 +134,102 @@ button {
 	text-align: center;
 }
 
-@media (max-width: 800px) {
-  .navbar {
-    flex-flow: column-reverse wrap;
-  }
+/*Tablet*/
 
-  .logo {
-    margin-top: 50px;
+@media (max-width: 800px) {
+  .container .navbar {
+    display: flex;
+    flex-flow: column-reverse;
   }
 
   .navbar a {
     display: flex;
-    justify-content: space-between;
-  }
+		justify-content: space-between;
+		padding: 40px;
+	}
+	
+	.logo {
+		font-size: 16px;
+		padding-left: 300px;
+	}
 
   a {
-    
-    font-size: 16px;
+		font-size: 16px;
+	
   }
 
   .header-img {
     display: none;
   }
+
+  button {
+		margin-top: 40px;
+		margin-bottom: 40px;
+		align-items: center;
+		margin-left: 280px;
+  }
+
+  h1 {
+		margin-top: 30px;
+    margin-bottom: 20px;
+		align-items: center;
+		padding-left: 200px;
+  }
+
+}
+
+/*Mobile*/
+
+@media (max-width: 500px) {
+	
+	.navbar {
+		display: flex;
+		flex-direction: column;
+	}
+
+	a {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		font-size: 20px;
+		border-bottom: 1px solid lightgrey;
+		padding: 15px 100px;
+	}
+
+	.logo {
+		padding: 20px 0;
+		border-bottom: 1px solid lightgrey;
+	}
+
+	.middle-img {
+		display: flex;
+		width: 50%;
+		align-items: center;
+		padding: 2%
+	}
+
+	.hard {
+		display: flex;
+		width: 50%;
+		flex-direction: column;
+		justify-content: space-around;
+		padding: 2%;
+	}
+
+	.notbad {
+		display: flex;
+		width: 50%;
+		flex-direction: column;
+		justify-content: space-around;
+		padding: 2%;
+	}
+
+	h1 {
+		font-size: 4rem;
+	}
+
+	footer {
+		padding: 2%;
+	}
 
 }
