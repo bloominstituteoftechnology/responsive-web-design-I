@@ -1,3 +1,383 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+/* ol, ul {
+	list-style: none;
+} */
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+#page-conent {
+	width: 100%;
+	padding: 0;
+}
+
+.nav-bar {
+	/*border: 2px solid red;*/
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-image: radial-gradient(circle, #20bf55, #01baef);
+	height: 45px;
+	width: 100%;
+	position: fixed;
+	z-index: 9999;
+}
+
+nav {
+	text-align: center;
+	width: 100%;
+}
+
+nav a {
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	margin-right: 5%;
+	padding: 20px;
+	color: #000000;
+	font-weight: bold;
+}
+
+nav a:hover {
+	color: gray;
+	font-weight: bold;
+}
+
+.header {
+	/*border: 2px solid blue; */
+	display: flex;
+	justify-content: center;
+	margin: auto;
+	width: 70%;
+}
+
+h1 {
+	/*border: 2px solid red; */
+	font-size: 72px;
+	text-align: center;
+}
+
+.h1-button {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 700px;
+	height: 500px;
+}
+
+.header-image {
+	/*border: 2px solid red; */
+	margin: auto;
+	padding: 4%;
+}
+
+button{
+	border: 2px solid black;
+	color: black;
+	width: 150px;
+	height: 35px;
+	background-color: white;
+}
+
+button:hover{
+	cursor: pointer;
+	background: #5f9ea0;
+}
+
+hr {
+	border-top: 2px solid black;
+    margin: auto;
+	padding: 0;
+	width: 66%;
+}
 
 
+h2 {
+	font-size: 24px;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
+}
+
+p {
+	font-size: 16px;
+	margin: auto;
+}
+
+#content {
+	/*border: 2px solid blue; */
+	width: 70%;
+	margin: auto;
+	padding: 40px;
+}
+
+.top-content {
+	/*border: 2px solid red; */
+	display: flex;
+	width: 100%;
+	margin: auto;
+	padding-bottom: 30px;
+}
+
+.top-content article{
+	width: 49%;
+}
+
+.middle-img {
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+
+.bottom-content {
+	/*border: 2px solid red;*/
+	display: flex;
+	width: 100%;
+	margin: auto;
+	padding-top: 30px;
+}
+
+.bottom-content article{
+	width: 33%;
+}
+
+.contact {
+	/*border: 2px solid blue; */
+	width: 66%;
+	margin: auto;
+	padding-top: 30px;
+	padding-bottom: 50px;
+}
+
+footer {
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+#tablet-nav {
+	display: none;
+}
+
+#tablet-image {
+	display: none;
+}
+
+#mobile-nav {
+	display: none;
+}
+
+@media (max-width: 800px) {
+	.nav-bar, nav, nav a, nav a:hover {
+		display: none;
+	}
+
+	#page-conent {
+		display: flex;
+		position: relative;
+		width: 100%;
+		padding: 25px 75px 0 75px;
+		text-align: center;
+	}
+	
+	.header-image {
+        display: none;
+	}
+
+	#content {
+		/*border: 2px solid blue; */
+		width: 100%;
+		margin: auto;
+		padding: 40px;
+	}
+
+	.contact {
+		/*border: 2px solid blue; */
+		width:90%;
+		margin: auto;
+		padding-top: 30px;
+		padding-bottom: 50px;
+	}
+
+	#tablet-nav {
+		display: flex;
+		width: 100%;
+	}
+
+	#tablet-nav a{
+		align-items: center;
+		justify-content: center;
+		text-decoration: none;
+		margin-right: 5%;
+		padding: 20px;
+		color: gray;
+		font-weight: bold;
+	}
+
+	#tablet-nav a:hover {
+		color: black;
+		font-weight: bold;
+	}
+
+	#tablet-image {
+		display: flex;
+		justify-content: center;
+	}
+
+	hr {
+		border-top: 2px solid black;
+		margin: auto;
+		padding: 0;
+		width: 90%;
+	}
+
+	#mobile-nav {
+		display: none;
+	}
+}
+
+@media (max-width: 500px) {
+	#page-conent {
+		display: flex;
+		position: relative;
+		width: 100%;
+		padding: 25px 75px 0 75px;
+		text-align: center;
+	}
+
+	#mobile-nav {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		width: 100%;
+	}
+
+	#mobile-nav a {
+		text-decoration: none;
+		padding: 20px;
+		color: gray;
+		font-weight: bold;
+		width: 100%;
+		text-align: center;
+		border-bottom: 1px solid gray;
+	}
+
+	#tablet-image {
+		display: flex;
+		justify-content: center;
+		border-bottom: 1px solid gray;
+		width: 100%;
+		padding-bottom: 10px;
+	}
+
+	#tablet-nav {
+		display: none;
+	}
+
+	#content {
+		/*border: 2px solid blue;*/
+		width: 100%;
+	}
+	
+	.top-content {
+		/*border: 2px solid red;*/
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		padding-bottom: 30px;
+	}
+	
+	.top-content article{
+		width: 100%;
+		padding-top: 30px;
+	}
+	
+	.middle-img {
+		width: 100%;
+	}
+	
+	.bottom-content {
+		/*border: 2px solid red; */
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		margin: auto;
+		padding-top: 30px;
+	}
+	
+	.bottom-content article{
+		width: 100%;
+		padding-top: 30px;
+	}
+
+	.contact {
+		width: 83%;
+	}
+
+	hr {
+		border-top: 2px solid black;
+		margin: auto;
+		padding: 0;
+		width: 83%;
+	}
+}
