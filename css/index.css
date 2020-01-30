@@ -1,3 +1,601 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+* {
+    max-width: 100%;
+}
+
+@media (max-width: 800px) {
+    body {
+      width: 90%;
+    }
+  }
+  @media (max-width: 500px) {
+    body {
+      width: 100%;
+    }
+  }
+
+nav a{
+	color:grey;
+	text-decoration: none;
+	font-size: 1.2rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+nav img{
+	/* float: right;
+	margin-right: 2rem;
+	margin-top: 2rem;
+    margin-right: -3.5rem; */
+    margin-top: .5rem;
+}
+
+nav {
+    display: flex; justify-content: space-between;
+    width: 100%;
+	/* margin-top: 1rem; */
+    /* margin-left: -4rem;
+    
+	overflow: hidden;
+	padding-top: 2rem;
+	padding-bottom: 4.5rem;
+	padding-left: 5%;
+	padding-right: 5%;
+	margin-top: -rem;
+	background-color:white;
+	position: fixed;
+	top: 0;
+	width: 100%; */
+}
+
+/* .innovation img{
+float:right;
+margin-top: -28rem;
+margin-right: 5rem;
+
+} */
+
+.innovation {
+    display:flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+}
+
+.innovation {
+	/* padding-top: 10rem;
+	margin-top: -3rem; */
+  border-bottom: 2px dotted grey;
+  /* display: flex;
+  justify-content: space-around; */
+}
+
+.innovation-image {
+  /* width: 44%;
+  height: 60%;
+  margin-bottom: 3rem; */
+}
+
+.innovation h2{
+	font-size: 5rem;
+	text-align: center;
+	
+}
+
+.innovation h4{
+	border: 3px solid grey;
+	text-align: center;
+	font-size: 2rem;
+
+}
+
+.iod {
+	margin-top: 1rem;
+}
+
+
+
+.middle-info img {
+width: 100%;
+}
+
+.Features {
+	/* margin-right: 37rem;
+	padding-top: 2rem;
+	padding-bottom: 2.5rem; */
+  font-size: 1.5rem;
+  padding-right: 8rem;
+}
+
+.About {
+	/* margin-left: 37rem;
+	padding-top:2rem;
+	padding-bottom: 2.5rem;
+	margin-top: -13.2rem; */
+	font-size: 1.5rem;
+
+
+}
+
+.middle-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.middle-lower {
+	border-bottom: 1px dotted grey;
+	padding-top: 2rem;
+  padding-bottom: 4rem;
+  display:flex;
+  justify-content: space-between;
+}
+
+.services {
+	/* margin-right: 51rem;
+	padding-bottom: 2rem; */
+  font-size: 1.5rem;
+  margin-right: 2rem;
+}
+
+.product {
+  font-size: 1.5rem;
+  margin-right: 2rem;
+
+	/* margin-right: 25rem;
+	margin-left: 25rem;
+	margin-top: -15rem;
+	padding-bottom: 2rem; */
+}
+
+.vision {
+	/* float: right; */
+	font-size: 1.5rem;
+	/* margin-left: 51rem;
+	margin-top: -15.2rem;
+	padding-bottom: 1.6rem; */
+}
+
+footer {
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+}
+
+.copyright {
+	text-align: center;
+	padding-bottom: 2rem;
+}
+
+body {
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+
+/* Testing button thing */
+
+/* @import url('https://fonts.googleapis.com/css?family=Rubik:900');
+
+/* 
+a:after {
+  content: '';
+  background: linear-gradient(120deg, #5facc6, #927be5, #5facc6);
+  background-size: 400% 400%;
+  -webkit-clip-path: polygon(0% 100%, 4px 100%, 4px 4px, 216px 4px, 216px 66px, 4px 66px, 4px 100%, 100% 100%, 100% 0%, 0% 0%);
+  -moz-animation: gradient 3s ease-in-out infinite, border 1s forwards ease-in-out reverse;
+  -webkit-animation: gradient 3s ease-in-out infinite, border 1s forwards ease-in-out reverse;
+  animation: gradient 3s ease-in-out infinite, border 1s forwards ease-in-out reverse;
+}
+
+a  > span{
+  display: block;
+  background: linear-gradient(120deg, #5facc6, #927be5, #5facc6);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-animation: gradient 3s ease-in-out infinite;
+  -webkit-animation: gradient 3s ease-in-out infinite;
+  animation: gradient 3s ease-in-out infinite;
+}
+
+/* helpers */
+/* .absolute-centering, body:after, a, a:after {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.text-formatting, a {
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: 2px;
+  line-height: 70px;
+  font-family: 'Rubik', sans-serif;
+  font-size: 20px;
+} */
+
+/* motion */
+/* @-moz-keyframes gradient {
+  0% {
+    background-position: 14% 0%;
+  }
+  50% {
+    background-position: 87% 100%;
+  }
+  100% {
+    background-position: 14% 0%;
+  }
+}
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 14% 0%;
+  }
+  50% {
+    background-position: 87% 100%;
+  }
+  100% {
+    background-position: 14% 0%;
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 14% 0%;
+  }
+  50% {
+    background-position: 87% 100%;
+  }
+  100% {
+    background-position: 14% 0%;
+  }
+}
+@-moz-keyframes border {
+  0% {
+    -webkit-clip-path: polygon(0% 0%, 0% 100%, 5% 100%, 5% 5%, 95% 5%, 95% 95%, 5% 95%, 5% 100%, 100% 100%, 100% 0%);
+  }
+  25% {
+    -webkit-clip-path: polygon(0% 100%, 4px 100%, 4px 4px, 216px 4px, 216px 66px, 216px 66px, 216px 100%, 100% 100%, 100% 0%, 0% 0%);
+  }
+  50% {
+    -webkit-clip-path: polygon(0% 100%, 4px 100%, 4px 4px, 216px 4px, 216px 4px, 216px 4px, 216px 4px, 216px 4px, 100% 0%, 0% 0%);
+  }
+  75% {
+    -webkit-clip-path: polygon(0% 100%, 4px 100%, 4px 4px, 4px 4px, 4px 4px, 4px 4px, 4px 4px, 4px 4px, 4px 0%, 0% 0%);
+  }
+  100% {
+    -webkit-clip-path: polygon(0% 100%, 4px 100%, 4px 100%, 4px 100%, 4px 100%, 4px 100%, 4px 100%, 4px 100%, 4px 100%, 0% 100%);
+  }
+}
+@-webkit-keyframes border {
+  0% {
+     -webkit-clip-path: polygon(0% 0%, 0% 100%, 5% 100%, 5% 5%, 95% 5%, 95% 95%, 5% 95%, 5% 100%, 100% 100%, 100% 0%);
+  }
+  25% {
+    -webkit-clip-path: polygon(0% 100%, 4px 100%, 4px 4px, 216px 4px, 216px 66px, 216px 66px, 216px 100%, 100% 100%, 100% 0%, 0% 0%);
+  }
+  50% {
+    -webkit-clip-path: polygon(0% 100%, 4px 100%, 4px 4px, 216px 4px, 216px 4px, 216px 4px, 216px 4px, 216px 4px, 100% 0%, 0% 0%);
+  }
+  75% {
+    -webkit-clip-path: polygon(0% 100%, 4px 100%, 4px 4px, 4px 4px, 4px 4px, 4px 4px, 4px 4px, 4px 4px, 4px 0%, 0% 0%);
+  }
+  100% {
+    -webkit-clip-path: polygon(0% 100%, 4px 100%, 4px 100%, 4px 100%, 4px 100%, 4px 100%, 4px 100%, 4px 100%, 4px 100%, 0% 100%);
+  }
+}
+@keyframes border {
+  0% {
+   -webkit-clip-path: polygon(0% 0%, 0% 100%, 5% 100%, 5% 5%, 95% 5%, 95% 95%, 5% 95%, 5% 100%, 100% 100%, 100% 0%);
+  }
+  25% {
+    -webkit-clip-path: polygon(0% 100%, 4px 100%, 4px 4px, 216px 4px, 216px 66px, 216px 66px, 216px 100%, 100% 100%, 100% 0%, 0% 0%);
+  }
+  50% {
+    -webkit-clip-path: polygon(0% 100%, 4px 100%, 4px 4px, 216px 4px, 216px 4px, 216px 4px, 216px 4px, 216px 4px, 100% 0%, 0% 0%);
+  }
+  75% {
+    -webkit-clip-path: polygon(0% 100%, 4px 100%, 4px 4px, 4px 4px, 4px 4px, 4px 4px, 4px 4px, 4px 4px, 4px 0%, 0% 0%);
+  }
+  100% {
+    -webkit-clip-path: polygon(0% 100%, 4px 100%, 4px 100%, 4px 100%, 4px 100%, 4px 100%, 4px 100%, 4px 100%, 4px 100%, 0% 100%);
+  }
+}
+ */
+
+
+/*second btn*/
+
+
+/* .flex {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+/* .bttn {
+  width: 90px;
+  height: 90px;
+  line-height: 90px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  position: relative;
+}
+.bttn:after {
+  transition: 0.3s all ease;
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 3px; */
+ /* border: 3px solid #B15947;*/
+     /* -webkit-clip-path: polygon(0% 100%, 4px 100%, 4px 4px, 216px 4px, 216px 66px, 4px 66px, 4px 100%, 100% 100%, 100% 0%, 0% 0%);
+  -moz-animation: gradient 3s ease-in-out infinite, border 1s forwards ease-in-out reverse;
+  -webkit-animation: gradient 3s ease-in-out infinite, border 1s forwards ease-in-out reverse;
+  animation: gradient 3s ease-in-out infinite, border 1s forwards ease-in-out reverse;
+}
+.bttn:before {
+  content: '';
+  position: absolute;
+  border-radius: 3px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background: #fff;
+  z-index: -1;
+}
+.bttn:hover:after {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+    
+}
+.bttn:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.bttn:active:before {
+  background-color:  linear-gradient(120deg, #5facc6, #927be5, #5facc6);;
+}
+.bttn:active:after {
+  border-color:  linear-gradient(120deg, #5facc6, #927be5, #5facc6);;
+}
+
+  */ 
+
+/* Services */
+
+/* .services-header-img {
+	width: 100%;
+  margin-bottom: 40px;
+}
+
+.Services {
+  border-bottom: 2px dotted grey;
+}
+
+.services-boxes {
+  display:flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+  border-bottom: 2px solid grey;
+
+  
+}
+
+.services-boxes h3 {
+border: 2px solid grey;
+margin-top:1.5rem;
+padding-right: 2.5rem;
+padding-left: 2.5rem;
+padding-top: .8rem;
+padding-bottom: .8rem;
+float: left;
+background-color: white;
+border-radius: 5px;
+}  
+
+.services-boxes h2 {
+  font-size: 1.5rem;
+}
+
+.Services h1 {
+  font-size: 2rem;
+}
+
+.digital {
+  /* background-color: grey;
+  border: 2px solid red;
+  width: 40%;
+  height: 10rem; */
+  /* border: 2px solid grey;
+	background-color: lightgrey;
+	width: 500px;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  font-size: 1.2rem;
+
+}
+
+.UX {
+  border: 2px solid grey;
+	background-color: lightgrey;
+	width: 500px;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  font-size: 1.2rem;
+
+
+}
+
+.digitalMarketing {
+  border: 2px solid grey;
+	background-color: lightgrey;
+	width: 500px;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  font-size: 1.2rem;
+
+
+}
+
+.webdev {
+  border: 2px solid grey;
+	background-color: lightgrey;
+	width: 500px;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  font-size: 1.2rem;
+
+
+}
+
+.iOS {
+  border: 2px solid grey;
+	background-color: lightgrey;
+	width: 500px;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  font-size: 1.2rem;
+
+
+}
+
+.android {
+  border: 2px solid grey;
+	background-color: lightgrey;
+	width: 500px;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  font-size: 1.2rem;
+
+
+}
+
+ul.things {
+  list-style-type: square;
+  margin-left: .3rem;
+padding: 0;
+}
+
+.facts {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 30%;
+  flex-direction: column;
+  margin-left: .8rem;
+}
+
+.someFacts {
+  font-size: 1.2rem;
+  width: 120%;
+  margin-bottom: 8rem;
+  
+}
+
+.services-bottom{
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.things {
+  margin-top: 11.5rem;
+  
+  
+}
+
+.services-bottom .things {
+  margin-left: -35.6rem;
+}
+
+.copyright {
+  text-align: center;
+} */
+
