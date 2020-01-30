@@ -91,10 +91,6 @@ h1, h2, h3, h4, h5, button {
 	padding: 10px 20px 36px 20px;
 }
 
-/* .navline {
-	display: none;
-} */
-
 nav a:hover {
 	background-color: rgb(72, 99, 112);
 	color: white;
@@ -105,6 +101,7 @@ header {
 	flex-direction: row;
 	justify-content: space-evenly;
 	padding: 50px;
+	width: 100%;
 }
 
 header h1 {
@@ -221,13 +218,55 @@ footer{
 }
 
 @media (max-width: 800px) {
+	
 	header .index-img {
 		display: none;
+	}
+
+	.navflex {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		background: transparent;
+		position: static;
+		width: 100%;
+	}
+
+	.navflex a {
+		color: black;	
+		border-radius: 22px;
+		background-color:  #EEEEEE;
+		font-size: 18px;
+		text-align: center;
+		text-decoration: none;
+		margin: auto;
+		height: 10px;
+		padding: 6px 20px 24px 20px;
+	}
+
+	nav hr {
+		visibility: hidden;
+	}
+
+	header h1 {
+		margin: 40px 10px 10px 10px;
+		width: 100%;
+		justify-content: center;
+		font-size: 60px;
+	}
+
+	.section1 div{
+		margin: 10px 20px 10px 20px;
+	}
+
+	.section2 div{
+		margin: 10px 20px 10px 20px;
 	}
 
 }
 
 @media (max-width: 500px) {
+	
 	header .index-img {
 		display: none;		
 	}
@@ -252,6 +291,7 @@ footer{
 		margin: 10px;
 		width: 95%;
 		border: 1px solid black;
+		visibility: visible;
 	}
         
     header h1 {
