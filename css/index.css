@@ -1,6 +1,7 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
 nav ul {
+    background-color: cornflowerblue;
     display: flex;
     justify-content: space-between;
 }
@@ -12,6 +13,7 @@ nav ul a{
 nav ul {
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 }
 
@@ -19,6 +21,7 @@ nav ul {
  nav ul {
      display: flex;
      flex-direction: column-reverse;
+     text-align: center;
  }
 }
 
@@ -45,6 +48,12 @@ header {
     text-align: center;
 }
 
+@media (max-width: 800px) {
+.header-left {
+    text-align: center;
+}
+}
+
 .top-content {
     display: flex;
 }
@@ -55,6 +64,30 @@ header {
 body {
     margin: 0 auto;
 }
-.middle-img {
+.second-img{
     padding: 1%;
 }
+
+@media (max-width: 400px) {
+    .header-right {
+display: none;
+}
+}
+
+.second-img{
+    padding: 1%;
+}
+
+@media (min-width: 400px) {
+    .second-img {
+        display: none;
+    }
+    }
+@media (min-width: 600px) {
+.second-img {
+    display: none;
+}
+}
+
+
+
