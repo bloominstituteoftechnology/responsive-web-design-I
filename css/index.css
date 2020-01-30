@@ -73,6 +73,128 @@ h1, h2, h3, h4, h5 {
 
 /*  End of CSS RESET  */
 
+/*  Desktop Size  */
+
+body {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo-container {
+    flex: 1;
+    align-self: flex-end;
+}
+
+.all-links {
+    flex: 3;
+    display: flex;
+    justify-content: space-evenly;
+}
+.link {
+    color: gray;
+    text-decoration: none;
+}
+
+.call-to-action {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 36px auto;
+}
+
+.actionable-area {
+    text-align: center;
+}
+
+.cta-button {
+    width: 165px;
+    height: 36px;
+    border: 2px lightgray solid;
+    border-top: 1px black solid;
+    border-bottom: 1px black solid;
+    background-color: #FFF;
+}
+
+.header-img {
+    height: 30%;
+    width:30%;
+}
+
+.title-word {
+    font-size: 70px;
+}
+
+.all-info {
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    padding: 32px 0;
+    display: flex;
+    flex-flow: column;
+}
+
+.info-container {
+    display: flex;
+    margin-bottom: 36px;
+}
+
+.info {
+    padding: 24px 16px;
+}
+
+.middle-img {
+    margin-bottom: 36px;
+}
+
+.address {
+    margin: 48px 0;
+}
+
+small {
+    display: flex;
+    justify-content: center;
+}
+
+
+/*  Tablet Size  */
+
+@media (max-width: 800px) {
+    nav {
+        flex-flow: column;
+    }
+
+    .all-links {
+        order: 2;
+        width: 100%;
+    }
+
+    .logo-container {
+        align-self: auto;
+        margin: 16px 0;
+    }
+
+    .header-img {
+        display: none;
+    }
+
+    .cta-button {
+        width: 165px;
+        height: 36px;
+        border: 2px lightgray solid;
+        border-top: 1px black solid;
+        border-bottom: 1px black solid;
+        background-color: #FFF;
+    }
+}
+
+
+@media(max-width: 500px) {
+
 body {
     width: 100%;
     max-width: 500px;
@@ -112,7 +234,6 @@ nav {
     display: flex;
     flex-flow: column;
     align-items: center;
-    border-bottom: 2px solid black;
     padding-bottom: 40px;
 }
 
@@ -138,19 +259,12 @@ nav {
     background-color: #FFF;
 }
 
-.all-info {
-    margin: 60px auto;
-    display: flex;
-    flex-flow: column;
-}
-
 .info {
     margin: 12px 0 24px;
 }
 
-.vision {
-    padding-bottom: 32px;
-    border-bottom: 2px solid black;
+.info-container {
+    flex-flow: column;
 }
 
 .address {
@@ -164,4 +278,4 @@ small {
     display: block;
     margin: 16px auto;
 }
-
+} 
