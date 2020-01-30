@@ -73,13 +73,34 @@ h1, h2, h3, h4, h5 {
 }
 
 @media (max-width: 800px) {
-    body {
-      width: 90%;
-    }
+  footer p {
+      padding: .5rem;
   }
-  @media (max-width: 500px) {
-    body {
+
+  nav {
+      display:flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      padding-bottom: 3rem;
+  }
+  nav .links {
+      display:flex;
+      flex-direction: row;
+      justify-content: space-between;
       width: 100%;
+  }
+  .innovation-image {
+      display: none;
+  }
+  
+    }
+  
+  @media (max-width: 500px) {
+    nav {display:flex;
+      flex-direction: column;
+    }
+    .innovation-image {
+        display: none;
     }
   }
 
@@ -92,37 +113,16 @@ nav a{
 }
 
 nav img{
-	/* float: right;
-	margin-right: 2rem;
-	margin-top: 2rem;
-    margin-right: -3.5rem; */
     margin-top: .5rem;
 }
 
 nav {
     display: flex; justify-content: space-between;
     width: 100%;
-	/* margin-top: 1rem; */
-    /* margin-left: -4rem;
-    
-	overflow: hidden;
-	padding-top: 2rem;
-	padding-bottom: 4.5rem;
-	padding-left: 5%;
-	padding-right: 5%;
-	margin-top: -rem;
-	background-color:white;
-	position: fixed;
-	top: 0;
-	width: 100%; */
+	
 }
 
-/* .innovation img{
-float:right;
-margin-top: -28rem;
-margin-right: 5rem;
 
-} */
 
 .innovation {
     display:flex;
@@ -140,10 +140,8 @@ margin-right: 5rem;
   justify-content: space-around; */
 }
 
-.innovation-image {
-  /* width: 44%;
-  height: 60%;
-  margin-bottom: 3rem; */
+.middle-img {
+    margin-top: 1.5rem;
 }
 
 .innovation h2{
@@ -170,11 +168,9 @@ width: 100%;
 }
 
 .Features {
-	/* margin-right: 37rem;
-	padding-top: 2rem;
-	padding-bottom: 2.5rem; */
+
   font-size: 1.5rem;
-  padding-right: 8rem;
+  /* padding-right: 8rem; */
 }
 
 .About {
