@@ -8,6 +8,20 @@ nav ul a{
     text-decoration: none;
 }
 
+@media (max-width: 800px){
+nav ul {
+    display: flex;
+    flex-direction: column;
+}
+}
+
+@media (max-width: 500px) {
+ nav ul {
+     display: flex;
+     flex-direction: column-reverse;
+ }
+}
+
 header {
     display: flex;
     flex-flow: column;
@@ -40,4 +54,7 @@ header {
 }
 body {
     margin: 0 auto;
+}
+.middle-img {
+    padding: 1%;
 }
