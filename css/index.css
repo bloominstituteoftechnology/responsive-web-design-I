@@ -114,7 +114,7 @@ nav a {
 .header-right {
 	display: flex;
     float: right;
-	
+	flex-wrap: wrap;
 }
 
 
@@ -187,12 +187,23 @@ body {
 
     nav  {
         text-align: center;
-        font-size: x-large;
+        font-size: xx-large;
         flex-direction: column;
 	}
 	.logo-content {
-		
+	flex-direction: column-reverse;
 	}
+	.header-right {
+		display: none;
+	}
+
+	
  }
 
+ @media (max-width: 500px) {
+
+	.main-content {
+		justify-content: stretch;
+	}
+	
 
