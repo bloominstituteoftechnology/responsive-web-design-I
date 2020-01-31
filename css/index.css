@@ -83,8 +83,9 @@ nav a {
 
 
 
-.logo {
-    float: right;
+.logo-content {
+	float: right;
+	display: flex;
     
 }
 
@@ -111,6 +112,7 @@ nav a {
 }
 
 .header-right {
+	display: flex;
     float: right;
 	
 }
@@ -122,18 +124,14 @@ button {
 }
 
 
-.rectangle-pic {
 
-    justify-content: center;
-    width: 1000px;
-
-}
 
 .rectangle-pic {
 	display: flex;
-	center: 80px;
+	justify-content: center;
     left: 200px;
-    align-content: center;
+	align-content: center;
+	padding: 50px;
 
 }
 
@@ -191,7 +189,10 @@ body {
         text-align: center;
         font-size: x-large;
         flex-direction: column;
-    }
-}
+	}
+	.logo-content {
+		
+	}
+ }
 
 
