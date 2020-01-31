@@ -1,3 +1,88 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+nav ul {
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.8rem;
+}
+nav ul a{
+    text-decoration: none;
+}
+
+@media (max-width: 800px){
+nav ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+}
+
+@media (max-width: 768px) {
+ nav ul {
+     display: flex;
+     flex-direction: column-reverse;
+     text-align: center;
+ }
+}
+
+header {
+    display: flex;
+    flex-flow: column;
+}
+
+.header-bottom {
+    display: flex;
+}
+
+.header-left {
+    width: 49%;
+    text-align: center;
+    align-self: center;
+}
+
+.header-left h1 {
+    font-size: 3.5rem;
+}
+
+.contact-foot {
+    text-align: center;
+}
+
+@media (max-width: 700px) {
+.header-left {
+    text-align: center;
+}
+}
+
+.top-content {
+    display: flex;
+}
+
+.middle-content {
+    display: flex;
+}
+body {
+    margin: 0 auto;
+}
+
+
+@media (max-width: 600px) {
+    .header-right {
+display: none;
+}
+}
+
+.second-img {
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 400px) {
+.second-img {
+    display: none;
+}
+}
+
 
