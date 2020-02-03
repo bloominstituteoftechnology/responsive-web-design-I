@@ -73,23 +73,45 @@ body{
 	margin:auto;
 }
 
+.lightbulb{
+    display:flex;
+    justify-content: space-between;
+}
+
+
+
+.idea{
+ 
+    display: flex;
+    justify-content: flex-end;
+    width:100%;
+}
+
+
 .container{
+ 
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+    justify-content: space-between;
+    width:398%;
+    
 
 }
 
 nav a{
 	text-decoration: none;
 	color:grey;
-	width: 10%;
+	width: 5%;
 	margin: 2%;
-	text-align: center;
+    text-align: center;
+    font-size: 20px;
 }
 
 .logo{
-	width:20%;
+    display: block;
+    width:50%;
+    
+
 
 }
 
@@ -119,8 +141,8 @@ nav a{
 	border:2px solid black;
 	color:black;
 	text-align: center;
-	font-size:16px;
-	padding: 0px 5px 0px 5px;
+	font-size:23px;
+	padding: 10px 0px 10px 0px;
 }
 
 .start:hover{
@@ -129,7 +151,8 @@ nav a{
 
 .circle{
 	padding-top:25px;
-	padding-bottom:25px;
+    padding-bottom:25px;
+    width: 35%;
 
 }
 
@@ -211,3 +234,19 @@ nav a{
 	padding-top:45px;
 
 }
+
+
+/*
+@media (max-width: 800px){
+    .innercircle{
+        display: none;
+    }
+   
+   .logo{
+        display:flex;
+        justify-content: center;
+   }
+
+    }
+}
+
