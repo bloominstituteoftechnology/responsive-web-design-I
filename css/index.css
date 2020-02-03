@@ -166,12 +166,10 @@ h5 {
 
 nav {
 	margin: 0 auto;
-	margin-left: -25px;
 	width: 1000px;
 	padding: 25px;
 	height: 75px;
-	position: relative;
-	right: 75px;
+	display: flex;
 }
 
 nav a {
@@ -190,6 +188,7 @@ nav a:hover {
 nav img {
 	float: right;
 	height: 25px;
+	margin-left: 50px;
 }
 
 #started {
@@ -336,9 +335,17 @@ header button:active {
 	padding: 30px;
 }
 
+
 @media (max-width: 800px) {
 	nav {
 		width: 100vw;
+		display: flex;
+		wrap: nowrap;
+	}
+	nav img {
+		position: absolute;
+		top: 0;
+		left: 50%;
 	}
 	#page {
 		width: 97%;
@@ -348,12 +355,16 @@ header button:active {
 		margin: 0 auto;
 		width: 100vw;
 	}
+	#started h1 {
+		font-size: 50px;
+	}
 	#content {
 		width: 100vw;
 	}
 	#content img {
-		width: 100vw;
+		width: 100%;
 		margin: 25px auto;
+
 	}
 	.item {
 		margin-top: 25px;
@@ -370,6 +381,10 @@ header button:active {
 	header img {
 		display: none;
 	}
+
+	#contact {
+		margin-left: 15px;
+	}
 }
 
 @media (max-width: 500px) {
@@ -378,19 +393,15 @@ header button:active {
 	}
 	nav {
 		display: inline-block;
-		width: 100%;
 	}
 	nav a {
 		display: block;
-		width: 120vw;
 		text-align: center;
 		border-bottom: 1px solid #000;
 		overflow: hidden;
 	}
 	nav img {
-		float: none;
-		display: block;
-		margin: 0 0 auto auto;
+		left: 25%;
 	}
 	.item,
 	.itemv2 {
