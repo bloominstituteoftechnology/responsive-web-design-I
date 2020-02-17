@@ -1,3 +1,221 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+/* article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+} */
+/* ol, ul {
+	list-style: none;
+} */
+/* blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0; */
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+		font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+.container {
+	padding: 2rem 3rem 6rem;
+}
+
+header.desktop {
+	display: flex;
+	justify-content: space-between;
+}
+ .navigation {
+	display: flex;
+ }
+
+ .nav-links {
+	 color: grey !important;
+	 text-decoration: none;
+	 margin: 7%;
+ }
+
+section.one {
+	display: flex;
+	justify-content: space-around;
+}
+ .on-demand {
+	 display: flex;
+	 	flex-direction: column;
+  }
+
+.on-demand-image {
+display: flex;
+
+}
+
+h1 {
+	font-size: 3.5rem;
+display: flex;
+}
+
+button {
+	display: flex;
+}
+
+.features-about {
+	display: flex;
+	justify-content: space-between;
+}
+.features {
+	display: flex;
+	flex-direction: column;
+}
+
+.about {
+	display: flex;
+	flex-direction: column;
+
+}
+
+.middle-image {
+}
+
+.spv {
+	display: flex;
+}
+.services {
+	display: flex;
+	flex-direction: column;
+	width: 33%;
+}
+
+.product {
+	display: flex;
+	flex-direction: column;
+	width: 33%;
+}
+
+.vision {
+	display: flex;
+	flex-direction: column;
+	width: 33%;
+}
+
+.copyright {
+	text-align: center;
+}
+
+/* This starts CSS for the "Services Page" */
+
+header.services-header {
+	display: flex;
+}
+
+div.nav-logo {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	height: auto;
+}
+
+.services-header-img {
+	width: 100%;
+	height: auto;
+}
+
+.services {
+	display: flex;
+}
+
+.services-p {
+	display: flex;
+}
+
+.row-one {
+	display: flex;
+	border: solid 3px black;
+}
+
+.row-two {
+	display: flex;
+	border: solid 3px black;
+}
+
+.row-three {
+	display: flex;
+	border: solid 3px black;
+}
 
 
+/*  MEDIA QUERIES*/
+
+@media (max-width: 800px) {
+  header.desktop {
+    display: none;
+  }
+
+  div.tablet {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+  }
+  img.logo {
+    display: flex;
+    flex-direction: column;
+    width: 15rem;
+    margin: 0 auto;
+  }
+
+}
+
+/* style mobile inside media query below  */
+  @media (min-width: 800px) {
+    div.tablet {
+      display: none;
+      background-color: blue;
+      }
+    }
