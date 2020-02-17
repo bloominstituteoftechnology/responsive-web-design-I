@@ -1,7 +1,8 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 body{
     margin: 1px;
-    width:100%;
+    width:80%;
+    padding-left: 4em;;
 }
 
 header{
@@ -81,34 +82,30 @@ footer{
 
 /*End of desktop-view*/
 /* Starting tablet view */
-@media(max-width:1050px){
+@media(max-width:1030px){
     body{
-        margin: 8em;
-        width: 78%;
+        margin: 6em;
+        width: 70%;
+        
     }
     nav{
-        flex-direction: column-reverse;
-       
-    } 
-    .logo{
-        display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 40%;
+        flex-wrap: wrap-reverse;
+      
     }
     header nav a{
-        color: red;
-        display:flex;
-        flex-direction: column-reverse;
-        
+        flex-direction: row-reverse;
+    }
+   .logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 39%;
+    padding-bottom: 3em;
     }
     .pic1{
         display:none;
-    }
-
    
     
-
 }
 
 
