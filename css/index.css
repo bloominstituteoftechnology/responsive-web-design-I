@@ -46,8 +46,13 @@ button{
     padding-top: 1em;
     border-top: 2px solid black;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+
 }
+.features p{
+    padding-right: 1em;
+}
+
 .middle-img{
     display: block;
     margin-left: auto;
@@ -82,19 +87,17 @@ footer{
 
 /*End of desktop-view*/
 /* Starting tablet view */
-@media(max-width:1030px){
+@media(max-width:1060px){
     body{
         margin: 6em;
-        width: 70%;
+        width: 75%;
         
     }
     nav{
         flex-wrap: wrap-reverse;
       
     }
-    header nav a{
-        flex-direction: row-reverse;
-    }
+   
    .logo{
     display: block;
     margin-left: auto;
@@ -108,4 +111,30 @@ footer{
     
 }
 
+@media(max-width:850px){
+    body{
+        width: 60%;
+        /* margin: 20%;
+        padding-left: 5em; */
 
+    }
+    nav{
+        flex-direction: column-reverse;
+        color:green;
+        align-items: center;
+    }
+    header nav a{
+        flex-wrap: wrap-reverse;
+        color:red;
+    }
+    .middle-img{
+        display: block;
+        width: 20em;
+    }
+    .top{
+        flex-wrap: wrap;
+        font-size: small;
+        height: 20em;
+    }
+
+}
