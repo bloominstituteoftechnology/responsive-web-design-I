@@ -1,8 +1,8 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 body{
-    margin: 1px;
+    margin: 10%;
     width:80%;
-    padding-left: 4em;;
+    /* padding-left: 4em;; */
 }
 
 header{
@@ -111,7 +111,7 @@ footer{
     
 }
 
-@media(max-width:850px){
+@media(max-width:800px){
     body{
         width: 60%;
         /* margin: 20%;
@@ -120,12 +120,15 @@ footer{
     }
     nav{
         flex-direction: column-reverse;
-        color:green;
-        align-items: center;
+        /* align-items: center; */
+        justify-content: center;
+        width:100%;
+        
     }
     header nav a{
         flex-wrap: wrap-reverse;
         color:red;
+       
     }
     .middle-img{
         display: block;
@@ -136,5 +139,18 @@ footer{
         font-size: small;
         height: 20em;
     }
+    .bottom{
+        flex-wrap: wrap;
+        font-size: small;
+       
+    }
 
+    #navpro{
+        border: 2px solid grey;
+        text-align: center;
+  
+    
 }
+    #navserv{
+        border:2px solid grey
+} 
