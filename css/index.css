@@ -1,12 +1,15 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
-body{
-    margin: 10%;
-    width:80%;
-    /* padding-left: 4em;; */
+*{
+    border-sizing:border-box;
+    margin:0;
+    padding:0;
+    max-width:100%;
 }
 
 header{
     display: flex;
+   
 }
 
 header nav{
@@ -20,6 +23,7 @@ header nav a{
     text-decoration: none;
     color:grey;
     display:flex;
+    
 }
 
 .one{
@@ -37,14 +41,14 @@ header nav a{
 }
 button{
    text-align: center;
-   font-size: 18px;
-   padding: 8px 25px;
+   font-size: 80% ;
+   padding: 2% 12%;
    border-width: 1px;
   border-color: black;
 }
 .top{
-    padding-top: 1em;
-    border-top: 2px solid black;
+    padding-top: 1%;
+    border-top: 2% solid black;
     display: flex;
     justify-content: space-between;
 
@@ -62,7 +66,7 @@ button{
 .bottom{
     display:flex;
     justify-content: space-around;
-    border-bottom: 2px solid black
+    border-bottom: 2% solid black
 }
 
 .contact{
@@ -73,7 +77,7 @@ button{
 .phone{
     text-decoration: none;
     color: black;
-    line-height: 2em;
+    line-height: 10vh;
 }
 
 .email a{
@@ -87,15 +91,10 @@ footer{
 
 /*End of desktop-view*/
 /* Starting tablet view */
-@media(max-width:1060px){
-    body{
-        margin: 6em;
-        width: 75%;
-        
-    }
+
+@media(max-width:800px){
     nav{
-        flex-wrap: wrap-reverse;
-      
+        flex-wrap: wrap-reverse;      
     }
    
    .logo{
@@ -105,13 +104,14 @@ footer{
     width: 39%;
     padding-bottom: 3em;
     }
+
     .pic1{
         display:none;
    
     
 }
 
-@media(max-width:800px){
+@media(max-width:500px){
     body{
         width: 60%;
         /* margin: 20%;
