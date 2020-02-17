@@ -68,7 +68,7 @@ h1, h2, h3, h4, h5 {
 /* Your code starts here! */
 body {
     margin: 2% auto;
-    width: 876px;
+    width: 80%
 }
 #services{
 	width: 880px;
@@ -81,6 +81,24 @@ header {
 }
 
 /* nav */
+/* #navbar {
+    width: 80%;
+
+	background-color: teal;
+	position: fixed;
+	top: 0;
+	margin: 0 auto;
+} */
+
+/* #navbar-services {
+	width: 100%;
+	background-color: teal;
+	left: 0;
+	top: 0;
+	width: 880px;
+	margin: 0 auto;
+	z-index: 1;
+} */
 
 nav {
 	width: 100%;
@@ -126,26 +144,34 @@ div.left-side a {
 /* Contents */
 .contents-container{
 	display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+	flex-wrap: wrap;
 	
 }
-.contents-container section {
-    width: 45%;
-    margin-bottom: 4%;
+
+.above-image{
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 5%;
+	width: 100%;
 }
 
-.contents-container section:nth-child(n+4) {
-    margin-bottom: 0;
-    margin-top: 4%;
-    width: 30%;
+.about {
+	margin-left: 3%;
 }
 
+.below-image{
+	display: flex;
+	justify-content: space-between;
+	padding-top: 5%;
+}
 
+.product {
+	margin: 0 3%;
+}
 
-
-
-
+.middle-img {
+	width: 100%;
+}
 
 hr {
 	color: grey;
@@ -249,21 +275,6 @@ ul {
 
     .right-side {
         display:none;
-    }
-
-    .contents-container{
-        width: 90%;
-        margin: 0 auto;
-    }
-
-    .contents-container section{
-        width: 100%;
-    }
-    .contents-container section:nth-child(n+4){
-        width: 100%;
-    }
-    footer {
-        margin-left: 5%;
     }
 
 }
