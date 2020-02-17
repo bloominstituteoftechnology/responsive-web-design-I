@@ -81,25 +81,24 @@ header {
 }
 
 /* nav */
-#navbar {
+/* #navbar {
     width: 80%;
 
 	background-color: teal;
 	position: fixed;
 	top: 0;
 	margin: 0 auto;
-}
+} */
 
-#navbar-services {
+/* #navbar-services {
 	width: 100%;
 	background-color: teal;
-	/* position: fixed; */
 	left: 0;
 	top: 0;
 	width: 880px;
 	margin: 0 auto;
 	z-index: 1;
-}
+} */
 
 nav {
 	width: 100%;
@@ -111,7 +110,6 @@ nav {
 
 nav a{
 	height: 100%;
-	padding:  10px 0;
 	vertical-align: middle;
 	color: lightgrey;
 }
@@ -248,3 +246,39 @@ ul {
   }
 
 
+@media (max-width: 500px){
+    header {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+    .logo{
+        width: 183px;
+        margin: 0 auto 20px;
+    }
+    nav {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    nav a {
+        width: 100%;
+        border-bottom: 1px solid black;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+    nav a:nth-child(1) {
+        border-top: 1px solid black;
+    }
+
+    .main {
+        margin-top: 20px;
+    }
+
+    .right-side {
+        display:none;
+    }
+
+}
+
+@media (max-width: 800px){
+    
+}
