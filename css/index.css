@@ -3,59 +3,63 @@
 *{
     border-sizing:border-box;
     margin:0;
-    padding:0;
+    padding: 0;
     max-width:100%;
     height: auto;
     width:auto;
-    border:1px solid green;
+    /* border:1px solid green; */
 }
 
-header{
-    display: flex;
-   
-}
-
-header nav{
+nav{ 
     display:flex;
     width: 90%;
-    overflow: auto;
     justify-content: space-around;
-}
 
-header nav a{
+} 
+
+nav a{
     text-decoration: none;
     color:grey;
-    display:flex;
-    
+}
+
+p{
+    text-align: left;
 }
 
 .one{
     display:flex;
     justify-content: center;
-    padding-top: 4em;
-    padding-bottom: 4em;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    border-bottom: 2px solid black; 
 }
 .one .maintitle{
-    font-size: 45px;
+    font-size: 80px;
     text-align: center;
-    padding-right: 2em;
-    padding-bottom: 0;
-   
+    padding-right: 5%;   
 }
+
+.pic1{
+  width:30%;  
+}
+
 button{
    text-align: center;
-   font-size: 80% ;
+   font-size: 1rem ;
    padding: 2% 12%;
    border-width: 1px;
   border-color: black;
 }
 .top{
-    padding-top: 1%;
+    /* padding-top: 1%; */
     border-top: 2% solid black;
     display: flex;
     justify-content: space-between;
+    padding-bottom: 2%;
+    font-size: x-large;
 
 }
+
 .features p{
     padding-right: 1em;
 }
@@ -69,12 +73,16 @@ button{
 .bottom{
     display:flex;
     justify-content: space-around;
-    border-bottom: 2% solid black
+   font-size: x-large;
+   padding-bottom: 1em;
+      
 }
 
 .contact{
+    border-top: 2px solid black;
     text-align: left;
-    
+    padding-top: 2%;
+    font-size: x-large;    
 }
 
 .phone{
@@ -96,13 +104,15 @@ footer{
 /* Starting tablet view */
 
 @media(max-width:800px){
-    nav{
-        flex-wrap: wrap-reverse;      
-    }
-   
+   nav{
+       display: flex;
+       flex-direction: column-reverse;
+       flex-wrap: wrap;
+   }   
+
+     
    .logo{
-    display: block;
-    padding-bottom: 5%;;
+    
         }
     .pic1{
         display:none;
@@ -110,23 +120,25 @@ footer{
 
    .one{
        justify-content: center;
+       text-align: center;
+       width:100%;
     }
    
     
 }
 /* End of tablet view
 Start of mobile view */
-
+/* 
 @media(max-width:500px){
     body{
-        width: 60%;
+        width: 60%; */ */
         /* margin: 20%;
-        padding-left: 5em; */
+        padding-left: 5em;
 
     }
     nav{
         flex-direction: column-reverse;
-        /* align-items: center; */
+        /* align-items: center;
         justify-content: center;
         width:100%;
         
@@ -159,4 +171,4 @@ Start of mobile view */
 }
     #navserv{
         border:2px solid grey
-}
+} 
