@@ -1,3 +1,254 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+	box-sizing:border-box;
+	padding:0;
+	margin:900;
+	max-width: 100%;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+@import url('https://fonts.googleapis.com/css?family=Bangers|Open+Sans+Condensed:300&display=swap');
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+  border:1px solid grey;
+  max-width:100%;
+}
+
+html{
+  font-size:62.5%;
+}
+body{
+  font-family: 'Open Sans Condensed', sans-serif;
+  line-height:1.5;
+  display:flex;
+  justify-content:center;
+  font-size:1.6rem;
+}
+h1, h2, h3 {
+  font-family: 'Bangers', cursive;
+}
+h1{
+  font-size:6rem;
+}
+h2{
+  font-size:2.5rem;
+}
+h3{
+  font-size:2rem;
+}
+.bodyWrapper{
+  width:90%;
+}
+section{
+  padding:4% 0;
+}
+
+/*Header styles here */
+nav{
+  display:flex;
+  justify-content:space-between;
+}
+.links{
+  width:60%;
+  display:flex;
+  justify-content:space-evenly;
+  align-items:center;
+}
+.logo{
+  width:20%;
+  margin-top: 20px;
+}
+
+.links a{
+  text-decoration: none;
+  color: grey;
+}
+
+/*CTA section title */ 
+.cta{
+  display:flex;
+}
+.titles{
+  width:60%;
+  display:flex;
+    justify-content: center;    
+}
+
+h1{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+    margin-top: 40px;
+    line-height: .5;
+}
+
+.full img{
+  align-items: center;
+  width:100%
+}
+
+button{
+  font-size:2rem;
+  align-items: center;
+  margin-left: 70px;
+}
+.ctaImg{
+  width:40%;
+}
+.ctaImg img{
+  border-radius:50%;
+}
+/* main content styles */
+.wrapper{
+  display:flex;
+  justify-content:space-around;
+}
+.two{
+  width:40%;
+  margin-bottom:4%;
+}
+.three{
+  width:25%;
+  margin-top:4%;
+}
+
+/* Section breaks */
+.break1 hr{
+  width:100%;
+  border-top:5px black;
+}
+
+#contact a{
+  text-decoration: none;
+  color:black
+}
+
+/*media queries here*/
+@media (max-width: 800px){
+  nav{
+    flex-direction:column-reverse;
+    align-items:center;
+  }
+  .links{
+    width:100%;
+  }
+  .logo{
+    margin:2% 0;
+  }
+  .cta{
+    justify-content:center;
+  }
+  .ctaImg{
+    display:none;
+  }
+  footer{
+    text-align:center;
+  }
 
 
+
+}
+@media (max-width: 500px){
+  h1{
+    font-size:4rem;
+  }
+  nav{
+    flex-direction:column-reverse;
+    align-items:center;
+
+  }
+  .links{
+    flex-direction:column;
+  }
+  .cta{
+    flex-direction:column-reverse;
+    align-items:center;
+  }
+  .wrapper{
+    flex-direction:column;
+  }
+  .two, .three{
+    width:100%;
+  }
+  #contact{
+    text-align:center;
+  }
+  footer{
+    text-align:center;
+  }
+  button{
+    margin-right: 85px;
+  }
+  .links a{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    border-top:1px solid black;
+    width:100%;
+  }
+
+}
