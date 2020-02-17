@@ -128,17 +128,19 @@ div.left-side a {
 	display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 95%;
 	
 }
 .contents-container section {
-    width: 45%;
+    width: 50%;
     margin-bottom: 4%;
+    padding: 2%;
 }
 
 .contents-container section:nth-child(n+4) {
     margin-bottom: 0;
     margin-top: 4%;
-    width: 30%;
+    width: 33%;
 }
 
 
@@ -265,9 +267,32 @@ ul {
     footer {
         margin-left: 5%;
     }
+    footer p {
+        margin-left: -5%;
+    }
 
 }
 
 @media (max-width: 800px){
-    
+    header {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+    .logo{
+        width: 183px;
+        margin: 0 auto 20px;
+    }
+    .right-side {
+        display:none;
+    }
+    nav {
+        padding-right: 5%;
+    }
+    footer {
+        margin-left: 3%;
+    }
+    footer p {
+        margin-left: -3%;
+    }
+
 }
