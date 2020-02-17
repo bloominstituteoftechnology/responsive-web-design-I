@@ -1,5 +1,5 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
-.container{
+body{
     margin: 1px;
     width:100%;
 }
@@ -77,6 +77,26 @@ button{
 footer{
     text-align: center;
     padding-top: 2em;
+}
+
+/*End of desktop-view*/
+/* Starting tablet view */
+@media(max-width:1050px){
+    body{
+        margin: 8em;
+        width: 70%;
+    }
+    nav{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+   .navt{
+        flex-direction: row;
+    }
+
+
+   
+
 }
 
 
