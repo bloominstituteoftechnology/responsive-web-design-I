@@ -1,10 +1,13 @@
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 *{
     border-sizing:border-box;
     margin:0;
     padding:0;
     max-width:100%;
+    height: auto;
+    width:auto;
+    border:1px solid green;
 }
 
 header{
@@ -14,7 +17,7 @@ header{
 
 header nav{
     display:flex;
-    width: 100%;
+    width: 90%;
     overflow: auto;
     justify-content: space-around;
 }
@@ -86,7 +89,7 @@ button{
 }
 footer{
     text-align: center;
-    padding-top: 2em;
+    padding-top: 5%;
 }
 
 /*End of desktop-view*/
@@ -99,17 +102,20 @@ footer{
    
    .logo{
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 39%;
-    padding-bottom: 3em;
-    }
-
+    padding-bottom: 5%;;
+        }
     .pic1{
         display:none;
+    }
+
+   .one{
+       justify-content: center;
+    }
    
     
 }
+/* End of tablet view
+Start of mobile view */
 
 @media(max-width:500px){
     body{
