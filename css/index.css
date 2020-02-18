@@ -97,7 +97,9 @@ footer{
 
     .logo{
         width: 100%;
-        padding-left: 13em;
+        display: flex;
+        justify-content: center;
+        /* padding-left: 13em; */
         padding-bottom: 1em;
            }
     
@@ -112,5 +114,46 @@ footer{
         font-size: 14px;
         padding-bottom: 3em;
     }
+
+}
+
+/* Mobile view */
+@media(max-width:500px){
+    .header nav{
+        flex-direction: column-reverse;
+        align-content: center;
+        width:100%;
+    }
+    .header nav a{
+        border: 1px solid black;
+        width:100%;
+        display: flex;
+        justify-content: center;
+        padding: 5%;        
+    }
+    .top{
+        flex-direction: column;
+        padding: 2%;
+        align-items: flex-start;
+       
+    }
+    .top .features{
+        padding-bottom: 3%;
+    }
+
+    .bottom{
+        flex-direction: column;
+        padding: 2%;
+        align-items: flex-start;
+       
+    }
+    .bottom .services{
+        padding-bottom: 3%;
+    }
+    .bottom .product{
+        padding-bottom: 3%;
+    
+    }
+        
 
 }
