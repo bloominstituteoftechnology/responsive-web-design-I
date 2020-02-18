@@ -1,3 +1,260 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	-border: 1px solid grey;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1% 0%;
+    width:100%;
+}
+nav a{
+    color:grey;
+    text-decoration: none;
+}
+.nav img{
+    display: flex;
+    height: 36px;
+    width:183px;
+}
+.showcase{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 4%;
+}
+.img1{
+	display: flex;
+}
+.line{
+	border:2px solid black;
+	margin:3% 15%;
+}
+.inno{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin:2%;
+	font-size: 50px;
+	text-align: center;
+}
+button{
+	height:50px;
+	width:200px;
+}
+.maincontent{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin:2% 1%;
+}
+.top{
+	display:flex;
+	width:70%;
+}
+.middle-img{
+	display: flex;
+	justify-content: center;
+	margin:3%;
+	width:70%;
+	padding:1.5%;
+}
+.bot{
+	display:flex;
+	width:70%;
+}
+.topic{
+	margin: 0% 0%;
+	max-width: 100%;
+	margin-left: 30px;
+}
+.info{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	margin: 0% 17%;
+	line-height: 125%;
+}
+#copy{
+	text-align: center;
+	padding:4.5%;
+}
+.pg2mc{
+	display: flex;
+	margin: 1% 5%;
+}
+.opt{
+	margin: 4% 20%;
+	padding: 0% 5%;
+	background-color: lightgrey;
+	border: 2px solid grey;
+	border-radius: 5px;
+	box-shadow: black 0px 0px 5px;
+}
+.opt h2{
+	margin: 1% 0%;
+	padding: 6% 0%;
+}
+.opt button{
+	margin: 5% 0%;
+}
+.servicesdiv{
+	margin: 1% 15%;
+}
+.serv-img{
+	display: flex;
+	justify-content: center;
+	margin: 1% 0%;
+}
+.foot{
+	margin: 0% 15%;
+	display: flex;
+	justify-content: center;
+}
+.serv-info-img{
+	display: flex;
+	justify-content: center;
+}
+ul{
+	line-height: 150%;
+}
+
+@media (max-width: 800px){
+    .img1 img{
+        display:none;
+    }
+    .top{
+        width:99%;
+    }
+    .bot{
+        width:99%;
+    }
+    .middle-img{
+        width:99%;
+    }
+    .line{
+        margin: 3% 3%;
+    }
+    .info{
+        margin:0% 0%;
+    }
+    .nav{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .nav img{
+        margin: 5% 0%;
+    }
+    footer{
+        margin:1% 9%;
+    }
+}
+
+@media (max-width: 600px){
+    nav{
+        flex-direction: column;
+        align-items: center;
+    }
+    nav a{
+        padding:5% 50%;
+        border: 1px solid grey;
+    }
+    .top{
+        flex-direction: column;
+        margin: 5% 0%;
+    }
+    .bot{
+        flex-direction: column;
+    }
+    .top div{
+        margin-bottom: 10%;
+    }
+    .bot div{
+        margin-bottom: 10%;
+    }
+    footer{
+        margin:1% 9%
+    }
+}
