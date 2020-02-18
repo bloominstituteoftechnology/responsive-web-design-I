@@ -11,7 +11,7 @@ Follow these steps to set up and work on your project:
 - [X] Clone your OWN version of the repository (Not Lambda's by mistake!).
 - [X] Create a new branch: git checkout -b `<firstName-lastName>`.
 - [X] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
-- [ ] Push commits: git push origin `<firstName-lastName>`.
+- [X] Push commits: git push origin `<firstName-lastName>`.
  
 Follow these steps for completing your project.
 
@@ -21,9 +21,9 @@ Follow these steps for completing your project.
 
 ## Task 2: Minimum Viable Product
 
-* [ ] Review each [design file](design-files).  Notice the subtle differences between them all. 
-* [ ] Insert a `viewport` meta tag into the head of the project with these html attributes: `content="width=device-width, initial-scale=1"`
-* [ ] Introduce max-width media queries into your project at 800px and 500px  
+* [X] Review each [design file](design-files).  Notice the subtle differences between them all. 
+* [X] Insert a `viewport` meta tag into the head of the project with these html attributes: `content="width=device-width, initial-scale=1"`
+* [X] Introduce max-width media queries into your project at 800px and 500px  
 * [ ] Do your best to make your styles match the design files at each breakpoint 
 
 ## Stretch Goals: 
