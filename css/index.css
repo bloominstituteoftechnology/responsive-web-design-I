@@ -3,20 +3,24 @@
 *{
     border-sizing:border-box;
     margin:0;
-    padding: 0 1em;
     max-width:100%;
     height: auto;
     width:auto;
 }
 
-nav{
+.header nav{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+     width:100%;
  }
 
  nav a{
     text-decoration: none;
-    color: gray;
+    color: gray;     
+ }
+
+ nav{
+     width:100%;
  }
 
  .one{
@@ -80,4 +84,33 @@ nav{
 footer{
     text-align: center;
     padding-top: 5%;
+}
+
+/* Start of tablet mode */
+@media(max-width:800px){
+
+    .header nav{
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: wrap-reverse;
+    }
+
+    .logo{
+        width: 100%;
+        padding-left: 13em;
+        padding-bottom: 1em;
+           }
+    
+    .pic1{
+        display: none;
+    }
+
+    .top{
+        font-size: 14px;
+    }
+    .bottom{
+        font-size: 14px;
+        padding-bottom: 3em;
+    }
+
 }
