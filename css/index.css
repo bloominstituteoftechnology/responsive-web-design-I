@@ -273,8 +273,11 @@ body {
   width: 80%;
   justify-content: space-between;
 }
+hr.mobile {
+  display: none;
+}
 
-/* here starts Tablet version 800px*/
+/* here starts Tablet version 800px,,, my px at the time was 768x1024*/
 @media (max-width: 800px) {
   nav {
     flex-direction: column-reverse;
@@ -289,10 +292,44 @@ body {
   }
   .topsection {
     justify-content: center;
-    margin: 4%;
+    margin-bottom: 4%;
   }
   div.linksmt {
     justify-content: space-between;
     margin-left: 10%;
   }
+  hr.mobile {
+    display: none;
+  }
+}
+/* this lines begins the mobile version 500px,,,, my px at the time was 375x812 */
+@media (max-width: 500px) {
+  div.linksmt {
+    flex-direction: column;
+    width: 80;
+    font-size: 225%;
+  }
+  div a {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  hr.mobile {
+    display: inline-block;
+  }
+
+  section.top-content {
+    display: flex;
+    flex-direction: column;
+    font-size: 200%;
+  }
+  section.bottom-content {
+    display: flex;
+    flex-direction: column;
+    font-size: 200%;
+  }
+}
+section,
+footer {
+  font-size: 200%;
 }
