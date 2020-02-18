@@ -1,3 +1,441 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+
+
+
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox
+You start your work here.  */
+body {
+	width: 1200px;
+    margin: 0 auto;
+}
+header {
+	width: 100%;
+	display: flex;
+	margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+header nav {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+    margin: 30px 0px;
+    
+}
+
+header .logo {
+	display: flex;
+	margin: 0px 0px 0px 50px;
+}
+
+a{
+	font-size:15px;
+	color: grey;
+	text-decoration: none;
+}
+
+
+
+
+/*code for the section: innovations*/
+.innovation {
+	width: 100%;
+	display: flex;
+    padding-bottom: 70px;
+    border-bottom: 1px dashed black;
+    margin: 30px 0px;
+}
+
+.innovation div{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	width: 60%;
+}
+.innovation div h1 {
+	font-size: 80px;
+}
+
+.getstarted{
+	display: flex;
+	width: 20%;
+	border: 1px solid black;
+	justify-content: center;
+	color: black;
+	font-size: 17px;
+}
+
+.innovation img {
+	display: flex;
+	justify-content: flex-end;
+}
+
+
+
+
+/*Sections featureAbout*/
+
+.featureabout{
+	width: 100%;
+	display:flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin: 50px 0px;
+}
+
+.featureabout div{
+	width: 45%;
+	height: 20vh;
+}
+
+.featureabout p{
+	font-size: 17px;
+
+}
+	
+.featureabout img{
+    width: 100%;
+    margin-top: 30px;
+}
+
+
+
+/*Working on section four with service, product, and vision*/
+
+.sectionf {
+    border-bottom: dashed 1px black;
+    margin-bottom: 20px;
+}
+
+.sectionf div {
+	display: flex;
+	width: 100%;
+    justify-content: space-between;
+    padding: 30px 0px; border:
+}
+
+#secservice {
+	display: flex;
+	flex-direction: column;
+}
+
+#secproduct {
+	display: flex;
+	flex-direction: column;
+}
+
+#secvision {
+	display: flex;
+	flex-direction: column;
+}
+
+.four div{
+	display: flex;
+	width: 30%;
+	flex-wrap: nowrap;
+}
+
+
+
+/*Footer information*/
+.address {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.address h4{
+	font-weight: bold;
+}
+address{
+	display: flex;
+	flex-direction: column;
+}
+
+address ul{
+	display: flex;
+	flex-direction: column;
+	font-size: 15px;
+	list-style-type: none;
+}
+
+.botadd {
+	padding-bottom: 15px;
+}
+
+/*This is where we edit everything for the second page. Do take note that you
+may refrence code from page one. becareful not to do that as to not affect 
+code written before 
+the Header was already edited on top*/
+
+
+.services-header-img{
+	display: flex;
+	width: 100%;
+	margin: 0 auto;
+	margin: 30px 0px;
+	
+}
+
+.serpageone p{
+	display: flex;
+}
+
+h1 {
+	font-size: 40px;
+}
+
+/*This is were we start work on the six */
+
+.sevicesprovided {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 30px 10px;
+}
+
+.sevicesprovided button{
+	width: 30%;
+	height: 40px;
+	border: 1px solid black;
+	border-radius: 5px;
+	
+}
+
+.servicebox {
+	width: 40%;
+	padding: 2%;
+	background-color: lightgrey;
+	border: 1px solid black;
+	margin: 30px 0px
+}
+
+
+/*This is were we work on the final section*/
+
+
+
+.twoimg {
+	display: flex;
+}
+
+.services-info-img{
+	margin: 0px 0px 0px 50px;
+}
+
+ul {
+	line-height: 2;
+}
+
+ .cr{
+	 text-align: center;
+	 margin: 20px 0px;
+ }
+
+/*tablet view for Header: start at 800px
+we start with the header*/
+
+@media (max-width: 800px) {
+    body {
+        width:100%;
+        margin: 20px 0px 40px 0px;
+        flex-wrap: wrap;
+    }
+
+    header {
+        flex-direction: column-reverse;
+        flex-wrap: wrap;border:
+    }
+
+    header nav {
+        justify-content: space-evenly;
+    }
+
+    header .logo {
+        justify-content: center;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        
+    } 
+
+    /*Section: innovations tablet*/
+
+    .innovation img{
+        display: none;
+    }
+
+    .innovation {
+        justify-content: center;
+    }
+
+    .getstarted{
+        width: 30%;
+    }
+
+    /*working with the third section: features and about*/
+
+    .featureabout {
+        width: 100%;
+        padding: 0px 20px ;
+    }
+
+    .featureabout img {
+        margin: 20px 0px;
+        padding-top: 7vh;
+    }
+
+    /*Working with section four: sevice*/
+
+    .sectionf {
+        width: 100%;
+        padding: 0px 20px ;
+    }
+}
+
+
+/*End of tablet work here.
+
+The rest of the website but in mobile
+Work at a max width of 500px
+*/
+
+@media (max-width: 500px) {
+
+    body {
+        width: 100%;
+    }
+
+    header nav{
+        flex-direction: column;border:
+    }
+
+    header nav a{
+        width: 100%;  
+        text-align: center;
+        font-size: 25px;
+        padding: 20px 0px;
+        border-top: solid 2px; 
+        margin: 0 auto;
+    }
+
+    header nav .contact {
+        border-bottom: solid 2px;
+    } 
+
+    /* Here we start working on innovation section*/
+    
+    .innovation {
+        border-bottom: solid black 2px;
+    }
+
+    .getstarted {
+        width: 70%;
+        height: 7vh;
+    }
+
+
+    /*Here we start to work on the third sectoin for mobile: featureas and about*/
+
+    .featureabout {
+        flex-direction: column;
+    }
+
+    .featureabout div{
+        width: 100%;
+    }
+
+    /*Here we start working on the fourth section: service*/
+
+    .sectionf {
+        border-bottom: black solid 2px;
+    }
+
+    .sectionf div{
+        flex-direction: column;
+    }
+
+    #secservice {
+        width: 100%;
+    }
+
+    #secproduct {
+        width: 100%;
+    }
+    
+    #secvision {
+        width: 100%;
+    }
+
+}
+
+/*End of mobile project*/
