@@ -49,6 +49,7 @@ table {
 /* Set every element's box-sizing to border-box */
 * {
     box-sizing: border-box;
+    border: 1px solid gray;
 }
 
 html, body {
@@ -81,14 +82,17 @@ p{
 header {
 	display: flex;
 	width: 100%;
-	justify-content: center;
+	flex-direction: row;
 	align-items: center;
 }
 nav {
-    display:flex;
-
+    flex-wrap: nowrap;
+    width: 100%;
+    justify-content: center;
 }
+
 a {
+    padding: 5%;
 	color: lightGrey;
 }
 
@@ -215,29 +219,30 @@ hr {
     }
     p {
         font-size: 12px;
-        flex-flow: flex-start wrap;
+        flex-flow: row wrap;
         align-content: flex-start;
         padding: 1%;
     }
     header {
         display: flex;
-	    width: 100%;
-        flex-flow: column nowrap;
+        width: 100%;
+        flex-flow: row nowrap;
+        justify-content: center;
     }
     .logo {
         display: flex;
-        margin: 10% 10% 0% 10%;
     }
     #greatIdea {
         order: -1;
-    }        
-    #nav {
-        display: flex;
-        justify-content: space-around;
     }
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: space-around;
+    }        
     a {
-        margin: 10%;
-        align-items: flex-start;
+        display:flex;
+        align-items: space-around;
     }
 
     #center {
@@ -340,13 +345,17 @@ hr {
         order: -1;
         align-self: center;
     }
+    nav {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-around;
+        text-align: center;
+    }
+
     a {
         width: 100%;
-        padding: 3%;
-        display: flex;
-        align-self: center;
+        justify-content: center;
         border: 1px solid lightgrey;
-
     }
 
     #center {
