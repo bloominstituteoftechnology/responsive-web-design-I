@@ -1,3 +1,369 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+:root {
+  width: 100%;
+  font-size: 16px;
+  padding-left: 2%;
+}
+
+@media (max-width: 800px) {
+  :root {
+    font-size: 10px;
+  }
+}
+
+header {
+  width: 110%;
+}
+
+.navigation {
+  display: inline-block;
+  padding: 50px;
+}
+
+@media (max-width: 800px) {
+  header {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.navigation a {
+  padding: 20px;
+  color: grey;
+  text-decoration: none;
+}
+
+@media (max-width: 500px) {
+  .navigation a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: underline;
+  }
+}
+
+.main-content {
+  max-width: 850px;
+}
+
+.features {
+  display: inline-block;
+  width: 300px;
+  height: 100px;
+  padding: 30px;
+  position: relative;
+  right: 3%;
+}
+
+.about {
+  display: inline-block;
+  width: 300px;
+  height: 100px;
+  padding-left: 40px;
+  position: relative;
+  left: 25%;
+}
+
+.logo2 {
+  width: 40%;
+  padding-left: 10px;
+  padding-top: 10px;
+  margin-left: 110px;
+}
+
+h1 {
+  display: inline-block;
+  width: 350px;
+  height: 100px;
+  font-size: 80px;
+  text-align: center;
+  padding-bottom: 180px;
+}
+@media (max-width: 800px) {
+  h1 {
+    font-size: 50px;
+  }
+}
+
+.services {
+  display: inline-block;
+  width: 250px;
+  height: 100px;
+  padding-right: 30px;
+}
+
+.product {
+  display: inline-block;
+  width: 250px;
+  height: 100px;
+  padding: 30px;
+  position: relative;
+  left: 10%;
+}
+
+.vision {
+  display: inline-block;
+  width: 250px;
+  height: 100px;
+  padding-right: 30px;
+  position: relative;
+  left: 25%;
+}
+
+.bottom-content {
+  padding-bottom: 20px;
+  border-bottom: 1px solid black;
+}
+
+.middle-img {
+  align-items: center;
+  border-bottom: 1px solid black;
+  width: 120%;
+}
+
+button {
+  display: inline-block;
+  align-content: right;
+  margin-left: 100px;
+  padding: 5px 40px;
+  background: white;
+  border: 1px solid black;
+  margin-top: 20px;
+}
+
+.hero-container {
+  margin: 0 1px;
+  display: inline-block;
+  width: 120%;
+  vertical-align: top;
+  border-bottom: 1px solid black;
+  padding: 1px;
+}
+
+@media (max-width: 800px) {
+  .hero-container .logo2 {
+    display: none;
+  }
+  .hero-container .iod {
+    text-align: center;
+    margin-left: 20%;
+    margin-top: 90px;
+    font-size: 40px;
+  }
+
+  button {
+    margin-right: 100px;
+  }
+  .middle-img {
+    max-width: 100%;
+  }
+}
+
+.iod {
+  width: 43%;
+  height: 70%;
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  position: relative;
+  bottom: 90px;
+}
+
+.feat {
+  width: 500px;
+  display: inline-block;
+}
+
+.secondd {
+  width: 300px;
+  display: inline-block;
+}
+
+@media (max-width: 800px) {
+  .top-content {
+    display: flex;
+    align-items: baseline;
+    flex-direction: row;
+    align-content: flex-end;
+    height: 2%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .top-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: flex-start;
+  }
+}
+
+@media (max-width: 800px) {
+  .bottom-content {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+@media (max-width: 500px) {
+  .bottom-content {
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+  }
+}
