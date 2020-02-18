@@ -1,3 +1,497 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0; 
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+/* Desktop View */
+
+body {
+	margin: 0 auto;
+	max-width: 70%;
+	
+}
+
+p{
+	font-family: "Lemonada", cursive;
+	flex-flow: row wrap;
+	align-items: flex-start;
+}
+
+header {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+}
+nav {
+    display:flex;
+
+}
+a {
+	color: lightGrey;
+}
+
+.logo {
+	box-sizing:border-box;
+	padding: 0% 2% 0% 0%;
+}
+
+#center {
+	display: flex;
+	flex-flow: row wrap;
+
+}
+
+h1 {
+	font-size: 100px;
+	width:450px;
+	height:300px;
+	display: flex;
+	justify-content: center;
+	margin: 8% 0% 0% 10%;
+	
+}
+
+.getStarted {
+	width: 150px;
+	height: 30px;
+	background-color: white;
+	border: 1px solid black;
+	color:black;
+	text-align: center;
+    margin: 0% 7% 2% 20%;
+    border-radius: 0px;
+}
+
+#codeSnip {
+	display: flex;
+	margin: 0%;
+	justify-content: center; 
+	margin: 7% 12% 0% 10%;
+}
+
+h2 {
+	font-size: 25px;
+	justify-content: center;
+	padding: 1%;
+}
+
+#third {
+	display:flex;
+	flex-wrap: wrap;
+	padding: 1%;
+}
+
+#one {
+	width: 49%;
+	justify-content: space-between;
+	padding: 0px 0px 5px 20px;
+}
+
+#two {
+	width: 49%;
+	justify-content: space-between;
+	padding: 0px 0px 5px 20px;
+}
+
+.middle-img {
+	width: 90%;
+	justify-content: space-between;
+	padding: 10px 0px 0px 100px;
+}
+
+#three {
+	width: 33%;
+	justify-content: space-between;
+	padding: 10px 0px 0px 20px;
+}
+
+#four {
+	width: 33%;
+	justify-content: space-between;
+	padding: 10px 0px 0px 20px;
+}
+
+#five {
+	width: 33%;
+	justify-content: space-between;
+	padding: 10px 0px 0px 20px;
+}
+address {
+	font-size: 15px;
+	line-height: 2;
+	font-family: "Lemonada", cursive;
+}
+
+#copyright {
+	font-size: 15px;
+	text-align: center;
+}
+
+hr {
+	display: flex;
+	border-top: 3px solid black;
+	border-radius: 3px;
+	width: 100%;
+	flex-wrap: wrap;
+}
+
+/* Tablet View */
+@media (max-width: 800px) {
+    h1 {
+        display: flex;
+        font-size: 65px;
+        width: 300px;
+        height: 22vh;
+        margin: 3% 0% 0% 0%;
+        text-align: center;
+        justify-content: center;
+    }
+    h2 {
+        font-size: 15px;
+        justify-content: center;
+        padding: 1%;
+    }
+    p {
+        font-size: 12px;
+        flex-flow: flex-start wrap;
+        align-content: flex-start;
+        padding: 1%;
+    }
+    header {
+        display: flex;
+	    width: 100%;
+        flex-flow: column nowrap;
+    }
+    .logo {
+        display: flex;
+        margin: 10% 10% 0% 10%;
+    }
+    #greatIdea {
+        order: -1;
+    }        
+    #nav {
+        display: flex;
+        justify-content: space-around;
+    }
+    a {
+        margin: 10%;
+        align-items: flex-start;
+    }
+
+    #center {
+        display: flex;
+        justify-content: center;
+        
+    }
+    #codeSnip {
+        display: none;
+    }
+    .getStarted {
+        margin: 5% 10% 10% 10%;
+        border-radius:0px;
+
+    }
+
+    #third {
+        display:flex;
+    }
+    #one {
+        width: 49%;
+        justify-content: space-between;
+        padding: 0px 0px 10px 5px;
+    }
+    
+    #two {
+        width: 49%;
+        justify-content: space-between;
+        padding: 0px 0px 10px 5px;
+    }
+
+    .middle-img {
+        width: 100%;
+        margin: 0%;
+        padding: 1%;
+    }
+    #three {
+        width: 33%;
+        justify-content: space-between;
+        padding: 10px 0px 0px 5px;
+    }
+    
+    #four {
+        width: 33%;
+        justify-content: space-between;
+        padding: 10px 0px 0px 5px;
+    }
+    
+    #five {
+        width: 33%;
+        justify-content: space-between;
+        padding: 10px 0px 0px 5px;
+    }
+    
+    address {
+        font-size:13px;
+        width: 23%;
+        line-height: 1.5;
+    }
+
+    #copyright {
+        font-size: 12px;
+        text-align: center;
+    }
+
+}
+
+/* Phone View */
+
+@media (max-width: 500px) {
+    h1 {
+        display: flex;
+        font-size: 55px;
+        width: 250px;
+        height: 20vh;
+        margin: 3% 0% 0% 0%;
+        text-align: center;
+        justify-content: center;
+    }
+    h2 {
+        font-size: 12px;
+        justify-content: center;
+        padding: 1%;
+    }
+    p {
+        font-size: 12px;
+        flex-flow: flex-start wrap;
+        align-content: flex-start;
+        padding: 1%;
+    }
+    header {
+        display: flex;
+	    width: 100%;
+        flex-flow: column wrap;
+	    justify-content: center;
+
+    }
+    .logo {
+        display: flex;
+        order: -1;
+        align-self: center;
+    }
+    a {
+        width: 100%;
+        padding: 3%;
+        display: flex;
+        align-self: center;
+        border: 1px solid lightgrey;
+
+    }
+
+    #center {
+        display: flex;
+        justify-content: center;
+        
+    }
+    #codeSnip {
+        display: none;
+    }
+    .getStarted {
+        margin: 2% 10%;
+        border-radius: 0%;
+    }
+
+    #third {
+        display:flex;
+    }
+    #one {
+        width: 100%;
+        justify-content: space-between;
+        padding: 0px 0px 10px 5px;
+    }
+    
+    #two {
+        width: 100%;
+        justify-content: space-between;
+        padding: 0px 0px 10px 5px;
+    }
+
+    .middle-img {
+        width: 100%;
+        margin: 0%;
+        padding: 1%;
+    }
+    #three {
+        width: 100%;
+        justify-content: space-between;
+        padding: 10px 0px 0px 5px;
+    }
+    
+    #four {
+        width: 100%;
+        justify-content: space-between;
+        padding: 10px 0px 0px 5px;
+    }
+    
+    #five {
+        width: 100%;
+        justify-content: space-between;
+        padding: 10px 0px 0px 5px;
+    }
+    
+    address {
+        font-size:12px;
+        width: 50%;
+        line-height: 1.5;
+    }
+
+    #copyright {
+        font-size: 12px;
+        text-align: center;
+    }
+
+}
+
+/* Services */
+
+.services-header-img {
+	width: 100%;
+	padding: 20px 0px 0px 0px;
+}
+
+#sTitle {
+	font-size:40px;
+}
+
+h4 {
+	display: flex;
+	font-size: 20px;
+	padding: 1%
+}
+
+#sP {
+	display: flex;
+	line-height: 1.5;
+}
+
+#serviceBody {
+	display:flex;
+	flex-wrap: wrap;
+}
+
+#sBox {
+	display: flex;
+	width: 35%;
+	height: auto;
+	border: 1px solid black;
+	background-color: rgb(240, 240, 240);
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: 3% 9% 3% 1%;
+	padding: 1%;
+}
+
+button {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: black;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  margin: 4%
+}
+
+#sFacts {
+	display: flex;
+	width: 40%;
+	height: auto;
+	flex-wrap: wrap;
+	margin: 2%;
+}
+
+#sInfo {
+	position: absolute;
+	right: 500px;
+}
+
+ul {
+	display: flex;
+	flex-direction: column;
+	width: 300px;
+	
+	list-style-type: square;
+  	font-size: 20px;
+	margin: 1% 0% 0% 3%;
+	border: none;
+
+}
+#sCopyright {
+	font-size: 15px;
+	text-align: center;
+	margin: 3% 0% 0% 0%;
+}
+
 
 
