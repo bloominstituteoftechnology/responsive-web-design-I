@@ -1,3 +1,4 @@
+/* Use your own code or past solution for Great Idea Web Page CSS here! */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -151,8 +152,8 @@ h5 {
 
 :root {
   width: 100%;
-  padding: 5%;
   font-size: 16px;
+  padding-left: 2%;
 }
 
 @media (max-width: 800px) {
@@ -162,7 +163,7 @@ h5 {
 }
 
 header {
-  width: 120%;
+  width: 110%;
 }
 
 .navigation {
@@ -196,7 +197,6 @@ header {
 }
 
 .main-content {
-  margin: 0 auto;
   max-width: 850px;
 }
 
@@ -221,7 +221,6 @@ header {
 .logo2 {
   width: 40%;
   padding-left: 10px;
-  margin: right;
   padding-top: 10px;
   margin-left: 110px;
 }
@@ -273,7 +272,7 @@ h1 {
 .middle-img {
   align-items: center;
   border-bottom: 1px solid black;
-  width: 1010px;
+  width: 120%;
 }
 
 button {
@@ -294,15 +293,23 @@ button {
   border-bottom: 1px solid black;
   padding: 1px;
 }
+
 @media (max-width: 800px) {
   .hero-container .logo2 {
     display: none;
   }
   .hero-container .iod {
     text-align: center;
-    margin-left: 270px;
+    margin-left: 20%;
     margin-top: 90px;
     font-size: 40px;
+  }
+
+  button {
+    margin-right: 100px;
+  }
+  .middle-img {
+    max-width: 100%;
   }
 }
 
@@ -333,6 +340,7 @@ button {
     flex-direction: row;
     align-content: flex-end;
     height: 2%;
+    width: 100%;
   }
 }
 
