@@ -1,3 +1,171 @@
+
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+*{
+    border-sizing:border-box;
+    margin:0;
+    max-width:100%;
+    height: auto;
+    width:auto;
+}
 
+h1, h2, h3 ,h4 ,h5, h6{
+    font-family: 'Bangers';
+    font-style: normal;
+    font-weight: 400;
+}
 
+p{
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: 400;
+}
+
+.header nav{
+    display: flex;
+    justify-content: space-evenly;
+     width:100%;
+ }
+
+ nav a{
+    text-decoration: none;
+    color: gray;     
+ }
+
+ nav{
+     width:100%;
+ }
+
+ .one{
+     display: flex;
+     align-content: center;
+     justify-content: space-evenly;
+     padding-top: 3em;
+     border-bottom: 2px solid black;
+     padding-bottom: 3em;
+ }
+
+ .maintitle{
+     display: box;
+     box-sizing: border-box;
+     text-align: center;
+    
+     
+ }
+ .maintitle h1{
+     font-size: 3rem;
+     text-align: center;
+     
+ }
+ .top{
+     display: flex;
+     justify-content: space-around;
+     padding-top: 2em;
+     padding-bottom: 1em;
+ }
+.middle-img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%; 
+}
+
+.bottom{
+    display: flex;
+     justify-content: space-around;
+     padding-top: 2em;
+     padding-bottom: 2em;
+     border-bottom: 2px solid black;
+}
+
+.contact{
+    border-top: 2px solid black;
+    text-align: left;
+    padding-top: 2%;
+    font-size: 1rem;
+}
+.phone{
+    text-decoration: none;
+    color: black;
+    line-height: 10vh;
+}
+
+.email a{
+    text-decoration: none;
+    color: black;
+}
+footer{
+    text-align: center;
+    padding-top: 5%;
+}
+
+/* Start of tablet mode */
+@media(max-width:800px){
+
+    .header nav{
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: wrap-reverse;
+    }
+
+    .logo{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        /* padding-left: 13em; */
+        padding-bottom: 1em;
+           }
+    
+    .pic1{
+        display: none;
+    }
+
+    .top{
+        font-size: 14px;
+    }
+    .bottom{
+        font-size: 14px;
+        padding-bottom: 3em;
+    }
+
+}
+
+/* Mobile view */
+@media(max-width:500px){
+    .header nav{
+        flex-direction: column-reverse;
+        align-content: center;
+        width:100%;
+    }
+    .header nav a{
+        border: 1px solid black;
+        width:100%;
+        display: flex;
+        justify-content: center;
+        padding: 5%;        
+    }
+    .top{
+        flex-direction: column;
+        padding: 2%;
+        align-items: flex-start;
+       
+    }
+    .top .features{
+        padding-bottom: 3%;
+    }
+
+    .bottom{
+        flex-direction: column;
+        padding: 2%;
+        align-items: flex-start;
+       
+    }
+    .bottom .services{
+        padding-bottom: 3%;
+    }
+    .bottom .product{
+        padding-bottom: 3%;
+    
+    }
+        
+
+}
