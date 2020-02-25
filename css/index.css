@@ -71,7 +71,7 @@ nav{
 	text-align: center;	
 	width: 100%;
 	background-color: grey;
-	position: fixed;
+	
 }
 nav:hover{
 	background-color: lightslategray;
@@ -150,5 +150,42 @@ h2{
 h3{
 	text-align: center;
 }
+@media (max-width: 768px){
+    .intro{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .header-container .code-image{
+        display: none;
+    }
+}
+@media (max-width: 500px){
 
-
+    h2{
+        font-size: 15px;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+    }
+    nav a{
+        border-bottom: 1px solid grey;
+        padding-bottom: 20px;
+    }
+    .header-container{
+        justify-content: center;
+        align-items: center;
+    }
+    .features{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 15px;
+    }
+    .services{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 15px;
+    }
+}
