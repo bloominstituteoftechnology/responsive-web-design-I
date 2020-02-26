@@ -1,3 +1,331 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
 
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* Set every element's box-sizing to border-box */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+header nav {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    vertical-align: middle;
+    justify-content: space-evenly;
+}
+
+header nav a {
+    margin: 1%;
+    color: grey;
+}
+
+header nav img {
+    height: auto;
+}
+
+.section-one {
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.section-one div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.section-one img {
+    vertical-align: middle;
+    padding: 30px 0;
+}
+
+h1 {
+    font-size: 72px;
+}
+
+h2 {
+    font-size: 45px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+.section-one button {
+    width: 150px;
+    height: 30px;
+    border: 2px solid black;
+}
+
+.section-two {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.section-two div {
+    max-width: 49%;
+    padding: 2%;
+}
+
+.section-three {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    padding-bottom: 5px;
+}
+
+.section-three div {
+    text-align: left;
+    max-width: 32%;
+    padding: 2%;
+}
+
+.middle-img {
+    width: 100%;
+}
+
+footer {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.services-header-img {
+    width:100%;
+}
+
+.services-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+
+}
+
+.services-options div {
+    display: flex;
+    max-width: 48%;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align: left;
+    padding: 15px;
+    margin: 10px 0;
+    background-color:gainsboro ;
+    border:2px solid black;
+}
+
+.services-options button {
+    height: 30px;
+    width: 160px;
+    margin: 15px;
+    border: 1px solid black;
+}
+
+.services-section-one {
+    margin: 20px 2px;
+}
+
+.services-section-facts {
+    display: flex;
+    justify-content: space-between;
+}
+
+.services-section-facts div {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-content: center;
+    text-align: left;
+    max-width: 48%;
+    margin: 25px 25px;
+}
+
+ul {
+    list-style-type: disc;
+    margin: 0 20px;
+    line-height: 30px;
+  }
+
+.services-footer {
+    text-align: center;
+    margin: 50px;
+}
+
+.services-info-img {
+    width: auto;
+}
+
+services.header{
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+services.header img {
+    height: fit-content;
+    vertical-align: middle;
+}
