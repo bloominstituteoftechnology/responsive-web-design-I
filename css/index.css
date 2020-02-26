@@ -76,7 +76,7 @@ h1, h2, h3, h4, h5 {
 
 .top{
 	display: flex;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 	align-items: center;
 	padding-top: 20px;
 	max-width: 100%;
@@ -90,6 +90,7 @@ h1, h2, h3, h4, h5 {
 
 nav{
 	padding-left: 20px;
+
 	
 }
 
@@ -272,7 +273,133 @@ article button{
 }
 
 
+/*......media queries...............*/
+@media(max-width: 800px){
 
+	body{
+		margin:0;
+		padding: 0;
+	}
+
+	#main{
+		max-width: 100%;
+	}
+
+	.top{
+		flex-direction: column-reverse;
+		flex-wrap: nowrap;
+	}
+
+	nav{
+		display: flex;
+		width:100%;
+		padding-top: 20px;
+		margin: 0;
+		justify-content: space-around;
+	}
+
+	nav a{
+		max-width: 100%;
+		padding: 5px;
+		font-size: .90em;
+	}
+
+	header{
+		flex-direction: column;
+		padding-top: 30px;
+		margin: 40px 0;
+	}
+
+	.header-text{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.header-text h1{
+		font-size: 4em;
+		padding-top: 0;
+		margin-bottom: 5px;
+	}
+
+	.header-text button{
+		margin: auto;
+		margin-top: 20px;	
+	}
+
+	header img{
+		display:none;
+	}
+
+	.section-text-1 div{
+		padding: 20px;
+		max-width: 100%;
+	}
+
+	.section-text-1 {
+		line-height: 1.25em;
+		font-size: .9em;
+	}
+
+	.middle-img{
+		padding: 10px;
+	}
+
+	.section-text-2 div{
+		padding: 20px;
+		max-width: 100%;
+	}
+
+	.section-text-2 {
+		font-size: .9em;
+		line-height: 1.25em;
+	}
+
+	.contact{
+		font-size: .8em;
+		padding: 20px;
+	}
+
+	footer{
+		padding: 10px 0 30px 0;
+	}
+	
+}
+
+@media(max-width: 500px){
+
+	#main{
+		padding: 0;
+		margin: 0;
+		max-width: 100%;
+	}
+
+	.logo{
+		padding-bottom: 20px;
+	}
+	
+	nav{
+		display: flex;
+		flex-direction: column;
+		padding: 0;
+	}
+
+	nav a{
+		max-width: 100%;
+		text-align: center;
+		padding: 20px;
+		border: 1px solid darkgrey;
+		font-size: 1.25em;
+	}
+
+	header{
+		padding-top: 10px;
+	}
+
+	.section-text-1, .section-text-2{
+		display: flex;
+		flex-direction: column;
+	}
+}
 
 
 
