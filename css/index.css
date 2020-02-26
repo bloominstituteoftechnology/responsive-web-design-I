@@ -165,8 +165,14 @@ h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
+header {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
 header nav {
-    width: 100%;
+    width: 79%;
     display: flex;
     flex-wrap: nowrap;
     vertical-align: middle;
@@ -180,6 +186,7 @@ header nav a {
 
 header nav img {
     height: auto;
+    display: flex;
 }
 
 .section-one {
@@ -328,4 +335,60 @@ services.header{
 services.header img {
     height: fit-content;
     vertical-align: middle;
+}
+
+@media (max-width:800px){
+
+header img {
+    align-items: center;
+    justify-content: center;
+    justify-content: flex-start;
+    order: 1;
+    margin: 5%;
+
+}
+
+header nav {
+    width:100%;
+    order:2;
+}
+
+header {
+    flex-wrap: wrap;
+}
+
+.section-one img {
+    visibility: hidden;
+    width: 0%;
+    height:0%;
+}
+
+.section-one div { 
+    width: 100%;
+    margin:7%;
+    align-content: center;
+    justify-content: center;
+}
+
+.middle-img {
+    margin: 0 2%;
+}
+
+.section-three div {
+    max-width: 30%;
+    padding: 1%;
+    margin: 2%;
+}
+
+.section-two div {
+    max-width: 47%;
+    padding: 1%;
+    margin: 2%;
+    
+}
+
+}
+
+@media (max-width:500px) {
+    
 }
