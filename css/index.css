@@ -151,22 +151,21 @@ h3{
 	text-align: center;
 }
 @media (max-width: 800px){
-    .intro{
+    .header-container .intro{
         display: flex;
         justify-content: center;
         align-items: center;
     }
     .header-container .code-image{
-        display: none;
+		display: none;
+		
     }
 }
 @media (max-width: 500px){
-
-    h2{
-        font-size: 15px;
-    }
-    nav {
-        display: flex;
+    
+	nav {
+		display: flex;
+		align-items: center;
         flex-direction: column;
         background-color: white;
     }
@@ -174,14 +173,24 @@ h3{
         border-bottom: 1px solid grey;
         padding-bottom: 20px;
     }
-    .header-container{
+    
+	.header-container .intro{
+       
         justify-content: center;
         align-items: center;
     }
+    .header-container .code-image{
+		display: none;
+		
+    }
+    h2{
+        font-size: 15px;
+    }
+   
     .features{
         display: flex;
         flex-direction: column;
-        padding-bottom: 15px;
+        padding: 20px;
     }
     .services{
         display: flex;
