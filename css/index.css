@@ -1,3 +1,234 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
 
+body {
+    line-height: 1;
+    margin: 0 5%;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1% 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: grey;
+}
+
+.top-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 2px solid;
+    margin: 1% 0;
+    padding: 2% 0;
+}
+
+.top-content h1 {
+    font-size: 64px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.top-content p {
+    border: 1px solid;
+    text-align: center;
+    padding: 10px 0;
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+.top-content p:hover {
+    background-color: black;
+    color: white;
+}
+
+.middle-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 0;
+}
+
+.bottom-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 0;
+    border-bottom: 2px solid;
+}
+
+.footer {
+    padding: 2% 0;
+}
+
+.copyright {
+    text-align: center;
+}
+
+@media(max-width: 500px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav :nth-child(1) {
+        order: 2;
+    }
+
+    nav :nth-child(2) {
+        order: 3;
+    }
+
+    nav :nth-child(3) {
+        order: 4;
+    }
+
+    nav :nth-child(4) {
+        order: 5;
+    }
+
+    nav :nth-child(5) {
+        order: 6;
+    }
+    
+    nav :nth-child(6) {
+        order: 7;
+    }
+
+    nav :nth-child(7) {
+        order: 1;
+    }
+
+    nav .link {
+        text-align: center;
+        padding: 5%;
+        border-bottom: 1px solid black;
+        width: 100%;
+    }
+    
+
+    .top-content {
+        flex-direction: column;
+    }
+    
+    .top-content p {
+        width: 30%;
+    }
+
+    .top-image {
+        display: none;
+    }
+
+    .middle-content {
+        flex-direction: column;
+        padding: 2% 0% !important;
+    }
+
+    .middle {
+        padding: 2% 0;
+    }
+
+    .bottom-content {
+        flex-direction: column;
+        padding: 2% 0% !important;
+    }
+
+    .bottom {
+        padding: 2% 0;
+    }
+}
+
+@media(max-width: 800px) {
+
+    nav {
+        justify-content: center;
+        flex-wrap: wrap-reverse;
+    }
+
+    nav .link {
+        margin: 4%;
+    }
+
+    .top-content {
+        flex-direction: column;
+    }
+    
+    .top-content p {
+        width: 30%;
+    }
+
+    .top-image {
+        display: none;
+    }
+
+    .middle-content {
+        padding: 2% 1%;
+    }
+
+    .bottom-content {
+        padding: 2% 1%;
+    }
+
+    .footer {
+        padding: 2% 1%;
+    }
+
+}
