@@ -116,8 +116,7 @@ body {
     line-height: 1;
 }
 
-ol,
-ul {
+ol {
     list-style: none;
 }
 
@@ -184,7 +183,7 @@ header nav a {
     color: grey;
 }
 
-header nav img {
+header img .logo{
     height: auto;
     display: flex;
 }
@@ -339,7 +338,7 @@ services.header img {
 
 @media (max-width:800px){
 
-header img {
+header img .logo{
     align-items: center;
     justify-content: center;
     justify-content: flex-start;
@@ -390,5 +389,30 @@ header {
 }
 
 @media (max-width:500px) {
+
+    header img .logo{
+        justify-content: flex-start;
+        order: 1;
     
+    }
+
+    header nav a {
+        flex-grow: ;
+        border: 2px solid darkgray;
+        padding: 4% 0;
+        margin: 0% 0%;
+        
+    }
+    
+    header nav {
+        order:2;
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    header {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
 }
