@@ -92,7 +92,7 @@ h1 {
 button {
 	font-size: 20px;
 	box-align: center;
-	width: 30%
+	width: 40%
 }
 hr{
 	width: 85%;
@@ -180,5 +180,26 @@ hr{
 .foot {
 	display: flex;
 	justify-content: center;
+}
+
+@media (max-width: 800px) {
+    .img-2 {
+        display: none;
+    }
+    .tag {
+        display: flex;
+        align-content: center;
+        width: 50%;
+        justify-content: center;
+        padding-left: 10%;
+        padding-bottom: 2%;
+    }
+    .button {
+        display: flex;
+        justify-content: center;
+    }
+    .tag h1 {
+        text-align: center;
+    }
 }
 
