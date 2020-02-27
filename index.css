@@ -1,0 +1,215 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+html {
+	display: flex;
+	width: 90%;
+	margin: 0 auto;
+} 
+.container {
+ display: flex;
+ justify-content: space-evenly
+ 
+
+
+}
+.item1 {
+	display: flex;
+	width: 50%;
+	color:grey;
+	font-size: 20px;
+	 margin-top: 1%;
+	 justify-content: space-around;
+
+	
+
+}
+.item2 {
+	display: flex;
+    margin-left: 20%;
+  
+	
+}
+.box {
+	display: flex;
+}
+.sec{
+	display: inline-block;
+	font-size: 100px;
+	margin-right: 1%;
+	margin-top: 1%;
+	width: 49%;
+	text-align: center;
+	margin-bottom: 2%;
+	margin-top: 10%;
+
+}
+.Get {
+	font-size: 30px;
+	background-color: white;
+}
+.Features {
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+.Cap {
+	width: 49%;
+	display: inline-block;
+	padding-bottom: 4%;
+
+}
+.Star {
+	width: 32%;
+	display: inline-block;
+	
+	padding-top: 4%;
+}
+.CR {
+	text-align: center;
+	padding-bottom: 4%;
+}
+h2 {
+	padding-top: 3%;
+}
+.middle-img {
+	width: 100%;
+}
+@media (max-width: 800px) {
+	nav {
+		flex-direction: column-reverse;
+	} 
+	.item1 {
+		width: 100%;
+	}
+	.item2 {
+		margin:1%;
+		width: fit-content;
+		align-items: center;
+		margin-left: 38%;
+	}
+	.sec {
+		margin-left: 18%;
+	}
+	.Fire {
+		width: 0;
+	}
+}
+
+@media ( max-width: 500px ) {
+	nav {
+		flex-direction: column-reverse;
+		justify-content: space-evenly;
+		align-items: center;
+		padding:0;
+		margin-left: 0;
+		
+		
+		
+	}
+
+	 .item1{
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+		font-size: 30px;
+	}
+	.item2 {
+		flex-direction: column;
+		align-items: center;
+		margin: 0;
+	}
+	nav  a:first-child {
+		border-top: 1px solid;
+	}
+	nav a { 
+		text-align:center ;
+		border-bottom: 1px solid;
+
+		margin :2%;
+		width:100%;
+		margin: 0 auto;
+	}
+	
+	.sec {
+		display: block;
+		width: 100%; 
+		margin: 0 auto;
+	}
+	
+	.Fire {
+		width: 0;
+	}
+	.Cap {
+		display: block;
+		width: 100%;
+	}
+	.Star {
+		display: block;
+		width: 100%;
+	}
+	.ON {
+		text-align: center;
+		padding-left: 60%;
+	}
+}
