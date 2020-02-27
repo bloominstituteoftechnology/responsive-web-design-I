@@ -121,7 +121,7 @@ section div{
 	background-color: lightgrey;
 }
 
-button{
+.headerButton{
 	height: 15%;
 	width: 30%;
 	border-radius: 5px;
@@ -138,6 +138,21 @@ button{
 }
 
 
+
+@media only screen and (max-width: 800px) {
+	body{
+        background-color: green;
+    }
+    nav{
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    #circleImage{
+        display: none;
+    }
+  }
+
 @media only screen and (max-width: 500px) {
 	body {
 	  background-color: lightblue;
@@ -147,10 +162,21 @@ button{
         justify-content: center;
         align-items: center;
     }
+    #navLinks {
+        width: 100%;
+        overflow: hidden;
+    }
     #navlinks a {
         display: block;
         text-align: center;
         border-bottom: 1px solid black;
+        font-size: 20px;
+        margin: 10% 0;
+        padding: 20% 0;
+    }
+    #logo{
+        border-bottom: 1px solid black;
+        padding: 2% 0;
     }
 
     #circleImage{
@@ -164,6 +190,13 @@ button{
         width: 100%;
     }
     
+    .headerButton{
+        width: 50%;
+        height: 10%;
+        border-radius: 1px;
+        border-width: 1px;
+    }
+
     #copyright{
         text-align: center;
     }
