@@ -203,3 +203,48 @@ hr{
     }
 }
 
+@media (max-width: 500px) {
+    .tag {
+        width: 75%;
+        padding: 0px;
+    }
+    .button {
+        padding-left: 2%;
+    }
+    div.header {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .a-about, .a-services, .a-product, .a-vision, .a-contact, a-features {
+            display: flex;
+            align-items: center;
+            padding: 2%;
+            border-top: solid gray 1px;
+            border-bottom: solid gray 1px;
+            margin: 2%;
+            width: 100%;
+            justify-content: center;
+    }
+    .img {
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        padding-left: 10%;
+    }
+    .text {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        width: 100%;
+    }
+    .intro, .about{
+        width: 100%;
+        padding-right: 10%;
+        padding-top: 5%;
+        padding-bottom: 10%;
+    }
+}
