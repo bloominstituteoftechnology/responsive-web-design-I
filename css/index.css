@@ -64,14 +64,24 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+/*
 
+
+
+
+
+
+
+*/
 nav{
 	display: flex;
 	justify-content: space-evenly;
 }
-nav a{
+
+#navlinks a{
 	text-decoration: none;
-	color: grey;
+    color: grey;
+    justify-content: space-evenly;
 }
 
 header{
@@ -128,13 +138,34 @@ button{
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
 	body {
 	  background-color: lightblue;
-	}
-	.AllServices, .service, .mediaquery{
-		display: flex;
-		flex-direction: column;
-		width: 100%;
-	}
+    }
+    nav{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    #navlinks a {
+        display: block;
+        text-align: center;
+        border-bottom: 1px solid black;
+    }
+
+    #circleImage{
+        display: none;
+    }
+
+    section{
+        flex-direction: column;
+    }
+    section div{
+        width: 100%;
+    }
+    
+    #copyright{
+        text-align: center;
+    }
+	
   }
