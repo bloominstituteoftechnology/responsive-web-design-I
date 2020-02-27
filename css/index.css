@@ -66,7 +66,8 @@ h1, h2, h3, h4, h5 {
 .nav nav {
 	display: flex;
 	justify-content: space-around;
-	padding: 2%;
+    padding: 2%;
+    color: gray;
 }
 .nav .logo {
 	display: flex;
@@ -75,7 +76,9 @@ h1, h2, h3, h4, h5 {
 
 .Big-content {
 	display: flex;
-	justify-content: space-evenly;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+    border-bottom: 2px solid black;
 }
 
 .Big-content .heading .main-heading {
@@ -84,6 +87,9 @@ h1, h2, h3, h4, h5 {
 	align-items: center;
 	font-size: 45px;
 }
+h1 {
+    font-size: 70px;
+}
 
 .heading {
 	display: flex;
@@ -91,9 +97,11 @@ h1, h2, h3, h4, h5 {
 	flex-direction: column;
 }
 
-h5 {
-	display: inline-block;
-	border: solid;
+button {
+    margin: 20px;
+    display: inline-block;
+    font-size: 14px;
+    padding: 5px;
 }
 .snippit {
 	display: flex;
@@ -102,12 +110,13 @@ h5 {
 .content {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
+    justify-content: center;
+    border-bottom: 2px solid black;
 }
 .top {
 	display: flex;
 	justify-content: center;
-	padding: 3%
+    padding: 3%
 }
 .Features {
 	width: 30%
@@ -130,15 +139,15 @@ h5 {
 
 footer .contact {
 	display: inline-block;
-	padding-left: 10%;
-	padding-top: 5%;
+    padding-left: 10%;
+    margin-left: 12%;
+    padding-top: 5%;
 	width: 20%;
 }
 footer .copy {
-	display: block;
-	align-content: center;
+	display: flex;
+	justify-content: center;
 	padding-top: 3%;
-	padding-left: 35%;
 }
 
 
