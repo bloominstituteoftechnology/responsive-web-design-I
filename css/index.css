@@ -1,3 +1,291 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*--------------------------------------------This is after the reset---------------------------------------*/
+
+nav {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    margin: 5%;
+    font-size: 1.2rem;
+}
+
+.nav-links {
+    width: 80%;
+    margin: 5%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.nav-links a {
+    margin-right: 10%;
+}
+
+.nav-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
+
+
+.bold-head-container {
+    display: flex;
+    justify-content: space-between
+    height: 33%;
+    width: 90%;
+}
+
+.bold-head-text {
+    height:10%;
+    width: 20%;
+    text-align:center;
+    margin-left: 10%;
+    margin-right: 15%;
+
+}
+
+.bold-head-img {
+    height: 20%;
+    width: 20%;
+    margin-right: 5%;
+    margin-left: 20%;
+
+}
+h1, h2, h3 {
+    font-family: "Bangers";
+}
+
+h1 {
+    font: 25%;
+    font-size: 100px;
+
+}
+
+.get-started {
+    font-size: 2rem;
+    padding: 5%;
+    border: 2px solid black;
+    text-align: center;
+}
+
+.mid-content {
+    display: flex;
+    justify-content: space-around;
+    justify-content: center;
+    margin: 5%;
+}
+
+.mid-items {
+    display: flex;
+    justify-content: space-around;
+    justify-content: center;
+    height: 15%;
+    width: 90%;
+}
+
+.features h2 {
+    margin: 5% 0 5% 0;
+}
+
+.about h2 {
+    margin: 5% 0 5% 0;
+}
+
+.features p {
+    margin-bottom: 10%;
+}
+
+.about p{
+    margin-bottom: 10%;
+}
+
+.middle-img-container {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.middle-img {
+    width: 90%;
+}
+
+.bottom-content-container {
+    display: flex;
+    justify-content: space-around;
+    justify-content: center;
+
+}
+
+.services {
+    margin-left: 5%;
+    margin-right: 2.5%;
+}
+
+.services h2 {
+    margin: 5% 0 5% 0;
+}
+
+.services p {
+    margin-bottom: 10%
+}
+
+.product h2 {
+    margin: 5% 0 5% 0;
+}
+
+.product p{
+    margin-bottom: 10%
+}
+
+.vision {
+    margin-right: 5%;
+}
+
+.vision h2 {
+    margin: 5% 0 5% 0;
+}
+
+.vision p {
+    margin-bottom: 10%
+}
+
+
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.contact-container h2 {
+    margin: 1.25% 0 1.25% 5%;
+}
+
+
+.list li {
+    margin: 2.5% 0 2.5% 5%;
+    font-size: 1rem;
+}
+
+.contact-container p {
+    margin: 0 auto;
+    font-size: 1rem;
+}
+
+@media(max-width: 800px) {
+    .bold-head-container {
+        display: none;
+    }
+
+    .nav-logo {
+        display: flex;
+        justify-content: ;
+        align-items: center;
+        margin-left: 10%;
+    }
+
+
+    nav {
+        flex-flow: column-reverse;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap-reverse;
+    }
+
+    .nav-links {
+        margin: 5% 10% 0 15%;
+        width: 97%;
+        justify-content: center;
+    }
+    
+    .nav-links-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+@media(max-width: 500px) {
+    .nav-links {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-links a {
+        padding: 5%;
+    }
+    nav {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .nav-logo {
+        flex-direction: column;
+    }
+
+    .bold-head-container {
+        flex-direction: column;
+    }
+
+    .bold-head-img {
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .mid-content {
+        flex-direction: column;
+    }
+
+    .bottom-content-container {
+        flex-direction: column;
+    }
+
+    
+}
