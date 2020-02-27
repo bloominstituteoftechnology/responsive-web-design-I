@@ -111,8 +111,8 @@ h1 {
 }
 section .features{
 	width: 50%;
-	padding: 10px;
-	margin: 10px;
+	/* padding: 10px;
+	margin: 10px; */
 }
 section .about{
 	width: 50%;
@@ -139,19 +139,122 @@ footer{
 	text-align: center;
 	margin-bottom: 30px;
 }
-
-@media(max-width:500px){
-   .second-sec{
-       flex-direction: row;
-   } 
-   .link-container{
-       flex-direction: column;
-       align-items: center;
-       border:solid
-   }
-}
-@media(max-width:800px){
-    .second-sec{
-        flex-direction:column;
+@media screen and (max-width:800px){
+    nav .nav-image{
+         
+        position: absolute;
+        
+       }
+       nav {
+            justify-content: center;
+            align-content: center;
+           width: 100%;
+        /* width: 100%;
+        text-align: center;
+       flex-flow: row wrap; */
+       display: flex;
+       }
+       .link-container{
+        margin-top: 50px;
+        margin-left: 15px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: fit-content;
+        /* flex-wrap: wrap; */
+        
+       
     }
+    nav a{
+        justify-items: center;
+        margin-right: 25px;
+    }
+    .second-sec{
+        flex-direction:row;
+        /* padding: 10px; */
+        margin-right: 10px;
+
+    }
+    #starter{
+        display: flex;
+        justify-content: center;
+        /* height: 150px; */
+    }
+   #starter #header-img{
+        display: none;
+    }
+    .inovation{
+        display: flex;
+        
+  
+    }
+    
+    
+
 }
+
+@media screen and (max-width:500px){
+
+    nav{
+    width: fit-content;
+    display: flex;
+        /* justify-content: center;
+        align-content: center; */
+    }
+
+    .link-container{
+        width: fit-content;
+        margin-top: 50px;
+        flex-direction: column;
+        align-items: center; 
+       
+    }
+    nav a{
+        
+        width: fit-content;
+        width: 100%;
+        text-align: center;
+        /* text-decoration: underline black; */
+        margin-bottom: 10px;
+        padding: 8px;
+        border-bottom: 1px solid black;  
+    } 
+      nav .nav-image{
+          
+          position: absolute;
+ 
+         }
+   .second-sec {
+       flex-direction: column;
+   } 
+ 
+   
+    #header-img{
+       display: none;
+   }
+   #starter{
+       
+   }
+   section .features {
+       width: 100%;
+       margin-bottom: 15px;
+   }
+   section .about{
+       width: 100%;
+   }
+   .first-sec{
+       justify-content: center;
+       /* text-align: center; */
+       width: 100%;
+       flex-direction: column;
+
+   }
+   p{
+      width: 100%;
+
+   }
+   
+
+}
+
+
