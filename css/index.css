@@ -183,8 +183,7 @@ header nav a {
     color: grey;
 }
 
-header img .logo{
-    height: auto;
+.logo {
     display: flex;
 }
 
@@ -338,12 +337,11 @@ services.header img {
 
 @media (max-width:800px){
 
-header img .logo{
+.logo {
     align-items: center;
     justify-content: center;
-    justify-content: flex-start;
     order: 1;
-    margin: 5%;
+    margin: 5% 0;
 
 }
 
@@ -390,15 +388,16 @@ header {
 
 @media (max-width:500px) {
 
-    header img .logo{
-        justify-content: flex-start;
-        order: 1;
-    
+    header div {
+        display: flex;
+        width: 100%;
+        align-content: center;
+        justify-content: center;
+        border-bottom: 2px solid darkgray;
     }
 
     header nav a {
-        flex-grow: ;
-        border: 2px solid darkgray;
+        border-bottom: 2px solid darkgray;
         padding: 4% 0;
         margin: 0% 0%;
         
@@ -407,12 +406,41 @@ header {
     header nav {
         order:2;
         flex-direction: column;
-        align-items: stretch;
+        text-align: center;
     }
     
     header {
+        width: 100%;
+        display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
+        align-content: center;
     }
 
+
+    .section-two {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .section-two div {
+        max-width: 100%;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .section-three {
+        flex-direction: column;
+    }
+
+    .section-three div {
+        max-width: 100%;
+    }
+
+    .address-info {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        margin: 40px 4% 2% 4%;
+    }
 }
