@@ -201,6 +201,13 @@ hr{
     .tag h1 {
         text-align: center;
     }
+    div.header {
+        justify-content: space-evenly;
+        width: 70%;
+    }
+    .intro, .about, .services, .product, .vision{
+        width: 35%
+    }
 }
 
 @media (max-width: 500px) {
@@ -246,5 +253,21 @@ hr{
         padding-right: 10%;
         padding-top: 5%;
         padding-bottom: 10%;
+    }
+    .text-2{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        width: 100%;
+    }
+    .services, .product, .vision {
+        width: 100%;
+        padding-right: 10%;
+        padding-top: 5%;
+        padding-bottom: 10%;
+    }
+    .footer{
+        align-items: center;
+        width: 100%;
     }
 }
