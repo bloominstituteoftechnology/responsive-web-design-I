@@ -49,19 +49,29 @@ nav {
     display: flex;
     justify-content: center;
     justify-content: space-between;
-    margin-bottom: 5%;
+    margin: 5%;
     font-size: 1.2rem;
 }
 
 .nav-links {
     width: 80%;
-    margin-left: 7%;
+    margin: 5%;
+    display: flex;
+    justify-content: center;
     
 }
 
 .nav-links a {
-    margin-right: 7%;
+    margin-right: 10%;
 }
+
+.nav-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 
 
 .bold-head-container {
@@ -108,6 +118,7 @@ h1 {
     display: flex;
     justify-content: space-around;
     justify-content: center;
+    margin: 5%;
 }
 
 .mid-items {
@@ -213,22 +224,24 @@ h1 {
     }
 
     .nav-logo {
-        display: none;
+        display: flex;
+        justify-content: ;
+        align-items: center;
+        margin-left: 10%;
     }
 
-    .logo{
-        display: none;
-    }
+
     nav {
-        flex-direction: column-reverse;
+        flex-flow: column-reverse;
         align-items: center;
         justify-content: center;
+        flex-wrap: wrap-reverse;
     }
 
     .nav-links {
-        margin: 5% 10% 0 10%;
+        margin: 5% 10% 0 15%;
         width: 97%;
-        justify-self: center;
+        justify-content: center;
     }
     
     .nav-links-container {
@@ -236,22 +249,25 @@ h1 {
         justify-content: space-between;
     }
 
-    
-    
-@media(max-width: 800px) {
-    
-}
-
 
 @media(max-width: 500px) {
     .nav-links {
-        display: inline;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-content: center;
     }
 
+    .nav-links a {
+        padding: 5%;
+    }
     nav {
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
-        border: 1px solid black;
+    }
+
+    .nav-logo {
+        flex-direction: column;
     }
 
     .bold-head-container {
