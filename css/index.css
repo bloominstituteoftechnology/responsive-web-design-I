@@ -67,11 +67,7 @@ h1, h2, h3, h4, h5 {
 html {
 	margin: 40px;
 }
-body {
-	/* width: 80%;
-	margin-right: 10%;
-	margin-left: 10%; */
-}
+
 
 header {
 	display: flex;
@@ -89,16 +85,10 @@ header nav {
 	margin-right: 2%;
 }
 
-/* nav .container {
-	
-	justify-content: space-evenly;
-	width: 100%;
-	
 
-} */
 
 .container a {
-	/* border: solid black; */
+	
 	text-decoration: none;
 	color: gray;
 	
@@ -138,7 +128,7 @@ h1 {
 
 .bottom-content {
 	display: flex;
-	/* width: 48%; */
+	
 	border-bottom: 1px solid black;
 	margin-top: 40px;
 	padding-bottom: 40px;
@@ -204,7 +194,7 @@ footer p {
 
 	.container a {
 		border-bottom: 1px solid black;
-		/* border-top: 1px solid black; */
+		
 		padding: 10px;
 		width: 100%;
 	}
@@ -217,4 +207,31 @@ footer p {
 		width: 50%;
 	}
     
+}
+
+@media (max-width: 700px) and (min-width: 600px) {
+	.circle-img {
+        display: none;
+    }
+
+	header {
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+
+	.logo {
+		width: 200px;
+		align-items: center;
+		padding-bottom: 20px;
+	}
+
+	a {
+		background-color: blue;
+	}
+
+	button {
+		height: 100px;
+		width: 300px;
+		background-color: blue;
+	}
 }
