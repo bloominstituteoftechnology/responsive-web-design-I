@@ -1,0 +1,334 @@
+/* Use your own code or past solution for Great Idea Web Page CSS here! */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+* {
+  display: border-box;
+}
+html {
+  margin: 0 2%;
+  width: 96%;
+  /* border: 2px solid red;*/
+}
+
+header nav {
+  /* border: 5px solid red;*/
+  padding: 20px;
+  margin: 10px;
+  /*width: 600px;*/
+  display: inline-block;
+  font-size: 18px;
+}
+a {
+  margin: 10px;
+  padding: 10px;
+}
+.image {
+  display: inline-block;
+}
+
+.top {
+  /*border: 2px solid green;*/
+  display: inline-block;
+  width: 420px;
+  margin: 10px;
+  padding: 10px;
+
+  text-align: center;
+  vertical-align: middle;
+  padding: 50px;
+}
+.topc {
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: 2px dotted black;
+  margin-bottom: 20px;
+}
+.title {
+  margin: 20px 0;
+  margin-bottom: 20px;
+  align-items: center;
+}
+h1 {
+  font-size: 50px;
+}
+
+.c {
+  display: inline-block;
+  /* border: 3px dotted blue;*/
+  width: 46%;
+  margin: 1%;
+  padding: 1%;
+  line-height: 1.5;
+}
+
+.line {
+  margin: 20px;
+  border-top: 2px dotted black;
+  border-bottom: 2px dotted black;
+}
+.l {
+  /*border: 2px solid blue;*/
+  display: inline-block;
+  padding: 1%;
+  margin: 1%;
+  width: 30%;
+
+  text-align: center;
+}
+.copy {
+  text-align: center;
+}
+.middle-img {
+  width: 96%;
+  margin: 0 2%;
+}
+@media (max-width: 800px) {
+  /* Responsive */
+  header {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: 1%;
+    width: 99%;
+    /* border: 4px solid dodgerblue; */
+  }
+
+  .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+    /* width:200%; */
+  }
+  .top,
+  topc {
+    width: 98%;
+  }
+  .image {
+    display: none;
+  }
+  /* .middle-img {
+    width: 96%;
+    margin: 0 2%;
+  } */
+}
+
+@media (max-width: 500px) {
+  /* Responsive */
+  header {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: 1%;
+    width: 99%;
+    /* border: 4px solid dodgerblue; */
+  }
+  header nav {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+  }
+  a {
+    width: 100%;
+    margin: 0;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+  }
+
+  .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+    /* width:200%; */
+  }
+  .top {
+    width: 100%;
+  }
+  .image {
+    display: none;
+  }
+  /* .middle-img {
+    width: 90%;
+  } */
+  .l {
+    /*border: 2px solid blue;*/
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+    margin: 2%;
+    width: 94%;
+    text-align: justify;
+  }
+
+  .c {
+    display: flex;
+    flex-direction: column;
+    /* border: 3px dotted blue;*/
+    width: 94%;
+    margin: 1%;
+    padding: 1%;
+    line-height: 1.5;
+  }
+  footer {
+    margin: 0 2%;
+    width: 98%;
+  }
+}
