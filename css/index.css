@@ -66,27 +66,33 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
-* {
-    box-sizing: border-box;
+/*
+body{
+    width: 100%;
+    margin: 0 auto;
 }
 header {
 	display: flex;
-	justify-content: center;
+    justify-content: center;
+    align-items: center;
 }
 .navigation{
-	display: flex;
-	justify-content: center;
-	align-content: center;
-	align-items: center;
-	margin: 2% 12% 3% 10%;
-	width: 80%;
-}
-.navigation a{
     display: flex;
-	justify-content: space-evenly;
-	width: 10%;
-	text-decoration: none;
-	color: gray;
+    justify-content: center;
+}
+/*.anchors{
+    display: flex;
+    justify-content: space-between;
+    width: 610px;
+    margin-top: 40px;
+}*/
+/*.anchors a {
+    text-decoration: none;
+    color: #B0B0B0;
+    padding: 20px;
+}
+.logo2{
+    margin: 20px 50px;
 }
 button {
 	background-color: white;
@@ -165,3 +171,226 @@ hr {
     width: 880px;
 }
 
+.logo1{
+    visibility: hidden;
+}
+
+@media ( max-width: 800px ){
+    
+   .title-image{
+    display: none;
+   }
+   /*.title-image{
+       display: none;
+   }
+   .navigation{
+       display: flex;
+       flex-direction: column;
+       justify-content: space-evenly;
+       padding: 20px;
+   }
+   .anchors{
+       flex-direction: row;
+       border: 1px solid red;
+    }
+    .anchors a{
+        display: block;
+        padding: 3%;
+        border: 1px solid red;
+        margin: 10%;
+    }
+   .logo1{
+        visibility: visible;
+        text-align: center;
+        display: block;
+        margin: 10px;
+        padding: 10px;
+   }
+   .header{
+    width: 100%;
+    padding: 20px 0px 20px 0px;
+    margin: 20px 0px 10px 0px;
+}
+   section.top-content {
+	display: flex;
+	align-items: center;
+}
+    .features {
+	display: flex;
+	flex-direction: column;
+    
+}
+    .about {
+	display: flex;
+	flex-direction: column;
+    
+}
+    .middle-img {
+    margin: 0 auto;
+}
+    section.bottom-content {
+	    display: flex;
+        align-items: center;
+}
+    .services{
+        display: flex;
+        flex-direction: column;
+        
+
+}
+    .product{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .vision{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+@media (max-width: 500px){
+    flex-direction: column;
+}*/
+body{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.navigation{
+    display: flex;
+    justify-content: center;
+}
+
+.navigation a{
+    color: gray;
+    padding: 20px;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .header{
+    flex-direction: column;
+    margin-right: 50px;
+}
+
+button{
+    width:110px;
+    height: 40px;
+    font-size: 18px;
+}
+
+h1{
+    font-family: 'bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    font-size: 75px;
+}
+
+h3{
+    font-family: 'bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.top-content{
+    display: flex;
+    justify-content: center;
+}
+
+.features{
+    margin-right: 50px;
+    font-size: 20px;
+    width: 500px;
+}
+
+.about{
+    font-size: 20px;
+    width: 500px;
+}
+
+.middle{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.bottom-content{
+    display: flex;
+    justify-content: center;
+}
+
+.services{
+    width: 350px;
+    font-size: 20px;
+    margin-right: 25px;
+}
+
+.product{
+    width: 350px;
+    font-size: 20px;
+    margin-right: 25px;
+}
+
+.vision{
+    width: 350px;
+    font-size: 20px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+@media ( max-width: 800px){
+    .header-image{
+        display: none;
+    }
+    .services{
+        margin: 0 auto;
+    }
+    .middle{
+        max-width: 100%;
+    }
+    .navigation .logoo{
+        order: -6;
+    }
+}
+
+@media ( max-width: 500px ){
+    .navigation{
+        flex-direction: column;
+    }
+    a {
+        flex-direction: column;
+        border-bottom: 1px solid gray;
+    }
+    .features{
+        flex-direction: column;
+    }
+    .about{
+        flex-direction: column;
+    }
+    .navigation .logoo{
+        order: -6;
+    }
+    header .header{
+        margin-right: 0px;
+    }
+    .features .about .services .product .vision{
+        width: 350px;
+        font-size: 20px;
+        margin: auto;
+    }
+    .middle{
+        max-width: 100%;
+    }
+}
