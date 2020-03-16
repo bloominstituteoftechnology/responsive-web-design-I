@@ -1,3 +1,379 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+body {
+	width: 1000px;
+	margin: 50px auto;
+}
+
+/* p{
+	font-family: 'Baloo Chettan 2', cursive;
+} */
+
+header {
+	display: flex;
+	align-items: center;
+	width: 1000px;
+	height: 10vh;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	background-color: gray;
+	margin: 25px auto 20px auto;
+	z-index: 1;
+
+}
+
+header nav {
+	width: 75%;
+	display:flex;
+	justify-content: space-around;
+	text-align: center;
+	align-items: center;
+}
+
+a{
+	
+	color: white;
+	font-size: 17px;
+	text-decoration: none;
+	float: left;
+	margin: 3vh 0;
+}
+header img {
+	float: right;
+	width: 15%;
+	height: 50%;
+	clear: right;
+	z-index: 1;
+	margin-left: 5%;
+}
+
+/*code for the section: innovations*/
+.innovation {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	padding-bottom: 70px;
+	border-bottom: solid 1px black;
+	margin-top: 15vh;
+
+}
+
+.innovation div{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	text-align: center;
+	width: 60%;
+}
+
+h1 {
+	font-size: 80px;
+	width: 100%;
+	margin: 40px 0;
+}
+ 
+/*Everything to do with the button starts here*/
+.getStarted{
+	width: 25%;
+	height: 10px;
 
 
+}
+
+.getStarted button{
+	display: block;
+	width: 100%;
+	height: 5vh;
+	font-size: 15px;
+	border: 1px solid black;
+	color: black;
+}
+/*Everything with the button ends here.*/
+
+.innovation img {
+	display:block;
+	width: 40%;
+}
+
+/*Sections feature and about
+known class is sectionThree*/
+
+.sectionThree{
+	display:flex;
+	flex-direction: column;
+	width: 100%;
+	margin: 50px auto;
+	
+}
+
+/*Section pharagraphs.*/
+.paraSection{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+	margin: 0 auto 35px auto;
+}
+
+.paraSection p{
+	font-size: 17.5px;
+}
+
+#sectionFeature {
+	width: 47%;
+}
+
+#sectionAbout{
+	width: 47%;
+}
+
+.middle-img {
+	display: block;
+	width: 100%;
+}
+
+/*Working on section four with service, product, and vision
+This section is known as class sectionFour.
+*/
+
+.spv{
+	width: 100%;
+	padding-bottom: 45px;
+	border-bottom: black solid 1px; 
+}
+
+.groupFour {
+	display: flex;
+	justify-content: space-between;
+}
+
+.fourService{
+	width: 30%;
+}
+
+.fourProduct{
+	width: 30%;
+}
+
+.fourVision{
+	width: 30%;
+}
+
+/*Footer information*/
+footer {
+	width: 100%;
+	margin-top: 35px;
+}
+address{
+	display: block;
+	width: 25%;
+}
+footer p{
+	text-align: center;
+	margin-bottom: 30px;
+	color: black;
+}
+
+/*We will start tablet work here.*/
+
+@media (max-width: 800px){
+
+
+    body {
+        width: 750px;
+        max-width: 100%;   
+    }
+
+    /*Tablet header.*/
+    header {
+        width: 100%;
+        height: auto;
+        position: relative;
+        top: 0;
+        background-color: white;
+        z-index: 0;
+        flex-direction: column-reverse;
+        margin-top: 20px;
+    }
+    
+    header nav {
+        width: 100%;
+        display:flex;
+        justify-content: space-around;
+        text-align: center;
+        align-items: center;
+    }
+    
+    a{
+        color: grey;
+        font-size: 17px;
+        text-decoration: none;
+        float: left;
+        margin: 3vh 0;
+    }
+
+    header img {
+        float: none;
+        width: auto;
+        height: auto;
+        z-index: 1;
+        clear: none;
+        margin-bottom: 30px;
+    }
+
+    /*End of tablet header and
+    the start of tablet innovition.*/
+
+    .innovation img{
+        display: none;
+        width: 0;
+        height: 0;
+    }
+
+    .innovation div {
+        width: 100%;
+    }
+
+    .innovation div h1 {
+        margin: 2.5px auto;
+    }
+ 
+    /*End of .innovation
+    beginning the middle pharagraphs*/
+
+    .sectionThree{
+        margin: 0 10px;
+    }
+
+
+} /*End of media width Tablet.*/
+
+/*Mobile Editing*/
+
+@media (max-width: 500px){
+
+    body{
+        width: 450px;
+    }
+
+    /*header info starts here*/
+
+
+    header nav{
+        flex-direction: column;
+        border-top: solid grey 1px;
+    }
+
+    header nav a {
+        display: block;
+        width: 100%;
+        padding: 15px 0;
+        margin: auto auto;
+        border-bottom: gray solid 1px;
+    }
+
+/*end of header
+start of pharagraph management*/
+
+    .paraSection{
+        flex-direction: column;
+    }
+
+    #sectionFeature {
+        width: 95%;
+        margin: 15px auto;
+    }
+
+    #sectionAbout {
+        width: 100%;
+        margin: 15px auto;
+    }
+
+    .groupFour{
+        flex-direction: column;
+    }
+
+    .fourService{
+        width: 95%;
+        margin: 15px auto;
+    }
+    
+    .fourProduct{
+        width: 100%;
+        margin: 15px auto;
+    }
+    
+    .fourVision{
+        width: 100%;
+        margin: 15px auto;
+    }
+    
+
+} /* end of mobile */
