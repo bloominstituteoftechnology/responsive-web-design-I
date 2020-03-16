@@ -75,8 +75,8 @@ nav {
 	display: flex;
 	align-items: center;
 	padding: 20px;
-	background-color: cornflowerblue;
-	position: fixed;
+	background-color: red;
+	position: static;
 	width: 100%;
 }
 
@@ -118,13 +118,13 @@ h1 {
 
 }
 
-header div {
-	/* width: 49%;
+/* header div {
+	width: 49%;
 	display: inline-block;
 	margin: 0 auto;
-	text-align: center; */
+	text-align: center;
 	
-}
+} */
 
 button {
 	width: 40%
@@ -296,4 +296,33 @@ li {
 #bottom-line {
 	height: 10px;
 	background: gray;
+}
+
+
+/****************media queries: 800px************************/
+
+@media (max-width: 800px){
+
+.main div img {
+  display: none;
+}
+
+.main {
+  
+}
+.title {
+margin: 0 auto;
+padding: 2.5rem;
+}
+
+}
+
+
+
+/****************media queries: 500px **********************/
+
+@media (max-width: 500px) {
+
+
+
 }
