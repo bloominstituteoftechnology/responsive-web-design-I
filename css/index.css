@@ -207,14 +207,14 @@ footer {
 /* Services nav */
 
 
-nav {
+/* nav {
 	display: flex;
 	align-items: center;
 	padding: 20px;
 	background-color: cornflowerblue;
 	position: fixed;
 	width: 100%;
-}
+} */
 
 nav a {
 	width: 100%;
@@ -322,7 +322,25 @@ padding: 2.5rem;
 /****************media queries: 500px **********************/
 
 @media (max-width: 500px) {
+.top-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 0;
+}
 
+.top-container div {
+  padding: 1.5rem 0;
+}
 
+.bottom-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.bottom-container div {
+  width: 100%;
+  padding: 1.5rem 0;
+}
 
 }
