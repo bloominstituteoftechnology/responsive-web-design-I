@@ -242,3 +242,77 @@ footer p{
 }
 
 /*We will start tablet work here.*/
+
+@media (max-width: 800px){
+
+
+    body {
+        width: 750px;
+        max-width: 100%;   
+    }
+
+    /*Tablet header.*/
+    header {
+        width: 100%;
+        height: auto;
+        position: relative;
+        top: 0;
+        background-color: white;
+        z-index: 0;
+        flex-direction: column-reverse;
+        margin-top: 20px;
+    }
+    
+    header nav {
+        width: 100%;
+        display:flex;
+        justify-content: space-around;
+        text-align: center;
+        align-items: center;
+    }
+    
+    a{
+        color: grey;
+        font-size: 17px;
+        text-decoration: none;
+        float: left;
+        margin: 3vh 0;
+    }
+
+    header img {
+        float: none;
+        width: auto;
+        height: auto;
+        z-index: 1;
+        clear: none;
+        margin-bottom: 30px;
+    }
+
+    /*End of tablet header and
+    the start of tablet innovition.*/
+
+    .innovation img{
+        display: none;
+        width: 0;
+        height: 0;
+    }
+
+    .innovation div {
+        width: 100%;
+    }
+
+    .innovation div h1 {
+        margin: 2.5px auto;
+    }
+ 
+    /*End of .innovation
+    beginning the middle pharagraphs*/
+
+    .sectionThree{
+        margin: 0 10px;
+    }
+
+
+} /*End of media width Tablet.*/
+
+
