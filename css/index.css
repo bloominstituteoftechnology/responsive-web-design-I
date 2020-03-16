@@ -1,6 +1,4 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
-
-/* http://meyerweb.com/eric/tools/css/reset/ 
+//* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -67,65 +65,75 @@ h1, h2, h3, h4, h5 {
 
 /* Your code starts here! */
 
+
+
 body{
 	width: 90%;
-	margin: auto;
+	margin: 0 auto;
 	font-size: 13px;
 
 }
-/*This controls the whole nav which is the parent*/
+/*---------Top Part ------------*/
+
+/*Parent */
 .navigation{
 	/*Added a new font style from fonts.google*/
 	font-family: 'Dancing Script', cursive;
-	margin: 15px;
+	/*margin:40px*/;
 	text-align: center;
-	width: 100%;
-	background-color:pink;
-	display: inline-block;	
+	width: 100%;	
+	display:flex;
+	justify-content: center;
+	/* height: 10vh; */
+
 }
- /*Below controls html, the (a)achor tag content
- which is located in the nav this is the child*/
+.nav-tag{
+	width: 100%;
+	display:flex;
+	align-items: center;
+	justify-content: space-between;
+}
 
 a{
 	text-decoration: none; /*Takes out line or decorations*/
-	display:inline-block;
 	/*T R B L*/
-	margin: 2% 7% 2% 0; 
-	color: grey; 
+	margin: 2% 5% 2% 0; 
+	color: grey; 	
 }
-/* This controls all h1 in html */
-h1{
-	/*T R B L */
-	margin: 0 2% 5% 0;
-	font-size:60px;
-	text-align: center;
-}
+ /*------------------------Top Mid--------------------*/
 
-/* the div class and eveything inside it unless 
-instructed otherwise*/
 .top-content{
-	display:inline-block;
-	width: 50%;
+	width: 100%;
+	margin: 5 2 3 4;
+	text-align: center; 
+}
+.top-content h1{
+	font-size: 60px;
+}
+
+ header{
+	margin: 40px 0 40px 0;
+	display: flex;
+	justify-content: space-around; 
+}
+
+ button{ 
+	width: 33%;
 	text-align: center;
-	height: 10px;
-	/* margin: 5% 0 0 0; */
-} 
+}	
 
-header{
-	margin: 50px 0 50px 0;
-}
-
-header img{
-	/*margin: 0 0 0 3%;*/ /*Dont need this at the moment was just exploring*/
-	display:inline-block; 
-	max-width: 35%;
-/*	float: right;   */
-}
+/*auto is give it an equal left and right outward*/
 
 
-.about{
+/*------------------------ Mid area------------------------*/
+
+p{ 
+	font-size: medium;	
+ }
+
+ .about{
 	display:inline-block;
-	width:40%; 
+	width:45%; 
 	float: right;
 	margin:3% 3% 0 0;
 }
@@ -136,33 +144,71 @@ header img{
 	/*T R B L*/
 	margin: 3% 0 0 0;
 }
+.mbottom{
+	display:flex;
+}
 .middle-img{
 	/*T R B L*/
 	margin: 2% 0 0 0;
 	width: 100%
 }
+
+ /*----------------------- Services page*------------------*/
 .services{
-	display:inline-block;
-	width:30%; 
-	margin:2% 4% 0 0;
+	width:100%; 
+	
+} 
+
+.sixbox{
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
-.product{
-	display:inline-block;
-	width:30%; 
-	margin:2% 0 30px 0;
+.sixbox div{
+	width:45%; 
+	margin: 3% 0 3% 0;
+	border:1px solid black;
+	padding: 2.5%;
+
 }
-.vision{
-	display:inline-block;
-	width:30%; 
-	margin:2% 0 0 0;
-	float:right;
+/* .dd, .dm, .iOS {
+
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+	padding: 2.5%;
+	
 }
-h3{
-	/* T R B L*/
-	margin: 4% 0 0 0;
+
+.unix, .wd, .ad{
+	width:45%;
+	margin: 3% 0 3% 0%;
+	border:1px solid black;
+	display: flex;
+	float: right;
+	justify-content: space-around;
+	flex-direction: column;
+	align-self: center; 
+	padding: 2.5%;
+} */
+
+h4{
+	margin: 4%;
+	width: 40%;
+}
+
+.facts{
+	width:40%;
+}
+.ul{
+	list-style-type: circle;
 }
 footer{
-	text-align: center;
+	text-align: center; 
+	margin: 50px 0; 
+} 
+.img{
+	 float:right;
 }
 
 /*-------------- MEDIA QUERIES-----------*/
@@ -170,16 +216,44 @@ footer{
 /*tablet*/
 @media(max-width: 800px){
     .navigation{
-        display:flex;
         justify-content: center;
-        /*flex-wrap: nowrap;*/
-        flex-direction:column-reverse;
-    }
-
-}
-
+		flex-direction:column-reverse;
+	}
+	.img-title{
+		display:none;
+	}
+} 
 
 /*phone*/
 @media (max-width: 500px){
+	.nav-tag{
+		flex-direction:column;
+		
+	}
+	.nav-tag a{
+		border-bottom: 1px solid black;
+		width:100%;
+		padding-top: 8px;
+		padding-bottom: 10px;
+	}
+	.mid{
+		flex-direction: column;
+	}
+	.mid div{
+		width:100%;
+	}
+	.mbottom{
+		flex-direction: column;
+	}
+	.mbottom div{
+		width: 100%;
+	}
+	.sixbox{
+		flex-direction:column;
+	}
+	.sixbox div{
+		width: 100%;
+	}
+
 
 }
