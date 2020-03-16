@@ -315,4 +315,65 @@ footer p{
 
 } /*End of media width Tablet.*/
 
+/*Mobile Editing*/
 
+@media (max-width: 500px){
+
+    body{
+        width: 450px;
+    }
+
+    /*header info starts here*/
+
+
+    header nav{
+        flex-direction: column;
+        border-top: solid grey 1px;
+    }
+
+    header nav a {
+        display: block;
+        width: 100%;
+        padding: 15px 0;
+        margin: auto auto;
+        border-bottom: gray solid 1px;
+    }
+
+/*end of header
+start of pharagraph management*/
+
+    .paraSection{
+        flex-direction: column;
+    }
+
+    #sectionFeature {
+        width: 95%;
+        margin: 15px auto;
+    }
+
+    #sectionAbout {
+        width: 100%;
+        margin: 15px auto;
+    }
+
+    .groupFour{
+        flex-direction: column;
+    }
+
+    .fourService{
+        width: 95%;
+        margin: 15px auto;
+    }
+    
+    .fourProduct{
+        width: 100%;
+        margin: 15px auto;
+    }
+    
+    .fourVision{
+        width: 100%;
+        margin: 15px auto;
+    }
+    
+
+} /* end of mobile */
