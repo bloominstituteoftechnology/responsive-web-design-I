@@ -72,25 +72,36 @@ h1, h2, h3, h4, h5 {
 
 /* for whole page */
 #body{
-	width: 60%;
+	width: 95%;
 	height: 95%;
-	margin: 30px auto;
+	margin: 30px;
 }
 
 /* for navigation bar */
 .navigation a {
-	margin:0 3.5%;
+
 	text-decoration: none;
-	width: 100%;
+	/* width: 100%; */
 }
 .navigation{
     display: flex;
+    width: 100%;
+    align-items: center;
+
+}
+.links{
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
 }
 /* .logo{
 	text-align: right;
 } */
 
 /* CSS styles for header */
+header{
+    border-bottom: 1px solid red;
+}
 #first-big-container{
 	margin: 30px auto;
 	display: inline-block;
@@ -112,9 +123,8 @@ h1{
 
 }
 
-/* CSS styles for top-body-content  */
+/* CSS styles for second-big-container  */
 
-}
 .second-big-container{
 	margin: 20px auto;
 	width: 100%;
@@ -126,7 +136,9 @@ h1{
 .feature{
 	width:40%;
 	display: inline-block;
-	margin-right: 10%; 
+    margin-right: 10%; 
+    /* background: lightgrey;
+    line-height: 1; */
 }
 .about{
 	width:40%;
@@ -134,12 +146,16 @@ h1{
 }
 /* CSS styles second image */
 .second-image{
-    display: flex;
-    align-items: center;
+    /* display: flex;
+    align-items: center; */
     margin: 30px auto;
 	text-align: center;
-	
-
+}
+.middle-img{
+    width: 90%;
+}
+#bottom-body-content{
+    border-bottom: 1px solid red;
 }
 /* CSS styles for bottom-body-content  */
 .third-big-container{
@@ -191,6 +207,31 @@ h1{
     }
 }
 
-/* @media (max-width: 800px){
-
-} */
+@media (max-width: 500px){
+    .navigation{
+        flex-direction: column-reverse;
+        align-content: center;
+    }
+    .links{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+    a{
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        border: 1px solid gray;
+    }
+    .second-big-container div{
+        flex-direction: column;
+        width:100%;
+        align-content: center;
+        
+    }
+    .third-big-container div{
+        flex-direction: column;
+        width:100%;
+        align-content: center;
+    }
+}
