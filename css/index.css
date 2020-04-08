@@ -1,146 +1,300 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
-
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-	margin-bottom: 15px;
-	
-
-	
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
 }
 
 /* Your code starts here! */
-img.logo {
-	position: right; 
-	top:0; 
-	right:0;
-	margin-right: 50px;
-    margin-top: 10px;
-    
 
-	
-}
-img.moto {
-margin-top: 10px;
-text-align: center;
-
+header a {
+  margin: 20px;
+  color: gray;
+  text-decoration: none;
 }
 
-
-ul#menu {
-	margin-top: 20px;
-	margin-left: 50px;
-	display: inline-block;
+.intro {
+  padding: 40px 0;
+  display: flex;
+  border-bottom: 3px solid gray;
+  justify-content: space-evenly;
 }
-ul li {
-	list-style-type:none;
-	display:inline-block;
-	margin-left: 50px;
-    /* set to 0 if your not using a list-style-type */
-    padding-left: 0px;
+
+.intro div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro div h1 {
+  text-align: center;
+  font-size: 70px;
 }
 
 li a {
-	text-decoration: none;
-	color: darkgray;
+  text-decoration: none;
+  color: darkgray;
+  display: flex;
+}
+.colums {
+  display: flex;
+}
+.colums div {
+  margin: 20px;
+}
+.midle-img {
+  width: 100%;
+  display: flex;
+}
+.info {
+  border-bottom: 3px solid gray;
+}
+.contact h2 {
+  margin-top: 20px;
+  margin-left: 15px;
+}
+.contact p {
+  margin: 15px;
+}
+.services {
+  display: flex;
+}
+.services div {
+  border: 2px solid black;
+  margin: 15px 5px;
+  padding: 15px;
+  background-color: lightgray;
 }
 
 button {
-	background-color: white;
-	  color: black;
-  	border: 2px solid grey; /* Green */
-  	-webkit-transition-duration: 0.4s; /* Safari */
-  	transition-duration: 0.4s;
-  	width: 150px;
-  	height: 50px;
+  background-color: white;
+  color: black;
+  border: 2px solid grey; /* Green */
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  width: 150px;
+  height: 50px;
 }
 
 button:hover {
-	background-color: rgb(65, 152, 68); /* Green */
-	color:white;
-	text-align: center;
-	
-	
-}      
- 
- div p {
-   display: inline-block;
-   display: flex; 
-   text-align: center;
-   
-
+  background-color: rgb(65, 152, 68); /* Green */
+  color: white;
+  text-align: center;
 }
-img {
-	display: inline-block;
-	flex: right;
-
+services div a {
+  display: block;
+  margin-top: 10px;
+  text-align: center;
+  padding: 5px;
+  border: 2px solid black;
+  text-decoration: none;
+  color: black;
+  width: 150px;
+  border-radius: 5px;
+  background-color: white;
 }
-h3 {
-  margin: 10px;
-  display: inline-block;
+
+.ending {
+  border-top: 3px solid gray;
+  padding-top: 20px;
 }
- 
 
+@media (max-width: 800px) {
+  header {
+    height: 100px;
+    flex-wrap: wrap;
+  }
+  header a:last-child {
+    order: -1;
+    width: 100%;
+    text-align: center;
+  }
+  .intro div img {
+    display: none;
+  }
+  .intro {
+    justify-content: center;
+    flex-direction: column;
+  }
+  .services-header-img {
+    margin-top: 50px;
+  }
+}
 
-  
-
+@media (max-width: 500px) {
+  .container {
+    margin: 0 10px;
+  }
+  header {
+    padding-top: 20px;
+    height: 400px;
+    flex-flow: column;
+    flex-wrap: nowrap;
+  }
+  header a {
+    text-align: center;
+    width: 500px;
+    margin: 0;
+    padding-bottom: 19px;
+    border-bottom: 2px solid gray;
+  }
+  header a:last-child {
+    width: 500px;
+  }
+  .columns {
+    flex-direction: column;
+  }
+  .columns div {
+    margin: 20px 0;
+  }
+  .services {
+    flex-direction: column;
+  }
+}
