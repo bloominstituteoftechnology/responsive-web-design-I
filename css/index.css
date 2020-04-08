@@ -105,15 +105,12 @@ hgroup,
 menu,
 nav,
 section {
-  display: block;
+  display: inline-block;
 }
 body {
   line-height: 1;
 }
-ol,
-ul {
-  list-style: none;
-}
+
 blockquote,
 q {
   quotes: none;
@@ -151,150 +148,303 @@ h5 {
   margin-bottom: 15px;
 }
 
-/* Your code starts here! */
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
-header a {
-  margin: 20px;
+.container {
+  width: 880px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+header nav {
+  display: flex;
+  margin-top: 35px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav a {
+  margin-right: 35px;
+  /* margin-left: 27px; */
+  font-size: 14px;
   color: gray;
   text-decoration: none;
 }
 
-.intro {
-  padding: 40px 0;
+.cover {
   display: flex;
-  border-bottom: 3px solid gray;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
-.intro div {
+.cover .cover-content {
+  vertical-align: top;
+  font-size: 40px;
+  margin-top: 120px;
+  text-align: center;
+  padding: 0px 50px;
+  margin-bottom: -9px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+}
+@media (max-width: 500px) {
+  .cover .cover-content {
+    margin-top: 0;
+  }
 }
 
-.intro div h1 {
-  text-align: center;
-  font-size: 70px;
+.cover img {
+  display: flex;
+  margin-top: 69px;
 }
 
-li a {
-  text-decoration: none;
-  color: darkgray;
-  display: flex;
-}
-.colums {
-  display: flex;
-}
-.colums div {
-  margin: 20px;
-}
-.midle-img {
-  width: 100%;
-  display: flex;
-}
-.info {
-  border-bottom: 3px solid gray;
-}
-.contact h2 {
-  margin-top: 20px;
-  margin-left: 15px;
-}
-.contact p {
-  margin: 15px;
-}
-.services {
-  display: flex;
-}
-.services div {
-  border: 2px solid black;
-  margin: 15px 5px;
-  padding: 15px;
-  background-color: lightgray;
+.title {
+  margin-bottom: 5px;
 }
 
 button {
-  background-color: white;
-  color: black;
-  border: 2px solid grey; /* Green */
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
-  width: 150px;
-  height: 50px;
-}
-
-button:hover {
-  background-color: rgb(65, 152, 68); /* Green */
-  color: white;
-  text-align: center;
-}
-services div a {
-  display: block;
-  margin-top: 10px;
-  text-align: center;
-  padding: 5px;
-  border: 2px solid black;
-  text-decoration: none;
-  color: black;
-  width: 150px;
+  background: white;
+  /* vertical-align: top; */
+  margin-top: 1px;
+  padding: 3px 24px;
+  font-size: 12px;
+  border: 1px solid black;
   border-radius: 5px;
-  background-color: white;
+  cursor: pointer;
+  background: white;
+}
+.main-content {
+  border-top: 1px solid black;
+  margin-top: 48px;
+  padding-top: 33px;
+  margin-bottom: -50px;
+  display: flex;
 }
 
-.ending {
-  border-top: 3px solid gray;
-  padding-top: 20px;
+.top-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.main-content .top-content .text-content {
+  width: 44%;
+  vertical-align: top;
+  margin: 15px 25px;
+}
+
+.middle-img {
+  margin-top: 69px;
+  width: 100%;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.bottom-content .bottom .text-content {
+  display: flex;
+  width: 29%;
+  vertical-align: top;
+  margin: 15px 15px;
+}
+
+.bottom-content {
+  margin-top: 10px;
+  display: flex;
+}
+
+.bottom .text-content {
+  /* display: flex; */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.contact {
+  margin-top: 0;
+  padding: 39px 10px 0;
+}
+
+.contact h4 {
+  margin-top: 0;
+}
+
+.contact p {
+  margin: 20px 0;
+}
+
+footer {
+  margin: 80px 70px;
+}
+
+.copyright {
+  margin-left: 390px;
+  margin-bottom: 50px;
+}
+
+/* services styles */
+
+.top-header {
+  margin: 40px 0;
+}
+
+.labels {
+  font-size: 25px;
+}
+.squares {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.info-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.squares .info-card {
+  border: 2px solid black;
+  background: lightgray;
+  justify-content: space-between;
+  width: 45%;
+  margin: 5px;
+  padding: 15px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.end {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.end .end-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 45%;
+  margin: 5px;
+  padding: 10px;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+.end .end-content p {
+  margin-bottom: 20px;
+}
+
+.end .end-content li {
+  margin-bottom: 15px;
 }
 
 @media (max-width: 800px) {
-  header {
-    height: 100px;
-    flex-wrap: wrap;
-  }
-  header a:last-child {
-    order: -1;
+  .container {
     width: 100%;
-    text-align: center;
   }
-  .intro div img {
+  .cover img {
     display: none;
   }
-  .intro {
-    justify-content: center;
-    flex-direction: column;
+  .cover-content {
+    margin: 0 auto;
   }
-  .services-header-img {
-    margin-top: 50px;
+
+  header {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100%;
+  }
+
+  .top-content {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .cover .cover-content {
+    margin-top: 0;
+  }
+
+  img .middle-image {
+    width: 100%;
+  }
+
+  .logo {
+    width: 200px;
+  }
+
+  .copyright {
+    margin-left: 292px;
   }
 }
 
 @media (max-width: 500px) {
   .container {
-    margin: 0 10px;
+    width: 100%;
   }
-  header {
-    padding-top: 20px;
-    height: 400px;
-    flex-flow: column;
-    flex-wrap: nowrap;
+
+  header nav {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
   }
-  header a {
+
+  header nav a {
+    font-size: 20px;
+    border-bottom: 1px solid gray;
+    width: 100%;
     text-align: center;
-    width: 500px;
-    margin: 0;
-    padding-bottom: 19px;
-    border-bottom: 2px solid gray;
+    padding-bottom: 10px;
+    margin-right: 0;
+    padding-top: 10px;
   }
-  header a:last-child {
-    width: 500px;
+
+  .cover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  .columns {
+  .top-content {
+    display: flex;
     flex-direction: column;
   }
-  .columns div {
-    margin: 20px 0;
+
+  .text-content p {
+    width: 210%;
   }
-  .services {
+
+  .bottom {
+    display: flex;
     flex-direction: column;
+  }
+
+  .bottom-content .bottom .text-content {
+    width: 96%;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .copyright {
+    margin-left: 175px;
+    margin-bottom: 50px;
+  }
+
+  .logo {
+    margin-top: 20px;
+    margin-bottom: -20px;
   }
 }
