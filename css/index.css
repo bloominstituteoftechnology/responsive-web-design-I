@@ -297,22 +297,49 @@ footer {
 }
 /**************Media queries 500**************/
 @media (max-width: 500px) {
+  .homepageContainer {
+    margin: 0;
+    align-content: center;
+  }
   .navigation {
     display: flex;
-    border: 1px solid black;
     height: 50hv;
   }
-  /*the 50hv is crossed out but not overridden by prev Q
+
   .navigation a {
     width: 100%;
     border-bottom: 1px solid grey;
     text-align: center;
     align-self: center;
+    margin: 2% 0;
   }
   .headcontainer {
     margin: 0;
   }
-  /* .middlecontent {This effected everything above it
-    flex-direction: row;
-  } */
+  .headcontainer h1 {
+    font-size: 48px;
+  }
+  .middlecontent {
+    width: 50vh;
+    justify-content: center;
+    margin: 0 auto;
+    flex-flow: row wrap;
+  }
+  /* .toptext{ */
+  flex-wrap: wrap;
+}
+.feat {
+  height: 25vh;
+}
+.about {
+  height: 25vh;
+}
+.serv {
+  height: 25vh;
+}
+.prod {
+  height: 25vh;
+}
+.vis {
+  height: 25vh;
 }
