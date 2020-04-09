@@ -195,8 +195,12 @@ button {
 /**************Middle STYLES*******************/
 .middlecontent {
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
   align-content: center;
+  padding: 2% 0;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
 }
 p {
   font-weight: bold;
@@ -205,61 +209,46 @@ h2 {
   font-weight: bold;
 }
 .toptext {
-  /* display: inline-block;
-  margin: 0 5%;
-  padding: 2% 0;
-  border-top: 1px solid black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.middle-img {
-  /* width: 90%;
-  margin: 2% 5%; */
-}
+
 .feat {
-  /* width: 50%;
-  float: left; */
+  width: 50%;
 }
 .about {
-  /* width: 50%;
-  padding: 0 0 0 2%;
-  float: right; */
+  width: 50%;
+}
+.middlecontent img {
+  margin: 2% 0;
 }
 .bottomtext {
-  display: inline-block;
-  margin: 0 5%;
-  padding-bottom: 2%;
+  display: flex;
+  justify-content: space-between;
 }
-/* .serv {
-  width: 33%;
-  padding-right: 4%;
-  float: left;
+.serv {
+  width: 30%;
 }
 .prod {
-  width: 33%;
-  padding: 0 4%;
-  float: left;
+  width: 30%;
 }
 .vis {
-  width: 33%;
-  padding-left: 4%;
-  float: left;
-} */
+  width: 30%;
+}
+
 /**************Bottom content STYLES*******************/
-/* .bottomcontent {
-  color: black;
-  font-weight: bold;
-  margin-left: 5%;
+
+.bottomcontent {
+  width: 20%;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
-.bottomcontent a {
-  color: black;
-  /* margin:2% 0; */
-}
-.phone {
-  width: 10%;
-  margin: 2% 0;
-} */
 /**************Footer STYLES*******************/
 footer {
   text-align: center;
   font-weight: bold;
-  margin: 5% 5% 10% 5%;
+  margin: 5% 5% 2% 5%;
 }
