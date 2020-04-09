@@ -1,3 +1,324 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+  max-width: 100%;
+}
 
+.container {
+  width: 975px;
+  margin: auto;
+  padding: 10px 50px;
+}
+nav a {
+  text-decoration: none;
+  color: lightgray;
+
+  margin: 10px;
+  vertical-align: top;
+  display: flex;
+  text-align: center;
+  padding-top: 10px;
+  width: 11%;
+}
+nav {
+  text-align: center;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.logo {
+  display: flex;
+
+  padding: 10px;
+  text-align: center;
+}
+h1 {
+  text-align: center;
+  font-size: 80px;
+
+  display: flex;
+}
+button {
+  font-size: 20px;
+  padding: 5px 40px 5px 40px;
+  display: flex;
+  background-color: white;
+  border: 1px solid black;
+  height: 40px;
+  margin-top: 55%;
+  margin-left: -50%;
+}
+h2 {
+  font-size: 25px;
+}
+.headerImage {
+  margin-left: 200px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.topsection {
+  display: flex;
+  width: 100%;
+  vertical-align: middle;
+}
+.topsection-text {
+  display: flex;
+  text-align: center;
+  vertical-align: top;
+  margin-top: 110px;
+}
+header {
+  margin-left: 100px;
+  vertical-align: middle;
+}
+.getItCentered {
+  display: flex;
+}
+.middle-img {
+  width: 98%;
+  box-align: center;
+  padding-top: 20px;
+}
+body {
+  width: 1200px;
+  margin: 0 auto;
+}
+.top {
+  width: 100%;
+}
+.features,
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2%;
+}
+.services,
+.product,
+.vision {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2%;
+}
+.contact {
+  margin-top: 30px;
+  margin-left: 10px;
+}
+.copyright {
+  text-align: center;
+}
+.top-content {
+  border-top: 2px solid black;
+  display: flex;
+
+  flex-direction: row;
+  width: 100%;
+}
+.bottom-content {
+  border-bottom: 2px solid black;
+  display: flex;
+  flex-flow: row nowrap;
+}
+.linksmt {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+}
+hr.mobile {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  nav {
+    flex-direction: column-reverse;
+  }
+  .logotablet {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .headerImage {
+    display: none;
+  }
+  .topsection {
+    justify-content: center;
+    margin-bottom: 4%;
+  }
+  div.linksmt {
+    justify-content: space-between;
+    margin-left: 10%;
+  }
+  hr.mobile {
+    display: none;
+  }
+}
+/* this lines begins the mobile version 500px,,,, my px at the time was 375x812 */
+@media (max-width: 500px) {
+  div.linksmt {
+    flex-direction: column;
+    width: 80;
+    font-size: 225%;
+  }
+  div a {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  hr.mobile {
+    display: inline-block;
+  }
+
+  section.top-content {
+    display: flex;
+    flex-direction: column;
+    font-size: 200%;
+  }
+  section.bottom-content {
+    display: flex;
+    flex-direction: column;
+    font-size: 200%;
+  }
+}
+section,
+footer {
+  font-size: 200%;
+}
