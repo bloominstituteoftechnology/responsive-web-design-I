@@ -149,22 +149,19 @@ h5 {
   margin-bottom: 15px;
 }
 .homepageContainer {
+  width: 90%;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
 }
 /**************Navigation STYLES*******************/
 .navigation {
-  display: inline-block;
-  width: 100%;
-  margin: 2% 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
 }
-.logo {
-  vertical-align: middle;
-}
-nav a {
-  /* margin:%; */
-  display: inline-block;
-  vertical-align: middle;
+.navigation a {
   width: 13%;
   text-decoration: none;
   color: darkgray;
@@ -172,7 +169,9 @@ nav a {
 /**************Header STYLES*******************/
 
 .headcontainer {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
   width: 100%;
   padding: 2%;
 }
@@ -195,9 +194,9 @@ button {
 }
 /**************Middle STYLES*******************/
 .middlecontent {
-  display: inline-block;
-  width: 100%;
-  margin: 10%, 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
 }
 p {
   font-weight: bold;
@@ -206,31 +205,30 @@ h2 {
   font-weight: bold;
 }
 .toptext {
-  display: inline-block;
+  /* display: inline-block;
   margin: 0 5%;
   padding: 2% 0;
-  border-top: 1px solid black;
+  border-top: 1px solid black; */
 }
 .middle-img {
-  width: 90%;
-  margin: 2% 5%;
+  /* width: 90%;
+  margin: 2% 5%; */
 }
 .feat {
-  width: 50%;
-  float: left;
+  /* width: 50%;
+  float: left; */
 }
 .about {
-  width: 50%;
+  /* width: 50%;
   padding: 0 0 0 2%;
-  float: right;
+  float: right; */
 }
 .bottomtext {
   display: inline-block;
   margin: 0 5%;
   padding-bottom: 2%;
-  border-bottom: 1px solid black;
 }
-.serv {
+/* .serv {
   width: 33%;
   padding-right: 4%;
   float: left;
@@ -244,9 +242,9 @@ h2 {
   width: 33%;
   padding-left: 4%;
   float: left;
-}
+} */
 /**************Bottom content STYLES*******************/
-.bottomcontent {
+/* .bottomcontent {
   color: black;
   font-weight: bold;
   margin-left: 5%;
@@ -258,7 +256,7 @@ h2 {
 .phone {
   width: 10%;
   margin: 2% 0;
-}
+} */
 /**************Footer STYLES*******************/
 footer {
   text-align: center;
