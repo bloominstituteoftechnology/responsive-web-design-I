@@ -265,9 +265,26 @@ footer {
 @media (max-width: 800px) {
   .navigation {
     height: 25vh;
+    justify-content: space-evenly;
+    flex-wrap: wrap-reverse;
+  }
+  .navigation a {
+    align-self: flex-end;
+  }
+  .logo {
+    margin: 3% auto;
+    align-self: start;
+    border: 1px solid blue;
+  }
+  .headcontainer {
+    justify-content: center;
   }
   .headimage {
     display: none;
+  }
+  .headtext {
+    width: 100%;
+    border: 1px solid red;
   }
 }
 /**************Media queries 500**************/
