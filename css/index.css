@@ -320,26 +320,45 @@ footer {
     font-size: 48px;
   }
   .middlecontent {
-    width: 50vh;
+    /* width: 50vh; */
     justify-content: center;
     margin: 0 auto;
     flex-flow: row wrap;
   }
-  /* .toptext{ */
-  flex-wrap: wrap;
-}
-.feat {
-  height: 25vh;
-}
-.about {
-  height: 25vh;
-}
-.serv {
-  height: 25vh;
-}
-.prod {
-  height: 25vh;
-}
-.vis {
-  height: 25vh;
+  .toptext {
+    flex-direction: column;
+    align-content: space-between;
+    width: 90%;
+  }
+  .bottomtext {
+    width: 90%;
+    flex-direction: column;
+    align-content: space-between;
+  }
+  .feat {
+    width: 100%;
+    margin: 5% 0;
+  }
+  .about {
+    width: 100%;
+    margin: 5% 0;
+  }
+  .serv {
+    width: 100%;
+    margin: 5% 0;
+  }
+  .prod {
+    width: 100%;
+    margin: 5% 0;
+  }
+  .vis {
+    width: 100%;
+    margin: 5% 0;
+  }
+  .middlecontent img {
+    width: 90%;
+  }
+  h2 {
+    margin-bottom: 2%;
+  }
 }
