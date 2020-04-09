@@ -148,6 +148,7 @@ h5 {
   letter-spacing: 1px;
   margin-bottom: 15px;
 }
+
 .homepageContainer {
   width: 90%;
   margin: 0 auto;
@@ -170,27 +171,35 @@ h5 {
 
 .headcontainer {
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  justify-content: flex-end;
+  align-items: center;
   width: 100%;
-  padding: 2%;
 }
 .headtext {
-  display: inline-block;
-  text-align: center;
-  font-size: 72px;
-  margin-top: 4%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
   width: 50%;
 }
-.headimage {
-  width: 50%;
-  float: right;
-}
-button {
+.headtext button {
+  border: 1px solid black;
+  background: white;
   font-size: medium;
   font-weight: bold;
   padding: 1% 5%;
-  margin-left: 0;
+  margin-right: 13%;
+}
+.headtext h1 {
+  font-size: 60px;
+  text-align: center;
+}
+.headimage {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+button {
 }
 /**************Middle STYLES*******************/
 .middlecontent {
@@ -237,7 +246,7 @@ h2 {
   width: 30%;
 }
 
-/**************Bottom content STYLES*******************/
+/**************Bottomcontent STYLES*******************/
 
 .bottomcontent {
   width: 20%;
@@ -252,3 +261,13 @@ footer {
   font-weight: bold;
   margin: 5% 5% 2% 5%;
 }
+/**************Media queries 800**************/
+@media (max-width: 800px) {
+  .navigation {
+    height: 25vh;
+  }
+  .headimage {
+    display: none;
+  }
+}
+/**************Media queries 500**************/
