@@ -174,6 +174,7 @@ h5 {
   justify-content: flex-end;
   align-items: center;
   width: 100%;
+  padding: 5% 0 10% 0;
 }
 .headtext {
   display: flex;
@@ -198,6 +199,7 @@ h5 {
   width: 50%;
   display: flex;
   justify-content: flex-end;
+  margin: ;
 }
 button {
 }
@@ -294,3 +296,23 @@ footer {
   }
 }
 /**************Media queries 500**************/
+@media (max-width: 500px) {
+  .navigation {
+    display: flex;
+    border: 1px solid black;
+    height: 50hv;
+  }
+  /*the 50hv is crossed out but not overridden by prev Q
+  .navigation a {
+    width: 100%;
+    border-bottom: 1px solid grey;
+    text-align: center;
+    align-self: center;
+  }
+  .headcontainer {
+    margin: 0;
+  }
+  /* .middlecontent {This effected everything above it
+    flex-direction: row;
+  } */
+}
