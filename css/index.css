@@ -69,11 +69,16 @@ h1, h2, h3, h4, h5 {
 .navigation {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   align-content: flex-start;
   padding: 10px 0px 5px 0px;
   background: white;
+}
+/*The main full size container*/
+.container-box {
+  margin: 0 auto;
+  width: 880px;
 }
 /*Menu itself*/
 .navigation a {
@@ -104,7 +109,9 @@ h1, h2, h3, h4, h5 {
   text-align: center;
   padding-right: 8em;
 }
-
+h1{
+  font-size: 75px;
+}
 .middle-sec{
   border-top: 1px solid black;
   margin-top: 75px;
@@ -120,8 +127,26 @@ h1, h2, h3, h4, h5 {
   width: 425px;
   margin-right: 34px;
 }
-.mid-top-con .midsec-img{
+.middle-sec .midsec-img{
   margin-top: 45px;
   width: 100%;
   align-items: center;
+}
+.mid-bott-con{
+  display: flex;
+  padding: 45px 0;
+  justify-content: center;
+  border-bottom: 1px solid black;
+}
+.mid-bott-con .desc-txt{
+  width: 325px;
+  margin-right: 60px;
+}
+.contact{
+  padding: 39px 10px 0;
+}
+footer{
+  text-align: center;
+  font-size: 15px;
+  margin: 32px 0;
 }
