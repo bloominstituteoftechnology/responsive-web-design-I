@@ -1,3 +1,353 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+/* nav styles */
+.main-nav-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .main-nav-content a {
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+  .main-nav-content a {
+    text-decoration: none;
+    color: black;
+    opacity: 0.6;
+  }
+  .main-nav-content a:hover {
+    opacity: 1;
+  }
+  
+  /* header styles */
+  .main-header {
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .main-header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-header-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-header h1 {
+    font-size: 5rem;
+    text-align: center;
+  }
+  .main-header a {
+    display: block;
+    border: 1px solid black;
+    width: 180px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    padding: 9px;
+  }
+  
+  /* main content */
+  .main-content {
+    width: 80%;
+    margin: auto;
+    height: 20vh;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  hr {
+    width: 80%;
+    margin: 20px auto;
+    border: none;
+    border-bottom: 1px solid black;
+  }
+  
+  .main-content p {
+    color: #000;
+    font-weight: 300;
+  }
+  .main-content h1 {
+    font-size: 1.3rem;
+  }
+  .main-content p,
+  .main-content h1 {
+    padding: 0 10px;
+  }
+  
+  /* background image */
+  .background-image {
+    background: url("../img/mid-page-accent.jpg");
+    height: 182px;
+    width: 80%;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto 40px;
+  }
+  
+  /* services section */
+  
+  .services {
+    width: 80%;
+    margin: auto;
+    height: 30vh;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .services h1 {
+    font-size: 1.2rem;
+  }
+  .services p,
+  .services h1 {
+    margin: 10px 10px;
+  }
+  
+  footer {
+    width: 80%;
+    margin: auto;
+    padding-bottom: 100px;
+  }
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+  }
+  
+  .footer-content a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+  }
+  .copy {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* services.html styles */
+  
+  /* main header */
+  .header-content {
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .header-content h1 {
+    margin-top: 20px;
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+  .header-content img {
+    object-fit: cover;
+  }
+  .header-content p {
+    font-weight: 400;
+    color: black;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* services */
+  .services-content {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .services-content div h1 {
+    font-size: 1.2rem;
+  }
+  .services-content div a {
+    background: white;
+    display: block;
+    margin-top: 20px;
+    width: 120px;
+    text-align: center;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    border: 1px solid black;
+  }
+  .services-content div {
+    background: lightgray;
+    width: 40%;
+    border: 1px solid black;
+    margin: 20px;
+    padding: 20px;
+  }
+  
+  /* services facts */
+  .facts-wrapper {
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+    align-items: flex-start;
+  }
+  .facts-wrapper h1 {
+    font-size: 1.3rem;
+  }
+  .facts-wrapper ul {
+    margin-top: 40px;
+    list-style: square;
+    margin-left: 20px;
+  }
+  .facts-wrapper li {
+    margin: 20px 0;
+  }
+  .facts-wrapper img {
+    margin-left: 20px;
+  }
+  
+  /* services.html media queries */
+  @media (max-width: 800px) {
+    .header-content,
+    .services-content,
+    .facts-wrapper,
+    hr {
+      width: 90%;
+    }
+    .header-content,
+    .services-content,
+    .facts-wrapper {
+      flex-direction: column;
+    }
+    .services-content div {
+      width: 100%;
+      margin: 20px auto;
+    }
+    .facts-wrapper {
+      justify-content: center;
+      align-items: center;
+    }
+    .main-nav-content {
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+    .facts-wrapper img {
+      width: 100%;
+      margin: 0;
+    }
+  }
+  
+  /* index.html media queries */
+  @media (max-width: 800px) {
+    .main-header,
+    .background-image,
+    footer {
+      width: 90%;
+      flex-direction: column;
+    }
+    .main-content {
+      width: 90%;
+    }
+  
+    /* change logo order */
+    .main-nav-content .logo-link {
+      order: -1;
+      align-self: flex-start;
+      flex-direction: column;
+      width: 100%;
+      margin: auto;
+      text-align: center;
+    }
+  
+    .main-header img {
+      display: none;
+    }
+    .main-content-about-right,
+    .main-content-about-left {
+      margin-bottom: 20px;
+    }
+    /* .main-content-about-left {
+      margin-top: 40px;
+    } */
+    .background-image {
+      margin: 60px auto;
+    }
+    .services {
+      width: 90%;
+    }
+    hr {
+      margin: 70px auto;
+    }
+  }
+  
+  /* index.html media 500px */
+  
+  @media (max-width: 500px) {
+    .main-nav-content {
+      flex-direction: column;
+    }
+    .main-nav-content a:nth-child(1) {
+      border-top: 1px solid grey;
+      /* border-bottom: 1px solid grey; */
+      width: 100%;
+      text-align: center;
+    }
+    .main-nav-content a:nth-child(2) {
+      border-top: 1px solid grey;
+  
+      width: 100%;
+      text-align: center;
+    }
+    .main-nav-content a:nth-child(3) {
+      border-top: 1px solid grey;
+  
+      width: 100%;
+      text-align: center;
+    }
+    .main-nav-content a:nth-child(4) {
+      border-top: 1px solid grey;
+  
+      width: 100%;
+      text-align: center;
+    }
+    .main-nav-content a:nth-child(5) {
+      border-top: 1px solid grey;
+  
+      width: 100%;
+      text-align: center;
+    }
+    .main-nav-content a:nth-child(6) {
+      border-top: 1px solid grey;
+      border-bottom: 1px solid grey;
+      width: 100%;
+      text-align: center;
+    }
+    .main-header-content h1 {
+      font-size: 3.5rem;
+    }
+    .main-header a {
+      padding: 5px;
+      width: 130px;
+    }
+    .main-content {
+      flex-direction: column;
+      /* margin-top: 100px; */
+      height: 30vh;
+    }
+    .background-image {
+      height: 100px;
+    }
+    .services {
+      flex-direction: column;
+      height: 55vh;
+    }
+    .services-left {
+      margin-bottom: 40px;
+    }
+    .services-middle {
+      margin-bottom: 40px;
+    }
+    footer {
+      padding-bottom: 20px;
+    }
+  }
 
