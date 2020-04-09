@@ -171,6 +171,7 @@ footer{
 
 	.bottom-content{
 		height: 150px;
+		margin: 20px;
 	}
 
 	.bottom-content .item{
@@ -179,17 +180,22 @@ footer{
 		padding: 0px;
 		margin: 10px;	
 	}
+
+	address{
+		width: 30%;
+		margin: 25px;
+	}
 }
-
-
-
-
-
 
 @media (max-width: 500px){
 	.nav-links{
 		display: flex;
 		flex-direction: column;
+	}
+
+	.nav-links a{
+		font-size: 24px;
+		margin: 10px;
 	}
 
 	.header-img{
@@ -201,13 +207,18 @@ footer{
 		flex-direction: column;
 		margin: 10px;
 		width: 95%;
-		height: 100px;
+		height: 75px;
+		font-size: 14px;
 	}
 
 	.middle-img{
-		height: 100px;
+		height: 75px;
 		width: 95%;
 		margin: 25px;
+	}
+
+	.bottom-content{
+		height: 205px;
 	}
 
 	.bottom-content .item{
@@ -215,6 +226,16 @@ footer{
 		flex-direction: column;
 		margin: 10px;
 		width: 95%;
-		height: 100px;
+		height: 75px;
+		font-size: 14px;
 	}	
+
+	address{
+		font-size: 14px;
+		margin: 25px;
+	}
+
+	footer{
+		font-size: 14px;
+	}
 }
