@@ -1,3 +1,361 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+Given
+	/* http://meyerweb.com/eric/tools/css/reset/ 
+	v2.0 | 20110126
+	License: none (public domain)
+	*/
 
+	html, body, div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, img, ins, kbd, q, s, samp,
+	small, strike, strong, sub, sup, tt, var,
+	b, u, i, center,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td,
+	article, aside, canvas, details, embed, 
+	figure, figcaption, footer, header, hgroup, 
+	menu, nav, output, ruby, section, summary,
+	time, mark, audio, video{
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+	}
+	/* HTML5 display-role reset for older browsers */
+	article, aside, details, figcaption, figure, 
+	footer, header, hgroup, menu, nav, section {
+		display: block;
+	}
+	body {
+		line-height: 1;
+	}
+	ol, ul {
+		list-style: none;
+	}
+	blockquote, q {
+		quotes: none;
+	}
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+		content: '';
+		content: none;
+	}
+	table {
+		border-collapse: collapse;
+		border-spacing: 0;
+	}
+
+	/* Set every element's box-sizing to border-box */
+	* {
+		box-sizing: border-box;
+
+	}
+
+	html, body {
+		height: 100%;
+		font-family: 'Titillium Web', sans-serif;
+	}
+
+	h1, h2, h3, h4, h5 {
+		font-family: 'Bangers', cursive;
+		letter-spacing: 1px;
+		margin-bottom: 15px;
+	}
+
+/* Your code starts here! */
+
+/* index focused css*/
+
+body{
+	display:flex;
+	flex-direction: column;
+    padding:10%; 
+}
+a{
+	text-decoration: none;
+    color: grey;
+    padding: 0 5%;
+    flex-wrap: nowrap; 
+    justify-content: space-between;
+}
+a:hover{
+	color:black;
+	text-shadow: darkslategray;
+}
+
+nav{
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 100%;
+    min-width:45%;
+	align-items: center;
+    color:grey;
+    white-space: nowrap;
+    padding-bottom: 7vh;
+}
+
+.links{
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+a:last-child{
+    padding: 0 50% 0 0
+}
+
+.logo{
+	display:flex;
+	width: 200px
+}
+
+section{
+	width:100%
+}
+.sec1{
+	display: flex;
+	align-items: center;
+	word-spacing: 3em;
+    padding-bottom:30px;
+    justify-content: space-around;
+}
+.header50{
+	display:flex;
+	padding-left:1%;
+	padding-right: 1%;
+	flex-direction: column;
+	align-items: center;
+}
+.button{
+	border-style: solid;
+	border-color:black;
+	border-width: 1px;
+	text-align:center;
+	padding:.5%;
+	word-spacing: 1px;
+	margin: 0 35% 0
+}
+
+.services-header-img{
+	display: flex;
+	flex-grow: 1;
+	justify-content: center;
+	padding-bottom: 20px; 
+	margin-bottom: 20px;
+}
+.sec2{
+	display: flex;
+	justify-content: space-between;
+	border-top-style:solid;
+	border-top-color:black;
+	border-top-width: 1px;
+	padding-top: 2em;
+	padding-bottom: 30px
+}	
+.sec3{
+	display: flex;
+	padding-top: 2em;
+	padding-bottom: 30px
+}
+.sec4{
+	display: flex;
+	justify-content: space-between;
+	border-bottom-style:solid;
+	border-bottom-color:black;
+	border-bottom-width: 1px;
+	margin-bottom: 2em;
+	padding-bottom: 2em;
+}
+
+.smbox50{
+	display:flex;
+    flex-direction: column;
+    padding: 0 2% 0 0 
+}
+.smbox33{
+	display:flex;
+	text-align:left;
+    flex-direction: column;
+    padding: 0 1% 0 0
+}
+
+h1{
+	font-size:5em;
+	display: flex;
+	flex-wrap: wrap;
+	text-align:center;
+}
+
+h2{
+	font-style: italic;
+	font-style: bold;
+}
+
+.middle-img{
+	display:flex;
+	width:100%
+}
+
+footer{
+	display:flex;
+	justify-content: space-evenly;
+}
+
+.foot{
+	display:flex;
+	flex-direction: column;
+}
+
+.sec2w{
+	display: flex;
+	align-content: column;
+	padding-bottom: 30px
+}
+
+.wrapper{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-content: space-evenly;
+	padding: 1em;
+	border-top-style:solid;
+	border-top-color:black;
+	border-top-width: 1px;
+}
+
+.box{
+	border-width: 1px;
+	border-color:black;
+	border-style:solid;
+	background-color: rgb(245, 243, 241);
+	display: flex;
+	justify-content: flex-start;
+	width: 300px
+}
+
+.lm{
+	border-width: 1px;
+	border-color:black;
+	border-style:solid;
+	padding:10px;
+	display: flex;
+	justify-content: space-evenly;
+	width: 150px;
+	background-color:white;
+}	
+
+.boxp{
+	display: flex;
+	justify-content: flex-start;
+}
+
+.boxh3{
+
+}
+
+.lm{
+	padding: 5px;
+	display: flex;
+	justify-content: space-evenly;
+	width: 150px;
+	background-color:white;
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    body{
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 auto;
+    }
+    nav{ 
+        flex-direction: column-reverse;
+        text-align: center;
+        min-height: 10vh;
+        justify-content: space;
+    }
+
+    .links{
+        width:100%;
+        flex-direction: row;
+        text-align: center;
+    }
+    a:last-child{
+        padding: 0;
+    }
+
+    .logo{
+        padding: 0 0 3vh 0
+    }
+    a{
+        width: 100%;
+        padding: 0 4% 0
+    }
+    
+    #circle-img{
+        display: none;
+    }
+
+    .sec1{
+        width: 100%;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-items: center;
+    
+    }
+    
+    .header50{
+        padding: 0 0 5vh 0
+    }
+
+    .smbox50{
+        padding: 0 5% 0 0 
+    }
+
+    .smbox33{
+        padding: 0 5% 0 0
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px){
+
+    body{
+        justify-content: flex-start;
+        align-content: flex-start;
+    
+    }
+    
+    nav{ 
+    flex-direction: column-reverse;
+    text-align: center;
+    }
+
+    .link{
+        width: 100%;
+        padding: 0 4% 0;
+        border-bottom: solid black 2px;
+        flex-direction: column;
+        }
+
+    }
+    a{
+        width: 100%;
+        padding: 0 4% 0;
+        border-bottom: solid black 2px;
+        flex-direction: column;
+        }
+    
+    img{
+        display: none;
+    }
+
+    .sec1{
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    }
+}
 
