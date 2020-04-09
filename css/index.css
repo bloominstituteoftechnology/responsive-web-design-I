@@ -81,15 +81,19 @@ nav {
 display:flex;
 justify-content: space-evenly;
 width:90%;
+
 }
+nav a{
+    color:grey;
+text-decoration-line: none;}
 
 p{
     padding:5px;
 }
 
 .sec1{
-	margin:5%;
-	width:100%;	
+	margin:auto;
+	width:70%;	
     display:flex;
     
 }
@@ -106,7 +110,7 @@ p{
     flex-direction:column;
     justify-content:center;
     align-items:center;
-	padding:auto;
+	
 	
 }
 
@@ -120,7 +124,6 @@ h1{
 button{
 	width:160px;
 	height:40px;
-	border-radius:10px;
 }
 
 .sec2 {
@@ -271,7 +274,6 @@ header{
     display:flex;
     justify-content:center;
     align-items:center;
-    border:1px solid blue;
     text-align:center;
  }
 
@@ -289,11 +291,32 @@ header{
 
 @media(max-width:500px){
 
-    .sec1 section{
-        width:90%
-    }
-    .sec2 section{
-        width: 90%;
+    nav{
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        text-align:center;
     }
 
+    nav a {
+        padding:4%;
+        margin:auto;
+        width:100%;
+        display:inline-block;
+        border-bottom:1px solid grey;
+        align-self:center;
+        
+    }
+    .sec1 section{
+        width:90%;
+        padding:5% 0% 5% 0%;
+    }
+
+    .sec2 section{
+        flex-direction:column;
+        width: 90%;
+    }
+    .sec2 section {
+        padding-bottom:4%;
+    }
 }
