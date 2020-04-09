@@ -148,6 +148,9 @@ h5 {
   letter-spacing: 1px;
   margin-bottom: 15px;
 }
+a {
+  text-decoration: none;
+}
 
 .homepageContainer {
   width: 90%;
@@ -164,8 +167,12 @@ h5 {
 }
 .navigation a {
   width: 13%;
-  text-decoration: none;
   color: darkgray;
+}
+.navspecial {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
 }
 /**************Header STYLES*******************/
 
@@ -183,13 +190,13 @@ h5 {
   align-items: flex-end;
   width: 50%;
 }
-.headtext button {
+#button {
   border: 1px solid black;
   background: white;
   font-size: medium;
   font-weight: bold;
   padding: 1% 5%;
-  margin-right: 13%;
+  /* margin-right: 13%; */
 }
 .headtext h1 {
   font-size: 60px;
@@ -199,10 +206,8 @@ h5 {
   width: 50%;
   display: flex;
   justify-content: flex-end;
-  margin: ;
 }
-button {
-}
+
 /**************Middle STYLES*******************/
 .middlecontent {
   display: flex;
@@ -257,6 +262,9 @@ h2 {
   flex-direction: column;
   justify-content: space-evenly;
 }
+.bottomcontent a {
+  color: black;
+}
 /**************Footer STYLES*******************/
 footer {
   text-align: center;
@@ -266,12 +274,15 @@ footer {
 /**************Media queries 800**************/
 @media (max-width: 800px) {
   .navigation {
-    height: 25vh;
+    height: 15vh;
     justify-content: space-evenly;
     flex-wrap: wrap-reverse;
   }
   .navigation a {
     align-self: flex-end;
+  }
+  .navspecial {
+    width: 100%;
   }
   .logo {
     margin: 3% auto;
@@ -279,7 +290,8 @@ footer {
   }
   .headcontainer {
     justify-content: center;
-    margin: 10% 0;
+    margin: 5% 0;
+    padding: 5% 0;
   }
   .headimage {
     display: none;
@@ -293,6 +305,7 @@ footer {
   .headtext button {
     align-self: center;
     margin: 0;
+    padding: 0.5% 4%;
   }
 }
 /**************Media queries 500**************/
@@ -300,18 +313,31 @@ footer {
   .homepageContainer {
     margin: 0;
     align-content: center;
+    width: 100%;
   }
   .navigation {
+    height: 300px;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+  }
+  .navspecial {
     display: flex;
-    height: 50hv;
+    flex-direction: column;
+    justify-content: space-between;
+    border-top: 1px solid grey;
+  }
+  .logo {
+    margin: 0;
+    align-self: center;
   }
 
   .navigation a {
     width: 100%;
+    height: 5vh;
+    display: flex;
     border-bottom: 1px solid grey;
-    text-align: center;
-    align-self: center;
-    margin: 2% 0;
+    align-items: center;
+    justify-content: center;
   }
   .headcontainer {
     margin: 0;
@@ -319,21 +345,27 @@ footer {
   .headcontainer h1 {
     font-size: 48px;
   }
+  #button {
+    font-size: small;
+    padding: 0.5% 4%;
+  }
   .middlecontent {
-    /* width: 50vh; */
     justify-content: center;
     margin: 0 auto;
     flex-flow: row wrap;
+    border: none;
   }
   .toptext {
     flex-direction: column;
     align-content: space-between;
     width: 90%;
+    border-top: 2px solid black;
   }
   .bottomtext {
     width: 90%;
     flex-direction: column;
     align-content: space-between;
+    border-bottom: 2px solid black;
   }
   .feat {
     width: 100%;
@@ -357,6 +389,13 @@ footer {
   }
   .middlecontent img {
     width: 90%;
+  }
+  .bottomcontent {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .bottomcontent a {
+    font-weight: bold;
   }
   h2 {
     margin-bottom: 2%;
