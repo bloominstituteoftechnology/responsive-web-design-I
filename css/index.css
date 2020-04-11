@@ -66,29 +66,43 @@ h1, h2, h3, h4, h5 {
 
 /* Your code starts here! */
 /*Making the Top Part of Menu Container*/
-.navigation {
+
+.mnu-link{
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
+  width: 100%; 
+  text-align: center;
+} 
+/*The Menu Links*/
+.container-box header nav {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
   align-content: flex-start;
+  margin-bottom: 20px;
   padding: 10px 0px 5px 0px;
   background: white;
 }
+
+.great-idea-logo{
+  display: flex;
+  justify-content: flex-end;
+}
+
 /*The main full size container*/
 .container-box {
   margin: 0 auto;
   width: 880px;
+  max-width: 1080px;
 }
 /*Menu itself*/
-.navigation a {
+nav a {
   text-decoration: none;
-  display: block;
+  display: flex;
   padding: 1em;
   color: gray;
 }
 
-.navigation a:hover {
+nav a:hover {
   background:gray;
   color: white;
 }
@@ -100,9 +114,10 @@ h1, h2, h3, h4, h5 {
 /* Defining the main-heading class */
 .mai-heading {
   display: flex;
-  justify-content: center;
+  text-align: center;
+  justify-content: space-around;
 }
-.mai-heading .mh-itmone{
+.mai-heading .mh-itmone .mh-itmtwo{
   display: flex;
   flex-direction: column;
   align-self: center;
@@ -122,7 +137,7 @@ h1{
   padding: 0 10px;
   justify-content: space-evenly
 }
- /*Same clas used to format paragraph content */
+ /*Same class used to format paragraph content */
 .desc-txt{
   width: 425px;
   margin-right: 34px;
@@ -150,3 +165,25 @@ footer{
   font-size: 15px;
   margin: 32px 0;
 }
+
+
+  /*Tablet @ 800PX*/
+@media(max-width: 800px) {
+  header nav {
+    display:  flex;
+    flex-direction:  column-reverse; 
+  }
+
+  .mnu-link {
+  display: flex;
+  justify-content: space-evenly;
+      width: 100%;
+  margin-top: 5%;    
+  }
+
+  .mai-heading img {
+      display: none;
+  }
+
+}
+
