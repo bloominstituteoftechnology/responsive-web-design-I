@@ -67,13 +67,14 @@ h1, h2, h3, h4, h5 {
 /* Your code starts here! */
 /*Making the Top Part of Menu Container*/
 
-.mnu-link{
+/*The Menu Links*/
+.nav-mnu-link{
   display: flex;
   width: 100%; 
   text-align: center;
 } 
-/*The Menu Links*/
-.container-box header nav {
+
+.cont header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -89,7 +90,7 @@ h1, h2, h3, h4, h5 {
 }
 
 /*The main full size container*/
-.container-box {
+.cont {
   margin: 0 auto;
   width: 880px;
   max-width: 1080px;
@@ -106,18 +107,15 @@ nav a:hover {
   background:gray;
   color: white;
 }
-/*First and second Logo Aligned to right most*/
-.logo .logo2{
-  justify-content: flex-end;
-}
 
-/* Defining the main-heading class */
-.mai-heading {
+/* Defining the cont-heading class */
+.cont-heading {
   display: flex;
   text-align: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
-.mai-heading .mh-itmone .mh-itmtwo{
+/* Defining the item-one and item-two class */
+.item-one .item-mtwo{
   display: flex;
   flex-direction: column;
   align-self: center;
