@@ -75,12 +75,13 @@ body{
 	flex-direction: column;
     padding:10%; 
 }
+
 a{
 	text-decoration: none;
     color: grey;
     padding: 0 5%;
-    flex-wrap: nowrap; 
-    justify-content: space-between;
+    flex-wrap: nowrap;
+
 }
 a:hover{
 	color:black;
@@ -95,21 +96,20 @@ nav{
     min-width:45%;
 	align-items: center;
     color:grey;
-    white-space: nowrap;
-    padding-bottom: 7vh;
+	padding-bottom: 7vh;
+	justify-content: space-evenly;
 }
 
 .links{
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 a:last-child{
-    padding: 0 50% 0 0
+    padding: 0 0 0 0
 }
 
 .logo{
-	display:flex;
 	width: 200px
 }
 
@@ -253,10 +253,6 @@ footer{
 	justify-content: flex-start;
 }
 
-.boxh3{
-
-}
-
 .lm{
 	padding: 5px;
 	display: flex;
@@ -265,6 +261,15 @@ footer{
 	background-color:white;
 }
 
+@media (min-width: 1025px){
+	nav{
+		white-space: nowrap;
+		padding-right: 2rem;
+		width: 100%;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+}
 @media (min-width: 768px) and (max-width: 1024px){
     body{
         width: 100%;
@@ -320,42 +325,71 @@ footer{
     }
 }
 
-@media (min-width: 320px) and (max-width: 480px){
+@media (max-width: 767px){
 
     body{
+		display: flex;
+		flex-direction: column;
         justify-content: flex-start;
         align-content: flex-start;
-    
-    }
-    
+	}
+	
     nav{ 
-    flex-direction: column-reverse;
-    text-align: center;
-    }
+		flex-flow: column wrap;
+		text-align: center;
+		height: 60vh;
+		justify-content: flex-start;
+		align-content: center;
+		width: 100%;
+		min-width: 0;
+		white-space: pre-wrap;
+		padding-bottom: 7vh;
+	}
 
-    .link{
-        width: 100%;
-        padding: 0 4% 0;
-        border-bottom: solid black 2px;
-        flex-direction: column;
-        }
-
-    }
-    a{
-        width: 100%;
-        padding: 0 4% 0;
-        border-bottom: solid black 2px;
-        flex-direction: column;
-        }
+    a{ 
+		border-bottom: solid black 1px;
+		font-size: 1.5rem;
+		line-height: 3rem;
+		width: 10rem
+	}
+	
+	.links:first-child{
+		margin-top: 1rem
+	}
     
-    img{
-        display: none;
-    }
+	#circle-img{
+		display: none;
+	}
 
     .sec1{
-    width: 100%;
-    justify-content: space-around;
-    align-items: center;
-    }
+		width: 100%;
+		justify-content: space-around;
+		align-items: center;
+		flex-direction: column;
+		}
+
+	.sec2{
+		flex-direction: column;
+		align-items: center;
+		/* word-spacing: 3em; */
+		justify-content: space-around;
+	}
+	
+	.smbox50:first-child{
+		padding-bottom: 3rem
+	}
+	
+	.sec4{
+		flex-direction: column;
+		align-items: center;
+		/* word-spacing: 3em; */
+		justify-content: space-around;
+	}
+
+	.smbox33{
+		padding-bottom: 3rem
+	}
+
 }
+
 
