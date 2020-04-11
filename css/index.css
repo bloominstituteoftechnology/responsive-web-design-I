@@ -335,28 +335,36 @@ footer{
 	}
 	
     nav{ 
-		flex-flow: column wrap;
+		display: flex;
+		flex-direction: column;
 		text-align: center;
 		height: 60vh;
 		justify-content: flex-start;
 		align-content: center;
 		width: 100%;
 		min-width: 0;
-		white-space: pre-wrap;
-		padding-bottom: 7vh;
+		/* white-space: pre-wrap; */
+		/* padding-bottom: 7vh; */
+	}
+
+	.links{
+		display: flex;
+		flex-direction: column-reverse;
+		width: 100%
 	}
 
     a{ 
 		border-bottom: solid black 1px;
 		font-size: 1.5rem;
 		line-height: 3rem;
-		width: 10rem
+		padding: 0 20% 0 20%
+
 	}
 	
 	.links:first-child{
-		margin-top: 1rem
+		margin-top: 1rem;
 	}
-    
+	
 	#circle-img{
 		display: none;
 	}
