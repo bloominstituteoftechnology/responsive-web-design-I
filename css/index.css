@@ -72,27 +72,28 @@ h1, h2, h3, h4, h5 {
   display: flex;
   width: 100%; 
   text-align: center;
+  justify-content: space-evenly;
 } 
-
+/*The nav with in the header */
 .cont header nav {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  align-content: flex-start;
-  margin-bottom: 20px;
-  padding: 10px 0px 5px 0px;
+  margin: 20px 20px;
+  padding: 30px;
   background: white;
+  justify-content: space-evenly;
 }
 
 .great-idea-logo{
   display: flex;
   justify-content: flex-end;
+
 }
 
-/*The main full size container*/
+/*The main full size container */
 .cont {
   margin: 0 auto;
-  width: 880px;
+  width: 100%;
   max-width: 1080px;
 }
 /*Menu itself*/
@@ -102,9 +103,26 @@ nav a {
   padding: 1em;
   color: gray;
 }
-
+/*Menu color change on focus defined*/
 nav a:hover {
   background:gray;
+  color: white;
+}
+
+/*Defining the button for get started*/
+
+.item-one a{
+  border: 1px solid black;
+  padding: 0px 10px 0px 10px;
+  text-decoration: none;
+  font-size: 16px;
+  min-width: 16px;
+  max-width: 17px;
+}
+
+/*item one back ground annd text color change on focus defined*/
+.item-one a:hover{
+  background-color: cornflowerblue;
   color: white;
 }
 
@@ -112,16 +130,18 @@ nav a:hover {
 .cont-heading {
   display: flex;
   text-align: center;
+  align-items: center;
   justify-content: space-evenly;
 }
 /* Defining the item-one and item-two class */
-.item-one .item-mtwo{
+.item-one .item-two{
   display: flex;
   flex-direction: column;
-  align-self: center;
   text-align: center;
   padding-right: 8em;
+  align-content: center;
 }
+
 h1{
   font-size: 75px;
 }
@@ -172,16 +192,55 @@ footer{
     flex-direction:  column-reverse; 
   }
 
-  .mnu-link {
+  .nav-mnu-link {
   display: flex;
   justify-content: space-evenly;
       width: 100%;
   margin-top: 5%;    
   }
-
-  .mai-heading img {
+  .cont-heading img {
       display: none;
   }
+  .cont-heading{
+      justify-content: center;
+    }
+  }
 
+/*Phones*/
+@media(max-width: 500px) {
+  .cont{
+    display: flex;
+    flex-direction: column;
+  }
+
+  header nav {
+    display: flex;
+    flex-direction: column-reverse;
+   }
+
+  .nav-mnu-link {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+   }
+   header nav a {
+     padding: 15px;
+     border-bottom: 1px solid black;
+   }
+   
+.cont nav a {
+ 	width: 100%; 
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
+header nav a:hover{
+  color: black;
+  background-color: lightblue;
+  font-weight: bold;
+}
+}
