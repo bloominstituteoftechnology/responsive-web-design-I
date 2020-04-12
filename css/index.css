@@ -1,3 +1,246 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+/*Making the Top Part of Menu Container*/
+
+/*The Menu Links*/
+.nav-mnu-link{
+  display: flex;
+  width: 100%; 
+  text-align: center;
+  justify-content: space-evenly;
+} 
+/*The nav with in the header */
+.cont header nav {
+  display: flex;
+  align-items: center;
+  margin: 20px 20px;
+  padding: 30px;
+  background: white;
+  justify-content: space-evenly;
+}
+
+.great-idea-logo{
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+/*The main full size container */
+.cont {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1080px;
+}
+/*Menu itself*/
+nav a {
+  text-decoration: none;
+  display: flex;
+  padding: 1em;
+  color: gray;
+}
+/*Menu color change on focus defined*/
+nav a:hover {
+  background:gray;
+  color: white;
+}
+
+/*Defining the button for get started*/
+
+.item-one a{
+  border: 1px solid black;
+  padding: 0px 10px 0px 10px;
+  text-decoration: none;
+  font-size: 16px;
+  min-width: 16px;
+  max-width: 17px;
+}
+
+/*item one back ground annd text color change on focus defined*/
+.item-one a:hover{
+  background-color: cornflowerblue;
+  color: white;
+}
+
+/* Defining the cont-heading class */
+.cont-heading {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+/* Defining the item-one and item-two class */
+.item-one .item-two{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-right: 8em;
+  align-content: center;
+}
+
+h1{
+  font-size: 75px;
+}
+.middle-sec{
+  border-top: 1px solid black;
+  margin-top: 75px;
+  padding-top: 40px; ;
+}
+.middle-sec .mid-top-con{
+  display: flex;
+  padding: 0 10px;
+  justify-content: space-evenly
+}
+ /*Same class used to format paragraph content */
+.desc-txt{
+  width: 425px;
+  margin-right: 34px;
+}
+.middle-sec .midsec-img{
+  margin-top: 45px;
+  width: 100%;
+  align-items: center;
+}
+.mid-bott-con{
+  display: flex;
+  padding: 45px 0;
+  justify-content: center;
+  border-bottom: 1px solid black;
+}
+.mid-bott-con .desc-txt{
+  width: 325px;
+  margin-right: 60px;
+}
+.contact{
+  padding: 39px 10px 0;
+}
+footer{
+  text-align: center;
+  font-size: 15px;
+  margin: 32px 0;
+}
 
 
+  /*Tablet @ 800PX*/
+@media(max-width: 800px) {
+  header nav {
+    display:  flex;
+    flex-direction:  column-reverse; 
+  }
+
+  .nav-mnu-link {
+  display: flex;
+  justify-content: space-evenly;
+      width: 100%;
+  margin-top: 5%;    
+  }
+  .cont-heading img {
+      display: none;
+  }
+  .cont-heading{
+      justify-content: center;
+    }
+  }
+
+/*Phones*/
+@media(max-width: 500px) {
+  .cont{
+    display: flex;
+    flex-direction: column;
+  }
+
+  header nav {
+    display: flex;
+    flex-direction: column-reverse;
+   }
+
+  .nav-mnu-link {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+   }
+   header nav a {
+     padding: 15px;
+     border-bottom: 1px solid black;
+   }
+   
+.cont nav a {
+ 	width: 100%; 
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+header nav a:hover{
+  color: black;
+  background-color: lightblue;
+  font-weight: bold;
+}
+}
