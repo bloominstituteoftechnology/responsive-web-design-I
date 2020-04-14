@@ -156,159 +156,145 @@ h5 {
 
 /* Your code starts here! */
 
-/* ************DESKTOP VIEW************ */
-
 * {
   color: black;
 }
 
-.container {
-  padding: 0 5%;
-}
+/* **********MOBILE-FIRST VIEW***********/
 
 .headernav {
   display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-  padding: 20px 0;
-  margin: 0;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  width: 50%;
+  padding: 0;
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
-  background-color: lightblue;
+  background-color: yellow;
 }
 
-.headernav a {
-  text-decoration: none;
-  color: rgb(180, 179, 179);
+.logo img {
   width: 100%;
-  padding: 20px 0;
-  /* text-align: center; */
 }
 
 .nav-links {
   display: flex;
+  flex-direction: column;
   width: 100%;
-  /* text-align: center; */
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+
+.headernav a {
+  border-top: 1px solid black;
+  padding: 20px 0;
+  text-decoration: none;
 }
 
 .headernav a:hover {
-  color: lightcoral;
-  background-color: lightblue;
+  color: white;
+  background-color: seagreen;
 }
 
 .center {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin: 5%;
   text-align: center;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  font-family: "Bangers", cursive;
+  font-weight: bold;
+  align-items: center;
 }
 
-.center h1 {
-  font-size: 75px;
+.center-motto-button h1 {
+  width: 100%;
+  font-size: 3em;
 }
 
-.center a {
+.center-motto-button a {
   font-size: 14px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   border: 1px solid black;
-  padding: 10px 0;
-  text-decoration: none;
-  width: 50%;
-}
-
-.center-motto-button {
-  width: 50%;
-}
-
-.center-motto-button h1 {
-  font-size: 7em;
-}
-
-.center-motto-button a {
-  font-size: 1.5rem;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  border: 1px solid black;
-  padding: 2% 10%;
+  padding: 10px;
   text-decoration: none;
 }
 
-.center a:hover {
+.center-motto-button a:hover {
   background-color: blueviolet;
+  color: white;
 }
 
 .center-img {
-  display: block;
-  width: 50%;
-}
-
-.center-img img {
-  width: 75%;
-}
-
-.copyright {
-  text-align: center;
-  padding: 20px;
+  display: none;
 }
 
 .container-content {
+  padding: 5%;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
-  padding: 2% 0 0 0;
-}
-
-.container-content h3 {
-  text-align: left;
+  margin-top: 10%;
 }
 
 .content-features-about {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.content-features-about > * {
-  width: 48%;
-  padding: 2% 0;
+  flex-direction: column;
 }
 
 .content-service-product-vison {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.content-service-product-vison > * {
-  width: 32%;
-  margin-bottom: 5%;
+  flex-direction: column;
 }
 
 .content-img {
   width: 100%;
-  padding: 2% 0;
 }
 
-/* *********TABLET VIEW********* */
+.contact-section {
+  padding: 5%;
+}
 
-@media (max-width: 1000px) {
+.contact-section h3 {
+  margin-top: 10%;
+  padding: 0;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+
+/* .contact-section h3 {
+  text-align: center;
+} */
+
+/* **********TABLET VIEW ********** */
+
+@media (min-width: 500px) {
   .container {
-    padding: 0 5%;
+    padding: 5%;
   }
 
   .headernav {
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding: 0;
     margin: 0;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    background-color: lightblue;
   }
 
   .logo {
     width: 25%;
-    margin: 5% 0;
+    padding: 0;
   }
 
   .logo img {
@@ -325,7 +311,107 @@ h5 {
   }
 
   .headernav a {
+    border-top: 0;
+    padding: 20px 0;
     text-decoration: none;
+  }
+
+  .headernav a:hover {
+    color: seagreen;
+    background-color: white;
+  }
+
+  .center-motto-button h1 {
+    font-size: 3em;
+  }
+
+  .center-motto-button a {
+    font-size: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    border: 1px solid black;
+    padding: 10px;
+    text-decoration: none;
+  }
+
+  .container-innovation img {
+    display: none;
+  }
+
+  .container-content {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 5% 0 5% 0;
+  }
+
+  .content-features-about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .content-features-about > * {
+    width: 48%;
+    margin-bottom: 5%;
+  }
+
+  /* .features {
+    width: 48%;
+  }
+
+  .about {
+    width: 48%;
+  } */
+
+  .content-img {
+    width: 100%;
+    padding: 5% 0 5% 0;
+  }
+
+  .content-service-product-vison {
+    display: flex;
+    flex-direction: row;
+    /* padding: 5%; */
+
+    justify-content: space-between;
+  }
+
+  .content-service-product-vison > * {
+    width: 32%;
+  }
+
+  .contact-section {
+    padding: 0%;
+  }
+
+  .contact-section h3 {
+    margin-top: 5%;
+    padding: 0;
+  }
+
+  .copyright {
+    text-align: center;
+    margin-top: 5%;
+  }
+}
+
+/* *********DESKTOP VIEW********* */
+
+@media (min-width: 1000px) {
+  .container {
+    padding: 0 5%;
+  }
+
+  .headernav {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    background-color: lightblue;
   }
 
   .headernav a:hover {
@@ -333,123 +419,40 @@ h5 {
     background-color: lightblue;
   }
 
+  .logo {
+    margin: 0 0 0 5%;
+  }
+
+  .center-img {
+    display: block;
+    width: 50%;
+  }
+
   .center-img img {
-    display: none;
+    width: 75%;
   }
 
   .center {
     display: flex;
-    text-align: center;
-    justify-content: space-around;
-    display: flex;
-    flex-direction: column;
-    font-family: "Bangers", cursive;
-    font-weight: bold;
-    align-items: center;
-  }
-
-  .center-motto-button h1 {
-    width: 100%;
-    font-size: 3em;
-  }
-
-  .center-motto-button a {
-    font-size: 1rem;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    border: 1px solid black;
-    padding: 2%;
-    text-decoration: none;
-  }
-
-  .content-img {
-    width: 100%;
-    padding: 5% 0 5% 0;
-  }
-}
-
-/* *********MOBILE VIEW********* */
-
-@media (max-width: 500px) {
-  .container {
-    padding: 5%;
-  }
-
-  .headernav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    top: 0;
-    background-color: transparent;
-  }
-
-  .logo {
-    width: 50%;
-    padding: 0;
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
-    background-color: transparent;
-  }
-
-  .logo img {
-    width: 100%;
-  }
-
-  .nav-links {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    text-align: center;
-    border-bottom: 1px solid black;
-  }
-
-  .headernav a {
-    border-top: 1px solid black;
-    padding: 20px 0;
-    text-decoration: none;
-  }
-
-  .headernav a:hover {
-    color: white;
-    background-color: seagreen;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 5%;
   }
 
   .center-motto-button {
-    width: 100%;
+    width: 50%;
   }
 
-  .center-img {
-    display: none;
+  .center-motto-button h1 {
+    font-size: 7em;
   }
 
-  .content-features-about {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .content-service-product-vison {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .container-innovation img {
-    display: none;
-  }
-
-  .content-features-about > * {
-    width: 100%;
-    padding: 2% 0;
-  }
-
-  .content-service-product-vison > * {
-    width: 100%;
-    margin-bottom: 5%;
-  }
-
-  .contact-section h3 {
-    margin-bottom: 0;
-    padding-bottom: 0;
+  .center-motto-button a {
+    font-size: 1.5rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    border: 1px solid black;
+    padding: 2% 10%;
+    text-decoration: none;
   }
 }
