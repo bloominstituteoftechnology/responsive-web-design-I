@@ -431,3 +431,33 @@ address {
   margin-left: 20px;
 }
 
+too-small{
+  display:none;
+}
+/* IF TOO SMALL */
+@media(max-width:225px){
+  .container{
+    display: none;
+  }
+  section{
+    display: none;
+  }
+  .body{
+    display: none;
+  }
+  .top-content{
+    display: none;
+  }
+  .bottom-content{
+    display: none;
+  }
+   .contact{
+    display: none;
+  }
+  .footer{
+    display: none;
+  }
+  too-small{
+    display: flex;
+  }
+}
