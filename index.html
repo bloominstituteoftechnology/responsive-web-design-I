@@ -6,9 +6,18 @@
   <title>Great Idea - Responsive I</title>
 
   <link href="https://fonts.googleapis.com/css?family=Bangers|Titillium+Web" rel="stylesheet">
-  <link rel="stylesheet" href="css/index.css">
+
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- 2 stylesheet, comment out one for the other -->
+
+        <!-- desktop-first view -->
+  <link rel="stylesheet" href="./css/index.css">
+
+        <!-- mobile-first view -->
+  <!-- <link rel="stylesheet" href="./mobile-first/index-mobile-first.css"> -->
+ 
 
 
   <!--[if lt IE 9]>
@@ -22,46 +31,63 @@
   
    
   
-  <header>
-    
-          <nav>
 
-            <div class="nav-links">
-                <a href="#"> Services</a>
-                <a href="#">Product</a>
-                <a href="#">Vision</a>
-                <a href="#">Features</a>
-                <a href="#">About</a>
-                <a href="#">Contact</a>
+
+
+
+
+            <div class="headernav">
+
+              <div class="logo">
+                <img  src="img/logo.png" alt="Great Idea! Company logo."/>
+              </div>
+                
+  
+              <div class="nav-links">
+                  <a href="#"> Services</a>
+                  <a href="#">Product</a>
+                  <a href="#">Vision</a>
+                  <a href="#">Features</a>
+                  <a href="#">About</a>
+                  <a href="#">Contact</a>
+              </div>
+  
+
             </div>
 
-
-              <img class="logo" src="img/logo.png" alt="Great Idea! Company logo."/>
-
-          </nav>
+            
   
-  
-   <div class="container-innovation">
   
   
         
       <div class="center">
-  
-            <h1>Innovation<br>
+
+        <div class="center-motto-button">
+          
+              <h1>Innovation<br>
                 On<br>
                 Demand</h1>
-       
+        
       
-        <a href="#">
-            Get Started
-        </a>
-  
+                <a href="#">
+                  Get Started
+                </a>
+    
+        </div>
+
+        <div class="center-img">
+          <img src="img/header-img.png" alt="Image of a code snippet." style= "float: right;"/>          
+        </div>
+
+
+
+
       </div>
   
-        <img src="img/header-img.png" alt="Image of a code snippet." style= "float: right;"/>
+        
   
-    </div>
-  </header>
+
+
   
   
   <div class="container-content">
@@ -89,7 +115,7 @@
     </div>
   
   
-    <img class="middle-img" src="img/mid-page-accent.jpg" alt="Image of code snippets across the screen">
+    <img class="content-img" src="img/mid-page-accent.jpg" alt="Image of code snippets across the screen">
    
   
   
@@ -144,7 +170,7 @@
   
   <section class="copyright">
     <p>
-       Copyright Great Idea! 2018
+       &copy Great Idea! 2018
     </p>
   </section>
   
