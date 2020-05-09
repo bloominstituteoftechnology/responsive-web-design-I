@@ -1,0 +1,480 @@
+/* Use your own code or past solution for Great Idea Web Page CSS here! */
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Bangers', cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+/* ====================================== Home Section (index.html) ====================================== */
+
+.container {
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+header {
+  /* width: 100%; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 35px 0 20px;
+  width: 100%;
+}
+
+header nav a {
+  text-decoration: none;
+  color: black;
+  padding-top: 15px;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+  color: #b0b0b0;
+}
+
+header .logo {
+  margin: 30px 0 0 91px;
+}
+
+/* End of Menu Section */
+
+
+/* <!-- Start of  Jumbotron Section --> */
+.jumbotron-container {
+  margin: 0 auto;
+  display: flex;
+  border-bottom: 1px solid black;
+  padding-bottom: 20px;
+}
+
+.jumbotron-container .jumbotron-text {
+  vertical-align: top;
+  font-size: 77px;
+  margin-top: 120px;
+  text-align: center;
+  padding: 0px 75px;
+}
+
+.jumbotron-container button {
+  background: white;
+  vertical-align: top;
+  margin-top: 6px;
+  padding: 8px 44px;
+  font-size: 17px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.jumbotron-container .logo1 {
+  margin-top: 69px;
+}
+
+/*  End of  Jumbotron Section */
+
+
+/* Start of  Main Section*/
+.top-main-container {
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row nowrap;
+  padding-top: 20px;
+}
+
+.top-main-container {
+  padding: 10px;
+}
+
+.figure-main-container {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.bottom-main-container {
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  border-bottom: 1px solid black;
+}
+
+.bottom-main-container {
+  padding: 10px;
+}
+
+/* End of Main Section */
+
+
+/* Start of Contact Section  */
+.contact-container {
+  margin: 0 auto;
+}
+
+.contact-container h2 {
+  margin-top: 15px;
+}
+
+.contact-container address {
+  line-height: 2;
+}
+
+.contact-main-container {
+  padding: 10px;
+}
+
+/*  End of Contact Section  */
+
+/*  Start of Footer Section  */
+footer h5 {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/*  End of Footer Section  */
+
+/* START of tablet media query */
+@media (max-width: 800px) {
+  .container {
+    width: 90%;
+  }
+
+  header {
+    flex-direction: column-reverse;
+  }
+
+  header .logo {
+    margin: 40px 0 0 15px;
+  }
+
+  header nav {
+    margin: 22px 18px 0px 0px;
+    width: 100%;
+  }
+
+  header nav a {
+    display: flex;
+    align-self: center;
+  }
+
+  header nav a:nth-child(1) {
+    order: 1;
+  }
+
+  header nav a:nth-child(2) {
+    order: 2;
+  }
+
+  header nav a:nth-child(3) {
+    order: 3;
+  }
+
+  header nav a:nth-child(4) {
+    order: 4;
+  }
+
+  header nav a:nth-child(5) {
+    order: 5;
+  }
+
+  header nav a:nth-child(6) {
+    order: 6;
+  }
+
+  .jumbotron-container {
+    justify-content: center;
+    padding-bottom: 29px;
+    border-bottom: 2px solid black;
+  }
+
+  .jumbotron-container .jumbotron-text {
+    margin: 70px 2px 0px 27px;
+  }
+
+  .jumbotron-container .jumbotron-text button {
+    background: white;
+    position: relative;
+    right: 4px;
+    bottom: 9px;
+    vertical-align: top;
+    padding: 6px 43px 6px 36px;
+    font-size: 17px;
+    border: px solid black;
+    cursor: pointer;
+  }
+
+  .jumbotron-container .logo1 {
+    display: none
+  }
+
+  .top-main-container .top-main-text1 {
+    margin: 5px 20px 21px 3px;
+    padding: 11px 20px 0px 0px;
+    line-height: 18px;
+    position: relative;
+  }
+
+  .top-main-container .top-main-text2 {
+    margin: 5px 20px 21px 3px;
+    padding: 11px 20px 0px 0px;
+    line-height: 18px;
+    position: relative;
+  }
+
+  .figure-main-container {
+    margin-top: 10px;
+  }
+
+  .figure-main-container .middle-img {
+    max-width: 100%;
+  }
+
+  .bottom-main-container {
+    border-bottom: 2px solid black;
+  }
+
+  .bottom-main-container p {
+    padding: 10px;
+  }
+
+}
+
+/* END of tablet media query */
+
+
+/*  START of mobile media query */
+@media (max-width: 500px) {
+  .container {
+    width: 90%;
+  }
+
+  header nav {
+    width: 90%;
+    flex-direction: column-reverse;
+  }
+
+  header nav a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin-left: 10px;
+    border-bottom: 1px solid black;
+  }
+
+  header nav a:nth-child(1) {
+    order: 6;
+    border-top: 1px solid black;
+  }
+
+  header nav a:nth-child(2) {
+    order: 5;
+  }
+
+  header nav a:nth-child(3) {
+    order: 4;
+  }
+
+  header nav a:nth-child(4) {
+    order: 3;
+  }
+
+  header nav a:nth-child(5) {
+    order: 2;
+  }
+
+  header nav a:nth-child(6) {
+    order: 1;
+
+  }
+
+
+  header .logo {
+    margin: 40px 0 10px 0;
+  }
+
+
+  .jumbotron-container {
+    border-bottom: 2px solid black;
+  }
+
+  .jumbotron-container .jumbotron-text {
+    margin-top: 50px;
+    margin-right: 10px;
+  }
+
+  .top-main-container,
+  .bottom-main-container,
+  .contact-container {
+    width: 90%;
+    flex-direction: column;
+  }
+
+  .top-main-container p,
+  .bottom-main-container p {
+    margin: 25px;
+  }
+}
+
+/*  END of mobile media query */
