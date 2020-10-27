@@ -87,6 +87,11 @@ h1 {
     width: 75%;
    	border: 1px solid gray;
 }
+.containerSer {
+	margin: 0 auto;
+    width: 75%;
+   	border: 1px solid gray;
+}
 
 body {
 	border-color: lightSlateGray;
@@ -95,6 +100,12 @@ body {
   }
   /* This is where the navigation code starts: */
   .tagsPic {
+    display: flex;
+    width: 65%;
+    height: 84%;
+    padding: 0%;
+  }
+  .containerSer .topPic {
     display: flex;
     width: 100%;
     height: 84%;
@@ -113,6 +124,17 @@ body {
   nav .tagsPic {
       display: flex;
       justify-content: space-between;
+
+  }
+  .topPic {
+      display: flex;
+      justify-content: center;
+      width: 80%;
+    
+  }
+  .topPic img {
+      width: 94%;
+      margin-left: 25%;
 
   }
  /* nav a {
@@ -221,27 +243,28 @@ body {
 	margin-top: 2%;
 	margin-left: 20px;
 }
-.topPic img {
-	margin-left: 1%;
-	
-}
+
 .servicesAbout p {
 	padding: 1%;
 	margin-bottom: 4%;
 	margin-top: 10px;
-	margin-left: 20px;
-	margin-right: 20px;
+	margin-left: 12%;
+    margin-right: 15%;
+    width: 80%;
 }
-.container a {
+.containerSer a {
 	margin: 2% 2%;
 	padding: 3%;
 	color: grey;
 	text-decoration: none;
-	border: 5px;
+    border: 5px;
+   
 }
 
 #serviceBox .mainBoxes {
-	display: flex;
+    display: flex;
+    width: 80%;
+    margin-left: 5%;
 	padding: 5%;
 	flex-wrap: wrap;
 	justify-content: space-around;
@@ -300,7 +323,7 @@ footer {
 
     }
     .tagsPic {
-        width: 20%;
+        width: 17%;
         margin-top: 2%;
     }
     .tagsPic a {
@@ -309,12 +332,19 @@ footer {
         margin-top: 30%;
         margin-right: 0;
         padding: 15%;
+        color: grey;
+        text-decoration: none;
     }
     
     .container {
         margin: 0 auto;
         width: 500px;
         border: 1px solid gray;
+    }
+    .container p {
+        text-align: left;
+        
+        margin-left: 2%;
     }
     h1 {
 line-height: 1;
@@ -345,6 +375,8 @@ line-height: 1;
         padding: 0;
         width: 275px;
         margin-top: 7%;
+        color: grey;
+        text-decoration: none;
         display: flex;
         border-bottom: 1px solid grey;
     }
@@ -370,3 +402,16 @@ text-align: left;
         margin-bottom: 10px;
     }
 }
+
+/* Media Querie for Service Page 
+@media (max-width: 800px) {
+    background: yellow;
+    #serviceNav .logo {
+        display: flex;
+        width: 24%;
+        height: 45%;
+        margin-right: 35%;
+        background: yellow;
+
+    }
+}*/
