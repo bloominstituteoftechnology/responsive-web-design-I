@@ -1,3 +1,417 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+ h1,h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+/* Your code starts here! */
+	*{
+        box-sizing: border-box;
+        padding: 0 ;
+        margin: 0;
+        max-width: 100%;
+    
+	}
+/* This is where the heading start: */
+h1 {
+	font-family: 'Bangers', cursive;
+    font-size: 63px;
+    width: 50%;
+    text-align: center;
+    
+}
+.container {
+	margin: 0 auto;
+    width: 75%;
+   	border: 1px solid gray;
+}
+.containerSer {
+	margin: 0 auto;
+    width: 75%;
+   	border: 1px solid gray;
+}
+
+body {
+	border-color: lightSlateGray;
+    color:#3C373B;
+    line-height: 1.5;
+  }
+  /* This is where the navigation code starts: */
+  .tagsPic {
+    display: flex;
+    width: 65%;
+    height: 84%;
+    padding: 0%;
+  }
+  .containerSer .topPic {
+    display: flex;
+    width: 100%;
+    height: 84%;
+    padding: 0%;
+  }
+  .logo {
+      width: 15%;
+      height: 10%;
+      margin-top: 3%;
+      margin-right: 0;
+  }
+  nav {
+      display: flex;
+      justify-content: space-between;
+  }
+  nav .tagsPic {
+      display: flex;
+      justify-content: space-between;
+
+  }
+  .topPic {
+      display: flex;
+      justify-content: center;
+      width: 80%;
+    
+  }
+  .topPic img {
+      width: 94%;
+      margin-left: 25%;
+
+  }
+ /* nav a {
+	margin: 2% 2%;
+	padding: 5%;
+	color: white;
+	text-decoration: none;
+	margin-bottom: 2%;
+  }*/
+  .main {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+    width: 100%;
+    margin-top: 5%;
+	padding: 25px 15px;
+	
+}
+.inlineClass {
+    display: flex;
+    align-items: center;
+}
+.inlineClass p {
+	font-size: 100px;
+}
+.imageGlobe {
+    display: flex;
+    
+
+}
+  /*This is for the 2 column boxes */
+  #boxOne {
+	display: flex;
+	
+  }
+  #boxOne h2 {
+	text-align:center;
+	padding:3% 0;
+  }
+  text p {
+	  text-align: justify;
+  }
+	.columnOne {
+		display: flex;
+		justify-content: space-around;
+		padding: 4% 2%;
+	}		
+/*#boxOne .columnOne div {
+	text-align: center;
+	width: 40%;
+}
+*/
+
+  .boxTwo {
+	display: flex;
+	justify-content: space-around;
+	padding: 3% 2%;
+  }
+  
+   .inlineClass {
+	  display: flex;
+	  flex-direction: column;
+	  justify-items: space-between;
+	  justify-content: center;
+  }
+  div .bigImage img {
+	  padding: 1%;
+  }
+  /*This is where the Address and footing section starts: */
+  .endPart {
+	  margin: 1% 1%;
+	  padding-block: 1%;
+  }
+  footer {
+	  border: 10%;
+	  text-align: center;
+  }
+  address {
+	  line-height: 1.5;
+  }
+.button {
+	border: 1px solid gray;
+	padding: 4px 25px;
+}
+/* This is where the annimation code starts: */
+/*#myScroll {
+	padding: 10px 16px;
+	background: lightgray;
+	color: white;
+	position: fixed;
+	top; 0;
+	width: 80%;
+}
+ /*#myScroll:hover {
+    border: 6px dotted red;
+	box-sizing: border-box;
+	color: yellow;
+ }*/
+    h2:hover {
+		font-size: 30px;
+	}
+/* This code is for Services Page: */
+.servicesAbout h1 {
+	font-size: 35px;
+	padding: 1%;
+	margin-top: 2%;
+	margin-left: 20px;
+}
+
+.servicesAbout p {
+	padding: 1%;
+	margin-bottom: 4%;
+	margin-top: 10px;
+	margin-left: 12%;
+    margin-right: 15%;
+    width: 80%;
+}
+.containerSer a {
+	margin: 2% 2%;
+	padding: 3%;
+	color: grey;
+	text-decoration: none;
+    border: 5px;
+   
+}
+
+#serviceBox .mainBoxes {
+    display: flex;
+    width: 80%;
+    margin-left: 5%;
+	padding: 5%;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	
+}
+.mainBoxes div {
+	width: 47%;
+	height: 10%;
+	padding: 2%;
+	background-color: lightgray;
+	border:1px solid grey; 
+	margin-bottom: 4%;
+}
+.mainBoxes p {
+	margin-bottom: 20px;
+}
+.bottomPart {
+	display: flex;
+}
+ul {
+	list-style: disc !important;
+	padding: 20px;
+}
+.bottomPart div {
+width: 40%;
+margin-left: 6%;
+margin-top: 28px;
+}
+footer {
+	
+	margin-top: 83px;
+	margin-bottom: 20px;
+}
+.buttonService {
+	border: 1px solid black;
+	border-radius: 5px;
+	background-color: white;
+	color: black;
+	padding: 2px 10px;
+}
+
+/* Queries for 800px */
+@media (max-width: 800px) {
+
+    #image {
+        display: none;
+    }
+    .boxTwo div {
+        padding: 1%;
+    }
+
+    .logo {
+        display: flex;
+        width: 30%;
+        margin-right: 35%;
+
+    }
+    .tagsPic {
+        width: 17%;
+        margin-top: 2%;
+    }
+    .tagsPic a {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 30%;
+        margin-right: 0;
+        padding: 15%;
+        color: grey;
+        text-decoration: none;
+    }
+    
+    .container {
+        margin: 0 auto;
+        width: 500px;
+        border: 1px solid gray;
+    }
+    .container p {
+        text-align: left;
+        
+        margin-left: 2%;
+    }
+    h1 {
+line-height: 1;
+    }
+    
+}
+@media (max-width: 500px) {
+    
+   
+        #image {
+        display:none;
+    }
+    .logo {
+        margin-left: -42%;
+    }
+    .tagsPic {
+        width: 100%;
+
+    }
+    nav .tagsPic {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 15%;
+        margin-left: 23%;
+    }
+    .container a {
+        padding: 0;
+        width: 275px;
+        margin-top: 7%;
+        color: grey;
+        text-decoration: none;
+        display: flex;
+        border-bottom: 1px solid grey;
+    }
+    .columnOne {
+        flex-direction: column;
+        width: 100%;
+    }
+    #boxOne h2 {
+        text-align: left;
+    }
+    .boxTwo {
+        flex-direction: column-reverse;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .boxTwo h2 {
+text-align: left;
+    }
+    .columnOne p {
+        width: 100%;
+    }
+    .boxTwo p {
+        margin-bottom: 10px;
+    }
+}
+
+/* Media Querie for Service Page 
+@media (max-width: 800px) {
+    background: yellow;
+    #serviceNav .logo {
+        display: flex;
+        width: 24%;
+        height: 45%;
+        margin-right: 35%;
+        background: yellow;
+
+    }
+}*/
