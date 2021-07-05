@@ -1,3 +1,268 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+    font-family: 'Titillium Web', sans-serif;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+html{
+    font-size:62.5%;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+	margin-bottom: 15px;
+	
+}
+
+
+
+
+h2{
+    font-size:2rem;
+    font-weight: bold;
+    margin-top:10px;
+}
+
+p{
+  
+    margin: 15px 5px 15px 0;
+}
+
+
+a,p,span{
+    font-size:1.6rem;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+img{
+    width:100%;
+    height:auto;
+}
+
+body{
+    max-width:880px;
+    width:100%;
+    margin:auto;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+	padding-bottom: 3%;
+	padding-top: 3%;
+		
+	
+}
+
+header nav {
+	display: flex;
+	justify-content: space-between;
+	width: 70%;
+}
+
+header nav > a {
+	text-decoration: none;
+	color: grey;
+	
+}
+
+
+header img{
+    max-width:20%;
+    min-width:175px;
+}
+
+section{
+    display:flex;
+}
+
+section.intro{
+    justify-content: space-between;
+    align-items:center;
+    padding-bottom: 7%;
+} 
+section.intro .intro-content{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width:50%;
+}
+
+section.intro .intro-content button{
+  max-width:50%;
+  margin:auto;
+}
+
+
+section.intro .intro-content h1{
+    margin:auto;
+    font-size:7rem;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+section.intro img{
+    max-width:40%;
+}
+
+section.main{
+flex-direction: column;
+}
+
+section.main .first{
+    display: flex;
+    border-top: 2px solid black;
+    padding-top: 3%;
+}
+
+section.main .first div{
+    padding-right:5px;
+}
+
+section.main .last{
+    display:flex;
+    border-bottom: 2px solid black;
+    padding-bottom: 3%;
+}
+
+section.main{
+    margin:30px 0;
+    padding-right:5px;
+}
+
+footer{
+    text-align:center;
+    margin-top: 10%;
+}
+button{
+	width: 35%;
+	border: 1px solid black;
+	margin-top: 25%;
+    height: 2.5rem;
+    font-size: 13px;
+    
+
+}
+
+
+
+@media screen and (max-width:800px){
+    body{
+        max-width:96%;
+    }
+    header {
+        flex-direction: column-reverse;
+        align-content: center;
+        align-items: center;
+        width: 100%;
+        
+    }
+     header nav {
+        padding-top: 4%;
+        padding-bottom:7%;
+        width:100%;
+    }
+
+    header img{
+        width:30%;
+        margin:15px 0;
+    }
+    section.intro .intro-content{
+        margin:auto;
+    }
+    .first{
+        padding-bottom: 3%;
+    }
+    .last{
+        padding-top: 3%;
+    }
+    section.intro img{
+        display:none;
+    }
+
+}
+
+@media screen and (max-width:500px){
+    body{
+        width:100%;
+    }
+
+    header nav{
+        flex-direction: column;
+        width:100%;
+        text-align: center;
+    }
+
+    header nav a.first-link{
+        border-top:2px solid gray;
+    }
+
+    header nav a{
+        display: flex;
+        justify-content: space-evenly;
+        border-bottom:2px solid gray;
+        padding:15px;
+        width: 100%;
+    }
+
+    section.intro .intro-content{
+        width:100%;
+    }
+
+    section.main .first, section.main .last{
+        flex-wrap:wrap;
+    }
+    
+}
