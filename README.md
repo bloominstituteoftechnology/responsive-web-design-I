@@ -32,3 +32,27 @@ Follow these steps for completing your project.
 
 
 
+
+
+
+
+
+
+	.mid-top .mid-left {
+		display: flexbox;
+		flex-wrap: wrap;
+		flex-direction: column;
+		align-content: space-between;
+		color: red;
+		padding: 20px;
+	}
+
+
+	.mid-top .mid-right {
+		display: flexbox;
+		flex-wrap: wrap;
+		flex-direction: column;
+		align-content: space-between;
+		color: blue;
+		padding: 20px;
+	}
