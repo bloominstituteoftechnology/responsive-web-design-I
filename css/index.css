@@ -1,3 +1,347 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+body {
+  margin: 0 auto;
+  width: 960px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2%;
+}
 
 
+.navLink a {
+  padding: 0 20px 0 20px;
+  text-decoration: none;
+	color:black;
+	
+}
+button{
+	border: 1px solid black
+}
+
+.wrapper {
+  display: flex;
+  font-size: 70px;
+  text-align: center;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 50px;
+}
+button {
+  font-size: 15px;
+  height: 36px;
+  width: 100px;
+}
+.wrapper2 {
+  display: flex;
+  align-content: center;
+  margin: 30px;
+}
+
+.image3 {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.wrapper3 {
+  display: flex;
+  align-content: center;
+  margin: 30px;
+}
+
+.wrapper4 {
+  display: flex;
+  justify-content: left;
+}
+.copy p {
+  display: flex;
+  justify-content: center;
+}
+
+/*<------------@mobile view---------------->*/
+
+@media only screen and (max-width: 500px) {
+	body{
+		width: 500px;
+		margin: 0 auto;
+	}
+	nav {
+		display: flex;
+	    flex-direction: column-reverse;
+		
+	}
+	.sort{
+		display: flex;
+		flex-direction: column;
+	}
+	 a{
+		color: gray;
+		text-decoration: none;
+		border-bottom: 1px solid black;
+		width:100vw;
+		text-align: center;
+		font-size: 2rem;
+
+	}
+	.wrapper {
+	  display: flex;
+	  flex-direction: column;
+	  align-content: center;
+	}
+	.image2{
+		display:none;
+	}
+	#wrap2 {
+	  display: flex;
+	  flex-direction: column;
+	  align-content: center;
+	}
+	#wrap3 {
+	  display: flex;
+	  flex-direction: column;
+	  align-content: center;
+	}
+	.image3 {
+	  display: flex;
+	  /* background-color: red ; */
+	  flex-direction: column;
+	  align-content: center;
+	}
+	hr {
+	  display: flex;
+	  align-content: flex-start;
+	}
+	section {
+	  display: flex;
+	  flex-direction: column;
+	  align-content: center;
+	  margin: 2px;
+	}
+	#copy1 {
+	  display: flex;
+	  flex-direction: column;
+	  align-content: center;
+	}
+  }
+  /* **********@media Tablet view********** */
+  @media only screen and (max-width: 800px) {
+	body {
+		width: 800px;
+		margin: 0 auto;
+	}
+	nav {
+		display: flex;
+	    flex-direction: column-reverse;
+		
+	}
+	.sort{
+		display: flex;
+		flex-direction: column;
+	}
+	 a{
+		color: gray;
+		text-decoration: none;
+		border-bottom: 1px solid black;
+		width:100vw;
+		text-align: center;
+		font-size: 2rem;
+
+	}
+	.wrapper {
+	  display: flex;
+	  flex-direction: column;
+	  align-content: center;
+	}
+	.image2{
+		display:none;
+	}
+	#wrap2 {
+	  display: flex;
+	  flex-direction: column;
+	  align-content: center;
+	}
+	#wrap3 {
+	  display: flex;
+	  flex-direction: column;
+	  align-content: center;
+	}
+	.image3 {
+	  display: flex;
+	  flex-direction: column;
+	  align-content: center;
+	}
+	hr {
+	  display: flex;
+	  align-content: flex-start;
+	}
+	section {
+	  display: flex;
+	  flex-direction: column;
+	  align-content: center;
+	  margin: 2px;
+	}
+	#copy1 {
+	  display: flex;
+	  flex-direction: column;
+	  align-content: center;
+	}
+  }
