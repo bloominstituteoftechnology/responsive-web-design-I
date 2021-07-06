@@ -1,3 +1,446 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+
+/* Your code starts here! */
+nav.nav-section{
+  margin-top:3%;
+}
+nav {
+    margin: auto;
+		width: 100%;
+		margin-bottom: 4%;
+}
+
+nav a {
+    text-decoration: none;
+    color: grey;
+    padding-right: 1%;
+    margin-right: 7%;
+}
+
+nav .logo {
+		margin: 0 2% 0 0;
+}
+
+header {
+    line-height: 0.75;
+    
+    width: 876px;
+}
+
+header .title {
+    font-size: 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:50%;
+}
+
+header .title button {
+    border: 1px solid black;
+    margin-top: 0px;
+    padding: 6px 40px;
+}
+
+header img {
+    display: inline-block;
+    width: 35%;
+}
+
+.top-content {
+    width: 100%;
+    border-top: 1px solid black;
+}
+
+.top-content div {
+    display: inline-block;
+    width: 49%;
+    text-align: justify;
+    padding: 10px;
+}
+
+.middle-img {
+    margin: 30px 0px;
+    width: 100%;
+}
+
+.bottom-content {
+    width: 100%;
+}
+
+.bottom-content div {
+    display: inline-block;
+    width: 33%;
+    text-align: justify;
+    padding: 10px;
+}
+
+.contact {
+    margin-top: 30px;
+}
+
+body {
+  width: 100%;
+}
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+}
+.services {
+	margin-top: 25px;
+}
+.services h2 {
+	font-size: 25px;
+	margin-bottom: 20px;
+}
+hr {
+	margin-top: 30px;
+	margin-bottom: 35px;
+}
+.digital {
+	background: rgb(240, 238, 238);
+	width: 50%;
+	border: 2px solid black;
+	padding: 13px;
+	margin-bottom: 10px;
+	/* float: left; */
+	}
+
+footer {
+	position: relative;
+    top: 55px;
+    margin-top: 20px;
+	
+}
+.main-container {
+	
+	width: 100%;
+	height: 100%;
+}
+
+.cont-container {
+	 display: flex;
+	 
+}
+img.services-header-img {
+	display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    
+}
+
+.market {
+    display: flex;
+    background: rgb(240, 238, 238);
+}
+
+.ios {
+    display: flex;
+    width: 48%;
+    background: rgb(240, 238, 238);
+}
+
+.digital, .ux, .web, .market, .ios, .android {
+	border: 1px solid black;
+	padding: 19px;
+	margin:10px; 
+}
+div.foot-container {
+	display: flex;
+}
+.list1 {
+	
+	width: 100%;
+    display: flex;
+    margin-top: 15px;
+    
+    justify-content: flex-start;
+    list-style-position: inside;
+}
+ ul {
+	display: flex;
+	flex-flow: row wrap;
+	flex-direction: column-reverse;
+
+	width: 50%;
+}
+
+.ulli {
+	
+	
+    /* margin-left: 50%; */
+    width: 100%;
+    
+    margin-left: 20px;
+    
+    
+}
+.ux {
+	display: flex;
+	border: 1px solid black;
+	background: rgb(240, 238, 238);
+	width: 50%;
+	
+}
+.maindig {
+	
+	display: flex;
+}
+
+.web {
+    border: 1px solid black;
+    background: rgb(240, 238, 238);
+}
+.main-mark {
+	
+    display: flex;
+    
+}
+.mainios {
+	
+	width: 100%;
+	display: flex;
+}
+.andcont {  
+    width: 50%;
+}
+.android {
+    background: rgb(240, 238, 238);
+}
+button {
+    padding: 7px 18px;
+    margin: 10px 0 0 0 ;
+    background:white;
+}
+.facts {
+    
+    width: 50%;
+}
+.lastcont {
+    display: flex;
+    
+}
+.abouts {
+    width: 50%;
+    
+}
+.other {
+    
+    width: 50%;
+}
+.factspic {
+    display: flex;
+    
+    
+}.services h2{
+  font-size: 16px;
+}
+li {
+    
+    margin: 5px;
+    
+}div.features{
+   width:
+}
+
+img.services-info-img {
+    position: relative;
+    left: 7px;
+}
+    .titlecode {
+display: flex;
+width: 98%;
+justify-content: space-between;
+    }.snippet img {
+      width:74%;  
+    }.nav-section {
+        display: flex;
+    }div.navI {
+      width:100%;
+      display: flex;
+      justify-content: space-evenly;
+    }div.snippet{
+      width: 50%;
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: center;
+      margin-bottom:3%;
+    }body.containermain {
+      height: 177vh;
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+
+@media screen and (max-width: 800px){
+       .snippet img {
+           display:none;
+       }.nav-section {
+           display:flex;
+           flex-flow: column-reverse;
+           
+       }.navI{
+           display:flex;
+           justify-content: center;
+           justify-content: space-evenly;
+           
+           
+           
+           
+       }.gilogo {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        
+      
+       }.titlecode {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         position: relative;
+         left: 4%;
+         margin-top: 11%;
+       }img.logo {
+         position: relative;
+         right: -37%;
+         width: 24%;
+       }.title{
+         position: relative;
+         right: -19%;
+       }.top-content{
+         width: 100%;
+       }.middle-img {
+         width: 100%;
+       }.bottom-content {
+         width: 100%;
+       }nav .logo{
+         margin: 0 2% 4% 0;
+       }header .title button {
+         margin-bottom:8%;
+       }body.containermain {
+         padding-right: 3%;
+       }div.navI{
+         position: relative;
+         left:2%;
+       }
+    }
+    
+    @media screen and (max-width:500px){
+          img.logo {
+            position: relative;
+            right: -38%;
+            width: 24%;
+          }.navI {
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            left: 4%;
+            
+          }.titlecode{
+            display: flex;
+            width: 103%;
+            
+          }.top-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-flow:column;
+            
+            
+          }.middle-img{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+          }.bottom-content{
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+          }a {
+            border-bottom:1px solid gray;
+            width: 51%;
+            position: relative;
+            right: 18px;
+            display: flex;
+            justify-content: center; 
+          }footer{
+            display: flex;
+            align-items:center;
+            justify-content: center;
+          }nav a {
+            width: 117%;
+            margin-right: 0;
+            padding-right: 0;
+            border-top: 1px solid gray;
+          }h2 {
+            font-size: 59%;
+          }.top-content div {
+            width: 100%;
+          }.bottom-content div {
+            width: 100%;
+          }
+      }
 
 
