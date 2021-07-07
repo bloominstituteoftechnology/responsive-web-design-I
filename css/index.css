@@ -1,3 +1,482 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  /* border: 0; */
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
 
+/* article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: flex;
+
+
+} */
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+  /* border: 1px solid black; */
+}
+html,
+body {
+  height: 100%;
+  font-family: 'Titillium Web', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Bangers', cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+.container {
+  width: 880px;
+  /* TB LR */
+  margin: 0 auto;
+}
+/* header */
+header nav {
+  /* display: inline-block; */
+  width: 691px;
+  vertical-align: top;
+  margin-top: 35px;
+}
+header nav a {
+  margin-right: 65px;
+  font-size: 14px;
+  color: gray;
+  text-decoration: none;
+}
+header nav a:hover {
+  text-decoration: underline;
+}
+header nav a:first-child {
+  margin-left: 0;
+}
+header nav a:last-child {
+  margin-right: 0;
+}
+header .logo {
+  margin-top: 25px;
+}
+/* cta */
+.cta .cta-text {
+  /* display: inline-block; */
+  vertical-align: top;
+  font-size: 77px;
+  margin-top: 120px;
+  text-align: center;
+  padding: 0px 75px;
+}
+.cta .cta-text button {
+  background: white;
+  vertical-align: top;
+  margin-top: 6px;
+  padding: 8px 44px;
+  font-size: 17px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+.cta .cta-text button:hover {
+  background: black;
+  color: white;
+}
+/* .cta img {
+ 
+  margin-top: 69px;
+} */
+.main-content {
+  border-top: 1px solid black;
+  margin-top: 76px;
+  padding-top: 39px;
+}
+.main-content .top-content {
+  padding: 0 10px;
+}
+.main-content .top-content .text-content {
+  width: 410px;
+  /* display: inline-block; */
+  margin-right: 34px;
+}
+.main-content .top-content .text-content:last-child {
+  margin-right: 0;
+}
+.main-content .middle-img {
+  margin-top: 45px;
+}
+.main-content .bottom-content {
+  margin-top: 37px;
+  padding: 0 10px;
+}
+.main-content .bottom-content .text-content {
+  width: 275px;
+  /* display: inline-block; */
+  margin-right: 12px;
+}
+.main-content .bottom-content .text-content:last-child {
+  margin-right: 0;
+}
+.contact {
+  margin-top: 57px;
+  border-top: 1px solid black;
+  padding: 39px 10px 0;
+}
+.contact p {
+  margin: 20px 0;
+}
+footer {
+  margin: 32px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+header {
+  display: flex;
+}
+
+.cta {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-content {
+  display: flex;
+}
+.bottom-content {
+  display: flex;
+}
+.services-header-img {
+  margin: 25px 0;
+}
+.vision-header-img {
+  margin: 25px 0;
+}
+h2 {
+  font-size: 24px;
+}
+h3 {
+  font-size: 16px;
+  padding-bottom: 5px;
+}
+.visionBox {
+  background: lightblue;
+  padding: 20px 20px;
+  margin: 20px 0;
+  border: 3px dotted darkred;
+  width: 47%;
+}
+
+.visionBoxes {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  margin: 45px 0;
+  padding: 30px 0;
+  line-height: 1.25;
+}
+.visionBoxes button {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 12px;
+  background: whitesmoke;
+  margin-top: 20px;
+  padding: 8px 40px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.serviceBox button:hover {
+  background: lightgrey;
+  font-weight: bold;
+  cursor: pointer;
+}
+.about {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+.about img {
+  width: 47%;
+}
+.about-left {
+  line-height: 1.25;
+  width: 47%;
+}
+.about ul {
+  list-style: square;
+  margin-top: 25px;
+}
+.about li {
+  padding: 5px;
+  margin-left: 22px;
+}
+/**********************  MEDIA QUERIES ************************/
+/* for tablet-view */
+@media (max-width: 800px) {
+  .code {
+    display: none;
+  }
+  .logo {
+    display: flex;
+    justify-content: center;
+    height: 10%;
+    width: 30%;
+  }
+  header {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .cta-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .cta-text h1 {
+    font-size: 60px;
+    margin-top: 0px;
+  }
+  .cta .cta-text {
+    margin-top: 40px;
+  }
+  .cta {
+    display: flex;
+    justify-content: center;
+  }
+  .middle-img {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .main-content {
+    border-top: 3px solid black;
+  }
+  .container {
+    padding: 5px 10px;
+  }
+
+  .contact {
+    border-top: 3px solid black;
+  }
+}
+
+/* for mobile-view */
+@media (max-width: 560px) {
+  /* .code {
+    display: none;
+  } */
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    height: 10%;
+    width: 30%;
+    margin-bottom: 0px;
+  }
+  header {
+    padding-top: 10px;
+    display: flex;
+  }
+  nav {
+    border-top: 1px solid grey;
+  }
+
+  header nav a {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid grey;
+  }
+
+  .cta-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .cta-text h1 {
+    font-size: 60px;
+    margin-top: 0px;
+  }
+  .cta .cta-text {
+    margin-top: 40px;
+  }
+  .cta {
+    display: flex;
+    justify-content: center;
+  }
+  .middle-img {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .main-content .middle-img {
+    margin-top: 1px;
+  }
+
+  .main-content {
+    border-top: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+  }
+  .container {
+    padding: 5px 0px;
+  }
+
+  .contact {
+    border-top: 3px solid black;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-top: 0px;
+    padding-top: 0px;
+    margin: 0 0;
+  }
+  .main-content .top-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-top: 3px solid black;
+    padding-top: 70px;
+  }
+  .main-content .text-content {
+    padding-bottom: 50px;
+    font-size: 16px;
+    line-height: 17px;
+  }
+
+  .main-content .bottom-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 10px;
+  }
+  .main-content .top-content .text-content {
+    margin-right: 0px;
+  }
+
+  .main-content .bottom-content .text-content {
+    margin-right: 0px;
+    width: 550px;
+  }
+  .contact h4 {
+    padding-top: 30px;
+    border-top: 3px solid black;
+  }
+}
