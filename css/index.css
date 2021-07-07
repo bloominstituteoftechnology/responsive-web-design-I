@@ -1,3 +1,271 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+.container {
+	margin: auto;
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+}
+
+.nav-bar-top {
+	margin-top: 20px;
+}
+
+.nav-bar-top nav {
+	display: flex;
+	align-items: center;
+
+}
+
+.nav-bar-top nav a{
+	color: silver;
+	width: 13%;
+}
+
+.logo {
+	margin-left: 15px;
+}
+
+.top-section {
+	border-bottom: 2px solid black;
+	margin-bottom: 40px;
+}
+
+header {
+	display: flex;
+	width: 100%;
+	margin: auto;
+	justify-content: space-around;
+	align-items: center;
+	padding: 35px 0px 50px 0px;
+}
+
+.header-text {
+	display: inline-block;
+	width: 50%;
+	margin-left: 20px;
+}
+
+header img {
+	width: 40%;
+	margin-right: 50px;
+}
+
+#onDemand {
+	font-size: 52px;
+	width: 35%;
+	text-align: center;
+	position: relative;
+	left: 150px;
+}
+
+#startBtn {
+    display: flex;
+    justify-content: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+    padding: 10px 30px;
+	border: 2px solid black;
+}
+
+.main-content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	width: 100%;
+	border-bottom: 2px solid black;
+}
+
+.entry {
+	width: 47%;
+}
+
+.main-content .entry h1 {
+	font-weight: 900;
+}
+
+.main-content .entry p {
+	margin-bottom: 30px;
+	width: 100%;
+}
+
+.main-content img {
+	padding: 15px 0px 15px 0px;
+}
+
+#small-entry {
+	margin-top: 30px;
+	width: 30%;
+}
+
+.contact-form {
+	margin-top: 30px;
+	width: 150px;
+	display: block;
+}
+
+#phone {
+	margin: 20px 0px 20px 0px;
+}
+
+footer {
+	text-align: center;
+	font-family: "Times New Roman", Times, serif;
+	margin: 45px 0px 40px 0px;
+}
+
+@media (max-width: 800px) {
+	.container {
+		width: 85%;
+	}
+
+    .nav-bar-top nav{
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+	
+	.nav-bar-top nav img {
+		order: -1;
+		margin: 0 30% 0 30%;
+		padding-bottom: 20px;
+	}
+
+	header {
+		flex-flow: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	#onDemand {
+		justify-content: center;
+		position: relative;
+		left: 15%;
+	}
+
+	#startBtn {
+		padding: 5px 90px;
+	}
+
+	header img {
+		display: none;
+	}
+
+	.main-content img {
+		width: 100%;
+	}
+}
+
+@media (max-width: 500px) {
+	.container {
+		max-width: 90%;
+	}
+
+	.nav-bar-top nav {
+		max-width: 500px;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#services-nav {
+		border-top: 1px solid grey;
+	}
+	/* QUESTION */
+	.nav-bar-top nav a {
+		width: 100%;
+		padding: 20px 0px 20px 0px;
+		border-bottom: 1px solid grey;
+	}
+
+	header {
+		justify-content: center;
+		align-items: center;
+	}
 
 
+	/* QUESTION */
+	#onDemand {
+		margin-left: 0;
+	}
+
+	.main-content {
+		flex-flow: column;
+		align-items: center;
+	}
+
+	.entry {
+		width: 95%;
+	}
+
+	#small-entry {
+		width: 95%;
+	}
+
+	.contact-form {
+		align-items: center;
+		max-width: 500px;
+	}
+}
