@@ -1,3 +1,303 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* CSS for index */
+header {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+    align-items: center;
+	margin-bottom: 70px;
+}
+
+header nav a {
+	margin: 0 20px;
+	text-decoration: none;
+	color:silver;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.topMain {
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.title h1 {
+	font-size: 70px;
+}
+
+button {
+	font-size: 16px;
+	height: 35px;
+	width: 170px; 
+	bottom: 195px;
+	background-color: white;
+	color: black;
+	border: 1px solid black;  
+ }
+
+ div aside {
+	 padding: 0 0 0 100px;
+	width: 50%;
+}
+
+div {
+	display: flex;
+	justify-content: flex-start;
+	max-width: 800px;
+}
+
+hr {
+	width: 800px;
+	color: black;
+}
+
+.middle-img {
+	width: 800px;
+}
+
+.features {
+	margin: auto;
+	padding: 30px 10px 30px 0;
+	width: 49%;
+}
+
+.about {
+	margin: auto;
+	padding: 30px 10px 30px 0;
+	width: 49%;
+}
+
+.services {
+	margin: auto;
+	padding: 30px 10px 30px 0;
+	width:33%;
+}
+
+.product {
+	margin: auto;
+	padding: 30px 10px 30px 0;
+	width:33%;
+}
+
+.vision {
+	margin: auto;
+	padding: 30px 10px 30px 0;
+	width:33%;
+}
+
+.contact {
+	display: flex;
+	flex-direction: column;
+	align-self: flex-start;
+	margin-left: 5%;
+	padding: 30px 10px 30px 0;
+}
+
+.contact address {
+	margin: 0 0 20px 0;
+}
+
+.contact a {
+	text-decoration: none;
+	color:black;
+}
+
+.contact p {
+	margin: 20px 0 0 0;
+}
+
+footer {
+	margin: 50px;
+	text-align: center;
+	padding: 0 0 60px 0;
+}
+
+@media (max-width: 800px) {
+
+	body {
+		max-width: 700px;
+		margin: 0 auto;
+	}
+
+	header {
+		margin: 10px 0 10px 0;
+		flex-direction: column-reverse;
+	}
+	
+	header nav {
+		margin-top: 20px;
+		justify-content: space-between;
+	}
+	
+	div {
+		margin: 0 auto;
+	}
+	
+	hr {
+		width: 100%;
+	}
+	
+	.middle-img {
+		width: 100%;
+	}
+	
+	.title {
+		margin: 25px 0 70px 0;
+	}
+	
+	aside {
+		display: none;
+	}
+	
+	.contact {
+		margin-left: 1%;
+	}
+	}
+
+@media (max-width: 500px) {
+
+header {
+    flex-direction: column-reverse;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header nav {
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+	margin-top: 20px;
+	width: 100%;
+
+}
+
+header nav a {
+	border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+	text-align: center;
+	padding: 10px 0 10px 0;
+}
+
+aside {
+    display: none;
+}
+
+main {
+    align-items: center;
+}
+
+div {
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+hr {
+    width: 90%;
+}
+
+.middle-img {
+	width: 100%;
+}
+
+.features {
+	width: 90%;
+}
+
+.about {
+	width: 90%;
+}
+
+.services {
+	width: 90%;
+}
+
+.product {
+	width: 90%;
+}
+
+.vision {
+	width: 90%;
+} 
+
+.contact {
+	margin-left: 5%;
+}
+}
