@@ -1,3 +1,248 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/*------------------Desktop View------------------*/
+body {
+  margin: 0 auto;
+}
+p {
+  font-size: 1.25rem;
+  padding: 10px;
+}
+h1 {
+  font-size: 4rem;
+  font-family: "bangers", cursive;
+  justify-content: center;
+  margin:20px;
+}
+h2 {
+  font-size: 25px;
+  font-family: "bangers", cursive;
+  padding: 10px;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.intro {
+  padding: 100px;
+}
+.started  {  
+  border: 1px solid black;
+  padding: 8px 44px;
+}
+.started:hover{
+  background: rgb(45, 255, 26);
+}
+img.introimg {
+  padding: 50px;
+}
+.intro-container {
+  display: flex;
+  direction: row;
+  justify-content: center;
+  text-align: center;
+}
+.picture-box {
+  width: 100vw;
+}
+.middle-img {
+  width: 100vw;
+}
+.top-content {
+  display: flex;
+  direction: row;
+}
 
+.bottom-content {
+  display: flex;
+  direction: row;
+}
+.contact-content a {
+  display: flex;
+}
+footer {
+  text-align: center;
+}
+/*------------------Tablet View------------------*/
+@media (max-width: 800px) {
+  body {
+    margin: 0 auto;
+  }
+  .intro-container {
+    justify-content: center;
+  }
+  img.introimg {
+    display: none;
+  }
+  .top-content {
+    display: flex;
+    flex-direction: row;
+  }
+  .bottom-content {
+    display: flex;
+    flex-direction: row;
+  }
+}
 
+/*------------------Mobile View------------------*/
+@media (max-width: 500px) {
+  nav {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  nav a {
+    font-size: 1.2rem;
+    color: grey;
+    border-bottom: 1px solid black;
+    padding: 20px;
+  }
+  img.logo {
+    align-self: center;
+    width: 50%;
+  }
+  .top-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .bottom-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .intro-container .introimg {
+    display: none;
+  }
+}
