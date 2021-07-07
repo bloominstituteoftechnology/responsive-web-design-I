@@ -1,3 +1,318 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	font-size:62.5%
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+
+.container{
+	width:85%;
+	margin:0 auto;
+	/* border:2px solid red; */
+}
+nav{
+	display:flex;
+	/* border:2px solid red; */
+	justify-content:space-evenly;
+	align-items:center;
+	width:87%; 
+	/* margin-right:7%; */
+	/* position:fixed; */
+	/* background-color:blue; */
+}
+nav a{
+	text-decoration: none;
+	color:#c9c9c9;
+	font-size:1.3rem;
+}
+nav a:hover{
+	color:black;
+}
+.header{
+	/* border:2px solid blue;  */
+	display:flex;
+	justify-content: space-evenly;
+	align-items: center;
+	margin-right:5%;
+} 
+.logo{
+	width:125%;
+}
+
+.Codeimage{
+	width: 45%;
+
+}
+h1{
+	font-size:5.2rem;
+	/* display:flex; */
+	/* flex-wrap:wrap; */
+	/* border:2px solid blue;  */
+}
+.both{
+	
+	display:flex;
+	align-items:center;
+	flex-direction:row;
+	/* border:2px solid blue;  */
+	margin-top:3%;
+	border-bottom:3px solid black; 
+	padding-bottom:3%;
+	justify-content: space-between;
+	margin-left:8%;
+	width:90%;
+
+	
+}
+.left{
+	display:flex;
+	/* border:2px solid red; */
+	flex-direction:column ;
+	justify-content:center;
+	align-items:center;
+	width:45%;
+	text-align:center;
+	/* margin-left:16%; 
+	margin-right:15%; */
+	
+}
+
+.left h2{
+	border:2px solid #666666;
+	padding:2% 12%;
+	font-size:1rem;
+}
+.features-about{
+	display:flex;
+	/* border:2px solid red; */
+	margin-top:3%;
+	width:94%;
+	margin-left:7.7%;
+	justify-content:space-evenly;
+	/* font-size:1.6rem; */
+
+}
+
+.middle-img{
+	margin:3% 0 3% 7.7%;
+	width:91%;
+	
+}
+
+h3{
+	font-size:1.7rem;
+}
+p{
+	font-size:1.2rem;
+}
+/* .services{
+	margin-left:7.6%;
+
+} */
+.bottom{
+	display:flex;
+	justify-content: space-between;
+	border-bottom:3px solid black;
+	margin-left:7.6%;
+	padding-bottom:3%;
+}
+.d{
+	text-align: center;
+	font-size:1rem;
+	margin-top:3%;
+	/* border:2px solid green; */
+}
+.middle{
+	/* border: 2px solid blue; */
+	display:flex;
+	flex-flow:wrap;
+}
+.contact{
+	font-size:1.7rem;
+	margin-top:3%;
+	margin-left:7.7%;
+}
+address{
+	font-size: 1.2rem;
+	margin-left:7.7%;
+
+}
+@media (max-width: 800px){
+	.header{
+		flex-flow:column-reverse;
+	}
+	nav {
+		/* margin:2% 0 0 5.3%; */
+		justify-content: space-between;
+		/* border:2px solid red; */
+		width:100%;
+
+	}
+	nav a{
+		margin:2% 0 2% 2%;
+		/* border-bottom:1px solid black; */
+		width:100%;
+		text-align:center;
+	}
+	.logo{
+		width:95%;
+		margin-bottom:3%;
+
+	}
+	.Codeimage{
+		display:none;
+	}
+	h1{
+		font-size:3rem;
+	}
+	.both{
+		margin:3% 0% 0 1%;
+		padding:0;
+		width:95%;
+		display:flex;
+		justify-content:center;
+	}
+	.services{
+		margin:0 0 0 2%;
+	}
+	h3{
+		font-size:1.2rem;
+	}
+	p{
+		font-size:1rem;
+	}
+	.features-about{
+		justify-content: space-between;
+		/* border:2px solid red; */
+		padding:0 0 0 2%;
+		margin:4% 0 4% 0%;
+		width:100%;
+	}
+	
+	.middle-img{
+		margin:2% 2% 3% 2%;
+		width:96%;
+	}
+	.bottom{
+		/* border:2px solid red; */
+		display:flex;
+		margin:0;
+	}
+	
+	.contact{
+		font-size:1.2rem;
+		margin:3% 2%;
+	}
+	address{
+		font-size:1rem;
+		margin:3% 2%;
+
+	}
+	.d{
+		font-size:.9rem;
+	}
+
+}
+@media (max-width: 500px){
+	nav{
+		flex-direction:column;
+		width:95%;
+		align-items:center;
+		/* border:2px solid red; */
+		justify-content: center;
+
+	}
+	nav a{
+		border-bottom: 1px solid black;
+		padding:2% 0;
+
+	}
+	.topborder{
+		border-top:1px solid black;
+		padding:5% 0 1.6% 0;
+	}
+	.features-about{
+		flex-direction: column;
+	}
+	.hnp{
+		margin-bottom:3%;
+	}
+	.bottom{
+		flex-flow:row wrap;
+		/* border:2px solid red; */
+		margin-left:2%;
+	}
+	.product{
+		margin:4% 0 0 0%;
+	}
+	.vision{
+		margin:4% 0 3% 0%;
+
+	}
+	.services{
+		margin:3% 0 0 0%;
+	}
+}
