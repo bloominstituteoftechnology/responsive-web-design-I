@@ -1,3 +1,152 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+	box-sizing: border-box;
+	font-family: 'Roboto Mono', monospace;
+}
+
+html, body {
+    height: 100%;
+	font-family: 'Titillium Web', sans-serif;
+	line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.navigation{
+    display: flex;
+    padding: 30px;
+}
+
+.navigation ul{
+    padding-right: 50px;
+}
+
+.navigation ul a {
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+.navigation img{
+    padding: 0 10px;
+}
+
+.parent{
+    display: flex;
+    padding: 30px 10px;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.innovation{
+    text-align: center;
+    font-size: 3.5rem;
+}
+
+.innovation button{
+    padding: 20px;
+    font-size: 1.2rem;
+}
+
+.mid .parent {
+    display: flex;
+    justify-content: space-between;
+}
+
+.features, .about{
+    width: 49%;
+}
+
+.services, .product, .vision{
+    width: 30%;
+}
+
+@media (max-width: 500px){
+
+    body{
+        max-width: 100%;
+        padding: 10px;
+    }
+    .navigation{
+        flex-direction: column-reverse;
+    }
+    .navigation ul{
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navigation ul a{
+        border-top: 1px solid grey;
+    }
+    .navigation img{
+        width: 150px;
+        height: auto;
+        margin: 0 auto;
+    }
+    .round-image{
+        display: none;
+    }
+    .rect-image img{
+        width: 100%;
+    }
+}
