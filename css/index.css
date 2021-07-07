@@ -1,3 +1,295 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol,
+ul {
+	list-style: none;
+}
+blockquote,
+q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+	font-family: "Titillium Web", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: "Bangers", cursive;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+nav {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+nav a {
+	text-decoration: none;
+	color: grey;
+	padding: 25px;
+}
+
+nav .logo {
+	padding-left: 50px;
+}
+
+header {
+	margin: 50px auto;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+header .title {
+	font-size: 72px;
+	text-align: center;
+	margin: 0px 15px;
+	justify-content: center;
+}
+
+header .title button {
+	border: 1px solid black;
+	margin-top: 20px;
+	padding: 6px 40px;
+	background: white;
+}
+
+header img {
+}
+
+.top-content {
+	width: 100%;
+	display: flex;
+}
+
+.top-content div {
+	width: 49%;
+	padding: 10px;
+}
+
+.middle-img {
+	margin: 30px 0px;
+	width: 100%;
+}
+
+.bottom-content {
+	width: 100%;
+	display: flex;
+}
+
+.bottom-content div {
+	width: 33%;
+	padding: 10px;
+}
+
+.contact {
+	margin-top: 30px;
+}
+
+footer {
+	margin: 50px 0 25px 0;
+	text-align: center;
+}
+
+/*******Media Queries***********/
+
+@media (max-width: 800px) {
+	.logo {
+		display: flex;
+		order: -1;
+		justify-content: center;
+		margin: 5% 50%;
+	}
+
+	nav {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	header img {
+		display: none;
+	}
+	header {
+		display: flex;
+		justify-content: center;
+	}
+
+	.bottom-content div {
+		padding: 20px;
+	}
+}
+
+@media (max-width: 500px) {
+	nav .logo {
+		margin: 5% 0 5% 0;
+		padding-left: 0;
+	}
+
+	nav {
+		flex-direction: column;
+	}
+
+	a {
+		border-bottom: 1px solid gray;
+		border-top: 1px solid gray;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+
+	.top-content {
+		flex-direction: column;
+	}
+
+	.top-content div {
+		width: 100%;
+	}
+
+	.bottom-content {
+		flex-direction: column;
+	}
+
+	.bottom-content div {
+		width: 100%;
+	}
+}
